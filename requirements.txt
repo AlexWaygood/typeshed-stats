@@ -5,3 +5,4 @@ flake8-noqa==1.2.9      # must match .pre-commit-config.yaml
 isort==5.10.1           # must match .pre-commit-config.yaml
 mypy==0.982
 pycln==2.1.1            # must match .pre-commit-config.yaml
+typing_extensions
