@@ -1,0 +1,18 @@
+# This is an example .flake8 config, used when developing flake8-pyi itself.
+#
+# The following rule now goes against PEP8:
+#       W503 line break before binary operator
+#
+# The following rules are incompatible with or largely enforced by black:
+#       B950 Line too long (flake8-bugbear equivalent of E501)
+#       E203 whitespace before
+#       E501 line too long
+#       W291 trailing whitespace
+#       W293 blank line contains whitespace
+
+[flake8]
+max-line-length = 80
+max-complexity = 12
+noqa-require-code = true
+per-file-ignores =
+  *.py: B950, E203, E501, W503, W291, W293

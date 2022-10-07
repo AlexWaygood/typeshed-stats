@@ -1,0 +1,15 @@
+[tool.isort]
+profile = "black"
+combine_as_imports = true
+
+[tool.black]
+target-version = ['py310']
+skip-magic-trailing-comma = true
+
+[tool.mypy]
+show_error_codes = true
+show_traceback = true
+pretty = true
+strict = true
+enable_error_code = "ignore-without-code,redundant-expr"
+warn_unreachable = true

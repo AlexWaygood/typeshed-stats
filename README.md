@@ -1,0 +1,1 @@
+# Script to gather stats on various things about typeshed
