@@ -3,6 +3,7 @@ from __future__ import annotations
 import ast
 import asyncio
 import os
+import sys
 import urllib.parse
 from collections.abc import Mapping
 from dataclasses import dataclass, fields
@@ -286,6 +287,7 @@ async def main() -> None:
 
 
 if __name__ == "__main__":
+    assert sys.version_info >= (3, 10), "Python 3.10+ is required to run this script."
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
