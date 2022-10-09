@@ -16,3 +16,4 @@ max-complexity = 12
 noqa-require-code = true
 per-file-ignores =
   *.py: B950, E203, E501, W503, W291, W293
+filename = typeshed_stats.py

@@ -1,15 +1,21 @@
-[tool.isort]
-profile = "black"
-combine_as_imports = true
-
 [tool.black]
+line_length = 88
 target-version = ['py310']
 skip-magic-trailing-comma = true
+preview = true
+
+[tool.isort]
+profile = 'black'
+line_length = 88
+combine_as_imports = true
+extra_standard_library = ['typing_extensions']
+skip_gitignore = true
 
 [tool.mypy]
+files = 'typeshed_stats.py'
 show_error_codes = true
 show_traceback = true
 pretty = true
 strict = true
-enable_error_code = "ignore-without-code,redundant-expr"
+enable_error_code = 'ignore-without-code,redundant-expr'
 warn_unreachable = true
