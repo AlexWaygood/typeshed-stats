@@ -1,14 +1,19 @@
 from __future__ import annotations
 
+import argparse
 import ast
 import asyncio
+import json
 import os
+import re
 import sys
 import urllib.parse
-from collections.abc import Mapping
+from collections import Counter
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass, fields
 from enum import Enum, auto
-from functools import cache, cached_property
+from functools import cache, cached_property, partial
+from itertools import product
 from pathlib import Path
 from typing import Any, NamedTuple, TypeVar
 from typing_extensions import Annotated, TypeAlias
@@ -20,9 +25,11 @@ from packaging.version import Version
 
 ExitCode: TypeAlias = int
 PackageName: TypeAlias = str
-PackageCompleteness: TypeAlias = Annotated[
-    bool, "Whether or not a package uses stubtest's --ignore-missing-stub option in CI"
-]
+
+
+class NiceReprEnum(Enum):
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__}.{self.name}"
 
 
 def is_Any(annotation: ast.expr) -> bool:
@@ -45,11 +52,8 @@ def is_Incomplete(annotation: ast.expr) -> bool:
             return False
 
 
-AnnotationStatsSelf = TypeVar("AnnotationStatsSelf", bound="PackageAnnotationStats")
-
-
 @dataclass
-class PackageAnnotationStats(ast.NodeVisitor):
+class AnnotationStats(ast.NodeVisitor):
     """Statistics on the annotations for a source file or a directory of source files"""
 
     annotated_parameters: int = 0
@@ -92,37 +96,22 @@ class PackageAnnotationStats(ast.NodeVisitor):
         self._visit_function(node)
         self.generic_visit(node)
 
-    def gather_stats_on_file(
-        self: AnnotationStatsSelf, source: str
-    ) -> AnnotationStatsSelf:
-        self.visit(ast.parse(source))
-        return self
-
-    @property
-    def field_names(self) -> tuple[str, ...]:
-        return tuple(field.name for field in fields(type(self)))
-
-    def __add__(self, other: PackageAnnotationStats) -> PackageAnnotationStats:
-        if not isinstance(other, PackageAnnotationStats):
-            return NotImplemented  # type: ignore[unreachable]
-        result = PackageAnnotationStats()
-        for field in self.field_names:
-            setattr(result, field, getattr(self, field) + getattr(other, field))
-        return result
-
-    __radd__ = __add__
+    @staticmethod
+    def gather_stats_on_file(path: Path) -> AnnotationStats:
+        visitor = AnnotationStats()
+        visitor.visit(ast.parse(path.read_text()))
+        return visitor
 
 
-def gather_annotation_stats_on_package(
-    package_directory: Path,
-) -> PackageAnnotationStats:
-    return sum(
-        [
-            PackageAnnotationStats().gather_stats_on_file(path.read_text())
-            for path in package_directory.rglob("*.pyi")
-        ],
-        start=PackageAnnotationStats(),
-    )
+def gather_annotation_stats_on_package(package_directory: Path) -> AnnotationStats:
+    file_results = [
+        AnnotationStats.gather_stats_on_file(path)
+        for path in package_directory.rglob("*.pyi")
+    ]
+    package_stats = Counter({field.name: 0 for field in fields(AnnotationStats)})
+    for field_name, file_result in product(package_stats, file_results):
+        package_stats[field_name] += getattr(file_result, field_name)
+    return AnnotationStats(**package_stats)
 
 
 @cache
@@ -131,27 +120,43 @@ def get_package_metadata(package_directory: Path) -> Mapping[str, Any]:
         return tomli.load(f)
 
 
-def get_package_completeness(
-    package_name: str, package_directory: Path
-) -> PackageCompleteness:
-    if package_name == "stdlib":
-        return True
-    metadata = get_package_metadata(package_directory)
-    ignore_missing_stub_used = (
-        metadata.get("tool", {}).get("stubtest", {}).get("ignore_missing_stub", True)
+class StubtestSetting(NiceReprEnum):
+    def __new__(cls, value: int, doc: str) -> StubtestSetting:
+        member = object().__new__(cls)
+        member._value_ = value
+        member.__doc__ = doc
+        return member
+
+    SKIPPED = 0, "Stubtest is skipped for this package"
+    MISSING_STUBS_IGNORED = (
+        1,
+        "Stubtest is tested with the `--ignore-missing-stub` option in CI",
     )
-    return not ignore_missing_stub_used
+    ERROR_ON_MISSING_STUB = (
+        2,
+        "Objects missing from the stub will cause CI to error out",
+    )
 
 
-class PackageStatus(Enum):
+def get_stubtest_setting(package_name: str, package_directory: Path) -> StubtestSetting:
+    if package_name == "stdlib":
+        return StubtestSetting.ERROR_ON_MISSING_STUB
+    metadata = get_package_metadata(package_directory)
+    stubtest_settings = metadata.get("tool", {}).get("stubtest", {})
+    if stubtest_settings.get("skip", False):
+        return StubtestSetting.SKIPPED
+    ignore_missing_stub_used = stubtest_settings.get("ignore_missing_stub", True)
+    return StubtestSetting[
+        "MISSING_STUBS_IGNORED" if ignore_missing_stub_used else "ERROR_ON_MISSING_STUB"
+    ]
+
+
+class PackageStatus(NiceReprEnum):
     STDLIB = auto()
     OBSOLETE = auto()
     NO_LONGER_UPDATED = auto()
     OUT_OF_DATE = auto()
     UP_TO_DATE = auto()
-
-    def __repr__(self) -> str:
-        return f"PackageStatus.{self.name}"
 
 
 async def get_package_status(
@@ -186,40 +191,72 @@ def get_package_line_number(package_directory: Path) -> int:
     )
 
 
+@cache
+def get_pyright_strict_excludelist(typeshed_dir: Path) -> frozenset[Path]:
+    with open(typeshed_dir / "pyrightconfig.stricter.json", encoding="utf-8") as file:
+        # strip comments from the file
+        lines = [line for line in file if not line.strip().startswith("//")]
+    # strip trailing commas from the file
+    valid_json = re.sub(r",(\s*?[\}\]])", r"\1", "\n".join(lines))
+    pyright_config = json.loads(valid_json)
+    assert isinstance(pyright_config, dict)
+    excludelist = pyright_config.get("exclude", [])
+    return frozenset(typeshed_dir / item for item in excludelist)
+
+
+class PyrightSetting(NiceReprEnum):
+    STRICT = auto()
+    NOT_STRICT = auto()
+    STRICT_ON_SOME_FILES = auto()
+
+
+def get_pyright_strictness(
+    package_directory: Path, *, typeshed_dir: Path
+) -> PyrightSetting:
+    excluded_paths = get_pyright_strict_excludelist(typeshed_dir)
+    if package_directory in excluded_paths:
+        return PyrightSetting.NOT_STRICT
+    if any(
+        package_directory in excluded_path.parents for excluded_path in excluded_paths
+    ):
+        return PyrightSetting.STRICT_ON_SOME_FILES
+    return PyrightSetting.STRICT
+
+
 @dataclass
 class PackageStats:
+    package_name: PackageName
     number_of_lines: int
     package_status: PackageStatus
-    package_is_complete: PackageCompleteness
-    annotation_stats: PackageAnnotationStats
-
-
-class PackageData(NamedTuple):
-    name: PackageName
-    stats: PackageStats
+    stubtest_setting: StubtestSetting
+    pyright_setting: PyrightSetting
+    annotation_stats: AnnotationStats
 
 
 async def gather_stats_for_package(
     package_name: PackageName, *, typeshed_dir: Path, session: aiohttp.ClientSession
-) -> PackageData:
+) -> PackageStats:
     if package_name == "stdlib":
         package_directory = typeshed_dir / "stdlib"
     else:
         package_directory = typeshed_dir / "stubs" / package_name
-    stats = PackageStats(
+    return PackageStats(
+        package_name=package_name,
         number_of_lines=get_package_line_number(package_directory),
         package_status=await get_package_status(
             package_name, package_directory, session=session
         ),
-        package_is_complete=get_package_completeness(package_name, package_directory),
+        stubtest_setting=get_stubtest_setting(package_name, package_directory),
+        pyright_setting=get_pyright_strictness(
+            package_directory, typeshed_dir=typeshed_dir
+        ),
         annotation_stats=gather_annotation_stats_on_package(package_directory),
     )
-    return PackageData(name=package_name, stats=stats)
 
 
 async def gather_stats(
     packages: list[str], *, typeshed_dir: Path
-) -> dict[PackageName, PackageStats]:
+) -> Sequence[PackageStats]:
     conn = aiohttp.TCPConnector(limit_per_host=10)
     async with aiohttp.ClientSession(connector=conn) as session:
         tasks = (
@@ -228,18 +265,35 @@ async def gather_stats(
             )
             for package_name in packages
         )
-        return dict(await asyncio.gather(*tasks))
+        return await asyncio.gather(*tasks)
+
+
+class OutputOption(Enum):
+    PPRINT = auto()
+    JSON = auto()
+    CSV = auto()
+    MARKDOWN = auto()
 
 
 class Options(NamedTuple):
     packages: list[str]
     typeshed_dir: Path
-    print_output: bool
+    output_option: OutputOption
+
+
+def _valid_supplied_path(cmd_arg: str, cmd_option: str, suffix: str) -> Path:
+    path = Path(cmd_arg)
+    if path.exists():
+        raise argparse.ArgumentTypeError(f"Path {cmd_arg!r} already exists!")
+    if path.suffix != suffix:
+        raise argparse.ArgumentTypeError(
+            f"Path supplied to {cmd_option!r} must have a {suffix!r} suffix, got"
+            f" {path.suffix!r}"
+        )
+    return path
 
 
 def get_options() -> Options:
-    import argparse
-
     parser = argparse.ArgumentParser(description="Script to gather stats on typeshed")
     parser.add_argument(
         "packages",
@@ -258,12 +312,44 @@ def get_options() -> Options:
         required=True,
         help="Path to the typeshed directory",
     )
-    parser.add_argument(
-        "--print-output",
+
+    output_options = parser.add_mutually_exclusive_group()
+    output_options.add_argument(
+        "--pprint",
         action="store_true",
-        help="Pretty-print ouptut straight to the terminal",
+        help=(
+            "Pretty-print Python representations of the data straight to the terminal"
+            " (default output)"
+        ),
     )
+    output_options.add_argument(
+        "--to-json",
+        action="store_true",
+        help="Convert the data to JSON and print it to the terminal",
+    )
+    output_options.add_argument(
+        "--to-csv-file",
+        type=partial(_valid_supplied_path, cmd_option="--to-csv", suffix=".csv"),
+        help="Save output to a .csv file",
+    )
+    output_options.add_argument(
+        "--to-markdown",
+        type=partial(_valid_supplied_path, cmd_option="--to-markdown", suffix=".md"),
+        help="Save output to a formatted MarkDown file",
+    )
+
     args = parser.parse_args()
+
+    if args.to_json:
+        output_option = OutputOption.JSON
+    elif args.to_csv_file:
+        output_option = OutputOption.CSV
+    elif args.to_markdown:
+        output_option = OutputOption.MARKDOWN
+    else:
+        # --pprint is the default if no option in this group was specified
+        output_option = OutputOption.PPRINT
+
     typeshed_dir = args.typeshed_dir
     packages = args.packages or os.listdir(typeshed_dir) + ["stdlib"]
     stdlib = typeshed_dir / "stdlib"
@@ -274,16 +360,28 @@ def get_options() -> Options:
         and stdlib.is_dir()
     ):
         raise TypeError(f'"{typeshed_dir}" is not a valid typeshed directory')
-    return Options(packages, typeshed_dir, args.print_output)
+    return Options(packages, typeshed_dir, output_option)
+
+
+def pprint_stats(stats: Sequence[PackageStats]) -> None:
+    from pprint import pprint
+
+    pprint({package_info.package_name: package_info for package_info in stats})
+
+
+def do_something_with_the_stats(
+    stats: Sequence[PackageStats], output_option: OutputOption
+) -> None:
+    if output_option is OutputOption.PPRINT:
+        pprint_stats(stats)
+    else:
+        raise NotImplementedError(f"{OutputOption!r} has not yet been implemented!")
 
 
 async def main() -> None:
-    packages, typeshed_dir, print_output = get_options()
+    packages, typeshed_dir, output_option = get_options()
     stats = await gather_stats(packages, typeshed_dir=typeshed_dir)
-    if print_output:
-        from pprint import pprint
-
-        pprint(stats)
+    do_something_with_the_stats(stats, output_option)
 
 
 if __name__ == "__main__":
