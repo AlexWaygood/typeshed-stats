@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import ast
 import asyncio
+import dataclasses
 import json
 import os
 import re
@@ -64,6 +65,16 @@ class AnnotationStats(ast.NodeVisitor):
     explicit_Incomplete_returns: int = 0
     explicit_Any_parameters: int = 0
     explicit_Any_returns: int = 0
+    annotated_variables: int = 0
+    explicit_Any_variables: int = 0
+    explicit_Incomplete_variables: int = 0
+
+    def visit_AnnAssign(self, node: ast.AnnAssign) -> None:
+        self.annotated_variables += 1
+        if is_Any(node.annotation):
+            self.explicit_Any_variables += 1
+        elif is_Incomplete(node.annotation):
+            self.explicit_Incomplete_variables += 1
 
     def visit_arg(self, node: ast.arg) -> None:
         annotation = node.annotation
@@ -108,7 +119,10 @@ def gather_annotation_stats_on_package(package_directory: Path) -> AnnotationSta
         AnnotationStats.gather_stats_on_file(path)
         for path in package_directory.rglob("*.pyi")
     ]
-    package_stats = Counter({field.name: 0 for field in fields(AnnotationStats)})
+    # Sum all the statistics together, to get the statistics for the package as a whole
+    package_stats = Counter(
+        {field.name: 0 for field in dataclasses.fields(AnnotationStats)}
+    )
     for field_name, file_result in product(package_stats, file_results):
         package_stats[field_name] += getattr(file_result, field_name)
     return AnnotationStats(**package_stats)
@@ -363,17 +377,33 @@ def get_options() -> Options:
     return Options(packages, typeshed_dir, output_option)
 
 
-def pprint_stats(stats: Sequence[PackageStats]) -> None:
+def pprint_stats(stats: dict[PackageName, PackageStats]) -> None:
     from pprint import pprint
 
-    pprint({package_info.package_name: package_info for package_info in stats})
+    pprint(stats)
+
+
+def jsonify_stats(stats: dict[PackageName, PackageStats]) -> None:
+    class EnumAwareEncoder(json.JSONEncoder):
+        def default(self, obj: object) -> Any:
+            if isinstance(obj, NiceReprEnum):
+                return obj.name
+            return super().default(obj)
+
+    recursively_dictified_stats = {
+        package_name: dataclasses.asdict(info_package)
+        for package_name, info_package in stats.items()
+    }
+    print(json.dumps(recursively_dictified_stats, indent=2, cls=EnumAwareEncoder))
 
 
 def do_something_with_the_stats(
-    stats: Sequence[PackageStats], output_option: OutputOption
+    stats: dict[PackageName, PackageStats], output_option: OutputOption
 ) -> None:
     if output_option is OutputOption.PPRINT:
         pprint_stats(stats)
+    elif output_option is OutputOption.JSON:
+        jsonify_stats(stats)
     else:
         raise NotImplementedError(f"{OutputOption!r} has not yet been implemented!")
 
@@ -381,7 +411,8 @@ def do_something_with_the_stats(
 async def main() -> None:
     packages, typeshed_dir, output_option = get_options()
     stats = await gather_stats(packages, typeshed_dir=typeshed_dir)
-    do_something_with_the_stats(stats, output_option)
+    stats_as_dict = {info_bundle.package_name: info_bundle for info_bundle in stats}
+    do_something_with_the_stats(stats_as_dict, output_option)
 
 
 if __name__ == "__main__":
