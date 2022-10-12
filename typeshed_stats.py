@@ -16,7 +16,7 @@ from enum import Enum, auto
 from functools import cache, cached_property, partial
 from itertools import product
 from pathlib import Path
-from typing import Any, NamedTuple, TypeVar
+from typing import Any, NamedTuple, TypeVar, get_type_hints
 from typing_extensions import Annotated, TypeAlias
 
 import aiohttp
@@ -110,7 +110,7 @@ class AnnotationStats(ast.NodeVisitor):
     @staticmethod
     def gather_stats_on_file(path: Path) -> AnnotationStats:
         visitor = AnnotationStats()
-        visitor.visit(ast.parse(path.read_text()))
+        visitor.visit(ast.parse(path.read_text(encoding="utf-8")))
         return visitor
 
 
@@ -120,11 +120,10 @@ def gather_annotation_stats_on_package(package_directory: Path) -> AnnotationSta
         for path in package_directory.rglob("*.pyi")
     ]
     # Sum all the statistics together, to get the statistics for the package as a whole
-    package_stats = Counter(
-        {field.name: 0 for field in dataclasses.fields(AnnotationStats)}
+    package_stats: Counter[str] = sum(
+        [Counter(dataclasses.asdict(result)) for result in file_results],
+        start=Counter(),
     )
-    for field_name, file_result in product(package_stats, file_results):
-        package_stats[field_name] += getattr(file_result, field_name)
     return AnnotationStats(**package_stats)
 
 
@@ -141,15 +140,9 @@ class StubtestSetting(NiceReprEnum):
         member.__doc__ = doc
         return member
 
-    SKIPPED = 0, "Stubtest is skipped for this package"
-    MISSING_STUBS_IGNORED = (
-        1,
-        "Stubtest is tested with the `--ignore-missing-stub` option in CI",
-    )
-    ERROR_ON_MISSING_STUB = (
-        2,
-        "Objects missing from the stub will cause CI to error out",
-    )
+    SKIPPED = 0, "Stubtest is skipped in CI for this package"
+    MISSING_STUBS_IGNORED = 1, "`--ignore-missing-stub` is used in CI"
+    ERROR_ON_MISSING_STUB = 2, "Objects missing from the stub cause errors in CI"
 
 
 def get_stubtest_setting(package_name: str, package_directory: Path) -> StubtestSetting:
@@ -293,6 +286,7 @@ class Options(NamedTuple):
     packages: list[str]
     typeshed_dir: Path
     output_option: OutputOption
+    writefile: Path | None
 
 
 def _valid_supplied_path(cmd_arg: str, cmd_option: str, suffix: str) -> Path:
@@ -354,14 +348,19 @@ def get_options() -> Options:
 
     args = parser.parse_args()
 
+    writefile: Path | None
     if args.to_json:
         output_option = OutputOption.JSON
+        writefile = None
     elif args.to_csv_file:
         output_option = OutputOption.CSV
+        writefile = args.to_csv_file
     elif args.to_markdown:
         output_option = OutputOption.MARKDOWN
+        writefile = args.to_markdown
     else:
         # --pprint is the default if no option in this group was specified
+        writefile = None
         output_option = OutputOption.PPRINT
 
     typeshed_dir = args.typeshed_dir
@@ -374,45 +373,71 @@ def get_options() -> Options:
         and stdlib.is_dir()
     ):
         raise TypeError(f'"{typeshed_dir}" is not a valid typeshed directory')
-    return Options(packages, typeshed_dir, output_option)
+    return Options(packages, typeshed_dir, output_option, writefile)
 
 
-def pprint_stats(stats: dict[PackageName, PackageStats]) -> None:
+def pprint_stats(stats: Sequence[PackageStats]) -> None:
     from pprint import pprint
 
-    pprint(stats)
+    pprint({info_bundle.package_name: info_bundle for info_bundle in stats})
 
 
-def jsonify_stats(stats: dict[PackageName, PackageStats]) -> None:
+def jsonify_stats(stats: Sequence[PackageStats]) -> None:
     class EnumAwareEncoder(json.JSONEncoder):
         def default(self, obj: object) -> Any:
             if isinstance(obj, NiceReprEnum):
                 return obj.name
             return super().default(obj)
 
-    recursively_dictified_stats = {
-        package_name: dataclasses.asdict(info_package)
-        for package_name, info_package in stats.items()
-    }
-    print(json.dumps(recursively_dictified_stats, indent=2, cls=EnumAwareEncoder))
+    dictified_stats = {info.package_name: dataclasses.asdict(info) for info in stats}
+    print(json.dumps(dictified_stats, indent=2, cls=EnumAwareEncoder))
+
+
+def save_stats_to_csv(stats: Sequence[PackageStats], writefile: Path) -> None:
+    import csv
+
+    # First, dictify
+    converted_stats = [dataclasses.asdict(info) for info in stats]
+
+    # Then, flatten the data, and stringify the enums
+    enum_fields = [
+        key
+        for key, val in get_type_hints(PackageStats).items()
+        if issubclass(val, Enum)
+    ]
+    for info in converted_stats:
+        info |= info["annotation_stats"]
+        del info["annotation_stats"]
+        for field in enum_fields:
+            info[field] = info[field].name
+
+    # Now, write to csv
+    fieldnames = converted_stats[0].keys()
+    with open(writefile, "w", newline="") as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for info in converted_stats:
+            writer.writerow(info)
 
 
 def do_something_with_the_stats(
-    stats: dict[PackageName, PackageStats], output_option: OutputOption
+    stats: Sequence[PackageStats], output_option: OutputOption, writefile: Path | None
 ) -> None:
     if output_option is OutputOption.PPRINT:
         pprint_stats(stats)
     elif output_option is OutputOption.JSON:
         jsonify_stats(stats)
+    elif output_option is OutputOption.CSV:
+        assert writefile is not None
+        save_stats_to_csv(stats, writefile)
     else:
         raise NotImplementedError(f"{OutputOption!r} has not yet been implemented!")
 
 
 async def main() -> None:
-    packages, typeshed_dir, output_option = get_options()
+    packages, typeshed_dir, output_option, writefile = get_options()
     stats = await gather_stats(packages, typeshed_dir=typeshed_dir)
-    stats_as_dict = {info_bundle.package_name: info_bundle for info_bundle in stats}
-    do_something_with_the_stats(stats_as_dict, output_option)
+    do_something_with_the_stats(stats, output_option, writefile)
 
 
 if __name__ == "__main__":
