@@ -14,7 +14,7 @@ from dataclasses import dataclass
 from enum import Enum
 from functools import cache
 from pathlib import Path
-from typing import Any, NamedTuple, TypeVar, get_type_hints
+from typing import Any, NamedTuple, get_type_hints
 from typing_extensions import Literal, TypeAlias
 
 import aiohttp
@@ -36,11 +36,6 @@ class NiceReprEnum(Enum):
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}.{self.name}"
 
-
-NREWDSelf = TypeVar("NREWDSelf", bound="NiceReprEnumWithDocstrings")
-
-
-class NiceReprEnumWithDocstrings(NiceReprEnum):
     @property
     def __doc__(self) -> str:  # type: ignore[override]
         return self.value  # type: ignore[no-any-return]
@@ -150,7 +145,7 @@ def get_package_metadata(package_directory: Path) -> Mapping[str, Any]:
         return tomli.load(f)
 
 
-class StubtestSetting(NiceReprEnumWithDocstrings):
+class StubtestSetting(NiceReprEnum):
     SKIPPED = "Stubtest is skipped in CI for this package."
     MISSING_STUBS_IGNORED = (
         "The `--ignore-missing-stub` stubtest setting is used in CI."
@@ -173,7 +168,7 @@ def get_stubtest_setting(package_name: str, package_directory: Path) -> Stubtest
     ]
 
 
-class PackageStatus(NiceReprEnumWithDocstrings):
+class PackageStatus(NiceReprEnum):
     STDLIB = (
         "These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly"
         " up to date, and tested against all currently supported Python versions"
@@ -229,7 +224,8 @@ async def get_package_status(
 
 def get_package_line_number(package_directory: Path) -> int:
     return sum(
-        len(stub.read_text().splitlines()) for stub in package_directory.rglob("*.pyi")
+        len(stub.read_text(encoding="utf-8").splitlines())
+        for stub in package_directory.rglob("*.pyi")
     )
 
 
@@ -246,7 +242,7 @@ def get_pyright_strict_excludelist(typeshed_dir: Path) -> frozenset[Path]:
     return frozenset(typeshed_dir / item for item in excludelist)
 
 
-class PyrightSetting(NiceReprEnumWithDocstrings):
+class PyrightSetting(NiceReprEnum):
     STRICT = "All files are tested with the stricter pyright settings in CI."
     NOT_STRICT = "All files are excluded from the stricter pyright settings in CI."
     STRICT_ON_SOME_FILES = (
@@ -421,9 +417,7 @@ def get_options() -> Options:
 def jsonify_stats(stats: Sequence[PackageStats]) -> str:
     class EnumAwareEncoder(json.JSONEncoder):
         def default(self, obj: object) -> Any:
-            if isinstance(obj, NiceReprEnum):
-                return obj.name
-            return super().default(obj)
+            return obj.name if isinstance(obj, NiceReprEnum) else super().default(obj)
 
     dictified_stats = {info.package_name: dataclasses.asdict(info) for info in stats}
     return json.dumps(dictified_stats, indent=2, cls=EnumAwareEncoder)
