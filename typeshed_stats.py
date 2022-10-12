@@ -468,7 +468,8 @@ def markdownify_stats(stats: Sequence[PackageStats]) -> str:
         """
         ## Stats on typeshed's stubs for {package_name}
 
-        ### Number of lines: {number_of_lines}
+        ### Number of lines
+        {number_of_lines}
 
         ### Package status: {package_status.formatted_name}
         {package_status.value}
@@ -499,8 +500,8 @@ def markdownify_stats(stats: Sequence[PackageStats]) -> str:
         )
         return template.format(**package_as_dict)
 
-    markdown_page = "# Stats on typeshed's stubs for various packages\n\n"
-    markdown_page += "\n".join(format_package(info) for info in stats)
+    markdown_page = "# Stats on typeshed's stubs for various packages\n\n\n"
+    markdown_page += "\n\n".join(format_package(info) for info in stats)
     return markdown_page
 
 

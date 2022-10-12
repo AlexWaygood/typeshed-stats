@@ -1,9 +1,11 @@
 # Stats on typeshed's stubs for various packages
 
 
+
 ## Stats on typeshed's stubs for aiofiles
 
-### Number of lines: 615
+### Number of lines
+615
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -28,9 +30,11 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for annoy
 
-### Number of lines: 64
+### Number of lines
+64
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -55,9 +59,11 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 - Explicit incomplete variables: 1
 
 
+
 ## Stats on typeshed's stubs for appdirs
 
-### Number of lines: 55
+### Number of lines
+55
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -82,9 +88,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for atomicwrites
 
-### Number of lines: 20
+### Number of lines
+20
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -109,9 +117,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for aws-xray-sdk
 
-### Number of lines: 800
+### Number of lines
+800
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -136,9 +146,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for babel
 
-### Number of lines: 1053
+### Number of lines
+1053
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -163,9 +175,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for backports.ssl_match_hostname
 
-### Number of lines: 7
+### Number of lines
+7
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -190,9 +204,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for beautifulsoup4
 
-### Number of lines: 840
+### Number of lines
+840
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -217,9 +233,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for bleach
 
-### Number of lines: 194
+### Number of lines
+194
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -244,9 +262,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for boto
 
-### Number of lines: 1956
+### Number of lines
+1956
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -271,9 +291,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for braintree
 
-### Number of lines: 3136
+### Number of lines
+3136
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -298,9 +320,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for cachetools
 
-### Number of lines: 130
+### Number of lines
+130
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -325,9 +349,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for caldav
 
-### Number of lines: 510
+### Number of lines
+510
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -352,9 +378,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for certifi
 
-### Number of lines: 2
+### Number of lines
+2
 
 ### Package status: obsolete
 Upstream has added type hints; these typeshed stubs are now obsolete.
@@ -379,9 +407,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for cffi
 
-### Number of lines: 919
+### Number of lines
+919
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -406,9 +436,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 115
 
 
+
 ## Stats on typeshed's stubs for chardet
 
-### Number of lines: 142
+### Number of lines
+142
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -433,9 +465,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for chevron
 
-### Number of lines: 43
+### Number of lines
+43
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -460,9 +494,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for click-spinner
 
-### Number of lines: 37
+### Number of lines
+37
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -487,9 +523,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for colorama
 
-### Number of lines: 209
+### Number of lines
+209
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -514,9 +552,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for commonmark
 
-### Number of lines: 401
+### Number of lines
+401
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -541,9 +581,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for console-menu
 
-### Number of lines: 732
+### Number of lines
+732
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -568,9 +610,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for contextvars
 
-### Number of lines: 47
+### Number of lines
+47
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -595,9 +639,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for croniter
 
-### Number of lines: 95
+### Number of lines
+95
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -622,9 +668,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for cryptography
 
-### Number of lines: 1985
+### Number of lines
+1985
 
 ### Package status: obsolete
 Upstream has added type hints; these typeshed stubs are now obsolete.
@@ -649,9 +697,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for D3DShot
 
-### Number of lines: 657
+### Number of lines
+657
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -676,9 +726,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for dateparser
 
-### Number of lines: 531
+### Number of lines
+531
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -703,9 +755,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for DateTimeRange
 
-### Number of lines: 67
+### Number of lines
+67
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -730,9 +784,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for decorator
 
-### Number of lines: 68
+### Number of lines
+68
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -757,9 +813,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for Deprecated
 
-### Number of lines: 65
+### Number of lines
+65
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -784,9 +842,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for dj-database-url
 
-### Number of lines: 27
+### Number of lines
+27
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -811,9 +871,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for docopt
 
-### Number of lines: 12
+### Number of lines
+12
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -838,9 +900,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for docutils
 
-### Number of lines: 595
+### Number of lines
+595
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -865,9 +929,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for editdistance
 
-### Number of lines: 9
+### Number of lines
+9
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -892,9 +958,11 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for emoji
 
-### Number of lines: 73
+### Number of lines
+73
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -919,9 +987,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for entrypoints
 
-### Number of lines: 49
+### Number of lines
+49
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -946,9 +1016,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for first
 
-### Number of lines: 17
+### Number of lines
+17
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -973,9 +1045,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for flake8-2020
 
-### Number of lines: 15
+### Number of lines
+15
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1000,9 +1074,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for flake8-bugbear
 
-### Number of lines: 28
+### Number of lines
+28
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1027,9 +1103,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for flake8-builtins
 
-### Number of lines: 11
+### Number of lines
+11
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1054,9 +1132,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for flake8-docstrings
 
-### Number of lines: 20
+### Number of lines
+20
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1081,9 +1161,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for flake8-plugin-utils
 
-### Number of lines: 69
+### Number of lines
+69
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1108,9 +1190,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for flake8-rst-docstrings
 
-### Number of lines: 34
+### Number of lines
+34
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1135,9 +1219,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for flake8-simplify
 
-### Number of lines: 9
+### Number of lines
+9
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1162,9 +1248,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for flake8-typing-imports
 
-### Number of lines: 16
+### Number of lines
+16
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1189,9 +1277,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for Flask-Cors
 
-### Number of lines: 138
+### Number of lines
+138
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1216,9 +1306,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for Flask-SQLAlchemy
 
-### Number of lines: 125
+### Number of lines
+125
 
 ### Package status: out of date
 These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
@@ -1243,9 +1335,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for fpdf2
 
-### Number of lines: 1914
+### Number of lines
+1914
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1270,9 +1364,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 27
 
 
+
 ## Stats on typeshed's stubs for gdb
 
-### Number of lines: 920
+### Number of lines
+920
 
 ### Package status: not on pypi
 The upstream for this package doesn't exist on PyPI, so whether or not these stubs are up to date or not is unknown.
@@ -1297,9 +1393,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for google-cloud-ndb
 
-### Number of lines: 1572
+### Number of lines
+1572
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1324,9 +1422,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for hdbcli
 
-### Number of lines: 123
+### Number of lines
+123
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1351,9 +1451,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for html5lib
 
-### Number of lines: 745
+### Number of lines
+745
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1378,9 +1480,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for httplib2
 
-### Number of lines: 280
+### Number of lines
+280
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1405,9 +1509,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for humanfriendly
 
-### Number of lines: 378
+### Number of lines
+378
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1432,9 +1538,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for invoke
 
-### Number of lines: 803
+### Number of lines
+803
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1459,9 +1567,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for JACK-Client
 
-### Number of lines: 287
+### Number of lines
+287
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1486,9 +1596,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for jmespath
 
-### Number of lines: 181
+### Number of lines
+181
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1513,9 +1625,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for jsonschema
 
-### Number of lines: 424
+### Number of lines
+424
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1540,9 +1654,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for keyboard
 
-### Number of lines: 293
+### Number of lines
+293
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1567,9 +1683,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for ldap3
 
-### Number of lines: 2900
+### Number of lines
+2900
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1594,9 +1712,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for Markdown
 
-### Number of lines: 791
+### Number of lines
+791
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1621,9 +1741,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for mock
 
-### Number of lines: 326
+### Number of lines
+326
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1648,9 +1770,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for mypy-extensions
 
-### Number of lines: 70
+### Number of lines
+70
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1675,9 +1799,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for mysqlclient
 
-### Number of lines: 1245
+### Number of lines
+1245
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1702,9 +1828,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for oauthlib
 
-### Number of lines: 1481
+### Number of lines
+1481
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1729,9 +1857,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for openpyxl
 
-### Number of lines: 9721
+### Number of lines
+9721
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1756,9 +1886,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for opentracing
 
-### Number of lines: 369
+### Number of lines
+369
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1783,9 +1915,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for paho-mqtt
 
-### Number of lines: 531
+### Number of lines
+531
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1810,9 +1944,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for paramiko
 
-### Number of lines: 1950
+### Number of lines
+1950
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1837,9 +1973,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for parsimonious
 
-### Number of lines: 217
+### Number of lines
+217
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1864,9 +2002,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for passlib
 
-### Number of lines: 1947
+### Number of lines
+1947
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1891,9 +2031,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for passpy
 
-### Number of lines: 39
+### Number of lines
+39
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1918,9 +2060,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for peewee
 
-### Number of lines: 1769
+### Number of lines
+1769
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1945,9 +2089,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 369
 
 
+
 ## Stats on typeshed's stubs for pep8-naming
 
-### Number of lines: 30
+### Number of lines
+30
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1972,9 +2118,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for Pillow
 
-### Number of lines: 2742
+### Number of lines
+2742
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1999,9 +2147,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for playsound
 
-### Number of lines: 5
+### Number of lines
+5
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2026,9 +2176,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for polib
 
-### Number of lines: 158
+### Number of lines
+158
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2053,9 +2205,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for prettytable
 
-### Number of lines: 305
+### Number of lines
+305
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2080,9 +2234,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for protobuf
 
-### Number of lines: 4768
+### Number of lines
+4768
 
 ### Package status: out of date
 These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
@@ -2107,9 +2263,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for psutil
 
-### Number of lines: 1268
+### Number of lines
+1268
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2134,9 +2292,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for psycopg2
 
-### Number of lines: 1655
+### Number of lines
+1655
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2161,9 +2321,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for pyaudio
 
-### Number of lines: 166
+### Number of lines
+166
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2188,9 +2350,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for PyAutoGUI
 
-### Number of lines: 235
+### Number of lines
+235
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2215,9 +2379,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for pycurl
 
-### Number of lines: 647
+### Number of lines
+647
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2242,9 +2408,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for pyfarmhash
 
-### Number of lines: 9
+### Number of lines
+9
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2269,9 +2437,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for pyflakes
 
-### Number of lines: 514
+### Number of lines
+514
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2296,9 +2466,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for Pygments
 
-### Number of lines: 806
+### Number of lines
+806
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2323,9 +2495,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for pyinstaller
 
-### Number of lines: 468
+### Number of lines
+468
 
 ### Package status: out of date
 These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
@@ -2350,9 +2524,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for PyMySQL
 
-### Number of lines: 1076
+### Number of lines
+1076
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2377,9 +2553,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for pynput
 
-### Number of lines: 297
+### Number of lines
+297
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2404,9 +2582,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for pyOpenSSL
 
-### Number of lines: 420
+### Number of lines
+420
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2431,9 +2611,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for pyRFC3339
 
-### Number of lines: 18
+### Number of lines
+18
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2458,9 +2640,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for PyScreeze
 
-### Number of lines: 196
+### Number of lines
+196
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2485,9 +2669,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for pysftp
 
-### Number of lines: 173
+### Number of lines
+173
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2512,9 +2698,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for pytest-lazy-fixture
 
-### Number of lines: 15
+### Number of lines
+15
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2539,9 +2727,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for python-dateutil
 
-### Number of lines: 451
+### Number of lines
+451
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2566,9 +2756,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for python-gflags
 
-### Number of lines: 310
+### Number of lines
+310
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2593,9 +2785,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for python-jose
 
-### Number of lines: 399
+### Number of lines
+399
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2620,9 +2814,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for python-nmap
 
-### Number of lines: 131
+### Number of lines
+131
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2647,9 +2843,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for python-slugify
 
-### Number of lines: 30
+### Number of lines
+30
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2674,9 +2872,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for pytz
 
-### Number of lines: 142
+### Number of lines
+142
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2701,9 +2901,11 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 - Explicit incomplete variables: 5
 
 
+
 ## Stats on typeshed's stubs for pyvmomi
 
-### Number of lines: 218
+### Number of lines
+218
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2728,9 +2930,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for pywin32
 
-### Number of lines: 34966
+### Number of lines
+34966
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2755,9 +2959,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 2747
 
 
+
 ## Stats on typeshed's stubs for PyYAML
 
-### Number of lines: 1278
+### Number of lines
+1278
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2782,9 +2988,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for redis
 
-### Number of lines: 5536
+### Number of lines
+5536
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2809,9 +3017,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 6
 
 
+
 ## Stats on typeshed's stubs for regex
 
-### Number of lines: 699
+### Number of lines
+699
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2836,9 +3046,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for requests
 
-### Number of lines: 1034
+### Number of lines
+1034
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2863,9 +3075,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for retry
 
-### Number of lines: 29
+### Number of lines
+29
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2890,9 +3104,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for Send2Trash
 
-### Number of lines: 19
+### Number of lines
+19
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2917,9 +3133,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for setuptools
 
-### Number of lines: 2732
+### Number of lines
+2732
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2944,9 +3162,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 9
 
 
+
 ## Stats on typeshed's stubs for simplejson
 
-### Number of lines: 58
+### Number of lines
+58
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2971,9 +3191,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for singledispatch
 
-### Number of lines: 28
+### Number of lines
+28
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2998,9 +3220,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for six
 
-### Number of lines: 362
+### Number of lines
+362
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3025,9 +3249,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for slumber
 
-### Number of lines: 73
+### Number of lines
+73
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3052,9 +3278,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for SQLAlchemy
 
-### Number of lines: 16239
+### Number of lines
+16239
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3079,9 +3307,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for stdlib-list
 
-### Number of lines: 20
+### Number of lines
+20
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3106,9 +3336,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for stripe
 
-### Number of lines: 1580
+### Number of lines
+1580
 
 ### Package status: out of date
 These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
@@ -3133,9 +3365,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for tabulate
 
-### Number of lines: 57
+### Number of lines
+57
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3160,9 +3394,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for termcolor
 
-### Number of lines: 14
+### Number of lines
+14
 
 ### Package status: obsolete
 Upstream has added type hints; these typeshed stubs are now obsolete.
@@ -3187,9 +3423,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for toml
 
-### Number of lines: 154
+### Number of lines
+154
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3214,9 +3452,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for toposort
 
-### Number of lines: 17
+### Number of lines
+17
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3241,9 +3481,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for tqdm
 
-### Number of lines: 1445
+### Number of lines
+1445
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3268,9 +3510,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 67
 
 
+
 ## Stats on typeshed's stubs for tree-sitter
 
-### Number of lines: 131
+### Number of lines
+131
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3295,9 +3539,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for tree-sitter-languages
 
-### Number of lines: 11
+### Number of lines
+11
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3322,9 +3568,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for ttkthemes
 
-### Number of lines: 84
+### Number of lines
+84
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3349,9 +3597,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for typed-ast
 
-### Number of lines: 724
+### Number of lines
+724
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3376,9 +3626,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for tzlocal
 
-### Number of lines: 23
+### Number of lines
+23
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3403,9 +3655,11 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for ujson
 
-### Number of lines: 37
+### Number of lines
+37
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3430,9 +3684,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for urllib3
 
-### Number of lines: 811
+### Number of lines
+811
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3457,9 +3713,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for vobject
 
-### Number of lines: 598
+### Number of lines
+598
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3484,9 +3742,11 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for waitress
 
-### Number of lines: 711
+### Number of lines
+711
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3511,9 +3771,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for whatthepatch
 
-### Number of lines: 109
+### Number of lines
+109
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3538,9 +3800,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for xmltodict
 
-### Number of lines: 37
+### Number of lines
+37
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3565,9 +3829,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for xxhash
 
-### Number of lines: 53
+### Number of lines
+53
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3592,9 +3858,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 1
 
 
+
 ## Stats on typeshed's stubs for zxcvbn
 
-### Number of lines: 202
+### Number of lines
+202
 
 ### Package status: up to date
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3619,9 +3887,11 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit incomplete variables: 0
 
 
+
 ## Stats on typeshed's stubs for stdlib
 
-### Number of lines: 55185
+### Number of lines
+55185
 
 ### Package status: stdlib
 These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly up to date, and tested against all currently supported Python versions in CI.
