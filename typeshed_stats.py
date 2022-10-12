@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import argparse
 import ast
 import asyncio
 import dataclasses
@@ -11,18 +10,23 @@ import sys
 import urllib.parse
 from collections import Counter
 from collections.abc import Mapping, Sequence
-from dataclasses import dataclass, fields
-from enum import Enum, auto
-from functools import cache, cached_property, partial
-from itertools import product
+from dataclasses import dataclass
+from enum import Enum
+from functools import cache
 from pathlib import Path
 from typing import Any, NamedTuple, TypeVar, get_type_hints
-from typing_extensions import Annotated, TypeAlias
+from typing_extensions import Literal, TypeAlias
 
 import aiohttp
 import tomli
 from packaging.specifiers import SpecifierSet
 from packaging.version import Version
+
+assert sys.version_info >= (3, 10), "Python 3.10+ is required."
+
+
+__all__ = ["main", "gather_stats", "format_stats", "OutputOption"]
+
 
 ExitCode: TypeAlias = int
 PackageName: TypeAlias = str
@@ -31,6 +35,19 @@ PackageName: TypeAlias = str
 class NiceReprEnum(Enum):
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}.{self.name}"
+
+
+NREWDSelf = TypeVar("NREWDSelf", bound="NiceReprEnumWithDocstrings")
+
+
+class NiceReprEnumWithDocstrings(NiceReprEnum):
+    @property
+    def __doc__(self) -> str:  # type: ignore[override]
+        return self.value  # type: ignore[no-any-return]
+
+    @property
+    def formatted_name(self) -> str:
+        return " ".join(self.name.split("_")).lower()
 
 
 def is_Any(annotation: ast.expr) -> bool:
@@ -133,16 +150,14 @@ def get_package_metadata(package_directory: Path) -> Mapping[str, Any]:
         return tomli.load(f)
 
 
-class StubtestSetting(NiceReprEnum):
-    def __new__(cls, value: int, doc: str) -> StubtestSetting:
-        member = object().__new__(cls)
-        member._value_ = value
-        member.__doc__ = doc
-        return member
-
-    SKIPPED = 0, "Stubtest is skipped in CI for this package"
-    MISSING_STUBS_IGNORED = 1, "`--ignore-missing-stub` is used in CI"
-    ERROR_ON_MISSING_STUB = 2, "Objects missing from the stub cause errors in CI"
+class StubtestSetting(NiceReprEnumWithDocstrings):
+    SKIPPED = "Stubtest is skipped in CI for this package."
+    MISSING_STUBS_IGNORED = (
+        "The `--ignore-missing-stub` stubtest setting is used in CI."
+    )
+    ERROR_ON_MISSING_STUB = (
+        "Objects missing from the stub cause stubtest to emit an error in CI."
+    )
 
 
 def get_stubtest_setting(package_name: str, package_directory: Path) -> StubtestSetting:
@@ -158,12 +173,29 @@ def get_stubtest_setting(package_name: str, package_directory: Path) -> Stubtest
     ]
 
 
-class PackageStatus(NiceReprEnum):
-    STDLIB = auto()
-    OBSOLETE = auto()
-    NO_LONGER_UPDATED = auto()
-    OUT_OF_DATE = auto()
-    UP_TO_DATE = auto()
+class PackageStatus(NiceReprEnumWithDocstrings):
+    STDLIB = (
+        "These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly"
+        " up to date, and tested against all currently supported Python versions"
+        " in CI."
+    )
+    NOT_ON_PYPI = (
+        "The upstream for this package doesn't exist on PyPI,"
+        " so whether or not these stubs are up to date or not is unknown."
+    )
+    OBSOLETE = "Upstream has added type hints; these typeshed stubs are now obsolete."
+    NO_LONGER_UPDATED = (
+        "Upstream has not added type hints,"
+        " but these stubs are no longer updated for some other reason."
+    )
+    OUT_OF_DATE = (
+        "These stubs are out of date. In CI, stubtest tests these stubs against an"
+        " older version of this package than the latest that's available."
+    )
+    UP_TO_DATE = (
+        "These stubs should be fairly up to date. In CI, stubtest tests these stubs"
+        " against the latest version of the package that's available."
+    )
 
 
 async def get_package_status(
@@ -172,6 +204,9 @@ async def get_package_status(
     if package_name == "stdlib":
         # This function isn't really relevant for the stdlib stubs
         return PackageStatus.STDLIB
+
+    if package_name == "gdb":
+        return PackageStatus.NOT_ON_PYPI
 
     metadata = get_package_metadata(package_directory)
 
@@ -211,10 +246,13 @@ def get_pyright_strict_excludelist(typeshed_dir: Path) -> frozenset[Path]:
     return frozenset(typeshed_dir / item for item in excludelist)
 
 
-class PyrightSetting(NiceReprEnum):
-    STRICT = auto()
-    NOT_STRICT = auto()
-    STRICT_ON_SOME_FILES = auto()
+class PyrightSetting(NiceReprEnumWithDocstrings):
+    STRICT = "All files are tested with the stricter pyright settings in CI."
+    NOT_STRICT = "All files are excluded from the stricter pyright settings in CI."
+    STRICT_ON_SOME_FILES = (
+        "Some files are tested with the stricter pyright settings in CI;"
+        " some are excluded."
+    )
 
 
 def get_pyright_strictness(
@@ -261,7 +299,7 @@ async def gather_stats_for_package(
     )
 
 
-async def gather_stats(
+async def _gather_stats(
     packages: list[str], *, typeshed_dir: Path
 ) -> Sequence[PackageStats]:
     conn = aiohttp.TCPConnector(limit_per_host=10)
@@ -275,11 +313,8 @@ async def gather_stats(
         return await asyncio.gather(*tasks)
 
 
-class OutputOption(Enum):
-    PPRINT = auto()
-    JSON = auto()
-    CSV = auto()
-    MARKDOWN = auto()
+def gather_stats(packages: list[str], *, typeshed_dir: Path) -> Sequence[PackageStats]:
+    return asyncio.run(_gather_stats(packages, typeshed_dir=typeshed_dir))
 
 
 class Options(NamedTuple):
@@ -289,19 +324,9 @@ class Options(NamedTuple):
     writefile: Path | None
 
 
-def _valid_supplied_path(cmd_arg: str, cmd_option: str, suffix: str) -> Path:
-    path = Path(cmd_arg)
-    if path.exists():
-        raise argparse.ArgumentTypeError(f"Path {cmd_arg!r} already exists!")
-    if path.suffix != suffix:
-        raise argparse.ArgumentTypeError(
-            f"Path supplied to {cmd_option!r} must have a {suffix!r} suffix, got"
-            f" {path.suffix!r}"
-        )
-    return path
-
-
 def get_options() -> Options:
+    import argparse
+
     parser = argparse.ArgumentParser(description="Script to gather stats on typeshed")
     parser.add_argument(
         "packages",
@@ -309,8 +334,8 @@ def get_options() -> Options:
         nargs="*",
         action="extend",
         help=(
-            "Packages to gather stats on (defaults to all third-party packages, plus"
-            " the stdlib)"
+            "Packages to gather stats on"
+            " (defaults to all third-party packages, plus the stdlib)"
         ),
     )
     parser.add_argument(
@@ -320,69 +345,78 @@ def get_options() -> Options:
         required=True,
         help="Path to the typeshed directory",
     )
+    parser.add_argument(
+        "-o",
+        "--overwrite",
+        action="store_true",
+        help=(
+            "Override the path passed to `--file` if it already exists"
+            " (defaults to False)"
+        ),
+    )
 
     output_options = parser.add_mutually_exclusive_group()
     output_options.add_argument(
         "--pprint",
         action="store_true",
-        help=(
-            "Pretty-print Python representations of the data straight to the terminal"
-            " (default output)"
-        ),
+        help="Get pretty-printed Python representations of the data (default output)",
     )
     output_options.add_argument(
-        "--to-json",
-        action="store_true",
-        help="Convert the data to JSON and print it to the terminal",
+        "--to-json", action="store_true", help="Print output as JSON"
     )
     output_options.add_argument(
-        "--to-csv-file",
-        type=partial(_valid_supplied_path, cmd_option="--to-csv", suffix=".csv"),
-        help="Save output to a .csv file",
+        "--to-csv", action="store_true", help="Print output in csv format"
     )
     output_options.add_argument(
-        "--to-markdown",
-        type=partial(_valid_supplied_path, cmd_option="--to-markdown", suffix=".md"),
-        help="Save output to a formatted MarkDown file",
+        "--to-markdown", action="store_true", help="Print output as formatted MarkDown"
+    )
+    output_options.add_argument(
+        "-f",
+        "--to-file",
+        type=Path,
+        help="File to write output to (defaults to sys.stdout).",
     )
 
     args = parser.parse_args()
+    writefile: Path | None = args.to_file
 
-    writefile: Path | None
-    if args.to_json:
+    if writefile:
+        suffix = writefile.suffix
+        try:
+            output_option = next(
+                option
+                for option in OutputOption
+                if option.required_file_extension == suffix
+            )
+        except StopIteration:
+            raise TypeError(
+                f"Unrecognised file extension {suffix!r} passed to --file (choose from"
+                f" {[option.required_file_extension for option in OutputOption]})"
+            ) from None
+        if writefile.exists() and not args.overwrite:
+            raise TypeError(f'"{writefile}" already exists!')
+    elif args.to_json:
         output_option = OutputOption.JSON
-        writefile = None
-    elif args.to_csv_file:
+    elif args.to_csv:
         output_option = OutputOption.CSV
-        writefile = args.to_csv_file
     elif args.to_markdown:
         output_option = OutputOption.MARKDOWN
-        writefile = args.to_markdown
     else:
         # --pprint is the default if no option in this group was specified
-        writefile = None
         output_option = OutputOption.PPRINT
 
     typeshed_dir = args.typeshed_dir
-    packages = args.packages or os.listdir(typeshed_dir) + ["stdlib"]
-    stdlib = typeshed_dir / "stdlib"
-    if not (
-        typeshed_dir.exists()
-        and typeshed_dir.is_dir()
-        and stdlib.exists()
-        and stdlib.is_dir()
-    ):
-        raise TypeError(f'"{typeshed_dir}" is not a valid typeshed directory')
+    stubs_dir = typeshed_dir / "stubs"
+    for folder in typeshed_dir, (typeshed_dir / "stdlib"), stubs_dir:
+        if not folder.exists() and folder.is_dir():
+            raise TypeError(f'"{typeshed_dir}" is not a valid typeshed directory')
+
+    packages = args.packages or os.listdir(stubs_dir) + ["stdlib"]
+
     return Options(packages, typeshed_dir, output_option, writefile)
 
 
-def pprint_stats(stats: Sequence[PackageStats]) -> None:
-    from pprint import pprint
-
-    pprint({info_bundle.package_name: info_bundle for info_bundle in stats})
-
-
-def jsonify_stats(stats: Sequence[PackageStats]) -> None:
+def jsonify_stats(stats: Sequence[PackageStats]) -> str:
     class EnumAwareEncoder(json.JSONEncoder):
         def default(self, obj: object) -> Any:
             if isinstance(obj, NiceReprEnum):
@@ -390,11 +424,12 @@ def jsonify_stats(stats: Sequence[PackageStats]) -> None:
             return super().default(obj)
 
     dictified_stats = {info.package_name: dataclasses.asdict(info) for info in stats}
-    print(json.dumps(dictified_stats, indent=2, cls=EnumAwareEncoder))
+    return json.dumps(dictified_stats, indent=2, cls=EnumAwareEncoder)
 
 
-def save_stats_to_csv(stats: Sequence[PackageStats], writefile: Path) -> None:
+def csvify_stats(stats: Sequence[PackageStats]) -> str:
     import csv
+    import io
 
     # First, dictify
     converted_stats = [dataclasses.asdict(info) for info in stats]
@@ -413,37 +448,112 @@ def save_stats_to_csv(stats: Sequence[PackageStats], writefile: Path) -> None:
 
     # Now, write to csv
     fieldnames = converted_stats[0].keys()
-    with open(writefile, "w", newline="") as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-        writer.writeheader()
-        for info in converted_stats:
-            writer.writerow(info)
+    csvfile = io.StringIO(newline="")
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    for info in converted_stats:
+        writer.writerow(info)
+    return csvfile.getvalue()
 
 
-def do_something_with_the_stats(
-    stats: Sequence[PackageStats], output_option: OutputOption, writefile: Path | None
-) -> None:
-    if output_option is OutputOption.PPRINT:
-        pprint_stats(stats)
-    elif output_option is OutputOption.JSON:
-        jsonify_stats(stats)
-    elif output_option is OutputOption.CSV:
-        assert writefile is not None
-        save_stats_to_csv(stats, writefile)
+def markdownify_stats(stats: Sequence[PackageStats]) -> str:
+    import textwrap
+
+    def format_enum_member(enum_member: Enum) -> str:
+        return " ".join(enum_member.name.split("_")).lower()
+
+    template = textwrap.dedent(
+        """
+        ## Stats on typeshed's stubs for {package_name}
+
+        ### Number of lines: {number_of_lines}
+
+        ### Package status: {package_status.formatted_name}
+        {package_status.value}
+
+        ### Stubtest settings in CI: {stubtest_setting.formatted_name}
+        {stubtest_setting.value}
+
+        ### Pyright settings in CI: {pyright_setting.formatted_name}
+        {pyright_setting.value}
+
+        ### Statistics on the annotations in typeshed's stubs for {package_name}
+        {annotation_stats}
+        """
+    )
+
+    def format_annotation_stats(annotation_stats: dict[str, int]) -> str:
+        def format_key(key: str) -> str:
+            return " ".join(key.split("_")).capitalize()
+
+        return "- " + "\n- ".join(
+            f"{format_key(key)}: {val}" for key, val in annotation_stats.items()
+        )
+
+    def format_package(package_stats: PackageStats) -> str:
+        package_as_dict = dataclasses.asdict(package_stats)
+        package_as_dict["annotation_stats"] = format_annotation_stats(
+            package_as_dict["annotation_stats"]
+        )
+        return template.format(**package_as_dict)
+
+    markdown_page = "# Stats on typeshed's stubs for various packages\n\n"
+    markdown_page += "\n".join(format_package(info) for info in stats)
+    return markdown_page
+
+
+def format_stats_for_pprinting(stats: Sequence[PackageStats]) -> str:
+    return str({info_bundle.package_name: info_bundle for info_bundle in stats})
+
+
+class OutputOption(Enum):
+    PPRINT = ".txt", format_stats_for_pprinting
+    JSON = ".json", jsonify_stats
+    CSV = ".csv", csvify_stats
+    MARKDOWN = ".md", markdownify_stats
+
+    @property
+    def required_file_extension(self) -> str:
+        return self.value[0]
+
+    def convert(self, stats: Sequence[PackageStats]) -> str:
+        converter_function = self.value[1]
+        return converter_function(stats)
+
+
+def format_stats(
+    stats: Sequence[PackageStats],
+    output_option: OutputOption | Literal["PPRINT", "JSON", "CSV", "MARKDOWN"],
+) -> str:
+    if not isinstance(output_option, OutputOption):
+        output_option = OutputOption[output_option]
+    return output_option.convert(stats)
+
+
+def write_stats(formatted_stats: str, writefile: Path | None) -> None:
+    if writefile is None:
+        import rich
+
+        rich.print(formatted_stats)
     else:
-        raise NotImplementedError(f"{OutputOption!r} has not yet been implemented!")
+        newline = "" if writefile.suffix == ".csv" else "\n"
+        with writefile.open("w", newline=newline) as f:
+            f.write(formatted_stats)
+        print(f'Output successfully written to "{writefile}"!')
 
 
-async def main() -> None:
+def main() -> None:
     packages, typeshed_dir, output_option, writefile = get_options()
-    stats = await gather_stats(packages, typeshed_dir=typeshed_dir)
-    do_something_with_the_stats(stats, output_option, writefile)
+    print("Gathering stats...")
+    stats = gather_stats(packages, typeshed_dir=typeshed_dir)
+    print("Formatting stats...")
+    formatted_stats = format_stats(stats, output_option)
+    write_stats(formatted_stats, writefile)
 
 
 if __name__ == "__main__":
-    assert sys.version_info >= (3, 10), "Python 3.10+ is required to run this script."
     try:
-        asyncio.run(main())
+        main()
     except KeyboardInterrupt:
         print("Interrupted!")
         code = 1
