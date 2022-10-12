@@ -4,7 +4,7 @@
 
 1. Clone the repo
 2. Create and activate a virtual environment
-3. Run `pip install requirements.txt`
+3. Run `pip install -r requirements.txt`
 4. Run `python typeshed_stats.py --help` for information about various options.
 
 (You'll need a local clone of typeshed for the script to work properly.)
