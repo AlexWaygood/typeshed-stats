@@ -350,7 +350,7 @@ def get_options() -> Options:
         "--overwrite",
         action="store_true",
         help=(
-            "Override the path passed to `--file` if it already exists"
+            "Overwrite the path passed to `--file` if it already exists"
             " (defaults to False)"
         ),
     )
@@ -359,7 +359,7 @@ def get_options() -> Options:
     output_options.add_argument(
         "--pprint",
         action="store_true",
-        help="Get pretty-printed Python representations of the data (default output)",
+        help="Pretty-print Python representations of the data (default output)",
     )
     output_options.add_argument(
         "--to-json", action="store_true", help="Print output as JSON"
@@ -374,7 +374,9 @@ def get_options() -> Options:
         "-f",
         "--to-file",
         type=Path,
-        help="File to write output to (defaults to sys.stdout).",
+        help=(
+            f"File to write output to. Extension must be one of {SUPPORTED_EXTENSIONS}"
+        ),
     )
 
     args = parser.parse_args()
@@ -390,8 +392,8 @@ def get_options() -> Options:
             )
         except StopIteration:
             raise TypeError(
-                f"Unrecognised file extension {suffix!r} passed to --file (choose from"
-                f" {[option.required_file_extension for option in OutputOption]})"
+                f"Unrecognised file extension {suffix!r} passed to --file"
+                f" (choose from {SUPPORTED_EXTENSIONS})"
             ) from None
         if writefile.exists() and not args.overwrite:
             raise TypeError(f'"{writefile}" already exists!')
@@ -519,6 +521,9 @@ class OutputOption(Enum):
     def convert(self, stats: Sequence[PackageStats]) -> str:
         converter_function = self.value[1]
         return converter_function(stats)
+
+
+SUPPORTED_EXTENSIONS = [option.required_file_extension for option in OutputOption]
 
 
 def format_stats(
