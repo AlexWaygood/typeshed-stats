@@ -1,6 +1,5 @@
 # Stats on typeshed's stubs for various packages
-
-
+<br>
 
 ## Stats on typeshed's stubs for aiofiles
 
@@ -29,7 +28,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for annoy
 
@@ -58,7 +57,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 - Explicit any variables: 0
 - Explicit incomplete variables: 1
 
-
+<br>
 
 ## Stats on typeshed's stubs for appdirs
 
@@ -87,7 +86,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for atomicwrites
 
@@ -116,7 +115,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for aws-xray-sdk
 
@@ -145,7 +144,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 45
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for babel
 
@@ -174,7 +173,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 196
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for backports.ssl_match_hostname
 
@@ -203,7 +202,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for beautifulsoup4
 
@@ -232,7 +231,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 69
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for bleach
 
@@ -261,7 +260,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 4
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for boto
 
@@ -290,7 +289,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 266
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for braintree
 
@@ -319,7 +318,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 432
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for cachetools
 
@@ -348,7 +347,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for caldav
 
@@ -377,7 +376,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 2
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for certifi
 
@@ -406,7 +405,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for cffi
 
@@ -435,7 +434,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 115
 
-
+<br>
 
 ## Stats on typeshed's stubs for chardet
 
@@ -464,7 +463,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for chevron
 
@@ -493,7 +492,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for click-spinner
 
@@ -522,7 +521,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for colorama
 
@@ -551,7 +550,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for commonmark
 
@@ -580,7 +579,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 86
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for console-menu
 
@@ -609,7 +608,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for contextvars
 
@@ -638,7 +637,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for croniter
 
@@ -667,7 +666,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for cryptography
 
@@ -696,7 +695,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for D3DShot
 
@@ -725,7 +724,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for dateparser
 
@@ -754,7 +753,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 80
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for DateTimeRange
 
@@ -783,7 +782,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for decorator
 
@@ -812,7 +811,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for Deprecated
 
@@ -841,7 +840,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for dj-database-url
 
@@ -870,7 +869,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for docopt
 
@@ -899,7 +898,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for docutils
 
@@ -928,7 +927,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 5
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for editdistance
 
@@ -957,7 +956,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for emoji
 
@@ -986,7 +985,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for entrypoints
 
@@ -1015,7 +1014,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for first
 
@@ -1044,7 +1043,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for flake8-2020
 
@@ -1073,7 +1072,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for flake8-bugbear
 
@@ -1102,7 +1101,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for flake8-builtins
 
@@ -1131,7 +1130,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for flake8-docstrings
 
@@ -1160,7 +1159,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 1
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for flake8-plugin-utils
 
@@ -1189,7 +1188,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for flake8-rst-docstrings
 
@@ -1218,7 +1217,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for flake8-simplify
 
@@ -1247,7 +1246,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for flake8-typing-imports
 
@@ -1276,7 +1275,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for Flask-Cors
 
@@ -1305,7 +1304,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for Flask-SQLAlchemy
 
@@ -1334,7 +1333,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 7
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for fpdf2
 
@@ -1363,7 +1362,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 68
 - Explicit incomplete variables: 27
 
-
+<br>
 
 ## Stats on typeshed's stubs for gdb
 
@@ -1392,7 +1391,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for google-cloud-ndb
 
@@ -1421,7 +1420,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 139
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for hdbcli
 
@@ -1450,7 +1449,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for html5lib
 
@@ -1479,7 +1478,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 180
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for httplib2
 
@@ -1508,7 +1507,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 57
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for humanfriendly
 
@@ -1537,7 +1536,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 54
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for invoke
 
@@ -1566,7 +1565,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 63
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for JACK-Client
 
@@ -1595,7 +1594,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for jmespath
 
@@ -1624,7 +1623,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 37
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for jsonschema
 
@@ -1653,7 +1652,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 15
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for keyboard
 
@@ -1682,7 +1681,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for ldap3
 
@@ -1711,7 +1710,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 433
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for Markdown
 
@@ -1740,7 +1739,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 79
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for mock
 
@@ -1769,7 +1768,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 32
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for mypy-extensions
 
@@ -1798,7 +1797,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for mysqlclient
 
@@ -1827,7 +1826,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 30
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for oauthlib
 
@@ -1856,7 +1855,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 207
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for openpyxl
 
@@ -1885,7 +1884,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 3566
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for opentracing
 
@@ -1914,7 +1913,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 2
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for paho-mqtt
 
@@ -1943,7 +1942,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for paramiko
 
@@ -1972,7 +1971,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 13
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for parsimonious
 
@@ -2001,7 +2000,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for passlib
 
@@ -2030,7 +2029,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 101
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for passpy
 
@@ -2059,7 +2058,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for peewee
 
@@ -2088,7 +2087,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 369
 
-
+<br>
 
 ## Stats on typeshed's stubs for pep8-naming
 
@@ -2117,7 +2116,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 3
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for Pillow
 
@@ -2146,7 +2145,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 325
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for playsound
 
@@ -2175,7 +2174,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for polib
 
@@ -2204,7 +2203,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for prettytable
 
@@ -2233,7 +2232,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 6
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for protobuf
 
@@ -2262,7 +2261,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 126
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for psutil
 
@@ -2291,7 +2290,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 206
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for psycopg2
 
@@ -2320,7 +2319,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 161
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for pyaudio
 
@@ -2349,7 +2348,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for PyAutoGUI
 
@@ -2378,7 +2377,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for pycurl
 
@@ -2407,7 +2406,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for pyfarmhash
 
@@ -2436,7 +2435,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for pyflakes
 
@@ -2465,7 +2464,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 3
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for Pygments
 
@@ -2494,7 +2493,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 193
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for pyinstaller
 
@@ -2523,7 +2522,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for PyMySQL
 
@@ -2552,7 +2551,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 58
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for pynput
 
@@ -2581,7 +2580,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for pyOpenSSL
 
@@ -2610,7 +2609,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for pyRFC3339
 
@@ -2639,7 +2638,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for PyScreeze
 
@@ -2668,7 +2667,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for pysftp
 
@@ -2697,7 +2696,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for pytest-lazy-fixture
 
@@ -2726,7 +2725,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for python-dateutil
 
@@ -2755,7 +2754,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 13
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for python-gflags
 
@@ -2784,7 +2783,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 2
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for python-jose
 
@@ -2813,7 +2812,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 33
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for python-nmap
 
@@ -2842,7 +2841,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for python-slugify
 
@@ -2871,7 +2870,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for pytz
 
@@ -2900,7 +2899,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 - Explicit any variables: 0
 - Explicit incomplete variables: 5
 
-
+<br>
 
 ## Stats on typeshed's stubs for pyvmomi
 
@@ -2929,7 +2928,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 7
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for pywin32
 
@@ -2958,7 +2957,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 2747
 
-
+<br>
 
 ## Stats on typeshed's stubs for PyYAML
 
@@ -2987,7 +2986,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 185
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for redis
 
@@ -3016,7 +3015,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 201
 - Explicit incomplete variables: 6
 
-
+<br>
 
 ## Stats on typeshed's stubs for regex
 
@@ -3045,7 +3044,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for requests
 
@@ -3074,7 +3073,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 40
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for retry
 
@@ -3103,7 +3102,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for Send2Trash
 
@@ -3132,7 +3131,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 2
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for setuptools
 
@@ -3161,7 +3160,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 412
 - Explicit incomplete variables: 9
 
-
+<br>
 
 ## Stats on typeshed's stubs for simplejson
 
@@ -3190,7 +3189,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for singledispatch
 
@@ -3219,7 +3218,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for six
 
@@ -3248,7 +3247,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for slumber
 
@@ -3277,7 +3276,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 7
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for SQLAlchemy
 
@@ -3306,7 +3305,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 2075
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for stdlib-list
 
@@ -3335,7 +3334,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for stripe
 
@@ -3364,7 +3363,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 42
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for tabulate
 
@@ -3393,7 +3392,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for termcolor
 
@@ -3422,7 +3421,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for toml
 
@@ -3451,7 +3450,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 1
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for toposort
 
@@ -3480,7 +3479,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for tqdm
 
@@ -3509,7 +3508,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 67
 
-
+<br>
 
 ## Stats on typeshed's stubs for tree-sitter
 
@@ -3538,7 +3537,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for tree-sitter-languages
 
@@ -3567,7 +3566,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for ttkthemes
 
@@ -3596,7 +3595,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for typed-ast
 
@@ -3625,7 +3624,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 1
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for tzlocal
 
@@ -3654,7 +3653,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for ujson
 
@@ -3683,7 +3682,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for urllib3
 
@@ -3712,7 +3711,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 53
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for vobject
 
@@ -3741,7 +3740,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Explicit any variables: 90
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for waitress
 
@@ -3770,7 +3769,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 9
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for whatthepatch
 
@@ -3799,7 +3798,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for xmltodict
 
@@ -3828,7 +3827,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for xxhash
 
@@ -3857,7 +3856,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 1
 
-
+<br>
 
 ## Stats on typeshed's stubs for zxcvbn
 
@@ -3886,7 +3885,7 @@ All files are tested with the stricter pyright settings in CI.
 - Explicit any variables: 0
 - Explicit incomplete variables: 0
 
-
+<br>
 
 ## Stats on typeshed's stubs for stdlib
 

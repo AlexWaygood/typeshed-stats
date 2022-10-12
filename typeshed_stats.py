@@ -500,8 +500,8 @@ def markdownify_stats(stats: Sequence[PackageStats]) -> str:
         )
         return template.format(**package_as_dict)
 
-    markdown_page = "# Stats on typeshed's stubs for various packages\n\n\n"
-    markdown_page += "\n\n".join(format_package(info) for info in stats)
+    markdown_page = "# Stats on typeshed's stubs for various packages\n<br>\n"
+    markdown_page += "\n<br>\n".join(format_package(info) for info in stats)
     return markdown_page
 
 
