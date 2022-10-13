@@ -87,6 +87,7 @@ class AnnotationStats(ast.NodeVisitor):
             self.explicit_Any_variables += 1
         elif is_Incomplete(node.annotation):
             self.explicit_Incomplete_variables += 1
+        self.generic_visit(node)
 
     def visit_arg(self, node: ast.arg) -> None:
         annotation = node.annotation
@@ -231,6 +232,8 @@ def get_package_line_number(package_directory: Path) -> int:
 
 @cache
 def get_pyright_strict_excludelist(typeshed_dir: Path) -> frozenset[Path]:
+    # Read pyrightconfig.stricter.json;
+    # do some pre-processing so that it can be passed to json.loads()
     with open(typeshed_dir / "pyrightconfig.stricter.json", encoding="utf-8") as file:
         # strip comments from the file
         lines = [line for line in file if not line.strip().startswith("//")]
@@ -532,9 +535,14 @@ def format_stats(
 
 def write_stats(formatted_stats: str, writefile: Path | None) -> None:
     if writefile is None:
-        import rich
+        try:
+            import rich
 
-        rich.print(formatted_stats)
+            pprint = rich.print
+        except ImportError:
+            from pprint import pprint  # type: ignore[no-redef]
+
+        pprint(formatted_stats)
     else:
         newline = "" if writefile.suffix == ".csv" else "\n"
         with writefile.open("w", newline=newline) as f:
