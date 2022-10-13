@@ -24,7 +24,7 @@ def main() -> int:
     checks.append(subprocess.run(["mypy"]))
 
     print("\nRunning pytest...")
-    checks.append(subprocess.run(["pytest", "test_typeshed_stats.py"]))
+    checks.append(subprocess.run(["pytest", "test_typeshed_stats.py", "-vv"]))
 
     return max(result.returncode for result in checks)
 
