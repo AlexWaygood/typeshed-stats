@@ -1,4 +1,4 @@
-# This is an example .flake8 config, used when developing flake8-pyi itself.
+# Rules that are ignored:
 #
 # The following rule now goes against PEP8:
 #       W503 line break before binary operator
@@ -14,5 +14,5 @@
 max-line-length = 80
 max-complexity = 12
 noqa-require-code = true
-per-file-ignores =
-  *.py: B950, E203, E501, W503, W291, W293
+ignore =
+  B950, E203, E501, W503, W291, W293, D202

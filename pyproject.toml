@@ -31,7 +31,7 @@ classifiers = [
 dependencies = [
     "aiohttp[speedups]",
     "packaging",
-    "tomli; python_full_version < '3.11.0a7'",
+    "tomli; python_version < '3.11'",
 ]
 
 [project.optional-dependencies]

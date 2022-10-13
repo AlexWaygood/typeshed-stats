@@ -1,3 +1,5 @@
+"""Script for gathering stats on typeshed stubs packages."""
+
 from __future__ import annotations
 
 import ast
@@ -9,7 +11,7 @@ import re
 import sys
 import urllib.parse
 from collections import Counter
-from collections.abc import Mapping, Sequence
+from collections.abc import Iterable, Mapping, Sequence
 from dataclasses import dataclass
 from enum import Enum
 from functools import cache
@@ -17,25 +19,29 @@ from pathlib import Path
 from typing import Any, Callable, Literal, NamedTuple, TypeAlias, get_type_hints
 
 import aiohttp
-import tomli
 from packaging.specifiers import SpecifierSet
 from packaging.version import Version
+
+if sys.version_info >= (3, 11):
+    import tomllib
+else:
+    import tomli as tomllib
 
 assert sys.version_info >= (3, 10), "Python 3.10+ is required."
 
 
 __all__ = [
-    "main",
-    "gather_stats",
-    "PackageStats",
-    "gather_annotation_stats_on_package",
-    "format_stats",
     "AnnotationStats",
+    "ExitCode",
     "OutputOption",
-    "StubtestSetting",
-    "get_stubtest_setting",
+    "PackageName",
+    "PackageStats",
+    "PackageStatus",
     "PyrightSetting",
-    "get_pyright_strictness",
+    "StubtestSetting",
+    "SUPPORTED_EXTENSIONS",
+    "gather_stats",
+    "main",
 ]
 
 
@@ -43,7 +49,7 @@ ExitCode: TypeAlias = int
 PackageName: TypeAlias = str
 
 
-class NiceReprEnum(Enum):
+class _NiceReprEnum(Enum):
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}.{self.name}"
 
@@ -56,7 +62,8 @@ class NiceReprEnum(Enum):
         return " ".join(self.name.split("_")).lower()
 
 
-def is_Any(annotation: ast.expr) -> bool:
+def _is_Any(annotation: ast.expr) -> bool:
+    """Return `True` if an AST node represents `typing.Any`."""
     match annotation:
         case ast.Name("Any"):
             return True
@@ -66,7 +73,8 @@ def is_Any(annotation: ast.expr) -> bool:
             return False
 
 
-def is_Incomplete(annotation: ast.expr) -> bool:
+def _is_Incomplete(annotation: ast.expr) -> bool:
+    """Return `True` if an AST node represents `_typeshed.Incomplete`."""
     match annotation:
         case ast.Name("Incomplete"):
             return True
@@ -78,7 +86,7 @@ def is_Incomplete(annotation: ast.expr) -> bool:
 
 @dataclass
 class AnnotationStats(ast.NodeVisitor):
-    """Statistics on the annotations for a source file or a directory of source files"""
+    """Stats on the annotations for a source file or a directory of source files."""
 
     annotated_parameters: int = 0
     unannotated_parameters: int = 0
@@ -93,22 +101,24 @@ class AnnotationStats(ast.NodeVisitor):
     explicit_Incomplete_variables: int = 0
 
     def visit_AnnAssign(self, node: ast.AnnAssign) -> None:
+        """Analyze annotated variables in global and class scopes."""
         self.annotated_variables += 1
-        if is_Any(node.annotation):
+        if _is_Any(node.annotation):
             self.explicit_Any_variables += 1
-        elif is_Incomplete(node.annotation):
+        elif _is_Incomplete(node.annotation):
             self.explicit_Incomplete_variables += 1
         self.generic_visit(node)
 
     def visit_arg(self, node: ast.arg) -> None:
+        """Analyze annotations for function parameters."""
         annotation = node.annotation
         if annotation is None:
             self.unannotated_parameters += 1
         else:
             self.annotated_parameters += 1
-            if is_Any(annotation):
+            if _is_Any(annotation):
                 self.explicit_Any_parameters += 1
-            elif is_Incomplete(annotation):
+            elif _is_Incomplete(annotation):
                 self.explicit_Incomplete_parameters += 1
         self.generic_visit(node)
 
@@ -118,27 +128,42 @@ class AnnotationStats(ast.NodeVisitor):
             self.unannotated_returns += 1
         else:
             self.annotated_returns += 1
-            if is_Any(returns):
+            if _is_Any(returns):
                 self.explicit_Any_returns += 1
-            elif is_Incomplete(returns):
+            elif _is_Incomplete(returns):
                 self.explicit_Incomplete_returns += 1
 
     def visit_FunctionDef(self, node: ast.FunctionDef) -> None:
+        """Analyze synchronous function returns."""
         self._visit_function(node)
         self.generic_visit(node)
 
     def visit_AsyncFunctionDef(self, node: ast.AsyncFunctionDef) -> None:
+        """Analyze asynchronous function returns."""
         self._visit_function(node)
         self.generic_visit(node)
 
     @staticmethod
     def gather_stats_on_file(path: Path) -> AnnotationStats:
+        """Gather stats on a single file.
+
+        This function creates a new `AnnotationStats` visitor,
+        uses the visitor to collect statistics on the source code of a single file,
+        and returns the visitor.
+
+        Args:
+            path: The location of the file to be analyzed.
+
+        Returns:
+            An `AnnotationStats` object containing data
+            about the annotations in the file.
+        """
         visitor = AnnotationStats()
         visitor.visit(ast.parse(path.read_text(encoding="utf-8")))
         return visitor
 
 
-def gather_annotation_stats_on_package(package_directory: Path) -> AnnotationStats:
+def _gather_annotation_stats_on_package(package_directory: Path) -> AnnotationStats:
     file_results = [
         AnnotationStats.gather_stats_on_file(path)
         for path in package_directory.rglob("*.pyi")
@@ -152,12 +177,14 @@ def gather_annotation_stats_on_package(package_directory: Path) -> AnnotationSta
 
 
 @cache
-def get_package_metadata(package_directory: Path) -> Mapping[str, Any]:
+def _get_package_metadata(package_directory: Path) -> Mapping[str, Any]:
     with open(package_directory / "METADATA.toml", "rb") as f:
-        return tomli.load(f)
+        return tomllib.load(f)
 
 
-class StubtestSetting(NiceReprEnum):
+class StubtestSetting(_NiceReprEnum):
+    """Enumeration of the various possible settings typeshed uses for stubtest in CI."""
+
     SKIPPED = "Stubtest is skipped in CI for this package."
     MISSING_STUBS_IGNORED = (
         "The `--ignore-missing-stub` stubtest setting is used in CI."
@@ -167,10 +194,12 @@ class StubtestSetting(NiceReprEnum):
     )
 
 
-def get_stubtest_setting(package_name: str, package_directory: Path) -> StubtestSetting:
+def _get_stubtest_setting(
+    package_name: str, package_directory: Path
+) -> StubtestSetting:
     if package_name == "stdlib":
         return StubtestSetting.ERROR_ON_MISSING_STUB
-    metadata = get_package_metadata(package_directory)
+    metadata = _get_package_metadata(package_directory)
     stubtest_settings = metadata.get("tool", {}).get("stubtest", {})
     if stubtest_settings.get("skip", False):
         return StubtestSetting.SKIPPED
@@ -180,7 +209,9 @@ def get_stubtest_setting(package_name: str, package_directory: Path) -> Stubtest
     ]
 
 
-class PackageStatus(NiceReprEnum):
+class PackageStatus(_NiceReprEnum):
+    """The various states of freshness/staleness a stubs package can be in."""
+
     STDLIB = (
         "These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly"
         " up to date, and tested against all currently supported Python versions"
@@ -205,7 +236,7 @@ class PackageStatus(NiceReprEnum):
     )
 
 
-async def get_package_status(
+async def _get_package_status(
     package_name: str, package_directory: Path, *, session: aiohttp.ClientSession
 ) -> PackageStatus:
     if package_name == "stdlib":
@@ -215,7 +246,7 @@ async def get_package_status(
     if package_name == "gdb":
         return PackageStatus.NOT_ON_PYPI
 
-    metadata = get_package_metadata(package_directory)
+    metadata = _get_package_metadata(package_directory)
 
     if "obsolete_since" in metadata:
         return PackageStatus.OBSOLETE
@@ -234,7 +265,7 @@ async def get_package_status(
     ]
 
 
-def get_package_line_number(package_directory: Path) -> int:
+def _get_package_line_number(package_directory: Path) -> int:
     return sum(
         len(stub.read_text(encoding="utf-8").splitlines())
         for stub in package_directory.rglob("*.pyi")
@@ -242,7 +273,7 @@ def get_package_line_number(package_directory: Path) -> int:
 
 
 @cache
-def get_pyright_strict_excludelist(typeshed_dir: Path) -> frozenset[Path]:
+def _get_pyright_strict_excludelist(typeshed_dir: Path) -> frozenset[Path]:
     # Read pyrightconfig.stricter.json;
     # do some pre-processing so that it can be passed to json.loads()
     with open(typeshed_dir / "pyrightconfig.stricter.json", encoding="utf-8") as file:
@@ -256,7 +287,9 @@ def get_pyright_strict_excludelist(typeshed_dir: Path) -> frozenset[Path]:
     return frozenset(typeshed_dir / item for item in excludelist)
 
 
-class PyrightSetting(NiceReprEnum):
+class PyrightSetting(_NiceReprEnum):
+    """The various possible pyright settings typeshed uses in CI."""
+
     STRICT = "All files are tested with the stricter pyright settings in CI."
     NOT_STRICT = "All files are excluded from the stricter pyright settings in CI."
     STRICT_ON_SOME_FILES = (
@@ -265,10 +298,10 @@ class PyrightSetting(NiceReprEnum):
     )
 
 
-def get_pyright_strictness(
+def _get_pyright_strictness(
     package_directory: Path, *, typeshed_dir: Path
 ) -> PyrightSetting:
-    excluded_paths = get_pyright_strict_excludelist(typeshed_dir)
+    excluded_paths = _get_pyright_strict_excludelist(typeshed_dir)
     if package_directory in excluded_paths:
         return PyrightSetting.NOT_STRICT
     if any(
@@ -280,6 +313,8 @@ def get_pyright_strictness(
 
 @dataclass
 class PackageStats:
+    """Statistics about a single stubs package in typeshed."""
+
     package_name: PackageName
     number_of_lines: int
     package_status: PackageStatus
@@ -288,7 +323,7 @@ class PackageStats:
     annotation_stats: AnnotationStats
 
 
-async def gather_stats_for_package(
+async def _gather_stats_for_package(
     package_name: PackageName, *, typeshed_dir: Path, session: aiohttp.ClientSession
 ) -> PackageStats:
     if package_name == "stdlib":
@@ -297,25 +332,25 @@ async def gather_stats_for_package(
         package_directory = typeshed_dir / "stubs" / package_name
     return PackageStats(
         package_name=package_name,
-        number_of_lines=get_package_line_number(package_directory),
-        package_status=await get_package_status(
+        number_of_lines=_get_package_line_number(package_directory),
+        package_status=await _get_package_status(
             package_name, package_directory, session=session
         ),
-        stubtest_setting=get_stubtest_setting(package_name, package_directory),
-        pyright_setting=get_pyright_strictness(
+        stubtest_setting=_get_stubtest_setting(package_name, package_directory),
+        pyright_setting=_get_pyright_strictness(
             package_directory, typeshed_dir=typeshed_dir
         ),
-        annotation_stats=gather_annotation_stats_on_package(package_directory),
+        annotation_stats=_gather_annotation_stats_on_package(package_directory),
     )
 
 
 async def _gather_stats(
-    packages: list[str], *, typeshed_dir: Path
+    packages: Iterable[str], *, typeshed_dir: Path
 ) -> Sequence[PackageStats]:
     conn = aiohttp.TCPConnector(limit_per_host=10)
     async with aiohttp.ClientSession(connector=conn) as session:
         tasks = (
-            gather_stats_for_package(
+            _gather_stats_for_package(
                 package_name, typeshed_dir=typeshed_dir, session=session
             )
             for package_name in packages
@@ -323,18 +358,43 @@ async def _gather_stats(
         return await asyncio.gather(*tasks)
 
 
-def gather_stats(packages: list[str], *, typeshed_dir: Path) -> Sequence[PackageStats]:
+def gather_stats(
+    packages: Iterable[str], *, typeshed_dir: Path | str
+) -> Sequence[PackageStats]:
+    """Concurrently gather statistics on multiple packages.
+
+    Note: this function calls `asyncio.run()` to start an asyncio event loop.
+    It is therefore not suitable to be called from inside functions
+    that are themselves called as part of an asyncio event loop.
+
+    Args:
+        packages: An iterable of package names to be analysed.
+        typeshed_dir: The path to a local clone of typeshed.
+
+    Returns:
+        A sequence of `PackageStats` objects. Each `PackageStats` object
+        contains information representing an analysis of a certain stubs package
+        in typeshed.
+    """
+    if isinstance(typeshed_dir, str):
+        typeshed_dir = Path(typeshed_dir)
     return asyncio.run(_gather_stats(packages, typeshed_dir=typeshed_dir))
 
 
-class Options(NamedTuple):
+class _Options(NamedTuple):
+    """The return value of `_get_options()`.
+
+    A tuple representing the options specified by a user on the command line.
+    """
+
     packages: list[str]
     typeshed_dir: Path
     output_option: OutputOption
     writefile: Path | None
 
 
-def get_options() -> Options:
+def _get_options() -> _Options:
+    """Parse options passed on the command line."""
     import argparse
 
     parser = argparse.ArgumentParser(description="Script to gather stats on typeshed")
@@ -396,9 +456,7 @@ def get_options() -> Options:
         suffix = writefile.suffix
         try:
             output_option = next(
-                option
-                for option in OutputOption
-                if option.required_file_extension == suffix
+                option for option in OutputOption if option.file_extension == suffix
             )
         except StopIteration:
             raise TypeError(
@@ -425,19 +483,22 @@ def get_options() -> Options:
 
     packages = args.packages or os.listdir(stubs_dir) + ["stdlib"]
 
-    return Options(packages, typeshed_dir, output_option, writefile)
+    return _Options(packages, typeshed_dir, output_option, writefile)
 
 
-def jsonify_stats(stats: Sequence[PackageStats]) -> str:
+def _jsonify_stats(stats: Sequence[PackageStats]) -> str:
+    """Serialize a sequence of `PackageStats` objects to JSON."""
+
     class EnumAwareEncoder(json.JSONEncoder):
         def default(self, obj: object) -> Any:
-            return obj.name if isinstance(obj, NiceReprEnum) else super().default(obj)
+            return obj.name if isinstance(obj, _NiceReprEnum) else super().default(obj)
 
     dictified_stats = {info.package_name: dataclasses.asdict(info) for info in stats}
     return json.dumps(dictified_stats, indent=2, cls=EnumAwareEncoder)
 
 
-def csvify_stats(stats: Sequence[PackageStats]) -> str:
+def _csvify_stats(stats: Sequence[PackageStats]) -> str:
+    """Serialize a sequence of `PackageStats` objects to CSV format."""
     import csv
     import io
 
@@ -466,7 +527,8 @@ def csvify_stats(stats: Sequence[PackageStats]) -> str:
     return csvfile.getvalue()
 
 
-def markdownify_stats(stats: Sequence[PackageStats]) -> str:
+def _markdownify_stats(stats: Sequence[PackageStats]) -> str:
+    """Generate MarkDown describing statistics on multiple stubs packages."""
     import textwrap
 
     def format_enum_member(enum_member: Enum) -> str:
@@ -513,7 +575,7 @@ def markdownify_stats(stats: Sequence[PackageStats]) -> str:
     return markdown_page
 
 
-def format_stats_for_pprinting(
+def _format_stats_for_pprinting(
     stats: Sequence[PackageStats],
 ) -> dict[PackageName, PackageStats]:
     # *Don't* stringify this one
@@ -522,24 +584,32 @@ def format_stats_for_pprinting(
 
 
 class OutputOption(Enum):
-    PPRINT = ".txt", format_stats_for_pprinting
-    JSON = ".json", jsonify_stats
-    CSV = ".csv", csvify_stats
-    MARKDOWN = ".md", markdownify_stats
+    """Enumeration of the different output options on the command line."""
+
+    PPRINT = ".txt", _format_stats_for_pprinting
+    JSON = ".json", _jsonify_stats
+    CSV = ".csv", _csvify_stats
+    MARKDOWN = ".md", _markdownify_stats
 
     @property
-    def required_file_extension(self) -> str:
+    def file_extension(self) -> str:
+        """File extension associated with this file type."""
         return self.value[0]  # type: ignore[no-any-return]
 
     def convert(self, stats: Sequence[PackageStats]) -> object:
+        """Convert a sequence of `PackageStats` objects into the specified format."""
         converter_function = self.value[1]
         return converter_function(stats)
 
+    def __repr__(self) -> str:
+        """repr(self)."""
+        return f"OutputOption.{self.name}(extension={self.file_extension})"
 
-SUPPORTED_EXTENSIONS = [option.required_file_extension for option in OutputOption]
+
+SUPPORTED_EXTENSIONS = [option.file_extension for option in OutputOption]
 
 
-def format_stats(
+def _format_stats(
     stats: Sequence[PackageStats],
     output_option: OutputOption | Literal["PPRINT", "JSON", "CSV", "MARKDOWN"],
 ) -> object:
@@ -548,7 +618,7 @@ def format_stats(
     return output_option.convert(stats)
 
 
-def write_stats(formatted_stats: object, writefile: Path | None) -> None:
+def _write_stats(formatted_stats: object, writefile: Path | None) -> None:
     if writefile is None:
         pprint: Callable[[object], None]
         try:
@@ -570,12 +640,14 @@ def write_stats(formatted_stats: object, writefile: Path | None) -> None:
 
 
 def main() -> None:
-    packages, typeshed_dir, output_option, writefile = get_options()
+    """CLI entry point."""
+
+    packages, typeshed_dir, output_option, writefile = _get_options()
     print("Gathering stats...")
     stats = gather_stats(packages, typeshed_dir=typeshed_dir)
     print("Formatting stats...")
-    formatted_stats = format_stats(stats, output_option)
-    write_stats(formatted_stats, writefile)
+    formatted_stats = _format_stats(stats, output_option)
+    _write_stats(formatted_stats, writefile)
 
 
 if __name__ == "__main__":

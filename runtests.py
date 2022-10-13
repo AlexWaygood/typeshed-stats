@@ -1,4 +1,4 @@
-"""Convenience script to run all checks locally"""
+"""Convenience script to run all checks locally."""
 
 import subprocess
 
@@ -6,9 +6,14 @@ FILES_TO_CHECK = ("src", "test_typeshed_stats.py", "runtests.py")
 
 
 def main() -> int:
+    """Run the checks."""
+
     checks = []
 
-    print("Running pycln...")
+    print("Running requirements-txt-fixer...")
+    checks.append(subprocess.run(["requirements-txt-fixer", "requirements-dev.txt"]))
+
+    print("\nRunning pycln...")
     checks.append(subprocess.run(["pycln", ".", "--all"]))
 
     print("\nRunning isort...")
