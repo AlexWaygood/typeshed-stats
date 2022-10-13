@@ -25,7 +25,19 @@ from packaging.version import Version
 assert sys.version_info >= (3, 10), "Python 3.10+ is required."
 
 
-__all__ = ["main", "gather_stats", "format_stats", "OutputOption"]
+__all__ = [
+    "main",
+    "gather_stats",
+    "PackageStats",
+    "gather_annotation_stats_on_package",
+    "format_stats",
+    "AnnotationStats",
+    "OutputOption",
+    "StubtestSetting",
+    "get_stubtest_setting",
+    "PyrightSetting",
+    "get_pyright_strictness",
+]
 
 
 ExitCode: TypeAlias = int
