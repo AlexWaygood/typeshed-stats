@@ -14,8 +14,7 @@ from dataclasses import dataclass
 from enum import Enum
 from functools import cache
 from pathlib import Path
-from typing import Any, NamedTuple, get_type_hints
-from typing_extensions import Literal, TypeAlias
+from typing import Any, Callable, Literal, NamedTuple, TypeAlias, get_type_hints
 
 import aiohttp
 import tomli
@@ -514,8 +513,12 @@ def markdownify_stats(stats: Sequence[PackageStats]) -> str:
     return markdown_page
 
 
-def format_stats_for_pprinting(stats: Sequence[PackageStats]) -> str:
-    return str({info_bundle.package_name: info_bundle for info_bundle in stats})
+def format_stats_for_pprinting(
+    stats: Sequence[PackageStats],
+) -> dict[PackageName, PackageStats]:
+    # *Don't* stringify this one
+    # It makes it harder for pprint or rich to format it nicely
+    return {info_bundle.package_name: info_bundle for info_bundle in stats}
 
 
 class OutputOption(Enum):
@@ -526,9 +529,9 @@ class OutputOption(Enum):
 
     @property
     def required_file_extension(self) -> str:
-        return self.value[0]
+        return self.value[0]  # type: ignore[no-any-return]
 
-    def convert(self, stats: Sequence[PackageStats]) -> str:
+    def convert(self, stats: Sequence[PackageStats]) -> object:
         converter_function = self.value[1]
         return converter_function(stats)
 
@@ -539,24 +542,28 @@ SUPPORTED_EXTENSIONS = [option.required_file_extension for option in OutputOptio
 def format_stats(
     stats: Sequence[PackageStats],
     output_option: OutputOption | Literal["PPRINT", "JSON", "CSV", "MARKDOWN"],
-) -> str:
+) -> object:
     if not isinstance(output_option, OutputOption):
         output_option = OutputOption[output_option]
     return output_option.convert(stats)
 
 
-def write_stats(formatted_stats: str, writefile: Path | None) -> None:
+def write_stats(formatted_stats: object, writefile: Path | None) -> None:
     if writefile is None:
+        pprint: Callable[[object], None]
         try:
-            import rich
-
-            pprint = rich.print
+            from rich import print as pprint  # type: ignore[no-redef]
         except ImportError:
-            from pprint import pprint  # type: ignore[no-redef]
+            if isinstance(formatted_stats, str):
+                pprint = print
+            else:
+                from pprint import pprint  # type: ignore[no-redef]
 
         pprint(formatted_stats)
     else:
         newline = "" if writefile.suffix == ".csv" else "\n"
+        if not isinstance(formatted_stats, str):
+            formatted_stats = str(formatted_stats)
         with writefile.open("w", newline=newline) as f:
             f.write(formatted_stats)
         print(f'Output successfully written to "{writefile}"!')
