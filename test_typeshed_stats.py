@@ -1,11 +1,14 @@
 """Test the package."""
 
+import builtins
 import csv
 import io
 import json
+import types
 
 import markdown
 
+import typeshed_stats
 from typeshed_stats import (
     AnnotationStats,
     PackageStats,
@@ -19,6 +22,30 @@ from typeshed_stats import (
     stats_to_json,
     stats_to_markdown,
 )
+
+
+def test___all___alphabetisation() -> None:
+    """Test that __all__ is alphabetically sorted."""
+    assert typeshed_stats.__all__ == sorted(typeshed_stats.__all__)
+
+
+def _is_from_other_module(obj: object) -> bool:
+    return getattr(obj, "__module__", "typeshed_stats") != "typeshed_stats"
+
+
+def test_all_public_names_in___all__() -> None:
+    """Test that all names not in `__all__` are marked as private."""
+    assert set(typeshed_stats.__all__) >= {
+        name
+        for name, value in vars(typeshed_stats).items()
+        if not (
+            name.startswith("_")
+            or isinstance(value, types.ModuleType)
+            or _is_from_other_module(value)
+            or name in vars(builtins)
+        )
+    }
+
 
 info_on_foo = PackageStats(
     "foo",

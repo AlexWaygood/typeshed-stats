@@ -18,7 +18,10 @@ def main() -> int:
     subprocess.run(["isort", *FILES_TO_CHECK])
 
     print("\nRunning black...")
-    subprocess.run(["black", "."])
+    black_result = subprocess.run(["black", "."])
+    if black_result.returncode == 123:
+        print("Exiting early since black failed!")
+        raise SystemExit(1)
 
     print("\nRunning flake8...")
     subprocess.run(["flake8", *FILES_TO_CHECK], check=True)
@@ -27,7 +30,7 @@ def main() -> int:
     subprocess.run(["mypy"], check=True)
 
     print("\nRunning pytest...")
-    subprocess.run(["pytest", "test_typeshed_stats.py", "-vv"])
+    subprocess.run(["pytest", "-vv"])
     return 0
 
 

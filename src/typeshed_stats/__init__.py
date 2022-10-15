@@ -40,15 +40,16 @@ __all__ = [
     "PackageStats",
     "PackageStatus",
     "PyrightSetting",
-    "StubtestSetting",
     "SUPPORTED_EXTENSIONS",
+    "StubtestSetting",
     "gather_stats",
+    "main",
     "stats_from_csv",
     "stats_from_json",
     "stats_to_csv",
+    "stats_to_html",
     "stats_to_json",
     "stats_to_markdown",
-    "main",
 ]
 
 
@@ -647,6 +648,7 @@ def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
 
 
 def stats_to_html(stats: Sequence[PackageStats]) -> str:
+    """Generate HTML describing statistics on multiple stubs packages."""
     import markdown
 
     return markdown.markdown(stats_to_markdown(stats))
