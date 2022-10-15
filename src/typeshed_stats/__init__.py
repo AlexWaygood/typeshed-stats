@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import ast
 import asyncio
-import dataclasses
 import json
 import os
 import re
@@ -12,13 +11,13 @@ import sys
 import urllib.parse
 from collections import Counter
 from collections.abc import Iterable, Mapping, Sequence
-from dataclasses import dataclass
 from enum import Enum
 from functools import cache
 from pathlib import Path
 from typing import Any, Callable, Literal, NamedTuple, TypeAlias, get_type_hints
 
 import aiohttp
+import attrs
 from packaging.specifiers import SpecifierSet
 from packaging.version import Version
 
@@ -84,7 +83,7 @@ def _is_Incomplete(annotation: ast.expr) -> bool:
             return False
 
 
-@dataclass
+@attrs.define
 class AnnotationStats(ast.NodeVisitor):
     """Stats on the annotations for a source file or a directory of source files."""
 
@@ -170,8 +169,7 @@ def _gather_annotation_stats_on_package(package_directory: Path) -> AnnotationSt
     ]
     # Sum all the statistics together, to get the statistics for the package as a whole
     package_stats: Counter[str] = sum(
-        [Counter(dataclasses.asdict(result)) for result in file_results],
-        start=Counter(),
+        [Counter(attrs.asdict(result)) for result in file_results], start=Counter()
     )
     return AnnotationStats(**package_stats)
 
@@ -311,7 +309,7 @@ def _get_pyright_strictness(
     return PyrightSetting.STRICT
 
 
-@dataclass
+@attrs.define
 class PackageStats:
     """Statistics about a single stubs package in typeshed."""
 
@@ -493,7 +491,7 @@ def _jsonify_stats(stats: Sequence[PackageStats]) -> str:
         def default(self, obj: object) -> Any:
             return obj.name if isinstance(obj, _NiceReprEnum) else super().default(obj)
 
-    dictified_stats = {info.package_name: dataclasses.asdict(info) for info in stats}
+    dictified_stats = {info.package_name: attrs.asdict(info) for info in stats}
     return json.dumps(dictified_stats, indent=2, cls=EnumAwareEncoder)
 
 
@@ -503,7 +501,7 @@ def _csvify_stats(stats: Sequence[PackageStats]) -> str:
     import io
 
     # First, dictify
-    converted_stats = [dataclasses.asdict(info) for info in stats]
+    converted_stats = [attrs.asdict(info) for info in stats]
 
     # Then, flatten the data, and stringify the enums
     enum_fields = [
@@ -564,7 +562,7 @@ def _markdownify_stats(stats: Sequence[PackageStats]) -> str:
         )
 
     def format_package(package_stats: PackageStats) -> str:
-        package_as_dict = dataclasses.asdict(package_stats)
+        package_as_dict = attrs.asdict(package_stats)
         package_as_dict["annotation_stats"] = format_annotation_stats(
             package_as_dict["annotation_stats"]
         )

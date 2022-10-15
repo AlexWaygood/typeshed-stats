@@ -29,6 +29,7 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
+    "attrs>=21.3.0",
     "aiohttp[speedups]",
     "packaging",
     "tomli; python_version < '3.11'",
