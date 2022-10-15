@@ -13,11 +13,14 @@ from collections import Counter
 from collections.abc import Iterable, Mapping, Sequence
 from enum import Enum
 from functools import cache
+from operator import attrgetter
 from pathlib import Path
-from typing import Any, Callable, Literal, NamedTuple, TypeAlias, get_type_hints
+from typing import Any, Callable, Literal, NamedTuple, TypeAlias, final, get_type_hints
 
 import aiohttp
 import attrs
+import cattrs
+import cattrs.gen
 from packaging.specifiers import SpecifierSet
 from packaging.version import Version
 
@@ -40,6 +43,11 @@ __all__ = [
     "StubtestSetting",
     "SUPPORTED_EXTENSIONS",
     "gather_stats",
+    "stats_from_csv",
+    "stats_from_json",
+    "stats_to_csv",
+    "stats_to_json",
+    "stats_to_markdown",
     "main",
 ]
 
@@ -47,8 +55,14 @@ __all__ = [
 ExitCode: TypeAlias = int
 PackageName: TypeAlias = str
 
+_CATTRS_CONVERTER = cattrs.Converter()
+_cattrs_unstructure = _CATTRS_CONVERTER.unstructure
+_cattrs_structure = _CATTRS_CONVERTER.structure
+
 
 class _NiceReprEnum(Enum):
+    """Base class for several public-API enums in this package."""
+
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}.{self.name}"
 
@@ -59,6 +73,9 @@ class _NiceReprEnum(Enum):
     @property
     def formatted_name(self) -> str:
         return " ".join(self.name.split("_")).lower()
+
+
+_CATTRS_CONVERTER.register_unstructure_hook(_NiceReprEnum, attrgetter("name"))
 
 
 def _is_Any(annotation: ast.expr) -> bool:
@@ -83,6 +100,7 @@ def _is_Incomplete(annotation: ast.expr) -> bool:
             return False
 
 
+@final
 @attrs.define
 class AnnotationStats(ast.NodeVisitor):
     """Stats on the annotations for a source file or a directory of source files."""
@@ -309,6 +327,7 @@ def _get_pyright_strictness(
     return PyrightSetting.STRICT
 
 
+@final
 @attrs.define
 class PackageStats:
     """Statistics about a single stubs package in typeshed."""
@@ -319,6 +338,39 @@ class PackageStats:
     stubtest_setting: StubtestSetting
     pyright_setting: PyrightSetting
     annotation_stats: AnnotationStats
+
+
+@cache
+def _package_stats_type_hints() -> Mapping[str, Any]:
+    return get_type_hints(PackageStats)
+
+
+@cache
+def _package_stats_enum_fields() -> frozenset[str]:
+    return frozenset(
+        key for key, val in _package_stats_type_hints().items() if issubclass(val, Enum)
+    )
+
+
+def _stats_from_dict(**kwargs: Any) -> PackageStats:
+    converted_stats: dict[str, Any] = dict(kwargs)
+    type_hints = _package_stats_type_hints()
+    enum_fields = _package_stats_enum_fields()
+    for key, val in kwargs.items():
+        if key in enum_fields:
+            converted_stats[key] = type_hints[key][val]
+        elif type_hints[key] is int:
+            converted_stats[key] = int(val)
+        elif key == "annotation_stats":
+            converted_stats["annotation_stats"] = _cattrs_structure(
+                val, AnnotationStats
+            )
+    return PackageStats(**converted_stats)
+
+
+_CATTRS_CONVERTER.register_structure_hook(
+    PackageStats, lambda d, t: _stats_from_dict(**d)
+)
 
 
 async def _gather_stats_for_package(
@@ -484,38 +536,33 @@ def _get_options() -> _Options:
     return _Options(packages, typeshed_dir, output_option, writefile)
 
 
-def _jsonify_stats(stats: Sequence[PackageStats]) -> str:
-    """Serialize a sequence of `PackageStats` objects to JSON."""
-
-    class EnumAwareEncoder(json.JSONEncoder):
-        def default(self, obj: object) -> Any:
-            return obj.name if isinstance(obj, _NiceReprEnum) else super().default(obj)
-
-    dictified_stats = {info.package_name: attrs.asdict(info) for info in stats}
-    return json.dumps(dictified_stats, indent=2, cls=EnumAwareEncoder)
+def _format_stats_for_pprinting(
+    stats: Sequence[PackageStats],
+) -> dict[PackageName, PackageStats]:
+    # *Don't* stringify this one
+    # It makes it harder for pprint or rich to format it nicely
+    return {info_bundle.package_name: info_bundle for info_bundle in stats}
 
 
-def _csvify_stats(stats: Sequence[PackageStats]) -> str:
-    """Serialize a sequence of `PackageStats` objects to CSV format."""
+def stats_to_json(stats: Sequence[PackageStats]) -> str:
+    """Convert stats on multiple stubs packages to JSON format."""
+    return json.dumps(_cattrs_unstructure(stats), indent=2)
+
+
+def stats_from_json(data: str) -> list[PackageStats]:
+    """Load `PackageStats` objects from JSON format."""
+    return _cattrs_structure(json.loads(data), list[PackageStats])
+
+
+def stats_to_csv(stats: Sequence[PackageStats]) -> str:
+    """Convert stats on multiple stubs packages to csv format."""
     import csv
     import io
 
-    # First, dictify
-    converted_stats = [attrs.asdict(info) for info in stats]
-
-    # Then, flatten the data, and stringify the enums
-    enum_fields = [
-        key
-        for key, val in get_type_hints(PackageStats).items()
-        if issubclass(val, Enum)
-    ]
+    converted_stats = _cattrs_unstructure(stats)
     for info in converted_stats:
         info |= info["annotation_stats"]
         del info["annotation_stats"]
-        for field in enum_fields:
-            info[field] = info[field].name
-
-    # Now, write to csv
     fieldnames = converted_stats[0].keys()
     csvfile = io.StringIO(newline="")
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -525,7 +572,33 @@ def _csvify_stats(stats: Sequence[PackageStats]) -> str:
     return csvfile.getvalue()
 
 
-def _markdownify_stats(stats: Sequence[PackageStats]) -> str:
+@cache
+def _annotation_stats_fields() -> tuple[str, ...]:
+    return tuple(f.name for f in attrs.fields(AnnotationStats))
+
+
+def stats_from_csv(data: str) -> list[PackageStats]:
+    """Load `PackageStats` objects from csv format."""
+    import csv
+    import io
+
+    csvfile = io.StringIO(data, newline="")
+    stats = list(csv.DictReader(csvfile))
+    annotation_stats_fields = _annotation_stats_fields()
+    converted_stats = []
+    for stat in stats:
+        converted_stat, annotation_stats = {}, {}
+        for key, val in stat.items():
+            if key in annotation_stats_fields:
+                annotation_stats[key] = val
+            else:
+                converted_stat[key] = val
+        converted_stat["annotation_stats"] = annotation_stats
+        converted_stats.append(converted_stat)
+    return _cattrs_structure(converted_stats, list[PackageStats])
+
+
+def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
     """Generate MarkDown describing statistics on multiple stubs packages."""
     import textwrap
 
@@ -573,21 +646,19 @@ def _markdownify_stats(stats: Sequence[PackageStats]) -> str:
     return markdown_page
 
 
-def _format_stats_for_pprinting(
-    stats: Sequence[PackageStats],
-) -> dict[PackageName, PackageStats]:
-    # *Don't* stringify this one
-    # It makes it harder for pprint or rich to format it nicely
-    return {info_bundle.package_name: info_bundle for info_bundle in stats}
+def stats_to_html(stats: Sequence[PackageStats]) -> str:
+    import markdown
+
+    return markdown.markdown(stats_to_markdown(stats))
 
 
 class OutputOption(Enum):
     """Enumeration of the different output options on the command line."""
 
     PPRINT = ".txt", _format_stats_for_pprinting
-    JSON = ".json", _jsonify_stats
-    CSV = ".csv", _csvify_stats
-    MARKDOWN = ".md", _markdownify_stats
+    JSON = ".json", stats_to_json
+    CSV = ".csv", stats_to_csv
+    MARKDOWN = ".md", stats_to_markdown
 
     @property
     def file_extension(self) -> str:

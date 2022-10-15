@@ -8,30 +8,27 @@ FILES_TO_CHECK = ("src", "test_typeshed_stats.py", "runtests.py")
 def main() -> int:
     """Run the checks."""
 
-    checks = []
-
     print("Running requirements-txt-fixer...")
-    checks.append(subprocess.run(["requirements-txt-fixer", "requirements-dev.txt"]))
+    subprocess.run(["requirements-txt-fixer", "requirements-dev.txt"])
 
     print("\nRunning pycln...")
-    checks.append(subprocess.run(["pycln", ".", "--all"]))
+    subprocess.run(["pycln", ".", "--all"])
 
     print("\nRunning isort...")
-    checks.append(subprocess.run(["isort", *FILES_TO_CHECK]))
+    subprocess.run(["isort", *FILES_TO_CHECK])
 
     print("\nRunning black...")
-    checks.append(subprocess.run(["black", "."]))
+    subprocess.run(["black", "."])
 
     print("\nRunning flake8...")
-    checks.append(subprocess.run(["flake8", *FILES_TO_CHECK]))
+    subprocess.run(["flake8", *FILES_TO_CHECK], check=True)
 
     print("\nRunning mypy...")
-    checks.append(subprocess.run(["mypy"]))
+    subprocess.run(["mypy"], check=True)
 
     print("\nRunning pytest...")
-    checks.append(subprocess.run(["pytest", "test_typeshed_stats.py", "-vv"]))
-
-    return max(result.returncode for result in checks)
+    subprocess.run(["pytest", "test_typeshed_stats.py", "-vv"])
+    return 0
 
 
 if __name__ == "__main__":

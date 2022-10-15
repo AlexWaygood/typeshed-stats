@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: "3.10"
       - run: pip install -r requirements-dev.txt
-      - run: pip install -e .[rich]
+      - run: pip install -e .[everything]
       - run: mypy
 
   flake8:
@@ -53,5 +53,5 @@ jobs:
         with:
           python-version: "3.10"
       - run: pip install -r requirements-dev.txt
-      - run: pip install -e .[rich]
+      - run: pip install -e .[everything]
       - run: pytest test_typeshed_stats.py -vv
