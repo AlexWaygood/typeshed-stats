@@ -14,7 +14,7 @@ from enum import Enum
 from functools import cache
 from operator import attrgetter
 from pathlib import Path
-from typing import Any, TypeAlias, final, get_type_hints
+from typing import Any, TypeAlias, final
 
 import aiohttp
 import attrs
@@ -70,6 +70,7 @@ class _NiceReprEnum(Enum):
 
 
 _CATTRS_CONVERTER.register_unstructure_hook(_NiceReprEnum, attrgetter("name"))
+_CATTRS_CONVERTER.register_structure_hook(_NiceReprEnum, lambda d, t: t[d])  # type: ignore[index,no-any-return]
 
 
 def _is_Any(annotation: ast.expr) -> bool:
@@ -96,7 +97,7 @@ def _is_Incomplete(annotation: ast.expr) -> bool:
 
 @final
 @attrs.define
-class AnnotationStats(ast.NodeVisitor):
+class AnnotationStats:
     """Stats on the annotations for a source file or a directory of source files."""
 
     annotated_parameters: int = 0
@@ -111,46 +112,47 @@ class AnnotationStats(ast.NodeVisitor):
     explicit_Any_variables: int = 0
     explicit_Incomplete_variables: int = 0
 
+
+@attrs.define
+class _StatisticsCollector(ast.NodeVisitor):
+    stats: AnnotationStats
+
     def visit_AnnAssign(self, node: ast.AnnAssign) -> None:
-        """Analyze annotated variables in global and class scopes."""
-        self.annotated_variables += 1
+        self.stats.annotated_variables += 1
         if _is_Any(node.annotation):
-            self.explicit_Any_variables += 1
+            self.stats.explicit_Any_variables += 1
         elif _is_Incomplete(node.annotation):
-            self.explicit_Incomplete_variables += 1
+            self.stats.explicit_Incomplete_variables += 1
         self.generic_visit(node)
 
     def visit_arg(self, node: ast.arg) -> None:
-        """Analyze annotations for function parameters."""
         annotation = node.annotation
         if annotation is None:
-            self.unannotated_parameters += 1
+            self.stats.unannotated_parameters += 1
         else:
-            self.annotated_parameters += 1
+            self.stats.annotated_parameters += 1
             if _is_Any(annotation):
-                self.explicit_Any_parameters += 1
+                self.stats.explicit_Any_parameters += 1
             elif _is_Incomplete(annotation):
-                self.explicit_Incomplete_parameters += 1
+                self.stats.explicit_Incomplete_parameters += 1
         self.generic_visit(node)
 
     def _visit_function(self, node: ast.FunctionDef | ast.AsyncFunctionDef) -> None:
         returns = node.returns
         if returns is None:
-            self.unannotated_returns += 1
+            self.stats.unannotated_returns += 1
         else:
-            self.annotated_returns += 1
+            self.stats.annotated_returns += 1
             if _is_Any(returns):
-                self.explicit_Any_returns += 1
+                self.stats.explicit_Any_returns += 1
             elif _is_Incomplete(returns):
-                self.explicit_Incomplete_returns += 1
+                self.stats.explicit_Incomplete_returns += 1
 
     def visit_FunctionDef(self, node: ast.FunctionDef) -> None:
-        """Analyze synchronous function returns."""
         self._visit_function(node)
         self.generic_visit(node)
 
     def visit_AsyncFunctionDef(self, node: ast.AsyncFunctionDef) -> None:
-        """Analyze asynchronous function returns."""
         self._visit_function(node)
         self.generic_visit(node)
 
@@ -169,14 +171,14 @@ class AnnotationStats(ast.NodeVisitor):
             An `AnnotationStats` object containing data
             about the annotations in the file.
         """
-        visitor = AnnotationStats()
+        visitor = _StatisticsCollector(AnnotationStats())
         visitor.visit(ast.parse(path.read_text(encoding="utf-8")))
-        return visitor
+        return visitor.stats
 
 
 def _gather_annotation_stats_on_package(package_directory: Path) -> AnnotationStats:
     file_results = [
-        AnnotationStats.gather_stats_on_file(path)
+        _StatisticsCollector.gather_stats_on_file(path)
         for path in package_directory.rglob("*.pyi")
     ]
     # Sum all the statistics together, to get the statistics for the package as a whole
@@ -333,38 +335,14 @@ class PackageStats:
     pyright_setting: PyrightSetting
     annotation_stats: AnnotationStats
 
+    def to_dict(self) -> dict[str, Any]:
+        """Convert a `PackageStats` object to unstructured data."""
+        return _cattrs_unstructure(self)  # type: ignore[no-any-return]
 
-@cache
-def _package_stats_type_hints() -> Mapping[str, Any]:
-    return get_type_hints(PackageStats)
-
-
-@cache
-def _package_stats_enum_fields() -> frozenset[str]:
-    return frozenset(
-        key for key, val in _package_stats_type_hints().items() if issubclass(val, Enum)
-    )
-
-
-def _stats_from_dict(**kwargs: Any) -> PackageStats:
-    converted_stats: dict[str, Any] = dict(kwargs)
-    type_hints = _package_stats_type_hints()
-    enum_fields = _package_stats_enum_fields()
-    for key, val in kwargs.items():
-        if key in enum_fields:
-            converted_stats[key] = type_hints[key][val]
-        elif type_hints[key] is int:
-            converted_stats[key] = int(val)
-        elif key == "annotation_stats":
-            converted_stats["annotation_stats"] = _cattrs_structure(
-                val, AnnotationStats
-            )
-    return PackageStats(**converted_stats)
-
-
-_CATTRS_CONVERTER.register_structure_hook(
-    PackageStats, lambda d, t: _stats_from_dict(**d)
-)
+    @staticmethod
+    def from_dict(data: dict[str, Any]) -> PackageStats:
+        """Coerce unstructured data into a `PackageStats` object."""
+        return _cattrs_structure(data, PackageStats)
 
 
 async def _gather_stats_for_package(
