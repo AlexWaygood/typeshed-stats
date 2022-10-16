@@ -30,6 +30,7 @@ classifiers = [
 ]
 dependencies = [
     "attrs>=21.3.0",
+    "cattrs",
     "aiohttp[speedups]",
     "packaging",
     "tomli; python_version < '3.11'",
