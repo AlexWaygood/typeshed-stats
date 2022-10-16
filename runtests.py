@@ -7,7 +7,6 @@ FILES_TO_CHECK = ("src", "test_typeshed_stats.py", "runtests.py")
 
 def main() -> int:
     """Run the checks."""
-
     print("Running requirements-txt-fixer...")
     subprocess.run(["requirements-txt-fixer", "requirements-dev.txt"])
 

@@ -216,7 +216,6 @@ def _setup_logger(level: int) -> logging.Logger:
 
 def main() -> None:
     """CLI entry point."""
-
     packages, typeshed_dir, output_option, writefile, logging_level = _get_options()
     logger = _setup_logger(logging_level)
     logger.info("Gathering stats...")

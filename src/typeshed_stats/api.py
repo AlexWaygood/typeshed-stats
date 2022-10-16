@@ -14,7 +14,7 @@ from enum import Enum
 from functools import cache
 from operator import attrgetter
 from pathlib import Path
-from typing import Any, TypeAlias, final
+from typing import Any, TypeAlias, TypeVar, final
 
 import aiohttp
 import attrs
@@ -37,7 +37,8 @@ __all__ = [
     "PackageStatus",
     "PyrightSetting",
     "StubtestSetting",
-    "TypeAlias",
+    "gather_annotation_stats_on_file",
+    "gather_annotation_stats_on_package",
     "gather_stats",
     "stats_from_csv",
     "stats_from_json",
@@ -53,16 +54,20 @@ _CATTRS_CONVERTER = cattrs.Converter()
 _cattrs_unstructure = _CATTRS_CONVERTER.unstructure
 _cattrs_structure = _CATTRS_CONVERTER.structure
 
+_NiceReprEnumSelf = TypeVar("_NiceReprEnumSelf", bound="_NiceReprEnum")
+
 
 class _NiceReprEnum(Enum):
     """Base class for several public-API enums in this package."""
 
+    def __new__(cls: type[_NiceReprEnumSelf], doc: str) -> _NiceReprEnumSelf:
+        assert isinstance(doc, str)
+        member = object.__new__(cls)
+        member._value_ = member.__doc__ = doc
+        return member
+
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}.{self.name}"
-
-    @property
-    def __doc__(self) -> str:  # type: ignore[override]
-        return self.value  # type: ignore[no-any-return]
 
     @property
     def formatted_name(self) -> str:
@@ -74,7 +79,23 @@ _CATTRS_CONVERTER.register_structure_hook(_NiceReprEnum, lambda d, t: t[d])  # t
 
 
 def _is_Any(annotation: ast.expr) -> bool:
-    """Return `True` if an AST node represents `typing.Any`."""
+    """Return `True` if an AST node represents `typing.Any`.
+
+    >>> _is_Any(ast.Name(id="Any"))
+    True
+    >>> _is_Any(ast.Name(id="foo"))
+    False
+    >>> _is_Any(ast.Attribute(value=ast.Name(id="typing"), attr="Any"))
+    True
+    >>> _is_Any(ast.Attribute(value=ast.Name(id="typing"), attr="foo"))
+    False
+    >>> _is_Any(ast.Attribute(value=ast.Name(id="foo"), attr="Any"))
+    False
+    >>> _is_Any(ast.Module())
+    False
+    >>> _is_Any(object())
+    False
+    """
     match annotation:
         case ast.Name("Any"):
             return True
@@ -85,7 +106,23 @@ def _is_Any(annotation: ast.expr) -> bool:
 
 
 def _is_Incomplete(annotation: ast.expr) -> bool:
-    """Return `True` if an AST node represents `_typeshed.Incomplete`."""
+    """Return `True` if an AST node represents `_typeshed.Incomplete`.
+
+    >>> _is_Incomplete(ast.Name(id="Incomplete"))
+    True
+    >>> _is_Incomplete(ast.Name(id="foo"))
+    False
+    >>> _is_Incomplete(ast.Attribute(value=ast.Name(id="_typeshed"), attr="Incomplete"))
+    True
+    >>> _is_Incomplete(ast.Attribute(value=ast.Name(id="_typeshed"), attr="foo"))
+    False
+    >>> _is_Incomplete(ast.Attribute(value=ast.Name(id="foo"), attr="Incomplete"))
+    False
+    >>> _is_Incomplete(ast.Module())
+    False
+    >>> _is_Incomplete(object())
+    False
+    """
     match annotation:
         case ast.Name("Incomplete"):
             return True
@@ -113,9 +150,26 @@ class AnnotationStats:
     explicit_Incomplete_variables: int = 0
 
 
-@attrs.define
 class _StatisticsCollector(ast.NodeVisitor):
-    stats: AnnotationStats
+    """AST Visitor for collecting stats on a single stub file."""
+
+    def __init__(self) -> None:
+        self.stats = AnnotationStats()
+        self._class_nesting = 0
+        self._function_decorators: frozenset[str] = frozenset()
+
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__}(stats={self.stats})"
+
+    @property
+    def in_class(self) -> bool:
+        """Return `True` if we're currently visiting a class definition."""
+        return bool(self._class_nesting)
+
+    def visit_ClassDef(self, node: ast.ClassDef) -> None:
+        self._class_nesting += 1
+        self.generic_visit(node)
+        self._class_nesting -= 1
 
     def visit_AnnAssign(self, node: ast.AnnAssign) -> None:
         self.stats.annotated_variables += 1
@@ -126,6 +180,16 @@ class _StatisticsCollector(ast.NodeVisitor):
         self.generic_visit(node)
 
     def visit_arg(self, node: ast.arg) -> None:
+        self.generic_visit(node)
+
+        # We don't want self/cls/metacls/mcls arguments to count towards the statistics
+        if self.in_class and "staticmethod" not in self._function_decorators:
+            if "classmethod" in self._function_decorators:
+                if node.arg in {"cls", "metacls", "mcls"}:
+                    return
+            elif node.arg == "self":
+                return
+
         annotation = node.annotation
         if annotation is None:
             self.stats.unannotated_parameters += 1
@@ -135,7 +199,6 @@ class _StatisticsCollector(ast.NodeVisitor):
                 self.stats.explicit_Any_parameters += 1
             elif _is_Incomplete(annotation):
                 self.stats.explicit_Incomplete_parameters += 1
-        self.generic_visit(node)
 
     def _visit_function(self, node: ast.FunctionDef | ast.AsyncFunctionDef) -> None:
         returns = node.returns
@@ -148,37 +211,49 @@ class _StatisticsCollector(ast.NodeVisitor):
             elif _is_Incomplete(returns):
                 self.stats.explicit_Incomplete_returns += 1
 
+        old_function_decorators = self._function_decorators
+        self._function_decorators = frozenset(
+            decorator.id
+            for decorator in node.decorator_list
+            if isinstance(decorator, ast.Name)
+        )
+        self.generic_visit(node)
+        self._function_decorators = old_function_decorators
+
     def visit_FunctionDef(self, node: ast.FunctionDef) -> None:
         self._visit_function(node)
-        self.generic_visit(node)
 
     def visit_AsyncFunctionDef(self, node: ast.AsyncFunctionDef) -> None:
         self._visit_function(node)
-        self.generic_visit(node)
-
-    @staticmethod
-    def gather_stats_on_file(path: Path) -> AnnotationStats:
-        """Gather stats on a single file.
-
-        This function creates a new `AnnotationStats` visitor,
-        uses the visitor to collect statistics on the source code of a single file,
-        and returns the visitor.
-
-        Args:
-            path: The location of the file to be analyzed.
-
-        Returns:
-            An `AnnotationStats` object containing data
-            about the annotations in the file.
-        """
-        visitor = _StatisticsCollector(AnnotationStats())
-        visitor.visit(ast.parse(path.read_text(encoding="utf-8")))
-        return visitor.stats
 
 
-def _gather_annotation_stats_on_package(package_directory: Path) -> AnnotationStats:
+def gather_annotation_stats_on_file(path: Path) -> AnnotationStats:
+    """Gather annotation stats on a single typeshed stub file.
+
+    Args:
+        path: The location of the file to be analysed.
+
+    Returns:
+        An `AnnotationStats` object containing data
+        about the annotations in the file.
+    """
+    visitor = _StatisticsCollector()
+    visitor.visit(ast.parse(path.read_text(encoding="utf-8")))
+    return visitor.stats
+
+
+def gather_annotation_stats_on_package(package_directory: Path) -> AnnotationStats:
+    """Aggregate annotation stats on a typeshed stubs package.
+
+    Args:
+        package_directory: The location of the stubs package to be analysed.
+
+    Returns:
+        An `AnnotationStats` object containing data
+        about the annotations in the package.
+    """
     file_results = [
-        _StatisticsCollector.gather_stats_on_file(path)
+        gather_annotation_stats_on_file(path)
         for path in package_directory.rglob("*.pyi")
     ]
     # Sum all the statistics together, to get the statistics for the package as a whole
@@ -362,7 +437,7 @@ async def _gather_stats_for_package(
         pyright_setting=_get_pyright_strictness(
             package_directory, typeshed_dir=typeshed_dir
         ),
-        annotation_stats=_gather_annotation_stats_on_package(package_directory),
+        annotation_stats=gather_annotation_stats_on_package(package_directory),
     )
 
 
