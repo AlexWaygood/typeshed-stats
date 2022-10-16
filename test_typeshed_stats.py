@@ -23,6 +23,10 @@ from typeshed_stats import (
     stats_to_markdown,
 )
 
+# =================
+# Tests for __all__
+# =================
+
 
 def test___all___alphabetisation() -> None:
     """Test that __all__ is alphabetically sorted."""
@@ -45,6 +49,11 @@ def test_all_public_names_in___all__() -> None:
             or name in vars(builtins)
         )
     }
+
+
+# =======================================
+# Tests for serialisation/deserialisation
+# =======================================
 
 
 info_on_foo = PackageStats(

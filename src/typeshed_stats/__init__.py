@@ -5,6 +5,7 @@ from __future__ import annotations
 import ast
 import asyncio
 import json
+import logging
 import os
 import re
 import sys
@@ -442,11 +443,18 @@ class _Options(NamedTuple):
     typeshed_dir: Path
     output_option: OutputOption
     writefile: Path | None
+    logging_level: int
 
 
 def _get_options() -> _Options:
     """Parse options passed on the command line."""
     import argparse
+
+    def _valid_log_argument(arg: str) -> int:
+        try:
+            return int(getattr(logging, arg.upper()))
+        except AttributeError:
+            raise argparse.ArgumentTypeError(f"Invalid logging level {arg!r}")
 
     parser = argparse.ArgumentParser(description="Script to gather stats on typeshed")
     parser.add_argument(
@@ -474,6 +482,12 @@ def _get_options() -> _Options:
             "Overwrite the path passed to `--file` if it already exists"
             " (defaults to False)"
         ),
+    )
+    parser.add_argument(
+        "--log",
+        type=_valid_log_argument,
+        default=logging.INFO,
+        help="Specify the level of logging (defaults to logging.INFO)",
     )
 
     output_options = parser.add_mutually_exclusive_group()
@@ -534,7 +548,7 @@ def _get_options() -> _Options:
 
     packages = args.packages or os.listdir(stubs_dir) + ["stdlib"]
 
-    return _Options(packages, typeshed_dir, output_option, writefile)
+    return _Options(packages, typeshed_dir, output_option, writefile, args.log)
 
 
 def _format_stats_for_pprinting(
@@ -689,7 +703,9 @@ def _format_stats(
     return output_option.convert(stats)
 
 
-def _write_stats(formatted_stats: object, writefile: Path | None) -> None:
+def _write_stats(
+    formatted_stats: object, writefile: Path | None, logger: logging.Logger
+) -> None:
     if writefile is None:
         pprint: Callable[[object], None]
         try:
@@ -707,18 +723,28 @@ def _write_stats(formatted_stats: object, writefile: Path | None) -> None:
             formatted_stats = str(formatted_stats)
         with writefile.open("w", newline=newline) as f:
             f.write(formatted_stats)
-        print(f'Output successfully written to "{writefile}"!')
+        logger.info(f'Output successfully written to "{writefile}"!')
+
+
+def _setup_logger(level: int) -> logging.Logger:
+    logger = logging.getLogger("typeshed_stats")
+    logger.setLevel(level)
+    handler = logging.StreamHandler()
+    handler.setLevel(level)
+    logger.addHandler(handler)
+    return logger
 
 
 def main() -> None:
     """CLI entry point."""
 
-    packages, typeshed_dir, output_option, writefile = _get_options()
-    print("Gathering stats...")
+    packages, typeshed_dir, output_option, writefile, logging_level = _get_options()
+    logger = _setup_logger(logging_level)
+    logger.info("Gathering stats...")
     stats = gather_stats(packages, typeshed_dir=typeshed_dir)
-    print("Formatting stats...")
+    logger.info("Formatting stats...")
     formatted_stats = _format_stats(stats, output_option)
-    _write_stats(formatted_stats, writefile)
+    _write_stats(formatted_stats, writefile, logger)
 
 
 if __name__ == "__main__":
