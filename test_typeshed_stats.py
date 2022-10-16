@@ -2,11 +2,14 @@
 
 import builtins
 import csv
+import importlib
 import io
 import json
+import pkgutil
 import types
 
 import markdown
+import pytest
 
 import typeshed_stats
 from typeshed_stats import (
@@ -28,20 +31,28 @@ from typeshed_stats import (
 # =================
 
 
-def test___all___alphabetisation() -> None:
+ALL_MODULES = [typeshed_stats] + [
+    importlib.import_module(f"typeshed_stats.{m.name}")
+    for m in pkgutil.iter_modules(typeshed_stats.__path__)
+]
+
+
+@pytest.mark.parametrize("module", ALL_MODULES)
+def test___all___alphabetisation(module: types.ModuleType) -> None:
     """Test that __all__ is alphabetically sorted."""
-    assert typeshed_stats.__all__ == sorted(typeshed_stats.__all__)
+    assert module.__all__ == sorted(module.__all__)
 
 
 def _is_from_other_module(obj: object) -> bool:
     return getattr(obj, "__module__", "typeshed_stats") != "typeshed_stats"
 
 
-def test_all_public_names_in___all__() -> None:
+@pytest.mark.parametrize("module", ALL_MODULES)
+def test_all_public_names_in___all__(module: types.ModuleType) -> None:
     """Test that all names not in `__all__` are marked as private."""
-    assert set(typeshed_stats.__all__) >= {
+    assert set(module.__all__) >= {
         name
-        for name, value in vars(typeshed_stats).items()
+        for name, value in vars(module).items()
         if not (
             name.startswith("_")
             or isinstance(value, types.ModuleType)
