@@ -13,11 +13,15 @@
 [flake8]
 max-line-length = 80
 max-complexity = 12
-noqa-require-code = true
 ignore =
   B950, E203, E501, W503, W291, W293
 
-# I don't care about docstrings for test functions
-per-file-ignores = tests/*.py:D103
+# flake8-noqa config
+noqa-require-code = true
 
+# flake8-pytest-style config
 pytest-fixture-no-parentheses = true
+pytest-mark-no-parentheses = true
+
+# I don't care about docstrings for test files or functions
+per-file-ignores = tests/*.py : D

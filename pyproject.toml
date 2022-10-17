@@ -48,6 +48,9 @@ everything = ["rich", "Markdown", "types-Markdown"]
 [project.scripts]
 typeshed-stats = "typeshed_stats:main"
 
+[tool.pycln]
+all = true
+
 [tool.black]
 line_length = 88
 target-version = ['py310']
@@ -70,5 +73,5 @@ enable_error_code = 'ignore-without-code,redundant-expr'
 warn_unreachable = true
 
 [tool.pytest.ini_options]
-addopts = "--doctest-modules --strict-config "
+addopts = "--doctest-modules --strict-config --strict-markers -vv --cov=src --cov-report term-missing"
 xfail_strict = true

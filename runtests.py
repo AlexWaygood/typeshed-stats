@@ -11,7 +11,7 @@ def main() -> int:
     subprocess.run(["requirements-txt-fixer", "requirements-dev.txt"])
 
     print("\nRunning pycln...")
-    subprocess.run(["pycln", ".", "--all"])
+    subprocess.run(["pycln", "."])
 
     print("\nRunning isort...")
     subprocess.run(["isort", *FILES_TO_CHECK])
@@ -29,7 +29,7 @@ def main() -> int:
     subprocess.run(["mypy"], check=True)
 
     print("\nRunning pytest...")
-    subprocess.run(["pytest", "--cov=src", "-vv"])
+    subprocess.run(["pytest"])
     return 0
 
 

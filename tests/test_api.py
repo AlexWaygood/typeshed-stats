@@ -1,5 +1,3 @@
-"""Test api.py."""
-
 import csv
 import io
 import json

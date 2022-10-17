@@ -44,7 +44,8 @@ __all__ = [
     "stats_to_markdown",
 ]
 
-assert sys.version_info >= (3, 10), "Python 3.10+ is required."
+if sys.version_info < (3, 10):
+    raise ImportError("Python 3.10+ is required!")
 
 if __name__ == "__main__":
     try:
