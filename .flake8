@@ -19,3 +19,5 @@ ignore =
 
 # I don't care about docstrings for test functions
 per-file-ignores = tests/*.py:D103
+
+pytest-fixture-no-parentheses = true
