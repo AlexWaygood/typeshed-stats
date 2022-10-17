@@ -574,9 +574,6 @@ def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
     """Generate MarkDown describing statistics on multiple stubs packages."""
     import textwrap
 
-    def format_enum_member(enum_member: Enum) -> str:
-        return " ".join(enum_member.name.split("_")).lower()
-
     template = textwrap.dedent(
         """
         ## Stats on typeshed's stubs for {package_name}
@@ -584,13 +581,13 @@ def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
         ### Number of lines
         {number_of_lines}
 
-        ### Package status: {package_status.formatted_name}
+        ### Package status: *{package_status.formatted_name}*
         {package_status.value}
 
-        ### Stubtest settings in CI: {stubtest_setting.formatted_name}
+        ### Stubtest settings in CI: *{stubtest_setting.formatted_name}*
         {stubtest_setting.value}
 
-        ### Pyright settings in CI: {pyright_setting.formatted_name}
+        ### Pyright settings in CI: *{pyright_setting.formatted_name}*
         {pyright_setting.value}
 
         ### Statistics on the annotations in typeshed's stubs for {package_name}
