@@ -97,7 +97,7 @@ def random_PackageStats_data() -> Sequence[PackageStats]:
             stubtest_setting=random.choice(list(StubtestSetting)),
             pyright_setting=random.choice(list(PyrightSetting)),
             annotation_stats=AnnotationStats(
-                *[random.randint(0, 1000) for _ in attrs.fields(AnnotationStats)]  # type: ignore[arg-type]
+                *[random.randint(0, 1000) for _ in attrs.fields(AnnotationStats)]
             ),
         )
 
@@ -213,7 +213,7 @@ def test_annotation_stats_on_file(
         file.write(example_stub_file)
     stats = gather_annotation_stats_on_file(test_path)
 
-    for field in attrs.fields(AnnotationStats):  # type: ignore[arg-type]
+    for field in attrs.fields(AnnotationStats):
         field_name = field.name
         with subtests.test(field_name=field_name):
             assert getattr(stats, field_name) == getattr(
@@ -258,7 +258,7 @@ def test_annotation_stats_on_package(
         EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed
     )
 
-    field_names = [field.name for field in attrs.fields(AnnotationStats)]  # type: ignore[arg-type]
+    field_names = [field.name for field in attrs.fields(AnnotationStats)]
 
     for result_name, result in [("stdlib", stdlib_stats), ("package", package_stats)]:
         for field_name in field_names:
