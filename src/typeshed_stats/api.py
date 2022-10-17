@@ -601,7 +601,7 @@ def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
           - Unannotated returns: {unannotated_returns}
           - Explicit `Any` returns: {explicit_Any_returns}
           - Explicit `Incomplete` returns: {explicit_Incomplete_returns}
-        Variables:
+        - Variables:
           - Annotated variables: {annotated_variables}
           - Explicit `Any` variables: {explicit_Any_variables}
           - Explicit `Incomplete` variables: {explicit_Incomplete_variables}

@@ -26,7 +26,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
   - Unannotated returns: 16
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 1
-Variables:
+- Variables:
   - Annotated variables: 3
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -58,7 +58,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
   - Unannotated returns: 15
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 3
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 1
@@ -90,7 +90,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 8
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -122,7 +122,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 2
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -154,7 +154,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 94
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 141
   - Explicit `Any` variables: 45
   - Explicit `Incomplete` variables: 0
@@ -186,7 +186,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 286
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 250
   - Explicit `Any` variables: 196
   - Explicit `Incomplete` variables: 0
@@ -218,7 +218,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 1
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 1
-Variables:
+- Variables:
   - Annotated variables: 0
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -250,7 +250,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 50
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 182
   - Explicit `Any` variables: 69
   - Explicit `Incomplete` variables: 0
@@ -282,7 +282,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 9
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 6
-Variables:
+- Variables:
   - Annotated variables: 45
   - Explicit `Any` variables: 4
   - Explicit `Incomplete` variables: 0
@@ -314,7 +314,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 443
   - Explicit `Any` returns: 2
   - Explicit `Incomplete` returns: 2
-Variables:
+- Variables:
   - Annotated variables: 366
   - Explicit `Any` variables: 266
   - Explicit `Incomplete` variables: 0
@@ -346,7 +346,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 306
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 1301
   - Explicit `Any` variables: 432
   - Explicit `Incomplete` variables: 0
@@ -378,7 +378,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 1
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -410,7 +410,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 7
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 92
   - Explicit `Any` variables: 2
   - Explicit `Incomplete` variables: 0
@@ -442,7 +442,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 0
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -474,7 +474,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 147
   - Explicit `Any` returns: 5
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 261
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 115
@@ -506,7 +506,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 86
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -538,7 +538,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 4
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -570,7 +570,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 9
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -602,7 +602,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 85
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -634,7 +634,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 76
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 133
   - Explicit `Any` variables: 86
   - Explicit `Incomplete` variables: 0
@@ -666,7 +666,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 1
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 57
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -698,7 +698,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 1
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -730,7 +730,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 4
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 14
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -762,7 +762,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 14
   - Explicit `Any` returns: 13
   - Explicit `Incomplete` returns: 5
-Variables:
+- Variables:
   - Annotated variables: 279
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -794,7 +794,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 107
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -826,7 +826,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 67
   - Explicit `Any` returns: 4
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 137
   - Explicit `Any` variables: 80
   - Explicit `Incomplete` variables: 0
@@ -858,7 +858,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 10
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -890,7 +890,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 14
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -922,7 +922,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 13
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -954,7 +954,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 16
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -986,7 +986,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 2
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1018,7 +1018,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 10
   - Explicit `Any` returns: 4
   - Explicit `Incomplete` returns: 45
-Variables:
+- Variables:
   - Annotated variables: 82
   - Explicit `Any` variables: 5
   - Explicit `Incomplete` variables: 0
@@ -1050,7 +1050,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 1
-Variables:
+- Variables:
   - Annotated variables: 1
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1082,7 +1082,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 12
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1114,7 +1114,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 12
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1146,7 +1146,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 2
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1178,7 +1178,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 12
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1210,7 +1210,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 2
-Variables:
+- Variables:
   - Annotated variables: 8
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1242,7 +1242,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 1
-Variables:
+- Variables:
   - Annotated variables: 2
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1274,7 +1274,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 1
-Variables:
+- Variables:
   - Annotated variables: 6
   - Explicit `Any` variables: 1
   - Explicit `Incomplete` variables: 0
@@ -1306,7 +1306,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 10
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1338,7 +1338,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 12
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1370,7 +1370,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 2
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1402,7 +1402,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 1
-Variables:
+- Variables:
   - Annotated variables: 2
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1434,7 +1434,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 34
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1466,7 +1466,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 19
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 16
   - Explicit `Any` variables: 7
   - Explicit `Incomplete` variables: 0
@@ -1498,7 +1498,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 247
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 521
   - Explicit `Any` variables: 68
   - Explicit `Incomplete` variables: 27
@@ -1530,7 +1530,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 294
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1562,7 +1562,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 205
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 191
   - Explicit `Any` variables: 139
   - Explicit `Incomplete` variables: 0
@@ -1594,7 +1594,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 4
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 18
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1626,7 +1626,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 214
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 220
   - Explicit `Any` variables: 180
   - Explicit `Incomplete` variables: 0
@@ -1658,7 +1658,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 26
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 85
   - Explicit `Any` variables: 57
   - Explicit `Incomplete` variables: 0
@@ -1690,7 +1690,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 98
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 75
   - Explicit `Any` variables: 54
   - Explicit `Incomplete` variables: 0
@@ -1722,7 +1722,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 75
   - Explicit `Any` returns: 2
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 130
   - Explicit `Any` variables: 63
   - Explicit `Incomplete` variables: 0
@@ -1754,7 +1754,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 17
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1786,7 +1786,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 52
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 41
   - Explicit `Any` variables: 37
   - Explicit `Incomplete` variables: 0
@@ -1818,7 +1818,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 32
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 62
   - Explicit `Any` variables: 15
   - Explicit `Incomplete` variables: 0
@@ -1850,7 +1850,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 51
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -1882,7 +1882,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 432
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 945
   - Explicit `Any` variables: 433
   - Explicit `Incomplete` variables: 0
@@ -1914,7 +1914,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 65
   - Explicit `Any` returns: 4
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 214
   - Explicit `Any` variables: 79
   - Explicit `Incomplete` variables: 0
@@ -1946,7 +1946,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 2
   - Explicit `Any` returns: 11
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 52
   - Explicit `Any` variables: 32
   - Explicit `Incomplete` variables: 0
@@ -1978,7 +1978,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 6
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 1
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2010,7 +2010,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 30
   - Explicit `Any` returns: 55
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 972
   - Explicit `Any` variables: 30
   - Explicit `Incomplete` variables: 0
@@ -2042,7 +2042,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 211
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 318
   - Explicit `Any` variables: 207
   - Explicit `Incomplete` variables: 0
@@ -2074,7 +2074,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 453
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 4197
   - Explicit `Any` variables: 3566
   - Explicit `Incomplete` variables: 0
@@ -2106,7 +2106,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 56
   - Explicit `Any` variables: 2
   - Explicit `Incomplete` variables: 0
@@ -2138,7 +2138,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 2
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 163
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2170,7 +2170,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 7
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 543
   - Explicit `Any` variables: 13
   - Explicit `Incomplete` variables: 0
@@ -2202,7 +2202,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 3
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 36
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2234,7 +2234,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 332
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 570
   - Explicit `Any` variables: 101
   - Explicit `Incomplete` variables: 0
@@ -2266,7 +2266,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 1
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2298,7 +2298,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 463
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 436
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 369
@@ -2330,7 +2330,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 2
-Variables:
+- Variables:
   - Annotated variables: 11
   - Explicit `Any` variables: 3
   - Explicit `Incomplete` variables: 0
@@ -2362,7 +2362,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 360
   - Explicit `Any` returns: 2
   - Explicit `Incomplete` returns: 2
-Variables:
+- Variables:
   - Annotated variables: 800
   - Explicit `Any` variables: 325
   - Explicit `Incomplete` variables: 0
@@ -2394,7 +2394,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 0
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2426,7 +2426,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 46
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2458,7 +2458,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 56
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 34
   - Explicit `Any` variables: 6
   - Explicit `Incomplete` variables: 0
@@ -2490,7 +2490,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 95
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 755
   - Explicit `Any` variables: 126
   - Explicit `Incomplete` variables: 0
@@ -2522,7 +2522,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 215
   - Explicit `Any` returns: 15
   - Explicit `Incomplete` returns: 1
-Variables:
+- Variables:
   - Annotated variables: 458
   - Explicit `Any` variables: 206
   - Explicit `Incomplete` variables: 0
@@ -2554,7 +2554,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 175
   - Explicit `Any` returns: 2
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 534
   - Explicit `Any` variables: 161
   - Explicit `Incomplete` variables: 0
@@ -2586,7 +2586,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 74
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2618,7 +2618,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 23
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2650,7 +2650,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 5
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 601
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2682,7 +2682,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 0
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2714,7 +2714,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 2
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 108
   - Explicit `Any` variables: 3
   - Explicit `Incomplete` variables: 0
@@ -2746,7 +2746,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 79
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 2
-Variables:
+- Variables:
   - Annotated variables: 314
   - Explicit `Any` variables: 193
   - Explicit `Incomplete` variables: 0
@@ -2778,7 +2778,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 2
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 103
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2810,7 +2810,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 40
   - Explicit `Any` returns: 6
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 734
   - Explicit `Any` variables: 58
   - Explicit `Incomplete` variables: 0
@@ -2842,7 +2842,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 102
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2874,7 +2874,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 2
   - Explicit `Incomplete` returns: 2
-Variables:
+- Variables:
   - Annotated variables: 120
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2906,7 +2906,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 0
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2938,7 +2938,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 15
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -2970,7 +2970,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 9
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3002,7 +3002,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 1
-Variables:
+- Variables:
   - Annotated variables: 1
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3034,7 +3034,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 46
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 93
   - Explicit `Any` variables: 13
   - Explicit `Incomplete` variables: 0
@@ -3066,7 +3066,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 6
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 19
   - Explicit `Any` variables: 2
   - Explicit `Incomplete` variables: 0
@@ -3098,7 +3098,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 30
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 118
   - Explicit `Any` variables: 33
   - Explicit `Incomplete` variables: 0
@@ -3130,7 +3130,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 30
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3162,7 +3162,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 4
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3194,7 +3194,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
   - Unannotated returns: 17
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 24
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 5
@@ -3226,7 +3226,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 2
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 16
-Variables:
+- Variables:
   - Annotated variables: 57
   - Explicit `Any` variables: 7
   - Explicit `Incomplete` variables: 0
@@ -3258,7 +3258,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 2175
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 24849
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 2747
@@ -3290,7 +3290,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 240
   - Explicit `Any` returns: 5
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 224
   - Explicit `Any` variables: 185
   - Explicit `Incomplete` variables: 0
@@ -3322,7 +3322,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 657
   - Explicit `Any` returns: 282
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 630
   - Explicit `Any` variables: 200
   - Explicit `Incomplete` variables: 6
@@ -3354,7 +3354,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 70
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3386,7 +3386,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 88
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 139
   - Explicit `Any` variables: 40
   - Explicit `Incomplete` variables: 0
@@ -3418,7 +3418,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 0
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3450,7 +3450,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 1
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 1
-Variables:
+- Variables:
   - Annotated variables: 2
   - Explicit `Any` variables: 2
   - Explicit `Incomplete` variables: 0
@@ -3482,7 +3482,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 267
   - Explicit `Any` returns: 6
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 658
   - Explicit `Any` variables: 412
   - Explicit `Incomplete` variables: 9
@@ -3514,7 +3514,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 5
   - Explicit `Any` returns: 2
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 18
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3546,7 +3546,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 3
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3578,7 +3578,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 4
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 13
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3610,7 +3610,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 23
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 9
   - Explicit `Any` variables: 7
   - Explicit `Incomplete` variables: 0
@@ -3642,7 +3642,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 3372
   - Explicit `Any` returns: 11
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 3169
   - Explicit `Any` variables: 2075
   - Explicit `Incomplete` variables: 0
@@ -3674,7 +3674,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 4
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3706,7 +3706,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 170
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 155
   - Explicit `Any` variables: 42
   - Explicit `Incomplete` variables: 0
@@ -3738,7 +3738,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 27
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3770,7 +3770,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 6
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3802,7 +3802,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 15
   - Explicit `Any` variables: 1
   - Explicit `Incomplete` variables: 0
@@ -3834,7 +3834,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 1
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3866,7 +3866,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 24
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 97
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 67
@@ -3898,7 +3898,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 2
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 4
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3930,7 +3930,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 5
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3962,7 +3962,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 11
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 5
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -3994,7 +3994,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 4
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 312
   - Explicit `Any` variables: 1
   - Explicit `Incomplete` variables: 0
@@ -4026,7 +4026,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
   - Unannotated returns: 2
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 3
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -4058,7 +4058,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 3
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 1
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -4090,7 +4090,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 66
   - Explicit `Any` returns: 2
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 160
   - Explicit `Any` variables: 53
   - Explicit `Incomplete` variables: 0
@@ -4122,7 +4122,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Unannotated returns: 105
   - Explicit `Any` returns: 1
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 184
   - Explicit `Any` variables: 90
   - Explicit `Incomplete` variables: 0
@@ -4154,7 +4154,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 6
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 247
   - Explicit `Any` variables: 9
   - Explicit `Incomplete` variables: 0
@@ -4186,7 +4186,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 50
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -4218,7 +4218,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 1
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -4250,7 +4250,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 6
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 1
@@ -4282,7 +4282,7 @@ All files are tested with the stricter pyright settings in CI.
   - Unannotated returns: 0
   - Explicit `Any` returns: 0
   - Explicit `Incomplete` returns: 0
-Variables:
+- Variables:
   - Annotated variables: 77
   - Explicit `Any` variables: 0
   - Explicit `Incomplete` variables: 0
@@ -4314,7 +4314,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
   - Unannotated returns: 414
   - Explicit `Any` returns: 431
   - Explicit `Incomplete` returns: 8
-Variables:
+- Variables:
   - Annotated variables: 8482
   - Explicit `Any` variables: 344
   - Explicit `Incomplete` variables: 92
