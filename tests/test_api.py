@@ -22,6 +22,8 @@ from typeshed_stats import (
     StubtestSetting,
     gather_annotation_stats_on_file,
     gather_annotation_stats_on_package,
+    get_package_line_number,
+    get_stubtest_setting,
     stats_from_csv,
     stats_from_json,
     stats_to_csv,
@@ -79,6 +81,211 @@ def test_non_str_value_for__NiceReprEnum_impossible() -> None:
             NOT_A_STRING = 1
 
 
+# =========================================
+# Tests for collecting stats on annotations
+# =========================================
+
+
+def test__AnnotationStatsCollector___repr__() -> None:
+    assert (
+        repr(typeshed_stats.api._AnnotationStatsCollector())
+        == f"_AnnotationStatsCollector(stats={AnnotationStats()})"
+    )
+
+
+@pytest.fixture(scope="session")
+def example_stub_file() -> str:
+    return textwrap.dedent(
+        """
+        import _typeshed
+        import typing
+        from _typeshed import Incomplete
+        from typing import Any
+
+        a: int
+        b: str = ...
+        c: Any
+        d: Any
+        d: Incomplete
+        e: typing.Any
+        f: _typeshed.Incomplete
+
+        class Spam:
+            a: typing.Any
+            b = ...
+            c: int = ...
+
+        def func1(arg): ...
+        def func2(arg: int): ...
+        def func3(arg: Incomplete): ...
+        def func4(arg: Any) -> Any: ...
+
+        class Eggs:
+            async def func5(self, arg): ...
+            @staticmethod
+            async def func6(arg: str) -> list[bytes]: ...
+            def func7(arg: Any) -> _typeshed.Incomplete: ...
+            @classmethod
+            def class_method(cls, eggs: Incomplete): ...
+
+        class Meta(type):
+            @classmethod
+            def metaclass_classmethod(metacls) -> str: ...
+            @classmethod
+            async def metaclass_classmethod2(mcls) -> typing.Any: ...
+        """
+    )
+
+
+@pytest.fixture(scope="session")
+def expected_stats_on_example_stub_file() -> AnnotationStats:
+    return AnnotationStats(
+        annotated_parameters=6,
+        unannotated_parameters=2,
+        annotated_returns=5,
+        unannotated_returns=5,
+        explicit_Incomplete_parameters=2,
+        explicit_Incomplete_returns=1,
+        explicit_Any_parameters=2,
+        explicit_Any_returns=2,
+        annotated_variables=9,
+        explicit_Any_variables=4,
+        explicit_Incomplete_variables=2,
+    )
+
+
+def test_annotation_stats_on_file(
+    subtests: SubTests,
+    example_stub_file: str,
+    expected_stats_on_example_stub_file: AnnotationStats,
+    tmp_path: Path,
+) -> None:
+    test_dot_pyi = tmp_path / "test.pyi"
+    test_dot_pyi.write_text(example_stub_file, encoding="utf-8")
+    stats = gather_annotation_stats_on_file(test_dot_pyi)
+
+    for field in attrs.fields(AnnotationStats):
+        field_name = field.name
+        with subtests.test(field_name=field_name):
+            assert getattr(stats, field_name) == getattr(
+                expected_stats_on_example_stub_file, field_name
+            )
+
+
+def test_annotation_stats_on_package(
+    subtests: SubTests,
+    typeshed: Path,
+    EXAMPLE_PACKAGE_NAME: str,
+    example_stub_file: str,
+    expected_stats_on_example_stub_file: AnnotationStats,
+) -> None:
+    package_dir = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME
+    stdlib_dir = typeshed / "stdlib"
+
+    for directory in (stdlib_dir, package_dir):
+        for filename in ("test1.pyi", "test2.pyi"):
+            (directory / filename).write_text(example_stub_file, encoding="utf-8")
+
+    stdlib_stats = gather_annotation_stats_on_package("stdlib", typeshed_dir=typeshed)
+    package_stats = gather_annotation_stats_on_package(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed
+    )
+
+    field_names = [field.name for field in attrs.fields(AnnotationStats)]
+
+    for result_name, result in [("stdlib", stdlib_stats), ("package", package_stats)]:
+        for field_name in field_names:
+            with subtests.test(result_name=result_name, field_name=field_name):
+                assert getattr(result, field_name) == (
+                    2 * getattr(expected_stats_on_example_stub_file, field_name)
+                )
+
+
+# =======================================
+# Tests for get_stubtest_setting
+# =======================================
+
+
+def test_get_stubtest_setting_stdlib(typeshed: Path) -> None:
+    assert (
+        get_stubtest_setting("stdlib", typeshed_dir=typeshed)
+        is StubtestSetting.ERROR_ON_MISSING_STUB
+    )
+
+
+def test_get_stubtest_setting_non_stdlib_no_stubtest_section(
+    EXAMPLE_PACKAGE_NAME: str, typeshed: Path
+) -> None:
+    metadata = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "METADATA.toml"
+    metadata.write_text("\n")
+    assert (
+        get_stubtest_setting(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed)
+        is StubtestSetting.MISSING_STUBS_IGNORED
+    )
+
+
+@pytest.mark.parametrize(
+    ("metadata_contents", "expected_result"),
+    [
+        ("", StubtestSetting.MISSING_STUBS_IGNORED),
+        ("skip = false", StubtestSetting.MISSING_STUBS_IGNORED),
+        ("ignore_missing_stub = true", StubtestSetting.MISSING_STUBS_IGNORED),
+        ("skip = true", StubtestSetting.SKIPPED),
+        ("skip = true\nignore_missing_stub = true", StubtestSetting.SKIPPED),
+        ("skip = true\nignore_missing_stub = false", StubtestSetting.SKIPPED),
+        ("ignore_missing_stub = false", StubtestSetting.ERROR_ON_MISSING_STUB),
+    ],
+)
+def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed: Path,
+    metadata_contents: str,
+    expected_result: StubtestSetting,
+) -> None:
+    metadata = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "METADATA.toml"
+    metadata.write_text(f"[tool.stubtest]\n{metadata_contents}", encoding="utf-8")
+    assert (
+        get_stubtest_setting(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed)
+        is expected_result
+    )
+
+
+# =======================================
+# Tests for get_package_line_number
+# =======================================
+
+
+def test_get_package_line_number_empty_package(
+    EXAMPLE_PACKAGE_NAME: str, typeshed: Path
+) -> None:
+    assert get_package_line_number(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed) == 0
+
+
+def test_get_package_line_number_single_file(
+    EXAMPLE_PACKAGE_NAME: str, typeshed: Path
+) -> None:
+    stub = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "foo.pyi"
+    stub.write_text("foo: int\nbar: str", encoding="utf-8")
+    assert get_package_line_number(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed) == 2
+
+
+def test_get_package_line_number_multiple_files(
+    EXAMPLE_PACKAGE_NAME: str, typeshed: Path
+) -> None:
+    two_line_stub = "foo: int\nbar: str"
+    top_level_stub = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "foo.pyi"
+    top_level_stub.write_text(two_line_stub, encoding="utf-8")
+    subpkg = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "subpkg"
+    subpkg.mkdir()
+    (subpkg / "bar.pyi").write_text(two_line_stub, encoding="utf-8")
+    subpkg2 = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "subpkg2"
+    subpkg2.mkdir()
+    for name in "spam.pyi", "eggs.pyi":
+        (subpkg2 / name).write_text(two_line_stub, encoding="utf-8")
+
+    assert get_package_line_number(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed) == 8
+
+
 # =======================================
 # Tests for serialisation/deserialisation
 # =======================================
@@ -90,9 +297,9 @@ def random_PackageStats_data() -> Sequence[PackageStats]:
         return PackageStats(
             package_name="".join(
                 random.choice(string.ascii_letters)
-                for _ in range(random.randint(0, 10))
+                for _ in range(random.randint(1, 10))
             ),
-            number_of_lines=random.randint(0, 500),
+            number_of_lines=random.randint(10, 500),
             package_status=random.choice(list(PackageStatus)),
             stubtest_setting=random.choice(list(StubtestSetting)),
             pyright_setting=random.choice(list(PyrightSetting)),
@@ -142,127 +349,3 @@ def test_markdown_conversion(random_PackageStats_data: Sequence[PackageStats]) -
     html1 = markdown.markdown(converted_to_markdown)
     html2 = stats_to_html(random_PackageStats_data)
     assert html1 == html2
-
-
-# =========================================
-# Tests for collecting stats on annotations
-# =========================================
-
-
-@pytest.fixture(scope="session")
-def example_stub_file() -> str:
-    return textwrap.dedent(
-        """
-        import _typeshed
-        import typing
-        from _typeshed import Incomplete
-        from typing import Any
-
-        a: int
-        b: str = ...
-        c: Any
-        d: Any
-        d: Incomplete
-        e: typing.Any
-        f: _typeshed.Incomplete
-
-        class Spam:
-            a: typing.Any
-            b = ...
-            c: int = ...
-
-        def func1(arg): ...
-        def func2(arg: int): ...
-        def func3(arg: Incomplete): ...
-        def func4(arg: Any) -> Any: ...
-
-        class Eggs:
-            async def func5(self, arg): ...
-            @staticmethod
-            async def func6(arg: str) -> list[bytes]: ...
-            def func7(arg: Any) -> _typeshed.Incomplete: ...
-        """
-    )
-
-
-@pytest.fixture(scope="session")
-def expected_stats_on_example_stub_file() -> AnnotationStats:
-    return AnnotationStats(
-        annotated_parameters=5,
-        unannotated_parameters=2,
-        annotated_returns=3,
-        unannotated_returns=4,
-        explicit_Incomplete_parameters=1,
-        explicit_Incomplete_returns=1,
-        explicit_Any_parameters=2,
-        explicit_Any_returns=1,
-        annotated_variables=9,
-        explicit_Any_variables=4,
-        explicit_Incomplete_variables=2,
-    )
-
-
-def test_annotation_stats_on_file(
-    subtests: SubTests,
-    example_stub_file: str,
-    expected_stats_on_example_stub_file: AnnotationStats,
-    tmp_path: Path,
-) -> None:
-    test_path = tmp_path / "test.pyi"
-    with open(test_path, "w", encoding="utf-8") as file:
-        file.write(example_stub_file)
-    stats = gather_annotation_stats_on_file(test_path)
-
-    for field in attrs.fields(AnnotationStats):
-        field_name = field.name
-        with subtests.test(field_name=field_name):
-            assert getattr(stats, field_name) == getattr(
-                expected_stats_on_example_stub_file, field_name
-            )
-
-
-@pytest.fixture(scope="session")
-def EXAMPLE_PACKAGE_NAME() -> str:
-    return "".join(
-        random.choice(string.ascii_letters) for _ in range(random.randint(0, 10))
-    )
-
-
-@pytest.fixture
-def typeshed(EXAMPLE_PACKAGE_NAME: str, tmp_path: Path) -> Path:
-    typeshed = tmp_path
-    (typeshed / "stdlib").mkdir()
-    stubs_dir = typeshed / "stubs"
-    stubs_dir.mkdir()
-    (stubs_dir / EXAMPLE_PACKAGE_NAME).mkdir()
-    return typeshed
-
-
-def test_annotation_stats_on_package(
-    subtests: SubTests,
-    typeshed: Path,
-    EXAMPLE_PACKAGE_NAME: str,
-    example_stub_file: str,
-    expected_stats_on_example_stub_file: AnnotationStats,
-) -> None:
-    package_dir = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME
-    stdlib_dir = typeshed / "stdlib"
-
-    for directory in (stdlib_dir, package_dir):
-        for filename in ("test1.pyi", "test2.pyi"):
-            with open(directory / filename, "w", encoding="utf-8") as file:
-                file.write(example_stub_file)
-
-    stdlib_stats = gather_annotation_stats_on_package("stdlib", typeshed_dir=typeshed)
-    package_stats = gather_annotation_stats_on_package(
-        EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed
-    )
-
-    field_names = [field.name for field in attrs.fields(AnnotationStats)]
-
-    for result_name, result in [("stdlib", stdlib_stats), ("package", package_stats)]:
-        for field_name in field_names:
-            with subtests.test(result_name=result_name, field_name=field_name):
-                assert getattr(result, field_name) == (
-                    2 * getattr(expected_stats_on_example_stub_file, field_name)
-                )

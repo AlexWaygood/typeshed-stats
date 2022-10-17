@@ -23,9 +23,9 @@ from packaging.specifiers import SpecifierSet
 from packaging.version import Version
 
 if sys.version_info >= (3, 11):
-    import tomllib
+    import tomllib  # pragma: no cover
 else:
-    import tomli as tomllib
+    import tomli as tomllib  # pragma: no cover
 
 assert sys.version_info >= (3, 10), "Python 3.10+ is required."
 
@@ -40,6 +40,7 @@ __all__ = [
     "gather_annotation_stats_on_file",
     "gather_annotation_stats_on_package",
     "gather_stats",
+    "get_package_line_number",
     "get_stubtest_setting",
     "stats_from_csv",
     "stats_from_json",
@@ -375,10 +376,20 @@ async def _get_package_status(
     ]
 
 
-def _get_package_line_number(package_directory: Path) -> int:
+def get_package_line_number(package_name: str, *, typeshed_dir: Path) -> int:
+    """Get the total number of lines of code for a stubs package in typeshed.
+
+    Args:
+        package_name: The name of the stubs package to find the line number for.
+        typeshed_dir: A path pointing to a typeshed directory
+          in which to find the stubs package.
+
+    Returns:
+        The number of lines of code the stubs package contains.
+    """
     return sum(
         len(stub.read_text(encoding="utf-8").splitlines())
-        for stub in package_directory.rglob("*.pyi")
+        for stub in _get_package_directory(package_name, typeshed_dir).rglob("*.pyi")
     )
 
 
@@ -452,7 +463,9 @@ async def _gather_stats_for_package(
         package_directory = typeshed_dir / "stubs" / package_name
     return PackageStats(
         package_name=package_name,
-        number_of_lines=_get_package_line_number(package_directory),
+        number_of_lines=get_package_line_number(
+            package_name, typeshed_dir=typeshed_dir
+        ),
         package_status=await _get_package_status(
             package_name, package_directory, session=session
         ),
