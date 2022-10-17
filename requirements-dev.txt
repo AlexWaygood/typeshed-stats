@@ -9,3 +9,4 @@ mypy==0.982
 pre-commit-hooks==4.3.0 # must match .pre-commit-config.yaml
 pycln==2.1.1            # must match .pre-commit-config.yaml
 pytest>=7,<8
+pytest-subtests

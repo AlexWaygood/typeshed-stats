@@ -2,7 +2,7 @@
 
 import subprocess
 
-FILES_TO_CHECK = ("src", "test_typeshed_stats.py", "runtests.py")
+FILES_TO_CHECK = ("src", "tests", "runtests.py")
 
 
 def main() -> int:

@@ -40,6 +40,7 @@ __all__ = [
     "gather_annotation_stats_on_file",
     "gather_annotation_stats_on_package",
     "gather_stats",
+    "get_stubtest_setting",
     "stats_from_csv",
     "stats_from_json",
     "stats_to_csv",
@@ -150,7 +151,7 @@ class AnnotationStats:
     explicit_Incomplete_variables: int = 0
 
 
-class _StatisticsCollector(ast.NodeVisitor):
+class _AnnotationStatsCollector(ast.NodeVisitor):
     """AST Visitor for collecting stats on a single stub file."""
 
     def __init__(self) -> None:
@@ -237,21 +238,33 @@ def gather_annotation_stats_on_file(path: Path) -> AnnotationStats:
         An `AnnotationStats` object containing data
         about the annotations in the file.
     """
-    visitor = _StatisticsCollector()
+    visitor = _AnnotationStatsCollector()
     visitor.visit(ast.parse(path.read_text(encoding="utf-8")))
     return visitor.stats
 
 
-def gather_annotation_stats_on_package(package_directory: Path) -> AnnotationStats:
+@cache
+def _get_package_directory(package_name: PackageName, typeshed_dir: Path) -> Path:
+    if package_name == "stdlib":
+        return typeshed_dir / "stdlib"
+    return typeshed_dir / "stubs" / package_name
+
+
+def gather_annotation_stats_on_package(
+    package_name: PackageName, *, typeshed_dir: Path
+) -> AnnotationStats:
     """Aggregate annotation stats on a typeshed stubs package.
 
     Args:
-        package_directory: The location of the stubs package to be analysed.
+        package_name: The name of the stubs package to analyze.
+        typeshed_dir: A path pointing to the location of a typeshed directory
+          in which to find the stubs package source.
 
     Returns:
         An `AnnotationStats` object containing data
         about the annotations in the package.
     """
+    package_directory = _get_package_directory(package_name, typeshed_dir)
     file_results = [
         gather_annotation_stats_on_file(path)
         for path in package_directory.rglob("*.pyi")
@@ -281,11 +294,21 @@ class StubtestSetting(_NiceReprEnum):
     )
 
 
-def _get_stubtest_setting(
-    package_name: str, package_directory: Path
-) -> StubtestSetting:
+def get_stubtest_setting(package_name: str, *, typeshed_dir: Path) -> StubtestSetting:
+    """Get the setting typeshed uses in CI when stubtest is run on a certain package.
+
+    Args:
+        package_name: The name of the package to find the stubtest setting for.
+        typeshed_dir: A path pointing to a typeshed directory,
+          from which to retrieve the stubtest setting.
+
+    Returns:
+        A member of the `StubtestSetting` enumeration
+        (see the docs on `StubtestSetting` for details).
+    """
     if package_name == "stdlib":
         return StubtestSetting.ERROR_ON_MISSING_STUB
+    package_directory = _get_package_directory(package_name, typeshed_dir)
     metadata = _get_package_metadata(package_directory)
     stubtest_settings = metadata.get("tool", {}).get("stubtest", {})
     if stubtest_settings.get("skip", False):
@@ -433,11 +456,13 @@ async def _gather_stats_for_package(
         package_status=await _get_package_status(
             package_name, package_directory, session=session
         ),
-        stubtest_setting=_get_stubtest_setting(package_name, package_directory),
+        stubtest_setting=get_stubtest_setting(package_name, typeshed_dir=typeshed_dir),
         pyright_setting=_get_pyright_strictness(
             package_directory, typeshed_dir=typeshed_dir
         ),
-        annotation_stats=gather_annotation_stats_on_package(package_directory),
+        annotation_stats=gather_annotation_stats_on_package(
+            package_name, typeshed_dir=typeshed_dir
+        ),
     )
 
 

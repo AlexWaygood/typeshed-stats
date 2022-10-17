@@ -18,4 +18,4 @@ ignore =
   B950, E203, E501, W503, W291, W293
 
 # I don't care about docstrings for test functions
-per-file-ignores = test_typeshed_stats.py: D103
+per-file-ignores = tests/*.py:D103
