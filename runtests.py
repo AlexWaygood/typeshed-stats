@@ -29,7 +29,7 @@ def main() -> int:
     subprocess.run(["mypy"], check=True)
 
     print("\nRunning pytest...")
-    subprocess.run(["pytest", "-vv"])
+    subprocess.run(["pytest", "--cov=src", "-vv"])
     return 0
 
 
