@@ -576,7 +576,7 @@ def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
 
     template = textwrap.dedent(
         """
-        ## Stats on typeshed's stubs for {package_name}
+        ## Stats on typeshed's stubs for `{package_name}`
 
         ### Number of lines
         {number_of_lines}
@@ -590,25 +590,29 @@ def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
         ### Pyright settings in CI: *{pyright_setting.formatted_name}*
         {pyright_setting.value}
 
-        ### Statistics on the annotations in typeshed's stubs for {package_name}
-        {annotation_stats}
+        ### Statistics on the annotations in typeshed's stubs for `{package_name}`
+        - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+          - Annotated parameters: {annotated_parameters}
+          - Unannotated parameters: {unannotated_parameters}
+          - Explicit `Any` parameters: {explicit_Any_parameters}
+          - Explicit `Incomplete` parameters: {explicit_Incomplete_parameters}
+        - Returns:
+          - Annotated returns: {annotated_returns}
+          - Unannotated returns: {unannotated_returns}
+          - Explicit `Any` returns: {explicit_Any_returns}
+          - Explicit `Incomplete` returns: {explicit_Incomplete_returns}
+        Variables:
+          - Annotated variables: {annotated_variables}
+          - Explicit `Any` variables: {explicit_Any_variables}
+          - Explicit `Incomplete` variables: {explicit_Incomplete_variables}
         """
     )
 
-    def format_annotation_stats(annotation_stats: dict[str, int]) -> str:
-        def format_key(key: str) -> str:
-            return " ".join(key.split("_")).capitalize()
-
-        return "- " + "\n- ".join(
-            f"{format_key(key)}: {val}" for key, val in annotation_stats.items()
-        )
-
     def format_package(package_stats: PackageStats) -> str:
         package_as_dict = attrs.asdict(package_stats)
-        package_as_dict["annotation_stats"] = format_annotation_stats(
-            package_as_dict["annotation_stats"]
-        )
-        return template.format(**package_as_dict)
+        kwargs = package_as_dict | package_as_dict["annotation_stats"]
+        del kwargs["annotation_stats"]
+        return template.format(**kwargs)
 
     markdown_page = "# Stats on typeshed's stubs for various packages\n<br>\n"
     markdown_page += "\n<br>\n".join(format_package(info) for info in stats)
