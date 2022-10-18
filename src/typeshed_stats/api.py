@@ -209,7 +209,7 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
         self._visit_function(node)
 
 
-def gather_annotation_stats_on_file(path: Path) -> AnnotationStats:
+def gather_annotation_stats_on_file(path: Path | str) -> AnnotationStats:
     """Gather annotation stats on a single typeshed stub file.
 
     Args:
@@ -219,6 +219,8 @@ def gather_annotation_stats_on_file(path: Path) -> AnnotationStats:
         An `AnnotationStats` object containing data
         about the annotations in the file.
     """
+    if isinstance(path, str):
+        path = Path(path)
     visitor = _AnnotationStatsCollector()
     visitor.visit(ast.parse(path.read_text(encoding="utf-8")))
     return visitor.stats
@@ -232,7 +234,7 @@ def _get_package_directory(package_name: PackageName, typeshed_dir: Path) -> Pat
 
 
 def gather_annotation_stats_on_package(
-    package_name: PackageName, *, typeshed_dir: Path
+    package_name: PackageName, *, typeshed_dir: Path | str
 ) -> AnnotationStats:
     """Aggregate annotation stats on a typeshed stubs package.
 
@@ -245,6 +247,8 @@ def gather_annotation_stats_on_package(
         An `AnnotationStats` object containing data
         about the annotations in the package.
     """
+    if isinstance(typeshed_dir, str):
+        typeshed_dir = Path(typeshed_dir)
     package_directory = _get_package_directory(package_name, typeshed_dir)
     file_results = [
         gather_annotation_stats_on_file(path)
@@ -278,7 +282,9 @@ class StubtestSetting(_NiceReprEnum):
     )
 
 
-def get_stubtest_setting(package_name: str, *, typeshed_dir: Path) -> StubtestSetting:
+def get_stubtest_setting(
+    package_name: str, *, typeshed_dir: Path | str
+) -> StubtestSetting:
     """Get the setting typeshed uses in CI when stubtest is run on a certain package.
 
     Args:
@@ -292,6 +298,8 @@ def get_stubtest_setting(package_name: str, *, typeshed_dir: Path) -> StubtestSe
     """
     if package_name == "stdlib":
         return StubtestSetting.ERROR_ON_MISSING_STUB
+    if isinstance(typeshed_dir, str):
+        typeshed_dir = Path(typeshed_dir)
     metadata = _get_package_metadata(package_name, typeshed_dir)
     stubtest_settings = metadata.get("tool", {}).get("stubtest", {})
     if stubtest_settings.get("skip", False):
@@ -358,7 +366,7 @@ async def _get_package_status(
     ]
 
 
-def get_package_line_number(package_name: str, *, typeshed_dir: Path) -> int:
+def get_package_line_number(package_name: str, *, typeshed_dir: Path | str) -> int:
     """Get the total number of lines of code for a stubs package in typeshed.
 
     Args:
@@ -369,6 +377,8 @@ def get_package_line_number(package_name: str, *, typeshed_dir: Path) -> int:
     Returns:
         The number of lines of code the stubs package contains.
     """
+    if isinstance(typeshed_dir, str):
+        typeshed_dir = Path(typeshed_dir)
     return sum(
         len(stub.read_text(encoding="utf-8").splitlines())
         for stub in _get_package_directory(package_name, typeshed_dir).rglob("*.pyi")
@@ -402,7 +412,7 @@ class PyrightSetting(_NiceReprEnum):
 
 
 def get_pyright_strictness(
-    package_name: PackageName, *, typeshed_dir: Path
+    package_name: PackageName, *, typeshed_dir: Path | str
 ) -> PyrightSetting:
     """Get the setting typeshed uses in CI when pyright is run on a certain package.
 
@@ -415,6 +425,8 @@ def get_pyright_strictness(
         A member of the `PyrightSetting` enumeration
         (see the docs on `PyrightSetting` for details).
     """
+    if isinstance(typeshed_dir, str):
+        typeshed_dir = Path(typeshed_dir)
     package_directory = _get_package_directory(package_name, typeshed_dir)
     excluded_paths = _get_pyright_strict_excludelist(typeshed_dir)
     if package_directory in excluded_paths:
