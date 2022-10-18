@@ -35,7 +35,6 @@ from typeshed_stats import (
     stats_to_markdown,
 )
 
-
 # ==========
 # _NiceReprEnum tests
 # ============
@@ -363,4 +362,4 @@ def test_import_fails_on_less_than_3_point_10(module_name: str) -> None:
         if module_name in sys.modules:
             del sys.modules[module_name]
     with pytest.raises(ImportError):
-        importlib.import_module(module_name)  # noqa: F401
+        importlib.import_module(module_name)
