@@ -7,7 +7,9 @@ import string
 import sys
 import textwrap
 from collections.abc import Sequence
+from os import PathLike
 from pathlib import Path
+from typing import TypeAlias
 from unittest import mock
 
 import attrs
@@ -26,6 +28,7 @@ from typeshed_stats import (
     gather_annotation_stats_on_file,
     gather_annotation_stats_on_package,
     get_package_line_number,
+    get_pyright_strictness,
     get_stubtest_setting,
     stats_from_csv,
     stats_from_json,
@@ -35,9 +38,12 @@ from typeshed_stats import (
     stats_to_markdown,
 )
 
-# ==========
+StrPath: TypeAlias = str | PathLike[str]
+
+
+# ===================
 # _NiceReprEnum tests
-# ============
+# ===================
 
 
 def test__NiceReprEnum_docstring_equals_enum_value() -> None:
@@ -214,9 +220,9 @@ def test_annotation_stats_on_package(
                 assert actual_stat == expected_stat
 
 
-# =======================================
+# ==============================
 # Tests for get_stubtest_setting
-# =======================================
+# ==============================
 
 
 def test_get_stubtest_setting_stdlib(typeshed: Path) -> None:
@@ -263,9 +269,9 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
     )
 
 
-# =======================================
+# =================================
 # Tests for get_package_line_number
-# =======================================
+# =================================
 
 
 def test_get_package_line_number_empty_package(
@@ -299,13 +305,59 @@ def test_get_package_line_number_multiple_files(
     assert get_package_line_number(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed) == 8
 
 
+# =============================
+# Tests for get_pyright_setting
+# =============================
+
+
+@pytest.mark.parametrize(
+    ("excluded_path", "package_to_test", "expected_result"),
+    [
+        ("stdlib", "stdlib", PyrightSetting.NOT_STRICT),
+        ("stdlib/tkinter", "stdlib", PyrightSetting.STRICT_ON_SOME_FILES),
+        ("stubs", "stdlib", PyrightSetting.STRICT),
+        ("stubs/aiofiles", "stdlib", PyrightSetting.STRICT),
+        ("stubs", "appdirs", PyrightSetting.NOT_STRICT),
+        ("stubs", "boto", PyrightSetting.NOT_STRICT),
+        ("stubs/boto", "appdirs", PyrightSetting.STRICT),
+        ("stubs/boto/auth.pyi", "boto", PyrightSetting.STRICT_ON_SOME_FILES),
+    ],
+)
+def test_get_pyright_setting(
+    typeshed: Path,
+    excluded_path: StrPath,
+    package_to_test: str,
+    expected_result: PyrightSetting,
+) -> None:
+    pyrightconfig_template = textwrap.dedent(
+        """
+        {{
+            "typeshedPath": ".",
+            // A comment to make this invalid JSON
+            "exclude": [
+                "{}"
+            ],
+        }}
+        """
+    )
+    pyrightconfig = pyrightconfig_template.format(excluded_path)
+    with pytest.raises(json.JSONDecodeError):
+        json.loads(pyrightconfig)
+    pyrightconfig_path = typeshed / "pyrightconfig.stricter.json"
+    pyrightconfig_path.write_text(pyrightconfig, encoding="utf-8")
+    pyright_strictness = get_pyright_strictness(
+        package_name=package_to_test, typeshed_dir=typeshed
+    )
+    assert pyright_strictness is expected_result
+
+
 # =======================================
 # Tests for serialisation/deserialisation
 # =======================================
 
 
 @pytest.fixture
-def random_PackageStats_data() -> Sequence[PackageStats]:
+def make_random_PackageStats() -> PackageStats:
     def random_PackageStats() -> PackageStats:
         return PackageStats(
             package_name="".join(
@@ -320,33 +372,49 @@ def random_PackageStats_data() -> Sequence[PackageStats]:
                 *[random.randint(0, 1000) for _ in attrs.fields(AnnotationStats)]
             ),
         )
+    return random_PackageStats
 
-    return [random_PackageStats() for _ in range(random.randint(3, 10))]
+
+def test_conversion_to_from_dict(make_random_PackageStats) -> None:
+    random_PackageStats = make_random_PackageStats()
+    assert type(random_PackageStats) is PackageStats
+    as_dict = random_PackageStats.to_dict()
+    assert type(as_dict) is dict
+    assert all(type(key) is str for key in as_dict)
+    new_PackageStats = PackageStats.from_dict(as_dict)
+    assert type(new_PackageStats) is PackageStats
+    assert random_PackageStats is not new_PackageStats
+    assert random_PackageStats == new_PackageStats
+
+
+@pytest.fixture
+def random_PackageStats_sequence(make_random_PackageStats) -> Sequence[PackageStats]:
+    return [make_random_PackageStats() for _ in range(random.randint(3, 10))]
 
 
 def test_conversion_to_and_from_json(
-    random_PackageStats_data: Sequence[PackageStats],
+    random_PackageStats_sequence: Sequence[PackageStats],
 ) -> None:
-    converted = stats_to_json(random_PackageStats_data)
+    converted = stats_to_json(random_PackageStats_sequence)
     assert isinstance(converted, str)
     lst = json.loads(converted)
     assert isinstance(lst, list)
     assert all(isinstance(item, dict) and "package_name" in item for item in lst)
     new_package_stats = stats_from_json(converted)
-    assert new_package_stats == random_PackageStats_data
+    assert new_package_stats == random_PackageStats_sequence
 
 
 def test_conversion_to_and_from_csv(
-    random_PackageStats_data: Sequence[PackageStats],
+    random_PackageStats_sequence: Sequence[PackageStats],
 ) -> None:
-    converted = stats_to_csv(random_PackageStats_data)
+    converted = stats_to_csv(random_PackageStats_sequence)
     assert isinstance(converted, str)
     with io.StringIO(converted, newline="") as csvfile:
         reader = csv.DictReader(csvfile)
         first_row = next(iter(reader))
     assert isinstance(first_row, dict)
     assert "package_name" in first_row
-    first_PackageStats_item = random_PackageStats_data[0]
+    first_PackageStats_item = random_PackageStats_sequence[0]
     assert first_row["package_name"] == first_PackageStats_item.package_name
     assert "annotated_parameters" in first_row
     assert (
@@ -354,14 +422,19 @@ def test_conversion_to_and_from_csv(
         == first_PackageStats_item.annotation_stats.annotated_parameters
     )
     new_list_of_info = stats_from_csv(converted)
-    assert new_list_of_info == random_PackageStats_data
+    assert new_list_of_info == random_PackageStats_sequence
 
 
-def test_markdown_conversion(random_PackageStats_data: Sequence[PackageStats]) -> None:
-    converted_to_markdown = stats_to_markdown(random_PackageStats_data)
+def test_markdown_conversion(random_PackageStats_sequence: Sequence[PackageStats]) -> None:
+    converted_to_markdown = stats_to_markdown(random_PackageStats_sequence)
     html1 = markdown.markdown(converted_to_markdown)
-    html2 = stats_to_html(random_PackageStats_data)
+    html2 = stats_to_html(random_PackageStats_sequence)
     assert html1 == html2
+
+
+# ========================================
+# Test the package doesn't import on <3.10
+# ========================================
 
 
 @mock.patch.object(sys, "version_info", new=(3, 9, 8, "final", 0))

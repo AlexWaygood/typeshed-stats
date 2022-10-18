@@ -420,6 +420,10 @@ def get_pyright_strictness(
     if package_directory in excluded_paths:
         return PyrightSetting.NOT_STRICT
     if any(
+        excluded_path in package_directory.parents for excluded_path in excluded_paths
+    ):
+        return PyrightSetting.NOT_STRICT
+    if any(
         package_directory in excluded_path.parents for excluded_path in excluded_paths
     ):
         return PyrightSetting.STRICT_ON_SOME_FILES
