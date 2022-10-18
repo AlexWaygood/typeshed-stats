@@ -43,6 +43,7 @@ __all__ = [
     "gather_annotation_stats_on_package",
     "gather_stats",
     "get_package_line_number",
+    "get_pyright_strictness",
     "get_stubtest_setting",
     "stats_from_csv",
     "stats_from_json",
@@ -257,7 +258,10 @@ def gather_annotation_stats_on_package(
 
 
 @cache
-def _get_package_metadata(package_directory: Path) -> Mapping[str, Any]:
+def _get_package_metadata(
+    package_name: PackageName, typeshed_dir: Path
+) -> Mapping[str, Any]:
+    package_directory = _get_package_directory(package_name, typeshed_dir)
     with open(package_directory / "METADATA.toml", "rb") as f:
         return tomllib.load(f)
 
@@ -288,8 +292,7 @@ def get_stubtest_setting(package_name: str, *, typeshed_dir: Path) -> StubtestSe
     """
     if package_name == "stdlib":
         return StubtestSetting.ERROR_ON_MISSING_STUB
-    package_directory = _get_package_directory(package_name, typeshed_dir)
-    metadata = _get_package_metadata(package_directory)
+    metadata = _get_package_metadata(package_name, typeshed_dir)
     stubtest_settings = metadata.get("tool", {}).get("stubtest", {})
     if stubtest_settings.get("skip", False):
         return StubtestSetting.SKIPPED
@@ -327,7 +330,7 @@ class PackageStatus(_NiceReprEnum):
 
 
 async def _get_package_status(
-    package_name: str, package_directory: Path, *, session: aiohttp.ClientSession
+    package_name: str, *, typeshed_dir: Path, session: aiohttp.ClientSession
 ) -> PackageStatus:
     if package_name == "stdlib":
         # This function isn't really relevant for the stdlib stubs
@@ -336,7 +339,7 @@ async def _get_package_status(
     if package_name == "gdb":
         return PackageStatus.NOT_ON_PYPI
 
-    metadata = _get_package_metadata(package_directory)
+    metadata = _get_package_metadata(package_name, typeshed_dir)
 
     if "obsolete_since" in metadata:
         return PackageStatus.OBSOLETE
@@ -398,9 +401,21 @@ class PyrightSetting(_NiceReprEnum):
     )
 
 
-def _get_pyright_strictness(
-    package_directory: Path, *, typeshed_dir: Path
+def get_pyright_strictness(
+    package_name: PackageName, *, typeshed_dir: Path
 ) -> PyrightSetting:
+    """Get the setting typeshed uses in CI when pyright is run on a certain package.
+
+    Args:
+        package_name: The name of the package to find the stubtest setting for.
+        typeshed_dir: A path pointing to a typeshed directory,
+          from which to retrieve the stubtest setting.
+
+    Returns:
+        A member of the `PyrightSetting` enumeration
+        (see the docs on `PyrightSetting` for details).
+    """
+    package_directory = _get_package_directory(package_name, typeshed_dir)
     excluded_paths = _get_pyright_strict_excludelist(typeshed_dir)
     if package_directory in excluded_paths:
         return PyrightSetting.NOT_STRICT
@@ -436,22 +451,16 @@ class PackageStats:
 async def _gather_stats_for_package(
     package_name: PackageName, *, typeshed_dir: Path, session: aiohttp.ClientSession
 ) -> PackageStats:
-    if package_name == "stdlib":
-        package_directory = typeshed_dir / "stdlib"
-    else:
-        package_directory = typeshed_dir / "stubs" / package_name
     return PackageStats(
         package_name=package_name,
         number_of_lines=get_package_line_number(
             package_name, typeshed_dir=typeshed_dir
         ),
         package_status=await _get_package_status(
-            package_name, package_directory, session=session
+            package_name, typeshed_dir=typeshed_dir, session=session
         ),
         stubtest_setting=get_stubtest_setting(package_name, typeshed_dir=typeshed_dir),
-        pyright_setting=_get_pyright_strictness(
-            package_directory, typeshed_dir=typeshed_dir
-        ),
+        pyright_setting=get_pyright_strictness(package_name, typeshed_dir=typeshed_dir),
         annotation_stats=gather_annotation_stats_on_package(
             package_name, typeshed_dir=typeshed_dir
         ),
