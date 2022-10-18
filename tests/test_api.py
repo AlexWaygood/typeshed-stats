@@ -6,7 +6,7 @@ import random
 import string
 import sys
 import textwrap
-from collections.abc import Sequence
+from collections.abc import Callable, Sequence
 from os import PathLike
 from pathlib import Path
 from typing import TypeAlias
@@ -357,7 +357,7 @@ def test_get_pyright_setting(
 
 
 @pytest.fixture
-def make_random_PackageStats() -> PackageStats:
+def make_random_PackageStats() -> Callable[[], PackageStats]:
     def random_PackageStats() -> PackageStats:
         return PackageStats(
             package_name="".join(
@@ -372,10 +372,13 @@ def make_random_PackageStats() -> PackageStats:
                 *[random.randint(0, 1000) for _ in attrs.fields(AnnotationStats)]
             ),
         )
+
     return random_PackageStats
 
 
-def test_conversion_to_from_dict(make_random_PackageStats) -> None:
+def test_conversion_to_from_dict(
+    make_random_PackageStats: Callable[[], PackageStats]
+) -> None:
     random_PackageStats = make_random_PackageStats()
     assert type(random_PackageStats) is PackageStats
     as_dict = random_PackageStats.to_dict()
@@ -388,7 +391,9 @@ def test_conversion_to_from_dict(make_random_PackageStats) -> None:
 
 
 @pytest.fixture
-def random_PackageStats_sequence(make_random_PackageStats) -> Sequence[PackageStats]:
+def random_PackageStats_sequence(
+    make_random_PackageStats: Callable[[], PackageStats]
+) -> Sequence[PackageStats]:
     return [make_random_PackageStats() for _ in range(random.randint(3, 10))]
 
 
@@ -425,7 +430,9 @@ def test_conversion_to_and_from_csv(
     assert new_list_of_info == random_PackageStats_sequence
 
 
-def test_markdown_conversion(random_PackageStats_sequence: Sequence[PackageStats]) -> None:
+def test_markdown_conversion(
+    random_PackageStats_sequence: Sequence[PackageStats],
+) -> None:
     converted_to_markdown = stats_to_markdown(random_PackageStats_sequence)
     html1 = markdown.markdown(converted_to_markdown)
     html2 = stats_to_html(random_PackageStats_sequence)
