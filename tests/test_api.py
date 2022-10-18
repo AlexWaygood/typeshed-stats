@@ -113,11 +113,13 @@ def example_stub_file() -> str:
         d: Incomplete
         e: Iterable[typing.Any]
         f: _typeshed.Incomplete
+        g: _typeshed.StrPath
 
         class Spam:
             a: tuple[typing.Any, ...] | None
             b = ...
             c: int = ...
+            d: typing.Sized
 
         def func1(arg): ...
         def func2(arg: int): ...
@@ -152,7 +154,7 @@ def expected_stats_on_example_stub_file() -> AnnotationStats:
         explicit_Incomplete_returns=1,
         explicit_Any_parameters=2,
         explicit_Any_returns=2,
-        annotated_variables=9,
+        annotated_variables=11,
         explicit_Any_variables=4,
         explicit_Incomplete_variables=2,
     )
@@ -170,10 +172,12 @@ def test_annotation_stats_on_file(
 
     for field in attrs.fields(AnnotationStats):
         field_name = field.name
-        with subtests.test(field_name=field_name):
-            assert getattr(stats, field_name) == getattr(
-                expected_stats_on_example_stub_file, field_name
-            )
+        actual_stat = getattr(stats, field_name)
+        expected_stat = getattr(expected_stats_on_example_stub_file, field_name)
+        with subtests.test(
+            field_name=field_name, expected_stat=expected_stat, actual_stat=actual_stat
+        ):
+            assert actual_stat == expected_stat
 
 
 def test_annotation_stats_on_package(
@@ -199,10 +203,15 @@ def test_annotation_stats_on_package(
 
     for result_name, result in [("stdlib", stdlib_stats), ("package", package_stats)]:
         for field_name in field_names:
-            with subtests.test(result_name=result_name, field_name=field_name):
-                assert getattr(result, field_name) == (
-                    2 * getattr(expected_stats_on_example_stub_file, field_name)
-                )
+            actual_stat = getattr(result, field_name)
+            expected_stat = 2 * getattr(expected_stats_on_example_stub_file, field_name)
+            with subtests.test(
+                result_name=result_name,
+                field_name=field_name,
+                expected_stat=expected_stat,
+                actual_stat=actual_stat,
+            ):
+                assert actual_stat == expected_stat
 
 
 # =======================================
