@@ -1,7 +1,5 @@
 """Library and command-line tool for getting stats on various typeshed packages."""
 
-import sys
-
 from .api import (
     AnnotationStats,
     PackageName,
@@ -45,9 +43,6 @@ __all__ = [
     "stats_to_json",
     "stats_to_markdown",
 ]
-
-if sys.version_info < (3, 10):
-    raise ImportError("Python 3.10+ is required!")
 
 if __name__ == "__main__":
     try:

@@ -27,7 +27,9 @@ if sys.version_info >= (3, 11):
 else:
     import tomli as tomllib  # pragma: no cover
 
-assert sys.version_info >= (3, 10), "Python 3.10+ is required."
+
+if sys.version_info < (3, 10):
+    raise ImportError("Python 3.10+ is required!")
 
 
 __all__ = [
@@ -80,58 +82,29 @@ _CATTRS_CONVERTER.register_unstructure_hook(_NiceReprEnum, attrgetter("name"))
 _CATTRS_CONVERTER.register_structure_hook(_NiceReprEnum, lambda d, t: t[d])  # type: ignore[index,no-any-return]
 
 
-def _is_Any(annotation: ast.expr) -> bool:
-    """Return `True` if an AST node represents `typing.Any`.
+@attrs.define
+class _SingleAnnotationAnalyzer(ast.NodeVisitor):
+    Any_in_annotation: bool = False
+    Incomplete_in_annotation: bool = False
 
-    >>> _is_Any(ast.Name(id="Any"))
-    True
-    >>> _is_Any(ast.Name(id="foo"))
-    False
-    >>> _is_Any(ast.Attribute(value=ast.Name(id="typing"), attr="Any"))
-    True
-    >>> _is_Any(ast.Attribute(value=ast.Name(id="typing"), attr="foo"))
-    False
-    >>> _is_Any(ast.Attribute(value=ast.Name(id="foo"), attr="Any"))
-    False
-    >>> _is_Any(ast.Module())
-    False
-    >>> _is_Any(object())
-    False
-    """
-    match annotation:
-        case ast.Name("Any"):
-            return True
-        case ast.Attribute(value=ast.Name("typing"), attr="Any"):
-            return True
-        case _:
-            return False
+    def visit_Name(self, node: ast.Name) -> None:
+        match node.id:
+            case "Any":
+                self.Any_in_annotation = True
+            case "Incomplete":
+                self.Incomplete_in_annotation = True
+            case _:
+                pass
 
-
-def _is_Incomplete(annotation: ast.expr) -> bool:
-    """Return `True` if an AST node represents `_typeshed.Incomplete`.
-
-    >>> _is_Incomplete(ast.Name(id="Incomplete"))
-    True
-    >>> _is_Incomplete(ast.Name(id="foo"))
-    False
-    >>> _is_Incomplete(ast.Attribute(value=ast.Name(id="_typeshed"), attr="Incomplete"))
-    True
-    >>> _is_Incomplete(ast.Attribute(value=ast.Name(id="_typeshed"), attr="foo"))
-    False
-    >>> _is_Incomplete(ast.Attribute(value=ast.Name(id="foo"), attr="Incomplete"))
-    False
-    >>> _is_Incomplete(ast.Module())
-    False
-    >>> _is_Incomplete(object())
-    False
-    """
-    match annotation:
-        case ast.Name("Incomplete"):
-            return True
-        case ast.Attribute(value=ast.Name("_typeshed"), attr="Incomplete"):
-            return True
-        case _:
-            return False
+    def visit_Attribute(self, node: ast.Attribute) -> None:
+        match node:
+            case ast.Attribute(value=ast.Name("typing"), attr="Any"):
+                self.Any_in_annotation = True
+            case ast.Attribute(value=ast.Name("_typeshed"), attr="Incomplete"):
+                self.Incomplete_in_annotation = True
+            case _:
+                pass
+        self.generic_visit(node)
 
 
 @final
@@ -175,9 +148,11 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
 
     def visit_AnnAssign(self, node: ast.AnnAssign) -> None:
         self.stats.annotated_variables += 1
-        if _is_Any(node.annotation):
+        analyzer = _SingleAnnotationAnalyzer()
+        analyzer.visit(node.annotation)
+        if analyzer.Any_in_annotation:
             self.stats.explicit_Any_variables += 1
-        elif _is_Incomplete(node.annotation):
+        if analyzer.Incomplete_in_annotation:
             self.stats.explicit_Incomplete_variables += 1
         self.generic_visit(node)
 
@@ -197,9 +172,11 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
             self.stats.unannotated_parameters += 1
         else:
             self.stats.annotated_parameters += 1
-            if _is_Any(annotation):
+            analyzer = _SingleAnnotationAnalyzer()
+            analyzer.visit(annotation)
+            if analyzer.Any_in_annotation:
                 self.stats.explicit_Any_parameters += 1
-            elif _is_Incomplete(annotation):
+            if analyzer.Incomplete_in_annotation:
                 self.stats.explicit_Incomplete_parameters += 1
 
     def _visit_function(self, node: ast.FunctionDef | ast.AsyncFunctionDef) -> None:
@@ -208,9 +185,11 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
             self.stats.unannotated_returns += 1
         else:
             self.stats.annotated_returns += 1
-            if _is_Any(returns):
+            analyzer = _SingleAnnotationAnalyzer()
+            analyzer.visit(returns)
+            if analyzer.Any_in_annotation:
                 self.stats.explicit_Any_returns += 1
-            elif _is_Incomplete(returns):
+            if analyzer.Incomplete_in_annotation:
                 self.stats.explicit_Incomplete_returns += 1
 
         old_function_decorators = self._function_decorators
@@ -595,16 +574,16 @@ def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
           - Annotated parameters: {annotated_parameters}
           - Unannotated parameters: {unannotated_parameters}
           - Explicit `Any` parameters: {explicit_Any_parameters}
-          - Explicit `Incomplete` parameters: {explicit_Incomplete_parameters}
+          - Explicitly `Incomplete` (or partially `Incomplete`) parameters: {explicit_Incomplete_parameters}
         - Returns:
           - Annotated returns: {annotated_returns}
           - Unannotated returns: {unannotated_returns}
           - Explicit `Any` returns: {explicit_Any_returns}
-          - Explicit `Incomplete` returns: {explicit_Incomplete_returns}
+          - Explicitly `Incomplete` (or partially `Incomplete`) returns: {explicit_Incomplete_returns}
         - Variables:
           - Annotated variables: {annotated_variables}
           - Explicit `Any` variables: {explicit_Any_variables}
-          - Explicit `Incomplete` variables: {explicit_Incomplete_variables}
+          - Explicitly `Incomplete` (or partially `Incomplete`) variables: {explicit_Incomplete_variables}
         """
     )
 

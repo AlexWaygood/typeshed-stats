@@ -1,11 +1,14 @@
 import csv
+import importlib
 import io
 import json
 import random
 import string
+import sys
 import textwrap
 from collections.abc import Sequence
 from pathlib import Path
+from unittest import mock
 
 import attrs
 import markdown
@@ -31,6 +34,7 @@ from typeshed_stats import (
     stats_to_json,
     stats_to_markdown,
 )
+
 
 # ==========
 # _NiceReprEnum tests
@@ -100,24 +104,25 @@ def example_stub_file() -> str:
         import _typeshed
         import typing
         from _typeshed import Incomplete
+        from collections.abc import Iterable
         from typing import Any
 
         a: int
         b: str = ...
-        c: Any
+        c: Any | None
         d: Any
         d: Incomplete
-        e: typing.Any
+        e: Iterable[typing.Any]
         f: _typeshed.Incomplete
 
         class Spam:
-            a: typing.Any
+            a: tuple[typing.Any, ...] | None
             b = ...
             c: int = ...
 
         def func1(arg): ...
         def func2(arg: int): ...
-        def func3(arg: Incomplete): ...
+        def func3(arg: Incomplete | None = ...): ...
         def func4(arg: Any) -> Any: ...
 
         class Eggs:
@@ -349,3 +354,13 @@ def test_markdown_conversion(random_PackageStats_data: Sequence[PackageStats]) -
     html1 = markdown.markdown(converted_to_markdown)
     html2 = stats_to_html(random_PackageStats_data)
     assert html1 == html2
+
+
+@mock.patch.object(sys, "version_info", new=(3, 9, 8, "final", 0))
+@pytest.mark.parametrize("module_name", ["typeshed_stats", "typeshed_stats.api"])
+def test_import_fails_on_less_than_3_point_10(module_name: str) -> None:
+    for module_name in ("typeshed_stats", "typeshed_stats.api"):
+        if module_name in sys.modules:
+            del sys.modules[module_name]
+    with pytest.raises(ImportError):
+        importlib.import_module(module_name)  # noqa: F401
