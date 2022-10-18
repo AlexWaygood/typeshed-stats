@@ -214,8 +214,7 @@ def _setup_logger(level: int) -> logging.Logger:
     return logger
 
 
-def main() -> None:
-    """CLI entry point."""
+def _run() -> None:
     packages, typeshed_dir, output_option, writefile, logging_level = _get_options()
     logger = _setup_logger(logging_level)
     logger.info("Gathering stats...")
@@ -223,3 +222,15 @@ def main() -> None:
     logger.info("Formatting stats...")
     formatted_stats = _format_stats(stats, output_option)
     _write_stats(formatted_stats, writefile, logger)
+
+
+def main() -> None:
+    """CLI entry point."""
+    try:
+        _run()
+    except KeyboardInterrupt:
+        print("Interrupted!")
+        code = 1
+    else:
+        code = 0
+    raise SystemExit(code)

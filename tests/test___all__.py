@@ -16,6 +16,23 @@ ALL_MODULES: Final = [typeshed_stats] + [
     for m in pkgutil.iter_modules(typeshed_stats.__path__)
 ]
 
+ALL_PUBLIC_MODULES: Final = [typeshed_stats] + [
+    importlib.import_module(f"typeshed_stats.{m.name}")
+    for m in pkgutil.iter_modules(typeshed_stats.__path__)
+    if not m.name.startswith("_")
+]
+
+
+@pytest.mark.parametrize("module", ALL_MODULES)
+def test_module_has___all__(module: types.ModuleType) -> None:
+    assert hasattr(module, "__all__")
+
+
+@pytest.mark.parametrize("module", ALL_MODULES)
+def test_module__all___is_valid(module: types.ModuleType) -> None:
+    assert isinstance(module.__all__, list)
+    assert all(isinstance(item, str) for item in module.__all__)
+
 
 @pytest.mark.parametrize("module", ALL_MODULES)
 def test___all___alphabetisation(module: types.ModuleType) -> None:
@@ -50,10 +67,14 @@ def test_all_public_names_in___all__(module: types.ModuleType) -> None:
         pytest.fail(f"Public names not in __all__: {public_names_not_in___all__!r}")
 
 
-def test___init___imports_everything_public_from_submodules() -> None:
-    submodule_alls_combined = chain.from_iterable(mod.__all__ for mod in ALL_MODULES)
+def test___init___imports_everything_public_from_public_submodules() -> None:
+    public_submodule_alls_combined = chain.from_iterable(
+        mod.__all__ for mod in ALL_PUBLIC_MODULES
+    )
     names_not_imported_in___init__ = {
-        name for name in submodule_alls_combined if name not in typeshed_stats.__all__
+        name
+        for name in public_submodule_alls_combined
+        if name not in typeshed_stats.__all__
     }
     if names_not_imported_in___init__:
         pytest.fail(
