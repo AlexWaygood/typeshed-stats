@@ -1,10 +1,12 @@
 """Command-line interface."""
 
+import argparse
 import logging
+import os
 from collections.abc import Callable, Sequence
 from enum import Enum
 from pathlib import Path
-from typing import Annotated, Literal, NamedTuple, TypeAlias, cast
+from typing import Annotated, NamedTuple, TypeAlias, cast
 
 from .api import (
     PackageName,
@@ -28,7 +30,7 @@ def _format_stats_for_pprinting(
 
 _CF: TypeAlias = Annotated[
     Callable[[Sequence[PackageStats]], object],
-    "Function for converting a sequence of PackageStats into a certain format"
+    "Function for converting a sequence of PackageStats into a certain format",
 ]
 
 
@@ -81,32 +83,14 @@ def _write_stats(
         logger.info(f'Output successfully written to "{writefile}"!')
 
 
-class _Options(NamedTuple):
-    """The return value of `_get_options()`.
-
-    A tuple representing the options specified by a user on the command line.
-    """
-
-    packages: list[str]
-    typeshed_dir: Path
-    output_option: OutputOption
-    writefile: Path | None
-    logging_level: int
+def _valid_log_argument(arg: str) -> int:
+    try:
+        return int(getattr(logging, arg.upper()))
+    except AttributeError:
+        raise argparse.ArgumentTypeError(f"Invalid logging level {arg!r}")
 
 
-# Ignore flake8 complaining about the function getting too complex.
-# I'd rather keep all argument-parsing logic in one place.
-def _get_options() -> _Options:  # noqa: C901
-    """Parse options passed on the command line."""
-    import argparse
-    import os
-
-    def _valid_log_argument(arg: str) -> int:
-        try:
-            return int(getattr(logging, arg.upper()))
-        except AttributeError:
-            raise argparse.ArgumentTypeError(f"Invalid logging level {arg!r}")
-
+def _parse_cmd_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Script to gather stats on typeshed")
     parser.add_argument(
         "packages",
@@ -165,7 +149,25 @@ def _get_options() -> _Options:  # noqa: C901
         ),
     )
 
-    args = parser.parse_args()
+    return parser.parse_args()
+
+
+class _Options(NamedTuple):
+    """The return value of `_get_options()`.
+
+    A tuple representing the options specified by a user on the command line.
+    """
+
+    packages: list[str]
+    typeshed_dir: Path
+    output_option: OutputOption
+    writefile: Path | None
+    logging_level: int
+
+
+def _get_options() -> _Options:
+    """Parse options passed on the command line."""
+    args = _parse_cmd_args()
     writefile: Path | None = args.to_file
 
     if writefile:
