@@ -90,8 +90,10 @@ def _valid_log_argument(arg: str) -> int:
         raise argparse.ArgumentTypeError(f"Invalid logging level {arg!r}")
 
 
-def _parse_cmd_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Script to gather stats on typeshed")
+def _get_argument_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="typeshed-stats", description="Tool to gather stats on typeshed"
+    )
     parser.add_argument(
         "packages",
         type=str,
@@ -149,13 +151,25 @@ def _parse_cmd_args() -> argparse.Namespace:
         ),
     )
 
-    return parser.parse_args()
+    return parser
+
+
+class _CmdArgs:
+    packages: list[str]
+    typeshed_dir: Path
+    overwrite: bool
+    log: int
+    pprint: bool
+    to_json: bool
+    to_csv: bool
+    to_markdown: bool
+    to_file: Path | None
 
 
 class _Options(NamedTuple):
     """The return value of `_get_options()`.
 
-    A tuple representing the options specified by a user on the command line.
+    A tuple representing the validated options specified by a user on the command line.
     """
 
     packages: list[str]
@@ -165,10 +179,8 @@ class _Options(NamedTuple):
     logging_level: int
 
 
-def _get_options() -> _Options:
-    """Parse options passed on the command line."""
-    args = _parse_cmd_args()
-    writefile: Path | None = args.to_file
+def _validate_options(args: _CmdArgs) -> _Options:
+    writefile = args.to_file
 
     if writefile:
         suffix = writefile.suffix
@@ -202,6 +214,13 @@ def _get_options() -> _Options:
     packages = args.packages or os.listdir(stubs_dir) + ["stdlib"]
 
     return _Options(packages, typeshed_dir, output_option, writefile, args.log)
+
+
+def _get_options() -> _Options:
+    """Parse and validate options passed on the command line."""
+    parser = _get_argument_parser()
+    args: _CmdArgs = parser.parse_args(namespace=_CmdArgs())
+    return _validate_options(args)
 
 
 def _setup_logger(level: int) -> logging.Logger:

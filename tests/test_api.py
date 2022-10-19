@@ -15,6 +15,7 @@ from unittest import mock
 import attrs
 import markdown
 import pytest
+from bs4 import BeautifulSoup
 from pytest_subtests import SubTests  # type: ignore[import]
 
 import typeshed_stats
@@ -241,10 +242,8 @@ def test_annotation_stats_on_package(
 
 
 def test_get_stubtest_setting_stdlib(typeshed: Path) -> None:
-    assert (
-        get_stubtest_setting("stdlib", typeshed_dir=typeshed)
-        is StubtestSetting.ERROR_ON_MISSING_STUB
-    )
+    result = get_stubtest_setting("stdlib", typeshed_dir=typeshed)
+    assert result is StubtestSetting.ERROR_ON_MISSING_STUB
 
 
 def test_get_stubtest_setting_non_stdlib_no_stubtest_section(
@@ -252,10 +251,8 @@ def test_get_stubtest_setting_non_stdlib_no_stubtest_section(
 ) -> None:
     metadata = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "METADATA.toml"
     metadata.write_text("\n")
-    assert (
-        get_stubtest_setting(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed)
-        is StubtestSetting.MISSING_STUBS_IGNORED
-    )
+    result = get_stubtest_setting(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed)
+    assert result is StubtestSetting.MISSING_STUBS_IGNORED
 
 
 @pytest.mark.parametrize(
@@ -350,23 +347,23 @@ def test_get_package_line_number_multiple_files(
 
 
 @pytest.mark.parametrize(
-    ("excluded_path", "package_to_test", "expected_result", "use_string_path"),
+    ("excluded_path", "package_to_test", "pyright_setting_name", "use_string_path"),
     [
-        ("stdlib", "stdlib", PyrightSetting.NOT_STRICT, True),
-        ("stdlib/tkinter", "stdlib", PyrightSetting.STRICT_ON_SOME_FILES, False),
-        ("stubs", "stdlib", PyrightSetting.STRICT, True),
-        ("stubs/aiofiles", "stdlib", PyrightSetting.STRICT, False),
-        ("stubs", "appdirs", PyrightSetting.NOT_STRICT, True),
-        ("stubs", "boto", PyrightSetting.NOT_STRICT, False),
-        ("stubs/boto", "appdirs", PyrightSetting.STRICT, True),
-        ("stubs/boto/auth.pyi", "boto", PyrightSetting.STRICT_ON_SOME_FILES, False),
+        ("stdlib", "stdlib", "NOT_STRICT", True),
+        ("stdlib/tkinter", "stdlib", "STRICT_ON_SOME_FILES", False),
+        ("stubs", "stdlib", "STRICT", True),
+        ("stubs/aiofiles", "stdlib", "STRICT", False),
+        ("stubs", "appdirs", "NOT_STRICT", True),
+        ("stubs", "boto", "NOT_STRICT", False),
+        ("stubs/boto", "appdirs", "STRICT", True),
+        ("stubs/boto/auth.pyi", "boto", "STRICT_ON_SOME_FILES", False),
     ],
 )
 def test_get_pyright_setting(
     typeshed: Path,
     excluded_path: StrPath,
     package_to_test: str,
-    expected_result: PyrightSetting,
+    pyright_setting_name: str,
     use_string_path: bool,
 ) -> None:
     pyrightconfig_template = textwrap.dedent(
@@ -391,6 +388,7 @@ def test_get_pyright_setting(
     pyright_strictness = get_pyright_strictness(
         package_name=package_to_test, typeshed_dir=typeshed_dir_to_pass
     )
+    expected_result = PyrightSetting[pyright_setting_name]
     assert pyright_strictness is expected_result
 
 
@@ -473,13 +471,15 @@ def test_conversion_to_and_from_csv(
     assert new_list_of_info == random_PackageStats_sequence
 
 
-def test_markdown_conversion(
+def test_markdown_and_htmlconversion(
     random_PackageStats_sequence: Sequence[PackageStats],
 ) -> None:
     converted_to_markdown = stats_to_markdown(random_PackageStats_sequence)
     html1 = markdown.markdown(converted_to_markdown)
     html2 = stats_to_html(random_PackageStats_sequence)
     assert html1 == html2
+    soup = BeautifulSoup(html1, "html.parser")
+    assert bool(soup.find()), "Invalid HTML produced!"
 
 
 # ========================================
