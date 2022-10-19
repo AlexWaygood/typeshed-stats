@@ -46,7 +46,7 @@ everything = ["rich", "Markdown", "types-Markdown"]
 "Bug Tracker" = "https://github.com/AlexWaygood/typeshed-stats/issues"
 
 [project.scripts]
-typeshed-stats = "typeshed_stats:main"
+typeshed-stats = "typeshed_stats._cli:main"
 
 [tool.pycln]
 all = true

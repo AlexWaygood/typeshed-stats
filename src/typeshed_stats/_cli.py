@@ -52,15 +52,6 @@ class OutputOption(Enum):
 SUPPORTED_EXTENSIONS = [option.file_extension for option in OutputOption]
 
 
-def _format_stats(
-    stats: Sequence[PackageStats],
-    output_option: OutputOption | Literal["PPRINT", "JSON", "CSV", "MARKDOWN"],
-) -> object:
-    if not isinstance(output_option, OutputOption):
-        output_option = OutputOption[output_option]
-    return output_option.convert(stats)
-
-
 def _write_stats(
     formatted_stats: object, writefile: Path | None, logger: logging.Logger
 ) -> None:
@@ -220,7 +211,8 @@ def _run() -> None:
     logger.info("Gathering stats...")
     stats = gather_stats(packages, typeshed_dir=typeshed_dir)
     logger.info("Formatting stats...")
-    formatted_stats = _format_stats(stats, output_option)
+    formatted_stats = output_option.convert(stats)
+    logger.info("Writing stats...")
     _write_stats(formatted_stats, writefile, logger)
 
 
