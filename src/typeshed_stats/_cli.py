@@ -4,7 +4,7 @@ import logging
 from collections.abc import Callable, Sequence
 from enum import Enum
 from pathlib import Path
-from typing import Literal, NamedTuple
+from typing import Annotated, Literal, NamedTuple, TypeAlias, cast
 
 from .api import (
     PackageName,
@@ -26,18 +26,24 @@ def _format_stats_for_pprinting(
     return {info_bundle.package_name: info_bundle for info_bundle in stats}
 
 
+_CF: TypeAlias = Annotated[
+    Callable[[Sequence[PackageStats]], object],
+    "Function for converting a sequence of PackageStats into a certain format"
+]
+
+
 class OutputOption(Enum):
     """Enumeration of the different output options on the command line."""
 
-    PPRINT = ".txt", _format_stats_for_pprinting
-    JSON = ".json", stats_to_json
-    CSV = ".csv", stats_to_csv
-    MARKDOWN = ".md", stats_to_markdown
+    PPRINT = ".txt", cast(_CF, _format_stats_for_pprinting)
+    JSON = ".json", cast(_CF, stats_to_json)
+    CSV = ".csv", cast(_CF, stats_to_csv)
+    MARKDOWN = ".md", cast(_CF, stats_to_markdown)
 
     @property
     def file_extension(self) -> str:
         """File extension associated with this file type."""
-        return self.value[0]  # type: ignore[no-any-return]
+        return self.value[0]
 
     def convert(self, stats: Sequence[PackageStats]) -> object:
         """Convert a sequence of `PackageStats` objects into the specified format."""
