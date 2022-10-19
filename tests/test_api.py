@@ -41,6 +41,12 @@ from typeshed_stats import (
 StrPath: TypeAlias = str | PathLike[str]
 
 
+def maybe_stringize_path(path: Path, *, use_string_path: bool) -> Path | str:
+    if use_string_path:
+        return str(path)
+    return path
+
+
 # ===================
 # _NiceReprEnum tests
 # ===================
@@ -96,14 +102,13 @@ def test_non_str_value_for__NiceReprEnum_impossible() -> None:
 
 
 def test__AnnotationStatsCollector___repr__() -> None:
-    assert (
-        repr(typeshed_stats.api._AnnotationStatsCollector())
-        == f"_AnnotationStatsCollector(stats={AnnotationStats()})"
-    )
+    actual_repr = repr(typeshed_stats.api._AnnotationStatsCollector())
+    expected_repr = f"_AnnotationStatsCollector(stats={AnnotationStats()})"
+    assert actual_repr == expected_repr
 
 
 @pytest.fixture(scope="session")
-def example_stub_file() -> str:
+def example_stub_source() -> str:
     return textwrap.dedent(
         """
         import _typeshed
@@ -166,15 +171,18 @@ def expected_stats_on_example_stub_file() -> AnnotationStats:
     )
 
 
+@pytest.mark.parametrize("use_string_path", [True, False])
 def test_annotation_stats_on_file(
     subtests: SubTests,
-    example_stub_file: str,
+    example_stub_source: str,
     expected_stats_on_example_stub_file: AnnotationStats,
     tmp_path: Path,
+    use_string_path: bool,
 ) -> None:
     test_dot_pyi = tmp_path / "test.pyi"
-    test_dot_pyi.write_text(example_stub_file, encoding="utf-8")
-    stats = gather_annotation_stats_on_file(test_dot_pyi)
+    test_dot_pyi.write_text(example_stub_source, encoding="utf-8")
+    path_to_pass = maybe_stringize_path(test_dot_pyi, use_string_path=use_string_path)
+    stats = gather_annotation_stats_on_file(path_to_pass)
 
     for field in attrs.fields(AnnotationStats):
         field_name = field.name
@@ -186,23 +194,30 @@ def test_annotation_stats_on_file(
             assert actual_stat == expected_stat
 
 
+@pytest.mark.parametrize("use_string_path", [True, False])
 def test_annotation_stats_on_package(
     subtests: SubTests,
     typeshed: Path,
     EXAMPLE_PACKAGE_NAME: str,
-    example_stub_file: str,
+    example_stub_source: str,
     expected_stats_on_example_stub_file: AnnotationStats,
+    use_string_path: bool,
 ) -> None:
     package_dir = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME
     stdlib_dir = typeshed / "stdlib"
 
     for directory in (stdlib_dir, package_dir):
         for filename in ("test1.pyi", "test2.pyi"):
-            (directory / filename).write_text(example_stub_file, encoding="utf-8")
+            (directory / filename).write_text(example_stub_source, encoding="utf-8")
 
-    stdlib_stats = gather_annotation_stats_on_package("stdlib", typeshed_dir=typeshed)
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed, use_string_path=use_string_path
+    )
+    stdlib_stats = gather_annotation_stats_on_package(
+        "stdlib", typeshed_dir=typeshed_dir_to_pass
+    )
     package_stats = gather_annotation_stats_on_package(
-        EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
     )
 
     field_names = [field.name for field in attrs.fields(AnnotationStats)]
@@ -244,15 +259,15 @@ def test_get_stubtest_setting_non_stdlib_no_stubtest_section(
 
 
 @pytest.mark.parametrize(
-    ("metadata_contents", "expected_result"),
+    ("metadata_contents", "expected_result", "use_string_path"),
     [
-        ("", StubtestSetting.MISSING_STUBS_IGNORED),
-        ("skip = false", StubtestSetting.MISSING_STUBS_IGNORED),
-        ("ignore_missing_stub = true", StubtestSetting.MISSING_STUBS_IGNORED),
-        ("skip = true", StubtestSetting.SKIPPED),
-        ("skip = true\nignore_missing_stub = true", StubtestSetting.SKIPPED),
-        ("skip = true\nignore_missing_stub = false", StubtestSetting.SKIPPED),
-        ("ignore_missing_stub = false", StubtestSetting.ERROR_ON_MISSING_STUB),
+        ("", StubtestSetting.MISSING_STUBS_IGNORED, True),
+        ("skip = false", StubtestSetting.MISSING_STUBS_IGNORED, False),
+        ("ignore_missing_stub = true", StubtestSetting.MISSING_STUBS_IGNORED, True),
+        ("skip = true", StubtestSetting.SKIPPED, False),
+        ("skip = true\nignore_missing_stub = true", StubtestSetting.SKIPPED, True),
+        ("skip = true\nignore_missing_stub = false", StubtestSetting.SKIPPED, False),
+        ("ignore_missing_stub = false", StubtestSetting.ERROR_ON_MISSING_STUB, True),
     ],
 )
 def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
@@ -260,13 +275,17 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
     typeshed: Path,
     metadata_contents: str,
     expected_result: StubtestSetting,
+    use_string_path: bool,
 ) -> None:
     metadata = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "METADATA.toml"
     metadata.write_text(f"[tool.stubtest]\n{metadata_contents}", encoding="utf-8")
-    assert (
-        get_stubtest_setting(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed)
-        is expected_result
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed, use_string_path=use_string_path
     )
+    actual_result = get_stubtest_setting(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
+    )
+    assert actual_result is expected_result
 
 
 # =================================
@@ -274,22 +293,37 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
 # =================================
 
 
+@pytest.mark.parametrize("use_string_path", [True, False])
 def test_get_package_line_number_empty_package(
-    EXAMPLE_PACKAGE_NAME: str, typeshed: Path
+    EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
 ) -> None:
-    assert get_package_line_number(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed) == 0
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed, use_string_path=use_string_path
+    )
+    result = get_package_line_number(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
+    )
+    assert result == 0
 
 
+@pytest.mark.parametrize("use_string_path", [True, False])
 def test_get_package_line_number_single_file(
-    EXAMPLE_PACKAGE_NAME: str, typeshed: Path
+    EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
 ) -> None:
     stub = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "foo.pyi"
     stub.write_text("foo: int\nbar: str", encoding="utf-8")
-    assert get_package_line_number(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed) == 2
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed, use_string_path=use_string_path
+    )
+    result = get_package_line_number(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
+    )
+    assert result == 2
 
 
+@pytest.mark.parametrize("use_string_path", [True, False])
 def test_get_package_line_number_multiple_files(
-    EXAMPLE_PACKAGE_NAME: str, typeshed: Path
+    EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
 ) -> None:
     two_line_stub = "foo: int\nbar: str"
     top_level_stub = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "foo.pyi"
@@ -301,8 +335,13 @@ def test_get_package_line_number_multiple_files(
     subpkg2.mkdir()
     for name in "spam.pyi", "eggs.pyi":
         (subpkg2 / name).write_text(two_line_stub, encoding="utf-8")
-
-    assert get_package_line_number(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed) == 8
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed, use_string_path=use_string_path
+    )
+    result = get_package_line_number(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
+    )
+    assert result == 8
 
 
 # =============================
@@ -311,16 +350,16 @@ def test_get_package_line_number_multiple_files(
 
 
 @pytest.mark.parametrize(
-    ("excluded_path", "package_to_test", "expected_result"),
+    ("excluded_path", "package_to_test", "expected_result", "use_string_path"),
     [
-        ("stdlib", "stdlib", PyrightSetting.NOT_STRICT),
-        ("stdlib/tkinter", "stdlib", PyrightSetting.STRICT_ON_SOME_FILES),
-        ("stubs", "stdlib", PyrightSetting.STRICT),
-        ("stubs/aiofiles", "stdlib", PyrightSetting.STRICT),
-        ("stubs", "appdirs", PyrightSetting.NOT_STRICT),
-        ("stubs", "boto", PyrightSetting.NOT_STRICT),
-        ("stubs/boto", "appdirs", PyrightSetting.STRICT),
-        ("stubs/boto/auth.pyi", "boto", PyrightSetting.STRICT_ON_SOME_FILES),
+        ("stdlib", "stdlib", PyrightSetting.NOT_STRICT, True),
+        ("stdlib/tkinter", "stdlib", PyrightSetting.STRICT_ON_SOME_FILES, False),
+        ("stubs", "stdlib", PyrightSetting.STRICT, True),
+        ("stubs/aiofiles", "stdlib", PyrightSetting.STRICT, False),
+        ("stubs", "appdirs", PyrightSetting.NOT_STRICT, True),
+        ("stubs", "boto", PyrightSetting.NOT_STRICT, False),
+        ("stubs/boto", "appdirs", PyrightSetting.STRICT, True),
+        ("stubs/boto/auth.pyi", "boto", PyrightSetting.STRICT_ON_SOME_FILES, False),
     ],
 )
 def test_get_pyright_setting(
@@ -328,6 +367,7 @@ def test_get_pyright_setting(
     excluded_path: StrPath,
     package_to_test: str,
     expected_result: PyrightSetting,
+    use_string_path: bool,
 ) -> None:
     pyrightconfig_template = textwrap.dedent(
         """
@@ -345,8 +385,11 @@ def test_get_pyright_setting(
         json.loads(pyrightconfig)
     pyrightconfig_path = typeshed / "pyrightconfig.stricter.json"
     pyrightconfig_path.write_text(pyrightconfig, encoding="utf-8")
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed, use_string_path=use_string_path
+    )
     pyright_strictness = get_pyright_strictness(
-        package_name=package_to_test, typeshed_dir=typeshed
+        package_name=package_to_test, typeshed_dir=typeshed_dir_to_pass
     )
     assert pyright_strictness is expected_result
 
