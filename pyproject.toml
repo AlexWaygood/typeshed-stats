@@ -64,7 +64,7 @@ combine_as_imports = true
 skip_gitignore = true
 
 [tool.mypy]
-files = ['src', 'runtests.py', 'tests']
+files = ['src', 'tests', 'runtests.py', 'regenerate_examples.py']
 show_error_codes = true
 show_traceback = true
 pretty = true
