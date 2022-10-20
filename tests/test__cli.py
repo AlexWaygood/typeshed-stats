@@ -1,4 +1,5 @@
 import argparse
+from collections.abc import Sequence
 from pathlib import Path
 
 import pytest
@@ -10,6 +11,7 @@ from typeshed_stats._cli import (
     _Options,
     _validate_options,
 )
+from typeshed_stats.api import PackageStats
 
 # ======================
 # Tests for OutputOption
@@ -34,6 +36,15 @@ def test_OutputOption_from_file_extension() -> None:
     assert OutputOption.from_file_extension(".txt") is OutputOption.PPRINT
     with pytest.raises(ValueError, match="Unsupported file extension"):
         OutputOption.from_file_extension(".xml")
+
+
+def test_pprinting_conversion(
+    random_PackageStats_sequence: Sequence[PackageStats],
+) -> None:
+    # No point in testing the exact type of the output here,
+    # it's an implementation detail
+    # Just test that it works without raising an exception
+    assert OutputOption.PPRINT.convert(random_PackageStats_sequence) is not None
 
 
 # =============================================
