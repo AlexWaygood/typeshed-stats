@@ -1,15 +1,19 @@
 import argparse
+import logging
 from collections.abc import Sequence
 from pathlib import Path
+from unittest import mock
 
 import pytest
 
+import typeshed_stats._cli
 from typeshed_stats._cli import (
     SUPPORTED_EXTENSIONS,
     OutputOption,
     _CmdArgs,
     _Options,
     _validate_options,
+    main,
 )
 from typeshed_stats.api import PackageStats
 
@@ -326,3 +330,46 @@ def test_overwrite_argument(
 
     options = _validate_options(args, parser=parser)
     assert options.writefile == already_existing_file
+
+
+# =============================================
+# Tests for logging during the script execution
+# =============================================
+
+
+# Ignore flake8-pytest-style here.
+# Using return_value doesn't actually work in this case (not sure why).
+# Seems to be a bad interaction with pytest.mark.parametrize?
+@mock.patch.object(  # noqa: PT008
+    typeshed_stats._cli, "_write_stats", lambda *args: None
+)
+@pytest.mark.parametrize(
+    ("logging_level", "logging_expected"),
+    [
+        (logging.NOTSET, False),
+        (logging.DEBUG, True),
+        (logging.INFO, True),
+        (logging.WARNING, False),
+        (logging.ERROR, False),
+        (logging.CRITICAL, False),
+    ],
+)
+def test_logs_to_terminal_with_info_or_lower(
+    logging_level: int,
+    logging_expected: bool,
+    random_PackageStats_sequence: Sequence[PackageStats],
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    options = _Options(["boto"], Path("."), OutputOption.PPRINT, None, logging_level)
+    with (
+        pytest.raises(SystemExit),
+        mock.patch.object(typeshed_stats._cli, "_get_options", return_value=options),
+        mock.patch.object(
+            typeshed_stats._cli,
+            "gather_stats",
+            return_value=random_PackageStats_sequence,
+        ),
+    ):
+        main()
+    logging_occurred = bool(caplog.text.strip())
+    assert logging_occurred is logging_expected
