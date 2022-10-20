@@ -99,10 +99,10 @@ class _SingleAnnotationAnalyzer(ast.NodeVisitor):
                 pass
 
     def visit_Attribute(self, node: ast.Attribute) -> None:
-        match node:
-            case ast.Attribute(value=ast.Name("typing"), attr="Any"):
+        match node.value, node.attr:
+            case [ast.Name("typing"), "Any"]:
                 self.Any_in_annotation = True
-            case ast.Attribute(value=ast.Name("_typeshed"), attr="Incomplete"):
+            case [ast.Name("_typeshed"), "Incomplete"]:
                 self.Incomplete_in_annotation = True
             case _:
                 pass
