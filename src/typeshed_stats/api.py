@@ -362,9 +362,8 @@ async def _get_package_status(
         response.raise_for_status()
         pypi_data = await response.json()
     pypi_version = Version(pypi_data["info"]["version"])
-    return PackageStatus[
-        "UP_TO_DATE" if pypi_version in typeshed_pinned_version else "OUT_OF_DATE"
-    ]
+    status = "UP_TO_DATE" if pypi_version in typeshed_pinned_version else "OUT_OF_DATE"
+    return PackageStatus[status]
 
 
 def get_package_line_number(package_name: str, *, typeshed_dir: Path | str) -> int:

@@ -1,10 +1,19 @@
 import argparse
-import logging
 from pathlib import Path
 
 import pytest
 
-from typeshed_stats._cli import SUPPORTED_EXTENSIONS, OutputOption, _get_argument_parser
+from typeshed_stats._cli import (
+    SUPPORTED_EXTENSIONS,
+    OutputOption,
+    _CmdArgs,
+    _Options,
+    _validate_options,
+)
+
+# ======================
+# Tests for OutputOption
+# ======================
 
 
 @pytest.mark.parametrize("option", list(OutputOption))
@@ -27,21 +36,32 @@ def test_OutputOption_from_file_extension() -> None:
         OutputOption.from_file_extension(".xml")
 
 
-@pytest.fixture(scope="session")
-def parser() -> argparse.ArgumentParser:
-    parser = _get_argument_parser()
-    assert isinstance(parser, argparse.ArgumentParser)
-    return parser
+# =============================================
+# Tests for the logic in _get_argument_parser()
+# =============================================
+
+
+def assert_argparsing_fails(
+    args: list[str],
+    parser: argparse.ArgumentParser,
+    capsys: pytest.CaptureFixture[str] | None = None,
+    *,
+    failure_message: str | None = None,
+) -> None:
+    with pytest.raises(SystemExit) as exc_info:
+        parser.parse_args(args)
+    assert exc_info.value.code == 2
+    if failure_message is not None and capsys is not None:
+        assert failure_message in capsys.readouterr().err
 
 
 @pytest.mark.parametrize("args", [[], ["foo"], ["--to-csv"]])
 def test_argparse_fails_with_no_typeshed_dir_arg(
     parser: argparse.ArgumentParser, capsys: pytest.CaptureFixture[str], args: list[str]
 ) -> None:
-    with pytest.raises(SystemExit) as exc_info:
-        parser.parse_args(args)
-    assert exc_info.value.code == 2
-    assert "the following arguments are required" in capsys.readouterr().err
+    assert_argparsing_fails(
+        args, parser, capsys, failure_message="the following arguments are required"
+    )
 
 
 @pytest.mark.parametrize(
@@ -73,19 +93,18 @@ def test_misc_invalid_args(
     parser: argparse.ArgumentParser, EXAMPLE_PACKAGE_NAME: str, further_args: list[str]
 ) -> None:
     args = [EXAMPLE_PACKAGE_NAME, "--typeshed-dir", "."] + further_args
-    with pytest.raises(SystemExit) as exc_info:
-        parser.parse_args(args)
-    assert exc_info.value.code == 2
+    assert_argparsing_fails(args, parser)
 
 
-def test_minimal_arguments(parser: argparse.ArgumentParser) -> None:
+def test_argparse_minimal_arguments(
+    parser: argparse.ArgumentParser, LOGGING_LEVELS: tuple[int, ...]
+) -> None:
     args = parser.parse_args(["--typeshed-dir", "."])
     assert isinstance(args.packages, list)
     assert len(args.packages) == 0
     assert isinstance(args.typeshed_dir, Path)
     assert args.overwrite is False
-    assert isinstance(args.log, int)
-    assert args.log == logging.INFO
+    assert args.log in LOGGING_LEVELS
     assert not any([args.pprint, args.to_json, args.to_csv, args.to_markdown])
     assert args.to_file is None
 
@@ -146,3 +165,100 @@ def test_to_file_argument(
     assert not any(
         getattr(args, translate_option(option)) for option in NON_FILE_OUTPUT_OPTIONS
     )
+
+
+# ==========================================
+# Tests for the logic in _validate_options()
+# ==========================================
+
+
+@pytest.fixture
+def args(parser: argparse.ArgumentParser) -> _CmdArgs:
+    return parser.parse_args(["--typeshed-dir", "."], namespace=_CmdArgs())
+
+
+def assert__validate_options_fails(
+    args: _CmdArgs,
+    parser: argparse.ArgumentParser,
+    capsys: pytest.CaptureFixture[str],
+    *,
+    failure_message: str,
+) -> None:
+    with pytest.raises(SystemExit) as exc_info:
+        _validate_options(args, parser=parser)
+    assert exc_info.value.code == 2
+    assert failure_message in capsys.readouterr().err
+
+
+def test_to_file_fails_if_parent_doesnt_exist(
+    tmp_path: Path,
+    args: _CmdArgs,
+    parser: argparse.ArgumentParser,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    file_in_fictitious_dir = tmp_path / "fiction" / "foo.json"
+    args.to_file = file_in_fictitious_dir
+    assert__validate_options_fails(
+        args, parser, capsys, failure_message="does not exist as a directory!"
+    )
+
+
+def test_to_file_fails_if_file_exists(
+    tmp_path: Path,
+    args: _CmdArgs,
+    parser: argparse.ArgumentParser,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    # Setup the case where --overwrite=False,
+    # and --to-file points to an already existing file
+    already_existing_file = tmp_path / "foo.json"
+    already_existing_file.write_text("")
+    args.to_file = already_existing_file
+
+    assert__validate_options_fails(
+        args, parser, capsys, failure_message='foo.json" already exists!'
+    )
+
+
+def test_invalid_typeshed_dir_arg(
+    tmp_path: Path,
+    args: _CmdArgs,
+    parser: argparse.ArgumentParser,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    args.typeshed_dir = tmp_path
+    assert__validate_options_fails(
+        args, parser, capsys, failure_message="is not a valid typeshed directory"
+    )
+
+
+def test_invalid_packages_given(
+    typeshed: Path,
+    args: _CmdArgs,
+    parser: argparse.ArgumentParser,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    args.typeshed_dir = typeshed
+    args.packages = ["boto"]
+    assert__validate_options_fails(
+        args, parser, capsys, failure_message="'boto' does not have stubs in typeshed!"
+    )
+
+
+def test_arg_validation_minimal_options(
+    typeshed: Path,
+    args: _CmdArgs,
+    parser: argparse.ArgumentParser,
+    LOGGING_LEVELS: tuple[int, ...],
+) -> None:
+    (typeshed / "stubs" / "boto").mkdir()
+    args.typeshed_dir = typeshed
+    options = _validate_options(args, parser=parser)
+    assert isinstance(options, _Options)
+    assert isinstance(options.packages, list)
+    assert "stdlib" in options.packages
+    assert "boto" in options.packages
+    assert options.typeshed_dir == typeshed
+    assert options.writefile is None
+    assert options.logging_level in LOGGING_LEVELS
+    assert options.output_option is OutputOption.PPRINT

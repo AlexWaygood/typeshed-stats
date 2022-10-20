@@ -111,6 +111,11 @@ def _valid_writefile_argument(arg: str) -> Path:
 
 
 def _get_argument_parser() -> argparse.ArgumentParser:
+    """Parse arguments and do basic argument validation.
+
+    *Don't* do any querying of whether paths actually exist, etc.
+    Leave that to _validate_options().
+    """
     parser = argparse.ArgumentParser(
         prog="typeshed-stats", description="Tool to gather stats on typeshed"
     )
@@ -199,12 +204,24 @@ class _Options(NamedTuple):
     logging_level: int
 
 
-def _validate_options(args: _CmdArgs) -> _Options:
+def _validate_options(args: _CmdArgs, *, parser: argparse.ArgumentParser) -> _Options:
+    """After arguments have been parsed by argparse, do some further validation."""
     writefile = args.to_file
 
     if writefile:
+        if not (writefile.parent.exists() and writefile.parent.is_dir()):
+            parser.error(
+                f'"{writefile}" is an invalid argument:'
+                f" {writefile.parent} does not exist as a directory!"
+            )
         if writefile.exists() and not args.overwrite:
-            raise FileExistsError(f'"{writefile}" already exists!')
+            parser.error(
+                f'"{writefile}" already exists!'
+                "\n(Note: use --overwite"
+                " if your intention was to overwrite an existing file)"
+            )
+        # Don't validate the file extension here
+        # We already did that in _get_argument_parser
         output_option = OutputOption.from_file_extension(writefile.suffix)
     elif args.to_json:
         output_option = OutputOption.JSON
@@ -219,8 +236,14 @@ def _validate_options(args: _CmdArgs) -> _Options:
     typeshed_dir = args.typeshed_dir
     stubs_dir = typeshed_dir / "stubs"
     for folder in typeshed_dir, (typeshed_dir / "stdlib"), stubs_dir:
-        if not folder.exists() and folder.is_dir():
-            raise ValueError(f'"{typeshed_dir}" is not a valid typeshed directory')
+        if not (folder.exists() and folder.is_dir()):
+            parser.error(f'"{typeshed_dir}" is not a valid typeshed directory')
+
+    for package_name in args.packages:
+        if package_name != "stdlib":
+            package_dir = stubs_dir / package_name
+            if not (package_dir.exists() and package_dir.is_dir()):
+                parser.error(f"{package_name!r} does not have stubs in typeshed!")
 
     packages = args.packages or os.listdir(stubs_dir) + ["stdlib"]
 
@@ -231,7 +254,7 @@ def _get_options() -> _Options:
     """Parse and validate options passed on the command line."""
     parser = _get_argument_parser()
     args: _CmdArgs = parser.parse_args(namespace=_CmdArgs())
-    return _validate_options(args)
+    return _validate_options(args, parser=parser)
 
 
 def _setup_logger(level: int) -> logging.Logger:
