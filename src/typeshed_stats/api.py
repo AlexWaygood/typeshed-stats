@@ -5,6 +5,7 @@ from __future__ import annotations
 import ast
 import asyncio
 import json
+import os
 import re
 import sys
 import urllib.parse
@@ -498,7 +499,7 @@ async def _gather_stats(
 
 
 def gather_stats(
-    packages: Iterable[str], *, typeshed_dir: Path | str
+    packages: Iterable[str] | None = None, *, typeshed_dir: Path | str
 ) -> Sequence[PackageStats]:
     """Concurrently gather statistics on multiple packages.
 
@@ -507,7 +508,8 @@ def gather_stats(
     that are themselves called as part of an asyncio event loop.
 
     Args:
-        packages: An iterable of package names to be analysed.
+        packages: An iterable of package names to be analysed, or None.
+          If `None`, defaults to all third-party stubs, plus the stubs for the stdlib.
         typeshed_dir: The path to a local clone of typeshed.
 
     Returns:
@@ -517,6 +519,8 @@ def gather_stats(
     """
     if isinstance(typeshed_dir, str):
         typeshed_dir = Path(typeshed_dir)
+    if packages is None:
+        packages = os.listdir(typeshed_dir / "stubs") + ["stdlib"]
     return asyncio.run(_gather_stats(packages, typeshed_dir=typeshed_dir))
 
 

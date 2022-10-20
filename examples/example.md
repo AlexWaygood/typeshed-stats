@@ -97,38 +97,6 @@ All files are tested with the stricter pyright settings in CI.
 
 <br>
 
-## Stats on typeshed's stubs for `atomicwrites`
-
-### Number of lines
-26
-
-### Package status: *no longer updated*
-Upstream has not added type hints, but these stubs are no longer updated for some other reason.
-
-### Stubtest settings in CI: *error on missing stub*
-Objects missing from the stub cause stubtest to emit an error in CI.
-
-### Pyright settings in CI: *strict*
-All files are tested with the stricter pyright settings in CI.
-
-### Statistics on the annotations in typeshed's stubs for `atomicwrites`
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-  - Annotated parameters: 18
-  - Unannotated parameters: 0
-  - Explicit `Any` parameters: 4
-  - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
-- Returns:
-  - Annotated returns: 10
-  - Unannotated returns: 0
-  - Explicit `Any` returns: 3
-  - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-  - Annotated variables: 2
-  - Explicit `Any` variables: 0
-  - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-
-<br>
-
 ## Stats on typeshed's stubs for `aws-xray-sdk`
 
 ### Number of lines
@@ -652,8 +620,8 @@ These stubs should be fairly up to date. In CI, stubtest tests these stubs again
 ### Stubtest settings in CI: *error on missing stub*
 Objects missing from the stub cause stubtest to emit an error in CI.
 
-### Pyright settings in CI: *not strict*
-All files are excluded from the stricter pyright settings in CI.
+### Pyright settings in CI: *strict*
+All files are tested with the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `console-menu`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
@@ -662,8 +630,8 @@ All files are excluded from the stricter pyright settings in CI.
   - Explicit `Any` parameters: 7
   - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-  - Annotated returns: 277
-  - Unannotated returns: 1
+  - Annotated returns: 278
+  - Unannotated returns: 0
   - Explicit `Any` returns: 1
   - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -940,8 +908,8 @@ These stubs should be fairly up to date. In CI, stubtest tests these stubs again
 ### Stubtest settings in CI: *error on missing stub*
 Objects missing from the stub cause stubtest to emit an error in CI.
 
-### Pyright settings in CI: *not strict*
-All files are excluded from the stricter pyright settings in CI.
+### Pyright settings in CI: *strict*
+All files are tested with the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `dj-database-url`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
@@ -1700,7 +1668,7 @@ All files are excluded from the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `invoke`
 
 ### Number of lines
-803
+810
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -1713,18 +1681,18 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `invoke`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-  - Annotated parameters: 240
-  - Unannotated parameters: 176
-  - Explicit `Any` parameters: 18
+  - Annotated parameters: 242
+  - Unannotated parameters: 174
+  - Explicit `Any` parameters: 28
   - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-  - Annotated returns: 175
-  - Unannotated returns: 75
-  - Explicit `Any` returns: 9
+  - Annotated returns: 176
+  - Unannotated returns: 74
+  - Explicit `Any` returns: 8
   - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
   - Annotated variables: 130
-  - Explicit `Any` variables: 68
+  - Explicit `Any` variables: 70
   - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
 <br>
@@ -1924,27 +1892,27 @@ All files are excluded from the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `mock`
 
 ### Number of lines
-326
+343
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
-The `--ignore-missing-stub` stubtest setting is used in CI.
+### Stubtest settings in CI: *error on missing stub*
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Pyright settings in CI: *not strict*
 All files are excluded from the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `mock`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-  - Annotated parameters: 181
+  - Annotated parameters: 186
   - Unannotated parameters: 7
-  - Explicit `Any` parameters: 120
+  - Explicit `Any` parameters: 123
   - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-  - Annotated returns: 77
+  - Annotated returns: 80
   - Unannotated returns: 2
-  - Explicit `Any` returns: 12
+  - Explicit `Any` returns: 13
   - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
   - Annotated variables: 52
@@ -2124,8 +2092,8 @@ These stubs should be fairly up to date. In CI, stubtest tests these stubs again
 ### Stubtest settings in CI: *error on missing stub*
 Objects missing from the stub cause stubtest to emit an error in CI.
 
-### Pyright settings in CI: *not strict*
-All files are excluded from the stricter pyright settings in CI.
+### Pyright settings in CI: *strict*
+All files are tested with the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `paho-mqtt`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
@@ -2156,8 +2124,8 @@ These stubs should be fairly up to date. In CI, stubtest tests these stubs again
 ### Stubtest settings in CI: *missing stubs ignored*
 The `--ignore-missing-stub` stubtest setting is used in CI.
 
-### Pyright settings in CI: *not strict*
-All files are excluded from the stricter pyright settings in CI.
+### Pyright settings in CI: *strict*
+All files are tested with the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `paramiko`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
@@ -2185,8 +2153,8 @@ All files are excluded from the stricter pyright settings in CI.
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
-The `--ignore-missing-stub` stubtest setting is used in CI.
+### Stubtest settings in CI: *error on missing stub*
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Pyright settings in CI: *strict*
 All files are tested with the stricter pyright settings in CI.
@@ -2316,8 +2284,8 @@ These stubs should be fairly up to date. In CI, stubtest tests these stubs again
 ### Stubtest settings in CI: *missing stubs ignored*
 The `--ignore-missing-stub` stubtest setting is used in CI.
 
-### Pyright settings in CI: *not strict*
-All files are excluded from the stricter pyright settings in CI.
+### Pyright settings in CI: *strict*
+All files are tested with the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `pep8-naming`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
@@ -2500,7 +2468,7 @@ All files are excluded from the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `psutil`
 
 ### Number of lines
-1268
+1270
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2523,7 +2491,7 @@ All files are excluded from the stricter pyright settings in CI.
   - Explicit `Any` returns: 16
   - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-  - Annotated variables: 458
+  - Annotated variables: 459
   - Explicit `Any` variables: 206
   - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -3009,6 +2977,38 @@ All files are tested with the stricter pyright settings in CI.
 
 <br>
 
+## Stats on typeshed's stubs for `python-crontab`
+
+### Number of lines
+292
+
+### Package status: *up to date*
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+
+### Stubtest settings in CI: *error on missing stub*
+Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Pyright settings in CI: *not strict*
+All files are excluded from the stricter pyright settings in CI.
+
+### Statistics on the annotations in typeshed's stubs for `python-crontab`
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+  - Annotated parameters: 90
+  - Unannotated parameters: 44
+  - Explicit `Any` parameters: 10
+  - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 18
+- Returns:
+  - Annotated returns: 80
+  - Unannotated returns: 58
+  - Explicit `Any` returns: 1
+  - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
+- Variables:
+  - Annotated variables: 67
+  - Explicit `Any` variables: 1
+  - Explicitly `Incomplete` (or partially `Incomplete`) variables: 32
+
+<br>
+
 ## Stats on typeshed's stubs for `python-dateutil`
 
 ### Number of lines
@@ -3236,7 +3236,7 @@ All files are excluded from the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `pywin32`
 
 ### Number of lines
-34966
+34953
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -4230,8 +4230,8 @@ All files are tested with the stricter pyright settings in CI.
 ### Number of lines
 53
 
-### Package status: *up to date*
-These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+### Package status: *obsolete*
+Upstream has added type hints; these typeshed stubs are now obsolete.
 
 ### Stubtest settings in CI: *error on missing stub*
 Objects missing from the stub cause stubtest to emit an error in CI.
@@ -4292,7 +4292,7 @@ All files are tested with the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `stdlib`
 
 ### Number of lines
-55199
+55197
 
 ### Package status: *stdlib*
 These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly up to date, and tested against all currently supported Python versions in CI.
@@ -4305,12 +4305,12 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 
 ### Statistics on the annotations in typeshed's stubs for `stdlib`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-  - Annotated parameters: 24377
+  - Annotated parameters: 24375
   - Unannotated parameters: 932
   - Explicit `Any` parameters: 2125
   - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 76
 - Returns:
-  - Annotated returns: 13263
+  - Annotated returns: 13261
   - Unannotated returns: 414
   - Explicit `Any` returns: 825
   - Explicitly `Incomplete` (or partially `Incomplete`) returns: 17

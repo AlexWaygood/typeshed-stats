@@ -1,5 +1,7 @@
 """Command-line interface."""
 
+from __future__ import annotations
+
 import argparse
 import logging
 import os
@@ -54,10 +56,18 @@ class OutputOption(Enum):
 
     def __repr__(self) -> str:
         """repr(self)."""
-        return f"OutputOption.{self.name}(extension={self.file_extension})"
+        return f"OutputOption.{self.name}(extension={self.file_extension!r})"
+
+    @classmethod
+    def from_file_extension(cls, extension: str) -> OutputOption:
+        """Return the enum member associated with a particular file extension."""
+        try:
+            return next(member for member in cls if member.file_extension == extension)
+        except StopIteration:
+            raise ValueError(f"Unsupported file extension {extension!r}") from None
 
 
-SUPPORTED_EXTENSIONS = [option.file_extension for option in OutputOption]
+SUPPORTED_EXTENSIONS = {option.file_extension for option in OutputOption}
 
 
 def _write_stats(
@@ -88,6 +98,16 @@ def _valid_log_argument(arg: str) -> int:
         return int(getattr(logging, arg.upper()))
     except AttributeError:
         raise argparse.ArgumentTypeError(f"Invalid logging level {arg!r}")
+
+
+def _valid_writefile_argument(arg: str) -> Path:
+    writefile = Path(arg)
+    if writefile.suffix not in SUPPORTED_EXTENSIONS:
+        raise argparse.ArgumentTypeError(
+            f"Unrecognised file extension {writefile.suffix!r} passed to --file"
+            f" (choose from {SUPPORTED_EXTENSIONS})"
+        )
+    return writefile
 
 
 def _get_argument_parser() -> argparse.ArgumentParser:
@@ -145,7 +165,7 @@ def _get_argument_parser() -> argparse.ArgumentParser:
     output_options.add_argument(
         "-f",
         "--to-file",
-        type=Path,
+        type=_valid_writefile_argument,
         help=(
             f"File to write output to. Extension must be one of {SUPPORTED_EXTENSIONS}"
         ),
@@ -183,18 +203,9 @@ def _validate_options(args: _CmdArgs) -> _Options:
     writefile = args.to_file
 
     if writefile:
-        suffix = writefile.suffix
-        try:
-            output_option = next(
-                option for option in OutputOption if option.file_extension == suffix
-            )
-        except StopIteration:
-            raise TypeError(
-                f"Unrecognised file extension {suffix!r} passed to --file"
-                f" (choose from {SUPPORTED_EXTENSIONS})"
-            ) from None
         if writefile.exists() and not args.overwrite:
-            raise TypeError(f'"{writefile}" already exists!')
+            raise FileExistsError(f'"{writefile}" already exists!')
+        output_option = OutputOption.from_file_extension(writefile.suffix)
     elif args.to_json:
         output_option = OutputOption.JSON
     elif args.to_csv:
@@ -209,7 +220,7 @@ def _validate_options(args: _CmdArgs) -> _Options:
     stubs_dir = typeshed_dir / "stubs"
     for folder in typeshed_dir, (typeshed_dir / "stdlib"), stubs_dir:
         if not folder.exists() and folder.is_dir():
-            raise TypeError(f'"{typeshed_dir}" is not a valid typeshed directory')
+            raise ValueError(f'"{typeshed_dir}" is not a valid typeshed directory')
 
     packages = args.packages or os.listdir(stubs_dir) + ["stdlib"]
 
