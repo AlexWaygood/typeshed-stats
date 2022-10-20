@@ -48,6 +48,7 @@ def assert_argparsing_fails(
     *,
     failure_message: str | None = None,
 ) -> None:
+    """Helper function for lots of tests regarding _get_argument_parser()."""
     with pytest.raises(SystemExit) as exc_info:
         parser.parse_args(args)
     assert exc_info.value.code == 2
@@ -184,6 +185,7 @@ def assert__validate_options_fails(
     *,
     failure_message: str,
 ) -> None:
+    """Helper method for lots of tests about _validate_options()."""
     with pytest.raises(SystemExit) as exc_info:
         _validate_options(args, parser=parser)
     assert exc_info.value.code == 2
@@ -198,6 +200,20 @@ def test_to_file_fails_if_parent_doesnt_exist(
 ) -> None:
     file_in_fictitious_dir = tmp_path / "fiction" / "foo.json"
     args.to_file = file_in_fictitious_dir
+    assert__validate_options_fails(
+        args, parser, capsys, failure_message="does not exist as a directory!"
+    )
+
+
+def test_to_file_fails_if_parent_is_not_directory(
+    tmp_path: Path,
+    args: _CmdArgs,
+    parser: argparse.ArgumentParser,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    file = tmp_path / "file"
+    file.write_text("")
+    args.to_file = file / "file2.json"
     assert__validate_options_fails(
         args, parser, capsys, failure_message="does not exist as a directory!"
     )
@@ -262,3 +278,40 @@ def test_arg_validation_minimal_options(
     assert options.writefile is None
     assert options.logging_level in LOGGING_LEVELS
     assert options.output_option is OutputOption.PPRINT
+
+
+@pytest.mark.parametrize(
+    ("passed_argument", "expected_result"),
+    [("to_json", "JSON"), ("to_csv", "CSV"), ("to_markdown", "MARKDOWN")],
+)
+def test_output_options(
+    typeshed: Path,
+    args: _CmdArgs,
+    parser: argparse.ArgumentParser,
+    passed_argument: str,
+    expected_result: str,
+) -> None:
+    args.typeshed_dir = typeshed
+    args.pprint = False
+    setattr(args, passed_argument, True)
+    options = _validate_options(args, parser=parser)
+    assert options.output_option is OutputOption[expected_result]
+
+
+def test_overwrite_argument(
+    tmp_path: Path,
+    args: _CmdArgs,
+    parser: argparse.ArgumentParser,
+    capsys: pytest.CaptureFixture[str],
+    typeshed: Path,
+) -> None:
+    # Setup the case where --overwrite=True,
+    # and --to-file points to an already existing file
+    already_existing_file = tmp_path / "foo.json"
+    already_existing_file.write_text("")
+    args.to_file = already_existing_file
+    args.overwrite = True
+    args.typeshed_dir = typeshed
+
+    options = _validate_options(args, parser=parser)
+    assert options.writefile == already_existing_file
