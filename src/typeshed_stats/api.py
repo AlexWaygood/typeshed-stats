@@ -494,7 +494,7 @@ async def _gather_stats(
             )
             for package_name in packages
         )
-        return await asyncio.gather(*tasks)
+        return await asyncio.gather(*tasks, return_exceptions=True)
 
 
 def gather_stats(
@@ -520,7 +520,11 @@ def gather_stats(
         typeshed_dir = Path(typeshed_dir)
     if packages is None:
         packages = os.listdir(typeshed_dir / "stubs") + ["stdlib"]
-    return asyncio.run(_gather_stats(packages, typeshed_dir=typeshed_dir))
+    results = asyncio.run(_gather_stats(packages, typeshed_dir=typeshed_dir))
+    for result in results:
+        if isinstance(result, BaseException):
+            raise result
+    return results
 
 
 def stats_to_json(stats: Sequence[PackageStats]) -> str:

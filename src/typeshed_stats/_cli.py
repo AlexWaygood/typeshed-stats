@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import logging
 import os
+import sys
 from collections.abc import Callable, Sequence
 from enum import Enum
 from pathlib import Path
@@ -282,8 +283,8 @@ def main() -> None:
     try:
         _run()
     except KeyboardInterrupt:
-        print("Interrupted!")
-        code = 1
+        sys.stderr.write("Interrupted!")
+        code = 2
     else:
         code = 0
     raise SystemExit(code)

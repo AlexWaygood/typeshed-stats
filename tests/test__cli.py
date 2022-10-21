@@ -1,12 +1,15 @@
 import argparse
+import contextlib
 import logging
 from collections.abc import Sequence
 from pathlib import Path
 from unittest import mock
 
+import aiohttp
 import pytest
 
 import typeshed_stats._cli
+import typeshed_stats.api
 from typeshed_stats._cli import (
     SUPPORTED_EXTENSIONS,
     OutputOption,
@@ -337,12 +340,6 @@ def test_overwrite_argument(
 # =============================================
 
 
-# Ignore flake8-pytest-style here.
-# Using return_value doesn't actually work in this case (not sure why).
-# Seems to be a bad interaction with pytest.mark.parametrize?
-@mock.patch.object(  # noqa: PT008
-    typeshed_stats._cli, "_write_stats", lambda *args: None
-)
 @pytest.mark.parametrize(
     ("logging_level", "logging_expected"),
     [
@@ -364,6 +361,7 @@ def test_logs_to_terminal_with_info_or_lower(
     with (
         pytest.raises(SystemExit),
         mock.patch.object(typeshed_stats._cli, "_get_options", return_value=options),
+        mock.patch.object(typeshed_stats._cli, "_write_stats", return_value=None),
         mock.patch.object(
             typeshed_stats._cli,
             "gather_stats",
@@ -373,3 +371,41 @@ def test_logs_to_terminal_with_info_or_lower(
         main()
     logging_occurred = bool(caplog.text.strip())
     assert logging_occurred is logging_expected
+
+
+# ============================
+# Tests for exception-handling
+# ============================
+
+
+def _exception_handling_test_helper(raised_exception: BaseException) -> None:
+    options = _Options(["boto"], Path("."), OutputOption.PPRINT, None, logging.CRITICAL)
+    with (
+        mock.patch.object(
+            aiohttp, "ClientSession", return_value=contextlib.nullcontext()
+        ),
+        mock.patch.object(typeshed_stats._cli, "_get_options", return_value=options),
+        mock.patch.object(
+            typeshed_stats.api,
+            "_gather_stats_for_package",
+            side_effect=raised_exception,
+        ),
+    ):
+        main()
+
+
+def test_KeyboardInterrupt_caught(capsys: pytest.CaptureFixture[str]) -> None:
+    with pytest.raises(SystemExit) as exc_info:
+        _exception_handling_test_helper(KeyboardInterrupt())
+    stderr = capsys.readouterr().err
+    num_stderr_lines = len(stderr.strip().splitlines())
+    assert num_stderr_lines == 1
+    assert "Interrupted!" in stderr
+    return_code = exc_info.value.code
+    assert return_code == 2
+
+
+def test_other_exceptions_not_caught() -> None:
+    # TODO: Why can't I use capsys to assert that the number of stderr lines is > 1??
+    with pytest.raises(KeyError):
+        _exception_handling_test_helper(KeyError())
