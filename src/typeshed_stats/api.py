@@ -11,6 +11,7 @@ import sys
 import urllib.parse
 from collections import Counter
 from collections.abc import Iterable, Mapping, Sequence
+from contextlib import AsyncExitStack
 from enum import Enum
 from functools import cache
 from operator import attrgetter
@@ -44,6 +45,7 @@ __all__ = [
     "gather_annotation_stats_on_package",
     "gather_stats",
     "get_package_line_number",
+    "get_package_status",
     "get_pyright_strictness",
     "get_stubtest_setting",
     "stats_from_csv",
@@ -338,9 +340,36 @@ class PackageStatus(_NiceReprEnum):
     )
 
 
-async def _get_package_status(
-    package_name: str, *, typeshed_dir: Path, session: aiohttp.ClientSession
+async def get_package_status(
+    package_name: str,
+    *,
+    typeshed_dir: Path,
+    session: aiohttp.ClientSession | None = None,
 ) -> PackageStatus:
+    """Retrieve information on how up to date a stubs package is.
+
+    If stubtest tests these stubs against the latest version of the runtime
+    in typeshed's CI, it's a fair bet that the stubs are relatively up to date.
+    If stubtest tests these stubs against an older version, however,
+    the stubs may be out of date.
+
+    This function makes network requests to PyPI in order to determine what the
+    latest version of the runtime is, and then compares this against
+    the metadata of the stubs package.
+
+    Args:
+        package_name: The name of the stubs package to analyze.
+        typeshed_dir: A path pointing to a typeshed directory
+          in which to find the stubs package.
+        session (optional): An `aiohttp.ClientSession` instance, to be used
+          for making a network requests, or `None`. If `None` is provided
+          for this argument, a new `aiohttp.ClientSession` instance will be
+          created to make the network request.
+
+    Returns:
+        A member of the `PackageStatus` enumeration
+        (see the docs on `PackageStatus` for details).
+    """
     if package_name == "stdlib":
         # This function isn't really relevant for the stdlib stubs
         return PackageStatus.STDLIB
@@ -358,9 +387,17 @@ async def _get_package_status(
 
     typeshed_pinned_version = SpecifierSet(f"=={metadata['version']}")
     pypi_root = f"https://pypi.org/pypi/{urllib.parse.quote(package_name)}"
-    async with session.get(f"{pypi_root}/json") as response:
-        response.raise_for_status()
-        pypi_data = await response.json()
+
+    async with AsyncExitStack() as stack:
+        if session is None:
+            # see https://github.com/python/mypy/issues/13936
+            # for why we need the tmp_var to keep mypy happy
+            tmp_var = await stack.enter_async_context(aiohttp.ClientSession())
+            session = tmp_var
+        async with session.get(f"{pypi_root}/json") as response:
+            response.raise_for_status()
+            pypi_data = await response.json()
+
     pypi_version = Version(pypi_data["info"]["version"])
     status = "UP_TO_DATE" if pypi_version in typeshed_pinned_version else "OUT_OF_DATE"
     return PackageStatus[status]
@@ -472,7 +509,7 @@ async def _gather_stats_for_package(
         number_of_lines=get_package_line_number(
             package_name, typeshed_dir=typeshed_dir
         ),
-        package_status=await _get_package_status(
+        package_status=await get_package_status(
             package_name, typeshed_dir=typeshed_dir, session=session
         ),
         stubtest_setting=get_stubtest_setting(package_name, typeshed_dir=typeshed_dir),
