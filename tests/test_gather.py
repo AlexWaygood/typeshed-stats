@@ -20,7 +20,7 @@ from typeshed_stats.gather import (
     StubtestSetting,
     gather_annotation_stats_on_file,
     gather_annotation_stats_on_package,
-    get_package_line_number,
+    get_package_size,
     get_pyright_strictness,
     get_stubtest_setting,
 )
@@ -272,24 +272,24 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
 
 
 # =================================
-# Tests for get_package_line_number
+# Tests for get_package_size
 # =================================
 
 
 @pytest.mark.parametrize("use_string_path", [True, False])
 class TestGetPackageLineNumber:
-    def test_get_package_line_number_empty_package(
+    def test_get_package_size_empty_package(
         self, EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
     ) -> None:
         typeshed_dir_to_pass = maybe_stringize_path(
             typeshed, use_string_path=use_string_path
         )
-        result = get_package_line_number(
+        result = get_package_size(
             EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
         )
         assert result == 0
 
-    def test_get_package_line_number_single_file(
+    def test_get_package_size_single_file(
         self, EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
     ) -> None:
         stub = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "foo.pyi"
@@ -297,12 +297,12 @@ class TestGetPackageLineNumber:
         typeshed_dir_to_pass = maybe_stringize_path(
             typeshed, use_string_path=use_string_path
         )
-        result = get_package_line_number(
+        result = get_package_size(
             EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
         )
         assert result == 2
 
-    def test_get_package_line_number_multiple_files(
+    def test_get_package_size_multiple_files(
         self, EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
     ) -> None:
         two_line_stub = "foo: int\nbar: str"
@@ -318,7 +318,7 @@ class TestGetPackageLineNumber:
         typeshed_dir_to_pass = maybe_stringize_path(
             typeshed, use_string_path=use_string_path
         )
-        result = get_package_line_number(
+        result = get_package_size(
             EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
         )
         assert result == 8

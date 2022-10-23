@@ -423,7 +423,7 @@ def _exception_handling_test_helper(raised_exception: BaseException) -> None:
         mock.patch.object(typeshed_stats._cli, "_get_options", return_value=options),
         mock.patch.object(
             typeshed_stats.gather,
-            "_gather_stats_for_package",
+            "gather_stats_for_package",
             side_effect=raised_exception,
         ),
     ):

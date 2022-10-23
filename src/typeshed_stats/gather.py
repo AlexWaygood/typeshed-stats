@@ -40,7 +40,8 @@ __all__ = [
     "gather_annotation_stats_on_file",
     "gather_annotation_stats_on_package",
     "gather_stats",
-    "get_package_line_number",
+    "gather_stats_for_package",
+    "get_package_size",
     "get_package_status",
     "get_pyright_strictness",
     "get_stubtest_setting",
@@ -203,18 +204,17 @@ def gather_annotation_stats_on_file(path: Path | str) -> AnnotationStats:
         An `AnnotationStats` object containing data
         about the annotations in the file.
     """
-    if isinstance(path, str):
-        path = Path(path)
     visitor = _AnnotationStatsCollector()
-    visitor.visit(ast.parse(path.read_text(encoding="utf-8")))
+    with open(path, encoding="utf-8") as file:
+        visitor.visit(ast.parse(file.read()))
     return visitor.stats
 
 
 @cache
-def _get_package_directory(package_name: PackageName, typeshed_dir: Path) -> Path:
+def _get_package_directory(package_name: PackageName, typeshed_dir: Path | str) -> Path:
     if package_name == "stdlib":
-        return typeshed_dir / "stdlib"
-    return typeshed_dir / "stubs" / package_name
+        return Path(typeshed_dir, "stdlib")
+    return Path(typeshed_dir, "stubs", package_name)
 
 
 def gather_annotation_stats_on_package(
@@ -231,8 +231,6 @@ def gather_annotation_stats_on_package(
         An `AnnotationStats` object containing data
         about the annotations in the package.
     """
-    if isinstance(typeshed_dir, str):
-        typeshed_dir = Path(typeshed_dir)
     package_directory = _get_package_directory(package_name, typeshed_dir)
     file_results = [
         gather_annotation_stats_on_file(path)
@@ -247,7 +245,7 @@ def gather_annotation_stats_on_package(
 
 @cache
 def _get_package_metadata(
-    package_name: PackageName, typeshed_dir: Path
+    package_name: PackageName, typeshed_dir: Path | str
 ) -> Mapping[str, Any]:
     package_directory = _get_package_directory(package_name, typeshed_dir)
     with open(package_directory / "METADATA.toml", "rb") as f:
@@ -282,8 +280,6 @@ def get_stubtest_setting(
     """
     if package_name == "stdlib":
         return StubtestSetting.ERROR_ON_MISSING_STUB
-    if isinstance(typeshed_dir, str):
-        typeshed_dir = Path(typeshed_dir)
     metadata = _get_package_metadata(package_name, typeshed_dir)
     stubtest_settings = metadata.get("tool", {}).get("stubtest", {})
     if stubtest_settings.get("skip", False):
@@ -324,7 +320,7 @@ class PackageStatus(_NiceReprEnum):
 async def get_package_status(
     package_name: str,
     *,
-    typeshed_dir: Path,
+    typeshed_dir: Path | str,
     session: aiohttp.ClientSession | None = None,
 ) -> PackageStatus:
     """Retrieve information on how up to date a stubs package is.
@@ -384,7 +380,7 @@ async def get_package_status(
     return PackageStatus[status]
 
 
-def get_package_line_number(package_name: str, *, typeshed_dir: Path | str) -> int:
+def get_package_size(package_name: str, *, typeshed_dir: Path | str) -> int:
     """Get the total number of lines of code for a stubs package in typeshed.
 
     Args:
@@ -395,8 +391,6 @@ def get_package_line_number(package_name: str, *, typeshed_dir: Path | str) -> i
     Returns:
         The number of lines of code the stubs package contains.
     """
-    if isinstance(typeshed_dir, str):
-        typeshed_dir = Path(typeshed_dir)
     return sum(
         len(stub.read_text(encoding="utf-8").splitlines())
         for stub in _get_package_directory(package_name, typeshed_dir).rglob("*.pyi")
@@ -404,10 +398,11 @@ def get_package_line_number(package_name: str, *, typeshed_dir: Path | str) -> i
 
 
 @cache
-def _get_pyright_strict_excludelist(typeshed_dir: Path) -> frozenset[Path]:
+def _get_pyright_strict_excludelist(typeshed_dir: Path | str) -> frozenset[Path]:
     # Read pyrightconfig.stricter.json;
     # do some pre-processing so that it can be passed to json.loads()
-    with open(typeshed_dir / "pyrightconfig.stricter.json", encoding="utf-8") as file:
+    config_path = Path(typeshed_dir, "pyrightconfig.stricter.json")
+    with config_path.open(encoding="utf-8") as file:
         # strip comments from the file
         lines = [line for line in file if not line.strip().startswith("//")]
     # strip trailing commas from the file
@@ -415,7 +410,7 @@ def _get_pyright_strict_excludelist(typeshed_dir: Path) -> frozenset[Path]:
     pyright_config = json.loads(valid_json)
     assert isinstance(pyright_config, dict)
     excludelist = pyright_config.get("exclude", [])
-    return frozenset(typeshed_dir / item for item in excludelist)
+    return frozenset(Path(typeshed_dir, item) for item in excludelist)
 
 
 class PyrightSetting(_NiceReprEnum):
@@ -443,8 +438,6 @@ def get_pyright_strictness(
         A member of the `PyrightSetting` enumeration
         (see the docs on `PyrightSetting` for details).
     """
-    if isinstance(typeshed_dir, str):
-        typeshed_dir = Path(typeshed_dir)
     package_directory = _get_package_directory(package_name, typeshed_dir)
     excluded_paths = _get_pyright_strict_excludelist(typeshed_dir)
     if package_directory in excluded_paths:
@@ -473,14 +466,33 @@ class PackageStats:
     annotation_stats: AnnotationStats
 
 
-async def _gather_stats_for_package(
-    package_name: PackageName, *, typeshed_dir: Path, session: aiohttp.ClientSession
+async def gather_stats_for_package(
+    package_name: PackageName,
+    *,
+    typeshed_dir: Path | str,
+    session: aiohttp.ClientSession | None = None,
 ) -> PackageStats:
+    """Gather miscellaneous statistics about a single stubs package in typeshed.
+
+    This function calls `get_package_status()`,
+    which makes network requests to PyPI.
+    See the docs on `get_package_status()` for details.
+
+    Args:
+        package_name: The name of the package to gather statistics on.
+        typeshed_dir: A path pointing to a typeshed directory,
+          in which the source code for the stubs package can be found.
+        session (optional): An `aiohttp.ClientSession` instance, to be used
+          for making a network requests, or `None`. If `None` is provided
+          for this argument, a new `aiohttp.ClientSession` instance will be
+          created to make the network request.
+
+    Returns:
+        An instance of the `PackageStats` class.
+    """
     return PackageStats(
         package_name=package_name,
-        number_of_lines=get_package_line_number(
-            package_name, typeshed_dir=typeshed_dir
-        ),
+        number_of_lines=get_package_size(package_name, typeshed_dir=typeshed_dir),
         package_status=await get_package_status(
             package_name, typeshed_dir=typeshed_dir, session=session
         ),
@@ -493,12 +505,12 @@ async def _gather_stats_for_package(
 
 
 async def _gather_stats(
-    packages: Iterable[str], *, typeshed_dir: Path
+    packages: Iterable[str], *, typeshed_dir: Path | str
 ) -> Sequence[PackageStats]:
     conn = aiohttp.TCPConnector(limit_per_host=10)
     async with aiohttp.ClientSession(connector=conn) as session:
         tasks = (
-            _gather_stats_for_package(
+            gather_stats_for_package(
                 package_name, typeshed_dir=typeshed_dir, session=session
             )
             for package_name in packages
@@ -525,10 +537,8 @@ def gather_stats(
         contains information representing an analysis of a certain stubs package
         in typeshed.
     """
-    if isinstance(typeshed_dir, str):
-        typeshed_dir = Path(typeshed_dir)
     if packages is None:
-        packages = os.listdir(typeshed_dir / "stubs") + ["stdlib"]
+        packages = os.listdir(Path(typeshed_dir, "stubs")) + ["stdlib"]
     results = asyncio.run(_gather_stats(packages, typeshed_dir=typeshed_dir))
     for result in results:
         if isinstance(result, BaseException):
