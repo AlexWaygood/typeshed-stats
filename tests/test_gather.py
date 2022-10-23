@@ -1,26 +1,20 @@
-import csv
 import importlib
-import io
 import json
 import sys
 import textwrap
-from collections.abc import Callable, Sequence
 from os import PathLike
 from pathlib import Path
 from typing import TypeAlias
 from unittest import mock
 
 import attrs
-import markdown
 import pytest
-from bs4 import BeautifulSoup
 from pytest_subtests import SubTests  # type: ignore[import]
 
 import typeshed_stats
-import typeshed_stats.api
-from typeshed_stats import (
+import typeshed_stats.gather
+from typeshed_stats.gather import (
     AnnotationStats,
-    PackageStats,
     PackageStatus,
     PyrightSetting,
     StubtestSetting,
@@ -29,12 +23,6 @@ from typeshed_stats import (
     get_package_line_number,
     get_pyright_strictness,
     get_stubtest_setting,
-    stats_from_csv,
-    stats_from_json,
-    stats_to_csv,
-    stats_to_html,
-    stats_to_json,
-    stats_to_markdown,
 )
 
 StrPath: TypeAlias = str | PathLike[str]
@@ -78,20 +66,20 @@ def test__NiceReprEnum_repr_str() -> None:
     ],
 )
 def test_formatted__NiceReprEnum_names(
-    enum_member: typeshed_stats.api._NiceReprEnum, expected_formatted_name: str
+    enum_member: typeshed_stats.gather._NiceReprEnum, expected_formatted_name: str
 ) -> None:
     assert enum_member.formatted_name == expected_formatted_name
 
 
 def test_str_value_for__NiceReprEnum_possible() -> None:
-    class Good(typeshed_stats.api._NiceReprEnum):
+    class Good(typeshed_stats.gather._NiceReprEnum):
         A_STRING = "foo"
 
 
 def test_non_str_value_for__NiceReprEnum_impossible() -> None:
     with pytest.raises(AssertionError):
 
-        class Bad(typeshed_stats.api._NiceReprEnum):
+        class Bad(typeshed_stats.gather._NiceReprEnum):
             NOT_A_STRING = 1
 
 
@@ -101,7 +89,7 @@ def test_non_str_value_for__NiceReprEnum_impossible() -> None:
 
 
 def test__AnnotationStatsCollector___repr__() -> None:
-    actual_repr = repr(typeshed_stats.api._AnnotationStatsCollector())
+    actual_repr = repr(typeshed_stats.gather._AnnotationStatsCollector())
     expected_repr = f"_AnnotationStatsCollector(stats={AnnotationStats()})"
     assert actual_repr == expected_repr
 
@@ -387,79 +375,18 @@ def test_get_pyright_setting(
     assert pyright_strictness is expected_result
 
 
-# =======================================
-# Tests for serialisation/deserialisation
-# =======================================
-
-
-def test_conversion_to_from_dict(
-    make_random_PackageStats: Callable[[], PackageStats]
-) -> None:
-    random_PackageStats = make_random_PackageStats()
-    assert type(random_PackageStats) is PackageStats
-    as_dict = random_PackageStats.to_dict()
-    assert type(as_dict) is dict
-    assert all(type(key) is str for key in as_dict)
-    new_PackageStats = PackageStats.from_dict(as_dict)
-    assert type(new_PackageStats) is PackageStats
-    assert random_PackageStats is not new_PackageStats
-    assert random_PackageStats == new_PackageStats
-
-
-def test_conversion_to_and_from_json(
-    random_PackageStats_sequence: Sequence[PackageStats],
-) -> None:
-    converted = stats_to_json(random_PackageStats_sequence)
-    assert isinstance(converted, str)
-    lst = json.loads(converted)
-    assert isinstance(lst, list)
-    assert all(isinstance(item, dict) and "package_name" in item for item in lst)
-    new_package_stats = stats_from_json(converted)
-    assert new_package_stats == random_PackageStats_sequence
-
-
-def test_conversion_to_and_from_csv(
-    random_PackageStats_sequence: Sequence[PackageStats],
-) -> None:
-    converted = stats_to_csv(random_PackageStats_sequence)
-    assert isinstance(converted, str)
-    with io.StringIO(converted, newline="") as csvfile:
-        reader = csv.DictReader(csvfile)
-        first_row = next(iter(reader))
-    assert isinstance(first_row, dict)
-    assert "package_name" in first_row
-    first_PackageStats_item = random_PackageStats_sequence[0]
-    assert first_row["package_name"] == first_PackageStats_item.package_name
-    assert "annotated_parameters" in first_row
-    assert (
-        int(first_row["annotated_parameters"])
-        == first_PackageStats_item.annotation_stats.annotated_parameters
-    )
-    new_list_of_info = stats_from_csv(converted)
-    assert new_list_of_info == random_PackageStats_sequence
-
-
-def test_markdown_and_htmlconversion(
-    random_PackageStats_sequence: Sequence[PackageStats],
-) -> None:
-    converted_to_markdown = stats_to_markdown(random_PackageStats_sequence)
-    html1 = markdown.markdown(converted_to_markdown)
-    html2 = stats_to_html(random_PackageStats_sequence)
-    assert html1 == html2
-    soup = BeautifulSoup(html1, "html.parser")
-    assert bool(soup.find()), "Invalid HTML produced!"
-
-
 # ========================================
 # Test the package doesn't import on <3.10
 # ========================================
 
 
 @mock.patch.object(sys, "version_info", new=(3, 9, 8, "final", 0))
-@pytest.mark.parametrize("module_name", ["typeshed_stats", "typeshed_stats.api"])
+@pytest.mark.parametrize(
+    "module_name", ["typeshed_stats.serialize", "typeshed_stats.gather"]
+)
 def test_import_fails_on_less_than_3_point_10(module_name: str) -> None:
-    for module_name in ("typeshed_stats", "typeshed_stats.api"):
+    for module_name in ("typeshed_stats.serialize", "typeshed_stats.gather"):
         if module_name in sys.modules:
             del sys.modules[module_name]
-    with pytest.raises(ImportError):
+    with pytest.raises(ImportError, match=r"Python 3\.10\+ is required"):
         importlib.import_module(module_name)

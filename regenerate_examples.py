@@ -2,7 +2,8 @@
 import argparse
 from pathlib import Path
 
-from typeshed_stats import gather_stats, stats_to_csv, stats_to_json, stats_to_markdown
+from typeshed_stats.gather import gather_stats
+from typeshed_stats.serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
 
 def regenerate_stats(typeshed_dir: Path) -> None:

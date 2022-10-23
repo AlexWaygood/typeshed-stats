@@ -73,5 +73,5 @@ enable_error_code = 'ignore-without-code,redundant-expr'
 warn_unreachable = true
 
 [tool.pytest.ini_options]
-addopts = "--doctest-modules --strict-config --strict-markers -vv --cov=src --cov-report term-missing"
+addopts = "--doctest-modules --strict-config --strict-markers -vv --cov=src --cov=tests --cov-report term-missing"
 xfail_strict = true

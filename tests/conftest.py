@@ -9,7 +9,7 @@ import attrs
 import pytest
 
 from typeshed_stats._cli import _get_argument_parser
-from typeshed_stats.api import (
+from typeshed_stats.gather import (
     AnnotationStats,
     PackageStats,
     PackageStatus,

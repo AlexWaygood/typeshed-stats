@@ -11,16 +11,14 @@ from enum import Enum
 from pathlib import Path
 from typing import Annotated, NamedTuple, TypeAlias, cast
 
-from .api import (
-    PackageName,
-    PackageStats,
-    gather_stats,
-    stats_to_csv,
-    stats_to_json,
-    stats_to_markdown,
-)
+from .gather import PackageName, PackageStats, gather_stats
+from .serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
 __all__ = ["OutputOption", "SUPPORTED_EXTENSIONS", "main"]
+
+
+if sys.version_info < (3, 10):
+    raise ImportError("Python 3.10+ is required!")
 
 
 def _format_stats_for_pprinting(

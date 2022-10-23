@@ -27,7 +27,8 @@ def run_checks(
     subprocess.run(["requirements-txt-fixer", "requirements-dev.txt"])
 
     print("\nRunning pycln...")
-    subprocess.run(["pycln", "."])
+    # pycln doesn't seem to pick up the --all argument from pyproject.toml, not sure why
+    subprocess.run(["pycln", ".", "--all"])
 
     print("\nRunning isort...")
     subprocess.run(["isort", *FILES_TO_CHECK])

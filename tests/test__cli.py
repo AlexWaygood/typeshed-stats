@@ -9,7 +9,7 @@ import aiohttp
 import pytest
 
 import typeshed_stats._cli
-import typeshed_stats.api
+import typeshed_stats.gather
 from typeshed_stats._cli import (
     SUPPORTED_EXTENSIONS,
     OutputOption,
@@ -18,7 +18,7 @@ from typeshed_stats._cli import (
     _validate_options,
     main,
 )
-from typeshed_stats.api import PackageStats
+from typeshed_stats.gather import PackageStats
 
 # ======================
 # Tests for OutputOption
@@ -386,7 +386,7 @@ def _exception_handling_test_helper(raised_exception: BaseException) -> None:
         ),
         mock.patch.object(typeshed_stats._cli, "_get_options", return_value=options),
         mock.patch.object(
-            typeshed_stats.api,
+            typeshed_stats.gather,
             "_gather_stats_for_package",
             side_effect=raised_exception,
         ),
