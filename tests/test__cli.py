@@ -7,6 +7,7 @@ from unittest import mock
 
 import aiohttp
 import pytest
+from pytest_subtests import SubTests  # type: ignore[import]
 
 import typeshed_stats._cli
 import typeshed_stats.gather
@@ -54,6 +55,36 @@ def test_pprinting_conversion(
     assert OutputOption.PPRINT.convert(random_PackageStats_sequence) is not None
 
 
+def test_each_output_option_has_code_written_for_it(
+    capsys: pytest.CaptureFixture[str],
+    random_PackageStats_sequence: Sequence[PackageStats],
+    typeshed: Path,
+    subtests: SubTests,
+) -> None:
+    options_to_output = {}
+    with mock.patch.object(
+        typeshed_stats._cli, "gather_stats", return_value=random_PackageStats_sequence
+    ):
+        with pytest.raises(SystemExit):
+            main(["--typeshed-dir", str(typeshed), "--pprint"])
+        pprint_output = capsys.readouterr().out.strip()
+        for option in OutputOption:
+            if option is OutputOption.PPRINT:
+                continue
+            with pytest.raises(SystemExit):
+                main(["--typeshed-dir", str(typeshed), f"--to-{option.name.lower()}"])
+            options_to_output[option] = capsys.readouterr().out.strip()
+
+    for option, output in options_to_output.items():
+        with subtests.test(option=option.name):
+            assert pprint_output not in output
+            assert output != pprint_output
+
+    num_different_outputs = len({pprint_output, *options_to_output.values()})
+    expected_num_different_outputs = len(OutputOption)
+    assert num_different_outputs == expected_num_different_outputs
+
+
 # =============================================
 # Tests for the logic in _get_argument_parser()
 # =============================================
@@ -98,6 +129,7 @@ def test_argparse_fails_with_no_typeshed_dir_arg(
         ["--to-json", "foo"],
         ["--to-csv", "foo"],
         ["--to-markdown", "foo"],
+        ["--to-html", "foo"],
         # tests for the output_options group in combination
         ["--pprint", "--to-csv"],
         ["--to-csv", "--to-markdown"],
@@ -154,7 +186,11 @@ def test_log_argument(parser: argparse.ArgumentParser, log_argument: str) -> Non
     assert isinstance(args.log, int)
 
 
-NON_FILE_OUTPUT_OPTIONS = ["--pprint", "--to-json", "--to-csv", "--to-markdown"]
+NON_FILE_OUTPUT_OPTIONS = ["--pprint"] + [
+    f"--to-{member.name.lower()}"
+    for member in OutputOption
+    if member is not OutputOption.PPRINT
+]
 
 
 def translate_option(option: str) -> str:

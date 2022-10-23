@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Annotated, NamedTuple, TypeAlias, cast
 
 from .gather import PackageName, PackageStats, gather_stats
-from .serialize import stats_to_csv, stats_to_json, stats_to_markdown
+from .serialize import stats_to_csv, stats_to_html, stats_to_json, stats_to_markdown
 
 __all__ = ["OutputOption", "SUPPORTED_EXTENSIONS", "main"]
 
@@ -42,6 +42,7 @@ class OutputOption(Enum):
     JSON = ".json", cast(_CF, stats_to_json)
     CSV = ".csv", cast(_CF, stats_to_csv)
     MARKDOWN = ".md", cast(_CF, stats_to_markdown)
+    HTML = ".html", cast(_CF, stats_to_html)
 
     @property
     def file_extension(self) -> str:
@@ -158,13 +159,22 @@ def _get_argument_parser() -> argparse.ArgumentParser:
         help="Pretty-print Python representations of the data (default output)",
     )
     output_options.add_argument(
-        "--to-json", action="store_true", help="Print output as JSON"
+        "--to-json", action="store_true", help="Print output as JSON to the terminal"
     )
     output_options.add_argument(
-        "--to-csv", action="store_true", help="Print output in csv format"
+        "--to-csv",
+        action="store_true",
+        help="Print output in csv format to the terminal",
     )
     output_options.add_argument(
-        "--to-markdown", action="store_true", help="Print output as formatted MarkDown"
+        "--to-markdown",
+        action="store_true",
+        help="Print output as formatted MarkDown to the terminal",
+    )
+    output_options.add_argument(
+        "--to-html",
+        action="store_true",
+        help="Print output as formatted HTML to the terminal",
     )
     output_options.add_argument(
         "-f",
@@ -187,6 +197,7 @@ class _CmdArgs:
     to_json: bool
     to_csv: bool
     to_markdown: bool
+    to_html: bool
     to_file: Path | None
 
 
@@ -203,8 +214,9 @@ class _Options(NamedTuple):
     logging_level: int
 
 
-def _validate_options(args: _CmdArgs, *, parser: argparse.ArgumentParser) -> _Options:
-    """After arguments have been parsed by argparse, do some further validation."""
+def _determine_output_option(
+    args: _CmdArgs, *, parser: argparse.ArgumentParser
+) -> OutputOption:
     writefile = args.to_file
 
     if writefile:
@@ -221,16 +233,22 @@ def _validate_options(args: _CmdArgs, *, parser: argparse.ArgumentParser) -> _Op
             )
         # Don't validate the file extension here
         # We already did that in _get_argument_parser
-        output_option = OutputOption.from_file_extension(writefile.suffix)
-    elif args.to_json:
-        output_option = OutputOption.JSON
-    elif args.to_csv:
-        output_option = OutputOption.CSV
-    elif args.to_markdown:
-        output_option = OutputOption.MARKDOWN
-    else:
-        # --pprint is the default if no option in this group was specified
-        output_option = OutputOption.PPRINT
+        return OutputOption.from_file_extension(writefile.suffix)
+    if args.to_json:
+        return OutputOption.JSON
+    if args.to_csv:
+        return OutputOption.CSV
+    if args.to_markdown:
+        return OutputOption.MARKDOWN
+    if args.to_html:
+        return OutputOption.HTML
+    # --pprint is the default if no option in this group was specified
+    return OutputOption.PPRINT
+
+
+def _validate_options(args: _CmdArgs, *, parser: argparse.ArgumentParser) -> _Options:
+    """After arguments have been parsed by argparse, do some further validation."""
+    output_option = _determine_output_option(args, parser=parser)
 
     typeshed_dir = args.typeshed_dir
     stubs_dir = typeshed_dir / "stubs"
@@ -246,14 +264,14 @@ def _validate_options(args: _CmdArgs, *, parser: argparse.ArgumentParser) -> _Op
 
     packages = args.packages or os.listdir(stubs_dir) + ["stdlib"]
 
-    return _Options(packages, typeshed_dir, output_option, writefile, args.log)
+    return _Options(packages, typeshed_dir, output_option, args.to_file, args.log)
 
 
-def _get_options() -> _Options:
+def _get_options(args: Sequence[str] | None = None) -> _Options:
     """Parse and validate options passed on the command line."""
     parser = _get_argument_parser()
-    args: _CmdArgs = parser.parse_args(namespace=_CmdArgs())
-    return _validate_options(args, parser=parser)
+    parsed_args: _CmdArgs = parser.parse_args(args, namespace=_CmdArgs())
+    return _validate_options(parsed_args, parser=parser)
 
 
 def _setup_logger(level: int) -> logging.Logger:
@@ -265,8 +283,8 @@ def _setup_logger(level: int) -> logging.Logger:
     return logger
 
 
-def _run() -> None:
-    packages, typeshed_dir, output_option, writefile, logging_level = _get_options()
+def _run(args: Sequence[str] | None = None) -> None:
+    packages, typeshed_dir, output_option, writefile, logging_level = _get_options(args)
     logger = _setup_logger(logging_level)
     logger.info("Gathering stats...")
     stats = gather_stats(packages, typeshed_dir=typeshed_dir)
@@ -276,10 +294,10 @@ def _run() -> None:
     _write_stats(formatted_stats, writefile, logger)
 
 
-def main() -> None:
+def main(args: Sequence[str] | None = None) -> None:
     """CLI entry point."""
     try:
-        _run()
+        _run(args)
     except KeyboardInterrupt:
         sys.stderr.write("Interrupted!")
         code = 2
