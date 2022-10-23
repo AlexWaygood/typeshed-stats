@@ -363,7 +363,7 @@ async def get_package_status(
         return PackageStatus.NO_LONGER_UPDATED
 
     typeshed_pinned_version = SpecifierSet(f"=={metadata['version']}")
-    pypi_root = f"https://pypi.org/pypi/{urllib.parse.quote(package_name)}"
+    pypi_data_url = f"https://pypi.org/pypi/{urllib.parse.quote(package_name)}/json"
 
     async with AsyncExitStack() as stack:
         if session is None:
@@ -371,7 +371,7 @@ async def get_package_status(
             # for why we need the tmp_var to keep mypy happy
             tmp_var = await stack.enter_async_context(aiohttp.ClientSession())
             session = tmp_var
-        async with session.get(f"{pypi_root}/json") as response:
+        async with session.get(pypi_data_url) as response:
             response.raise_for_status()
             pypi_data = await response.json()
 

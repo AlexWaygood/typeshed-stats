@@ -1,9 +1,12 @@
+from __future__ import annotations
+
 import json
 import textwrap
-from os import PathLike
 from pathlib import Path
-from typing import TypeAlias
+from typing import Any, final
+from unittest import mock
 
+import aiohttp
 import attrs
 import pytest
 from pytest_subtests import SubTests  # type: ignore[import]
@@ -18,17 +21,21 @@ from typeshed_stats.gather import (
     gather_annotation_stats_on_file,
     gather_annotation_stats_on_package,
     get_package_size,
+    get_package_status,
     get_pyright_strictness,
     get_stubtest_setting,
 )
-
-StrPath: TypeAlias = str | PathLike[str]
 
 
 def maybe_stringize_path(path: Path, *, use_string_path: bool) -> Path | str:
     if use_string_path:
         return str(path)
     return path
+
+
+def write_metadata_text(typeshed: Path, package_name: str, data: str) -> None:
+    metadata = typeshed / "stubs" / package_name / "METADATA.toml"
+    metadata.write_text(data, encoding="utf-8")
 
 
 # ===================
@@ -230,22 +237,21 @@ def test_get_stubtest_setting_stdlib(typeshed: Path) -> None:
 def test_get_stubtest_setting_non_stdlib_no_stubtest_section(
     EXAMPLE_PACKAGE_NAME: str, typeshed: Path
 ) -> None:
-    metadata = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "METADATA.toml"
-    metadata.write_text("\n")
+    write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, "\n")
     result = get_stubtest_setting(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed)
     assert result is StubtestSetting.MISSING_STUBS_IGNORED
 
 
 @pytest.mark.parametrize(
-    ("metadata_contents", "expected_result", "use_string_path"),
+    ("metadata_contents", "expected_result"),
     [
-        ("", StubtestSetting.MISSING_STUBS_IGNORED, True),
-        ("skip = false", StubtestSetting.MISSING_STUBS_IGNORED, False),
-        ("ignore_missing_stub = true", StubtestSetting.MISSING_STUBS_IGNORED, True),
-        ("skip = true", StubtestSetting.SKIPPED, False),
-        ("skip = true\nignore_missing_stub = true", StubtestSetting.SKIPPED, True),
-        ("skip = true\nignore_missing_stub = false", StubtestSetting.SKIPPED, False),
-        ("ignore_missing_stub = false", StubtestSetting.ERROR_ON_MISSING_STUB, True),
+        ("", StubtestSetting.MISSING_STUBS_IGNORED),
+        ("skip = false", StubtestSetting.MISSING_STUBS_IGNORED),
+        ("ignore_missing_stub = true", StubtestSetting.MISSING_STUBS_IGNORED),
+        ("skip = true", StubtestSetting.SKIPPED),
+        ("skip = true\nignore_missing_stub = true", StubtestSetting.SKIPPED),
+        ("skip = true\nignore_missing_stub = false", StubtestSetting.SKIPPED),
+        ("ignore_missing_stub = false", StubtestSetting.ERROR_ON_MISSING_STUB),
     ],
 )
 def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
@@ -255,8 +261,9 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
     expected_result: StubtestSetting,
     use_string_path: bool,
 ) -> None:
-    metadata = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "METADATA.toml"
-    metadata.write_text(f"[tool.stubtest]\n{metadata_contents}", encoding="utf-8")
+    write_metadata_text(
+        typeshed, EXAMPLE_PACKAGE_NAME, f"[tool.stubtest]\n{metadata_contents}"
+    )
     typeshed_dir_to_pass = maybe_stringize_path(
         typeshed, use_string_path=use_string_path
     )
@@ -264,6 +271,106 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
         EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
     )
     assert actual_result is expected_result
+
+
+# =================================
+# Tests for get_package_status
+# =================================
+
+
+@pytest.mark.parametrize(
+    ("package_name", "expected_result"),
+    [("stdlib", PackageStatus.STDLIB), ("gdb", PackageStatus.NOT_ON_PYPI)],
+)
+async def test_get_package_status_special_cases(
+    package_name: str, expected_result: PackageStatus, use_string_path: bool
+) -> None:
+    typeshed_dir = maybe_stringize_path(Path("."), use_string_path=use_string_path)
+    status = await get_package_status(package_name, typeshed_dir=typeshed_dir)
+    assert status is expected_result
+
+
+@pytest.mark.parametrize(
+    ("metadata_to_write", "expected_result"),
+    [
+        ('obsolete_since = "3.1.0"', PackageStatus.OBSOLETE),
+        ("no_longer_updated = true", PackageStatus.NO_LONGER_UPDATED),
+    ],
+)
+async def test_get_package_status_no_pypi_requests_required(
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed: Path,
+    use_string_path: bool,
+    metadata_to_write: str,
+    expected_result: PackageStatus,
+) -> None:
+    write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, metadata_to_write)
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed, use_string_path=use_string_path
+    )
+    status = await get_package_status(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
+    )
+    assert status is expected_result
+
+
+@final
+@attrs.define
+class MockResponse:
+    version: str
+
+    async def json(self) -> dict[str, Any]:
+        return {"info": {"version": self.version}}
+
+    async def __aenter__(self) -> MockResponse:
+        return self
+
+    async def __aexit__(self, *args: object) -> None:
+        pass
+
+    def raise_for_status(self) -> None:
+        pass
+
+
+@pytest.mark.parametrize(
+    ("typeshed_version", "pypi_version", "expected_result"),
+    [
+        ("0.8.*", "0.8.3", PackageStatus.UP_TO_DATE),
+        ("0.8.*", "0.9.3", PackageStatus.OUT_OF_DATE),
+        ("0.8.*", "1.8", PackageStatus.OUT_OF_DATE),
+        ("1.*", "1.1", PackageStatus.UP_TO_DATE),
+        ("1.*", "1.1.1", PackageStatus.UP_TO_DATE),
+        ("1.*", "2", PackageStatus.OUT_OF_DATE),
+        ("1.0.*", "1.0.1", PackageStatus.UP_TO_DATE),
+        ("1.0.*", "1.0.2", PackageStatus.UP_TO_DATE),
+        ("1.0.*", "1.1", PackageStatus.OUT_OF_DATE),
+        ("1.64.72", "1.64.72", PackageStatus.UP_TO_DATE),
+        ("1.64.72", "1.64.73", PackageStatus.OUT_OF_DATE),
+        ("2022.9.13", "2022.9.13", PackageStatus.UP_TO_DATE),
+        ("2022.9.13", "2022.10.22", PackageStatus.OUT_OF_DATE),
+    ],
+)
+async def test_get_package_status_with_mocked_pypi_requests(
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed: Path,
+    use_string_path: bool,
+    typeshed_version: str,
+    pypi_version: str,
+    expected_result: PackageStatus,
+) -> None:
+    write_metadata_text(
+        typeshed, EXAMPLE_PACKAGE_NAME, f'version = "{typeshed_version}"'
+    )
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed, use_string_path=use_string_path
+    )
+    with mock.patch.object(
+        aiohttp.ClientSession, "get", return_value=MockResponse(pypi_version)
+    ):
+        status = await get_package_status(
+            EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
+        )
+    assert status is expected_result
 
 
 # =================================
@@ -319,21 +426,21 @@ def test_get_package_size_multiple_files(
 
 
 @pytest.mark.parametrize(
-    ("excluded_path", "package_to_test", "pyright_setting_name", "use_string_path"),
+    ("excluded_path", "package_to_test", "pyright_setting_name"),
     [
-        ("stdlib", "stdlib", "NOT_STRICT", True),
-        ("stdlib/tkinter", "stdlib", "STRICT_ON_SOME_FILES", False),
-        ("stubs", "stdlib", "STRICT", True),
-        ("stubs/aiofiles", "stdlib", "STRICT", False),
-        ("stubs", "appdirs", "NOT_STRICT", True),
-        ("stubs", "boto", "NOT_STRICT", False),
-        ("stubs/boto", "appdirs", "STRICT", True),
-        ("stubs/boto/auth.pyi", "boto", "STRICT_ON_SOME_FILES", False),
+        ("stdlib", "stdlib", "NOT_STRICT"),
+        ("stdlib/tkinter", "stdlib", "STRICT_ON_SOME_FILES"),
+        ("stubs", "stdlib", "STRICT"),
+        ("stubs/aiofiles", "stdlib", "STRICT"),
+        ("stubs", "appdirs", "NOT_STRICT"),
+        ("stubs", "boto", "NOT_STRICT"),
+        ("stubs/boto", "appdirs", "STRICT"),
+        ("stubs/boto/auth.pyi", "boto", "STRICT_ON_SOME_FILES"),
     ],
 )
 def test_get_pyright_setting(
     typeshed: Path,
-    excluded_path: StrPath,
+    excluded_path: str,
     package_to_test: str,
     pyright_setting_name: str,
     use_string_path: bool,

@@ -75,3 +75,4 @@ warn_unreachable = true
 [tool.pytest.ini_options]
 addopts = "--doctest-modules --strict-config --strict-markers -vv --cov=src --cov=tests --cov-report term-missing"
 xfail_strict = true
+asyncio_mode = "auto"

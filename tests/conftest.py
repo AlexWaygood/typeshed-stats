@@ -20,9 +20,15 @@ from typeshed_stats.gather import (
 
 @pytest.fixture(scope="session")
 def EXAMPLE_PACKAGE_NAME() -> str:
-    return "".join(
-        random.choice(string.ascii_letters) for _ in range(random.randint(1, 10))
-    )
+    def random_string() -> str:
+        return "".join(
+            random.choice(string.ascii_letters) for _ in range(random.randint(1, 10))
+        )
+
+    while (result := random_string()) in {"stdlib", "gdb"}:
+        continue  # pragma: no cover
+
+    return result
 
 
 @pytest.fixture
