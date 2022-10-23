@@ -2,6 +2,7 @@ import argparse
 import logging
 import random
 import string
+import textwrap
 from collections.abc import Callable, Sequence
 from pathlib import Path
 
@@ -90,3 +91,18 @@ def random_PackageStats_sequence(
 @pytest.fixture(params=[True, False])
 def use_string_path(request: pytest.FixtureRequest) -> bool:
     return request.param  # type: ignore[no-any-return]
+
+
+@pytest.fixture
+def pyrightconfig_template() -> str:
+    return textwrap.dedent(
+        """
+        {{
+            "typeshedPath": ".",
+            // A comment to make this invalid JSON
+            "exclude": [
+                {}
+            ],
+        }}
+        """
+    )

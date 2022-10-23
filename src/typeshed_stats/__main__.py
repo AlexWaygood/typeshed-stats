@@ -7,7 +7,7 @@ if sys.version_info < (3, 10):
 
 __all__: list[str] = []
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     from ._cli import main
 
     main()

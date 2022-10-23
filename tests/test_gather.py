@@ -22,6 +22,7 @@ from typeshed_stats.gather import (
     _get_pypi_data,
     gather_annotation_stats_on_file,
     gather_annotation_stats_on_package,
+    gather_stats,
     gather_stats_on_package,
     get_package_size,
     get_package_status,
@@ -446,19 +447,9 @@ def test_get_pyright_setting(
     package_to_test: str,
     pyright_setting_name: str,
     use_string_path: bool,
+    pyrightconfig_template: str,
 ) -> None:
-    pyrightconfig_template = textwrap.dedent(
-        """
-        {{
-            "typeshedPath": ".",
-            // A comment to make this invalid JSON
-            "exclude": [
-                "{}"
-            ],
-        }}
-        """
-    )
-    pyrightconfig = pyrightconfig_template.format(excluded_path)
+    pyrightconfig = pyrightconfig_template.format(f'"{excluded_path}"')
     with pytest.raises(json.JSONDecodeError):
         json.loads(pyrightconfig)
     pyrightconfig_path = typeshed / "pyrightconfig.stricter.json"
@@ -479,28 +470,75 @@ def test_get_pyright_setting(
 
 
 async def test_gather_stats_on_package(EXAMPLE_PACKAGE_NAME: str) -> None:
-    with(
+    with (
         mock.patch.object(typeshed_stats.gather, "get_package_size", return_value=30),
         mock.patch.object(
             typeshed_stats.gather,
             "get_package_status",
-            return_value=PackageStatus.UP_TO_DATE
+            return_value=PackageStatus.UP_TO_DATE,
         ),
         mock.patch.object(
             typeshed_stats.gather,
             "get_stubtest_setting",
-            return_value=StubtestSetting.MISSING_STUBS_IGNORED
+            return_value=StubtestSetting.MISSING_STUBS_IGNORED,
         ),
         mock.patch.object(
             typeshed_stats.gather,
             "get_pyright_strictness",
-            return_value=PyrightSetting.STRICT
+            return_value=PyrightSetting.STRICT,
         ),
         mock.patch.object(
             typeshed_stats.gather,
             "gather_annotation_stats_on_package",
-            return_value=AnnotationStats()
-        )
+            return_value=AnnotationStats(),
+        ),
     ):
         stats = await gather_stats_on_package(EXAMPLE_PACKAGE_NAME, typeshed_dir=".")
     assert isinstance(stats, PackageStats)
+
+
+# =======================
+# A test for gather_stats
+# =======================
+
+
+def test_gather_stats_no_packages_passed(
+    typeshed: Path,
+    example_stub_source: str,
+    use_string_path: bool,
+    pyrightconfig_template: str,
+    EXAMPLE_PACKAGE_NAME: str,
+) -> None:
+    # The typeshed fixture comes with a package directory
+    # for EXAMPLE_PACKAGE_NAME already built.
+    # This is useful for most tests, but not for this one;
+    # the first thing to do here is to remove it.
+    (typeshed / "stubs" / EXAMPLE_PACKAGE_NAME).rmdir()
+
+    pyrightconfig_path = typeshed / "pyrightconfig.stricter.json"
+    pyrightconfig_path.write_text(pyrightconfig_template.format(""), encoding="utf-8")
+
+    package_names = {"emoji", "protobuf", "appdirs"}
+    for package_name in package_names:
+        package_dir = typeshed / "stubs" / package_name
+        package_dir.mkdir()
+        write_metadata_text(typeshed, package_name, "\n")
+        source_dir = package_dir / package_name
+        source_dir.mkdir()
+        (source_dir / "foo.pyi").write_text(example_stub_source, encoding="utf-8")
+
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed, use_string_path=use_string_path
+    )
+
+    with mock.patch.object(
+        typeshed_stats.gather,
+        "get_package_status",
+        return_value=PackageStatus.UP_TO_DATE,
+    ):
+        results = gather_stats(typeshed_dir=typeshed_dir_to_pass)
+
+    assert all(isinstance(item, PackageStats) for item in results)
+    package_names_in_results = {item.package_name for item in results}
+    expected_package_names = package_names | {"stdlib"}
+    assert package_names_in_results == expected_package_names
