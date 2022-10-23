@@ -3,12 +3,12 @@ from __future__ import annotations
 import json
 import textwrap
 from pathlib import Path
-from typing import Any, final
 from unittest import mock
 
 import aiohttp
 import attrs
 import pytest
+from packaging.version import Version
 from pytest_subtests import SubTests  # type: ignore[import]
 
 import typeshed_stats
@@ -18,6 +18,7 @@ from typeshed_stats.gather import (
     PackageStatus,
     PyrightSetting,
     StubtestSetting,
+    _get_pypi_data,
     gather_annotation_stats_on_file,
     gather_annotation_stats_on_package,
     get_package_size,
@@ -314,24 +315,6 @@ async def test_get_package_status_no_pypi_requests_required(
     assert status is expected_result
 
 
-@final
-@attrs.define
-class MockResponse:
-    version: str
-
-    async def json(self) -> dict[str, Any]:
-        return {"info": {"version": self.version}}
-
-    async def __aenter__(self) -> MockResponse:
-        return self
-
-    async def __aexit__(self, *args: object) -> None:
-        pass
-
-    def raise_for_status(self) -> None:
-        pass
-
-
 @pytest.mark.parametrize(
     ("typeshed_version", "pypi_version", "expected_result"),
     [
@@ -365,12 +348,29 @@ async def test_get_package_status_with_mocked_pypi_requests(
         typeshed, use_string_path=use_string_path
     )
     with mock.patch.object(
-        aiohttp.ClientSession, "get", return_value=MockResponse(pypi_version)
+        typeshed_stats.gather,
+        "_get_pypi_data",
+        return_value={"info": {"version": pypi_version}},
     ):
         status = await get_package_status(
             EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
         )
     assert status is expected_result
+
+
+@pytest.mark.parametrize("package_name", ["emoji", "flake8-bugbear", "SQLAlchemy"])
+async def test__get_pypi_data(package_name: str) -> None:
+    async with aiohttp.ClientSession() as session:
+        data = await _get_pypi_data(package_name, session)
+    assert isinstance(data, dict)
+    assert all(isinstance(key, str) for key in data)
+    assert "info" in data
+    info = data["info"]
+    assert isinstance(info, dict)
+    assert all(isinstance(key, str) for key in info)
+    assert "version" in info
+    version = info["version"]
+    Version(version)
 
 
 # =================================
