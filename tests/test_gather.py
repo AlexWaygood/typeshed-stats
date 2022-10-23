@@ -1,11 +1,8 @@
-import importlib
 import json
-import sys
 import textwrap
 from os import PathLike
 from pathlib import Path
 from typing import TypeAlias
-from unittest import mock
 
 import attrs
 import pytest
@@ -373,20 +370,3 @@ def test_get_pyright_setting(
     )
     expected_result = PyrightSetting[pyright_setting_name]
     assert pyright_strictness is expected_result
-
-
-# ========================================
-# Test the package doesn't import on <3.10
-# ========================================
-
-
-@mock.patch.object(sys, "version_info", new=(3, 9, 8, "final", 0))
-@pytest.mark.parametrize(
-    "module_name", ["typeshed_stats.serialize", "typeshed_stats.gather"]
-)
-def test_import_fails_on_less_than_3_point_10(module_name: str) -> None:
-    for module_name in ("typeshed_stats.serialize", "typeshed_stats.gather"):
-        if module_name in sys.modules:
-            del sys.modules[module_name]
-    with pytest.raises(ImportError, match=r"Python 3\.10\+ is required"):
-        importlib.import_module(module_name)

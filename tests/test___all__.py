@@ -3,8 +3,10 @@
 import builtins
 import importlib
 import pkgutil
+import sys
 import types
 from typing import Final
+from unittest import mock
 
 import pytest
 
@@ -59,3 +61,18 @@ def test_all_public_names_in___all__(module: types.ModuleType) -> None:
     assert (
         not public_names_not_in___all__
     ), f"Public names not in __all__: {public_names_not_in___all__!r}"
+
+
+# ========================================
+# Test the package doesn't import on <3.10
+# ========================================
+
+
+@mock.patch.object(sys, "version_info", new=(3, 9, 8, "final", 0))
+@pytest.mark.parametrize("module_name", [mod.__name__ for mod in ALL_SUBMODULES])
+def test_import_fails_on_less_than_3_point_10(module_name: str) -> None:
+    for module_name in ("typeshed_stats.serialize", "typeshed_stats.gather"):
+        if module_name in sys.modules:
+            del sys.modules[module_name]
+    with pytest.raises(ImportError, match=r"Python 3\.10\+ is required"):
+        importlib.import_module(module_name)
