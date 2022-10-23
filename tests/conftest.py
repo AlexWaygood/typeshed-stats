@@ -79,3 +79,8 @@ def random_PackageStats_sequence(
     make_random_PackageStats: Callable[[], PackageStats]
 ) -> Sequence[PackageStats]:
     return [make_random_PackageStats() for _ in range(random.randint(3, 10))]
+
+
+@pytest.fixture(params=[True, False])
+def use_string_path(request: pytest.FixtureRequest) -> bool:
+    return request.param  # type: ignore[no-any-return]

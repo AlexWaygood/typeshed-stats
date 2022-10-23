@@ -155,7 +155,6 @@ def expected_stats_on_example_stub_file() -> AnnotationStats:
     )
 
 
-@pytest.mark.parametrize("use_string_path", [True, False])
 def test_annotation_stats_on_file(
     subtests: SubTests,
     example_stub_source: str,
@@ -178,7 +177,6 @@ def test_annotation_stats_on_file(
             assert actual_stat == expected_stat
 
 
-@pytest.mark.parametrize("use_string_path", [True, False])
 def test_annotation_stats_on_package(
     subtests: SubTests,
     typeshed: Path,
@@ -273,52 +271,46 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
 # =================================
 
 
-@pytest.mark.parametrize("use_string_path", [True, False])
-class TestGetPackageLineNumber:
-    def test_get_package_size_empty_package(
-        self, EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
-    ) -> None:
-        typeshed_dir_to_pass = maybe_stringize_path(
-            typeshed, use_string_path=use_string_path
-        )
-        result = get_package_size(
-            EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
-        )
-        assert result == 0
+def test_get_package_size_empty_package(
+    EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
+) -> None:
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed, use_string_path=use_string_path
+    )
+    result = get_package_size(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass)
+    assert result == 0
 
-    def test_get_package_size_single_file(
-        self, EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
-    ) -> None:
-        stub = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "foo.pyi"
-        stub.write_text("foo: int\nbar: str", encoding="utf-8")
-        typeshed_dir_to_pass = maybe_stringize_path(
-            typeshed, use_string_path=use_string_path
-        )
-        result = get_package_size(
-            EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
-        )
-        assert result == 2
 
-    def test_get_package_size_multiple_files(
-        self, EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
-    ) -> None:
-        two_line_stub = "foo: int\nbar: str"
-        top_level_stub = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "foo.pyi"
-        top_level_stub.write_text(two_line_stub, encoding="utf-8")
-        subpkg = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "subpkg"
-        subpkg.mkdir()
-        (subpkg / "bar.pyi").write_text(two_line_stub, encoding="utf-8")
-        subpkg2 = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "subpkg2"
-        subpkg2.mkdir()
-        for name in "spam.pyi", "eggs.pyi":
-            (subpkg2 / name).write_text(two_line_stub, encoding="utf-8")
-        typeshed_dir_to_pass = maybe_stringize_path(
-            typeshed, use_string_path=use_string_path
-        )
-        result = get_package_size(
-            EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
-        )
-        assert result == 8
+def test_get_package_size_single_file(
+    EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
+) -> None:
+    stub = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "foo.pyi"
+    stub.write_text("foo: int\nbar: str", encoding="utf-8")
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed, use_string_path=use_string_path
+    )
+    result = get_package_size(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass)
+    assert result == 2
+
+
+def test_get_package_size_multiple_files(
+    EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
+) -> None:
+    two_line_stub = "foo: int\nbar: str"
+    top_level_stub = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "foo.pyi"
+    top_level_stub.write_text(two_line_stub, encoding="utf-8")
+    subpkg = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "subpkg"
+    subpkg.mkdir()
+    (subpkg / "bar.pyi").write_text(two_line_stub, encoding="utf-8")
+    subpkg2 = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "subpkg2"
+    subpkg2.mkdir()
+    for name in "spam.pyi", "eggs.pyi":
+        (subpkg2 / name).write_text(two_line_stub, encoding="utf-8")
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed, use_string_path=use_string_path
+    )
+    result = get_package_size(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass)
+    assert result == 8
 
 
 # =============================
