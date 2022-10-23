@@ -53,5 +53,5 @@ jobs:
         with:
           python-version: "3.10"
       - run: pip install -r requirements-dev.txt
-      - run: pip install .[everything]
+      - run: pip install -e .[everything]
       - run: pytest
