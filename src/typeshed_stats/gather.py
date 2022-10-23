@@ -40,7 +40,7 @@ __all__ = [
     "gather_annotation_stats_on_file",
     "gather_annotation_stats_on_package",
     "gather_stats",
-    "gather_stats_for_package",
+    "gather_stats_on_package",
     "get_package_size",
     "get_package_status",
     "get_pyright_strictness",
@@ -474,7 +474,7 @@ class PackageStats:
     annotation_stats: AnnotationStats
 
 
-async def gather_stats_for_package(
+async def gather_stats_on_package(
     package_name: PackageName,
     *,
     typeshed_dir: Path | str,
@@ -518,7 +518,7 @@ async def _gather_stats(
     conn = aiohttp.TCPConnector(limit_per_host=10)
     async with aiohttp.ClientSession(connector=conn) as session:
         tasks = (
-            gather_stats_for_package(
+            gather_stats_on_package(
                 package_name, typeshed_dir=typeshed_dir, session=session
             )
             for package_name in packages

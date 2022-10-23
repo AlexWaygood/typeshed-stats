@@ -15,12 +15,14 @@ import typeshed_stats
 import typeshed_stats.gather
 from typeshed_stats.gather import (
     AnnotationStats,
+    PackageStats,
     PackageStatus,
     PyrightSetting,
     StubtestSetting,
     _get_pypi_data,
     gather_annotation_stats_on_file,
     gather_annotation_stats_on_package,
+    gather_stats_on_package,
     get_package_size,
     get_package_status,
     get_pyright_strictness,
@@ -420,9 +422,9 @@ def test_get_package_size_multiple_files(
     assert result == 8
 
 
-# =============================
-# Tests for get_pyright_setting
-# =============================
+# ================================
+# Tests for get_pyright_strictness
+# ================================
 
 
 @pytest.mark.parametrize(
@@ -469,3 +471,36 @@ def test_get_pyright_setting(
     )
     expected_result = PyrightSetting[pyright_setting_name]
     assert pyright_strictness is expected_result
+
+
+# ===================================
+# A test for gather_stats_for_package
+# ===================================
+
+
+async def test_gather_stats_on_package(EXAMPLE_PACKAGE_NAME: str) -> None:
+    with(
+        mock.patch.object(typeshed_stats.gather, "get_package_size", return_value=30),
+        mock.patch.object(
+            typeshed_stats.gather,
+            "get_package_status",
+            return_value=PackageStatus.UP_TO_DATE
+        ),
+        mock.patch.object(
+            typeshed_stats.gather,
+            "get_stubtest_setting",
+            return_value=StubtestSetting.MISSING_STUBS_IGNORED
+        ),
+        mock.patch.object(
+            typeshed_stats.gather,
+            "get_pyright_strictness",
+            return_value=PyrightSetting.STRICT
+        ),
+        mock.patch.object(
+            typeshed_stats.gather,
+            "gather_annotation_stats_on_package",
+            return_value=AnnotationStats()
+        )
+    ):
+        stats = await gather_stats_on_package(EXAMPLE_PACKAGE_NAME, typeshed_dir=".")
+    assert isinstance(stats, PackageStats)
