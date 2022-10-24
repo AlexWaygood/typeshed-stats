@@ -23,7 +23,6 @@ from typeshed_stats.gather import (
     gather_annotation_stats_on_file,
     gather_annotation_stats_on_package,
     gather_stats,
-    gather_stats_on_package,
     get_package_size,
     get_package_status,
     get_pyright_strictness,
@@ -464,50 +463,19 @@ def test_get_pyright_setting(
     assert pyright_strictness is expected_result
 
 
-# ===================================
-# A test for gather_stats_for_package
-# ===================================
+# ======================
+# Tests for gather_stats
+# ======================
 
 
-async def test_gather_stats_on_package(EXAMPLE_PACKAGE_NAME: str) -> None:
-    with (
-        mock.patch.object(typeshed_stats.gather, "get_package_size", return_value=30),
-        mock.patch.object(
-            typeshed_stats.gather,
-            "get_package_status",
-            return_value=PackageStatus.UP_TO_DATE,
-        ),
-        mock.patch.object(
-            typeshed_stats.gather,
-            "get_stubtest_setting",
-            return_value=StubtestSetting.MISSING_STUBS_IGNORED,
-        ),
-        mock.patch.object(
-            typeshed_stats.gather,
-            "get_pyright_strictness",
-            return_value=PyrightSetting.STRICT,
-        ),
-        mock.patch.object(
-            typeshed_stats.gather,
-            "gather_annotation_stats_on_package",
-            return_value=AnnotationStats(),
-        ),
-    ):
-        stats = await gather_stats_on_package(EXAMPLE_PACKAGE_NAME, typeshed_dir=".")
-    assert isinstance(stats, PackageStats)
-
-
-# =======================
-# A test for gather_stats
-# =======================
-
-
+@pytest.mark.parametrize("pass_none", [True, False])
 def test_gather_stats_no_packages_passed(
     typeshed: Path,
     example_stub_source: str,
     use_string_path: bool,
     pyrightconfig_template: str,
     EXAMPLE_PACKAGE_NAME: str,
+    pass_none: bool,
 ) -> None:
     # The typeshed fixture comes with a package directory
     # for EXAMPLE_PACKAGE_NAME already built.
@@ -531,14 +499,20 @@ def test_gather_stats_no_packages_passed(
         typeshed, use_string_path=use_string_path
     )
 
+    packages_to_pass: set[str] | None
+    packages_to_pass = None if pass_none else (package_names | {"stdlib"})
+
     with mock.patch.object(
         typeshed_stats.gather,
         "get_package_status",
         return_value=PackageStatus.UP_TO_DATE,
     ):
-        results = gather_stats(typeshed_dir=typeshed_dir_to_pass)
+        results = gather_stats(packages_to_pass, typeshed_dir=typeshed_dir_to_pass)
 
     assert all(isinstance(item, PackageStats) for item in results)
     package_names_in_results = {item.package_name for item in results}
     expected_package_names = package_names | {"stdlib"}
     assert package_names_in_results == expected_package_names
+
+
+# N.B. The exception-handling aspects of gather_stats() are tested in test__cli.py
