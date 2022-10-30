@@ -515,4 +515,8 @@ def test_gather_stats_no_packages_passed(
     assert package_names_in_results == expected_package_names
 
 
-# N.B. The exception-handling aspects of gather_stats() are tested in test__cli.py
+def test_exceptions_bubble_up(typeshed: Path) -> None:
+    with pytest.raises(KeyError), mock.patch.object(
+        typeshed_stats.gather, "gather_stats_on_package", side_effect=KeyError
+    ):
+        gather_stats(typeshed_dir=typeshed)

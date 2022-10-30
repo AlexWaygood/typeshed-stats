@@ -8,8 +8,8 @@ import re
 import sys
 import urllib.parse
 from collections import Counter
-from collections.abc import Iterable, Mapping, Sequence
-from contextlib import AsyncExitStack
+from collections.abc import Iterable, Iterator, Mapping, Sequence
+from contextlib import AsyncExitStack, contextmanager
 from enum import Enum
 from functools import cache
 from pathlib import Path
@@ -552,3 +552,24 @@ def gather_stats(
         if isinstance(result, BaseException):
             raise result
     return results
+
+
+@contextmanager
+def tmpdir_typeshed() -> Iterator[Path]:
+    """Context manager to clone typeshed into a tempdir, and then yield the tempdir."""
+    import subprocess
+    from tempfile import TemporaryDirectory
+
+    args = [
+        "git",
+        "clone",
+        "https://github.com/python/typeshed",
+        "--depth",
+        "1",
+        "--quiet",
+    ]
+
+    with TemporaryDirectory() as td:
+        args.append(td)
+        subprocess.run(args, check=True)
+        yield Path(td)

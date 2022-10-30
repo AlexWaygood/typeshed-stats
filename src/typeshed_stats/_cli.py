@@ -4,14 +4,14 @@ from __future__ import annotations
 
 import argparse
 import logging
-import os
 import sys
 from collections.abc import Callable, Sequence
+from contextlib import ExitStack
 from enum import Enum
 from pathlib import Path
-from typing import Annotated, NamedTuple, TypeAlias, cast
+from typing import Annotated, Literal, TypeAlias, cast, get_args
 
-from .gather import PackageName, PackageStats, gather_stats
+from .gather import PackageName, PackageStats, gather_stats, tmpdir_typeshed
 from .serialize import stats_to_csv, stats_to_html, stats_to_json, stats_to_markdown
 
 __all__ = ["OutputOption", "SUPPORTED_EXTENSIONS", "main"]
@@ -93,21 +93,9 @@ def _write_stats(
         logger.info(f'Output successfully written to "{writefile}"!')
 
 
-def _valid_log_argument(arg: str) -> int:
-    try:
-        return int(getattr(logging, arg.upper()))
-    except AttributeError:
-        raise argparse.ArgumentTypeError(f"Invalid logging level {arg!r}")
-
-
-def _valid_writefile_argument(arg: str) -> Path:
-    writefile = Path(arg)
-    if writefile.suffix not in SUPPORTED_EXTENSIONS:
-        raise argparse.ArgumentTypeError(
-            f"Unrecognised file extension {writefile.suffix!r} passed to --file"
-            f" (choose from {SUPPORTED_EXTENSIONS})"
-        )
-    return writefile
+_LoggingLevels: TypeAlias = Literal[
+    "NOTSET", "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"
+]
 
 
 def _get_argument_parser() -> argparse.ArgumentParser:
@@ -130,26 +118,11 @@ def _get_argument_parser() -> argparse.ArgumentParser:
         ),
     )
     parser.add_argument(
-        "-t",
-        "--typeshed-dir",
-        type=Path,
-        required=True,
-        help="Path to the typeshed directory",
-    )
-    parser.add_argument(
-        "-o",
-        "--overwrite",
-        action="store_true",
-        help=(
-            "Overwrite the path passed to `--file` if it already exists"
-            " (defaults to False)"
-        ),
-    )
-    parser.add_argument(
         "--log",
-        type=_valid_log_argument,
-        default=logging.INFO,
+        choices=get_args(_LoggingLevels),
+        default="INFO",
         help="Specify the level of logging (defaults to logging.INFO)",
+        dest="logging_level",
     )
 
     output_options = parser.add_mutually_exclusive_group()
@@ -179,9 +152,37 @@ def _get_argument_parser() -> argparse.ArgumentParser:
     output_options.add_argument(
         "-f",
         "--to-file",
-        type=_valid_writefile_argument,
+        type=Path,
         help=(
             f"File to write output to. Extension must be one of {SUPPORTED_EXTENSIONS}"
+        ),
+        dest="writefile",
+    )
+
+    parser.add_argument(
+        "-o",
+        "--overwrite",
+        action="store_true",
+        help=(
+            "Overwrite the path passed to `--file` if it already exists"
+            " (defaults to False)"
+        ),
+    )
+
+    typeshed_options = parser.add_mutually_exclusive_group(required=True)
+    typeshed_options.add_argument(
+        "-t",
+        "--typeshed-dir",
+        type=Path,
+        help="Path to a local clone of typeshed, to be used as the basis for analysis",
+    )
+    typeshed_options.add_argument(
+        "-d",
+        "--download-typeshed",
+        action="store_true",
+        help=(
+            "Download a fresh copy of typeshed into a temporary directory,"
+            " and use that as the basis for analysis"
         ),
     )
 
@@ -189,37 +190,30 @@ def _get_argument_parser() -> argparse.ArgumentParser:
 
 
 class _CmdArgs:
+    logging_level: _LoggingLevels
     packages: list[str]
-    typeshed_dir: Path
+    typeshed_dir: Path | None
+    download_typeshed: bool
     overwrite: bool
-    log: int
     pprint: bool
     to_json: bool
     to_csv: bool
     to_markdown: bool
     to_html: bool
-    to_file: Path | None
-
-
-class _Options(NamedTuple):
-    """The return value of `_get_options()`.
-
-    A tuple representing the validated options specified by a user on the command line.
-    """
-
-    packages: list[str]
-    typeshed_dir: Path
-    output_option: OutputOption
     writefile: Path | None
-    logging_level: int
 
 
 def _determine_output_option(
     args: _CmdArgs, *, parser: argparse.ArgumentParser
 ) -> OutputOption:
-    writefile = args.to_file
+    writefile = args.writefile
 
     if writefile:
+        if writefile.suffix not in SUPPORTED_EXTENSIONS:
+            parser.error(
+                f"Unrecognised file extension {writefile.suffix!r} passed to --file"
+                f" (choose from {SUPPORTED_EXTENSIONS})"
+            )
         if not (writefile.parent.exists() and writefile.parent.is_dir()):
             parser.error(
                 f'"{writefile}" is an invalid argument:'
@@ -231,51 +225,46 @@ def _determine_output_option(
                 "\n(Note: use --overwite"
                 " if your intention was to overwrite an existing file)"
             )
-        # Don't validate the file extension here
-        # We already did that in _get_argument_parser
         return OutputOption.from_file_extension(writefile.suffix)
-    if args.to_json:
-        return OutputOption.JSON
-    if args.to_csv:
-        return OutputOption.CSV
-    if args.to_markdown:
-        return OutputOption.MARKDOWN
-    if args.to_html:
-        return OutputOption.HTML
-    # --pprint is the default if no option in this group was specified
-    return OutputOption.PPRINT
+
+    if args.pprint:
+        return OutputOption.PPRINT
+
+    return next(
+        (
+            option
+            for option in OutputOption
+            if option is not OutputOption.PPRINT
+            and getattr(args, f"to_{option.name.lower()}")
+        ),
+        OutputOption.PPRINT,
+    )
 
 
-def _validate_options(args: _CmdArgs, *, parser: argparse.ArgumentParser) -> _Options:
-    """After arguments have been parsed by argparse, do some further validation."""
-    output_option = _determine_output_option(args, parser=parser)
-
-    typeshed_dir = args.typeshed_dir
+def _validate_packages(
+    package_names: list[str], typeshed_dir: Path, *, parser: argparse.ArgumentParser
+) -> None:
     stubs_dir = typeshed_dir / "stubs"
-    for folder in typeshed_dir, (typeshed_dir / "stdlib"), stubs_dir:
-        if not (folder.exists() and folder.is_dir()):
-            parser.error(f'"{typeshed_dir}" is not a valid typeshed directory')
-
-    for package_name in args.packages:
+    for package_name in package_names:
         if package_name != "stdlib":
             package_dir = stubs_dir / package_name
             if not (package_dir.exists() and package_dir.is_dir()):
                 parser.error(f"{package_name!r} does not have stubs in typeshed!")
 
-    packages = args.packages or os.listdir(stubs_dir) + ["stdlib"]
 
-    return _Options(packages, typeshed_dir, output_option, args.to_file, args.log)
-
-
-def _get_options(args: Sequence[str] | None = None) -> _Options:
-    """Parse and validate options passed on the command line."""
-    parser = _get_argument_parser()
-    parsed_args: _CmdArgs = parser.parse_args(args, namespace=_CmdArgs())
-    return _validate_options(parsed_args, parser=parser)
+def _validate_typeshed_dir(
+    typeshed_dir: Path, *, parser: argparse.ArgumentParser
+) -> None:
+    for folder in typeshed_dir, (typeshed_dir / "stdlib"), (typeshed_dir / "stubs"):
+        if not (folder.exists() and folder.is_dir()):
+            parser.error(f'"{typeshed_dir}" is not a valid typeshed directory')
 
 
-def _setup_logger(level: int) -> logging.Logger:
+def _setup_logger(str_level: _LoggingLevels) -> logging.Logger:
+    assert str_level in get_args(_LoggingLevels)
     logger = logging.getLogger("typeshed_stats")
+    level = getattr(logging, str_level)
+    assert isinstance(level, int)
     logger.setLevel(level)
     handler = logging.StreamHandler()
     handler.setLevel(level)
@@ -283,21 +272,39 @@ def _setup_logger(level: int) -> logging.Logger:
     return logger
 
 
-def _run(args: Sequence[str] | None = None) -> None:
-    packages, typeshed_dir, output_option, writefile, logging_level = _get_options(args)
-    logger = _setup_logger(logging_level)
-    logger.info("Gathering stats...")
-    stats = gather_stats(packages, typeshed_dir=typeshed_dir)
+def _run(argv: Sequence[str] | None = None) -> None:
+    parser = _get_argument_parser()
+    args: _CmdArgs = parser.parse_args(argv, namespace=_CmdArgs())
+    logger = _setup_logger(args.logging_level)
+
+    with ExitStack() as stack:
+        if args.download_typeshed:
+            logger.info("Cloning typeshed into a temporary directory...")
+            typeshed_dir = stack.enter_context(tmpdir_typeshed())
+        else:
+            assert args.typeshed_dir is not None
+            typeshed_dir = args.typeshed_dir
+            _validate_typeshed_dir(typeshed_dir, parser=parser)
+
+        packages: list[str] | None = args.packages or None
+        if packages:
+            _validate_packages(packages, typeshed_dir, parser=parser)
+
+        output_option = _determine_output_option(args, parser=parser)
+
+        logger.info("Gathering stats...")
+        stats = gather_stats(packages, typeshed_dir=typeshed_dir)
+
     logger.info("Formatting stats...")
     formatted_stats = output_option.convert(stats)
     logger.info("Writing stats...")
-    _write_stats(formatted_stats, writefile, logger)
+    _write_stats(formatted_stats, args.writefile, logger)
 
 
-def main(args: Sequence[str] | None = None) -> None:
+def main(argv: Sequence[str] | None = None) -> None:
     """CLI entry point."""
     try:
-        _run(args)
+        _run(argv)
     except KeyboardInterrupt:
         sys.stderr.write("Interrupted!")
         code = 2
