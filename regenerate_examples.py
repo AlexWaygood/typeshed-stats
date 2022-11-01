@@ -2,6 +2,8 @@
 import argparse
 from pathlib import Path
 
+import markdown
+
 from typeshed_stats.gather import gather_stats
 from typeshed_stats.serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
@@ -11,10 +13,12 @@ def regenerate_stats(typeshed_dir: Path) -> None:
     print("Gathering stats...")
     stats = gather_stats(typeshed_dir=typeshed_dir)
     print("Formatting stats...")
+    markdownified_stats = stats_to_markdown(stats)
     path_to_formatted_stats = {
         "examples/example.json": stats_to_json(stats),
         "examples/example.csv": stats_to_csv(stats),
-        "examples/example.md": stats_to_markdown(stats),
+        "examples/example.md": markdownified_stats,
+        "examples/example.html": markdown.markdown(markdownified_stats),
     }
     print("Writing stats...")
     for path, formatted_stats in path_to_formatted_stats.items():
