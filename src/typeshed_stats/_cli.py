@@ -88,7 +88,7 @@ def _write_stats(
         newline = "" if writefile.suffix == ".csv" else "\n"
         if not isinstance(formatted_stats, str):
             formatted_stats = str(formatted_stats)
-        with writefile.open("w", newline=newline) as f:
+        with writefile.open("w", newline=newline, encoding="utf-8") as f:
             f.write(formatted_stats)
         logger.info(f'Output successfully written to "{writefile}"!')
 

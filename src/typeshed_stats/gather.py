@@ -20,14 +20,13 @@ import attrs
 from packaging.specifiers import SpecifierSet
 from packaging.version import Version
 
+if sys.version_info < (3, 10):
+    raise ImportError("Python 3.10+ is required!")
+
 if sys.version_info >= (3, 11):
     import tomllib  # pragma: no cover
 else:
     import tomli as tomllib  # pragma: no cover
-
-
-if sys.version_info < (3, 10):
-    raise ImportError("Python 3.10+ is required!")
 
 
 __all__ = [
@@ -93,6 +92,12 @@ class _SingleAnnotationAnalyzer(ast.NodeVisitor):
         self.generic_visit(node)
 
 
+def _analyse_annotation(annotation: ast.AST) -> _SingleAnnotationAnalyzer:
+    analyser = _SingleAnnotationAnalyzer()
+    analyser.visit(annotation)
+    return analyser
+
+
 @final
 @attrs.define
 class AnnotationStats:
@@ -134,11 +139,10 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
 
     def visit_AnnAssign(self, node: ast.AnnAssign) -> None:
         self.stats.annotated_variables += 1
-        analyzer = _SingleAnnotationAnalyzer()
-        analyzer.visit(node.annotation)
-        if analyzer.Any_in_annotation:
+        analysis = _analyse_annotation(node.annotation)
+        if analysis.Any_in_annotation:
             self.stats.explicit_Any_variables += 1
-        if analyzer.Incomplete_in_annotation:
+        if analysis.Incomplete_in_annotation:
             self.stats.explicit_Incomplete_variables += 1
         self.generic_visit(node)
 
@@ -158,11 +162,10 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
             self.stats.unannotated_parameters += 1
         else:
             self.stats.annotated_parameters += 1
-            analyzer = _SingleAnnotationAnalyzer()
-            analyzer.visit(annotation)
-            if analyzer.Any_in_annotation:
+            analysis = _analyse_annotation(annotation)
+            if analysis.Any_in_annotation:
                 self.stats.explicit_Any_parameters += 1
-            if analyzer.Incomplete_in_annotation:
+            if analysis.Incomplete_in_annotation:
                 self.stats.explicit_Incomplete_parameters += 1
 
     def _visit_function(self, node: ast.FunctionDef | ast.AsyncFunctionDef) -> None:
@@ -171,11 +174,10 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
             self.stats.unannotated_returns += 1
         else:
             self.stats.annotated_returns += 1
-            analyzer = _SingleAnnotationAnalyzer()
-            analyzer.visit(returns)
-            if analyzer.Any_in_annotation:
+            analysis = _analyse_annotation(returns)
+            if analysis.Any_in_annotation:
                 self.stats.explicit_Any_returns += 1
-            if analyzer.Incomplete_in_annotation:
+            if analysis.Incomplete_in_annotation:
                 self.stats.explicit_Incomplete_returns += 1
 
         old_function_decorators = self._function_decorators

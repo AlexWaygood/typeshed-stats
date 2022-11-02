@@ -48,7 +48,7 @@ def run_checks(
     subprocess.run(["mypy"])
 
     print("\nRunning pytest...")
-    subprocess.run(["pytest"], check=True)
+    subprocess.run(["pytest --cov tests"], check=True)
 
     if regenerate_examples:
         assert typeshed_dir is not None

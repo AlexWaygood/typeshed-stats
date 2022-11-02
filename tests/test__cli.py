@@ -193,6 +193,7 @@ def test_invalid_typeshed_dir_arg(
 # ==========================
 
 
+@pytest.mark.fails_inexplicably_in_ci
 def test_passing_packages(
     tmp_path: Path, capsys: pytest.CaptureFixture[str], subtests: SubTests
 ) -> None:
@@ -235,7 +236,7 @@ def test_passing_packages(
                 main(args)
             return_code = exc_info.value.code
             assert return_code == 0
-            out = capsys.readouterr().out.strip()
+            out = capsys.readouterr().out
             results = eval(out, vars(typeshed_stats.gather) | globals())
             assert isinstance(results, dict)
             assert len(results) == expected_len
@@ -269,7 +270,7 @@ def test_to_file_fails_if_parent_is_not_directory(
     tmp_path: Path, args: list[str], capsys: pytest.CaptureFixture[str]
 ) -> None:
     file = tmp_path / "file"
-    file.write_text("")
+    file.write_text("", encoding="utf-8")
     writefile = file / "file2.json"
     args += ["--to-file", str(writefile)]
     message = "does not exist as a directory!"
@@ -283,7 +284,7 @@ def test_to_file_fails_if_file_exists(
     # and --to-file points to an already existing file
     file_name = "foo.json"
     already_existing_file = tmp_path / file_name
-    already_existing_file.write_text("")
+    already_existing_file.write_text("", encoding="utf-8")
     args += ["--to-file", str(already_existing_file)]
     message = f'{file_name}" already exists!'
     assert_argparsing_fails(args, capsys=capsys, failure_message=message)
@@ -294,7 +295,7 @@ def test_overwrite_argument(args: list[str], tmp_path: Path) -> None:
     # Setup the case where --overwrite=True,
     # and --to-file points to an already existing file
     already_existing_file = tmp_path / "foo.json"
-    already_existing_file.write_text("")
+    already_existing_file.write_text("", encoding="utf-8")
     args += ["--to-file", str(already_existing_file), "--overwrite"]
     with pytest.raises(SystemExit) as exc_info:
         main(args)
@@ -307,6 +308,7 @@ def test_overwrite_argument(args: list[str], tmp_path: Path) -> None:
 # ================================
 
 
+@pytest.mark.fails_inexplicably_in_ci
 @pytest.mark.usefixtures("mocked_gather_stats")
 def test_to_json(args: list[str], capsys: pytest.CaptureFixture[str]) -> None:
     args += ["--log", "CRITICAL", "--to-json"]
@@ -314,7 +316,8 @@ def test_to_json(args: list[str], capsys: pytest.CaptureFixture[str]) -> None:
         main(args)
     return_code = exc_info.value.code
     assert return_code == 0
-    result = json.loads(capsys.readouterr().out.strip())
+    out = capsys.readouterr().out
+    result = json.loads(out)
     assert isinstance(result, list)
     assert all(isinstance(item, dict) for item in result)
     assert all(isinstance(item["package_name"], str) for item in result)

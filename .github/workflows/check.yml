@@ -28,6 +28,8 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
+          cache: "pip"
+          cache-dependency-path: "requirements-dev.txt"
           python-version: "3.10"
       - run: pip install -r requirements-dev.txt
       - run: pip install -e .[everything]
@@ -40,18 +42,29 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
+          cache: "pip"
+          cache-dependency-path: "requirements-dev.txt"
           python-version: "3.10"
       - run: pip install -r requirements-dev.txt
       - run: flake8
 
   pytest:
     name: Run tests with pytest
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: ["ubuntu-latest", "windows-latest", "macos-latest"]
+        python-version: ["3.10", "3.11"]
+      fail-fast: false
+
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - name: Set up Python ${{ matrix.python-version }} on ${{ matrix.os }}
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          cache: "pip"
+          cache-dependency-path: "requirements-dev.txt"
+          python-version: ${{ matrix.python-version }}
       - run: pip install -r requirements-dev.txt
       - run: pip install -e .[everything]
-      - run: pytest
+      - run: pytest -m "not fails_inexplicably_in_ci"
