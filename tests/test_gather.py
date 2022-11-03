@@ -2,7 +2,10 @@ from __future__ import annotations
 
 import json
 import textwrap
+from collections.abc import Callable
+from contextlib import nullcontext
 from pathlib import Path
+from typing import TypeAlias
 from unittest import mock
 
 import aiohttp
@@ -246,22 +249,22 @@ def test_get_stubtest_setting_non_stdlib_no_stubtest_section(
 
 
 @pytest.mark.parametrize(
-    ("metadata_contents", "expected_result"),
+    ("metadata_contents", "expected_result_name"),
     [
-        ("", StubtestSetting.MISSING_STUBS_IGNORED),
-        ("skip = false", StubtestSetting.MISSING_STUBS_IGNORED),
-        ("ignore_missing_stub = true", StubtestSetting.MISSING_STUBS_IGNORED),
-        ("skip = true", StubtestSetting.SKIPPED),
-        ("skip = true\nignore_missing_stub = true", StubtestSetting.SKIPPED),
-        ("skip = true\nignore_missing_stub = false", StubtestSetting.SKIPPED),
-        ("ignore_missing_stub = false", StubtestSetting.ERROR_ON_MISSING_STUB),
+        ("", "MISSING_STUBS_IGNORED"),
+        ("skip = false", "MISSING_STUBS_IGNORED"),
+        ("ignore_missing_stub = true", "MISSING_STUBS_IGNORED"),
+        ("skip = true", "SKIPPED"),
+        ("skip = true\nignore_missing_stub = true", "SKIPPED"),
+        ("skip = true\nignore_missing_stub = false", "SKIPPED"),
+        ("ignore_missing_stub = false", "ERROR_ON_MISSING_STUB"),
     ],
 )
 def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
     EXAMPLE_PACKAGE_NAME: str,
     typeshed: Path,
     metadata_contents: str,
-    expected_result: StubtestSetting,
+    expected_result_name: str,
     use_string_path: bool,
 ) -> None:
     write_metadata_text(
@@ -273,6 +276,7 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
     actual_result = get_stubtest_setting(
         EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
     )
+    expected_result = StubtestSetting[expected_result_name]
     assert actual_result is expected_result
 
 
@@ -294,10 +298,10 @@ async def test_get_package_status_special_cases(
 
 
 @pytest.mark.parametrize(
-    ("metadata_to_write", "expected_result"),
+    ("metadata_to_write", "expected_result_name"),
     [
-        ('obsolete_since = "3.1.0"', PackageStatus.OBSOLETE),
-        ("no_longer_updated = true", PackageStatus.NO_LONGER_UPDATED),
+        ('obsolete_since = "3.1.0"', "OBSOLETE"),
+        ("no_longer_updated = true", "NO_LONGER_UPDATED"),
     ],
 )
 async def test_get_package_status_no_pypi_requests_required(
@@ -305,7 +309,7 @@ async def test_get_package_status_no_pypi_requests_required(
     typeshed: Path,
     use_string_path: bool,
     metadata_to_write: str,
-    expected_result: PackageStatus,
+    expected_result_name: str,
 ) -> None:
     write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, metadata_to_write)
     typeshed_dir_to_pass = maybe_stringize_path(
@@ -314,25 +318,36 @@ async def test_get_package_status_no_pypi_requests_required(
     status = await get_package_status(
         EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
     )
+    expected_result = PackageStatus[expected_result_name]
     assert status is expected_result
 
 
+_MaybeSession: TypeAlias = Callable[[], aiohttp.ClientSession | nullcontext[None]]
+
+
+@pytest.fixture(
+    params=[nullcontext, aiohttp.ClientSession], ids=["pass_None", "pass_ClientSession"]
+)
+def get_session(request: pytest.FixtureRequest) -> _MaybeSession:
+    return request.param  # type: ignore[no-any-return]
+
+
 @pytest.mark.parametrize(
-    ("typeshed_version", "pypi_version", "expected_result"),
+    ("typeshed_version", "pypi_version", "expected_result_name"),
     [
-        ("0.8.*", "0.8.3", PackageStatus.UP_TO_DATE),
-        ("0.8.*", "0.9.3", PackageStatus.OUT_OF_DATE),
-        ("0.8.*", "1.8", PackageStatus.OUT_OF_DATE),
-        ("1.*", "1.1", PackageStatus.UP_TO_DATE),
-        ("1.*", "1.1.1", PackageStatus.UP_TO_DATE),
-        ("1.*", "2", PackageStatus.OUT_OF_DATE),
-        ("1.0.*", "1.0.1", PackageStatus.UP_TO_DATE),
-        ("1.0.*", "1.0.2", PackageStatus.UP_TO_DATE),
-        ("1.0.*", "1.1", PackageStatus.OUT_OF_DATE),
-        ("1.64.72", "1.64.72", PackageStatus.UP_TO_DATE),
-        ("1.64.72", "1.64.73", PackageStatus.OUT_OF_DATE),
-        ("2022.9.13", "2022.9.13", PackageStatus.UP_TO_DATE),
-        ("2022.9.13", "2022.10.22", PackageStatus.OUT_OF_DATE),
+        ("0.8.*", "0.8.3", "UP_TO_DATE"),
+        ("0.8.*", "0.9.3", "OUT_OF_DATE"),
+        ("0.8.*", "1.8", "OUT_OF_DATE"),
+        ("1.*", "1.1", "UP_TO_DATE"),
+        ("1.*", "1.1.1", "UP_TO_DATE"),
+        ("1.*", "2", "OUT_OF_DATE"),
+        ("1.0.*", "1.0.1", "UP_TO_DATE"),
+        ("1.0.*", "1.0.2", "UP_TO_DATE"),
+        ("1.0.*", "1.1", "OUT_OF_DATE"),
+        ("1.64.72", "1.64.72", "UP_TO_DATE"),
+        ("1.64.72", "1.64.73", "OUT_OF_DATE"),
+        ("2022.9.13", "2022.9.13", "UP_TO_DATE"),
+        ("2022.9.13", "2022.10.22", "OUT_OF_DATE"),
     ],
 )
 async def test_get_package_status_with_mocked_pypi_requests(
@@ -341,7 +356,8 @@ async def test_get_package_status_with_mocked_pypi_requests(
     use_string_path: bool,
     typeshed_version: str,
     pypi_version: str,
-    expected_result: PackageStatus,
+    expected_result_name: str,
+    get_session: _MaybeSession,
 ) -> None:
     write_metadata_text(
         typeshed, EXAMPLE_PACKAGE_NAME, f'version = "{typeshed_version}"'
@@ -354,9 +370,11 @@ async def test_get_package_status_with_mocked_pypi_requests(
         "_get_pypi_data",
         return_value={"info": {"version": pypi_version}},
     ):
-        status = await get_package_status(
-            EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
-        )
+        async with get_session() as session:
+            status = await get_package_status(
+                EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass, session=session
+            )
+    expected_result = PackageStatus[expected_result_name]
     assert status is expected_result
 
 

@@ -66,7 +66,7 @@ def random_PackageStats_sequence(
     return [make_random_PackageStats() for _ in range(random.randint(3, 10))]
 
 
-@pytest.fixture(params=[True, False])
+@pytest.fixture(params=[True, False], ids=["use_string_path", "use_Pathlib_path"])
 def use_string_path(request: pytest.FixtureRequest) -> bool:
     return request.param  # type: ignore[no-any-return]
 
