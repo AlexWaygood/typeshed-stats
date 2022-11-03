@@ -67,8 +67,16 @@ def random_PackageStats_sequence(
 
 
 @pytest.fixture(params=[True, False], ids=["use_string_path", "use_Pathlib_path"])
-def use_string_path(request: pytest.FixtureRequest) -> bool:
-    return request.param  # type: ignore[no-any-return]
+def maybe_stringize_path(
+    request: pytest.FixtureRequest,
+) -> Callable[[Path], Path | str]:
+    def inner(path: Path) -> Path | str:
+        if request.param:
+            return str(path)
+        return path
+
+    inner.__name__ = "maybe_stringize_path"
+    return inner
 
 
 @pytest.fixture

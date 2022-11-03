@@ -33,12 +33,6 @@ from typeshed_stats.gather import (
 )
 
 
-def maybe_stringize_path(path: Path, *, use_string_path: bool) -> Path | str:
-    if use_string_path:
-        return str(path)
-    return path
-
-
 def write_metadata_text(typeshed: Path, package_name: str, data: str) -> None:
     metadata = typeshed / "stubs" / package_name / "METADATA.toml"
     metadata.write_text(data, encoding="utf-8")
@@ -58,7 +52,8 @@ def test__NiceReprEnum_docstring_in_help_output(
     obj: object, capsys: pytest.CaptureFixture[str]
 ) -> None:
     help(obj)
-    assert "Stubtest is skipped" in capsys.readouterr().out
+    out = capsys.readouterr().out
+    assert "Stubtest is skipped" in out
 
 
 def test__NiceReprEnum_repr_str() -> None:
@@ -173,12 +168,11 @@ def test_annotation_stats_on_file(
     example_stub_source: str,
     expected_stats_on_example_stub_file: AnnotationStats,
     tmp_path: Path,
-    use_string_path: bool,
+    maybe_stringize_path: Callable[[Path], Path | str],
 ) -> None:
     test_dot_pyi = tmp_path / "test.pyi"
     test_dot_pyi.write_text(example_stub_source, encoding="utf-8")
-    path_to_pass = maybe_stringize_path(test_dot_pyi, use_string_path=use_string_path)
-    stats = gather_annotation_stats_on_file(path_to_pass)
+    stats = gather_annotation_stats_on_file(maybe_stringize_path(test_dot_pyi))
 
     for field in attrs.fields(AnnotationStats):
         field_name = field.name
@@ -196,7 +190,7 @@ def test_annotation_stats_on_package(
     EXAMPLE_PACKAGE_NAME: str,
     example_stub_source: str,
     expected_stats_on_example_stub_file: AnnotationStats,
-    use_string_path: bool,
+    maybe_stringize_path: Callable[[Path], Path | str],
 ) -> None:
     package_dir = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME
     stdlib_dir = typeshed / "stdlib"
@@ -205,9 +199,7 @@ def test_annotation_stats_on_package(
         for filename in ("test1.pyi", "test2.pyi"):
             (directory / filename).write_text(example_stub_source, encoding="utf-8")
 
-    typeshed_dir_to_pass = maybe_stringize_path(
-        typeshed, use_string_path=use_string_path
-    )
+    typeshed_dir_to_pass = maybe_stringize_path(typeshed)
     stdlib_stats = gather_annotation_stats_on_package(
         "stdlib", typeshed_dir=typeshed_dir_to_pass
     )
@@ -265,16 +257,13 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
     typeshed: Path,
     metadata_contents: str,
     expected_result_name: str,
-    use_string_path: bool,
+    maybe_stringize_path: Callable[[Path], Path | str],
 ) -> None:
     write_metadata_text(
         typeshed, EXAMPLE_PACKAGE_NAME, f"[tool.stubtest]\n{metadata_contents}"
     )
-    typeshed_dir_to_pass = maybe_stringize_path(
-        typeshed, use_string_path=use_string_path
-    )
     actual_result = get_stubtest_setting(
-        EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
     )
     expected_result = StubtestSetting[expected_result_name]
     assert actual_result is expected_result
@@ -290,9 +279,11 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
     [("stdlib", PackageStatus.STDLIB), ("gdb", PackageStatus.NOT_ON_PYPI)],
 )
 async def test_get_package_status_special_cases(
-    package_name: str, expected_result: PackageStatus, use_string_path: bool
+    package_name: str,
+    expected_result: PackageStatus,
+    maybe_stringize_path: Callable[[Path], Path | str],
 ) -> None:
-    typeshed_dir = maybe_stringize_path(Path("."), use_string_path=use_string_path)
+    typeshed_dir = maybe_stringize_path(Path("."))
     status = await get_package_status(package_name, typeshed_dir=typeshed_dir)
     assert status is expected_result
 
@@ -307,16 +298,13 @@ async def test_get_package_status_special_cases(
 async def test_get_package_status_no_pypi_requests_required(
     EXAMPLE_PACKAGE_NAME: str,
     typeshed: Path,
-    use_string_path: bool,
+    maybe_stringize_path: Callable[[Path], Path | str],
     metadata_to_write: str,
     expected_result_name: str,
 ) -> None:
     write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, metadata_to_write)
-    typeshed_dir_to_pass = maybe_stringize_path(
-        typeshed, use_string_path=use_string_path
-    )
     status = await get_package_status(
-        EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
     )
     expected_result = PackageStatus[expected_result_name]
     assert status is expected_result
@@ -353,7 +341,7 @@ def get_session(request: pytest.FixtureRequest) -> _MaybeSession:
 async def test_get_package_status_with_mocked_pypi_requests(
     EXAMPLE_PACKAGE_NAME: str,
     typeshed: Path,
-    use_string_path: bool,
+    maybe_stringize_path: Callable[[Path], Path | str],
     typeshed_version: str,
     pypi_version: str,
     expected_result_name: str,
@@ -362,9 +350,7 @@ async def test_get_package_status_with_mocked_pypi_requests(
     write_metadata_text(
         typeshed, EXAMPLE_PACKAGE_NAME, f'version = "{typeshed_version}"'
     )
-    typeshed_dir_to_pass = maybe_stringize_path(
-        typeshed, use_string_path=use_string_path
-    )
+    typeshed_dir_to_pass = maybe_stringize_path(typeshed)
     with mock.patch.object(
         typeshed_stats.gather,
         "_get_pypi_data",
@@ -399,29 +385,31 @@ async def test__get_pypi_data(package_name: str) -> None:
 
 
 def test_get_package_size_empty_package(
-    EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed: Path,
+    maybe_stringize_path: Callable[[Path], Path | str],
 ) -> None:
-    typeshed_dir_to_pass = maybe_stringize_path(
-        typeshed, use_string_path=use_string_path
-    )
+    typeshed_dir_to_pass = maybe_stringize_path(typeshed)
     result = get_package_size(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass)
     assert result == 0
 
 
 def test_get_package_size_single_file(
-    EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed: Path,
+    maybe_stringize_path: Callable[[Path], Path | str],
 ) -> None:
     stub = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "foo.pyi"
     stub.write_text("foo: int\nbar: str", encoding="utf-8")
-    typeshed_dir_to_pass = maybe_stringize_path(
-        typeshed, use_string_path=use_string_path
-    )
+    typeshed_dir_to_pass = maybe_stringize_path(typeshed)
     result = get_package_size(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass)
     assert result == 2
 
 
 def test_get_package_size_multiple_files(
-    EXAMPLE_PACKAGE_NAME: str, typeshed: Path, use_string_path: bool
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed: Path,
+    maybe_stringize_path: Callable[[Path], Path | str],
 ) -> None:
     two_line_stub = "foo: int\nbar: str"
     top_level_stub = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "foo.pyi"
@@ -433,9 +421,7 @@ def test_get_package_size_multiple_files(
     subpkg2.mkdir()
     for name in "spam.pyi", "eggs.pyi":
         (subpkg2 / name).write_text(two_line_stub, encoding="utf-8")
-    typeshed_dir_to_pass = maybe_stringize_path(
-        typeshed, use_string_path=use_string_path
-    )
+    typeshed_dir_to_pass = maybe_stringize_path(typeshed)
     result = get_package_size(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass)
     assert result == 8
 
@@ -463,7 +449,7 @@ def test_get_pyright_setting(
     excluded_path: str,
     package_to_test: str,
     pyright_setting_name: str,
-    use_string_path: bool,
+    maybe_stringize_path: Callable[[Path], Path | str],
     pyrightconfig_template: str,
 ) -> None:
     pyrightconfig = pyrightconfig_template.format(f'"{excluded_path}"')
@@ -471,11 +457,8 @@ def test_get_pyright_setting(
         json.loads(pyrightconfig)
     pyrightconfig_path = typeshed / "pyrightconfig.stricter.json"
     pyrightconfig_path.write_text(pyrightconfig, encoding="utf-8")
-    typeshed_dir_to_pass = maybe_stringize_path(
-        typeshed, use_string_path=use_string_path
-    )
     pyright_strictness = get_pyright_strictness(
-        package_name=package_to_test, typeshed_dir=typeshed_dir_to_pass
+        package_name=package_to_test, typeshed_dir=maybe_stringize_path(typeshed)
     )
     expected_result = PyrightSetting[pyright_setting_name]
     assert pyright_strictness is expected_result
@@ -490,7 +473,7 @@ def test_get_pyright_setting(
 def test_gather_stats_no_packages_passed(
     typeshed: Path,
     example_stub_source: str,
-    use_string_path: bool,
+    maybe_stringize_path: Callable[[Path], Path | str],
     pyrightconfig_template: str,
     EXAMPLE_PACKAGE_NAME: str,
     pass_none: bool,
@@ -513,9 +496,7 @@ def test_gather_stats_no_packages_passed(
         source_dir.mkdir()
         (source_dir / "foo.pyi").write_text(example_stub_source, encoding="utf-8")
 
-    typeshed_dir_to_pass = maybe_stringize_path(
-        typeshed, use_string_path=use_string_path
-    )
+    typeshed_dir_to_pass = maybe_stringize_path(typeshed)
 
     packages_to_pass: set[str] | None
     packages_to_pass = None if pass_none else (package_names | {"stdlib"})
