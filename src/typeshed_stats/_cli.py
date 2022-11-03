@@ -7,6 +7,7 @@ import logging
 import sys
 from collections.abc import Callable, Sequence
 from contextlib import ExitStack
+from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
 from typing import Annotated, Literal, TypeAlias, cast, get_args
@@ -15,10 +16,6 @@ from .gather import PackageName, PackageStats, gather_stats, tmpdir_typeshed
 from .serialize import stats_to_csv, stats_to_html, stats_to_json, stats_to_markdown
 
 __all__ = ["OutputOption", "SUPPORTED_EXTENSIONS", "main"]
-
-
-if sys.version_info < (3, 10):
-    raise ImportError("Python 3.10+ is required!")
 
 
 def _format_stats_for_pprinting(
@@ -128,25 +125,37 @@ def _get_argument_parser() -> argparse.ArgumentParser:
     output_options = parser.add_mutually_exclusive_group()
     output_options.add_argument(
         "--pprint",
-        action="store_true",
+        action="store_const",
+        const=OutputOption.PPRINT,
+        dest="output_option",
         help="Pretty-print Python representations of the data (default output)",
     )
     output_options.add_argument(
-        "--to-json", action="store_true", help="Print output as JSON to the terminal"
+        "--to-json",
+        action="store_const",
+        const=OutputOption.JSON,
+        dest="output_option",
+        help="Print output as JSON to the terminal",
     )
     output_options.add_argument(
         "--to-csv",
-        action="store_true",
+        action="store_const",
+        const=OutputOption.CSV,
+        dest="output_option",
         help="Print output in csv format to the terminal",
     )
     output_options.add_argument(
         "--to-markdown",
-        action="store_true",
+        action="store_const",
+        const=OutputOption.MARKDOWN,
+        dest="output_option",
         help="Print output as formatted MarkDown to the terminal",
     )
     output_options.add_argument(
         "--to-html",
-        action="store_true",
+        action="store_const",
+        const=OutputOption.HTML,
+        dest="output_option",
         help="Print output as formatted HTML to the terminal",
     )
     output_options.add_argument(
@@ -189,56 +198,42 @@ def _get_argument_parser() -> argparse.ArgumentParser:
     return parser
 
 
+# Has to be a dataclass (attrs does class-level defaults differently)
+@dataclass(init=False)
 class _CmdArgs:
     logging_level: _LoggingLevels
     packages: list[str]
     typeshed_dir: Path | None
     download_typeshed: bool
     overwrite: bool
-    pprint: bool
-    to_json: bool
-    to_csv: bool
-    to_markdown: bool
-    to_html: bool
     writefile: Path | None
+    # OutputOption defaults to PPRINT if no argument was specified on the command line
+    output_option: OutputOption = OutputOption.PPRINT
 
 
 def _determine_output_option(
     args: _CmdArgs, *, parser: argparse.ArgumentParser
 ) -> OutputOption:
     writefile = args.writefile
-
-    if writefile:
-        if writefile.suffix not in SUPPORTED_EXTENSIONS:
-            parser.error(
-                f"Unrecognised file extension {writefile.suffix!r} passed to --file"
-                f" (choose from {SUPPORTED_EXTENSIONS})"
-            )
-        if not (writefile.parent.exists() and writefile.parent.is_dir()):
-            parser.error(
-                f'"{writefile}" is an invalid argument:'
-                f" {writefile.parent} does not exist as a directory!"
-            )
-        if writefile.exists() and not args.overwrite:
-            parser.error(
-                f'"{writefile}" already exists!'
-                "\n(Note: use --overwite"
-                " if your intention was to overwrite an existing file)"
-            )
-        return OutputOption.from_file_extension(writefile.suffix)
-
-    if args.pprint:
-        return OutputOption.PPRINT
-
-    return next(
-        (
-            option
-            for option in OutputOption
-            if option is not OutputOption.PPRINT
-            and getattr(args, f"to_{option.name.lower()}")
-        ),
-        OutputOption.PPRINT,
-    )
+    if not writefile:
+        return args.output_option
+    if writefile.suffix not in SUPPORTED_EXTENSIONS:
+        parser.error(
+            f"Unrecognised file extension {writefile.suffix!r} passed to --file"
+            f" (choose from {SUPPORTED_EXTENSIONS})"
+        )
+    if not (writefile.parent.exists() and writefile.parent.is_dir()):
+        parser.error(
+            f'"{writefile}" is an invalid argument:'
+            f" {writefile.parent} does not exist as a directory!"
+        )
+    if writefile.exists() and not args.overwrite:
+        parser.error(
+            f'"{writefile}" already exists!'
+            "\n(Note: use --overwite"
+            " if your intention was to overwrite an existing file)"
+        )
+    return OutputOption.from_file_extension(writefile.suffix)
 
 
 def _validate_packages(
