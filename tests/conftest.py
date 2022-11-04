@@ -66,7 +66,7 @@ def random_PackageStats_sequence(
     return [make_random_PackageStats() for _ in range(random.randint(3, 10))]
 
 
-@pytest.fixture(params=[True, False], ids=["use_string_path", "use_Pathlib_path"])
+@pytest.fixture(params=[True, False], ids=["use_string_path", "use_pathlib_path"])
 def maybe_stringize_path(
     request: pytest.FixtureRequest,
 ) -> Callable[[Path], Path | str]:

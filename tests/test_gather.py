@@ -68,9 +68,19 @@ def test__NiceReprEnum_repr_str() -> None:
 @pytest.mark.parametrize(
     ("enum_member", "expected_formatted_name"),
     [
-        (StubtestSetting.ERROR_ON_MISSING_STUB, "error on missing stub"),
-        (PackageStatus.NO_LONGER_UPDATED, "no longer updated"),
-        (PyrightSetting.STRICT_ON_SOME_FILES, "strict on some files"),
+        pytest.param(
+            StubtestSetting.ERROR_ON_MISSING_STUB,
+            "error on missing stub",
+            id="StubtestSetting",
+        ),
+        pytest.param(
+            PackageStatus.NO_LONGER_UPDATED, "no longer updated", id="PackageStatus"
+        ),
+        pytest.param(
+            PyrightSetting.STRICT_ON_SOME_FILES,
+            "strict on some files",
+            id="PyrightSetting",
+        ),
     ],
 )
 def test_formatted__NiceReprEnum_names(
@@ -246,13 +256,27 @@ def test_get_stubtest_setting_non_stdlib_no_stubtest_section(
 @pytest.mark.parametrize(
     ("metadata_contents", "expected_result_name"),
     [
-        ("", "MISSING_STUBS_IGNORED"),
-        ("skip = false", "MISSING_STUBS_IGNORED"),
-        ("ignore_missing_stub = true", "MISSING_STUBS_IGNORED"),
-        ("skip = true", "SKIPPED"),
-        ("skip = true\nignore_missing_stub = true", "SKIPPED"),
-        ("skip = true\nignore_missing_stub = false", "SKIPPED"),
-        ("ignore_missing_stub = false", "ERROR_ON_MISSING_STUB"),
+        pytest.param("", "MISSING_STUBS_IGNORED", id="empty_metadata"),
+        pytest.param("skip = false", "MISSING_STUBS_IGNORED", id="skip=False"),
+        pytest.param(
+            "ignore_missing_stub = true",
+            "MISSING_STUBS_IGNORED",
+            id="ignore_missing_stub=true",
+        ),
+        pytest.param("skip = true", "SKIPPED", id="skipped_stubtest"),
+        pytest.param(
+            "skip = true\nignore_missing_stub = true", "SKIPPED", id="skipped_stubtest2"
+        ),
+        pytest.param(
+            "skip = true\nignore_missing_stub = false",
+            "SKIPPED",
+            id="skipped_stubtest3",
+        ),
+        pytest.param(
+            "ignore_missing_stub = false",
+            "ERROR_ON_MISSING_STUB",
+            id="ignore_missing_stub=false",
+        ),
     ],
 )
 def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
@@ -278,24 +302,30 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
 
 
 @pytest.mark.parametrize(
-    ("package_name", "expected_result"),
-    [("stdlib", PackageStatus.STDLIB), ("gdb", PackageStatus.NOT_ON_PYPI)],
+    ("package_name", "expected_result_name"),
+    [
+        pytest.param("stdlib", "STDLIB", id="stdlib"),
+        pytest.param("gdb", "NOT_ON_PYPI", id="gdb"),
+    ],
 )
 async def test_get_package_status_special_cases(
     package_name: str,
-    expected_result: PackageStatus,
+    expected_result_name: str,
     maybe_stringize_path: Callable[[Path], Path | str],
 ) -> None:
     typeshed_dir = maybe_stringize_path(Path("."))
     status = await get_package_status(package_name, typeshed_dir=typeshed_dir)
+    expected_result = PackageStatus[expected_result_name]
     assert status is expected_result
 
 
 @pytest.mark.parametrize(
     ("metadata_to_write", "expected_result_name"),
     [
-        ('obsolete_since = "3.1.0"', "OBSOLETE"),
-        ("no_longer_updated = true", "NO_LONGER_UPDATED"),
+        pytest.param('obsolete_since = "3.1.0"', "OBSOLETE", id="obsolete"),
+        pytest.param(
+            "no_longer_updated = true", "NO_LONGER_UPDATED", id="no_longer_updated"
+        ),
     ],
 )
 async def test_get_package_status_no_pypi_requests_required(
@@ -498,7 +528,10 @@ def test_tmpdir_typeshed() -> None:
 # ======================
 
 
-@pytest.mark.parametrize("pass_none", [True, False])
+@pytest.mark.parametrize(
+    "pass_none",
+    [pytest.param(True, id="pass_none"), pytest.param(False, id="pass_packages")],
+)
 def test_gather_stats_no_network_access(
     typeshed: Path,
     example_stub_source: str,

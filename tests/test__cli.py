@@ -4,6 +4,7 @@ import json
 import re
 import sys
 from collections.abc import Iterator, Sequence
+from contextlib import ExitStack
 from pathlib import Path
 from unittest import mock
 
@@ -150,26 +151,32 @@ def test_each_output_option_has_code_written_for_it(
     "further_args",
     [
         # unknown argument
-        ["--foo"],
+        pytest.param(["--foo"], id="Unknown_argument"),
         # --overwrite has a store_true action
-        ["--overwrite", "foo"],
+        pytest.param(["--overwrite", "foo"], id="Bad_use_of_overwrite"),
         # tests for --log
-        ["--log", "foo"],
-        ["--log", "getLogger"],
+        pytest.param(["--log", "foo"], id="Unknown_log_option1"),
+        pytest.param(["--log", "getLogger"], id="Unknown_log_option2"),
         # tests for the output_options group individually (except --to-file)
-        ["--pprint", "foo"],
-        ["--to-json", "foo"],
-        ["--to-csv", "foo"],
-        ["--to-markdown", "foo"],
-        ["--to-html", "foo"],
+        pytest.param(["--pprint", "foo"], id="Bad_use_of_pprint"),
+        pytest.param(["--to-json", "foo"], id="Bad_use_of_to_json"),
+        pytest.param(["--to-csv", "foo"], id="Bad_use_of_to_csv"),
+        pytest.param(["--to-markdown", "foo"], id="Bad_use_of_to_markdown"),
+        pytest.param(["--to-html", "foo"], id="Bad_use_of_to_html"),
         # tests for the output_options group in combination
-        ["--pprint", "--to-csv"],
-        ["--to-csv", "--to-markdown"],
-        ["--to-csv", "--to-json", "--to-markdown"],
+        pytest.param(["--pprint", "--to-csv"], id="Multiple_output_options1"),
+        pytest.param(["--to-csv", "--to-markdown"], id="Multiple_output_options2"),
+        pytest.param(
+            ["--to-csv", "--to-json", "--to-markdown"], id="Multiple_output_options3"
+        ),
         # tests for the --to-file option
-        ["--to-file", "bar"],
-        ["--to-file", "bar.xml"],
-        ["--to-csv", "--to-file", "bar.csv"],
+        pytest.param(["--to-file", "bar"], id="to_file_with_no_file_extension"),
+        pytest.param(
+            ["--to-file", "bar.xml"], id="to_file_with_unknown_file_extension"
+        ),
+        pytest.param(
+            ["--to-csv", "--to-file", "bar.csv"], id="to_file_with_other_output_option"
+        ),
     ],
 )
 def test_misc_invalid_args(
@@ -225,37 +232,35 @@ def test_passing_packages(
 
     params = [("one package", 1, args1), ("two packages", 2, args2)]
 
-    for description, expected_len, args in params:
-        with subtests.test(description=description):
-            with (
-                mock.patch.object(
-                    typeshed_stats.gather,
-                    "get_package_status",
-                    autospec=True,
-                    return_value=PackageStatus.UP_TO_DATE,
-                ),
-                mock.patch.object(
-                    typeshed_stats.gather,
-                    "get_stubtest_setting",
-                    autospec=True,
-                    return_value=StubtestSetting.MISSING_STUBS_IGNORED,
-                ),
-                mock.patch.object(
-                    typeshed_stats.gather,
-                    "get_pyright_strictness",
-                    autospec=True,
-                    return_value=PyrightSetting.STRICT_ON_SOME_FILES,
-                ),
-            ):
-                assert_returncode_0(args)
+    patches_to_apply = [
+        ("get_package_status", PackageStatus.UP_TO_DATE),
+        ("get_stubtest_setting", StubtestSetting.MISSING_STUBS_IGNORED),
+        ("get_pyright_strictness", PyrightSetting.STRICT_ON_SOME_FILES),
+    ]
 
-            out = capsys.readouterr().out
-            results = eval(out, vars(typeshed_stats.gather) | globals())
-            assert isinstance(results, dict)
-            assert len(results) == expected_len
-            assert all(isinstance(key, str) for key in results)
-            assert all(isinstance(value, PackageStats) for value in results.values())
-            assert results["foo"].package_name == "foo"
+    with ExitStack() as stack:
+        for function_name, return_value in patches_to_apply:
+            stack.enter_context(
+                mock.patch.object(
+                    typeshed_stats.gather,
+                    function_name,
+                    autospec=True,
+                    return_value=return_value,
+                )
+            )
+
+        for description, expected_len, args in params:
+            with subtests.test(description=description):
+                assert_returncode_0(args)
+                out = capsys.readouterr().out
+                results = eval(out, vars(typeshed_stats.gather) | globals())
+                assert isinstance(results, dict)
+                assert len(results) == expected_len
+                assert all(isinstance(key, str) for key in results)
+                assert all(
+                    isinstance(value, PackageStats) for value in results.values()
+                )
+                assert results["foo"].package_name == "foo"
 
 
 def test_invalid_packages_given(
@@ -263,6 +268,11 @@ def test_invalid_packages_given(
 ) -> None:
     message = "'boto' does not have stubs in typeshed!"
     assert_argparsing_fails(args + ["boto"], capsys=capsys, failure_message=message)
+
+
+@pytest.mark.usefixtures("mocked_gather_stats")
+def test_passing_stdlib_as_package(args: list[str]) -> None:
+    assert_returncode_0(args + ["stdlib"])
 
 
 # ===================================
@@ -321,7 +331,7 @@ class TestToFileOption:
 
 
 @pytest.fixture
-def mocked_rich_and_pprint() -> Iterator[None]:
+def disabled_rich_and_mocked_pprint() -> Iterator[None]:
     with mock.patch.dict("sys.modules", rich=None), mock.patch(
         "pprint.pprint", autospec=True
     ):
@@ -369,20 +379,26 @@ class TestOutputOptionsPrintingToTerminal:
         soup = BeautifulSoup(result, "html.parser")
         assert bool(soup.find()), "Invalid HTML produced!"
 
-    @pytest.mark.usefixtures("mocked_rich_and_pprint")
+    def test_pprint_rich_available(self) -> None:
+        rich_mock = mock.MagicMock()
+        with mock.patch.dict(sys.modules, rich=rich_mock):
+            self._assert_outputoption_works("--pprint")
+        rich_mock.print.assert_called_once()
+
+    @pytest.mark.usefixtures("disabled_rich_and_mocked_pprint")
     def test_pprint_no_rich_available(self) -> None:
         self._assert_outputoption_works("--pprint")
         mocked_pprint = sys.modules["pprint"]
         mocked_pprint.pprint.assert_called_once()
 
-    @pytest.mark.usefixtures("mocked_rich_and_pprint")
+    @pytest.mark.usefixtures("disabled_rich_and_mocked_pprint")
     @pytest.mark.parametrize(
         "option",
         [
             _OutputOption_to_argparse(option)
             for option in OutputOption
             if option is not OutputOption.PPRINT
-        ]
+        ],
     )
     def test_other_options_no_rich_available(self, option: str) -> None:
         self._assert_outputoption_works(option)
@@ -404,12 +420,12 @@ def test_bad_log_argument(args: list[str]) -> None:
 @pytest.mark.parametrize(
     ("logging_level", "logging_expected"),
     [
-        ("NOTSET", False),
-        ("DEBUG", True),
-        ("INFO", True),
-        ("WARNING", False),
-        ("ERROR", False),
-        ("CRITICAL", False),
+        pytest.param("NOTSET", False, id="NOTSET_logging_not_expected"),
+        pytest.param("DEBUG", True, id="DEBUG_logging_expected"),
+        pytest.param("INFO", True, id="INFO_logging_expected"),
+        pytest.param("WARNING", False, id="WARNING_logging_not_expected"),
+        pytest.param("ERROR", False, id="ERROR_logging_not_expected"),
+        pytest.param("CRITICAL", False, id="CRITICAL_logging_not_expected"),
     ],
 )
 def test_logs_to_terminal_with_info_or_lower(
