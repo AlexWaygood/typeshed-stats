@@ -346,6 +346,7 @@ async def test_get_package_status_with_mocked_pypi_requests(
     with mock.patch.object(
         typeshed_stats.gather,
         "_get_pypi_data",
+        autospec=True,
         return_value={"info": {"version": pypi_version}},
     ):
         status = await get_package_status(
@@ -532,6 +533,7 @@ def test_gather_stats_no_network_access(
     with mock.patch.object(
         typeshed_stats.gather,
         "get_package_status",
+        autospec=True,
         return_value=PackageStatus.UP_TO_DATE,
     ):
         results = gather_stats(packages_to_pass, typeshed_dir=typeshed_dir_to_pass)
@@ -559,6 +561,9 @@ def test_gather_stats_integrates_with_tmpdir_typeshed() -> None:
 
 def test_exceptions_bubble_up(typeshed: Path) -> None:
     with pytest.raises(KeyError), mock.patch.object(
-        typeshed_stats.gather, "gather_stats_on_package", side_effect=KeyError
+        typeshed_stats.gather,
+        "gather_stats_on_package",
+        autospec=True,
+        side_effect=KeyError,
     ):
         gather_stats(typeshed_dir=typeshed)

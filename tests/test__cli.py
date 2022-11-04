@@ -37,7 +37,10 @@ def mocked_gather_stats(
     random_PackageStats_sequence: Sequence[PackageStats],
 ) -> Iterator[None]:
     with mock.patch.object(
-        typeshed_stats._cli, "gather_stats", return_value=random_PackageStats_sequence
+        typeshed_stats._cli,
+        "gather_stats",
+        autospec=True,
+        return_value=random_PackageStats_sequence,
     ):
         yield
 
@@ -224,16 +227,19 @@ def test_passing_packages(
                 mock.patch.object(
                     typeshed_stats.gather,
                     "get_package_status",
+                    autospec=True,
                     return_value=PackageStatus.UP_TO_DATE,
                 ),
                 mock.patch.object(
                     typeshed_stats.gather,
                     "get_stubtest_setting",
+                    autospec=True,
                     return_value=StubtestSetting.MISSING_STUBS_IGNORED,
                 ),
                 mock.patch.object(
                     typeshed_stats.gather,
                     "get_pyright_strictness",
+                    autospec=True,
                     return_value=PyrightSetting.STRICT_ON_SOME_FILES,
                 ),
             ):
@@ -422,6 +428,7 @@ def test_KeyboardInterrupt_caught(
         mock.patch.object(
             typeshed_stats.gather,
             "gather_stats_on_package",
+            autospec=True,
             side_effect=KeyboardInterrupt(),
         ),
         pytest.raises(SystemExit) as exc_info,
