@@ -70,6 +70,10 @@ def assert_argparsing_fails(
         assert expected_message_found
 
 
+def _OutputOption_to_argparse(option: OutputOption) -> str:
+    return f"--to-{option.name.lower()}"
+
+
 # ===============================
 # Tests for the OutputOption enum
 # ===============================
@@ -124,7 +128,7 @@ def test_each_output_option_has_code_written_for_it(
     for option in OutputOption:
         if option is OutputOption.PPRINT:
             continue
-        assert_returncode_0(args + [f"--to-{option.name.lower()}"])
+        assert_returncode_0(args + [_OutputOption_to_argparse(option)])
         options_to_output[option] = capsys.readouterr().out.strip()
 
     for option, output in options_to_output.items():
@@ -371,10 +375,15 @@ class TestOutputOptionsPrintingToTerminal:
         mocked_pprint = sys.modules["pprint"]
         mocked_pprint.pprint.assert_called_once()
 
-    @pytest.mark.parametrize(
-        "option", ["--to-csv", "--to-json", "--to-markdown", "--to-html"]
-    )
     @pytest.mark.usefixtures("mocked_rich_and_pprint")
+    @pytest.mark.parametrize(
+        "option",
+        [
+            _OutputOption_to_argparse(option)
+            for option in OutputOption
+            if option is not OutputOption.PPRINT
+        ]
+    )
     def test_other_options_no_rich_available(self, option: str) -> None:
         self._assert_outputoption_works(option)
         mocked_pprint = sys.modules["pprint"]
