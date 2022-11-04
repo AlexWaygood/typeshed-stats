@@ -320,12 +320,18 @@ class PackageStatus(_NiceReprEnum):
 
 
 async def _get_pypi_data(
-    package_name: str, session: aiohttp.ClientSession
+    package_name: str, session: aiohttp.ClientSession | None
 ) -> dict[str, Any]:
     pypi_data_url = f"https://pypi.org/pypi/{urllib.parse.quote(package_name)}/json"
-    async with session.get(pypi_data_url) as response:
-        response.raise_for_status()
-        response_json = await response.json()
+    async with AsyncExitStack() as stack:
+        if session is None:
+            # see https://github.com/python/mypy/issues/13936
+            # for why we need the tmp_var to keep mypy happy
+            tmp_var = await stack.enter_async_context(aiohttp.ClientSession())
+            session = tmp_var
+        async with session.get(pypi_data_url) as response:
+            response.raise_for_status()
+            response_json = await response.json()
     assert isinstance(response_json, dict)
     return response_json
 
@@ -376,15 +382,7 @@ async def get_package_status(
         return PackageStatus.NO_LONGER_UPDATED
 
     typeshed_pinned_version = SpecifierSet(f"=={metadata['version']}")
-
-    async with AsyncExitStack() as stack:
-        if session is None:
-            # see https://github.com/python/mypy/issues/13936
-            # for why we need the tmp_var to keep mypy happy
-            tmp_var = await stack.enter_async_context(aiohttp.ClientSession())
-            session = tmp_var
-        pypi_data = await _get_pypi_data(package_name, session)
-
+    pypi_data = await _get_pypi_data(package_name, session)
     pypi_version = Version(pypi_data["info"]["version"])
     status = "UP_TO_DATE" if pypi_version in typeshed_pinned_version else "OUT_OF_DATE"
     return PackageStatus[status]

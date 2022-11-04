@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import textwrap
 from collections.abc import Callable
-from contextlib import nullcontext
+from contextlib import AbstractAsyncContextManager, nullcontext
 from pathlib import Path
 from typing import TypeAlias
 from unittest import mock
@@ -310,16 +310,6 @@ async def test_get_package_status_no_pypi_requests_required(
     assert status is expected_result
 
 
-_MaybeSession: TypeAlias = Callable[[], aiohttp.ClientSession | nullcontext[None]]
-
-
-@pytest.fixture(
-    params=[nullcontext, aiohttp.ClientSession], ids=["pass_None", "pass_ClientSession"]
-)
-def get_session(request: pytest.FixtureRequest) -> _MaybeSession:
-    return request.param  # type: ignore[no-any-return]
-
-
 @pytest.mark.parametrize(
     ("typeshed_version", "pypi_version", "expected_result_name"),
     [
@@ -345,7 +335,6 @@ async def test_get_package_status_with_mocked_pypi_requests(
     typeshed_version: str,
     pypi_version: str,
     expected_result_name: str,
-    get_session: _MaybeSession,
 ) -> None:
     write_metadata_text(
         typeshed, EXAMPLE_PACKAGE_NAME, f'version = "{typeshed_version}"'
@@ -356,17 +345,31 @@ async def test_get_package_status_with_mocked_pypi_requests(
         "_get_pypi_data",
         return_value={"info": {"version": pypi_version}},
     ):
-        async with get_session() as session:
-            status = await get_package_status(
-                EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass, session=session
-            )
+        status = await get_package_status(
+            EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
+        )
     expected_result = PackageStatus[expected_result_name]
     assert status is expected_result
 
 
-@pytest.mark.parametrize("package_name", ["emoji", "flake8-bugbear", "SQLAlchemy"])
-async def test__get_pypi_data(package_name: str) -> None:
-    async with aiohttp.ClientSession() as session:
+_GetSessionCallable: TypeAlias = Callable[
+    [], AbstractAsyncContextManager[aiohttp.ClientSession | None]
+]
+
+
+@pytest.mark.requires_network
+@pytest.mark.parametrize(
+    ("package_name", "get_session"),
+    [
+        ("emoji", aiohttp.ClientSession),
+        ("flake8-bugbear", aiohttp.ClientSession),
+        ("SQLAlchemy", nullcontext),
+    ],
+)
+async def test__get_pypi_data(
+    package_name: str, get_session: _GetSessionCallable
+) -> None:
+    async with get_session() as session:
         data = await _get_pypi_data(package_name, session)
     assert isinstance(data, dict)
     assert all(isinstance(key, str) for key in data)

@@ -76,7 +76,7 @@ warn_unreachable = true
 addopts = "--doctest-modules --strict-config --strict-markers -vv --cov=src --cov-branch --cov-report term-missing"
 xfail_strict = true
 asyncio_mode = "auto"
-markers = ["fails_inexplicably_in_ci"]
+markers = ["fails_inexplicably_in_ci", "requires_network"]
 filterwarnings = [
     "error",
     # Ignore ResourceWarnings about unclosed sockets
