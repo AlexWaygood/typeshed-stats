@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import os
+import random
 import textwrap
 from collections.abc import Callable
 from contextlib import AbstractAsyncContextManager, nullcontext
@@ -30,6 +32,7 @@ from typeshed_stats.gather import (
     get_package_status,
     get_pyright_strictness,
     get_stubtest_setting,
+    tmpdir_typeshed
 )
 
 
@@ -467,13 +470,35 @@ def test_get_pyright_setting(
     assert pyright_strictness is expected_result
 
 
+# =========================
+# Tests for tmpdir_typeshed
+# =========================
+
+
+@pytest.mark.requires_network
+def test_tmpdir_typeshed() -> None:
+    with tmpdir_typeshed() as typeshed:
+        typeshed = typeshed
+        assert isinstance(typeshed, Path)
+        assert typeshed.exists()
+        assert typeshed.is_dir()
+        stubs_dir, stdlib_dir = typeshed / "stubs", typeshed / "stdlib"
+        assert stubs_dir.exists()
+        assert stubs_dir.is_dir()
+        assert stdlib_dir.exists()
+        assert stdlib_dir.is_dir()
+    assert not typeshed.exists()
+    assert not stubs_dir.exists()
+    assert not stdlib_dir.exists()
+
+
 # ======================
 # Tests for gather_stats
 # ======================
 
 
 @pytest.mark.parametrize("pass_none", [True, False])
-def test_gather_stats_no_packages_passed(
+def test_gather_stats_no_network_access(
     typeshed: Path,
     example_stub_source: str,
     maybe_stringize_path: Callable[[Path], Path | str],
@@ -515,6 +540,20 @@ def test_gather_stats_no_packages_passed(
     package_names_in_results = {item.package_name for item in results}
     expected_package_names = package_names | {"stdlib"}
     assert package_names_in_results == expected_package_names
+
+
+@pytest.mark.requires_network
+def test_gather_stats_integrates_with_tmpdir_typeshed() -> None:
+    with tmpdir_typeshed() as typeshed:
+        available_stubs = os.listdir(typeshed / "stubs")
+        package_names = {
+            random.choice(available_stubs) for _ in range(random.randint(3, 10))
+        }
+        results = gather_stats(package_names, typeshed_dir=typeshed)
+
+    assert all(isinstance(item, PackageStats) for item in results)
+    package_names_in_results = {item.package_name for item in results}
+    assert package_names_in_results == package_names
 
 
 def test_exceptions_bubble_up(typeshed: Path) -> None:
