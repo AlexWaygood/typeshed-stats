@@ -579,11 +579,12 @@ def test_gather_stats_no_network_access(
 
 @pytest.mark.requires_network
 def test_gather_stats_integrates_with_tmpdir_typeshed() -> None:
+    num_packages = random.randint(3, 10)
+    print(f"Testing {num_packages}")
     with tmpdir_typeshed() as typeshed:
+        print(f"Typeshed dir is {typeshed!r}")
         available_stubs = os.listdir(typeshed / "stubs")
-        package_names = {
-            random.choice(available_stubs) for _ in range(random.randint(3, 10))
-        }
+        package_names = {random.choice(available_stubs) for _ in range(num_packages)}
         print(f"Testing with {package_names}")
         results = gather_stats(package_names, typeshed_dir=typeshed)
 
