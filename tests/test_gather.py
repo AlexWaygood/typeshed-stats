@@ -32,7 +32,7 @@ from typeshed_stats.gather import (
     get_package_status,
     get_pyright_strictness,
     get_stubtest_setting,
-    tmpdir_typeshed
+    tmpdir_typeshed,
 )
 
 
@@ -478,7 +478,7 @@ def test_get_pyright_setting(
 @pytest.mark.requires_network
 def test_tmpdir_typeshed() -> None:
     with tmpdir_typeshed() as typeshed:
-        typeshed = typeshed
+        typeshed = typeshed  # noqa: SIM909
         assert isinstance(typeshed, Path)
         assert typeshed.exists()
         assert typeshed.is_dir()

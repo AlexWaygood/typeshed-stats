@@ -1,7 +1,6 @@
 import csv
 import io
 import json
-import pprint
 import re
 import sys
 from collections.abc import Iterator, Sequence
@@ -68,9 +67,9 @@ def assert_argparsing_fails(
         assert expected_message_found
 
 
-# ======================
-# Tests for OutputOption
-# ======================
+# ===============================
+# Tests for the OutputOption enum
+# ===============================
 
 
 @pytest.mark.parametrize("option_name", [option.name for option in OutputOption])
@@ -265,7 +264,7 @@ class TestToFileOption:
     @pytest.fixture(autouse=True)
     def _setup(
         self, tmp_path: Path, args: list[str], capsys: pytest.CaptureFixture[str]
-    ) -> None:
+    ) -> Iterator[None]:
         self._dir = tmp_path
         self._args = args
         self._capsys = capsys
@@ -311,10 +310,20 @@ class TestToFileOption:
 # ================================
 
 
+@pytest.fixture
+def mocked_rich_and_pprint() -> Iterator[None]:
+    with mock.patch.dict("sys.modules", rich=None), mock.patch(
+        "pprint.pprint", autospec=True
+    ):
+        yield
+
+
 @pytest.mark.usefixtures("mocked_gather_stats")
 class TestOutputOptionsPrintingToTerminal:
     @pytest.fixture(autouse=True)
-    def _setup(self, args: list[str], capsys: pytest.CaptureFixture[str]) -> None:
+    def _setup(
+        self, args: list[str], capsys: pytest.CaptureFixture[str]
+    ) -> Iterator[None]:
         self._args = args + ["--log", "CRITICAL"]
         self._capsys = capsys
         yield
@@ -350,25 +359,20 @@ class TestOutputOptionsPrintingToTerminal:
         soup = BeautifulSoup(result, "html.parser")
         assert bool(soup.find()), "Invalid HTML produced!"
 
+    @pytest.mark.usefixtures("mocked_rich_and_pprint")
     def test_pprint_no_rich_available(self) -> None:
-        with (
-            mock.patch.dict("sys.modules", rich=None),
-            mock.patch("pprint.pprint") as pprint
-        ):
-            self._assert_outputoption_works("--pprint")
-            pprint.assert_called_once()
+        self._assert_outputoption_works("--pprint")
+        mocked_pprint = sys.modules["pprint"]
+        mocked_pprint.pprint.assert_called_once()
 
     @pytest.mark.parametrize(
-        "option",
-        ["--to-csv", "--to-json", "--to-markdown", "--to-html"]
+        "option", ["--to-csv", "--to-json", "--to-markdown", "--to-html"]
     )
+    @pytest.mark.usefixtures("mocked_rich_and_pprint")
     def test_other_options_no_rich_available(self, option: str) -> None:
-        with (
-            mock.patch.dict("sys.modules", rich=None),
-            mock.patch("pprint.pprint") as pprint
-        ):
-            self._assert_outputoption_works(option)
-            pprint.assert_not_called()
+        self._assert_outputoption_works(option)
+        mocked_pprint = sys.modules["pprint"]
+        mocked_pprint.pprint.assert_not_called()
 
 
 # ========================
@@ -400,10 +404,7 @@ def test_logs_to_terminal_with_info_or_lower(
     caplog: pytest.LogCaptureFixture,
 ) -> None:
     args += ["--log", logging_level]
-    with pytest.raises(SystemExit) as exc_info:
-        main(args)
-    return_code = exc_info.value.code
-    assert return_code == 0
+    assert_returncode_0(args)
     logging_occurred = bool(caplog.text.strip())
     assert logging_occurred is logging_expected
 
