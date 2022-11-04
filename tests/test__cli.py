@@ -1,12 +1,16 @@
 import csv
 import io
 import json
+import pprint
 import re
+import sys
 from collections.abc import Iterator, Sequence
 from pathlib import Path
 from unittest import mock
 
+import markdown
 import pytest
+from bs4 import BeautifulSoup
 from pytest_subtests import SubTests  # type: ignore[import]
 
 import typeshed_stats._cli
@@ -37,6 +41,14 @@ def mocked_gather_stats(
         typeshed_stats._cli, "gather_stats", return_value=random_PackageStats_sequence
     ):
         yield
+
+
+def assert_returncode_0(args: list[str]) -> None:
+    """Assert the return code is 0 when running `main` with the specified args."""
+    with pytest.raises(SystemExit) as exc_info:
+        main(args)
+    code = exc_info.value.code
+    assert code == 0
 
 
 def assert_argparsing_fails(
@@ -105,18 +117,12 @@ def test_each_output_option_has_code_written_for_it(
     subtests: SubTests,
 ) -> None:
     options_to_output = {}
-    with pytest.raises(SystemExit) as exc_info:
-        main(args + ["--pprint"])
-    return_code = exc_info.value.code
-    assert return_code == 0
+    assert_returncode_0(args + ["--pprint"])
     pprint_output = capsys.readouterr().out.strip()
     for option in OutputOption:
         if option is OutputOption.PPRINT:
             continue
-        with pytest.raises(SystemExit) as exc_info:
-            main(args + [f"--to-{option.name.lower()}"])
-        return_code = exc_info.value.code
-        assert return_code == 0
+        assert_returncode_0(args + [f"--to-{option.name.lower()}"])
         options_to_output[option] = capsys.readouterr().out.strip()
 
     for option, output in options_to_output.items():
@@ -216,7 +222,6 @@ def test_passing_packages(
     for description, expected_len, args in params:
         with subtests.test(description=description):
             with (
-                pytest.raises(SystemExit) as exc_info,
                 mock.patch.object(
                     typeshed_stats.gather,
                     "get_package_status",
@@ -233,9 +238,8 @@ def test_passing_packages(
                     return_value=PyrightSetting.STRICT_ON_SOME_FILES,
                 ),
             ):
-                main(args)
-            return_code = exc_info.value.code
-            assert return_code == 0
+                assert_returncode_0(args)
+
             out = capsys.readouterr().out
             results = eval(out, vars(typeshed_stats.gather) | globals())
             assert isinstance(results, dict)
@@ -257,50 +261,49 @@ def test_invalid_packages_given(
 # ===================================
 
 
-def test_to_file_fails_if_parent_doesnt_exist(
-    tmp_path: Path, args: list[str], capsys: pytest.CaptureFixture[str]
-) -> None:
-    file_in_fictitious_dir = tmp_path / "fiction" / "foo.json"
-    args += ["--to-file", str(file_in_fictitious_dir)]
-    message = "does not exist as a directory!"
-    assert_argparsing_fails(args, capsys=capsys, failure_message=message)
+class TestToFileOption:
+    @pytest.fixture(autouse=True)
+    def _setup(
+        self, tmp_path: Path, args: list[str], capsys: pytest.CaptureFixture[str]
+    ) -> None:
+        self._dir = tmp_path
+        self._args = args
+        self._capsys = capsys
+        yield
+        del self._dir, self._args, self._capsys
 
+    def test_to_file_fails_if_parent_doesnt_exist(self) -> None:
+        file_in_fictitious_dir = self._dir / "fiction" / "foo.json"
+        args = self._args + ["--to-file", str(file_in_fictitious_dir)]
+        message = "does not exist as a directory!"
+        assert_argparsing_fails(args, capsys=self._capsys, failure_message=message)
 
-def test_to_file_fails_if_parent_is_not_directory(
-    tmp_path: Path, args: list[str], capsys: pytest.CaptureFixture[str]
-) -> None:
-    file = tmp_path / "file"
-    file.write_text("", encoding="utf-8")
-    writefile = file / "file2.json"
-    args += ["--to-file", str(writefile)]
-    message = "does not exist as a directory!"
-    assert_argparsing_fails(args, capsys=capsys, failure_message=message)
+    def test_to_file_fails_if_parent_is_not_directory(self) -> None:
+        file = self._dir / "file"
+        file.write_text("", encoding="utf-8")
+        writefile = file / "file2.json"
+        args = self._args + ["--to-file", str(writefile)]
+        message = "does not exist as a directory!"
+        assert_argparsing_fails(args, capsys=self._capsys, failure_message=message)
 
+    def test_to_file_fails_if_file_exists(self) -> None:
+        # Setup the case where --overwrite=False,
+        # and --to-file points to an already existing file
+        file_name = "foo.json"
+        already_existing_file = self._dir / file_name
+        already_existing_file.write_text("", encoding="utf-8")
+        args = self._args + ["--to-file", str(already_existing_file)]
+        message = f'{file_name}" already exists!'
+        assert_argparsing_fails(args, capsys=self._capsys, failure_message=message)
 
-def test_to_file_fails_if_file_exists(
-    tmp_path: Path, args: list[str], capsys: pytest.CaptureFixture[str]
-) -> None:
-    # Setup the case where --overwrite=False,
-    # and --to-file points to an already existing file
-    file_name = "foo.json"
-    already_existing_file = tmp_path / file_name
-    already_existing_file.write_text("", encoding="utf-8")
-    args += ["--to-file", str(already_existing_file)]
-    message = f'{file_name}" already exists!'
-    assert_argparsing_fails(args, capsys=capsys, failure_message=message)
-
-
-@pytest.mark.usefixtures("mocked_gather_stats")
-def test_overwrite_argument(args: list[str], tmp_path: Path) -> None:
-    # Setup the case where --overwrite=True,
-    # and --to-file points to an already existing file
-    already_existing_file = tmp_path / "foo.json"
-    already_existing_file.write_text("", encoding="utf-8")
-    args += ["--to-file", str(already_existing_file), "--overwrite"]
-    with pytest.raises(SystemExit) as exc_info:
-        main(args)
-    return_code = exc_info.value.code
-    assert return_code == 0
+    @pytest.mark.usefixtures("mocked_gather_stats")
+    def test_overwrite_argument(self) -> None:
+        # Setup the case where --overwrite=True,
+        # and --to-file points to an already existing file
+        already_existing_file = self._dir / "foo.json"
+        already_existing_file.write_text("", encoding="utf-8")
+        args = self._args + ["--to-file", str(already_existing_file), "--overwrite"]
+        assert_returncode_0(args)
 
 
 # ================================
@@ -308,32 +311,64 @@ def test_overwrite_argument(args: list[str], tmp_path: Path) -> None:
 # ================================
 
 
-@pytest.mark.fails_inexplicably_in_ci
 @pytest.mark.usefixtures("mocked_gather_stats")
-def test_to_json(args: list[str], capsys: pytest.CaptureFixture[str]) -> None:
-    args += ["--log", "CRITICAL", "--to-json"]
-    with pytest.raises(SystemExit) as exc_info:
-        main(args)
-    return_code = exc_info.value.code
-    assert return_code == 0
-    out = capsys.readouterr().out
-    result = json.loads(out)
-    assert isinstance(result, list)
-    assert all(isinstance(item, dict) for item in result)
-    assert all(isinstance(item["package_name"], str) for item in result)
+class TestOutputOptionsPrintingToTerminal:
+    @pytest.fixture(autouse=True)
+    def _setup(self, args: list[str], capsys: pytest.CaptureFixture[str]) -> None:
+        self._args = args + ["--log", "CRITICAL"]
+        self._capsys = capsys
+        yield
+        del self._args, self._capsys
 
+    def _assert_outputoption_works(self, option: str) -> None:
+        args = self._args + [option]
+        assert_returncode_0(args)
 
-@pytest.mark.usefixtures("mocked_gather_stats")
-def test_to_csv(args: list[str], capsys: pytest.CaptureFixture[str]) -> None:
-    args += ["--log", "CRITICAL", "--to-csv"]
-    with pytest.raises(SystemExit) as exc_info:
-        main(args)
-    return_code = exc_info.value.code
-    assert return_code == 0
-    csvfile = io.StringIO(capsys.readouterr().out.strip(), newline="")
-    stats = list(csv.DictReader(csvfile))
-    assert all(isinstance(item, dict) for item in stats)
-    assert all(isinstance(item["package_name"], str) for item in stats)
+    @pytest.mark.fails_inexplicably_in_ci
+    def test_to_json(self) -> None:
+        self._assert_outputoption_works("--to-json")
+        result = json.loads(self._capsys.readouterr().out.strip())
+        assert isinstance(result, list)
+        assert all(isinstance(item, dict) for item in result)
+        assert all(isinstance(item["package_name"], str) for item in result)
+
+    def test_to_csv(self) -> None:
+        self._assert_outputoption_works("--to-csv")
+        csvfile = io.StringIO(self._capsys.readouterr().out.strip(), newline="")
+        stats = list(csv.DictReader(csvfile))
+        assert all(isinstance(item, dict) for item in stats)
+        assert all(isinstance(item["package_name"], str) for item in stats)
+
+    def test_to_markdown(self) -> None:
+        self._assert_outputoption_works("--to-markdown")
+        result = self._capsys.readouterr().out.strip()
+        markdown.markdown(result)
+
+    def test_to_html(self) -> None:
+        self._assert_outputoption_works("--to-html")
+        result = self._capsys.readouterr().out.strip()
+        soup = BeautifulSoup(result, "html.parser")
+        assert bool(soup.find()), "Invalid HTML produced!"
+
+    def test_pprint_no_rich_available(self) -> None:
+        with (
+            mock.patch.dict("sys.modules", rich=None),
+            mock.patch("pprint.pprint") as pprint
+        ):
+            self._assert_outputoption_works("--pprint")
+            pprint.assert_called_once()
+
+    @pytest.mark.parametrize(
+        "option",
+        ["--to-csv", "--to-json", "--to-markdown", "--to-html"]
+    )
+    def test_other_options_no_rich_available(self, option: str) -> None:
+        with (
+            mock.patch.dict("sys.modules", rich=None),
+            mock.patch("pprint.pprint") as pprint
+        ):
+            self._assert_outputoption_works(option)
+            pprint.assert_not_called()
 
 
 # ========================

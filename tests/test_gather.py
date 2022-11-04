@@ -549,6 +549,7 @@ def test_gather_stats_integrates_with_tmpdir_typeshed() -> None:
         package_names = {
             random.choice(available_stubs) for _ in range(random.randint(3, 10))
         }
+        print(f"Testing with {package_names}")
         results = gather_stats(package_names, typeshed_dir=typeshed)
 
     assert all(isinstance(item, PackageStats) for item in results)
