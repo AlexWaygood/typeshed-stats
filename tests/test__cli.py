@@ -252,7 +252,7 @@ def test_passing_packages(
         for description, expected_len, args in params:
             with subtests.test(description=description):
                 assert_returncode_0(args)
-                out = capsys.readouterr().out
+                out = capsys.readouterr().out.strip()
                 results = eval(out, vars(typeshed_stats.gather) | globals())
                 assert isinstance(results, dict)
                 assert len(results) == expected_len
