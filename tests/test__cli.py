@@ -516,6 +516,7 @@ class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTes
         result = self._get_stdout()
         markdown.markdown(result)
 
+    @pytest.mark.fails_inexplicably_in_ci
     def test_to_html(self) -> None:
         self._assert_outputoption_works("--to-html")
         result = self._capsys.readouterr().out.strip()
