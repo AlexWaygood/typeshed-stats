@@ -239,6 +239,9 @@ def gather_annotation_stats_on_package(
         for path in package_directory.rglob("*.pyi")
     ]
     # Sum all the statistics together, to get the statistics for the package as a whole
+    #
+    # TODO: we're throwing away information here.
+    # It might be nice to have a way to get per-file stats, especially for the stdlib.
     package_stats: Counter[str] = sum(
         [Counter(attrs.asdict(result)) for result in file_results], start=Counter()
     )
