@@ -13,6 +13,7 @@ from unittest import mock
 import aiohttp
 import pytest
 from packaging.version import Version
+from pytest_mock import MockerFixture
 from pytest_subtests import SubTests  # type: ignore[import]
 
 import typeshed_stats
@@ -374,6 +375,9 @@ async def test_get_package_status_with_mocked_pypi_requests(
         typeshed, EXAMPLE_PACKAGE_NAME, f'version = "{typeshed_version}"'
     )
     typeshed_dir_to_pass = maybe_stringize_path(typeshed)
+
+    # mock.patch has to be inline here,
+    # since pypi_version is being parametrized
     with mock.patch.object(
         typeshed_stats.gather,
         "_get_pypi_data",
@@ -383,6 +387,7 @@ async def test_get_package_status_with_mocked_pypi_requests(
         status = await get_package_status(
             EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
         )
+
     expected_result = PackageStatus[expected_result_name]
     assert status is expected_result
 
@@ -444,11 +449,10 @@ def test_get_package_size_single_file(
     assert result == 2
 
 
-def test_get_package_size_multiple_files(
-    EXAMPLE_PACKAGE_NAME: str,
-    typeshed: Path,
-    maybe_stringize_path: Callable[[Path], Path | str],
-) -> None:
+@pytest.fixture
+def typeshed_with_eightline_multifile_package(
+    typeshed: Path, EXAMPLE_PACKAGE_NAME: str
+) -> Path:
     two_line_stub = "foo: int\nbar: str"
     top_level_stub = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "foo.pyi"
     top_level_stub.write_text(two_line_stub, encoding="utf-8")
@@ -459,7 +463,17 @@ def test_get_package_size_multiple_files(
     subpkg2.mkdir()
     for name in "spam.pyi", "eggs.pyi":
         (subpkg2 / name).write_text(two_line_stub, encoding="utf-8")
-    typeshed_dir_to_pass = maybe_stringize_path(typeshed)
+    return typeshed
+
+
+def test_get_package_size_multiple_files(
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed_with_eightline_multifile_package: Path,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    typeshed_dir_to_pass = maybe_stringize_path(
+        typeshed_with_eightline_multifile_package
+    )
     result = get_package_size(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass)
     assert result == 8
 
@@ -529,29 +543,26 @@ def test_tmpdir_typeshed() -> None:
 # ======================
 
 
-@pytest.mark.parametrize(
-    "pass_none",
-    [pytest.param(True, id="pass_none"), pytest.param(False, id="pass_packages")],
-)
-def test_gather_stats_no_network_access(
-    typeshed: Path,
+@pytest.fixture(scope="session")
+def real_typeshed_package_names() -> frozenset[str]:
+    return frozenset({"emoji", "protobuf", "appdirs"})
+
+
+@pytest.fixture
+def complete_typeshed(
+    tmp_path: Path,
     example_stub_source: str,
-    maybe_stringize_path: Callable[[Path], Path | str],
     pyrightconfig_template: str,
-    EXAMPLE_PACKAGE_NAME: str,
-    pass_none: bool,
-) -> None:
-    # The typeshed fixture comes with a package directory
-    # for EXAMPLE_PACKAGE_NAME already built.
-    # This is useful for most tests, but not for this one;
-    # the first thing to do here is to remove it.
-    (typeshed / "stubs" / EXAMPLE_PACKAGE_NAME).rmdir()
+    real_typeshed_package_names: frozenset[str],
+) -> Path:
+    typeshed = tmp_path
+    for directory in "stdlib", "stubs":
+        (typeshed / directory).mkdir()
 
     pyrightconfig_path = typeshed / "pyrightconfig.stricter.json"
     pyrightconfig_path.write_text(pyrightconfig_template.format(""), encoding="utf-8")
 
-    package_names = {"emoji", "protobuf", "appdirs"}
-    for package_name in package_names:
+    for package_name in real_typeshed_package_names:
         package_dir = typeshed / "stubs" / package_name
         package_dir.mkdir()
         write_metadata_text(typeshed, package_name, "\n")
@@ -559,22 +570,41 @@ def test_gather_stats_no_network_access(
         source_dir.mkdir()
         (source_dir / "foo.pyi").write_text(example_stub_source, encoding="utf-8")
 
-    typeshed_dir_to_pass = maybe_stringize_path(typeshed)
+    return typeshed
 
-    packages_to_pass: set[str] | None
-    packages_to_pass = None if pass_none else (package_names | {"stdlib"})
 
-    with mock.patch.object(
+@pytest.fixture
+def mocked_get_package_status(mocker: MockerFixture) -> None:
+    mocker.patch.object(
         typeshed_stats.gather,
         "get_package_status",
         autospec=True,
         return_value=PackageStatus.UP_TO_DATE,
-    ):
-        results = gather_stats(packages_to_pass, typeshed_dir=typeshed_dir_to_pass)
+    )
 
+
+@pytest.mark.usefixtures("mocked_get_package_status")
+@pytest.mark.parametrize(
+    "pass_none",
+    [pytest.param(True, id="pass_none"), pytest.param(False, id="pass_packages")],
+)
+def test_gather_stats_no_network_access(
+    complete_typeshed: Path,
+    maybe_stringize_path: Callable[[Path], Path | str],
+    pass_none: bool,
+    real_typeshed_package_names: frozenset[str],
+) -> None:
+    typeshed_dir_to_pass = maybe_stringize_path(complete_typeshed)
+
+    if pass_none:
+        packages_to_pass: set[str] | None = None
+    else:
+        packages_to_pass = {"stdlib", *os.listdir(complete_typeshed / "stubs")}
+
+    results = gather_stats(packages_to_pass, typeshed_dir=typeshed_dir_to_pass)
     assert all(isinstance(item, PackageStats) for item in results)
     package_names_in_results = {item.package_name for item in results}
-    expected_package_names = package_names | {"stdlib"}
+    expected_package_names = real_typeshed_package_names | {"stdlib"}
     assert package_names_in_results == expected_package_names
 
 
