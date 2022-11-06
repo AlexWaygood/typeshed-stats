@@ -42,8 +42,15 @@ def typeshed(EXAMPLE_PACKAGE_NAME: str, tmp_path: Path) -> Path:
     return typeshed
 
 
+@pytest.fixture(scope="session")
+def AnnotationStats_fieldnames() -> tuple[str, ...]:
+    return tuple(field.name for field in attrs.fields(AnnotationStats))
+
+
 @pytest.fixture
-def make_random_PackageStats() -> Callable[[], PackageStats]:
+def make_random_PackageStats(
+    AnnotationStats_fieldnames: tuple[str, ...]
+) -> Callable[[], PackageStats]:
     def random_PackageStats() -> PackageStats:
         return PackageStats(
             package_name="".join(
@@ -55,7 +62,7 @@ def make_random_PackageStats() -> Callable[[], PackageStats]:
             stubtest_setting=random.choice(list(StubtestSetting)),
             pyright_setting=random.choice(list(PyrightSetting)),
             annotation_stats=AnnotationStats(
-                *[random.randint(0, 1000) for _ in attrs.fields(AnnotationStats)]
+                *[random.randint(0, 1000) for _ in AnnotationStats_fieldnames]
             ),
         )
 

@@ -11,7 +11,6 @@ from typing import TypeAlias
 from unittest import mock
 
 import aiohttp
-import attrs
 import pytest
 from packaging.version import Version
 from pytest_subtests import SubTests  # type: ignore[import]
@@ -182,13 +181,13 @@ def test_annotation_stats_on_file(
     expected_stats_on_example_stub_file: AnnotationStats,
     tmp_path: Path,
     maybe_stringize_path: Callable[[Path], Path | str],
+    AnnotationStats_fieldnames: tuple[str, ...],
 ) -> None:
     test_dot_pyi = tmp_path / "test.pyi"
     test_dot_pyi.write_text(example_stub_source, encoding="utf-8")
     stats = gather_annotation_stats_on_file(maybe_stringize_path(test_dot_pyi))
 
-    for field in attrs.fields(AnnotationStats):
-        field_name = field.name
+    for field_name in AnnotationStats_fieldnames:
         actual_stat = getattr(stats, field_name)
         expected_stat = getattr(expected_stats_on_example_stub_file, field_name)
         with subtests.test(
@@ -197,14 +196,10 @@ def test_annotation_stats_on_file(
             assert actual_stat == expected_stat
 
 
-def test_annotation_stats_on_package(
-    subtests: SubTests,
-    typeshed: Path,
-    EXAMPLE_PACKAGE_NAME: str,
-    example_stub_source: str,
-    expected_stats_on_example_stub_file: AnnotationStats,
-    maybe_stringize_path: Callable[[Path], Path | str],
-) -> None:
+@pytest.fixture
+def typeshed_with_pyi_packages(
+    typeshed: Path, EXAMPLE_PACKAGE_NAME: str, example_stub_source: str
+) -> Path:
     package_dir = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME
     stdlib_dir = typeshed / "stdlib"
 
@@ -212,27 +207,33 @@ def test_annotation_stats_on_package(
         for filename in ("test1.pyi", "test2.pyi"):
             (directory / filename).write_text(example_stub_source, encoding="utf-8")
 
-    typeshed_dir_to_pass = maybe_stringize_path(typeshed)
-    stdlib_stats = gather_annotation_stats_on_package(
-        "stdlib", typeshed_dir=typeshed_dir_to_pass
-    )
-    package_stats = gather_annotation_stats_on_package(
-        EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed_dir_to_pass
-    )
+    return typeshed
 
-    field_names = [field.name for field in attrs.fields(AnnotationStats)]
 
-    for result_name, result in [("stdlib", stdlib_stats), ("package", package_stats)]:
-        for field_name in field_names:
-            actual_stat = getattr(result, field_name)
-            expected_stat = 2 * getattr(expected_stats_on_example_stub_file, field_name)
-            with subtests.test(
-                result_name=result_name,
-                field_name=field_name,
-                expected_stat=expected_stat,
-                actual_stat=actual_stat,
-            ):
-                assert actual_stat == expected_stat
+@pytest.fixture(params=[True, False], ids=["test_stdlib", "test_package"])
+def package_to_test(request: pytest.FixtureRequest, EXAMPLE_PACKAGE_NAME: str) -> str:
+    return "stdlib" if request.param else EXAMPLE_PACKAGE_NAME
+
+
+def test_annotation_stats_on_package(
+    subtests: SubTests,
+    typeshed_with_pyi_packages: Path,
+    expected_stats_on_example_stub_file: AnnotationStats,
+    maybe_stringize_path: Callable[[Path], Path | str],
+    AnnotationStats_fieldnames: tuple[str, ...],
+    package_to_test: str,
+) -> None:
+    typeshed_dir_to_pass = maybe_stringize_path(typeshed_with_pyi_packages)
+    result = gather_annotation_stats_on_package(
+        package_to_test, typeshed_dir=typeshed_dir_to_pass
+    )
+    for field_name in AnnotationStats_fieldnames:
+        actual_stat = getattr(result, field_name)
+        expected_stat = 2 * getattr(expected_stats_on_example_stub_file, field_name)
+        with subtests.test(
+            field_name=field_name, expected_stat=expected_stat, actual_stat=actual_stat
+        ):
+            assert actual_stat == expected_stat
 
 
 # ==============================
