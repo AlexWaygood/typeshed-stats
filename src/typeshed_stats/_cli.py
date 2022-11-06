@@ -217,6 +217,8 @@ def _determine_output_option(
     writefile = args.writefile
     if not writefile:
         return args.output_option
+    if not writefile.suffix:
+        parser.error(f"{writefile!r} has no file extension!")
     if writefile.suffix not in SUPPORTED_EXTENSIONS:
         parser.error(
             f"Unrecognised file extension {writefile.suffix!r} passed to --file"

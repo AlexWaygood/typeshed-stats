@@ -70,7 +70,7 @@ def assert_argparsing_fails(
     if failure_message is not None and capsys is not None:
         err = capsys.readouterr().err
         expected_message_found = bool(re.search(failure_message, err))
-        assert expected_message_found
+        assert expected_message_found, err
 
 
 def _OutputOption_to_argparse(option: OutputOption) -> str:
@@ -144,40 +144,15 @@ def test_each_output_option_has_code_written_for_it(
     assert num_different_outputs == expected_num_different_outputs
 
 
-# ============================================
-# Misc tests for invalid argument combinations
-# ============================================
+# ===========================================
+# Test that it fails with an unknown argument
+# ===========================================
 
 
-@pytest.mark.parametrize(
-    "further_args",
-    [
-        # unknown argument
-        pytest.param(["--foo"], id="Unknown_argument"),
-        # --overwrite has a store_true action
-        pytest.param(["--overwrite", "foo"], id="Bad_use_of_overwrite"),
-        # tests for --log
-        pytest.param(["--log", "foo"], id="Unknown_log_option1"),
-        pytest.param(["--log", "getLogger"], id="Unknown_log_option2"),
-        # tests for the output_options group individually (except --to-file)
-        pytest.param(["--pprint", "foo"], id="Bad_use_of_pprint"),
-        pytest.param(["--to-json", "foo"], id="Bad_use_of_to_json"),
-        pytest.param(["--to-csv", "foo"], id="Bad_use_of_to_csv"),
-        pytest.param(["--to-markdown", "foo"], id="Bad_use_of_to_markdown"),
-        pytest.param(["--to-html", "foo"], id="Bad_use_of_to_html"),
-        # tests for the output_options group in combination
-        pytest.param(["--pprint", "--to-csv"], id="Multiple_output_options1"),
-        pytest.param(["--to-csv", "--to-markdown"], id="Multiple_output_options2"),
-        pytest.param(
-            ["--to-csv", "--to-json", "--to-markdown"], id="Multiple_output_options3"
-        ),
-    ],
-)
-def test_misc_invalid_args(
-    EXAMPLE_PACKAGE_NAME: str, args: list[str], further_args: list[str]
-) -> None:
-    args = [EXAMPLE_PACKAGE_NAME, *args, *further_args]
-    assert_argparsing_fails(args)
+def test_program_fails_with_unknown_argument(args: list[str]) -> None:
+    bad_arg = "--foo"
+    args.append(bad_arg)
+    assert_argparsing_fails(args, failure_message=f"unrecognised arguments: {bad_arg}")
 
 
 # ========================
@@ -337,7 +312,7 @@ class TestToFileOptionFailureCases(ToFileOptionTestsBase):
         [
             pytest.param(
                 ["--to-file", "bar"],
-                "Unrecognised file extension",
+                "has no file extension",
                 id="to_file_with_no_file_extension",
             ),
             pytest.param(
@@ -357,6 +332,16 @@ class TestToFileOptionFailureCases(ToFileOptionTestsBase):
     ) -> None:
         self._args += to_file_args
         self._assert_fails_with_message(failure_message)
+
+    def test_overwrite_store_true(self, EXAMPLE_PACKAGE_NAME: str) -> None:
+        self._args += [
+            EXAMPLE_PACKAGE_NAME,
+            "--to-file",
+            "bar.csv",
+            "--overwrite",
+            "foo",
+        ]
+        self._assert_fails_with_message("unrecognized arguments")
 
     def test_to_file_fails_if_parent_doesnt_exist(self) -> None:
         file_in_fictitious_dir = self._dir / "fiction" / "foo.json"
@@ -454,8 +439,7 @@ def mocked_pprint_dot_pprint(mocker: MockerFixture) -> mock.MagicMock:
     return mocker.patch("pprint.pprint", autospec=True)
 
 
-@pytest.mark.usefixtures("mocked_gather_stats")
-class TestOutputOptionsPrintingToTerminal:
+class OutputOptionsPrintingToTerminalTestsBase:
     _args: list[str]
     _capsys: pytest.CaptureFixture[str]
 
@@ -467,6 +451,44 @@ class TestOutputOptionsPrintingToTerminal:
             vars(self), _args=(args + ["--log", "CRITICAL"]), _capsys=capsys
         )
 
+
+class TestOutputOptionsToTerminalFailureCases(OutputOptionsPrintingToTerminalTestsBase):
+    def _assert_fails_with_message(self, message: str) -> None:
+        assert_argparsing_fails(self._args, failure_message=message)
+
+    @pytest.mark.parametrize(
+        "option",
+        [
+            (
+                "--pprint"
+                if option is OutputOption.PPRINT
+                else _OutputOption_to_argparse(option)
+            )
+            for option in OutputOption
+        ],
+    )
+    def test_bad_use_of_output_option(
+        self, option: str, EXAMPLE_PACKAGE_NAME: str
+    ) -> None:
+        bogus_argument = "foo"
+        self._args += [EXAMPLE_PACKAGE_NAME, option, bogus_argument]
+        self._assert_fails_with_message(f"unrecognized arguments: {bogus_argument}")
+
+    @pytest.mark.parametrize(
+        "options",
+        [
+            ["--pprint", "--to-csv"],
+            ["--to-csv", "--to-markdown"],
+            ["--to-csv", "--to-json", "--to-markdown"],
+        ],
+    )
+    def test_passing_multiple_options_fails(self, options: list[str]) -> None:
+        self._args += options
+        self._assert_fails_with_message("not allowed with argument")
+
+
+@pytest.mark.usefixtures("mocked_gather_stats")
+class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTestsBase):
     def _assert_outputoption_works(self, option: str) -> None:
         args = self._args + [option]
         assert_returncode_0(args)
@@ -534,9 +556,12 @@ class TestOutputOptionsPrintingToTerminal:
 # ========================
 
 
-def test_bad_log_argument(args: list[str]) -> None:
-    args += ["--log", "FOO"]
-    assert_argparsing_fails(args)
+@pytest.mark.parametrize("bad_arg", ["FOO", "getLogger"])
+def test_bad_log_argument(args: list[str], bad_arg: str) -> None:
+    args += ["--log", bad_arg]
+    assert_argparsing_fails(
+        args, failure_message=f"invalid choice: {bad_arg!r} (choose from"
+    )
 
 
 @pytest.mark.usefixtures("mocked_gather_stats")
@@ -563,9 +588,9 @@ def test_logs_to_terminal_with_info_or_lower(
     assert logging_occurred is logging_expected
 
 
-# ============================
-# Tests for exception-handling
-# ============================
+# ====================================
+# Tests for KeyboardInterrupt-handling
+# ====================================
 
 
 def test_KeyboardInterrupt_caught(
@@ -586,3 +611,14 @@ def test_KeyboardInterrupt_caught(
     assert "Interrupted!" in stderr
     return_code = exc_info.value.code
     assert return_code == 2
+
+
+# ========================================
+# Integration test for --download-typeshed
+# ========================================
+
+
+@pytest.mark.requires_network
+def test_integration_with_download_typeshed(caplog: pytest.LogCaptureFixture) -> None:
+    assert_returncode_0(["--download-typeshed"])
+    assert "Cloning typeshed" in caplog.text
