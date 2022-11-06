@@ -3,7 +3,6 @@ from __future__ import annotations
 import json
 import os
 import random
-import textwrap
 from collections.abc import Callable
 from contextlib import AbstractAsyncContextManager, nullcontext
 from pathlib import Path
@@ -35,11 +34,7 @@ from typeshed_stats.gather import (
     tmpdir_typeshed,
 )
 
-
-def write_metadata_text(typeshed: Path, package_name: str, data: str) -> None:
-    metadata = typeshed / "stubs" / package_name / "METADATA.toml"
-    metadata.write_text(data, encoding="utf-8")
-
+from .conftest import write_metadata_text
 
 # ===================
 # _NiceReprEnum tests
@@ -110,70 +105,6 @@ def test__AnnotationStatsCollector___repr__() -> None:
     actual_repr = repr(typeshed_stats.gather._AnnotationStatsCollector())
     expected_repr = f"_AnnotationStatsCollector(stats={AnnotationStats()})"
     assert actual_repr == expected_repr
-
-
-@pytest.fixture(scope="session")
-def example_stub_source() -> str:
-    return textwrap.dedent(
-        """
-        import _typeshed
-        import typing
-        from _typeshed import Incomplete
-        from collections.abc import Iterable
-        from typing import Any
-
-        a: int
-        b: str = ...
-        c: Any | None
-        d: Any
-        d: Incomplete
-        e: Iterable[typing.Any]
-        f: _typeshed.Incomplete
-        g: _typeshed.StrPath
-
-        class Spam:
-            a: tuple[typing.Any, ...] | None
-            b = ...
-            c: int = ...
-            d: typing.Sized
-
-        def func1(arg): ...
-        def func2(arg: int): ...
-        def func3(arg: Incomplete | None = ...): ...
-        def func4(arg: Any) -> Any: ...
-
-        class Eggs:
-            async def func5(self, arg): ...
-            @staticmethod
-            async def func6(arg: str) -> list[bytes]: ...
-            def func7(arg: Any) -> _typeshed.Incomplete: ...
-            @classmethod
-            def class_method(cls, eggs: Incomplete): ...
-
-        class Meta(type):
-            @classmethod
-            def metaclass_classmethod(metacls) -> str: ...
-            @classmethod
-            async def metaclass_classmethod2(mcls) -> typing.Any: ...
-        """
-    )
-
-
-@pytest.fixture(scope="session")
-def expected_stats_on_example_stub_file() -> AnnotationStats:
-    return AnnotationStats(
-        annotated_parameters=6,
-        unannotated_parameters=2,
-        annotated_returns=5,
-        unannotated_returns=5,
-        explicit_Incomplete_parameters=2,
-        explicit_Incomplete_returns=1,
-        explicit_Any_parameters=2,
-        explicit_Any_returns=2,
-        annotated_variables=11,
-        explicit_Any_variables=4,
-        explicit_Incomplete_variables=2,
-    )
 
 
 def test_annotation_stats_on_file(
@@ -541,36 +472,6 @@ def test_tmpdir_typeshed() -> None:
 # ======================
 # Tests for gather_stats
 # ======================
-
-
-@pytest.fixture(scope="session")
-def real_typeshed_package_names() -> frozenset[str]:
-    return frozenset({"emoji", "protobuf", "appdirs"})
-
-
-@pytest.fixture
-def complete_typeshed(
-    tmp_path: Path,
-    example_stub_source: str,
-    pyrightconfig_template: str,
-    real_typeshed_package_names: frozenset[str],
-) -> Path:
-    typeshed = tmp_path
-    for directory in "stdlib", "stubs":
-        (typeshed / directory).mkdir()
-
-    pyrightconfig_path = typeshed / "pyrightconfig.stricter.json"
-    pyrightconfig_path.write_text(pyrightconfig_template.format(""), encoding="utf-8")
-
-    for package_name in real_typeshed_package_names:
-        package_dir = typeshed / "stubs" / package_name
-        package_dir.mkdir()
-        write_metadata_text(typeshed, package_name, "\n")
-        source_dir = package_dir / package_name
-        source_dir.mkdir()
-        (source_dir / "foo.pyi").write_text(example_stub_source, encoding="utf-8")
-
-    return typeshed
 
 
 @pytest.fixture

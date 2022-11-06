@@ -27,6 +27,11 @@ def random_package_name() -> str:
     return result
 
 
+def write_metadata_text(typeshed: Path, package_name: str, data: str) -> None:
+    metadata = typeshed / "stubs" / package_name / "METADATA.toml"
+    metadata.write_text(data, encoding="utf-8")
+
+
 @pytest.fixture(scope="session")
 def EXAMPLE_PACKAGE_NAME() -> str:
     return random_package_name()
@@ -39,6 +44,115 @@ def typeshed(EXAMPLE_PACKAGE_NAME: str, tmp_path: Path) -> Path:
     stubs_dir = typeshed / "stubs"
     stubs_dir.mkdir()
     (stubs_dir / EXAMPLE_PACKAGE_NAME).mkdir()
+    return typeshed
+
+
+@pytest.fixture(scope="session")
+def real_typeshed_package_names() -> frozenset[str]:
+    return frozenset({"emoji", "protobuf", "appdirs"})
+
+
+@pytest.fixture(scope="session")
+def example_stub_source() -> str:
+    return textwrap.dedent(
+        """
+        import _typeshed
+        import typing
+        from _typeshed import Incomplete
+        from collections.abc import Iterable
+        from typing import Any
+
+        a: int
+        b: str = ...
+        c: Any | None
+        d: Any
+        d: Incomplete
+        e: Iterable[typing.Any]
+        f: _typeshed.Incomplete
+        g: _typeshed.StrPath
+
+        class Spam:
+            a: tuple[typing.Any, ...] | None
+            b = ...
+            c: int = ...
+            d: typing.Sized
+
+        def func1(arg): ...
+        def func2(arg: int): ...
+        def func3(arg: Incomplete | None = ...): ...
+        def func4(arg: Any) -> Any: ...
+
+        class Eggs:
+            async def func5(self, arg): ...
+            @staticmethod
+            async def func6(arg: str) -> list[bytes]: ...
+            def func7(arg: Any) -> _typeshed.Incomplete: ...
+            @classmethod
+            def class_method(cls, eggs: Incomplete): ...
+
+        class Meta(type):
+            @classmethod
+            def metaclass_classmethod(metacls) -> str: ...
+            @classmethod
+            async def metaclass_classmethod2(mcls) -> typing.Any: ...
+        """
+    )
+
+
+@pytest.fixture(scope="session")
+def expected_stats_on_example_stub_file() -> AnnotationStats:
+    return AnnotationStats(
+        annotated_parameters=6,
+        unannotated_parameters=2,
+        annotated_returns=5,
+        unannotated_returns=5,
+        explicit_Incomplete_parameters=2,
+        explicit_Incomplete_returns=1,
+        explicit_Any_parameters=2,
+        explicit_Any_returns=2,
+        annotated_variables=11,
+        explicit_Any_variables=4,
+        explicit_Incomplete_variables=2,
+    )
+
+
+@pytest.fixture(scope="session")
+def pyrightconfig_template() -> str:
+    return textwrap.dedent(
+        """
+        {{
+            "typeshedPath": ".",
+            // A comment to make this invalid JSON
+            "exclude": [
+                {}
+            ],
+        }}
+        """
+    )
+
+
+@pytest.fixture
+def complete_typeshed(
+    tmp_path: Path,
+    example_stub_source: str,
+    pyrightconfig_template: str,
+    real_typeshed_package_names: frozenset[str],
+) -> Path:
+    typeshed = tmp_path
+    for directory in "stdlib", "stubs":
+        (typeshed / directory).mkdir()
+
+    pyrightconfig_path = typeshed / "pyrightconfig.stricter.json"
+    pyrightconfig_path.write_text(pyrightconfig_template.format(""), encoding="utf-8")
+
+    for package_name in real_typeshed_package_names:
+        package_dir = typeshed / "stubs" / package_name
+        package_dir.mkdir()
+        write_metadata_text(typeshed, package_name, "version = 0.1")
+        source_dir = package_dir / package_name
+        source_dir.mkdir()
+        (source_dir / "foo.pyi").write_text(example_stub_source, encoding="utf-8")
+
     return typeshed
 
 
@@ -87,18 +201,3 @@ def maybe_stringize_path(
 
     inner.__name__ = "maybe_stringize_path"
     return inner
-
-
-@pytest.fixture
-def pyrightconfig_template() -> str:
-    return textwrap.dedent(
-        """
-        {{
-            "typeshedPath": ".",
-            // A comment to make this invalid JSON
-            "exclude": [
-                {}
-            ],
-        }}
-        """
-    )

@@ -1,10 +1,11 @@
 """Script for regenerating examples in the examples/ directory."""
 import argparse
+from contextlib import ExitStack
 from pathlib import Path
 
 import markdown
 
-from typeshed_stats.gather import gather_stats
+from typeshed_stats.gather import gather_stats, tmpdir_typeshed
 from typeshed_stats.serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
 
@@ -31,9 +32,15 @@ def regenerate_stats(typeshed_dir: Path) -> None:
 def main() -> None:
     """CLI entry point."""
     parser = argparse.ArgumentParser("Script to regenerate examples")
-    parser.add_argument("-t", "--typeshed-dir", type=Path, required=True)
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("-t", "--typeshed-dir", type=Path)
+    group.add_argument("-d", "--download-typeshed", action="store_true")
     args = parser.parse_args()
-    regenerate_stats(args.typeshed_dir)
+    with ExitStack() as stack:
+        if args.download_typeshed:
+            print("Cloning typeshed into a temporary directory...")
+            args.typeshed_dir = stack.enter_context(tmpdir_typeshed())
+        regenerate_stats(args.typeshed_dir)
 
 
 if __name__ == "__main__":
