@@ -1,16 +1,17 @@
 import csv
 import io
 import json
+import os
 import re
 import sys
-from collections.abc import Iterator, Sequence
-from contextlib import ExitStack
+from collections.abc import Sequence
 from pathlib import Path
 from unittest import mock
 
 import markdown
 import pytest
 from bs4 import BeautifulSoup
+from pytest_mock import MockerFixture
 from pytest_subtests import SubTests  # type: ignore[import]
 
 import typeshed_stats._cli
@@ -22,6 +23,8 @@ from typeshed_stats.gather import (
     PyrightSetting,
     StubtestSetting,
 )
+
+from .conftest import random_package_name
 
 # =========
 # Utilities
@@ -35,15 +38,14 @@ def args(typeshed: Path) -> list[str]:
 
 @pytest.fixture
 def mocked_gather_stats(
-    random_PackageStats_sequence: Sequence[PackageStats],
-) -> Iterator[None]:
-    with mock.patch.object(
+    random_PackageStats_sequence: Sequence[PackageStats], mocker: MockerFixture
+) -> None:
+    mocker.patch.object(
         typeshed_stats._cli,
         "gather_stats",
         autospec=True,
         return_value=random_PackageStats_sequence,
-    ):
-        yield
+    )
 
 
 def assert_returncode_0(args: list[str]) -> None:
@@ -212,55 +214,71 @@ def test_invalid_typeshed_dir_arg(
 # ==========================
 
 
-@pytest.mark.fails_inexplicably_in_ci
-def test_passing_packages(
-    tmp_path: Path, capsys: pytest.CaptureFixture[str], subtests: SubTests
-) -> None:
-    typeshed1, typeshed2 = tmp_path / "typeshed1", tmp_path / "typeshed2"
-
-    for typeshed in typeshed1, typeshed2:
-        typeshed.mkdir()
-        (typeshed / "stdlib").mkdir()
-        stubs_dir = typeshed / "stubs"
-        stubs_dir.mkdir()
-        (stubs_dir / "foo").mkdir()
-
-    (typeshed2 / "stubs" / "bar").mkdir()
-
-    args1 = ["foo", "--typeshed-dir", str(typeshed1), "--log", "CRITICAL"]
-    args2 = ["--typeshed-dir", str(typeshed2), "--log", "CRITICAL", "foo", "bar"]
-
-    params = [("one package", 1, args1), ("two packages", 2, args2)]
-
+@pytest.fixture
+def all_lowlevel_apis_mocked(mocker: MockerFixture) -> None:
     patches_to_apply = [
         ("get_package_status", PackageStatus.UP_TO_DATE),
         ("get_stubtest_setting", StubtestSetting.MISSING_STUBS_IGNORED),
         ("get_pyright_strictness", PyrightSetting.STRICT_ON_SOME_FILES),
     ]
 
-    with ExitStack() as stack:
-        for function_name, return_value in patches_to_apply:
-            stack.enter_context(
-                mock.patch.object(
-                    typeshed_stats.gather,
-                    function_name,
-                    autospec=True,
-                    return_value=return_value,
-                )
-            )
+    for function_name, return_value in patches_to_apply:
+        mocker.patch.object(
+            typeshed_stats.gather,
+            function_name,
+            autospec=True,
+            return_value=return_value,
+        )
 
-        for description, expected_len, args in params:
-            with subtests.test(description=description):
-                assert_returncode_0(args)
-                out = capsys.readouterr().out.strip()
-                results = eval(out, vars(typeshed_stats.gather) | globals())
-                assert isinstance(results, dict)
-                assert len(results) == expected_len
-                assert all(isinstance(key, str) for key in results)
-                assert all(
-                    isinstance(value, PackageStats) for value in results.values()
-                )
-                assert results["foo"].package_name == "foo"
+
+@pytest.fixture(params=[1, 2], ids=["one_package", "two_packages"])
+def typeshed_with_packages(
+    tmp_path: Path, EXAMPLE_PACKAGE_NAME: str, request: pytest.FixtureRequest
+) -> Path:
+    typeshed = tmp_path
+    (typeshed / "stdlib").mkdir()
+    stubs_dir = typeshed / "stubs"
+    stubs_dir.mkdir()
+    (stubs_dir / EXAMPLE_PACKAGE_NAME).mkdir()
+    for _ in range(request.param - 1):
+        (stubs_dir / random_package_name()).mkdir()
+    return typeshed
+
+
+@pytest.mark.usefixtures("all_lowlevel_apis_mocked")
+@pytest.mark.fails_inexplicably_in_ci
+def test_passing_packages(
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed_with_packages: Path,
+    capsys: pytest.CaptureFixture[str],
+    subtests: SubTests,
+) -> None:
+    logging_args = ["--log", "CRITICAL"]
+    packages_to_pass = os.listdir(typeshed_with_packages / "stubs")
+    expected_length_of_results = len(packages_to_pass)
+    args1 = [
+        *packages_to_pass,
+        "--typeshed-dir",
+        str(typeshed_with_packages),
+        *logging_args,
+    ]
+    args2 = [
+        "--typeshed-dir",
+        str(typeshed_with_packages),
+        *logging_args,
+        *packages_to_pass,
+    ]
+
+    for args in args1, args2:
+        with subtests.test(args=args):
+            assert_returncode_0(args)
+            out = capsys.readouterr().out.strip()
+            results = eval(out, vars(typeshed_stats.gather) | globals())
+            assert isinstance(results, dict)
+            assert len(results) == expected_length_of_results
+            assert all(isinstance(key, str) for key in results)
+            assert all(isinstance(value, PackageStats) for value in results.values())
+            assert results[EXAMPLE_PACKAGE_NAME].package_name == EXAMPLE_PACKAGE_NAME
 
 
 def test_invalid_packages_given(
@@ -281,15 +299,19 @@ def test_passing_stdlib_as_package(args: list[str]) -> None:
 
 
 class TestToFileOption:
+    _dir: Path
+    _args: list[str]
+    _capsys: pytest.CaptureFixture[str]
+
     @pytest.fixture(autouse=True)
-    def _setup(
-        self, tmp_path: Path, args: list[str], capsys: pytest.CaptureFixture[str]
-    ) -> Iterator[None]:
-        self._dir = tmp_path
-        self._args = args
-        self._capsys = capsys
-        yield
-        del self._dir, self._args, self._capsys
+    def _setup_and_teardown(
+        self,
+        tmp_path: Path,
+        args: list[str],
+        capsys: pytest.CaptureFixture[str],
+        mocker: MockerFixture,
+    ) -> None:
+        mocker.patch.dict(vars(self), _dir=tmp_path, _args=args, _capsys=capsys)
 
     def test_to_file_fails_if_parent_doesnt_exist(self) -> None:
         file_in_fictitious_dir = self._dir / "fiction" / "foo.json"
@@ -331,46 +353,53 @@ class TestToFileOption:
 
 
 @pytest.fixture
-def disabled_rich_and_mocked_pprint() -> Iterator[None]:
-    with mock.patch.dict("sys.modules", rich=None), mock.patch(
-        "pprint.pprint", autospec=True
-    ):
-        yield
+def disabled_rich(mocker: MockerFixture) -> None:
+    mocker.patch.dict("sys.modules", rich=None)
+
+
+@pytest.fixture
+def mocked_pprint_dot_pprint(mocker: MockerFixture) -> mock.MagicMock:
+    return mocker.patch("pprint.pprint", autospec=True)
 
 
 @pytest.mark.usefixtures("mocked_gather_stats")
 class TestOutputOptionsPrintingToTerminal:
+    _args: list[str]
+    _capsys: pytest.CaptureFixture[str]
+
     @pytest.fixture(autouse=True)
-    def _setup(
-        self, args: list[str], capsys: pytest.CaptureFixture[str]
-    ) -> Iterator[None]:
-        self._args = args + ["--log", "CRITICAL"]
-        self._capsys = capsys
-        yield
-        del self._args, self._capsys
+    def _setup_and_teardown(
+        self, args: list[str], capsys: pytest.CaptureFixture[str], mocker: MockerFixture
+    ) -> None:
+        mocker.patch.dict(
+            vars(self), _args=(args + ["--log", "CRITICAL"]), _capsys=capsys
+        )
 
     def _assert_outputoption_works(self, option: str) -> None:
         args = self._args + [option]
         assert_returncode_0(args)
 
+    def _get_stdout(self) -> str:
+        return self._capsys.readouterr().out.strip()
+
     @pytest.mark.fails_inexplicably_in_ci
     def test_to_json(self) -> None:
         self._assert_outputoption_works("--to-json")
-        result = json.loads(self._capsys.readouterr().out.strip())
+        result = json.loads(self._get_stdout())
         assert isinstance(result, list)
         assert all(isinstance(item, dict) for item in result)
         assert all(isinstance(item["package_name"], str) for item in result)
 
     def test_to_csv(self) -> None:
         self._assert_outputoption_works("--to-csv")
-        csvfile = io.StringIO(self._capsys.readouterr().out.strip(), newline="")
+        csvfile = io.StringIO(self._get_stdout(), newline="")
         stats = list(csv.DictReader(csvfile))
         assert all(isinstance(item, dict) for item in stats)
         assert all(isinstance(item["package_name"], str) for item in stats)
 
     def test_to_markdown(self) -> None:
         self._assert_outputoption_works("--to-markdown")
-        result = self._capsys.readouterr().out.strip()
+        result = self._get_stdout()
         markdown.markdown(result)
 
     def test_to_html(self) -> None:
@@ -379,19 +408,20 @@ class TestOutputOptionsPrintingToTerminal:
         soup = BeautifulSoup(result, "html.parser")
         assert bool(soup.find()), "Invalid HTML produced!"
 
-    def test_pprint_rich_available(self) -> None:
+    def test_pprint_option_with_rich_available(self) -> None:
         rich_mock = mock.MagicMock()
         with mock.patch.dict(sys.modules, rich=rich_mock):
             self._assert_outputoption_works("--pprint")
         rich_mock.print.assert_called_once()
 
-    @pytest.mark.usefixtures("disabled_rich_and_mocked_pprint")
-    def test_pprint_no_rich_available(self) -> None:
+    @pytest.mark.usefixtures("disabled_rich")
+    def test_pprint_option_with_rich_unavailable(
+        self, mocked_pprint_dot_pprint: mock.MagicMock
+    ) -> None:
         self._assert_outputoption_works("--pprint")
-        mocked_pprint = sys.modules["pprint"]
-        mocked_pprint.pprint.assert_called_once()
+        mocked_pprint_dot_pprint.assert_called_once()
 
-    @pytest.mark.usefixtures("disabled_rich_and_mocked_pprint")
+    @pytest.mark.usefixtures("disabled_rich")
     @pytest.mark.parametrize(
         "option",
         [
@@ -400,10 +430,11 @@ class TestOutputOptionsPrintingToTerminal:
             if option is not OutputOption.PPRINT
         ],
     )
-    def test_other_options_no_rich_available(self, option: str) -> None:
+    def test_other_options_with_rich_unavailable(
+        self, option: str, mocked_pprint_dot_pprint: mock.MagicMock
+    ) -> None:
         self._assert_outputoption_works(option)
-        mocked_pprint = sys.modules["pprint"]
-        mocked_pprint.pprint.assert_not_called()
+        mocked_pprint_dot_pprint.assert_not_called()
 
 
 # ========================
@@ -449,14 +480,11 @@ def test_KeyboardInterrupt_caught(
     args: list[str], typeshed: Path, capsys: pytest.CaptureFixture[str]
 ) -> None:
     args += ["--log", "CRITICAL"]
-    with (
-        mock.patch.object(
-            typeshed_stats.gather,
-            "gather_stats_on_package",
-            autospec=True,
-            side_effect=KeyboardInterrupt(),
-        ),
-        pytest.raises(SystemExit) as exc_info,
+    with pytest.raises(SystemExit) as exc_info, mock.patch.object(
+        typeshed_stats.gather,
+        "gather_stats_on_package",
+        autospec=True,
+        side_effect=KeyboardInterrupt(),
     ):
         main(args)
 
