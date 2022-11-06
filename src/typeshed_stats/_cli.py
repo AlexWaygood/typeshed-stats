@@ -163,7 +163,9 @@ def _get_argument_parser() -> argparse.ArgumentParser:
         "--to-file",
         type=Path,
         help=(
-            f"File to write output to. Extension must be one of {SUPPORTED_EXTENSIONS}"
+            f"Write output to WRITEFILE instead of printing to the terminal."
+            f" The file format will be inferred by the file extension."
+            f" The file extension must be one of {SUPPORTED_EXTENSIONS}."
         ),
         dest="writefile",
     )
