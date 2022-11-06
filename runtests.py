@@ -81,7 +81,17 @@ def run_checks(
     subprocess.run(["mypy"])
 
     print("\nRunning pytest...")
-    subprocess.run(["pytest", "--cov", "tests"], check=True)
+    pytest_command = [
+        "pytest",
+        "--cov",
+        "tests",
+        "--cov",
+        "src",
+        "--cov-branch",
+        "--cov-report",
+        "term-missing",
+    ]
+    subprocess.run(pytest_command, check=True)
 
     if regenerate_examples:
         args = [sys.executable, "regenerate_examples.py"]
