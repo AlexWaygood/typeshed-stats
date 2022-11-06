@@ -214,23 +214,6 @@ def test_invalid_typeshed_dir_arg(
 # ==========================
 
 
-@pytest.fixture
-def all_lowlevel_apis_mocked(mocker: MockerFixture) -> None:
-    patches_to_apply = [
-        ("get_package_status", PackageStatus.UP_TO_DATE),
-        ("get_stubtest_setting", StubtestSetting.MISSING_STUBS_IGNORED),
-        ("get_pyright_strictness", PyrightSetting.STRICT_ON_SOME_FILES),
-    ]
-
-    for function_name, return_value in patches_to_apply:
-        mocker.patch.object(
-            typeshed_stats.gather,
-            function_name,
-            autospec=True,
-            return_value=return_value,
-        )
-
-
 @pytest.fixture(params=[1, 2], ids=["one_package", "two_packages"])
 def typeshed_with_packages(
     tmp_path: Path, EXAMPLE_PACKAGE_NAME: str, request: pytest.FixtureRequest
@@ -245,40 +228,77 @@ def typeshed_with_packages(
     return typeshed
 
 
-@pytest.mark.usefixtures("all_lowlevel_apis_mocked")
 @pytest.mark.fails_inexplicably_in_ci
-def test_passing_packages(
-    EXAMPLE_PACKAGE_NAME: str,
-    typeshed_with_packages: Path,
-    capsys: pytest.CaptureFixture[str],
-    subtests: SubTests,
-) -> None:
-    logging_args = ["--log", "CRITICAL"]
-    packages_to_pass = os.listdir(typeshed_with_packages / "stubs")
-    expected_length_of_results = len(packages_to_pass)
-    args1 = [
-        *packages_to_pass,
-        "--typeshed-dir",
-        str(typeshed_with_packages),
-        *logging_args,
-    ]
-    args2 = [
-        "--typeshed-dir",
-        str(typeshed_with_packages),
-        *logging_args,
-        *packages_to_pass,
-    ]
+class TestPassingPackages:
+    _capsys: pytest.CaptureFixture[str]
+    _guaranteed_package_name: str
 
-    for args in args1, args2:
-        with subtests.test(args=args):
-            assert_returncode_0(args)
-            out = capsys.readouterr().out.strip()
-            results = eval(out, vars(typeshed_stats.gather) | globals())
-            assert isinstance(results, dict)
-            assert len(results) == expected_length_of_results
-            assert all(isinstance(key, str) for key in results)
-            assert all(isinstance(value, PackageStats) for value in results.values())
-            assert results[EXAMPLE_PACKAGE_NAME].package_name == EXAMPLE_PACKAGE_NAME
+    LOGGING_ARGS = ("--log", "CRITICAL")
+
+    @pytest.fixture(autouse=True)
+    def _setup_and_teardown(
+        self,
+        mocker: MockerFixture,
+        EXAMPLE_PACKAGE_NAME: str,
+        capsys: pytest.CaptureFixture[str],
+    ) -> None:
+        patches_to_apply = [
+            ("get_package_status", PackageStatus.UP_TO_DATE),
+            ("get_stubtest_setting", StubtestSetting.MISSING_STUBS_IGNORED),
+            ("get_pyright_strictness", PyrightSetting.STRICT_ON_SOME_FILES),
+        ]
+
+        for function_name, return_value in patches_to_apply:
+            mocker.patch.object(
+                typeshed_stats.gather,
+                function_name,
+                autospec=True,
+                return_value=return_value,
+            )
+
+        mocker.patch.dict(
+            vars(self), _guaranteed_package_name=EXAMPLE_PACKAGE_NAME, _capsys=capsys
+        )
+
+    def _assert_correct_results_printed_to_stdout(
+        self, expected_length_of_results: int
+    ) -> None:
+        stdout = self._capsys.readouterr().out.strip()
+        results = eval(stdout, vars(typeshed_stats.gather) | globals())
+        assert isinstance(results, dict)
+        assert len(results) == expected_length_of_results
+        assert all(isinstance(key, str) for key in results)
+        assert all(isinstance(value, PackageStats) for value in results.values())
+        guaranteed_package_name = self._guaranteed_package_name
+        assert results[guaranteed_package_name].package_name == guaranteed_package_name
+
+    def test_passing_packages_before_typeshed_dir(
+        self, typeshed_with_packages: Path
+    ) -> None:
+        packages_to_pass = os.listdir(typeshed_with_packages / "stubs")
+        expected_length_of_results = len(packages_to_pass)
+        args = [
+            *packages_to_pass,
+            "--typeshed-dir",
+            str(typeshed_with_packages),
+            *self.LOGGING_ARGS,
+        ]
+        assert_returncode_0(args)
+        self._assert_correct_results_printed_to_stdout(expected_length_of_results)
+
+    def test_passing_packages_after_typeshed_dir(
+        self, typeshed_with_packages: Path
+    ) -> None:
+        packages_to_pass = os.listdir(typeshed_with_packages / "stubs")
+        expected_length_of_results = len(packages_to_pass)
+        args = [
+            "--typeshed-dir",
+            str(typeshed_with_packages),
+            *self.LOGGING_ARGS,
+            *packages_to_pass,
+        ]
+        assert_returncode_0(args)
+        self._assert_correct_results_printed_to_stdout(expected_length_of_results)
 
 
 def test_invalid_packages_given(
