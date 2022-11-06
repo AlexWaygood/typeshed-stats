@@ -18,3 +18,4 @@ pytest-cov
 pytest-mock==3.10.0
 pytest-subtests
 types-beautifulsoup4        # we need this for type-checking a test that uses beautifulsoup4
+types-Markdown

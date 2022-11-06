@@ -38,8 +38,8 @@ dependencies = [
 
 [project.optional-dependencies]
 rich = ["rich"]
-html = ["Markdown", "types-Markdown"]
-everything = ["rich", "Markdown", "types-Markdown"]
+html = ["Markdown"]
+everything = ["rich", "Markdown"]
 
 [project.urls]
 "Homepage" = "https://github.com/AlexWaygood/typeshed-stats"
@@ -73,7 +73,7 @@ enable_error_code = 'ignore-without-code,redundant-expr'
 warn_unreachable = true
 
 [tool.pytest.ini_options]
-addopts = "--doctest-modules --strict-config --strict-markers -vv --cov=src --cov-branch --cov-report term-missing"
+addopts = "--doctest-modules --strict-config --strict-markers"
 xfail_strict = true
 asyncio_mode = "auto"
 markers = ["fails_inexplicably_in_ci", "requires_network"]

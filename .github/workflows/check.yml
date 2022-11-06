@@ -67,4 +67,4 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: pip install -r requirements-dev.txt
       - run: pip install -e .[everything]
-      - run: pytest -m "not fails_inexplicably_in_ci"
+      - run: pytest -m "not fails_inexplicably_in_ci" --cov=src --cov-branch --cov-report term-missing
