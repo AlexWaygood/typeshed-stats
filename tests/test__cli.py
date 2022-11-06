@@ -171,14 +171,6 @@ def test_each_output_option_has_code_written_for_it(
         pytest.param(
             ["--to-csv", "--to-json", "--to-markdown"], id="Multiple_output_options3"
         ),
-        # tests for the --to-file option
-        pytest.param(["--to-file", "bar"], id="to_file_with_no_file_extension"),
-        pytest.param(
-            ["--to-file", "bar.xml"], id="to_file_with_unknown_file_extension"
-        ),
-        pytest.param(
-            ["--to-csv", "--to-file", "bar.csv"], id="to_file_with_other_output_option"
-        ),
     ],
 )
 def test_misc_invalid_args(
@@ -318,7 +310,7 @@ def test_passing_stdlib_as_package(args: list[str]) -> None:
 # ===================================
 
 
-class TestToFileOption:
+class ToFileOptionTestsBase:
     _dir: Path
     _args: list[str]
     _capsys: pytest.CaptureFixture[str]
@@ -333,19 +325,50 @@ class TestToFileOption:
     ) -> None:
         mocker.patch.dict(vars(self), _dir=tmp_path, _args=args, _capsys=capsys)
 
+
+class TestToFileOptionFailureCases(ToFileOptionTestsBase):
+    def _assert_fails_with_message(self, message: str) -> None:
+        assert_argparsing_fails(
+            self._args, capsys=self._capsys, failure_message=message
+        )
+
+    @pytest.mark.parametrize(
+        ("to_file_args", "failure_message"),
+        [
+            pytest.param(
+                ["--to-file", "bar"],
+                "Unrecognised file extension",
+                id="to_file_with_no_file_extension",
+            ),
+            pytest.param(
+                ["--to-file", "bar.xml"],
+                "Unrecognised file extension",
+                id="to_file_with_unknown_file_extension",
+            ),
+            pytest.param(
+                ["--to-csv", "--to-file", "bar.csv"],
+                "not allowed with argument",
+                id="to_file_with_other_output_option",
+            ),
+        ],
+    )
+    def test_basic_failure_cases(
+        self, to_file_args: list[str], failure_message: str
+    ) -> None:
+        self._args += to_file_args
+        self._assert_fails_with_message(failure_message)
+
     def test_to_file_fails_if_parent_doesnt_exist(self) -> None:
         file_in_fictitious_dir = self._dir / "fiction" / "foo.json"
-        args = self._args + ["--to-file", str(file_in_fictitious_dir)]
-        message = "does not exist as a directory!"
-        assert_argparsing_fails(args, capsys=self._capsys, failure_message=message)
+        self._args += ["--to-file", str(file_in_fictitious_dir)]
+        self._assert_fails_with_message("does not exist as a directory!")
 
     def test_to_file_fails_if_parent_is_not_directory(self) -> None:
         file = self._dir / "file"
         file.write_text("", encoding="utf-8")
         writefile = file / "file2.json"
-        args = self._args + ["--to-file", str(writefile)]
-        message = "does not exist as a directory!"
-        assert_argparsing_fails(args, capsys=self._capsys, failure_message=message)
+        self._args += ["--to-file", str(writefile)]
+        self._assert_fails_with_message("does not exist as a directory!")
 
     def test_to_file_fails_if_file_exists(self) -> None:
         # Setup the case where --overwrite=False,
@@ -353,18 +376,67 @@ class TestToFileOption:
         file_name = "foo.json"
         already_existing_file = self._dir / file_name
         already_existing_file.write_text("", encoding="utf-8")
-        args = self._args + ["--to-file", str(already_existing_file)]
-        message = f'{file_name}" already exists!'
-        assert_argparsing_fails(args, capsys=self._capsys, failure_message=message)
+        self._args += ["--to-file", str(already_existing_file)]
+        self._assert_fails_with_message(f'{file_name}" already exists!')
 
-    @pytest.mark.usefixtures("mocked_gather_stats")
+
+@pytest.mark.usefixtures("mocked_gather_stats")
+class TestToFileSuccessCases(ToFileOptionTestsBase):
+    def _assert_args_succeed(self) -> None:
+        assert_returncode_0(self._args)
+
+    def test_to_file_csv(self) -> None:
+        dest = self._dir / "foo.csv"
+        self._args += ["--to-file", str(dest)]
+        self._assert_args_succeed()
+        with dest.open(encoding="utf-8", newline="") as csvfile:
+            stats = list(csv.DictReader(csvfile))
+        assert all(isinstance(item, dict) for item in stats)
+        assert all(isinstance(item["package_name"], str) for item in stats)
+
+    def test_to_file_json(self) -> None:
+        dest = self._dir / "foo.json"
+        self._args += ["--to-file", str(dest)]
+        self._assert_args_succeed()
+        with dest.open(encoding="utf-8") as jsonfile:
+            result = json.load(jsonfile)
+        assert isinstance(result, list)
+        assert all(isinstance(item, dict) for item in result)
+        assert all(isinstance(item["package_name"], str) for item in result)
+
+    def test_to_file_markdown(self) -> None:
+        dest = self._dir / "foo.md"
+        self._args += ["--to-file", str(dest)]
+        self._assert_args_succeed()
+        with dest.open(encoding="utf-8") as markdown_file:
+            markdown.markdown(markdown_file.read())
+
+    def test_to_file_html(self) -> None:
+        dest = self._dir / "foo.html"
+        self._args += ["--to-file", str(dest)]
+        self._assert_args_succeed()
+        with dest.open(encoding="utf-8") as htmlfile:
+            soup = BeautifulSoup(htmlfile.read(), "html.parser")
+        assert bool(soup.find()), "Invalid HTML produced!"
+
+    def test_to_file_txt(self) -> None:
+        dest = self._dir / "foo.txt"
+        self._args += ["--to-file", str(dest)]
+        self._assert_args_succeed()
+        with dest.open(encoding="utf-8") as txtfile:
+            source = txtfile.read()
+        results = eval(source, vars(typeshed_stats.gather) | globals())
+        assert isinstance(results, dict)
+        assert all(isinstance(key, str) for key in results)
+        assert all(isinstance(value, PackageStats) for value in results.values())
+
     def test_overwrite_argument(self) -> None:
         # Setup the case where --overwrite=True,
         # and --to-file points to an already existing file
         already_existing_file = self._dir / "foo.json"
         already_existing_file.write_text("", encoding="utf-8")
-        args = self._args + ["--to-file", str(already_existing_file), "--overwrite"]
-        assert_returncode_0(args)
+        self._args += ["--to-file", str(already_existing_file), "--overwrite"]
+        self._assert_args_succeed()
 
 
 # ================================
