@@ -146,8 +146,8 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
             self.stats.explicit_Incomplete_variables += 1
         self.generic_visit(node)
 
-        
-  
+
+
     def visit_arg(self, node: ast.arg) -> None:
         self.generic_visit(node)
 
