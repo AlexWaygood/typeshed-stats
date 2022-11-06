@@ -1,10 +1,10 @@
 """Tools for gathering stats about typeshed packages."""
 
 import ast
-import re
 import asyncio
 import json
 import os
+import re
 import sys
 import urllib.parse
 from collections import Counter
