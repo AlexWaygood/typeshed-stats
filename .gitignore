@@ -70,3 +70,6 @@ env/
 
 # Mypy cache
 .mypy_cache/
+
+# mkdocs documentation
+site/

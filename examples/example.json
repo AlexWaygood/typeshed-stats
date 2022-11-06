@@ -4,7 +4,7 @@
     "number_of_lines": 625,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "pyright_setting": "STRICT_ON_SOME_FILES",
+    "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 333,
       "unannotated_parameters": 0,

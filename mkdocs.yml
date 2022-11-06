@@ -1,0 +1,6 @@
+site_name: typeshed-stats
+
+docs_dir: 'stats_website'
+
+theme:
+  name: material

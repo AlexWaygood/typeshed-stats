@@ -1,5 +1,6 @@
 """Script for regenerating examples in the examples/ directory."""
 import argparse
+import shutil
 from contextlib import ExitStack
 from pathlib import Path
 
@@ -26,6 +27,7 @@ def regenerate_stats(typeshed_dir: Path) -> None:
         newline = "" if Path(path).suffix == ".csv" else None
         with open(path, "w", encoding="utf-8", newline=newline) as f:
             f.write(formatted_stats)
+    shutil.copyfile("examples/example.md", "docs/stats.md")
     print("Examples successfully regenerated!")
 
 
