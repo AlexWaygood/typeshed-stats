@@ -620,7 +620,6 @@ def test_KeyboardInterrupt_caught(
 
 
 @pytest.mark.requires_network
-@pytest.mark.xfail
 def test_integration_with_download_typeshed(caplog: pytest.LogCaptureFixture) -> None:
     assert_returncode_0(["--download-typeshed"])
     assert "Cloning typeshed" in caplog.text
