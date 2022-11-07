@@ -1,9 +1,12 @@
 import random
 import string
+import sys
 import textwrap
-from collections.abc import Callable, Sequence
+from collections.abc import Callable, Iterator, Sequence
 from pathlib import Path
 
+# Make sure not to import rich or markdown here, since they're optional dependencies
+# Some tests assert behaviour that's predicated on these modules not yet being imported
 import attrs
 import pytest
 
@@ -14,6 +17,22 @@ from typeshed_stats.gather import (
     PyrightSetting,
     StubtestSetting,
 )
+
+
+@pytest.fixture(autouse=True)
+def ensure_optional_dependencies_not_imported() -> Iterator[None]:
+    previously_imported_modules = set(sys.modules)
+    yield
+    newly_imported_thirdparty_modules = {
+        module_name
+        for module_name in sys.modules
+        if (
+            module_name not in previously_imported_modules
+            and module_name not in sys.stdlib_module_names
+        )
+    }
+    for module_name in newly_imported_thirdparty_modules:
+        del sys.modules[module_name]
 
 
 def random_package_name() -> str:

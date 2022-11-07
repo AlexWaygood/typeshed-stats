@@ -2,6 +2,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Make sure not to import rich or markdown here, since they're optional dependencies
+# Some tests assert behaviour that's predicated on these modules not yet being imported
 import pytest
 
 

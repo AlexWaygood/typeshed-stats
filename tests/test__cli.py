@@ -8,7 +8,8 @@ from collections.abc import Sequence
 from pathlib import Path
 from unittest import mock
 
-import markdown
+# Make sure not to import rich or markdown here, since they're optional dependencies
+# Some tests assert behaviour that's predicated on these modules not yet being imported
 import pytest
 from bs4 import BeautifulSoup
 from pytest_mock import MockerFixture
@@ -393,6 +394,8 @@ class TestToFileSuccessCases(ToFileOptionTestsBase):
         dest = self._dir / "foo.md"
         self._args += ["--to-file", str(dest)]
         self._assert_args_succeed()
+        import markdown
+
         with dest.open(encoding="utf-8") as markdown_file:
             markdown.markdown(markdown_file.read())
 
@@ -514,6 +517,8 @@ class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTes
     def test_to_markdown(self) -> None:
         self._assert_outputoption_works("--to-markdown")
         result = self._get_stdout()
+        import markdown
+
         markdown.markdown(result)
 
     @pytest.mark.fails_inexplicably_in_ci
