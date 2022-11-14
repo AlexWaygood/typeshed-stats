@@ -29,8 +29,8 @@ jobs:
         with:
           cache: "pip"
           cache-dependency-path: |
-            "requirements-dev.txt"
-            "pyproject.toml"
+            requirements-dev.txt
+            pyproject.toml
           python-version: "3.10"
       - run: pip install "wheel<1"
       - run: pip install -r requirements-dev.txt
@@ -67,8 +67,8 @@ jobs:
         with:
           cache: "pip"
           cache-dependency-path: |
-            "requirements-dev.txt"
-            "pyproject.toml"
+            requirements-dev.txt
+            pyproject.toml
           python-version: ${{ matrix.python-version }}
       - run: pip install "wheel<1"
       - run: pip install -r requirements-dev.txt
