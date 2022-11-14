@@ -13,7 +13,7 @@ repos:
     rev: v3.2.2
     hooks:
       - id: pyupgrade
-        args: [--py30-plus]
+        args: [--py310-plus]
   - repo: https://github.com/psf/black
     rev: 22.10.0 # must match requirements-dev.txt
     hooks:
