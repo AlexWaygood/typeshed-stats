@@ -1,7 +1,5 @@
 # CLI tool and library to gather stats on typeshed
 
-## 
-
 ## What's this project for?
 
 This project is for easy gathering of statistics relating to typeshed's stubs.
