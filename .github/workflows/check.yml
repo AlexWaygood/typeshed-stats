@@ -11,10 +11,9 @@ permissions:
 
 env:
   FORCE_COLOR: 1  # Request colored output from CLI tools supporting it
-  MYPY_FORCE_COLOR: 1
   PIP_DISABLE_PIP_VERSION_CHECK: 1
   PY_COLORS: 1  # Recognized by the `py` package, dependency of `pytest`
-  TERM: xterm-256color  # needed for MYPY_FORCE_COLOR to work on Ubuntu, see https://github.com/python/mypy/issues/13817
+  TERM: xterm-256color  # needed for FORCE_COLOR to work on mypy on Ubuntu, see https://github.com/python/mypy/issues/13817
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
@@ -29,8 +28,11 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           cache: "pip"
-          cache-dependency-path: "requirements-dev.txt"
+          cache-dependency-path: |
+            requirements-dev.txt
+            pyproject.toml
           python-version: "3.10"
+      - run: pip install "wheel<1"
       - run: pip install -r requirements-dev.txt
       - run: pip install -e .[everything]
       - run: mypy
@@ -45,6 +47,7 @@ jobs:
           cache: "pip"
           cache-dependency-path: "requirements-dev.txt"
           python-version: "3.10"
+      - run: pip install "wheel<1"
       - run: pip install -r requirements-dev.txt
       - run: flake8
 
@@ -63,8 +66,11 @@ jobs:
         uses: actions/setup-python@v4
         with:
           cache: "pip"
-          cache-dependency-path: "requirements-dev.txt"
+          cache-dependency-path: |
+            requirements-dev.txt
+            pyproject.toml
           python-version: ${{ matrix.python-version }}
+      - run: pip install "wheel<1"
       - run: pip install -r requirements-dev.txt
       - run: pip install -e .[everything]
       - run: pytest -m "not fails_inexplicably_in_ci" --cov=src --cov-branch --cov-report term-missing
