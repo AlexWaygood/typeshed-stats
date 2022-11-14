@@ -152,7 +152,7 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
         # We don't want self/cls/metacls/mcls arguments to count towards the statistics
         if self.in_class and "staticmethod" not in self._function_decorators:
             if "classmethod" in self._function_decorators:
-                if node.arg in {"cls", "metacls", "mcls"}:
+                if node.arg in set(["cls", "metacls", "mcls"]):
                     return
             elif node.arg == "self":
                 return
