@@ -50,6 +50,7 @@ typeshed-stats = "typeshed_stats._cli:main"
 
 [tool.pycln]
 all = true
+disable_all_dunder_policy = true
 
 [tool.black]
 line_length = 88
@@ -82,7 +83,3 @@ filterwarnings = [
     # Ignore ResourceWarnings about unclosed sockets
     'ignore:Exception ignored in:pytest.PytestUnraisableExceptionWarning',
 ]
-
-[tool.pycln]
-all = true
-disable_all_dunder_policy = true
