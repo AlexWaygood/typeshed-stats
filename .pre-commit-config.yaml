@@ -2,12 +2,18 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.3.0 # must match requirements-dev.txt
     hooks:
+      - id: trailing-whitespace
       - id: requirements-txt-fixer
   - repo: https://github.com/hadialqattan/pycln
     rev: v2.1.1 # must match requirements-dev.txt
     hooks:
       - id: pycln
         args: [--all, .]
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.2.2
+    hooks:
+      - id: pyupgrade
+        args: [--py30-plus]
   - repo: https://github.com/psf/black
     rev: 22.10.0 # must match requirements-dev.txt
     hooks:
