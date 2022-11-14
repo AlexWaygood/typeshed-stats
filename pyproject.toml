@@ -82,3 +82,7 @@ filterwarnings = [
     # Ignore ResourceWarnings about unclosed sockets
     'ignore:Exception ignored in:pytest.PytestUnraisableExceptionWarning',
 ]
+
+[tool.pycln]
+all = true
+disable_all_dunder_policy = true

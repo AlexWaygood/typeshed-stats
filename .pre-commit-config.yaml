@@ -5,10 +5,10 @@ repos:
       - id: trailing-whitespace
       - id: requirements-txt-fixer
   - repo: https://github.com/hadialqattan/pycln
-    rev: v2.1.1 # must match requirements-dev.txt
+    rev: v2.1.2 # must match requirements-dev.txt
     hooks:
       - id: pycln
-        args: [--all, .]
+        args: [--config=pyproject.toml, .]
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.2.2
     hooks:
