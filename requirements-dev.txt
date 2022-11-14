@@ -1,23 +1,23 @@
-beautifulsoup4              # we use this in tests for validating HTML strings
-black==22.10.0              # must match .pre-commit-config.yaml
+beautifulsoup4>=4,<5            # we use this in tests for validating HTML strings
+black==22.10.0                  # must match .pre-commit-config.yaml
 flake8==5.0.4
-flake8-bugbear==22.7.1
+flake8-bugbear==22.10.27
 flake8-docstrings==1.6.0
 flake8-eradicate==1.4.0
 flake8-noqa==1.2.9
 flake8-pytest-style==1.6.0
 flake8-simplify==0.19.3
-isort==5.10.1               # must match .pre-commit-config.yaml
-mkdocs
-mkdocs-material
-mypy==0.982
-pre-commit-hooks==4.3.0     # must match .pre-commit-config.yaml
-pycln==2.1.1                # must match .pre-commit-config.yaml
+isort==5.10.1                   # must match .pre-commit-config.yaml
+mkdocs>=1.4,<2
+mkdocs-material>=8.5,<9
+mypy==0.991
+pre-commit-hooks==4.3.0         # must match .pre-commit-config.yaml
+pycln==2.1.2                    # must match .pre-commit-config.yaml
 pytest>=7,<8
-pytest-antilru
-pytest-asyncio
-pytest-cov
+pytest-antilru==1.1.1
+pytest-asyncio==0.20.2
+pytest-cov==4.0.0
 pytest-mock==3.10.0
-pytest-subtests
-types-beautifulsoup4        # we need this for type-checking a test that uses beautifulsoup4
-types-Markdown
+pytest-subtests==0.9.0
+types-beautifulsoup4==4.11.6.1  # we need this for type-checking a test that uses beautifulsoup4
+types-Markdown==3.4.2.1
