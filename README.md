@@ -1,6 +1,6 @@
 # CLI tool and library to gather stats on typeshed
 
-## 
+##
 
 ## What's this project for?
 
