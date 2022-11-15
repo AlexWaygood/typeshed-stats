@@ -13,7 +13,7 @@ from contextlib import AsyncExitStack, contextmanager
 from enum import Enum
 from functools import cache
 from pathlib import Path
-from typing import Any, TypeAlias, TypeVar, final
+from typing import Any, Protocol, TypeAlias, TypeVar, final
 
 import aiohttp
 import attrs
@@ -92,7 +92,12 @@ class _SingleAnnotationAnalyzer(ast.NodeVisitor):
         self.generic_visit(node)
 
 
-def _analyse_annotation(annotation: ast.AST) -> _SingleAnnotationAnalyzer:
+class _SingleAnnotationAnalysis(Protocol):
+    Any_in_annotation: bool
+    Incomplete_in_annotation: bool
+
+
+def _analyse_annotation(annotation: ast.AST) -> _SingleAnnotationAnalysis:
     analyser = _SingleAnnotationAnalyzer()
     analyser.visit(annotation)
     return analyser
