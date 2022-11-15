@@ -60,8 +60,13 @@ def run_checks(
     subprocess.run(["requirements-txt-fixer", "requirements-dev.txt"])
 
     print("\nRunning pycln...")
-    # pycln doesn't seem to pick up the --all argument from pyproject.toml, not sure why
-    subprocess.run(["pycln", ".", "--all"])
+    subprocess.run(["pycln", ".", "--config=pyproject.toml"])
+
+    print("\nRunning pyupgrade...")
+    pyupgrade_files = [
+        path for path in Path(".").rglob("*.py") if Path("env") not in path.parents
+    ]
+    subprocess.run(["pyupgrade", *pyupgrade_files])
 
     print("\nRunning isort...")
     subprocess.run(["isort", *FILES_TO_CHECK])
