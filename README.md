@@ -4,10 +4,7 @@
 
 A CLI tool and library to gather stats on typeshed
 
-[![build status](https://github.com/AlexWaygood/typeshed-stats/actions/workflows/check.yml/badge.svg)](https://github.com/AlexWaygood/typeshed-stats/actions/workflows/check.yml)
-[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+[![build status](https://img.shields.io/github/workflow/status/AlexWaygood/typeshed-stats/tests/main?label=Tests&style=for-the-badge)](https://github.com/AlexWaygood/typeshed-stats/actions/workflows/check.yml)[![Checked with mypy](https://img.shields.io/badge/mypy-checked-blue?style=for-the-badge)](http://mypy-lang.org/)[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge)](https://github.com/psf/black)[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=for-the-badge)](https://pycqa.github.io/isort/)[![license](https://img.shields.io/github/license/AlexWaygood/typeshed-stats?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <hr>
 <br>
