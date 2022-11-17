@@ -83,3 +83,6 @@ filterwarnings = [
     # Ignore ResourceWarnings about unclosed sockets
     'ignore:Exception ignored in:pytest.PytestUnraisableExceptionWarning',
 ]
+
+[tool.coverage.run]
+relative_files = true

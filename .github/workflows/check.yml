@@ -32,10 +32,14 @@ jobs:
             requirements-dev.txt
             pyproject.toml
           python-version: "3.10"
-      - run: pip install "wheel<1"
-      - run: pip install -r requirements-dev.txt
-      - run: pip install -e .[everything]
-      - run: mypy
+      - name: Install wheel
+        run: pip install "wheel<1"
+      - name: Install requirements
+        run: |
+          pip install -r requirements-dev.txt
+          pip install -e .[everything]
+      - name: Run mypy on the project
+        run: mypy
 
   flake8:
     name: Lint code with flake8
@@ -47,11 +51,14 @@ jobs:
           cache: "pip"
           cache-dependency-path: "requirements-dev.txt"
           python-version: "3.10"
-      - run: pip install "wheel<1"
-      - run: pip install -r requirements-dev.txt
-      - run: flake8
+      - name: Install wheel
+        run: pip install "wheel<1"
+      - name: Install requirements
+        run: pip install -r requirements-dev.txt
+      - name: lint the project
+        run: flake8
 
-  pytest:
+  pytest-tests:
     name: Run tests with pytest
     runs-on: ${{ matrix.os }}
     strategy:
@@ -70,7 +77,33 @@ jobs:
             requirements-dev.txt
             pyproject.toml
           python-version: ${{ matrix.python-version }}
-      - run: pip install "wheel<1"
-      - run: pip install -r requirements-dev.txt
-      - run: pip install -e .[everything]
-      - run: pytest -m "not fails_inexplicably_in_ci" --cov=src --cov-branch --cov-report term-missing
+      - name: Install wheel
+        run: pip install "wheel<1"
+      - name: Install requirements
+        run: |
+          pip install -r requirements-dev.txt
+          pip install -e .[everything]
+      - name: Run tests under coverage
+        run: pytest -m "not fails_inexplicably_in_ci" --cov=src --cov-branch --cov-report term-missing
+      - name: Upload coverage to coveralls
+        # Upload coverage if we are on the main repository and
+        # we're running on Linux (this action only supports Linux)
+        if: github.repository == 'AlexWaygood/typeshed-stats' && matrix.os == 'ubuntu-latest'
+        uses: AndreMiras/coveralls-python-action@develop
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel: true
+          flag-name: py${{ matrix.python-version }}-${{ matrix.os }}
+          debug: true
+
+  coveralls-finish:
+    needs: pytest-tests
+    if: github.repository == 'AlexWaygood/typeshed-stats'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Send finished signal to Coveralls
+        uses: AndreMiras/coveralls-python-action@develop
+        with:
+          parallel-finished: true
+          debug: true
