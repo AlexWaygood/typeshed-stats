@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 from typing import Literal, overload
 
-FILES_TO_CHECK = ("src", "tests", "runtests.py", "regenerate_examples.py")
+FILES_TO_CHECK = ("src", "tests", "scripts")
 
 
 @overload
