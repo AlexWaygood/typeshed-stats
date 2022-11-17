@@ -102,8 +102,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install coverage with toml extra
-        run: pip install coverage[toml]<7
       - name: Send finished signal to Coveralls
         uses: AndreMiras/coveralls-python-action@develop
         with:
