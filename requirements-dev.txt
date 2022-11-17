@@ -1,6 +1,5 @@
 beautifulsoup4>=4,<5            # we use this in tests for validating HTML strings
 black==22.10.0                  # must match .pre-commit-config.yaml
-coverage[toml]<7
 flake8==5.0.4
 flake8-bugbear==22.10.27
 flake8-docstrings==1.6.0
