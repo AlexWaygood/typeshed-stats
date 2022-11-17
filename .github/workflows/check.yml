@@ -84,7 +84,9 @@ jobs:
           pip install -r requirements-dev.txt
           pip install -e .[everything]
       - name: Run tests under coverage
-        run: pytest -m "not fails_inexplicably_in_ci" --cov=src --cov-branch --cov-report term-missing
+        run: |
+          coverage run --branch --include=src/** -m pytest -m "not fails_inexplicably_in_ci"
+          coverage report --show-missing
       - name: Upload coverage to coveralls
         # Upload coverage if we are on the main repository and
         # we're running on Linux (this action only supports Linux)
