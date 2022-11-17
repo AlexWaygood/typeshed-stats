@@ -86,17 +86,9 @@ def run_checks(
     subprocess.run(["mypy"])
 
     print("\nRunning pytest...")
-    pytest_command = [
-        "pytest",
-        "--cov",
-        "tests",
-        "--cov",
-        "src",
-        "--cov-branch",
-        "--cov-report",
-        "term-missing",
-    ]
+    pytest_command = "coverage run --branch --include=src/**,tests/** -m pytest".split()
     subprocess.run(pytest_command, check=True)
+    subprocess.run("coverage report --show-missing".split(), check=True)
 
     if regenerate_examples:
         args = [sys.executable, "regenerate_examples.py"]
