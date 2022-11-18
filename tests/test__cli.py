@@ -196,6 +196,14 @@ def typeshed_with_packages(
     return typeshed
 
 
+@pytest.fixture
+def disabled_rich() -> Iterator[None]:
+    assert "rich" not in sys.modules
+    with mock.patch.dict("sys.modules", rich=None):
+        yield
+
+
+@pytest.mark.usefixtures("disabled_rich")
 class TestPassingPackages:
     _capsys: pytest.CaptureFixture[str]
     _guaranteed_package_name: str
@@ -430,13 +438,6 @@ class TestToFileSuccessCases(ToFileOptionTestsBase):
 # ================================
 # Tests for various output options
 # ================================
-
-
-@pytest.fixture
-def disabled_rich() -> Iterator[None]:
-    assert "rich" not in sys.modules
-    with mock.patch.dict("sys.modules", rich=None):
-        yield
 
 
 @pytest.fixture
