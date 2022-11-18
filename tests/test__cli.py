@@ -4,7 +4,7 @@ import json
 import os
 import re
 import sys
-from collections.abc import Sequence
+from collections.abc import Iterator, Sequence
 from pathlib import Path
 from unittest import mock
 
@@ -35,6 +35,14 @@ from .conftest import random_package_name
 @pytest.fixture
 def args(typeshed: Path) -> list[str]:
     return ["--typeshed-dir", str(typeshed)]
+
+
+@pytest.fixture
+def disabled_rich() -> Iterator[None]:
+    """This is necessary for several of the tests that depend on reading from stdout."""
+    assert "rich" not in sys.modules
+    with mock.patch.dict("sys.modules", rich=None):
+        yield
 
 
 @pytest.fixture
@@ -196,7 +204,7 @@ def typeshed_with_packages(
     return typeshed
 
 
-@pytest.mark.fails_inexplicably_in_ci
+@pytest.mark.usefixtures("disabled_rich")
 class TestPassingPackages:
     _capsys: pytest.CaptureFixture[str]
     _guaranteed_package_name: str
@@ -433,11 +441,6 @@ class TestToFileSuccessCases(ToFileOptionTestsBase):
 
 
 @pytest.fixture
-def disabled_rich(mocker: MockerFixture) -> None:
-    mocker.patch.dict("sys.modules", rich=None)
-
-
-@pytest.fixture
 def mocked_pprint_dot_pprint(mocker: MockerFixture) -> mock.MagicMock:
     return mocker.patch("pprint.pprint", autospec=True)
 
@@ -490,7 +493,7 @@ class TestOutputOptionsToTerminalFailureCases(OutputOptionsPrintingToTerminalTes
         self._assert_fails_with_message("not allowed with argument")
 
 
-@pytest.mark.usefixtures("mocked_gather_stats")
+@pytest.mark.usefixtures("mocked_gather_stats", "disabled_rich")
 class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTestsBase):
     def _assert_outputoption_works(self, option: str) -> None:
         args = self._args + [option]
@@ -499,7 +502,6 @@ class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTes
     def _get_stdout(self) -> str:
         return self._capsys.readouterr().out.strip()
 
-    @pytest.mark.fails_inexplicably_in_ci
     def test_to_json(self) -> None:
         self._assert_outputoption_works("--to-json")
         result = json.loads(self._get_stdout())
@@ -521,7 +523,6 @@ class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTes
 
         markdown.markdown(result)
 
-    @pytest.mark.fails_inexplicably_in_ci
     def test_to_html(self) -> None:
         self._assert_outputoption_works("--to-html")
         result = self._capsys.readouterr().out.strip()

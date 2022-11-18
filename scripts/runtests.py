@@ -86,9 +86,12 @@ def run_checks(
     subprocess.run(["mypy"])
 
     print("\nRunning pytest...")
-    pytest_command = "coverage run --branch --include=src/**,tests/** -m pytest".split()
-    subprocess.run(pytest_command, check=True)
-    subprocess.run("coverage report --show-missing".split(), check=True)
+    pytest_commands = (
+        "coverage run --branch --include=src/**,tests/** -m pytest",
+        "coverage report --show-missing --fail-under=100",
+    )
+    for command in pytest_commands:
+        subprocess.run(command.split(), check=True)
 
     if regenerate_examples:
         args = [sys.executable, "regenerate_examples.py"]
