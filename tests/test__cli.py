@@ -458,7 +458,6 @@ class OutputOptionsPrintingToTerminalTestsBase:
         )
 
 
-@pytest.mark.usefixtures("disabled_rich")
 class TestOutputOptionsToTerminalFailureCases(OutputOptionsPrintingToTerminalTestsBase):
     def _assert_fails_with_message(self, message: str) -> None:
         assert_argparsing_fails(self._args, failure_message=message)
@@ -494,7 +493,7 @@ class TestOutputOptionsToTerminalFailureCases(OutputOptionsPrintingToTerminalTes
         self._assert_fails_with_message("not allowed with argument")
 
 
-@pytest.mark.usefixtures("mocked_gather_stats")
+@pytest.mark.usefixtures("mocked_gather_stats", "disabled_rich")
 class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTestsBase):
     def _assert_outputoption_works(self, option: str) -> None:
         args = self._args + [option]
