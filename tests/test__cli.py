@@ -196,7 +196,6 @@ def typeshed_with_packages(
     return typeshed
 
 
-@pytest.mark.fails_inexplicably_in_ci
 class TestPassingPackages:
     _capsys: pytest.CaptureFixture[str]
     _guaranteed_package_name: str
@@ -499,7 +498,6 @@ class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTes
     def _get_stdout(self) -> str:
         return self._capsys.readouterr().out.strip()
 
-    @pytest.mark.fails_inexplicably_in_ci
     def test_to_json(self) -> None:
         self._assert_outputoption_works("--to-json")
         result = json.loads(self._get_stdout())
@@ -521,7 +519,6 @@ class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTes
 
         markdown.markdown(result)
 
-    @pytest.mark.fails_inexplicably_in_ci
     def test_to_html(self) -> None:
         self._assert_outputoption_works("--to-html")
         result = self._capsys.readouterr().out.strip()
