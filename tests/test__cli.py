@@ -4,7 +4,7 @@ import json
 import os
 import re
 import sys
-from collections.abc import Sequence
+from collections.abc import Iterator, Sequence
 from pathlib import Path
 from unittest import mock
 
@@ -432,11 +432,10 @@ class TestToFileSuccessCases(ToFileOptionTestsBase):
 
 
 @pytest.fixture
-def disabled_rich(mocker: MockerFixture) -> None:
+def disabled_rich() -> Iterator[None]:
     assert "rich" not in sys.modules
-    mocker.patch.dict("sys.modules", rich=None)
-    yield
-    assert "rich" not in sys.modules
+    with mock.patch.dict("sys.modules", rich=None):
+        yield
 
 
 @pytest.fixture
