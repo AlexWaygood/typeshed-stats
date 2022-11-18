@@ -141,18 +141,18 @@
   },
   {
     "package_name": "six",
-    "number_of_lines": 369,
+    "number_of_lines": 365,
     "package_status": "UP_TO_DATE",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
+    "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 67,
+      "annotated_parameters": 71,
       "unannotated_parameters": 0,
-      "annotated_returns": 39,
+      "annotated_returns": 40,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 7,
+      "explicit_Any_parameters": 9,
       "explicit_Any_returns": 6,
       "annotated_variables": 13,
       "explicit_Any_variables": 0,
@@ -601,9 +601,9 @@
   },
   {
     "package_name": "python-slugify",
-    "number_of_lines": 30,
+    "number_of_lines": 38,
     "package_status": "UP_TO_DATE",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
+    "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 19,
@@ -614,7 +614,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 4,
+      "annotated_variables": 12,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }

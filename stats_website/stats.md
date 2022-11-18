@@ -1,5 +1,5 @@
 # Stats on typeshed's stubs
-<i>Last updated at: <b>02:03 on 2022-11-18 UTC</b></i><hr>
+<i>Last updated at: <b>12:26 on 2022-11-18 UTC</b></i><hr>
 
 ## Stats on typeshed's stubs for `beautifulsoup4`
 
@@ -228,25 +228,25 @@ All files are tested with the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `six`
 
 ### Number of lines
-369
+365
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
-The `--ignore-missing-stub` stubtest setting is used in CI.
+### Stubtest settings in CI: *error on missing stub*
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Pyright settings in CI: *strict*
 All files are tested with the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `six`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 67
+    - Annotated parameters: 71
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 7
+    - Explicit `Any` parameters: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 39
+    - Annotated returns: 40
     - Unannotated returns: 0
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -964,13 +964,13 @@ All files are excluded from the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `python-slugify`
 
 ### Number of lines
-30
+38
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
-The `--ignore-missing-stub` stubtest setting is used in CI.
+### Stubtest settings in CI: *error on missing stub*
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Pyright settings in CI: *strict*
 All files are tested with the stricter pyright settings in CI.
@@ -987,7 +987,7 @@ All files are tested with the stricter pyright settings in CI.
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 4
+    - Annotated variables: 12
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
