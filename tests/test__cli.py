@@ -231,6 +231,7 @@ class TestPassingPackages:
         self, expected_length_of_results: int
     ) -> None:
         stdout = self._capsys.readouterr().out.replace("\N{ESCAPE}", " ").strip()
+        print(stdout)
         results = eval(stdout, vars(typeshed_stats.gather) | globals())
         assert isinstance(results, dict)
         assert len(results) == expected_length_of_results
