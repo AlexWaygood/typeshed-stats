@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "typeshed_stats"
-version = "0.0.1"
+version = "22.11.0"
 authors = [
   { name="Alex Waygood", email="alex.waygood@gmail.com" },
 ]

@@ -15,4 +15,4 @@ __summary__ = __about__ = __doc__
 __author__ = "Alex Waygood"
 __email__ = "alex.waygood@gmail.com"
 __license__ = "MIT"
-__version__ = "0.0.1"
+__version__ = "22.11.0"
