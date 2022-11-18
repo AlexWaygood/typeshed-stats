@@ -38,6 +38,14 @@ def args(typeshed: Path) -> list[str]:
 
 
 @pytest.fixture
+def disabled_rich() -> Iterator[None]:
+    """This is necessary for several of the tests that depend on reading from stdout."""
+    assert "rich" not in sys.modules
+    with mock.patch.dict("sys.modules", rich=None):
+        yield
+
+
+@pytest.fixture
 def mocked_gather_stats(
     random_PackageStats_sequence: Sequence[PackageStats], mocker: MockerFixture
 ) -> None:
@@ -196,13 +204,6 @@ def typeshed_with_packages(
     return typeshed
 
 
-@pytest.fixture
-def disabled_rich() -> Iterator[None]:
-    assert "rich" not in sys.modules
-    with mock.patch.dict("sys.modules", rich=None):
-        yield
-
-
 @pytest.mark.usefixtures("disabled_rich")
 class TestPassingPackages:
     _capsys: pytest.CaptureFixture[str]
@@ -239,7 +240,6 @@ class TestPassingPackages:
         self, expected_length_of_results: int
     ) -> None:
         stdout = self._capsys.readouterr().out.strip()
-        print(stdout)
         results = eval(stdout, vars(typeshed_stats.gather) | globals())
         assert isinstance(results, dict)
         assert len(results) == expected_length_of_results
@@ -458,6 +458,7 @@ class OutputOptionsPrintingToTerminalTestsBase:
         )
 
 
+@pytest.mark.usefixtures("disabled_rich")
 class TestOutputOptionsToTerminalFailureCases(OutputOptionsPrintingToTerminalTestsBase):
     def _assert_fails_with_message(self, message: str) -> None:
         assert_argparsing_fails(self._args, failure_message=message)
