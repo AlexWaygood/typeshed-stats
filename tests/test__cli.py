@@ -230,7 +230,7 @@ class TestPassingPackages:
     def _assert_correct_results_printed_to_stdout(
         self, expected_length_of_results: int
     ) -> None:
-        stdout = self._capsys.readouterr().out.strip()
+        stdout = self._capsys.readouterr().out.replace("\N{ESCAPE}", " ").strip()
         results = eval(stdout, vars(typeshed_stats.gather) | globals())
         assert isinstance(results, dict)
         assert len(results) == expected_length_of_results
@@ -433,7 +433,10 @@ class TestToFileSuccessCases(ToFileOptionTestsBase):
 
 @pytest.fixture
 def disabled_rich(mocker: MockerFixture) -> None:
+    assert "rich" not in sys.modules
     mocker.patch.dict("sys.modules", rich=None)
+    yield
+    assert "rich" not in sys.modules
 
 
 @pytest.fixture
