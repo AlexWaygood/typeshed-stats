@@ -29,14 +29,14 @@ jobs:
         with:
           cache: "pip"
           cache-dependency-path: |
-            requirements-dev.txt
+            requirements-mypy.txt
             pyproject.toml
           python-version: "3.10"
       - name: Install wheel
         run: pip install "wheel<1"
       - name: Install requirements
         run: |
-          pip install -r requirements-dev.txt
+          pip install -r requirements-mypy.txt
           pip install -e .[everything]
       - name: Run mypy on the project
         run: mypy
@@ -49,12 +49,12 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           cache: "pip"
-          cache-dependency-path: "requirements-dev.txt"
+          cache-dependency-path: "requirements-flake8.txt"
           python-version: "3.10"
       - name: Install wheel
         run: pip install "wheel<1"
       - name: Install requirements
-        run: pip install -r requirements-dev.txt
+        run: pip install -r requirements-flake8.txt
       - name: lint the project
         run: flake8
 
@@ -74,14 +74,14 @@ jobs:
         with:
           cache: "pip"
           cache-dependency-path: |
-            requirements-dev.txt
+            requirements-pytest.txt
             pyproject.toml
           python-version: ${{ matrix.python-version }}
       - name: Install wheel
         run: pip install "wheel<1"
       - name: Install requirements
         run: |
-          pip install -r requirements-dev.txt
+          pip install -r requirements-pytest.txt
           pip install -e .[everything]
       - name: Run tests under coverage
         run: |
