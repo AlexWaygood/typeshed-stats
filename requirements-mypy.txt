@@ -1,4 +1,4 @@
--r pytest-requirements.txt
+-r requirements-pytest.txt
 mypy==0.991
 types-beautifulsoup4==4.11.6.1
 types-Markdown==3.4.2.1
