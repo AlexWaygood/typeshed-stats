@@ -20,6 +20,8 @@ def test_conversion_to_and_from_json(
     random_PackageStats_sequence: Sequence[PackageStats],
 ) -> None:
     converted = stats_to_json(random_PackageStats_sequence)
+    assert converted[-1] == "\n"
+    assert converted[-2] != "\n"
     assert isinstance(converted, str)
     lst = json.loads(converted)
     assert isinstance(lst, list)
@@ -53,7 +55,12 @@ def test_markdown_and_htmlconversion(
     random_PackageStats_sequence: Sequence[PackageStats],
 ) -> None:
     converted_to_markdown = stats_to_markdown(random_PackageStats_sequence)
-    html1 = stats_to_html(random_PackageStats_sequence).strip()
+    assert converted_to_markdown[-1] == "\n"
+    assert converted_to_markdown[-2] != "\n"
+    html1 = stats_to_html(random_PackageStats_sequence)
+    assert html1[-1] == "\n"
+    assert html1[-2] != "\n"
+    html1 = html1.strip()
     import markdown
 
     html2 = markdown.markdown(converted_to_markdown).strip()
