@@ -601,7 +601,7 @@
   },
   {
     "package_name": "python-slugify",
-    "number_of_lines": 38,
+    "number_of_lines": 48,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",

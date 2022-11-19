@@ -962,7 +962,7 @@ All files are excluded from the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `python-slugify`
 
 ### Number of lines
-38
+48
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.

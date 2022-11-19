@@ -1,5 +1,5 @@
 # Stats on typeshed's stubs
-<i>Last updated at: <b>12:41 on 2022-11-18 UTC</b></i><hr>
+<i>Last updated at: <b>01:55 on 2022-11-19 UTC</b></i><hr>
 
 ## Stats on typeshed's stubs for `beautifulsoup4`
 
@@ -964,7 +964,7 @@ All files are excluded from the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `python-slugify`
 
 ### Number of lines
-38
+48
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
