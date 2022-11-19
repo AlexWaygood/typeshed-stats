@@ -44,7 +44,7 @@ jobs:
           git commit -a -m "👷 Automated regeneration of examples 🧮 and docs 🖊️"
           git push
       - name: Deploy docs
-        run: mkdocs gh-deploy --force
+        run: mkdocs gh-deploy -m "🚀 Deploying {sha} with MkDoc {version}" --force
 
   create-issue-on-failure:
     name: Create an issue if the automated regeneration failed
