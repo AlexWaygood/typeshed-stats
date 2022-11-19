@@ -1,6 +1,27 @@
 site_name: typeshed-stats
-
 docs_dir: 'stats_website'
+repo_url: https://github.com/AlexWaygood/typeshed-stats
+edit_uri: ""  # The website is generated, so an edit button doesn't make sense the way mkdocs does it
 
 theme:
   name: material
+  logo: logo.png
+  favicon: logo.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+plugins:
+  - search
+  - table-reader
+
+nav:
+  - "Welcome to typeshed-stats": "index.md"
+  - "Stats on typeshed's stubs": "stats.md"
+  - "Stats in CSV format": "stats-csv.md"
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
