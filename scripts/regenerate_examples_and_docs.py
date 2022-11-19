@@ -1,5 +1,6 @@
 """Script for regenerating examples in the examples/ directory."""
 import argparse
+import shutil
 from contextlib import ExitStack
 from datetime import datetime
 from pathlib import Path
@@ -33,12 +34,22 @@ def regenerate_examples(typeshed_dir: Path) -> None:
 def regenerate_docs_page() -> None:
     """Regenerate the markdown page used for the static website."""
     markdown = Path("examples", "example.md").read_text(encoding="utf-8")
-    updated_time = datetime.utcnow().strftime("%H:%M on %Y-%m-%d UTC")
-    header = (
-        "# Stats on typeshed's stubs\n"
-        f"<i>Last updated at: <b>{updated_time}</b></i><hr>\n"
+    updated_time = datetime.utcnow().strftime("%H:%M UTC on %Y-%m-%d")
+    header = "\n".join(
+        (
+            "---",
+            "hide:",
+            "  - navigation",
+            "---\n",
+            "# Statistics on typeshed's stubs",
+            f"<i>These statistics were last updated at: <b>{updated_time}</b>.</i>",
+            "<i>For up-to-date statistics, consider using the CLI instead.</i><hr>",
+        )
     )
-    Path("stats_website", "stats.md").write_text(header + markdown, encoding="utf-8")
+    Path("stats_website", "stats.md").write_text(
+        f"{header}\n{markdown}", encoding="utf-8"
+    )
+    shutil.copyfile("examples/example.csv", "stats_website/stats_as_csv.csv")
     print("Docs page successfully regenerated!")
 
 
@@ -58,5 +69,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    package_dir = Path("src", "typeshed_stats")
+    in_root_dir = package_dir.exists() and package_dir.is_dir()
+    assert in_root_dir, "This script must be run from the repository root!"
     main()
     raise SystemExit(0)
