@@ -128,7 +128,7 @@ def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
         del kwargs["annotation_stats"]
         return template.format(**kwargs)
 
-    return "\n<hr>\n".join(format_package(info) for info in stats) + "\n"
+    return "\n<hr>\n".join(format_package(info) for info in stats).strip() + "\n"
 
 
 def stats_to_html(stats: Sequence[PackageStats]) -> str:

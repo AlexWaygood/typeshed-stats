@@ -21,7 +21,7 @@ def regenerate_examples(typeshed_dir: Path) -> None:
         "examples/example.json": stats_to_json(stats),
         "examples/example.csv": stats_to_csv(stats),
         "examples/example.md": markdownified_stats,
-        "examples/example.html": markdown.markdown(markdownified_stats),
+        "examples/example.html": markdown.markdown(markdownified_stats) + "\n",
     }
     print("Writing stats...")
     for path, formatted_stats in path_to_formatted_stats.items():
