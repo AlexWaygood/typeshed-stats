@@ -4324,4 +4324,3 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
     - Annotated variables: 8488
     - Explicit `Any` variables: 556
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
-
