@@ -2340,8 +2340,8 @@ All files are excluded from the stricter pyright settings in CI.
 ### Number of lines
 2686
 
-### Package status: *up to date*
-These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+### Package status: *out of date*
+These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
 
 ### Stubtest settings in CI: *missing stubs ignored*
 The `--ignore-missing-stub` stubtest setting is used in CI.
@@ -4290,7 +4290,7 @@ All files are tested with the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `stdlib`
 
 ### Number of lines
-55370
+55373
 
 ### Package status: *stdlib*
 These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly up to date, and tested against all currently supported Python versions in CI.
@@ -4313,6 +4313,6 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
     - Explicit `Any` returns: 818
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8487
+    - Annotated variables: 8488
     - Explicit `Any` variables: 556
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
