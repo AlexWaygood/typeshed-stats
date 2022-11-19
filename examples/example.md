@@ -34,13 +34,13 @@ All files are excluded from the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `python-nmap`
 
 ### Number of lines
-131
+134
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
-The `--ignore-missing-stub` stubtest setting is used in CI.
+### Stubtest settings in CI: *error on missing stub*
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Pyright settings in CI: *strict*
 All files are tested with the stricter pyright settings in CI.
@@ -57,7 +57,7 @@ All files are tested with the stricter pyright settings in CI.
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 30
+    - Annotated variables: 32
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 

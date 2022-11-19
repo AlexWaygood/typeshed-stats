@@ -21,9 +21,9 @@
   },
   {
     "package_name": "python-nmap",
-    "number_of_lines": 131,
+    "number_of_lines": 134,
     "package_status": "UP_TO_DATE",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
+    "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 44,
@@ -34,7 +34,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 30,
+      "annotated_variables": 32,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }

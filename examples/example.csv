@@ -1,6 +1,6 @@
 package_name,number_of_lines,package_status,stubtest_setting,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables
 beautifulsoup4,840,UP_TO_DATE,MISSING_STUBS_IGNORED,NOT_STRICT,242,139,193,49,0,0,32,1,182,71,0
-python-nmap,131,UP_TO_DATE,MISSING_STUBS_IGNORED,STRICT,44,0,44,0,0,0,0,0,30,0,0
+python-nmap,134,UP_TO_DATE,ERROR_ON_MISSING_STUB,STRICT,44,0,44,0,0,0,0,0,32,0,0
 Flask-SQLAlchemy,125,OBSOLETE,MISSING_STUBS_IGNORED,NOT_STRICT,54,24,24,19,5,0,20,1,16,9,0
 pynput,297,UP_TO_DATE,MISSING_STUBS_IGNORED,STRICT,81,0,71,0,0,0,11,0,102,1,0
 pyvmomi,221,UP_TO_DATE,MISSING_STUBS_IGNORED,STRICT,50,0,35,0,3,16,2,0,57,7,0
