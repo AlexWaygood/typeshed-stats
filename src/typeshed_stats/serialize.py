@@ -30,7 +30,7 @@ def stats_to_json(stats: Sequence[PackageStats]) -> str:
     """Convert stats on multiple stubs packages to JSON format."""
     import json
 
-    return json.dumps(_unstructure(stats), indent=2)
+    return json.dumps(_unstructure(stats), indent=2) + "\n"
 
 
 def stats_from_json(data: str) -> list[PackageStats]:
@@ -135,4 +135,4 @@ def stats_to_html(stats: Sequence[PackageStats]) -> str:
     """Generate HTML describing statistics on multiple stubs packages."""
     import markdown
 
-    return markdown.markdown(stats_to_markdown(stats))
+    return markdown.markdown(stats_to_markdown(stats)) + "\n"
