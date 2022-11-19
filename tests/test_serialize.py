@@ -53,10 +53,10 @@ def test_markdown_and_htmlconversion(
     random_PackageStats_sequence: Sequence[PackageStats],
 ) -> None:
     converted_to_markdown = stats_to_markdown(random_PackageStats_sequence)
-    html1 = stats_to_html(random_PackageStats_sequence)
+    html1 = stats_to_html(random_PackageStats_sequence).strip()
     import markdown
 
-    html2 = markdown.markdown(converted_to_markdown)
+    html2 = markdown.markdown(converted_to_markdown).strip()
     assert html1 == html2
     soup = BeautifulSoup(html1, "html.parser")
     assert bool(soup.find()), "Invalid HTML produced!"
