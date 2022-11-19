@@ -4,7 +4,7 @@ hide:
 ---
 
 # Statistics on typeshed's stubs
-<i>These statistics were last updated at: <b>23:22 UTC on 2022-11-19</b>.</i>
+<i>These statistics were last updated at: <b>23:27 UTC on 2022-11-19</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i><hr>
 
 ## Stats on typeshed's stubs for `beautifulsoup4`
@@ -4324,3 +4324,4 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
     - Annotated variables: 8488
     - Explicit `Any` variables: 556
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
+
