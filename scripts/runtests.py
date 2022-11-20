@@ -57,7 +57,7 @@ def run_checks(
 ) -> None:
     """Run the checks."""
     print("Running requirements-txt-fixer...")
-    subprocess.run(["requirements-txt-fixer", "requirements-dev.txt"])
+    subprocess.run(["requirements-txt-fixer", *Path(".").rglob("requirements-*.txt")])
 
     print("\nRunning pycln...")
     subprocess.run(["pycln", ".", "--config=pyproject.toml"])
@@ -86,11 +86,7 @@ def run_checks(
     subprocess.run(["mypy"])
 
     print("\nRunning pytest...")
-    pytest_commands = (
-        "coverage run --branch --include=src/**,tests/** -m pytest",
-        "coverage report --show-missing --fail-under=100",
-    )
-    for command in pytest_commands:
+    for command in "coverage run -m pytest", "coverage report":
         subprocess.run(command.split(), check=True)
 
     if regenerate_examples:
@@ -105,6 +101,10 @@ def run_checks(
 
 def main() -> None:
     """Parse command-line args, run the checks."""
+    package_dir = Path("src", "typeshed_stats")
+    running_from_root = package_dir.exists() and package_dir.is_dir()
+    assert running_from_root, "Must run this script from the repository root!"
+
     parser = argparse.ArgumentParser("Script to regenerate examples")
     parser.add_argument("-r", "--regen-examples", action="store_true")
     group = parser.add_mutually_exclusive_group()

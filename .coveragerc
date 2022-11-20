@@ -1,2 +1,8 @@
 [run]
+branch = True
+include=src/**,tests/**
 relative_files = True
+
+[report]
+show_missing = True
+fail_under = 100
