@@ -1763,8 +1763,8 @@ All files are tested with the stricter pyright settings in CI.
 ### Number of lines
 1917
 
-### Package status: *up to date*
-These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+### Package status: *out of date*
+These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
 
 ### Stubtest settings in CI: *error on missing stub*
 Objects missing from the stub cause stubtest to emit an error in CI.
