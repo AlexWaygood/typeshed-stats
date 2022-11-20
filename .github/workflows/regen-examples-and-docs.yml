@@ -6,11 +6,12 @@ on:
   push:
     branches:
       - main
-    paths:
-      - '.github/workflows/regen-examples-and-docs.yml'
-      - 'src/**'
-      - 'scripts/**'
-      - 'stats_website/**'
+    paths-ignore:
+      - 'tests/**'
+      - 'examples/**'
+      - '**.json'
+      - '**.csv'
+      - '**.html'
   workflow_dispatch:
 
 env:
@@ -41,7 +42,7 @@ jobs:
       - name: Regenerate examples and docs
         run: |
           python scripts/regenerate_examples_and_docs.py --download-typeshed
-          git commit -a -m "👷 Automated regeneration of examples 🧮 and docs 🖊️"
+          git commit -a -m "👷 Automated regeneration of examples and docs"
           git push
       - name: Deploy docs
         run: mkdocs gh-deploy -m "🚀 Deploying {sha} with MkDoc {version}" --force
