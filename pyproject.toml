@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "typeshed_stats"
-version = "22.11.0"
+dynamic = ["version"]
 authors = [
   { name="Alex Waygood", email="alex.waygood@gmail.com" },
 ]
@@ -48,6 +48,9 @@ everything = ["rich", "Markdown"]
 
 [project.scripts]
 typeshed-stats = "typeshed_stats._cli:main"
+
+[tool.hatch.version]
+path = "src/typeshed_stats/__init__.py"
 
 [tool.pycln]
 all = true
