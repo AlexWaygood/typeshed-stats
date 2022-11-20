@@ -5,6 +5,16 @@ repos:
       - id: trailing-whitespace
       - id: requirements-txt-fixer
       - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: name-tests-test
+        args: [--pytest-test-first]
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.9.0
+    hooks:
+      - id: python-check-mock-methods
   - repo: https://github.com/hadialqattan/pycln
     rev: v2.1.2 # must match requirements-all.txt
     hooks:
@@ -19,16 +29,14 @@ repos:
     rev: 22.10.0 # must match requirements-all.txt
     hooks:
       - id: black
-        language_version: python3.10
   - repo: https://github.com/pycqa/isort
     rev: 5.10.1  # must match requirements-all.txt
     hooks:
       - id: isort
-        name: isort (python)
 
 ci:
     autofix_commit_msg: '[pre-commit.ci] auto fixes from pre-commit.com hooks'
     autofix_prs: true
     autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
-    autoupdate_schedule: weekly
+    autoupdate_schedule: quarterly
     submodules: false
