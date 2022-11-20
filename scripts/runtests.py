@@ -57,7 +57,7 @@ def run_checks(
 ) -> None:
     """Run the checks."""
     print("Running requirements-txt-fixer...")
-    subprocess.run(["requirements-txt-fixer", *Path(".").rglob("requirements-*.txt")])
+    subprocess.run(["requirements-txt-fixer", *Path("requirements").glob("*.txt")])
 
     print("\nRunning pycln...")
     subprocess.run(["pycln", ".", "--config=pyproject.toml"])

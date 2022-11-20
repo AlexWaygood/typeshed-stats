@@ -30,14 +30,14 @@ jobs:
         with:
           cache: "pip"
           cache-dependency-path: |
-            requirements-docs.txt
+            requirements/docs.txt
             pyproject.toml
           python-version: "3.10"
       - name: Install wheel
         run: pip install "wheel<1"
       - name: Install requirements
         run: |
-          pip install -r requirements-docs.txt
+          pip install -r requirements/docs.txt
           pip install -e .[Markdown]
       - name: Regenerate examples and docs
         run: |
@@ -45,7 +45,7 @@ jobs:
           git commit -a -m "👷 Automated regeneration of examples and docs"
           git push
       - name: Deploy docs
-        run: mkdocs gh-deploy -m "🚀 Deploying {sha} with MkDoc {version}" --force
+        run: mkdocs gh-deploy -m "🚀 Deploying {sha} with MkDocs {version}" --force
 
   create-issue-on-failure:
     name: Create an issue if the automated regeneration failed
