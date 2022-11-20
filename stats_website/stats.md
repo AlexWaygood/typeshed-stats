@@ -4,7 +4,7 @@ hide:
 ---
 
 # Statistics on typeshed's stubs
-<i>These statistics were last updated at: <b>02:03 UTC on 2022-11-20</b>.</i>
+<i>These statistics were last updated at: <b>12:39 UTC on 2022-11-20</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i><hr>
 ## Stats on typeshed's stubs for `beautifulsoup4`
 
