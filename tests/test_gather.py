@@ -506,9 +506,10 @@ def test_gather_stats_no_network_access(
 
     results = gather_stats(packages_to_pass, typeshed_dir=typeshed_dir_to_pass)
     assert all(isinstance(item, PackageStats) for item in results)
-    package_names_in_results = {item.package_name for item in results}
+    package_names_in_results = [item.package_name for item in results]
+    assert package_names_in_results == sorted(package_names_in_results)
     expected_package_names = real_typeshed_package_names | {"stdlib"}
-    assert package_names_in_results == expected_package_names
+    assert set(package_names_in_results) == expected_package_names
 
 
 @pytest.mark.requires_network
@@ -523,8 +524,9 @@ def test_gather_stats_integrates_with_tmpdir_typeshed() -> None:
         results = gather_stats(package_names, typeshed_dir=typeshed)
 
     assert all(isinstance(item, PackageStats) for item in results)
-    package_names_in_results = {item.package_name for item in results}
-    assert package_names_in_results == package_names
+    package_names_in_results = [item.package_name for item in results]
+    assert package_names_in_results == sorted(package_names_in_results)
+    assert set(package_names_in_results) == package_names
 
 
 def test_exceptions_bubble_up(typeshed: Path) -> None:

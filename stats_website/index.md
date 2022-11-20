@@ -1,6 +1,7 @@
 ---
 hide:
   - navigation
+  - footer
 ---
 
 # Welcome to typeshed-stats

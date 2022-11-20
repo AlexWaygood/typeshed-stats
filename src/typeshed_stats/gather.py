@@ -12,6 +12,7 @@ from collections.abc import Iterable, Iterator, Mapping, Sequence
 from contextlib import AsyncExitStack, contextmanager
 from enum import Enum
 from functools import cache
+from operator import attrgetter
 from pathlib import Path
 from typing import Any, Protocol, TypeAlias, TypeVar, final
 
@@ -559,7 +560,7 @@ def gather_stats(
     for result in results:
         if isinstance(result, BaseException):
             raise result
-    return results
+    return sorted(results, key=attrgetter("package_name"))
 
 
 @contextmanager
