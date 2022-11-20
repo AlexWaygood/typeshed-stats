@@ -4,7 +4,7 @@ hide:
 ---
 
 # Statistics on typeshed's stubs
-<i>These statistics were last updated at: <b>00:12 UTC on 2022-11-20</b>.</i>
+<i>These statistics were last updated at: <b>02:03 UTC on 2022-11-20</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i><hr>
 ## Stats on typeshed's stubs for `beautifulsoup4`
 
@@ -2345,10 +2345,10 @@ All files are excluded from the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `setuptools`
 
 ### Number of lines
-2686
+2677
 
-### Package status: *out of date*
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+### Package status: *up to date*
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Stubtest settings in CI: *missing stubs ignored*
 The `--ignore-missing-stub` stubtest setting is used in CI.
@@ -2358,12 +2358,12 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 833
+    - Annotated parameters: 819
     - Unannotated parameters: 395
-    - Explicit `Any` parameters: 79
+    - Explicit `Any` parameters: 73
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
-    - Annotated returns: 665
+    - Annotated returns: 658
     - Unannotated returns: 262
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
