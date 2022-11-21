@@ -5,7 +5,7 @@ hide:
 ---
 
 # Statistics on typeshed's stubs
-<i>These statistics were last updated at: <b>02:00 UTC on 2022-11-21</b>.</i>
+<i>These statistics were last updated at: <b>12:44 UTC on 2022-11-21</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i>
 <hr>
 
@@ -1036,7 +1036,7 @@ All files are tested with the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `colorama`
 
 ### Number of lines
-217
+223
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -2796,25 +2796,25 @@ All files are tested with the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `pyRFC3339`
 
 ### Number of lines
-18
+21
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
-The `--ignore-missing-stub` stubtest setting is used in CI.
+### Stubtest settings in CI: *error on missing stub*
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Pyright settings in CI: *strict*
 All files are tested with the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `pyRFC3339`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 14
+    - Annotated parameters: 15
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 0
+    - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 8
+    - Annotated returns: 9
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -3660,7 +3660,7 @@ All files are excluded from the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `stdlib`
 
 ### Number of lines
-55373
+55382
 
 ### Package status: *stdlib*
 These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly up to date, and tested against all currently supported Python versions in CI.
@@ -3673,12 +3673,12 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 
 ### Statistics on the annotations in typeshed's stubs for `stdlib`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24411
+    - Annotated parameters: 24417
     - Unannotated parameters: 915
-    - Explicit `Any` parameters: 2116
+    - Explicit `Any` parameters: 2118
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 88
 - Returns:
-    - Annotated returns: 13282
+    - Annotated returns: 13283
     - Unannotated returns: 410
     - Explicit `Any` returns: 818
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
