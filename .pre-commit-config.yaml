@@ -33,6 +33,14 @@ repos:
     rev: 5.10.1  # must match requirements/all.txt
     hooks:
       - id: isort
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.2
+    hooks:
+      - id: codespell
+  - repo: https://github.com/alan-turing-institute/CleverCSV-pre-commit
+    rev: v0.7.4
+    hooks:
+    - id: clevercsv-standardize
 
 ci:
     autofix_commit_msg: '[pre-commit.ci] auto fixes from pre-commit.com hooks'
