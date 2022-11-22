@@ -1,0 +1,17 @@
+# Unordered list style
+MD004:
+  style: "dash"
+
+# Unordered list indentation
+MD007:
+  indent: 4
+
+# Ordered list item prefix
+MD029:
+  style: "one"
+
+no-inline-html: false
+
+# code block style
+MD048:
+  style: "fenced"
