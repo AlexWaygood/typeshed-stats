@@ -18,3 +18,4 @@ MD048:
 no-inline-html: false
 first-line-h1: false
 no-duplicate-header: false
+line-length: false
