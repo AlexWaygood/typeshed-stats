@@ -5,7 +5,7 @@ hide:
 ---
 
 # Statistics on typeshed's stubs
-<i>These statistics were last updated at: <b>12:45 UTC on 2022-11-22</b>.</i>
+<i>These statistics were last updated at: <b>14:27 UTC on 2022-11-22</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i>
 <hr>
 
@@ -3692,7 +3692,7 @@ All files are tested with the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `stdlib`
 
 ### Number of lines
-55382
+55391
 
 ### Package status: *stdlib*
 These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly up to date, and tested against all currently supported Python versions in CI.
@@ -3705,17 +3705,17 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 
 ### Statistics on the annotations in typeshed's stubs for `stdlib`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24417
-    - Unannotated parameters: 915
-    - Explicit `Any` parameters: 2117
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 88
+    - Annotated parameters: 24439
+    - Unannotated parameters: 894
+    - Explicit `Any` parameters: 2120
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13283
-    - Unannotated returns: 410
-    - Explicit `Any` returns: 818
+    - Annotated returns: 13288
+    - Unannotated returns: 405
+    - Explicit `Any` returns: 819
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8488
+    - Annotated variables: 8489
     - Explicit `Any` variables: 556
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
 
