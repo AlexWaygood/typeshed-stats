@@ -45,6 +45,7 @@ repos:
     rev: v0.32.2
     hooks:
     - id: markdownlint-fix
+    - id: markdownlint
 
 ci:
     autofix_commit_msg: '[pre-commit.ci] auto fixes from pre-commit.com hooks'
