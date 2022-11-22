@@ -11,8 +11,12 @@ MD029:
   style: "one"
 
 # code block style
-MD048:
+MD046:
   style: "fenced"
+
+# code fence style
+MD048:
+  style: "backtick"
 
 # Disabled rules
 no-inline-html: false

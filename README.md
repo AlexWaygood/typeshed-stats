@@ -41,7 +41,7 @@ with tmpdir_typeshed() as typeshed:
 ## How can I use this?
 
 1. Run `pip install typeshed-stats[everything]` to install the package
-2. Run `typeshed-stats --help` for information about various options
+1. Run `typeshed-stats --help` for information about various options
 
 ## Are there any examples of things this script can produce, other than [the website](https://alexwaygood.github.io/typeshed-stats/)?
 
@@ -51,7 +51,7 @@ I'm glad you asked! They're in the `examples/` folder in this repo.
 ## How do I run tests/linters?
 
 1. Clone the repo and `cd` into it
-2. Create and activate a virtual environment
-3. Run `pip install -r requirements/all.txt`
-4. Run `pip install -e .[everything]`
-5. Either run the linters/tests individually (see the `.github/workflows` directory for details about what's run in CI) or use the `runtests.py` convenience script to run them all in succession.
+1. Create and activate a virtual environment
+1. Run `pip install -r requirements/all.txt`
+1. Run `pip install -e .[everything]`
+1. Either run the linters/tests individually (see the `.github/workflows` directory for details about what's run in CI) or use the `runtests.py` convenience script to run them all in succession.
