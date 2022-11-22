@@ -35,7 +35,7 @@ repos:
       - id: isort
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.2
-    hook:
+    hooks:
       - id: codespell
   - repo: https://github.com/executablebooks/mdformat
     rev: 0.7.16
