@@ -5,7 +5,7 @@ hide:
 ---
 
 # Statistics on typeshed's stubs
-<i>These statistics were last updated at: <b>12:44 UTC on 2022-11-21</b>.</i>
+<i>These statistics were last updated at: <b>02:01 UTC on 2022-11-22</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i>
 <hr>
 
@@ -2569,6 +2569,38 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
+## Stats on typeshed's stubs for `pika`
+
+### Number of lines
+2341
+
+### Package status: *up to date*
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+
+### Stubtest settings in CI: *error on missing stub*
+Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Pyright settings in CI: *not strict*
+All files are excluded from the stricter pyright settings in CI.
+
+### Statistics on the annotations in typeshed's stubs for `pika`
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 485
+    - Unannotated parameters: 517
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 193
+- Returns:
+    - Annotated returns: 295
+    - Unannotated returns: 464
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+- Variables:
+    - Annotated variables: 495
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 308
+
+<hr>
+
 ## Stats on typeshed's stubs for `playsound`
 
 ### Number of lines
@@ -2860,30 +2892,30 @@ All files are tested with the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `pycurl`
 
 ### Number of lines
-647
+674
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
-The `--ignore-missing-stub` stubtest setting is used in CI.
+### Stubtest settings in CI: *error on missing stub*
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Pyright settings in CI: *strict*
 All files are tested with the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `pycurl`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 19
+    - Annotated parameters: 22
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
 - Returns:
-    - Annotated returns: 26
+    - Annotated returns: 32
     - Unannotated returns: 0
-    - Explicit `Any` returns: 9
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
-    - Annotated variables: 601
+    - Annotated variables: 620
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -3628,7 +3660,7 @@ All files are tested with the stricter pyright settings in CI.
 ## Stats on typeshed's stubs for `slumber`
 
 ### Number of lines
-73
+90
 
 ### Package status: *up to date*
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
@@ -3636,23 +3668,23 @@ These stubs should be fairly up to date. In CI, stubtest tests these stubs again
 ### Stubtest settings in CI: *error on missing stub*
 Objects missing from the stub cause stubtest to emit an error in CI.
 
-### Pyright settings in CI: *not strict*
-All files are excluded from the stricter pyright settings in CI.
+### Pyright settings in CI: *strict*
+All files are tested with the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `slumber`
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 23
-    - Unannotated parameters: 24
-    - Explicit `Any` parameters: 21
+    - Annotated parameters: 43
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 6
-    - Unannotated returns: 23
-    - Explicit `Any` returns: 0
+    - Annotated returns: 25
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 9
-    - Explicit `Any` variables: 7
+    - Annotated variables: 10
+    - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
 <hr>
