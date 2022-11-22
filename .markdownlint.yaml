@@ -10,8 +10,11 @@ MD007:
 MD029:
   style: "one"
 
-no-inline-html: false
-
 # code block style
 MD048:
   style: "fenced"
+
+# Disabled rules
+no-inline-html: false
+first-line-h1: false
+no-duplicate-header: false
