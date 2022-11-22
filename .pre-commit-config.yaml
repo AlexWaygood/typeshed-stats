@@ -37,12 +37,6 @@ repos:
     rev: v2.2.2
     hooks:
       - id: codespell
-  - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.16
-    hooks:
-    - id: mdformat
-      additional_dependencies:
-      - mdformat-black
   - repo: https://github.com/alan-turing-institute/CleverCSV-pre-commit
     rev: v0.7.4
     hooks:
