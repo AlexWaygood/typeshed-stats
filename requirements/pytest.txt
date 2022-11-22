@@ -1,7 +1,7 @@
 beautifulsoup4>=4,<5            # we use this in tests for validating HTML strings
-coverage>=6,<7
 pytest>=7,<8
 pytest-antilru==1.1.1
 pytest-asyncio==0.20.2
 pytest-mock==3.10.0
 pytest-subtests==0.9.0
+coverage>=6,<7
