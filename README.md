@@ -24,11 +24,13 @@
 This project is for easy gathering of statistics relating to [typeshed](https://github.com/python/typeshed)'s stubs. As well as being a CLI tool and library, it also powers [a website](https://alexwaygood.github.io/typeshed-stats/) where stats about typeshed's stubs are uploaded twice a day.
 
 Some examples of things you can do from the command line:
+
 - Create a `.csv` file with stats on all typeshed stubs: `typeshed-stats --typeshed-dir <PATH_TO_TYPESHED_CLONE> --to-file stats.csv` (the `.csv` file extension will be automatically detected by the script to identify the format required).
 - Pretty-print stats on typeshed stubs for emoji and redis to the terminal, in JSON format: `typeshed-stats --typeshed-dir <PATH_TO_TYPESHED_CLONE> --to-json emoji redis`
 - Generate a MarkDown file detailing stats on typeshed's stubs for protobuf and the stdlib: `typeshed-stats --typeshed-dir <PATH_TO_TYPESHED_CLONE> --to-file stats.md stdlib protobuf`
 
 Example usage of the Python-level API:
+
 ```python
 from typeshed_stats.gather import tmpdir_typeshed, gather_stats
 
@@ -42,10 +44,12 @@ with tmpdir_typeshed() as typeshed:
 2. Run `typeshed-stats --help` for information about various options
 
 ## Are there any examples of things this script can produce, other than [the website](https://alexwaygood.github.io/typeshed-stats/)?
+
 I'm glad you asked! They're in the `examples/` folder in this repo.
 (These examples are generated using the `regenerate_examples.py` script in the `scripts/` directory.)
 
 ## How do I run tests/linters?
+
 1. Clone the repo and `cd` into it
 2. Create and activate a virtual environment
 3. Run `pip install -r requirements/all.txt`
