@@ -93,18 +93,23 @@ def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
         ## Stats on typeshed's stubs for `{package_name}`
 
         ### Number of lines
+
         {number_of_lines}
 
         ### Package status: *{package_status.formatted_name}*
+
         {package_status.value}
 
         ### Stubtest settings in CI: *{stubtest_setting.formatted_name}*
+
         {stubtest_setting.value}
 
         ### Pyright settings in CI: *{pyright_setting.formatted_name}*
+
         {pyright_setting.value}
 
         ### Statistics on the annotations in typeshed's stubs for `{package_name}`
+
         - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
             - Annotated parameters: {annotated_parameters}
             - Unannotated parameters: {unannotated_parameters}
