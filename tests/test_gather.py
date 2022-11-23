@@ -31,7 +31,7 @@ from typeshed_stats.gather import (
     gather_stats,
     get_package_size,
     get_package_status,
-    get_pyright_strictness,
+    get_pyright_setting,
     get_stubtest_setting,
     tmpdir_typeshed,
 )
@@ -412,41 +412,99 @@ def test_get_package_size_multiple_files(
 
 
 # ================================
-# Tests for get_pyright_strictness
+# Tests for get_pyright_setting
 # ================================
 
 
 @pytest.mark.parametrize(
-    ("excluded_path", "package_to_test", "pyright_setting_name"),
+    (
+        "entirely_excluded_path",
+        "path_excluded_from_strict",
+        "package_to_test",
+        "pyright_setting_name",
+    ),
     [
-        pytest.param("stdlib", "stdlib", "NOT_STRICT", id="case1"),
-        pytest.param("stdlib/tkinter", "stdlib", "STRICT_ON_SOME_FILES", id="case2"),
-        pytest.param("stubs", "stdlib", "STRICT", id="case3"),
-        pytest.param("stubs/aiofiles", "stdlib", "STRICT", id="case4"),
-        pytest.param("stubs", "appdirs", "NOT_STRICT", id="case5"),
-        pytest.param("stubs", "boto", "NOT_STRICT", id="case6"),
-        pytest.param("stubs/boto", "appdirs", "STRICT", id="case7"),
-        pytest.param("stubs/boto/auth.pyi", "boto", "STRICT_ON_SOME_FILES", id="case8"),
+        # Some files are entirely excluded, none are excluded from strict settings
+        pytest.param("stdlib", None, "stdlib", "ENTIRELY_EXCLUDED", id="case1"),
+        pytest.param(
+            "stdlib/tkinter", None, "stdlib", "SOME_FILES_EXCLUDED", id="case2"
+        ),
+        pytest.param("stdlib", None, "boto", "STRICT", id="case3"),
+        pytest.param("stubs", None, "aiofiles", "ENTIRELY_EXCLUDED", id="case4"),
+        pytest.param(
+            "stubs/aiofiles", None, "aiofiles", "ENTIRELY_EXCLUDED", id="case5"
+        ),
+        pytest.param("stubs/aiofiles", None, "boto", "STRICT", id="case6"),
+        # No files are entirely excluded, some are excluded from strict settings
+        pytest.param(None, "stdlib", "stdlib", "NOT_STRICT", id="case7"),
+        pytest.param(
+            None, "stdlib/tkinter", "stdlib", "STRICT_ON_SOME_FILES", id="case8"
+        ),
+        pytest.param(None, "stubs", "stdlib", "STRICT", id="case9"),
+        pytest.param(None, "stubs/aiofiles", "stdlib", "STRICT", id="case10"),
+        pytest.param(None, "stubs", "appdirs", "NOT_STRICT", id="case11"),
+        pytest.param(None, "stubs", "boto", "NOT_STRICT", id="case12"),
+        pytest.param(None, "stubs/boto", "appdirs", "STRICT", id="case13"),
+        pytest.param(
+            None, "stubs/boto/auth.pyi", "boto", "STRICT_ON_SOME_FILES", id="case14"
+        ),
+        # Some files are entirely excluded, some are excluded from strict settings
+        pytest.param(
+            "stdlib", "stdlib/tkinter", "stdlib", "ENTIRELY_EXCLUDED", id="case15"
+        ),
+        pytest.param(
+            "stdlib/tkinter",
+            "stdlib/asyncio",
+            "stdlib",
+            "SOME_FILES_EXCLUDED",
+            id="case16",
+        ),
+        pytest.param(
+            "stubs", "stdlib/tkinter", "stdlib", "STRICT_ON_SOME_FILES", id="case17"
+        ),
+        pytest.param("stubs", "stubs/boto", "boto", "ENTIRELY_EXCLUDED", id="case18"),
+        pytest.param(
+            "stubs/boto/auth.pyi",
+            "stubs/boto/foo.pyi",
+            "boto",
+            "SOME_FILES_EXCLUDED",
+            id="case19",
+        ),
     ],
 )
 def test_get_pyright_setting(
     typeshed: Path,
-    excluded_path: str,
+    entirely_excluded_path: str | None,
+    path_excluded_from_strict: str | None,
     package_to_test: str,
     pyright_setting_name: str,
     maybe_stringize_path: Callable[[Path], Path | str],
     pyrightconfig_template: str,
 ) -> None:
-    pyrightconfig = pyrightconfig_template.format(f'"{excluded_path}"')
-    with pytest.raises(json.JSONDecodeError):
-        json.loads(pyrightconfig)
-    pyrightconfig_path = typeshed / "pyrightconfig.stricter.json"
-    pyrightconfig_path.write_text(pyrightconfig, encoding="utf-8")
-    pyright_strictness = get_pyright_strictness(
+    foo_path = "foo.pyi"
+    pyright_basicconfig = pyrightconfig_template.format(
+        f'"{entirely_excluded_path or foo_path}"'
+    )
+    pyright_strictconfig = pyrightconfig_template.format(
+        f'"{path_excluded_from_strict or foo_path}"'
+    )
+
+    config_filenames_to_configs = {
+        "pyrightconfig.json": pyright_basicconfig,
+        "pyrightconfig.stricter.json": pyright_strictconfig,
+    }
+
+    for config_filename, config in config_filenames_to_configs.items():
+        with pytest.raises(json.JSONDecodeError):
+            json.loads(config)
+
+        (typeshed / config_filename).write_text(config, encoding="utf-8")
+
+    pyright_setting = get_pyright_setting(
         package_name=package_to_test, typeshed_dir=maybe_stringize_path(typeshed)
     )
     expected_result = PyrightSetting[pyright_setting_name]
-    assert pyright_strictness is expected_result
+    assert pyright_setting is expected_result
 
 
 # =========================

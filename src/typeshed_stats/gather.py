@@ -8,13 +8,13 @@ import re
 import sys
 import urllib.parse
 from collections import Counter
-from collections.abc import Iterable, Iterator, Mapping, Sequence
+from collections.abc import Collection, Iterable, Iterator, Mapping, Sequence
 from contextlib import AsyncExitStack, contextmanager
 from enum import Enum
 from functools import cache
 from operator import attrgetter
 from pathlib import Path
-from typing import Any, Protocol, TypeAlias, TypeVar, final
+from typing import Any, Literal, Protocol, TypeAlias, TypeVar, final
 
 import aiohttp
 import attrs
@@ -43,7 +43,7 @@ __all__ = [
     "gather_stats_on_package",
     "get_package_size",
     "get_package_status",
-    "get_pyright_strictness",
+    "get_pyright_setting",
     "get_stubtest_setting",
 ]
 
@@ -415,10 +415,14 @@ def get_package_size(package_name: str, *, typeshed_dir: Path | str) -> int:
 
 
 @cache
-def _get_pyright_strict_excludelist(typeshed_dir: Path | str) -> frozenset[Path]:
-    # Read pyrightconfig.stricter.json;
+def _get_pyright_excludelist(
+    *,
+    typeshed_dir: Path | str,
+    config_filename: Literal["pyrightconfig.json", "pyrightconfig.stricter.json"],
+) -> frozenset[Path]:
+    # Read the config file;
     # do some pre-processing so that it can be passed to json.loads()
-    config_path = Path(typeshed_dir, "pyrightconfig.stricter.json")
+    config_path = Path(typeshed_dir, config_filename)
     with config_path.open(encoding="utf-8") as file:
         # strip comments from the file
         lines = [line for line in file if not line.strip().startswith("//")]
@@ -433,15 +437,27 @@ def _get_pyright_strict_excludelist(typeshed_dir: Path | str) -> frozenset[Path]
 class PyrightSetting(_NiceReprEnum):
     """The various possible pyright settings typeshed uses in CI."""
 
-    STRICT = "All files are tested with the stricter pyright settings in CI."
+    ENTIRELY_EXCLUDED = "All files are excluded from the pyright check in CI."
+    SOME_FILES_EXCLUDED = "Some files are excluded from the pyright check in CI."
     NOT_STRICT = "All files are excluded from the stricter pyright settings in CI."
     STRICT_ON_SOME_FILES = (
         "Some files are tested with the stricter pyright settings in CI;"
         " some are excluded."
     )
+    STRICT = "All files are tested with the stricter pyright settings in CI."
 
 
-def get_pyright_strictness(
+def _path_or_path_ancestor_is_listed(path: Path, path_list: Collection[Path]) -> bool:
+    return path in path_list or any(
+        listed_path in path.parents for listed_path in path_list
+    )
+
+
+def _child_of_path_is_listed(path: Path, path_list: Collection[Path]) -> bool:
+    return any(path in listed_path.parents for listed_path in path_list)
+
+
+def get_pyright_setting(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> PyrightSetting:
     """Get the setting typeshed uses in CI when pyright is run on a certain package.
@@ -456,16 +472,22 @@ def get_pyright_strictness(
         (see the docs on `PyrightSetting` for details).
     """
     package_directory = _get_package_directory(package_name, typeshed_dir)
-    excluded_paths = _get_pyright_strict_excludelist(typeshed_dir)
-    if package_directory in excluded_paths:
-        return PyrightSetting.NOT_STRICT
-    if any(
-        excluded_path in package_directory.parents for excluded_path in excluded_paths
+    entirely_excluded_paths = _get_pyright_excludelist(
+        typeshed_dir=typeshed_dir, config_filename="pyrightconfig.json"
+    )
+    paths_excluded_from_stricter_check = _get_pyright_excludelist(
+        typeshed_dir=typeshed_dir, config_filename="pyrightconfig.stricter.json"
+    )
+
+    if _path_or_path_ancestor_is_listed(package_directory, entirely_excluded_paths):
+        return PyrightSetting.ENTIRELY_EXCLUDED
+    if _child_of_path_is_listed(package_directory, entirely_excluded_paths):
+        return PyrightSetting.SOME_FILES_EXCLUDED
+    if _path_or_path_ancestor_is_listed(
+        package_directory, paths_excluded_from_stricter_check
     ):
         return PyrightSetting.NOT_STRICT
-    if any(
-        package_directory in excluded_path.parents for excluded_path in excluded_paths
-    ):
+    if _child_of_path_is_listed(package_directory, paths_excluded_from_stricter_check):
         return PyrightSetting.STRICT_ON_SOME_FILES
     return PyrightSetting.STRICT
 
@@ -514,7 +536,7 @@ async def gather_stats_on_package(
             package_name, typeshed_dir=typeshed_dir, session=session
         ),
         stubtest_setting=get_stubtest_setting(package_name, typeshed_dir=typeshed_dir),
-        pyright_setting=get_pyright_strictness(package_name, typeshed_dir=typeshed_dir),
+        pyright_setting=get_pyright_setting(package_name, typeshed_dir=typeshed_dir),
         annotation_stats=gather_annotation_stats_on_package(
             package_name, typeshed_dir=typeshed_dir
         ),

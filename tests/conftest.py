@@ -161,6 +161,7 @@ def complete_typeshed(
     for directory in "stdlib", "stubs":
         (typeshed / directory).mkdir()
 
+    (typeshed / "pyrightconfig.json").write_text("{}", encoding="utf-8")
     pyrightconfig_path = typeshed / "pyrightconfig.stricter.json"
     pyrightconfig_path.write_text(pyrightconfig_template.format(""), encoding="utf-8")
 
