@@ -146,6 +146,43 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
+## Stats on typeshed's stubs for `Flask-Migrate`
+
+### Number of lines
+
+106
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+
+### Stubtest settings in CI: *missing stubs ignored*
+
+The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Pyright settings in CI: *not strict*
+
+All files are excluded from the stricter pyright settings in CI.
+
+### Statistics on the annotations in typeshed's stubs for `Flask-Migrate`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 74
+    - Unannotated parameters: 4
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 20
+    - Unannotated returns: 2
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 9
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+
+<hr>
+
 ## Stats on typeshed's stubs for `Flask-SQLAlchemy`
 
 ### Number of lines
@@ -4257,7 +4294,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-55391
+55406
 
 ### Package status: *stdlib*
 
@@ -4274,12 +4311,12 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 ### Statistics on the annotations in typeshed's stubs for `stdlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24439
+    - Annotated parameters: 24442
     - Unannotated parameters: 894
     - Explicit `Any` parameters: 2120
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13288
+    - Annotated returns: 13289
     - Unannotated returns: 405
     - Explicit `Any` returns: 819
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
@@ -4516,7 +4553,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1444
+1446
 
 ### Package status: *up to date*
 
@@ -4543,7 +4580,7 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
-    - Annotated variables: 97
+    - Annotated variables: 98
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 70
 

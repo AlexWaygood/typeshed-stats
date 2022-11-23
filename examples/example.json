@@ -80,6 +80,26 @@
     }
   },
   {
+    "package_name": "Flask-Migrate",
+    "number_of_lines": 106,
+    "package_status": "UP_TO_DATE",
+    "stubtest_setting": "MISSING_STUBS_IGNORED",
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 74,
+      "unannotated_parameters": 4,
+      "annotated_returns": 20,
+      "unannotated_returns": 2,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 9,
+      "explicit_Any_variables": 1,
+      "explicit_Incomplete_variables": 0
+    }
+  },
+  {
     "package_name": "Flask-SQLAlchemy",
     "number_of_lines": 125,
     "package_status": "OBSOLETE",
@@ -2301,14 +2321,14 @@
   },
   {
     "package_name": "stdlib",
-    "number_of_lines": 55391,
+    "number_of_lines": 55406,
     "package_status": "STDLIB",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24439,
+      "annotated_parameters": 24442,
       "unannotated_parameters": 894,
-      "annotated_returns": 13288,
+      "annotated_returns": 13289,
       "unannotated_returns": 405,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
@@ -2441,7 +2461,7 @@
   },
   {
     "package_name": "tqdm",
-    "number_of_lines": 1444,
+    "number_of_lines": 1446,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -2454,7 +2474,7 @@
       "explicit_Incomplete_returns": 8,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 97,
+      "annotated_variables": 98,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 70
     }
