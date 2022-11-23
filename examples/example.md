@@ -1418,9 +1418,9 @@ Upstream has added type hints; these typeshed stubs are now obsolete.
 
 Stubtest is skipped in CI for this package.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *entirely excluded*
 
-All files are excluded from the stricter pyright settings in CI.
+All files are excluded from the pyright check in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `cryptography`
 

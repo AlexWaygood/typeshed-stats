@@ -6,7 +6,7 @@ hide:
 
 # Statistics on typeshed's stubs
 
-<i>These statistics were last updated at: <b>12:42 UTC on 2022-11-23</b>.</i>
+<i>These statistics were last updated at: <b>15:03 UTC on 2022-11-23</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i>
 <hr>
 
@@ -1430,9 +1430,9 @@ Upstream has added type hints; these typeshed stubs are now obsolete.
 
 Stubtest is skipped in CI for this package.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *entirely excluded*
 
-All files are excluded from the stricter pyright settings in CI.
+All files are excluded from the pyright check in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `cryptography`
 

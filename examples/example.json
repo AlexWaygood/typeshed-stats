@@ -764,7 +764,7 @@
     "number_of_lines": 1986,
     "package_status": "OBSOLETE",
     "stubtest_setting": "SKIPPED",
-    "pyright_setting": "NOT_STRICT",
+    "pyright_setting": "ENTIRELY_EXCLUDED",
     "annotation_stats": {
       "annotated_parameters": 615,
       "unannotated_parameters": 0,
