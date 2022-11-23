@@ -43,7 +43,7 @@ __all__ = [
     "gather_stats_on_package",
     "get_package_size",
     "get_package_status",
-    "get_pyright_strictness",
+    "get_pyright_setting",
     "get_stubtest_setting",
 ]
 
