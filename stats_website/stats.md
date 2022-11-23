@@ -6,7 +6,7 @@ hide:
 
 # Statistics on typeshed's stubs
 
-<i>These statistics were last updated at: <b>15:03 UTC on 2022-11-23</b>.</i>
+<i>These statistics were last updated at: <b>23:48 UTC on 2022-11-23</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i>
 <hr>
 
@@ -3181,8 +3181,8 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicit `Any` parameters: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 477
-    - Unannotated returns: 95
+    - Annotated returns: 481
+    - Unannotated returns: 91
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -3381,7 +3381,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-674
+679
 
 ### Package status: *up to date*
 
@@ -3408,7 +3408,7 @@ All files are tested with the stricter pyright settings in CI.
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
-    - Annotated variables: 620
+    - Annotated variables: 625
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -3457,9 +3457,9 @@ All files are tested with the stricter pyright settings in CI.
 
 514
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
 
 ### Stubtest settings in CI: *missing stubs ignored*
 

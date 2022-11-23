@@ -1708,8 +1708,8 @@
     "annotation_stats": {
       "annotated_parameters": 725,
       "unannotated_parameters": 260,
-      "annotated_returns": 477,
-      "unannotated_returns": 95,
+      "annotated_returns": 481,
+      "unannotated_returns": 91,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 26,
@@ -1821,7 +1821,7 @@
   },
   {
     "package_name": "pycurl",
-    "number_of_lines": 674,
+    "number_of_lines": 679,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1834,7 +1834,7 @@
       "explicit_Incomplete_returns": 10,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 620,
+      "annotated_variables": 625,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -1862,7 +1862,7 @@
   {
     "package_name": "pyflakes",
     "number_of_lines": 514,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
