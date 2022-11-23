@@ -2074,11 +2074,11 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1917
+2214
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Stubtest settings in CI: *error on missing stub*
 
@@ -2091,19 +2091,19 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `fpdf2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 475
-    - Unannotated parameters: 600
-    - Explicit `Any` parameters: 24
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 44
+    - Annotated parameters: 570
+    - Unannotated parameters: 533
+    - Explicit `Any` parameters: 10
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 58
 - Returns:
-    - Annotated returns: 284
-    - Unannotated returns: 247
+    - Annotated returns: 358
+    - Unannotated returns: 204
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
-    - Annotated variables: 521
-    - Explicit `Any` variables: 76
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 41
+    - Annotated variables: 635
+    - Explicit `Any` variables: 14
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 159
 
 <hr>
 
@@ -3517,15 +3517,15 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-297
+362
 
 ### Package status: *up to date*
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in CI.
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3544,7 +3544,7 @@ All files are tested with the stricter pyright settings in CI.
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 102
+    - Annotated variables: 155
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -3998,15 +3998,15 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-736
+769
 
 ### Package status: *up to date*
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in CI.
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4015,17 +4015,17 @@ All files are tested with the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `regex`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 424
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 23
+    - Annotated parameters: 429
+    - Unannotated parameters: 2
+    - Explicit `Any` parameters: 25
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 104
+    - Annotated returns: 114
     - Unannotated returns: 0
-    - Explicit `Any` returns: 15
+    - Explicit `Any` returns: 16
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 70
+    - Annotated variables: 73
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -4294,7 +4294,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-55406
+55431
 
 ### Package status: *stdlib*
 
@@ -4311,17 +4311,17 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 ### Statistics on the annotations in typeshed's stubs for `stdlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24442
+    - Annotated parameters: 24445
     - Unannotated parameters: 894
     - Explicit `Any` parameters: 2120
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13289
+    - Annotated returns: 13292
     - Unannotated returns: 405
     - Explicit `Any` returns: 819
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8489
+    - Annotated variables: 8491
     - Explicit `Any` variables: 556
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
 

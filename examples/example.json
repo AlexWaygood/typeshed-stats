@@ -1121,22 +1121,22 @@
   },
   {
     "package_name": "fpdf2",
-    "number_of_lines": 1917,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 2214,
+    "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 475,
-      "unannotated_parameters": 600,
-      "annotated_returns": 284,
-      "unannotated_returns": 247,
-      "explicit_Incomplete_parameters": 44,
-      "explicit_Incomplete_returns": 2,
-      "explicit_Any_parameters": 24,
+      "annotated_parameters": 570,
+      "unannotated_parameters": 533,
+      "annotated_returns": 358,
+      "unannotated_returns": 204,
+      "explicit_Incomplete_parameters": 58,
+      "explicit_Incomplete_returns": 4,
+      "explicit_Any_parameters": 10,
       "explicit_Any_returns": 1,
-      "annotated_variables": 521,
-      "explicit_Any_variables": 76,
-      "explicit_Incomplete_variables": 41
+      "annotated_variables": 635,
+      "explicit_Any_variables": 14,
+      "explicit_Incomplete_variables": 159
     }
   },
   {
@@ -1901,9 +1901,9 @@
   },
   {
     "package_name": "pynput",
-    "number_of_lines": 297,
+    "number_of_lines": 362,
     "package_status": "UP_TO_DATE",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
+    "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 81,
@@ -1914,7 +1914,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 11,
       "explicit_Any_returns": 0,
-      "annotated_variables": 102,
+      "annotated_variables": 155,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0
     }
@@ -2161,20 +2161,20 @@
   },
   {
     "package_name": "regex",
-    "number_of_lines": 736,
+    "number_of_lines": 769,
     "package_status": "UP_TO_DATE",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
+    "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 424,
-      "unannotated_parameters": 0,
-      "annotated_returns": 104,
+      "annotated_parameters": 429,
+      "unannotated_parameters": 2,
+      "annotated_returns": 114,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 23,
-      "explicit_Any_returns": 15,
-      "annotated_variables": 70,
+      "explicit_Any_parameters": 25,
+      "explicit_Any_returns": 16,
+      "annotated_variables": 73,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -2321,20 +2321,20 @@
   },
   {
     "package_name": "stdlib",
-    "number_of_lines": 55406,
+    "number_of_lines": 55431,
     "package_status": "STDLIB",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24442,
+      "annotated_parameters": 24445,
       "unannotated_parameters": 894,
-      "annotated_returns": 13289,
+      "annotated_returns": 13292,
       "unannotated_returns": 405,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2120,
       "explicit_Any_returns": 819,
-      "annotated_variables": 8489,
+      "annotated_variables": 8491,
       "explicit_Any_variables": 556,
       "explicit_Incomplete_variables": 101
     }
