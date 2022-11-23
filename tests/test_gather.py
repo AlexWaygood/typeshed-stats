@@ -31,7 +31,7 @@ from typeshed_stats.gather import (
     gather_stats,
     get_package_size,
     get_package_status,
-    get_pyright_strictness,
+    get_pyright_setting,
     get_stubtest_setting,
     tmpdir_typeshed,
 )
@@ -412,7 +412,7 @@ def test_get_package_size_multiple_files(
 
 
 # ================================
-# Tests for get_pyright_strictness
+# Tests for get_pyright_setting
 # ================================
 
 
@@ -440,13 +440,14 @@ def test_get_pyright_setting(
     pyrightconfig = pyrightconfig_template.format(f'"{excluded_path}"')
     with pytest.raises(json.JSONDecodeError):
         json.loads(pyrightconfig)
-    pyrightconfig_path = typeshed / "pyrightconfig.stricter.json"
-    pyrightconfig_path.write_text(pyrightconfig, encoding="utf-8")
-    pyright_strictness = get_pyright_strictness(
+    (typeshed / "pyrightconfig.json").write_text("{}", encoding="utf-8")
+    strict_pyright_config_path = typeshed / "pyrightconfig.stricter.json"
+    strict_pyright_config_path.write_text(pyrightconfig, encoding="utf-8")
+    pyright_setting = get_pyright_setting(
         package_name=package_to_test, typeshed_dir=maybe_stringize_path(typeshed)
     )
     expected_result = PyrightSetting[pyright_setting_name]
-    assert pyright_strictness is expected_result
+    assert pyright_setting is expected_result
 
 
 # =========================

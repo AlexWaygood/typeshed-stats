@@ -221,7 +221,7 @@ class TestPassingPackages:
         patches_to_apply = [
             ("get_package_status", PackageStatus.UP_TO_DATE),
             ("get_stubtest_setting", StubtestSetting.MISSING_STUBS_IGNORED),
-            ("get_pyright_strictness", PyrightSetting.STRICT_ON_SOME_FILES),
+            ("get_pyright_setting", PyrightSetting.STRICT_ON_SOME_FILES),
         ]
 
         for function_name, return_value in patches_to_apply:
