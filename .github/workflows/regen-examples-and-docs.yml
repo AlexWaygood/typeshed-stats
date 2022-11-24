@@ -12,10 +12,21 @@ on:
       - '**.json'
       - '**.csv'
       - '**.html'
+  pull_request:
+    paths-ignore:
+      - 'tests/**'
+      - 'examples/**'
+      - '**.json'
+      - '**.csv'
+      - '**.html'
   workflow_dispatch:
 
 env:
   PIP_DISABLE_PIP_VERSION_CHECK: 1
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
 
 jobs:
   regen_examples_and_docs:
@@ -44,17 +55,22 @@ jobs:
       - name: Check the generated files with pre-commit
         uses: pre-commit/action@v3.0.0
       - name: Commit and push the changes
+        if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && github.event_name != 'pull_request' }}
         run: |
           git commit -a -m "👷 Automated regeneration of examples and docs"
           git push
       - name: Deploy docs
+        if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && github.event_name != 'pull_request' }}
         run: mkdocs gh-deploy -m "🚀 Deploying {sha} with MkDocs {version}" --force
+      - name: Test docs
+        if: ${{ github.event_name == 'pull_request' }}
+        run: mkdocs build --strict
 
   create-issue-on-failure:
     name: Create an issue if the automated regeneration failed
     runs-on: ubuntu-latest
     needs: [regen_examples_and_docs]
-    if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && github.event_name != 'workflow_dispatch' && (needs.regen_examples_and_docs.result == 'failure') }}
+    if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && (github.event_name == 'push' || github.event_name == 'schedule') && needs.regen_examples_and_docs.result == 'failure' }}
     permissions:
       issues: write
     steps:
