@@ -1861,20 +1861,20 @@
   },
   {
     "package_name": "pyflakes",
-    "number_of_lines": 514,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 504,
+    "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 269,
+      "annotated_parameters": 266,
       "unannotated_parameters": 69,
-      "annotated_returns": 211,
+      "annotated_returns": 210,
       "unannotated_returns": 2,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 4,
       "explicit_Any_returns": 3,
-      "annotated_variables": 108,
+      "annotated_variables": 102,
       "explicit_Any_variables": 33,
       "explicit_Incomplete_variables": 0
     }
@@ -2102,7 +2102,7 @@
   {
     "package_name": "pyvmomi",
     "number_of_lines": 221,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
     "annotation_stats": {

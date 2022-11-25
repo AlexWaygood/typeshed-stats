@@ -6,7 +6,7 @@ hide:
 
 # Statistics on typeshed's stubs
 
-<i>These statistics were last updated at: <b>12:42 UTC on 2022-11-24</b>.</i>
+<i>These statistics were last updated at: <b>01:48 UTC on 2022-11-25</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i>
 <hr>
 
@@ -3455,11 +3455,11 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-514
+504
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Stubtest settings in CI: *missing stubs ignored*
 
@@ -3472,17 +3472,17 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `pyflakes`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 269
+    - Annotated parameters: 266
     - Unannotated parameters: 69
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 211
+    - Annotated returns: 210
     - Unannotated returns: 2
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 108
+    - Annotated variables: 102
     - Explicit `Any` variables: 33
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -3901,9 +3901,9 @@ All files are tested with the stricter pyright settings in CI.
 
 221
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
 
 ### Stubtest settings in CI: *missing stubs ignored*
 
