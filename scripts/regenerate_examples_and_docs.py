@@ -12,7 +12,6 @@ import attrs
 import tabulate
 
 import typeshed_stats.gather
-import typeshed_stats.serialize
 from typeshed_stats.gather import gather_stats, tmpdir_typeshed
 from typeshed_stats.serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
@@ -97,7 +96,10 @@ def regenerate_gather_api_docs() -> None:
         if isinstance(thing, type):
             if issubclass(thing, Enum):
                 docs += "**Members:**\n\n"
-                docs += generate_table([[f"`{member.name}`", member.__doc__] for member in thing], headers=["Name", "Description"])
+                docs += generate_table(
+                    [[f"`{member.name}`", member.__doc__] for member in thing],
+                    headers=["Name", "Description"],
+                )
             elif attrs.has(thing):
                 rows = []
                 for field in attrs.fields(thing):

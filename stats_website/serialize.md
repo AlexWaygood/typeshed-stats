@@ -5,4 +5,3 @@ hide:
 ---
 
 ::: typeshed_stats.serialize
-

@@ -142,4 +142,3 @@ Type alias for `str`
 ## **`get_stubtest_setting`**
 
 ::: typeshed_stats.gather.get_stubtest_setting
-
