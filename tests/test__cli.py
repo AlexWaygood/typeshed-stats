@@ -8,10 +8,10 @@ from collections.abc import Iterator, Sequence
 from pathlib import Path
 from unittest import mock
 
-# Make sure not to import rich or markdown here, since they're optional dependencies
-# Some tests assert behaviour that's predicated on these modules not yet being imported
+# Make sure not to import rich here, as it's optional dependencies
+# Some tests assert behaviour that's predicated on rich not yet being imported
+import markdown
 import pytest
-from bs4 import BeautifulSoup
 from pytest_mock import MockerFixture
 from pytest_subtests import SubTests  # type: ignore[import]
 
@@ -402,18 +402,8 @@ class TestToFileSuccessCases(ToFileOptionTestsBase):
         dest = self._dir / "foo.md"
         self._args += ["--to-file", str(dest)]
         self._assert_args_succeed()
-        import markdown
-
         with dest.open(encoding="utf-8") as markdown_file:
             markdown.markdown(markdown_file.read())
-
-    def test_to_file_html(self) -> None:
-        dest = self._dir / "foo.html"
-        self._args += ["--to-file", str(dest)]
-        self._assert_args_succeed()
-        with dest.open(encoding="utf-8") as htmlfile:
-            soup = BeautifulSoup(htmlfile.read(), "html.parser")
-        assert bool(soup.find()), "Invalid HTML produced!"
 
     def test_to_file_txt(self) -> None:
         dest = self._dir / "foo.txt"
@@ -519,15 +509,7 @@ class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTes
     def test_to_markdown(self) -> None:
         self._assert_outputoption_works("--to-markdown")
         result = self._get_stdout()
-        import markdown
-
         markdown.markdown(result)
-
-    def test_to_html(self) -> None:
-        self._assert_outputoption_works("--to-html")
-        result = self._capsys.readouterr().out.strip()
-        soup = BeautifulSoup(result, "html.parser")
-        assert bool(soup.find()), "Invalid HTML produced!"
 
     def test_pprint_option_with_rich_available(self) -> None:
         rich_mock = mock.MagicMock()

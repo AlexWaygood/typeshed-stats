@@ -48,7 +48,7 @@ jobs:
       - name: Install requirements
         run: |
           pip install -r requirements/mypy.txt
-          pip install -e .[everything]
+          pip install -e .[rich]
       - name: Run mypy on the project
         run: mypy
 

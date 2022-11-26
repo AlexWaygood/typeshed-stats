@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Annotated, Literal, TypeAlias, cast, get_args
 
 from .gather import PackageName, PackageStats, gather_stats, tmpdir_typeshed
-from .serialize import stats_to_csv, stats_to_html, stats_to_json, stats_to_markdown
+from .serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
 __all__ = ["OutputOption", "SUPPORTED_EXTENSIONS", "main"]
 
@@ -39,7 +39,6 @@ class OutputOption(Enum):
     JSON = ".json", cast(_CF, stats_to_json)
     CSV = ".csv", cast(_CF, stats_to_csv)
     MARKDOWN = ".md", cast(_CF, stats_to_markdown)
-    HTML = ".html", cast(_CF, stats_to_html)
 
     @property
     def file_extension(self) -> str:
@@ -150,13 +149,6 @@ def _get_argument_parser() -> argparse.ArgumentParser:
         const=OutputOption.MARKDOWN,
         dest="output_option",
         help="Print output as formatted MarkDown to the terminal",
-    )
-    output_options.add_argument(
-        "--to-html",
-        action="store_const",
-        const=OutputOption.HTML,
-        dest="output_option",
-        help="Print output as formatted HTML to the terminal",
     )
     output_options.add_argument(
         "-f",

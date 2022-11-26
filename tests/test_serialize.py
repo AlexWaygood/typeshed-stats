@@ -3,6 +3,7 @@ import io
 import json
 from collections.abc import Sequence
 
+import markdown
 from bs4 import BeautifulSoup
 
 from typeshed_stats.gather import PackageStats
@@ -10,7 +11,6 @@ from typeshed_stats.serialize import (
     stats_from_csv,
     stats_from_json,
     stats_to_csv,
-    stats_to_html,
     stats_to_json,
     stats_to_markdown,
 )
@@ -57,13 +57,6 @@ def test_markdown_and_htmlconversion(
     converted_to_markdown = stats_to_markdown(random_PackageStats_sequence)
     assert converted_to_markdown[-1] == "\n"
     assert converted_to_markdown[-2] != "\n"
-    html1 = stats_to_html(random_PackageStats_sequence)
-    assert html1[-1] == "\n"
-    assert html1[-2] != "\n"
-    html1 = html1.strip()
-    import markdown
-
-    html2 = markdown.markdown(converted_to_markdown).strip()
-    assert html1 == html2
+    html1 = markdown.markdown(converted_to_markdown)
     soup = BeautifulSoup(html1, "html.parser")
     assert bool(soup.find()), "Invalid HTML produced!"
