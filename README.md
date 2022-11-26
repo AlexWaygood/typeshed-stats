@@ -40,7 +40,7 @@ with tmpdir_typeshed() as typeshed:
 
 ## How can I use this?
 
-1. Run `pip install typeshed-stats[everything]` to install the package
+1. Run `pip install typeshed-stats[rich]` to install the package
 1. Run `typeshed-stats --help` for information about various options
 
 ## Are there any examples of things this script can produce, other than [the website](https://alexwaygood.github.io/typeshed-stats/)?
