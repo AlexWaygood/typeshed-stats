@@ -28,5 +28,7 @@ noqa-require-code = true
 pytest-fixture-no-parentheses = true
 pytest-mark-no-parentheses = true
 
-# I don't care about docstrings for test files or functions
-per-file-ignores = tests/*.py : D
+# I don't care about docstrings for test/script files or functions
+per-file-ignores =
+  tests/*.py : D
+  scripts/*.py : D

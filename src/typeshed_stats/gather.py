@@ -209,8 +209,8 @@ def gather_annotation_stats_on_file(path: Path | str) -> AnnotationStats:
         path: The location of the file to be analysed.
 
     Returns:
-        An `AnnotationStats` object containing data
-        about the annotations in the file.
+        An [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] object
+            containing data about the annotations in the file.
     """
     visitor = _AnnotationStatsCollector()
     with open(path, encoding="utf-8") as file:
@@ -233,11 +233,11 @@ def gather_annotation_stats_on_package(
     Args:
         package_name: The name of the stubs package to analyze.
         typeshed_dir: A path pointing to the location of a typeshed directory
-          in which to find the stubs package source.
+            in which to find the stubs package source.
 
     Returns:
-        An `AnnotationStats` object containing data
-        about the annotations in the package.
+        An [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] object
+            containing data about the annotations in the package.
     """
     package_directory = _get_package_directory(package_name, typeshed_dir)
     file_results = [
@@ -283,11 +283,11 @@ def get_stubtest_setting(
     Args:
         package_name: The name of the package to find the stubtest setting for.
         typeshed_dir: A path pointing to a typeshed directory,
-          from which to retrieve the stubtest setting.
+            from which to retrieve the stubtest setting.
 
     Returns:
-        A member of the `StubtestSetting` enumeration
-        (see the docs on `StubtestSetting` for details).
+        A member of the [`StubtestSetting`][typeshed_stats.gather.StubtestSetting]
+            enumeration (see the docs on `StubtestSetting` for details).
     """
     if package_name == "stdlib":
         return StubtestSetting.ERROR_ON_MISSING_STUB
@@ -365,15 +365,15 @@ async def get_package_status(
     Args:
         package_name: The name of the stubs package to analyze.
         typeshed_dir: A path pointing to a typeshed directory
-          in which to find the stubs package.
+            in which to find the stubs package.
         session (optional): An `aiohttp.ClientSession` instance, to be used
-          for making a network requests, or `None`. If `None` is provided
-          for this argument, a new `aiohttp.ClientSession` instance will be
-          created to make the network request.
+            for making a network requests, or `None`. If `None` is provided
+            for this argument, a new `aiohttp.ClientSession` instance will be
+            created to make the network request.
 
     Returns:
-        A member of the `PackageStatus` enumeration
-        (see the docs on `PackageStatus` for details).
+        A member of the [`PackageStatus`][typeshed_stats.gather.PackageStatus]
+            enumeration (see the docs on `PackageStatus` for details).
     """
     if package_name == "stdlib":
         # This function isn't really relevant for the stdlib stubs
@@ -403,7 +403,7 @@ def get_package_size(package_name: str, *, typeshed_dir: Path | str) -> int:
     Args:
         package_name: The name of the stubs package to find the line number for.
         typeshed_dir: A path pointing to a typeshed directory
-          in which to find the stubs package.
+            in which to find the stubs package.
 
     Returns:
         The number of lines of code the stubs package contains.
@@ -465,11 +465,11 @@ def get_pyright_setting(
     Args:
         package_name: The name of the package to find the stubtest setting for.
         typeshed_dir: A path pointing to a typeshed directory,
-          from which to retrieve the stubtest setting.
+            from which to retrieve the stubtest setting.
 
     Returns:
-        A member of the `PyrightSetting` enumeration
-        (see the docs on `PyrightSetting` for details).
+        A member of the [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]
+            enumeration (see the docs on `PyrightSetting` for details).
     """
     package_directory = _get_package_directory(package_name, typeshed_dir)
     entirely_excluded_paths = _get_pyright_excludelist(
@@ -513,21 +513,22 @@ async def gather_stats_on_package(
 ) -> PackageStats:
     """Gather miscellaneous statistics about a single stubs package in typeshed.
 
-    This function calls `get_package_status()`,
+    This function calls
+    [`get_package_status()`][typeshed_stats.gather.get_package_status],
     which makes network requests to PyPI.
     See the docs on `get_package_status()` for details.
 
     Args:
         package_name: The name of the package to gather statistics on.
         typeshed_dir: A path pointing to a typeshed directory,
-          in which the source code for the stubs package can be found.
+            in which the source code for the stubs package can be found.
         session (optional): An `aiohttp.ClientSession` instance, to be used
-          for making a network requests, or `None`. If `None` is provided
-          for this argument, a new `aiohttp.ClientSession` instance will be
-          created to make the network request.
+            for making a network requests, or `None`. If `None` is provided
+            for this argument, a new `aiohttp.ClientSession` instance will be
+            created to make the network request.
 
     Returns:
-        An instance of the `PackageStats` class.
+        An instance of the [`PackageStats`][typeshed_stats.gather.PackageStats] class.
     """
     return PackageStats(
         package_name=package_name,
@@ -568,13 +569,13 @@ def gather_stats(
 
     Args:
         packages: An iterable of package names to be analysed, or None.
-          If `None`, defaults to all third-party stubs, plus the stubs for the stdlib.
+            If `None`, defaults to all third-party stubs, plus the stubs for the stdlib.
         typeshed_dir: The path to a local clone of typeshed.
 
     Returns:
-        A sequence of `PackageStats` objects. Each `PackageStats` object
-        contains information representing an analysis of a certain stubs package
-        in typeshed.
+        A sequence of [`PackageStats`][typeshed_stats.gather.PackageStats] objects.
+            Each `PackageStats` object contains information representing an analysis
+            of a certain stubs package in typeshed.
     """
     if packages is None:
         packages = os.listdir(Path(typeshed_dir, "stubs")) + ["stdlib"]

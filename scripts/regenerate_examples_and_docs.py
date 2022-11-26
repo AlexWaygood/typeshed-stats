@@ -4,8 +4,14 @@ import shutil
 import textwrap
 from contextlib import ExitStack
 from datetime import datetime
+from enum import Enum
+from functools import partial
 from pathlib import Path
 
+import attrs
+import tabulate
+
+import typeshed_stats.gather
 from typeshed_stats.gather import gather_stats, tmpdir_typeshed
 from typeshed_stats.serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
@@ -54,6 +60,63 @@ def regenerate_docs_page() -> None:
     print("Docs page successfully regenerated!")
 
 
+generate_table = partial(tabulate.tabulate, tablefmt="github")
+
+
+def regenerate_gather_api_docs() -> None:
+    docs = textwrap.dedent(
+        f"""\
+        ---
+        hide:
+          - footer
+          - navigation
+          - toc
+        ---
+
+        {typeshed_stats.gather.__doc__}
+        """
+    )
+    for name in typeshed_stats.gather.__all__:
+        docs += textwrap.dedent(
+            f"""\
+            <hr>
+
+            ## **`{name}`**
+
+            ::: typeshed_stats.gather.{name}
+
+            """
+        )
+
+        if name == "PackageName":
+            docs += "Type alias for `str`\n\n"
+            continue
+
+        thing = getattr(typeshed_stats.gather, name)
+        if isinstance(thing, type):
+            if issubclass(thing, Enum):
+                docs += "**Members:**\n\n"
+                docs += generate_table(
+                    [[f"`{member.name}`", member.__doc__] for member in thing],
+                    headers=["Name", "Description"],
+                )
+            elif attrs.has(thing):
+                rows = []
+                for field in attrs.fields(thing):  # type: ignore[arg-type]
+                    typ = field.type.__name__
+                    if typ in typeshed_stats.gather.__all__:
+                        typ_description = f"[`{typ}`][typeshed_stats.gather.{typ}]"
+                    else:
+                        typ_description = f"`{typ}`"
+                    rows.append([f"`{field.name}`", typ_description])
+                docs += "**Attributes:**\n\n"
+                docs += generate_table(rows, headers=["Name", "Type"])
+            docs += "\n"
+    docs = docs.strip() + "\n"
+    Path("stats_website", "gather.md").write_text(docs, encoding="utf-8")
+    print("API docs successfully regenerated for `typeshed_stats.gather`!")
+
+
 def main() -> None:
     """CLI entry point."""
     parser = argparse.ArgumentParser("Script to regenerate examples")
@@ -67,6 +130,7 @@ def main() -> None:
             args.typeshed_dir = stack.enter_context(tmpdir_typeshed())
         regenerate_examples(args.typeshed_dir)
     regenerate_docs_page()
+    regenerate_gather_api_docs()
 
 
 if __name__ == "__main__":
