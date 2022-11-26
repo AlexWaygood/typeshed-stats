@@ -10,6 +10,7 @@ repos:
       - id: check-json
       - id: check-merge-conflict
       - id: mixed-line-ending
+      - id: check-case-conflict
       - id: name-tests-test
         args: [--pytest-test-first]
   - repo: https://github.com/pre-commit/pygrep-hooks
