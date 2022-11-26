@@ -1,5 +1,6 @@
-beautifulsoup4>=4,<5            # we use this in tests for validating HTML strings
+beautifulsoup4>=4,<5
 coverage>=6,<7
+Markdown>=3,<4
 pytest>=7,<8
 pytest-antilru==1.1.1
 pytest-asyncio==0.20.2

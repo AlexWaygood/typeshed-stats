@@ -39,8 +39,6 @@ dependencies = [
 
 [project.optional-dependencies]
 rich = ["rich"]
-html = ["Markdown"]
-everything = ["rich", "Markdown"]
 
 [project.urls]
 "Homepage" = "https://github.com/AlexWaygood/typeshed-stats"

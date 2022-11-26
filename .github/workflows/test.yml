@@ -62,7 +62,7 @@ jobs:
       - name: Install requirements
         run: |
           pip install -r requirements/pytest.txt
-          pip install -e .[everything]
+          pip install -e .[rich]
       - name: Run tests under coverage
         run: |
           coverage run -m pytest

@@ -35,7 +35,7 @@ jobs:
       - name: Check requirements can all be installed together
         run: |
           pip install -r requirements/all.txt
-          pip install -e .[everything]
+          pip install -e .[rich]
 
   create-issue-on-failure:
     name: Create an issue if daily requirements check failed

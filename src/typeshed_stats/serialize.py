@@ -13,7 +13,6 @@ __all__ = [
     "stats_from_csv",
     "stats_from_json",
     "stats_to_csv",
-    "stats_to_html",
     "stats_to_json",
     "stats_to_markdown",
 ]
@@ -134,10 +133,3 @@ def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
         return template.format(**kwargs)
 
     return "\n<hr>\n".join(format_package(info) for info in stats).strip() + "\n"
-
-
-def stats_to_html(stats: Sequence[PackageStats]) -> str:
-    """Generate HTML describing statistics on multiple stubs packages."""
-    import markdown
-
-    return markdown.markdown(stats_to_markdown(stats)).strip() + "\n"
