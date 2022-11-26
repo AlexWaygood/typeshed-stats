@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0 # must match requirements/all.txt
+    rev: v4.4.0 # must match requirements/all.txt
     hooks:
       - id: trailing-whitespace
       - id: requirements-txt-fixer
@@ -9,6 +9,7 @@ repos:
       - id: check-toml
       - id: check-json
       - id: check-merge-conflict
+      - id: mixed-line-ending
       - id: name-tests-test
         args: [--pytest-test-first]
   - repo: https://github.com/pre-commit/pygrep-hooks

@@ -1,0 +1,57 @@
+name: Check requirements can all be installed together
+
+on:
+  push:
+    branches: main
+  pull_request:
+    paths:
+      - '.github/workflows/check-requirements.yml'
+      - 'requirements/**.txt'
+      - 'pyproject.toml'
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: read
+
+env:
+  FORCE_COLOR: 1  # Request colored output from CLI tools supporting it
+  PIP_DISABLE_PIP_VERSION_CHECK: 1
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  check-requirements:
+    name: Check requirements can all be installed together
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Check requirements can all be installed together
+        run: |
+          pip install -r requirements/all.txt
+          pip install -e .[everything]
+
+  create-issue-on-failure:
+    name: Create an issue if daily requirements check failed
+    runs-on: ubuntu-latest
+    needs: check-requirements
+    if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && github.event_name == 'schedule' && needs.check-requirements.result == 'failure' }}
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.issues.create({
+              owner: "AlexWaygood",
+              repo: "typeshed-stats",
+              title: `Daily requirements check failed on ${new Date().toDateString()}`,
+              body: "Runs are listed here: https://github.com/AlexWaygood/typeshed-stats/actions/workflows/check-requirements.yml",
+            })
