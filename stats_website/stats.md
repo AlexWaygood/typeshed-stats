@@ -6,7 +6,7 @@ hide:
 
 # Statistics on typeshed's stubs
 
-<i>These statistics were last updated at: <b>12:40 UTC on 2022-11-25</b>.</i>
+<i>These statistics were last updated at: <b>01:43 UTC on 2022-11-26</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i>
 <hr>
 
@@ -754,7 +754,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-1156
+1158
 
 ### Package status: *up to date*
 
@@ -771,12 +771,12 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `babel`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 393
+    - Annotated parameters: 395
     - Unannotated parameters: 225
     - Explicit `Any` parameters: 52
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 247
+    - Annotated returns: 249
     - Unannotated returns: 121
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0

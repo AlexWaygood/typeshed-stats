@@ -401,14 +401,14 @@
   },
   {
     "package_name": "babel",
-    "number_of_lines": 1156,
+    "number_of_lines": 1158,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 393,
+      "annotated_parameters": 395,
       "unannotated_parameters": 225,
-      "annotated_returns": 247,
+      "annotated_returns": 249,
       "unannotated_returns": 121,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,

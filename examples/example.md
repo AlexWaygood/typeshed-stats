@@ -742,7 +742,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-1156
+1158
 
 ### Package status: *up to date*
 
@@ -759,12 +759,12 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `babel`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 393
+    - Annotated parameters: 395
     - Unannotated parameters: 225
     - Explicit `Any` parameters: 52
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 247
+    - Annotated returns: 249
     - Unannotated returns: 121
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
