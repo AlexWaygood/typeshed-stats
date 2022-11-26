@@ -1,4 +1,4 @@
-name: Check requirements can all be installed together
+name: Check requirements
 
 on:
   push:
