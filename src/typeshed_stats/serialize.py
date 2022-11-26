@@ -115,6 +115,7 @@ def stats_from_csv(data: str) -> list[PackageStats]:
 
 def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
     """Generate MarkDown describing statistics on multiple stubs packages.
+
     Args:
         stats: The statistics to convert.
 
