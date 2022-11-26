@@ -102,7 +102,7 @@ def regenerate_gather_api_docs() -> None:
                 )
             elif attrs.has(thing):
                 rows = []
-                for field in attrs.fields(thing):
+                for field in attrs.fields(thing):  # type: ignore[arg-type]
                     typ = field.type.__name__
                     if typ in typeshed_stats.gather.__all__:
                         typ_description = f"[`{typ}`][typeshed_stats.gather.{typ}]"
