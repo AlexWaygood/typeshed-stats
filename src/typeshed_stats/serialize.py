@@ -26,21 +26,43 @@ _CATTRS_CONVERTER.register_structure_hook(_NiceReprEnum, lambda d, t: t[d])  # t
 
 
 def stats_to_json(stats: Sequence[PackageStats]) -> str:
-    """Convert stats on multiple stubs packages to JSON format."""
+    """Convert stats on multiple stubs packages to JSON format.
+
+    Args:
+        stats: The statistics to convert.
+
+    Returns:
+        The statistics serialized as JSON.
+    """
     import json
 
     return json.dumps(_unstructure(stats), indent=2) + "\n"
 
 
 def stats_from_json(data: str) -> list[PackageStats]:
-    """Load `PackageStats` objects from JSON format."""
+    """Load `PackageStats` objects from JSON format.
+
+    Args:
+        data: A JSON string.
+
+    Returns:
+        The statistics deserialized into
+            [`PackageStats`][typeshed_stats.gather.PackageStats] objects.
+    """
     import json
 
     return _structure(json.loads(data), list[PackageStats])
 
 
 def stats_to_csv(stats: Sequence[PackageStats]) -> str:
-    """Convert stats on multiple stubs packages to csv format."""
+    """Convert stats on multiple stubs packages to csv format.
+
+    Args:
+        stats: The statistics to convert.
+
+    Returns:
+        The statistics serialized as a CSV string.
+    """
     import csv
     import io
 
@@ -63,7 +85,15 @@ def _annotation_stats_fields() -> tuple[str, ...]:
 
 
 def stats_from_csv(data: str) -> list[PackageStats]:
-    """Load `PackageStats` objects from csv format."""
+    """Load `PackageStats` objects from csv format.
+
+    Args:
+        data: A CSV string.
+
+    Returns:
+        The statistics deserialized into
+            [`PackageStats`][typeshed_stats.gather.PackageStats] objects.
+    """
     import csv
     import io
 
@@ -84,7 +114,13 @@ def stats_from_csv(data: str) -> list[PackageStats]:
 
 
 def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
-    """Generate MarkDown describing statistics on multiple stubs packages."""
+    """Generate MarkDown describing statistics on multiple stubs packages.
+    Args:
+        stats: The statistics to convert.
+
+    Returns:
+        A markdown page describing the statistics.
+    """
     import textwrap
 
     template = textwrap.dedent(

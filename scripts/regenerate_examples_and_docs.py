@@ -4,8 +4,13 @@ import shutil
 import textwrap
 from contextlib import ExitStack
 from datetime import datetime
+from enum import Enum
 from pathlib import Path
 
+import attrs
+
+import typeshed_stats.gather
+import typeshed_stats.serialize
 from typeshed_stats.gather import gather_stats, tmpdir_typeshed
 from typeshed_stats.serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
@@ -54,6 +59,87 @@ def regenerate_docs_page() -> None:
     print("Docs page successfully regenerated!")
 
 
+def _generate_html_table(title: str, header_values: list[str], rows: list[tuple[str, ...]]) -> str:
+    header_row = "\n".join(f"      <th>{value}</th>" for value in header_values)
+
+    body = ""
+    for row in rows:
+        row_contents = "\n".join(f"        <td>{item}</td>" for item in row)
+        body += f"""\
+      <tr>
+{row_contents}
+      </tr>
+"""
+
+    html = f"""\
+<p><strong>{title}:</strong></p>
+<table>
+  <thead>
+    <tr>
+{header_row}
+    </tr>
+  </thead>
+  <tbody>
+{body}
+  </tbody>
+</table>
+"""
+    return html
+
+
+API_HEADER = """\
+---
+hide:
+  - footer
+  - navigation
+  - toc
+---
+"""
+
+
+API_TEMPLATE = """\
+<hr>
+
+## **`{name}`**
+
+::: typeshed_stats.{module}.{name}
+
+"""
+
+
+def regenerate_gather_api_docs() -> None:
+    docs = API_HEADER + typeshed_stats.gather.__doc__ + "\n"
+    for name in typeshed_stats.gather.__all__:
+        docs += API_TEMPLATE.format(module="gather", name=name)
+        thing = getattr(typeshed_stats.gather, name)
+        if isinstance(thing, type):
+            if issubclass(thing, Enum):
+                docs += _generate_html_table("Members", ["Name", "Description"], [(f"<code>{member.name}</code>", member.__doc__) for member in thing])
+            elif attrs.has(thing):
+                rows = []
+                for field in attrs.fields(thing):
+                    typ = field.type.__name__
+                    if typ in typeshed_stats.gather.__all__:
+                        typ_description = (
+                            f"<code>"
+                            f"<a "
+                            f'class="autorefs autorefs-internal" '
+                            f'title="typeshed_stats.gather.{typ}" '
+                            f'href="#typeshed_stats.gather.{typ}"'
+                            f">"
+                            f"{typ}"
+                            "</a>"
+                            "</code>"
+                        )
+                    else:
+                        typ_description = f"<code>{typ}</code>"
+                    rows.append((f"<code>{field.name}</code>", typ_description))
+                docs += _generate_html_table("Attributes", ["Name", "Type"], rows)
+            docs += "\n"
+    Path("stats_website", "gather.md").write_text(docs, encoding="utf-8")
+    print("API docs successfully regenerated for `typeshed_stats.gather`!")
+
+
 def main() -> None:
     """CLI entry point."""
     parser = argparse.ArgumentParser("Script to regenerate examples")
@@ -67,6 +153,7 @@ def main() -> None:
             args.typeshed_dir = stack.enter_context(tmpdir_typeshed())
         regenerate_examples(args.typeshed_dir)
     regenerate_docs_page()
+    regenerate_gather_api_docs()
 
 
 if __name__ == "__main__":

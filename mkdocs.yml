@@ -16,12 +16,23 @@ theme:
 plugins:
   - search
   - table-reader
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: false
 
 nav:
   - "Welcome to typeshed-stats": "index.md"
   - "Stats on typeshed's stubs": "stats.md"
   - "Stats in CSV format": "stats-csv.md"
+  - "typeshed_stats.gather: API reference": "gather.md"
+  - "typeshed_stats.serialize: API reference": "serialize.md"
 
 markdown_extensions:
   - attr_list
   - md_in_html
+
+watch:
+  - stats_website
+  - src
