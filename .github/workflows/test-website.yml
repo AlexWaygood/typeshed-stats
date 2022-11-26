@@ -1,0 +1,48 @@
+name: Test website generation
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths-ignore:
+      - 'tests/**'
+      - 'examples/**'
+      - '**.json'
+      - '**.csv'
+      - '**.html'
+
+env:
+  PIP_DISABLE_PIP_VERSION_CHECK: 1
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  test-website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          cache: "pip"
+          cache-dependency-path: |
+            requirements/docs.txt
+            pyproject.toml
+          python-version: "3.10"
+      - name: Install wheel
+        run: pip install "wheel<1"
+      - name: Install requirements
+        run: |
+          pip install -r requirements/docs.txt
+          pip install -e .[Markdown]
+      - name: Regenerate examples and docs
+        run: python scripts/regenerate_examples_and_docs.py --download-typeshed
+      - name: Check the generated files with pre-commit
+        uses: pre-commit/action@v3.0.0
+      - name: Build docs
+        run: mkdocs build --strict
+      - name: Upload docs
+        uses: actions/upload-artifact@v3
+        with:
+          name: doc-html
+          path: site
