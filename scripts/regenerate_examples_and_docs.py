@@ -112,7 +112,7 @@ def regenerate_gather_api_docs() -> None:
                 docs += "**Attributes:**\n\n"
                 docs += generate_table(rows, headers=["Name", "Type"])
             docs += "\n"
-    Path("stats_website", "gather.md").write_text(docs, encoding="utf-8")
+    Path("stats_website", "gather.md").write_text(docs + "\n", encoding="utf-8")
     print("API docs successfully regenerated for `typeshed_stats.gather`!")
 
 
