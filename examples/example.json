@@ -321,18 +321,18 @@
   },
   {
     "package_name": "aiofiles",
-    "number_of_lines": 628,
+    "number_of_lines": 636,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 333,
+      "annotated_parameters": 342,
       "unannotated_parameters": 0,
-      "annotated_returns": 133,
+      "annotated_returns": 136,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 21,
       "explicit_Incomplete_returns": 7,
-      "explicit_Any_parameters": 26,
+      "explicit_Any_parameters": 29,
       "explicit_Any_returns": 1,
       "annotated_variables": 3,
       "explicit_Any_variables": 0,
@@ -2321,7 +2321,7 @@
   },
   {
     "package_name": "stdlib",
-    "number_of_lines": 55478,
+    "number_of_lines": 55491,
     "package_status": "STDLIB",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT_ON_SOME_FILES",
@@ -2334,7 +2334,7 @@
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2118,
       "explicit_Any_returns": 819,
-      "annotated_variables": 8494,
+      "annotated_variables": 8493,
       "explicit_Any_variables": 556,
       "explicit_Incomplete_variables": 101
     }

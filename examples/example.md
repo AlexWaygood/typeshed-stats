@@ -594,7 +594,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-628
+636
 
 ### Package status: *up to date*
 
@@ -611,12 +611,12 @@ All files are tested with the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `aiofiles`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 333
+    - Annotated parameters: 342
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 26
+    - Explicit `Any` parameters: 29
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
-    - Annotated returns: 133
+    - Annotated returns: 136
     - Unannotated returns: 0
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
@@ -4294,7 +4294,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-55478
+55491
 
 ### Package status: *stdlib*
 
@@ -4321,7 +4321,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
     - Explicit `Any` returns: 819
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8494
+    - Annotated variables: 8493
     - Explicit `Any` variables: 556
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
 
