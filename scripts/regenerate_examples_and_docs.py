@@ -86,6 +86,8 @@ def regenerate_gather_api_docs() -> None:
 
             """
         )
+        if name == "PackageName":
+            continue
         thing = getattr(typeshed_stats.gather, name)
         if isinstance(thing, type):
             if issubclass(thing, Enum):
