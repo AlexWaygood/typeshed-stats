@@ -6,4 +6,3 @@ pytest-antilru==1.1.1
 pytest-asyncio==0.20.2
 pytest-mock==3.10.0
 pytest-subtests==0.9.0
-tabulate  # not sure why we need this for pytest, but it fails in CI without it
