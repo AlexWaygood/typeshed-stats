@@ -6,7 +6,7 @@ import random
 from collections.abc import Callable
 from contextlib import AbstractAsyncContextManager, nullcontext
 from pathlib import Path
-from typing import TypeAlias
+from typing import Final, NamedTuple, TypeAlias
 from unittest import mock
 
 # Make sure not to import rich here, since it's an optional dependency
@@ -416,61 +416,120 @@ def test_get_package_size_multiple_files(
 # ================================
 
 
+class PyrightTestCase(NamedTuple):
+    package_to_test: str
+    expected_result: str
+    entirely_excluded_path: str | None = None
+    path_excluded_from_strict: str | None = None
+
+
+PYRIGHT_TEST_CASES: Final = (
+    # Some files are entirely excluded, none are excluded from strict settings
+    PyrightTestCase(
+        entirely_excluded_path="stdlib",
+        package_to_test="stdlib",
+        expected_result="ENTIRELY_EXCLUDED",
+    ),
+    PyrightTestCase(
+        entirely_excluded_path="stdlib/tkinter",
+        package_to_test="stdlib",
+        expected_result="SOME_FILES_EXCLUDED",
+    ),
+    PyrightTestCase(
+        entirely_excluded_path="stdlib",
+        path_excluded_from_strict=None,
+        package_to_test="boto",
+        expected_result="STRICT",
+    ),
+    PyrightTestCase(
+        entirely_excluded_path="stubs",
+        package_to_test="aiofiles",
+        expected_result="ENTIRELY_EXCLUDED",
+    ),
+    PyrightTestCase(
+        entirely_excluded_path="stubs/aiofiles",
+        package_to_test="aiofiles",
+        expected_result="ENTIRELY_EXCLUDED",
+    ),
+    PyrightTestCase(
+        entirely_excluded_path="stubs/aiofiles",
+        path_excluded_from_strict=None,
+        package_to_test="boto",
+        expected_result="STRICT",
+    ),
+    # No files are entirely excluded, some are excluded from strict settings
+    PyrightTestCase(
+        path_excluded_from_strict="stdlib",
+        package_to_test="stdlib",
+        expected_result="NOT_STRICT",
+    ),
+    PyrightTestCase(
+        path_excluded_from_strict="stdlib/tkinter",
+        package_to_test="stdlib",
+        expected_result="STRICT_ON_SOME_FILES",
+    ),
+    PyrightTestCase(
+        path_excluded_from_strict="stubs",
+        package_to_test="stdlib",
+        expected_result="STRICT",
+    ),
+    PyrightTestCase(
+        path_excluded_from_strict="stubs/aiofiles",
+        package_to_test="stdlib",
+        expected_result="STRICT",
+    ),
+    PyrightTestCase(
+        path_excluded_from_strict="stubs",
+        package_to_test="appdirs",
+        expected_result="NOT_STRICT",
+    ),
+    PyrightTestCase(
+        path_excluded_from_strict="stubs/boto/auth.pyi",
+        package_to_test="boto",
+        expected_result="STRICT_ON_SOME_FILES",
+    ),
+    # Some files are entirely excluded, some are excluded from strict settings
+    PyrightTestCase(
+        entirely_excluded_path="stdlib",
+        path_excluded_from_strict="stdlib/tkinter",
+        package_to_test="stdlib",
+        expected_result="ENTIRELY_EXCLUDED",
+    ),
+    PyrightTestCase(
+        entirely_excluded_path="stdlib/tkinter",
+        path_excluded_from_strict="stdlib/asyncio",
+        package_to_test="stdlib",
+        expected_result="SOME_FILES_EXCLUDED",
+    ),
+    PyrightTestCase(
+        entirely_excluded_path="stubs",
+        path_excluded_from_strict="stdlib/tkinter",
+        package_to_test="stdlib",
+        expected_result="STRICT_ON_SOME_FILES",
+    ),
+    PyrightTestCase(
+        entirely_excluded_path="stdlib",
+        path_excluded_from_strict="stubs/boto/auth.pyi",
+        package_to_test="boto",
+        expected_result="STRICT_ON_SOME_FILES",
+    ),
+    PyrightTestCase(
+        entirely_excluded_path="stubs/boto/auth.pyi",
+        path_excluded_from_strict="stubs/boto/foo.pyi",
+        package_to_test="boto",
+        expected_result="SOME_FILES_EXCLUDED",
+    ),
+)
+
+
 @pytest.mark.parametrize(
     (
-        "entirely_excluded_path",
-        "path_excluded_from_strict",
         "package_to_test",
         "pyright_setting_name",
+        "entirely_excluded_path",
+        "path_excluded_from_strict",
     ),
-    [
-        # Some files are entirely excluded, none are excluded from strict settings
-        pytest.param("stdlib", None, "stdlib", "ENTIRELY_EXCLUDED", id="case1"),
-        pytest.param(
-            "stdlib/tkinter", None, "stdlib", "SOME_FILES_EXCLUDED", id="case2"
-        ),
-        pytest.param("stdlib", None, "boto", "STRICT", id="case3"),
-        pytest.param("stubs", None, "aiofiles", "ENTIRELY_EXCLUDED", id="case4"),
-        pytest.param(
-            "stubs/aiofiles", None, "aiofiles", "ENTIRELY_EXCLUDED", id="case5"
-        ),
-        pytest.param("stubs/aiofiles", None, "boto", "STRICT", id="case6"),
-        # No files are entirely excluded, some are excluded from strict settings
-        pytest.param(None, "stdlib", "stdlib", "NOT_STRICT", id="case7"),
-        pytest.param(
-            None, "stdlib/tkinter", "stdlib", "STRICT_ON_SOME_FILES", id="case8"
-        ),
-        pytest.param(None, "stubs", "stdlib", "STRICT", id="case9"),
-        pytest.param(None, "stubs/aiofiles", "stdlib", "STRICT", id="case10"),
-        pytest.param(None, "stubs", "appdirs", "NOT_STRICT", id="case11"),
-        pytest.param(None, "stubs", "boto", "NOT_STRICT", id="case12"),
-        pytest.param(None, "stubs/boto", "appdirs", "STRICT", id="case13"),
-        pytest.param(
-            None, "stubs/boto/auth.pyi", "boto", "STRICT_ON_SOME_FILES", id="case14"
-        ),
-        # Some files are entirely excluded, some are excluded from strict settings
-        pytest.param(
-            "stdlib", "stdlib/tkinter", "stdlib", "ENTIRELY_EXCLUDED", id="case15"
-        ),
-        pytest.param(
-            "stdlib/tkinter",
-            "stdlib/asyncio",
-            "stdlib",
-            "SOME_FILES_EXCLUDED",
-            id="case16",
-        ),
-        pytest.param(
-            "stubs", "stdlib/tkinter", "stdlib", "STRICT_ON_SOME_FILES", id="case17"
-        ),
-        pytest.param("stubs", "stubs/boto", "boto", "ENTIRELY_EXCLUDED", id="case18"),
-        pytest.param(
-            "stubs/boto/auth.pyi",
-            "stubs/boto/foo.pyi",
-            "boto",
-            "SOME_FILES_EXCLUDED",
-            id="case19",
-        ),
-    ],
+    [pytest.param(*case, id=f"case{i}") for i, case in enumerate(PYRIGHT_TEST_CASES)],
 )
 def test_get_pyright_setting(
     typeshed: Path,
