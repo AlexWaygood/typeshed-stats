@@ -40,9 +40,10 @@ def test___all___alphabetisation(submodule: types.ModuleType) -> None:
 
 def test_all_public_names_in___all__(submodule: types.ModuleType) -> None:
     """Test that all names not in `__all__` are marked as private."""
+    submodule_name = submodule.__name__
 
     def is_from_other_module(obj: object) -> bool:
-        return getattr(obj, "__module__", "typeshed_stats") != "typeshed_stats"
+        return getattr(obj, "__module__", submodule_name) != submodule_name
 
     def is_private_or_imported_symbol(name: str, value: object) -> bool:
         return (

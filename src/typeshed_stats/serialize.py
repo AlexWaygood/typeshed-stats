@@ -1,4 +1,4 @@
-"""Tools for serializing and deserializing `PackageStats` objects."""
+"""Tools for serializing and deserializing [`PackageStats`][typeshed_stats.gather.PackageStats] objects."""
 
 from collections.abc import Sequence
 from functools import cache

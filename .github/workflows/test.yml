@@ -65,7 +65,7 @@ jobs:
           pip install -e .[rich]
       - name: Run tests under coverage
         run: |
-          coverage run -m pytest
+          coverage run -m pytest --doctest-modules
           coverage report
       - name: Upload coverage to coveralls
         # Upload coverage if we are on the main repository and

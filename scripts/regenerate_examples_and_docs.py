@@ -70,7 +70,6 @@ def regenerate_gather_api_docs() -> None:
         hide:
           - footer
           - navigation
-          - toc
         ---
 
         {typeshed_stats.gather.__doc__}
@@ -81,17 +80,12 @@ def regenerate_gather_api_docs() -> None:
             f"""\
             <hr>
 
-            ## **`{name}`**
-
             ::: typeshed_stats.gather.{name}
+                options:
+                  show_root_heading: true
 
             """
         )
-
-        if name == "PackageName":
-            docs += "Type alias for `str`\n\n"
-            continue
-
         thing = getattr(typeshed_stats.gather, name)
         if isinstance(thing, type):
             if issubclass(thing, Enum):

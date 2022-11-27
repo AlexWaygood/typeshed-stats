@@ -79,6 +79,7 @@ def example_stub_source() -> str:
         import typing
         from _typeshed import Incomplete
         from collections.abc import Iterable
+        from types import GenericAlias
         from typing import Any
 
         a: int
@@ -95,6 +96,8 @@ def example_stub_source() -> str:
             b = ...
             c: int = ...
             d: typing.Sized
+            def __init__(__self) -> None: ...
+            def __class_getitem__(cls, item: Any) -> GenericAlias: ...
 
         def func1(arg): ...
         def func2(arg: int): ...
@@ -102,6 +105,9 @@ def example_stub_source() -> str:
         def func4(arg: Any) -> Any: ...
 
         class Eggs:
+            def __new__(cls) -> Eggs: ...
+            def __init__(self) -> None: ...
+            def __init_subclass__(cls) -> None: ...
             async def func5(self, arg): ...
             @staticmethod
             async def func6(arg: str) -> list[bytes]: ...
@@ -121,13 +127,13 @@ def example_stub_source() -> str:
 @pytest.fixture(scope="session")
 def expected_stats_on_example_stub_file() -> AnnotationStats:
     return AnnotationStats(
-        annotated_parameters=6,
+        annotated_parameters=7,
         unannotated_parameters=2,
-        annotated_returns=5,
+        annotated_returns=10,
         unannotated_returns=5,
         explicit_Incomplete_parameters=2,
         explicit_Incomplete_returns=1,
-        explicit_Any_parameters=2,
+        explicit_Any_parameters=3,
         explicit_Any_returns=2,
         annotated_variables=11,
         explicit_Any_variables=4,
