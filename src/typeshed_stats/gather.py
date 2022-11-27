@@ -45,6 +45,7 @@ __all__ = [
     "get_package_status",
     "get_pyright_setting",
     "get_stubtest_setting",
+    "tmpdir_typeshed",
 ]
 
 PackageName: TypeAlias = str
@@ -131,6 +132,7 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
         self.stats = AnnotationStats()
         self._class_nesting = 0
         self._function_decorators: frozenset[str] = frozenset()
+        self._function_name = ""
 
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}(stats={self.stats})"
@@ -159,10 +161,15 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
 
         # We don't want self/cls/metacls/mcls arguments to count towards the statistics
         if self.in_class and "staticmethod" not in self._function_decorators:
-            if "classmethod" in self._function_decorators:
-                if node.arg in {"cls", "metacls", "mcls"}:
+            arg_name = node.arg.lstrip("_")
+            if "classmethod" in self._function_decorators or self._function_name in {
+                "__new__",
+                "__class_getitem__",
+                "__init_subclass__",
+            }:
+                if arg_name in {"cls", "metacls", "mcls"}:
                     return
-            elif node.arg == "self":
+            elif arg_name == "self":
                 return
 
         annotation = node.annotation
@@ -194,6 +201,7 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
             for decorator in node.decorator_list
             if isinstance(decorator, ast.Name)
         )
+        self._function_name = node.name
         self.generic_visit(node)
         self._function_decorators = old_function_decorators
 
@@ -213,6 +221,16 @@ def gather_annotation_stats_on_file(path: Path | str) -> AnnotationStats:
     Returns:
         An [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] object
             containing data about the annotations in the file.
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, gather_annotation_stats_on_file
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     stats_on_functools = gather_annotation_stats_on_file(typeshed / "stdlib" / "functools.pyi")
+        ...
+        >>> type(stats_on_functools)
+        <class 'typeshed_stats.gather.AnnotationStats'>
+        >>> stats_on_functools.unannotated_parameters
+        0
     """
     visitor = _AnnotationStatsCollector()
     with open(path, encoding="utf-8") as file:
@@ -240,6 +258,16 @@ def gather_annotation_stats_on_package(
     Returns:
         An [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] object
             containing data about the annotations in the package.
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, gather_annotation_stats_on_package
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     mypy_extensions_stats = gather_annotation_stats_on_package("mypy-extensions", typeshed_dir=typeshed)
+        ...
+        >>> type(mypy_extensions_stats)
+        <class 'typeshed_stats.gather.AnnotationStats'>
+        >>> mypy_extensions_stats.unannotated_parameters
+        0
     """
     package_directory = _get_package_directory(package_name, typeshed_dir)
     file_results = [
@@ -290,6 +318,22 @@ def get_stubtest_setting(
     Returns:
         A member of the [`StubtestSetting`][typeshed_stats.gather.StubtestSetting]
             enumeration (see the docs on `StubtestSetting` for details).
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_setting
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     stdlib_setting = get_stubtest_setting("stdlib", typeshed_dir=typeshed)
+        ...     gdb_setting = get_stubtest_setting("gdb", typeshed_dir=typeshed)
+        >>> stdlib_setting
+        StubtestSetting.ERROR_ON_MISSING_STUB
+        >>> help(_)
+        Help on StubtestSetting in module typeshed_stats.gather:
+        <BLANKLINE>
+        StubtestSetting.ERROR_ON_MISSING_STUB
+            Objects missing from the stub cause stubtest to emit an error in CI.
+        <BLANKLINE>
+        >>> gdb_setting
+        StubtestSetting.SKIPPED
     """
     if package_name == "stdlib":
         return StubtestSetting.ERROR_ON_MISSING_STUB
@@ -376,6 +420,24 @@ async def get_package_status(
     Returns:
         A member of the [`PackageStatus`][typeshed_stats.gather.PackageStatus]
             enumeration (see the docs on `PackageStatus` for details).
+
+    Examples:
+        >>> import asyncio
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_status
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     stdlib_status = asyncio.run(get_package_status("stdlib", typeshed_dir=typeshed))
+        ...     gdb_status = asyncio.run(get_package_status("gdb", typeshed_dir=typeshed))
+        ...
+        >>> stdlib_status
+        PackageStatus.STDLIB
+        >>> help(_)
+        Help on PackageStatus in module typeshed_stats.gather:
+        <BLANKLINE>
+        PackageStatus.STDLIB
+            These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly up to date, and tested against all currently supported Python versions in CI.
+        <BLANKLINE>
+        >>> gdb_status
+        PackageStatus.NOT_ON_PYPI
     """
     match package_name:
         case "stdlib":
@@ -410,6 +472,14 @@ def get_package_size(package_name: str, *, typeshed_dir: Path | str) -> int:
 
     Returns:
         The number of lines of code the stubs package contains.
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_size
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     mypy_extensions_size = get_package_size("mypy-extensions", typeshed_dir=typeshed)
+        ...
+        >>> type(mypy_extensions_size) is int and mypy_extensions_size > 0
+        True
     """
     return sum(
         len(stub.read_text(encoding="utf-8").splitlines())
@@ -473,6 +543,20 @@ def get_pyright_setting(
     Returns:
         A member of the [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]
             enumeration (see the docs on `PyrightSetting` for details).
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_pyright_setting
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     stdlib_setting = get_pyright_setting("stdlib", typeshed_dir=typeshed)
+        ...
+        >>> stdlib_setting
+        PyrightSetting.STRICT_ON_SOME_FILES
+        >>> help(_)
+        Help on PyrightSetting in module typeshed_stats.gather:
+        <BLANKLINE>
+        PyrightSetting.STRICT_ON_SOME_FILES
+            Some files are tested with the stricter pyright settings in CI; some are excluded.
+        <BLANKLINE>
     """
     package_directory = _get_package_directory(package_name, typeshed_dir)
     entirely_excluded_paths = _get_pyright_excludelist(
@@ -532,6 +616,19 @@ async def gather_stats_on_package(
 
     Returns:
         An instance of the [`PackageStats`][typeshed_stats.gather.PackageStats] class.
+
+    Examples:
+        >>> import asyncio
+        >>> from typeshed_stats.gather import tmpdir_typeshed, gather_stats_on_package
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     stdlib_stats = asyncio.run(gather_stats_on_package("stdlib", typeshed_dir=typeshed))
+        ...
+        >>> stdlib_stats.package_name
+        'stdlib'
+        >>> stdlib_stats.stubtest_setting
+        StubtestSetting.ERROR_ON_MISSING_STUB
+        >>> type(stdlib_stats.number_of_lines) is int and stdlib_stats.number_of_lines > 0
+        True
     """
     return PackageStats(
         package_name=package_name,
@@ -579,6 +676,16 @@ def gather_stats(
         A sequence of [`PackageStats`][typeshed_stats.gather.PackageStats] objects.
             Each `PackageStats` object contains information representing an analysis
             of a certain stubs package in typeshed.
+
+    Examples:
+        >>> from typeshed_stats.gather import PackageStats, tmpdir_typeshed, gather_stats
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     stats = gather_stats(["stdlib", "aiofiles", "boto"], typeshed_dir=typeshed)
+        ...
+        >>> [s.package_name for s in stats]
+        ['aiofiles', 'boto', 'stdlib']
+        >>> all(type(s) is PackageStats for s in stats)
+        True
     """
     if packages is None:
         packages = os.listdir(Path(typeshed_dir, "stubs")) + ["stdlib"]
@@ -591,7 +698,10 @@ def gather_stats(
 
 @contextmanager
 def tmpdir_typeshed() -> Iterator[Path]:
-    """Context manager to clone typeshed into a tempdir, and then yield the tempdir."""
+    """Clone typeshed into a tempdir, then yield a `pathlib.Path` pointing to it.
+
+    A context manager.
+    """
     import subprocess
     from tempfile import TemporaryDirectory
 

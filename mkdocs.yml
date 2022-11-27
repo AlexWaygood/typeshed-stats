@@ -21,6 +21,10 @@ plugins:
         python:
           options:
             show_source: false
+            show_bases: false
+            show_root_full_path: false
+            merge_init_into_class: true
+            show_root_toc_entry: false
 
 nav:
   - "Welcome to typeshed-stats": "index.md"
