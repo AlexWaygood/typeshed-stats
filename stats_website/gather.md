@@ -32,7 +32,6 @@ Tools for gathering stats about typeshed packages.
     options:
       show_root_heading: true
 
-
 <hr>
 
 ::: typeshed_stats.gather.PackageStats
