@@ -3,6 +3,10 @@ name: Check requirements
 on:
   push:
     branches: main
+    paths:
+      - '.github/workflows/check-requirements.yml'
+      - 'requirements/**.txt'
+      - 'pyproject.toml'
   pull_request:
     paths:
       - '.github/workflows/check-requirements.yml'
