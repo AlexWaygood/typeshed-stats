@@ -83,13 +83,15 @@ class _SingleAnnotationAnalyzer(ast.NodeVisitor):
                 pass
 
     def visit_Attribute(self, node: ast.Attribute) -> None:
-        match node.value, node.attr:
-            case [ast.Name("typing"), "Any"]:
-                self.Any_in_annotation = True
-            case [ast.Name("_typeshed"), "Incomplete"]:
-                self.Incomplete_in_annotation = True
-            case _:
-                pass
+        value = node.value
+        if isinstance(value, ast.Name):
+            match f"{value.id}.{node.attr}":
+                case "typing.Any":
+                    self.Any_in_annotation = True
+                case "_typeshed.Incomplete":
+                    self.Incomplete_in_annotation = True
+                case _:
+                    pass
         self.generic_visit(node)
 
 
@@ -292,13 +294,13 @@ def get_stubtest_setting(
     if package_name == "stdlib":
         return StubtestSetting.ERROR_ON_MISSING_STUB
     metadata = _get_package_metadata(package_name, typeshed_dir)
-    stubtest_settings = metadata.get("tool", {}).get("stubtest", {})
-    if stubtest_settings.get("skip", False):
-        return StubtestSetting.SKIPPED
-    ignore_missing_stub_used = stubtest_settings.get("ignore_missing_stub", True)
-    return StubtestSetting[
-        "MISSING_STUBS_IGNORED" if ignore_missing_stub_used else "ERROR_ON_MISSING_STUB"
-    ]
+    match metadata.get("tool", {}).get("stubtest", {}):
+        case {"skip": True}:
+            return StubtestSetting.SKIPPED
+        case {"ignore_missing_stub": False}:
+            return StubtestSetting.ERROR_ON_MISSING_STUB
+        case _:
+            return StubtestSetting.MISSING_STUBS_IGNORED
 
 
 class PackageStatus(_NiceReprEnum):
@@ -375,20 +377,21 @@ async def get_package_status(
         A member of the [`PackageStatus`][typeshed_stats.gather.PackageStatus]
             enumeration (see the docs on `PackageStatus` for details).
     """
-    if package_name == "stdlib":
-        # This function isn't really relevant for the stdlib stubs
-        return PackageStatus.STDLIB
+    match package_name:
+        case "stdlib":
+            return PackageStatus.STDLIB
+        case "gdb":
+            return PackageStatus.NOT_ON_PYPI
+        case _:
+            pass
 
-    if package_name == "gdb":
-        return PackageStatus.NOT_ON_PYPI
-
-    metadata = _get_package_metadata(package_name, typeshed_dir)
-
-    if "obsolete_since" in metadata:
-        return PackageStatus.OBSOLETE
-
-    if metadata.get("no_longer_updated", False):
-        return PackageStatus.NO_LONGER_UPDATED
+    match metadata := _get_package_metadata(package_name, typeshed_dir):
+        case {"obsolete_since": _}:
+            return PackageStatus.OBSOLETE
+        case {"no_longer_updated": True}:
+            return PackageStatus.NO_LONGER_UPDATED
+        case _:
+            pass
 
     typeshed_pinned_version = SpecifierSet(f"=={metadata['version']}")
     pypi_data = await _get_pypi_data(package_name, session)
