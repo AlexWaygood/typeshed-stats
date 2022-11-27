@@ -76,6 +76,7 @@ enable_error_code = 'ignore-without-code,redundant-expr'
 warn_unreachable = true
 
 [tool.pytest.ini_options]
+testpaths = ["tests"]
 addopts = "--doctest-modules --strict-config --strict-markers"
 xfail_strict = true
 asyncio_mode = "auto"
