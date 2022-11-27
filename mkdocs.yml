@@ -12,6 +12,23 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: blue grey
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: black
+      accent: yellow
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
 
 plugins:
   - search
