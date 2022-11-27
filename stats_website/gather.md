@@ -2,15 +2,14 @@
 hide:
   - footer
   - navigation
-  - toc
 ---
 
 Tools for gathering stats about typeshed packages.
 <hr>
 
-## **`AnnotationStats`**
-
 ::: typeshed_stats.gather.AnnotationStats
+    options:
+      show_root_heading: true
 
 **Attributes:**
 
@@ -29,17 +28,15 @@ Tools for gathering stats about typeshed packages.
 | `explicit_Incomplete_variables`  | `int`  |
 <hr>
 
-## **`PackageName`**
-
 ::: typeshed_stats.gather.PackageName
-
-Type alias for `str`
+    options:
+      show_root_heading: true
 
 <hr>
 
-## **`PackageStats`**
-
 ::: typeshed_stats.gather.PackageStats
+    options:
+      show_root_heading: true
 
 **Attributes:**
 
@@ -53,9 +50,9 @@ Type alias for `str`
 | `annotation_stats` | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] |
 <hr>
 
-## **`PackageStatus`**
-
 ::: typeshed_stats.gather.PackageStatus
+    options:
+      show_root_heading: true
 
 **Members:**
 
@@ -69,9 +66,9 @@ Type alias for `str`
 | `UP_TO_DATE`        | These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.                 |
 <hr>
 
-## **`PyrightSetting`**
-
 ::: typeshed_stats.gather.PyrightSetting
+    options:
+      show_root_heading: true
 
 **Members:**
 
@@ -84,9 +81,9 @@ Type alias for `str`
 | `STRICT`               | All files are tested with the stricter pyright settings in CI.                     |
 <hr>
 
-## **`StubtestSetting`**
-
 ::: typeshed_stats.gather.StubtestSetting
+    options:
+      show_root_heading: true
 
 **Members:**
 
@@ -97,48 +94,54 @@ Type alias for `str`
 | `ERROR_ON_MISSING_STUB` | Objects missing from the stub cause stubtest to emit an error in CI. |
 <hr>
 
-## **`gather_annotation_stats_on_file`**
-
 ::: typeshed_stats.gather.gather_annotation_stats_on_file
+    options:
+      show_root_heading: true
 
 <hr>
-
-## **`gather_annotation_stats_on_package`**
 
 ::: typeshed_stats.gather.gather_annotation_stats_on_package
+    options:
+      show_root_heading: true
 
 <hr>
-
-## **`gather_stats`**
 
 ::: typeshed_stats.gather.gather_stats
+    options:
+      show_root_heading: true
 
 <hr>
-
-## **`gather_stats_on_package`**
 
 ::: typeshed_stats.gather.gather_stats_on_package
+    options:
+      show_root_heading: true
 
 <hr>
-
-## **`get_package_size`**
 
 ::: typeshed_stats.gather.get_package_size
+    options:
+      show_root_heading: true
 
 <hr>
-
-## **`get_package_status`**
 
 ::: typeshed_stats.gather.get_package_status
+    options:
+      show_root_heading: true
 
 <hr>
-
-## **`get_pyright_setting`**
 
 ::: typeshed_stats.gather.get_pyright_setting
+    options:
+      show_root_heading: true
 
 <hr>
 
-## **`get_stubtest_setting`**
-
 ::: typeshed_stats.gather.get_stubtest_setting
+    options:
+      show_root_heading: true
+
+<hr>
+
+::: typeshed_stats.gather.tmpdir_typeshed
+    options:
+      show_root_heading: true

@@ -6,7 +6,7 @@ hide:
 
 # Statistics on typeshed's stubs
 
-<i>These statistics were last updated at: <b>18:23 UTC on 2022-11-27</b>.</i>
+<i>These statistics were last updated at: <b>23:31 UTC on 2022-11-27</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i>
 <hr>
 
@@ -328,7 +328,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 628
-    - Unannotated parameters: 622
+    - Unannotated parameters: 621
     - Explicit `Any` parameters: 64
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
@@ -513,7 +513,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 108
-    - Unannotated parameters: 168
+    - Unannotated parameters: 165
     - Explicit `Any` parameters: 24
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -550,7 +550,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 2191
-    - Unannotated parameters: 7039
+    - Unannotated parameters: 7029
     - Explicit `Any` parameters: 1202
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
@@ -845,8 +845,8 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `beautifulsoup4`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 242
-    - Unannotated parameters: 139
+    - Annotated parameters: 240
+    - Unannotated parameters: 137
     - Explicit `Any` parameters: 32
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -1364,7 +1364,7 @@ All files are tested with the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 12
-    - Unannotated parameters: 2
+    - Unannotated parameters: 0
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -1474,7 +1474,7 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `dateparser`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 121
+    - Annotated parameters: 120
     - Unannotated parameters: 127
     - Explicit `Any` parameters: 25
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -1622,7 +1622,7 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 215
+    - Annotated parameters: 213
     - Unannotated parameters: 60
     - Explicit `Any` parameters: 36
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -2103,7 +2103,7 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `fpdf2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 570
+    - Annotated parameters: 567
     - Unannotated parameters: 533
     - Explicit `Any` parameters: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 58
@@ -2177,8 +2177,8 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `google-cloud-ndb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 481
-    - Unannotated parameters: 382
+    - Annotated parameters: 478
+    - Unannotated parameters: 369
     - Explicit `Any` parameters: 134
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -2252,7 +2252,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 67
-    - Unannotated parameters: 207
+    - Unannotated parameters: 208
     - Explicit `Any` parameters: 27
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -2326,7 +2326,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 79
-    - Unannotated parameters: 182
+    - Unannotated parameters: 181
     - Explicit `Any` parameters: 22
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -2510,8 +2510,8 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `ldap3`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 534
-    - Unannotated parameters: 676
+    - Annotated parameters: 533
+    - Unannotated parameters: 675
     - Explicit `Any` parameters: 294
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -2547,7 +2547,7 @@ All files are tested with the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `mock`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 187
+    - Annotated parameters: 185
     - Unannotated parameters: 6
     - Explicit `Any` parameters: 124
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -2696,7 +2696,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 2597
-    - Unannotated parameters: 664
+    - Unannotated parameters: 660
     - Explicit `Any` parameters: 2218
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -2955,7 +2955,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 370
-    - Unannotated parameters: 708
+    - Unannotated parameters: 705
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 244
 - Returns:
@@ -3177,7 +3177,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 725
-    - Unannotated parameters: 260
+    - Unannotated parameters: 250
     - Explicit `Any` parameters: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -3251,7 +3251,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 171
-    - Unannotated parameters: 329
+    - Unannotated parameters: 328
     - Explicit `Any` parameters: 56
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -3658,7 +3658,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 90
-    - Unannotated parameters: 44
+    - Unannotated parameters: 43
     - Explicit `Any` parameters: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 18
 - Returns:
@@ -3880,7 +3880,7 @@ All files are tested with the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 69
-    - Unannotated parameters: 2
+    - Unannotated parameters: 0
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
@@ -3954,7 +3954,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 3377
-    - Unannotated parameters: 3804
+    - Unannotated parameters: 3803
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 388
 - Returns:
@@ -4028,7 +4028,7 @@ All files are tested with the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 429
-    - Unannotated parameters: 2
+    - Unannotated parameters: 0
     - Explicit `Any` parameters: 25
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -4323,8 +4323,8 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 ### Statistics on the annotations in typeshed's stubs for `stdlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24445
-    - Unannotated parameters: 894
+    - Annotated parameters: 24384
+    - Unannotated parameters: 781
     - Explicit `Any` parameters: 2118
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
@@ -4582,7 +4582,7 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `tqdm`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 789
+    - Annotated parameters: 788
     - Unannotated parameters: 129
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 18
@@ -4842,7 +4842,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 158
-    - Unannotated parameters: 161
+    - Unannotated parameters: 160
     - Explicit `Any` parameters: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:

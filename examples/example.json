@@ -167,7 +167,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 628,
-      "unannotated_parameters": 622,
+      "unannotated_parameters": 621,
       "annotated_returns": 456,
       "unannotated_returns": 347,
       "explicit_Incomplete_parameters": 3,
@@ -267,7 +267,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 108,
-      "unannotated_parameters": 168,
+      "unannotated_parameters": 165,
       "annotated_returns": 96,
       "unannotated_returns": 79,
       "explicit_Incomplete_parameters": 0,
@@ -287,7 +287,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 2191,
-      "unannotated_parameters": 7039,
+      "unannotated_parameters": 7029,
       "annotated_returns": 2153,
       "unannotated_returns": 3325,
       "explicit_Incomplete_parameters": 3,
@@ -446,8 +446,8 @@
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 242,
-      "unannotated_parameters": 139,
+      "annotated_parameters": 240,
+      "unannotated_parameters": 137,
       "annotated_returns": 193,
       "unannotated_returns": 49,
       "explicit_Incomplete_parameters": 0,
@@ -727,7 +727,7 @@
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 12,
-      "unannotated_parameters": 2,
+      "unannotated_parameters": 0,
       "annotated_returns": 17,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
@@ -786,7 +786,7 @@
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 121,
+      "annotated_parameters": 120,
       "unannotated_parameters": 127,
       "annotated_returns": 71,
       "unannotated_returns": 67,
@@ -866,7 +866,7 @@
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 215,
+      "annotated_parameters": 213,
       "unannotated_parameters": 60,
       "annotated_returns": 148,
       "unannotated_returns": 10,
@@ -1126,7 +1126,7 @@
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 570,
+      "annotated_parameters": 567,
       "unannotated_parameters": 533,
       "annotated_returns": 358,
       "unannotated_returns": 204,
@@ -1166,8 +1166,8 @@
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 481,
-      "unannotated_parameters": 382,
+      "annotated_parameters": 478,
+      "unannotated_parameters": 369,
       "annotated_returns": 234,
       "unannotated_returns": 203,
       "explicit_Incomplete_parameters": 0,
@@ -1207,7 +1207,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 67,
-      "unannotated_parameters": 207,
+      "unannotated_parameters": 208,
       "annotated_returns": 100,
       "unannotated_returns": 208,
       "explicit_Incomplete_parameters": 0,
@@ -1247,7 +1247,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 79,
-      "unannotated_parameters": 182,
+      "unannotated_parameters": 181,
       "annotated_returns": 82,
       "unannotated_returns": 95,
       "explicit_Incomplete_parameters": 0,
@@ -1346,8 +1346,8 @@
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 534,
-      "unannotated_parameters": 676,
+      "annotated_parameters": 533,
+      "unannotated_parameters": 675,
       "annotated_returns": 216,
       "unannotated_returns": 423,
       "explicit_Incomplete_parameters": 0,
@@ -1366,7 +1366,7 @@
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 187,
+      "annotated_parameters": 185,
       "unannotated_parameters": 6,
       "annotated_returns": 82,
       "unannotated_returns": 0,
@@ -1447,7 +1447,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 2597,
-      "unannotated_parameters": 664,
+      "unannotated_parameters": 660,
       "annotated_returns": 744,
       "unannotated_returns": 423,
       "explicit_Incomplete_parameters": 0,
@@ -1587,7 +1587,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 370,
-      "unannotated_parameters": 708,
+      "unannotated_parameters": 705,
       "annotated_returns": 298,
       "unannotated_returns": 448,
       "explicit_Incomplete_parameters": 244,
@@ -1707,7 +1707,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 725,
-      "unannotated_parameters": 260,
+      "unannotated_parameters": 250,
       "annotated_returns": 481,
       "unannotated_returns": 91,
       "explicit_Incomplete_parameters": 0,
@@ -1747,7 +1747,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 171,
-      "unannotated_parameters": 329,
+      "unannotated_parameters": 328,
       "annotated_returns": 189,
       "unannotated_returns": 169,
       "explicit_Incomplete_parameters": 0,
@@ -1967,7 +1967,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 90,
-      "unannotated_parameters": 44,
+      "unannotated_parameters": 43,
       "annotated_returns": 80,
       "unannotated_returns": 58,
       "explicit_Incomplete_parameters": 18,
@@ -2087,7 +2087,7 @@
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 69,
-      "unannotated_parameters": 2,
+      "unannotated_parameters": 0,
       "annotated_returns": 51,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 2,
@@ -2127,7 +2127,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 3377,
-      "unannotated_parameters": 3804,
+      "unannotated_parameters": 3803,
       "annotated_returns": 3772,
       "unannotated_returns": 2072,
       "explicit_Incomplete_parameters": 388,
@@ -2167,7 +2167,7 @@
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 429,
-      "unannotated_parameters": 2,
+      "unannotated_parameters": 0,
       "annotated_returns": 114,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
@@ -2326,8 +2326,8 @@
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24445,
-      "unannotated_parameters": 894,
+      "annotated_parameters": 24384,
+      "unannotated_parameters": 781,
       "annotated_returns": 13292,
       "unannotated_returns": 405,
       "explicit_Incomplete_parameters": 85,
@@ -2466,7 +2466,7 @@
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 789,
+      "annotated_parameters": 788,
       "unannotated_parameters": 129,
       "annotated_returns": 139,
       "unannotated_returns": 24,
@@ -2607,7 +2607,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 158,
-      "unannotated_parameters": 161,
+      "unannotated_parameters": 160,
       "annotated_returns": 95,
       "unannotated_returns": 61,
       "explicit_Incomplete_parameters": 0,
