@@ -6,7 +6,7 @@ hide:
 
 # Statistics on typeshed's stubs
 
-<i>These statistics were last updated at: <b>01:47 UTC on 2022-11-28</b>.</i>
+<i>These statistics were last updated at: <b>12:40 UTC on 2022-11-28</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i>
 <hr>
 
@@ -554,8 +554,8 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicit `Any` parameters: 1202
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
-    - Annotated returns: 2153
-    - Unannotated returns: 3325
+    - Annotated returns: 2157
+    - Unannotated returns: 3321
     - Explicit `Any` returns: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -3176,13 +3176,13 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 725
-    - Unannotated parameters: 250
-    - Explicit `Any` parameters: 26
+    - Annotated parameters: 726
+    - Unannotated parameters: 249
+    - Explicit `Any` parameters: 27
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 481
-    - Unannotated returns: 91
+    - Annotated returns: 482
+    - Unannotated returns: 90
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -3973,11 +3973,11 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-5536
+5596
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Stubtest settings in CI: *missing stubs ignored*
 
@@ -3990,9 +3990,9 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `redis`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3392
-    - Unannotated parameters: 1331
-    - Explicit `Any` parameters: 348
+    - Annotated parameters: 3462
+    - Unannotated parameters: 1300
+    - Explicit `Any` parameters: 318
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 88
 - Returns:
     - Annotated returns: 1265
@@ -4000,7 +4000,7 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicit `Any` returns: 317
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 630
+    - Annotated variables: 631
     - Explicit `Any` variables: 235
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 12
 
@@ -4325,12 +4325,12 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 24384
     - Unannotated parameters: 781
-    - Explicit `Any` parameters: 2118
+    - Explicit `Any` parameters: 2117
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
     - Annotated returns: 13292
     - Unannotated returns: 405
-    - Explicit `Any` returns: 819
+    - Explicit `Any` returns: 817
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
     - Annotated variables: 8493
