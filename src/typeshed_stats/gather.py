@@ -12,6 +12,7 @@ from collections.abc import Collection, Iterable, Iterator, Mapping, Sequence
 from contextlib import AsyncExitStack, contextmanager
 from enum import Enum
 from functools import cache
+from itertools import chain
 from operator import attrgetter
 from pathlib import Path
 from typing import Any, Literal, Protocol, TypeAlias, TypeVar, final
@@ -125,14 +126,22 @@ class AnnotationStats:
     explicit_Incomplete_variables: int = 0
 
 
+def _is_staticmethod(decorator: ast.expr) -> bool:
+    match decorator:
+        case ast.Name("staticmethod"):
+            return True
+        case ast.Attribute(ast.Name("builtins"), "staticmethod"):
+            return True
+        case _:
+            return False
+
+
 class _AnnotationStatsCollector(ast.NodeVisitor):
     """AST Visitor for collecting stats on a single stub file."""
 
     def __init__(self) -> None:
         self.stats = AnnotationStats()
         self._class_nesting = 0
-        self._function_decorators: frozenset[str] = frozenset()
-        self._function_name = ""
 
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}(stats={self.stats})"
@@ -156,21 +165,13 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
             self.stats.explicit_Incomplete_variables += 1
         self.generic_visit(node)
 
-    def visit_arg(self, node: ast.arg) -> None:
-        self.generic_visit(node)
-
+    def _visit_arg(
+        self, arg_number: int, node: ast.arg, *, is_staticmethod: bool
+    ) -> None:
         # We don't want self/cls/metacls/mcls arguments to count towards the statistics
-        if self.in_class and "staticmethod" not in self._function_decorators:
-            arg_name = node.arg.lstrip("_")
-            if "classmethod" in self._function_decorators or self._function_name in {
-                "__new__",
-                "__class_getitem__",
-                "__init_subclass__",
-            }:
-                if arg_name in {"cls", "metacls", "mcls"}:
-                    return
-            elif arg_name == "self":
-                return
+        # Whatever they're called, they can easily be inferred
+        if self.in_class and (not is_staticmethod) and (not arg_number):
+            return
 
         annotation = node.annotation
         if annotation is None:
@@ -184,6 +185,7 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
                 self.stats.explicit_Incomplete_parameters += 1
 
     def _visit_function(self, node: ast.FunctionDef | ast.AsyncFunctionDef) -> None:
+        self.generic_visit(node)
         returns = node.returns
         if returns is None:
             self.stats.unannotated_returns += 1
@@ -195,15 +197,14 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
             if analysis.Incomplete_in_annotation:
                 self.stats.explicit_Incomplete_returns += 1
 
-        old_function_decorators = self._function_decorators
-        self._function_decorators = frozenset(
-            decorator.id
-            for decorator in node.decorator_list
-            if isinstance(decorator, ast.Name)
+        args = node.args
+        is_decorated_with_staticmethod = any(
+            _is_staticmethod(decorator) for decorator in node.decorator_list
         )
-        self._function_name = node.name
-        self.generic_visit(node)
-        self._function_decorators = old_function_decorators
+        for i, arg_node in enumerate(
+            chain(args.posonlyargs, args.args, args.kwonlyargs)
+        ):
+            self._visit_arg(i, arg_node, is_staticmethod=is_decorated_with_staticmethod)
 
     def visit_FunctionDef(self, node: ast.FunctionDef) -> None:
         self._visit_function(node)

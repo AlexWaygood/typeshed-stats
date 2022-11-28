@@ -76,6 +76,7 @@ def example_stub_source() -> str:
     return textwrap.dedent(
         """
         import _typeshed
+        import builtins
         import typing
         from _typeshed import Incomplete
         from collections.abc import Iterable
@@ -99,6 +100,10 @@ def example_stub_source() -> str:
             def __init__(__self) -> None: ...
             def __class_getitem__(cls, item: Any) -> GenericAlias: ...
 
+            # This shouldn't count as an unannotated parameter --
+            # it's just "self" with a weird name
+            def weird_named_first_param(x): ...
+
         def func1(arg): ...
         def func2(arg: int): ...
         def func3(arg: Incomplete | None = ...): ...
@@ -111,7 +116,9 @@ def example_stub_source() -> str:
             async def func5(self, arg): ...
             @staticmethod
             async def func6(arg: str) -> list[bytes]: ...
-            def func7(arg: Any) -> _typeshed.Incomplete: ...
+            @builtins.staticmethod
+            def func6_pt_5(arg: str) -> None: ...
+            def func7(self, arg: Any) -> _typeshed.Incomplete: ...
             @classmethod
             def class_method(cls, eggs: Incomplete): ...
 
@@ -127,10 +134,10 @@ def example_stub_source() -> str:
 @pytest.fixture(scope="session")
 def expected_stats_on_example_stub_file() -> AnnotationStats:
     return AnnotationStats(
-        annotated_parameters=7,
+        annotated_parameters=8,
         unannotated_parameters=2,
-        annotated_returns=10,
-        unannotated_returns=5,
+        annotated_returns=11,
+        unannotated_returns=6,
         explicit_Incomplete_parameters=2,
         explicit_Incomplete_returns=1,
         explicit_Any_parameters=3,
