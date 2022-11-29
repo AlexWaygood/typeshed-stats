@@ -6,7 +6,7 @@ hide:
 
 # Statistics on typeshed's stubs
 
-<i>These statistics were last updated at: <b>23:23 UTC on 2022-11-28</b>.</i>
+<i>These statistics were last updated at: <b>01:46 UTC on 2022-11-29</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i>
 <hr>
 
