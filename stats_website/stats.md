@@ -6,7 +6,7 @@ hide:
 
 # Statistics on typeshed's stubs
 
-<i>These statistics were last updated at: <b>01:46 UTC on 2022-11-29</b>.</i>
+<i>These statistics were last updated at: <b>12:40 UTC on 2022-11-29</b>.</i>
 <i>For up-to-date statistics, consider using the CLI instead.</i>
 <hr>
 
@@ -353,9 +353,9 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in CI.
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2863,15 +2863,15 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1947
+1953
 
 ### Package status: *up to date*
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in CI.
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2890,7 +2890,7 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicit `Any` returns: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 570
+    - Annotated variables: 576
     - Explicit `Any` variables: 105
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
