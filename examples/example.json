@@ -1162,7 +1162,7 @@
   {
     "package_name": "google-cloud-ndb",
     "number_of_lines": 1572,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
