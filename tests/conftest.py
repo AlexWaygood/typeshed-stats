@@ -150,26 +150,21 @@ def expected_stats_on_example_stub_file() -> AnnotationStats:
     )
 
 
-@pytest.fixture(scope="session")
-def pyrightconfig_template() -> str:
-    return textwrap.dedent(
-        """
-        {{
-            "typeshedPath": ".",
-            // A comment to make this invalid JSON
-            "exclude": [
-                {}
-            ],
-        }}
-        """
-    )
+PYRIGHTCONFIG_TEMPLATE = """\
+{{
+    "typeshedPath": ".",
+    // A comment to make this invalid JSON
+    "exclude": [
+        {}
+    ],
+}}
+"""
 
 
 @pytest.fixture
 def complete_typeshed(
     tmp_path: Path,
     example_stub_source: str,
-    pyrightconfig_template: str,
     real_typeshed_package_names: frozenset[str],
 ) -> Path:
     typeshed = tmp_path
@@ -178,7 +173,7 @@ def complete_typeshed(
 
     (typeshed / "pyrightconfig.json").write_text("{}", encoding="utf-8")
     pyrightconfig_path = typeshed / "pyrightconfig.stricter.json"
-    pyrightconfig_path.write_text(pyrightconfig_template.format(""), encoding="utf-8")
+    pyrightconfig_path.write_text(PYRIGHTCONFIG_TEMPLATE.format(""), encoding="utf-8")
 
     for package_name in real_typeshed_package_names:
         package_dir = typeshed / "stubs" / package_name
