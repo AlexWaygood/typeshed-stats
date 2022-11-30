@@ -633,7 +633,9 @@ def test_gather_stats_no_network_access(
 
 def test_tmpdir_typeshed_with_mocked_git_clone() -> None:
     import subprocess
-    with mock.patch.object(subprocess, "run", autospec=True):
+
+    with mock.patch.object(subprocess, "run", autospec=True) as run:
+        assert sys.modules["subprocess"].run is run
         with tmpdir_typeshed() as typeshed:
             assert isinstance(typeshed, Path)
 
