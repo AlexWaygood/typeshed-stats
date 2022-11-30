@@ -649,23 +649,24 @@ def test_gather_stats_integrates_with_tmpdir_typeshed() -> None:
 
 
 @pytest.mark.dependency(depends=["integration_basic"])
-def test_basic_sanity_checks() -> None:
+def test_basic_sanity_checks(subtests: SubTests) -> None:
     with tmpdir_typeshed() as typeshed:
         stats = gather_stats(typeshed_dir=typeshed)
     for s in stats:
-        annot_stats = s.annotation_stats
-        if s.pyright_setting is PyrightSetting.STRICT:
-            if annot_stats.unannotated_parameters or annot_stats.unannotated_returns:
-                pytest.fail(
+        with subtests.test(package_name=s.package_name):
+            annot_stats = s.annotation_stats
+            is_only_partially_annotated = bool(
+                annot_stats.unannotated_parameters or annot_stats.unannotated_returns
+            )
+            is_fully_annotated = not is_only_partially_annotated
+            if s.pyright_setting is PyrightSetting.STRICT:
+                assert is_fully_annotated, (
                     "Likely bug detected: "
                     f"{s.package_name!r} has unannotated parameters and/or returns, "
                     "but has the strictest pyright settings in CI"
                 )
-        else:
-            if not (
-                annot_stats.unannotated_parameters or annot_stats.unannotated_returns
-            ):
-                pytest.fail(
+            else:
+                assert is_only_partially_annotated, (
                     "Likely bug detected: "
                     f"{s.package_name!r} is fully annotated, "
                     "but does not have the strictest pyright settings in CI"
