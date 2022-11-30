@@ -2,6 +2,7 @@
 import argparse
 import shutil
 import textwrap
+from collections.abc import Sequence
 from contextlib import ExitStack
 from datetime import datetime
 from enum import Enum
@@ -12,20 +13,17 @@ import attrs
 import tabulate
 
 import typeshed_stats.gather
-from typeshed_stats.gather import gather_stats, tmpdir_typeshed
+from typeshed_stats.gather import PackageStats, gather_stats, tmpdir_typeshed
 from typeshed_stats.serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
 
-def regenerate_examples(typeshed_dir: Path) -> None:
-    """Regenerate the stats, write them to the examples/ directory."""
-    print("Gathering stats...")
-    stats = gather_stats(typeshed_dir=typeshed_dir)
+def regenerate_examples(stats: Sequence[PackageStats]) -> None:
+    """Regenerate the examples in the examples/ directory."""
     print("Formatting stats...")
-    markdownified_stats = stats_to_markdown(stats)
     path_to_formatted_stats = {
         "examples/example.json": stats_to_json(stats),
         "examples/example.csv": stats_to_csv(stats),
-        "examples/example.md": markdownified_stats,
+        "examples/example.md": stats_to_markdown(stats),
     }
     print("Writing stats...")
     for path, formatted_stats in path_to_formatted_stats.items():
@@ -35,10 +33,11 @@ def regenerate_examples(typeshed_dir: Path) -> None:
     print("Examples successfully regenerated!")
 
 
-def regenerate_docs_page() -> None:
+def regenerate_docs_page(stats: Sequence[PackageStats]) -> None:
     """Regenerate the markdown page used for the static website."""
     markdown = Path("examples", "example.md").read_text(encoding="utf-8")
     updated_time = datetime.utcnow().strftime("%H:%M UTC on %Y-%m-%d")
+    total_typeshed_stublines = sum(s.number_of_lines for s in stats)
     header = textwrap.dedent(
         f"""\
         ---
@@ -49,8 +48,12 @@ def regenerate_docs_page() -> None:
 
         # Statistics on typeshed's stubs
 
-        <i>These statistics were last updated at: <b>{updated_time}</b>.</i>
-        <i>For up-to-date statistics, consider using the CLI instead.</i>
+        Typeshed currently contains stubs for {len(stats)} packages
+        (including the stdlib stubs as a "single package"),
+        for a total of {total_typeshed_stublines:,} lines of code.
+
+        <i>Note: these statistics were last updated at: <b>{updated_time}</b>.</i>
+        <i>For up-to-date statistics, consider using the CLI tool instead.</i>
         <hr>
         """
     )
@@ -64,6 +67,7 @@ generate_table = partial(tabulate.tabulate, tablefmt="github")
 
 
 def regenerate_gather_api_docs() -> None:
+    """Regenerate the API docs for `typeshed_stats/gather.py`."""
     docs = textwrap.dedent(
         f"""\
         ---
@@ -113,19 +117,34 @@ def regenerate_gather_api_docs() -> None:
     print("API docs successfully regenerated for `typeshed_stats.gather`!")
 
 
-def main() -> None:
-    """CLI entry point."""
-    parser = argparse.ArgumentParser("Script to regenerate examples")
-    group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument("-t", "--typeshed-dir", type=Path)
-    group.add_argument("-d", "--download-typeshed", action="store_true")
-    args = parser.parse_args()
+# I think we need the type: ignore here
+# because mypy is worried that ExitStack() might suppress exceptions.
+# I guess that's reasonable, thought it's somewhat annoying in this case.
+def get_stats(args: argparse.Namespace) -> Sequence[PackageStats]:  # type: ignore[return]
+    """Get the stats."""
     with ExitStack() as stack:
         if args.download_typeshed:
             print("Cloning typeshed into a temporary directory...")
             args.typeshed_dir = stack.enter_context(tmpdir_typeshed())
-        regenerate_examples(args.typeshed_dir)
-    regenerate_docs_page()
+        print("Gathering stats...")
+        return gather_stats(typeshed_dir=args.typeshed_dir)
+
+
+def get_argument_parser() -> argparse.ArgumentParser:
+    """Get the argument parser."""
+    parser = argparse.ArgumentParser("Script to regenerate examples")
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("-t", "--typeshed-dir", type=Path)
+    group.add_argument("-d", "--download-typeshed", action="store_true")
+    return parser
+
+
+def main() -> None:
+    """CLI entry point."""
+    parser = get_argument_parser()
+    stats = get_stats(parser.parse_args())
+    regenerate_examples(stats)
+    regenerate_docs_page(stats)
     regenerate_gather_api_docs()
 
 

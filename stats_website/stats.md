@@ -6,8 +6,12 @@ hide:
 
 # Statistics on typeshed's stubs
 
-<i>These statistics were last updated at: <b>18:51 UTC on 2022-11-30</b>.</i>
-<i>For up-to-date statistics, consider using the CLI instead.</i>
+Typeshed currently contains stubs for 139 packages
+(including the stdlib stubs as a "single package"),
+for a total of 201,396 lines of code.
+
+<i>Note: these statistics were last updated at: <b>19:18 UTC on 2022-11-30</b>.</i>
+<i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
 ## Stats on typeshed's stubs for `D3DShot`
