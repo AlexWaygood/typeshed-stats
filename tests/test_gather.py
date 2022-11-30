@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import random
+import sys
 from collections.abc import Callable
 from contextlib import AbstractAsyncContextManager, nullcontext
 from dataclasses import InitVar, dataclass
@@ -628,6 +629,13 @@ def test_gather_stats_no_network_access(
     assert package_names_in_results == sorted(package_names_in_results)
     expected_package_names = real_typeshed_package_names | {"stdlib"}
     assert set(package_names_in_results) == expected_package_names
+
+
+def test_tmpdir_typeshed_with_mocked_git_clone() -> None:
+    import subprocess
+    with mock.patch.object(subprocess, "run", autospec=True):
+        with tmpdir_typeshed() as typeshed:
+            assert isinstance(typeshed, Path)
 
 
 @pytest.mark.requires_network

@@ -77,6 +77,7 @@ def example_stub_source() -> str:
         """
         import _typeshed
         import builtins
+        import email
         import typing
         from _typeshed import Incomplete
         from collections.abc import Iterable
@@ -91,6 +92,7 @@ def example_stub_source() -> str:
         e: Iterable[typing.Any]
         f: _typeshed.Incomplete
         g: _typeshed.StrPath
+        h: email.message.Message
 
         class Spam:
             a: tuple[typing.Any, ...] | None
@@ -110,6 +112,8 @@ def example_stub_source() -> str:
         def func4(arg: Any) -> Any: ...
         def func5(*args: int, **kwargs: str) -> bool: ...
         def func6(*args, **kwargs): ...
+        def func7(*, arg): ...
+        def func8(*, arg1: int, arg2: str): ...
 
         class Eggs:
             def __new__(cls) -> Eggs: ...
@@ -136,15 +140,15 @@ def example_stub_source() -> str:
 @pytest.fixture(scope="session")
 def expected_stats_on_example_stub_file() -> AnnotationStats:
     return AnnotationStats(
-        annotated_parameters=10,
-        unannotated_parameters=4,
+        annotated_parameters=12,
+        unannotated_parameters=5,
         annotated_returns=12,
-        unannotated_returns=7,
+        unannotated_returns=9,
         explicit_Incomplete_parameters=2,
         explicit_Incomplete_returns=1,
         explicit_Any_parameters=3,
         explicit_Any_returns=2,
-        annotated_variables=11,
+        annotated_variables=12,
         explicit_Any_variables=4,
         explicit_Incomplete_variables=2,
     )
