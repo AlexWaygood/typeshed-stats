@@ -5,8 +5,9 @@ import os
 import random
 from collections.abc import Callable
 from contextlib import AbstractAsyncContextManager, nullcontext
+from dataclasses import InitVar, dataclass
 from pathlib import Path
-from typing import Final, NamedTuple, TypeAlias
+from typing import Final, TypeAlias
 from unittest import mock
 
 # Make sure not to import rich here, since it's an optional dependency
@@ -36,7 +37,7 @@ from typeshed_stats.gather import (
     tmpdir_typeshed,
 )
 
-from .conftest import write_metadata_text
+from .conftest import PYRIGHTCONFIG_TEMPLATE, write_metadata_text
 
 # ===================
 # _NiceReprEnum tests
@@ -416,11 +417,27 @@ def test_get_package_size_multiple_files(
 # ================================
 
 
-class PyrightTestCase(NamedTuple):
+@dataclass
+class PyrightTestCase:
     package_to_test: str
     expected_result: str
-    entirely_excluded_path: str | None = None
-    path_excluded_from_strict: str | None = None
+    entirely_excluded_path: InitVar[str | None] = None
+    path_excluded_from_strict: InitVar[str | None] = None
+
+    def __post_init__(
+        self,
+        entirely_excluded_path: str | None = None,
+        path_excluded_from_strict: str | None = None,
+    ) -> None:
+        default_path = "foo.pyi"
+        entirely_excluded_path = entirely_excluded_path or default_path
+        self.pyrightconfig_basic = PYRIGHTCONFIG_TEMPLATE.format(
+            f'"{entirely_excluded_path}"'
+        )
+        excluded_from_strict = path_excluded_from_strict or default_path
+        self.pyrightconfig_strict = PYRIGHTCONFIG_TEMPLATE.format(
+            f'"{excluded_from_strict}"'
+        )
 
 
 PYRIGHT_TEST_CASES: Final = (
@@ -523,34 +540,17 @@ PYRIGHT_TEST_CASES: Final = (
 
 
 @pytest.mark.parametrize(
-    (
-        "package_to_test",
-        "pyright_setting_name",
-        "entirely_excluded_path",
-        "path_excluded_from_strict",
-    ),
-    [pytest.param(*case, id=f"case{i}") for i, case in enumerate(PYRIGHT_TEST_CASES)],
+    "test_case",
+    [pytest.param(case, id=f"case{i}") for i, case in enumerate(PYRIGHT_TEST_CASES)],
 )
 def test_get_pyright_setting(
     typeshed: Path,
-    entirely_excluded_path: str | None,
-    path_excluded_from_strict: str | None,
-    package_to_test: str,
-    pyright_setting_name: str,
+    test_case: PyrightTestCase,
     maybe_stringize_path: Callable[[Path], Path | str],
-    pyrightconfig_template: str,
 ) -> None:
-    foo_path = "foo.pyi"
-    pyright_basicconfig = pyrightconfig_template.format(
-        f'"{entirely_excluded_path or foo_path}"'
-    )
-    pyright_strictconfig = pyrightconfig_template.format(
-        f'"{path_excluded_from_strict or foo_path}"'
-    )
-
     config_filenames_to_configs = {
-        "pyrightconfig.json": pyright_basicconfig,
-        "pyrightconfig.stricter.json": pyright_strictconfig,
+        "pyrightconfig.json": test_case.pyrightconfig_basic,
+        "pyrightconfig.stricter.json": test_case.pyrightconfig_strict,
     }
 
     for config_filename, config in config_filenames_to_configs.items():
@@ -560,9 +560,10 @@ def test_get_pyright_setting(
         (typeshed / config_filename).write_text(config, encoding="utf-8")
 
     pyright_setting = get_pyright_setting(
-        package_name=package_to_test, typeshed_dir=maybe_stringize_path(typeshed)
+        package_name=test_case.package_to_test,
+        typeshed_dir=maybe_stringize_path(typeshed),
     )
-    expected_result = PyrightSetting[pyright_setting_name]
+    expected_result = PyrightSetting[test_case.expected_result]
     assert pyright_setting is expected_result
 
 
@@ -630,6 +631,7 @@ def test_gather_stats_no_network_access(
 
 
 @pytest.mark.requires_network
+@pytest.mark.dependency(name="integration_basic")
 def test_gather_stats_integrates_with_tmpdir_typeshed() -> None:
     num_packages = random.randint(3, 10)
     print(f"Testing {num_packages}")
@@ -644,6 +646,31 @@ def test_gather_stats_integrates_with_tmpdir_typeshed() -> None:
     package_names_in_results = [item.package_name for item in results]
     assert package_names_in_results == sorted(package_names_in_results)
     assert set(package_names_in_results) == package_names
+
+
+@pytest.mark.dependency(depends=["integration_basic"])
+def test_basic_sanity_checks(subtests: SubTests) -> None:
+    with tmpdir_typeshed() as typeshed:
+        stats = gather_stats(typeshed_dir=typeshed)
+    for s in stats:
+        with subtests.test(package_name=s.package_name):
+            annot_stats = s.annotation_stats
+            is_only_partially_annotated = bool(
+                annot_stats.unannotated_parameters or annot_stats.unannotated_returns
+            )
+            is_fully_annotated = not is_only_partially_annotated
+            if s.pyright_setting is PyrightSetting.STRICT:
+                assert is_fully_annotated, (
+                    "Likely bug detected: "
+                    f"{s.package_name!r} has unannotated parameters and/or returns, "
+                    "but has the strictest pyright settings in CI"
+                )
+            else:
+                assert is_only_partially_annotated, (
+                    "Likely bug detected: "
+                    f"{s.package_name!r} is fully annotated, "
+                    "but does not have the strictest pyright settings in CI"
+                )
 
 
 def test_exceptions_bubble_up(typeshed: Path) -> None:
