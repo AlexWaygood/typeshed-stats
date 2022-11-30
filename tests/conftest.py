@@ -108,6 +108,8 @@ def example_stub_source() -> str:
         def func2(arg: int): ...
         def func3(arg: Incomplete | None = ...): ...
         def func4(arg: Any) -> Any: ...
+        def func5(*args: int, **kwargs: str) -> bool: ...
+        def func6(*args, **kwargs): ...
 
         class Eggs:
             def __new__(cls) -> Eggs: ...
@@ -134,10 +136,10 @@ def example_stub_source() -> str:
 @pytest.fixture(scope="session")
 def expected_stats_on_example_stub_file() -> AnnotationStats:
     return AnnotationStats(
-        annotated_parameters=8,
-        unannotated_parameters=2,
-        annotated_returns=11,
-        unannotated_returns=6,
+        annotated_parameters=10,
+        unannotated_parameters=4,
+        annotated_returns=12,
+        unannotated_returns=7,
         explicit_Incomplete_parameters=2,
         explicit_Incomplete_returns=1,
         explicit_Any_parameters=3,

@@ -165,14 +165,7 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
             self.stats.explicit_Incomplete_variables += 1
         self.generic_visit(node)
 
-    def _visit_arg(
-        self, arg_number: int, node: ast.arg, *, is_staticmethod: bool
-    ) -> None:
-        # We don't want self/cls/metacls/mcls arguments to count towards the statistics
-        # Whatever they're called, they can easily be inferred
-        if self.in_class and (not is_staticmethod) and (not arg_number):
-            return
-
+    def _visit_arg(self, node: ast.arg) -> None:
         annotation = node.annotation
         if annotation is None:
             self.stats.unannotated_parameters += 1
@@ -198,13 +191,25 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
                 self.stats.explicit_Incomplete_returns += 1
 
         args = node.args
-        is_decorated_with_staticmethod = any(
-            _is_staticmethod(decorator) for decorator in node.decorator_list
-        )
-        for i, arg_node in enumerate(
-            chain(args.posonlyargs, args.args, args.kwonlyargs)
-        ):
-            self._visit_arg(i, arg_node, is_staticmethod=is_decorated_with_staticmethod)
+
+        for i, arg_node in enumerate(chain(args.posonlyargs, args.args)):
+            if (
+                i == 0
+                and self.in_class
+                and not any(
+                    _is_staticmethod(decorator) for decorator in node.decorator_list
+                )
+            ):
+                # We don't want self/cls/metacls/mcls arguments to count towards the statistics
+                # Whatever they're called, they can easily be inferred
+                continue
+            self._visit_arg(arg_node)
+
+        for arg_node in args.kwonlyargs:
+            self._visit_arg(arg_node)
+
+        for arg_node in filter(None, (args.vararg, args.kwarg)):
+            self._visit_arg(arg_node)
 
     def visit_FunctionDef(self, node: ast.FunctionDef) -> None:
         self._visit_function(node)
