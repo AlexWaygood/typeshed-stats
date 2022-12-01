@@ -13,11 +13,11 @@ import attrs
 import tabulate
 
 import typeshed_stats.gather
-from typeshed_stats.gather import PackageStats, gather_stats, tmpdir_typeshed
+from typeshed_stats.gather import PackageInfo, gather_stats, tmpdir_typeshed
 from typeshed_stats.serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
 
-def regenerate_examples(stats: Sequence[PackageStats]) -> None:
+def regenerate_examples(stats: Sequence[PackageInfo]) -> None:
     """Regenerate the examples in the examples/ directory."""
     print("Formatting stats...")
     path_to_formatted_stats = {
@@ -33,7 +33,7 @@ def regenerate_examples(stats: Sequence[PackageStats]) -> None:
     print("Examples successfully regenerated!")
 
 
-def regenerate_docs_page(stats: Sequence[PackageStats]) -> None:
+def regenerate_docs_page(stats: Sequence[PackageInfo]) -> None:
     """Regenerate the markdown page used for the static website."""
     markdown = Path("examples", "example.md").read_text(encoding="utf-8")
     updated_time = datetime.utcnow().strftime("%H:%M UTC on %Y-%m-%d")
@@ -120,7 +120,7 @@ def regenerate_gather_api_docs() -> None:
 # I think we need the type: ignore here
 # because mypy is worried that ExitStack() might suppress exceptions.
 # I guess that's reasonable, thought it's somewhat annoying in this case.
-def get_stats(args: argparse.Namespace) -> Sequence[PackageStats]:  # type: ignore[return]
+def get_stats(args: argparse.Namespace) -> Sequence[PackageInfo]:  # type: ignore[return]
     """Get the stats."""
     with ExitStack() as stack:
         if args.download_typeshed:

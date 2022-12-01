@@ -33,8 +33,8 @@ else:
 
 __all__ = [
     "AnnotationStats",
+    "PackageInfo",
     "PackageName",
-    "PackageStats",
     "PackageStatus",
     "PyrightSetting",
     "StubtestSetting",
@@ -477,7 +477,8 @@ def get_package_size(package_name: str, *, typeshed_dir: Path | str) -> int:
             in which to find the stubs package.
 
     Returns:
-        The number of lines of code the stubs package contains.
+        The number of lines of code the stubs package contains,
+            excluding empty lines.
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_size
@@ -488,8 +489,8 @@ def get_package_size(package_name: str, *, typeshed_dir: Path | str) -> int:
         True
     """
     return sum(
-        len(stub.read_text(encoding="utf-8").splitlines())
-        for stub in _get_package_directory(package_name, typeshed_dir).rglob("*.pyi")
+        sum(1 for line in file.read_text(encoding="utf-8").splitlines() if line.strip())
+        for file in _get_package_directory(package_name, typeshed_dir).rglob("*.pyi")
     )
 
 
@@ -587,7 +588,7 @@ def get_pyright_setting(
 
 @final
 @attrs.define
-class PackageStats:
+class PackageInfo:
     """Statistics about a single stubs package in typeshed."""
 
     package_name: PackageName
@@ -603,7 +604,7 @@ async def gather_stats_on_package(
     *,
     typeshed_dir: Path | str,
     session: aiohttp.ClientSession | None = None,
-) -> PackageStats:
+) -> PackageInfo:
     """Gather miscellaneous statistics about a single stubs package in typeshed.
 
     This function calls
@@ -621,22 +622,22 @@ async def gather_stats_on_package(
             created to make the network request.
 
     Returns:
-        An instance of the [`PackageStats`][typeshed_stats.gather.PackageStats] class.
+        An instance of the [`PackageInfo`][typeshed_stats.gather.PackageInfo] class.
 
     Examples:
         >>> import asyncio
         >>> from typeshed_stats.gather import tmpdir_typeshed, gather_stats_on_package
         >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_stats = asyncio.run(gather_stats_on_package("stdlib", typeshed_dir=typeshed))
+        ...     stdlib_info = asyncio.run(gather_stats_on_package("stdlib", typeshed_dir=typeshed))
         ...
-        >>> stdlib_stats.package_name
+        >>> stdlib_info.package_name
         'stdlib'
-        >>> stdlib_stats.stubtest_setting
+        >>> stdlib_info.stubtest_setting
         StubtestSetting.ERROR_ON_MISSING_STUB
-        >>> type(stdlib_stats.number_of_lines) is int and stdlib_stats.number_of_lines > 0
+        >>> type(stdlib_info.number_of_lines) is int and stdlib_info.number_of_lines > 0
         True
     """
-    return PackageStats(
+    return PackageInfo(
         package_name=package_name,
         number_of_lines=get_package_size(package_name, typeshed_dir=typeshed_dir),
         package_status=await get_package_status(
@@ -652,7 +653,7 @@ async def gather_stats_on_package(
 
 async def _gather_stats(
     packages: Iterable[str], *, typeshed_dir: Path | str
-) -> Sequence[PackageStats]:
+) -> Sequence[PackageInfo]:
     conn = aiohttp.TCPConnector(limit_per_host=10)
     async with aiohttp.ClientSession(connector=conn) as session:
         tasks = (
@@ -666,7 +667,7 @@ async def _gather_stats(
 
 def gather_stats(
     packages: Iterable[str] | None = None, *, typeshed_dir: Path | str
-) -> Sequence[PackageStats]:
+) -> Sequence[PackageInfo]:
     """Concurrently gather statistics on multiple packages.
 
     Note: this function calls `asyncio.run()` to start an asyncio event loop.
@@ -679,18 +680,18 @@ def gather_stats(
         typeshed_dir: The path to a local clone of typeshed.
 
     Returns:
-        A sequence of [`PackageStats`][typeshed_stats.gather.PackageStats] objects.
-            Each `PackageStats` object contains information representing an analysis
+        A sequence of [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects.
+            Each `PackageInfo` object contains information representing an analysis
             of a certain stubs package in typeshed.
 
     Examples:
-        >>> from typeshed_stats.gather import PackageStats, tmpdir_typeshed, gather_stats
+        >>> from typeshed_stats.gather import PackageInfo, tmpdir_typeshed, gather_stats
         >>> with tmpdir_typeshed() as typeshed:
-        ...     stats = gather_stats(["stdlib", "aiofiles", "boto"], typeshed_dir=typeshed)
+        ...     infos = gather_stats(["stdlib", "aiofiles", "boto"], typeshed_dir=typeshed)
         ...
-        >>> [s.package_name for s in stats]
+        >>> [info.package_name for info in infos]
         ['aiofiles', 'boto', 'stdlib']
-        >>> all(type(s) is PackageStats for s in stats)
+        >>> all(type(info) is PackageInfo for info in infos)
         True
     """
     if packages is None:
