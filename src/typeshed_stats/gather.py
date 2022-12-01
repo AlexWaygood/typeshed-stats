@@ -11,11 +11,11 @@ from collections import Counter
 from collections.abc import Collection, Iterable, Iterator, Mapping, Sequence
 from contextlib import AsyncExitStack, contextmanager
 from enum import Enum
-from functools import cache
+from functools import lru_cache
 from itertools import chain
 from operator import attrgetter
 from pathlib import Path
-from typing import Any, Literal, Protocol, TypeAlias, TypeVar, final
+from typing import Any, Literal, TypeAlias, TypeVar, final
 
 import aiohttp
 import attrs
@@ -38,14 +38,18 @@ __all__ = [
     "PackageStatus",
     "PyrightSetting",
     "StubtestSetting",
+    "UploadStatus",
     "gather_annotation_stats_on_file",
     "gather_annotation_stats_on_package",
     "gather_stats",
     "gather_stats_on_package",
+    "get_package_extra_description",
     "get_package_size",
     "get_package_status",
     "get_pyright_setting",
+    "get_stubtest_platforms",
     "get_stubtest_setting",
+    "get_upload_status",
     "tmpdir_typeshed",
 ]
 
@@ -71,16 +75,24 @@ class _NiceReprEnum(Enum):
 
 
 @attrs.define
-class _SingleAnnotationAnalyzer(ast.NodeVisitor):
+class _SingleAnnotationAnalysis:
     Any_in_annotation: bool = False
     Incomplete_in_annotation: bool = False
+
+
+class _SingleAnnotationAnalyzer(ast.NodeVisitor):
+    def __init__(self) -> None:
+        self.analysis = _SingleAnnotationAnalysis()
+
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__}(analysis={self.analysis})"
 
     def visit_Name(self, node: ast.Name) -> None:
         match node.id:
             case "Any":
-                self.Any_in_annotation = True
+                self.analysis.Any_in_annotation = True
             case "Incomplete":
-                self.Incomplete_in_annotation = True
+                self.analysis.Incomplete_in_annotation = True
             case _:
                 pass
 
@@ -89,23 +101,18 @@ class _SingleAnnotationAnalyzer(ast.NodeVisitor):
         if isinstance(value, ast.Name):
             match f"{value.id}.{node.attr}":
                 case "typing.Any":
-                    self.Any_in_annotation = True
+                    self.analysis.Any_in_annotation = True
                 case "_typeshed.Incomplete":
-                    self.Incomplete_in_annotation = True
+                    self.analysis.Incomplete_in_annotation = True
                 case _:
                     pass
         self.generic_visit(node)
 
 
-class _SingleAnnotationAnalysis(Protocol):
-    Any_in_annotation: bool
-    Incomplete_in_annotation: bool
-
-
 def _analyse_annotation(annotation: ast.AST) -> _SingleAnnotationAnalysis:
     analyser = _SingleAnnotationAnalyzer()
     analyser.visit(annotation)
-    return analyser
+    return analyser.analysis
 
 
 @final
@@ -244,7 +251,7 @@ def gather_annotation_stats_on_file(path: Path | str) -> AnnotationStats:
     return visitor.stats
 
 
-@cache
+@lru_cache
 def _get_package_directory(package_name: PackageName, typeshed_dir: Path | str) -> Path:
     if package_name == "stdlib":
         return Path(typeshed_dir, "stdlib")
@@ -290,13 +297,42 @@ def gather_annotation_stats_on_package(
     return AnnotationStats(**package_stats)
 
 
-@cache
+@lru_cache
 def _get_package_metadata(
     package_name: PackageName, typeshed_dir: Path | str
 ) -> Mapping[str, Any]:
     package_directory = _get_package_directory(package_name, typeshed_dir)
     with open(package_directory / "METADATA.toml", "rb") as f:
         return tomllib.load(f)
+
+
+def get_package_extra_description(
+    package_name: PackageName, *, typeshed_dir: Path | str
+) -> str | None:
+    """Get the "extra description" of the package given in the METADATA.toml file.
+
+    Args:
+        package_name: The name of the package to find the extra description for.
+        typeshed_dir: A path pointing to a typeshed directory,
+            from which to retrieve the description.
+
+    Returns:
+        The "extra description" of the package given in the METADATA.toml file,
+            if one is given, else `None`.
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_extra_description
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     stdlib_description = get_package_extra_description("stdlib", typeshed_dir=typeshed)
+        ...     protobuf_description = get_package_extra_description("protobuf", typeshed_dir=typeshed)
+        >>> stdlib_description is None
+        True
+        >>> isinstance(protobuf_description, str)
+        True
+    """
+    if package_name == "stdlib":
+        return None
+    return _get_package_metadata(package_name, typeshed_dir).get("extra_description")
 
 
 class StubtestSetting(_NiceReprEnum):
@@ -311,8 +347,18 @@ class StubtestSetting(_NiceReprEnum):
     )
 
 
+@lru_cache
+def _get_stubtest_config(
+    package_name: PackageName, typeshed_dir: Path | str
+) -> Mapping[str, object]:
+    metadata = _get_package_metadata(package_name, typeshed_dir)
+    config = metadata.get("tool", {}).get("stubtest", {})
+    assert isinstance(config, dict)
+    return config
+
+
 def get_stubtest_setting(
-    package_name: str, *, typeshed_dir: Path | str
+    package_name: PackageName, *, typeshed_dir: Path | str
 ) -> StubtestSetting:
     """Get the setting typeshed uses in CI when stubtest is run on a certain package.
 
@@ -343,14 +389,44 @@ def get_stubtest_setting(
     """
     if package_name == "stdlib":
         return StubtestSetting.ERROR_ON_MISSING_STUB
-    metadata = _get_package_metadata(package_name, typeshed_dir)
-    match metadata.get("tool", {}).get("stubtest", {}):
+    match _get_stubtest_config(package_name, typeshed_dir):
         case {"skip": True}:
             return StubtestSetting.SKIPPED
         case {"ignore_missing_stub": False}:
             return StubtestSetting.ERROR_ON_MISSING_STUB
         case _:
             return StubtestSetting.MISSING_STUBS_IGNORED
+
+
+def get_stubtest_platforms(
+    package_name: PackageName, *, typeshed_dir: Path | str
+) -> list[str]:
+    """Get the list of platforms on which stubtest is run in typeshed's CI.
+
+    Args:
+        package_name: The name of the package to find the stubtest setting for.
+        typeshed_dir: A path pointing to a typeshed directory,
+            from which to retrieve the stubtest configuration.
+
+    Returns:
+        A list of strings describing platforms stubtest is run on.
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_platforms
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     pywin_platforms = get_stubtest_platforms("pywin32", typeshed_dir=typeshed)
+        >>> pywin_platforms
+        ['win32']
+    """
+    if package_name == "stdlib":
+        return ["linux", "darwin", "win32"]
+    match _get_stubtest_config(package_name, typeshed_dir):
+        case {"skip": True}:
+            return []
+        case {"platforms": list() as platforms}:
+            return platforms
+        case _:
+            return ["linux"]
 
 
 class PackageStatus(_NiceReprEnum):
@@ -468,7 +544,53 @@ async def get_package_status(
     return PackageStatus[status]
 
 
-def get_package_size(package_name: str, *, typeshed_dir: Path | str) -> int:
+class UploadStatus(_NiceReprEnum):
+    """Whether or not a stubs package is currently uploaded to PyPI."""
+
+    UPLOADED = "These stubs are currently uploaded to PyPI."
+    NOT_CURRENTLY_UPLOADED = "These stubs are not currently uploaded to PyPI."
+
+
+def get_upload_status(
+    package_name: PackageName, *, typeshed_dir: Path | str
+) -> UploadStatus:
+    """Determine whether a certain package is currently uploaded to PyPI.
+
+    Args:
+        package_name: The name of the package to find the stubtest setting for.
+        typeshed_dir: A path pointing to a typeshed directory,
+            from which to retrieve the stubtest setting.
+
+    Returns:
+        A member of the [`UploadStatus`][typeshed_stats.gather.UploadStatus]
+            enumeration (see the docs on `UploadStatus` for details).
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_upload_status
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     stdlib_setting = get_upload_status("stdlib", typeshed_dir=typeshed)
+        ...     requests_setting = get_upload_status("requests", typeshed_dir=typeshed)
+        >>> stdlib_setting
+        UploadStatus.NOT_CURRENTLY_UPLOADED
+        >>> help(_)
+        Help on UploadStatus in module typeshed_stats.gather:
+        <BLANKLINE>
+        UploadStatus.NOT_CURRENTLY_UPLOADED
+            These stubs are not currently uploaded to PyPI.
+        <BLANKLINE>
+        >>> requests_setting
+        UploadStatus.UPLOADED
+    """
+    if package_name == "stdlib":
+        return UploadStatus.NOT_CURRENTLY_UPLOADED
+    match _get_package_metadata(package_name, typeshed_dir):
+        case {"upload": False}:
+            return UploadStatus.NOT_CURRENTLY_UPLOADED
+        case _:
+            return UploadStatus.UPLOADED
+
+
+def get_package_size(package_name: PackageName, *, typeshed_dir: Path | str) -> int:
     """Get the total number of lines of code for a stubs package in typeshed.
 
     Args:
@@ -494,7 +616,7 @@ def get_package_size(package_name: str, *, typeshed_dir: Path | str) -> int:
     )
 
 
-@cache
+@lru_cache
 def _get_pyright_excludelist(
     *,
     typeshed_dir: Path | str,
@@ -592,9 +714,12 @@ class PackageInfo:
     """Statistics about a single stubs package in typeshed."""
 
     package_name: PackageName
+    extra_description: str | None
     number_of_lines: int
     package_status: PackageStatus
+    upload_status: UploadStatus
     stubtest_setting: StubtestSetting
+    stubtest_platforms: list[str]
     pyright_setting: PyrightSetting
     annotation_stats: AnnotationStats
 
@@ -639,11 +764,18 @@ async def gather_stats_on_package(
     """
     return PackageInfo(
         package_name=package_name,
+        extra_description=get_package_extra_description(
+            package_name, typeshed_dir=typeshed_dir
+        ),
         number_of_lines=get_package_size(package_name, typeshed_dir=typeshed_dir),
         package_status=await get_package_status(
             package_name, typeshed_dir=typeshed_dir, session=session
         ),
+        upload_status=get_upload_status(package_name, typeshed_dir=typeshed_dir),
         stubtest_setting=get_stubtest_setting(package_name, typeshed_dir=typeshed_dir),
+        stubtest_platforms=get_stubtest_platforms(
+            package_name, typeshed_dir=typeshed_dir
+        ),
         pyright_setting=get_pyright_setting(package_name, typeshed_dir=typeshed_dir),
         annotation_stats=gather_annotation_stats_on_package(
             package_name, typeshed_dir=typeshed_dir
