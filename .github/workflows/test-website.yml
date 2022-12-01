@@ -34,7 +34,7 @@ jobs:
       - name: Install requirements
         run: |
           pip install -r requirements/docs.txt
-          pip install -e .[Markdown]
+          pip install -e .
       - name: Regenerate examples and docs
         run: python scripts/regenerate_examples_and_docs.py --download-typeshed
       - name: Check the generated files with pre-commit
