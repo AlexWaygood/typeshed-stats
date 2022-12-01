@@ -19,7 +19,7 @@ import typeshed_stats._cli
 import typeshed_stats.gather
 from typeshed_stats._cli import SUPPORTED_EXTENSIONS, OutputOption, main
 from typeshed_stats.gather import (
-    PackageStats,
+    PackageInfo,
     PackageStatus,
     PyrightSetting,
     StubtestSetting,
@@ -47,13 +47,13 @@ def disabled_rich() -> Iterator[None]:
 
 @pytest.fixture
 def mocked_gather_stats(
-    random_PackageStats_sequence: Sequence[PackageStats], mocker: MockerFixture
+    random_PackageInfo_sequence: Sequence[PackageInfo], mocker: MockerFixture
 ) -> None:
     mocker.patch.object(
         typeshed_stats._cli,
         "gather_stats",
         autospec=True,
-        return_value=random_PackageStats_sequence,
+        return_value=random_PackageInfo_sequence,
     )
 
 
@@ -118,12 +118,12 @@ def test_OutputOption_from_file_extension() -> None:
 
 
 def test_pprinting_conversion(
-    random_PackageStats_sequence: Sequence[PackageStats],
+    random_PackageInfo_sequence: Sequence[PackageInfo],
 ) -> None:
     # No point in testing the exact type of the output here,
     # it's an implementation detail
     # Just test that it works without raising an exception
-    result = OutputOption.PPRINT.convert(random_PackageStats_sequence)
+    result = OutputOption.PPRINT.convert(random_PackageInfo_sequence)
     assert result is not None
 
 
@@ -244,7 +244,7 @@ class TestPassingPackages:
         assert isinstance(results, dict)
         assert len(results) == expected_length_of_results
         assert all(isinstance(key, str) for key in results)
-        assert all(isinstance(value, PackageStats) for value in results.values())
+        assert all(isinstance(value, PackageInfo) for value in results.values())
         guaranteed_package_name = self._guaranteed_package_name
         assert results[guaranteed_package_name].package_name == guaranteed_package_name
 
@@ -414,7 +414,7 @@ class TestToFileSuccessCases(ToFileOptionTestsBase):
         results = eval(source, vars(typeshed_stats.gather) | globals())
         assert isinstance(results, dict)
         assert all(isinstance(key, str) for key in results)
-        assert all(isinstance(value, PackageStats) for value in results.values())
+        assert all(isinstance(value, PackageInfo) for value in results.values())
 
     def test_overwrite_argument(self) -> None:
         # Setup the case where --overwrite=True,

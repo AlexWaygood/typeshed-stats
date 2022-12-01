@@ -12,23 +12,23 @@ from enum import Enum
 from pathlib import Path
 from typing import Annotated, Literal, TypeAlias, cast, get_args
 
-from .gather import PackageName, PackageStats, gather_stats, tmpdir_typeshed
+from .gather import PackageInfo, PackageName, gather_stats, tmpdir_typeshed
 from .serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
 __all__ = ["OutputOption", "SUPPORTED_EXTENSIONS", "main"]
 
 
 def _format_stats_for_pprinting(
-    stats: Sequence[PackageStats],
-) -> dict[PackageName, PackageStats]:
+    stats: Sequence[PackageInfo],
+) -> dict[PackageName, PackageInfo]:
     # *Don't* stringify this one
     # It makes it harder for pprint or rich to format it nicely
     return {info_bundle.package_name: info_bundle for info_bundle in stats}
 
 
 _CF: TypeAlias = Annotated[
-    Callable[[Sequence[PackageStats]], object],
-    "Function for converting a sequence of PackageStats into a certain format",
+    Callable[[Sequence[PackageInfo]], object],
+    "Function for converting a sequence of PackageInfo objects into a certain format",
 ]
 
 
@@ -45,8 +45,8 @@ class OutputOption(Enum):
         """File extension associated with this file type."""
         return self.value[0]
 
-    def convert(self, stats: Sequence[PackageStats]) -> object:
-        """Convert a sequence of `PackageStats` objects into the specified format."""
+    def convert(self, stats: Sequence[PackageInfo]) -> object:
+        """Convert a sequence of `PackageInfo` objects into the specified format."""
         converter_function = self.value[1]
         return converter_function(stats)
 

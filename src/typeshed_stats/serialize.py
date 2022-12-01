@@ -1,4 +1,4 @@
-"""Tools for serializing and deserializing [`PackageStats`][typeshed_stats.gather.PackageStats] objects."""
+"""Tools for serializing and deserializing [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects."""
 
 from collections.abc import Sequence
 from functools import cache
@@ -7,7 +7,7 @@ from operator import attrgetter
 import attrs
 import cattrs
 
-from typeshed_stats.gather import AnnotationStats, PackageStats, _NiceReprEnum
+from typeshed_stats.gather import AnnotationStats, PackageInfo, _NiceReprEnum
 
 __all__ = [
     "stats_from_csv",
@@ -25,7 +25,7 @@ _CATTRS_CONVERTER.register_unstructure_hook(_NiceReprEnum, attrgetter("name"))
 _CATTRS_CONVERTER.register_structure_hook(_NiceReprEnum, lambda d, t: t[d])  # type: ignore[index,no-any-return]
 
 
-def stats_to_json(stats: Sequence[PackageStats]) -> str:
+def stats_to_json(stats: Sequence[PackageInfo]) -> str:
     """Convert stats on multiple stubs packages to JSON format.
 
     Args:
@@ -39,22 +39,22 @@ def stats_to_json(stats: Sequence[PackageStats]) -> str:
     return json.dumps(_unstructure(stats), indent=2) + "\n"
 
 
-def stats_from_json(data: str) -> list[PackageStats]:
-    """Load `PackageStats` objects from JSON format.
+def stats_from_json(data: str) -> list[PackageInfo]:
+    """Load `PackageInfo` objects from JSON format.
 
     Args:
         data: A JSON string.
 
     Returns:
         The statistics deserialized into
-            [`PackageStats`][typeshed_stats.gather.PackageStats] objects.
+            [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects.
     """
     import json
 
-    return _structure(json.loads(data), list[PackageStats])
+    return _structure(json.loads(data), list[PackageInfo])
 
 
-def stats_to_csv(stats: Sequence[PackageStats]) -> str:
+def stats_to_csv(stats: Sequence[PackageInfo]) -> str:
     """Convert stats on multiple stubs packages to csv format.
 
     Args:
@@ -84,15 +84,15 @@ def _annotation_stats_fields() -> tuple[str, ...]:
     return tuple(f.name for f in attrs.fields(AnnotationStats))
 
 
-def stats_from_csv(data: str) -> list[PackageStats]:
-    """Load `PackageStats` objects from csv format.
+def stats_from_csv(data: str) -> list[PackageInfo]:
+    """Load `PackageInfo` objects from csv format.
 
     Args:
         data: A CSV string.
 
     Returns:
         The statistics deserialized into
-            [`PackageStats`][typeshed_stats.gather.PackageStats] objects.
+            [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects.
     """
     import csv
     import io
@@ -110,10 +110,10 @@ def stats_from_csv(data: str) -> list[PackageStats]:
                 converted_stat[key] = val
         converted_stat["annotation_stats"] = annotation_stats
         converted_stats.append(converted_stat)
-    return _structure(converted_stats, list[PackageStats])
+    return _structure(converted_stats, list[PackageInfo])
 
 
-def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
+def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
     """Generate MarkDown describing statistics on multiple stubs packages.
 
     Args:
@@ -130,7 +130,7 @@ def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
 
         ### Number of lines
 
-        {number_of_lines}
+        {number_of_lines} (excluding blank lines)
 
         ### Package status: *{package_status.formatted_name}*
 
@@ -163,7 +163,7 @@ def stats_to_markdown(stats: Sequence[PackageStats]) -> str:
         """
     )
 
-    def format_package(package_stats: PackageStats) -> str:
+    def format_package(package_stats: PackageInfo) -> str:
         package_as_dict = attrs.asdict(package_stats)
         kwargs = package_as_dict | package_as_dict["annotation_stats"]
         del kwargs["annotation_stats"]

@@ -12,7 +12,7 @@ import pytest
 
 from typeshed_stats.gather import (
     AnnotationStats,
-    PackageStats,
+    PackageInfo,
     PackageStatus,
     PyrightSetting,
     StubtestSetting,
@@ -196,11 +196,11 @@ def AnnotationStats_fieldnames() -> tuple[str, ...]:
 
 
 @pytest.fixture
-def make_random_PackageStats(
+def make_random_PackageInfo(
     AnnotationStats_fieldnames: tuple[str, ...]
-) -> Callable[[], PackageStats]:
-    def random_PackageStats() -> PackageStats:
-        return PackageStats(
+) -> Callable[[], PackageInfo]:
+    def random_PackageInfo() -> PackageInfo:
+        return PackageInfo(
             package_name="".join(
                 random.choice(string.ascii_letters)
                 for _ in range(random.randint(1, 10))
@@ -214,14 +214,14 @@ def make_random_PackageStats(
             ),
         )
 
-    return random_PackageStats
+    return random_PackageInfo
 
 
 @pytest.fixture
-def random_PackageStats_sequence(
-    make_random_PackageStats: Callable[[], PackageStats]
-) -> Sequence[PackageStats]:
-    return [make_random_PackageStats() for _ in range(random.randint(3, 10))]
+def random_PackageInfo_sequence(
+    make_random_PackageInfo: Callable[[], PackageInfo]
+) -> Sequence[PackageInfo]:
+    return [make_random_PackageInfo() for _ in range(random.randint(3, 10))]
 
 
 @pytest.fixture(params=[True, False], ids=["use_string_path", "use_pathlib_path"])

@@ -23,7 +23,7 @@ import typeshed_stats
 import typeshed_stats.gather
 from typeshed_stats.gather import (
     AnnotationStats,
-    PackageStats,
+    PackageInfo,
     PackageStatus,
     PyrightSetting,
     StubtestSetting,
@@ -624,7 +624,7 @@ def test_gather_stats_no_network_access(
         packages_to_pass = {"stdlib", *os.listdir(complete_typeshed / "stubs")}
 
     results = gather_stats(packages_to_pass, typeshed_dir=typeshed_dir_to_pass)
-    assert all(isinstance(item, PackageStats) for item in results)
+    assert all(isinstance(item, PackageInfo) for item in results)
     package_names_in_results = [item.package_name for item in results]
     assert package_names_in_results == sorted(package_names_in_results)
     expected_package_names = real_typeshed_package_names | {"stdlib"}
@@ -652,7 +652,7 @@ def test_gather_stats_integrates_with_tmpdir_typeshed() -> None:
         print(f"Testing with {package_names}")
         results = gather_stats(package_names, typeshed_dir=typeshed)
 
-    assert all(isinstance(item, PackageStats) for item in results)
+    assert all(isinstance(item, PackageInfo) for item in results)
     package_names_in_results = [item.package_name for item in results]
     assert package_names_in_results == sorted(package_names_in_results)
     assert set(package_names_in_results) == package_names
