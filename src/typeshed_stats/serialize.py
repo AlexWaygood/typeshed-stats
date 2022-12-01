@@ -7,7 +7,12 @@ from operator import attrgetter
 import attrs
 import cattrs
 
-from typeshed_stats.gather import AnnotationStats, PackageInfo, _NiceReprEnum
+from typeshed_stats.gather import (
+    AnnotationStats,
+    PackageInfo,
+    StubtestSetting,
+    _NiceReprEnum,
+)
 
 __all__ = [
     "stats_from_csv",
@@ -70,6 +75,13 @@ def stats_to_csv(stats: Sequence[PackageInfo]) -> str:
     for info in converted_stats:
         info |= info["annotation_stats"]
         del info["annotation_stats"]
+        stubtest_platforms = info["stubtest_platforms"]
+        if not stubtest_platforms:
+            info["stubtest_platforms"] = "None"
+        else:
+            info["stubtest_platforms"] = ";".join(stubtest_platforms)
+        if info["extra_description"] is None:
+            info["extra_description"] = "-"
     fieldnames = converted_stats[0].keys()
     csvfile = io.StringIO(newline="")
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -109,6 +121,13 @@ def stats_from_csv(data: str) -> list[PackageInfo]:
             else:
                 converted_stat[key] = val
         converted_stat["annotation_stats"] = annotation_stats
+        stubtest_platforms = converted_stat["stubtest_platforms"]
+        if stubtest_platforms == "None":
+            converted_stat["stubtest_platforms"] = []
+        else:
+            converted_stat["stubtest_platforms"] = stubtest_platforms.split(";")
+        if converted_stat["extra_description"] == "-":
+            converted_stat["extra_description"] = None
         converted_stats.append(converted_stat)
     return _structure(converted_stats, list[PackageInfo])
 
@@ -126,8 +145,8 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
 
     template = textwrap.dedent(
         """
-        ## Stats on typeshed's stubs for `{package_name}`
-
+        ## Info on typeshed's stubs for `{package_name}`
+        {extra_description_section}
         ### Number of lines
 
         {number_of_lines} (excluding blank lines)
@@ -136,10 +155,14 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
 
         {package_status.value}
 
+        ### Upload status: *{upload_status.formatted_name}*
+
+        {upload_status.value}
+
         ### Stubtest settings in CI: *{stubtest_setting.formatted_name}*
 
         {stubtest_setting.value}
-
+        {stubtest_platforms_section}
         ### Pyright settings in CI: *{pyright_setting.formatted_name}*
 
         {pyright_setting.value}
@@ -167,6 +190,43 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         package_as_dict = attrs.asdict(package_stats)
         kwargs = package_as_dict | package_as_dict["annotation_stats"]
         del kwargs["annotation_stats"]
+
+        if package_stats.extra_description:
+            kwargs["extra_description_section"] = textwrap.dedent(
+                f"""
+                ### Extra description
+
+                {package_stats.extra_description}
+                """
+            )
+        else:
+            kwargs["extra_description_section"] = ""
+        del kwargs["extra_description"]
+
+        if package_stats.stubtest_setting is not StubtestSetting.SKIPPED:
+            platforms = package_stats.stubtest_platforms
+            num_platforms = len(platforms)
+            if num_platforms == 1:
+                desc = f"In CI, stubtest is run on {platforms[0]} only."
+            elif num_platforms == 2:
+                desc = f"In CI, stubtest is run on {platforms[0]} and {platforms[1]}."
+            else:
+                assert num_platforms == 3
+                desc = (
+                    "In CI, stubtest is run on "
+                    f"{platforms[0]}, {platforms[1]} and {platforms[2]}."
+                )
+            kwargs["stubtest_platforms_section"] = textwrap.dedent(
+                f"""
+                ### Stubtest platforms in CI
+
+                {desc}
+                """
+            )
+        else:
+            kwargs["stubtest_platforms_section"] = ""
+        del kwargs["stubtest_platforms"]
+
         return template.format(**kwargs)
 
     return "\n<hr>\n".join(format_package(info) for info in stats).strip() + "\n"

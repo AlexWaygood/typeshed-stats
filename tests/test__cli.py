@@ -23,6 +23,7 @@ from typeshed_stats.gather import (
     PackageStatus,
     PyrightSetting,
     StubtestSetting,
+    UploadStatus,
 )
 
 from .conftest import random_package_name
@@ -222,6 +223,9 @@ class TestPassingPackages:
             ("get_package_status", PackageStatus.UP_TO_DATE),
             ("get_stubtest_setting", StubtestSetting.MISSING_STUBS_IGNORED),
             ("get_pyright_setting", PyrightSetting.STRICT_ON_SOME_FILES),
+            ("get_package_extra_description", None),
+            ("get_upload_status", UploadStatus.UPLOADED),
+            ("get_stubtest_platforms", ["linux"]),
         ]
 
         for function_name, return_value in patches_to_apply:

@@ -27,14 +27,18 @@ from typeshed_stats.gather import (
     PackageStatus,
     PyrightSetting,
     StubtestSetting,
+    UploadStatus,
     _get_pypi_data,
     gather_annotation_stats_on_file,
     gather_annotation_stats_on_package,
     gather_stats,
+    get_package_extra_description,
     get_package_size,
     get_package_status,
     get_pyright_setting,
+    get_stubtest_platforms,
     get_stubtest_setting,
+    get_upload_status,
     tmpdir_typeshed,
 )
 
@@ -105,6 +109,16 @@ def test_non_str_value_for__NiceReprEnum_impossible() -> None:
 # =========================================
 
 
+def test__SingleAnnotationAnalyzer___repr__() -> None:
+    actual_repr = repr(typeshed_stats.gather._SingleAnnotationAnalyzer())
+    expected_repr = (
+        "_SingleAnnotationAnalyzer(analysis=_SingleAnnotationAnalysis("
+        "Any_in_annotation=False, Incomplete_in_annotation=False"
+        "))"
+    )
+    assert actual_repr == expected_repr
+
+
 def test__AnnotationStatsCollector___repr__() -> None:
     actual_repr = repr(typeshed_stats.gather._AnnotationStatsCollector())
     expected_repr = f"_AnnotationStatsCollector(stats={AnnotationStats()})"
@@ -172,6 +186,43 @@ def test_annotation_stats_on_package(
             assert actual_stat == expected_stat
 
 
+# =======================================
+# Tests for get_package_extra_description
+# =======================================
+
+
+def test_get_package_extra_description_stdlib() -> None:
+    result = get_package_extra_description("stdlib", typeshed_dir=".")
+    assert result is None
+
+
+def test_get_package_extra_description_with_no_description(
+    typeshed: Path,
+    EXAMPLE_PACKAGE_NAME: str,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, "\n")
+    result = get_package_extra_description(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert result is None
+
+
+def test_get_package_extra_description_with_description(
+    typeshed: Path,
+    EXAMPLE_PACKAGE_NAME: str,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    description = "foo bar baz"
+    write_metadata_text(
+        typeshed, EXAMPLE_PACKAGE_NAME, f"extra_description = {description!r}"
+    )
+    result = get_package_extra_description(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert result == description
+
+
 # ==============================
 # Tests for get_stubtest_setting
 # ==============================
@@ -231,6 +282,48 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
     )
     expected_result = StubtestSetting[expected_result_name]
     assert actual_result is expected_result
+
+
+# ==============================
+# Tests for get_stubtest_platform
+# ==============================
+
+
+def test_get_stubtest_platform_stdlib() -> None:
+    result = get_stubtest_platforms("stdlib", typeshed_dir=Path("."))
+    assert len(result) == len(set(result))
+    assert set(result) == {"linux", "darwin", "win32"}
+
+
+@pytest.mark.parametrize(
+    ("metadata_contents", "expected_result"),
+    [
+        pytest.param("[tool.stubtest]\nskip = true", [], id="Skipped stubtest"),
+        pytest.param(
+            "[tool.stubtest]\nplatforms = ['darwin', 'win32']",
+            ["darwin", "win32"],
+            id="Platforms specified",
+        ),
+        pytest.param("", ["linux"], id="Empty_metadata"),
+        pytest.param(
+            "[tool.stubtest]\nignore_missing_stub = true",
+            ["linux"],
+            id="Platforms unspecified",
+        ),
+    ],
+)
+def test_get_stubtest_platform_non_stdlib(
+    metadata_contents: str,
+    expected_result: list[str],
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed: Path,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, metadata_contents)
+    actual_result = get_stubtest_platforms(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert actual_result == expected_result
 
 
 # =================================
@@ -355,6 +448,39 @@ async def test__get_pypi_data(
     assert "version" in info
     version = info["version"]
     Version(version)
+
+
+# =================================
+# Tests for get_upload_status
+# =================================
+
+
+def test_get_upload_status_stdlib() -> None:
+    result = get_upload_status("stdlib", typeshed_dir=Path("."))
+    assert result is UploadStatus.NOT_CURRENTLY_UPLOADED
+
+
+@pytest.mark.parametrize(
+    ("metadata_text", "expected_result_name"),
+    [
+        pytest.param("upload = false", "NOT_CURRENTLY_UPLOADED", id="not_uploaded"),
+        pytest.param("upload = true", "UPLOADED", id="explicitly_uploaded"),
+        pytest.param("", "UPLOADED", id="implicitly_uploaded"),
+    ],
+)
+def test_get_upload_status_non_stdlib(
+    metadata_text: str,
+    expected_result_name: str,
+    typeshed: Path,
+    EXAMPLE_PACKAGE_NAME: str,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, metadata_text)
+    actual_result = get_upload_status(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    expected_result = UploadStatus[expected_result_name]
+    assert actual_result is expected_result
 
 
 # =================================

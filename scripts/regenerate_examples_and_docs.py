@@ -1,14 +1,18 @@
 """Script for regenerating examples and docs."""
 
+from __future__ import annotations
+
 import argparse
 import shutil
 import textwrap
+import types
 from collections.abc import Sequence
 from contextlib import ExitStack
 from datetime import datetime
 from enum import Enum
 from functools import partial
 from pathlib import Path
+from typing import Any
 
 import attrs
 import tabulate
@@ -69,6 +73,16 @@ def regenerate_stats_markdown_page(stats: Sequence[PackageInfo]) -> None:
 generate_table = partial(tabulate.tabulate, tablefmt="github")
 
 
+def _get_field_description(field: attrs.Attribute[Any]) -> str:
+    typ = field.type
+    if isinstance(typ, type) and not isinstance(typ, types.GenericAlias):
+        typ_name = typ.__name__
+        if typ_name in typeshed_stats.gather.__all__:
+            return f"[`{typ_name}`][typeshed_stats.gather.{typ_name}]"
+        return f"`{typ_name}`"
+    return f"`{typ}`"
+
+
 def regenerate_gather_api_docs() -> None:
     """Regenerate the API docs for `typeshed_stats/gather.py`."""
     docs = textwrap.dedent(
@@ -108,11 +122,7 @@ def regenerate_gather_api_docs() -> None:
             elif attrs.has(thing):
                 rows = []
                 for field in attrs.fields(thing):  # type: ignore[arg-type]
-                    typ = field.type.__name__
-                    if typ in typeshed_stats.gather.__all__:
-                        typ_description = f"[`{typ}`][typeshed_stats.gather.{typ}]"
-                    else:
-                        typ_description = f"`{typ}`"
+                    typ_description = _get_field_description(field)
                     rows.append([f"`{field.name}`", typ_description])
                 docs += "**Attributes:**\n\n"
                 docs += generate_table(rows, headers=["Name", "Type"])

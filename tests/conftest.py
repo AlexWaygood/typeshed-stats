@@ -16,6 +16,7 @@ from typeshed_stats.gather import (
     PackageStatus,
     PyrightSetting,
     StubtestSetting,
+    UploadStatus,
 )
 
 
@@ -200,14 +201,22 @@ def make_random_PackageInfo(
     AnnotationStats_fieldnames: tuple[str, ...]
 ) -> Callable[[], PackageInfo]:
     def random_PackageInfo() -> PackageInfo:
+        stubtest_setting = random.choice(list(StubtestSetting))
+        if stubtest_setting is StubtestSetting.SKIPPED:
+            stubtest_platforms = []
+        else:
+            stubtest_platforms = [random.choice(["win32", "darwin", "linux"])]
         return PackageInfo(
             package_name="".join(
                 random.choice(string.ascii_letters)
                 for _ in range(random.randint(1, 10))
             ),
+            extra_description=None,
             number_of_lines=random.randint(10, 500),
             package_status=random.choice(list(PackageStatus)),
-            stubtest_setting=random.choice(list(StubtestSetting)),
+            stubtest_setting=stubtest_setting,
+            stubtest_platforms=stubtest_platforms,
+            upload_status=random.choice(list(UploadStatus)),
             pyright_setting=random.choice(list(PyrightSetting)),
             annotation_stats=AnnotationStats(
                 *[random.randint(0, 1000) for _ in AnnotationStats_fieldnames]
