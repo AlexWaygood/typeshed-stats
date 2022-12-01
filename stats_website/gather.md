@@ -4,6 +4,8 @@ hide:
   - navigation
 ---
 
+<!-- NOTE: This file is generated. Do not edit manually! -->
+
 Tools for gathering stats about typeshed packages.
 <hr>
 

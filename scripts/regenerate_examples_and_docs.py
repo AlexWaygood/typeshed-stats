@@ -1,4 +1,5 @@
-"""Script for regenerating examples in the examples/ directory."""
+"""Script for regenerating examples and docs."""
+
 import argparse
 import shutil
 import textwrap
@@ -33,7 +34,7 @@ def regenerate_examples(stats: Sequence[PackageInfo]) -> None:
     print("Examples successfully regenerated!")
 
 
-def regenerate_docs_page(stats: Sequence[PackageInfo]) -> None:
+def regenerate_stats_markdown_page(stats: Sequence[PackageInfo]) -> None:
     """Regenerate the markdown page used for the static website."""
     markdown = Path("examples", "example.md").read_text(encoding="utf-8")
     updated_time = datetime.utcnow().strftime("%H:%M UTC on %Y-%m-%d")
@@ -46,11 +47,13 @@ def regenerate_docs_page(stats: Sequence[PackageInfo]) -> None:
           - footer
         ---
 
+        <!-- NOTE: This file is generated. Do not edit manually! -->
+
         # Statistics on typeshed's stubs
 
         Typeshed currently contains stubs for {len(stats)} packages
         (including the stdlib stubs as a "single package"),
-        for a total of {total_typeshed_stublines:,} lines of code.
+        for a total of {total_typeshed_stublines:,} non-empty lines of code.
 
         <i>Note: these statistics were last updated at: <b>{updated_time}</b>.</i>
         <i>For up-to-date statistics, consider using the CLI tool instead.</i>
@@ -75,6 +78,8 @@ def regenerate_gather_api_docs() -> None:
           - footer
           - navigation
         ---
+
+        <!-- NOTE: This file is generated. Do not edit manually! -->
 
         {typeshed_stats.gather.__doc__}
         """
@@ -144,7 +149,7 @@ def main() -> None:
     parser = get_argument_parser()
     stats = get_stats(parser.parse_args())
     regenerate_examples(stats)
-    regenerate_docs_page(stats)
+    regenerate_stats_markdown_page(stats)
     regenerate_gather_api_docs()
 
 
