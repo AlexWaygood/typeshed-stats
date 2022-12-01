@@ -36,14 +36,17 @@ Tools for gathering stats about typeshed packages.
 
 **Attributes:**
 
-| Name               | Type                                                       |
-|--------------------|------------------------------------------------------------|
-| `package_name`     | `str`                                                      |
-| `number_of_lines`  | `int`                                                      |
-| `package_status`   | [`PackageStatus`][typeshed_stats.gather.PackageStatus]     |
-| `stubtest_setting` | [`StubtestSetting`][typeshed_stats.gather.StubtestSetting] |
-| `pyright_setting`  | [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]   |
-| `annotation_stats` | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] |
+| Name                 | Type                                                       |
+|----------------------|------------------------------------------------------------|
+| `package_name`       | `str`                                                      |
+| `extra_description`  | `str | None`                                               |
+| `number_of_lines`    | `int`                                                      |
+| `package_status`     | [`PackageStatus`][typeshed_stats.gather.PackageStatus]     |
+| `upload_status`      | [`UploadStatus`][typeshed_stats.gather.UploadStatus]       |
+| `stubtest_setting`   | [`StubtestSetting`][typeshed_stats.gather.StubtestSetting] |
+| `stubtest_platforms` | `list[str]`                                                |
+| `pyright_setting`    | [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]   |
+| `annotation_stats`   | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] |
 <hr>
 
 ::: typeshed_stats.gather.PackageName
@@ -96,6 +99,18 @@ Tools for gathering stats about typeshed packages.
 | `ERROR_ON_MISSING_STUB` | Objects missing from the stub cause stubtest to emit an error in CI. |
 <hr>
 
+::: typeshed_stats.gather.UploadStatus
+    options:
+      show_root_heading: true
+
+**Members:**
+
+| Name                     | Description                                     |
+|--------------------------|-------------------------------------------------|
+| `UPLOADED`               | These stubs are currently uploaded to PyPI.     |
+| `NOT_CURRENTLY_UPLOADED` | These stubs are not currently uploaded to PyPI. |
+<hr>
+
 ::: typeshed_stats.gather.gather_annotation_stats_on_file
     options:
       show_root_heading: true
@@ -120,6 +135,12 @@ Tools for gathering stats about typeshed packages.
 
 <hr>
 
+::: typeshed_stats.gather.get_package_extra_description
+    options:
+      show_root_heading: true
+
+<hr>
+
 ::: typeshed_stats.gather.get_package_size
     options:
       show_root_heading: true
@@ -138,7 +159,19 @@ Tools for gathering stats about typeshed packages.
 
 <hr>
 
+::: typeshed_stats.gather.get_stubtest_platforms
+    options:
+      show_root_heading: true
+
+<hr>
+
 ::: typeshed_stats.gather.get_stubtest_setting
+    options:
+      show_root_heading: true
+
+<hr>
+
+::: typeshed_stats.gather.get_upload_status
     options:
       show_root_heading: true
 

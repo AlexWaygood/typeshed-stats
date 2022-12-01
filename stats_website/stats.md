@@ -10,13 +10,13 @@ hide:
 
 Typeshed currently contains stubs for 140 packages
 (including the stdlib stubs as a "single package"),
-for a total of 185,031 non-empty lines of code.
+for a total of 185,032 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>15:04 UTC on 2022-12-01</b>.</i>
+<i>Note: these statistics were last updated at: <b>23:13 UTC on 2022-12-01</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
-## Stats on typeshed's stubs for `D3DShot`
+## Info on typeshed's stubs for `D3DShot`
 
 ### Number of lines
 
@@ -25,6 +25,10 @@ for a total of 185,031 non-empty lines of code.
 ### Package status: *up to date*
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
 
 ### Stubtest settings in CI: *skipped*
 
@@ -53,7 +57,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `DateTimeRange`
+## Info on typeshed's stubs for `DateTimeRange`
 
 ### Number of lines
 
@@ -63,9 +67,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -90,7 +102,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `Deprecated`
+## Info on typeshed's stubs for `Deprecated`
 
 ### Number of lines
 
@@ -100,9 +112,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -127,7 +147,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `Flask-Cors`
+## Info on typeshed's stubs for `Flask-Cors`
 
 ### Number of lines
 
@@ -137,9 +157,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -164,7 +192,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `Flask-Migrate`
+## Info on typeshed's stubs for `Flask-Migrate`
 
 ### Number of lines
 
@@ -174,9 +202,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -201,7 +237,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `Flask-SQLAlchemy`
+## Info on typeshed's stubs for `Flask-SQLAlchemy`
 
 ### Number of lines
 
@@ -211,9 +247,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 Upstream has added type hints; these typeshed stubs are now obsolete.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -238,7 +282,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `JACK-Client`
+## Info on typeshed's stubs for `JACK-Client`
 
 ### Number of lines
 
@@ -248,9 +292,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux and darwin.
 
 ### Pyright settings in CI: *strict*
 
@@ -275,7 +327,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `Markdown`
+## Info on typeshed's stubs for `Markdown`
 
 ### Number of lines
 
@@ -285,9 +337,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -312,7 +372,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `Pillow`
+## Info on typeshed's stubs for `Pillow`
 
 ### Number of lines
 
@@ -322,9 +382,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -349,7 +417,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `PyAutoGUI`
+## Info on typeshed's stubs for `PyAutoGUI`
 
 ### Number of lines
 
@@ -359,9 +427,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -386,7 +462,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `PyMySQL`
+## Info on typeshed's stubs for `PyMySQL`
 
 ### Number of lines
 
@@ -396,9 +472,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -423,7 +507,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `PyScreeze`
+## Info on typeshed's stubs for `PyScreeze`
 
 ### Number of lines
 
@@ -433,9 +517,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -460,7 +552,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `PyYAML`
+## Info on typeshed's stubs for `PyYAML`
 
 ### Number of lines
 
@@ -470,9 +562,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -497,7 +597,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `Pygments`
+## Info on typeshed's stubs for `Pygments`
 
 ### Number of lines
 
@@ -507,9 +607,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -534,7 +642,11 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `SQLAlchemy`
+## Info on typeshed's stubs for `SQLAlchemy`
+
+### Extra description
+
+The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.
 
 ### Number of lines
 
@@ -544,9 +656,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -571,7 +691,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `Send2Trash`
+## Info on typeshed's stubs for `Send2Trash`
 
 ### Number of lines
 
@@ -581,9 +701,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -608,7 +736,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `aiofiles`
+## Info on typeshed's stubs for `aiofiles`
 
 ### Number of lines
 
@@ -618,9 +746,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux and win32.
 
 ### Pyright settings in CI: *strict*
 
@@ -645,7 +781,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `annoy`
+## Info on typeshed's stubs for `annoy`
 
 ### Number of lines
 
@@ -655,9 +791,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -682,7 +826,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `appdirs`
+## Info on typeshed's stubs for `appdirs`
 
 ### Number of lines
 
@@ -692,9 +836,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -719,7 +871,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `aws-xray-sdk`
+## Info on typeshed's stubs for `aws-xray-sdk`
 
 ### Number of lines
 
@@ -729,9 +881,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -756,7 +916,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `babel`
+## Info on typeshed's stubs for `babel`
 
 ### Number of lines
 
@@ -766,9 +926,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -793,7 +961,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `backports.ssl_match_hostname`
+## Info on typeshed's stubs for `backports.ssl_match_hostname`
 
 ### Number of lines
 
@@ -803,9 +971,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -830,7 +1006,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `beautifulsoup4`
+## Info on typeshed's stubs for `beautifulsoup4`
 
 ### Number of lines
 
@@ -840,9 +1016,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -867,7 +1051,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `bleach`
+## Info on typeshed's stubs for `bleach`
 
 ### Number of lines
 
@@ -877,9 +1061,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -904,7 +1096,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `boto`
+## Info on typeshed's stubs for `boto`
 
 ### Number of lines
 
@@ -914,9 +1106,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -941,7 +1141,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `braintree`
+## Info on typeshed's stubs for `braintree`
 
 ### Number of lines
 
@@ -951,9 +1151,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -978,7 +1186,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `cachetools`
+## Info on typeshed's stubs for `cachetools`
 
 ### Number of lines
 
@@ -988,9 +1196,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1015,7 +1231,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `caldav`
+## Info on typeshed's stubs for `caldav`
 
 ### Number of lines
 
@@ -1025,9 +1241,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1052,7 +1276,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `certifi`
+## Info on typeshed's stubs for `certifi`
 
 ### Number of lines
 
@@ -1062,9 +1286,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 Upstream has added type hints; these typeshed stubs are now obsolete.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1089,7 +1321,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `cffi`
+## Info on typeshed's stubs for `cffi`
 
 ### Number of lines
 
@@ -1099,9 +1331,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux and win32.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1126,19 +1366,27 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `chardet`
+## Info on typeshed's stubs for `chardet`
 
 ### Number of lines
 
 122 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
 
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1163,7 +1411,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `chevron`
+## Info on typeshed's stubs for `chevron`
 
 ### Number of lines
 
@@ -1173,9 +1421,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1200,7 +1456,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `click-spinner`
+## Info on typeshed's stubs for `click-spinner`
 
 ### Number of lines
 
@@ -1210,9 +1466,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1237,7 +1501,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `colorama`
+## Info on typeshed's stubs for `colorama`
 
 ### Number of lines
 
@@ -1247,9 +1511,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on win32 and linux.
 
 ### Pyright settings in CI: *strict*
 
@@ -1274,7 +1546,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `commonmark`
+## Info on typeshed's stubs for `commonmark`
 
 ### Number of lines
 
@@ -1284,9 +1556,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1311,7 +1591,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `console-menu`
+## Info on typeshed's stubs for `console-menu`
 
 ### Number of lines
 
@@ -1321,9 +1601,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1348,7 +1636,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `contextvars`
+## Info on typeshed's stubs for `contextvars`
 
 ### Number of lines
 
@@ -1358,9 +1646,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1385,7 +1681,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `croniter`
+## Info on typeshed's stubs for `croniter`
 
 ### Number of lines
 
@@ -1395,9 +1691,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1422,7 +1726,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `cryptography`
+## Info on typeshed's stubs for `cryptography`
 
 ### Number of lines
 
@@ -1431,6 +1735,10 @@ All files are tested with the stricter pyright settings in CI.
 ### Package status: *obsolete*
 
 Upstream has added type hints; these typeshed stubs are now obsolete.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
 
 ### Stubtest settings in CI: *skipped*
 
@@ -1459,7 +1767,7 @@ All files are excluded from the pyright check in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `dateparser`
+## Info on typeshed's stubs for `dateparser`
 
 ### Number of lines
 
@@ -1469,9 +1777,17 @@ All files are excluded from the pyright check in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1496,7 +1812,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `decorator`
+## Info on typeshed's stubs for `decorator`
 
 ### Number of lines
 
@@ -1506,9 +1822,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1533,7 +1857,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `dj-database-url`
+## Info on typeshed's stubs for `dj-database-url`
 
 ### Number of lines
 
@@ -1543,9 +1867,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1570,7 +1902,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `dockerfile-parse`
+## Info on typeshed's stubs for `dockerfile-parse`
 
 ### Number of lines
 
@@ -1580,9 +1912,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1607,7 +1947,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `docopt`
+## Info on typeshed's stubs for `docopt`
 
 ### Number of lines
 
@@ -1617,9 +1957,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1644,7 +1992,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `docutils`
+## Info on typeshed's stubs for `docutils`
 
 ### Number of lines
 
@@ -1654,9 +2002,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1681,7 +2037,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `editdistance`
+## Info on typeshed's stubs for `editdistance`
 
 ### Number of lines
 
@@ -1691,9 +2047,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1718,7 +2082,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `emoji`
+## Info on typeshed's stubs for `emoji`
 
 ### Number of lines
 
@@ -1728,9 +2092,17 @@ All files are tested with the stricter pyright settings in CI.
 
 Upstream has added type hints; these typeshed stubs are now obsolete.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1755,7 +2127,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `entrypoints`
+## Info on typeshed's stubs for `entrypoints`
 
 ### Number of lines
 
@@ -1765,9 +2137,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1792,7 +2172,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `first`
+## Info on typeshed's stubs for `first`
 
 ### Number of lines
 
@@ -1802,9 +2182,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1829,7 +2217,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `flake8-2020`
+## Info on typeshed's stubs for `flake8-2020`
 
 ### Number of lines
 
@@ -1839,9 +2227,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1866,7 +2262,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `flake8-bugbear`
+## Info on typeshed's stubs for `flake8-bugbear`
 
 ### Number of lines
 
@@ -1876,9 +2272,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1903,7 +2307,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `flake8-builtins`
+## Info on typeshed's stubs for `flake8-builtins`
 
 ### Number of lines
 
@@ -1913,9 +2317,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1940,7 +2352,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `flake8-docstrings`
+## Info on typeshed's stubs for `flake8-docstrings`
 
 ### Number of lines
 
@@ -1950,9 +2362,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -1977,7 +2397,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `flake8-plugin-utils`
+## Info on typeshed's stubs for `flake8-plugin-utils`
 
 ### Number of lines
 
@@ -1987,9 +2407,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -2014,7 +2442,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `flake8-rst-docstrings`
+## Info on typeshed's stubs for `flake8-rst-docstrings`
 
 ### Number of lines
 
@@ -2024,9 +2452,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -2051,7 +2487,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `flake8-simplify`
+## Info on typeshed's stubs for `flake8-simplify`
 
 ### Number of lines
 
@@ -2061,9 +2497,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -2088,7 +2532,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `flake8-typing-imports`
+## Info on typeshed's stubs for `flake8-typing-imports`
 
 ### Number of lines
 
@@ -2098,9 +2542,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -2125,7 +2577,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `fpdf2`
+## Info on typeshed's stubs for `fpdf2`
 
 ### Number of lines
 
@@ -2135,9 +2587,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2146,13 +2606,13 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `fpdf2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 567
-    - Unannotated parameters: 533
+    - Annotated parameters: 570
+    - Unannotated parameters: 530
     - Explicit `Any` parameters: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 58
 - Returns:
-    - Annotated returns: 358
-    - Unannotated returns: 204
+    - Annotated returns: 361
+    - Unannotated returns: 201
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
@@ -2162,7 +2622,11 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `gdb`
+## Info on typeshed's stubs for `gdb`
+
+### Extra description
+
+Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: is is not possible to install the `gdb` package separately, for instance using `pip`.
 
 ### Number of lines
 
@@ -2171,6 +2635,10 @@ All files are excluded from the stricter pyright settings in CI.
 ### Package status: *not on pypi*
 
 The upstream for this package doesn't exist on PyPI, so whether or not these stubs are up to date or not is unknown.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
 
 ### Stubtest settings in CI: *skipped*
 
@@ -2199,7 +2667,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `google-cloud-ndb`
+## Info on typeshed's stubs for `google-cloud-ndb`
 
 ### Number of lines
 
@@ -2209,9 +2677,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2236,7 +2712,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `hdbcli`
+## Info on typeshed's stubs for `hdbcli`
 
 ### Number of lines
 
@@ -2246,9 +2722,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -2273,7 +2757,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `html5lib`
+## Info on typeshed's stubs for `html5lib`
 
 ### Number of lines
 
@@ -2283,9 +2767,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2310,19 +2802,27 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `httplib2`
+## Info on typeshed's stubs for `httplib2`
 
 ### Number of lines
 
-249 (excluding blank lines)
+250 (excluding blank lines)
 
 ### Package status: *up to date*
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Upload status: *uploaded*
 
-The `--ignore-missing-stub` stubtest setting is used in CI.
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2341,13 +2841,13 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 85
+    - Annotated variables: 86
     - Explicit `Any` variables: 57
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
 <hr>
 
-## Stats on typeshed's stubs for `humanfriendly`
+## Info on typeshed's stubs for `humanfriendly`
 
 ### Number of lines
 
@@ -2357,9 +2857,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2384,7 +2892,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `invoke`
+## Info on typeshed's stubs for `invoke`
 
 ### Number of lines
 
@@ -2394,9 +2902,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2421,7 +2937,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `jmespath`
+## Info on typeshed's stubs for `jmespath`
 
 ### Number of lines
 
@@ -2431,9 +2947,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2458,7 +2982,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `jsonschema`
+## Info on typeshed's stubs for `jsonschema`
 
 ### Number of lines
 
@@ -2468,9 +2992,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2495,7 +3027,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `keyboard`
+## Info on typeshed's stubs for `keyboard`
 
 ### Number of lines
 
@@ -2505,9 +3037,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -2532,7 +3072,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `ldap3`
+## Info on typeshed's stubs for `ldap3`
 
 ### Number of lines
 
@@ -2542,9 +3082,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2569,7 +3117,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `mock`
+## Info on typeshed's stubs for `mock`
 
 ### Number of lines
 
@@ -2579,9 +3127,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -2606,7 +3162,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `mypy-extensions`
+## Info on typeshed's stubs for `mypy-extensions`
 
 ### Number of lines
 
@@ -2616,9 +3172,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -2643,7 +3207,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `mysqlclient`
+## Info on typeshed's stubs for `mysqlclient`
 
 ### Number of lines
 
@@ -2653,9 +3217,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2680,7 +3252,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `oauthlib`
+## Info on typeshed's stubs for `oauthlib`
 
 ### Number of lines
 
@@ -2690,9 +3262,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2717,7 +3297,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `openpyxl`
+## Info on typeshed's stubs for `openpyxl`
 
 ### Number of lines
 
@@ -2727,9 +3307,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2754,7 +3342,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `opentracing`
+## Info on typeshed's stubs for `opentracing`
 
 ### Number of lines
 
@@ -2764,9 +3352,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -2791,7 +3387,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `paho-mqtt`
+## Info on typeshed's stubs for `paho-mqtt`
 
 ### Number of lines
 
@@ -2801,9 +3397,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -2828,7 +3432,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `paramiko`
+## Info on typeshed's stubs for `paramiko`
 
 ### Number of lines
 
@@ -2838,9 +3442,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux and win32.
 
 ### Pyright settings in CI: *strict*
 
@@ -2865,7 +3477,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `parsimonious`
+## Info on typeshed's stubs for `parsimonious`
 
 ### Number of lines
 
@@ -2875,9 +3487,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -2902,7 +3522,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `passlib`
+## Info on typeshed's stubs for `passlib`
 
 ### Number of lines
 
@@ -2912,9 +3532,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2939,7 +3567,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `passpy`
+## Info on typeshed's stubs for `passpy`
 
 ### Number of lines
 
@@ -2949,9 +3577,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -2976,7 +3612,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `peewee`
+## Info on typeshed's stubs for `peewee`
 
 ### Number of lines
 
@@ -2986,9 +3622,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3013,7 +3657,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pep8-naming`
+## Info on typeshed's stubs for `pep8-naming`
 
 ### Number of lines
 
@@ -3023,9 +3667,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3050,7 +3702,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pika`
+## Info on typeshed's stubs for `pika`
 
 ### Number of lines
 
@@ -3060,9 +3712,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *not currently uploaded*
+
+These stubs are not currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3087,7 +3747,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `playsound`
+## Info on typeshed's stubs for `playsound`
 
 ### Number of lines
 
@@ -3097,9 +3757,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3124,7 +3792,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `polib`
+## Info on typeshed's stubs for `polib`
 
 ### Number of lines
 
@@ -3134,9 +3802,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3161,7 +3837,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `prettytable`
+## Info on typeshed's stubs for `prettytable`
 
 ### Number of lines
 
@@ -3171,9 +3847,17 @@ All files are tested with the stricter pyright settings in CI.
 
 Upstream has added type hints; these typeshed stubs are now obsolete.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3198,7 +3882,11 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `protobuf`
+## Info on typeshed's stubs for `protobuf`
+
+### Extra description
+
+Generated with aid from mypy-protobuf v3.4.0
 
 ### Number of lines
 
@@ -3208,9 +3896,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3235,7 +3931,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `psutil`
+## Info on typeshed's stubs for `psutil`
 
 ### Number of lines
 
@@ -3245,9 +3941,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on win32, linux and darwin.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3272,7 +3976,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `psycopg2`
+## Info on typeshed's stubs for `psycopg2`
 
 ### Number of lines
 
@@ -3282,9 +3986,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3309,7 +4021,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pyOpenSSL`
+## Info on typeshed's stubs for `pyOpenSSL`
 
 ### Number of lines
 
@@ -3319,9 +4031,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3346,7 +4066,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pyRFC3339`
+## Info on typeshed's stubs for `pyRFC3339`
 
 ### Number of lines
 
@@ -3356,9 +4076,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3383,7 +4111,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pyaudio`
+## Info on typeshed's stubs for `pyaudio`
 
 ### Number of lines
 
@@ -3393,9 +4121,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux and darwin.
 
 ### Pyright settings in CI: *strict*
 
@@ -3420,7 +4156,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pycocotools`
+## Info on typeshed's stubs for `pycocotools`
 
 ### Number of lines
 
@@ -3430,9 +4166,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3457,7 +4201,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pycurl`
+## Info on typeshed's stubs for `pycurl`
 
 ### Number of lines
 
@@ -3467,9 +4211,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3494,7 +4246,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pyfarmhash`
+## Info on typeshed's stubs for `pyfarmhash`
 
 ### Number of lines
 
@@ -3504,9 +4256,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3531,7 +4291,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pyflakes`
+## Info on typeshed's stubs for `pyflakes`
 
 ### Number of lines
 
@@ -3541,9 +4301,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3568,7 +4336,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pyinstaller`
+## Info on typeshed's stubs for `pyinstaller`
 
 ### Number of lines
 
@@ -3578,9 +4346,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3605,7 +4381,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pynput`
+## Info on typeshed's stubs for `pynput`
 
 ### Number of lines
 
@@ -3615,9 +4391,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux, darwin and win32.
 
 ### Pyright settings in CI: *strict*
 
@@ -3642,7 +4426,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pysftp`
+## Info on typeshed's stubs for `pysftp`
 
 ### Number of lines
 
@@ -3652,9 +4436,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3679,7 +4471,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pytest-lazy-fixture`
+## Info on typeshed's stubs for `pytest-lazy-fixture`
 
 ### Number of lines
 
@@ -3689,9 +4481,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3716,7 +4516,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `python-crontab`
+## Info on typeshed's stubs for `python-crontab`
 
 ### Number of lines
 
@@ -3726,9 +4526,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3753,7 +4561,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `python-dateutil`
+## Info on typeshed's stubs for `python-dateutil`
 
 ### Number of lines
 
@@ -3763,9 +4571,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3790,7 +4606,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `python-gflags`
+## Info on typeshed's stubs for `python-gflags`
 
 ### Number of lines
 
@@ -3800,9 +4616,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3827,7 +4651,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `python-jose`
+## Info on typeshed's stubs for `python-jose`
 
 ### Number of lines
 
@@ -3837,9 +4661,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3864,7 +4696,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `python-nmap`
+## Info on typeshed's stubs for `python-nmap`
 
 ### Number of lines
 
@@ -3874,9 +4706,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3901,7 +4741,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `python-slugify`
+## Info on typeshed's stubs for `python-slugify`
 
 ### Number of lines
 
@@ -3911,9 +4751,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3938,7 +4786,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `python-xlib`
+## Info on typeshed's stubs for `python-xlib`
 
 ### Number of lines
 
@@ -3948,9 +4796,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -3975,7 +4831,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pytz`
+## Info on typeshed's stubs for `pytz`
 
 ### Number of lines
 
@@ -3985,9 +4841,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4012,7 +4876,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pyvmomi`
+## Info on typeshed's stubs for `pyvmomi`
 
 ### Number of lines
 
@@ -4022,9 +4886,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4049,7 +4921,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `pywin32`
+## Info on typeshed's stubs for `pywin32`
 
 ### Number of lines
 
@@ -4059,9 +4931,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on win32 only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4086,7 +4966,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `redis`
+## Info on typeshed's stubs for `redis`
 
 ### Number of lines
 
@@ -4096,9 +4976,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4123,7 +5011,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `regex`
+## Info on typeshed's stubs for `regex`
 
 ### Number of lines
 
@@ -4133,9 +5021,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4160,7 +5056,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `requests`
+## Info on typeshed's stubs for `requests`
 
 ### Number of lines
 
@@ -4170,9 +5066,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4197,7 +5101,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `retry`
+## Info on typeshed's stubs for `retry`
 
 ### Number of lines
 
@@ -4207,9 +5111,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4234,7 +5146,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `setuptools`
+## Info on typeshed's stubs for `setuptools`
 
 ### Number of lines
 
@@ -4244,9 +5156,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4271,7 +5191,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `simplejson`
+## Info on typeshed's stubs for `simplejson`
 
 ### Number of lines
 
@@ -4281,9 +5201,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4308,7 +5236,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `singledispatch`
+## Info on typeshed's stubs for `singledispatch`
 
 ### Number of lines
 
@@ -4318,9 +5246,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4345,7 +5281,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `six`
+## Info on typeshed's stubs for `six`
 
 ### Number of lines
 
@@ -4355,9 +5291,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4382,7 +5326,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `slumber`
+## Info on typeshed's stubs for `slumber`
 
 ### Number of lines
 
@@ -4392,9 +5336,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4419,7 +5371,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `stdlib`
+## Info on typeshed's stubs for `stdlib`
 
 ### Number of lines
 
@@ -4429,9 +5381,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly up to date, and tested against all currently supported Python versions in CI.
 
+### Upload status: *not currently uploaded*
+
+These stubs are not currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux, darwin and win32.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -4456,7 +5416,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 
 <hr>
 
-## Stats on typeshed's stubs for `stdlib-list`
+## Info on typeshed's stubs for `stdlib-list`
 
 ### Number of lines
 
@@ -4466,9 +5426,17 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4493,7 +5461,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `stripe`
+## Info on typeshed's stubs for `stripe`
 
 ### Number of lines
 
@@ -4503,9 +5471,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4530,7 +5506,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `tabulate`
+## Info on typeshed's stubs for `tabulate`
 
 ### Number of lines
 
@@ -4540,9 +5516,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4567,7 +5551,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `termcolor`
+## Info on typeshed's stubs for `termcolor`
 
 ### Number of lines
 
@@ -4577,9 +5561,17 @@ All files are tested with the stricter pyright settings in CI.
 
 Upstream has added type hints; these typeshed stubs are now obsolete.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4604,7 +5596,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `toml`
+## Info on typeshed's stubs for `toml`
 
 ### Number of lines
 
@@ -4614,9 +5606,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4641,7 +5641,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `toposort`
+## Info on typeshed's stubs for `toposort`
 
 ### Number of lines
 
@@ -4651,9 +5651,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4678,7 +5686,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `tqdm`
+## Info on typeshed's stubs for `tqdm`
 
 ### Number of lines
 
@@ -4688,9 +5696,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4715,7 +5731,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `tree-sitter`
+## Info on typeshed's stubs for `tree-sitter`
 
 ### Number of lines
 
@@ -4725,9 +5741,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4752,7 +5776,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `tree-sitter-languages`
+## Info on typeshed's stubs for `tree-sitter-languages`
 
 ### Number of lines
 
@@ -4762,9 +5786,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4789,7 +5821,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `ttkthemes`
+## Info on typeshed's stubs for `ttkthemes`
 
 ### Number of lines
 
@@ -4799,9 +5831,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4826,7 +5866,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `typed-ast`
+## Info on typeshed's stubs for `typed-ast`
 
 ### Number of lines
 
@@ -4836,9 +5876,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4863,7 +5911,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `tzlocal`
+## Info on typeshed's stubs for `tzlocal`
 
 ### Number of lines
 
@@ -4873,9 +5921,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4900,7 +5956,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `ujson`
+## Info on typeshed's stubs for `ujson`
 
 ### Number of lines
 
@@ -4910,9 +5966,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -4937,7 +6001,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `urllib3`
+## Info on typeshed's stubs for `urllib3`
 
 ### Number of lines
 
@@ -4947,9 +6011,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4974,7 +6046,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `vobject`
+## Info on typeshed's stubs for `vobject`
 
 ### Number of lines
 
@@ -4984,9 +6056,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5011,7 +6091,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `waitress`
+## Info on typeshed's stubs for `waitress`
 
 ### Number of lines
 
@@ -5021,9 +6101,17 @@ All files are excluded from the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *missing stubs ignored*
 
 The `--ignore-missing-stub` stubtest setting is used in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux and win32.
 
 ### Pyright settings in CI: *strict*
 
@@ -5048,7 +6136,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `whatthepatch`
+## Info on typeshed's stubs for `whatthepatch`
 
 ### Number of lines
 
@@ -5058,9 +6146,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -5085,7 +6181,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `xmltodict`
+## Info on typeshed's stubs for `xmltodict`
 
 ### Number of lines
 
@@ -5095,9 +6191,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -5122,7 +6226,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `xxhash`
+## Info on typeshed's stubs for `xxhash`
 
 ### Number of lines
 
@@ -5132,9 +6236,17 @@ All files are tested with the stricter pyright settings in CI.
 
 Upstream has added type hints; these typeshed stubs are now obsolete.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
@@ -5159,7 +6271,7 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
-## Stats on typeshed's stubs for `zxcvbn`
+## Info on typeshed's stubs for `zxcvbn`
 
 ### Number of lines
 
@@ -5169,9 +6281,17 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
 ### Stubtest settings in CI: *error on missing stub*
 
 Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
 
 ### Pyright settings in CI: *strict*
 
