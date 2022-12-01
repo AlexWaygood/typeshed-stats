@@ -28,13 +28,7 @@ Tools for gathering stats about typeshed packages.
 | `explicit_Incomplete_variables`  | `int`  |
 <hr>
 
-::: typeshed_stats.gather.PackageName
-    options:
-      show_root_heading: true
-
-<hr>
-
-::: typeshed_stats.gather.PackageStats
+::: typeshed_stats.gather.PackageInfo
     options:
       show_root_heading: true
 
@@ -48,6 +42,12 @@ Tools for gathering stats about typeshed packages.
 | `stubtest_setting` | [`StubtestSetting`][typeshed_stats.gather.StubtestSetting] |
 | `pyright_setting`  | [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]   |
 | `annotation_stats` | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] |
+<hr>
+
+::: typeshed_stats.gather.PackageName
+    options:
+      show_root_heading: true
+
 <hr>
 
 ::: typeshed_stats.gather.PackageStatus

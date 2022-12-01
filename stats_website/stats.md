@@ -8,9 +8,9 @@ hide:
 
 Typeshed currently contains stubs for 140 packages
 (including the stdlib stubs as a "single package"),
-for a total of 201,518 lines of code.
+for a total of 185,031 lines of code.
 
-<i>Note: these statistics were last updated at: <b>12:43 UTC on 2022-12-01</b>.</i>
+<i>Note: these statistics were last updated at: <b>14:45 UTC on 2022-12-01</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -18,7 +18,7 @@ for a total of 201,518 lines of code.
 
 ### Number of lines
 
-657
+590 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -55,7 +55,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-67
+64 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -92,7 +92,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-65
+56 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -129,7 +129,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-138
+125 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -166,7 +166,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-106
+100 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -203,7 +203,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-125
+106 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -240,7 +240,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-300
+281 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -277,7 +277,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-791
+635 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -314,7 +314,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-2742
+2352 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -351,7 +351,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-235
+219 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -388,7 +388,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1075
+1039 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -425,7 +425,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-196
+177 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -462,7 +462,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1285
+1168 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -499,7 +499,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-806
+677 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -536,7 +536,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-16229
+14545 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -573,7 +573,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-27
+21 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -610,7 +610,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-636
+592 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -647,7 +647,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-49
+45 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -684,7 +684,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-57
+54 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -721,7 +721,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-801
+705 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -758,7 +758,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-1158
+1046 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -795,7 +795,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-9
+6 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -832,7 +832,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-840
+784 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -869,7 +869,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-195
+160 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -906,7 +906,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-1958
+1803 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -943,7 +943,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-3136
+2833 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -980,7 +980,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-130
+115 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1017,7 +1017,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-577
+490 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1054,7 +1054,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-2
+2 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -1091,7 +1091,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-921
+820 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1128,7 +1128,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-142
+122 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1165,7 +1165,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-46
+39 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1202,7 +1202,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-37
+31 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1239,7 +1239,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-223
+197 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1276,7 +1276,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-401
+368 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1313,7 +1313,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-732
+686 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1350,7 +1350,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-47
+41 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1387,7 +1387,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-95
+90 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1424,7 +1424,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1986
+1742 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -1461,7 +1461,7 @@ All files are excluded from the pyright check in CI.
 
 ### Number of lines
 
-531
+452 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1498,7 +1498,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-71
+64 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1535,7 +1535,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-27
+24 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1572,7 +1572,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-122
+111 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1582,20 +1582,20 @@ These stubs should be fairly up to date. In CI, stubtest tests these stubs again
 
 Objects missing from the stub cause stubtest to emit an error in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-All files are excluded from the stricter pyright settings in CI.
+All files are tested with the stricter pyright settings in CI.
 
 ### Statistics on the annotations in typeshed's stubs for `dockerfile-parse`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 45
-    - Unannotated parameters: 1
+    - Annotated parameters: 46
+    - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 22
-    - Unannotated returns: 2
+    - Annotated returns: 24
+    - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -1609,7 +1609,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-12
+9 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1646,7 +1646,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-606
+503 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1683,7 +1683,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-9
+6 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1720,7 +1720,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-73
+66 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -1757,7 +1757,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-53
+45 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1794,7 +1794,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-17
+14 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1831,7 +1831,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-26
+22 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1868,7 +1868,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-29
+27 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1905,7 +1905,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-12
+10 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1942,7 +1942,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-21
+19 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1979,7 +1979,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-69
+61 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2016,7 +2016,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-34
+31 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2053,7 +2053,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-9
+8 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2090,7 +2090,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-17
+15 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2127,7 +2127,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-2214
+2001 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2164,7 +2164,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-920
+718 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -2201,7 +2201,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1572
+1397 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2238,7 +2238,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-145
+129 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2275,7 +2275,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-745
+663 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2312,7 +2312,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-280
+249 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2349,15 +2349,15 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-378
+333 (excluding blank lines)
 
 ### Package status: *up to date*
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in CI.
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2386,7 +2386,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-810
+745 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2423,7 +2423,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-181
+153 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2460,7 +2460,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-427
+383 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2497,7 +2497,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-292
+241 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2534,7 +2534,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-2896
+2586 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2571,7 +2571,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-343
+311 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2608,7 +2608,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-70
+64 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2645,7 +2645,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1245
+1213 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2682,7 +2682,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-1481
+1296 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2719,7 +2719,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-9721
+8978 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2756,7 +2756,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-369
+328 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2793,7 +2793,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-528
+502 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2830,7 +2830,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1956
+1749 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2867,7 +2867,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-217
+180 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2904,7 +2904,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1953
+1740 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2941,7 +2941,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-51
+47 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2978,7 +2978,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1778
+1608 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3015,7 +3015,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-31
+27 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3052,7 +3052,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-2384
+2150 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3089,7 +3089,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-5
+3 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3126,7 +3126,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-155
+144 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3163,7 +3163,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-305
+294 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -3200,7 +3200,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-4864
+4272 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3237,7 +3237,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-1677
+1506 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3274,7 +3274,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-1655
+1552 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3311,7 +3311,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-420
+373 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3348,7 +3348,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-21
+17 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3385,7 +3385,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-191
+177 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3422,7 +3422,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-196
+172 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3459,7 +3459,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-679
+670 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3496,7 +3496,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-9
+9 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3533,7 +3533,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-504
+428 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3570,7 +3570,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-476
+420 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3607,7 +3607,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-362
+325 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3644,7 +3644,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-173
+162 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3681,7 +3681,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-14
+12 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3718,7 +3718,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-293
+270 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3755,7 +3755,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-472
+418 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3792,7 +3792,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-309
+251 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3829,7 +3829,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-399
+359 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3866,7 +3866,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-134
+116 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3903,7 +3903,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-48
+45 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3940,7 +3940,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-5836
+5396 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3977,7 +3977,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-151
+127 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4014,7 +4014,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-221
+177 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4051,7 +4051,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-35221
+34297 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4088,7 +4088,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-5596
+5336 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4125,7 +4125,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-769
+749 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4162,7 +4162,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1034
+967 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4199,7 +4199,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-29
+27 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4236,7 +4236,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-2677
+2433 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4273,7 +4273,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-59
+51 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4310,7 +4310,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-31
+27 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4347,7 +4347,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-365
+335 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4384,7 +4384,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-90
+74 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4421,7 +4421,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-55491
+50840 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -4458,7 +4458,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 
 ### Number of lines
 
-20
+16 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4495,7 +4495,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1593
+1414 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4532,7 +4532,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-57
+50 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4569,7 +4569,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-14
+12 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -4606,7 +4606,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-154
+136 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4643,7 +4643,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-17
+13 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4680,7 +4680,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1446
+1333 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4717,7 +4717,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-133
+124 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4754,7 +4754,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-11
+9 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4791,7 +4791,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-84
+76 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4828,7 +4828,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-730
+578 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4865,7 +4865,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-25
+19 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4902,11 +4902,11 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-37
+34 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
 
 ### Stubtest settings in CI: *error on missing stub*
 
@@ -4939,7 +4939,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-808
+699 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4976,7 +4976,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-596
+519 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5013,7 +5013,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-713
+628 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5050,7 +5050,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-109
+96 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5087,7 +5087,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-38
+35 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5124,7 +5124,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-53
+43 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -5161,7 +5161,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-202
+162 (excluding blank lines)
 
 ### Package status: *up to date*
 

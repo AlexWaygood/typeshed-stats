@@ -1,7 +1,7 @@
 [
   {
     "package_name": "D3DShot",
-    "number_of_lines": 657,
+    "number_of_lines": 590,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "SKIPPED",
     "pyright_setting": "STRICT",
@@ -21,7 +21,7 @@
   },
   {
     "package_name": "DateTimeRange",
-    "number_of_lines": 67,
+    "number_of_lines": 64,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -41,7 +41,7 @@
   },
   {
     "package_name": "Deprecated",
-    "number_of_lines": 65,
+    "number_of_lines": 56,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -61,7 +61,7 @@
   },
   {
     "package_name": "Flask-Cors",
-    "number_of_lines": 138,
+    "number_of_lines": 125,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -81,7 +81,7 @@
   },
   {
     "package_name": "Flask-Migrate",
-    "number_of_lines": 106,
+    "number_of_lines": 100,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -101,7 +101,7 @@
   },
   {
     "package_name": "Flask-SQLAlchemy",
-    "number_of_lines": 125,
+    "number_of_lines": 106,
     "package_status": "OBSOLETE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -121,7 +121,7 @@
   },
   {
     "package_name": "JACK-Client",
-    "number_of_lines": 300,
+    "number_of_lines": 281,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -141,7 +141,7 @@
   },
   {
     "package_name": "Markdown",
-    "number_of_lines": 791,
+    "number_of_lines": 635,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -161,7 +161,7 @@
   },
   {
     "package_name": "Pillow",
-    "number_of_lines": 2742,
+    "number_of_lines": 2352,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -181,7 +181,7 @@
   },
   {
     "package_name": "PyAutoGUI",
-    "number_of_lines": 235,
+    "number_of_lines": 219,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -201,7 +201,7 @@
   },
   {
     "package_name": "PyMySQL",
-    "number_of_lines": 1075,
+    "number_of_lines": 1039,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -221,7 +221,7 @@
   },
   {
     "package_name": "PyScreeze",
-    "number_of_lines": 196,
+    "number_of_lines": 177,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -241,7 +241,7 @@
   },
   {
     "package_name": "PyYAML",
-    "number_of_lines": 1285,
+    "number_of_lines": 1168,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -261,7 +261,7 @@
   },
   {
     "package_name": "Pygments",
-    "number_of_lines": 806,
+    "number_of_lines": 677,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -281,7 +281,7 @@
   },
   {
     "package_name": "SQLAlchemy",
-    "number_of_lines": 16229,
+    "number_of_lines": 14545,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -301,7 +301,7 @@
   },
   {
     "package_name": "Send2Trash",
-    "number_of_lines": 27,
+    "number_of_lines": 21,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -321,7 +321,7 @@
   },
   {
     "package_name": "aiofiles",
-    "number_of_lines": 636,
+    "number_of_lines": 592,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -341,7 +341,7 @@
   },
   {
     "package_name": "annoy",
-    "number_of_lines": 49,
+    "number_of_lines": 45,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -361,7 +361,7 @@
   },
   {
     "package_name": "appdirs",
-    "number_of_lines": 57,
+    "number_of_lines": 54,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -381,7 +381,7 @@
   },
   {
     "package_name": "aws-xray-sdk",
-    "number_of_lines": 801,
+    "number_of_lines": 705,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -401,7 +401,7 @@
   },
   {
     "package_name": "babel",
-    "number_of_lines": 1158,
+    "number_of_lines": 1046,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -421,7 +421,7 @@
   },
   {
     "package_name": "backports.ssl_match_hostname",
-    "number_of_lines": 9,
+    "number_of_lines": 6,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -441,7 +441,7 @@
   },
   {
     "package_name": "beautifulsoup4",
-    "number_of_lines": 840,
+    "number_of_lines": 784,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -461,7 +461,7 @@
   },
   {
     "package_name": "bleach",
-    "number_of_lines": 195,
+    "number_of_lines": 160,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -481,7 +481,7 @@
   },
   {
     "package_name": "boto",
-    "number_of_lines": 1958,
+    "number_of_lines": 1803,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -501,7 +501,7 @@
   },
   {
     "package_name": "braintree",
-    "number_of_lines": 3136,
+    "number_of_lines": 2833,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -521,7 +521,7 @@
   },
   {
     "package_name": "cachetools",
-    "number_of_lines": 130,
+    "number_of_lines": 115,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -541,7 +541,7 @@
   },
   {
     "package_name": "caldav",
-    "number_of_lines": 577,
+    "number_of_lines": 490,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -581,7 +581,7 @@
   },
   {
     "package_name": "cffi",
-    "number_of_lines": 921,
+    "number_of_lines": 820,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -601,7 +601,7 @@
   },
   {
     "package_name": "chardet",
-    "number_of_lines": 142,
+    "number_of_lines": 122,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -621,7 +621,7 @@
   },
   {
     "package_name": "chevron",
-    "number_of_lines": 46,
+    "number_of_lines": 39,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -641,7 +641,7 @@
   },
   {
     "package_name": "click-spinner",
-    "number_of_lines": 37,
+    "number_of_lines": 31,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -661,7 +661,7 @@
   },
   {
     "package_name": "colorama",
-    "number_of_lines": 223,
+    "number_of_lines": 197,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -681,7 +681,7 @@
   },
   {
     "package_name": "commonmark",
-    "number_of_lines": 401,
+    "number_of_lines": 368,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -701,7 +701,7 @@
   },
   {
     "package_name": "console-menu",
-    "number_of_lines": 732,
+    "number_of_lines": 686,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -721,7 +721,7 @@
   },
   {
     "package_name": "contextvars",
-    "number_of_lines": 47,
+    "number_of_lines": 41,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -741,7 +741,7 @@
   },
   {
     "package_name": "croniter",
-    "number_of_lines": 95,
+    "number_of_lines": 90,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -761,7 +761,7 @@
   },
   {
     "package_name": "cryptography",
-    "number_of_lines": 1986,
+    "number_of_lines": 1742,
     "package_status": "OBSOLETE",
     "stubtest_setting": "SKIPPED",
     "pyright_setting": "ENTIRELY_EXCLUDED",
@@ -781,7 +781,7 @@
   },
   {
     "package_name": "dateparser",
-    "number_of_lines": 531,
+    "number_of_lines": 452,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -801,7 +801,7 @@
   },
   {
     "package_name": "decorator",
-    "number_of_lines": 71,
+    "number_of_lines": 64,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -821,7 +821,7 @@
   },
   {
     "package_name": "dj-database-url",
-    "number_of_lines": 27,
+    "number_of_lines": 24,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -841,15 +841,15 @@
   },
   {
     "package_name": "dockerfile-parse",
-    "number_of_lines": 122,
+    "number_of_lines": 111,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "pyright_setting": "NOT_STRICT",
+    "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 45,
-      "unannotated_parameters": 1,
-      "annotated_returns": 22,
-      "unannotated_returns": 2,
+      "annotated_parameters": 46,
+      "unannotated_parameters": 0,
+      "annotated_returns": 24,
+      "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
@@ -861,7 +861,7 @@
   },
   {
     "package_name": "docopt",
-    "number_of_lines": 12,
+    "number_of_lines": 9,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -881,7 +881,7 @@
   },
   {
     "package_name": "docutils",
-    "number_of_lines": 606,
+    "number_of_lines": 503,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -901,7 +901,7 @@
   },
   {
     "package_name": "editdistance",
-    "number_of_lines": 9,
+    "number_of_lines": 6,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -921,7 +921,7 @@
   },
   {
     "package_name": "emoji",
-    "number_of_lines": 73,
+    "number_of_lines": 66,
     "package_status": "OBSOLETE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -941,7 +941,7 @@
   },
   {
     "package_name": "entrypoints",
-    "number_of_lines": 53,
+    "number_of_lines": 45,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -961,7 +961,7 @@
   },
   {
     "package_name": "first",
-    "number_of_lines": 17,
+    "number_of_lines": 14,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -981,7 +981,7 @@
   },
   {
     "package_name": "flake8-2020",
-    "number_of_lines": 26,
+    "number_of_lines": 22,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1001,7 +1001,7 @@
   },
   {
     "package_name": "flake8-bugbear",
-    "number_of_lines": 29,
+    "number_of_lines": 27,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -1021,7 +1021,7 @@
   },
   {
     "package_name": "flake8-builtins",
-    "number_of_lines": 12,
+    "number_of_lines": 10,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -1041,7 +1041,7 @@
   },
   {
     "package_name": "flake8-docstrings",
-    "number_of_lines": 21,
+    "number_of_lines": 19,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -1061,7 +1061,7 @@
   },
   {
     "package_name": "flake8-plugin-utils",
-    "number_of_lines": 69,
+    "number_of_lines": 61,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -1081,7 +1081,7 @@
   },
   {
     "package_name": "flake8-rst-docstrings",
-    "number_of_lines": 34,
+    "number_of_lines": 31,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -1101,7 +1101,7 @@
   },
   {
     "package_name": "flake8-simplify",
-    "number_of_lines": 9,
+    "number_of_lines": 8,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -1121,7 +1121,7 @@
   },
   {
     "package_name": "flake8-typing-imports",
-    "number_of_lines": 17,
+    "number_of_lines": 15,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -1141,7 +1141,7 @@
   },
   {
     "package_name": "fpdf2",
-    "number_of_lines": 2214,
+    "number_of_lines": 2001,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -1161,7 +1161,7 @@
   },
   {
     "package_name": "gdb",
-    "number_of_lines": 920,
+    "number_of_lines": 718,
     "package_status": "NOT_ON_PYPI",
     "stubtest_setting": "SKIPPED",
     "pyright_setting": "STRICT",
@@ -1181,7 +1181,7 @@
   },
   {
     "package_name": "google-cloud-ndb",
-    "number_of_lines": 1572,
+    "number_of_lines": 1397,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -1201,7 +1201,7 @@
   },
   {
     "package_name": "hdbcli",
-    "number_of_lines": 145,
+    "number_of_lines": 129,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1221,7 +1221,7 @@
   },
   {
     "package_name": "html5lib",
-    "number_of_lines": 745,
+    "number_of_lines": 663,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -1241,7 +1241,7 @@
   },
   {
     "package_name": "httplib2",
-    "number_of_lines": 280,
+    "number_of_lines": 249,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -1261,9 +1261,9 @@
   },
   {
     "package_name": "humanfriendly",
-    "number_of_lines": 378,
+    "number_of_lines": 333,
     "package_status": "UP_TO_DATE",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
+    "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 79,
@@ -1281,7 +1281,7 @@
   },
   {
     "package_name": "invoke",
-    "number_of_lines": 810,
+    "number_of_lines": 745,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -1301,7 +1301,7 @@
   },
   {
     "package_name": "jmespath",
-    "number_of_lines": 181,
+    "number_of_lines": 153,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -1321,7 +1321,7 @@
   },
   {
     "package_name": "jsonschema",
-    "number_of_lines": 427,
+    "number_of_lines": 383,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -1341,7 +1341,7 @@
   },
   {
     "package_name": "keyboard",
-    "number_of_lines": 292,
+    "number_of_lines": 241,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1361,7 +1361,7 @@
   },
   {
     "package_name": "ldap3",
-    "number_of_lines": 2896,
+    "number_of_lines": 2586,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -1381,7 +1381,7 @@
   },
   {
     "package_name": "mock",
-    "number_of_lines": 343,
+    "number_of_lines": 311,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1401,7 +1401,7 @@
   },
   {
     "package_name": "mypy-extensions",
-    "number_of_lines": 70,
+    "number_of_lines": 64,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1421,7 +1421,7 @@
   },
   {
     "package_name": "mysqlclient",
-    "number_of_lines": 1245,
+    "number_of_lines": 1213,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -1441,7 +1441,7 @@
   },
   {
     "package_name": "oauthlib",
-    "number_of_lines": 1481,
+    "number_of_lines": 1296,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -1461,7 +1461,7 @@
   },
   {
     "package_name": "openpyxl",
-    "number_of_lines": 9721,
+    "number_of_lines": 8978,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -1481,7 +1481,7 @@
   },
   {
     "package_name": "opentracing",
-    "number_of_lines": 369,
+    "number_of_lines": 328,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -1501,7 +1501,7 @@
   },
   {
     "package_name": "paho-mqtt",
-    "number_of_lines": 528,
+    "number_of_lines": 502,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1521,7 +1521,7 @@
   },
   {
     "package_name": "paramiko",
-    "number_of_lines": 1956,
+    "number_of_lines": 1749,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -1541,7 +1541,7 @@
   },
   {
     "package_name": "parsimonious",
-    "number_of_lines": 217,
+    "number_of_lines": 180,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1561,7 +1561,7 @@
   },
   {
     "package_name": "passlib",
-    "number_of_lines": 1953,
+    "number_of_lines": 1740,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -1581,7 +1581,7 @@
   },
   {
     "package_name": "passpy",
-    "number_of_lines": 51,
+    "number_of_lines": 47,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1601,7 +1601,7 @@
   },
   {
     "package_name": "peewee",
-    "number_of_lines": 1778,
+    "number_of_lines": 1608,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -1621,7 +1621,7 @@
   },
   {
     "package_name": "pep8-naming",
-    "number_of_lines": 31,
+    "number_of_lines": 27,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -1641,7 +1641,7 @@
   },
   {
     "package_name": "pika",
-    "number_of_lines": 2384,
+    "number_of_lines": 2150,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -1661,7 +1661,7 @@
   },
   {
     "package_name": "playsound",
-    "number_of_lines": 5,
+    "number_of_lines": 3,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1681,7 +1681,7 @@
   },
   {
     "package_name": "polib",
-    "number_of_lines": 155,
+    "number_of_lines": 144,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1701,7 +1701,7 @@
   },
   {
     "package_name": "prettytable",
-    "number_of_lines": 305,
+    "number_of_lines": 294,
     "package_status": "OBSOLETE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -1721,7 +1721,7 @@
   },
   {
     "package_name": "protobuf",
-    "number_of_lines": 4864,
+    "number_of_lines": 4272,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -1741,7 +1741,7 @@
   },
   {
     "package_name": "psutil",
-    "number_of_lines": 1677,
+    "number_of_lines": 1506,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -1761,7 +1761,7 @@
   },
   {
     "package_name": "psycopg2",
-    "number_of_lines": 1655,
+    "number_of_lines": 1552,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -1781,7 +1781,7 @@
   },
   {
     "package_name": "pyOpenSSL",
-    "number_of_lines": 420,
+    "number_of_lines": 373,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -1801,7 +1801,7 @@
   },
   {
     "package_name": "pyRFC3339",
-    "number_of_lines": 21,
+    "number_of_lines": 17,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1821,7 +1821,7 @@
   },
   {
     "package_name": "pyaudio",
-    "number_of_lines": 191,
+    "number_of_lines": 177,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1841,7 +1841,7 @@
   },
   {
     "package_name": "pycocotools",
-    "number_of_lines": 196,
+    "number_of_lines": 172,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1861,7 +1861,7 @@
   },
   {
     "package_name": "pycurl",
-    "number_of_lines": 679,
+    "number_of_lines": 670,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1901,7 +1901,7 @@
   },
   {
     "package_name": "pyflakes",
-    "number_of_lines": 504,
+    "number_of_lines": 428,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -1921,7 +1921,7 @@
   },
   {
     "package_name": "pyinstaller",
-    "number_of_lines": 476,
+    "number_of_lines": 420,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1941,7 +1941,7 @@
   },
   {
     "package_name": "pynput",
-    "number_of_lines": 362,
+    "number_of_lines": 325,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1961,7 +1961,7 @@
   },
   {
     "package_name": "pysftp",
-    "number_of_lines": 173,
+    "number_of_lines": 162,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -1981,7 +1981,7 @@
   },
   {
     "package_name": "pytest-lazy-fixture",
-    "number_of_lines": 14,
+    "number_of_lines": 12,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2001,7 +2001,7 @@
   },
   {
     "package_name": "python-crontab",
-    "number_of_lines": 293,
+    "number_of_lines": 270,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -2021,7 +2021,7 @@
   },
   {
     "package_name": "python-dateutil",
-    "number_of_lines": 472,
+    "number_of_lines": 418,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -2041,7 +2041,7 @@
   },
   {
     "package_name": "python-gflags",
-    "number_of_lines": 309,
+    "number_of_lines": 251,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2061,7 +2061,7 @@
   },
   {
     "package_name": "python-jose",
-    "number_of_lines": 399,
+    "number_of_lines": 359,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -2081,7 +2081,7 @@
   },
   {
     "package_name": "python-nmap",
-    "number_of_lines": 134,
+    "number_of_lines": 116,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2101,7 +2101,7 @@
   },
   {
     "package_name": "python-slugify",
-    "number_of_lines": 48,
+    "number_of_lines": 45,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2121,7 +2121,7 @@
   },
   {
     "package_name": "python-xlib",
-    "number_of_lines": 5836,
+    "number_of_lines": 5396,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2141,7 +2141,7 @@
   },
   {
     "package_name": "pytz",
-    "number_of_lines": 151,
+    "number_of_lines": 127,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2161,7 +2161,7 @@
   },
   {
     "package_name": "pyvmomi",
-    "number_of_lines": 221,
+    "number_of_lines": 177,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -2181,7 +2181,7 @@
   },
   {
     "package_name": "pywin32",
-    "number_of_lines": 35221,
+    "number_of_lines": 34297,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -2201,7 +2201,7 @@
   },
   {
     "package_name": "redis",
-    "number_of_lines": 5596,
+    "number_of_lines": 5336,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -2221,7 +2221,7 @@
   },
   {
     "package_name": "regex",
-    "number_of_lines": 769,
+    "number_of_lines": 749,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2241,7 +2241,7 @@
   },
   {
     "package_name": "requests",
-    "number_of_lines": 1034,
+    "number_of_lines": 967,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -2261,7 +2261,7 @@
   },
   {
     "package_name": "retry",
-    "number_of_lines": 29,
+    "number_of_lines": 27,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2281,7 +2281,7 @@
   },
   {
     "package_name": "setuptools",
-    "number_of_lines": 2677,
+    "number_of_lines": 2433,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -2301,7 +2301,7 @@
   },
   {
     "package_name": "simplejson",
-    "number_of_lines": 59,
+    "number_of_lines": 51,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -2321,7 +2321,7 @@
   },
   {
     "package_name": "singledispatch",
-    "number_of_lines": 31,
+    "number_of_lines": 27,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2341,7 +2341,7 @@
   },
   {
     "package_name": "six",
-    "number_of_lines": 365,
+    "number_of_lines": 335,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2361,7 +2361,7 @@
   },
   {
     "package_name": "slumber",
-    "number_of_lines": 90,
+    "number_of_lines": 74,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2381,7 +2381,7 @@
   },
   {
     "package_name": "stdlib",
-    "number_of_lines": 55491,
+    "number_of_lines": 50840,
     "package_status": "STDLIB",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT_ON_SOME_FILES",
@@ -2401,7 +2401,7 @@
   },
   {
     "package_name": "stdlib-list",
-    "number_of_lines": 20,
+    "number_of_lines": 16,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2421,7 +2421,7 @@
   },
   {
     "package_name": "stripe",
-    "number_of_lines": 1593,
+    "number_of_lines": 1414,
     "package_status": "OUT_OF_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -2441,7 +2441,7 @@
   },
   {
     "package_name": "tabulate",
-    "number_of_lines": 57,
+    "number_of_lines": 50,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2461,7 +2461,7 @@
   },
   {
     "package_name": "termcolor",
-    "number_of_lines": 14,
+    "number_of_lines": 12,
     "package_status": "OBSOLETE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2481,7 +2481,7 @@
   },
   {
     "package_name": "toml",
-    "number_of_lines": 154,
+    "number_of_lines": 136,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2501,7 +2501,7 @@
   },
   {
     "package_name": "toposort",
-    "number_of_lines": 17,
+    "number_of_lines": 13,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2521,7 +2521,7 @@
   },
   {
     "package_name": "tqdm",
-    "number_of_lines": 1446,
+    "number_of_lines": 1333,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -2541,7 +2541,7 @@
   },
   {
     "package_name": "tree-sitter",
-    "number_of_lines": 133,
+    "number_of_lines": 124,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2561,7 +2561,7 @@
   },
   {
     "package_name": "tree-sitter-languages",
-    "number_of_lines": 11,
+    "number_of_lines": 9,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2581,7 +2581,7 @@
   },
   {
     "package_name": "ttkthemes",
-    "number_of_lines": 84,
+    "number_of_lines": 76,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -2601,7 +2601,7 @@
   },
   {
     "package_name": "typed-ast",
-    "number_of_lines": 730,
+    "number_of_lines": 578,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2621,7 +2621,7 @@
   },
   {
     "package_name": "tzlocal",
-    "number_of_lines": 25,
+    "number_of_lines": 19,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2641,8 +2641,8 @@
   },
   {
     "package_name": "ujson",
-    "number_of_lines": 37,
-    "package_status": "UP_TO_DATE",
+    "number_of_lines": 34,
+    "package_status": "OUT_OF_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2661,7 +2661,7 @@
   },
   {
     "package_name": "urllib3",
-    "number_of_lines": 808,
+    "number_of_lines": 699,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
@@ -2681,7 +2681,7 @@
   },
   {
     "package_name": "vobject",
-    "number_of_lines": 596,
+    "number_of_lines": 519,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "NOT_STRICT",
@@ -2701,7 +2701,7 @@
   },
   {
     "package_name": "waitress",
-    "number_of_lines": 713,
+    "number_of_lines": 628,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "STRICT",
@@ -2721,7 +2721,7 @@
   },
   {
     "package_name": "whatthepatch",
-    "number_of_lines": 109,
+    "number_of_lines": 96,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2741,7 +2741,7 @@
   },
   {
     "package_name": "xmltodict",
-    "number_of_lines": 38,
+    "number_of_lines": 35,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2761,7 +2761,7 @@
   },
   {
     "package_name": "xxhash",
-    "number_of_lines": 53,
+    "number_of_lines": 43,
     "package_status": "OBSOLETE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
@@ -2781,7 +2781,7 @@
   },
   {
     "package_name": "zxcvbn",
-    "number_of_lines": 202,
+    "number_of_lines": 162,
     "package_status": "UP_TO_DATE",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "pyright_setting": "STRICT",
