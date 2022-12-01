@@ -10,7 +10,7 @@ Typeshed currently contains stubs for 140 packages
 (including the stdlib stubs as a "single package"),
 for a total of 201,518 lines of code.
 
-<i>Note: these statistics were last updated at: <b>02:00 UTC on 2022-12-01</b>.</i>
+<i>Note: these statistics were last updated at: <b>08:40 UTC on 2022-12-01</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
