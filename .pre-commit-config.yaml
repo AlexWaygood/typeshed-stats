@@ -23,7 +23,7 @@ repos:
       - id: pycln
         args: [--config=pyproject.toml, .]
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.2.2 # must match requirements/all.txt
+    rev: v3.2.3 # must match requirements/all.txt
     hooks:
       - id: pyupgrade
         args: [--py310-plus]
