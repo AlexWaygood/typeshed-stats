@@ -1552,6 +1552,43 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
+## Stats on typeshed's stubs for `dockerfile-parse`
+
+### Number of lines
+
+122
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Pyright settings in CI: *not strict*
+
+All files are excluded from the stricter pyright settings in CI.
+
+### Statistics on the annotations in typeshed's stubs for `dockerfile-parse`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 45
+    - Unannotated parameters: 1
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 22
+    - Unannotated returns: 2
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 41
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+
+<hr>
+
 ## Stats on typeshed's stubs for `docopt`
 
 ### Number of lines
@@ -2150,9 +2187,9 @@ All files are tested with the stricter pyright settings in CI.
 
 1572
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Stubtest settings in CI: *missing stubs ignored*
 

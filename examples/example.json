@@ -840,6 +840,26 @@
     }
   },
   {
+    "package_name": "dockerfile-parse",
+    "number_of_lines": 122,
+    "package_status": "UP_TO_DATE",
+    "stubtest_setting": "ERROR_ON_MISSING_STUB",
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 45,
+      "unannotated_parameters": 1,
+      "annotated_returns": 22,
+      "unannotated_returns": 2,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 41,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0
+    }
+  },
+  {
     "package_name": "docopt",
     "number_of_lines": 12,
     "package_status": "UP_TO_DATE",
@@ -1162,7 +1182,7 @@
   {
     "package_name": "google-cloud-ndb",
     "number_of_lines": 1572,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
