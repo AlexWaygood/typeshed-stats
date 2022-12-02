@@ -754,7 +754,7 @@
     "package_name": "chardet",
     "extra_description": null,
     "number_of_lines": 122,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "stubtest_platforms": [

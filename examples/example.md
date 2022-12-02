@@ -1354,9 +1354,9 @@ All files are excluded from the stricter pyright settings in CI.
 
 122 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+Upstream has added type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 

@@ -12,7 +12,7 @@ Typeshed currently contains stubs for 140 packages
 (including the stdlib stubs as a "single package"),
 for a total of 185,032 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>01:39 UTC on 2022-12-02</b>.</i>
+<i>Note: these statistics were last updated at: <b>12:36 UTC on 2022-12-02</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -1372,9 +1372,9 @@ All files are excluded from the stricter pyright settings in CI.
 
 122 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+Upstream has added type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
