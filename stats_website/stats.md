@@ -10,9 +10,9 @@ hide:
 
 Typeshed currently contains stubs for 140 packages
 (including the stdlib stubs as a "single package"),
-for a total of 185,032 non-empty lines of code.
+for a total of 185,047 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>12:36 UTC on 2022-12-02</b>.</i>
+<i>Note: these statistics were last updated at: <b>01:35 UTC on 2022-12-03</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -1771,7 +1771,7 @@ All files are excluded from the pyright check in CI.
 
 ### Number of lines
 
-452 (excluding blank lines)
+460 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1781,9 +1781,9 @@ These stubs should be fairly up to date. In CI, stubtest tests these stubs again
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in CI.
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Stubtest platforms in CI
 
@@ -1796,18 +1796,18 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `dateparser`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 120
+    - Annotated parameters: 126
     - Unannotated parameters: 127
     - Explicit `Any` parameters: 25
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 71
+    - Annotated returns: 75
     - Unannotated returns: 67
     - Explicit `Any` returns: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 136
-    - Explicit `Any` variables: 80
+    - Annotated variables: 139
+    - Explicit `Any` variables: 76
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
 <hr>
@@ -3301,7 +3301,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-8978 (excluding blank lines)
+8979 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5375,7 +5375,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-50840 (excluding blank lines)
+50846 (excluding blank lines)
 
 ### Package status: *stdlib*
 

@@ -977,25 +977,25 @@
   {
     "package_name": "dateparser",
     "extra_description": null,
-    "number_of_lines": 452,
+    "number_of_lines": 460,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
+    "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "stubtest_platforms": [
       "linux"
     ],
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 120,
+      "annotated_parameters": 126,
       "unannotated_parameters": 127,
-      "annotated_returns": 71,
+      "annotated_returns": 75,
       "unannotated_returns": 67,
       "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
+      "explicit_Incomplete_returns": 1,
       "explicit_Any_parameters": 25,
       "explicit_Any_returns": 6,
-      "annotated_variables": 136,
-      "explicit_Any_variables": 80,
+      "annotated_variables": 139,
+      "explicit_Any_variables": 76,
       "explicit_Incomplete_variables": 0
     }
   },
@@ -1825,7 +1825,7 @@
   {
     "package_name": "openpyxl",
     "extra_description": null,
-    "number_of_lines": 8978,
+    "number_of_lines": 8979,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
@@ -2981,7 +2981,7 @@
   {
     "package_name": "stdlib",
     "extra_description": null,
-    "number_of_lines": 50840,
+    "number_of_lines": 50846,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",

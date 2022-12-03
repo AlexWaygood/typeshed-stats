@@ -1753,7 +1753,7 @@ All files are excluded from the pyright check in CI.
 
 ### Number of lines
 
-452 (excluding blank lines)
+460 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1763,9 +1763,9 @@ These stubs should be fairly up to date. In CI, stubtest tests these stubs again
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in CI.
+Objects missing from the stub cause stubtest to emit an error in CI.
 
 ### Stubtest platforms in CI
 
@@ -1778,18 +1778,18 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `dateparser`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 120
+    - Annotated parameters: 126
     - Unannotated parameters: 127
     - Explicit `Any` parameters: 25
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 71
+    - Annotated returns: 75
     - Unannotated returns: 67
     - Explicit `Any` returns: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 136
-    - Explicit `Any` variables: 80
+    - Annotated variables: 139
+    - Explicit `Any` variables: 76
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
 <hr>
@@ -3283,7 +3283,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-8978 (excluding blank lines)
+8979 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5357,7 +5357,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-50840 (excluding blank lines)
+50846 (excluding blank lines)
 
 ### Package status: *stdlib*
 
