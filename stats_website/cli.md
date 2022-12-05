@@ -6,6 +6,8 @@ hide:
 
 <!-- NOTE: This file is generated. Do not edit manually! -->
 
+To install the CLI, simply run `pip install typeshed-stats[rich]`.
+
 ```console
 usage: typeshed-stats [-h] [--log {NOTSET,DEBUG,INFO,WARNING,ERROR,CRITICAL}]
                       [--pprint | --to-json | --to-csv | --to-markdown | -f WRITEFILE]
@@ -31,8 +33,8 @@ options:
   -f WRITEFILE, --to-file WRITEFILE
                         Write output to WRITEFILE instead of printing to the
                         terminal. The file format will be inferred by the file
-                        extension. The file extension must be one of {'.txt',
-                        '.json', '.md', '.csv'}.
+                        extension. The file extension must be one of {'.csv',
+                        '.md', '.json', '.txt'}.
   -o, --overwrite       Overwrite the path passed to `--file` if it already
                         exists (defaults to False)
   -t TYPESHED_DIR, --typeshed-dir TYPESHED_DIR
