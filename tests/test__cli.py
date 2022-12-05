@@ -4,8 +4,10 @@ import json
 import os
 import re
 import sys
+import types
 from collections.abc import Iterator, Sequence
 from pathlib import Path
+from typing import Any, cast
 from unittest import mock
 
 # Make sure not to import rich here, as it's optional dependencies
@@ -516,10 +518,27 @@ class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTes
         markdown.markdown(result)
 
     def test_pprint_option_with_rich_available(self) -> None:
-        rich_mock = mock.MagicMock()
-        with mock.patch.dict(sys.modules, rich=rich_mock):
-            self._assert_outputoption_works("--pprint")
-        rich_mock.print.assert_called_once()
+        sys_modules = cast(dict[str, types.ModuleType | None], sys.modules)
+        assert sys_modules["rich"] is None
+        del sys.modules["rich"]
+
+        import rich
+
+        old_rich_print = rich.print
+        rich_print_called = False
+
+        def new_rich_print(*args: Any, **kwargs: Any) -> None:
+            nonlocal rich_print_called
+            rich_print_called = True
+            old_rich_print(*args, **kwargs)
+
+        rich.print = new_rich_print
+
+        self._assert_outputoption_works("--pprint")
+        assert rich_print_called
+
+        rich.print = old_rich_print
+        sys_modules["rich"] = None
 
     @pytest.mark.usefixtures("disabled_rich")
     def test_pprint_option_with_rich_unavailable(

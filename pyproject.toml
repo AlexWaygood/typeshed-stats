@@ -38,7 +38,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-rich = ["rich"]
+rich = [
+    "rich",
+    "rich-argparse",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/AlexWaygood/typeshed-stats"
