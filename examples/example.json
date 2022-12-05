@@ -2151,7 +2151,7 @@
   {
     "package_name": "protobuf",
     "extra_description": "Generated with aid from mypy-protobuf v3.4.0",
-    "number_of_lines": 4272,
+    "number_of_lines": 4280,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
@@ -2162,13 +2162,13 @@
     "annotation_stats": {
       "annotated_parameters": 726,
       "unannotated_parameters": 248,
-      "annotated_returns": 482,
-      "unannotated_returns": 90,
+      "annotated_returns": 494,
+      "unannotated_returns": 79,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 27,
       "explicit_Any_returns": 4,
-      "annotated_variables": 755,
+      "annotated_variables": 757,
       "explicit_Any_variables": 126,
       "explicit_Incomplete_variables": 0
     }
@@ -2731,7 +2731,7 @@
   {
     "package_name": "pywin32",
     "extra_description": null,
-    "number_of_lines": 34297,
+    "number_of_lines": 34530,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
@@ -2740,17 +2740,17 @@
     ],
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3377,
-      "unannotated_parameters": 3803,
-      "annotated_returns": 3772,
-      "unannotated_returns": 2072,
-      "explicit_Incomplete_parameters": 388,
-      "explicit_Incomplete_returns": 296,
+      "annotated_parameters": 3635,
+      "unannotated_parameters": 3729,
+      "annotated_returns": 3825,
+      "unannotated_returns": 2043,
+      "explicit_Incomplete_parameters": 426,
+      "explicit_Incomplete_returns": 292,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 24951,
+      "annotated_variables": 25020,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 2813
+      "explicit_Incomplete_variables": 2832
     }
   },
   {

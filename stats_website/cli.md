@@ -25,6 +25,8 @@ options:
   --log {NOTSET,DEBUG,INFO,WARNING,ERROR,CRITICAL}
                         Specify the level of logging (defaults to
                         logging.INFO)
+
+Output Options:
   --pprint              Pretty-print Python representations of the data
                         (default output)
   --to-json             Print output as JSON to the terminal
@@ -33,10 +35,12 @@ options:
   -f WRITEFILE, --to-file WRITEFILE
                         Write output to WRITEFILE instead of printing to the
                         terminal. The file format will be inferred by the file
-                        extension. The file extension must be one of {'.csv',
-                        '.md', '.json', '.txt'}.
+                        extension. The file extension must be one of ['.md',
+                        '.json', '.txt', '.csv'].
   -o, --overwrite       Overwrite the path passed to `--file` if it already
                         exists (defaults to False)
+
+Typeshed options:
   -t TYPESHED_DIR, --typeshed-dir TYPESHED_DIR
                         Path to a local clone of typeshed, to be used as the
                         basis for analysis

@@ -3872,7 +3872,7 @@ Generated with aid from mypy-protobuf v3.4.0
 
 ### Number of lines
 
-4272 (excluding blank lines)
+4280 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3902,12 +3902,12 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicit `Any` parameters: 27
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 482
-    - Unannotated returns: 90
+    - Annotated returns: 494
+    - Unannotated returns: 79
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 755
+    - Annotated variables: 757
     - Explicit `Any` variables: 126
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -4907,7 +4907,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-34297 (excluding blank lines)
+34530 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4932,19 +4932,19 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3377
-    - Unannotated parameters: 3803
+    - Annotated parameters: 3635
+    - Unannotated parameters: 3729
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 388
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 426
 - Returns:
-    - Annotated returns: 3772
-    - Unannotated returns: 2072
+    - Annotated returns: 3825
+    - Unannotated returns: 2043
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 296
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 292
 - Variables:
-    - Annotated variables: 24951
+    - Annotated variables: 25020
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2813
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2832
 
 <hr>
 
