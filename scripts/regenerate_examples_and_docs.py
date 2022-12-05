@@ -139,7 +139,7 @@ def regenerate_cli_docs() -> None:
         ["typeshed-stats", "--help"], text=True, capture_output=True
     )
     docs = textwrap.dedent(
-        f"""\
+        """\
         ---
         hide:
           - footer
