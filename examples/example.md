@@ -358,7 +358,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-2352 (excluding blank lines)
+2353 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -383,7 +383,7 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `Pillow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 628
+    - Annotated parameters: 629
     - Unannotated parameters: 619
     - Explicit `Any` parameters: 64
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
@@ -4324,9 +4324,9 @@ All files are excluded from the stricter pyright settings in CI.
 
 420 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
 
 ### Upload status: *uploaded*
 
