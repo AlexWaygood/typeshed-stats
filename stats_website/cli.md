@@ -35,8 +35,8 @@ Output Options:
   -f WRITEFILE, --to-file WRITEFILE
                         Write output to WRITEFILE instead of printing to the
                         terminal. The file format will be inferred by the file
-                        extension. The file extension must be one of ['.md',
-                        '.json', '.txt', '.csv'].
+                        extension. The file extension must be one of ['.csv',
+                        '.json', '.md', '.txt'].
   -o, --overwrite       Overwrite the path passed to `--file` if it already
                         exists (defaults to False)
 
