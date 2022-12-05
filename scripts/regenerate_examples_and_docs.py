@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import shutil
+import subprocess
 import textwrap
 import types
 from collections.abc import Sequence
@@ -132,6 +133,29 @@ def regenerate_gather_api_docs() -> None:
     print("API docs successfully regenerated for `typeshed_stats.gather`!")
 
 
+def regenerate_cli_docs() -> None:
+    """Regenerate the CLI docs."""
+    help_result = subprocess.run(
+        ["typeshed-stats", "--help"], text=True, capture_output=True
+    )
+    docs = textwrap.dedent(
+        """\
+        ---
+        hide:
+          - footer
+          - navigation
+        ---
+
+        <!-- NOTE: This file is generated. Do not edit manually! -->
+
+        To install the CLI, simply run `pip install typeshed-stats[rich]`.
+        """
+    )
+    docs += f"\n```console\n{help_result.stdout}\n```\n"
+    Path("stats_website", "cli.md").write_text(docs, encoding="utf-8")
+    print("CLI docs successfully regenerated for `typeshed_stats`!")
+
+
 # I think we need the type: ignore here
 # because mypy is worried that ExitStack() might suppress exceptions.
 # I guess that's reasonable, thought it's somewhat annoying in this case.
@@ -161,6 +185,7 @@ def main() -> None:
     regenerate_examples(stats)
     regenerate_stats_markdown_page(stats)
     regenerate_gather_api_docs()
+    regenerate_cli_docs()
 
 
 if __name__ == "__main__":

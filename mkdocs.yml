@@ -47,12 +47,18 @@ nav:
   - "Welcome to typeshed-stats": "index.md"
   - "Stats on typeshed's stubs": "stats.md"
   - "Stats in CSV format": "stats-csv.md"
-  - "typeshed_stats.gather: API reference": "gather.md"
-  - "typeshed_stats.serialize: API reference": "serialize.md"
+  - "typeshed_stats.gather API reference": "gather.md"
+  - "typeshed_stats.serialize API reference": "serialize.md"
+  - "CLI reference": "cli.md"
 
 markdown_extensions:
   - attr_list
   - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 watch:
   - stats_website
