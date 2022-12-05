@@ -142,48 +142,49 @@ def _get_argument_parser() -> argparse.ArgumentParser:
         dest="logging_level",
     )
 
-    output_options = parser.add_mutually_exclusive_group()
-    output_options.add_argument(
+    output_options = parser.add_argument_group(title="Output Options")
+    format_options = output_options.add_mutually_exclusive_group()
+    format_options.add_argument(
         "--pprint",
         action="store_const",
         const=OutputOption.PPRINT,
         dest="output_option",
         help="Pretty-print Python representations of the data (default output)",
     )
-    output_options.add_argument(
+    format_options.add_argument(
         "--to-json",
         action="store_const",
         const=OutputOption.JSON,
         dest="output_option",
         help="Print output as JSON to the terminal",
     )
-    output_options.add_argument(
+    format_options.add_argument(
         "--to-csv",
         action="store_const",
         const=OutputOption.CSV,
         dest="output_option",
         help="Print output in csv format to the terminal",
     )
-    output_options.add_argument(
+    format_options.add_argument(
         "--to-markdown",
         action="store_const",
         const=OutputOption.MARKDOWN,
         dest="output_option",
         help="Print output as formatted MarkDown to the terminal",
     )
-    output_options.add_argument(
+    format_options.add_argument(
         "-f",
         "--to-file",
         type=Path,
         help=(
             "Write output to WRITEFILE instead of printing to the terminal."
             " The file format will be inferred by the file extension."
-            f" The file extension must be one of {SUPPORTED_EXTENSIONS}."
+            f" The file extension must be one of {list(SUPPORTED_EXTENSIONS)}."
         ),
         dest="writefile",
     )
 
-    parser.add_argument(
+    output_options.add_argument(
         "-o",
         "--overwrite",
         action="store_true",
@@ -193,14 +194,17 @@ def _get_argument_parser() -> argparse.ArgumentParser:
         ),
     )
 
-    typeshed_options = parser.add_mutually_exclusive_group(required=True)
-    typeshed_options.add_argument(
+    typeshed_options = parser.add_argument_group(title="Typeshed options")
+    typeshed_options_group = typeshed_options.add_mutually_exclusive_group(
+        required=True
+    )
+    typeshed_options_group.add_argument(
         "-t",
         "--typeshed-dir",
         type=Path,
         help="Path to a local clone of typeshed, to be used as the basis for analysis",
     )
-    typeshed_options.add_argument(
+    typeshed_options_group.add_argument(
         "-d",
         "--download-typeshed",
         action="store_true",
