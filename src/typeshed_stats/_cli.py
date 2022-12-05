@@ -179,7 +179,7 @@ def _get_argument_parser() -> argparse.ArgumentParser:
         help=(
             "Write output to WRITEFILE instead of printing to the terminal."
             " The file format will be inferred by the file extension."
-            f" The file extension must be one of {list(SUPPORTED_EXTENSIONS)}."
+            f" The file extension must be one of {sorted(SUPPORTED_EXTENSIONS)}."
         ),
         dest="writefile",
     )
