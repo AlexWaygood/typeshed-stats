@@ -56,7 +56,7 @@ flake8-plugin-utils,-,61,UP_TO_DATE,UPLOADED,MISSING_STUBS_IGNORED,linux,STRICT,
 flake8-rst-docstrings,-,31,UP_TO_DATE,UPLOADED,MISSING_STUBS_IGNORED,linux,STRICT,10,0,5,0,0,0,1,0,12,0,0
 flake8-simplify,-,8,UP_TO_DATE,UPLOADED,MISSING_STUBS_IGNORED,linux,STRICT,1,0,2,0,0,0,0,1,2,0,0
 flake8-typing-imports,-,15,UP_TO_DATE,UPLOADED,MISSING_STUBS_IGNORED,linux,STRICT,4,0,5,0,0,1,1,1,2,0,0
-fpdf2,-,2001,UP_TO_DATE,UPLOADED,ERROR_ON_MISSING_STUB,linux,NOT_STRICT,570,530,361,201,58,4,10,1,635,14,159
+fpdf2,-,2001,UP_TO_DATE,UPLOADED,ERROR_ON_MISSING_STUB,linux,NOT_STRICT,573,527,364,198,58,4,10,1,635,14,159
 gdb,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: is is not possible to install the `gdb` package separately, for instance using `pip`.",718,NOT_ON_PYPI,UPLOADED,SKIPPED,None,STRICT,227,0,247,0,0,0,0,0,294,0,0
 google-cloud-ndb,-,1397,UP_TO_DATE,UPLOADED,MISSING_STUBS_IGNORED,linux,NOT_STRICT,478,368,234,203,0,0,134,0,191,139,0
 hdbcli,-,129,UP_TO_DATE,UPLOADED,ERROR_ON_MISSING_STUB,linux,STRICT,77,0,62,0,6,4,12,7,22,2,2

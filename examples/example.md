@@ -2588,13 +2588,13 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `fpdf2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 570
-    - Unannotated parameters: 530
+    - Annotated parameters: 573
+    - Unannotated parameters: 527
     - Explicit `Any` parameters: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 58
 - Returns:
-    - Annotated returns: 361
-    - Unannotated returns: 201
+    - Annotated returns: 364
+    - Unannotated returns: 198
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:

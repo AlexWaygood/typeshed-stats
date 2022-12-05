@@ -12,7 +12,7 @@ Typeshed currently contains stubs for 140 packages
 (including the stdlib stubs as a "single package"),
 for a total of 185,048 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>12:38 UTC on 2022-12-05</b>.</i>
+<i>Note: these statistics were last updated at: <b>15:14 UTC on 2022-12-05</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -2606,13 +2606,13 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `fpdf2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 570
-    - Unannotated parameters: 530
+    - Annotated parameters: 573
+    - Unannotated parameters: 527
     - Explicit `Any` parameters: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 58
 - Returns:
-    - Annotated returns: 361
-    - Unannotated returns: 201
+    - Annotated returns: 364
+    - Unannotated returns: 198
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
