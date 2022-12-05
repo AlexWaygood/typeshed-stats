@@ -14,3 +14,6 @@ def test_running_from_command_line(complete_typeshed: Path, args: list[str]) -> 
     result = subprocess.run([*args, "--typeshed-dir", str(complete_typeshed)])
     code = result.returncode
     assert code == 0
+    result2 = subprocess.run([*args, "--help"])
+    code = result2.returncode
+    assert code == 0

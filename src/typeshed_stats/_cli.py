@@ -94,6 +94,25 @@ _LoggingLevels: TypeAlias = Literal[
 ]
 
 
+def _get_help_formatter() -> type[argparse.HelpFormatter]:
+    try:
+        import rich  # noqa: F401
+        from rich_argparse import (  # type: ignore[import]
+            RichHelpFormatter as HelpFormatter,
+        )
+    except ImportError:
+        from argparse import HelpFormatter  # type: ignore[no-redef]
+    else:
+        HelpFormatter.styles.update(
+            {
+                "argparse.groups": "gold3",
+                "argparse.args": "navajo_white1",
+                "argparse.metavar": "dark_orange3",
+            }
+        )
+    return HelpFormatter  # type: ignore[no-any-return]
+
+
 def _get_argument_parser() -> argparse.ArgumentParser:
     """Parse arguments and do basic argument validation.
 
@@ -101,7 +120,9 @@ def _get_argument_parser() -> argparse.ArgumentParser:
     Leave that to _validate_options().
     """
     parser = argparse.ArgumentParser(
-        prog="typeshed-stats", description="Tool to gather stats on typeshed"
+        prog="typeshed-stats",
+        description="Tool to gather stats on typeshed",
+        formatter_class=_get_help_formatter(),
     )
     parser.add_argument(
         "packages",
