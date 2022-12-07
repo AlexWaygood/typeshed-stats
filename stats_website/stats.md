@@ -10,9 +10,9 @@ hide:
 
 Typeshed currently contains stubs for 140 packages
 (including the stdlib stubs as a "single package"),
-for a total of 185,289 non-empty lines of code.
+for a total of 185,291 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>12:39 UTC on 2022-12-06</b>.</i>
+<i>Note: these statistics were last updated at: <b>01:43 UTC on 2022-12-07</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -2673,9 +2673,9 @@ All files are tested with the stricter pyright settings in CI.
 
 1397 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -2986,7 +2986,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-383 (excluding blank lines)
+385 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3013,7 +3013,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 108
     - Unannotated parameters: 295
-    - Explicit `Any` parameters: 26
+    - Explicit `Any` parameters: 22
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 145
@@ -3021,7 +3021,7 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicit `Any` returns: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 62
+    - Annotated variables: 63
     - Explicit `Any` variables: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 

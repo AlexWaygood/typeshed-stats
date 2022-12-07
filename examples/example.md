@@ -2655,9 +2655,9 @@ All files are tested with the stricter pyright settings in CI.
 
 1397 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -2968,7 +2968,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-383 (excluding blank lines)
+385 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2995,7 +2995,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 108
     - Unannotated parameters: 295
-    - Explicit `Any` parameters: 26
+    - Explicit `Any` parameters: 22
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 145
@@ -3003,7 +3003,7 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicit `Any` returns: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 62
+    - Annotated variables: 63
     - Explicit `Any` variables: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 

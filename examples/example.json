@@ -1476,7 +1476,7 @@
     "package_name": "google-cloud-ndb",
     "extra_description": null,
     "number_of_lines": 1397,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
     "stubtest_platforms": [
@@ -1650,7 +1650,7 @@
   {
     "package_name": "jsonschema",
     "extra_description": null,
-    "number_of_lines": 383,
+    "number_of_lines": 385,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
@@ -1665,9 +1665,9 @@
       "unannotated_returns": 31,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 1,
-      "explicit_Any_parameters": 26,
+      "explicit_Any_parameters": 22,
       "explicit_Any_returns": 9,
-      "annotated_variables": 62,
+      "annotated_variables": 63,
       "explicit_Any_variables": 23,
       "explicit_Incomplete_variables": 0
     }
