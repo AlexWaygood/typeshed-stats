@@ -8,10 +8,10 @@ import re
 import sys
 import urllib.parse
 from collections import Counter
-from collections.abc import Collection, Iterable, Iterator, Mapping, Sequence
+from collections.abc import Collection, Container, Iterable, Iterator, Mapping, Sequence
 from contextlib import AsyncExitStack, contextmanager
 from enum import Enum
-from functools import lru_cache
+from functools import lru_cache, partial
 from itertools import chain
 from operator import attrgetter
 from pathlib import Path
@@ -133,14 +133,35 @@ class AnnotationStats:
     explicit_Incomplete_variables: int = 0
 
 
-def _is_staticmethod(decorator: ast.expr) -> bool:
-    match decorator:
-        case ast.Name("staticmethod"):
-            return True
-        case ast.Attribute(ast.Name("builtins"), "staticmethod"):
-            return True
+def _node_matches_name(node: ast.expr, name: str, from_: Container[str]) -> bool:
+    """Return True if `node` represents `name` from one of the modules in `from_`.
+
+    >>> _is_TypeAlias = partial(_node_matches_name, name="TypeAlias", from_={"typing", "typing_extensions"})
+    >>> get_annotation_node = lambda source: ast.parse(source).body[0].annotation
+    >>> _is_TypeAlias(get_annotation_node("foo: TypeAlias = int"))
+    True
+    >>> _is_TypeAlias(get_annotation_node("foo: typing.TypeAlias = int"))
+    True
+    >>> _is_TypeAlias(get_annotation_node("foo: typing_extensions.TypeAlias = int"))
+    True
+    >>> _is_TypeAlias(get_annotation_node("foo: int")
+    False
+    >>> _is_TypeAlias(get_annotation_node"foo: Final = 5")
+    False
+    """
+    match node:
+        case ast.Name(id):
+            return id == name
+        case ast.Attribute(ast.Name(module), id):
+            return id == name and module in from_
         case _:
             return False
+
+
+_is_staticmethod = partial(_node_matches_name, name="staticmethod", from_={"builtins"})
+_is_TypeAlias = partial(
+    _node_matches_name, name="TypeAlias", from_={"typing", "typing_extensions"}
+)
 
 
 class _AnnotationStatsCollector(ast.NodeVisitor):
@@ -164,13 +185,16 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
         self._class_nesting -= 1
 
     def visit_AnnAssign(self, node: ast.AnnAssign) -> None:
+        self.generic_visit(node)
+        annotation = node.annotation
+        if _is_TypeAlias(annotation):
+            return
         self.stats.annotated_variables += 1
-        analysis = _analyse_annotation(node.annotation)
+        analysis = _analyse_annotation(annotation)
         if analysis.Any_in_annotation:
             self.stats.explicit_Any_variables += 1
         if analysis.Incomplete_in_annotation:
             self.stats.explicit_Incomplete_variables += 1
-        self.generic_visit(node)
 
     def _visit_arg(self, node: ast.arg) -> None:
         annotation = node.annotation

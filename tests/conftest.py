@@ -80,10 +80,11 @@ def example_stub_source() -> str:
         import builtins
         import email
         import typing
+        import typing_extensions
         from _typeshed import Incomplete
         from collections.abc import Iterable
         from types import GenericAlias
-        from typing import Any
+        from typing import Any, TypeAlias
 
         a: int
         b: str = ...
@@ -94,6 +95,11 @@ def example_stub_source() -> str:
         f: _typeshed.Incomplete
         g: _typeshed.StrPath
         h: email.message.Message
+
+        # TypeAliases should not count towards the number of "annotated variables"
+        i: TypeAlias = int
+        j: typing.TypeAlias = str
+        k: typing_extensions.TypeAlias = bytes
 
         class Spam:
             a: tuple[typing.Any, ...] | None
