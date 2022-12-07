@@ -17,7 +17,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 107,
+      "annotated_variables": 100,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -67,7 +67,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 0,
-      "annotated_variables": 13,
+      "annotated_variables": 12,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -92,7 +92,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 8,
       "explicit_Any_returns": 2,
-      "annotated_variables": 34,
+      "annotated_variables": 30,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0
     }
@@ -117,7 +117,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 9,
+      "annotated_variables": 7,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0
     }
@@ -168,7 +168,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 5,
       "explicit_Any_returns": 2,
-      "annotated_variables": 27,
+      "annotated_variables": 26,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -218,7 +218,7 @@
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 64,
       "explicit_Any_returns": 4,
-      "annotated_variables": 800,
+      "annotated_variables": 782,
       "explicit_Any_variables": 335,
       "explicit_Incomplete_variables": 0
     }
@@ -243,7 +243,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 23,
+      "annotated_variables": 22,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -268,7 +268,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 38,
       "explicit_Any_returns": 18,
-      "annotated_variables": 734,
+      "annotated_variables": 733,
       "explicit_Any_variables": 62,
       "explicit_Incomplete_variables": 0
     }
@@ -293,7 +293,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 15,
+      "annotated_variables": 13,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -318,7 +318,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 52,
       "explicit_Any_returns": 12,
-      "annotated_variables": 225,
+      "annotated_variables": 220,
       "explicit_Any_variables": 192,
       "explicit_Incomplete_variables": 0
     }
@@ -343,7 +343,7 @@
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 24,
       "explicit_Any_returns": 2,
-      "annotated_variables": 314,
+      "annotated_variables": 313,
       "explicit_Any_variables": 193,
       "explicit_Incomplete_variables": 0
     }
@@ -368,7 +368,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 1202,
       "explicit_Any_returns": 23,
-      "annotated_variables": 3158,
+      "annotated_variables": 3114,
       "explicit_Any_variables": 2065,
       "explicit_Incomplete_variables": 0
     }
@@ -419,7 +419,7 @@
       "explicit_Incomplete_returns": 7,
       "explicit_Any_parameters": 29,
       "explicit_Any_returns": 1,
-      "annotated_variables": 3,
+      "annotated_variables": 0,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -444,7 +444,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 3,
+      "annotated_variables": 1,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -519,7 +519,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 52,
       "explicit_Any_returns": 5,
-      "annotated_variables": 250,
+      "annotated_variables": 245,
       "explicit_Any_variables": 149,
       "explicit_Incomplete_variables": 0
     }
@@ -569,7 +569,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 32,
       "explicit_Any_returns": 1,
-      "annotated_variables": 182,
+      "annotated_variables": 177,
       "explicit_Any_variables": 71,
       "explicit_Incomplete_variables": 0
     }
@@ -594,7 +594,7 @@
       "explicit_Incomplete_returns": 6,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 45,
+      "annotated_variables": 39,
       "explicit_Any_variables": 4,
       "explicit_Incomplete_variables": 0
     }
@@ -619,7 +619,7 @@
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 366,
       "explicit_Any_returns": 31,
-      "annotated_variables": 366,
+      "annotated_variables": 363,
       "explicit_Any_variables": 267,
       "explicit_Incomplete_variables": 0
     }
@@ -694,33 +694,8 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 25,
       "explicit_Any_returns": 5,
-      "annotated_variables": 94,
+      "annotated_variables": 90,
       "explicit_Any_variables": 6,
-      "explicit_Incomplete_variables": 0
-    }
-  },
-  {
-    "package_name": "certifi",
-    "extra_description": null,
-    "number_of_lines": 2,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 0,
-      "unannotated_parameters": 0,
-      "annotated_returns": 2,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 0,
-      "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
   },
@@ -745,7 +720,7 @@
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 33,
       "explicit_Any_returns": 8,
-      "annotated_variables": 261,
+      "annotated_variables": 252,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 115
     }
@@ -795,7 +770,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 0,
-      "annotated_variables": 4,
+      "annotated_variables": 3,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -846,7 +821,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 3,
       "explicit_Any_returns": 1,
-      "annotated_variables": 87,
+      "annotated_variables": 85,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -946,7 +921,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 9,
-      "annotated_variables": 14,
+      "annotated_variables": 13,
       "explicit_Any_variables": 3,
       "explicit_Incomplete_variables": 0
     }
@@ -994,7 +969,7 @@
       "explicit_Incomplete_returns": 1,
       "explicit_Any_parameters": 25,
       "explicit_Any_returns": 6,
-      "annotated_variables": 139,
+      "annotated_variables": 135,
       "explicit_Any_variables": 76,
       "explicit_Incomplete_variables": 0
     }
@@ -1069,7 +1044,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 41,
+      "annotated_variables": 39,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -1094,7 +1069,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 2,
+      "annotated_variables": 1,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -1119,7 +1094,7 @@
       "explicit_Incomplete_returns": 45,
       "explicit_Any_parameters": 36,
       "explicit_Any_returns": 6,
-      "annotated_variables": 82,
+      "annotated_variables": 80,
       "explicit_Any_variables": 11,
       "explicit_Incomplete_variables": 0
     }
@@ -1344,7 +1319,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 6,
       "explicit_Any_returns": 0,
-      "annotated_variables": 10,
+      "annotated_variables": 9,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -1444,7 +1419,7 @@
       "explicit_Incomplete_returns": 4,
       "explicit_Any_parameters": 10,
       "explicit_Any_returns": 1,
-      "annotated_variables": 635,
+      "annotated_variables": 625,
       "explicit_Any_variables": 14,
       "explicit_Incomplete_variables": 159
     }
@@ -1467,7 +1442,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 294,
+      "annotated_variables": 290,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -1492,7 +1467,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 134,
       "explicit_Any_returns": 0,
-      "annotated_variables": 191,
+      "annotated_variables": 190,
       "explicit_Any_variables": 139,
       "explicit_Incomplete_variables": 0
     }
@@ -1517,7 +1492,7 @@
       "explicit_Incomplete_returns": 4,
       "explicit_Any_parameters": 12,
       "explicit_Any_returns": 7,
-      "annotated_variables": 22,
+      "annotated_variables": 21,
       "explicit_Any_variables": 2,
       "explicit_Incomplete_variables": 2
     }
@@ -1617,7 +1592,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 28,
       "explicit_Any_returns": 8,
-      "annotated_variables": 130,
+      "annotated_variables": 129,
       "explicit_Any_variables": 70,
       "explicit_Incomplete_variables": 0
     }
@@ -1667,7 +1642,7 @@
       "explicit_Incomplete_returns": 1,
       "explicit_Any_parameters": 22,
       "explicit_Any_returns": 9,
-      "annotated_variables": 63,
+      "annotated_variables": 54,
       "explicit_Any_variables": 23,
       "explicit_Incomplete_variables": 0
     }
@@ -1692,7 +1667,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 51,
+      "annotated_variables": 38,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -1717,7 +1692,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 294,
       "explicit_Any_returns": 0,
-      "annotated_variables": 945,
+      "annotated_variables": 931,
       "explicit_Any_variables": 439,
       "explicit_Incomplete_variables": 0
     }
@@ -1892,7 +1867,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 5,
       "explicit_Any_returns": 4,
-      "annotated_variables": 163,
+      "annotated_variables": 145,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0
     }
@@ -1918,7 +1893,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 25,
       "explicit_Any_returns": 9,
-      "annotated_variables": 543,
+      "annotated_variables": 537,
       "explicit_Any_variables": 21,
       "explicit_Incomplete_variables": 0
     }
@@ -1943,7 +1918,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 23,
       "explicit_Any_returns": 4,
-      "annotated_variables": 36,
+      "annotated_variables": 34,
       "explicit_Any_variables": 5,
       "explicit_Incomplete_variables": 0
     }
@@ -2068,7 +2043,7 @@
       "explicit_Incomplete_returns": 3,
       "explicit_Any_parameters": 3,
       "explicit_Any_returns": 0,
-      "annotated_variables": 477,
+      "annotated_variables": 471,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 265
     }
@@ -2168,7 +2143,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 27,
       "explicit_Any_returns": 4,
-      "annotated_variables": 757,
+      "annotated_variables": 738,
       "explicit_Any_variables": 126,
       "explicit_Incomplete_variables": 0
     }
@@ -2195,7 +2170,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 26,
       "explicit_Any_returns": 47,
-      "annotated_variables": 586,
+      "annotated_variables": 585,
       "explicit_Any_variables": 206,
       "explicit_Incomplete_variables": 71
     }
@@ -2220,7 +2195,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 56,
       "explicit_Any_returns": 7,
-      "annotated_variables": 534,
+      "annotated_variables": 532,
       "explicit_Any_variables": 168,
       "explicit_Incomplete_variables": 0
     }
@@ -2245,7 +2220,7 @@
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 3,
       "explicit_Any_returns": 2,
-      "annotated_variables": 120,
+      "annotated_variables": 119,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0
     }
@@ -2296,7 +2271,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 90,
+      "annotated_variables": 84,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -2321,7 +2296,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 1,
-      "annotated_variables": 72,
+      "annotated_variables": 64,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 1
     }
@@ -2396,7 +2371,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 4,
       "explicit_Any_returns": 3,
-      "annotated_variables": 102,
+      "annotated_variables": 76,
       "explicit_Any_variables": 33,
       "explicit_Incomplete_variables": 0
     }
@@ -2421,7 +2396,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 4,
-      "annotated_variables": 103,
+      "annotated_variables": 95,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0
     }
@@ -2473,7 +2448,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 9,
+      "annotated_variables": 6,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -2548,7 +2523,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 0,
-      "annotated_variables": 95,
+      "annotated_variables": 88,
       "explicit_Any_variables": 13,
       "explicit_Incomplete_variables": 0
     }
@@ -2598,7 +2573,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 18,
       "explicit_Any_returns": 12,
-      "annotated_variables": 118,
+      "annotated_variables": 117,
       "explicit_Any_variables": 33,
       "explicit_Incomplete_variables": 0
     }
@@ -2623,7 +2598,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 32,
+      "annotated_variables": 31,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -2673,7 +2648,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 15,
       "explicit_Any_returns": 8,
-      "annotated_variables": 3545,
+      "annotated_variables": 3527,
       "explicit_Any_variables": 5,
       "explicit_Incomplete_variables": 0
     }
@@ -2748,7 +2723,7 @@
       "explicit_Incomplete_returns": 292,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 25020,
+      "annotated_variables": 25012,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 2832
     }
@@ -2773,7 +2748,7 @@
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 318,
       "explicit_Any_returns": 317,
-      "annotated_variables": 631,
+      "annotated_variables": 595,
       "explicit_Any_variables": 235,
       "explicit_Incomplete_variables": 12
     }
@@ -2798,7 +2773,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 25,
       "explicit_Any_returns": 16,
-      "annotated_variables": 73,
+      "annotated_variables": 72,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -2823,7 +2798,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 25,
       "explicit_Any_returns": 5,
-      "annotated_variables": 139,
+      "annotated_variables": 114,
       "explicit_Any_variables": 43,
       "explicit_Incomplete_variables": 0
     }
@@ -2873,7 +2848,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 73,
       "explicit_Any_returns": 6,
-      "annotated_variables": 640,
+      "annotated_variables": 627,
       "explicit_Any_variables": 401,
       "explicit_Incomplete_variables": 9
     }
@@ -2898,7 +2873,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 14,
       "explicit_Any_returns": 4,
-      "annotated_variables": 18,
+      "annotated_variables": 17,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -2973,7 +2948,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 11,
       "explicit_Any_returns": 5,
-      "annotated_variables": 10,
+      "annotated_variables": 9,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -3000,7 +2975,7 @@
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2117,
       "explicit_Any_returns": 817,
-      "annotated_variables": 8493,
+      "annotated_variables": 8068,
       "explicit_Any_variables": 556,
       "explicit_Incomplete_variables": 101
     }
@@ -3050,7 +3025,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 161,
       "explicit_Any_returns": 4,
-      "annotated_variables": 156,
+      "annotated_variables": 155,
       "explicit_Any_variables": 42,
       "explicit_Incomplete_variables": 0
     }
@@ -3075,7 +3050,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 0,
-      "annotated_variables": 27,
+      "annotated_variables": 25,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0
     }
@@ -3125,7 +3100,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 20,
       "explicit_Any_returns": 5,
-      "annotated_variables": 15,
+      "annotated_variables": 14,
       "explicit_Any_variables": 2,
       "explicit_Incomplete_variables": 0
     }
@@ -3175,7 +3150,7 @@
       "explicit_Incomplete_returns": 8,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 98,
+      "annotated_variables": 95,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 70
     }
@@ -3275,7 +3250,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 4,
       "explicit_Any_returns": 6,
-      "annotated_variables": 313,
+      "annotated_variables": 309,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0
     }
@@ -3350,7 +3325,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 3,
       "explicit_Any_returns": 4,
-      "annotated_variables": 160,
+      "annotated_variables": 155,
       "explicit_Any_variables": 54,
       "explicit_Incomplete_variables": 0
     }
@@ -3401,7 +3376,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 44,
       "explicit_Any_returns": 8,
-      "annotated_variables": 247,
+      "annotated_variables": 246,
       "explicit_Any_variables": 20,
       "explicit_Incomplete_variables": 0
     }
@@ -3501,7 +3476,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 77,
+      "annotated_variables": 76,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0
     }
