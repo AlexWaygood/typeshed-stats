@@ -146,7 +146,7 @@ def _node_matches_name(node: ast.expr, name: str, from_: Container[str]) -> bool
     True
     >>> _is_TypeAlias(get_annotation_node("foo: int"))
     False
-    >>> _is_TypeAlias(get_annotation_node"foo: Final = 5"))
+    >>> _is_TypeAlias(get_annotation_node("foo: Final = 5"))
     False
     """
     match node:
