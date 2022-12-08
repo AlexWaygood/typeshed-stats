@@ -10,9 +10,9 @@ hide:
 
 Typeshed currently contains stubs for 139 packages
 (including the stdlib stubs as a "single package"),
-for a total of 185,289 non-empty lines of code.
+for a total of 185,287 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>01:39 UTC on 2022-12-08</b>.</i>
+<i>Note: these statistics were last updated at: <b>12:37 UTC on 2022-12-08</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -4295,11 +4295,11 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-420 (excluding blank lines)
+418 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4320,17 +4320,17 @@ All files are tested with the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `pyinstaller`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 194
+    - Annotated parameters: 186
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 9
 - Returns:
-    - Annotated returns: 116
+    - Annotated returns: 114
     - Unannotated returns: 0
-    - Explicit `Any` returns: 4
+    - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 95
+    - Annotated variables: 96
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
