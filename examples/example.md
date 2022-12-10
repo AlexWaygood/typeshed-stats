@@ -5312,7 +5312,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-50846 (excluding blank lines)
+50849 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -5342,7 +5342,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
     - Explicit `Any` parameters: 2117
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13292
+    - Annotated returns: 13293
     - Unannotated returns: 405
     - Explicit `Any` returns: 817
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18

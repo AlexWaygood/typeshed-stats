@@ -2956,7 +2956,7 @@
   {
     "package_name": "stdlib",
     "extra_description": null,
-    "number_of_lines": 50846,
+    "number_of_lines": 50849,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
@@ -2969,7 +2969,7 @@
     "annotation_stats": {
       "annotated_parameters": 24381,
       "unannotated_parameters": 713,
-      "annotated_returns": 13292,
+      "annotated_returns": 13293,
       "unannotated_returns": 405,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
