@@ -7,6 +7,7 @@ import sys
 from collections.abc import Callable
 from contextlib import AbstractAsyncContextManager, nullcontext
 from dataclasses import InitVar, dataclass
+from itertools import chain
 from pathlib import Path
 from typing import Final, TypeAlias
 from unittest import mock
@@ -31,11 +32,12 @@ from typeshed_stats.gather import (
     _get_pypi_data,
     gather_annotation_stats_on_file,
     gather_annotation_stats_on_package,
-    gather_stats,
+    gather_stats_on_file,
+    gather_stats_on_multiple_packages,
     get_package_extra_description,
     get_package_size,
     get_package_status,
-    get_pyright_setting,
+    get_pyright_setting_for_package,
     get_stubtest_platforms,
     get_stubtest_setting,
     get_upload_status,
@@ -540,7 +542,7 @@ def test_get_package_size_multiple_files(
 
 
 # ================================
-# Tests for get_pyright_setting
+# Tests for get_pyright_setting_for_package
 # ================================
 
 
@@ -670,7 +672,7 @@ PYRIGHT_TEST_CASES: Final = (
     "test_case",
     [pytest.param(case, id=f"case{i}") for i, case in enumerate(PYRIGHT_TEST_CASES)],
 )
-def test_get_pyright_setting(
+def test_get_pyright_setting_for_package(
     typeshed: Path,
     test_case: PyrightTestCase,
     maybe_stringize_path: Callable[[Path], Path | str],
@@ -686,7 +688,7 @@ def test_get_pyright_setting(
 
         (typeshed / config_filename).write_text(config, encoding="utf-8")
 
-    pyright_setting = get_pyright_setting(
+    pyright_setting = get_pyright_setting_for_package(
         package_name=test_case.package_to_test,
         typeshed_dir=maybe_stringize_path(typeshed),
     )
@@ -717,7 +719,106 @@ def test_tmpdir_typeshed() -> None:
 
 
 # ======================
-# Tests for gather_stats
+# Tests for gather_stats_on_file
+# ======================
+
+
+# Tests for bad arguments passed into typeshed_dir
+def test_gather_stats_on_file_bad_typeshed_dir_type() -> None:
+    with pytest.raises(TypeError, match="Expected str or Path argument"):
+        gather_stats_on_file("stdlib/functools.pyi", typeshed_dir=5)  # type: ignore[arg-type]
+
+
+def test_gather_stats_on_file_nonexistent_typeshed_dir() -> None:
+    with pytest.raises(ValueError, match="does not exist"):
+        gather_stats_on_file("stdlib/functools.pyi", typeshed_dir="foo/bar")
+
+
+def test_gather_stats_on_file_typeshed_dir_points_to_file(tmp_path: Path) -> None:
+    file = tmp_path / "foo.pyi"
+    file.write_text("\n", encoding="utf-8")
+    with pytest.raises(ValueError, match="is not a directory"):
+        gather_stats_on_file("stdlib/functools.pyi", typeshed_dir=file)
+
+
+# Tests for bad arguments passed into file_path
+def test_gather_stats_on_file_bad_file_path_type() -> None:
+    with pytest.raises(TypeError, match="Expected str or Path argument"):
+        gather_stats_on_file(5, typeshed_dir=".")  # type: ignore[arg-type]
+
+
+def test_gather_stats_on_file_nonexistent_file() -> None:
+    with pytest.raises(ValueError, match="does not exist"):
+        gather_stats_on_file("foo/bar.pyi", typeshed_dir=".")
+
+
+def test_gather_stats_on_file_directory_passed(tmp_path: Path) -> None:
+    with pytest.raises(ValueError, match="does not point to a file"):
+        gather_stats_on_file(tmp_path, typeshed_dir=".")
+
+
+def test_gather_stats_on_file_non_pyi_file_passed(tmp_path: Path) -> None:
+    file = tmp_path / "foo.py"
+    file.write_text("\n", encoding="utf-8")
+    with pytest.raises(ValueError, match="Expected a path pointing to a .pyi file"):
+        gather_stats_on_file(file, typeshed_dir=".")
+
+
+# Tests for good arguments
+def test_gather_stats_on_file_no_network_access(
+    complete_typeshed: Path,
+    real_typeshed_package_names: frozenset[str],
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    pyi_files = chain.from_iterable(  # pragma: no branch
+        (complete_typeshed / "stubs" / package_name).rglob("*.pyi")
+        for package_name in real_typeshed_package_names
+    )
+    typeshed_dir_to_pass = maybe_stringize_path(complete_typeshed)
+    # Absolute Path passed
+    gather_stats_on_file(next(pyi_files), typeshed_dir=typeshed_dir_to_pass)
+    # Absolute str passed
+    gather_stats_on_file(str(next(pyi_files)), typeshed_dir=typeshed_dir_to_pass)
+    # Relative Path passed
+    gather_stats_on_file(
+        next(pyi_files).relative_to(complete_typeshed),
+        typeshed_dir=typeshed_dir_to_pass,
+    )
+    # Relative str passed
+    gather_stats_on_file(
+        str(next(pyi_files).relative_to(complete_typeshed)),
+        typeshed_dir=typeshed_dir_to_pass,
+    )
+
+
+def test_gather_stats_on_file_stdlib_file_passed(
+    complete_typeshed: Path, maybe_stringize_path: Callable[[Path], Path | str]
+) -> None:
+    typeshed_dir_to_pass = maybe_stringize_path(complete_typeshed)
+    info_on_functools = gather_stats_on_file(
+        complete_typeshed / "stdlib" / "functools.pyi",
+        typeshed_dir=typeshed_dir_to_pass,
+    )
+    assert info_on_functools.parent_package == "stdlib"
+    assert info_on_functools.file_path.as_posix() == "stdlib/functools.pyi"
+    assert (complete_typeshed / info_on_functools.file_path).exists()
+
+
+def test_gather_stats_on_file_non_stdlib_file_passed(
+    complete_typeshed: Path, maybe_stringize_path: Callable[[Path], Path | str]
+) -> None:
+    typeshed_dir_to_pass = maybe_stringize_path(complete_typeshed)
+    info_on_appdirs = gather_stats_on_file(
+        complete_typeshed / "stubs" / "appdirs" / "appdirs" / "foo.pyi",
+        typeshed_dir=typeshed_dir_to_pass,
+    )
+    assert info_on_appdirs.parent_package == "appdirs"
+    assert info_on_appdirs.file_path.as_posix() == "stubs/appdirs/appdirs/foo.pyi"
+    assert (complete_typeshed / info_on_appdirs.file_path).exists()
+
+
+# ======================
+# Tests for gather_stats_on_multiple_packages
 # ======================
 
 
@@ -736,7 +837,7 @@ def mocked_get_package_status(mocker: MockerFixture) -> None:
     "pass_none",
     [pytest.param(True, id="pass_none"), pytest.param(False, id="pass_packages")],
 )
-def test_gather_stats_no_network_access(
+def test_gather_stats__on_packages_no_network_access(
     complete_typeshed: Path,
     maybe_stringize_path: Callable[[Path], Path | str],
     pass_none: bool,
@@ -749,7 +850,9 @@ def test_gather_stats_no_network_access(
     else:
         packages_to_pass = {"stdlib", *os.listdir(complete_typeshed / "stubs")}
 
-    results = gather_stats(packages_to_pass, typeshed_dir=typeshed_dir_to_pass)
+    results = gather_stats_on_multiple_packages(
+        packages_to_pass, typeshed_dir=typeshed_dir_to_pass
+    )
     assert all(isinstance(item, PackageInfo) for item in results)
     package_names_in_results = [item.package_name for item in results]
     assert package_names_in_results == sorted(package_names_in_results)
@@ -768,7 +871,7 @@ def test_tmpdir_typeshed_with_mocked_git_clone() -> None:
 
 @pytest.mark.requires_network
 @pytest.mark.dependency(name="integration_basic")
-def test_gather_stats_integrates_with_tmpdir_typeshed() -> None:
+def test_gather_stats__on_packages_integrates_with_tmpdir_typeshed() -> None:
     num_packages = random.randint(3, 10)
     print(f"Testing {num_packages}")
     with tmpdir_typeshed() as typeshed:
@@ -776,7 +879,9 @@ def test_gather_stats_integrates_with_tmpdir_typeshed() -> None:
         available_stubs = os.listdir(typeshed / "stubs")
         package_names = {random.choice(available_stubs) for _ in range(num_packages)}
         print(f"Testing with {package_names}")
-        results = gather_stats(package_names, typeshed_dir=typeshed)
+        results = gather_stats_on_multiple_packages(
+            package_names, typeshed_dir=typeshed
+        )
 
     assert all(isinstance(item, PackageInfo) for item in results)
     package_names_in_results = [item.package_name for item in results]
@@ -787,8 +892,12 @@ def test_gather_stats_integrates_with_tmpdir_typeshed() -> None:
 @pytest.mark.dependency(depends=["integration_basic"])
 def test_basic_sanity_checks(subtests: SubTests) -> None:
     with tmpdir_typeshed() as typeshed:
-        stats = gather_stats(typeshed_dir=typeshed)
-    for s in stats:
+        stats_on_packages = gather_stats_on_multiple_packages(typeshed_dir=typeshed)
+        stats_on_stdlib_files = [
+            gather_stats_on_file(path, typeshed_dir=typeshed)
+            for path in (typeshed / "stdlib").rglob("*.pyi")
+        ]
+    for s in stats_on_packages:
         with subtests.test(package_name=s.package_name):
             annot_stats = s.annotation_stats
             is_only_partially_annotated = bool(
@@ -807,6 +916,27 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
                     f"{s.package_name!r} is fully annotated, "
                     "but does not have the strictest pyright settings in CI"
                 )
+    for f in stats_on_stdlib_files:
+        if Path("stdlib/distutils/command") in f.file_path.parents:
+            continue
+        with subtests.test(path=f.file_path):
+            annot_stats = f.annotation_stats
+            is_only_partially_annotated = bool(
+                annot_stats.unannotated_parameters or annot_stats.unannotated_returns
+            )
+            is_fully_annotated = not is_only_partially_annotated
+            if f.pyright_setting is PyrightSetting.STRICT:
+                assert is_fully_annotated, (
+                    "Likely bug detected: "
+                    f"{f.file_path!r} has unannotated parameters and/or returns, "
+                    "but has the strictest pyright settings in CI"
+                )
+            else:
+                assert is_only_partially_annotated, (
+                    "Likely bug detected: "
+                    f"{f.file_path!r} is fully annotated, "
+                    "but does not have the strictest pyright settings in CI"
+                )
 
 
 def test_exceptions_bubble_up(typeshed: Path) -> None:
@@ -816,4 +946,4 @@ def test_exceptions_bubble_up(typeshed: Path) -> None:
         autospec=True,
         side_effect=KeyError,
     ):
-        gather_stats(typeshed_dir=typeshed)
+        gather_stats_on_multiple_packages(typeshed_dir=typeshed)

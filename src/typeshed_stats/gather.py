@@ -15,7 +15,7 @@ from functools import lru_cache, partial
 from itertools import chain
 from operator import attrgetter
 from pathlib import Path
-from typing import Any, Literal, TypeAlias, TypeVar, final
+from typing import Annotated, Any, Literal, NewType, TypeAlias, TypeVar, final
 
 import aiohttp
 import attrs
@@ -33,6 +33,7 @@ else:
 
 __all__ = [
     "AnnotationStats",
+    "FileInfo",
     "PackageInfo",
     "PackageName",
     "PackageStatus",
@@ -41,12 +42,15 @@ __all__ = [
     "UploadStatus",
     "gather_annotation_stats_on_file",
     "gather_annotation_stats_on_package",
-    "gather_stats",
+    "gather_stats_on_file",
+    "gather_stats_on_multiple_packages",
     "gather_stats_on_package",
+    "get_number_of_lines_of_file",
     "get_package_extra_description",
     "get_package_size",
     "get_package_status",
-    "get_pyright_setting",
+    "get_pyright_setting_for_package",
+    "get_pyright_setting_for_path",
     "get_stubtest_platforms",
     "get_stubtest_setting",
     "get_upload_status",
@@ -54,6 +58,7 @@ __all__ = [
 ]
 
 PackageName: TypeAlias = str
+_AbsolutePath = NewType("_AbsolutePath", Path)
 _NiceReprEnumSelf = TypeVar("_NiceReprEnumSelf", bound="_NiceReprEnum")
 
 
@@ -306,19 +311,13 @@ def gather_annotation_stats_on_package(
         >>> mypy_extensions_stats.unannotated_parameters
         0
     """
-    package_directory = _get_package_directory(package_name, typeshed_dir)
-    file_results = [
-        gather_annotation_stats_on_file(path)
-        for path in package_directory.rglob("*.pyi")
-    ]
-    # Sum all the statistics together, to get the statistics for the package as a whole
-    #
-    # TODO: we're throwing away information here.
-    # It might be nice to have a way to get per-file stats, especially for the stdlib.
-    package_stats: Counter[str] = sum(
-        [Counter(attrs.asdict(result)) for result in file_results], start=Counter()
-    )
-    return AnnotationStats(**package_stats)
+    combined: Counter[str] = Counter()
+    annot_stats_fields = AnnotationStats.__annotations__
+    for path in _get_package_directory(package_name, typeshed_dir).rglob("*.pyi"):
+        file_stats = gather_annotation_stats_on_file(path)
+        for field in annot_stats_fields:
+            combined[field] += getattr(file_stats, field)
+    return AnnotationStats(**combined)
 
 
 @lru_cache
@@ -614,6 +613,20 @@ def get_upload_status(
             return UploadStatus.UPLOADED
 
 
+def get_number_of_lines_of_file(file_path: Path | str) -> int:
+    """Get the total number of lines of code for a single stubs file in typeshed.
+
+    Args:
+        file_path: A path to the file to analyse.
+
+    Returns:
+        The number of lines of code the stubs file contains,
+            excluding empty lines.
+    """
+    with open(file_path, encoding="utf-8") as file:
+        return sum(1 for line in file if line.strip())
+
+
 def get_package_size(package_name: PackageName, *, typeshed_dir: Path | str) -> int:
     """Get the total number of lines of code for a stubs package in typeshed.
 
@@ -635,7 +648,7 @@ def get_package_size(package_name: PackageName, *, typeshed_dir: Path | str) -> 
         True
     """
     return sum(
-        sum(1 for line in file.read_text(encoding="utf-8").splitlines() if line.strip())
+        get_number_of_lines_of_file(file)
         for file in _get_package_directory(package_name, typeshed_dir).rglob("*.pyi")
     )
 
@@ -683,24 +696,57 @@ def _child_of_path_is_listed(path: Path, path_list: Collection[Path]) -> bool:
     return any(path in listed_path.parents for listed_path in path_list)
 
 
-def get_pyright_setting(
+def get_pyright_setting_for_path(
+    file_path: Path | str, *, typeshed_dir: Path | str
+) -> PyrightSetting:
+    """Get the settings typeshed uses in CI when pyright is run on a certain path.
+
+    Args:
+        file_path: The path to query.
+        typeshed_dir: A path pointing to a typeshed directory,
+            from which to retrieve the pyright setting.
+
+    Returns:
+        A member of the [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]
+            enumeration (see the docs on `PyrightSetting` for details).
+    """
+    entirely_excluded_paths = _get_pyright_excludelist(
+        typeshed_dir=typeshed_dir, config_filename="pyrightconfig.json"
+    )
+    paths_excluded_from_stricter_check = _get_pyright_excludelist(
+        typeshed_dir=typeshed_dir, config_filename="pyrightconfig.stricter.json"
+    )
+    file_path = file_path if isinstance(file_path, Path) else Path(file_path)
+
+    if _path_or_path_ancestor_is_listed(file_path, entirely_excluded_paths):
+        return PyrightSetting.ENTIRELY_EXCLUDED
+    if _child_of_path_is_listed(file_path, entirely_excluded_paths):
+        return PyrightSetting.SOME_FILES_EXCLUDED
+    if _path_or_path_ancestor_is_listed(file_path, paths_excluded_from_stricter_check):
+        return PyrightSetting.NOT_STRICT
+    if _child_of_path_is_listed(file_path, paths_excluded_from_stricter_check):
+        return PyrightSetting.STRICT_ON_SOME_FILES
+    return PyrightSetting.STRICT
+
+
+def get_pyright_setting_for_package(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> PyrightSetting:
-    """Get the setting typeshed uses in CI when pyright is run on a certain package.
+    """Get the settings typeshed uses in CI when pyright is run on a certain package.
 
     Args:
         package_name: The name of the package to find the stubtest setting for.
         typeshed_dir: A path pointing to a typeshed directory,
-            from which to retrieve the stubtest setting.
+            from which to retrieve the pyright setting.
 
     Returns:
         A member of the [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]
             enumeration (see the docs on `PyrightSetting` for details).
 
     Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_pyright_setting
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_pyright_setting_for_package
         >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_setting = get_pyright_setting("stdlib", typeshed_dir=typeshed)
+        ...     stdlib_setting = get_pyright_setting_for_package("stdlib", typeshed_dir=typeshed)
         ...
         >>> stdlib_setting
         PyrightSetting.STRICT_ON_SOME_FILES
@@ -711,25 +757,10 @@ def get_pyright_setting(
             Some files are tested with the stricter pyright settings in CI; some are excluded.
         <BLANKLINE>
     """
-    package_directory = _get_package_directory(package_name, typeshed_dir)
-    entirely_excluded_paths = _get_pyright_excludelist(
-        typeshed_dir=typeshed_dir, config_filename="pyrightconfig.json"
+    return get_pyright_setting_for_path(
+        file_path=_get_package_directory(package_name, typeshed_dir),
+        typeshed_dir=typeshed_dir,
     )
-    paths_excluded_from_stricter_check = _get_pyright_excludelist(
-        typeshed_dir=typeshed_dir, config_filename="pyrightconfig.stricter.json"
-    )
-
-    if _path_or_path_ancestor_is_listed(package_directory, entirely_excluded_paths):
-        return PyrightSetting.ENTIRELY_EXCLUDED
-    if _child_of_path_is_listed(package_directory, entirely_excluded_paths):
-        return PyrightSetting.SOME_FILES_EXCLUDED
-    if _path_or_path_ancestor_is_listed(
-        package_directory, paths_excluded_from_stricter_check
-    ):
-        return PyrightSetting.NOT_STRICT
-    if _child_of_path_is_listed(package_directory, paths_excluded_from_stricter_check):
-        return PyrightSetting.STRICT_ON_SOME_FILES
-    return PyrightSetting.STRICT
 
 
 @final
@@ -800,14 +831,142 @@ async def gather_stats_on_package(
         stubtest_platforms=get_stubtest_platforms(
             package_name, typeshed_dir=typeshed_dir
         ),
-        pyright_setting=get_pyright_setting(package_name, typeshed_dir=typeshed_dir),
+        pyright_setting=get_pyright_setting_for_package(
+            package_name, typeshed_dir=typeshed_dir
+        ),
         annotation_stats=gather_annotation_stats_on_package(
             package_name, typeshed_dir=typeshed_dir
         ),
     )
 
 
-async def _gather_stats(
+@final
+@attrs.define
+class FileInfo:
+    """Statistics about a single .pyi file in typeshed."""
+
+    file_path: Annotated[Path, "A path relative to typeshed as a whole"]
+    parent_package: PackageName
+    number_of_lines: int
+    pyright_setting: PyrightSetting
+    annotation_stats: AnnotationStats
+
+
+@lru_cache
+def _normalize_typeshed_dir(typeshed_dir: Path | str) -> _AbsolutePath:
+    if isinstance(typeshed_dir, str):
+        typeshed_dir = Path(typeshed_dir)
+    elif not isinstance(typeshed_dir, Path):
+        raise TypeError(
+            "Expected str or Path argument for typeshed_dir, got"
+            f" {typeshed_dir.__class__.__name__!r}"
+        )
+    if not typeshed_dir.exists():
+        raise ValueError(f"{typeshed_dir} does not exist!")
+    if not typeshed_dir.is_dir():
+        raise ValueError(f"{typeshed_dir} is not a directory!")
+    return _AbsolutePath(typeshed_dir.absolute())
+
+
+@lru_cache
+def _normalize_file_path(
+    file_path: Path | str, typeshed_dir: _AbsolutePath
+) -> _AbsolutePath:
+    orig_file_path = file_path
+    if isinstance(file_path, str):
+        file_path = Path(file_path)
+    elif not isinstance(file_path, Path):
+        raise TypeError(
+            "Expected str or Path argument for file_path, got"
+            f" {file_path.__class__.__name__!r}"
+        )
+    if typeshed_dir in file_path.absolute().parents:
+        file_path = _AbsolutePath(file_path.absolute())
+    else:
+        file_path = _AbsolutePath(typeshed_dir / file_path)
+    if not file_path.exists():
+        raise ValueError(
+            f"'{orig_file_path}' does not exist as an absolute path or as a path"
+            " relative to typeshed"
+        )
+    if not file_path.is_file():
+        raise ValueError(f"'{orig_file_path}' exists, but does not point to a file")
+    file_path_suffix = file_path.suffix
+    if file_path_suffix != ".pyi":
+        raise ValueError(
+            f"Expected a path pointing to a .pyi file, got a {file_path_suffix!r} file"
+        )
+    return file_path
+
+
+def _get_parent_package(
+    file_path: _AbsolutePath, typeshed_dir: _AbsolutePath
+) -> PackageName:
+    if (typeshed_dir / "stdlib") in file_path.parents:
+        return "stdlib"
+    parent_path = next(  # pragma: no branch
+        path for path in (typeshed_dir / "stubs").iterdir() if path in file_path.parents
+    )
+    return parent_path.parts[-1]
+
+
+def gather_stats_on_file(
+    file_path: Path | str, *, typeshed_dir: Path | str
+) -> FileInfo:
+    """Gather stats on a single `.pyi` file in typeshed.
+
+    Args:
+        file_path: A path pointing to the file on which to gather stats.
+            This can be an absolute path,
+            or a path relative to the `typeshed_dir` argument.
+        typeshed_dir: A path pointing to the overall typeshed directory.
+            This can be an absolute or relative path.
+
+    Returns:
+        An instance of the [`FileInfo`][`typeshed_stats.gather.FileInfo`] class.
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, gather_stats_on_file
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     # Paths can be relative to typeshed_dir
+        ...     functools_info = gather_stats_on_file(
+        ...         "stdlib/functools.pyi", typeshed_dir=typeshed
+        ...     )
+        ...     # Absolute paths are also fine
+        ...     stubs_dir = typeshed / "stubs"
+        ...     requests_api_info = gather_stats_on_file(
+        ...         stubs_dir / "requests/requests/api.pyi", typeshed_dir=typeshed
+        ...     )
+        ...     # Gather per-file stats on a directory
+        ...     markdown_per_file_stats = [
+        ...         gather_stats_on_file(module, typeshed_dir=typeshed)
+        ...         for module in (stubs_dir / "Markdown").rglob("*.pyi")
+        ...     ]
+        >>> type(functools_info)
+        <class 'typeshed_stats.gather.FileInfo'>
+        >>> functools_info.parent_package
+        'stdlib'
+        >>> functools_info.file_path.as_posix()
+        'stdlib/functools.pyi'
+        >>> requests_api_info.parent_package
+        'requests'
+        >>> requests_api_info.file_path.as_posix()
+        'stubs/requests/requests/api.pyi'
+    """
+    typeshed_dir = _normalize_typeshed_dir(typeshed_dir)
+    file_path = _normalize_file_path(file_path, typeshed_dir)
+    return FileInfo(
+        file_path=Path(file_path).relative_to(typeshed_dir),
+        parent_package=_get_parent_package(file_path, typeshed_dir),
+        number_of_lines=get_number_of_lines_of_file(file_path),
+        pyright_setting=get_pyright_setting_for_path(
+            file_path, typeshed_dir=typeshed_dir
+        ),
+        annotation_stats=gather_annotation_stats_on_file(file_path),
+    )
+
+
+async def _gather_stats_on_multiple_packages(
     packages: Iterable[str], *, typeshed_dir: Path | str
 ) -> Sequence[PackageInfo]:
     conn = aiohttp.TCPConnector(limit_per_host=10)
@@ -821,7 +980,7 @@ async def _gather_stats(
         return await asyncio.gather(*tasks, return_exceptions=True)
 
 
-def gather_stats(
+def gather_stats_on_multiple_packages(
     packages: Iterable[str] | None = None, *, typeshed_dir: Path | str
 ) -> Sequence[PackageInfo]:
     """Concurrently gather statistics on multiple packages.
@@ -841,9 +1000,11 @@ def gather_stats(
             of a certain stubs package in typeshed.
 
     Examples:
-        >>> from typeshed_stats.gather import PackageInfo, tmpdir_typeshed, gather_stats
+        >>> from typeshed_stats.gather import PackageInfo, tmpdir_typeshed, gather_stats_on_multiple_packages
         >>> with tmpdir_typeshed() as typeshed:
-        ...     infos = gather_stats(["stdlib", "aiofiles", "boto"], typeshed_dir=typeshed)
+        ...     infos = gather_stats_on_multiple_packages(
+        ...         ["stdlib", "aiofiles", "boto"], typeshed_dir=typeshed
+        ...     )
         ...
         >>> [info.package_name for info in infos]
         ['aiofiles', 'boto', 'stdlib']
@@ -852,7 +1013,9 @@ def gather_stats(
     """
     if packages is None:
         packages = os.listdir(Path(typeshed_dir, "stubs")) + ["stdlib"]
-    results = asyncio.run(_gather_stats(packages, typeshed_dir=typeshed_dir))
+    results = asyncio.run(
+        _gather_stats_on_multiple_packages(packages, typeshed_dir=typeshed_dir)
+    )
     for result in results:
         if isinstance(result, BaseException):
             raise result

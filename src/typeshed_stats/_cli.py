@@ -12,8 +12,13 @@ from enum import Enum
 from pathlib import Path
 from typing import Annotated, Literal, TypeAlias, cast, get_args
 
-from .gather import PackageInfo, PackageName, gather_stats, tmpdir_typeshed
-from .serialize import stats_to_csv, stats_to_json, stats_to_markdown
+from typeshed_stats.gather import (
+    PackageInfo,
+    PackageName,
+    gather_stats_on_multiple_packages,
+    tmpdir_typeshed,
+)
+from typeshed_stats.serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
 __all__ = ["OutputOption", "SUPPORTED_EXTENSIONS", "main"]
 
@@ -309,7 +314,7 @@ def _run(argv: Sequence[str] | None = None) -> None:
         output_option = _determine_output_option(args, parser=parser)
 
         logger.info("Gathering stats...")
-        stats = gather_stats(packages, typeshed_dir=typeshed_dir)
+        stats = gather_stats_on_multiple_packages(packages, typeshed_dir=typeshed_dir)
 
     logger.info("Formatting stats...")
     formatted_stats = output_option.convert(stats)
