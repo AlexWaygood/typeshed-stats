@@ -192,8 +192,12 @@ def complete_typeshed(
         write_metadata_text(typeshed, package_name, "version = 0.1")
         source_dir = package_dir / package_name
         source_dir.mkdir()
-        (source_dir / "foo.pyi").write_text(example_stub_source, encoding="utf-8")
+        for filename in "foo", "bar", "spam", "spammy_spam", "ham", "eggs", "bacon":
+            path = source_dir / f"{filename}.pyi"
+            path.write_text(example_stub_source, encoding="utf-8")
 
+    functools_path = typeshed / "stdlib" / "functools.pyi"
+    functools_path.write_text(example_stub_source, encoding="utf-8")
     return typeshed
 
 

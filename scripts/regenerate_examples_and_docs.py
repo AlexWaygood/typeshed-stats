@@ -19,7 +19,11 @@ import attrs
 import tabulate
 
 import typeshed_stats.gather
-from typeshed_stats.gather import PackageInfo, gather_stats, tmpdir_typeshed
+from typeshed_stats.gather import (
+    PackageInfo,
+    gather_stats_on_multiple_packages,
+    tmpdir_typeshed,
+)
 from typeshed_stats.serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
 
@@ -166,7 +170,7 @@ def get_stats(args: argparse.Namespace) -> Sequence[PackageInfo]:  # type: ignor
             print("Cloning typeshed into a temporary directory...")
             args.typeshed_dir = stack.enter_context(tmpdir_typeshed())
         print("Gathering stats...")
-        return gather_stats(typeshed_dir=args.typeshed_dir)
+        return gather_stats_on_multiple_packages(typeshed_dir=args.typeshed_dir)
 
 
 def get_argument_parser() -> argparse.ArgumentParser:

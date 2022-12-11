@@ -49,12 +49,12 @@ def disabled_rich() -> Iterator[None]:
 
 
 @pytest.fixture
-def mocked_gather_stats(
+def mocked_gather_stats_on_multiple_packages(
     random_PackageInfo_sequence: Sequence[PackageInfo], mocker: MockerFixture
 ) -> None:
     mocker.patch.object(
         typeshed_stats._cli,
-        "gather_stats",
+        "gather_stats_on_multiple_packages",
         autospec=True,
         return_value=random_PackageInfo_sequence,
     )
@@ -130,7 +130,7 @@ def test_pprinting_conversion(
     assert result is not None
 
 
-@pytest.mark.usefixtures("mocked_gather_stats")
+@pytest.mark.usefixtures("mocked_gather_stats_on_multiple_packages")
 def test_each_output_option_has_code_written_for_it(
     args: list[str],
     capsys: pytest.CaptureFixture[str],
@@ -224,7 +224,7 @@ class TestPassingPackages:
         patches_to_apply = [
             ("get_package_status", PackageStatus.UP_TO_DATE),
             ("get_stubtest_setting", StubtestSetting.MISSING_STUBS_IGNORED),
-            ("get_pyright_setting", PyrightSetting.STRICT_ON_SOME_FILES),
+            ("get_pyright_setting_for_package", PyrightSetting.STRICT_ON_SOME_FILES),
             ("get_package_extra_description", None),
             ("get_upload_status", UploadStatus.UPLOADED),
             ("get_stubtest_platforms", ["linux"]),
@@ -290,7 +290,7 @@ def test_invalid_packages_given(
     assert_argparsing_fails(args + ["boto"], capsys=capsys, failure_message=message)
 
 
-@pytest.mark.usefixtures("mocked_gather_stats")
+@pytest.mark.usefixtures("mocked_gather_stats_on_multiple_packages")
 def test_passing_stdlib_as_package(args: list[str]) -> None:
     assert_returncode_0(args + ["stdlib"])
 
@@ -380,7 +380,7 @@ class TestToFileOptionFailureCases(ToFileOptionTestsBase):
         self._assert_fails_with_message(f'{file_name}" already exists!')
 
 
-@pytest.mark.usefixtures("mocked_gather_stats")
+@pytest.mark.usefixtures("mocked_gather_stats_on_multiple_packages")
 class TestToFileSuccessCases(ToFileOptionTestsBase):
     def _assert_args_succeed(self) -> None:
         assert_returncode_0(self._args)
@@ -489,7 +489,7 @@ class TestOutputOptionsToTerminalFailureCases(OutputOptionsPrintingToTerminalTes
         self._assert_fails_with_message("not allowed with argument")
 
 
-@pytest.mark.usefixtures("mocked_gather_stats", "disabled_rich")
+@pytest.mark.usefixtures("mocked_gather_stats_on_multiple_packages", "disabled_rich")
 class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTestsBase):
     def _assert_outputoption_works(self, option: str) -> None:
         args = self._args + [option]
@@ -576,7 +576,7 @@ def test_bad_log_argument(args: list[str], bad_arg: str) -> None:
     )
 
 
-@pytest.mark.usefixtures("mocked_gather_stats")
+@pytest.mark.usefixtures("mocked_gather_stats_on_multiple_packages")
 @pytest.mark.parametrize(
     ("logging_level", "logging_expected"),
     [
