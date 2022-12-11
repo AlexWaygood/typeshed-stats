@@ -30,6 +30,21 @@ Tools for gathering stats about typeshed packages.
 | `explicit_Incomplete_variables`  | `int`  |
 <hr>
 
+::: typeshed_stats.gather.FileInfo
+    options:
+      show_root_heading: true
+
+**Attributes:**
+
+| Name               | Type                                                                       |
+|--------------------|----------------------------------------------------------------------------|
+| `file_path`        | `typing.Annotated[pathlib.Path, 'A path relative to typeshed as a whole']` |
+| `parent_package`   | `str`                                                                      |
+| `number_of_lines`  | `int`                                                                      |
+| `pyright_setting`  | [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]                   |
+| `annotation_stats` | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats]                 |
+<hr>
+
 ::: typeshed_stats.gather.PackageInfo
     options:
       show_root_heading: true
@@ -123,13 +138,25 @@ Tools for gathering stats about typeshed packages.
 
 <hr>
 
-::: typeshed_stats.gather.gather_stats
+::: typeshed_stats.gather.gather_stats_on_file
+    options:
+      show_root_heading: true
+
+<hr>
+
+::: typeshed_stats.gather.gather_stats_on_multiple_packages
     options:
       show_root_heading: true
 
 <hr>
 
 ::: typeshed_stats.gather.gather_stats_on_package
+    options:
+      show_root_heading: true
+
+<hr>
+
+::: typeshed_stats.gather.get_number_of_lines_of_file
     options:
       show_root_heading: true
 
@@ -153,7 +180,13 @@ Tools for gathering stats about typeshed packages.
 
 <hr>
 
-::: typeshed_stats.gather.get_pyright_setting
+::: typeshed_stats.gather.get_pyright_setting_for_package
+    options:
+      show_root_heading: true
+
+<hr>
+
+::: typeshed_stats.gather.get_pyright_setting_for_path
     options:
       show_root_heading: true
 
