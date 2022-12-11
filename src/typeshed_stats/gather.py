@@ -923,7 +923,7 @@ def gather_stats_on_file(
             This can be an absolute or relative path.
 
     Returns:
-        An instance of the [`FileInfo`][`typeshed_stats.gather.FileInfo`] class.
+        An instance of the [`FileInfo`][typeshed_stats.gather.FileInfo] class.
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, gather_stats_on_file
