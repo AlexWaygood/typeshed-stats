@@ -115,6 +115,7 @@ def _get_help_formatter() -> type[argparse.HelpFormatter]:
                 "argparse.metavar": "dark_orange3",
             }
         )
+        HelpFormatter.group_name_formatter = str.title
     return HelpFormatter  # type: ignore[no-any-return]
 
 

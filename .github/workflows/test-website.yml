@@ -32,11 +32,12 @@ jobs:
       - name: Install wheel
         run: pip install "wheel<1"
       - name: Install requirements
+        # Install with the [rich] extra so the CLI docs generated from --help are consistent
         run: |
           pip install -r requirements/docs.txt
-          pip install -e .
+          pip install -e .[rich]
       - name: Regenerate examples and docs
-        run: python scripts/regenerate_examples_and_docs.py --download-typeshed
+        run: python scripts/regenerate.py --download-typeshed
       - name: Check the generated files with pre-commit
         uses: pre-commit/action@v3.0.0
       - name: Build docs
