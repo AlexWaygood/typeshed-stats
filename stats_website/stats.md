@@ -12,7 +12,7 @@ Typeshed currently contains stubs for 139 packages
 (including the stdlib stubs as a "single package"),
 for a total of 185,299 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>12:38 UTC on 2022-12-12</b>.</i>
+<i>Note: these statistics were last updated at: <b>21:53 UTC on 2022-12-12</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -376,7 +376,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-2353 (excluding blank lines)
+2,353 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -466,7 +466,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1039 (excluding blank lines)
+1,039 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -556,7 +556,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1168 (excluding blank lines)
+1,168 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -650,7 +650,7 @@ The `sqlalchemy-stubs` package is an alternative to this package and also includ
 
 ### Number of lines
 
-14545 (excluding blank lines)
+14,545 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -675,18 +675,18 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `SQLAlchemy`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2191
-    - Unannotated parameters: 7020
-    - Explicit `Any` parameters: 1202
+    - Annotated parameters: 2,191
+    - Unannotated parameters: 7,020
+    - Explicit `Any` parameters: 1,202
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
-    - Annotated returns: 2157
-    - Unannotated returns: 3321
+    - Annotated returns: 2,157
+    - Unannotated returns: 3,321
     - Explicit `Any` returns: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 3114
-    - Explicit `Any` variables: 2065
+    - Annotated variables: 3,114
+    - Explicit `Any` variables: 2,065
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
 <hr>
@@ -920,7 +920,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-1046 (excluding blank lines)
+1,046 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1100,7 +1100,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-1803 (excluding blank lines)
+1,803 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1145,7 +1145,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-2833 (excluding blank lines)
+2,833 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1180,7 +1180,7 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 1301
+    - Annotated variables: 1,301
     - Explicit `Any` variables: 432
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -1685,7 +1685,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1742 (excluding blank lines)
+1,742 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -1818,9 +1818,9 @@ All files are tested with the stricter pyright settings in CI.
 
 24 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -2536,7 +2536,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-2001 (excluding blank lines)
+2,001 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2626,7 +2626,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1397 (excluding blank lines)
+1,397 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3031,7 +3031,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-2586 (excluding blank lines)
+2,586 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3166,7 +3166,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1213 (excluding blank lines)
+1,213 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3211,7 +3211,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-1296 (excluding blank lines)
+1,296 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3256,7 +3256,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-8979 (excluding blank lines)
+8,979 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3281,9 +3281,9 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2597
+    - Annotated parameters: 2,597
     - Unannotated parameters: 660
-    - Explicit `Any` parameters: 2218
+    - Explicit `Any` parameters: 2,218
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 744
@@ -3291,8 +3291,8 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicit `Any` returns: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 4197
-    - Explicit `Any` variables: 3566
+    - Annotated variables: 4,197
+    - Explicit `Any` variables: 3,566
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
 <hr>
@@ -3391,7 +3391,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1749 (excluding blank lines)
+1,749 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3481,7 +3481,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1740 (excluding blank lines)
+1,740 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3571,7 +3571,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1608 (excluding blank lines)
+1,608 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3661,7 +3661,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-2150 (excluding blank lines)
+2,150 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3845,7 +3845,7 @@ Generated with aid from mypy-protobuf v3.4.0
 
 ### Number of lines
 
-4280 (excluding blank lines)
+4,280 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3890,7 +3890,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-1506 (excluding blank lines)
+1,506 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3935,7 +3935,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-1552 (excluding blank lines)
+1,552 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4745,7 +4745,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-5396 (excluding blank lines)
+5,396 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4770,7 +4770,7 @@ All files are tested with the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `python-xlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1335
+    - Annotated parameters: 1,335
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -4780,7 +4780,7 @@ All files are tested with the stricter pyright settings in CI.
     - Explicit `Any` returns: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 3527
+    - Annotated variables: 3,527
     - Explicit `Any` variables: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -4880,7 +4880,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-34530 (excluding blank lines)
+34,530 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4905,19 +4905,19 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3635
-    - Unannotated parameters: 3729
+    - Annotated parameters: 3,635
+    - Unannotated parameters: 3,729
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 426
 - Returns:
-    - Annotated returns: 3825
-    - Unannotated returns: 2043
+    - Annotated returns: 3,825
+    - Unannotated returns: 2,043
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 292
 - Variables:
-    - Annotated variables: 25012
+    - Annotated variables: 25,012
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2832
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,832
 
 <hr>
 
@@ -4925,7 +4925,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-5336 (excluding blank lines)
+5,336 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4950,12 +4950,12 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `redis`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3462
-    - Unannotated parameters: 1300
+    - Annotated parameters: 3,462
+    - Unannotated parameters: 1,300
     - Explicit `Any` parameters: 318
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 88
 - Returns:
-    - Annotated returns: 1265
+    - Annotated returns: 1,265
     - Unannotated returns: 657
     - Explicit `Any` returns: 317
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
@@ -5105,7 +5105,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-2433 (excluding blank lines)
+2,433 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5330,7 +5330,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-50858 (excluding blank lines)
+50,858 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -5355,17 +5355,17 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 ### Statistics on the annotations in typeshed's stubs for `stdlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24384
+    - Annotated parameters: 24,384
     - Unannotated parameters: 713
-    - Explicit `Any` parameters: 2118
+    - Explicit `Any` parameters: 2,118
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13295
+    - Annotated returns: 13,295
     - Unannotated returns: 405
     - Explicit `Any` returns: 817
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8068
+    - Annotated variables: 8,068
     - Explicit `Any` variables: 556
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
 
@@ -5420,7 +5420,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1414 (excluding blank lines)
+1,414 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -5645,7 +5645,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1333 (excluding blank lines)
+1,333 (excluding blank lines)
 
 ### Package status: *up to date*
 
