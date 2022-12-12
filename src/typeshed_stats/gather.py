@@ -15,7 +15,7 @@ from functools import lru_cache, partial
 from itertools import chain
 from operator import attrgetter
 from pathlib import Path
-from typing import Annotated, Any, Literal, NewType, TypeAlias, TypeVar, final
+from typing import Any, Literal, NewType, TypeAlias, TypeVar, final
 
 import aiohttp
 import attrs
@@ -59,6 +59,7 @@ __all__ = [
 
 PackageName: TypeAlias = str
 _AbsolutePath = NewType("_AbsolutePath", Path)
+_PathRelativeToTypeshed: TypeAlias = Path
 _NiceReprEnumSelf = TypeVar("_NiceReprEnumSelf", bound="_NiceReprEnum")
 
 
@@ -845,7 +846,7 @@ async def gather_stats_on_package(
 class FileInfo:
     """Statistics about a single .pyi file in typeshed."""
 
-    file_path: Annotated[Path, "A path relative to typeshed as a whole"]
+    file_path: _PathRelativeToTypeshed
     parent_package: PackageName
     number_of_lines: int
     pyright_setting: PyrightSetting

@@ -1,22 +1,26 @@
 """Tools for serializing and deserializing [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects."""
 
 from collections.abc import Sequence
-from functools import cache
 from operator import attrgetter
+from pathlib import Path
+from typing import overload
 
 import attrs
 import cattrs
 
 from typeshed_stats.gather import (
     AnnotationStats,
+    FileInfo,
     PackageInfo,
     StubtestSetting,
     _NiceReprEnum,
 )
 
 __all__ = [
-    "stats_from_csv",
-    "stats_from_json",
+    "file_stats_from_csv",
+    "file_stats_from_json",
+    "package_stats_from_csv",
+    "package_stats_from_json",
     "stats_to_csv",
     "stats_to_json",
     "stats_to_markdown",
@@ -27,10 +31,12 @@ _unstructure = _CATTRS_CONVERTER.unstructure
 _structure = _CATTRS_CONVERTER.structure
 
 _CATTRS_CONVERTER.register_unstructure_hook(_NiceReprEnum, attrgetter("name"))
+_CATTRS_CONVERTER.register_unstructure_hook(Path, Path.as_posix)
 _CATTRS_CONVERTER.register_structure_hook(_NiceReprEnum, lambda d, t: t[d])  # type: ignore[index,no-any-return]
+_CATTRS_CONVERTER.register_structure_hook(Path, lambda d, t: Path(d))
 
 
-def stats_to_json(stats: Sequence[PackageInfo]) -> str:
+def stats_to_json(stats: Sequence[PackageInfo | FileInfo]) -> str:
     """Convert stats on multiple stubs packages to JSON format.
 
     Args:
@@ -44,8 +50,8 @@ def stats_to_json(stats: Sequence[PackageInfo]) -> str:
     return json.dumps(_unstructure(stats), indent=2) + "\n"
 
 
-def stats_from_json(data: str) -> list[PackageInfo]:
-    """Load `PackageInfo` objects from JSON format.
+def package_stats_from_json(data: str) -> list[PackageInfo]:
+    """Load [`PackageInfo`][typeshed_stast.gather.PackageInfo] objects from JSON format.
 
     Args:
         data: A JSON string.
@@ -59,7 +65,22 @@ def stats_from_json(data: str) -> list[PackageInfo]:
     return _structure(json.loads(data), list[PackageInfo])
 
 
-def stats_to_csv(stats: Sequence[PackageInfo]) -> str:
+def file_stats_from_json(data: str) -> list[FileInfo]:
+    """Load [`FileInfo`][typeshed_stats.gather.FileInfo] objects from JSON format.
+
+    Args:
+        data: A JSON string.
+
+    Returns:
+        The statistics deserialized into
+            [`FileInfo`][typeshed_stats.gather.FileInfo] objects.
+    """
+    import json
+
+    return _structure(json.loads(data), list[FileInfo])
+
+
+def stats_to_csv(stats: Sequence[PackageInfo | FileInfo]) -> str:
     """Convert stats on multiple stubs packages to csv format.
 
     Args:
@@ -75,13 +96,17 @@ def stats_to_csv(stats: Sequence[PackageInfo]) -> str:
     for info in converted_stats:
         info |= info["annotation_stats"]
         del info["annotation_stats"]
-        stubtest_platforms = info["stubtest_platforms"]
-        if not stubtest_platforms:
-            info["stubtest_platforms"] = "None"
-        else:
-            info["stubtest_platforms"] = ";".join(stubtest_platforms)
-        if info["extra_description"] is None:
-            info["extra_description"] = "-"
+
+        # This section is specific to PackageInfo objects
+        if "stubtest_platforms" in info:
+            stubtest_platforms = info["stubtest_platforms"]
+            if not stubtest_platforms:
+                info["stubtest_platforms"] = "None"
+            else:
+                info["stubtest_platforms"] = ";".join(stubtest_platforms)
+            if info["extra_description"] is None:
+                info["extra_description"] = "-"
+
     fieldnames = converted_stats[0].keys()
     csvfile = io.StringIO(newline="")
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -91,13 +116,47 @@ def stats_to_csv(stats: Sequence[PackageInfo]) -> str:
     return csvfile.getvalue()
 
 
-@cache
-def _annotation_stats_fields() -> tuple[str, ...]:
-    return tuple(f.name for f in attrs.fields(AnnotationStats))
+@overload
+def _stats_from_csv(data: str, cls: type[PackageInfo]) -> list[PackageInfo]:
+    ...
 
 
-def stats_from_csv(data: str) -> list[PackageInfo]:
-    """Load `PackageInfo` objects from csv format.
+@overload
+def _stats_from_csv(data: str, cls: type[FileInfo]) -> list[FileInfo]:
+    ...
+
+
+def _stats_from_csv(
+    data: str, cls: type[PackageInfo | FileInfo]
+) -> list[PackageInfo] | list[FileInfo]:
+    import csv
+    import io
+
+    csvfile = io.StringIO(data, newline="")
+    stats = list(csv.DictReader(csvfile))
+    converted_stats = []
+    for stat in stats:
+        converted_stat, annotation_stats = {}, {}
+        for key, val in stat.items():
+            if key in AnnotationStats.__annotations__:
+                annotation_stats[key] = val
+            else:
+                converted_stat[key] = val
+        converted_stat["annotation_stats"] = annotation_stats
+        if cls is PackageInfo:
+            stubtest_platforms = converted_stat["stubtest_platforms"]
+            if stubtest_platforms == "None":
+                converted_stat["stubtest_platforms"] = []
+            else:
+                converted_stat["stubtest_platforms"] = stubtest_platforms.split(";")
+            if converted_stat["extra_description"] == "-":
+                converted_stat["extra_description"] = None
+        converted_stats.append(converted_stat)
+    return _structure(converted_stats, list[cls])  # type: ignore[valid-type]
+
+
+def package_stats_from_csv(data: str) -> list[PackageInfo]:
+    """Load [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects from csv format.
 
     Args:
         data: A CSV string.
@@ -106,30 +165,20 @@ def stats_from_csv(data: str) -> list[PackageInfo]:
         The statistics deserialized into
             [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects.
     """
-    import csv
-    import io
+    return _stats_from_csv(data, cls=PackageInfo)
 
-    csvfile = io.StringIO(data, newline="")
-    stats = list(csv.DictReader(csvfile))
-    annotation_stats_fields = _annotation_stats_fields()
-    converted_stats = []
-    for stat in stats:
-        converted_stat, annotation_stats = {}, {}
-        for key, val in stat.items():
-            if key in annotation_stats_fields:
-                annotation_stats[key] = val
-            else:
-                converted_stat[key] = val
-        converted_stat["annotation_stats"] = annotation_stats
-        stubtest_platforms = converted_stat["stubtest_platforms"]
-        if stubtest_platforms == "None":
-            converted_stat["stubtest_platforms"] = []
-        else:
-            converted_stat["stubtest_platforms"] = stubtest_platforms.split(";")
-        if converted_stat["extra_description"] == "-":
-            converted_stat["extra_description"] = None
-        converted_stats.append(converted_stat)
-    return _structure(converted_stats, list[PackageInfo])
+
+def file_stats_from_csv(data: str) -> list[FileInfo]:
+    """Load [`FileInfo`][typeshed_stats.gather.FileInfo] objects from csv format.
+
+    Args:
+        data: A CSV string.
+
+    Returns:
+        The statistics deserialized into
+            [`FileInfo`][typeshed_stats.gather.FileInfo] objects.
+    """
+    return _stats_from_csv(data, cls=FileInfo)
 
 
 def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
