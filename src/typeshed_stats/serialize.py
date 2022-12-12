@@ -149,7 +149,7 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         {extra_description_section}
         ### Number of lines
 
-        {number_of_lines} (excluding blank lines)
+        {number_of_lines:,} (excluding blank lines)
 
         ### Package status: *{package_status.formatted_name}*
 
@@ -170,19 +170,19 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         ### Statistics on the annotations in typeshed's stubs for `{package_name}`
 
         - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-            - Annotated parameters: {annotated_parameters}
-            - Unannotated parameters: {unannotated_parameters}
-            - Explicit `Any` parameters: {explicit_Any_parameters}
-            - Explicitly `Incomplete` (or partially `Incomplete`) parameters: {explicit_Incomplete_parameters}
+            - Annotated parameters: {annotated_parameters:,}
+            - Unannotated parameters: {unannotated_parameters:,}
+            - Explicit `Any` parameters: {explicit_Any_parameters:,}
+            - Explicitly `Incomplete` (or partially `Incomplete`) parameters: {explicit_Incomplete_parameters:,}
         - Returns:
-            - Annotated returns: {annotated_returns}
-            - Unannotated returns: {unannotated_returns}
-            - Explicit `Any` returns: {explicit_Any_returns}
-            - Explicitly `Incomplete` (or partially `Incomplete`) returns: {explicit_Incomplete_returns}
+            - Annotated returns: {annotated_returns:,}
+            - Unannotated returns: {unannotated_returns:,}
+            - Explicit `Any` returns: {explicit_Any_returns:,}
+            - Explicitly `Incomplete` (or partially `Incomplete`) returns: {explicit_Incomplete_returns:,}
         - Variables:
-            - Annotated variables: {annotated_variables}
-            - Explicit `Any` variables: {explicit_Any_variables}
-            - Explicitly `Incomplete` (or partially `Incomplete`) variables: {explicit_Incomplete_variables}
+            - Annotated variables: {annotated_variables:,}
+            - Explicit `Any` variables: {explicit_Any_variables:,}
+            - Explicitly `Incomplete` (or partially `Incomplete`) variables: {explicit_Incomplete_variables:,}
         """
     )
 

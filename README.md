@@ -46,7 +46,7 @@ with tmpdir_typeshed() as typeshed:
 ## Are there any examples of things this script can produce, other than [the website](https://alexwaygood.github.io/typeshed-stats/)?
 
 I'm glad you asked! They're in the `examples/` folder in this repo.
-(These examples are generated using the `regenerate_examples.py` script in the `scripts/` directory.)
+(These examples are generated using the `regenerate.py` script in the `scripts/` directory.)
 
 ## How do I run tests/linters?
 
