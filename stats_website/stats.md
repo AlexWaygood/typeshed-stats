@@ -10,9 +10,9 @@ hide:
 
 Typeshed currently contains stubs for 139 packages
 (including the stdlib stubs as a "single package"),
-for a total of 185,299 non-empty lines of code.
+for a total of 185,316 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>01:42 UTC on 2022-12-14</b>.</i>
+<i>Note: these statistics were last updated at: <b>12:38 UTC on 2022-12-14</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -652,9 +652,9 @@ The `sqlalchemy-stubs` package is an alternative to this package and also includ
 
 14,545 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Upload status: *uploaded*
 
@@ -675,19 +675,19 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `SQLAlchemy`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,191
-    - Unannotated parameters: 7,020
-    - Explicit `Any` parameters: 1,202
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
+    - Annotated parameters: 2,192
+    - Unannotated parameters: 7,019
+    - Explicit `Any` parameters: 1,168
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 37
 - Returns:
-    - Annotated returns: 2,157
-    - Unannotated returns: 3,321
+    - Annotated returns: 2,158
+    - Unannotated returns: 3,319
     - Explicit `Any` returns: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 3,114
-    - Explicit `Any` variables: 2,065
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 2,062
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 
 <hr>
 
@@ -1816,11 +1816,11 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-24 (excluding blank lines)
+37 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1841,17 +1841,17 @@ All files are tested with the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `dj-database-url`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 9
+    - Annotated parameters: 13
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
     - Annotated returns: 2
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 16
+    - Annotated variables: 15
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -1861,11 +1861,11 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-111 (excluding blank lines)
+109 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1896,7 +1896,7 @@ All files are tested with the stricter pyright settings in CI.
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 39
+    - Annotated variables: 38
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -3659,6 +3659,10 @@ All files are tested with the stricter pyright settings in CI.
 
 ## Info on typeshed's stubs for `pika`
 
+### Extra description
+
+The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.
+
 ### Number of lines
 
 2,150 (excluding blank lines)
@@ -3667,9 +3671,9 @@ All files are tested with the stricter pyright settings in CI.
 
 These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
-### Upload status: *not currently uploaded*
+### Upload status: *uploaded*
 
-These stubs are not currently uploaded to PyPI.
+These stubs are currently uploaded to PyPI.
 
 ### Stubtest settings in CI: *error on missing stub*
 
@@ -5330,7 +5334,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-50,858 (excluding blank lines)
+50,864 (excluding blank lines)
 
 ### Package status: *stdlib*
 
