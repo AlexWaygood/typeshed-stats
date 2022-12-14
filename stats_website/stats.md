@@ -12,7 +12,7 @@ Typeshed currently contains stubs for 139 packages
 (including the stdlib stubs as a "single package"),
 for a total of 185,299 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>12:38 UTC on 2022-12-13</b>.</i>
+<i>Note: these statistics were last updated at: <b>01:42 UTC on 2022-12-14</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -1863,9 +1863,9 @@ All files are tested with the stricter pyright settings in CI.
 
 111 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -2561,14 +2561,14 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `fpdf2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 573
-    - Unannotated parameters: 527
-    - Explicit `Any` parameters: 10
+    - Annotated parameters: 578
+    - Unannotated parameters: 522
+    - Explicit `Any` parameters: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 58
 - Returns:
-    - Annotated returns: 364
-    - Unannotated returns: 198
-    - Explicit `Any` returns: 1
+    - Annotated returns: 369
+    - Unannotated returns: 193
+    - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
     - Annotated variables: 625
