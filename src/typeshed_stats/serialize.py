@@ -53,7 +53,7 @@ def stats_to_json(stats: Sequence[PackageInfo | FileInfo]) -> str:
 
 
 def package_stats_from_json(data: str) -> list[PackageInfo]:
-    """Load [`PackageInfo`][typeshed_stast.gather.PackageInfo] objects from JSON format.
+    """Load [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects from JSON format.
 
     Args:
         data: A JSON string.
