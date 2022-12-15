@@ -10,9 +10,9 @@ hide:
 
 Typeshed currently contains stubs for 139 packages
 (including the stdlib stubs as a "single package"),
-for a total of 185,316 non-empty lines of code.
+for a total of 185,348 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>12:38 UTC on 2022-12-14</b>.</i>
+<i>Note: these statistics were last updated at: <b>01:44 UTC on 2022-12-15</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -2896,7 +2896,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-153 (excluding blank lines)
+172 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2921,18 +2921,18 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `jmespath`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 11
-    - Unannotated parameters: 122
-    - Explicit `Any` parameters: 7
+    - Annotated parameters: 67
+    - Unannotated parameters: 66
+    - Explicit `Any` parameters: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 22
-    - Unannotated returns: 52
+    - Annotated returns: 49
+    - Unannotated returns: 25
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 41
-    - Explicit `Any` variables: 37
+    - Annotated variables: 48
+    - Explicit `Any` variables: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
 <hr>
@@ -3665,7 +3665,7 @@ The `types-pika` package contains alternate, more complete type stubs, that are 
 
 ### Number of lines
 
-2,150 (excluding blank lines)
+2,163 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3690,19 +3690,19 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `pika`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 588
-    - Unannotated parameters: 413
+    - Annotated parameters: 591
+    - Unannotated parameters: 410
     - Explicit `Any` parameters: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 168
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 165
 - Returns:
-    - Annotated returns: 358
-    - Unannotated returns: 401
+    - Annotated returns: 368
+    - Unannotated returns: 392
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
 - Variables:
-    - Annotated variables: 471
+    - Annotated variables: 470
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 265
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 262
 
 <hr>
 
