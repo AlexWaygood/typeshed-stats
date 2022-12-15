@@ -26,9 +26,9 @@ if sys.version_info < (3, 10):
     raise ImportError("Python 3.10+ is required!")
 
 if sys.version_info >= (3, 11):
-    import tomllib  # pragma: no cover
+    import tomllib  # pragma: >=3.11 cover
 else:
-    import tomli as tomllib  # pragma: no cover
+    import tomli as tomllib  # pragma: <3.9 cover
 
 
 __all__ = [
