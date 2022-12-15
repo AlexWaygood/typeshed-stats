@@ -5316,7 +5316,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-50,864 (excluding blank lines)
+50,872 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -5351,7 +5351,7 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
     - Explicit `Any` returns: 817
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,068
+    - Annotated variables: 8,070
     - Explicit `Any` variables: 556
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
 
