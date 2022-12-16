@@ -1,4 +1,5 @@
 beautifulsoup4>=4,<5
+covdefaults==2.2.2
 coverage>=6,<7
 Markdown>=3,<4
 pytest>=7,<8

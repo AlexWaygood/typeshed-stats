@@ -7,11 +7,11 @@ from pathlib import Path
 
 # Make sure not to import rich or markdown here, since they're optional dependencies
 # Some tests assert behaviour that's predicated on these modules not yet being imported
-import attrs
 import pytest
 
 from typeshed_stats.gather import (
     AnnotationStats,
+    FileInfo,
     PackageInfo,
     PackageStatus,
     PyrightSetting,
@@ -203,44 +203,61 @@ def complete_typeshed(
 
 @pytest.fixture(scope="session")
 def AnnotationStats_fieldnames() -> tuple[str, ...]:
-    return tuple(field.name for field in attrs.fields(AnnotationStats))
+    return tuple(AnnotationStats.__annotations__)
+
+
+def random_identifier() -> str:
+    return "".join(
+        random.choice(string.ascii_letters) for _ in range(random.randint(1, 10))
+    )
+
+
+def random_AnnotationStats() -> AnnotationStats:
+    return AnnotationStats(
+        *[random.randint(0, 1000) for _ in AnnotationStats.__annotations__]
+    )
+
+
+def random_PackageInfo() -> PackageInfo:
+    stubtest_setting = random.choice(list(StubtestSetting))
+    if stubtest_setting is StubtestSetting.SKIPPED:
+        stubtest_platforms = []
+    else:
+        stubtest_platforms = [random.choice(["win32", "darwin", "linux"])]
+    return PackageInfo(
+        package_name=random_identifier(),
+        extra_description=None,
+        number_of_lines=random.randint(10, 500),
+        package_status=random.choice(list(PackageStatus)),
+        stubtest_setting=stubtest_setting,
+        stubtest_platforms=stubtest_platforms,
+        upload_status=random.choice(list(UploadStatus)),
+        pyright_setting=random.choice(list(PyrightSetting)),
+        annotation_stats=random_AnnotationStats(),
+    )
+
+
+def random_FileInfo() -> FileInfo:
+    package_name = random_identifier()
+    return FileInfo(
+        file_path=Path(
+            "stubs", package_name, package_name, f"{random_identifier()}.pyi"
+        ),
+        parent_package=package_name,
+        number_of_lines=random.randint(10, 500),
+        pyright_setting=random.choice(list(PyrightSetting)),
+        annotation_stats=random_AnnotationStats(),
+    )
 
 
 @pytest.fixture
-def make_random_PackageInfo(
-    AnnotationStats_fieldnames: tuple[str, ...]
-) -> Callable[[], PackageInfo]:
-    def random_PackageInfo() -> PackageInfo:
-        stubtest_setting = random.choice(list(StubtestSetting))
-        if stubtest_setting is StubtestSetting.SKIPPED:
-            stubtest_platforms = []
-        else:
-            stubtest_platforms = [random.choice(["win32", "darwin", "linux"])]
-        return PackageInfo(
-            package_name="".join(
-                random.choice(string.ascii_letters)
-                for _ in range(random.randint(1, 10))
-            ),
-            extra_description=None,
-            number_of_lines=random.randint(10, 500),
-            package_status=random.choice(list(PackageStatus)),
-            stubtest_setting=stubtest_setting,
-            stubtest_platforms=stubtest_platforms,
-            upload_status=random.choice(list(UploadStatus)),
-            pyright_setting=random.choice(list(PyrightSetting)),
-            annotation_stats=AnnotationStats(
-                *[random.randint(0, 1000) for _ in AnnotationStats_fieldnames]
-            ),
-        )
-
-    return random_PackageInfo
+def random_PackageInfo_sequence() -> Sequence[PackageInfo]:
+    return [random_PackageInfo() for _ in range(random.randint(3, 10))]
 
 
 @pytest.fixture
-def random_PackageInfo_sequence(
-    make_random_PackageInfo: Callable[[], PackageInfo]
-) -> Sequence[PackageInfo]:
-    return [make_random_PackageInfo() for _ in range(random.randint(3, 10))]
+def random_FileInfo_sequence() -> Sequence[FileInfo]:
+    return [random_FileInfo() for _ in range(random.randint(3, 10))]
 
 
 @pytest.fixture(params=[True, False], ids=["use_string_path", "use_pathlib_path"])

@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 
 from typeshed_stats.gather import (
     AnnotationStats,
+    FileInfo,
     PackageInfo,
     PackageStatus,
     PyrightSetting,
@@ -17,15 +18,17 @@ from typeshed_stats.gather import (
     UploadStatus,
 )
 from typeshed_stats.serialize import (
-    stats_from_csv,
-    stats_from_json,
+    file_stats_from_csv,
+    file_stats_from_json,
+    package_stats_from_csv,
+    package_stats_from_json,
     stats_to_csv,
     stats_to_json,
     stats_to_markdown,
 )
 
 
-def test_conversion_to_and_from_json(
+def test_PackageInfo_conversion_to_and_from_json(
     random_PackageInfo_sequence: Sequence[PackageInfo],
 ) -> None:
     converted = stats_to_json(random_PackageInfo_sequence)
@@ -35,8 +38,22 @@ def test_conversion_to_and_from_json(
     lst = json.loads(converted)
     assert isinstance(lst, list)
     assert all(isinstance(item, dict) and "package_name" in item for item in lst)
-    new_package_stats = stats_from_json(converted)
+    new_package_stats = package_stats_from_json(converted)
     assert new_package_stats == random_PackageInfo_sequence
+
+
+def test_FileInfo_conversion_to_and_from_json(
+    random_FileInfo_sequence: Sequence[FileInfo],
+) -> None:
+    converted = stats_to_json(random_FileInfo_sequence)
+    assert converted[-1] == "\n"
+    assert converted[-2] != "\n"
+    assert isinstance(converted, str)
+    lst = json.loads(converted)
+    assert isinstance(lst, list)
+    assert all(isinstance(item, dict) and "parent_package" in item for item in lst)
+    new_package_stats = file_stats_from_json(converted)
+    assert new_package_stats == random_FileInfo_sequence
 
 
 @pytest.fixture
@@ -60,7 +77,7 @@ def unusual_packages() -> list[PackageInfo]:
     return [pkg1, pkg2, pkg3]
 
 
-def test_conversion_to_and_from_csv(
+def test_PackageInfo_conversion_to_and_from_csv(
     random_PackageInfo_sequence: Sequence[PackageInfo],
     unusual_packages: list[PackageInfo],
 ) -> None:
@@ -79,8 +96,29 @@ def test_conversion_to_and_from_csv(
         int(first_row["annotated_parameters"])
         == first_PackageInfo_item.annotation_stats.annotated_parameters
     )
-    new_list_of_info = stats_from_csv(converted)
+    new_list_of_info = package_stats_from_csv(converted)
     assert new_list_of_info == list_of_info
+
+
+def test_FileInfo_conversion_to_and_from_csv(
+    random_FileInfo_sequence: Sequence[FileInfo],
+) -> None:
+    converted = stats_to_csv(random_FileInfo_sequence)
+    assert isinstance(converted, str)
+    with io.StringIO(converted, newline="") as csvfile:
+        reader = csv.DictReader(csvfile)
+        first_row = next(iter(reader))
+    assert isinstance(first_row, dict)
+    assert "parent_package" in first_row
+    first_FileInfo_item = random_FileInfo_sequence[0]
+    assert first_row["parent_package"] == first_FileInfo_item.parent_package
+    assert "annotated_parameters" in first_row
+    assert (
+        int(first_row["annotated_parameters"])
+        == first_FileInfo_item.annotation_stats.annotated_parameters
+    )
+    new_list_of_info = file_stats_from_csv(converted)
+    assert new_list_of_info == random_FileInfo_sequence
 
 
 def test_markdown_and_htmlconversion(

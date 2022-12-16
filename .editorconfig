@@ -1,12 +1,12 @@
 root = true
 
-[*.{py,rst,md,yml,yaml,toml,json}]
+[*.{py,rst,md,yml,yaml,toml,json,coveragerc,gitattributes,flake8}]
 trim_trailing_whitespace = true
 insert_final_newline = true
 indent_style = space
 
-[*.{py,toml,json}]
+[*.{py,toml,json,coveragerc}]
 indent_size = 4
 
-[*.{yml,yaml}]
+[*.{yml,yaml,flake8}]
 indent_size = 2
