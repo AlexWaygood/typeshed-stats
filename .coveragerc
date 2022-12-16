@@ -1,8 +1,0 @@
-[run]
-# Note that many settings are automatically added due to this plugin
-plugins = covdefaults
-source=src/typeshed_stats,tests
-relative_files = True
-
-[covdefaults]
-subtract_omit = */__main__.py

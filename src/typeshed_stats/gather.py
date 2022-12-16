@@ -28,7 +28,7 @@ if sys.version_info < (3, 10):
 if sys.version_info >= (3, 11):
     import tomllib  # pragma: >=3.11 cover
 else:
-    import tomli as tomllib  # pragma: <3.9 cover
+    import tomli as tomllib  # pragma: <3.11 cover
 
 
 __all__ = [

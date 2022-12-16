@@ -89,3 +89,12 @@ filterwarnings = [
     # Ignore ResourceWarnings about unclosed sockets
     'ignore:Exception ignored in:pytest.PytestUnraisableExceptionWarning',
 ]
+
+[tool.coverage.run]
+# Note that many settings are automatically added due to this plugin
+plugins = ["covdefaults"]
+source = ["src/typeshed_stats", "tests"]
+relative_files = true
+
+[tool.coverage.covdefaults]
+subtract_omit = "*/__main__.py"
