@@ -36,13 +36,13 @@ Tools for gathering stats about typeshed packages.
 
 **Attributes:**
 
-| Name               | Type                                                                       |
-|--------------------|----------------------------------------------------------------------------|
-| `file_path`        | `typing.Annotated[pathlib.Path, 'A path relative to typeshed as a whole']` |
-| `parent_package`   | `str`                                                                      |
-| `number_of_lines`  | `int`                                                                      |
-| `pyright_setting`  | [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]                   |
-| `annotation_stats` | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats]                 |
+| Name               | Type                                                       |
+|--------------------|------------------------------------------------------------|
+| `file_path`        | `Path`                                                     |
+| `parent_package`   | `str`                                                      |
+| `number_of_lines`  | `int`                                                      |
+| `pyright_setting`  | [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]   |
+| `annotation_stats` | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] |
 <hr>
 
 ::: typeshed_stats.gather.PackageInfo
