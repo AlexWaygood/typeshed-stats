@@ -2956,7 +2956,7 @@
   {
     "package_name": "stdlib",
     "extra_description": null,
-    "number_of_lines": 50872,
+    "number_of_lines": 50866,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",

@@ -10,9 +10,9 @@ hide:
 
 Typeshed currently contains stubs for 139 packages
 (including the stdlib stubs as a "single package"),
-for a total of 185,356 non-empty lines of code.
+for a total of 185,350 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>13:36 UTC on 2022-12-16</b>.</i>
+<i>Note: these statistics were last updated at: <b>14:10 UTC on 2022-12-16</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -5334,7 +5334,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-50,872 (excluding blank lines)
+50,866 (excluding blank lines)
 
 ### Package status: *stdlib*
 
