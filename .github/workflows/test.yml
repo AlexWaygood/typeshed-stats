@@ -32,6 +32,8 @@ env:
   PIP_DISABLE_PIP_VERSION_CHECK: 1
   PY_COLORS: 1  # Recognized by the `py` package, dependency of `pytest`
   TERM: xterm-256color  # needed for FORCE_COLOR to work on mypy on Ubuntu, see https://github.com/python/mypy/issues/13817
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  COVERALLS_PARALLEL: true
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
@@ -61,34 +63,28 @@ jobs:
         run: pip install "wheel<1"
       - name: Install requirements
         run: |
-          pip install -r requirements/pytest.txt
+          pip install -r requirements/pytest.txt coveralls
           pip install -e .[rich]
       - name: Run tests under coverage
         run: |
           coverage run -m pytest --doctest-modules
           coverage report
       - name: Upload coverage to coveralls
-        # Upload coverage if we are on the main repository and
-        # we're running on Linux (this action only supports Linux)
-        if: github.repository == 'AlexWaygood/typeshed-stats' && matrix.os == 'ubuntu-latest'
-        uses: AndreMiras/coveralls-python-action@develop
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          parallel: true
-          flag-name: py${{ matrix.python-version }}-${{ matrix.os }}
-          debug: true
+        if: github.repository == 'AlexWaygood/typeshed-stats'
+        env:
+          COVERALLS_FLAG_NAME: ${{ matrix.os }}-${{ matrix.python-version }}
+        run: coveralls --service=github
 
   coveralls-finish:
+    name: Indicate completion to coveralls.io
     needs: pytest-tests
     if: github.repository == 'AlexWaygood/typeshed-stats'
     runs-on: ubuntu-latest
+    container: python:3-slim
     steps:
-      - uses: actions/checkout@v3
-      - name: Send finished signal to Coveralls
-        uses: AndreMiras/coveralls-python-action@develop
-        with:
-          parallel-finished: true
-          debug: true
+      - run: |
+          pip install coveralls
+          coveralls --service=github --finish
 
   create-issue-on-failure:
     name: Create an issue if daily test failed
