@@ -4146,7 +4146,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-670 (excluding blank lines)
+674 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4181,7 +4181,7 @@ All files are tested with the stricter pyright settings in CI.
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
-    - Annotated variables: 625
+    - Annotated variables: 629
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
