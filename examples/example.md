@@ -5316,7 +5316,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-50,866 (excluding blank lines)
+50,870 (excluding blank lines)
 
 ### Package status: *stdlib*
 
