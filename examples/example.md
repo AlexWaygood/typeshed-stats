@@ -1978,7 +1978,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-6 (excluding blank lines)
+3 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2003,19 +2003,19 @@ All files are tested with the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `editdistance`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 6
+    - Annotated parameters: 4
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 3
+    - Annotated returns: 2
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 1
+    - Annotated variables: 0
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
 <hr>
 
@@ -4506,7 +4506,7 @@ All files are excluded from the stricter pyright settings in CI.
 
 ### Number of lines
 
-418 (excluding blank lines)
+441 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4531,19 +4531,19 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `python-dateutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 163
-    - Unannotated parameters: 64
+    - Annotated parameters: 171
+    - Unannotated parameters: 66
     - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
-    - Annotated returns: 102
-    - Unannotated returns: 46
+    - Annotated returns: 106
+    - Unannotated returns: 48
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 88
+    - Annotated variables: 90
     - Explicit `Any` variables: 13
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 
 <hr>
 
@@ -4778,9 +4778,9 @@ All files are tested with the stricter pyright settings in CI.
 
 127 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5316,7 +5316,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-50,870 (excluding blank lines)
+50,953 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -5341,12 +5341,12 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 ### Statistics on the annotations in typeshed's stubs for `stdlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,384
+    - Annotated parameters: 24,457
     - Unannotated parameters: 713
-    - Explicit `Any` parameters: 2,118
+    - Explicit `Any` parameters: 2,044
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13,295
+    - Annotated returns: 13,297
     - Unannotated returns: 405
     - Explicit `Any` returns: 817
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18

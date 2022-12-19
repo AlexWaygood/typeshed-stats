@@ -1102,7 +1102,7 @@
   {
     "package_name": "editdistance",
     "extra_description": null,
-    "number_of_lines": 6,
+    "number_of_lines": 3,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
@@ -1111,17 +1111,17 @@
     ],
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 6,
+      "annotated_parameters": 4,
       "unannotated_parameters": 0,
-      "annotated_returns": 3,
+      "annotated_returns": 2,
       "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 2,
-      "explicit_Incomplete_returns": 1,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 1,
+      "annotated_variables": 0,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 1
+      "explicit_Incomplete_variables": 0
     }
   },
   {
@@ -2506,7 +2506,7 @@
   {
     "package_name": "python-dateutil",
     "extra_description": null,
-    "number_of_lines": 418,
+    "number_of_lines": 441,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_setting": "MISSING_STUBS_IGNORED",
@@ -2515,17 +2515,17 @@
     ],
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 163,
-      "unannotated_parameters": 64,
-      "annotated_returns": 102,
-      "unannotated_returns": 46,
-      "explicit_Incomplete_parameters": 0,
+      "annotated_parameters": 171,
+      "unannotated_parameters": 66,
+      "annotated_returns": 106,
+      "unannotated_returns": 48,
+      "explicit_Incomplete_parameters": 3,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 0,
-      "annotated_variables": 88,
+      "annotated_variables": 90,
       "explicit_Any_variables": 13,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 1
     }
   },
   {
@@ -2657,7 +2657,7 @@
     "package_name": "pytz",
     "extra_description": null,
     "number_of_lines": 127,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "stubtest_platforms": [
@@ -2956,7 +2956,7 @@
   {
     "package_name": "stdlib",
     "extra_description": null,
-    "number_of_lines": 50870,
+    "number_of_lines": 50953,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
@@ -2967,13 +2967,13 @@
     ],
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24384,
+      "annotated_parameters": 24457,
       "unannotated_parameters": 713,
-      "annotated_returns": 13295,
+      "annotated_returns": 13297,
       "unannotated_returns": 405,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
-      "explicit_Any_parameters": 2118,
+      "explicit_Any_parameters": 2044,
       "explicit_Any_returns": 817,
       "annotated_variables": 8070,
       "explicit_Any_variables": 556,
