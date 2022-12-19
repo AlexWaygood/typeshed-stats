@@ -80,7 +80,7 @@ passlib,-,1740,UP_TO_DATE,UPLOADED,ERROR_ON_MISSING_STUB,linux,NOT_STRICT,382,46
 passpy,-,47,UP_TO_DATE,UPLOADED,ERROR_ON_MISSING_STUB,linux,STRICT,43,0,20,0,0,0,0,0,1,0,0
 peewee,-,1608,UP_TO_DATE,UPLOADED,ERROR_ON_MISSING_STUB,linux,NOT_STRICT,370,704,298,448,244,5,0,0,437,0,368
 pep8-naming,-,27,UP_TO_DATE,UPLOADED,MISSING_STUBS_IGNORED,linux,STRICT,10,0,8,0,0,2,1,1,11,3,0
-pika,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2163,UP_TO_DATE,UPLOADED,ERROR_ON_MISSING_STUB,linux,NOT_STRICT,591,410,368,392,165,3,3,0,470,0,262
+pika,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2186,UP_TO_DATE,UPLOADED,ERROR_ON_MISSING_STUB,linux,NOT_STRICT,604,397,390,370,141,4,4,0,470,0,261
 playsound,-,3,UP_TO_DATE,UPLOADED,ERROR_ON_MISSING_STUB,linux,STRICT,2,0,1,0,0,0,0,0,0,0,0
 polib,-,144,UP_TO_DATE,UPLOADED,ERROR_ON_MISSING_STUB,linux,STRICT,61,0,75,0,0,0,18,0,45,0,0
 prettytable,-,294,OBSOLETE,UPLOADED,ERROR_ON_MISSING_STUB,linux,NOT_STRICT,18,77,70,56,1,1,2,0,34,6,0

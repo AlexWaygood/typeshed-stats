@@ -10,9 +10,9 @@ hide:
 
 Typeshed currently contains stubs for 139 packages
 (including the stdlib stubs as a "single package"),
-for a total of 185,472 non-empty lines of code.
+for a total of 185,495 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>12:36 UTC on 2022-12-19</b>.</i>
+<i>Note: these statistics were last updated at: <b>15:19 UTC on 2022-12-19</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -3665,7 +3665,7 @@ The `types-pika` package contains alternate, more complete type stubs, that are 
 
 ### Number of lines
 
-2,163 (excluding blank lines)
+2,186 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3690,19 +3690,19 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `pika`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 591
-    - Unannotated parameters: 410
-    - Explicit `Any` parameters: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 165
+    - Annotated parameters: 604
+    - Unannotated parameters: 397
+    - Explicit `Any` parameters: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 141
 - Returns:
-    - Annotated returns: 368
-    - Unannotated returns: 392
+    - Annotated returns: 390
+    - Unannotated returns: 370
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
     - Annotated variables: 470
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 262
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 261
 
 <hr>
 
