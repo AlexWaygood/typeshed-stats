@@ -2608,11 +2608,11 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1,397 (excluding blank lines)
+1,408 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2633,10 +2633,10 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `google-cloud-ndb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 478
+    - Annotated parameters: 479
     - Unannotated parameters: 368
-    - Explicit `Any` parameters: 134
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 127
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
     - Annotated returns: 234
     - Unannotated returns: 203
@@ -2644,8 +2644,8 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 190
-    - Explicit `Any` variables: 139
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 132
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 
 <hr>
 

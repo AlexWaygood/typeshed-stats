@@ -10,9 +10,9 @@ hide:
 
 Typeshed currently contains stubs for 139 packages
 (including the stdlib stubs as a "single package"),
-for a total of 185,461 non-empty lines of code.
+for a total of 185,472 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>01:27 UTC on 2022-12-19</b>.</i>
+<i>Note: these statistics were last updated at: <b>12:36 UTC on 2022-12-19</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -2626,11 +2626,11 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-1,397 (excluding blank lines)
+1,408 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2651,10 +2651,10 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `google-cloud-ndb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 478
+    - Annotated parameters: 479
     - Unannotated parameters: 368
-    - Explicit `Any` parameters: 134
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 127
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
     - Annotated returns: 234
     - Unannotated returns: 203
@@ -2662,8 +2662,8 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 190
-    - Explicit `Any` variables: 139
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 132
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 
 <hr>
 
