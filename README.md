@@ -23,6 +23,8 @@
 
 This project is for easy gathering of statistics relating to [typeshed](https://github.com/python/typeshed)'s stubs. As well as being a CLI tool and library, it also powers [a website](https://alexwaygood.github.io/typeshed-stats/) where stats about typeshed's stubs are uploaded twice a day.
 
+This project was created by Alex Waygood. It is not necessarily endorsed by any of the other typeshed maintainers.
+
 Some examples of things you can do from the command line:
 
 - Create a `.csv` file with stats on all typeshed stubs: `typeshed-stats --typeshed-dir <PATH_TO_TYPESHED_CLONE> --to-file stats.csv` (the `.csv` file extension will be automatically detected by the script to identify the format required).
@@ -35,7 +37,7 @@ Example usage of the Python-level API:
 from typeshed_stats.gather import tmpdir_typeshed, gather_stats
 
 with tmpdir_typeshed() as typeshed:
-    stats = gather_stats(typeshed_dir=typeshed)
+    stats_on_all_packages = gather_stats_on_multiple_packages(typeshed_dir=typeshed)
 ```
 
 ## How can I use this?
@@ -54,4 +56,4 @@ I'm glad you asked! They're in the `examples/` folder in this repo.
 1. Create and activate a virtual environment
 1. Run `pip install -r requirements/all.txt`
 1. Run `pip install -e .[rich]`
-1. Either run the linters/tests individually (see the `.github/workflows` directory for details about what's run in CI) or use the `runtests.py` convenience script to run them all in succession.
+1. Either run the linters/tests individually (see the `.github/workflows` directory for details about what's run in CI) or use the `scripts/runtests.py` convenience script to run them all in succession.
