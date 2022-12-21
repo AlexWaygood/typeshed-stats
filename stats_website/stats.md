@@ -12,7 +12,7 @@ Typeshed currently contains stubs for 139 packages
 (including the stdlib stubs as a "single package"),
 for a total of 185,501 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>01:27 UTC on 2022-12-21</b>.</i>
+<i>Note: these statistics were last updated at: <b>12:36 UTC on 2022-12-21</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -2928,7 +2928,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Returns:
     - Annotated returns: 49
     - Unannotated returns: 25
-    - Explicit `Any` returns: 1
+    - Explicit `Any` returns: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
     - Annotated variables: 48

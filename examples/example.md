@@ -2910,7 +2910,7 @@ All files are excluded from the stricter pyright settings in CI.
 - Returns:
     - Annotated returns: 49
     - Unannotated returns: 25
-    - Explicit `Any` returns: 1
+    - Explicit `Any` returns: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
     - Annotated variables: 48

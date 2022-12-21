@@ -1616,7 +1616,7 @@
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 1,
       "explicit_Any_parameters": 26,
-      "explicit_Any_returns": 1,
+      "explicit_Any_returns": 26,
       "annotated_variables": 48,
       "explicit_Any_variables": 26,
       "explicit_Incomplete_variables": 0
