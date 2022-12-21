@@ -2790,8 +2790,8 @@
     ],
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 349,
-      "unannotated_parameters": 157,
+      "annotated_parameters": 353,
+      "unannotated_parameters": 153,
       "annotated_returns": 111,
       "unannotated_returns": 86,
       "explicit_Incomplete_parameters": 3,
@@ -2799,7 +2799,7 @@
       "explicit_Any_parameters": 25,
       "explicit_Any_returns": 5,
       "annotated_variables": 114,
-      "explicit_Any_variables": 43,
+      "explicit_Any_variables": 39,
       "explicit_Incomplete_variables": 0
     }
   },
@@ -2956,7 +2956,7 @@
   {
     "package_name": "stdlib",
     "extra_description": null,
-    "number_of_lines": 50953,
+    "number_of_lines": 50959,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
@@ -2967,9 +2967,9 @@
     ],
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24457,
+      "annotated_parameters": 24460,
       "unannotated_parameters": 713,
-      "annotated_returns": 13297,
+      "annotated_returns": 13300,
       "unannotated_returns": 405,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,

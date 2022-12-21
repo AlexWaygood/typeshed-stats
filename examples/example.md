@@ -5026,8 +5026,8 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `requests`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 349
-    - Unannotated parameters: 157
+    - Annotated parameters: 353
+    - Unannotated parameters: 153
     - Explicit `Any` parameters: 25
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
@@ -5037,7 +5037,7 @@ All files are excluded from the stricter pyright settings in CI.
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 114
-    - Explicit `Any` variables: 43
+    - Explicit `Any` variables: 39
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
 <hr>
@@ -5316,7 +5316,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-50,953 (excluding blank lines)
+50,959 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -5341,12 +5341,12 @@ Some files are tested with the stricter pyright settings in CI; some are exclude
 ### Statistics on the annotations in typeshed's stubs for `stdlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,457
+    - Annotated parameters: 24,460
     - Unannotated parameters: 713
     - Explicit `Any` parameters: 2,044
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13,297
+    - Annotated returns: 13,300
     - Unannotated returns: 405
     - Explicit `Any` returns: 817
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
