@@ -36,7 +36,12 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
+          import:
+          - https://docs.python.org/3/objects.inv
+          - https://docs.aiohttp.org/en/stable/objects.inv
           options:
+            # Use numpy-style docstrings so that blacken-docs can detect and reformat the doctests
+            docstring_style: numpy
             show_source: false
             show_bases: false
             show_root_full_path: false
@@ -59,6 +64,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - admonition
+  - pymdownx.details
 
 watch:
   - stats_website

@@ -142,7 +142,13 @@ class AnnotationStats:
 def _node_matches_name(node: ast.expr, name: str, from_: Container[str]) -> bool:
     """Return True if `node` represents `name` from one of the modules in `from_`.
 
-    >>> _is_TypeAlias = partial(_node_matches_name, name="TypeAlias", from_={"typing", "typing_extensions"})
+    Examples
+    --------
+    ```pycon
+
+    >>> _is_TypeAlias = partial(
+    ...     _node_matches_name, name="TypeAlias", from_={"typing", "typing_extensions"}
+    ... )
     >>> get_annotation_node = lambda source: ast.parse(source).body[0].annotation
     >>> _is_TypeAlias(get_annotation_node("foo: TypeAlias = int"))
     True
@@ -154,6 +160,8 @@ def _node_matches_name(node: ast.expr, name: str, from_: Container[str]) -> bool
     False
     >>> _is_TypeAlias(get_annotation_node("foo: Final = 5"))
     False
+
+    ```
     """
     match node:
         case ast.Name(id):
@@ -258,22 +266,30 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
 def gather_annotation_stats_on_file(path: Path | str) -> AnnotationStats:
     """Gather annotation stats on a single typeshed stub file.
 
-    Args:
-        path: The location of the file to be analysed.
+    Parameters
+    ----------
+    path
+        The location of the file to be analysed.
 
-    Returns:
-        An [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] object
-            containing data about the annotations in the file.
+    Returns
+    -------
+    AnnotationStats
+        An `AnnotationStats` object containing data about the annotations in the file.
 
-    Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, gather_annotation_stats_on_file
-        >>> with tmpdir_typeshed() as typeshed:
-        ...     stats_on_functools = gather_annotation_stats_on_file(typeshed / "stdlib" / "functools.pyi")
-        ...
-        >>> type(stats_on_functools)
-        <class 'typeshed_stats.gather.AnnotationStats'>
-        >>> stats_on_functools.unannotated_parameters
-        0
+    Examples
+    --------
+    ```pycon
+
+    >>> from typeshed_stats.gather import tmpdir_typeshed, gather_annotation_stats_on_file
+    >>> with tmpdir_typeshed() as typeshed:
+    ...     stats_on_functools = gather_annotation_stats_on_file(typeshed / "stdlib" / "functools.pyi")
+    ...
+    >>> type(stats_on_functools)
+    <class 'typeshed_stats.gather.AnnotationStats'>
+    >>> stats_on_functools.unannotated_parameters
+    0
+
+    ```
     """
     visitor = _AnnotationStatsCollector()
     with open(path, encoding="utf-8") as file:
@@ -293,24 +309,34 @@ def gather_annotation_stats_on_package(
 ) -> AnnotationStats:
     """Aggregate annotation stats on a typeshed stubs package.
 
-    Args:
-        package_name: The name of the stubs package to analyze.
-        typeshed_dir: A path pointing to the location of a typeshed directory
-            in which to find the stubs package source.
+    Parameters
+    ----------
+    package_name
+        The name of the stubs package to analyze.
+    typeshed_dir
+        A path pointing to the location of a typeshed directory
+        in which to find the stubs package source.
 
-    Returns:
-        An [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] object
-            containing data about the annotations in the package.
+    Returns
+    -------
+    AnnotationStats
+        An `AnnotationStats` object containing data
+        about the annotations in the package.
 
-    Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, gather_annotation_stats_on_package
-        >>> with tmpdir_typeshed() as typeshed:
-        ...     mypy_extensions_stats = gather_annotation_stats_on_package("mypy-extensions", typeshed_dir=typeshed)
-        ...
-        >>> type(mypy_extensions_stats)
-        <class 'typeshed_stats.gather.AnnotationStats'>
-        >>> mypy_extensions_stats.unannotated_parameters
-        0
+    Examples
+    --------
+    ```pycon
+
+    >>> from typeshed_stats.gather import tmpdir_typeshed, gather_annotation_stats_on_package
+    >>> with tmpdir_typeshed() as typeshed:
+    ...     mypy_extensions_stats = gather_annotation_stats_on_package("mypy-extensions", typeshed_dir=typeshed)
+    ...
+    >>> type(mypy_extensions_stats)
+    <class 'typeshed_stats.gather.AnnotationStats'>
+    >>> mypy_extensions_stats.unannotated_parameters
+    0
+
+    ```
     """
     combined: Counter[str] = Counter()
     annot_stats_fields = AnnotationStats.__annotations__
@@ -335,24 +361,33 @@ def get_package_extra_description(
 ) -> str | None:
     """Get the "extra description" of the package given in the METADATA.toml file.
 
-    Args:
-        package_name: The name of the package to find the extra description for.
-        typeshed_dir: A path pointing to a typeshed directory,
-            from which to retrieve the description.
+    Parameters
+    ----------
+    package_name
+        The name of the package to find the extra description for.
+    typeshed_dir
+        A path pointing to a typeshed directory, from which to retrieve the description.
 
-    Returns:
+    Returns
+    -------
+    str | None
         The "extra description" of the package given in the METADATA.toml file,
-            if one is given, else `None`.
+        if one is given, else `None`.
 
-    Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_extra_description
-        >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_description = get_package_extra_description("stdlib", typeshed_dir=typeshed)
-        ...     protobuf_description = get_package_extra_description("protobuf", typeshed_dir=typeshed)
-        >>> stdlib_description is None
-        True
-        >>> isinstance(protobuf_description, str)
-        True
+    Examples
+    --------
+    ```pycon
+
+    >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_extra_description
+    >>> with tmpdir_typeshed() as typeshed:
+    ...     stdlib_description = get_package_extra_description("stdlib", typeshed_dir=typeshed)
+    ...     protobuf_description = get_package_extra_description("protobuf", typeshed_dir=typeshed)
+    >>> stdlib_description is None
+    True
+    >>> isinstance(protobuf_description, str)
+    True
+
+    ```
     """
     if package_name == "stdlib":
         return None
@@ -386,30 +421,40 @@ def get_stubtest_setting(
 ) -> StubtestSetting:
     """Get the setting typeshed uses in CI when stubtest is run on a certain package.
 
-    Args:
-        package_name: The name of the package to find the stubtest setting for.
-        typeshed_dir: A path pointing to a typeshed directory,
-            from which to retrieve the stubtest setting.
+    Parameters
+    ----------
+    package_name
+        The name of the package to find the stubtest setting for.
+    typeshed_dir
+        A path pointing to a typeshed directory,
+        from which to retrieve the stubtest setting.
 
-    Returns:
-        A member of the [`StubtestSetting`][typeshed_stats.gather.StubtestSetting]
-            enumeration (see the docs on `StubtestSetting` for details).
+    Returns
+    -------
+    StubtestSetting
+        A member of the `StubtestSetting` enumeration
+        (see the docs on `StubtestSetting` for details).
 
-    Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_setting
-        >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_setting = get_stubtest_setting("stdlib", typeshed_dir=typeshed)
-        ...     gdb_setting = get_stubtest_setting("gdb", typeshed_dir=typeshed)
-        >>> stdlib_setting
-        StubtestSetting.ERROR_ON_MISSING_STUB
-        >>> help(_)
-        Help on StubtestSetting in module typeshed_stats.gather:
-        <BLANKLINE>
-        StubtestSetting.ERROR_ON_MISSING_STUB
-            Objects missing from the stub cause stubtest to emit an error in CI.
-        <BLANKLINE>
-        >>> gdb_setting
-        StubtestSetting.SKIPPED
+    Examples
+    --------
+    ```pycon
+
+    >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_setting
+    >>> with tmpdir_typeshed() as typeshed:
+    ...     stdlib_setting = get_stubtest_setting("stdlib", typeshed_dir=typeshed)
+    ...     gdb_setting = get_stubtest_setting("gdb", typeshed_dir=typeshed)
+    >>> stdlib_setting
+    StubtestSetting.ERROR_ON_MISSING_STUB
+    >>> help(_)
+    Help on StubtestSetting in module typeshed_stats.gather:
+    <BLANKLINE>
+    StubtestSetting.ERROR_ON_MISSING_STUB
+        Objects missing from the stub cause stubtest to emit an error in CI.
+    <BLANKLINE>
+    >>> gdb_setting
+    StubtestSetting.SKIPPED
+
+    ```
     """
     if package_name == "stdlib":
         return StubtestSetting.ERROR_ON_MISSING_STUB
@@ -427,20 +472,30 @@ def get_stubtest_platforms(
 ) -> list[str]:
     """Get the list of platforms on which stubtest is run in typeshed's CI.
 
-    Args:
-        package_name: The name of the package to find the stubtest setting for.
-        typeshed_dir: A path pointing to a typeshed directory,
-            from which to retrieve the stubtest configuration.
+    Parameters
+    ----------
+    package_name
+        The name of the package to find the stubtest setting for.
+    typeshed_dir
+        A path pointing to a typeshed directory,
+        from which to retrieve the stubtest configuration.
 
-    Returns:
+    Returns
+    -------
+    list[str]
         A list of strings describing platforms stubtest is run on.
 
-    Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_platforms
-        >>> with tmpdir_typeshed() as typeshed:
-        ...     pywin_platforms = get_stubtest_platforms("pywin32", typeshed_dir=typeshed)
-        >>> pywin_platforms
-        ['win32']
+    Examples
+    --------
+    ```pycon
+
+    >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_platforms
+    >>> with tmpdir_typeshed() as typeshed:
+    ...     pywin_platforms = get_stubtest_platforms("pywin32", typeshed_dir=typeshed)
+    >>> pywin_platforms
+    ['win32']
+
+    ```
     """
     if package_name == "stdlib":
         return ["linux", "darwin", "win32"]
@@ -510,40 +565,52 @@ async def get_package_status(
     If stubtest tests these stubs against an older version, however,
     the stubs may be out of date.
 
-    This function makes network requests to PyPI in order to determine what the
-    latest version of the runtime is, and then compares this against
-    the metadata of the stubs package.
+    !!! note
 
-    Args:
-        package_name: The name of the stubs package to analyze.
-        typeshed_dir: A path pointing to a typeshed directory
-            in which to find the stubs package.
-        session (optional): An `aiohttp.ClientSession` instance, to be used
-            for making a network requests, or `None`. If `None` is provided
-            for this argument, a new `aiohttp.ClientSession` instance will be
-            created to make the network request.
+        This function makes network requests to PyPI in order to determine what the
+        latest version of the runtime is, and then compares this against
+        the metadata of the stubs package.
 
-    Returns:
-        A member of the [`PackageStatus`][typeshed_stats.gather.PackageStatus]
-            enumeration (see the docs on `PackageStatus` for details).
+    Parameters
+    ----------
+    package_name
+        The name of the stubs package to analyze.
+    typeshed_dir
+        A path pointing to a typeshed directory in which to find the stubs package.
+    session (optional)
+        An `aiohttp.ClientSession` instance, to be used for making a network requests,
+        or `None`. If `None` is provided for this argument,
+        a new `aiohttp.ClientSession` instance will be created
+        to make the network request.
 
-    Examples:
-        >>> import asyncio
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_status
-        >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_status = asyncio.run(get_package_status("stdlib", typeshed_dir=typeshed))
-        ...     gdb_status = asyncio.run(get_package_status("gdb", typeshed_dir=typeshed))
-        ...
-        >>> stdlib_status
-        PackageStatus.STDLIB
-        >>> help(_)
-        Help on PackageStatus in module typeshed_stats.gather:
-        <BLANKLINE>
-        PackageStatus.STDLIB
-            These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly up to date, and tested against all currently supported Python versions in CI.
-        <BLANKLINE>
-        >>> gdb_status
-        PackageStatus.NOT_ON_PYPI
+    Returns
+    -------
+    PackageStatus
+        A member of the `PackageStatus` enumeration
+        (see the docs on `PackageStatus` for details).
+
+    Examples
+    --------
+    ```pycon
+
+    >>> import asyncio
+    >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_status
+    >>> with tmpdir_typeshed() as typeshed:
+    ...     stdlib_status = asyncio.run(get_package_status("stdlib", typeshed_dir=typeshed))
+    ...     gdb_status = asyncio.run(get_package_status("gdb", typeshed_dir=typeshed))
+    ...
+    >>> stdlib_status
+    PackageStatus.STDLIB
+    >>> help(_)
+    Help on PackageStatus in module typeshed_stats.gather:
+    <BLANKLINE>
+    PackageStatus.STDLIB
+        These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly up to date, and tested against all currently supported Python versions in CI.
+    <BLANKLINE>
+    >>> gdb_status
+    PackageStatus.NOT_ON_PYPI
+
+    ```
     """
     match package_name:
         case "stdlib":
@@ -580,30 +647,40 @@ def get_upload_status(
 ) -> UploadStatus:
     """Determine whether a certain package is currently uploaded to PyPI.
 
-    Args:
-        package_name: The name of the package to find the stubtest setting for.
-        typeshed_dir: A path pointing to a typeshed directory,
-            from which to retrieve the stubtest setting.
+    Parameters
+    ----------
+    package_name
+        The name of the package to find the stubtest setting for.
+    typeshed_dir
+        A path pointing to a typeshed directory,
+        from which to retrieve the stubtest setting.
 
-    Returns:
-        A member of the [`UploadStatus`][typeshed_stats.gather.UploadStatus]
-            enumeration (see the docs on `UploadStatus` for details).
+    Returns
+    -------
+    UploadStatus
+        A member of the `UploadStatus` enumeration
+        (see the docs on `UploadStatus` for details).
 
-    Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_upload_status
-        >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_setting = get_upload_status("stdlib", typeshed_dir=typeshed)
-        ...     requests_setting = get_upload_status("requests", typeshed_dir=typeshed)
-        >>> stdlib_setting
-        UploadStatus.NOT_CURRENTLY_UPLOADED
-        >>> help(_)
-        Help on UploadStatus in module typeshed_stats.gather:
-        <BLANKLINE>
-        UploadStatus.NOT_CURRENTLY_UPLOADED
-            These stubs are not currently uploaded to PyPI.
-        <BLANKLINE>
-        >>> requests_setting
-        UploadStatus.UPLOADED
+    Examples
+    --------
+    ```pycon
+
+    >>> from typeshed_stats.gather import tmpdir_typeshed, get_upload_status
+    >>> with tmpdir_typeshed() as typeshed:
+    ...     stdlib_setting = get_upload_status("stdlib", typeshed_dir=typeshed)
+    ...     requests_setting = get_upload_status("requests", typeshed_dir=typeshed)
+    >>> stdlib_setting
+    UploadStatus.NOT_CURRENTLY_UPLOADED
+    >>> help(_)
+    Help on UploadStatus in module typeshed_stats.gather:
+    <BLANKLINE>
+    UploadStatus.NOT_CURRENTLY_UPLOADED
+        These stubs are not currently uploaded to PyPI.
+    <BLANKLINE>
+    >>> requests_setting
+    UploadStatus.UPLOADED
+
+    ```
     """
     if package_name == "stdlib":
         return UploadStatus.NOT_CURRENTLY_UPLOADED
@@ -617,12 +694,15 @@ def get_upload_status(
 def get_number_of_lines_of_file(file_path: Path | str) -> int:
     """Get the total number of lines of code for a single stubs file in typeshed.
 
-    Args:
-        file_path: A path to the file to analyse.
+    Parameters
+    ----------
+    file_path
+        A path to the file to analyse.
 
-    Returns:
-        The number of lines of code the stubs file contains,
-            excluding empty lines.
+    Returns
+    -------
+    int
+        The number of lines of code the stubs file contains, excluding empty lines.
     """
     with open(file_path, encoding="utf-8") as file:
         return sum(1 for line in file if line.strip())
@@ -631,22 +711,30 @@ def get_number_of_lines_of_file(file_path: Path | str) -> int:
 def get_package_size(package_name: PackageName, *, typeshed_dir: Path | str) -> int:
     """Get the total number of lines of code for a stubs package in typeshed.
 
-    Args:
-        package_name: The name of the stubs package to find the line number for.
-        typeshed_dir: A path pointing to a typeshed directory
-            in which to find the stubs package.
+    Parameters
+    ----------
+    package_name
+        The name of the stubs package to find the line number for.
+    typeshed_dir
+        A path pointing to a typeshed directory in which to find the stubs package.
 
-    Returns:
-        The number of lines of code the stubs package contains,
-            excluding empty lines.
+    Returns
+    -------
+    int
+        The number of lines of code the stubs package contains, excluding empty lines.
 
-    Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_size
-        >>> with tmpdir_typeshed() as typeshed:
-        ...     mypy_extensions_size = get_package_size("mypy-extensions", typeshed_dir=typeshed)
-        ...
-        >>> type(mypy_extensions_size) is int and mypy_extensions_size > 0
-        True
+    Examples
+    --------
+    ```pycon
+
+    >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_size
+    >>> with tmpdir_typeshed() as typeshed:
+    ...     mypy_extensions_size = get_package_size("mypy-extensions", typeshed_dir=typeshed)
+    ...
+    >>> type(mypy_extensions_size) is int and mypy_extensions_size > 0
+    True
+
+    ```
     """
     return sum(
         get_number_of_lines_of_file(file)
@@ -702,14 +790,19 @@ def get_pyright_setting_for_path(
 ) -> PyrightSetting:
     """Get the settings typeshed uses in CI when pyright is run on a certain path.
 
-    Args:
-        file_path: The path to query.
-        typeshed_dir: A path pointing to a typeshed directory,
-            from which to retrieve the pyright setting.
+    Parameters
+    ----------
+    file_path
+        The path to query.
+    typeshed_dir
+        A path pointing to a typeshed directory,
+        from which to retrieve the pyright setting.
 
-    Returns:
-        A member of the [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]
-            enumeration (see the docs on `PyrightSetting` for details).
+    Returns
+    -------
+    PyrightSetting
+        A member of the `PyrightSetting` enumeration
+        (see the docs on `PyrightSetting` for details).
     """
     entirely_excluded_paths = _get_pyright_excludelist(
         typeshed_dir=typeshed_dir, config_filename="pyrightconfig.json"
@@ -735,28 +828,37 @@ def get_pyright_setting_for_package(
 ) -> PyrightSetting:
     """Get the settings typeshed uses in CI when pyright is run on a certain package.
 
-    Args:
-        package_name: The name of the package to find the stubtest setting for.
-        typeshed_dir: A path pointing to a typeshed directory,
-            from which to retrieve the pyright setting.
+    Parameters
+    ----------
+    package_name
+        The name of the package to find the stubtest setting for.
+    typeshed_dir: A path pointing to a typeshed directory,
+        from which to retrieve the pyright setting.
 
-    Returns:
-        A member of the [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]
-            enumeration (see the docs on `PyrightSetting` for details).
+    Returns
+    -------
+    PyrightSetting
+        A member of the `PyrightSetting` enumeration
+        (see the docs on `PyrightSetting` for details).
 
-    Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_pyright_setting_for_package
-        >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_setting = get_pyright_setting_for_package("stdlib", typeshed_dir=typeshed)
-        ...
-        >>> stdlib_setting
-        PyrightSetting.STRICT_ON_SOME_FILES
-        >>> help(_)
-        Help on PyrightSetting in module typeshed_stats.gather:
-        <BLANKLINE>
-        PyrightSetting.STRICT_ON_SOME_FILES
-            Some files are tested with the stricter pyright settings in CI; some are excluded.
-        <BLANKLINE>
+    Examples
+    --------
+    ```pycon
+
+    >>> from typeshed_stats.gather import tmpdir_typeshed, get_pyright_setting_for_package
+    >>> with tmpdir_typeshed() as typeshed:
+    ...     stdlib_setting = get_pyright_setting_for_package("stdlib", typeshed_dir=typeshed)
+    ...
+    >>> stdlib_setting
+    PyrightSetting.STRICT_ON_SOME_FILES
+    >>> help(_)
+    Help on PyrightSetting in module typeshed_stats.gather:
+    <BLANKLINE>
+    PyrightSetting.STRICT_ON_SOME_FILES
+        Some files are tested with the stricter pyright settings in CI; some are excluded.
+    <BLANKLINE>
+
+    ```
     """
     return get_pyright_setting_for_path(
         file_path=_get_package_directory(package_name, typeshed_dir),
@@ -788,35 +890,48 @@ async def gather_stats_on_package(
 ) -> PackageInfo:
     """Gather miscellaneous statistics about a single stubs package in typeshed.
 
-    This function calls
-    [`get_package_status()`][typeshed_stats.gather.get_package_status],
-    which makes network requests to PyPI.
-    See the docs on `get_package_status()` for details.
+    !!! note
 
-    Args:
-        package_name: The name of the package to gather statistics on.
-        typeshed_dir: A path pointing to a typeshed directory,
-            in which the source code for the stubs package can be found.
-        session (optional): An `aiohttp.ClientSession` instance, to be used
-            for making a network requests, or `None`. If `None` is provided
-            for this argument, a new `aiohttp.ClientSession` instance will be
-            created to make the network request.
+        This function calls
+        [`get_package_status()`][typeshed_stats.gather.get_package_status],
+        which makes network requests to PyPI.
+        See the docs on `get_package_status()` for details.
 
-    Returns:
-        An instance of the [`PackageInfo`][typeshed_stats.gather.PackageInfo] class.
+    Parameters
+    ----------
+    package_name
+        The name of the package to gather statistics on.
+    typeshed_dir
+        A path pointing to a typeshed directory,
+        in which the source code for the stubs package can be found.
+    session (optional)
+        An `aiohttp.ClientSession` instance, to be used
+        for making a network requests, or `None`. If `None` is provided
+        for this argument, a new `aiohttp.ClientSession` instance will be
+        created to make the network request.
 
-    Examples:
-        >>> import asyncio
-        >>> from typeshed_stats.gather import tmpdir_typeshed, gather_stats_on_package
-        >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_info = asyncio.run(gather_stats_on_package("stdlib", typeshed_dir=typeshed))
-        ...
-        >>> stdlib_info.package_name
-        'stdlib'
-        >>> stdlib_info.stubtest_setting
-        StubtestSetting.ERROR_ON_MISSING_STUB
-        >>> type(stdlib_info.number_of_lines) is int and stdlib_info.number_of_lines > 0
-        True
+    Returns
+    -------
+    PackageInfo
+        An instance of the `PackageInfo` class.
+
+    Examples
+    --------
+    ```pycon
+
+    >>> import asyncio
+    >>> from typeshed_stats.gather import tmpdir_typeshed, gather_stats_on_package
+    >>> with tmpdir_typeshed() as typeshed:
+    ...     stdlib_info = asyncio.run(gather_stats_on_package("stdlib", typeshed_dir=typeshed))
+    ...
+    >>> stdlib_info.package_name
+    'stdlib'
+    >>> stdlib_info.stubtest_setting
+    StubtestSetting.ERROR_ON_MISSING_STUB
+    >>> type(stdlib_info.number_of_lines) is int and stdlib_info.number_of_lines > 0
+    True
+
+    ```
     """
     return PackageInfo(
         package_name=package_name,
@@ -916,43 +1031,53 @@ def gather_stats_on_file(
 ) -> FileInfo:
     """Gather stats on a single `.pyi` file in typeshed.
 
-    Args:
-        file_path: A path pointing to the file on which to gather stats.
-            This can be an absolute path,
-            or a path relative to the `typeshed_dir` argument.
-        typeshed_dir: A path pointing to the overall typeshed directory.
-            This can be an absolute or relative path.
+    Parameters
+    ----------
+    file_path:
+        A path pointing to the file on which to gather stats.
+        This can be an absolute path,
+        or a path relative to the `typeshed_dir` argument.
+    typeshed_dir
+        A path pointing to the overall typeshed directory.
+        This can be an absolute or relative path.
 
-    Returns:
-        An instance of the [`FileInfo`][typeshed_stats.gather.FileInfo] class.
+    Returns
+    -------
+    FileInfo
+        An instance of the `FileInfo` class.
 
-    Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, gather_stats_on_file
-        >>> with tmpdir_typeshed() as typeshed:
-        ...     # Paths can be relative to typeshed_dir
-        ...     functools_info = gather_stats_on_file(
-        ...         "stdlib/functools.pyi", typeshed_dir=typeshed
-        ...     )
-        ...     # Absolute paths are also fine
-        ...     stubs_dir = typeshed / "stubs"
-        ...     requests_api_info = gather_stats_on_file(
-        ...         stubs_dir / "requests/requests/api.pyi", typeshed_dir=typeshed
-        ...     )
-        ...     # Gather per-file stats on a directory
-        ...     markdown_per_file_stats = [
-        ...         gather_stats_on_file(module, typeshed_dir=typeshed)
-        ...         for module in (stubs_dir / "Markdown").rglob("*.pyi")
-        ...     ]
-        >>> type(functools_info)
-        <class 'typeshed_stats.gather.FileInfo'>
-        >>> functools_info.parent_package
-        'stdlib'
-        >>> functools_info.file_path.as_posix()
-        'stdlib/functools.pyi'
-        >>> requests_api_info.parent_package
-        'requests'
-        >>> requests_api_info.file_path.as_posix()
-        'stubs/requests/requests/api.pyi'
+    Examples
+    --------
+    ```pycon
+
+    >>> from typeshed_stats.gather import tmpdir_typeshed, gather_stats_on_file
+    >>> with tmpdir_typeshed() as typeshed:
+    ...     # Paths can be relative to typeshed_dir
+    ...     functools_info = gather_stats_on_file(
+    ...         "stdlib/functools.pyi", typeshed_dir=typeshed
+    ...     )
+    ...     # Absolute paths are also fine
+    ...     stubs_dir = typeshed / "stubs"
+    ...     requests_api_info = gather_stats_on_file(
+    ...         stubs_dir / "requests/requests/api.pyi", typeshed_dir=typeshed
+    ...     )
+    ...     # Gather per-file stats on a directory
+    ...     markdown_per_file_stats = [
+    ...         gather_stats_on_file(module, typeshed_dir=typeshed)
+    ...         for module in (stubs_dir / "Markdown").rglob("*.pyi")
+    ...     ]
+    >>> type(functools_info)
+    <class 'typeshed_stats.gather.FileInfo'>
+    >>> functools_info.parent_package
+    'stdlib'
+    >>> functools_info.file_path.as_posix()
+    'stdlib/functools.pyi'
+    >>> requests_api_info.parent_package
+    'requests'
+    >>> requests_api_info.file_path.as_posix()
+    'stubs/requests/requests/api.pyi'
+
+    ```
     """
     typeshed_dir = _normalize_typeshed_dir(typeshed_dir)
     file_path = _normalize_file_path(file_path, typeshed_dir)
@@ -986,31 +1111,42 @@ def gather_stats_on_multiple_packages(
 ) -> Sequence[PackageInfo]:
     """Concurrently gather statistics on multiple packages.
 
-    Note: this function calls `asyncio.run()` to start an asyncio event loop.
-    It is therefore not suitable to be called from inside functions
-    that are themselves called as part of an asyncio event loop.
+    !!! note
 
-    Args:
-        packages: An iterable of package names to be analysed, or None.
-            If `None`, defaults to all third-party stubs, plus the stubs for the stdlib.
-        typeshed_dir: The path to a local clone of typeshed.
+        This function calls `asyncio.run()` to start an asyncio event loop.
+        It is therefore not suitable to be called from inside functions
+        that are themselves called as part of an asyncio event loop.
 
-    Returns:
-        A sequence of [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects.
-            Each `PackageInfo` object contains information representing an analysis
-            of a certain stubs package in typeshed.
+    Parameters
+    ----------
+    packages
+        An iterable of package names to be analysed, or None.
+        If `None`, defaults to all third-party stubs, plus the stubs for the stdlib.
+    typeshed_dir
+        The path to a local clone of typeshed.
 
-    Examples:
-        >>> from typeshed_stats.gather import PackageInfo, tmpdir_typeshed, gather_stats_on_multiple_packages
-        >>> with tmpdir_typeshed() as typeshed:
-        ...     infos = gather_stats_on_multiple_packages(
-        ...         ["stdlib", "aiofiles", "boto"], typeshed_dir=typeshed
-        ...     )
-        ...
-        >>> [info.package_name for info in infos]
-        ['aiofiles', 'boto', 'stdlib']
-        >>> all(type(info) is PackageInfo for info in infos)
-        True
+    Returns
+    -------
+    Sequence[PackageInfo]
+        Each `PackageInfo` object in the sequence contains information
+        representing an analysis of a certain stubs package in typeshed.
+
+    Examples
+    --------
+    ```pycon
+
+    >>> from typeshed_stats.gather import PackageInfo, tmpdir_typeshed, gather_stats_on_multiple_packages
+    >>> with tmpdir_typeshed() as typeshed:
+    ...     infos = gather_stats_on_multiple_packages(
+    ...         ["stdlib", "aiofiles", "boto"], typeshed_dir=typeshed
+    ...     )
+    ...
+    >>> [info.package_name for info in infos]
+    ['aiofiles', 'boto', 'stdlib']
+    >>> all(type(info) is PackageInfo for info in infos)
+    True
+
+    ```
     """
     if packages is None:
         packages = os.listdir(Path(typeshed_dir, "stubs")) + ["stdlib"]
@@ -1028,6 +1164,11 @@ def tmpdir_typeshed() -> Iterator[Path]:
     """Clone typeshed into a tempdir, then yield a `pathlib.Path` pointing to it.
 
     A context manager.
+
+    Yields
+    ------
+    Path
+        A path pointing to the temporary directory containing the clone of typeshed.
     """
     import subprocess
     from tempfile import TemporaryDirectory

@@ -41,10 +41,14 @@ _CATTRS_CONVERTER.register_structure_hook(
 def stats_to_json(stats: Sequence[PackageInfo | FileInfo]) -> str:
     """Convert stats on multiple stubs packages to JSON format.
 
-    Args:
-        stats: The statistics to convert.
+    Parameters
+    ----------
+    stats
+        The statistics to convert.
 
-    Returns:
+    Returns
+    -------
+    str
         The statistics serialized as JSON.
     """
     import json
@@ -55,12 +59,15 @@ def stats_to_json(stats: Sequence[PackageInfo | FileInfo]) -> str:
 def package_stats_from_json(data: str) -> list[PackageInfo]:
     """Load [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects from JSON format.
 
-    Args:
-        data: A JSON string.
+    Parameters
+    ----------
+    data
+        A JSON string.
 
-    Returns:
-        The statistics deserialized into
-            [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects.
+    Returns
+    -------
+    list[PackageInfo]
+        The statistics deserialized into `PackageInfo` objects.
     """
     import json
 
@@ -70,12 +77,15 @@ def package_stats_from_json(data: str) -> list[PackageInfo]:
 def file_stats_from_json(data: str) -> list[FileInfo]:
     """Load [`FileInfo`][typeshed_stats.gather.FileInfo] objects from JSON format.
 
-    Args:
-        data: A JSON string.
+    Parameters
+    ----------
+    data
+        A JSON string.
 
-    Returns:
-        The statistics deserialized into
-            [`FileInfo`][typeshed_stats.gather.FileInfo] objects.
+    Returns
+    -------
+    list[FileInfo]
+        The statistics deserialized into `FileInfo` objects.
     """
     import json
 
@@ -85,10 +95,14 @@ def file_stats_from_json(data: str) -> list[FileInfo]:
 def stats_to_csv(stats: Sequence[PackageInfo | FileInfo]) -> str:
     """Convert stats on multiple stubs packages to csv format.
 
-    Args:
-        stats: The statistics to convert.
+    Parameters
+    ----------
+    stats
+        The statistics to convert.
 
-    Returns:
+    Returns
+    -------
+    str
         The statistics serialized as a CSV string.
     """
     import csv
@@ -160,12 +174,15 @@ def _stats_from_csv(
 def package_stats_from_csv(data: str) -> list[PackageInfo]:
     """Load [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects from csv format.
 
-    Args:
-        data: A CSV string.
+    Parameters
+    ----------
+    data:
+        A CSV string.
 
-    Returns:
-        The statistics deserialized into
-            [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects.
+    Returns
+    -------
+    list[PackageInfo]
+        The statistics deserialized into `PackageInfo` objects.
     """
     return _stats_from_csv(data, cls=PackageInfo)
 
@@ -173,12 +190,15 @@ def package_stats_from_csv(data: str) -> list[PackageInfo]:
 def file_stats_from_csv(data: str) -> list[FileInfo]:
     """Load [`FileInfo`][typeshed_stats.gather.FileInfo] objects from csv format.
 
-    Args:
-        data: A CSV string.
+    Parameters
+    ----------
+    data
+        A CSV string.
 
-    Returns:
-        The statistics deserialized into
-            [`FileInfo`][typeshed_stats.gather.FileInfo] objects.
+    Returns
+    -------
+    list[FileInfo]
+        The statistics deserialized into `FileInfo` objects.
     """
     return _stats_from_csv(data, cls=FileInfo)
 
@@ -186,10 +206,14 @@ def file_stats_from_csv(data: str) -> list[FileInfo]:
 def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
     """Generate MarkDown describing statistics on multiple stubs packages.
 
-    Args:
-        stats: The statistics to convert.
+    Parameters
+    ----------
+    stats
+        The statistics to convert.
 
-    Returns:
+    Returns
+    -------
+    str
         A markdown page describing the statistics.
     """
     import textwrap
