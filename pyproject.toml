@@ -30,7 +30,7 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
-    "attrs>=21.3.0",
+    "attrs>=22.2.0",
     "cattrs",
     "aiohttp[speedups]",
     "packaging",
