@@ -1,5 +1,5 @@
 aiohttp
-attrs
+attrs>=22.2.0
 cattrs
 mypy==0.991
 packaging
