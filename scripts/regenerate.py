@@ -126,7 +126,7 @@ def regenerate_gather_api_docs() -> None:
                 )
             elif attrs.has(thing):
                 rows = []
-                for field in attrs.fields(thing):  # type: ignore[arg-type]
+                for field in attrs.fields(thing):
                     typ_description = _get_field_description(field)
                     rows.append([f"`{field.name}`", typ_description])
                 docs += "**Attributes:**\n\n"
