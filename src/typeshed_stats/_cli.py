@@ -102,7 +102,7 @@ _LoggingLevels: TypeAlias = Literal[
 def _get_help_formatter() -> type[argparse.HelpFormatter]:
     try:
         import rich  # noqa: F401
-        from rich_argparse import (  # type: ignore[import]
+        from rich_argparse import (
             RichHelpFormatter as HelpFormatter,
         )
     except ImportError:
@@ -116,7 +116,7 @@ def _get_help_formatter() -> type[argparse.HelpFormatter]:
             }
         )
         HelpFormatter.group_name_formatter = str.title
-    return HelpFormatter  # type: ignore[no-any-return]
+    return HelpFormatter
 
 
 def _get_argument_parser() -> argparse.ArgumentParser:

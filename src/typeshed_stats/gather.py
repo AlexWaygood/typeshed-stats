@@ -360,7 +360,7 @@ def get_package_extra_description(
 
 
 class StubtestSetting(_NiceReprEnum):
-    """Enumeration of the various possible settings typeshed uses for stubtest in CI."""
+    """Enumeration of the various possible settings typeshed uses for [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) in CI."""
 
     SKIPPED = "Stubtest is skipped in CI for this package."
     MISSING_STUBS_IGNORED = (
@@ -384,7 +384,7 @@ def _get_stubtest_config(
 def get_stubtest_setting(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> StubtestSetting:
-    """Get the setting typeshed uses in CI when stubtest is run on a certain package.
+    """Get the setting typeshed uses in CI when [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) is run on a certain package.
 
     Args:
         package_name: The name of the package to find the stubtest setting for.
@@ -425,7 +425,7 @@ def get_stubtest_setting(
 def get_stubtest_platforms(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> list[str]:
-    """Get the list of platforms on which stubtest is run in typeshed's CI.
+    """Get the list of platforms on which [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) is run in typeshed's CI.
 
     Args:
         package_name: The name of the package to find the stubtest setting for.
@@ -520,8 +520,8 @@ async def get_package_status(
         package_name: The name of the stubs package to analyze.
         typeshed_dir: A path pointing to a typeshed directory
             in which to find the stubs package.
-        session (optional): An `aiohttp.ClientSession` instance, to be used
-            for making a network requests, or `None`. If `None` is provided
+        session: An [`aiohttp.ClientSession`][aiohttp.ClientSession] instance,
+            to be used for making a network requests, or `None`. If `None` is provided
             for this argument, a new `aiohttp.ClientSession` instance will be
             created to make the network request.
 
@@ -677,7 +677,7 @@ def _get_pyright_excludelist(
 
 
 class PyrightSetting(_NiceReprEnum):
-    """The various possible pyright settings typeshed uses in CI."""
+    """The various possible [pyright](https://github.com/microsoft/pyright) settings typeshed uses in CI."""
 
     ENTIRELY_EXCLUDED = "All files are excluded from the pyright check in CI."
     SOME_FILES_EXCLUDED = "Some files are excluded from the pyright check in CI."
@@ -702,7 +702,7 @@ def _child_of_path_is_listed(path: Path, path_list: Collection[Path]) -> bool:
 def get_pyright_setting_for_path(
     file_path: Path | str, *, typeshed_dir: Path | str
 ) -> PyrightSetting:
-    """Get the settings typeshed uses in CI when pyright is run on a certain path.
+    """Get the settings typeshed uses in CI when [pyright](https://github.com/microsoft/pyright) is run on a certain path.
 
     Args:
         file_path: The path to query.
@@ -735,7 +735,7 @@ def get_pyright_setting_for_path(
 def get_pyright_setting_for_package(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> PyrightSetting:
-    """Get the settings typeshed uses in CI when pyright is run on a certain package.
+    """Get the settings typeshed uses in CI when [pyright](https://github.com/microsoft/pyright) is run on a certain package.
 
     Args:
         package_name: The name of the package to find the stubtest setting for.
@@ -801,8 +801,8 @@ async def gather_stats_on_package(
         package_name: The name of the package to gather statistics on.
         typeshed_dir: A path pointing to a typeshed directory,
             in which the source code for the stubs package can be found.
-        session (optional): An `aiohttp.ClientSession` instance, to be used
-            for making a network requests, or `None`. If `None` is provided
+        session: An [`aiohttp.ClientSession`][aiohttp.ClientSession] instance,
+            to be used for making a network requests, or `None`. If `None` is provided
             for this argument, a new `aiohttp.ClientSession` instance will be
             created to make the network request.
 
@@ -992,7 +992,7 @@ def gather_stats_on_multiple_packages(
 
     !!! note
 
-        This function calls `asyncio.run()` to start an asyncio event loop.
+        This function calls [`asyncio.run()`][asyncio.run] to start an asyncio event loop.
         It is therefore not suitable to be called from inside functions
         that are themselves called as part of an asyncio event loop.
 
@@ -1031,12 +1031,12 @@ def gather_stats_on_multiple_packages(
 
 @contextmanager
 def tmpdir_typeshed() -> Iterator[Path]:
-    """Clone typeshed into a tempdir, then yield a `pathlib.Path` pointing to it.
+    """Clone typeshed into a tempdir, then yield a [`Path`][pathlib.Path] pointing to it.
 
     A context manager.
 
     Yields:
-        A `pathlib.Path` pointing to a tempdir with a clone of typeshed inside.
+        A [`Path`][pathlib.Path] pointing to a tempdir with a clone of typeshed inside.
     """
     import subprocess
     from tempfile import TemporaryDirectory

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import builtins
 import shutil
 import subprocess
 import textwrap
@@ -13,7 +14,7 @@ from datetime import datetime
 from enum import Enum
 from functools import partial
 from pathlib import Path
-from typing import Any
+from typing import get_args, get_origin
 
 import attrs
 import tabulate
@@ -78,12 +79,24 @@ def regenerate_stats_markdown_page(stats: Sequence[PackageInfo]) -> None:
 generate_table = partial(tabulate.tabulate, tablefmt="github")
 
 
-def _get_field_description(field: attrs.Attribute[Any]) -> str:
-    typ = field.type
-    if isinstance(typ, type) and not isinstance(typ, types.GenericAlias):
+def _get_field_description(typ: object) -> str:
+    if isinstance(typ, types.UnionType):
+        return "|".join(map(_get_field_description, get_args(typ)))
+    if isinstance(typ, types.GenericAlias):
+        return (
+            _get_field_description(get_origin(typ))
+            + "["
+            + ", ".join(map(_get_field_description, get_args(typ)))
+            + "]"
+        )
+    if isinstance(typ, type):
         typ_name = typ.__name__
         if typ_name in typeshed_stats.gather.__all__:
             return f"[`{typ_name}`][typeshed_stats.gather.{typ_name}]"
+        if typ_name in dir(builtins):
+            return f"[`{typ_name}`][{typ_name}]"
+        if typ_name == "Path":
+            return "[`Path`][pathlib.Path]"
         return f"`{typ_name}`"
     return f"`{typ}`"
 
@@ -127,7 +140,7 @@ def regenerate_gather_api_docs() -> None:
             elif attrs.has(thing):
                 rows = []
                 for field in attrs.fields(thing):
-                    typ_description = _get_field_description(field)
+                    typ_description = _get_field_description(field.type)
                     rows.append([f"`{field.name}`", typ_description])
                 docs += "**Attributes:**\n\n"
                 docs += generate_table(rows, headers=["Name", "Type"])

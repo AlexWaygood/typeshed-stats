@@ -32,10 +32,15 @@ theme:
 
 plugins:
   - search
-  - table-reader
+  - table-reader  # Enables embedding CSV tables in MarkDown
   - mkdocstrings:
+      enable_inventory: true  # This means other projects can reference parts of our API
       handlers:
         python:
+          import:
+          # These mean references to Python builtins and aiohttp are autolinked in docstrings etc.
+          - https://docs.python.org/3/objects.inv
+          - https://docs.aiohttp.org/en/stable/objects.inv
           options:
             show_source: false
             show_bases: false
