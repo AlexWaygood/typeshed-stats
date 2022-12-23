@@ -14,7 +14,8 @@ from typeshed_stats.gather import (
     PackageInfo,
     PackageStatus,
     PyrightSetting,
-    StubtestSetting,
+    StubtestSettings,
+    StubtestStrictness,
     UploadStatus,
 )
 from typeshed_stats.serialize import (
@@ -65,17 +66,18 @@ def unusual_packages() -> list[PackageInfo]:
         number_of_lines=100_000_000_000,
         package_status=PackageStatus.UP_TO_DATE,
         upload_status=UploadStatus.NOT_CURRENTLY_UPLOADED,
-        stubtest_setting=StubtestSetting.SKIPPED,
-        stubtest_platforms=[],
+        stubtest_settings=StubtestSettings(
+            strictness=StubtestStrictness.SKIPPED, platforms=[]
+        ),
         pyright_setting=PyrightSetting.STRICT,
         annotation_stats=AnnotationStats(),
     )
     pkg2 = copy.deepcopy(pkg1)
-    pkg2.stubtest_setting = StubtestSetting.ERROR_ON_MISSING_STUB
-    pkg2.stubtest_platforms = ["win32", "darwin"]
+    pkg2.stubtest_settings.strictness = StubtestStrictness.ERROR_ON_MISSING_STUB
+    pkg2.stubtest_settings.platforms = ["win32", "darwin"]
     pkg2.stub_distribution_name = "-"
     pkg3 = copy.deepcopy(pkg2)
-    pkg3.stubtest_platforms = ["win32", "darwin", "linux"]
+    pkg3.stubtest_settings.platforms = ["win32", "darwin", "linux"]
     return [pkg1, pkg2, pkg3]
 
 

@@ -12,7 +12,8 @@ from typeshed_stats.gather import (
     AnnotationStats,
     FileInfo,
     PackageInfo,
-    StubtestSetting,
+    StubtestSettings,
+    StubtestStrictness,
     _NiceReprEnum,
 )
 
@@ -100,7 +101,11 @@ def stats_to_csv(stats: Sequence[PackageInfo | FileInfo]) -> str:
         del info["annotation_stats"]
 
         # This section is specific to PackageInfo objects
-        if "stubtest_platforms" in info:
+        if "stubtest_settings" in info:
+            info |= {
+                f"stubtest_{key}": val for key, val in info["stubtest_settings"].items()
+            }
+            del info["stubtest_settings"]
             stubtest_platforms = info["stubtest_platforms"]
             if not stubtest_platforms:
                 info["stubtest_platforms"] = "None"
@@ -138,19 +143,23 @@ def _stats_from_csv(
     stats = list(csv.DictReader(csvfile))
     converted_stats = []
     for stat in stats:
-        converted_stat, annotation_stats = {}, {}
+        converted_stat, annotation_stats, stubtest_settings = {}, {}, {}
         for key, val in stat.items():
             if key in AnnotationStats.__annotations__:
                 annotation_stats[key] = val
+            elif key.removeprefix("stubtest_") in StubtestSettings.__annotations__:
+                stubtest_settings[key.removeprefix("stubtest_")] = val
             else:
                 converted_stat[key] = val
         converted_stat["annotation_stats"] = annotation_stats
+        converted_stat["stubtest_settings"] = stubtest_settings
         if cls is PackageInfo:
-            stubtest_platforms = converted_stat["stubtest_platforms"]
+            stubtest_settings = converted_stat["stubtest_settings"]
+            stubtest_platforms = stubtest_settings["platforms"]
             if stubtest_platforms == "None":
-                converted_stat["stubtest_platforms"] = []
+                stubtest_settings["platforms"] = []
             else:
-                converted_stat["stubtest_platforms"] = stubtest_platforms.split(";")
+                stubtest_settings["platforms"] = stubtest_platforms.split(";")
             if converted_stat["extra_description"] == "-":
                 converted_stat["extra_description"] = None
         converted_stats.append(converted_stat)
@@ -210,9 +219,9 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
 
         {upload_status.value}
 
-        ### Stubtest settings in CI: *{stubtest_setting.formatted_name}*
+        ### Stubtest settings in CI: *{stubtest_strictness.formatted_name}*
 
-        {stubtest_setting.value}{stubtest_platforms_section}
+        {stubtest_strictness.value}{stubtest_platforms_section}
 
         ### Pyright settings in CI: *{pyright_setting.formatted_name}*
 
@@ -238,9 +247,13 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
     )
 
     def format_package(package_stats: PackageInfo) -> str:
-        package_as_dict = attrs.asdict(package_stats)
-        kwargs = package_as_dict | package_as_dict["annotation_stats"]
+        kwargs = attrs.asdict(package_stats)
+        kwargs |= kwargs["annotation_stats"]
+        kwargs |= {
+            f"stubtest_{key}": val for key, val in kwargs["stubtest_settings"].items()
+        }
         del kwargs["annotation_stats"]
+        del kwargs["stubtest_settings"]
 
         if package_stats.stub_distribution_name == "-":
             kwargs["stub_distribution_name_section"] = ""
@@ -266,8 +279,9 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
             kwargs["extra_description_section"] = ""
         del kwargs["extra_description"]
 
-        if package_stats.stubtest_setting is not StubtestSetting.SKIPPED:
-            platforms = package_stats.stubtest_platforms
+        stubtest_settings = package_stats.stubtest_settings
+        if stubtest_settings.strictness is not StubtestStrictness.SKIPPED:
+            platforms = stubtest_settings.platforms
             num_platforms = len(platforms)
             if num_platforms == 1:
                 desc = f"In CI, stubtest is run on {platforms[0]} only."

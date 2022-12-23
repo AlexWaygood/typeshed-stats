@@ -15,7 +15,8 @@ from typeshed_stats.gather import (
     PackageInfo,
     PackageStatus,
     PyrightSetting,
-    StubtestSetting,
+    StubtestSettings,
+    StubtestStrictness,
     UploadStatus,
 )
 
@@ -220,8 +221,8 @@ def random_AnnotationStats() -> AnnotationStats:
 
 def random_PackageInfo() -> PackageInfo:
     package_name = random_identifier()
-    stubtest_setting = random.choice(list(StubtestSetting))
-    if stubtest_setting is StubtestSetting.SKIPPED:
+    stubtest_strictness = random.choice(list(StubtestStrictness))
+    if stubtest_strictness is StubtestStrictness.SKIPPED:
         stubtest_platforms = []
     else:
         stubtest_platforms = [random.choice(["win32", "darwin", "linux"])]
@@ -231,8 +232,7 @@ def random_PackageInfo() -> PackageInfo:
         extra_description=None,
         number_of_lines=random.randint(10, 500),
         package_status=random.choice(list(PackageStatus)),
-        stubtest_setting=stubtest_setting,
-        stubtest_platforms=stubtest_platforms,
+        stubtest_settings=StubtestSettings(stubtest_strictness, stubtest_platforms),
         upload_status=random.choice(list(UploadStatus)),
         pyright_setting=random.choice(list(PyrightSetting)),
         annotation_stats=random_AnnotationStats(),
