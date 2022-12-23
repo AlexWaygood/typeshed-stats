@@ -129,6 +129,51 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
+## Info on typeshed's stubs for `ExifRead`
+
+### Number of lines
+
+182 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
+
+### Pyright settings in CI: *not strict*
+
+All files are excluded from the stricter pyright settings in CI.
+
+### Statistics on the annotations in typeshed's stubs for `ExifRead`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 42
+    - Unannotated parameters: 27
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 4
+- Returns:
+    - Annotated returns: 32
+    - Unannotated returns: 16
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
+- Variables:
+    - Annotated variables: 81
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 52
+
+<hr>
+
 ## Info on typeshed's stubs for `Flask-Cors`
 
 ### Number of lines

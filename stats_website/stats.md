@@ -8,11 +8,11 @@ hide:
 
 # Statistics on typeshed's stubs
 
-Typeshed currently contains stubs for 140 packages
+Typeshed currently contains stubs for 141 packages
 (including the stdlib stubs as a "single package"),
-for a total of 186,475 non-empty lines of code.
+for a total of 186,657 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>01:35 UTC on 2022-12-23</b>.</i>
+<i>Note: these statistics were last updated at: <b>12:34 UTC on 2022-12-23</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -144,6 +144,51 @@ All files are tested with the stricter pyright settings in CI.
     - Annotated variables: 12
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+
+<hr>
+
+## Info on typeshed's stubs for `ExifRead`
+
+### Number of lines
+
+182 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in CI.
+
+### Stubtest platforms in CI
+
+In CI, stubtest is run on linux only.
+
+### Pyright settings in CI: *not strict*
+
+All files are excluded from the stricter pyright settings in CI.
+
+### Statistics on the annotations in typeshed's stubs for `ExifRead`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 42
+    - Unannotated parameters: 27
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 4
+- Returns:
+    - Annotated returns: 32
+    - Unannotated returns: 16
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
+- Variables:
+    - Annotated variables: 81
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 52
 
 <hr>
 
