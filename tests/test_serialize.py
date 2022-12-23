@@ -73,6 +73,7 @@ def unusual_packages() -> list[PackageInfo]:
     pkg2 = copy.deepcopy(pkg1)
     pkg2.stubtest_setting = StubtestSetting.ERROR_ON_MISSING_STUB
     pkg2.stubtest_platforms = ["win32", "darwin"]
+    pkg2.stub_distribution_name = "-"
     pkg3 = copy.deepcopy(pkg2)
     pkg3.stubtest_platforms = ["win32", "darwin", "linux"]
     return [pkg1, pkg2, pkg3]

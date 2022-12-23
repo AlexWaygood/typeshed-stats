@@ -197,11 +197,7 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
     template = textwrap.dedent(
         """
         ## Info on typeshed's stubs for `{package_name}`
-        {extra_description_section}
-        ### Stub distribution name
-
-        `{stub_distribution_name}`
-
+        {extra_description_section}{stub_distribution_name_section}
         ### Number of lines
 
         {number_of_lines:,} (excluding blank lines)
@@ -216,8 +212,8 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
 
         ### Stubtest settings in CI: *{stubtest_setting.formatted_name}*
 
-        {stubtest_setting.value}
-        {stubtest_platforms_section}
+        {stubtest_setting.value}{stubtest_platforms_section}
+
         ### Pyright settings in CI: *{pyright_setting.formatted_name}*
 
         {pyright_setting.value}
@@ -246,6 +242,18 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         kwargs = package_as_dict | package_as_dict["annotation_stats"]
         del kwargs["annotation_stats"]
 
+        if package_stats.stub_distribution_name == "-":
+            kwargs["stub_distribution_name_section"] = ""
+        else:
+            kwargs["stub_distribution_name_section"] = textwrap.dedent(
+                f"""
+                ### Stub distribution name
+
+                `{package_stats.stub_distribution_name}`
+                """
+            )
+        del kwargs["stub_distribution_name"]
+
         if package_stats.extra_description:
             kwargs["extra_description_section"] = textwrap.dedent(
                 f"""
@@ -273,10 +281,10 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
                 )
             kwargs["stubtest_platforms_section"] = textwrap.dedent(
                 f"""
+
                 ### Stubtest platforms in CI
 
-                {desc}
-                """
+                {desc}"""
             )
         else:
             kwargs["stubtest_platforms_section"] = ""
