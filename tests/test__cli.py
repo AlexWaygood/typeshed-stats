@@ -228,6 +228,7 @@ class TestPassingPackages:
             ("get_package_extra_description", None),
             ("get_upload_status", UploadStatus.UPLOADED),
             ("get_stubtest_platforms", ["linux"]),
+            ("get_stub_distribution_name", "types-foo"),
         ]
 
         for function_name, return_value in patches_to_apply:

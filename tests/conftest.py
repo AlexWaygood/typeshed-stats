@@ -219,13 +219,15 @@ def random_AnnotationStats() -> AnnotationStats:
 
 
 def random_PackageInfo() -> PackageInfo:
+    package_name = random_identifier()
     stubtest_setting = random.choice(list(StubtestSetting))
     if stubtest_setting is StubtestSetting.SKIPPED:
         stubtest_platforms = []
     else:
         stubtest_platforms = [random.choice(["win32", "darwin", "linux"])]
     return PackageInfo(
-        package_name=random_identifier(),
+        package_name=package_name,
+        stub_distribution_name=f"types-{package_name}",
         extra_description=None,
         number_of_lines=random.randint(10, 500),
         package_status=random.choice(list(PackageStatus)),
