@@ -5880,10 +5880,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `stdlib`
 
-### Stub distribution name
-
-`-`
-
 ### Number of lines
 
 50,959 (excluding blank lines)
