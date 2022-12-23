@@ -51,6 +51,7 @@ __all__ = [
     "get_package_status",
     "get_pyright_setting_for_package",
     "get_pyright_setting_for_path",
+    "get_stub_distribution_name",
     "get_stubtest_platforms",
     "get_stubtest_setting",
     "get_upload_status",
@@ -658,6 +659,43 @@ def get_upload_status(
             return UploadStatus.UPLOADED
 
 
+def get_stub_distribution_name(
+    package_name: PackageName, *, typeshed_dir: Path | str
+) -> str:
+    """Get the name this stubs package is uploaded to PyPI under.
+
+    For the vast majority of packages in typeshed, this is `types-{runtime-name}`,
+    but there may be a small number of packages
+    that are uploaded under nonstandard names to PyPI.
+
+    Args:
+        package_name: The (runtime) name of the package
+            to find the stub distribution name for.
+        typeshed_dir: A path pointing to a typeshed directory,
+            from which to retrieve the information.
+
+    Returns:
+        The name under which the stubs package is uploaded to PyPI.
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stub_distribution_name
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     requests_stub_dist_name = get_stub_distribution_name("requests", typeshed_dir=typeshed)
+        ...     pika_stub_dist_name = get_stub_distribution_name("pika", typeshed_dir=typeshed)
+        >>> requests_stub_dist_name
+        'types-requests'
+        >>> pika_stub_dist_name
+        'types-pika-ts'
+    """
+    if package_name == "stdlib":
+        return "-"
+    match _get_package_metadata(package_name, typeshed_dir):
+        case {"stub_distribution": str() as stub_distribution}:
+            return stub_distribution
+        case _:
+            return f"types-{package_name}"
+
+
 def get_number_of_lines_of_file(file_path: Path | str) -> int:
     """Get the total number of lines of code for a single stub file in typeshed.
 
@@ -827,6 +865,7 @@ class PackageInfo:
     """Statistics about a single stubs package in typeshed."""
 
     package_name: PackageName
+    stub_distribution_name: str
     extra_description: str | None
     number_of_lines: int
     package_status: PackageStatus
@@ -879,6 +918,9 @@ async def gather_stats_on_package(
     """
     return PackageInfo(
         package_name=package_name,
+        stub_distribution_name=get_stub_distribution_name(
+            package_name, typeshed_dir=typeshed_dir
+        ),
         extra_description=get_package_extra_description(
             package_name, typeshed_dir=typeshed_dir
         ),

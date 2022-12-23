@@ -38,6 +38,7 @@ from typeshed_stats.gather import (
     get_package_size,
     get_package_status,
     get_pyright_setting_for_package,
+    get_stub_distribution_name,
     get_stubtest_platforms,
     get_stubtest_setting,
     get_upload_status,
@@ -485,6 +486,42 @@ def test_get_upload_status_non_stdlib(
     )
     expected_result = UploadStatus[expected_result_name]
     assert actual_result is expected_result
+
+
+# ======================================
+# Tests for get_stub_distribution_name()
+# ======================================
+
+
+def test_get_stub_distribution_name_stdlib() -> None:
+    result = get_stub_distribution_name("stdlib", typeshed_dir=Path("."))
+    assert result == "-"
+
+
+def test_get_stub_distribution_name_not_in_metadata(
+    typeshed: Path,
+    EXAMPLE_PACKAGE_NAME: str,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, "\n")
+    actual_result = get_stub_distribution_name(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert actual_result == f"types-{EXAMPLE_PACKAGE_NAME}"
+
+
+def test_get_stub_distribution_name_in_metadata(
+    typeshed: Path,
+    EXAMPLE_PACKAGE_NAME: str,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    write_metadata_text(
+        typeshed, EXAMPLE_PACKAGE_NAME, 'stub_distribution = "idk-something-random"'
+    )
+    actual_result = get_stub_distribution_name(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert actual_result == "idk-something-random"
 
 
 # =================================

@@ -198,6 +198,9 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         """
         ## Info on typeshed's stubs for `{package_name}`
         {extra_description_section}
+        ### Stub distribution name
+        `{stub_distribution_name}`
+
         ### Number of lines
 
         {number_of_lines:,} (excluding blank lines)

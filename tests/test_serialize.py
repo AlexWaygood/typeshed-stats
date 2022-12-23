@@ -60,6 +60,7 @@ def test_FileInfo_conversion_to_and_from_json(
 def unusual_packages() -> list[PackageInfo]:
     pkg1 = PackageInfo(
         "foo",
+        stub_distribution_name="types-foo-ts",
         extra_description="a very fooey package",
         number_of_lines=100_000_000_000,
         package_status=PackageStatus.UP_TO_DATE,
