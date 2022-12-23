@@ -204,7 +204,7 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
 
     template = textwrap.dedent(
         """
-        ## Info on typeshed's stubs for `{package_name}`
+        ## Info on typeshed's stubs for {package_name}
         {extra_description_section}{stub_distribution_name_section}
         ### Number of lines
 
@@ -222,11 +222,13 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
 
         {stubtest_strictness.value}{stubtest_platforms_section}
 
+        {stubtest_allowlist_section}
+
         ### Pyright settings in CI: *{pyright_setting.formatted_name}*
 
         {pyright_setting.value}
 
-        ### Statistics on the annotations in typeshed's stubs for `{package_name}`
+        ### Statistics on the annotations in typeshed's stubs for {package_name}
 
         - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
             - Annotated parameters: {annotated_parameters:,}
@@ -253,6 +255,11 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         }
         del kwargs["annotation_stats"]
         del kwargs["stubtest_settings"]
+
+        if package_stats.package_name == "stdlib":
+            kwargs["package_name"] = "the stdlib"
+        else:
+            kwargs["package_name"] = f"`{package_stats.package_name}`"
 
         if package_stats.stub_distribution_name == "-":
             kwargs["stub_distribution_name_section"] = ""
@@ -283,25 +290,29 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
             platforms = stubtest_settings.platforms
             num_platforms = len(platforms)
             if num_platforms == 1:
-                desc = f"In CI, stubtest is run on {platforms[0]} only."
+                desc = f"In CI, stubtest is run on `{platforms[0]}` only."
             elif num_platforms == 2:
-                desc = f"In CI, stubtest is run on {platforms[0]} and {platforms[1]}."
+                desc = (
+                    f"In CI, stubtest is run on `{platforms[0]}` and `{platforms[1]}`."
+                )
             else:
                 assert num_platforms == 3
                 desc = (
                     "In CI, stubtest is run on "
-                    f"{platforms[0]}, {platforms[1]} and {platforms[2]}."
+                    f"`{platforms[0]}`, `{platforms[1]}` and `{platforms[2]}`."
                 )
-            kwargs["stubtest_platforms_section"] = textwrap.dedent(
-                f"""
-
-                ### Stubtest platforms in CI
-
-                {desc}"""
-            )
+            kwargs["stubtest_platforms_section"] = f"\n\n{desc}"
         else:
             kwargs["stubtest_platforms_section"] = ""
         del kwargs["stubtest_platforms"]
+
+        allowlist_length = kwargs["stubtest_allowlist_length"]
+        kwargs["stubtest_allowlist_section"] = (
+            f"Typeshed currently has {allowlist_length} allowlist "
+            f"{'entry' if allowlist_length == 1 else 'entries'} "
+            f"for {kwargs['package_name']} when running stubtest in CI."
+        )
+        del kwargs["stubtest_allowlist_length"]
 
         return template.format(**kwargs)
 

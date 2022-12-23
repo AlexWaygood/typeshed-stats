@@ -73,6 +73,7 @@ def unusual_packages() -> list[PackageInfo]:
         annotation_stats=AnnotationStats(),
     )
     pkg2 = copy.deepcopy(pkg1)
+    pkg2.package_name = "stdlib"
     pkg2.stubtest_settings.strictness = StubtestStrictness.ERROR_ON_MISSING_STUB
     pkg2.stubtest_settings.platforms = ["win32", "darwin"]
     pkg2.stub_distribution_name = "-"
@@ -133,6 +134,9 @@ def test_markdown_and_htmlconversion(
     converted_to_markdown = stats_to_markdown(list_of_info)
     assert converted_to_markdown[-1] == "\n"
     assert converted_to_markdown[-2] != "\n"
+    assert "`stdlib`" not in converted_to_markdown
+    assert "`the stdlib`" not in converted_to_markdown
+    assert "``" not in converted_to_markdown
     html1 = markdown.markdown(converted_to_markdown)
     soup = BeautifulSoup(html1, "html.parser")
     assert bool(soup.find()), "Invalid HTML produced!"
