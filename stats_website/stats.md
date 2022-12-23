@@ -12,7 +12,7 @@ Typeshed currently contains stubs for 142 packages
 (including the stdlib stubs as a "single package"),
 for a total of 186,690 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>20:35 UTC on 2022-12-23</b>.</i>
+<i>Note: these statistics were last updated at: <b>21:18 UTC on 2022-12-23</b>.</i>
 <i>
 For up-to-date statistics, consider using
 [the CLI tool](https://pypi.org/project/typeshed-stats/ "pip install the CLI tool from PyPI")
@@ -781,7 +781,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1151 allowlist entries for `SQLAlchemy` when running stubtest in CI.
+Typeshed currently has 1,151 allowlist entries for `SQLAlchemy` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5928,7 +5928,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1774 allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,774 allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 

@@ -759,7 +759,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1151 allowlist entries for `SQLAlchemy` when running stubtest in CI.
+Typeshed currently has 1,151 allowlist entries for `SQLAlchemy` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5906,7 +5906,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1774 allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,774 allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
