@@ -12,7 +12,7 @@ Typeshed currently contains stubs for 142 packages
 (including the stdlib stubs as a "single package"),
 for a total of 186,690 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>16:38 UTC on 2022-12-23</b>.</i>
+<i>Note: these statistics were last updated at: <b>17:31 UTC on 2022-12-23</b>.</i>
 <i>
 For up-to-date statistics, consider using
 [the CLI tool](https://pypi.org/project/typeshed-stats/ "pip install the CLI tool from PyPI")
@@ -21,6 +21,10 @@ instead.
 <hr>
 
 ## Info on typeshed's stubs for `D3DShot`
+
+### Stub distribution name
+
+`types-D3DShot`
 
 ### Number of lines
 
@@ -62,6 +66,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `DateTimeRange`
+
+### Stub distribution name
+
+`types-DateTimeRange`
 
 ### Number of lines
 
@@ -108,6 +116,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `Deprecated`
 
+### Stub distribution name
+
+`types-Deprecated`
+
 ### Number of lines
 
 56 (excluding blank lines)
@@ -152,6 +164,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `ExifRead`
+
+### Stub distribution name
+
+`types-ExifRead`
 
 ### Number of lines
 
@@ -198,6 +214,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `Flask-Cors`
 
+### Stub distribution name
+
+`types-Flask-Cors`
+
 ### Number of lines
 
 125 (excluding blank lines)
@@ -242,6 +262,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `Flask-Migrate`
+
+### Stub distribution name
+
+`types-Flask-Migrate`
 
 ### Number of lines
 
@@ -288,6 +312,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `Flask-SQLAlchemy`
 
+### Stub distribution name
+
+`types-Flask-SQLAlchemy`
+
 ### Number of lines
 
 106 (excluding blank lines)
@@ -332,6 +360,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `JACK-Client`
+
+### Stub distribution name
+
+`types-JACK-Client`
 
 ### Number of lines
 
@@ -378,6 +410,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `Markdown`
 
+### Stub distribution name
+
+`types-Markdown`
+
 ### Number of lines
 
 635 (excluding blank lines)
@@ -422,6 +458,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `Pillow`
+
+### Stub distribution name
+
+`types-Pillow`
 
 ### Number of lines
 
@@ -468,6 +508,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `PyAutoGUI`
 
+### Stub distribution name
+
+`types-PyAutoGUI`
+
 ### Number of lines
 
 219 (excluding blank lines)
@@ -512,6 +556,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `PyMySQL`
+
+### Stub distribution name
+
+`types-PyMySQL`
 
 ### Number of lines
 
@@ -558,6 +606,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `PyScreeze`
 
+### Stub distribution name
+
+`types-PyScreeze`
+
 ### Number of lines
 
 177 (excluding blank lines)
@@ -603,6 +655,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `PyYAML`
 
+### Stub distribution name
+
+`types-PyYAML`
+
 ### Number of lines
 
 1,168 (excluding blank lines)
@@ -647,6 +703,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `Pygments`
+
+### Stub distribution name
+
+`types-Pygments`
 
 ### Number of lines
 
@@ -697,6 +757,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.
 
+### Stub distribution name
+
+`types-SQLAlchemy`
+
 ### Number of lines
 
 14,545 (excluding blank lines)
@@ -741,6 +805,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `Send2Trash`
+
+### Stub distribution name
+
+`types-Send2Trash`
 
 ### Number of lines
 
@@ -787,6 +855,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `aiofiles`
 
+### Stub distribution name
+
+`types-aiofiles`
+
 ### Number of lines
 
 592 (excluding blank lines)
@@ -831,6 +903,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `annoy`
+
+### Stub distribution name
+
+`types-annoy`
 
 ### Number of lines
 
@@ -877,6 +953,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `appdirs`
 
+### Stub distribution name
+
+`types-appdirs`
+
 ### Number of lines
 
 54 (excluding blank lines)
@@ -921,6 +1001,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `aws-xray-sdk`
+
+### Stub distribution name
+
+`types-aws-xray-sdk`
 
 ### Number of lines
 
@@ -967,6 +1051,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `babel`
 
+### Stub distribution name
+
+`types-babel`
+
 ### Number of lines
 
 1,046 (excluding blank lines)
@@ -1011,6 +1099,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `backports.ssl_match_hostname`
+
+### Stub distribution name
+
+`types-backports.ssl_match_hostname`
 
 ### Number of lines
 
@@ -1057,6 +1149,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `beautifulsoup4`
 
+### Stub distribution name
+
+`types-beautifulsoup4`
+
 ### Number of lines
 
 784 (excluding blank lines)
@@ -1101,6 +1197,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `bleach`
+
+### Stub distribution name
+
+`types-bleach`
 
 ### Number of lines
 
@@ -1147,6 +1247,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `boto`
 
+### Stub distribution name
+
+`types-boto`
+
 ### Number of lines
 
 1,803 (excluding blank lines)
@@ -1191,6 +1295,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `braintree`
+
+### Stub distribution name
+
+`types-braintree`
 
 ### Number of lines
 
@@ -1237,6 +1345,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `cachetools`
 
+### Stub distribution name
+
+`types-cachetools`
+
 ### Number of lines
 
 115 (excluding blank lines)
@@ -1281,6 +1393,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `caldav`
+
+### Stub distribution name
+
+`types-caldav`
 
 ### Number of lines
 
@@ -1327,6 +1443,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `cffi`
 
+### Stub distribution name
+
+`types-cffi`
+
 ### Number of lines
 
 820 (excluding blank lines)
@@ -1371,6 +1491,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `chardet`
+
+### Stub distribution name
+
+`types-chardet`
 
 ### Number of lines
 
@@ -1417,6 +1541,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `chevron`
 
+### Stub distribution name
+
+`types-chevron`
+
 ### Number of lines
 
 39 (excluding blank lines)
@@ -1461,6 +1589,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `click-spinner`
+
+### Stub distribution name
+
+`types-click-spinner`
 
 ### Number of lines
 
@@ -1507,6 +1639,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `colorama`
 
+### Stub distribution name
+
+`types-colorama`
+
 ### Number of lines
 
 197 (excluding blank lines)
@@ -1551,6 +1687,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `commonmark`
+
+### Stub distribution name
+
+`types-commonmark`
 
 ### Number of lines
 
@@ -1597,6 +1737,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `console-menu`
 
+### Stub distribution name
+
+`types-console-menu`
+
 ### Number of lines
 
 686 (excluding blank lines)
@@ -1641,6 +1785,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `contextvars`
+
+### Stub distribution name
+
+`types-contextvars`
 
 ### Number of lines
 
@@ -1687,6 +1835,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `croniter`
 
+### Stub distribution name
+
+`types-croniter`
+
 ### Number of lines
 
 90 (excluding blank lines)
@@ -1732,6 +1884,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `cryptography`
 
+### Stub distribution name
+
+`types-cryptography`
+
 ### Number of lines
 
 1,742 (excluding blank lines)
@@ -1772,6 +1928,10 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 <hr>
 
 ## Info on typeshed's stubs for `dateparser`
+
+### Stub distribution name
+
+`types-dateparser`
 
 ### Number of lines
 
@@ -1818,6 +1978,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `decorator`
 
+### Stub distribution name
+
+`types-decorator`
+
 ### Number of lines
 
 64 (excluding blank lines)
@@ -1862,6 +2026,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `dj-database-url`
+
+### Stub distribution name
+
+`types-dj-database-url`
 
 ### Number of lines
 
@@ -1908,6 +2076,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `dockerfile-parse`
 
+### Stub distribution name
+
+`types-dockerfile-parse`
+
 ### Number of lines
 
 109 (excluding blank lines)
@@ -1952,6 +2124,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `docopt`
+
+### Stub distribution name
+
+`types-docopt`
 
 ### Number of lines
 
@@ -1998,6 +2174,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `docutils`
 
+### Stub distribution name
+
+`types-docutils`
+
 ### Number of lines
 
 503 (excluding blank lines)
@@ -2042,6 +2222,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `editdistance`
+
+### Stub distribution name
+
+`types-editdistance`
 
 ### Number of lines
 
@@ -2088,6 +2272,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `emoji`
 
+### Stub distribution name
+
+`types-emoji`
+
 ### Number of lines
 
 66 (excluding blank lines)
@@ -2132,6 +2320,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `entrypoints`
+
+### Stub distribution name
+
+`types-entrypoints`
 
 ### Number of lines
 
@@ -2178,6 +2370,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `first`
 
+### Stub distribution name
+
+`types-first`
+
 ### Number of lines
 
 14 (excluding blank lines)
@@ -2222,6 +2418,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `flake8-2020`
+
+### Stub distribution name
+
+`types-flake8-2020`
 
 ### Number of lines
 
@@ -2268,6 +2468,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `flake8-bugbear`
 
+### Stub distribution name
+
+`types-flake8-bugbear`
+
 ### Number of lines
 
 27 (excluding blank lines)
@@ -2312,6 +2516,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `flake8-builtins`
+
+### Stub distribution name
+
+`types-flake8-builtins`
 
 ### Number of lines
 
@@ -2358,6 +2566,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `flake8-docstrings`
 
+### Stub distribution name
+
+`types-flake8-docstrings`
+
 ### Number of lines
 
 19 (excluding blank lines)
@@ -2402,6 +2614,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `flake8-plugin-utils`
+
+### Stub distribution name
+
+`types-flake8-plugin-utils`
 
 ### Number of lines
 
@@ -2448,6 +2664,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `flake8-rst-docstrings`
 
+### Stub distribution name
+
+`types-flake8-rst-docstrings`
+
 ### Number of lines
 
 31 (excluding blank lines)
@@ -2492,6 +2712,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `flake8-simplify`
+
+### Stub distribution name
+
+`types-flake8-simplify`
 
 ### Number of lines
 
@@ -2538,6 +2762,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `flake8-typing-imports`
 
+### Stub distribution name
+
+`types-flake8-typing-imports`
+
 ### Number of lines
 
 15 (excluding blank lines)
@@ -2582,6 +2810,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `fpdf2`
+
+### Stub distribution name
+
+`types-fpdf2`
 
 ### Number of lines
 
@@ -2632,6 +2864,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: is is not possible to install the `gdb` package separately, for instance using `pip`.
 
+### Stub distribution name
+
+`types-gdb`
+
 ### Number of lines
 
 718 (excluding blank lines)
@@ -2672,6 +2908,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `google-cloud-ndb`
+
+### Stub distribution name
+
+`types-google-cloud-ndb`
 
 ### Number of lines
 
@@ -2718,6 +2958,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `hdbcli`
 
+### Stub distribution name
+
+`types-hdbcli`
+
 ### Number of lines
 
 129 (excluding blank lines)
@@ -2762,6 +3006,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `html5lib`
+
+### Stub distribution name
+
+`types-html5lib`
 
 ### Number of lines
 
@@ -2808,6 +3056,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `httplib2`
 
+### Stub distribution name
+
+`types-httplib2`
+
 ### Number of lines
 
 250 (excluding blank lines)
@@ -2852,6 +3104,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `humanfriendly`
+
+### Stub distribution name
+
+`types-humanfriendly`
 
 ### Number of lines
 
@@ -2898,6 +3154,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `invoke`
 
+### Stub distribution name
+
+`types-invoke`
+
 ### Number of lines
 
 745 (excluding blank lines)
@@ -2942,6 +3202,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `jmespath`
+
+### Stub distribution name
+
+`types-jmespath`
 
 ### Number of lines
 
@@ -2988,6 +3252,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `jsonschema`
 
+### Stub distribution name
+
+`types-jsonschema`
+
 ### Number of lines
 
 385 (excluding blank lines)
@@ -3032,6 +3300,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `keyboard`
+
+### Stub distribution name
+
+`types-keyboard`
 
 ### Number of lines
 
@@ -3078,6 +3350,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `ldap3`
 
+### Stub distribution name
+
+`types-ldap3`
+
 ### Number of lines
 
 2,586 (excluding blank lines)
@@ -3122,6 +3398,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `mock`
+
+### Stub distribution name
+
+`types-mock`
 
 ### Number of lines
 
@@ -3168,6 +3448,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `mypy-extensions`
 
+### Stub distribution name
+
+`types-mypy-extensions`
+
 ### Number of lines
 
 64 (excluding blank lines)
@@ -3212,6 +3496,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `mysqlclient`
+
+### Stub distribution name
+
+`types-mysqlclient`
 
 ### Number of lines
 
@@ -3258,6 +3546,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `oauthlib`
 
+### Stub distribution name
+
+`types-oauthlib`
+
 ### Number of lines
 
 1,296 (excluding blank lines)
@@ -3302,6 +3594,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `openpyxl`
+
+### Stub distribution name
+
+`types-openpyxl`
 
 ### Number of lines
 
@@ -3348,6 +3644,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `opentracing`
 
+### Stub distribution name
+
+`types-opentracing`
+
 ### Number of lines
 
 328 (excluding blank lines)
@@ -3392,6 +3692,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `paho-mqtt`
+
+### Stub distribution name
+
+`types-paho-mqtt`
 
 ### Number of lines
 
@@ -3438,6 +3742,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `paramiko`
 
+### Stub distribution name
+
+`types-paramiko`
+
 ### Number of lines
 
 1,749 (excluding blank lines)
@@ -3482,6 +3790,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `parsimonious`
+
+### Stub distribution name
+
+`types-parsimonious`
 
 ### Number of lines
 
@@ -3528,6 +3840,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `passlib`
 
+### Stub distribution name
+
+`types-passlib`
+
 ### Number of lines
 
 1,740 (excluding blank lines)
@@ -3572,6 +3888,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `passpy`
+
+### Stub distribution name
+
+`types-passpy`
 
 ### Number of lines
 
@@ -3618,6 +3938,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `peewee`
 
+### Stub distribution name
+
+`types-peewee`
+
 ### Number of lines
 
 1,608 (excluding blank lines)
@@ -3662,6 +3986,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `pep8-naming`
+
+### Stub distribution name
+
+`types-pep8-naming`
 
 ### Number of lines
 
@@ -3712,6 +4040,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.
 
+### Stub distribution name
+
+`types-pika-ts`
+
 ### Number of lines
 
 2,186 (excluding blank lines)
@@ -3756,6 +4088,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `playsound`
+
+### Stub distribution name
+
+`types-playsound`
 
 ### Number of lines
 
@@ -3802,6 +4138,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `polib`
 
+### Stub distribution name
+
+`types-polib`
+
 ### Number of lines
 
 144 (excluding blank lines)
@@ -3846,6 +4186,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `prettytable`
+
+### Stub distribution name
+
+`types-prettytable`
 
 ### Number of lines
 
@@ -3896,6 +4240,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 Generated with aid from mypy-protobuf v3.4.0
 
+### Stub distribution name
+
+`types-protobuf`
+
 ### Number of lines
 
 4,280 (excluding blank lines)
@@ -3940,6 +4288,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `psutil`
+
+### Stub distribution name
+
+`types-psutil`
 
 ### Number of lines
 
@@ -3986,6 +4338,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `psycopg2`
 
+### Stub distribution name
+
+`types-psycopg2`
+
 ### Number of lines
 
 1,552 (excluding blank lines)
@@ -4030,6 +4386,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `pyOpenSSL`
+
+### Stub distribution name
+
+`types-pyOpenSSL`
 
 ### Number of lines
 
@@ -4076,6 +4436,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pyRFC3339`
 
+### Stub distribution name
+
+`types-pyRFC3339`
+
 ### Number of lines
 
 17 (excluding blank lines)
@@ -4120,6 +4484,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `pyaudio`
+
+### Stub distribution name
+
+`types-pyaudio`
 
 ### Number of lines
 
@@ -4166,6 +4534,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pycocotools`
 
+### Stub distribution name
+
+`types-pycocotools`
+
 ### Number of lines
 
 172 (excluding blank lines)
@@ -4210,6 +4582,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `pycurl`
+
+### Stub distribution name
+
+`types-pycurl`
 
 ### Number of lines
 
@@ -4256,6 +4632,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pyfarmhash`
 
+### Stub distribution name
+
+`types-pyfarmhash`
+
 ### Number of lines
 
 9 (excluding blank lines)
@@ -4300,6 +4680,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `pyflakes`
+
+### Stub distribution name
+
+`types-pyflakes`
 
 ### Number of lines
 
@@ -4346,6 +4730,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `pyinstaller`
 
+### Stub distribution name
+
+`types-pyinstaller`
+
 ### Number of lines
 
 418 (excluding blank lines)
@@ -4390,6 +4778,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `pynput`
+
+### Stub distribution name
+
+`types-pynput`
 
 ### Number of lines
 
@@ -4436,6 +4828,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pyserial`
 
+### Stub distribution name
+
+`types-pyserial`
+
 ### Number of lines
 
 964 (excluding blank lines)
@@ -4476,6 +4872,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `pysftp`
+
+### Stub distribution name
+
+`types-pysftp`
 
 ### Number of lines
 
@@ -4522,6 +4922,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pytest-lazy-fixture`
 
+### Stub distribution name
+
+`types-pytest-lazy-fixture`
+
 ### Number of lines
 
 12 (excluding blank lines)
@@ -4566,6 +4970,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `python-crontab`
+
+### Stub distribution name
+
+`types-python-crontab`
 
 ### Number of lines
 
@@ -4612,6 +5020,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `python-dateutil`
 
+### Stub distribution name
+
+`types-python-dateutil`
+
 ### Number of lines
 
 441 (excluding blank lines)
@@ -4656,6 +5068,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `python-gflags`
+
+### Stub distribution name
+
+`types-python-gflags`
 
 ### Number of lines
 
@@ -4702,6 +5118,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `python-jose`
 
+### Stub distribution name
+
+`types-python-jose`
+
 ### Number of lines
 
 359 (excluding blank lines)
@@ -4746,6 +5166,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `python-nmap`
+
+### Stub distribution name
+
+`types-python-nmap`
 
 ### Number of lines
 
@@ -4792,6 +5216,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `python-slugify`
 
+### Stub distribution name
+
+`types-python-slugify`
+
 ### Number of lines
 
 45 (excluding blank lines)
@@ -4836,6 +5264,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `python-xlib`
+
+### Stub distribution name
+
+`types-python-xlib`
 
 ### Number of lines
 
@@ -4882,6 +5314,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pytz`
 
+### Stub distribution name
+
+`types-pytz`
+
 ### Number of lines
 
 127 (excluding blank lines)
@@ -4926,6 +5362,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `pyvmomi`
+
+### Stub distribution name
+
+`types-pyvmomi`
 
 ### Number of lines
 
@@ -4972,6 +5412,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pywin32`
 
+### Stub distribution name
+
+`types-pywin32`
+
 ### Number of lines
 
 34,530 (excluding blank lines)
@@ -5016,6 +5460,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `redis`
+
+### Stub distribution name
+
+`types-redis`
 
 ### Number of lines
 
@@ -5062,6 +5510,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `regex`
 
+### Stub distribution name
+
+`types-regex`
+
 ### Number of lines
 
 749 (excluding blank lines)
@@ -5106,6 +5558,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `requests`
+
+### Stub distribution name
+
+`types-requests`
 
 ### Number of lines
 
@@ -5152,6 +5608,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `retry`
 
+### Stub distribution name
+
+`types-retry`
+
 ### Number of lines
 
 27 (excluding blank lines)
@@ -5196,6 +5656,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `setuptools`
+
+### Stub distribution name
+
+`types-setuptools`
 
 ### Number of lines
 
@@ -5242,6 +5706,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `simplejson`
 
+### Stub distribution name
+
+`types-simplejson`
+
 ### Number of lines
 
 51 (excluding blank lines)
@@ -5286,6 +5754,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `singledispatch`
+
+### Stub distribution name
+
+`types-singledispatch`
 
 ### Number of lines
 
@@ -5332,6 +5804,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `six`
 
+### Stub distribution name
+
+`types-six`
+
 ### Number of lines
 
 335 (excluding blank lines)
@@ -5376,6 +5852,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `slumber`
+
+### Stub distribution name
+
+`types-slumber`
 
 ### Number of lines
 
@@ -5422,6 +5902,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `stdlib`
 
+### Stub distribution name
+
+`-`
+
 ### Number of lines
 
 50,959 (excluding blank lines)
@@ -5466,6 +5950,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 <hr>
 
 ## Info on typeshed's stubs for `stdlib-list`
+
+### Stub distribution name
+
+`types-stdlib-list`
 
 ### Number of lines
 
@@ -5512,6 +6000,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `stripe`
 
+### Stub distribution name
+
+`types-stripe`
+
 ### Number of lines
 
 1,414 (excluding blank lines)
@@ -5556,6 +6048,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `tabulate`
+
+### Stub distribution name
+
+`types-tabulate`
 
 ### Number of lines
 
@@ -5602,6 +6098,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `termcolor`
 
+### Stub distribution name
+
+`types-termcolor`
+
 ### Number of lines
 
 12 (excluding blank lines)
@@ -5646,6 +6146,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `toml`
+
+### Stub distribution name
+
+`types-toml`
 
 ### Number of lines
 
@@ -5692,6 +6196,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `toposort`
 
+### Stub distribution name
+
+`types-toposort`
+
 ### Number of lines
 
 13 (excluding blank lines)
@@ -5736,6 +6244,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `tqdm`
+
+### Stub distribution name
+
+`types-tqdm`
 
 ### Number of lines
 
@@ -5782,6 +6294,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `tree-sitter`
 
+### Stub distribution name
+
+`types-tree-sitter`
+
 ### Number of lines
 
 124 (excluding blank lines)
@@ -5826,6 +6342,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `tree-sitter-languages`
+
+### Stub distribution name
+
+`types-tree-sitter-languages`
 
 ### Number of lines
 
@@ -5872,6 +6392,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `ttkthemes`
 
+### Stub distribution name
+
+`types-ttkthemes`
+
 ### Number of lines
 
 76 (excluding blank lines)
@@ -5916,6 +6440,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `typed-ast`
+
+### Stub distribution name
+
+`types-typed-ast`
 
 ### Number of lines
 
@@ -5962,6 +6490,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `tzlocal`
 
+### Stub distribution name
+
+`types-tzlocal`
+
 ### Number of lines
 
 19 (excluding blank lines)
@@ -6006,6 +6538,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `ujson`
+
+### Stub distribution name
+
+`types-ujson`
 
 ### Number of lines
 
@@ -6052,6 +6588,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `untangle`
 
+### Stub distribution name
+
+`types-untangle`
+
 ### Number of lines
 
 33 (excluding blank lines)
@@ -6096,6 +6636,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `urllib3`
+
+### Stub distribution name
+
+`types-urllib3`
 
 ### Number of lines
 
@@ -6142,6 +6686,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ## Info on typeshed's stubs for `vobject`
 
+### Stub distribution name
+
+`types-vobject`
+
 ### Number of lines
 
 519 (excluding blank lines)
@@ -6186,6 +6734,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
 <hr>
 
 ## Info on typeshed's stubs for `waitress`
+
+### Stub distribution name
+
+`types-waitress`
 
 ### Number of lines
 
@@ -6232,6 +6784,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `whatthepatch`
 
+### Stub distribution name
+
+`types-whatthepatch`
+
 ### Number of lines
 
 96 (excluding blank lines)
@@ -6276,6 +6832,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `xmltodict`
+
+### Stub distribution name
+
+`types-xmltodict`
 
 ### Number of lines
 
@@ -6322,6 +6882,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `xxhash`
 
+### Stub distribution name
+
+`types-xxhash`
+
 ### Number of lines
 
 43 (excluding blank lines)
@@ -6366,6 +6930,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 <hr>
 
 ## Info on typeshed's stubs for `zxcvbn`
+
+### Stub distribution name
+
+`types-zxcvbn`
 
 ### Number of lines
 

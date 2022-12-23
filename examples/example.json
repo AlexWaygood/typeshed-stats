@@ -1,6 +1,7 @@
 [
   {
     "package_name": "D3DShot",
+    "stub_distribution_name": "types-D3DShot",
     "extra_description": null,
     "number_of_lines": 590,
     "package_status": "UP_TO_DATE",
@@ -24,6 +25,7 @@
   },
   {
     "package_name": "DateTimeRange",
+    "stub_distribution_name": "types-DateTimeRange",
     "extra_description": null,
     "number_of_lines": 64,
     "package_status": "UP_TO_DATE",
@@ -49,6 +51,7 @@
   },
   {
     "package_name": "Deprecated",
+    "stub_distribution_name": "types-Deprecated",
     "extra_description": null,
     "number_of_lines": 56,
     "package_status": "UP_TO_DATE",
@@ -74,6 +77,7 @@
   },
   {
     "package_name": "ExifRead",
+    "stub_distribution_name": "types-ExifRead",
     "extra_description": null,
     "number_of_lines": 182,
     "package_status": "UP_TO_DATE",
@@ -99,6 +103,7 @@
   },
   {
     "package_name": "Flask-Cors",
+    "stub_distribution_name": "types-Flask-Cors",
     "extra_description": null,
     "number_of_lines": 125,
     "package_status": "UP_TO_DATE",
@@ -124,6 +129,7 @@
   },
   {
     "package_name": "Flask-Migrate",
+    "stub_distribution_name": "types-Flask-Migrate",
     "extra_description": null,
     "number_of_lines": 100,
     "package_status": "UP_TO_DATE",
@@ -149,6 +155,7 @@
   },
   {
     "package_name": "Flask-SQLAlchemy",
+    "stub_distribution_name": "types-Flask-SQLAlchemy",
     "extra_description": null,
     "number_of_lines": 106,
     "package_status": "OBSOLETE",
@@ -174,6 +181,7 @@
   },
   {
     "package_name": "JACK-Client",
+    "stub_distribution_name": "types-JACK-Client",
     "extra_description": null,
     "number_of_lines": 281,
     "package_status": "UP_TO_DATE",
@@ -200,6 +208,7 @@
   },
   {
     "package_name": "Markdown",
+    "stub_distribution_name": "types-Markdown",
     "extra_description": null,
     "number_of_lines": 635,
     "package_status": "UP_TO_DATE",
@@ -225,6 +234,7 @@
   },
   {
     "package_name": "Pillow",
+    "stub_distribution_name": "types-Pillow",
     "extra_description": null,
     "number_of_lines": 2353,
     "package_status": "UP_TO_DATE",
@@ -250,6 +260,7 @@
   },
   {
     "package_name": "PyAutoGUI",
+    "stub_distribution_name": "types-PyAutoGUI",
     "extra_description": null,
     "number_of_lines": 219,
     "package_status": "UP_TO_DATE",
@@ -275,6 +286,7 @@
   },
   {
     "package_name": "PyMySQL",
+    "stub_distribution_name": "types-PyMySQL",
     "extra_description": null,
     "number_of_lines": 1039,
     "package_status": "UP_TO_DATE",
@@ -300,6 +312,7 @@
   },
   {
     "package_name": "PyScreeze",
+    "stub_distribution_name": "types-PyScreeze",
     "extra_description": null,
     "number_of_lines": 177,
     "package_status": "UP_TO_DATE",
@@ -325,6 +338,7 @@
   },
   {
     "package_name": "PyYAML",
+    "stub_distribution_name": "types-PyYAML",
     "extra_description": null,
     "number_of_lines": 1168,
     "package_status": "UP_TO_DATE",
@@ -350,6 +364,7 @@
   },
   {
     "package_name": "Pygments",
+    "stub_distribution_name": "types-Pygments",
     "extra_description": null,
     "number_of_lines": 677,
     "package_status": "UP_TO_DATE",
@@ -375,6 +390,7 @@
   },
   {
     "package_name": "SQLAlchemy",
+    "stub_distribution_name": "types-SQLAlchemy",
     "extra_description": "The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.",
     "number_of_lines": 14545,
     "package_status": "UP_TO_DATE",
@@ -400,6 +416,7 @@
   },
   {
     "package_name": "Send2Trash",
+    "stub_distribution_name": "types-Send2Trash",
     "extra_description": null,
     "number_of_lines": 21,
     "package_status": "UP_TO_DATE",
@@ -425,6 +442,7 @@
   },
   {
     "package_name": "aiofiles",
+    "stub_distribution_name": "types-aiofiles",
     "extra_description": null,
     "number_of_lines": 592,
     "package_status": "UP_TO_DATE",
@@ -451,6 +469,7 @@
   },
   {
     "package_name": "annoy",
+    "stub_distribution_name": "types-annoy",
     "extra_description": null,
     "number_of_lines": 45,
     "package_status": "UP_TO_DATE",
@@ -476,6 +495,7 @@
   },
   {
     "package_name": "appdirs",
+    "stub_distribution_name": "types-appdirs",
     "extra_description": null,
     "number_of_lines": 54,
     "package_status": "UP_TO_DATE",
@@ -501,6 +521,7 @@
   },
   {
     "package_name": "aws-xray-sdk",
+    "stub_distribution_name": "types-aws-xray-sdk",
     "extra_description": null,
     "number_of_lines": 705,
     "package_status": "UP_TO_DATE",
@@ -526,6 +547,7 @@
   },
   {
     "package_name": "babel",
+    "stub_distribution_name": "types-babel",
     "extra_description": null,
     "number_of_lines": 1046,
     "package_status": "UP_TO_DATE",
@@ -551,6 +573,7 @@
   },
   {
     "package_name": "backports.ssl_match_hostname",
+    "stub_distribution_name": "types-backports.ssl_match_hostname",
     "extra_description": null,
     "number_of_lines": 6,
     "package_status": "UP_TO_DATE",
@@ -576,6 +599,7 @@
   },
   {
     "package_name": "beautifulsoup4",
+    "stub_distribution_name": "types-beautifulsoup4",
     "extra_description": null,
     "number_of_lines": 784,
     "package_status": "UP_TO_DATE",
@@ -601,6 +625,7 @@
   },
   {
     "package_name": "bleach",
+    "stub_distribution_name": "types-bleach",
     "extra_description": null,
     "number_of_lines": 160,
     "package_status": "UP_TO_DATE",
@@ -626,6 +651,7 @@
   },
   {
     "package_name": "boto",
+    "stub_distribution_name": "types-boto",
     "extra_description": null,
     "number_of_lines": 1803,
     "package_status": "UP_TO_DATE",
@@ -651,6 +677,7 @@
   },
   {
     "package_name": "braintree",
+    "stub_distribution_name": "types-braintree",
     "extra_description": null,
     "number_of_lines": 2833,
     "package_status": "UP_TO_DATE",
@@ -676,6 +703,7 @@
   },
   {
     "package_name": "cachetools",
+    "stub_distribution_name": "types-cachetools",
     "extra_description": null,
     "number_of_lines": 115,
     "package_status": "UP_TO_DATE",
@@ -701,6 +729,7 @@
   },
   {
     "package_name": "caldav",
+    "stub_distribution_name": "types-caldav",
     "extra_description": null,
     "number_of_lines": 490,
     "package_status": "UP_TO_DATE",
@@ -726,6 +755,7 @@
   },
   {
     "package_name": "cffi",
+    "stub_distribution_name": "types-cffi",
     "extra_description": null,
     "number_of_lines": 820,
     "package_status": "UP_TO_DATE",
@@ -752,6 +782,7 @@
   },
   {
     "package_name": "chardet",
+    "stub_distribution_name": "types-chardet",
     "extra_description": null,
     "number_of_lines": 122,
     "package_status": "OBSOLETE",
@@ -777,6 +808,7 @@
   },
   {
     "package_name": "chevron",
+    "stub_distribution_name": "types-chevron",
     "extra_description": null,
     "number_of_lines": 39,
     "package_status": "UP_TO_DATE",
@@ -802,6 +834,7 @@
   },
   {
     "package_name": "click-spinner",
+    "stub_distribution_name": "types-click-spinner",
     "extra_description": null,
     "number_of_lines": 31,
     "package_status": "UP_TO_DATE",
@@ -827,6 +860,7 @@
   },
   {
     "package_name": "colorama",
+    "stub_distribution_name": "types-colorama",
     "extra_description": null,
     "number_of_lines": 197,
     "package_status": "UP_TO_DATE",
@@ -853,6 +887,7 @@
   },
   {
     "package_name": "commonmark",
+    "stub_distribution_name": "types-commonmark",
     "extra_description": null,
     "number_of_lines": 368,
     "package_status": "UP_TO_DATE",
@@ -878,6 +913,7 @@
   },
   {
     "package_name": "console-menu",
+    "stub_distribution_name": "types-console-menu",
     "extra_description": null,
     "number_of_lines": 686,
     "package_status": "UP_TO_DATE",
@@ -903,6 +939,7 @@
   },
   {
     "package_name": "contextvars",
+    "stub_distribution_name": "types-contextvars",
     "extra_description": null,
     "number_of_lines": 41,
     "package_status": "UP_TO_DATE",
@@ -928,6 +965,7 @@
   },
   {
     "package_name": "croniter",
+    "stub_distribution_name": "types-croniter",
     "extra_description": null,
     "number_of_lines": 90,
     "package_status": "UP_TO_DATE",
@@ -953,6 +991,7 @@
   },
   {
     "package_name": "cryptography",
+    "stub_distribution_name": "types-cryptography",
     "extra_description": null,
     "number_of_lines": 1742,
     "package_status": "OBSOLETE",
@@ -976,6 +1015,7 @@
   },
   {
     "package_name": "dateparser",
+    "stub_distribution_name": "types-dateparser",
     "extra_description": null,
     "number_of_lines": 460,
     "package_status": "UP_TO_DATE",
@@ -1001,6 +1041,7 @@
   },
   {
     "package_name": "decorator",
+    "stub_distribution_name": "types-decorator",
     "extra_description": null,
     "number_of_lines": 64,
     "package_status": "UP_TO_DATE",
@@ -1026,6 +1067,7 @@
   },
   {
     "package_name": "dj-database-url",
+    "stub_distribution_name": "types-dj-database-url",
     "extra_description": null,
     "number_of_lines": 37,
     "package_status": "UP_TO_DATE",
@@ -1051,6 +1093,7 @@
   },
   {
     "package_name": "dockerfile-parse",
+    "stub_distribution_name": "types-dockerfile-parse",
     "extra_description": null,
     "number_of_lines": 109,
     "package_status": "UP_TO_DATE",
@@ -1076,6 +1119,7 @@
   },
   {
     "package_name": "docopt",
+    "stub_distribution_name": "types-docopt",
     "extra_description": null,
     "number_of_lines": 9,
     "package_status": "UP_TO_DATE",
@@ -1101,6 +1145,7 @@
   },
   {
     "package_name": "docutils",
+    "stub_distribution_name": "types-docutils",
     "extra_description": null,
     "number_of_lines": 503,
     "package_status": "UP_TO_DATE",
@@ -1126,6 +1171,7 @@
   },
   {
     "package_name": "editdistance",
+    "stub_distribution_name": "types-editdistance",
     "extra_description": null,
     "number_of_lines": 3,
     "package_status": "UP_TO_DATE",
@@ -1151,6 +1197,7 @@
   },
   {
     "package_name": "emoji",
+    "stub_distribution_name": "types-emoji",
     "extra_description": null,
     "number_of_lines": 66,
     "package_status": "OBSOLETE",
@@ -1176,6 +1223,7 @@
   },
   {
     "package_name": "entrypoints",
+    "stub_distribution_name": "types-entrypoints",
     "extra_description": null,
     "number_of_lines": 45,
     "package_status": "UP_TO_DATE",
@@ -1201,6 +1249,7 @@
   },
   {
     "package_name": "first",
+    "stub_distribution_name": "types-first",
     "extra_description": null,
     "number_of_lines": 14,
     "package_status": "UP_TO_DATE",
@@ -1226,6 +1275,7 @@
   },
   {
     "package_name": "flake8-2020",
+    "stub_distribution_name": "types-flake8-2020",
     "extra_description": null,
     "number_of_lines": 22,
     "package_status": "UP_TO_DATE",
@@ -1251,6 +1301,7 @@
   },
   {
     "package_name": "flake8-bugbear",
+    "stub_distribution_name": "types-flake8-bugbear",
     "extra_description": null,
     "number_of_lines": 27,
     "package_status": "UP_TO_DATE",
@@ -1276,6 +1327,7 @@
   },
   {
     "package_name": "flake8-builtins",
+    "stub_distribution_name": "types-flake8-builtins",
     "extra_description": null,
     "number_of_lines": 10,
     "package_status": "UP_TO_DATE",
@@ -1301,6 +1353,7 @@
   },
   {
     "package_name": "flake8-docstrings",
+    "stub_distribution_name": "types-flake8-docstrings",
     "extra_description": null,
     "number_of_lines": 19,
     "package_status": "UP_TO_DATE",
@@ -1326,6 +1379,7 @@
   },
   {
     "package_name": "flake8-plugin-utils",
+    "stub_distribution_name": "types-flake8-plugin-utils",
     "extra_description": null,
     "number_of_lines": 61,
     "package_status": "UP_TO_DATE",
@@ -1351,6 +1405,7 @@
   },
   {
     "package_name": "flake8-rst-docstrings",
+    "stub_distribution_name": "types-flake8-rst-docstrings",
     "extra_description": null,
     "number_of_lines": 31,
     "package_status": "UP_TO_DATE",
@@ -1376,6 +1431,7 @@
   },
   {
     "package_name": "flake8-simplify",
+    "stub_distribution_name": "types-flake8-simplify",
     "extra_description": null,
     "number_of_lines": 8,
     "package_status": "UP_TO_DATE",
@@ -1401,6 +1457,7 @@
   },
   {
     "package_name": "flake8-typing-imports",
+    "stub_distribution_name": "types-flake8-typing-imports",
     "extra_description": null,
     "number_of_lines": 15,
     "package_status": "UP_TO_DATE",
@@ -1426,6 +1483,7 @@
   },
   {
     "package_name": "fpdf2",
+    "stub_distribution_name": "types-fpdf2",
     "extra_description": null,
     "number_of_lines": 2001,
     "package_status": "UP_TO_DATE",
@@ -1451,6 +1509,7 @@
   },
   {
     "package_name": "gdb",
+    "stub_distribution_name": "types-gdb",
     "extra_description": "Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: is is not possible to install the `gdb` package separately, for instance using `pip`.",
     "number_of_lines": 718,
     "package_status": "NOT_ON_PYPI",
@@ -1474,6 +1533,7 @@
   },
   {
     "package_name": "google-cloud-ndb",
+    "stub_distribution_name": "types-google-cloud-ndb",
     "extra_description": null,
     "number_of_lines": 1408,
     "package_status": "UP_TO_DATE",
@@ -1499,6 +1559,7 @@
   },
   {
     "package_name": "hdbcli",
+    "stub_distribution_name": "types-hdbcli",
     "extra_description": null,
     "number_of_lines": 129,
     "package_status": "UP_TO_DATE",
@@ -1524,6 +1585,7 @@
   },
   {
     "package_name": "html5lib",
+    "stub_distribution_name": "types-html5lib",
     "extra_description": null,
     "number_of_lines": 663,
     "package_status": "UP_TO_DATE",
@@ -1549,6 +1611,7 @@
   },
   {
     "package_name": "httplib2",
+    "stub_distribution_name": "types-httplib2",
     "extra_description": null,
     "number_of_lines": 250,
     "package_status": "UP_TO_DATE",
@@ -1574,6 +1637,7 @@
   },
   {
     "package_name": "humanfriendly",
+    "stub_distribution_name": "types-humanfriendly",
     "extra_description": null,
     "number_of_lines": 333,
     "package_status": "UP_TO_DATE",
@@ -1599,6 +1663,7 @@
   },
   {
     "package_name": "invoke",
+    "stub_distribution_name": "types-invoke",
     "extra_description": null,
     "number_of_lines": 745,
     "package_status": "UP_TO_DATE",
@@ -1624,6 +1689,7 @@
   },
   {
     "package_name": "jmespath",
+    "stub_distribution_name": "types-jmespath",
     "extra_description": null,
     "number_of_lines": 172,
     "package_status": "UP_TO_DATE",
@@ -1649,6 +1715,7 @@
   },
   {
     "package_name": "jsonschema",
+    "stub_distribution_name": "types-jsonschema",
     "extra_description": null,
     "number_of_lines": 385,
     "package_status": "UP_TO_DATE",
@@ -1674,6 +1741,7 @@
   },
   {
     "package_name": "keyboard",
+    "stub_distribution_name": "types-keyboard",
     "extra_description": null,
     "number_of_lines": 241,
     "package_status": "UP_TO_DATE",
@@ -1699,6 +1767,7 @@
   },
   {
     "package_name": "ldap3",
+    "stub_distribution_name": "types-ldap3",
     "extra_description": null,
     "number_of_lines": 2586,
     "package_status": "UP_TO_DATE",
@@ -1724,6 +1793,7 @@
   },
   {
     "package_name": "mock",
+    "stub_distribution_name": "types-mock",
     "extra_description": null,
     "number_of_lines": 311,
     "package_status": "UP_TO_DATE",
@@ -1749,6 +1819,7 @@
   },
   {
     "package_name": "mypy-extensions",
+    "stub_distribution_name": "types-mypy-extensions",
     "extra_description": null,
     "number_of_lines": 64,
     "package_status": "UP_TO_DATE",
@@ -1774,6 +1845,7 @@
   },
   {
     "package_name": "mysqlclient",
+    "stub_distribution_name": "types-mysqlclient",
     "extra_description": null,
     "number_of_lines": 1213,
     "package_status": "UP_TO_DATE",
@@ -1799,6 +1871,7 @@
   },
   {
     "package_name": "oauthlib",
+    "stub_distribution_name": "types-oauthlib",
     "extra_description": null,
     "number_of_lines": 1296,
     "package_status": "UP_TO_DATE",
@@ -1824,6 +1897,7 @@
   },
   {
     "package_name": "openpyxl",
+    "stub_distribution_name": "types-openpyxl",
     "extra_description": null,
     "number_of_lines": 8979,
     "package_status": "UP_TO_DATE",
@@ -1849,6 +1923,7 @@
   },
   {
     "package_name": "opentracing",
+    "stub_distribution_name": "types-opentracing",
     "extra_description": null,
     "number_of_lines": 328,
     "package_status": "UP_TO_DATE",
@@ -1874,6 +1949,7 @@
   },
   {
     "package_name": "paho-mqtt",
+    "stub_distribution_name": "types-paho-mqtt",
     "extra_description": null,
     "number_of_lines": 502,
     "package_status": "UP_TO_DATE",
@@ -1899,6 +1975,7 @@
   },
   {
     "package_name": "paramiko",
+    "stub_distribution_name": "types-paramiko",
     "extra_description": null,
     "number_of_lines": 1749,
     "package_status": "UP_TO_DATE",
@@ -1925,6 +2002,7 @@
   },
   {
     "package_name": "parsimonious",
+    "stub_distribution_name": "types-parsimonious",
     "extra_description": null,
     "number_of_lines": 180,
     "package_status": "UP_TO_DATE",
@@ -1950,6 +2028,7 @@
   },
   {
     "package_name": "passlib",
+    "stub_distribution_name": "types-passlib",
     "extra_description": null,
     "number_of_lines": 1740,
     "package_status": "UP_TO_DATE",
@@ -1975,6 +2054,7 @@
   },
   {
     "package_name": "passpy",
+    "stub_distribution_name": "types-passpy",
     "extra_description": null,
     "number_of_lines": 47,
     "package_status": "UP_TO_DATE",
@@ -2000,6 +2080,7 @@
   },
   {
     "package_name": "peewee",
+    "stub_distribution_name": "types-peewee",
     "extra_description": null,
     "number_of_lines": 1608,
     "package_status": "UP_TO_DATE",
@@ -2025,6 +2106,7 @@
   },
   {
     "package_name": "pep8-naming",
+    "stub_distribution_name": "types-pep8-naming",
     "extra_description": null,
     "number_of_lines": 27,
     "package_status": "UP_TO_DATE",
@@ -2050,6 +2132,7 @@
   },
   {
     "package_name": "pika",
+    "stub_distribution_name": "types-pika-ts",
     "extra_description": "The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",
     "number_of_lines": 2186,
     "package_status": "UP_TO_DATE",
@@ -2075,6 +2158,7 @@
   },
   {
     "package_name": "playsound",
+    "stub_distribution_name": "types-playsound",
     "extra_description": null,
     "number_of_lines": 3,
     "package_status": "UP_TO_DATE",
@@ -2100,6 +2184,7 @@
   },
   {
     "package_name": "polib",
+    "stub_distribution_name": "types-polib",
     "extra_description": null,
     "number_of_lines": 144,
     "package_status": "UP_TO_DATE",
@@ -2125,6 +2210,7 @@
   },
   {
     "package_name": "prettytable",
+    "stub_distribution_name": "types-prettytable",
     "extra_description": null,
     "number_of_lines": 294,
     "package_status": "OBSOLETE",
@@ -2150,6 +2236,7 @@
   },
   {
     "package_name": "protobuf",
+    "stub_distribution_name": "types-protobuf",
     "extra_description": "Generated with aid from mypy-protobuf v3.4.0",
     "number_of_lines": 4280,
     "package_status": "UP_TO_DATE",
@@ -2175,6 +2262,7 @@
   },
   {
     "package_name": "psutil",
+    "stub_distribution_name": "types-psutil",
     "extra_description": null,
     "number_of_lines": 1506,
     "package_status": "UP_TO_DATE",
@@ -2202,6 +2290,7 @@
   },
   {
     "package_name": "psycopg2",
+    "stub_distribution_name": "types-psycopg2",
     "extra_description": null,
     "number_of_lines": 1552,
     "package_status": "UP_TO_DATE",
@@ -2227,6 +2316,7 @@
   },
   {
     "package_name": "pyOpenSSL",
+    "stub_distribution_name": "types-pyOpenSSL",
     "extra_description": null,
     "number_of_lines": 373,
     "package_status": "UP_TO_DATE",
@@ -2252,6 +2342,7 @@
   },
   {
     "package_name": "pyRFC3339",
+    "stub_distribution_name": "types-pyRFC3339",
     "extra_description": null,
     "number_of_lines": 17,
     "package_status": "UP_TO_DATE",
@@ -2277,6 +2368,7 @@
   },
   {
     "package_name": "pyaudio",
+    "stub_distribution_name": "types-pyaudio",
     "extra_description": null,
     "number_of_lines": 177,
     "package_status": "UP_TO_DATE",
@@ -2303,6 +2395,7 @@
   },
   {
     "package_name": "pycocotools",
+    "stub_distribution_name": "types-pycocotools",
     "extra_description": null,
     "number_of_lines": 172,
     "package_status": "UP_TO_DATE",
@@ -2328,6 +2421,7 @@
   },
   {
     "package_name": "pycurl",
+    "stub_distribution_name": "types-pycurl",
     "extra_description": null,
     "number_of_lines": 674,
     "package_status": "UP_TO_DATE",
@@ -2353,6 +2447,7 @@
   },
   {
     "package_name": "pyfarmhash",
+    "stub_distribution_name": "types-pyfarmhash",
     "extra_description": null,
     "number_of_lines": 9,
     "package_status": "UP_TO_DATE",
@@ -2378,6 +2473,7 @@
   },
   {
     "package_name": "pyflakes",
+    "stub_distribution_name": "types-pyflakes",
     "extra_description": null,
     "number_of_lines": 428,
     "package_status": "UP_TO_DATE",
@@ -2403,6 +2499,7 @@
   },
   {
     "package_name": "pyinstaller",
+    "stub_distribution_name": "types-pyinstaller",
     "extra_description": null,
     "number_of_lines": 418,
     "package_status": "UP_TO_DATE",
@@ -2428,6 +2525,7 @@
   },
   {
     "package_name": "pynput",
+    "stub_distribution_name": "types-pynput",
     "extra_description": null,
     "number_of_lines": 325,
     "package_status": "UP_TO_DATE",
@@ -2455,6 +2553,7 @@
   },
   {
     "package_name": "pyserial",
+    "stub_distribution_name": "types-pyserial",
     "extra_description": null,
     "number_of_lines": 964,
     "package_status": "UP_TO_DATE",
@@ -2478,6 +2577,7 @@
   },
   {
     "package_name": "pysftp",
+    "stub_distribution_name": "types-pysftp",
     "extra_description": null,
     "number_of_lines": 162,
     "package_status": "UP_TO_DATE",
@@ -2503,6 +2603,7 @@
   },
   {
     "package_name": "pytest-lazy-fixture",
+    "stub_distribution_name": "types-pytest-lazy-fixture",
     "extra_description": null,
     "number_of_lines": 12,
     "package_status": "UP_TO_DATE",
@@ -2528,6 +2629,7 @@
   },
   {
     "package_name": "python-crontab",
+    "stub_distribution_name": "types-python-crontab",
     "extra_description": null,
     "number_of_lines": 278,
     "package_status": "UP_TO_DATE",
@@ -2553,6 +2655,7 @@
   },
   {
     "package_name": "python-dateutil",
+    "stub_distribution_name": "types-python-dateutil",
     "extra_description": null,
     "number_of_lines": 441,
     "package_status": "UP_TO_DATE",
@@ -2578,6 +2681,7 @@
   },
   {
     "package_name": "python-gflags",
+    "stub_distribution_name": "types-python-gflags",
     "extra_description": null,
     "number_of_lines": 251,
     "package_status": "UP_TO_DATE",
@@ -2603,6 +2707,7 @@
   },
   {
     "package_name": "python-jose",
+    "stub_distribution_name": "types-python-jose",
     "extra_description": null,
     "number_of_lines": 359,
     "package_status": "UP_TO_DATE",
@@ -2628,6 +2733,7 @@
   },
   {
     "package_name": "python-nmap",
+    "stub_distribution_name": "types-python-nmap",
     "extra_description": null,
     "number_of_lines": 116,
     "package_status": "UP_TO_DATE",
@@ -2653,6 +2759,7 @@
   },
   {
     "package_name": "python-slugify",
+    "stub_distribution_name": "types-python-slugify",
     "extra_description": null,
     "number_of_lines": 45,
     "package_status": "UP_TO_DATE",
@@ -2678,6 +2785,7 @@
   },
   {
     "package_name": "python-xlib",
+    "stub_distribution_name": "types-python-xlib",
     "extra_description": null,
     "number_of_lines": 5396,
     "package_status": "UP_TO_DATE",
@@ -2703,6 +2811,7 @@
   },
   {
     "package_name": "pytz",
+    "stub_distribution_name": "types-pytz",
     "extra_description": null,
     "number_of_lines": 127,
     "package_status": "UP_TO_DATE",
@@ -2728,6 +2837,7 @@
   },
   {
     "package_name": "pyvmomi",
+    "stub_distribution_name": "types-pyvmomi",
     "extra_description": null,
     "number_of_lines": 177,
     "package_status": "UP_TO_DATE",
@@ -2753,6 +2863,7 @@
   },
   {
     "package_name": "pywin32",
+    "stub_distribution_name": "types-pywin32",
     "extra_description": null,
     "number_of_lines": 34530,
     "package_status": "UP_TO_DATE",
@@ -2778,6 +2889,7 @@
   },
   {
     "package_name": "redis",
+    "stub_distribution_name": "types-redis",
     "extra_description": null,
     "number_of_lines": 5336,
     "package_status": "OUT_OF_DATE",
@@ -2803,6 +2915,7 @@
   },
   {
     "package_name": "regex",
+    "stub_distribution_name": "types-regex",
     "extra_description": null,
     "number_of_lines": 749,
     "package_status": "UP_TO_DATE",
@@ -2828,6 +2941,7 @@
   },
   {
     "package_name": "requests",
+    "stub_distribution_name": "types-requests",
     "extra_description": null,
     "number_of_lines": 969,
     "package_status": "UP_TO_DATE",
@@ -2853,6 +2967,7 @@
   },
   {
     "package_name": "retry",
+    "stub_distribution_name": "types-retry",
     "extra_description": null,
     "number_of_lines": 27,
     "package_status": "UP_TO_DATE",
@@ -2878,6 +2993,7 @@
   },
   {
     "package_name": "setuptools",
+    "stub_distribution_name": "types-setuptools",
     "extra_description": null,
     "number_of_lines": 2433,
     "package_status": "UP_TO_DATE",
@@ -2903,6 +3019,7 @@
   },
   {
     "package_name": "simplejson",
+    "stub_distribution_name": "types-simplejson",
     "extra_description": null,
     "number_of_lines": 51,
     "package_status": "UP_TO_DATE",
@@ -2928,6 +3045,7 @@
   },
   {
     "package_name": "singledispatch",
+    "stub_distribution_name": "types-singledispatch",
     "extra_description": null,
     "number_of_lines": 27,
     "package_status": "UP_TO_DATE",
@@ -2953,6 +3071,7 @@
   },
   {
     "package_name": "six",
+    "stub_distribution_name": "types-six",
     "extra_description": null,
     "number_of_lines": 335,
     "package_status": "UP_TO_DATE",
@@ -2978,6 +3097,7 @@
   },
   {
     "package_name": "slumber",
+    "stub_distribution_name": "types-slumber",
     "extra_description": null,
     "number_of_lines": 74,
     "package_status": "UP_TO_DATE",
@@ -3003,6 +3123,7 @@
   },
   {
     "package_name": "stdlib",
+    "stub_distribution_name": "-",
     "extra_description": null,
     "number_of_lines": 50959,
     "package_status": "STDLIB",
@@ -3030,6 +3151,7 @@
   },
   {
     "package_name": "stdlib-list",
+    "stub_distribution_name": "types-stdlib-list",
     "extra_description": null,
     "number_of_lines": 16,
     "package_status": "UP_TO_DATE",
@@ -3055,6 +3177,7 @@
   },
   {
     "package_name": "stripe",
+    "stub_distribution_name": "types-stripe",
     "extra_description": null,
     "number_of_lines": 1414,
     "package_status": "OUT_OF_DATE",
@@ -3080,6 +3203,7 @@
   },
   {
     "package_name": "tabulate",
+    "stub_distribution_name": "types-tabulate",
     "extra_description": null,
     "number_of_lines": 50,
     "package_status": "UP_TO_DATE",
@@ -3105,6 +3229,7 @@
   },
   {
     "package_name": "termcolor",
+    "stub_distribution_name": "types-termcolor",
     "extra_description": null,
     "number_of_lines": 12,
     "package_status": "OBSOLETE",
@@ -3130,6 +3255,7 @@
   },
   {
     "package_name": "toml",
+    "stub_distribution_name": "types-toml",
     "extra_description": null,
     "number_of_lines": 136,
     "package_status": "UP_TO_DATE",
@@ -3155,6 +3281,7 @@
   },
   {
     "package_name": "toposort",
+    "stub_distribution_name": "types-toposort",
     "extra_description": null,
     "number_of_lines": 13,
     "package_status": "UP_TO_DATE",
@@ -3180,6 +3307,7 @@
   },
   {
     "package_name": "tqdm",
+    "stub_distribution_name": "types-tqdm",
     "extra_description": null,
     "number_of_lines": 1333,
     "package_status": "UP_TO_DATE",
@@ -3205,6 +3333,7 @@
   },
   {
     "package_name": "tree-sitter",
+    "stub_distribution_name": "types-tree-sitter",
     "extra_description": null,
     "number_of_lines": 124,
     "package_status": "UP_TO_DATE",
@@ -3230,6 +3359,7 @@
   },
   {
     "package_name": "tree-sitter-languages",
+    "stub_distribution_name": "types-tree-sitter-languages",
     "extra_description": null,
     "number_of_lines": 9,
     "package_status": "UP_TO_DATE",
@@ -3255,6 +3385,7 @@
   },
   {
     "package_name": "ttkthemes",
+    "stub_distribution_name": "types-ttkthemes",
     "extra_description": null,
     "number_of_lines": 76,
     "package_status": "UP_TO_DATE",
@@ -3280,6 +3411,7 @@
   },
   {
     "package_name": "typed-ast",
+    "stub_distribution_name": "types-typed-ast",
     "extra_description": null,
     "number_of_lines": 578,
     "package_status": "UP_TO_DATE",
@@ -3305,6 +3437,7 @@
   },
   {
     "package_name": "tzlocal",
+    "stub_distribution_name": "types-tzlocal",
     "extra_description": null,
     "number_of_lines": 19,
     "package_status": "UP_TO_DATE",
@@ -3330,6 +3463,7 @@
   },
   {
     "package_name": "ujson",
+    "stub_distribution_name": "types-ujson",
     "extra_description": null,
     "number_of_lines": 34,
     "package_status": "UP_TO_DATE",
@@ -3355,6 +3489,7 @@
   },
   {
     "package_name": "untangle",
+    "stub_distribution_name": "types-untangle",
     "extra_description": null,
     "number_of_lines": 33,
     "package_status": "UP_TO_DATE",
@@ -3380,6 +3515,7 @@
   },
   {
     "package_name": "urllib3",
+    "stub_distribution_name": "types-urllib3",
     "extra_description": null,
     "number_of_lines": 699,
     "package_status": "UP_TO_DATE",
@@ -3405,6 +3541,7 @@
   },
   {
     "package_name": "vobject",
+    "stub_distribution_name": "types-vobject",
     "extra_description": null,
     "number_of_lines": 519,
     "package_status": "UP_TO_DATE",
@@ -3430,6 +3567,7 @@
   },
   {
     "package_name": "waitress",
+    "stub_distribution_name": "types-waitress",
     "extra_description": null,
     "number_of_lines": 628,
     "package_status": "UP_TO_DATE",
@@ -3456,6 +3594,7 @@
   },
   {
     "package_name": "whatthepatch",
+    "stub_distribution_name": "types-whatthepatch",
     "extra_description": null,
     "number_of_lines": 96,
     "package_status": "UP_TO_DATE",
@@ -3481,6 +3620,7 @@
   },
   {
     "package_name": "xmltodict",
+    "stub_distribution_name": "types-xmltodict",
     "extra_description": null,
     "number_of_lines": 35,
     "package_status": "UP_TO_DATE",
@@ -3506,6 +3646,7 @@
   },
   {
     "package_name": "xxhash",
+    "stub_distribution_name": "types-xxhash",
     "extra_description": null,
     "number_of_lines": 43,
     "package_status": "OBSOLETE",
@@ -3531,6 +3672,7 @@
   },
   {
     "package_name": "zxcvbn",
+    "stub_distribution_name": "types-zxcvbn",
     "extra_description": null,
     "number_of_lines": 162,
     "package_status": "UP_TO_DATE",

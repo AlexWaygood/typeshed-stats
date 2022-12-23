@@ -51,17 +51,18 @@ Tools for gathering stats about typeshed packages.
 
 **Attributes:**
 
-| Name                 | Type                                                       |
-|----------------------|------------------------------------------------------------|
-| `package_name`       | [`str`][str]                                               |
-| `extra_description`  | [`str`][str]|`NoneType`                                    |
-| `number_of_lines`    | [`int`][int]                                               |
-| `package_status`     | [`PackageStatus`][typeshed_stats.gather.PackageStatus]     |
-| `upload_status`      | [`UploadStatus`][typeshed_stats.gather.UploadStatus]       |
-| `stubtest_setting`   | [`StubtestSetting`][typeshed_stats.gather.StubtestSetting] |
-| `stubtest_platforms` | [`list`][list][[`str`][str]]                               |
-| `pyright_setting`    | [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]   |
-| `annotation_stats`   | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] |
+| Name                     | Type                                                       |
+|--------------------------|------------------------------------------------------------|
+| `package_name`           | [`str`][str]                                               |
+| `stub_distribution_name` | [`str`][str]                                               |
+| `extra_description`      | [`str`][str]|`NoneType`                                    |
+| `number_of_lines`        | [`int`][int]                                               |
+| `package_status`         | [`PackageStatus`][typeshed_stats.gather.PackageStatus]     |
+| `upload_status`          | [`UploadStatus`][typeshed_stats.gather.UploadStatus]       |
+| `stubtest_setting`       | [`StubtestSetting`][typeshed_stats.gather.StubtestSetting] |
+| `stubtest_platforms`     | [`list`][list][[`str`][str]]                               |
+| `pyright_setting`        | [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]   |
+| `annotation_stats`       | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] |
 <hr>
 
 ::: typeshed_stats.gather.PackageName
@@ -187,6 +188,12 @@ Tools for gathering stats about typeshed packages.
 <hr>
 
 ::: typeshed_stats.gather.get_pyright_setting_for_path
+    options:
+      show_root_heading: true
+
+<hr>
+
+::: typeshed_stats.gather.get_stub_distribution_name
     options:
       show_root_heading: true
 
