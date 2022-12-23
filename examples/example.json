@@ -6,8 +6,11 @@
     "number_of_lines": 590,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "SKIPPED",
-    "stubtest_platforms": [],
+    "stubtest_settings": {
+      "strictness": "SKIPPED",
+      "platforms": [],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 127,
@@ -30,10 +33,13 @@
     "number_of_lines": 64,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 28,
@@ -56,10 +62,13 @@
     "number_of_lines": 56,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 30,
@@ -82,10 +91,13 @@
     "number_of_lines": 182,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 5
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 42,
@@ -108,10 +120,13 @@
     "number_of_lines": 125,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 62,
@@ -134,10 +149,13 @@
     "number_of_lines": 100,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 74,
@@ -160,10 +178,13 @@
     "number_of_lines": 106,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 54,
@@ -186,11 +207,14 @@
     "number_of_lines": 281,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "darwin",
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "darwin",
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 107,
@@ -213,10 +237,13 @@
     "number_of_lines": 635,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 12
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 112,
@@ -239,10 +266,13 @@
     "number_of_lines": 2353,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 6
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 629,
@@ -265,10 +295,13 @@
     "number_of_lines": 219,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 145,
@@ -291,10 +324,13 @@
     "number_of_lines": 1039,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 11
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 139,
@@ -317,10 +353,13 @@
     "number_of_lines": 177,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 93,
@@ -343,10 +382,13 @@
     "number_of_lines": 1168,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 389,
@@ -369,10 +411,13 @@
     "number_of_lines": 677,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 4
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 108,
@@ -395,10 +440,13 @@
     "number_of_lines": 14545,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1151
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 2192,
@@ -421,10 +469,13 @@
     "number_of_lines": 21,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 4,
@@ -447,11 +498,14 @@
     "number_of_lines": 592,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux",
-      "win32"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux",
+        "win32"
+      ],
+      "allowlist_length": 57
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 342,
@@ -474,10 +528,13 @@
     "number_of_lines": 45,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 40,
@@ -500,10 +557,13 @@
     "number_of_lines": 54,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 33,
@@ -526,10 +586,13 @@
     "number_of_lines": 705,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 4
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 127,
@@ -552,10 +615,13 @@
     "number_of_lines": 1046,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 395,
@@ -578,10 +644,13 @@
     "number_of_lines": 6,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 3,
@@ -604,10 +673,13 @@
     "number_of_lines": 784,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 240,
@@ -630,10 +702,13 @@
     "number_of_lines": 160,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 2
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 58,
@@ -656,10 +731,13 @@
     "number_of_lines": 1803,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 9
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 837,
@@ -682,10 +760,13 @@
     "number_of_lines": 2833,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 80,
@@ -708,10 +789,13 @@
     "number_of_lines": 115,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 20
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 86,
@@ -734,10 +818,13 @@
     "number_of_lines": 490,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 9
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 204,
@@ -760,11 +847,14 @@
     "number_of_lines": 820,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux",
-      "win32"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux",
+        "win32"
+      ],
+      "allowlist_length": 8
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 295,
@@ -787,10 +877,13 @@
     "number_of_lines": 122,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 25
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 5,
@@ -813,10 +906,13 @@
     "number_of_lines": 39,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 2
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 29,
@@ -839,10 +935,13 @@
     "number_of_lines": 31,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 12,
@@ -865,11 +964,14 @@
     "number_of_lines": 197,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux",
-      "win32"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux",
+        "win32"
+      ],
+      "allowlist_length": 47
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 89,
@@ -892,10 +994,13 @@
     "number_of_lines": 368,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 63,
@@ -918,10 +1023,13 @@
     "number_of_lines": 686,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 210,
@@ -944,10 +1052,13 @@
     "number_of_lines": 41,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 4
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 12,
@@ -970,10 +1081,13 @@
     "number_of_lines": 90,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 4
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 35,
@@ -996,8 +1110,11 @@
     "number_of_lines": 1742,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "SKIPPED",
-    "stubtest_platforms": [],
+    "stubtest_settings": {
+      "strictness": "SKIPPED",
+      "platforms": [],
+      "allowlist_length": 38
+    },
     "pyright_setting": "ENTIRELY_EXCLUDED",
     "annotation_stats": {
       "annotated_parameters": 615,
@@ -1020,10 +1137,13 @@
     "number_of_lines": 460,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 14
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 126,
@@ -1046,10 +1166,13 @@
     "number_of_lines": 64,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 9
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 36,
@@ -1072,10 +1195,13 @@
     "number_of_lines": 37,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 13,
@@ -1098,10 +1224,13 @@
     "number_of_lines": 109,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 2
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 46,
@@ -1124,10 +1253,13 @@
     "number_of_lines": 9,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 6,
@@ -1150,10 +1282,13 @@
     "number_of_lines": 503,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 19
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 213,
@@ -1176,10 +1311,13 @@
     "number_of_lines": 3,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 4,
@@ -1202,10 +1340,13 @@
     "number_of_lines": 66,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 21,
@@ -1228,10 +1369,13 @@
     "number_of_lines": 45,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 23,
@@ -1254,10 +1398,13 @@
     "number_of_lines": 14,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 8,
@@ -1280,10 +1427,13 @@
     "number_of_lines": 22,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 1,
@@ -1306,10 +1456,13 @@
     "number_of_lines": 27,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 8,
@@ -1332,10 +1485,13 @@
     "number_of_lines": 10,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 3,
@@ -1358,10 +1514,13 @@
     "number_of_lines": 19,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 6,
@@ -1384,10 +1543,13 @@
     "number_of_lines": 61,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 6
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 30,
@@ -1410,10 +1572,13 @@
     "number_of_lines": 31,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 10,
@@ -1436,10 +1601,13 @@
     "number_of_lines": 8,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 1,
@@ -1462,10 +1630,13 @@
     "number_of_lines": 15,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 4,
@@ -1488,10 +1659,13 @@
     "number_of_lines": 2001,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 7
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 578,
@@ -1514,8 +1688,11 @@
     "number_of_lines": 718,
     "package_status": "NOT_ON_PYPI",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "SKIPPED",
-    "stubtest_platforms": [],
+    "stubtest_settings": {
+      "strictness": "SKIPPED",
+      "platforms": [],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 227,
@@ -1538,10 +1715,13 @@
     "number_of_lines": 1408,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 3
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 479,
@@ -1564,10 +1744,13 @@
     "number_of_lines": 129,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 5
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 77,
@@ -1590,10 +1773,13 @@
     "number_of_lines": 663,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 67,
@@ -1616,10 +1802,13 @@
     "number_of_lines": 250,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 46,
@@ -1642,10 +1831,13 @@
     "number_of_lines": 333,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 7
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 79,
@@ -1668,10 +1860,13 @@
     "number_of_lines": 745,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 2
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 245,
@@ -1694,10 +1889,13 @@
     "number_of_lines": 172,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 67,
@@ -1720,10 +1918,13 @@
     "number_of_lines": 385,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 108,
@@ -1746,10 +1947,13 @@
     "number_of_lines": 241,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 5
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 130,
@@ -1772,10 +1976,13 @@
     "number_of_lines": 2586,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 533,
@@ -1798,10 +2005,13 @@
     "number_of_lines": 311,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 11
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 185,
@@ -1824,10 +2034,13 @@
     "number_of_lines": 64,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 2
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 28,
@@ -1850,10 +2063,13 @@
     "number_of_lines": 1213,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 28,
@@ -1876,10 +2092,13 @@
     "number_of_lines": 1296,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 274,
@@ -1902,10 +2121,13 @@
     "number_of_lines": 8979,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 2597,
@@ -1928,10 +2150,13 @@
     "number_of_lines": 328,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 4
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 105,
@@ -1954,10 +2179,13 @@
     "number_of_lines": 502,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 217,
@@ -1980,11 +2208,14 @@
     "number_of_lines": 1749,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux",
-      "win32"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux",
+        "win32"
+      ],
+      "allowlist_length": 19
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 748,
@@ -2007,10 +2238,13 @@
     "number_of_lines": 180,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 5
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 114,
@@ -2033,10 +2267,13 @@
     "number_of_lines": 1740,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 31
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 382,
@@ -2059,10 +2296,13 @@
     "number_of_lines": 47,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 3
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 43,
@@ -2085,10 +2325,13 @@
     "number_of_lines": 1608,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 25
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 370,
@@ -2111,10 +2354,13 @@
     "number_of_lines": 27,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 2
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 10,
@@ -2137,10 +2383,13 @@
     "number_of_lines": 2186,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 24
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 604,
@@ -2163,10 +2412,13 @@
     "number_of_lines": 3,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 2,
@@ -2189,10 +2441,13 @@
     "number_of_lines": 144,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 61,
@@ -2215,10 +2470,13 @@
     "number_of_lines": 294,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 18,
@@ -2241,10 +2499,13 @@
     "number_of_lines": 4280,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 14
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 726,
@@ -2267,12 +2528,15 @@
     "number_of_lines": 1506,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "darwin",
-      "linux",
-      "win32"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "darwin",
+        "linux",
+        "win32"
+      ],
+      "allowlist_length": 20
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 117,
@@ -2295,10 +2559,13 @@
     "number_of_lines": 1552,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 5
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 171,
@@ -2321,10 +2588,13 @@
     "number_of_lines": 373,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 163,
@@ -2347,10 +2617,13 @@
     "number_of_lines": 17,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 15,
@@ -2373,11 +2646,14 @@
     "number_of_lines": 177,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "darwin",
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "darwin",
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 53,
@@ -2400,10 +2676,13 @@
     "number_of_lines": 172,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 51,
@@ -2426,10 +2705,13 @@
     "number_of_lines": 674,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 22,
@@ -2452,10 +2734,13 @@
     "number_of_lines": 9,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 13,
@@ -2478,10 +2763,13 @@
     "number_of_lines": 428,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 24
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 267,
@@ -2504,10 +2792,13 @@
     "number_of_lines": 418,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 33
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 186,
@@ -2530,12 +2821,15 @@
     "number_of_lines": 325,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "darwin",
-      "linux",
-      "win32"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "darwin",
+        "linux",
+        "win32"
+      ],
+      "allowlist_length": 14
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 81,
@@ -2558,8 +2852,11 @@
     "number_of_lines": 964,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "SKIPPED",
-    "stubtest_platforms": [],
+    "stubtest_settings": {
+      "strictness": "SKIPPED",
+      "platforms": [],
+      "allowlist_length": 83
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 205,
@@ -2582,10 +2879,13 @@
     "number_of_lines": 162,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 109,
@@ -2608,10 +2908,13 @@
     "number_of_lines": 12,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 7
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 5,
@@ -2634,10 +2937,13 @@
     "number_of_lines": 278,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 2
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 99,
@@ -2660,10 +2966,13 @@
     "number_of_lines": 441,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 11
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 171,
@@ -2686,10 +2995,13 @@
     "number_of_lines": 251,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 186,
@@ -2712,10 +3024,13 @@
     "number_of_lines": 359,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 6
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 86,
@@ -2738,10 +3053,13 @@
     "number_of_lines": 116,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 44,
@@ -2764,10 +3082,13 @@
     "number_of_lines": 45,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 19,
@@ -2790,10 +3111,13 @@
     "number_of_lines": 5396,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 16
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 1335,
@@ -2816,10 +3140,13 @@
     "number_of_lines": 127,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 4
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 69,
@@ -2842,10 +3169,13 @@
     "number_of_lines": 177,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 8
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 50,
@@ -2868,10 +3198,13 @@
     "number_of_lines": 34530,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "win32"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "win32"
+      ],
+      "allowlist_length": 49
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 3635,
@@ -2894,10 +3227,13 @@
     "number_of_lines": 5336,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 67
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 3462,
@@ -2920,10 +3256,13 @@
     "number_of_lines": 749,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 13
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 429,
@@ -2946,10 +3285,13 @@
     "number_of_lines": 969,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 26
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 353,
@@ -2972,10 +3314,13 @@
     "number_of_lines": 27,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 3
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 17,
@@ -2998,10 +3343,13 @@
     "number_of_lines": 2433,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 29
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 821,
@@ -3024,10 +3372,13 @@
     "number_of_lines": 51,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 14
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 36,
@@ -3050,10 +3401,13 @@
     "number_of_lines": 27,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 16,
@@ -3076,10 +3430,13 @@
     "number_of_lines": 335,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 25
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 71,
@@ -3102,10 +3459,13 @@
     "number_of_lines": 74,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 2
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 43,
@@ -3128,12 +3488,15 @@
     "number_of_lines": 50959,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "darwin",
-      "linux",
-      "win32"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "darwin",
+        "linux",
+        "win32"
+      ],
+      "allowlist_length": 1774
+    },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
       "annotated_parameters": 24460,
@@ -3156,10 +3519,13 @@
     "number_of_lines": 16,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 4,
@@ -3182,10 +3548,13 @@
     "number_of_lines": 1414,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 6
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 264,
@@ -3208,10 +3577,13 @@
     "number_of_lines": 50,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 15,
@@ -3234,10 +3606,13 @@
     "number_of_lines": 12,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 9,
@@ -3260,10 +3635,13 @@
     "number_of_lines": 136,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 71,
@@ -3286,10 +3664,13 @@
     "number_of_lines": 13,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 4,
@@ -3312,10 +3693,13 @@
     "number_of_lines": 1333,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 3
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 788,
@@ -3338,10 +3722,13 @@
     "number_of_lines": 124,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 36
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 25,
@@ -3364,10 +3751,13 @@
     "number_of_lines": 9,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 2
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 2,
@@ -3390,10 +3780,13 @@
     "number_of_lines": 76,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 30,
@@ -3416,10 +3809,13 @@
     "number_of_lines": 578,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 46,
@@ -3442,10 +3838,13 @@
     "number_of_lines": 19,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 2
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 2,
@@ -3468,10 +3867,13 @@
     "number_of_lines": 34,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 28,
@@ -3494,10 +3896,13 @@
     "number_of_lines": 33,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 19,
@@ -3520,10 +3925,13 @@
     "number_of_lines": 699,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 30
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 158,
@@ -3546,10 +3954,13 @@
     "number_of_lines": 519,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 11
+    },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 101,
@@ -3572,11 +3983,14 @@
     "number_of_lines": 628,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "MISSING_STUBS_IGNORED",
-    "stubtest_platforms": [
-      "linux",
-      "win32"
-    ],
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux",
+        "win32"
+      ],
+      "allowlist_length": 38
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 210,
@@ -3599,10 +4013,13 @@
     "number_of_lines": 96,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 31,
@@ -3625,10 +4042,13 @@
     "number_of_lines": 35,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 20,
@@ -3651,10 +4071,13 @@
     "number_of_lines": 43,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 26,
@@ -3677,10 +4100,13 @@
     "number_of_lines": 162,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
-    "stubtest_setting": "ERROR_ON_MISSING_STUB",
-    "stubtest_platforms": [
-      "linux"
-    ],
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 3
+    },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 63,

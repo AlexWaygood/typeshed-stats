@@ -51,18 +51,17 @@ Tools for gathering stats about typeshed packages.
 
 **Attributes:**
 
-| Name                     | Type                                                       |
-|--------------------------|------------------------------------------------------------|
-| `package_name`           | [`str`][str]                                               |
-| `stub_distribution_name` | [`str`][str]                                               |
-| `extra_description`      | [`str`][str]|`NoneType`                                    |
-| `number_of_lines`        | [`int`][int]                                               |
-| `package_status`         | [`PackageStatus`][typeshed_stats.gather.PackageStatus]     |
-| `upload_status`          | [`UploadStatus`][typeshed_stats.gather.UploadStatus]       |
-| `stubtest_setting`       | [`StubtestSetting`][typeshed_stats.gather.StubtestSetting] |
-| `stubtest_platforms`     | [`list`][list][[`str`][str]]                               |
-| `pyright_setting`        | [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]   |
-| `annotation_stats`       | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] |
+| Name                     | Type                                                         |
+|--------------------------|--------------------------------------------------------------|
+| `package_name`           | [`str`][str]                                                 |
+| `stub_distribution_name` | [`str`][str]                                                 |
+| `extra_description`      | [`str`][str]|`NoneType`                                      |
+| `number_of_lines`        | [`int`][int]                                                 |
+| `package_status`         | [`PackageStatus`][typeshed_stats.gather.PackageStatus]       |
+| `upload_status`          | [`UploadStatus`][typeshed_stats.gather.UploadStatus]         |
+| `stubtest_settings`      | [`StubtestSettings`][typeshed_stats.gather.StubtestSettings] |
+| `pyright_setting`        | [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]     |
+| `annotation_stats`       | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats]   |
 <hr>
 
 ::: typeshed_stats.gather.PackageName
@@ -102,7 +101,20 @@ Tools for gathering stats about typeshed packages.
 | `STRICT`               | All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.                     |
 <hr>
 
-::: typeshed_stats.gather.StubtestSetting
+::: typeshed_stats.gather.StubtestSettings
+    options:
+      show_root_heading: true
+
+**Attributes:**
+
+| Name               | Type                                                             |
+|--------------------|------------------------------------------------------------------|
+| `strictness`       | [`StubtestStrictness`][typeshed_stats.gather.StubtestStrictness] |
+| `platforms`        | [`list`][list][[`str`][str]]                                     |
+| `allowlist_length` | [`int`][int]                                                     |
+<hr>
+
+::: typeshed_stats.gather.StubtestStrictness
     options:
       show_root_heading: true
 
@@ -199,13 +211,25 @@ Tools for gathering stats about typeshed packages.
 
 <hr>
 
+::: typeshed_stats.gather.get_stubtest_allowlist_length
+    options:
+      show_root_heading: true
+
+<hr>
+
 ::: typeshed_stats.gather.get_stubtest_platforms
     options:
       show_root_heading: true
 
 <hr>
 
-::: typeshed_stats.gather.get_stubtest_setting
+::: typeshed_stats.gather.get_stubtest_settings
+    options:
+      show_root_heading: true
+
+<hr>
+
+::: typeshed_stats.gather.get_stubtest_strictness
     options:
       show_root_heading: true
 

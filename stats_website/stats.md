@@ -12,7 +12,7 @@ Typeshed currently contains stubs for 142 packages
 (including the stdlib stubs as a "single package"),
 for a total of 186,690 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>17:55 UTC on 2022-12-23</b>.</i>
+<i>Note: these statistics were last updated at: <b>20:35 UTC on 2022-12-23</b>.</i>
 <i>
 For up-to-date statistics, consider using
 [the CLI tool](https://pypi.org/project/typeshed-stats/ "pip install the CLI tool from PyPI")
@@ -41,6 +41,8 @@ These stubs are currently uploaded to PyPI.
 ### Stubtest settings in CI: *skipped*
 
 Stubtest is skipped in typeshed's CI for this package.
+
+Typeshed currently has 0 allowlist entries for `D3DShot` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -87,9 +89,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `DateTimeRange` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -136,9 +138,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `Deprecated` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -185,9 +187,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 5 allowlist entries for `ExifRead` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -234,9 +236,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `Flask-Cors` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -283,9 +285,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `Flask-Migrate` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -332,9 +334,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `Flask-SQLAlchemy` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -381,9 +383,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `darwin` and `linux`.
 
-In CI, stubtest is run on darwin and linux.
+Typeshed currently has 0 allowlist entries for `JACK-Client` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -430,9 +432,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 12 allowlist entries for `Markdown` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -479,9 +481,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 6 allowlist entries for `Pillow` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -528,9 +530,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `PyAutoGUI` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -577,9 +579,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 11 allowlist entries for `PyMySQL` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -626,9 +628,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `PyScreeze` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -675,9 +677,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `PyYAML` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -724,9 +726,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 4 allowlist entries for `Pygments` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -777,9 +779,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1151 allowlist entries for `SQLAlchemy` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -826,9 +828,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `Send2Trash` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -875,9 +877,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` and `win32`.
 
-In CI, stubtest is run on linux and win32.
+Typeshed currently has 57 allowlist entries for `aiofiles` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -924,9 +926,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `annoy` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -973,9 +975,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `appdirs` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1022,9 +1024,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 4 allowlist entries for `aws-xray-sdk` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1071,9 +1073,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `babel` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1120,9 +1122,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `backports.ssl_match_hostname` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1169,9 +1171,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `beautifulsoup4` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1218,9 +1220,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 2 allowlist entries for `bleach` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1267,9 +1269,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 9 allowlist entries for `boto` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1316,9 +1318,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `braintree` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1365,9 +1367,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 20 allowlist entries for `cachetools` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1414,9 +1416,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 9 allowlist entries for `caldav` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1463,9 +1465,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` and `win32`.
 
-In CI, stubtest is run on linux and win32.
+Typeshed currently has 8 allowlist entries for `cffi` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1512,9 +1514,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 25 allowlist entries for `chardet` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1561,9 +1563,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 2 allowlist entries for `chevron` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1610,9 +1612,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `click-spinner` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1659,9 +1661,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` and `win32`.
 
-In CI, stubtest is run on linux and win32.
+Typeshed currently has 47 allowlist entries for `colorama` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1708,9 +1710,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `commonmark` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1757,9 +1759,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `console-menu` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1806,9 +1808,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 4 allowlist entries for `contextvars` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1855,9 +1857,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 4 allowlist entries for `croniter` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1904,6 +1906,8 @@ These stubs are currently uploaded to PyPI.
 
 Stubtest is skipped in typeshed's CI for this package.
 
+Typeshed currently has 38 allowlist entries for `cryptography` when running stubtest in CI.
+
 ### Pyright settings in CI: *entirely excluded*
 
 All files in this stubs package are excluded from the pyright check in typeshed's CI.
@@ -1949,9 +1953,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 14 allowlist entries for `dateparser` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1998,9 +2002,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 9 allowlist entries for `decorator` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2047,9 +2051,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `dj-database-url` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2096,9 +2100,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 2 allowlist entries for `dockerfile-parse` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2145,9 +2149,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `docopt` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2194,9 +2198,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 19 allowlist entries for `docutils` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2243,9 +2247,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `editdistance` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2292,9 +2296,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `emoji` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2341,9 +2345,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `entrypoints` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2390,9 +2394,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `first` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2439,9 +2443,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `flake8-2020` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2488,9 +2492,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `flake8-bugbear` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2537,9 +2541,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `flake8-builtins` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2586,9 +2590,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `flake8-docstrings` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2635,9 +2639,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 6 allowlist entries for `flake8-plugin-utils` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2684,9 +2688,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `flake8-rst-docstrings` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2733,9 +2737,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `flake8-simplify` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2782,9 +2786,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `flake8-typing-imports` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2831,9 +2835,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 7 allowlist entries for `fpdf2` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2884,6 +2888,8 @@ These stubs are currently uploaded to PyPI.
 
 Stubtest is skipped in typeshed's CI for this package.
 
+Typeshed currently has 0 allowlist entries for `gdb` when running stubtest in CI.
+
 ### Pyright settings in CI: *strict*
 
 All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
@@ -2929,9 +2935,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 3 allowlist entries for `google-cloud-ndb` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2978,9 +2984,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 5 allowlist entries for `hdbcli` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3027,9 +3033,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `html5lib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3076,9 +3082,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `httplib2` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3125,9 +3131,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 7 allowlist entries for `humanfriendly` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3174,9 +3180,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 2 allowlist entries for `invoke` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3223,9 +3229,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `jmespath` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3272,9 +3278,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `jsonschema` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3321,9 +3327,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 5 allowlist entries for `keyboard` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3370,9 +3376,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `ldap3` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3419,9 +3425,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 11 allowlist entries for `mock` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3468,9 +3474,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 2 allowlist entries for `mypy-extensions` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3517,9 +3523,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `mysqlclient` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3566,9 +3572,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `oauthlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3615,9 +3621,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `openpyxl` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3664,9 +3670,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 4 allowlist entries for `opentracing` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3713,9 +3719,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `paho-mqtt` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3762,9 +3768,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` and `win32`.
 
-In CI, stubtest is run on linux and win32.
+Typeshed currently has 19 allowlist entries for `paramiko` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3811,9 +3817,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 5 allowlist entries for `parsimonious` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3860,9 +3866,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 31 allowlist entries for `passlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3909,9 +3915,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 3 allowlist entries for `passpy` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3958,9 +3964,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 25 allowlist entries for `peewee` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4007,9 +4013,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 2 allowlist entries for `pep8-naming` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4060,9 +4066,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 24 allowlist entries for `pika` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4109,9 +4115,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `playsound` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4158,9 +4164,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `polib` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4207,9 +4213,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `prettytable` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4260,9 +4266,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 14 allowlist entries for `protobuf` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4309,9 +4315,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-In CI, stubtest is run on darwin, linux and win32.
+Typeshed currently has 20 allowlist entries for `psutil` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4358,9 +4364,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 5 allowlist entries for `psycopg2` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4407,9 +4413,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `pyOpenSSL` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4456,9 +4462,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `pyRFC3339` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4505,9 +4511,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `darwin` and `linux`.
 
-In CI, stubtest is run on darwin and linux.
+Typeshed currently has 0 allowlist entries for `pyaudio` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4554,9 +4560,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `pycocotools` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4603,9 +4609,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `pycurl` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4652,9 +4658,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `pyfarmhash` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4701,9 +4707,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 24 allowlist entries for `pyflakes` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4750,9 +4756,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 33 allowlist entries for `pyinstaller` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4799,9 +4805,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-In CI, stubtest is run on darwin, linux and win32.
+Typeshed currently has 14 allowlist entries for `pynput` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4848,6 +4854,8 @@ These stubs are currently uploaded to PyPI.
 
 Stubtest is skipped in typeshed's CI for this package.
 
+Typeshed currently has 83 allowlist entries for `pyserial` when running stubtest in CI.
+
 ### Pyright settings in CI: *strict*
 
 All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
@@ -4893,9 +4901,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `pysftp` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4942,9 +4950,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 7 allowlist entries for `pytest-lazy-fixture` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4991,9 +4999,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 2 allowlist entries for `python-crontab` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5040,9 +5048,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 11 allowlist entries for `python-dateutil` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5089,9 +5097,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `python-gflags` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5138,9 +5146,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 6 allowlist entries for `python-jose` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5187,9 +5195,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `python-nmap` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5236,9 +5244,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `python-slugify` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5285,9 +5293,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 16 allowlist entries for `python-xlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5334,9 +5342,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 4 allowlist entries for `pytz` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5383,9 +5391,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 8 allowlist entries for `pyvmomi` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5432,9 +5440,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `win32` only.
 
-In CI, stubtest is run on win32 only.
+Typeshed currently has 49 allowlist entries for `pywin32` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5481,9 +5489,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 67 allowlist entries for `redis` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5530,9 +5538,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 13 allowlist entries for `regex` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5579,9 +5587,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 26 allowlist entries for `requests` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5628,9 +5636,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 3 allowlist entries for `retry` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5677,9 +5685,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 29 allowlist entries for `setuptools` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5726,9 +5734,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 14 allowlist entries for `simplejson` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5775,9 +5783,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `singledispatch` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5824,9 +5832,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 25 allowlist entries for `six` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5873,9 +5881,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 2 allowlist entries for `slumber` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5900,7 +5908,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 <hr>
 
-## Info on typeshed's stubs for `stdlib`
+## Info on typeshed's stubs for the stdlib
 
 ### Number of lines
 
@@ -5918,15 +5926,15 @@ These stubs are not currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-In CI, stubtest is run on darwin, linux and win32.
+Typeshed currently has 1774 allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
 Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded.
 
-### Statistics on the annotations in typeshed's stubs for `stdlib`
+### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 24,460
@@ -5967,9 +5975,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `stdlib-list` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6016,9 +6024,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 6 allowlist entries for `stripe` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6065,9 +6073,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `tabulate` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6114,9 +6122,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `termcolor` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6163,9 +6171,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 1 allowlist entry for `toml` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6212,9 +6220,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `toposort` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6261,9 +6269,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 3 allowlist entries for `tqdm` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6310,9 +6318,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 36 allowlist entries for `tree-sitter` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6359,9 +6367,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 2 allowlist entries for `tree-sitter-languages` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6408,9 +6416,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `ttkthemes` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6457,9 +6465,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `typed-ast` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6506,9 +6514,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 2 allowlist entries for `tzlocal` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6555,9 +6563,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `ujson` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6604,9 +6612,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `untangle` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6653,9 +6661,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 30 allowlist entries for `urllib3` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6702,9 +6710,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 11 allowlist entries for `vobject` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6751,9 +6759,9 @@ These stubs are currently uploaded to PyPI.
 
 The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` and `win32`.
 
-In CI, stubtest is run on linux and win32.
+Typeshed currently has 38 allowlist entries for `waitress` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6800,9 +6808,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `whatthepatch` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6849,9 +6857,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `xmltodict` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6898,9 +6906,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 0 allowlist entries for `xxhash` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6947,9 +6955,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-### Stubtest platforms in CI
+In CI, stubtest is run on `linux` only.
 
-In CI, stubtest is run on linux only.
+Typeshed currently has 3 allowlist entries for `zxcvbn` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
