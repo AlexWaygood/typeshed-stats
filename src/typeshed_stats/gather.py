@@ -512,10 +512,10 @@ def get_stubtest_allowlist_length(
         The number of allowlist entries for that package.
 
     Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_allowlist_length
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_allowlist_length
         >>> with tmpdir_typeshed() as typeshed:
-        ...     num_stdlib_allows = get_allowlist_length("stdlib", typeshed_dir=typeshed)
-        ...     num_requests_allows = get_allowlist_length("requests", typeshed_dir=typeshed)
+        ...     num_stdlib_allows = get_stubtest_allowlist_length("stdlib", typeshed_dir=typeshed)
+        ...     num_requests_allows = get_stubtest_allowlist_length("requests", typeshed_dir=typeshed)
         >>> type(num_stdlib_allows)
         <class 'int'>
         >>> num_stdlib_allows > 0 and num_requests_allows > 0
