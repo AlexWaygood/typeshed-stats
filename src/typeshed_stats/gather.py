@@ -413,7 +413,7 @@ def get_stubtest_setting(
         Help on StubtestSetting in module typeshed_stats.gather:
         <BLANKLINE>
         StubtestSetting.ERROR_ON_MISSING_STUB
-            Objects missing from the stub cause stubtest to emit an error in CI.
+            Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
         <BLANKLINE>
         >>> gdb_setting
         StubtestSetting.SKIPPED
@@ -560,7 +560,7 @@ async def get_package_status(
         Help on PackageStatus in module typeshed_stats.gather:
         <BLANKLINE>
         PackageStatus.STDLIB
-            These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly up to date, and tested against all currently supported Python versions in CI.
+            These are typeshed's stubs for the standard library. Typeshed's stdlib stubs are generally fairly up to date, and are tested against all currently supported Python versions in typeshed's CI.
         <BLANKLINE>
         >>> gdb_status
         PackageStatus.NOT_ON_PYPI
@@ -788,7 +788,7 @@ def get_pyright_setting_for_package(
         Help on PyrightSetting in module typeshed_stats.gather:
         <BLANKLINE>
         PyrightSetting.STRICT_ON_SOME_FILES
-            Some files are tested with the stricter pyright settings in CI; some are excluded.
+            Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded.
         <BLANKLINE>
     """
     return get_pyright_setting_for_path(
