@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0 # must match requirements/all.txt
+    rev: v4.4.0  # must match requirements/all.txt
     hooks:
       - id: trailing-whitespace
       - id: requirements-txt-fixer
@@ -18,19 +18,24 @@ repos:
     hooks:
       - id: python-check-mock-methods
   - repo: https://github.com/hadialqattan/pycln
-    rev: v2.1.2 # must match requirements/all.txt
+    rev: v2.1.2  # must match requirements/all.txt
     hooks:
       - id: pycln
         args: [--config=pyproject.toml, .]
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.2.3 # must match requirements/all.txt
+    rev: v3.2.3  # must match requirements/all.txt
     hooks:
       - id: pyupgrade
         args: [--py310-plus]
   - repo: https://github.com/psf/black
-    rev: 22.10.0 # must match requirements/all.txt
+    rev: 22.10.0  # must match requirements/all.txt
     hooks:
       - id: black
+  - repo: https://github.com/asottile/blacken-docs
+    rev: v1.12.1  # must match requirements/all.txt
+    hooks:
+      - id: blacken-docs
+        additional_dependencies: [black==22.10.0]
   - repo: https://github.com/pycqa/isort
     rev: 5.10.1  # must match requirements/all.txt
     hooks:

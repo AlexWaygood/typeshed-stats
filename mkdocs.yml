@@ -1,4 +1,7 @@
 site_name: typeshed-stats
+site_url: https://alexwaygood.github.io/
+site_author: "Alex Waygood"
+site_description: "A website providing statistics and analysis of typeshed's stubs packages"
 docs_dir: 'stats_website'
 repo_url: https://github.com/AlexWaygood/typeshed-stats
 edit_uri: ""  # The website is generated, so an edit button doesn't make sense the way mkdocs does it
@@ -32,10 +35,15 @@ theme:
 
 plugins:
   - search
-  - table-reader
+  - table-reader  # Enables embedding CSV tables in MarkDown
   - mkdocstrings:
+      enable_inventory: true  # This means other projects can reference parts of our API
       handlers:
         python:
+          import:
+          # These mean references to Python builtins and aiohttp are autolinked in docstrings etc.
+          - https://docs.python.org/3/objects.inv
+          - https://docs.aiohttp.org/en/stable/objects.inv
           options:
             show_source: false
             show_bases: false
@@ -59,6 +67,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.details
+  - admonition
 
 watch:
   - stats_website

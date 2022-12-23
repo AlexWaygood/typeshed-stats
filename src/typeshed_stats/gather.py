@@ -142,7 +142,10 @@ class AnnotationStats:
 def _node_matches_name(node: ast.expr, name: str, from_: Container[str]) -> bool:
     """Return True if `node` represents `name` from one of the modules in `from_`.
 
-    >>> _is_TypeAlias = partial(_node_matches_name, name="TypeAlias", from_={"typing", "typing_extensions"})
+    ```pycon
+    >>> _is_TypeAlias = partial(
+    ...     _node_matches_name, name="TypeAlias", from_={"typing", "typing_extensions"}
+    ... )
     >>> get_annotation_node = lambda source: ast.parse(source).body[0].annotation
     >>> _is_TypeAlias(get_annotation_node("foo: TypeAlias = int"))
     True
@@ -154,6 +157,8 @@ def _node_matches_name(node: ast.expr, name: str, from_: Container[str]) -> bool
     False
     >>> _is_TypeAlias(get_annotation_node("foo: Final = 5"))
     False
+
+    ```
     """
     match node:
         case ast.Name(id):
@@ -333,7 +338,10 @@ def _get_package_metadata(
 def get_package_extra_description(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> str | None:
-    """Get the "extra description" of the package given in the METADATA.toml file.
+    """Get the "extra description" of the package given in the `METADATA.toml` file.
+
+    Each typeshed package comes with a `METADATA.toml` file,
+    containing various useful pieces of information about the package.
 
     Args:
         package_name: The name of the package to find the extra description for.
@@ -341,7 +349,7 @@ def get_package_extra_description(
             from which to retrieve the description.
 
     Returns:
-        The "extra description" of the package given in the METADATA.toml file,
+        The "extra description" of the package given in the `METADATA.toml` file,
             if one is given, else `None`.
 
     Examples:
@@ -360,14 +368,20 @@ def get_package_extra_description(
 
 
 class StubtestSetting(_NiceReprEnum):
-    """Enumeration of the various possible settings typeshed uses for stubtest in CI."""
+    """Enumeration of the various possible settings typeshed uses for [stubtest][stubtest] in CI.
 
-    SKIPPED = "Stubtest is skipped in CI for this package."
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
+    """
+
+    SKIPPED = "Stubtest is skipped in typeshed's CI for this package."
     MISSING_STUBS_IGNORED = (
-        "The `--ignore-missing-stub` stubtest setting is used in CI."
+        "The `--ignore-missing-stub` stubtest setting is used in typeshed's CI."
     )
     ERROR_ON_MISSING_STUB = (
-        "Objects missing from the stub cause stubtest to emit an error in CI."
+        "Objects missing from the stub cause stubtest to emit an error "
+        "in typeshed's CI."
     )
 
 
@@ -384,7 +398,11 @@ def _get_stubtest_config(
 def get_stubtest_setting(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> StubtestSetting:
-    """Get the setting typeshed uses in CI when stubtest is run on a certain package.
+    """Get the setting typeshed uses in CI when [stubtest][stubtest] is run on a certain package.
+
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
 
     Args:
         package_name: The name of the package to find the stubtest setting for.
@@ -406,7 +424,7 @@ def get_stubtest_setting(
         Help on StubtestSetting in module typeshed_stats.gather:
         <BLANKLINE>
         StubtestSetting.ERROR_ON_MISSING_STUB
-            Objects missing from the stub cause stubtest to emit an error in CI.
+            Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
         <BLANKLINE>
         >>> gdb_setting
         StubtestSetting.SKIPPED
@@ -425,7 +443,11 @@ def get_stubtest_setting(
 def get_stubtest_platforms(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> list[str]:
-    """Get the list of platforms on which stubtest is run in typeshed's CI.
+    """Get the list of platforms on which [stubtest][stubtest] is run in typeshed's CI.
+
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
 
     Args:
         package_name: The name of the package to find the stubtest setting for.
@@ -434,6 +456,8 @@ def get_stubtest_platforms(
 
     Returns:
         A list of strings describing platforms stubtest is run on.
+        The names correspond to the platform names
+        given by [`sys.platform`][sys.platform] at runtime.
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_platforms
@@ -457,26 +481,34 @@ class PackageStatus(_NiceReprEnum):
     """The various states of freshness/staleness a stubs package can be in."""
 
     STDLIB = (
-        "These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly"
-        " up to date, and tested against all currently supported Python versions"
-        " in CI."
+        "These are typeshed's stubs for the standard library. "
+        "Typeshed's stdlib stubs are generally fairly up to date, "
+        "and are tested against all currently supported Python versions "
+        "in typeshed's CI."
     )
     NOT_ON_PYPI = (
-        "The upstream for this package doesn't exist on PyPI,"
-        " so whether or not these stubs are up to date or not is unknown."
+        "The runtime package that these stubs are for doesn't exist on PyPI, "
+        "so whether or not these stubs are up to date or not is unknown."
     )
-    OBSOLETE = "Upstream has added type hints; these typeshed stubs are now obsolete."
+    OBSOLETE = (
+        "The runtime package has added inline type hints; "
+        "these typeshed stubs are now obsolete."
+    )
     NO_LONGER_UPDATED = (
-        "Upstream has not added type hints,"
-        " but these stubs are no longer updated for some other reason."
+        "The runtime package has not added type hints, "
+        "but these stubs are no longer updated by typeshed for some other reason."
     )
     OUT_OF_DATE = (
-        "These stubs are out of date. In CI, stubtest tests these stubs against an"
-        " older version of this package than the latest that's available."
+        "These stubs are out of date. In typeshed's CI, "
+        "[stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) "
+        "tests these stubs against an older version of the runtime package "
+        "than the latest that's available."
     )
     UP_TO_DATE = (
-        "These stubs should be fairly up to date. In CI, stubtest tests these stubs"
-        " against the latest version of the package that's available."
+        "These stubs should be fairly up to date. In typeshed's CI, "
+        "[stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) "
+        "tests these stubs against the latest version of the runtime package "
+        "that's available."
     )
 
 
@@ -505,21 +537,28 @@ async def get_package_status(
 ) -> PackageStatus:
     """Retrieve information on how up to date a stubs package is.
 
-    If stubtest tests these stubs against the latest version of the runtime
+    If [stubtest][stubtest]
+    tests these stubs against the latest version of the runtime package
     in typeshed's CI, it's a fair bet that the stubs are relatively up to date.
     If stubtest tests these stubs against an older version, however,
-    the stubs may be out of date.
+    the stubs *may* be out of date.
 
-    This function makes network requests to PyPI in order to determine what the
-    latest version of the runtime is, and then compares this against
-    the metadata of the stubs package.
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
+
+    !!! note
+
+        This function makes network requests to PyPI in order to determine what the
+        latest version of the runtime is, and then compares this against
+        the metadata of the stubs package.
 
     Args:
         package_name: The name of the stubs package to analyze.
         typeshed_dir: A path pointing to a typeshed directory
             in which to find the stubs package.
-        session (optional): An `aiohttp.ClientSession` instance, to be used
-            for making a network requests, or `None`. If `None` is provided
+        session: An [`aiohttp.ClientSession`][aiohttp.ClientSession] instance,
+            to be used for making a network requests, or `None`. If `None` is provided
             for this argument, a new `aiohttp.ClientSession` instance will be
             created to make the network request.
 
@@ -540,7 +579,7 @@ async def get_package_status(
         Help on PackageStatus in module typeshed_stats.gather:
         <BLANKLINE>
         PackageStatus.STDLIB
-            These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly up to date, and tested against all currently supported Python versions in CI.
+            These are typeshed's stubs for the standard library. Typeshed's stdlib stubs are generally fairly up to date, and are tested against all currently supported Python versions in typeshed's CI.
         <BLANKLINE>
         >>> gdb_status
         PackageStatus.NOT_ON_PYPI
@@ -581,7 +620,7 @@ def get_upload_status(
     """Determine whether a certain package is currently uploaded to PyPI.
 
     Args:
-        package_name: The name of the package to find the stubtest setting for.
+        package_name: The name of the package to find the upload status for.
         typeshed_dir: A path pointing to a typeshed directory,
             from which to retrieve the stubtest setting.
 
@@ -615,7 +654,7 @@ def get_upload_status(
 
 
 def get_number_of_lines_of_file(file_path: Path | str) -> int:
-    """Get the total number of lines of code for a single stubs file in typeshed.
+    """Get the total number of lines of code for a single stub file in typeshed.
 
     Args:
         file_path: A path to the file to analyse.
@@ -675,16 +714,29 @@ def _get_pyright_excludelist(
 
 
 class PyrightSetting(_NiceReprEnum):
-    """The various possible pyright settings typeshed uses in CI."""
+    """The various possible [pyright](https://github.com/microsoft/pyright) settings typeshed uses in CI."""
 
-    ENTIRELY_EXCLUDED = "All files are excluded from the pyright check in CI."
-    SOME_FILES_EXCLUDED = "Some files are excluded from the pyright check in CI."
-    NOT_STRICT = "All files are excluded from the stricter pyright settings in CI."
-    STRICT_ON_SOME_FILES = (
-        "Some files are tested with the stricter pyright settings in CI;"
-        " some are excluded."
+    ENTIRELY_EXCLUDED = (
+        "All files in this stubs package "
+        "are excluded from the pyright check in typeshed's CI."
     )
-    STRICT = "All files are tested with the stricter pyright settings in CI."
+    SOME_FILES_EXCLUDED = (
+        "Some files in this stubs package "
+        "are excluded from the pyright check in typeshed's CI."
+    )
+    NOT_STRICT = (
+        "All files in this stubs package "
+        "are excluded from the stricter pyright settings in typeshed's CI."
+    )
+    STRICT_ON_SOME_FILES = (
+        "Some files in this stubs package "
+        "are tested with the stricter pyright settings in typeshed's CI; "
+        "some are excluded."
+    )
+    STRICT = (
+        "All files in this stubs package are tested with the stricter pyright settings "
+        "in typeshed's CI."
+    )
 
 
 def _path_or_path_ancestor_is_listed(path: Path, path_list: Collection[Path]) -> bool:
@@ -700,7 +752,7 @@ def _child_of_path_is_listed(path: Path, path_list: Collection[Path]) -> bool:
 def get_pyright_setting_for_path(
     file_path: Path | str, *, typeshed_dir: Path | str
 ) -> PyrightSetting:
-    """Get the settings typeshed uses in CI when pyright is run on a certain path.
+    """Get the settings typeshed uses in CI when [pyright](https://github.com/microsoft/pyright) is run on a certain path.
 
     Args:
         file_path: The path to query.
@@ -733,10 +785,10 @@ def get_pyright_setting_for_path(
 def get_pyright_setting_for_package(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> PyrightSetting:
-    """Get the settings typeshed uses in CI when pyright is run on a certain package.
+    """Get the settings typeshed uses in CI when [pyright](https://github.com/microsoft/pyright) is run on a certain package.
 
     Args:
-        package_name: The name of the package to find the stubtest setting for.
+        package_name: The name of the package to find the pyright setting for.
         typeshed_dir: A path pointing to a typeshed directory,
             from which to retrieve the pyright setting.
 
@@ -755,7 +807,7 @@ def get_pyright_setting_for_package(
         Help on PyrightSetting in module typeshed_stats.gather:
         <BLANKLINE>
         PyrightSetting.STRICT_ON_SOME_FILES
-            Some files are tested with the stricter pyright settings in CI; some are excluded.
+            Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded.
         <BLANKLINE>
     """
     return get_pyright_setting_for_path(
@@ -788,17 +840,19 @@ async def gather_stats_on_package(
 ) -> PackageInfo:
     """Gather miscellaneous statistics about a single stubs package in typeshed.
 
-    This function calls
-    [`get_package_status()`][typeshed_stats.gather.get_package_status],
-    which makes network requests to PyPI.
-    See the docs on `get_package_status()` for details.
+    !!! note
+
+        This function calls
+        [`get_package_status()`][typeshed_stats.gather.get_package_status],
+        which makes network requests to PyPI.
+        See the docs on `get_package_status()` for details.
 
     Args:
         package_name: The name of the package to gather statistics on.
         typeshed_dir: A path pointing to a typeshed directory,
             in which the source code for the stubs package can be found.
-        session (optional): An `aiohttp.ClientSession` instance, to be used
-            for making a network requests, or `None`. If `None` is provided
+        session: An [`aiohttp.ClientSession`][aiohttp.ClientSession] instance,
+            to be used for making a network requests, or `None`. If `None` is provided
             for this argument, a new `aiohttp.ClientSession` instance will be
             created to make the network request.
 
@@ -844,7 +898,7 @@ async def gather_stats_on_package(
 @final
 @attrs.define
 class FileInfo:
-    """Statistics about a single .pyi file in typeshed."""
+    """Statistics about a single `.pyi` file in typeshed."""
 
     file_path: _PathRelativeToTypeshed
     parent_package: PackageName
@@ -986,9 +1040,12 @@ def gather_stats_on_multiple_packages(
 ) -> Sequence[PackageInfo]:
     """Concurrently gather statistics on multiple packages.
 
-    Note: this function calls `asyncio.run()` to start an asyncio event loop.
-    It is therefore not suitable to be called from inside functions
-    that are themselves called as part of an asyncio event loop.
+    !!! note
+
+        This function calls [`asyncio.run()`][asyncio.run]
+        to start an [asyncio][] event loop.
+        It is therefore not suitable to be called from inside functions
+        that are themselves called as part of an asyncio event loop.
 
     Args:
         packages: An iterable of package names to be analysed, or None.
@@ -1025,9 +1082,12 @@ def gather_stats_on_multiple_packages(
 
 @contextmanager
 def tmpdir_typeshed() -> Iterator[Path]:
-    """Clone typeshed into a tempdir, then yield a `pathlib.Path` pointing to it.
+    """Clone typeshed into a tempdir, then yield a [`Path`][pathlib.Path] pointing to it.
 
     A context manager.
+
+    Yields:
+        A [`Path`][pathlib.Path] pointing to a tempdir with a clone of typeshed inside.
     """
     import subprocess
     from tempfile import TemporaryDirectory
