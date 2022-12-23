@@ -67,7 +67,7 @@ def unusual_packages() -> list[PackageInfo]:
         package_status=PackageStatus.UP_TO_DATE,
         upload_status=UploadStatus.NOT_CURRENTLY_UPLOADED,
         stubtest_settings=StubtestSettings(
-            strictness=StubtestStrictness.SKIPPED, platforms=[]
+            strictness=StubtestStrictness.SKIPPED, platforms=[], allowlist_length=0
         ),
         pyright_setting=PyrightSetting.STRICT,
         annotation_stats=AnnotationStats(),

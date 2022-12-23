@@ -53,6 +53,7 @@ __all__ = [
     "get_pyright_setting_for_package",
     "get_pyright_setting_for_path",
     "get_stub_distribution_name",
+    "get_stubtest_allowlist_length",
     "get_stubtest_platforms",
     "get_stubtest_settings",
     "get_stubtest_strictness",
@@ -480,6 +481,102 @@ def get_stubtest_platforms(
             return ["linux"]
 
 
+def _num_allowlist_entries_in_file(path: Path) -> int:
+    with path.open(encoding="utf-8") as file:
+        return sum(
+            1 for line in file if line.strip() and not line.strip().startswith("#")
+        )
+
+
+def get_stubtest_allowlist_length(
+    package_name: PackageName, *, typeshed_dir: Path | str
+) -> int:
+    """Get the number of "allowlist entries" typeshed uses in CI when [stubtest][stubtest] is run on a certain package.
+
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
+
+    An allowlist entry indicates a place in the stub where stubtest emits an error,
+    but typeshed has chosen to silence the error rather than "fix it".
+    Not all allowlist entries are bad:
+    sometimes there are good reasons to ignore an error emitted by stubtest.
+
+    Args:
+        package_name: The name of the package
+            to find the number of allowlist entries for.
+        typeshed_dir: A path pointing to a typeshed directory,
+            from which to retrieve the number of stubtest allowlist entries.
+
+    Returns:
+        The number of allowlist entries for that package.
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_allowlist_length
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     num_stdlib_allows = get_allowlist_length("stdlib", typeshed_dir=typeshed)
+        ...     num_requests_allows = get_allowlist_length("requests", typeshed_dir=typeshed)
+        >>> type(num_stdlib_allows)
+        <class 'int'>
+        >>> num_stdlib_allows > 0 and num_requests_allows > 0
+        True
+    """
+    if package_name == "stdlib":
+        allowlist_dir = Path(typeshed_dir, "tests", "stubtest_allowlists")
+        return sum(
+            _num_allowlist_entries_in_file(file) for file in allowlist_dir.glob("*.txt")
+        )
+    allowlist_dir = Path(typeshed_dir, "stubs", package_name, "@tests")
+    if not allowlist_dir.exists():
+        return 0
+    return sum(
+        _num_allowlist_entries_in_file(file)
+        for file in allowlist_dir.glob("stubtest_allowlist*.txt")
+    )
+
+
+@final
+@attrs.define
+class StubtestSettings:
+    """Information on the settings under which [stubtest][stubtest] is run on a certain package.
+
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
+    """
+
+    strictness: StubtestStrictness
+    platforms: list[str]
+    allowlist_length: int
+
+
+def get_stubtest_settings(
+    package_name: PackageName, *, typeshed_dir: Path | str
+) -> StubtestSettings:
+    """Get the [stubtest][stubtest] settings for a certain stubs package in typeshed.
+
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
+
+
+    Args:
+        package_name: The name of the package to find the stubtest settings for.
+        typeshed_dir: A path pointing to a typeshed directory,
+            from which to retrieve the stubtest settings.
+
+    Returns:
+        An instance of the [`StubtestSettings`][typeshed_stats.gather.StubtestSettings] class.
+    """
+    return StubtestSettings(
+        strictness=get_stubtest_strictness(package_name, typeshed_dir=typeshed_dir),
+        platforms=get_stubtest_platforms(package_name, typeshed_dir=typeshed_dir),
+        allowlist_length=get_stubtest_allowlist_length(
+            package_name, typeshed_dir=typeshed_dir
+        ),
+    )
+
+
 class PackageStatus(_NiceReprEnum):
     """The various states of freshness/staleness a stubs package can be in."""
 
@@ -858,44 +955,6 @@ def get_pyright_setting_for_package(
     return get_pyright_setting_for_path(
         file_path=_get_package_directory(package_name, typeshed_dir),
         typeshed_dir=typeshed_dir,
-    )
-
-
-@final
-@attrs.define
-class StubtestSettings:
-    """Information on the settings under which [stubtest][stubtest] is run on a certain package.
-
-    [stubtest]:
-      https://mypy.readthedocs.io/en/stable/stubtest.html
-      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
-    """
-
-    strictness: StubtestStrictness
-    platforms: list[str]
-
-
-def get_stubtest_settings(
-    package_name: PackageName, *, typeshed_dir: Path | str
-) -> StubtestSettings:
-    """Get the [stubtest][stubtest] settings for a certain stubs package in typeshed.
-
-    [stubtest]:
-      https://mypy.readthedocs.io/en/stable/stubtest.html
-      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
-
-
-    Args:
-        package_name: The name of the package to find the stubtest settings for.
-        typeshed_dir: A path pointing to a typeshed directory,
-            from which to retrieve the stubtest settings.
-
-    Returns:
-        An instance of the [`StubtestSettings`][typeshed_stats.gather.StubtestSettings] class.
-    """
-    return StubtestSettings(
-        strictness=get_stubtest_strictness(package_name, typeshed_dir=typeshed_dir),
-        platforms=get_stubtest_platforms(package_name, typeshed_dir=typeshed_dir),
     )
 
 

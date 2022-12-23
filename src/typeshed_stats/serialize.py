@@ -154,7 +154,6 @@ def _stats_from_csv(
         converted_stat["annotation_stats"] = annotation_stats
         converted_stat["stubtest_settings"] = stubtest_settings
         if cls is PackageInfo:
-            stubtest_settings = converted_stat["stubtest_settings"]
             stubtest_platforms = stubtest_settings["platforms"]
             if stubtest_platforms == "None":
                 stubtest_settings["platforms"] = []

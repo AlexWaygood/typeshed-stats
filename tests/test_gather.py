@@ -4,6 +4,7 @@ import json
 import os
 import random
 import sys
+import textwrap
 from collections.abc import Callable
 from contextlib import AbstractAsyncContextManager, nullcontext
 from dataclasses import InitVar, dataclass
@@ -39,6 +40,7 @@ from typeshed_stats.gather import (
     get_package_status,
     get_pyright_setting_for_package,
     get_stub_distribution_name,
+    get_stubtest_allowlist_length,
     get_stubtest_platforms,
     get_stubtest_strictness,
     get_upload_status,
@@ -329,6 +331,95 @@ def test_get_stubtest_platform_non_stdlib(
     )
     assert actual_result == expected_result
     assert actual_result == sorted(actual_result)
+
+
+# ==============================
+# Tests for get_stubtest_allowlist_length
+# ==============================
+
+
+def test_get_stubtest_allowlist_length_stdlib(
+    typeshed: Path, maybe_stringize_path: Callable[[Path], Path | str]
+) -> None:
+    tests_dir = typeshed / "tests"
+    tests_dir.mkdir()
+    allowlist_dir = tests_dir / "stubtest_allowlists"
+    allowlist_dir.mkdir()
+    (allowlist_dir / "darwin.txt").write_text(
+        textwrap.dedent(
+            """\
+            foo
+            bar
+            # a comment
+            baz
+            """
+        )
+    )
+    (allowlist_dir / "py3_common.txt").write_text(
+        textwrap.dedent(
+            """\
+            bob
+            alice
+            steve
+
+
+            # a comment
+            """
+        )
+    )
+    result = get_stubtest_allowlist_length(
+        "stdlib", typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert type(result) is int
+    assert result == 6
+
+
+def test_get_stubtest_allowlist_length_non_stdlib_no_allowlist(
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed: Path,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    result = get_stubtest_allowlist_length(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert type(result) is int
+    assert result == 0
+
+
+def test_get_stubtest_allowlist_length_non_stdlib_with_allowlist(
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed: Path,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    allowlist_dir = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "@tests"
+    allowlist_dir.mkdir()
+    (allowlist_dir / "stubtest_allowlist.txt").write_text(
+        textwrap.dedent(
+            """\
+            foo
+            bar
+            # a comment
+            baz
+            """
+        )
+    )
+    (allowlist_dir / "stubtest_allowlist_win32.txt").write_text(
+        textwrap.dedent(
+            """\
+            bob
+            alice
+            steve
+
+
+            # a comment
+            """
+        )
+    )
+    result = get_stubtest_allowlist_length(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert type(result) is int
+    assert result == 6
 
 
 # =================================

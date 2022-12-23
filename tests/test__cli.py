@@ -229,6 +229,7 @@ class TestPassingPackages:
             ("get_upload_status", UploadStatus.UPLOADED),
             ("get_stubtest_platforms", ["linux"]),
             ("get_stub_distribution_name", "types-foo"),
+            ("get_stubtest_allowlist_length", 55),
         ]
 
         for function_name, return_value in patches_to_apply:
