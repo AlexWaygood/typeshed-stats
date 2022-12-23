@@ -295,6 +295,7 @@ def test_get_stubtest_platform_stdlib() -> None:
     result = get_stubtest_platforms("stdlib", typeshed_dir=Path("."))
     assert len(result) == len(set(result))
     assert set(result) == {"linux", "darwin", "win32"}
+    assert sorted(result) == result
 
 
 @pytest.mark.parametrize(
@@ -302,7 +303,7 @@ def test_get_stubtest_platform_stdlib() -> None:
     [
         pytest.param("[tool.stubtest]\nskip = true", [], id="Skipped stubtest"),
         pytest.param(
-            "[tool.stubtest]\nplatforms = ['darwin', 'win32']",
+            "[tool.stubtest]\nplatforms = ['win32', 'darwin']",
             ["darwin", "win32"],
             id="Platforms specified",
         ),
@@ -326,6 +327,7 @@ def test_get_stubtest_platform_non_stdlib(
         EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
     )
     assert actual_result == expected_result
+    assert actual_result == sorted(actual_result)
 
 
 # =================================

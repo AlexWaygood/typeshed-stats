@@ -15,7 +15,7 @@ from functools import lru_cache, partial
 from itertools import chain
 from operator import attrgetter
 from pathlib import Path
-from typing import Any, Literal, NewType, TypeAlias, TypeVar, final
+from typing import Annotated, Any, Literal, NewType, TypeAlias, TypeVar, final
 
 import aiohttp
 import attrs
@@ -467,12 +467,12 @@ def get_stubtest_platforms(
         ['win32']
     """
     if package_name == "stdlib":
-        return ["linux", "darwin", "win32"]
+        return ["darwin", "linux", "win32"]
     match _get_stubtest_config(package_name, typeshed_dir):
         case {"skip": True}:
             return []
         case {"platforms": list() as platforms}:
-            return platforms
+            return sorted(platforms)
         case _:
             return ["linux"]
 
@@ -512,9 +512,14 @@ class PackageStatus(_NiceReprEnum):
     )
 
 
+_PypiData: TypeAlias = Annotated[
+    dict[str, Any], "JSON information from PyPI about the package"
+]
+
+
 async def _get_pypi_data(
-    package_name: str, session: aiohttp.ClientSession | None
-) -> dict[str, Any]:
+    package_name: PackageName, session: aiohttp.ClientSession | None
+) -> _PypiData:
     pypi_data_url = f"https://pypi.org/pypi/{urllib.parse.quote(package_name)}/json"
     async with AsyncExitStack() as stack:
         if session is None:
@@ -530,7 +535,7 @@ async def _get_pypi_data(
 
 
 async def get_package_status(
-    package_name: str,
+    package_name: PackageName,
     *,
     typeshed_dir: Path | str,
     session: aiohttp.ClientSession | None = None,
