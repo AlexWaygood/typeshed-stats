@@ -327,7 +327,7 @@ def test_get_stubtest_platform_non_stdlib(
         EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
     )
     assert actual_result == expected_result
-    assert actual_result = sorted(actual_result)
+    assert actual_result == sorted(actual_result)
 
 
 # =================================
