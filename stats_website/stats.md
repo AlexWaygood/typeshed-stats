@@ -8,11 +8,11 @@ hide:
 
 # Statistics on typeshed's stubs
 
-Typeshed currently contains stubs for 139 packages
+Typeshed currently contains stubs for 140 packages
 (including the stdlib stubs as a "single package"),
-for a total of 185,501 non-empty lines of code.
+for a total of 186,475 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>12:36 UTC on 2022-12-22</b>.</i>
+<i>Note: these statistics were last updated at: <b>01:35 UTC on 2022-12-23</b>.</i>
 <i>For up-to-date statistics, consider using the CLI tool instead.</i>
 <hr>
 
@@ -4385,6 +4385,47 @@ All files are tested with the stricter pyright settings in CI.
 
 <hr>
 
+## Info on typeshed's stubs for `pyserial`
+
+### Number of lines
+
+964 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *skipped*
+
+Stubtest is skipped in CI for this package.
+
+### Pyright settings in CI: *strict*
+
+All files are tested with the stricter pyright settings in CI.
+
+### Statistics on the annotations in typeshed's stubs for `pyserial`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 205
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 251
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 398
+    - Explicit `Any` variables: 12
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+
+<hr>
+
 ## Info on typeshed's stubs for `pysftp`
 
 ### Number of lines
@@ -4479,11 +4520,11 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-270 (excluding blank lines)
+278 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.
+These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4504,19 +4545,19 @@ All files are excluded from the stricter pyright settings in CI.
 ### Statistics on the annotations in typeshed's stubs for `python-crontab`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 90
-    - Unannotated parameters: 43
-    - Explicit `Any` parameters: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 18
+    - Annotated parameters: 99
+    - Unannotated parameters: 37
+    - Explicit `Any` parameters: 13
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
 - Returns:
-    - Annotated returns: 80
-    - Unannotated returns: 58
+    - Annotated returns: 108
+    - Unannotated returns: 30
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
     - Annotated variables: 67
     - Explicit `Any` variables: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 32
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 27
 
 <hr>
 
@@ -5019,7 +5060,7 @@ All files are tested with the stricter pyright settings in CI.
 
 ### Number of lines
 
-967 (excluding blank lines)
+969 (excluding blank lines)
 
 ### Package status: *up to date*
 
