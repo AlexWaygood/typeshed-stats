@@ -513,8 +513,7 @@ class PackageStatus(_NiceReprEnum):
 
 
 _PypiData: TypeAlias = Annotated[
-    dict[str, Any],
-    "JSON information from PyPI about the package"
+    dict[str, Any], "JSON information from PyPI about the package"
 ]
 
 
