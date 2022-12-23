@@ -308,7 +308,7 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
 
         allowlist_length = kwargs["stubtest_allowlist_length"]
         kwargs["stubtest_allowlist_section"] = (
-            f"Typeshed currently has {allowlist_length} allowlist "
+            f"Typeshed currently has {allowlist_length:,} allowlist "
             f"{'entry' if allowlist_length == 1 else 'entries'} "
             f"for {kwargs['package_name']} when running stubtest in CI."
         )
