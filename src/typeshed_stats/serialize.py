@@ -1,4 +1,4 @@
-"""Tools for serializing and deserializing [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects."""
+"""Tools for serializing and deserializing [`PackageInfo`][typeshed_stats.gather.PackageInfo] and [`FileInfo`][typeshed_stats.gather.FileInfo] objects."""
 
 from collections.abc import Sequence
 from operator import attrgetter

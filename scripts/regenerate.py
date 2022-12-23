@@ -66,7 +66,11 @@ def regenerate_stats_markdown_page(stats: Sequence[PackageInfo]) -> None:
         for a total of {total_typeshed_stublines:,} non-empty lines of code.
 
         <i>Note: these statistics were last updated at: <b>{updated_time}</b>.</i>
-        <i>For up-to-date statistics, consider using [the CLI tool](https://pypi.org/project/typeshed-stats/) instead.</i>
+        <i>
+        For up-to-date statistics, consider using
+        [the CLI tool](https://pypi.org/project/typeshed-stats/ "pip install the CLI tool from PyPI")
+        instead.
+        </i>
         <hr>
         """
     )
