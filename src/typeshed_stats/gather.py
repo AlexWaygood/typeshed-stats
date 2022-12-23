@@ -510,9 +510,11 @@ async def get_package_status(
     If stubtest tests these stubs against an older version, however,
     the stubs may be out of date.
 
-    This function makes network requests to PyPI in order to determine what the
-    latest version of the runtime is, and then compares this against
-    the metadata of the stubs package.
+    !!! note
+
+        This function makes network requests to PyPI in order to determine what the
+        latest version of the runtime is, and then compares this against
+        the metadata of the stubs package.
 
     Args:
         package_name: The name of the stubs package to analyze.
@@ -788,10 +790,12 @@ async def gather_stats_on_package(
 ) -> PackageInfo:
     """Gather miscellaneous statistics about a single stubs package in typeshed.
 
-    This function calls
-    [`get_package_status()`][typeshed_stats.gather.get_package_status],
-    which makes network requests to PyPI.
-    See the docs on `get_package_status()` for details.
+    !!! note
+
+        This function calls
+        [`get_package_status()`][typeshed_stats.gather.get_package_status],
+        which makes network requests to PyPI.
+        See the docs on `get_package_status()` for details.
 
     Args:
         package_name: The name of the package to gather statistics on.
@@ -986,9 +990,11 @@ def gather_stats_on_multiple_packages(
 ) -> Sequence[PackageInfo]:
     """Concurrently gather statistics on multiple packages.
 
-    Note: this function calls `asyncio.run()` to start an asyncio event loop.
-    It is therefore not suitable to be called from inside functions
-    that are themselves called as part of an asyncio event loop.
+    !!! note
+
+        This function calls `asyncio.run()` to start an asyncio event loop.
+        It is therefore not suitable to be called from inside functions
+        that are themselves called as part of an asyncio event loop.
 
     Args:
         packages: An iterable of package names to be analysed, or None.
@@ -1028,6 +1034,9 @@ def tmpdir_typeshed() -> Iterator[Path]:
     """Clone typeshed into a tempdir, then yield a `pathlib.Path` pointing to it.
 
     A context manager.
+
+    Yields:
+        A `pathlib.Path` pointing to a tempdir with a clone of typeshed inside.
     """
     import subprocess
     from tempfile import TemporaryDirectory
