@@ -102,9 +102,7 @@ _LoggingLevels: TypeAlias = Literal[
 def _get_help_formatter() -> type[argparse.HelpFormatter]:
     try:
         import rich  # noqa: F401
-        from rich_argparse import (
-            RichHelpFormatter as HelpFormatter,
-        )
+        from rich_argparse import RichHelpFormatter as HelpFormatter
     except ImportError:
         from argparse import HelpFormatter  # type: ignore[no-redef]
     else:
