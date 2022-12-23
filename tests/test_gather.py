@@ -4,6 +4,7 @@ import json
 import os
 import random
 import sys
+import textwrap
 from collections.abc import Callable
 from contextlib import AbstractAsyncContextManager, nullcontext
 from dataclasses import InitVar, dataclass
@@ -27,7 +28,7 @@ from typeshed_stats.gather import (
     PackageInfo,
     PackageStatus,
     PyrightSetting,
-    StubtestSetting,
+    StubtestStrictness,
     UploadStatus,
     _get_pypi_data,
     gather_annotation_stats_on_file,
@@ -39,8 +40,9 @@ from typeshed_stats.gather import (
     get_package_status,
     get_pyright_setting_for_package,
     get_stub_distribution_name,
+    get_stubtest_allowlist_length,
     get_stubtest_platforms,
-    get_stubtest_setting,
+    get_stubtest_strictness,
     get_upload_status,
     tmpdir_typeshed,
 )
@@ -53,10 +55,10 @@ from .conftest import PYRIGHTCONFIG_TEMPLATE, write_metadata_text
 
 
 def test__NiceReprEnum_docstring_equals_enum_value() -> None:
-    assert StubtestSetting.SKIPPED.__doc__ == StubtestSetting.SKIPPED.value
+    assert StubtestStrictness.SKIPPED.__doc__ == StubtestStrictness.SKIPPED.value
 
 
-@pytest.mark.parametrize("obj", [StubtestSetting, StubtestSetting.SKIPPED])
+@pytest.mark.parametrize("obj", [StubtestStrictness, StubtestStrictness.SKIPPED])
 def test__NiceReprEnum_docstring_in_help_output(
     obj: object, capsys: pytest.CaptureFixture[str]
 ) -> None:
@@ -66,18 +68,18 @@ def test__NiceReprEnum_docstring_in_help_output(
 
 
 def test__NiceReprEnum_repr_str() -> None:
-    assert repr(StubtestSetting.SKIPPED) == "StubtestSetting.SKIPPED"
-    assert str(StubtestSetting.SKIPPED) == repr(StubtestSetting.SKIPPED)
-    assert StubtestSetting.SKIPPED.value not in repr(StubtestSetting.SKIPPED)
+    assert repr(StubtestStrictness.SKIPPED) == "StubtestStrictness.SKIPPED"
+    assert str(StubtestStrictness.SKIPPED) == repr(StubtestStrictness.SKIPPED)
+    assert StubtestStrictness.SKIPPED.value not in repr(StubtestStrictness.SKIPPED)
 
 
 @pytest.mark.parametrize(
     ("enum_member", "expected_formatted_name"),
     [
         pytest.param(
-            StubtestSetting.ERROR_ON_MISSING_STUB,
+            StubtestStrictness.ERROR_ON_MISSING_STUB,
             "error on missing stub",
-            id="StubtestSetting",
+            id="StubtestStrictness",
         ),
         pytest.param(
             PackageStatus.NO_LONGER_UPDATED, "no longer updated", id="PackageStatus"
@@ -227,21 +229,21 @@ def test_get_package_extra_description_with_description(
 
 
 # ==============================
-# Tests for get_stubtest_setting
+# Tests for get_stubtest_strictness
 # ==============================
 
 
-def test_get_stubtest_setting_stdlib(typeshed: Path) -> None:
-    result = get_stubtest_setting("stdlib", typeshed_dir=typeshed)
-    assert result is StubtestSetting.ERROR_ON_MISSING_STUB
+def test_get_stubtest_strictness_stdlib(typeshed: Path) -> None:
+    result = get_stubtest_strictness("stdlib", typeshed_dir=typeshed)
+    assert result is StubtestStrictness.ERROR_ON_MISSING_STUB
 
 
-def test_get_stubtest_setting_non_stdlib_no_stubtest_section(
+def test_get_stubtest_strictness_non_stdlib_no_stubtest_section(
     EXAMPLE_PACKAGE_NAME: str, typeshed: Path
 ) -> None:
     write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, "\n")
-    result = get_stubtest_setting(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed)
-    assert result is StubtestSetting.MISSING_STUBS_IGNORED
+    result = get_stubtest_strictness(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed)
+    assert result is StubtestStrictness.MISSING_STUBS_IGNORED
 
 
 @pytest.mark.parametrize(
@@ -270,7 +272,7 @@ def test_get_stubtest_setting_non_stdlib_no_stubtest_section(
         ),
     ],
 )
-def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
+def test_get_stubtest_strictness_non_stdlib_with_stubtest_section(
     EXAMPLE_PACKAGE_NAME: str,
     typeshed: Path,
     metadata_contents: str,
@@ -280,10 +282,10 @@ def test_get_stubtest_setting_non_stdlib_with_stubtest_section(
     write_metadata_text(
         typeshed, EXAMPLE_PACKAGE_NAME, f"[tool.stubtest]\n{metadata_contents}"
     )
-    actual_result = get_stubtest_setting(
+    actual_result = get_stubtest_strictness(
         EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
     )
-    expected_result = StubtestSetting[expected_result_name]
+    expected_result = StubtestStrictness[expected_result_name]
     assert actual_result is expected_result
 
 
@@ -329,6 +331,95 @@ def test_get_stubtest_platform_non_stdlib(
     )
     assert actual_result == expected_result
     assert actual_result == sorted(actual_result)
+
+
+# ==============================
+# Tests for get_stubtest_allowlist_length
+# ==============================
+
+
+def test_get_stubtest_allowlist_length_stdlib(
+    typeshed: Path, maybe_stringize_path: Callable[[Path], Path | str]
+) -> None:
+    tests_dir = typeshed / "tests"
+    tests_dir.mkdir()
+    allowlist_dir = tests_dir / "stubtest_allowlists"
+    allowlist_dir.mkdir()
+    (allowlist_dir / "darwin.txt").write_text(
+        textwrap.dedent(
+            """\
+            foo
+            bar
+            # a comment
+            baz
+            """
+        )
+    )
+    (allowlist_dir / "py3_common.txt").write_text(
+        textwrap.dedent(
+            """\
+            bob
+            alice
+            steve
+
+
+            # a comment
+            """
+        )
+    )
+    result = get_stubtest_allowlist_length(
+        "stdlib", typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert type(result) is int
+    assert result == 6
+
+
+def test_get_stubtest_allowlist_length_non_stdlib_no_allowlist(
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed: Path,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    result = get_stubtest_allowlist_length(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert type(result) is int
+    assert result == 0
+
+
+def test_get_stubtest_allowlist_length_non_stdlib_with_allowlist(
+    EXAMPLE_PACKAGE_NAME: str,
+    typeshed: Path,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    allowlist_dir = typeshed / "stubs" / EXAMPLE_PACKAGE_NAME / "@tests"
+    allowlist_dir.mkdir()
+    (allowlist_dir / "stubtest_allowlist.txt").write_text(
+        textwrap.dedent(
+            """\
+            foo
+            bar
+            # a comment
+            baz
+            """
+        )
+    )
+    (allowlist_dir / "stubtest_allowlist_win32.txt").write_text(
+        textwrap.dedent(
+            """\
+            bob
+            alice
+            steve
+
+
+            # a comment
+            """
+        )
+    )
+    result = get_stubtest_allowlist_length(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert type(result) is int
+    assert result == 6
 
 
 # =================================

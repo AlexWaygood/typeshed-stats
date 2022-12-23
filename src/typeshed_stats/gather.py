@@ -38,7 +38,8 @@ __all__ = [
     "PackageName",
     "PackageStatus",
     "PyrightSetting",
-    "StubtestSetting",
+    "StubtestSettings",
+    "StubtestStrictness",
     "UploadStatus",
     "gather_annotation_stats_on_file",
     "gather_annotation_stats_on_package",
@@ -52,8 +53,10 @@ __all__ = [
     "get_pyright_setting_for_package",
     "get_pyright_setting_for_path",
     "get_stub_distribution_name",
+    "get_stubtest_allowlist_length",
     "get_stubtest_platforms",
-    "get_stubtest_setting",
+    "get_stubtest_settings",
+    "get_stubtest_strictness",
     "get_upload_status",
     "tmpdir_typeshed",
 ]
@@ -368,7 +371,7 @@ def get_package_extra_description(
     return _get_package_metadata(package_name, typeshed_dir).get("extra_description")
 
 
-class StubtestSetting(_NiceReprEnum):
+class StubtestStrictness(_NiceReprEnum):
     """Enumeration of the various possible settings typeshed uses for [stubtest][stubtest] in CI.
 
     [stubtest]:
@@ -396,9 +399,9 @@ def _get_stubtest_config(
     return config
 
 
-def get_stubtest_setting(
+def get_stubtest_strictness(
     package_name: PackageName, *, typeshed_dir: Path | str
-) -> StubtestSetting:
+) -> StubtestStrictness:
     """Get the setting typeshed uses in CI when [stubtest][stubtest] is run on a certain package.
 
     [stubtest]:
@@ -411,34 +414,34 @@ def get_stubtest_setting(
             from which to retrieve the stubtest setting.
 
     Returns:
-        A member of the [`StubtestSetting`][typeshed_stats.gather.StubtestSetting]
-            enumeration (see the docs on `StubtestSetting` for details).
+        A member of the [`StubtestStrictness`][typeshed_stats.gather.StubtestStrictness]
+            enumeration (see the docs on `StubtestStrictness` for details).
 
     Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_setting
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_strictness
         >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_setting = get_stubtest_setting("stdlib", typeshed_dir=typeshed)
-        ...     gdb_setting = get_stubtest_setting("gdb", typeshed_dir=typeshed)
+        ...     stdlib_setting = get_stubtest_strictness("stdlib", typeshed_dir=typeshed)
+        ...     gdb_setting = get_stubtest_strictness("gdb", typeshed_dir=typeshed)
         >>> stdlib_setting
-        StubtestSetting.ERROR_ON_MISSING_STUB
+        StubtestStrictness.ERROR_ON_MISSING_STUB
         >>> help(_)
-        Help on StubtestSetting in module typeshed_stats.gather:
+        Help on StubtestStrictness in module typeshed_stats.gather:
         <BLANKLINE>
-        StubtestSetting.ERROR_ON_MISSING_STUB
+        StubtestStrictness.ERROR_ON_MISSING_STUB
             Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
         <BLANKLINE>
         >>> gdb_setting
-        StubtestSetting.SKIPPED
+        StubtestStrictness.SKIPPED
     """
     if package_name == "stdlib":
-        return StubtestSetting.ERROR_ON_MISSING_STUB
+        return StubtestStrictness.ERROR_ON_MISSING_STUB
     match _get_stubtest_config(package_name, typeshed_dir):
         case {"skip": True}:
-            return StubtestSetting.SKIPPED
+            return StubtestStrictness.SKIPPED
         case {"ignore_missing_stub": False}:
-            return StubtestSetting.ERROR_ON_MISSING_STUB
+            return StubtestStrictness.ERROR_ON_MISSING_STUB
         case _:
-            return StubtestSetting.MISSING_STUBS_IGNORED
+            return StubtestStrictness.MISSING_STUBS_IGNORED
 
 
 def get_stubtest_platforms(
@@ -476,6 +479,102 @@ def get_stubtest_platforms(
             return sorted(platforms)
         case _:
             return ["linux"]
+
+
+def _num_allowlist_entries_in_file(path: Path) -> int:
+    with path.open(encoding="utf-8") as file:
+        return sum(
+            1 for line in file if line.strip() and not line.strip().startswith("#")
+        )
+
+
+def get_stubtest_allowlist_length(
+    package_name: PackageName, *, typeshed_dir: Path | str
+) -> int:
+    """Get the number of "allowlist entries" typeshed uses in CI when [stubtest][stubtest] is run on a certain package.
+
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
+
+    An allowlist entry indicates a place in the stub where stubtest emits an error,
+    but typeshed has chosen to silence the error rather than "fix it".
+    Not all allowlist entries are bad:
+    sometimes there are good reasons to ignore an error emitted by stubtest.
+
+    Args:
+        package_name: The name of the package
+            to find the number of allowlist entries for.
+        typeshed_dir: A path pointing to a typeshed directory,
+            from which to retrieve the number of stubtest allowlist entries.
+
+    Returns:
+        The number of allowlist entries for that package.
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_allowlist_length
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     num_stdlib_allows = get_stubtest_allowlist_length("stdlib", typeshed_dir=typeshed)
+        ...     num_requests_allows = get_stubtest_allowlist_length("requests", typeshed_dir=typeshed)
+        >>> type(num_stdlib_allows)
+        <class 'int'>
+        >>> num_stdlib_allows > 0 and num_requests_allows > 0
+        True
+    """
+    if package_name == "stdlib":
+        allowlist_dir = Path(typeshed_dir, "tests", "stubtest_allowlists")
+        return sum(
+            _num_allowlist_entries_in_file(file) for file in allowlist_dir.glob("*.txt")
+        )
+    allowlist_dir = Path(typeshed_dir, "stubs", package_name, "@tests")
+    if not allowlist_dir.exists():
+        return 0
+    return sum(
+        _num_allowlist_entries_in_file(file)
+        for file in allowlist_dir.glob("stubtest_allowlist*.txt")
+    )
+
+
+@final
+@attrs.define
+class StubtestSettings:
+    """Information on the settings under which [stubtest][stubtest] is run on a certain package.
+
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
+    """
+
+    strictness: StubtestStrictness
+    platforms: list[str]
+    allowlist_length: int
+
+
+def get_stubtest_settings(
+    package_name: PackageName, *, typeshed_dir: Path | str
+) -> StubtestSettings:
+    """Get the [stubtest][stubtest] settings for a certain stubs package in typeshed.
+
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
+
+
+    Args:
+        package_name: The name of the package to find the stubtest settings for.
+        typeshed_dir: A path pointing to a typeshed directory,
+            from which to retrieve the stubtest settings.
+
+    Returns:
+        An instance of the [`StubtestSettings`][typeshed_stats.gather.StubtestSettings] class.
+    """
+    return StubtestSettings(
+        strictness=get_stubtest_strictness(package_name, typeshed_dir=typeshed_dir),
+        platforms=get_stubtest_platforms(package_name, typeshed_dir=typeshed_dir),
+        allowlist_length=get_stubtest_allowlist_length(
+            package_name, typeshed_dir=typeshed_dir
+        ),
+    )
 
 
 class PackageStatus(_NiceReprEnum):
@@ -870,8 +969,7 @@ class PackageInfo:
     number_of_lines: int
     package_status: PackageStatus
     upload_status: UploadStatus
-    stubtest_setting: StubtestSetting
-    stubtest_platforms: list[str]
+    stubtest_settings: StubtestSettings
     pyright_setting: PyrightSetting
     annotation_stats: AnnotationStats
 
@@ -911,8 +1009,8 @@ async def gather_stats_on_package(
         ...
         >>> stdlib_info.package_name
         'stdlib'
-        >>> stdlib_info.stubtest_setting
-        StubtestSetting.ERROR_ON_MISSING_STUB
+        >>> stdlib_info.stubtest_settings.strictness
+        StubtestStrictness.ERROR_ON_MISSING_STUB
         >>> type(stdlib_info.number_of_lines) is int and stdlib_info.number_of_lines > 0
         True
     """
@@ -929,8 +1027,7 @@ async def gather_stats_on_package(
             package_name, typeshed_dir=typeshed_dir, session=session
         ),
         upload_status=get_upload_status(package_name, typeshed_dir=typeshed_dir),
-        stubtest_setting=get_stubtest_setting(package_name, typeshed_dir=typeshed_dir),
-        stubtest_platforms=get_stubtest_platforms(
+        stubtest_settings=get_stubtest_settings(
             package_name, typeshed_dir=typeshed_dir
         ),
         pyright_setting=get_pyright_setting_for_package(

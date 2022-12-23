@@ -24,7 +24,7 @@ from typeshed_stats.gather import (
     PackageInfo,
     PackageStatus,
     PyrightSetting,
-    StubtestSetting,
+    StubtestStrictness,
     UploadStatus,
 )
 
@@ -223,12 +223,13 @@ class TestPassingPackages:
     ) -> None:
         patches_to_apply = [
             ("get_package_status", PackageStatus.UP_TO_DATE),
-            ("get_stubtest_setting", StubtestSetting.MISSING_STUBS_IGNORED),
+            ("get_stubtest_strictness", StubtestStrictness.MISSING_STUBS_IGNORED),
             ("get_pyright_setting_for_package", PyrightSetting.STRICT_ON_SOME_FILES),
             ("get_package_extra_description", None),
             ("get_upload_status", UploadStatus.UPLOADED),
             ("get_stubtest_platforms", ["linux"]),
             ("get_stub_distribution_name", "types-foo"),
+            ("get_stubtest_allowlist_length", 55),
         ]
 
         for function_name, return_value in patches_to_apply:

@@ -14,7 +14,8 @@ from typeshed_stats.gather import (
     PackageInfo,
     PackageStatus,
     PyrightSetting,
-    StubtestSetting,
+    StubtestSettings,
+    StubtestStrictness,
     UploadStatus,
 )
 from typeshed_stats.serialize import (
@@ -65,17 +66,19 @@ def unusual_packages() -> list[PackageInfo]:
         number_of_lines=100_000_000_000,
         package_status=PackageStatus.UP_TO_DATE,
         upload_status=UploadStatus.NOT_CURRENTLY_UPLOADED,
-        stubtest_setting=StubtestSetting.SKIPPED,
-        stubtest_platforms=[],
+        stubtest_settings=StubtestSettings(
+            strictness=StubtestStrictness.SKIPPED, platforms=[], allowlist_length=0
+        ),
         pyright_setting=PyrightSetting.STRICT,
         annotation_stats=AnnotationStats(),
     )
     pkg2 = copy.deepcopy(pkg1)
-    pkg2.stubtest_setting = StubtestSetting.ERROR_ON_MISSING_STUB
-    pkg2.stubtest_platforms = ["win32", "darwin"]
+    pkg2.package_name = "stdlib"
+    pkg2.stubtest_settings.strictness = StubtestStrictness.ERROR_ON_MISSING_STUB
+    pkg2.stubtest_settings.platforms = ["win32", "darwin"]
     pkg2.stub_distribution_name = "-"
     pkg3 = copy.deepcopy(pkg2)
-    pkg3.stubtest_platforms = ["win32", "darwin", "linux"]
+    pkg3.stubtest_settings.platforms = ["win32", "darwin", "linux"]
     return [pkg1, pkg2, pkg3]
 
 
@@ -131,6 +134,9 @@ def test_markdown_and_htmlconversion(
     converted_to_markdown = stats_to_markdown(list_of_info)
     assert converted_to_markdown[-1] == "\n"
     assert converted_to_markdown[-2] != "\n"
+    assert "`stdlib`" not in converted_to_markdown
+    assert "`the stdlib`" not in converted_to_markdown
+    assert "``" not in converted_to_markdown
     html1 = markdown.markdown(converted_to_markdown)
     soup = BeautifulSoup(html1, "html.parser")
     assert bool(soup.find()), "Invalid HTML produced!"
