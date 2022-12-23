@@ -12,8 +12,12 @@ Typeshed currently contains stubs for 142 packages
 (including the stdlib stubs as a "single package"),
 for a total of 186,690 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>16:25 UTC on 2022-12-23</b>.</i>
-<i>For up-to-date statistics, consider using [the CLI tool](https://pypi.org/project/typeshed-stats/) instead.</i>
+<i>Note: these statistics were last updated at: <b>16:38 UTC on 2022-12-23</b>.</i>
+<i>
+For up-to-date statistics, consider using
+[the CLI tool](https://pypi.org/project/typeshed-stats/ "pip install the CLI tool from PyPI")
+instead.
+</i>
 <hr>
 
 ## Info on typeshed's stubs for `D3DShot`
