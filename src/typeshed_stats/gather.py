@@ -142,6 +142,7 @@ class AnnotationStats:
 def _node_matches_name(node: ast.expr, name: str, from_: Container[str]) -> bool:
     """Return True if `node` represents `name` from one of the modules in `from_`.
 
+    ```pycon
     >>> _is_TypeAlias = partial(_node_matches_name, name="TypeAlias", from_={"typing", "typing_extensions"})
     >>> get_annotation_node = lambda source: ast.parse(source).body[0].annotation
     >>> _is_TypeAlias(get_annotation_node("foo: TypeAlias = int"))
@@ -154,6 +155,8 @@ def _node_matches_name(node: ast.expr, name: str, from_: Container[str]) -> bool
     False
     >>> _is_TypeAlias(get_annotation_node("foo: Final = 5"))
     False
+
+    ```
     """
     match node:
         case ast.Name(id):
