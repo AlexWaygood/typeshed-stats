@@ -368,7 +368,12 @@ def get_package_extra_description(
 
 
 class StubtestSetting(_NiceReprEnum):
-    """Enumeration of the various possible settings typeshed uses for [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) in CI."""
+    """Enumeration of the various possible settings typeshed uses for [stubtest][stubtest] in CI.
+
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
+    """
 
     SKIPPED = "Stubtest is skipped in typeshed's CI for this package."
     MISSING_STUBS_IGNORED = (
@@ -393,7 +398,11 @@ def _get_stubtest_config(
 def get_stubtest_setting(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> StubtestSetting:
-    """Get the setting typeshed uses in CI when [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) is run on a certain package.
+    """Get the setting typeshed uses in CI when [stubtest][stubtest] is run on a certain package.
+
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
 
     Args:
         package_name: The name of the package to find the stubtest setting for.
@@ -434,7 +443,11 @@ def get_stubtest_setting(
 def get_stubtest_platforms(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> list[str]:
-    """Get the list of platforms on which [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) is run in typeshed's CI.
+    """Get the list of platforms on which [stubtest][stubtest] is run in typeshed's CI.
+
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
 
     Args:
         package_name: The name of the package to find the stubtest setting for.
@@ -524,11 +537,15 @@ async def get_package_status(
 ) -> PackageStatus:
     """Retrieve information on how up to date a stubs package is.
 
-    If [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html)
+    If [stubtest][stubtest]
     tests these stubs against the latest version of the runtime package
     in typeshed's CI, it's a fair bet that the stubs are relatively up to date.
     If stubtest tests these stubs against an older version, however,
     the stubs *may* be out of date.
+
+    [stubtest]:
+      https://mypy.readthedocs.io/en/stable/stubtest.html
+      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
 
     !!! note
 
