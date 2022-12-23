@@ -15,19 +15,19 @@ Tools for gathering stats about typeshed packages.
 
 **Attributes:**
 
-| Name                             | Type   |
-|----------------------------------|--------|
-| `annotated_parameters`           | `int`  |
-| `unannotated_parameters`         | `int`  |
-| `annotated_returns`              | `int`  |
-| `unannotated_returns`            | `int`  |
-| `explicit_Incomplete_parameters` | `int`  |
-| `explicit_Incomplete_returns`    | `int`  |
-| `explicit_Any_parameters`        | `int`  |
-| `explicit_Any_returns`           | `int`  |
-| `annotated_variables`            | `int`  |
-| `explicit_Any_variables`         | `int`  |
-| `explicit_Incomplete_variables`  | `int`  |
+| Name                             | Type         |
+|----------------------------------|--------------|
+| `annotated_parameters`           | [`int`][int] |
+| `unannotated_parameters`         | [`int`][int] |
+| `annotated_returns`              | [`int`][int] |
+| `unannotated_returns`            | [`int`][int] |
+| `explicit_Incomplete_parameters` | [`int`][int] |
+| `explicit_Incomplete_returns`    | [`int`][int] |
+| `explicit_Any_parameters`        | [`int`][int] |
+| `explicit_Any_returns`           | [`int`][int] |
+| `annotated_variables`            | [`int`][int] |
+| `explicit_Any_variables`         | [`int`][int] |
+| `explicit_Incomplete_variables`  | [`int`][int] |
 <hr>
 
 ::: typeshed_stats.gather.FileInfo
@@ -38,9 +38,9 @@ Tools for gathering stats about typeshed packages.
 
 | Name               | Type                                                       |
 |--------------------|------------------------------------------------------------|
-| `file_path`        | `Path`                                                     |
-| `parent_package`   | `str`                                                      |
-| `number_of_lines`  | `int`                                                      |
+| `file_path`        | [`Path`][pathlib.Path]                                     |
+| `parent_package`   | [`str`][str]                                               |
+| `number_of_lines`  | [`int`][int]                                               |
 | `pyright_setting`  | [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]   |
 | `annotation_stats` | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] |
 <hr>
@@ -53,13 +53,13 @@ Tools for gathering stats about typeshed packages.
 
 | Name                 | Type                                                       |
 |----------------------|------------------------------------------------------------|
-| `package_name`       | `str`                                                      |
-| `extra_description`  | `str | None`                                               |
-| `number_of_lines`    | `int`                                                      |
+| `package_name`       | [`str`][str]                                               |
+| `extra_description`  | [`str`][str]|`NoneType`                                    |
+| `number_of_lines`    | [`int`][int]                                               |
 | `package_status`     | [`PackageStatus`][typeshed_stats.gather.PackageStatus]     |
 | `upload_status`      | [`UploadStatus`][typeshed_stats.gather.UploadStatus]       |
 | `stubtest_setting`   | [`StubtestSetting`][typeshed_stats.gather.StubtestSetting] |
-| `stubtest_platforms` | `list[str]`                                                |
+| `stubtest_platforms` | [`list`][list][[`str`][str]]                               |
 | `pyright_setting`    | [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]   |
 | `annotation_stats`   | [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] |
 <hr>
@@ -76,14 +76,14 @@ Tools for gathering stats about typeshed packages.
 
 **Members:**
 
-| Name                | Description                                                                                                                                            |
-|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `STDLIB`            | These are the stdlib stubs. Typeshed's stdlib stubs are generally fairly up to date, and tested against all currently supported Python versions in CI. |
-| `NOT_ON_PYPI`       | The upstream for this package doesn't exist on PyPI, so whether or not these stubs are up to date or not is unknown.                                   |
-| `OBSOLETE`          | Upstream has added type hints; these typeshed stubs are now obsolete.                                                                                  |
-| `NO_LONGER_UPDATED` | Upstream has not added type hints, but these stubs are no longer updated for some other reason.                                                        |
-| `OUT_OF_DATE`       | These stubs are out of date. In CI, stubtest tests these stubs against an older version of this package than the latest that's available.              |
-| `UP_TO_DATE`        | These stubs should be fairly up to date. In CI, stubtest tests these stubs against the latest version of the package that's available.                 |
+| Name                | Description                                                                                                                                                                                                        |
+|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `STDLIB`            | These are typeshed's stubs for the standard library. Typeshed's stdlib stubs are generally fairly up to date, and are tested against all currently supported Python versions in typeshed's CI.                     |
+| `NOT_ON_PYPI`       | The runtime package that these stubs are for doesn't exist on PyPI, so whether or not these stubs are up to date or not is unknown.                                                                                |
+| `OBSOLETE`          | The runtime package has added inline type hints; these typeshed stubs are now obsolete.                                                                                                                            |
+| `NO_LONGER_UPDATED` | The runtime package has not added type hints, but these stubs are no longer updated by typeshed for some other reason.                                                                                             |
+| `OUT_OF_DATE`       | These stubs are out of date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against an older version of the runtime package than the latest that's available. |
+| `UP_TO_DATE`        | These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.   |
 <hr>
 
 ::: typeshed_stats.gather.PyrightSetting
@@ -92,13 +92,13 @@ Tools for gathering stats about typeshed packages.
 
 **Members:**
 
-| Name                   | Description                                                                        |
-|------------------------|------------------------------------------------------------------------------------|
-| `ENTIRELY_EXCLUDED`    | All files are excluded from the pyright check in CI.                               |
-| `SOME_FILES_EXCLUDED`  | Some files are excluded from the pyright check in CI.                              |
-| `NOT_STRICT`           | All files are excluded from the stricter pyright settings in CI.                   |
-| `STRICT_ON_SOME_FILES` | Some files are tested with the stricter pyright settings in CI; some are excluded. |
-| `STRICT`               | All files are tested with the stricter pyright settings in CI.                     |
+| Name                   | Description                                                                                                         |
+|------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `ENTIRELY_EXCLUDED`    | All files in this stubs package are excluded from the pyright check in typeshed's CI.                               |
+| `SOME_FILES_EXCLUDED`  | Some files in this stubs package are excluded from the pyright check in typeshed's CI.                              |
+| `NOT_STRICT`           | All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.                   |
+| `STRICT_ON_SOME_FILES` | Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded. |
+| `STRICT`               | All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.                     |
 <hr>
 
 ::: typeshed_stats.gather.StubtestSetting
@@ -107,11 +107,11 @@ Tools for gathering stats about typeshed packages.
 
 **Members:**
 
-| Name                    | Description                                                          |
-|-------------------------|----------------------------------------------------------------------|
-| `SKIPPED`               | Stubtest is skipped in CI for this package.                          |
-| `MISSING_STUBS_IGNORED` | The `--ignore-missing-stub` stubtest setting is used in CI.          |
-| `ERROR_ON_MISSING_STUB` | Objects missing from the stub cause stubtest to emit an error in CI. |
+| Name                    | Description                                                                     |
+|-------------------------|---------------------------------------------------------------------------------|
+| `SKIPPED`               | Stubtest is skipped in typeshed's CI for this package.                          |
+| `MISSING_STUBS_IGNORED` | The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.          |
+| `ERROR_ON_MISSING_STUB` | Objects missing from the stub cause stubtest to emit an error in typeshed's CI. |
 <hr>
 
 ::: typeshed_stats.gather.UploadStatus
