@@ -1082,6 +1082,9 @@ async def _gather_stats_on_multiple_packages(
         return await asyncio.gather(*tasks, return_exceptions=True)
 
 
+_get_package_name = attrgetter("package_name")
+
+
 def gather_stats_on_multiple_packages(
     packages: Iterable[str] | None = None, *, typeshed_dir: Path | str
 ) -> Sequence[PackageInfo]:
@@ -1124,7 +1127,7 @@ def gather_stats_on_multiple_packages(
     for result in results:
         if isinstance(result, BaseException):
             raise result
-    return sorted(results, key=attrgetter("package_name"))
+    return sorted(results, key=_get_package_name)
 
 
 @contextmanager
