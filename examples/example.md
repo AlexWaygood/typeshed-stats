@@ -329,7 +329,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 ### Stubtest platforms in CI
 
-In CI, stubtest is run on linux and darwin.
+In CI, stubtest is run on darwin and linux.
 
 ### Pyright settings in CI: *strict*
 
@@ -1503,7 +1503,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 ### Stubtest platforms in CI
 
-In CI, stubtest is run on win32 and linux.
+In CI, stubtest is run on linux and win32.
 
 ### Pyright settings in CI: *strict*
 
@@ -3937,7 +3937,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 ### Stubtest platforms in CI
 
-In CI, stubtest is run on win32, linux and darwin.
+In CI, stubtest is run on darwin, linux and win32.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4117,7 +4117,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 ### Stubtest platforms in CI
 
-In CI, stubtest is run on linux and darwin.
+In CI, stubtest is run on darwin and linux.
 
 ### Pyright settings in CI: *strict*
 
@@ -4387,7 +4387,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 ### Stubtest platforms in CI
 
-In CI, stubtest is run on linux, darwin and win32.
+In CI, stubtest is run on darwin, linux and win32.
 
 ### Pyright settings in CI: *strict*
 
@@ -5418,7 +5418,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 ### Stubtest platforms in CI
 
-In CI, stubtest is run on linux, darwin and win32.
+In CI, stubtest is run on darwin, linux and win32.
 
 ### Pyright settings in CI: *strict on some files*
 

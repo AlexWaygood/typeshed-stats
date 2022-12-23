@@ -180,8 +180,8 @@
     "upload_status": "UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "stubtest_platforms": [
-      "linux",
-      "darwin"
+      "darwin",
+      "linux"
     ],
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -833,8 +833,8 @@
     "upload_status": "UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "stubtest_platforms": [
-      "win32",
-      "linux"
+      "linux",
+      "win32"
     ],
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2181,9 +2181,9 @@
     "upload_status": "UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "stubtest_platforms": [
-      "win32",
+      "darwin",
       "linux",
-      "darwin"
+      "win32"
     ],
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -2283,8 +2283,8 @@
     "upload_status": "UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "stubtest_platforms": [
-      "linux",
-      "darwin"
+      "darwin",
+      "linux"
     ],
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2434,8 +2434,8 @@
     "upload_status": "UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "stubtest_platforms": [
-      "linux",
       "darwin",
+      "linux",
       "win32"
     ],
     "pyright_setting": "STRICT",
@@ -3009,8 +3009,8 @@
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_setting": "ERROR_ON_MISSING_STUB",
     "stubtest_platforms": [
-      "linux",
       "darwin",
+      "linux",
       "win32"
     ],
     "pyright_setting": "STRICT_ON_SOME_FILES",

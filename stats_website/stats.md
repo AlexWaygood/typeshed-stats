@@ -12,8 +12,8 @@ Typeshed currently contains stubs for 142 packages
 (including the stdlib stubs as a "single package"),
 for a total of 186,690 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>16:05 UTC on 2022-12-23</b>.</i>
-<i>For up-to-date statistics, consider using the CLI tool instead.</i>
+<i>Note: these statistics were last updated at: <b>16:25 UTC on 2022-12-23</b>.</i>
+<i>For up-to-date statistics, consider using [the CLI tool](https://pypi.org/project/typeshed-stats/) instead.</i>
 <hr>
 
 ## Info on typeshed's stubs for `D3DShot`
@@ -347,7 +347,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 ### Stubtest platforms in CI
 
-In CI, stubtest is run on linux and darwin.
+In CI, stubtest is run on darwin and linux.
 
 ### Pyright settings in CI: *strict*
 
@@ -1521,7 +1521,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 ### Stubtest platforms in CI
 
-In CI, stubtest is run on win32 and linux.
+In CI, stubtest is run on linux and win32.
 
 ### Pyright settings in CI: *strict*
 
@@ -3955,7 +3955,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 ### Stubtest platforms in CI
 
-In CI, stubtest is run on win32, linux and darwin.
+In CI, stubtest is run on darwin, linux and win32.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4135,7 +4135,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 ### Stubtest platforms in CI
 
-In CI, stubtest is run on linux and darwin.
+In CI, stubtest is run on darwin and linux.
 
 ### Pyright settings in CI: *strict*
 
@@ -4405,7 +4405,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 ### Stubtest platforms in CI
 
-In CI, stubtest is run on linux, darwin and win32.
+In CI, stubtest is run on darwin, linux and win32.
 
 ### Pyright settings in CI: *strict*
 
@@ -5436,7 +5436,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 ### Stubtest platforms in CI
 
-In CI, stubtest is run on linux, darwin and win32.
+In CI, stubtest is run on darwin, linux and win32.
 
 ### Pyright settings in CI: *strict on some files*
 
