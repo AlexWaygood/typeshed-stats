@@ -1854,6 +1854,35 @@
     }
   },
   {
+    "package_name": "ibm-db",
+    "stub_distribution_name": "types-ibm-db",
+    "extra_description": null,
+    "number_of_lines": 253,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 162,
+      "unannotated_parameters": 0,
+      "annotated_returns": 65,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 2,
+      "annotated_variables": 110,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0
+    }
+  },
+  {
     "package_name": "invoke",
     "stub_distribution_name": "types-invoke",
     "extra_description": null,
@@ -2934,7 +2963,7 @@
     "package_name": "python-crontab",
     "stub_distribution_name": "types-python-crontab",
     "extra_description": null,
-    "number_of_lines": 278,
+    "number_of_lines": 271,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2948,13 +2977,13 @@
     "annotation_stats": {
       "annotated_parameters": 99,
       "unannotated_parameters": 37,
-      "annotated_returns": 108,
+      "annotated_returns": 104,
       "unannotated_returns": 30,
       "explicit_Incomplete_parameters": 5,
       "explicit_Incomplete_returns": 4,
       "explicit_Any_parameters": 13,
       "explicit_Any_returns": 1,
-      "annotated_variables": 67,
+      "annotated_variables": 65,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 27
     }

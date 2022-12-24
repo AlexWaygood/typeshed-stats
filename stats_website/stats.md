@@ -8,11 +8,11 @@ hide:
 
 # Statistics on typeshed's stubs
 
-Typeshed currently contains stubs for 142 packages
+Typeshed currently contains stubs for 143 packages
 (including the stdlib stubs as a "single package"),
-for a total of 186,690 non-empty lines of code.
+for a total of 186,936 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>01:23 UTC on 2022-12-24</b>.</i>
+<i>Note: these statistics were last updated at: <b>12:32 UTC on 2022-12-24</b>.</i>
 <i>
 For up-to-date statistics, consider using
 [the CLI tool](https://pypi.org/project/typeshed-stats/ "pip install the CLI tool from PyPI")
@@ -3158,6 +3158,55 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 <hr>
 
+## Info on typeshed's stubs for `ibm-db`
+
+### Stub distribution name
+
+`types-ibm-db`
+
+### Number of lines
+
+253 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `ibm-db` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `ibm-db`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 162
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 65
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 110
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+
+<hr>
+
 ## Info on typeshed's stubs for `invoke`
 
 ### Stub distribution name
@@ -4985,7 +5034,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-278 (excluding blank lines)
+271 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5015,12 +5064,12 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicit `Any` parameters: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
 - Returns:
-    - Annotated returns: 108
+    - Annotated returns: 104
     - Unannotated returns: 30
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
-    - Annotated variables: 67
+    - Annotated variables: 65
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 27
 
