@@ -56,7 +56,7 @@ flake8-plugin-utils,types-flake8-plugin-utils,-,61,UP_TO_DATE,UPLOADED,STRICT,30
 flake8-rst-docstrings,types-flake8-rst-docstrings,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-simplify,types-flake8-simplify,-,8,UP_TO_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,2,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-typing-imports,types-flake8-typing-imports,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,5,0,0,1,1,1,2,0,0,MISSING_STUBS_IGNORED,linux,0
-fpdf2,types-fpdf2,-,2001,UP_TO_DATE,UPLOADED,NOT_STRICT,578,522,369,193,58,4,11,2,625,14,159,ERROR_ON_MISSING_STUB,linux,7
+fpdf2,types-fpdf2,-,2002,UP_TO_DATE,UPLOADED,NOT_STRICT,581,519,372,190,58,4,11,2,625,14,159,ERROR_ON_MISSING_STUB,linux,7
 gdb,types-gdb,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: is is not possible to install the `gdb` package separately, for instance using `pip`.",718,NOT_ON_PYPI,UPLOADED,STRICT,227,0,247,0,0,0,0,0,290,0,0,SKIPPED,None,0
 google-cloud-ndb,types-google-cloud-ndb,-,1408,UP_TO_DATE,UPLOADED,NOT_STRICT,479,368,234,203,3,0,127,0,190,132,2,MISSING_STUBS_IGNORED,linux,3
 hdbcli,types-hdbcli,-,129,UP_TO_DATE,UPLOADED,STRICT,77,0,62,0,6,4,12,7,21,2,2,ERROR_ON_MISSING_STUB,linux,5
@@ -107,7 +107,7 @@ python-gflags,types-python-gflags,-,251,UP_TO_DATE,UPLOADED,STRICT,186,0,98,0,0,
 python-jose,types-python-jose,-,359,UP_TO_DATE,UPLOADED,NOT_STRICT,86,39,60,30,0,0,18,12,117,33,0,ERROR_ON_MISSING_STUB,linux,6
 python-nmap,types-python-nmap,-,116,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,1
 python-slugify,types-python-slugify,-,45,UP_TO_DATE,UPLOADED,STRICT,19,0,3,0,0,0,0,0,12,0,0,ERROR_ON_MISSING_STUB,linux,1
-python-xlib,types-python-xlib,-,5396,UP_TO_DATE,UPLOADED,STRICT,1335,0,583,0,0,0,15,8,3527,5,0,ERROR_ON_MISSING_STUB,linux,16
+python-xlib,types-python-xlib,-,5396,OUT_OF_DATE,UPLOADED,STRICT,1335,0,583,0,0,0,15,8,3527,5,0,ERROR_ON_MISSING_STUB,linux,16
 pytz,types-pytz,-,127,UP_TO_DATE,UPLOADED,STRICT,69,0,51,0,2,1,2,0,27,0,1,ERROR_ON_MISSING_STUB,linux,4
 pyvmomi,types-pyvmomi,-,177,UP_TO_DATE,UPLOADED,STRICT,50,0,35,0,3,16,2,0,57,7,0,MISSING_STUBS_IGNORED,linux,8
 pywin32,types-pywin32,-,34530,UP_TO_DATE,UPLOADED,NOT_STRICT,3635,3729,3825,2043,426,292,1,1,25012,0,2832,ERROR_ON_MISSING_STUB,win32,49

@@ -2799,7 +2799,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,001 (excluding blank lines)
+2,002 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2824,13 +2824,13 @@ All files in this stubs package are excluded from the stricter pyright settings 
 ### Statistics on the annotations in typeshed's stubs for `fpdf2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 578
-    - Unannotated parameters: 522
+    - Annotated parameters: 581
+    - Unannotated parameters: 519
     - Explicit `Any` parameters: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 58
 - Returns:
-    - Annotated returns: 369
-    - Unannotated returns: 193
+    - Annotated returns: 372
+    - Unannotated returns: 190
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
@@ -5308,9 +5308,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 5,396 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs are out of date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
