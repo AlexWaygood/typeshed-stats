@@ -10,9 +10,9 @@ hide:
 
 Typeshed currently contains stubs for 143 packages
 (including the stdlib stubs as a "single package"),
-for a total of 186,937 non-empty lines of code.
+for a total of 186,949 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>01:34 UTC on 2022-12-27</b>.</i>
+<i>Note: these statistics were last updated at: <b>12:35 UTC on 2022-12-27</b>.</i>
 <i>
 For up-to-date statistics, consider using
 [the CLI tool](https://pypi.org/project/typeshed-stats/ "pip install the CLI tool from PyPI")
@@ -5961,7 +5961,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-50,959 (excluding blank lines)
+50,971 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -5986,14 +5986,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,460
+    - Annotated parameters: 24,470
     - Unannotated parameters: 713
     - Explicit `Any` parameters: 2,044
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13,300
+    - Annotated returns: 13,310
     - Unannotated returns: 405
-    - Explicit `Any` returns: 817
+    - Explicit `Any` returns: 826
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
     - Annotated variables: 8,070
