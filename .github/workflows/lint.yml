@@ -43,8 +43,17 @@ jobs:
           python-version: "3.10"
       - name: Install wheel
         run: pip install "wheel<1"
-      - name: Install requirements
+      - name: Install mypy requirements only
+        # Install the minimal requirements for a PR run, so that it's fast
+        if: ${{ github.event_name != 'schedule' }}
         run: pip install -r requirements/mypy.txt
+      - name: Install all requirements for daily run
+        # Install all requirements for the daily run,
+        # so we detect if any of the dependencies has added a py.typed file recently
+        if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && github.event_name == 'schedule' }}
+        run: |
+          pip install -e .[rich]
+          pip install -r requirements/all.txt
       - name: Run mypy on the project
         run: mypy
 
