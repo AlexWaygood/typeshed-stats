@@ -2,7 +2,7 @@ package_name,stub_distribution_name,extra_description,number_of_lines,package_st
 D3DShot,types-D3DShot,-,590,UP_TO_DATE,UPLOADED,STRICT,127,0,255,0,0,0,0,0,100,0,0,SKIPPED,None,0
 DateTimeRange,types-DateTimeRange,-,64,UP_TO_DATE,UPLOADED,STRICT,28,0,28,0,0,0,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,0
 Deprecated,types-Deprecated,-,56,UP_TO_DATE,UPLOADED,STRICT,30,0,10,0,0,0,1,0,12,0,0,ERROR_ON_MISSING_STUB,linux,0
-ExifRead,types-ExifRead,-,182,UP_TO_DATE,UPLOADED,NOT_STRICT,42,27,32,16,4,6,0,0,81,0,52,ERROR_ON_MISSING_STUB,linux,5
+ExifRead,types-ExifRead,-,218,UP_TO_DATE,UPLOADED,STRICT,72,0,52,0,0,0,2,1,82,2,2,ERROR_ON_MISSING_STUB,linux,6
 Flask-Cors,types-Flask-Cors,-,125,UP_TO_DATE,UPLOADED,STRICT,62,0,23,0,0,0,8,2,30,1,0,MISSING_STUBS_IGNORED,linux,0
 Flask-Migrate,types-Flask-Migrate,-,100,UP_TO_DATE,UPLOADED,NOT_STRICT,74,4,20,2,0,0,0,0,7,1,0,MISSING_STUBS_IGNORED,linux,0
 Flask-SQLAlchemy,types-Flask-SQLAlchemy,-,106,OBSOLETE,UPLOADED,NOT_STRICT,54,21,24,19,5,0,20,1,16,9,0,MISSING_STUBS_IGNORED,linux,1
@@ -57,7 +57,7 @@ flake8-rst-docstrings,types-flake8-rst-docstrings,-,31,UP_TO_DATE,UPLOADED,STRIC
 flake8-simplify,types-flake8-simplify,-,8,UP_TO_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,2,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-typing-imports,types-flake8-typing-imports,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,5,0,0,1,1,1,2,0,0,MISSING_STUBS_IGNORED,linux,0
 fpdf2,types-fpdf2,-,2002,UP_TO_DATE,UPLOADED,NOT_STRICT,581,519,372,190,58,4,11,2,625,14,159,ERROR_ON_MISSING_STUB,linux,7
-gdb,types-gdb,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: is is not possible to install the `gdb` package separately, for instance using `pip`.",718,NOT_ON_PYPI,UPLOADED,STRICT,227,0,247,0,0,0,0,0,290,0,0,SKIPPED,None,0
+gdb,types-gdb,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: is is not possible to install the `gdb` package separately, for instance using `pip`.",724,NOT_ON_PYPI,UPLOADED,STRICT,233,0,253,0,0,0,0,0,290,0,0,SKIPPED,None,0
 google-cloud-ndb,types-google-cloud-ndb,-,1408,UP_TO_DATE,UPLOADED,NOT_STRICT,479,368,234,203,3,0,127,0,190,132,2,MISSING_STUBS_IGNORED,linux,3
 hdbcli,types-hdbcli,-,129,UP_TO_DATE,UPLOADED,STRICT,77,0,62,0,6,4,12,7,21,2,2,ERROR_ON_MISSING_STUB,linux,5
 html5lib,types-html5lib,-,663,UP_TO_DATE,UPLOADED,NOT_STRICT,67,207,100,208,0,0,27,0,220,180,0,MISSING_STUBS_IGNORED,linux,0
@@ -91,7 +91,7 @@ psutil,types-psutil,-,1506,UP_TO_DATE,UPLOADED,NOT_STRICT,117,310,185,358,2,0,26
 psycopg2,types-psycopg2,-,1552,UP_TO_DATE,UPLOADED,NOT_STRICT,171,328,189,169,0,0,56,7,532,168,0,MISSING_STUBS_IGNORED,linux,5
 pyOpenSSL,types-pyOpenSSL,-,373,UP_TO_DATE,UPLOADED,STRICT,163,0,198,0,3,2,3,2,119,1,0,MISSING_STUBS_IGNORED,linux,1
 pyRFC3339,types-pyRFC3339,-,17,UP_TO_DATE,UPLOADED,STRICT,15,0,9,0,0,0,1,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
-pyaudio,types-pyaudio,-,177,UP_TO_DATE,UPLOADED,STRICT,53,0,38,0,0,0,0,0,84,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
+pyaudio,types-pyaudio,-,165,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 pycocotools,types-pycocotools,-,172,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,64,0,1,ERROR_ON_MISSING_STUB,linux,0
 pycurl,types-pycurl,-,674,UP_TO_DATE,UPLOADED,STRICT,22,0,32,0,7,10,0,0,629,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyfarmhash,types-pyfarmhash,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -120,7 +120,7 @@ simplejson,types-simplejson,-,51,UP_TO_DATE,UPLOADED,STRICT,36,0,16,0,0,0,14,4,1
 singledispatch,types-singledispatch,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,ERROR_ON_MISSING_STUB,linux,1
 six,types-six,-,335,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,-,50971,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,24470,713,13310,405,85,18,2044,826,8070,556,101,ERROR_ON_MISSING_STUB,darwin;linux;win32,1774
+stdlib,-,-,50989,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,24475,713,13314,405,85,18,2044,827,8070,556,101,ERROR_ON_MISSING_STUB,darwin;linux;win32,1774
 stdlib-list,types-stdlib-list,-,16,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,0,1,4,0,0,ERROR_ON_MISSING_STUB,linux,1
 stripe,types-stripe,-,1414,OUT_OF_DATE,UPLOADED,NOT_STRICT,264,388,108,168,0,0,161,4,155,42,0,MISSING_STUBS_IGNORED,linux,6
 tabulate,types-tabulate,-,50,UP_TO_DATE,UPLOADED,STRICT,15,0,2,0,0,0,2,0,25,0,0,ERROR_ON_MISSING_STUB,linux,0

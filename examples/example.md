@@ -151,7 +151,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-182 (excluding blank lines)
+218 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -167,28 +167,28 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 5 allowlist entries for `ExifRead` when running stubtest in CI.
+Typeshed currently has 6 allowlist entries for `ExifRead` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `ExifRead`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 42
-    - Unannotated parameters: 27
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 4
+    - Annotated parameters: 72
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 32
-    - Unannotated returns: 16
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
+    - Annotated returns: 52
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 81
-    - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 52
+    - Annotated variables: 82
+    - Explicit `Any` variables: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 
 <hr>
 
@@ -2852,7 +2852,7 @@ Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Pyth
 
 ### Number of lines
 
-718 (excluding blank lines)
+724 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -2875,12 +2875,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `gdb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 227
+    - Annotated parameters: 233
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 247
+    - Annotated returns: 253
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -4524,7 +4524,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-177 (excluding blank lines)
+165 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4549,17 +4549,17 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `pyaudio`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 53
+    - Annotated parameters: 51
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 38
+    - Annotated returns: 37
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 84
+    - Annotated variables: 72
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -5939,7 +5939,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-50,971 (excluding blank lines)
+50,989 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -5964,14 +5964,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,470
+    - Annotated parameters: 24,475
     - Unannotated parameters: 713
     - Explicit `Any` parameters: 2,044
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13,310
+    - Annotated returns: 13,314
     - Unannotated returns: 405
-    - Explicit `Any` returns: 826
+    - Explicit `Any` returns: 827
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
     - Annotated variables: 8,070
