@@ -63,7 +63,7 @@ jobs:
       - name: Install requirements
         run: pip install -r requirements/flake8.txt
       - name: lint the project
-        run: flake8
+        run: flake8 --color always
 
   create-issue-on-failure:
     name: Create an issue if daily lint failed
