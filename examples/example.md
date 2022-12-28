@@ -743,7 +743,7 @@ The `sqlalchemy-stubs` package is an alternative to this package and also includ
 
 ### Number of lines
 
-14,545 (excluding blank lines)
+14,546 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3221,7 +3221,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated parameters: 245
     - Unannotated parameters: 171
     - Explicit `Any` parameters: 28
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
     - Annotated returns: 177
     - Unannotated returns: 73
@@ -5306,11 +5306,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,396 (excluding blank lines)
+5,394 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5322,7 +5322,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 16 allowlist entries for `python-xlib` when running stubtest in CI.
+Typeshed currently has 14 allowlist entries for `python-xlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5341,7 +5341,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 3,527
+    - Annotated variables: 3,525
     - Explicit `Any` variables: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 
@@ -5453,7 +5453,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-34,530 (excluding blank lines)
+34,531 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5527,12 +5527,12 @@ All files in this stubs package are excluded from the stricter pyright settings 
 ### Statistics on the annotations in typeshed's stubs for `redis`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,462
+    - Annotated parameters: 3,457
     - Unannotated parameters: 1,300
     - Explicit `Any` parameters: 318
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 88
 - Returns:
-    - Annotated returns: 1,265
+    - Annotated returns: 1,264
     - Unannotated returns: 657
     - Explicit `Any` returns: 317
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
@@ -5939,7 +5939,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-50,989 (excluding blank lines)
+50,990 (excluding blank lines)
 
 ### Package status: *stdlib*
 
