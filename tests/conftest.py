@@ -165,7 +165,7 @@ def expected_stats_on_example_stub_file() -> AnnotationStats:
         explicit_Incomplete_variables=2,
         classdefs=6,
         classdefs_with_Any=2,
-        classdefs_with_Incomplete=2
+        classdefs_with_Incomplete=2,
     )
 
 
