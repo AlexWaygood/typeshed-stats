@@ -215,11 +215,6 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         del kwargs["annotation_stats"]
         del kwargs["stubtest_settings"]
 
-        if package_stats.package_name == "stdlib":
-            kwargs["package_name"] = "the stdlib"
-        else:
-            kwargs["package_name"] = f"`{package_stats.package_name}`"
-
         if package_stats.stub_distribution_name == "-":
             kwargs["stub_distribution_name_section"] = ""
         else:
@@ -265,14 +260,6 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
             kwargs["stubtest_platforms_section"] = ""
         del kwargs["stubtest_platforms"]
 
-        allowlist_length = kwargs["stubtest_allowlist_length"]
-        kwargs["stubtest_allowlist_section"] = (
-            f"Typeshed currently has {allowlist_length:,} allowlist "
-            f"{'entry' if allowlist_length == 1 else 'entries'} "
-            f"for {kwargs['package_name']} when running stubtest in CI."
-        )
-        del kwargs["stubtest_allowlist_length"]
+        return template.render(package=package_stats, **kwargs)
 
-        return template.render(**kwargs)
-
-    return "\n\n<hr>\n\n".join(format_package(info) for info in stats).strip() + "\n"
+    return "\n\n<hr>\n\n".join(format_package(info).strip() for info in stats).strip() + "\n"
