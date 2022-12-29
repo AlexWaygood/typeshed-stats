@@ -42,6 +42,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 100
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 43
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -91,6 +95,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 10
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -140,6 +148,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 12
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 2
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -189,6 +201,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 82
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
+- Class definitions:
+    - Total class definitions: 14
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -238,6 +254,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 30
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 2
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -287,6 +307,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 7
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 2
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -336,6 +360,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 16
     - Explicit `Any` variables: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 9
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -385,6 +413,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 26
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 15
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -434,6 +466,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 214
     - Explicit `Any` variables: 83
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 98
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -483,6 +519,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 782
     - Explicit `Any` variables: 335
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 192
+    - Class definitions with `Any`: 4
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -532,6 +572,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 22
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 5
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -581,6 +625,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 733
     - Explicit `Any` variables: 62
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 24
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -630,6 +678,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 13
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 5
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -679,6 +731,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 220
     - Explicit `Any` variables: 192
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 91
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -728,6 +784,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 313
     - Explicit `Any` variables: 193
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 62
+    - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -781,6 +841,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 3,114
     - Explicit `Any` variables: 2,062
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
+- Class definitions:
+    - Total class definitions: 1,331
+    - Class definitions with `Any`: 63
+    - Class definitions marked as at least partially `Incomplete`: 1
 
 <hr>
 
@@ -830,6 +894,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 2
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -879,6 +947,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 0
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 10
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -928,6 +1000,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 1
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -977,6 +1053,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 8
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1026,6 +1106,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 141
     - Explicit `Any` variables: 46
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 45
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1075,6 +1159,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 245
     - Explicit `Any` variables: 149
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 42
+    - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1124,6 +1212,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 0
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1173,6 +1265,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 177
     - Explicit `Any` variables: 71
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 48
+    - Class definitions with `Any`: 2
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1222,6 +1318,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 39
     - Explicit `Any` variables: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 12
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1271,6 +1371,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 363
     - Explicit `Any` variables: 267
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 136
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1320,6 +1424,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 1,301
     - Explicit `Any` variables: 432
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 234
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1369,6 +1477,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 1
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 10
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1418,6 +1530,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 90
     - Explicit `Any` variables: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 85
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1467,6 +1583,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 252
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 115
+- Class definitions:
+    - Total class definitions: 52
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1516,6 +1636,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 86
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 10
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1565,6 +1689,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 3
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1614,6 +1742,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 9
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 2
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1663,6 +1795,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 85
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 11
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1712,6 +1848,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 133
     - Explicit `Any` variables: 86
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 18
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1761,6 +1901,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 57
     - Explicit `Any` variables: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 39
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1810,6 +1954,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 1
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 3
+    - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1859,6 +2007,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 13
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 7
+    - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1906,6 +2058,10 @@ All files in this stubs package are excluded from the pyright check in typeshed'
     - Annotated variables: 279
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 225
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -1955,6 +2111,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 135
     - Explicit `Any` variables: 76
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 34
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2004,6 +2164,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 14
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 2
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2053,6 +2217,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 15
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2102,6 +2270,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 38
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 8
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2151,6 +2323,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 1
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2200,6 +2376,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 80
     - Explicit `Any` variables: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 46
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2249,6 +2429,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 0
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2298,6 +2482,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 12
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2347,6 +2535,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 12
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 5
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2396,6 +2588,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 2
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2445,6 +2641,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 12
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 2
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2494,6 +2694,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 8
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2543,6 +2747,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 2
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2592,6 +2800,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 6
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2641,6 +2853,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 9
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 3
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2690,6 +2906,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 12
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2739,6 +2959,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 2
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2788,6 +3012,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 2
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2837,6 +3065,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 625
     - Explicit `Any` variables: 14
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 159
+- Class definitions:
+    - Total class definitions: 143
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2888,6 +3120,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 290
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 86
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2937,6 +3173,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 190
     - Explicit `Any` variables: 132
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
+- Class definitions:
+    - Total class definitions: 143
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -2986,6 +3226,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 21
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
+- Class definitions:
+    - Total class definitions: 16
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3035,6 +3279,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 220
     - Explicit `Any` variables: 180
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 40
+    - Class definitions with `Any`: 4
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3084,6 +3332,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 86
     - Explicit `Any` variables: 57
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 33
+    - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3133,6 +3385,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 75
     - Explicit `Any` variables: 54
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 25
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3182,6 +3438,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 110
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 4
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3231,6 +3491,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 129
     - Explicit `Any` variables: 70
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 43
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3280,6 +3544,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 48
     - Explicit `Any` variables: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 22
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3329,6 +3597,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 54
     - Explicit `Any` variables: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 25
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3378,6 +3650,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 38
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 7
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3427,6 +3703,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 931
     - Explicit `Any` variables: 439
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 316
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3476,6 +3756,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 52
     - Explicit `Any` variables: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 20
+    - Class definitions with `Any`: 2
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3525,6 +3809,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 1
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 3
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3574,6 +3862,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 972
     - Explicit `Any` variables: 31
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 35
+    - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3623,6 +3915,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 318
     - Explicit `Any` variables: 207
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 106
+    - Class definitions with `Any`: 2
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3672,6 +3968,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 4,197
     - Explicit `Any` variables: 3,566
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 566
+    - Class definitions with `Any`: 5
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3721,6 +4021,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 56
     - Explicit `Any` variables: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 26
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3770,6 +4074,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 145
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 19
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3819,6 +4127,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 537
     - Explicit `Any` variables: 21
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 113
+    - Class definitions with `Any`: 2
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3868,6 +4180,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 34
     - Explicit `Any` variables: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 27
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3917,6 +4233,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 576
     - Explicit `Any` variables: 105
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 143
+    - Class definitions with `Any`: 2
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -3966,6 +4286,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 1
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 3
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4015,6 +4339,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 437
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 368
+- Class definitions:
+    - Total class definitions: 166
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4064,6 +4392,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 11
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4117,6 +4449,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 470
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 261
+- Class definitions:
+    - Total class definitions: 222
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4166,6 +4502,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 0
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4215,6 +4555,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 45
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 8
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4264,6 +4608,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 34
     - Explicit `Any` variables: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 5
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4317,6 +4665,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 738
     - Explicit `Any` variables: 126
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 147
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4366,6 +4718,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 585
     - Explicit `Any` variables: 206
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 71
+- Class definitions:
+    - Total class definitions: 87
+    - Class definitions with `Any`: 3
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4415,6 +4771,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 532
     - Explicit `Any` variables: 168
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 335
+    - Class definitions with `Any`: 2
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4464,6 +4824,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 119
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 25
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4513,6 +4877,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 0
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4562,6 +4930,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 72
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 3
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4611,6 +4983,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 64
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+- Class definitions:
+    - Total class definitions: 11
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4660,6 +5036,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 629
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 4
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4709,6 +5089,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 0
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4758,6 +5142,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 76
     - Explicit `Any` variables: 33
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 74
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4807,6 +5195,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 96
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 17
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4856,6 +5248,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 155
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 24
+    - Class definitions with `Any`: 2
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4903,6 +5299,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 398
     - Explicit `Any` variables: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 66
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -4952,6 +5352,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 6
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 6
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5001,6 +5405,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 1
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5050,6 +5458,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 65
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 27
+- Class definitions:
+    - Total class definitions: 17
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 1
 
 <hr>
 
@@ -5099,6 +5511,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 90
     - Explicit `Any` variables: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+- Class definitions:
+    - Total class definitions: 29
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5148,6 +5564,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 19
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 27
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5197,6 +5617,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 117
     - Explicit `Any` variables: 33
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 26
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5246,6 +5670,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 31
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 14
+    - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5295,6 +5723,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 12
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5344,6 +5776,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 3,525
     - Explicit `Any` variables: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 426
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5393,6 +5829,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 27
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+- Class definitions:
+    - Total class definitions: 16
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 3
 
 <hr>
 
@@ -5442,6 +5882,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 57
     - Explicit `Any` variables: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 44
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5491,6 +5935,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 25,012
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,832
+- Class definitions:
+    - Total class definitions: 724
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5540,6 +5988,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 595
     - Explicit `Any` variables: 235
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 12
+- Class definitions:
+    - Total class definitions: 206
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 2
 
 <hr>
 
@@ -5589,6 +6041,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 72
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 7
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5638,6 +6094,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 114
     - Explicit `Any` variables: 39
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 51
+    - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5687,6 +6147,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 0
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5736,6 +6200,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 627
     - Explicit `Any` variables: 401
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 9
+- Class definitions:
+    - Total class definitions: 155
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5785,6 +6253,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 17
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 6
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5834,6 +6306,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 3
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 2
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5883,6 +6359,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 13
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 4
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5932,6 +6412,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 9
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 15
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -5977,6 +6461,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Annotated variables: 8,070
     - Explicit `Any` variables: 556
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
+- Class definitions:
+    - Total class definitions: 2,240
+    - Class definitions with `Any`: 22
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6026,6 +6514,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 4
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6075,6 +6567,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 155
     - Explicit `Any` variables: 42
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 134
+    - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6124,6 +6620,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 25
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 3
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6173,6 +6673,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 6
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6222,6 +6726,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 14
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 14
+    - Class definitions with `Any`: 2
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6271,6 +6779,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 1
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 2
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6320,6 +6832,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 95
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 70
+- Class definitions:
+    - Total class definitions: 33
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6369,6 +6885,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 4
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 7
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6418,6 +6938,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 5
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6467,6 +6991,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 5
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 3
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6516,6 +7044,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 309
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 223
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6565,6 +7097,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 3
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 2
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6614,6 +7150,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 1
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6663,6 +7203,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 5
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 2
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6712,6 +7256,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 155
     - Explicit `Any` variables: 54
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 72
+    - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6761,6 +7309,10 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Annotated variables: 184
     - Explicit `Any` variables: 93
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 50
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6810,6 +7362,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 246
     - Explicit `Any` variables: 20
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 40
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6859,6 +7415,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 50
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 9
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6908,6 +7468,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 1
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -6957,6 +7521,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 6
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+- Class definitions:
+    - Total class definitions: 5
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
 
@@ -7006,3 +7574,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated variables: 76
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 9
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0

@@ -28,6 +28,9 @@ Tools for gathering stats about typeshed packages.
 | `annotated_variables`            | [`int`][int] |
 | `explicit_Any_variables`         | [`int`][int] |
 | `explicit_Incomplete_variables`  | [`int`][int] |
+| `classdefs`                      | [`int`][int] |
+| `classdefs_with_Any`             | [`int`][int] |
+| `classdefs_with_Incomplete`      | [`int`][int] |
 <hr>
 
 ::: typeshed_stats.gather.FileInfo

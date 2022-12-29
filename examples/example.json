@@ -23,7 +23,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 100,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 43,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -52,7 +55,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 10,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -81,7 +87,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 12,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 2,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -110,7 +119,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 82,
       "explicit_Any_variables": 2,
-      "explicit_Incomplete_variables": 2
+      "explicit_Incomplete_variables": 2,
+      "classdefs": 14,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -139,7 +151,10 @@
       "explicit_Any_returns": 2,
       "annotated_variables": 30,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 2,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -168,7 +183,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 7,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 2,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -197,7 +215,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 16,
       "explicit_Any_variables": 9,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 9,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -227,7 +248,10 @@
       "explicit_Any_returns": 2,
       "annotated_variables": 26,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 15,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -256,7 +280,10 @@
       "explicit_Any_returns": 6,
       "annotated_variables": 214,
       "explicit_Any_variables": 83,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 98,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -285,7 +312,10 @@
       "explicit_Any_returns": 4,
       "annotated_variables": 782,
       "explicit_Any_variables": 335,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 192,
+      "classdefs_with_Any": 4,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -314,7 +344,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 22,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 5,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -343,7 +376,10 @@
       "explicit_Any_returns": 18,
       "annotated_variables": 733,
       "explicit_Any_variables": 62,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 24,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -372,7 +408,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 13,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 5,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -401,7 +440,10 @@
       "explicit_Any_returns": 12,
       "annotated_variables": 220,
       "explicit_Any_variables": 192,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 91,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -430,7 +472,10 @@
       "explicit_Any_returns": 2,
       "annotated_variables": 313,
       "explicit_Any_variables": 193,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 62,
+      "classdefs_with_Any": 1,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -459,7 +504,10 @@
       "explicit_Any_returns": 23,
       "annotated_variables": 3114,
       "explicit_Any_variables": 2062,
-      "explicit_Incomplete_variables": 3
+      "explicit_Incomplete_variables": 3,
+      "classdefs": 1331,
+      "classdefs_with_Any": 63,
+      "classdefs_with_Incomplete": 1
     }
   },
   {
@@ -488,7 +536,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 2,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -518,7 +569,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 0,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 10,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -547,7 +601,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 1,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -576,7 +633,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 8,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -605,7 +665,10 @@
       "explicit_Any_returns": 3,
       "annotated_variables": 141,
       "explicit_Any_variables": 46,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 45,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -634,7 +697,10 @@
       "explicit_Any_returns": 5,
       "annotated_variables": 245,
       "explicit_Any_variables": 149,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 42,
+      "classdefs_with_Any": 1,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -663,7 +729,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 0,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -692,7 +761,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 177,
       "explicit_Any_variables": 71,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 48,
+      "classdefs_with_Any": 2,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -721,7 +793,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 39,
       "explicit_Any_variables": 4,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 12,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -750,7 +825,10 @@
       "explicit_Any_returns": 31,
       "annotated_variables": 363,
       "explicit_Any_variables": 267,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 136,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -779,7 +857,10 @@
       "explicit_Any_returns": 2,
       "annotated_variables": 1301,
       "explicit_Any_variables": 432,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 234,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -808,7 +889,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 1,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 10,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -837,7 +921,10 @@
       "explicit_Any_returns": 5,
       "annotated_variables": 90,
       "explicit_Any_variables": 6,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 85,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -867,7 +954,10 @@
       "explicit_Any_returns": 8,
       "annotated_variables": 252,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 115
+      "explicit_Incomplete_variables": 115,
+      "classdefs": 52,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -896,7 +986,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 86,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 10,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -925,7 +1018,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 3,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -954,7 +1050,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 9,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 2,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -984,7 +1083,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 85,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 11,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1013,7 +1115,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 133,
       "explicit_Any_variables": 86,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 18,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1042,7 +1147,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 57,
       "explicit_Any_variables": 4,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 39,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1071,7 +1179,10 @@
       "explicit_Any_returns": 2,
       "annotated_variables": 1,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 3,
+      "classdefs_with_Any": 1,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1100,7 +1211,10 @@
       "explicit_Any_returns": 9,
       "annotated_variables": 13,
       "explicit_Any_variables": 3,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 7,
+      "classdefs_with_Any": 1,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1127,7 +1241,10 @@
       "explicit_Any_returns": 18,
       "annotated_variables": 279,
       "explicit_Any_variables": 2,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 225,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1156,7 +1273,10 @@
       "explicit_Any_returns": 6,
       "annotated_variables": 135,
       "explicit_Any_variables": 76,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 34,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1185,7 +1305,10 @@
       "explicit_Any_returns": 6,
       "annotated_variables": 14,
       "explicit_Any_variables": 3,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 2,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1214,7 +1337,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 15,
       "explicit_Any_variables": 2,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1243,7 +1369,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 38,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 8,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1272,7 +1401,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 1,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1301,7 +1433,10 @@
       "explicit_Any_returns": 6,
       "annotated_variables": 80,
       "explicit_Any_variables": 11,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 46,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1330,7 +1465,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 0,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1359,7 +1497,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 12,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 1
+      "explicit_Incomplete_variables": 1,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1388,7 +1529,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 12,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 5,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1417,7 +1561,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 2,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1446,7 +1593,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 12,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 2,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1475,7 +1625,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 8,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1504,7 +1657,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 2,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1533,7 +1689,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 6,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1562,7 +1721,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 9,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 3,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1591,7 +1753,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 12,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1620,7 +1785,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 2,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1649,7 +1817,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 2,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1678,7 +1849,10 @@
       "explicit_Any_returns": 2,
       "annotated_variables": 625,
       "explicit_Any_variables": 14,
-      "explicit_Incomplete_variables": 159
+      "explicit_Incomplete_variables": 159,
+      "classdefs": 143,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1705,7 +1879,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 290,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 86,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1734,7 +1911,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 190,
       "explicit_Any_variables": 132,
-      "explicit_Incomplete_variables": 2
+      "explicit_Incomplete_variables": 2,
+      "classdefs": 143,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1763,7 +1943,10 @@
       "explicit_Any_returns": 7,
       "annotated_variables": 21,
       "explicit_Any_variables": 2,
-      "explicit_Incomplete_variables": 2
+      "explicit_Incomplete_variables": 2,
+      "classdefs": 16,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1792,7 +1975,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 220,
       "explicit_Any_variables": 180,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 40,
+      "classdefs_with_Any": 4,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1821,7 +2007,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 86,
       "explicit_Any_variables": 57,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 33,
+      "classdefs_with_Any": 1,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1850,7 +2039,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 75,
       "explicit_Any_variables": 54,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 25,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1879,7 +2071,10 @@
       "explicit_Any_returns": 2,
       "annotated_variables": 110,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 4,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1908,7 +2103,10 @@
       "explicit_Any_returns": 8,
       "annotated_variables": 129,
       "explicit_Any_variables": 70,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 43,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1937,7 +2135,10 @@
       "explicit_Any_returns": 26,
       "annotated_variables": 48,
       "explicit_Any_variables": 26,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 22,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1966,7 +2167,10 @@
       "explicit_Any_returns": 9,
       "annotated_variables": 54,
       "explicit_Any_variables": 23,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 25,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1995,7 +2199,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 38,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 7,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2024,7 +2231,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 931,
       "explicit_Any_variables": 439,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 316,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2053,7 +2263,10 @@
       "explicit_Any_returns": 15,
       "annotated_variables": 52,
       "explicit_Any_variables": 34,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 20,
+      "classdefs_with_Any": 2,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2082,7 +2295,10 @@
       "explicit_Any_returns": 7,
       "annotated_variables": 1,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 3,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2111,7 +2327,10 @@
       "explicit_Any_returns": 51,
       "annotated_variables": 972,
       "explicit_Any_variables": 31,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 35,
+      "classdefs_with_Any": 1,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2140,7 +2359,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 318,
       "explicit_Any_variables": 207,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 106,
+      "classdefs_with_Any": 2,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2169,7 +2391,10 @@
       "explicit_Any_returns": 19,
       "annotated_variables": 4197,
       "explicit_Any_variables": 3566,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 566,
+      "classdefs_with_Any": 5,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2198,7 +2423,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 56,
       "explicit_Any_variables": 4,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 26,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2227,7 +2455,10 @@
       "explicit_Any_returns": 4,
       "annotated_variables": 145,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 19,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2257,7 +2488,10 @@
       "explicit_Any_returns": 9,
       "annotated_variables": 537,
       "explicit_Any_variables": 21,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 113,
+      "classdefs_with_Any": 2,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2286,7 +2520,10 @@
       "explicit_Any_returns": 4,
       "annotated_variables": 34,
       "explicit_Any_variables": 5,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 27,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2315,7 +2552,10 @@
       "explicit_Any_returns": 10,
       "annotated_variables": 576,
       "explicit_Any_variables": 105,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 143,
+      "classdefs_with_Any": 2,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2344,7 +2584,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 1,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 3,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2373,7 +2616,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 437,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 368
+      "explicit_Incomplete_variables": 368,
+      "classdefs": 166,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2402,7 +2648,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 11,
       "explicit_Any_variables": 3,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2431,7 +2680,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 470,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 261
+      "explicit_Incomplete_variables": 261,
+      "classdefs": 222,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2460,7 +2712,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 0,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2489,7 +2744,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 45,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 8,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2518,7 +2776,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 34,
       "explicit_Any_variables": 6,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 5,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2547,7 +2808,10 @@
       "explicit_Any_returns": 4,
       "annotated_variables": 738,
       "explicit_Any_variables": 126,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 147,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2578,7 +2842,10 @@
       "explicit_Any_returns": 47,
       "annotated_variables": 585,
       "explicit_Any_variables": 206,
-      "explicit_Incomplete_variables": 71
+      "explicit_Incomplete_variables": 71,
+      "classdefs": 87,
+      "classdefs_with_Any": 3,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2607,7 +2874,10 @@
       "explicit_Any_returns": 7,
       "annotated_variables": 532,
       "explicit_Any_variables": 168,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 335,
+      "classdefs_with_Any": 2,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2636,7 +2906,10 @@
       "explicit_Any_returns": 2,
       "annotated_variables": 119,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 25,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2665,7 +2938,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 0,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2695,7 +2971,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 72,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 3,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2724,7 +3003,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 64,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 1
+      "explicit_Incomplete_variables": 1,
+      "classdefs": 11,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2753,7 +3035,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 629,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 4,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2782,7 +3067,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 0,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2811,7 +3099,10 @@
       "explicit_Any_returns": 3,
       "annotated_variables": 76,
       "explicit_Any_variables": 33,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 74,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2840,7 +3131,10 @@
       "explicit_Any_returns": 3,
       "annotated_variables": 96,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 17,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2871,7 +3165,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 155,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 24,
+      "classdefs_with_Any": 2,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2898,7 +3195,10 @@
       "explicit_Any_returns": 4,
       "annotated_variables": 398,
       "explicit_Any_variables": 12,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 66,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2927,7 +3227,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 6,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 6,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2956,7 +3259,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 1,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -2985,7 +3291,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 65,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 27
+      "explicit_Incomplete_variables": 27,
+      "classdefs": 17,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 1
     }
   },
   {
@@ -3014,7 +3323,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 90,
       "explicit_Any_variables": 13,
-      "explicit_Incomplete_variables": 1
+      "explicit_Incomplete_variables": 1,
+      "classdefs": 29,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3043,7 +3355,10 @@
       "explicit_Any_returns": 9,
       "annotated_variables": 19,
       "explicit_Any_variables": 2,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 27,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3072,7 +3387,10 @@
       "explicit_Any_returns": 12,
       "annotated_variables": 117,
       "explicit_Any_variables": 33,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 26,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3101,7 +3419,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 31,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 14,
+      "classdefs_with_Any": 1,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3130,7 +3451,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 12,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3159,7 +3483,10 @@
       "explicit_Any_returns": 8,
       "annotated_variables": 3525,
       "explicit_Any_variables": 5,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 426,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3188,7 +3515,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 27,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 1
+      "explicit_Incomplete_variables": 1,
+      "classdefs": 16,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 3
     }
   },
   {
@@ -3217,7 +3547,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 57,
       "explicit_Any_variables": 7,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 44,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3246,7 +3579,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 25012,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 2832
+      "explicit_Incomplete_variables": 2832,
+      "classdefs": 724,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3275,7 +3611,10 @@
       "explicit_Any_returns": 317,
       "annotated_variables": 595,
       "explicit_Any_variables": 235,
-      "explicit_Incomplete_variables": 12
+      "explicit_Incomplete_variables": 12,
+      "classdefs": 206,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 2
     }
   },
   {
@@ -3304,7 +3643,10 @@
       "explicit_Any_returns": 16,
       "annotated_variables": 72,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 7,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3333,7 +3675,10 @@
       "explicit_Any_returns": 5,
       "annotated_variables": 114,
       "explicit_Any_variables": 39,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 51,
+      "classdefs_with_Any": 1,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3362,7 +3707,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 0,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3391,7 +3739,10 @@
       "explicit_Any_returns": 6,
       "annotated_variables": 627,
       "explicit_Any_variables": 401,
-      "explicit_Incomplete_variables": 9
+      "explicit_Incomplete_variables": 9,
+      "classdefs": 155,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3420,7 +3771,10 @@
       "explicit_Any_returns": 4,
       "annotated_variables": 17,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 6,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3449,7 +3803,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 3,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 2,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3478,7 +3835,10 @@
       "explicit_Any_returns": 6,
       "annotated_variables": 13,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 4,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3507,7 +3867,10 @@
       "explicit_Any_returns": 5,
       "annotated_variables": 9,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 15,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3538,7 +3901,10 @@
       "explicit_Any_returns": 827,
       "annotated_variables": 8070,
       "explicit_Any_variables": 556,
-      "explicit_Incomplete_variables": 101
+      "explicit_Incomplete_variables": 101,
+      "classdefs": 2240,
+      "classdefs_with_Any": 22,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3567,7 +3933,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 4,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3596,7 +3965,10 @@
       "explicit_Any_returns": 4,
       "annotated_variables": 155,
       "explicit_Any_variables": 42,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 134,
+      "classdefs_with_Any": 1,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3625,7 +3997,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 25,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 3,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3654,7 +4029,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 6,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3683,7 +4061,10 @@
       "explicit_Any_returns": 5,
       "annotated_variables": 14,
       "explicit_Any_variables": 2,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 14,
+      "classdefs_with_Any": 2,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3712,7 +4093,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 1,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 2,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3741,7 +4125,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 95,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 70
+      "explicit_Incomplete_variables": 70,
+      "classdefs": 33,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3770,7 +4157,10 @@
       "explicit_Any_returns": 2,
       "annotated_variables": 4,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 7,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3799,7 +4189,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 5,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3828,7 +4221,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 5,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 3,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3857,7 +4253,10 @@
       "explicit_Any_returns": 6,
       "annotated_variables": 309,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 223,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3886,7 +4285,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 3,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 2,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3915,7 +4317,10 @@
       "explicit_Any_returns": 3,
       "annotated_variables": 1,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3944,7 +4349,10 @@
       "explicit_Any_returns": 2,
       "annotated_variables": 5,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 2,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -3973,7 +4381,10 @@
       "explicit_Any_returns": 4,
       "annotated_variables": 155,
       "explicit_Any_variables": 54,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 72,
+      "classdefs_with_Any": 1,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -4002,7 +4413,10 @@
       "explicit_Any_returns": 3,
       "annotated_variables": 184,
       "explicit_Any_variables": 93,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 50,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -4032,7 +4446,10 @@
       "explicit_Any_returns": 8,
       "annotated_variables": 246,
       "explicit_Any_variables": 20,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 40,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -4061,7 +4478,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 50,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 9,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -4090,7 +4510,10 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 1,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -4119,7 +4542,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 6,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 1
+      "explicit_Incomplete_variables": 1,
+      "classdefs": 5,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -4148,7 +4574,10 @@
       "explicit_Any_returns": 0,
       "annotated_variables": 76,
       "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 9,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
     }
   }
 ]
