@@ -201,59 +201,14 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         A markdown page describing the statistics.
     """
     import textwrap
+    from jinja2 import Environment, FileSystemLoader
 
-    template = textwrap.dedent(
-        """
-        ## Info on typeshed's stubs for {package_name}
-        {extra_description_section}{stub_distribution_name_section}
-        ### Number of lines
-
-        {number_of_lines:,} (excluding blank lines)
-
-        ### Package status: *{package_status.formatted_name}*
-
-        {package_status.value}
-
-        ### Upload status: *{upload_status.formatted_name}*
-
-        {upload_status.value}
-
-        ### Stubtest settings in CI: *{stubtest_strictness.formatted_name}*
-
-        {stubtest_strictness.value}{stubtest_platforms_section}
-
-        {stubtest_allowlist_section}
-
-        ### Pyright settings in CI: *{pyright_setting.formatted_name}*
-
-        {pyright_setting.value}
-
-        ### Statistics on the annotations in typeshed's stubs for {package_name}
-
-        - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-            - Annotated parameters: {annotated_parameters:,}
-            - Unannotated parameters: {unannotated_parameters:,}
-            - Explicit `Any` parameters: {explicit_Any_parameters:,}
-            - Explicitly `Incomplete` (or partially `Incomplete`) parameters: {explicit_Incomplete_parameters:,}
-        - Returns:
-            - Annotated returns: {annotated_returns:,}
-            - Unannotated returns: {unannotated_returns:,}
-            - Explicit `Any` returns: {explicit_Any_returns:,}
-            - Explicitly `Incomplete` (or partially `Incomplete`) returns: {explicit_Incomplete_returns:,}
-        - Variables:
-            - Annotated variables: {annotated_variables:,}
-            - Explicit `Any` variables: {explicit_Any_variables:,}
-            - Explicitly `Incomplete` (or partially `Incomplete`) variables: {explicit_Incomplete_variables:,}
-        - Class definitions:
-            - Total class definitions: {classdefs:,}
-            - Class definitions with `Any`: {classdefs_with_Any:,}
-            - Class definitions marked as at least partially `Incomplete`: {classdefs_with_Incomplete:,}
-        """
-    )
+    environment = Environment(loader=FileSystemLoader("src/typeshed_stats"))
+    template = environment.get_template("markdown_template.txt")
 
     def format_package(package_stats: PackageInfo) -> str:
         kwargs = attrs.asdict(package_stats)
-        kwargs |= kwargs["annotation_stats"]
+        kwargs |= {key: "{:,}".format(val) for key, val in kwargs["annotation_stats"].items()}
         kwargs |= {
             f"stubtest_{key}": val for key, val in kwargs["stubtest_settings"].items()
         }
@@ -318,6 +273,6 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         )
         del kwargs["stubtest_allowlist_length"]
 
-        return template.format(**kwargs)
+        return template.render(**kwargs)
 
-    return "\n<hr>\n".join(format_package(info) for info in stats).strip() + "\n"
+    return "\n\n<hr>\n\n".join(format_package(info) for info in stats).strip() + "\n"
