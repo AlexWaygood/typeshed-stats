@@ -244,6 +244,10 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
             - Annotated variables: {annotated_variables:,}
             - Explicit `Any` variables: {explicit_Any_variables:,}
             - Explicitly `Incomplete` (or partially `Incomplete`) variables: {explicit_Incomplete_variables:,}
+        - Class definitions:
+            - Total class definitions: {classdefs:,}
+            - Class definitions with `Any`: {classdefs_with_Any:,}
+            - Class definitions marked as at least partially `Incomplete`: {classdefs_with_Incomplete:,}
         """
     )
 
