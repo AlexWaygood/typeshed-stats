@@ -1,5 +1,6 @@
 """Tools for serializing and deserializing [`PackageInfo`][typeshed_stats.gather.PackageInfo] and [`FileInfo`][typeshed_stats.gather.FileInfo] objects."""
 
+import re
 from collections.abc import Sequence
 from operator import attrgetter
 from pathlib import Path
@@ -215,30 +216,6 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         del kwargs["annotation_stats"]
         del kwargs["stubtest_settings"]
 
-        if package_stats.stub_distribution_name == "-":
-            kwargs["stub_distribution_name_section"] = ""
-        else:
-            kwargs["stub_distribution_name_section"] = textwrap.dedent(
-                f"""
-                ### Stub distribution name
-
-                `{package_stats.stub_distribution_name}`
-                """
-            )
-        del kwargs["stub_distribution_name"]
-
-        if package_stats.extra_description:
-            kwargs["extra_description_section"] = textwrap.dedent(
-                f"""
-                ### Extra description
-
-                {package_stats.extra_description}
-                """
-            )
-        else:
-            kwargs["extra_description_section"] = ""
-        del kwargs["extra_description"]
-
         stubtest_settings = package_stats.stubtest_settings
         if stubtest_settings.strictness is not StubtestStrictness.SKIPPED:
             platforms = stubtest_settings.platforms
@@ -260,6 +237,6 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
             kwargs["stubtest_platforms_section"] = ""
         del kwargs["stubtest_platforms"]
 
-        return template.render(package=package_stats, **kwargs)
+        return re.sub(r"\n{3,}", "\n\n", template.render(package=package_stats, **kwargs))
 
     return "\n\n<hr>\n\n".join(format_package(info).strip() for info in stats).strip() + "\n"
