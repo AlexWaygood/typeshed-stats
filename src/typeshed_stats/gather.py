@@ -141,6 +141,9 @@ class AnnotationStats:
     annotated_variables: int = 0
     explicit_Any_variables: int = 0
     explicit_Incomplete_variables: int = 0
+    classdefs: int = 0
+    classdefs_with_Any: int = 0
+    classdefs_with_Incomplete: int = 0
 
 
 def _node_matches_name(node: ast.expr, name: str, from_: Container[str]) -> bool:
@@ -195,6 +198,15 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
         return bool(self._class_nesting)
 
     def visit_ClassDef(self, node: ast.ClassDef) -> None:
+        self.stats.classdefs += 1
+        base_analyses = [_analyse_annotation(base) for base in node.bases]
+        self.stats.classdefs_with_Any += any(
+            analysis.Any_in_annotation for analysis in base_analyses
+        )
+        self.stats.classdefs_with_Incomplete += any(
+            analysis.Incomplete_in_annotation for analysis in base_analyses
+        )
+
         self._class_nesting += 1
         self.generic_visit(node)
         self._class_nesting -= 1
@@ -206,10 +218,8 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
             return
         self.stats.annotated_variables += 1
         analysis = _analyse_annotation(annotation)
-        if analysis.Any_in_annotation:
-            self.stats.explicit_Any_variables += 1
-        if analysis.Incomplete_in_annotation:
-            self.stats.explicit_Incomplete_variables += 1
+        self.stats.explicit_Any_variables += analysis.Any_in_annotation
+        self.stats.explicit_Incomplete_variables += analysis.Incomplete_in_annotation
 
     def _visit_arg(self, node: ast.arg) -> None:
         annotation = node.annotation
@@ -218,10 +228,10 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
         else:
             self.stats.annotated_parameters += 1
             analysis = _analyse_annotation(annotation)
-            if analysis.Any_in_annotation:
-                self.stats.explicit_Any_parameters += 1
-            if analysis.Incomplete_in_annotation:
-                self.stats.explicit_Incomplete_parameters += 1
+            self.stats.explicit_Any_parameters += analysis.Any_in_annotation
+            self.stats.explicit_Incomplete_parameters += (
+                analysis.Incomplete_in_annotation
+            )
 
     def _visit_function(self, node: ast.FunctionDef | ast.AsyncFunctionDef) -> None:
         self.generic_visit(node)
@@ -231,10 +241,8 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
         else:
             self.stats.annotated_returns += 1
             analysis = _analyse_annotation(returns)
-            if analysis.Any_in_annotation:
-                self.stats.explicit_Any_returns += 1
-            if analysis.Incomplete_in_annotation:
-                self.stats.explicit_Incomplete_returns += 1
+            self.stats.explicit_Any_returns += analysis.Any_in_annotation
+            self.stats.explicit_Incomplete_returns += analysis.Incomplete_in_annotation
 
         args = node.args
 
