@@ -204,7 +204,7 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
 
     from jinja2 import Environment, FileSystemLoader
 
-    environment = Environment(loader=FileSystemLoader("src/typeshed_stats"))
+    environment = Environment(loader=FileSystemLoader(Path(__file__).parent))
     template = environment.get_template("markdown_template.md")
 
     def format_package(package_stats: PackageInfo) -> str:
