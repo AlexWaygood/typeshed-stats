@@ -7,12 +7,14 @@
 ## Info on typeshed's stubs for {{ package_name }}
 
 {% if extra_description %}
+
 ### Extra description
 
 {{ extra_description }}
 {% endif %}
 
 {% if stub_distribution_name != "-" %}
+
 ### Stub distribution name
 
 `{{ stub_distribution_name }}`

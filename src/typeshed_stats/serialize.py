@@ -223,7 +223,7 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         del kwargs["stubtest_settings"]
 
         kwargs = {
-            key: ("{:,}".format(val) if type(val) is int else val)
+            key: (f"{val:,}" if type(val) is int else val)
             for key, val in kwargs.items()
         }
 
