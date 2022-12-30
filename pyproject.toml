@@ -94,7 +94,10 @@ filterwarnings = [
 # Note that many settings are automatically added due to this plugin
 plugins = ["covdefaults"]
 source = ["src/typeshed_stats", "tests"]
-relative_files = true
+
+[tool.coverage.report]
+# This extends the lines that covdefaults already excludes
+exclude_lines = ['^if typing.TYPE_CHECKING:$']
 
 [tool.coverage.covdefaults]
 subtract_omit = "*/__main__.py"

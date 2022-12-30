@@ -19,7 +19,7 @@ from typeshed_stats.gather import (
 )
 
 if typing.TYPE_CHECKING:
-    import jinja2  # pragma: no cover
+    import jinja2
 
 __all__ = [
     "file_stats_from_csv",
