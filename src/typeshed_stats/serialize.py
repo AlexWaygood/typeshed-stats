@@ -1,9 +1,10 @@
 """Tools for serializing and deserializing [`PackageInfo`][typeshed_stats.gather.PackageInfo] and [`FileInfo`][typeshed_stats.gather.FileInfo] objects."""
 
+import typing
 from collections.abc import Sequence
+from functools import cache
 from operator import attrgetter
 from pathlib import Path
-from typing import overload
 
 import attrs
 import cattrs
@@ -16,6 +17,9 @@ from typeshed_stats.gather import (
     StubtestStrictness,
     _NiceReprEnum,
 )
+
+if typing.TYPE_CHECKING:
+    import jinja2  # pragma: no cover
 
 __all__ = [
     "file_stats_from_csv",
@@ -123,12 +127,12 @@ def stats_to_csv(stats: Sequence[PackageInfo | FileInfo]) -> str:
     return csvfile.getvalue()
 
 
-@overload
+@typing.overload
 def _stats_from_csv(data: str, cls: type[PackageInfo]) -> list[PackageInfo]:
     ...
 
 
-@overload
+@typing.overload
 def _stats_from_csv(data: str, cls: type[FileInfo]) -> list[FileInfo]:
     ...
 
@@ -191,6 +195,14 @@ def file_stats_from_csv(data: str) -> list[FileInfo]:
     return _stats_from_csv(data, cls=FileInfo)
 
 
+@cache
+def _get_jinja_template() -> "jinja2.Template":
+    from jinja2 import Environment, FileSystemLoader
+
+    environment = Environment(loader=FileSystemLoader(Path(__file__).parent))
+    return environment.get_template("_markdown_template.md")
+
+
 def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
     """Generate MarkDown describing statistics on multiple stubs packages.
 
@@ -202,10 +214,7 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
     """
     import re
 
-    from jinja2 import Environment, FileSystemLoader
-
-    environment = Environment(loader=FileSystemLoader(Path(__file__).parent))
-    template = environment.get_template("markdown_template.md")
+    template = _get_jinja_template()
 
     def format_package(package_stats: PackageInfo) -> str:
         kwargs = attrs.asdict(package_stats)
