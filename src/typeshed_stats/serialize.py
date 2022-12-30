@@ -1,10 +1,10 @@
 """Tools for serializing and deserializing [`PackageInfo`][typeshed_stats.gather.PackageInfo] and [`FileInfo`][typeshed_stats.gather.FileInfo] objects."""
 
+import typing
 from collections.abc import Sequence
 from functools import cache
 from operator import attrgetter
 from pathlib import Path
-from typing import TYPE_CHECKING, overload
 
 import attrs
 import cattrs
@@ -18,7 +18,7 @@ from typeshed_stats.gather import (
     _NiceReprEnum,
 )
 
-if TYPE_CHECKING:
+if typing.TYPE_CHECKING:
     import jinja2
 
 __all__ = [
@@ -127,12 +127,12 @@ def stats_to_csv(stats: Sequence[PackageInfo | FileInfo]) -> str:
     return csvfile.getvalue()
 
 
-@overload
+@typing.overload
 def _stats_from_csv(data: str, cls: type[PackageInfo]) -> list[PackageInfo]:
     ...
 
 
-@overload
+@typing.overload
 def _stats_from_csv(data: str, cls: type[FileInfo]) -> list[FileInfo]:
     ...
 
