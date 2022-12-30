@@ -275,7 +275,7 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
 def gather_annotation_stats_on_file(path: Path | str) -> AnnotationStats:
     """Gather annotation stats on a single typeshed stub file.
 
-    Args:
+    Parameters:
         path: The location of the file to be analysed.
 
     Returns:
@@ -310,7 +310,7 @@ def gather_annotation_stats_on_package(
 ) -> AnnotationStats:
     """Aggregate annotation stats on a typeshed stubs package.
 
-    Args:
+    Parameters:
         package_name: The name of the stubs package to analyze.
         typeshed_dir: A path pointing to the location of a typeshed directory
             in which to find the stubs package source.
@@ -355,7 +355,7 @@ def get_package_extra_description(
     Each typeshed package comes with a `METADATA.toml` file,
     containing various useful pieces of information about the package.
 
-    Args:
+    Parameters:
         package_name: The name of the package to find the extra description for.
         typeshed_dir: A path pointing to a typeshed directory,
             from which to retrieve the description.
@@ -416,7 +416,7 @@ def get_stubtest_strictness(
       https://mypy.readthedocs.io/en/stable/stubtest.html
       "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
 
-    Args:
+    Parameters:
         package_name: The name of the package to find the stubtest setting for.
         typeshed_dir: A path pointing to a typeshed directory,
             from which to retrieve the stubtest setting.
@@ -461,7 +461,7 @@ def get_stubtest_platforms(
       https://mypy.readthedocs.io/en/stable/stubtest.html
       "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
 
-    Args:
+    Parameters:
         package_name: The name of the package to find the stubtest setting for.
         typeshed_dir: A path pointing to a typeshed directory,
             from which to retrieve the stubtest configuration.
@@ -510,7 +510,7 @@ def get_stubtest_allowlist_length(
     Not all allowlist entries are bad:
     sometimes there are good reasons to ignore an error emitted by stubtest.
 
-    Args:
+    Parameters:
         package_name: The name of the package
             to find the number of allowlist entries for.
         typeshed_dir: A path pointing to a typeshed directory,
@@ -568,7 +568,7 @@ def get_stubtest_settings(
       "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
 
 
-    Args:
+    Parameters:
         package_name: The name of the package to find the stubtest settings for.
         typeshed_dir: A path pointing to a typeshed directory,
             from which to retrieve the stubtest settings.
@@ -666,7 +666,7 @@ async def get_package_status(
         latest version of the runtime is, and then compares this against
         the metadata of the stubs package.
 
-    Args:
+    Parameters:
         package_name: The name of the stubs package to analyze.
         typeshed_dir: A path pointing to a typeshed directory
             in which to find the stubs package.
@@ -732,7 +732,7 @@ def get_upload_status(
 ) -> UploadStatus:
     """Determine whether a certain package is currently uploaded to PyPI.
 
-    Args:
+    Parameters:
         package_name: The name of the package to find the upload status for.
         typeshed_dir: A path pointing to a typeshed directory,
             from which to retrieve the stubtest setting.
@@ -775,7 +775,7 @@ def get_stub_distribution_name(
     but there may be a small number of packages
     that are uploaded under nonstandard names to PyPI.
 
-    Args:
+    Parameters:
         package_name: The (runtime) name of the package
             to find the stub distribution name for.
         typeshed_dir: A path pointing to a typeshed directory,
@@ -806,7 +806,7 @@ def get_stub_distribution_name(
 def get_number_of_lines_of_file(file_path: Path | str) -> int:
     """Get the total number of lines of code for a single stub file in typeshed.
 
-    Args:
+    Parameters:
         file_path: A path to the file to analyse.
 
     Returns:
@@ -820,7 +820,7 @@ def get_number_of_lines_of_file(file_path: Path | str) -> int:
 def get_package_size(package_name: PackageName, *, typeshed_dir: Path | str) -> int:
     """Get the total number of lines of code for a stubs package in typeshed.
 
-    Args:
+    Parameters:
         package_name: The name of the stubs package to find the line number for.
         typeshed_dir: A path pointing to a typeshed directory
             in which to find the stubs package.
@@ -904,7 +904,7 @@ def get_pyright_setting_for_path(
 ) -> PyrightSetting:
     """Get the settings typeshed uses in CI when [pyright](https://github.com/microsoft/pyright) is run on a certain path.
 
-    Args:
+    Parameters:
         file_path: The path to query.
         typeshed_dir: A path pointing to a typeshed directory,
             from which to retrieve the pyright setting.
@@ -937,7 +937,7 @@ def get_pyright_setting_for_package(
 ) -> PyrightSetting:
     """Get the settings typeshed uses in CI when [pyright](https://github.com/microsoft/pyright) is run on a certain package.
 
-    Args:
+    Parameters:
         package_name: The name of the package to find the pyright setting for.
         typeshed_dir: A path pointing to a typeshed directory,
             from which to retrieve the pyright setting.
@@ -997,7 +997,7 @@ async def gather_stats_on_package(
         which makes network requests to PyPI.
         See the docs on `get_package_status()` for details.
 
-    Args:
+    Parameters:
         package_name: The name of the package to gather statistics on.
         typeshed_dir: A path pointing to a typeshed directory,
             in which the source code for the stubs package can be found.
@@ -1122,7 +1122,7 @@ def gather_stats_on_file(
 ) -> FileInfo:
     """Gather stats on a single `.pyi` file in typeshed.
 
-    Args:
+    Parameters:
         file_path: A path pointing to the file on which to gather stats.
             This can be an absolute path,
             or a path relative to the `typeshed_dir` argument.
@@ -1202,7 +1202,7 @@ def gather_stats_on_multiple_packages(
         It is therefore not suitable to be called from inside functions
         that are themselves called as part of an asyncio event loop.
 
-    Args:
+    Parameters:
         packages: An iterable of package names to be analysed, or None.
             If `None`, defaults to all third-party stubs, plus the stubs for the stdlib.
         typeshed_dir: The path to a local clone of typeshed.
