@@ -85,7 +85,7 @@ generate_table = partial(tabulate.tabulate, tablefmt="github")
 
 def _get_field_description(typ: object) -> str:
     if isinstance(typ, types.UnionType):
-        return "|".join(map(_get_field_description, get_args(typ)))
+        return r" \| ".join(map(_get_field_description, get_args(typ)))
     if isinstance(typ, types.GenericAlias):
         return (
             _get_field_description(get_origin(typ))
@@ -99,8 +99,10 @@ def _get_field_description(typ: object) -> str:
             return f"[`{typ_name}`][typeshed_stats.gather.{typ_name}]"
         if typ_name in dir(builtins):
             return f"[`{typ_name}`][{typ_name}]"
-        if typ_name == "Path":
+        if typ is Path:
             return "[`Path`][pathlib.Path]"
+        if typ is types.NoneType:  # noqa: E721
+            return "[`None`][None]"
         return f"`{typ_name}`"
     return f"`{typ}`"
 
