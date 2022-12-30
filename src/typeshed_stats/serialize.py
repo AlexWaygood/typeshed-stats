@@ -201,7 +201,6 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
     Returns:
         A markdown page describing the statistics.
     """
-    import textwrap
     from jinja2 import Environment, FileSystemLoader
 
     environment = Environment(loader=FileSystemLoader("src/typeshed_stats"))
@@ -209,49 +208,25 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
 
     def format_package(package_stats: PackageInfo) -> str:
         kwargs = attrs.asdict(package_stats)
-        kwargs["package_name"] = (
-            "the stdlib"
-            if package_stats.package_name == "stdlib"
-            else f"`{package_stats.package_name}`"
+
+        kwargs["stubtest_is_skipped"] = (
+            package_stats.stubtest_settings.strictness is StubtestStrictness.SKIPPED
         )
+
         kwargs |= kwargs["annotation_stats"]
+        del kwargs["annotation_stats"]
+
         kwargs |= {
             f"stubtest_{key}": val for key, val in kwargs["stubtest_settings"].items()
         }
-        del kwargs["annotation_stats"]
         del kwargs["stubtest_settings"]
 
         kwargs = {
-            key: ("{:,}".format(val) if isinstance(val, int) else val)
+            key: ("{:,}".format(val) if type(val) is int else val)
             for key, val in kwargs.items()
         }
 
-        stubtest_settings = package_stats.stubtest_settings
-        if stubtest_settings.strictness is not StubtestStrictness.SKIPPED:
-            platforms = stubtest_settings.platforms
-            num_platforms = len(platforms)
-            if num_platforms == 1:
-                desc = f"In CI, stubtest is run on `{platforms[0]}` only."
-            elif num_platforms == 2:
-                desc = (
-                    f"In CI, stubtest is run on `{platforms[0]}` and `{platforms[1]}`."
-                )
-            else:
-                assert num_platforms == 3
-                desc = (
-                    "In CI, stubtest is run on "
-                    f"`{platforms[0]}`, `{platforms[1]}` and `{platforms[2]}`."
-                )
-            kwargs["stubtest_platforms_section"] = f"\n\n{desc}"
-        else:
-            kwargs["stubtest_platforms_section"] = ""
-        del kwargs["stubtest_platforms"]
+        return template.render(**kwargs)
 
-        return re.sub(
-            r"\n{3,}", "\n\n", template.render(package=package_stats, **kwargs)
-        )
-
-    return (
-        "\n\n<hr>\n\n".join(format_package(info).strip() for info in stats).strip()
-        + "\n"
-    )
+    all_packages = "\n\n<hr>\n\n".join(format_package(info).strip() for info in stats)
+    return re.sub(r"\n{3,}", "\n\n", all_packages).strip() + "\n"
