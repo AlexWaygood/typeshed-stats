@@ -1,3 +1,10 @@
+{#
+This is a jinja2 template for generating
+a MarkDown description of a typeshed stubs package.
+It works in conjunction with the
+`typeshed_stats.serialize.stats_to_markdown()` function.
+#}
+
 {% if package_name == "stdlib" %}
 {% set package_name = "the stdlib" %}
 {% else %}
@@ -37,7 +44,7 @@
 {{ stubtest_strictness.value }}
 
 {% if not stubtest_is_skipped %}
-{%- set num_platforms = stubtest_platforms|length -%}
+{% set num_platforms = stubtest_platforms|length %}
 {% if num_platforms == 1 %}
 In CI, stubtest is run on `{{ stubtest_platforms[0] }}` only.
 {% elif num_platforms == 2 %}
