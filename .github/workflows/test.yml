@@ -68,7 +68,7 @@ jobs:
       - name: Run tests under coverage
         run: |
           coverage run -m pytest --doctest-modules
-          coverage report
+          coverage report --no-skip-covered
       - name: Upload coverage to coveralls
         if: github.repository == 'AlexWaygood/typeshed-stats'
         env:
