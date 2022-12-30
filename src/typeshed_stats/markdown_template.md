@@ -1,7 +1,7 @@
 {% if package_name == "stdlib" %}
 {% set package_name = "the stdlib" %}
 {% else %}
-{% set package_name = "`" ~ package_name ~ "`" %}
+{% set package_name = "`{}`".format(package_name) %}
 {% endif %}
 
 ## Info on typeshed's stubs for {{ package_name }}
