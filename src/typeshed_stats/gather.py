@@ -468,8 +468,8 @@ def get_stubtest_platforms(
 
     Returns:
         A list of strings describing platforms stubtest is run on.
-        The names correspond to the platform names
-        given by [`sys.platform`][sys.platform] at runtime.
+            The names correspond to the platform names
+            given by [`sys.platform`][sys.platform] at runtime.
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_platforms
