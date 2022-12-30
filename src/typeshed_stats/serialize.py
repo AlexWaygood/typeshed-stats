@@ -1,6 +1,5 @@
 """Tools for serializing and deserializing [`PackageInfo`][typeshed_stats.gather.PackageInfo] and [`FileInfo`][typeshed_stats.gather.FileInfo] objects."""
 
-import re
 from collections.abc import Sequence
 from operator import attrgetter
 from pathlib import Path
@@ -201,6 +200,8 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
     Returns:
         A markdown page describing the statistics.
     """
+    import re
+
     from jinja2 import Environment, FileSystemLoader
 
     environment = Environment(loader=FileSystemLoader("src/typeshed_stats"))
@@ -228,5 +229,5 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
 
         return template.render(**kwargs)
 
-    all_packages = "\n\n<hr>\n\n".join(format_package(info).strip() for info in stats)
+    all_packages = "\n\n<hr>\n\n".join(format_package(info) for info in stats)
     return re.sub(r"\n{3,}", "\n\n", all_packages).strip() + "\n"
