@@ -1,9 +1,3 @@
-{% if package.package_name == "stdlib" %}
-{% set package_name = "the stdlib" %}
-{% else %}
-{% set package_name = "`" ~ package.package_name ~ "`" %}
-{% endif %}
-
 ## Info on typeshed's stubs for {{ package_name }}
 
 {% if package.extra_description %}
@@ -20,7 +14,7 @@
 
 ### Number of lines
 
-{{ "{:,}".format(number_of_lines) }} (excluding blank lines)
+{{ number_of_lines }} (excluding blank lines)
 
 ### Package status: *{{ package_status.formatted_name }}*
 
@@ -34,8 +28,8 @@
 
 {{ stubtest_strictness.value }}{{ stubtest_platforms_section }}
 
-Typeshed currently has {{ "{:,}".format(stubtest_allowlist_length) }} allowlist
-{{- " entry " if stubtest_allowlist_length == 1 else " entries " -}}
+Typeshed currently has {{ stubtest_allowlist_length }} allowlist
+{{- " entry " if stubtest_allowlist_length == "1" else " entries " -}}
 for {{ package_name }} when running stubtest in CI.
 
 ### Pyright settings in CI: *{{ pyright_setting.formatted_name }}*

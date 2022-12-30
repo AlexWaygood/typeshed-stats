@@ -209,12 +209,22 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
 
     def format_package(package_stats: PackageInfo) -> str:
         kwargs = attrs.asdict(package_stats)
-        kwargs |= {key: "{:,}".format(val) for key, val in kwargs["annotation_stats"].items()}
+        kwargs["package_name"] = (
+            "the stdlib"
+            if package_stats.package_name == "stdlib"
+            else f"`{package_stats.package_name}`"
+        )
+        kwargs |= kwargs["annotation_stats"]
         kwargs |= {
             f"stubtest_{key}": val for key, val in kwargs["stubtest_settings"].items()
         }
         del kwargs["annotation_stats"]
         del kwargs["stubtest_settings"]
+
+        kwargs = {
+            key: ("{:,}".format(val) if isinstance(val, int) else val)
+            for key, val in kwargs.items()
+        }
 
         stubtest_settings = package_stats.stubtest_settings
         if stubtest_settings.strictness is not StubtestStrictness.SKIPPED:
@@ -237,6 +247,11 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
             kwargs["stubtest_platforms_section"] = ""
         del kwargs["stubtest_platforms"]
 
-        return re.sub(r"\n{3,}", "\n\n", template.render(package=package_stats, **kwargs))
+        return re.sub(
+            r"\n{3,}", "\n\n", template.render(package=package_stats, **kwargs)
+        )
 
-    return "\n\n<hr>\n\n".join(format_package(info).strip() for info in stats).strip() + "\n"
+    return (
+        "\n\n<hr>\n\n".join(format_package(info).strip() for info in stats).strip()
+        + "\n"
+    )
