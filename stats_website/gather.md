@@ -58,7 +58,7 @@ Tools for gathering stats about typeshed packages.
 |--------------------------|--------------------------------------------------------------|
 | `package_name`           | [`str`][str]                                                 |
 | `stub_distribution_name` | [`str`][str]                                                 |
-| `extra_description`      | [`str`][str]|`NoneType`                                      |
+| `extra_description`      | [`str`][str] \| [`None`][None]                               |
 | `number_of_lines`        | [`int`][int]                                                 |
 | `package_status`         | [`PackageStatus`][typeshed_stats.gather.PackageStatus]       |
 | `upload_status`          | [`UploadStatus`][typeshed_stats.gather.UploadStatus]         |
