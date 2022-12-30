@@ -1,6 +1,7 @@
 aiohttp
 attrs>=22.2.0
 cattrs
+Jinja2>=3
 mypy==0.991
 packaging
 pytest>=7,<8

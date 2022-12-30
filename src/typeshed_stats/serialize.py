@@ -200,124 +200,34 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
     Returns:
         A markdown page describing the statistics.
     """
-    import textwrap
+    import re
 
-    template = textwrap.dedent(
-        """
-        ## Info on typeshed's stubs for {package_name}
-        {extra_description_section}{stub_distribution_name_section}
-        ### Number of lines
+    from jinja2 import Environment, FileSystemLoader
 
-        {number_of_lines:,} (excluding blank lines)
-
-        ### Package status: *{package_status.formatted_name}*
-
-        {package_status.value}
-
-        ### Upload status: *{upload_status.formatted_name}*
-
-        {upload_status.value}
-
-        ### Stubtest settings in CI: *{stubtest_strictness.formatted_name}*
-
-        {stubtest_strictness.value}{stubtest_platforms_section}
-
-        {stubtest_allowlist_section}
-
-        ### Pyright settings in CI: *{pyright_setting.formatted_name}*
-
-        {pyright_setting.value}
-
-        ### Statistics on the annotations in typeshed's stubs for {package_name}
-
-        - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-            - Annotated parameters: {annotated_parameters:,}
-            - Unannotated parameters: {unannotated_parameters:,}
-            - Explicit `Any` parameters: {explicit_Any_parameters:,}
-            - Explicitly `Incomplete` (or partially `Incomplete`) parameters: {explicit_Incomplete_parameters:,}
-        - Returns:
-            - Annotated returns: {annotated_returns:,}
-            - Unannotated returns: {unannotated_returns:,}
-            - Explicit `Any` returns: {explicit_Any_returns:,}
-            - Explicitly `Incomplete` (or partially `Incomplete`) returns: {explicit_Incomplete_returns:,}
-        - Variables:
-            - Annotated variables: {annotated_variables:,}
-            - Explicit `Any` variables: {explicit_Any_variables:,}
-            - Explicitly `Incomplete` (or partially `Incomplete`) variables: {explicit_Incomplete_variables:,}
-        - Class definitions:
-            - Total class definitions: {classdefs:,}
-            - Class definitions with `Any`: {classdefs_with_Any:,}
-            - Class definitions marked as at least partially `Incomplete`: {classdefs_with_Incomplete:,}
-        """
-    )
+    environment = Environment(loader=FileSystemLoader(Path(__file__).parent))
+    template = environment.get_template("markdown_template.md")
 
     def format_package(package_stats: PackageInfo) -> str:
         kwargs = attrs.asdict(package_stats)
+
+        kwargs["stubtest_is_skipped"] = (
+            package_stats.stubtest_settings.strictness is StubtestStrictness.SKIPPED
+        )
+
         kwargs |= kwargs["annotation_stats"]
+        del kwargs["annotation_stats"]
+
         kwargs |= {
             f"stubtest_{key}": val for key, val in kwargs["stubtest_settings"].items()
         }
-        del kwargs["annotation_stats"]
         del kwargs["stubtest_settings"]
 
-        if package_stats.package_name == "stdlib":
-            kwargs["package_name"] = "the stdlib"
-        else:
-            kwargs["package_name"] = f"`{package_stats.package_name}`"
+        kwargs = {
+            key: (f"{val:,}" if type(val) is int else val)
+            for key, val in kwargs.items()
+        }
 
-        if package_stats.stub_distribution_name == "-":
-            kwargs["stub_distribution_name_section"] = ""
-        else:
-            kwargs["stub_distribution_name_section"] = textwrap.dedent(
-                f"""
-                ### Stub distribution name
+        return template.render(**kwargs)
 
-                `{package_stats.stub_distribution_name}`
-                """
-            )
-        del kwargs["stub_distribution_name"]
-
-        if package_stats.extra_description:
-            kwargs["extra_description_section"] = textwrap.dedent(
-                f"""
-                ### Extra description
-
-                {package_stats.extra_description}
-                """
-            )
-        else:
-            kwargs["extra_description_section"] = ""
-        del kwargs["extra_description"]
-
-        stubtest_settings = package_stats.stubtest_settings
-        if stubtest_settings.strictness is not StubtestStrictness.SKIPPED:
-            platforms = stubtest_settings.platforms
-            num_platforms = len(platforms)
-            if num_platforms == 1:
-                desc = f"In CI, stubtest is run on `{platforms[0]}` only."
-            elif num_platforms == 2:
-                desc = (
-                    f"In CI, stubtest is run on `{platforms[0]}` and `{platforms[1]}`."
-                )
-            else:
-                assert num_platforms == 3
-                desc = (
-                    "In CI, stubtest is run on "
-                    f"`{platforms[0]}`, `{platforms[1]}` and `{platforms[2]}`."
-                )
-            kwargs["stubtest_platforms_section"] = f"\n\n{desc}"
-        else:
-            kwargs["stubtest_platforms_section"] = ""
-        del kwargs["stubtest_platforms"]
-
-        allowlist_length = kwargs["stubtest_allowlist_length"]
-        kwargs["stubtest_allowlist_section"] = (
-            f"Typeshed currently has {allowlist_length:,} allowlist "
-            f"{'entry' if allowlist_length == 1 else 'entries'} "
-            f"for {kwargs['package_name']} when running stubtest in CI."
-        )
-        del kwargs["stubtest_allowlist_length"]
-
-        return template.format(**kwargs)
-
-    return "\n<hr>\n".join(format_package(info) for info in stats).strip() + "\n"
+    all_packages = "\n\n<hr>\n\n".join(format_package(info) for info in stats)
+    return re.sub(r"\n{3,}", "\n\n", all_packages).strip() + "\n"
