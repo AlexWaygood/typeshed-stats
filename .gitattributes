@@ -1,5 +1,4 @@
 examples/** linguist-generated=true
-src/typeshed_stats/_markdown_template.md linguist-language=html
 stats_website/cli.md linguist-generated=true
 stats_website/gather.md linguist-generated=true
 stats_website/stats.md linguist-generated=true

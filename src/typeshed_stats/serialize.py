@@ -200,7 +200,7 @@ def _get_jinja_template() -> "jinja2.Template":
     from jinja2 import Environment, FileSystemLoader
 
     environment = Environment(loader=FileSystemLoader(Path(__file__).parent))
-    return environment.get_template("_markdown_template.md")
+    return environment.get_template("_markdown_template.md.jinja")
 
 
 def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
