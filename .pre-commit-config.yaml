@@ -52,9 +52,7 @@ repos:
     rev: v0.32.2
     hooks:
     - id: markdownlint-fix
-      args: ["--ignore", "src/typeshed_stats/_markdown_template.md"]
     - id: markdownlint
-      args: ["--ignore", "src/typeshed_stats/_markdown_template.md"]
 
 ci:
     autofix_commit_msg: '[pre-commit.ci] auto fixes from pre-commit.com hooks'
