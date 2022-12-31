@@ -362,7 +362,7 @@ def get_package_extra_description(
 
     Returns:
         The "extra description" of the package given in the `METADATA.toml` file,
-            if one is given, else `None`.
+            if one is given, else [None][].
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_extra_description
@@ -380,7 +380,7 @@ def get_package_extra_description(
 
 
 class StubtestStrictness(_NiceReprEnum):
-    """Enumeration of the various possible settings typeshed uses for [stubtest][stubtest] in CI.
+    """Enumeration of the various possible settings typeshed uses for [stubtest][] in CI.
 
     [stubtest]:
       https://mypy.readthedocs.io/en/stable/stubtest.html
@@ -410,7 +410,7 @@ def _get_stubtest_config(
 def get_stubtest_strictness(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> StubtestStrictness:
-    """Get the setting typeshed uses in CI when [stubtest][stubtest] is run on a certain package.
+    """Get the setting typeshed uses in CI when [stubtest][] is run on a certain package.
 
     [stubtest]:
       https://mypy.readthedocs.io/en/stable/stubtest.html
@@ -455,7 +455,7 @@ def get_stubtest_strictness(
 def get_stubtest_platforms(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> list[str]:
-    """Get the list of platforms on which [stubtest][stubtest] is run in typeshed's CI.
+    """Get the list of platforms on which [stubtest][] is run in typeshed's CI.
 
     [stubtest]:
       https://mypy.readthedocs.io/en/stable/stubtest.html
@@ -469,7 +469,7 @@ def get_stubtest_platforms(
     Returns:
         A list of strings describing platforms stubtest is run on.
             The names correspond to the platform names
-            given by [`sys.platform`][sys.platform] at runtime.
+            given by [sys.platform][] at runtime.
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_platforms
@@ -499,7 +499,7 @@ def _num_allowlist_entries_in_file(path: Path) -> int:
 def get_stubtest_allowlist_length(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> int:
-    """Get the number of "allowlist entries" typeshed uses in CI when [stubtest][stubtest] is run on a certain package.
+    """Get the number of "allowlist entries" typeshed uses in CI when [stubtest][] is run on a certain package.
 
     [stubtest]:
       https://mypy.readthedocs.io/en/stable/stubtest.html
@@ -546,7 +546,7 @@ def get_stubtest_allowlist_length(
 @final
 @attrs.define
 class StubtestSettings:
-    """Information on the settings under which [stubtest][stubtest] is run on a certain package.
+    """Information on the settings under which [stubtest][] is run on a certain package.
 
     [stubtest]:
       https://mypy.readthedocs.io/en/stable/stubtest.html
@@ -561,7 +561,7 @@ class StubtestSettings:
 def get_stubtest_settings(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> StubtestSettings:
-    """Get the [stubtest][stubtest] settings for a certain stubs package in typeshed.
+    """Get the [stubtest][] settings for a certain stubs package in typeshed.
 
     [stubtest]:
       https://mypy.readthedocs.io/en/stable/stubtest.html
@@ -650,7 +650,7 @@ async def get_package_status(
 ) -> PackageStatus:
     """Retrieve information on how up to date a stubs package is.
 
-    If [stubtest][stubtest]
+    If [stubtest][]
     tests these stubs against the latest version of the runtime package
     in typeshed's CI, it's a fair bet that the stubs are relatively up to date.
     If stubtest tests these stubs against an older version, however,
@@ -670,8 +670,8 @@ async def get_package_status(
         package_name: The name of the stubs package to analyze.
         typeshed_dir: A path pointing to a typeshed directory
             in which to find the stubs package.
-        session: An [`aiohttp.ClientSession`][aiohttp.ClientSession] instance,
-            to be used for making a network requests, or `None`. If `None` is provided
+        session: An [aiohttp.ClientSession][] instance,
+            to be used for making a network requests, or [None][]. If `None` is provided
             for this argument, a new `aiohttp.ClientSession` instance will be
             created to make the network request.
 
@@ -1001,8 +1001,8 @@ async def gather_stats_on_package(
         package_name: The name of the package to gather statistics on.
         typeshed_dir: A path pointing to a typeshed directory,
             in which the source code for the stubs package can be found.
-        session: An [`aiohttp.ClientSession`][aiohttp.ClientSession] instance,
-            to be used for making a network requests, or `None`. If `None` is provided
+        session: An [aiohttp.ClientSession][] instance,
+            to be used for making a network requests, or [None][]. If `None` is provided
             for this argument, a new `aiohttp.ClientSession` instance will be
             created to make the network request.
 
@@ -1197,13 +1197,13 @@ def gather_stats_on_multiple_packages(
 
     !!! note
 
-        This function calls [`asyncio.run()`][asyncio.run]
+        This function calls [asyncio.run][]
         to start an [asyncio][] event loop.
         It is therefore not suitable to be called from inside functions
         that are themselves called as part of an asyncio event loop.
 
     Parameters:
-        packages: An iterable of package names to be analysed, or None.
+        packages: An iterable of package names to be analysed, or [None][].
             If `None`, defaults to all third-party stubs, plus the stubs for the stdlib.
         typeshed_dir: The path to a local clone of typeshed.
 
