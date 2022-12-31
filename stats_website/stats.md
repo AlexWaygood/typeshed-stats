@@ -8,11 +8,11 @@ hide:
 
 # Statistics on typeshed's stubs
 
-Typeshed currently contains stubs for 143 packages
+Typeshed currently contains stubs for 144 packages
 (including the stdlib stubs as a "single package"),
-for a total of 186,998 non-empty lines of code.
+for a total of 200,252 non-empty lines of code.
 
-<i>Note: these statistics were last updated at: <b>21:24 UTC on 2022-12-30</b>.</i>
+<i>Note: these statistics were last updated at: <b>01:34 UTC on 2022-12-31</b>.</i>
 <i>
 For up-to-date statistics, consider using
 [the CLI tool](https://pypi.org/project/typeshed-stats/ "pip install the CLI tool from PyPI")
@@ -3462,6 +3462,59 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 4
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+<hr>
+
+## Info on typeshed's stubs for `influxdb-client`
+
+### Stub distribution name
+
+`types-influxdb-client`
+
+### Number of lines
+
+13,254 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 8 allowlist entries for `influxdb-client` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `influxdb-client`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 2,199
+    - Unannotated parameters: 3,826
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,951
+- Returns:
+    - Annotated returns: 1,849
+    - Unannotated returns: 3,454
+    - Explicit `Any` returns: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+- Variables:
+    - Annotated variables: 1,178
+    - Explicit `Any` variables: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,081
+- Class definitions:
+    - Total class definitions: 423
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
