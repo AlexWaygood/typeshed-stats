@@ -1,8 +1,10 @@
 {#
+
 This is a jinja2 template for generating
 a MarkDown description of a typeshed stubs package.
 It works in conjunction with the
 `typeshed_stats.serialize.stats_to_markdown()` function.
+
 #}
 
 {% if package_name == "stdlib" %}
@@ -14,14 +16,12 @@ It works in conjunction with the
 ## Info on typeshed's stubs for {{ package_name }}
 
 {% if extra_description %}
-
 ### Extra description
 
 {{ extra_description }}
 {% endif %}
 
 {% if stub_distribution_name != "-" %}
-
 ### Stub distribution name
 
 `{{ stub_distribution_name }}`
