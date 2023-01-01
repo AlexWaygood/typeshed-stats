@@ -18,7 +18,7 @@
       "separateMajorMinor": "false"
     },
     {
-      "groupName": "pip dependencies",
+      "groupName": "pip-dependencies",
       "matchManagers": [
         "pip_requirements"
       ],
