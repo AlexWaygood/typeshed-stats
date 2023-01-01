@@ -4,18 +4,25 @@
     "config:base"
   ],
   "pip_requirements": {
-    "fileMatch": ["^pyproject\\.toml$", "^requirements/[^/]+\\.txt$"]
+    "fileMatch": [
+      "^pyproject\\.toml$",
+      "^requirements/[^/]+\\.txt$"
+    ]
   },
   "packageRules": [
     {
       "groupName": "github-actions",
-      "matchManagers": ["github-actions"],
+      "matchManagers": [
+        "github-actions"
+      ],
       "description": "Group all GitHub Action dependencies",
       "separateMajorMinor": "false"
     },
     {
       "groupName": "pip dependencies",
-      "matchPaths": ["^pyproject\\.toml$", "^requirements/[^/]+\\.txt$"],
+      "matchManagers": [
+        "pip_requirements"
+      ],
       "description": "Group all pip requirements"
     }
   ],
