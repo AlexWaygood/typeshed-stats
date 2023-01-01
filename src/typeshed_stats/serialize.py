@@ -239,4 +239,11 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         return template.render(**kwargs)
 
     all_packages = "\n\n<hr>\n\n".join(format_package(info) for info in stats)
+    all_packages += (
+        "\n\n"
+        "[stubtest]: "
+        "https://mypy.readthedocs.io/en/stable/stubtest.html "
+        '"A tool shipped with the mypy type checker for automatically verifying '
+        'that stubs are consistent with the runtime package"'
+    )
     return re.sub(r"\n{3,}", "\n\n", all_packages).strip() + "\n"
