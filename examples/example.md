@@ -7631,3 +7631,5 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Total class definitions: 9
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
+
+[stubtest]: https://mypy.readthedocs.io/en/stable/stubtest.html "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"

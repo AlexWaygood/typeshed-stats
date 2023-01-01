@@ -13,7 +13,7 @@ Typeshed currently contains stubs for 144 packages
 for a total of 200,252 non-empty lines of code.
 
 <i>
-Note: these statistics were last updated at: <b>23:21 UTC on 2023-01-01</b>.
+Note: these statistics were last updated at: <b>23:56 UTC on 2023-01-01</b>.
 For up-to-date statistics, consider using [the CLI tool][cli-tool] instead.
 </i>
 
@@ -7652,3 +7652,5 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Total class definitions: 9
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
+
+[stubtest]: https://mypy.readthedocs.io/en/stable/stubtest.html "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
