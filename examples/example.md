@@ -10,7 +10,7 @@
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -61,7 +61,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -114,7 +114,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -167,7 +167,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -220,7 +220,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -273,7 +273,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -379,7 +379,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -432,7 +432,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -485,7 +485,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -538,7 +538,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -591,7 +591,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -644,7 +644,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -697,7 +697,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -750,7 +750,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *out of date*
 
-These stubs are out of date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -807,7 +807,7 @@ The `sqlalchemy-stubs` package is an alternative to this package and also includ
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -860,7 +860,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -913,7 +913,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -966,7 +966,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1019,7 +1019,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1072,7 +1072,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1125,7 +1125,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1178,7 +1178,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1231,7 +1231,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1284,7 +1284,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1337,7 +1337,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1390,7 +1390,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1443,7 +1443,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1496,7 +1496,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1549,7 +1549,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1655,7 +1655,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1708,7 +1708,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1761,7 +1761,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1814,7 +1814,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1867,7 +1867,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1920,7 +1920,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1973,7 +1973,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2077,7 +2077,7 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2130,7 +2130,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2183,7 +2183,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2236,7 +2236,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2289,7 +2289,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2342,7 +2342,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2395,7 +2395,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2501,7 +2501,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2554,7 +2554,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2607,7 +2607,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2660,7 +2660,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2713,7 +2713,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2766,7 +2766,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2819,7 +2819,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2872,7 +2872,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2925,7 +2925,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2978,7 +2978,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3031,7 +3031,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3139,7 +3139,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3192,7 +3192,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3245,7 +3245,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3298,7 +3298,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3351,7 +3351,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3404,7 +3404,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3457,7 +3457,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3510,7 +3510,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3563,7 +3563,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3616,7 +3616,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3669,7 +3669,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3722,7 +3722,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3775,7 +3775,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *out of date*
 
-These stubs are out of date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -3828,7 +3828,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3881,7 +3881,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3934,7 +3934,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3987,7 +3987,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4040,7 +4040,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4093,7 +4093,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4146,7 +4146,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4199,7 +4199,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4252,7 +4252,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4305,7 +4305,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4358,7 +4358,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4411,7 +4411,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4468,7 +4468,7 @@ The `types-pika` package contains alternate, more complete type stubs, that are 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4521,7 +4521,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4574,7 +4574,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4684,7 +4684,7 @@ Generated with aid from mypy-protobuf v3.4.0
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4737,7 +4737,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4790,7 +4790,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4843,7 +4843,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4896,7 +4896,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4949,7 +4949,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5002,7 +5002,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5055,7 +5055,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5108,7 +5108,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5161,7 +5161,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5214,7 +5214,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5267,7 +5267,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5320,7 +5320,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5371,7 +5371,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5424,7 +5424,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5477,7 +5477,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5530,7 +5530,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5583,7 +5583,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5636,7 +5636,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5689,7 +5689,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5742,7 +5742,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5795,7 +5795,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5848,7 +5848,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5901,7 +5901,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5954,7 +5954,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6007,7 +6007,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *out of date*
 
-These stubs are out of date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6060,7 +6060,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6113,7 +6113,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6166,7 +6166,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6219,7 +6219,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6272,7 +6272,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6325,7 +6325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6378,7 +6378,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6431,7 +6431,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6533,7 +6533,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6586,7 +6586,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *out of date*
 
-These stubs are out of date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6639,7 +6639,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6745,7 +6745,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6798,7 +6798,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6851,7 +6851,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6904,7 +6904,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6957,7 +6957,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7010,7 +7010,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7063,7 +7063,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7116,7 +7116,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7169,7 +7169,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7222,7 +7222,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7275,7 +7275,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7328,7 +7328,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7381,7 +7381,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7434,7 +7434,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7487,7 +7487,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7593,7 +7593,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *up to date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 

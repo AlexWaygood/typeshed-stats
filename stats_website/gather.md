@@ -79,14 +79,14 @@ Tools for gathering stats about typeshed packages.
 
 **Members:**
 
-| Name                | Description                                                                                                                                                                                                        |
-|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `STDLIB`            | These are typeshed's stubs for the standard library. Typeshed's stdlib stubs are generally fairly up to date, and are tested against all currently supported Python versions in typeshed's CI.                     |
-| `NOT_ON_PYPI`       | The runtime package that these stubs are for doesn't exist on PyPI, so whether or not these stubs are up to date or not is unknown.                                                                                |
-| `OBSOLETE`          | The runtime package has added inline type hints; these typeshed stubs are now obsolete.                                                                                                                            |
-| `NO_LONGER_UPDATED` | The runtime package has not added type hints, but these stubs are no longer updated by typeshed for some other reason.                                                                                             |
-| `OUT_OF_DATE`       | These stubs are out of date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against an older version of the runtime package than the latest that's available. |
-| `UP_TO_DATE`        | These stubs should be fairly up to date. In typeshed's CI, [stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) tests these stubs against the latest version of the runtime package that's available.   |
+| Name                | Description                                                                                                                                                                                    |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `STDLIB`            | These are typeshed's stubs for the standard library. Typeshed's stdlib stubs are generally fairly up to date, and are tested against all currently supported Python versions in typeshed's CI. |
+| `NOT_ON_PYPI`       | The runtime package that these stubs are for doesn't exist on PyPI, so whether or not these stubs are up to date or not is unknown.                                                            |
+| `OBSOLETE`          | The runtime package has added inline type hints; these typeshed stubs are now obsolete.                                                                                                        |
+| `NO_LONGER_UPDATED` | The runtime package has not added type hints, but these stubs are no longer updated by typeshed for some other reason.                                                                         |
+| `OUT_OF_DATE`       | These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.                                |
+| `UP_TO_DATE`        | These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.                                  |
 <hr>
 
 ::: typeshed_stats.gather.PyrightSetting
