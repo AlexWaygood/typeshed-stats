@@ -362,7 +362,7 @@ def get_package_extra_description(
 
     Returns:
         The "extra description" of the package given in the `METADATA.toml` file,
-            if one is given, else `None`.
+            if one is given, else [None][].
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_extra_description
@@ -380,12 +380,7 @@ def get_package_extra_description(
 
 
 class StubtestStrictness(_NiceReprEnum):
-    """Enumeration of the various possible settings typeshed uses for [stubtest][stubtest] in CI.
-
-    [stubtest]:
-      https://mypy.readthedocs.io/en/stable/stubtest.html
-      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
-    """
+    """Enumeration of the various possible settings typeshed uses for [stubtest][] in CI."""
 
     SKIPPED = "Stubtest is skipped in typeshed's CI for this package."
     MISSING_STUBS_IGNORED = (
@@ -410,11 +405,7 @@ def _get_stubtest_config(
 def get_stubtest_strictness(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> StubtestStrictness:
-    """Get the setting typeshed uses in CI when [stubtest][stubtest] is run on a certain package.
-
-    [stubtest]:
-      https://mypy.readthedocs.io/en/stable/stubtest.html
-      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
+    """Get the setting typeshed uses in CI when [stubtest][] is run on a certain package.
 
     Parameters:
         package_name: The name of the package to find the stubtest setting for.
@@ -455,11 +446,7 @@ def get_stubtest_strictness(
 def get_stubtest_platforms(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> list[str]:
-    """Get the list of platforms on which [stubtest][stubtest] is run in typeshed's CI.
-
-    [stubtest]:
-      https://mypy.readthedocs.io/en/stable/stubtest.html
-      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
+    """Get the list of platforms on which [stubtest][] is run in typeshed's CI.
 
     Parameters:
         package_name: The name of the package to find the stubtest setting for.
@@ -469,7 +456,7 @@ def get_stubtest_platforms(
     Returns:
         A list of strings describing platforms stubtest is run on.
             The names correspond to the platform names
-            given by [`sys.platform`][sys.platform] at runtime.
+            given by [sys.platform][] at runtime.
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_platforms
@@ -499,11 +486,7 @@ def _num_allowlist_entries_in_file(path: Path) -> int:
 def get_stubtest_allowlist_length(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> int:
-    """Get the number of "allowlist entries" typeshed uses in CI when [stubtest][stubtest] is run on a certain package.
-
-    [stubtest]:
-      https://mypy.readthedocs.io/en/stable/stubtest.html
-      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
+    """Get the number of "allowlist entries" typeshed uses in CI when [stubtest][] is run on a certain package.
 
     An allowlist entry indicates a place in the stub where stubtest emits an error,
     but typeshed has chosen to silence the error rather than "fix it".
@@ -546,12 +529,7 @@ def get_stubtest_allowlist_length(
 @final
 @attrs.define
 class StubtestSettings:
-    """Information on the settings under which [stubtest][stubtest] is run on a certain package.
-
-    [stubtest]:
-      https://mypy.readthedocs.io/en/stable/stubtest.html
-      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
-    """
+    """Information on the settings under which [stubtest][] is run on a certain package."""
 
     strictness: StubtestStrictness
     platforms: list[str]
@@ -561,12 +539,7 @@ class StubtestSettings:
 def get_stubtest_settings(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> StubtestSettings:
-    """Get the [stubtest][stubtest] settings for a certain stubs package in typeshed.
-
-    [stubtest]:
-      https://mypy.readthedocs.io/en/stable/stubtest.html
-      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
-
+    """Get the [stubtest][] settings for a certain stubs package in typeshed.
 
     Parameters:
         package_name: The name of the package to find the stubtest settings for.
@@ -607,14 +580,12 @@ class PackageStatus(_NiceReprEnum):
         "but these stubs are no longer updated by typeshed for some other reason."
     )
     OUT_OF_DATE = (
-        "These stubs are out of date. In typeshed's CI, "
-        "[stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) "
-        "tests these stubs against an older version of the runtime package "
+        "These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs "
+        "against an older version of the runtime package "
         "than the latest that's available."
     )
     UP_TO_DATE = (
-        "These stubs should be fairly up to date. In typeshed's CI, "
-        "[stubtest](https://mypy.readthedocs.io/en/stable/stubtest.html) "
+        "These stubs should be fairly up to date. In typeshed's CI, [stubtest][] "
         "tests these stubs against the latest version of the runtime package "
         "that's available."
     )
@@ -650,15 +621,10 @@ async def get_package_status(
 ) -> PackageStatus:
     """Retrieve information on how up to date a stubs package is.
 
-    If [stubtest][stubtest]
-    tests these stubs against the latest version of the runtime package
+    If [stubtest][] tests these stubs against the latest version of the runtime package
     in typeshed's CI, it's a fair bet that the stubs are relatively up to date.
     If stubtest tests these stubs against an older version, however,
     the stubs *may* be out of date.
-
-    [stubtest]:
-      https://mypy.readthedocs.io/en/stable/stubtest.html
-      "A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package"
 
     !!! note
 
@@ -670,8 +636,8 @@ async def get_package_status(
         package_name: The name of the stubs package to analyze.
         typeshed_dir: A path pointing to a typeshed directory
             in which to find the stubs package.
-        session: An [`aiohttp.ClientSession`][aiohttp.ClientSession] instance,
-            to be used for making a network requests, or `None`. If `None` is provided
+        session: An [aiohttp.ClientSession][] instance,
+            to be used for making a network requests, or [None][]. If `None` is provided
             for this argument, a new `aiohttp.ClientSession` instance will be
             created to make the network request.
 
@@ -864,7 +830,7 @@ def _get_pyright_excludelist(
 
 
 class PyrightSetting(_NiceReprEnum):
-    """The various possible [pyright](https://github.com/microsoft/pyright) settings typeshed uses in CI."""
+    """The various possible [pyright][] settings typeshed uses in CI."""
 
     ENTIRELY_EXCLUDED = (
         "All files in this stubs package "
@@ -902,7 +868,7 @@ def _child_of_path_is_listed(path: Path, path_list: Collection[Path]) -> bool:
 def get_pyright_setting_for_path(
     file_path: Path | str, *, typeshed_dir: Path | str
 ) -> PyrightSetting:
-    """Get the settings typeshed uses in CI when [pyright](https://github.com/microsoft/pyright) is run on a certain path.
+    """Get the settings typeshed uses in CI when [pyright][] is run on a certain path.
 
     Parameters:
         file_path: The path to query.
@@ -935,7 +901,7 @@ def get_pyright_setting_for_path(
 def get_pyright_setting_for_package(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> PyrightSetting:
-    """Get the settings typeshed uses in CI when [pyright](https://github.com/microsoft/pyright) is run on a certain package.
+    """Get the settings typeshed uses in CI when [pyright][] is run on a certain package.
 
     Parameters:
         package_name: The name of the package to find the pyright setting for.
@@ -1001,8 +967,8 @@ async def gather_stats_on_package(
         package_name: The name of the package to gather statistics on.
         typeshed_dir: A path pointing to a typeshed directory,
             in which the source code for the stubs package can be found.
-        session: An [`aiohttp.ClientSession`][aiohttp.ClientSession] instance,
-            to be used for making a network requests, or `None`. If `None` is provided
+        session: An [aiohttp.ClientSession][] instance,
+            to be used for making a network requests, or [None][]. If `None` is provided
             for this argument, a new `aiohttp.ClientSession` instance will be
             created to make the network request.
 
@@ -1197,13 +1163,13 @@ def gather_stats_on_multiple_packages(
 
     !!! note
 
-        This function calls [`asyncio.run()`][asyncio.run]
+        This function calls [asyncio.run][]
         to start an [asyncio][] event loop.
         It is therefore not suitable to be called from inside functions
         that are themselves called as part of an asyncio event loop.
 
     Parameters:
-        packages: An iterable of package names to be analysed, or None.
+        packages: An iterable of package names to be analysed, or [None][].
             If `None`, defaults to all third-party stubs, plus the stubs for the stdlib.
         typeshed_dir: The path to a local clone of typeshed.
 

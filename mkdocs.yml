@@ -60,14 +60,19 @@ nav:
   - "CLI reference": "cli.md"
 
 markdown_extensions:
-  - attr_list
-  - md_in_html
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
+  # This extension enables us to keep our links in a separate file
+  # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
+  - pymdownx.snippets:
+      base_path:
+      - stats_website/.snippets
+      auto_append:
+      - refs.md
+      check_paths: true
+  # This extension allows expandable "details" sections
+  # https://facelessuser.github.io/pymdown-extensions/extensions/details/
   - pymdownx.details
+  # This extension allows using rST-style admonitions in MarkDown
+  # https://python-markdown.github.io/extensions/admonition/
   - admonition
 
 watch:

@@ -8,7 +8,7 @@ hide:
 
 <img src="big_logo.png" width="700">
 
-This website provides statistics on [typeshed](https://github.com/python/typeshed)'s stubs packages.
+This website provides statistics on [typeshed][]'s stubs packages.
 
 This project was created by Alex Waygood.
 It is not necessarily endorsed by any of the other typeshed maintainers.
