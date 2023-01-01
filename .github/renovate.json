@@ -8,9 +8,6 @@
       "^requirements/[^/]+\\.txt$"
     ]
   },
-  "poetry": {
-    "enabled": true
-  },
   "packageRules": [
     {
       "groupName": "github-actions",
@@ -24,7 +21,6 @@
       "groupName": "pip dependencies",
       "matchManagers": [
         "pip_requirements",
-        "poetry"
       ],
       "description": "Group all pip requirements"
     }
