@@ -20,7 +20,7 @@
     {
       "groupName": "pip dependencies",
       "matchManagers": [
-        "pip_requirements",
+        "pip_requirements"
       ],
       "description": "Group all pip requirements"
     }
