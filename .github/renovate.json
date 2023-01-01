@@ -4,7 +4,7 @@
     "config:base"
   ],
   "pip_requirements": {
-    "fileMatch": ["pyproject\.toml", "requirements/.*\.txt"]
+    "fileMatch": ["pyproject\\.toml", "requirements/.*\\.txt"]
   },
   "packageRules": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "groupName": "pip dependencies",
-      "matchPaths": ["pyproject\.toml", "requirements/.*\.txt"],
+      "matchPaths": ["pyproject\\.toml", "requirements/.*\\.txt"],
       "description": "Group all pip requirements"
     }
   ],
