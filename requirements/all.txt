@@ -7,4 +7,4 @@ blacken-docs==1.12.1            # must match .pre-commit-config.yaml
 isort==5.10.1                   # must match .pre-commit-config.yaml
 pre-commit-hooks==4.4.0         # must match .pre-commit-config.yaml
 pycln==2.1.2                    # must match .pre-commit-config.yaml
-pyupgrade==3.2.3                # must match .pre-commit-config.yaml
+pyupgrade==3.3.1                # must match .pre-commit-config.yaml
