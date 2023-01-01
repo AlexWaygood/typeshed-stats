@@ -5,9 +5,11 @@
   ],
   "pip_requirements": {
     "fileMatch": [
-      "^pyproject\\.toml$",
       "^requirements/[^/]+\\.txt$"
     ]
+  },
+  "poetry": {
+    "enabled": true
   },
   "packageRules": [
     {
@@ -21,7 +23,8 @@
     {
       "groupName": "pip dependencies",
       "matchManagers": [
-        "pip_requirements"
+        "pip_requirements",
+        "poetry"
       ],
       "description": "Group all pip requirements"
     }
