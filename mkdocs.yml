@@ -61,14 +61,18 @@ nav:
 
 markdown_extensions:
   # This extension enables us to keep our links in a separate file
+  # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
       base_path:
       - stats_website/.snippets
       auto_append:
       - refs.md
       check_paths: true
-  - pymdownx.superfences
+  # This extension allows expandable "details" sections
+  # https://facelessuser.github.io/pymdown-extensions/extensions/details/
   - pymdownx.details
+  # This extension allows using rST-style admonitions in MarkDown
+  # https://python-markdown.github.io/extensions/admonition/
   - admonition
 
 watch:
