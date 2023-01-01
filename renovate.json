@@ -3,10 +3,8 @@
   "extends": [
     "config:base"
   ],
-  {
-    "pip_requirements": {
-      "fileMatch": ["pyproject.toml", "requirements/*.txt"]
-    }
+  "pip_requirements": {
+    "fileMatch": ["pyproject.toml", "requirements/*.txt"]
   },
   "packageRules": [
     {
