@@ -10,10 +10,10 @@ hide:
 
 Typeshed currently contains stubs for 144 packages
 (including the stdlib stubs as a "single package"),
-for a total of 200,252 non-empty lines of code.
+for a total of 200,312 non-empty lines of code.
 
 <i>
-Note: these statistics were last updated at: <b>12:36 UTC on 2023-01-02</b>.
+Note: these statistics were last updated at: <b>17:43 UTC on 2023-01-02</b>.
 For up-to-date statistics, consider using [the CLI tool][cli-tool] instead.
 </i>
 
@@ -3474,7 +3474,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-13,254 (excluding blank lines)
+13,314 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3499,19 +3499,19 @@ All files in this stubs package are excluded from the stricter pyright settings 
 ### Statistics on the annotations in typeshed's stubs for `influxdb-client`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,199
-    - Unannotated parameters: 3,826
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,951
+    - Annotated parameters: 2,269
+    - Unannotated parameters: 3,800
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,979
 - Returns:
-    - Annotated returns: 1,849
-    - Unannotated returns: 3,454
+    - Annotated returns: 1,857
+    - Unannotated returns: 3,446
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
     - Annotated variables: 1,178
     - Explicit `Any` variables: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,081
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,076
 - Class definitions:
     - Total class definitions: 423
     - Class definitions with `Any`: 0
