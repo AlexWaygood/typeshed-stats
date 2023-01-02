@@ -13,7 +13,7 @@ Typeshed currently contains stubs for 144 packages
 for a total of 200,312 non-empty lines of code.
 
 <i>
-Note: these statistics were last updated at: <b>18:24 UTC on 2023-01-02</b>.
+Note: these statistics were last updated at: <b>18:54 UTC on 2023-01-02</b>.
 For up-to-date statistics, consider using [the CLI tool][cli-tool] instead.
 </i>
 
