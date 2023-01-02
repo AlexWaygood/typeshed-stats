@@ -4,6 +4,7 @@ site_author: "Alex Waygood"
 site_description: "A website providing statistics and analysis of typeshed's stubs packages"
 docs_dir: 'stats_website'
 repo_url: https://github.com/AlexWaygood/typeshed-stats
+repo_name: AlexWaygood/typeshed-stats
 edit_uri: ""  # The website is generated, so an edit button doesn't make sense the way mkdocs does it
 
 theme:
