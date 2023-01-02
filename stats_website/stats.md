@@ -13,7 +13,7 @@ Typeshed currently contains stubs for 144 packages
 for a total of 200,252 non-empty lines of code.
 
 <i>
-Note: these statistics were last updated at: <b>23:56 UTC on 2023-01-01</b>.
+Note: these statistics were last updated at: <b>01:36 UTC on 2023-01-02</b>.
 For up-to-date statistics, consider using [the CLI tool][cli-tool] instead.
 </i>
 
@@ -769,9 +769,9 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 677 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
