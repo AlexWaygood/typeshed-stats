@@ -71,7 +71,6 @@ skip_gitignore = true
 
 [tool.mypy]
 files = ['src', 'tests', 'scripts']
-show_error_codes = true
 show_traceback = true
 pretty = true
 strict = true
