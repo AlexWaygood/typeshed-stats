@@ -1,0 +1,31 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "pip_requirements": {
+    "fileMatch": [
+      "^requirements/[^/]+\\.txt$"
+    ]
+  },
+  "packageRules": [
+    {
+      "groupName": "github-actions",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "description": "Group all GitHub Action dependencies",
+      "separateMajorMinor": "false"
+    },
+    {
+      "groupName": "pip-dependencies",
+      "matchManagers": [
+        "pip_requirements"
+      ],
+      "description": "Group all pip requirements"
+    }
+  ],
+  "schedule": [
+    "after 6pm"
+  ]
+}
