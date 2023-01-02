@@ -25,5 +25,7 @@
       "description": "Group all pip requirements"
     }
   ],
-  "schedule": "every 3 months on the first day of the month"
+  "schedule": [
+    "after 6pm"
+  ]
 }
