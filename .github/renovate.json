@@ -15,17 +15,22 @@
         "github-actions"
       ],
       "description": "Group all GitHub Action dependencies",
-      "separateMajorMinor": "false"
+      "separateMajorMinor": "false",
+      "stabilityDays": 7
     },
     {
       "groupName": "pip-dependencies",
       "matchManagers": [
         "pip_requirements"
       ],
-      "description": "Group all pip requirements"
+      "description": "Group all pip requirements",
+      "stabilityDays": 7
     }
   ],
   "schedule": [
     "after 6pm"
+  ],
+  "suppressNotifications": [
+    "prEditedNotification"
   ]
 }
