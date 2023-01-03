@@ -54,6 +54,7 @@ jobs:
         run: |
           pip install -e .[rich]
           pip install -r requirements/all.txt
+          pip freeze --all
       - name: Run mypy on the project
         run: mypy
 

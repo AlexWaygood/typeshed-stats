@@ -65,6 +65,7 @@ jobs:
         run: |
           pip install -r requirements/pytest.txt coveralls
           pip install -e .[rich]
+          pip freeze --all
       - name: Run tests under coverage
         run: |
           coverage run -m pytest --doctest-modules
