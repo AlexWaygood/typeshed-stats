@@ -8,7 +8,6 @@ from collections.abc import Sequence
 from contextlib import ExitStack
 from pathlib import Path
 
-
 from typeshed_stats.gather import (
     PackageInfo,
     gather_stats_on_multiple_packages,

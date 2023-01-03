@@ -19,7 +19,7 @@ hide:
 
 {% if is_enum(obj) %}
 {% set enum = obj %}
-**Members:**
+__Members:__
 
 | Name | Description |
 |------|-------------|
@@ -31,7 +31,7 @@ hide:
 
 {% elif attrs.has(obj) %}
 {% set cls = obj %}
-**Attributes:**
+__Attributes:__
 
 | Name | Type |
 |------|------|
