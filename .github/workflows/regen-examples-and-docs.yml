@@ -40,6 +40,7 @@ jobs:
         run: |
           pip install -r requirements/docs.txt
           pip install -e .[rich]
+          pip freeze --all
       - name: Regenerate examples and docs
         id: regen
         run: python scripts/regenerate.py --download-typeshed
