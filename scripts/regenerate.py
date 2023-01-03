@@ -81,7 +81,7 @@ def regenerate_stats_markdown_page(stats: Sequence[PackageInfo]) -> None:
 
 def get_field_description(typ: object) -> str:
     """Get a description of the type of a field in an `attrs` class.
-    
+
     A helper function for the `gather.md.jinja` template.
     """
     if isinstance(typ, types.UnionType):
