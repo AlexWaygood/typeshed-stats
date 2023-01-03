@@ -59,7 +59,7 @@ def regenerate_stats_markdown_page(stats: Sequence[PackageInfo]) -> None:
         num_stats=len(stats),
         lines_of_code=total_typeshed_stublines,
         updated_time=updated_time,
-        formatted_stats=formatted_stats
+        formatted_stats=formatted_stats,
     )
     stats_path = Path("stats_website", "stats.md")
     stats_path.write_text(page, encoding="utf-8")
