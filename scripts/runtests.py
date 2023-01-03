@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 from typing import Literal, overload
 
-FILES_TO_CHECK = ("src", "tests", "scripts")
+FILES_TO_CHECK = ("src", "tests", "scripts", "website_macros.py")
 
 
 @overload
@@ -81,9 +81,7 @@ def run_checks(
     subprocess.run(["flake8", *FILES_TO_CHECK], check=True)
 
     print("\nRunning mypy...")
-    # Running into weird cache issues locally to do with attrs,
-    # so don't run this one with check=True (for now)
-    subprocess.run(["mypy"])
+    subprocess.run(["mypy"], check=True)
 
     print("\nRunning pytest...")
     for command in "coverage run -m pytest", "coverage report":
