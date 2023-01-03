@@ -14,7 +14,7 @@ PyMySQL,types-PyMySQL,-,1039,UP_TO_DATE,UPLOADED,NOT_STRICT,139,53,98,40,0,0,38,
 PyScreeze,types-PyScreeze,-,177,UP_TO_DATE,UPLOADED,STRICT,93,0,18,0,0,0,0,0,13,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,0
 PyYAML,types-PyYAML,-,1168,UP_TO_DATE,UPLOADED,NOT_STRICT,389,321,158,230,0,0,52,12,220,192,0,91,0,0,ERROR_ON_MISSING_STUB,linux,1
 Pygments,types-Pygments,-,677,UP_TO_DATE,UPLOADED,NOT_STRICT,108,157,96,79,0,2,24,2,313,193,0,62,1,0,MISSING_STUBS_IGNORED,linux,4
-SQLAlchemy,types-SQLAlchemy,The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.,14546,UP_TO_DATE,UPLOADED,NOT_STRICT,2192,7019,2158,3319,37,0,1168,23,3114,2062,3,1331,63,1,MISSING_STUBS_IGNORED,linux,1151
+SQLAlchemy,types-SQLAlchemy,The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.,14546,OUT_OF_DATE,UPLOADED,NOT_STRICT,2192,7019,2158,3319,37,0,1168,23,3114,2062,3,1331,63,1,MISSING_STUBS_IGNORED,linux,1151
 Send2Trash,types-Send2Trash,-,21,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,1,3,0,2,1,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 aiofiles,types-aiofiles,-,592,UP_TO_DATE,UPLOADED,STRICT,342,0,136,0,21,7,29,1,0,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux;win32,57
 annoy,types-annoy,-,45,UP_TO_DATE,UPLOADED,STRICT,40,0,20,0,0,0,0,0,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
