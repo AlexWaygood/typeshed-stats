@@ -112,7 +112,7 @@ def regenerate_gather_api_docs() -> None:
         gather=typeshed_stats.gather,
         is_enum=lambda x: isinstance(x, type) and issubclass(x, Enum),
         attrs=attrs,
-        get_field_description=get_field_description
+        get_field_description=get_field_description,
     )
     docs = re.sub(r"\n{3,}", "\n\n", rendered).strip() + "\n"
     Path("stats_website", "gather.md").write_text(docs, encoding="utf-8")
