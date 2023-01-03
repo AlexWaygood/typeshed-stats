@@ -5,7 +5,6 @@ site_description: "A website providing statistics and analysis of typeshed's stu
 docs_dir: 'stats_website'
 repo_url: https://github.com/AlexWaygood/typeshed-stats
 repo_name: AlexWaygood/typeshed-stats
-edit_uri: ""  # The website is generated, so an edit button doesn't make sense the way mkdocs does it
 
 theme:
   name: material
@@ -37,6 +36,9 @@ theme:
 plugins:
   - search
   - table-reader  # Enables embedding CSV tables in MarkDown
+  - macros:  # Enables using jinja capabilities in MarkDown
+      module_name: website_macros
+      on_error_fail: true
   - mkdocstrings:
       enable_inventory: true  # This means other projects can reference parts of our API
       handlers:
