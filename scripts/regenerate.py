@@ -7,12 +7,12 @@ import builtins
 import re
 import shutil
 import subprocess
-import textwrap
 import types
 from collections.abc import Sequence
 from contextlib import ExitStack
 from datetime import datetime
 from enum import Enum
+from functools import cache
 from pathlib import Path
 from typing import get_args, get_origin
 
@@ -44,37 +44,25 @@ def regenerate_examples(stats: Sequence[PackageInfo]) -> None:
     print("Examples successfully regenerated!")
 
 
+@cache
+def _get_jinja_environment() -> jinja2.Environment:
+    return jinja2.Environment(loader=jinja2.FileSystemLoader("scripts/templates"))
+
+
 def regenerate_stats_markdown_page(stats: Sequence[PackageInfo]) -> None:
     """Regenerate the markdown page used for the static website."""
-    markdown = Path("examples", "example.md").read_text(encoding="utf-8")
+    formatted_stats = Path("examples", "example.md").read_text(encoding="utf-8")
     updated_time = datetime.utcnow().strftime("%H:%M UTC on %Y-%m-%d")
     total_typeshed_stublines = sum(s.number_of_lines for s in stats)
-    header = textwrap.dedent(
-        f"""\
-        ---
-        hide:
-          - navigation
-          - footer
-        ---
-
-        <!-- NOTE: This file is generated. Do not edit manually! -->
-
-        # Statistics on typeshed's stubs
-
-        Typeshed currently contains stubs for {len(stats)} packages
-        (including the stdlib stubs as a "single package"),
-        for a total of {total_typeshed_stublines:,} non-empty lines of code.
-
-        <i>
-        Note: these statistics were last updated at: <b>{updated_time}</b>.
-        For up-to-date statistics, consider using [the CLI tool][cli-tool] instead.
-        </i>
-
-        <hr>
-        """
+    template = _get_jinja_environment().get_template("stats.md.jinja")
+    page = template.render(
+        num_stats=len(stats),
+        lines_of_code=total_typeshed_stublines,
+        updated_time=updated_time,
+        formatted_stats=formatted_stats
     )
     stats_path = Path("stats_website", "stats.md")
-    stats_path.write_text(f"{header}\n{markdown}", encoding="utf-8")
+    stats_path.write_text(page, encoding="utf-8")
     shutil.copyfile("examples/example.csv", "stats_website/stats_as_csv.csv")
     print("Docs page successfully regenerated!")
 
@@ -109,8 +97,7 @@ def get_field_description(typ: object) -> str:
 
 def regenerate_gather_api_docs() -> None:
     """Regenerate the API docs for `typeshed_stats/gather.py`."""
-    environment = jinja2.Environment(loader=jinja2.FileSystemLoader("scripts"))
-    template = environment.get_template("gather.md.jinja")
+    template = _get_jinja_environment().get_template("gather.md.jinja")
     rendered = template.render(
         gather=typeshed_stats.gather,
         is_enum=lambda x: isinstance(x, type) and issubclass(x, Enum),
@@ -127,20 +114,8 @@ def regenerate_cli_docs() -> None:
     help_result = subprocess.run(
         ["typeshed-stats", "--help"], text=True, capture_output=True
     )
-    docs = textwrap.dedent(
-        """\
-        ---
-        hide:
-          - footer
-          - navigation
-        ---
-
-        <!-- NOTE: This file is generated. Do not edit manually! -->
-
-        To install the CLI, simply run `pip install typeshed-stats[rich]`.
-        """
-    )
-    docs += f"\n```console\n{help_result.stdout}\n```\n"
+    template = _get_jinja_environment().get_template("cli.md.jinja")
+    docs = template.render(cli_help=help_result.stdout) + "\n"
     Path("stats_website", "cli.md").write_text(docs, encoding="utf-8")
     print("CLI docs successfully regenerated for `typeshed_stats`!")
 
