@@ -2917,7 +2917,7 @@
     "stub_distribution_name": "types-pyOpenSSL",
     "extra_description": null,
     "number_of_lines": 373,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -3493,7 +3493,7 @@
     "package_name": "python-xlib",
     "stub_distribution_name": "types-python-xlib",
     "extra_description": null,
-    "number_of_lines": 5394,
+    "number_of_lines": 5392,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3814,7 +3814,7 @@
     "stub_distribution_name": "types-singledispatch",
     "extra_description": null,
     "number_of_lines": 27,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",

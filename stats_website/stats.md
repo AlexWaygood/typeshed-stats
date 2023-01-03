@@ -10,10 +10,10 @@ hide:
 
 Typeshed currently contains stubs for 144 packages
 (including the stdlib stubs as a "single package"),
-for a total of 200,312 non-empty lines of code.
+for a total of 200,310 non-empty lines of code.
 
 <i>
-Note: these statistics were last updated at: <b>18:54 UTC on 2023-01-02</b>.
+Note: these statistics were last updated at: <b>01:35 UTC on 2023-01-03</b>.
 For up-to-date statistics, consider using [the CLI tool][cli-tool] instead.
 </i>
 
@@ -4862,9 +4862,9 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 373 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5812,7 +5812,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,394 (excluding blank lines)
+5,392 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6344,9 +6344,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 27 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
