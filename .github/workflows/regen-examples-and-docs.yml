@@ -41,16 +41,20 @@ jobs:
           pip install -r requirements/docs.txt
           pip install -e .[rich]
       - name: Regenerate examples and docs
+        id: regen
         run: python scripts/regenerate.py --download-typeshed
       - name: Check the generated files with pre-commit
+        id: lint
         uses: pre-commit/action@v3.0.0
       - name: Commit and push the changes
-        if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always()}}
+        id: commit
+        if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && steps.regen.outcome == 'success' && steps.lint.outcome == 'success' }}
         run: |
-          git commit -a -m "👷 Automated regeneration of examples and docs"
+          git add .
+          git diff --staged --quiet || git commit -m "👷 Automated regeneration of examples and docs"
           git push
       - name: Deploy docs
-        if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always()}}
+        if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && steps.regen.outcome == 'success' && steps.lint.outcome == 'success' && steps.commit.outcome == 'success' }}
         run: mkdocs gh-deploy -m "🚀 Deploying {sha} with MkDocs {version}" --force
 
   create-issue-on-failure:
