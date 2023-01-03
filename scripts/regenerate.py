@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import builtins
+import re
 import shutil
 import subprocess
 import textwrap
@@ -12,12 +13,11 @@ from collections.abc import Sequence
 from contextlib import ExitStack
 from datetime import datetime
 from enum import Enum
-from functools import partial
 from pathlib import Path
 from typing import get_args, get_origin
 
 import attrs
-import tabulate
+import jinja2
 
 import typeshed_stats.gather
 from typeshed_stats.gather import (
@@ -79,17 +79,15 @@ def regenerate_stats_markdown_page(stats: Sequence[PackageInfo]) -> None:
     print("Docs page successfully regenerated!")
 
 
-generate_table = partial(tabulate.tabulate, tablefmt="github")
-
-
-def _get_field_description(typ: object) -> str:
+def get_field_description(typ: object) -> str:
+    """Helper function for the `gather.md.jinja` template."""
     if isinstance(typ, types.UnionType):
-        return r" \| ".join(map(_get_field_description, get_args(typ)))
+        return r" \| ".join(map(get_field_description, get_args(typ)))
     if isinstance(typ, types.GenericAlias):
         return (
-            _get_field_description(get_origin(typ))
+            get_field_description(get_origin(typ))
             + "["
-            + ", ".join(map(_get_field_description, get_args(typ)))
+            + ", ".join(map(get_field_description, get_args(typ)))
             + "]"
         )
     if isinstance(typ, type):
@@ -108,49 +106,15 @@ def _get_field_description(typ: object) -> str:
 
 def regenerate_gather_api_docs() -> None:
     """Regenerate the API docs for `typeshed_stats/gather.py`."""
-    docs = textwrap.dedent(
-        f"""\
-        ---
-        hide:
-          - footer
-          - navigation
-        ---
-
-        <!-- NOTE: This file is generated. Do not edit manually! -->
-
-        {typeshed_stats.gather.__doc__}
-        """
+    environment = jinja2.Environment(loader=jinja2.FileSystemLoader("scripts"))
+    template = environment.get_template("gather.md.jinja")
+    rendered = template.render(
+        gather=typeshed_stats.gather,
+        is_enum=lambda x: isinstance(x, type) and issubclass(x, Enum),
+        attrs=attrs,
+        get_field_description=get_field_description
     )
-    for name in typeshed_stats.gather.__all__:
-        docs += textwrap.dedent(
-            f"""\
-            <hr>
-
-            ::: typeshed_stats.gather.{name}
-                options:
-                  show_root_heading: true
-
-            """
-        )
-        if name == "PackageName":
-            continue
-        thing = getattr(typeshed_stats.gather, name)
-        if isinstance(thing, type):
-            if issubclass(thing, Enum):
-                docs += "**Members:**\n\n"
-                docs += generate_table(
-                    [[f"`{member.name}`", member.__doc__] for member in thing],
-                    headers=["Name", "Description"],
-                )
-            elif attrs.has(thing):
-                rows = []
-                for field in attrs.fields(thing):
-                    typ_description = _get_field_description(field.type)
-                    rows.append([f"`{field.name}`", typ_description])
-                docs += "**Attributes:**\n\n"
-                docs += generate_table(rows, headers=["Name", "Type"])
-            docs += "\n"
-    docs = docs.strip() + "\n"
+    docs = re.sub(r"\n{3,}", "\n\n", rendered).strip() + "\n"
     Path("stats_website", "gather.md").write_text(docs, encoding="utf-8")
     print("API docs successfully regenerated for `typeshed_stats.gather`!")
 
