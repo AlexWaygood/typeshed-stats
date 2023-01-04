@@ -5,7 +5,7 @@ hide:
   - footer
 ---
 
-Download the data [here](stats_as_csv.csv "Download the data as a .csv file").
+Download the data <a href="../stats_as_csv.csv" title="Download the data as a .csv file">here</a>.
 
 Note: This data is updated twice a day. For up-to-date results, consider using
 [the CLI tool](https://pypi.org/project/typeshed-stats/ "pip install the CLI tool from PyPI")
@@ -13,4 +13,25 @@ instead.
 
 <hr>
 
-{{ read_csv('stats_website/stats_as_csv.csv') }}
+<table>
+  <thead>
+    <tr>
+      {% for key, val in stats_as_csv[0].items() %}
+        {% if is_int(val) %}
+          <th data-sort-method="number">{{ key }}</th>
+        {% else %}
+          <th>{{ key }}</th>
+        {% endif %}
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in stats_as_csv %}
+      <tr>
+        {% for val in row.values() %}
+          <td>{{ val if is_int(val) else markdown.markdown(val) }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
