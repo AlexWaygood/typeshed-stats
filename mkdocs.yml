@@ -35,7 +35,6 @@ theme:
 
 plugins:
   - search
-  - table-reader  # Enables embedding CSV tables in MarkDown
   - macros:  # Enables using jinja capabilities in MarkDown
       module_name: website_macros
       on_error_fail: true
@@ -63,6 +62,7 @@ nav:
   - "CLI reference": "cli.md"
 
 markdown_extensions:
+  - tables
   # This extension enables us to keep our links in a separate file
   # https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   - pymdownx.snippets:
@@ -81,3 +81,10 @@ markdown_extensions:
 watch:
   - stats_website
   - src
+
+extra_javascript:
+  # These all mean that the table-rendering of the stats in stats-csv.md can be sorted
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.number.min.js
+  - javascripts/tablesort.js
+  - javascripts/tablesort.number.js

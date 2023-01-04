@@ -13,4 +13,25 @@ instead.
 
 <hr>
 
-{{ read_csv('site/stats_as_csv.csv') }}
+<table>
+  <thead>
+    <tr>
+      {% for key, val in stats_as_csv[0].items() %}
+        {% if is_int(val) %}
+          <th data-sort-method="number">{{ key }}</th>
+        {% else %}
+          <th>{{ key }}</th>
+        {% endif %}
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in stats_as_csv %}
+      <tr>
+        {% for val in row.values() %}
+          <td>{{ val if is_int(val) else markdown.markdown(val) }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
