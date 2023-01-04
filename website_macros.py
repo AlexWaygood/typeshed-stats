@@ -3,18 +3,29 @@
 import builtins
 import datetime as dt
 import json
+import shutil
 import subprocess
 import types
 from enum import Enum
 from pathlib import Path
-from typing import Any, TypeGuard, get_args, get_origin
+from typing import Any, Callable, Protocol, TypeGuard, TypeVar, get_args, get_origin
 
 import attrs
 
 import typeshed_stats.gather
 
+CF = TypeVar("CF", bound=Callable[..., Any])
 
-def define_env(env: Any) -> None:
+
+class Env(Protocol):
+    variables: dict[str, Any]
+    conf: dict[str, Any]
+
+    def macro(self, /, func: CF) -> CF:
+        ...
+
+
+def define_env(env: Env) -> None:
     """Define environment variables."""
     # Variables needed for cli.md
     help_result = subprocess.run(
@@ -23,11 +34,11 @@ def define_env(env: Any) -> None:
     env.variables["cli_help"] = help_result.stdout + "\n"
 
     # Variables needed for gather.md
-    @env.macro  # type: ignore[misc]
+    @env.macro
     def is_enum(x: object) -> TypeGuard[type[Enum]]:
         return isinstance(x, type) and issubclass(x, Enum)
 
-    @env.macro  # type: ignore[misc]
+    @env.macro
     def get_field_description(typ: object) -> str:
         """Get a description of the type of a field in an `attrs` class.
 
@@ -36,7 +47,7 @@ def define_env(env: Any) -> None:
         if isinstance(typ, types.UnionType):
             return r" \| ".join(map(get_field_description, get_args(typ)))
         if isinstance(typ, types.GenericAlias):
-            return (  # type: ignore[no-any-return]
+            return (
                 get_field_description(get_origin(typ))
                 + "["
                 + ", ".join(map(get_field_description, get_args(typ)))
@@ -67,3 +78,8 @@ def define_env(env: Any) -> None:
         formatted_stats=Path("examples", "example.md").read_text(encoding="utf-8"),
         num_lines=sum(s["number_of_lines"] for s in json_stats),
     )
+
+
+def on_post_build(env: Env) -> None:
+    """Post-build actions"""
+    shutil.copyfile(Path("examples/examples.csv"), Path(env.conf["site_dir"], "stats_as_csv.csv"))

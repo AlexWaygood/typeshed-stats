@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import shutil
 from collections.abc import Sequence
 from contextlib import ExitStack
 from pathlib import Path
@@ -59,7 +58,6 @@ def main() -> None:
     parser = get_argument_parser()
     stats = get_stats(parser.parse_args())
     regenerate_examples(stats)
-    shutil.copyfile("examples/example.csv", "stats_website/stats_as_csv.csv")
 
 
 if __name__ == "__main__":
