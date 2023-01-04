@@ -6,9 +6,10 @@ import datetime as dt
 import shutil
 import subprocess
 import types
+from collections.abc import Callable
 from enum import Enum
 from pathlib import Path
-from typing import Any, Callable, Protocol, TypeGuard, TypeVar, get_args, get_origin
+from typing import Any, Protocol, TypeGuard, TypeVar, get_args, get_origin
 
 import attrs
 import markdown
