@@ -1121,7 +1121,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-1,046 (excluding blank lines)
+1,131 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1146,21 +1146,21 @@ All files in this stubs package are excluded from the stricter pyright settings 
 ### Statistics on the annotations in typeshed's stubs for `babel`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 395
-    - Unannotated parameters: 225
-    - Explicit `Any` parameters: 52
+    - Annotated parameters: 497
+    - Unannotated parameters: 136
+    - Explicit `Any` parameters: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 249
-    - Unannotated returns: 121
+    - Annotated returns: 300
+    - Unannotated returns: 79
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 245
-    - Explicit `Any` variables: 149
+    - Annotated variables: 257
+    - Explicit `Any` variables: 100
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 42
+    - Total class definitions: 45
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -1227,7 +1227,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-784 (excluding blank lines)
+785 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1267,7 +1267,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 48
-    - Class definitions with `Any`: 2
+    - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
 <hr>
@@ -3584,18 +3584,18 @@ All files in this stubs package are excluded from the stricter pyright settings 
 ### Statistics on the annotations in typeshed's stubs for `jmespath`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 67
-    - Unannotated parameters: 66
-    - Explicit `Any` parameters: 26
+    - Annotated parameters: 81
+    - Unannotated parameters: 52
+    - Explicit `Any` parameters: 27
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 49
-    - Unannotated returns: 25
-    - Explicit `Any` returns: 26
+    - Annotated returns: 50
+    - Unannotated returns: 24
+    - Explicit `Any` returns: 27
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 48
-    - Explicit `Any` variables: 26
+    - Annotated variables: 45
+    - Explicit `Any` variables: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 22
@@ -6215,7 +6215,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,433 (excluding blank lines)
+2,432 (excluding blank lines)
 
 ### Package status: *up to date*
 
