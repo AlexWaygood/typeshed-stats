@@ -290,30 +290,30 @@
     "package_name": "Pillow",
     "stub_distribution_name": "types-Pillow",
     "extra_description": null,
-    "number_of_lines": 2353,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 2404,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 6
+      "allowlist_length": 5
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 629,
-      "unannotated_parameters": 619,
-      "annotated_returns": 456,
-      "unannotated_returns": 347,
+      "annotated_parameters": 632,
+      "unannotated_parameters": 618,
+      "annotated_returns": 460,
+      "unannotated_returns": 346,
       "explicit_Incomplete_parameters": 3,
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 64,
       "explicit_Any_returns": 4,
-      "annotated_variables": 782,
-      "explicit_Any_variables": 335,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 192,
+      "annotated_variables": 814,
+      "explicit_Any_variables": 333,
+      "explicit_Incomplete_variables": 2,
+      "classdefs": 195,
       "classdefs_with_Any": 4,
       "classdefs_with_Incomplete": 0
     }

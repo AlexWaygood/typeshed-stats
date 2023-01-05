@@ -481,11 +481,11 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-2,353 (excluding blank lines)
+2,404 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -497,7 +497,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 allowlist entries for `Pillow` when running stubtest in CI.
+Typeshed currently has 5 allowlist entries for `Pillow` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -506,21 +506,21 @@ All files in this stubs package are excluded from the stricter pyright settings 
 ### Statistics on the annotations in typeshed's stubs for `Pillow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 629
-    - Unannotated parameters: 619
+    - Annotated parameters: 632
+    - Unannotated parameters: 618
     - Explicit `Any` parameters: 64
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
-    - Annotated returns: 456
-    - Unannotated returns: 347
+    - Annotated returns: 460
+    - Unannotated returns: 346
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 782
-    - Explicit `Any` variables: 335
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Annotated variables: 814
+    - Explicit `Any` variables: 333
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
-    - Total class definitions: 192
+    - Total class definitions: 195
     - Class definitions with `Any`: 4
     - Class definitions marked as at least partially `Incomplete`: 0
 
