@@ -145,6 +145,9 @@ def example_stub_source() -> str:
         class Bacon(dict[str, Any], list[Any], tuple[Any, ...]): ...
         class Ham(dict[str, Incomplete], list[Incomplete], tuple[Incomplete, ...]): ...
         class SpammySpam(dict[str, list[Incomplete]], list[list[Any]]): ...
+        class Peanuts(Any): ...
+        class Cashews(Incomplete): ...
+        class Peas(Any, Incomplete): ...
         """
     )
 
@@ -163,9 +166,9 @@ def expected_stats_on_example_stub_file() -> AnnotationStats:
         annotated_variables=12,
         explicit_Any_variables=4,
         explicit_Incomplete_variables=2,
-        classdefs=6,
-        classdefs_with_Any=2,
-        classdefs_with_Incomplete=2,
+        classdefs=9,
+        classdefs_with_Any=4,
+        classdefs_with_Incomplete=4,
     )
 
 
