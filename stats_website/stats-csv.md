@@ -13,7 +13,9 @@ instead.
 
 <hr>
 
-<table>
+<input type="text" id="statsTableFilterInput" onkeyup="filterTable()" placeholder="Search for packages..">
+
+<table id="statsTable">
   <thead>
     <tr>
       {% for key, val in stats_as_csv[0].items() %}
