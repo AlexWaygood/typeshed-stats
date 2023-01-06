@@ -482,32 +482,32 @@
     "package_name": "SQLAlchemy",
     "stub_distribution_name": "types-SQLAlchemy",
     "extra_description": "The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.",
-    "number_of_lines": 14546,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 14571,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 1151
+      "allowlist_length": 1154
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2192,
+      "annotated_parameters": 2194,
       "unannotated_parameters": 7019,
       "annotated_returns": 2158,
       "unannotated_returns": 3319,
-      "explicit_Incomplete_parameters": 37,
+      "explicit_Incomplete_parameters": 103,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 1168,
+      "explicit_Any_parameters": 1102,
       "explicit_Any_returns": 23,
-      "annotated_variables": 3114,
-      "explicit_Any_variables": 2062,
-      "explicit_Incomplete_variables": 3,
-      "classdefs": 1331,
-      "classdefs_with_Any": 63,
-      "classdefs_with_Incomplete": 1
+      "annotated_variables": 3115,
+      "explicit_Any_variables": 1868,
+      "explicit_Incomplete_variables": 197,
+      "classdefs": 1332,
+      "classdefs_with_Any": 62,
+      "classdefs_with_Incomplete": 2
     }
   },
   {
@@ -1859,7 +1859,7 @@
     "package_name": "gdb",
     "stub_distribution_name": "types-gdb",
     "extra_description": "Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: is is not possible to install the `gdb` package separately, for instance using `pip`.",
-    "number_of_lines": 724,
+    "number_of_lines": 733,
     "package_status": "NOT_ON_PYPI",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1871,7 +1871,7 @@
     "annotation_stats": {
       "annotated_parameters": 233,
       "unannotated_parameters": 0,
-      "annotated_returns": 253,
+      "annotated_returns": 257,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
@@ -1880,7 +1880,7 @@
       "annotated_variables": 290,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 86,
+      "classdefs": 87,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -3621,8 +3621,8 @@
     "package_name": "redis",
     "stub_distribution_name": "types-redis",
     "extra_description": null,
-    "number_of_lines": 5336,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 5340,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -3633,18 +3633,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3457,
+      "annotated_parameters": 3460,
       "unannotated_parameters": 1300,
-      "annotated_returns": 1264,
-      "unannotated_returns": 657,
+      "annotated_returns": 1260,
+      "unannotated_returns": 652,
       "explicit_Incomplete_parameters": 88,
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 318,
       "explicit_Any_returns": 317,
-      "annotated_variables": 595,
-      "explicit_Any_variables": 235,
+      "annotated_variables": 591,
+      "explicit_Any_variables": 231,
       "explicit_Incomplete_variables": 12,
-      "classdefs": 206,
+      "classdefs": 207,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 2
     }
