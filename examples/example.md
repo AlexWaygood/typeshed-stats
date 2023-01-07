@@ -4937,6 +4937,59 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 <hr>
 
+## Info on typeshed's stubs for `pyasn1`
+
+### Stub distribution name
+
+`types-pyasn1`
+
+### Number of lines
+
+1,321 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 8 allowlist entries for `pyasn1` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `pyasn1`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 196
+    - Unannotated parameters: 501
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 38
+- Returns:
+    - Annotated returns: 110
+    - Unannotated returns: 412
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
+- Variables:
+    - Annotated variables: 207
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+- Class definitions:
+    - Total class definitions: 164
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+<hr>
+
 ## Info on typeshed's stubs for `pyaudio`
 
 ### Stub distribution name
