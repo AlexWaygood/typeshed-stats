@@ -110,7 +110,7 @@ class _SingleAnnotationAnalyzer(ast.NodeVisitor):
         value = node.value
         if isinstance(value, ast.Name):
             match f"{value.id}.{node.attr}":
-                case "typing.Any":
+                case "typing.Any" | "typing_extensions.Any":
                     self.analysis.Any_in_annotation = True
                 case "_typeshed.Incomplete":
                     self.analysis.Incomplete_in_annotation = True
