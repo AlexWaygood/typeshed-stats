@@ -3922,6 +3922,59 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 <hr>
 
+## Info on typeshed's stubs for `netaddr`
+
+### Stub distribution name
+
+`types-netaddr`
+
+### Number of lines
+
+660 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 8 allowlist entries for `netaddr` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `netaddr`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 292
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
+- Returns:
+    - Annotated returns: 310
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 103
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
+- Class definitions:
+    - Total class definitions: 43
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+<hr>
+
 ## Info on typeshed's stubs for `oauthlib`
 
 ### Stub distribution name
@@ -5685,7 +5738,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-359 (excluding blank lines)
+355 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5715,13 +5768,13 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicit `Any` parameters: 18
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 60
-    - Unannotated returns: 30
+    - Annotated returns: 64
+    - Unannotated returns: 26
     - Explicit `Any` returns: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 117
-    - Explicit `Any` variables: 33
+    - Explicit `Any` variables: 30
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 26
