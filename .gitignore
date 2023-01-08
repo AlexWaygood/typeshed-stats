@@ -1,3 +1,6 @@
+# Generated examples -- useful to keep around locally, but we don't want them committed
+examples/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
