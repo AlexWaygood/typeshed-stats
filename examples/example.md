@@ -2014,57 +2014,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 <hr>
 
-## Info on typeshed's stubs for `cryptography`
-
-### Stub distribution name
-
-`types-cryptography`
-
-### Number of lines
-
-1,742 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *skipped*
-
-Stubtest is skipped in typeshed's CI for this package.
-
-Typeshed currently has 38 allowlist entries for `cryptography` when running stubtest in CI.
-
-### Pyright settings in CI: *entirely excluded*
-
-All files in this stubs package are excluded from the pyright check in typeshed's CI.
-
-### Statistics on the annotations in typeshed's stubs for `cryptography`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 615
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
-- Returns:
-    - Annotated returns: 552
-    - Unannotated returns: 14
-    - Explicit `Any` returns: 18
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
-- Variables:
-    - Annotated variables: 279
-    - Explicit `Any` variables: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 225
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
-<hr>
-
 ## Info on typeshed's stubs for `dateparser`
 
 ### Stub distribution name
@@ -4036,7 +3985,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-8,979 (excluding blank lines)
+9,181 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4063,21 +4012,21 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 2,597
     - Unannotated parameters: 660
-    - Explicit `Any` parameters: 2,218
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2,218
 - Returns:
     - Annotated returns: 744
     - Unannotated returns: 423
-    - Explicit `Any` returns: 19
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 19
 - Variables:
     - Annotated variables: 4,197
-    - Explicit `Any` variables: 3,566
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3,566
 - Class definitions:
     - Total class definitions: 566
-    - Class definitions with `Any`: 5
-    - Class definitions marked as at least partially `Incomplete`: 0
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 5
 
 <hr>
 
@@ -4195,7 +4144,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,749 (excluding blank lines)
+1,750 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4223,7 +4172,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated parameters: 748
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 25
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
     - Annotated returns: 630
     - Unannotated returns: 0
@@ -5624,6 +5573,59 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 <hr>
 
+## Info on typeshed's stubs for `python-datemath`
+
+### Stub distribution name
+
+`types-python-datemath`
+
+### Number of lines
+
+16 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *missing stubs ignored*
+
+The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `python-datemath` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `python-datemath`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 16
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 4
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+- Variables:
+    - Annotated variables: 0
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+<hr>
+
 ## Info on typeshed's stubs for `python-dateutil`
 
 ### Stub distribution name
@@ -6902,9 +6904,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 13 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
