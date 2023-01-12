@@ -279,7 +279,7 @@ def gather_annotation_stats_on_file(path: Path | str) -> AnnotationStats:
         path: The location of the file to be analysed.
 
     Returns:
-        An [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] object
+        An [`AnnotationStats`](./#AnnotationStats) object
             containing data about the annotations in the file.
 
     Examples:
@@ -316,7 +316,7 @@ def gather_annotation_stats_on_package(
             in which to find the stubs package source.
 
     Returns:
-        An [`AnnotationStats`][typeshed_stats.gather.AnnotationStats] object
+        An [`AnnotationStats`](./#AnnotationStats) object
             containing data about the annotations in the package.
 
     Examples:
@@ -413,7 +413,7 @@ def get_stubtest_strictness(
             from which to retrieve the stubtest setting.
 
     Returns:
-        A member of the [`StubtestStrictness`][typeshed_stats.gather.StubtestStrictness]
+        A member of the [`StubtestStrictness`](./#StubtestStrictness)
             enumeration (see the docs on `StubtestStrictness` for details).
 
     Examples:
@@ -547,7 +547,7 @@ def get_stubtest_settings(
             from which to retrieve the stubtest settings.
 
     Returns:
-        An instance of the [`StubtestSettings`][typeshed_stats.gather.StubtestSettings] class.
+        An instance of the [`StubtestSettings`](./#StubtestSettings) class.
     """
     return StubtestSettings(
         strictness=get_stubtest_strictness(package_name, typeshed_dir=typeshed_dir),
@@ -642,8 +642,8 @@ async def get_package_status(
             created to make the network request.
 
     Returns:
-        A member of the [`PackageStatus`][typeshed_stats.gather.PackageStatus]
-            enumeration (see the docs on `PackageStatus` for details).
+        A member of the [`PackageStatus`](./#PackageStatus) enumeration
+            (see the docs on `PackageStatus` for details).
 
     Examples:
         >>> import asyncio
@@ -704,8 +704,8 @@ def get_upload_status(
             from which to retrieve the stubtest setting.
 
     Returns:
-        A member of the [`UploadStatus`][typeshed_stats.gather.UploadStatus]
-            enumeration (see the docs on `UploadStatus` for details).
+        A member of the [`UploadStatus`](./#UploadStatus) enumeration
+            (see the docs on `UploadStatus` for details).
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_upload_status
@@ -876,8 +876,8 @@ def get_pyright_setting_for_path(
             from which to retrieve the pyright setting.
 
     Returns:
-        A member of the [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]
-            enumeration (see the docs on `PyrightSetting` for details).
+        A member of the [`PyrightSetting`](./#PyrightSetting) enumeration
+            (see the docs on `PyrightSetting` for details).
     """
     entirely_excluded_paths = _get_pyright_excludelist(
         typeshed_dir=typeshed_dir, config_filename="pyrightconfig.json"
@@ -909,8 +909,8 @@ def get_pyright_setting_for_package(
             from which to retrieve the pyright setting.
 
     Returns:
-        A member of the [`PyrightSetting`][typeshed_stats.gather.PyrightSetting]
-            enumeration (see the docs on `PyrightSetting` for details).
+        A member of the [`PyrightSetting`](./#PyrightSetting) enumeration
+            (see the docs on `PyrightSetting` for details).
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_pyright_setting_for_package
@@ -958,8 +958,7 @@ async def gather_stats_on_package(
 
     !!! note
 
-        This function calls
-        [`get_package_status()`][typeshed_stats.gather.get_package_status],
+        This function calls [`get_package_status()`](./#get_package_status),
         which makes network requests to PyPI.
         See the docs on `get_package_status()` for details.
 
@@ -973,7 +972,7 @@ async def gather_stats_on_package(
             created to make the network request.
 
     Returns:
-        An instance of the [`PackageInfo`][typeshed_stats.gather.PackageInfo] class.
+        An instance of the [`PackageInfo`](./#PackageInfo) class.
 
     Examples:
         >>> import asyncio
@@ -1096,7 +1095,7 @@ def gather_stats_on_file(
             This can be an absolute or relative path.
 
     Returns:
-        An instance of the [`FileInfo`][typeshed_stats.gather.FileInfo] class.
+        An instance of the [`FileInfo`](./#FileInfo) class.
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, gather_stats_on_file
@@ -1174,7 +1173,7 @@ def gather_stats_on_multiple_packages(
         typeshed_dir: The path to a local clone of typeshed.
 
     Returns:
-        A sequence of [`PackageInfo`][typeshed_stats.gather.PackageInfo] objects.
+        A sequence of [`PackageInfo`](./#PackageInfo) objects.
             Each `PackageInfo` object contains information representing an analysis
             of a certain stubs package in typeshed.
 
