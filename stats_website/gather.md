@@ -10,6 +10,8 @@ hide:
 
 <hr>
 
+<a name={{ name }}></a>
+
 ::: typeshed_stats.gather.{{ name }}
     options:
       show_root_heading: true

@@ -15,6 +15,7 @@ import attrs
 import markdown
 
 import typeshed_stats.gather
+import typeshed_stats.serialize
 
 CF = TypeVar("CF", bound=Callable[..., Any])
 
@@ -36,6 +37,9 @@ def define_env(env: Env) -> None:
         ["typeshed-stats", "--help"], text=True, capture_output=True
     )
     env.variables["cli_help"] = help_result.stdout + "\n"
+
+    # Variables needed for serialize.md
+    env.variables["serialize"] = typeshed_stats.serialize
 
     # Variables needed for gather.md
     @env.macro
@@ -80,13 +84,16 @@ def define_env(env: Env) -> None:
                 {key: int(val) if val.isdigit() else val for key, val in line.items()}
             )
 
+    @env.macro
+    def is_int(x: object) -> TypeGuard[int]:
+        return isinstance(x, int)
+
     env.variables.update(
         last_update_time=dt.datetime.utcnow().strftime("%H:%M UTC on %Y-%m-%d"),
         num_packages=len(stats_as_csv),
         formatted_stats=Path("examples", "example.md").read_text(encoding="utf-8"),
         num_lines=sum(int(s["number_of_lines"]) for s in stats_as_csv),
         stats_as_csv=stats_as_csv,
-        is_int=lambda x: isinstance(x, int),
         markdown=markdown,
     )
 
