@@ -4250,7 +4250,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,740 (excluding blank lines)
+1,742 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4266,7 +4266,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 31 allowlist entries for `passlib` when running stubtest in CI.
+Typeshed currently has 32 allowlist entries for `passlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4286,7 +4286,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 576
-    - Explicit `Any` variables: 105
+    - Explicit `Any` variables: 104
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 143
@@ -6323,7 +6323,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,432 (excluding blank lines)
+2,427 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6358,11 +6358,11 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 627
-    - Explicit `Any` variables: 401
+    - Annotated variables: 623
+    - Explicit `Any` variables: 397
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 9
 - Class definitions:
-    - Total class definitions: 155
+    - Total class definitions: 154
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -6955,7 +6955,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,333 (excluding blank lines)
+1,368 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6980,21 +6980,21 @@ All files in this stubs package are excluded from the stricter pyright settings 
 ### Statistics on the annotations in typeshed's stubs for `tqdm`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 788
-    - Unannotated parameters: 129
+    - Annotated parameters: 809
+    - Unannotated parameters: 142
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 18
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 39
 - Returns:
-    - Annotated returns: 139
+    - Annotated returns: 163
     - Unannotated returns: 24
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
-    - Annotated variables: 95
+    - Annotated variables: 99
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 70
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 74
 - Class definitions:
-    - Total class definitions: 33
+    - Total class definitions: 35
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
