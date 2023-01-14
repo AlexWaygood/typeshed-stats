@@ -3630,7 +3630,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 5 allowlist entries for `keyboard` when running stubtest in CI.
+Typeshed currently has 6 allowlist entries for `keyboard` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7077,7 +7077,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 allowlist entries for `tree-sitter-languages` when running stubtest in CI.
+Typeshed currently has 3 allowlist entries for `tree-sitter-languages` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
