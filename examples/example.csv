@@ -1,5 +1,5 @@
 package_name,stub_distribution_name,extra_description,number_of_lines,package_status,upload_status,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables,classdefs,classdefs_with_Any,classdefs_with_Incomplete,stubtest_strictness,stubtest_platforms,stubtest_allowlist_length
-D3DShot,types-D3DShot,-,590,UP_TO_DATE,UPLOADED,STRICT,127,0,255,0,0,0,0,0,100,0,0,43,0,0,SKIPPED,None,0
+D3DShot,types-D3DShot,-,586,UP_TO_DATE,UPLOADED,STRICT,127,0,255,0,0,0,0,0,100,0,0,43,0,0,SKIPPED,None,0
 DateTimeRange,types-DateTimeRange,-,64,UP_TO_DATE,UPLOADED,STRICT,28,0,28,0,0,0,0,0,10,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 Deprecated,types-Deprecated,-,56,UP_TO_DATE,UPLOADED,STRICT,30,0,10,0,0,0,1,0,12,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 ExifRead,types-ExifRead,-,218,UP_TO_DATE,UPLOADED,STRICT,72,0,52,0,0,0,2,1,82,2,2,14,0,0,ERROR_ON_MISSING_STUB,linux,6
@@ -11,10 +11,10 @@ Markdown,types-Markdown,-,635,UP_TO_DATE,UPLOADED,NOT_STRICT,112,145,112,65,0,0,
 Pillow,types-Pillow,-,2404,UP_TO_DATE,UPLOADED,NOT_STRICT,632,618,460,346,3,2,64,4,814,333,2,195,4,0,MISSING_STUBS_IGNORED,linux,5
 PyAutoGUI,types-PyAutoGUI,-,219,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMySQL,types-PyMySQL,-,1039,UP_TO_DATE,UPLOADED,NOT_STRICT,139,53,98,40,0,0,38,18,733,62,0,24,0,0,MISSING_STUBS_IGNORED,linux,11
-PyScreeze,types-PyScreeze,-,177,UP_TO_DATE,UPLOADED,STRICT,93,0,18,0,0,0,0,0,13,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,0
+PyScreeze,types-PyScreeze,-,182,UP_TO_DATE,UPLOADED,STRICT,93,0,18,0,0,0,0,0,13,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,0
 PyYAML,types-PyYAML,-,1168,UP_TO_DATE,UPLOADED,NOT_STRICT,389,321,158,230,0,0,52,12,220,192,0,91,0,0,ERROR_ON_MISSING_STUB,linux,1
 Pygments,types-Pygments,-,677,UP_TO_DATE,UPLOADED,NOT_STRICT,108,157,96,79,0,2,24,2,313,193,0,62,1,0,MISSING_STUBS_IGNORED,linux,4
-SQLAlchemy,types-SQLAlchemy,The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.,14415,UP_TO_DATE,UPLOADED,NOT_STRICT,2117,7010,2117,3317,105,0,1101,23,3090,1861,196,1329,62,2,MISSING_STUBS_IGNORED,linux,1154
+SQLAlchemy,types-SQLAlchemy,The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.,14412,UP_TO_DATE,UPLOADED,NOT_STRICT,2117,7007,2115,3317,105,0,1101,23,3089,1860,196,1329,62,2,MISSING_STUBS_IGNORED,linux,1153
 Send2Trash,types-Send2Trash,-,21,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,1,3,0,2,1,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 aiofiles,types-aiofiles,-,592,UP_TO_DATE,UPLOADED,STRICT,342,0,136,0,21,7,29,1,0,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux;win32,57
 annoy,types-annoy,-,45,UP_TO_DATE,UPLOADED,STRICT,40,0,20,0,0,0,0,0,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -48,14 +48,14 @@ emoji,types-emoji,-,66,OBSOLETE,UPLOADED,STRICT,21,0,10,0,0,0,0,0,12,0,1,1,0,0,E
 entrypoints,types-entrypoints,-,45,UP_TO_DATE,UPLOADED,STRICT,23,0,12,0,0,0,0,1,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 first,types-first,-,14,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,2,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-2020,types-flake8-2020,-,22,UP_TO_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,12,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-flake8-bugbear,types-flake8-bugbear,-,27,OUT_OF_DATE,UPLOADED,STRICT,8,0,5,0,0,2,1,0,8,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,1
+flake8-bugbear,types-flake8-bugbear,-,27,UP_TO_DATE,UPLOADED,STRICT,8,0,5,0,0,2,1,0,8,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,1
 flake8-builtins,types-flake8-builtins,-,10,UP_TO_DATE,UPLOADED,STRICT,3,0,3,0,0,1,0,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-docstrings,types-flake8-docstrings,-,19,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,1,1,1,6,1,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-plugin-utils,types-flake8-plugin-utils,-,61,UP_TO_DATE,UPLOADED,STRICT,30,0,17,0,0,0,6,0,9,0,0,3,0,0,MISSING_STUBS_IGNORED,linux,6
 flake8-rst-docstrings,types-flake8-rst-docstrings,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-simplify,types-flake8-simplify,-,8,UP_TO_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-typing-imports,types-flake8-typing-imports,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,5,0,0,1,1,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
-fpdf2,types-fpdf2,-,2002,UP_TO_DATE,UPLOADED,NOT_STRICT,581,519,372,190,58,4,11,2,625,14,159,143,0,0,ERROR_ON_MISSING_STUB,linux,7
+fpdf2,types-fpdf2,-,2002,OUT_OF_DATE,UPLOADED,NOT_STRICT,581,519,372,190,58,4,11,2,625,14,159,143,0,0,ERROR_ON_MISSING_STUB,linux,7
 gdb,types-gdb,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: is is not possible to install the `gdb` package separately, for instance using `pip`.",733,NOT_ON_PYPI,UPLOADED,STRICT,233,0,257,0,0,0,0,0,290,0,0,87,0,0,SKIPPED,None,0
 google-cloud-ndb,types-google-cloud-ndb,-,1408,UP_TO_DATE,UPLOADED,NOT_STRICT,479,368,234,203,3,0,127,0,190,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
 hdbcli,types-hdbcli,-,129,UP_TO_DATE,UPLOADED,STRICT,77,0,62,0,6,4,12,7,21,2,2,16,0,0,ERROR_ON_MISSING_STUB,linux,5
@@ -68,7 +68,7 @@ invoke,types-invoke,-,745,UP_TO_DATE,UPLOADED,NOT_STRICT,245,171,177,73,1,0,28,8
 jmespath,types-jmespath,-,172,UP_TO_DATE,UPLOADED,NOT_STRICT,81,52,50,24,0,1,27,27,45,6,0,22,0,0,ERROR_ON_MISSING_STUB,linux,0
 jsonschema,types-jsonschema,-,385,UP_TO_DATE,UPLOADED,NOT_STRICT,108,295,145,31,0,1,22,9,54,23,0,25,0,0,MISSING_STUBS_IGNORED,linux,0
 keyboard,types-keyboard,-,241,UP_TO_DATE,UPLOADED,STRICT,130,0,76,0,0,0,0,0,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,6
-ldap3,types-ldap3,-,2600,UP_TO_DATE,UPLOADED,NOT_STRICT,558,654,219,421,47,0,235,0,931,322,57,316,0,0,MISSING_STUBS_IGNORED,linux,1
+ldap3,types-ldap3,-,2600,UP_TO_DATE,UPLOADED,NOT_STRICT,558,654,219,421,47,0,235,0,931,322,57,316,0,0,MISSING_STUBS_IGNORED,linux,0
 mock,types-mock,-,352,UP_TO_DATE,UPLOADED,STRICT,204,0,85,0,0,0,123,15,56,34,0,23,2,0,ERROR_ON_MISSING_STUB,linux,2
 mypy-extensions,types-mypy-extensions,-,64,UP_TO_DATE,UPLOADED,STRICT,28,0,25,0,0,0,1,7,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,2
 mysqlclient,types-mysqlclient,-,1213,UP_TO_DATE,UPLOADED,NOT_STRICT,28,128,83,30,0,0,4,51,972,31,0,35,1,0,ERROR_ON_MISSING_STUB,linux,1
@@ -98,7 +98,7 @@ pycocotools,types-pycocotools,-,172,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1
 pycurl,types-pycurl,-,674,UP_TO_DATE,UPLOADED,STRICT,22,0,32,0,7,10,0,0,629,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyfarmhash,types-pyfarmhash,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyflakes,types-pyflakes,-,428,UP_TO_DATE,UPLOADED,NOT_STRICT,267,69,210,2,0,0,4,3,76,33,0,74,0,0,MISSING_STUBS_IGNORED,linux,24
-pyinstaller,types-pyinstaller,-,421,UP_TO_DATE,UPLOADED,STRICT,187,0,117,0,9,0,1,3,96,1,0,18,0,0,ERROR_ON_MISSING_STUB,linux,33
+pyinstaller,types-pyinstaller,-,423,UP_TO_DATE,UPLOADED,STRICT,187,0,117,0,9,0,1,3,96,1,0,18,0,0,ERROR_ON_MISSING_STUB,linux,33
 pynput,types-pynput,-,325,UP_TO_DATE,UPLOADED,STRICT,81,0,71,0,0,0,11,0,155,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,14
 pyserial,types-pyserial,-,964,UP_TO_DATE,UPLOADED,STRICT,205,0,251,0,0,0,2,4,398,12,0,66,0,0,SKIPPED,None,83
 pysftp,types-pysftp,-,162,UP_TO_DATE,UPLOADED,STRICT,109,0,70,0,0,0,0,0,6,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -111,7 +111,7 @@ python-jose,types-python-jose,-,355,UP_TO_DATE,UPLOADED,NOT_STRICT,86,39,64,26,0
 python-nmap,types-python-nmap,-,116,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-slugify,types-python-slugify,-,45,UP_TO_DATE,UPLOADED,STRICT,19,0,3,0,0,0,0,0,12,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 python-xlib,types-python-xlib,-,5392,UP_TO_DATE,UPLOADED,STRICT,1335,0,583,0,0,0,15,8,3525,5,0,426,0,0,ERROR_ON_MISSING_STUB,linux,14
-pytz,types-pytz,-,127,OUT_OF_DATE,UPLOADED,STRICT,69,0,51,0,2,1,2,0,27,0,1,16,0,3,ERROR_ON_MISSING_STUB,linux,4
+pytz,types-pytz,-,127,UP_TO_DATE,UPLOADED,STRICT,69,0,51,0,2,1,2,0,27,0,1,16,0,3,ERROR_ON_MISSING_STUB,linux,4
 pyvmomi,types-pyvmomi,-,177,UP_TO_DATE,UPLOADED,STRICT,50,0,35,0,3,16,2,0,57,7,0,44,0,0,MISSING_STUBS_IGNORED,linux,8
 pywin32,types-pywin32,-,34531,UP_TO_DATE,UPLOADED,NOT_STRICT,3635,3729,3825,2043,426,292,1,1,25012,0,2832,724,0,0,ERROR_ON_MISSING_STUB,win32,49
 redis,types-redis,-,5340,OUT_OF_DATE,UPLOADED,NOT_STRICT,3460,1300,1260,652,88,2,318,317,591,231,12,207,0,2,MISSING_STUBS_IGNORED,linux,67
@@ -127,6 +127,7 @@ stdlib,-,-,51052,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,24508,713,13
 stdlib-list,types-stdlib-list,-,16,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,0,1,4,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 stripe,types-stripe,-,1414,OUT_OF_DATE,UPLOADED,NOT_STRICT,264,388,108,168,0,0,161,4,155,42,0,134,1,0,MISSING_STUBS_IGNORED,linux,6
 tabulate,types-tabulate,-,50,UP_TO_DATE,UPLOADED,STRICT,15,0,2,0,0,0,2,0,25,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
+tensorflow,types-tensorflow,-,268,OUT_OF_DATE,UPLOADED,STRICT,116,0,112,0,3,13,0,2,24,0,0,12,0,0,MISSING_STUBS_IGNORED,linux,14
 termcolor,types-termcolor,-,12,OBSOLETE,UPLOADED,STRICT,9,0,2,0,0,0,1,0,6,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 toml,types-toml,-,136,UP_TO_DATE,UPLOADED,STRICT,71,0,41,0,0,0,20,5,14,2,0,14,2,0,ERROR_ON_MISSING_STUB,linux,1
 toposort,types-toposort,-,13,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,1,0,1,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
