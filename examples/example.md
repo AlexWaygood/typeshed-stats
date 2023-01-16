@@ -5899,7 +5899,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,392 (excluding blank lines)
+5,393 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6325,9 +6325,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 2,427 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
