@@ -2976,11 +2976,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,002 (excluding blank lines)
+2,135 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2992,7 +2992,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 7 allowlist entries for `fpdf2` when running stubtest in CI.
+Typeshed currently has 9 allowlist entries for `fpdf2` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3001,21 +3001,21 @@ All files in this stubs package are excluded from the stricter pyright settings 
 ### Statistics on the annotations in typeshed's stubs for `fpdf2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 581
-    - Unannotated parameters: 519
+    - Annotated parameters: 622
+    - Unannotated parameters: 531
     - Explicit `Any` parameters: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 58
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 60
 - Returns:
-    - Annotated returns: 372
-    - Unannotated returns: 190
+    - Annotated returns: 397
+    - Unannotated returns: 194
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
-    - Annotated variables: 625
+    - Annotated variables: 674
     - Explicit `Any` variables: 14
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 159
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 161
 - Class definitions:
-    - Total class definitions: 143
+    - Total class definitions: 150
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
