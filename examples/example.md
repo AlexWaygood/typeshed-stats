@@ -640,7 +640,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-182 (excluding blank lines)
+181 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -675,7 +675,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 13
+    - Annotated variables: 14
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -1494,9 +1494,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 490 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -3457,9 +3457,9 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 745 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6058,7 +6058,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-34,531 (excluding blank lines)
+34,533 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6093,7 +6093,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 292
 - Variables:
-    - Annotated variables: 25,012
+    - Annotated variables: 25,025
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,832
 - Class definitions:
@@ -6796,7 +6796,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-269 (excluding blank lines)
+267 (excluding blank lines)
 
 ### Package status: *up to date*
 
