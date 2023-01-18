@@ -216,7 +216,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-123 (excluding blank lines)
+124 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -243,8 +243,8 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 62
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 8
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
     - Annotated returns: 23
     - Unannotated returns: 0
@@ -349,8 +349,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 54
     - Unannotated parameters: 21
-    - Explicit `Any` parameters: 20
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
     - Annotated returns: 24
     - Unannotated returns: 19
@@ -375,7 +375,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-281 (excluding blank lines)
+310 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -402,7 +402,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 107
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 5
+    - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 151
@@ -410,7 +410,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 26
+    - Annotated variables: 46
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -428,7 +428,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-635 (excluding blank lines)
+637 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -455,8 +455,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 112
     - Unannotated parameters: 145
-    - Explicit `Any` parameters: 17
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 12
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
 - Returns:
     - Annotated returns: 112
     - Unannotated returns: 65
@@ -481,7 +481,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-2,419 (excluding blank lines)
+2,463 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -508,8 +508,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 633
     - Unannotated parameters: 617
-    - Explicit `Any` parameters: 64
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
+    - Explicit `Any` parameters: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 64
 - Returns:
     - Annotated returns: 461
     - Unannotated returns: 345
@@ -614,8 +614,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 139
     - Unannotated parameters: 53
-    - Explicit `Any` parameters: 38
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 10
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 28
 - Returns:
     - Annotated returns: 98
     - Unannotated returns: 40
@@ -720,8 +720,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 389
     - Unannotated parameters: 321
-    - Explicit `Any` parameters: 52
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 40
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 12
 - Returns:
     - Annotated returns: 158
     - Unannotated returns: 230
@@ -746,7 +746,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-677 (excluding blank lines)
+689 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -773,8 +773,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 108
     - Unannotated parameters: 157
-    - Explicit `Any` parameters: 24
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
     - Annotated returns: 96
     - Unannotated returns: 79
@@ -803,7 +803,7 @@ The `sqlalchemy-stubs` package is an alternative to this package and also includ
 
 ### Number of lines
 
-14,412 (excluding blank lines)
+14,662 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -830,8 +830,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 2,117
     - Unannotated parameters: 7,007
-    - Explicit `Any` parameters: 1,101
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 105
+    - Explicit `Any` parameters: 75
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,131
 - Returns:
     - Annotated returns: 2,115
     - Unannotated returns: 3,317
@@ -909,7 +909,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-592 (excluding blank lines)
+593 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -936,8 +936,8 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 342
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 29
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
+    - Explicit `Any` parameters: 24
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 26
 - Returns:
     - Annotated returns: 136
     - Unannotated returns: 0
@@ -1068,7 +1068,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-705 (excluding blank lines)
+711 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1095,8 +1095,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 127
     - Unannotated parameters: 166
-    - Explicit `Any` parameters: 33
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 12
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
     - Annotated returns: 180
     - Unannotated returns: 94
@@ -1121,7 +1121,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-1,131 (excluding blank lines)
+1,134 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1148,8 +1148,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 497
     - Unannotated parameters: 136
-    - Explicit `Any` parameters: 34
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 19
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 15
 - Returns:
     - Annotated returns: 300
     - Unannotated returns: 79
@@ -1227,7 +1227,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-785 (excluding blank lines)
+795 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1254,8 +1254,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 240
     - Unannotated parameters: 137
-    - Explicit `Any` parameters: 32
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 31
 - Returns:
     - Annotated returns: 193
     - Unannotated returns: 49
@@ -1333,7 +1333,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-1,804 (excluding blank lines)
+1,891 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1360,8 +1360,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 837
     - Unannotated parameters: 685
-    - Explicit `Any` parameters: 366
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 21
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 345
 - Returns:
     - Annotated returns: 168
     - Unannotated returns: 442
@@ -1386,7 +1386,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-2,833 (excluding blank lines)
+2,859 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1413,8 +1413,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 80
     - Unannotated parameters: 394
-    - Explicit `Any` parameters: 74
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 75
 - Returns:
     - Annotated returns: 113
     - Unannotated returns: 304
@@ -1492,7 +1492,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-490 (excluding blank lines)
+492 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -1519,8 +1519,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 204
     - Unannotated parameters: 29
-    - Explicit `Any` parameters: 25
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
+    - Explicit `Any` parameters: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
 - Returns:
     - Annotated returns: 111
     - Unannotated returns: 7
@@ -1572,8 +1572,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 295
     - Unannotated parameters: 251
-    - Explicit `Any` parameters: 33
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 20
+    - Explicit `Any` parameters: 32
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
     - Annotated returns: 191
     - Unannotated returns: 132
@@ -1810,7 +1810,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-368 (excluding blank lines)
+370 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1837,8 +1837,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 63
     - Unannotated parameters: 158
-    - Explicit `Any` parameters: 55
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 55
 - Returns:
     - Annotated returns: 84
     - Unannotated returns: 76
@@ -2022,7 +2022,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-460 (excluding blank lines)
+467 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2049,8 +2049,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 126
     - Unannotated parameters: 127
-    - Explicit `Any` parameters: 25
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
     - Annotated returns: 75
     - Unannotated returns: 67
@@ -2234,7 +2234,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-9 (excluding blank lines)
+10 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2261,8 +2261,8 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 6
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
     - Annotated returns: 2
     - Unannotated returns: 0
@@ -2287,7 +2287,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-503 (excluding blank lines)
+507 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2314,8 +2314,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 213
     - Unannotated parameters: 60
-    - Explicit `Any` parameters: 36
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 6
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 30
 - Returns:
     - Annotated returns: 148
     - Unannotated returns: 10
@@ -2976,7 +2976,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,135 (excluding blank lines)
+2,137 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3003,8 +3003,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 622
     - Unannotated parameters: 531
-    - Explicit `Any` parameters: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 60
+    - Explicit `Any` parameters: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 67
 - Returns:
     - Annotated returns: 397
     - Unannotated returns: 194
@@ -3084,7 +3084,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,408 (excluding blank lines)
+1,416 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3111,8 +3111,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 479
     - Unannotated parameters: 368
-    - Explicit `Any` parameters: 127
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
+    - Explicit `Any` parameters: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 123
 - Returns:
     - Annotated returns: 234
     - Unannotated returns: 203
@@ -3190,7 +3190,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-663 (excluding blank lines)
+673 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3217,8 +3217,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 67
     - Unannotated parameters: 207
-    - Explicit `Any` parameters: 27
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 27
 - Returns:
     - Annotated returns: 100
     - Unannotated returns: 208
@@ -3243,7 +3243,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-250 (excluding blank lines)
+252 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3270,8 +3270,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 46
     - Unannotated parameters: 122
-    - Explicit `Any` parameters: 37
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 37
 - Returns:
     - Annotated returns: 39
     - Unannotated returns: 25
@@ -3296,7 +3296,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-333 (excluding blank lines)
+340 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3323,8 +3323,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 79
     - Unannotated parameters: 181
-    - Explicit `Any` parameters: 22
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 22
 - Returns:
     - Annotated returns: 82
     - Unannotated returns: 95
@@ -3561,7 +3561,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-385 (excluding blank lines)
+389 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3588,8 +3588,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 108
     - Unannotated parameters: 295
-    - Explicit `Any` parameters: 22
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 10
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 12
 - Returns:
     - Annotated returns: 145
     - Unannotated returns: 31
@@ -3667,7 +3667,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,600 (excluding blank lines)
+2,648 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3694,8 +3694,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 558
     - Unannotated parameters: 654
-    - Explicit `Any` parameters: 235
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 47
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 282
 - Returns:
     - Annotated returns: 219
     - Unannotated returns: 421
@@ -3720,7 +3720,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-352 (excluding blank lines)
+357 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3747,8 +3747,8 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 204
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 123
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 80
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 43
 - Returns:
     - Annotated returns: 85
     - Unannotated returns: 0
@@ -3826,7 +3826,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,213 (excluding blank lines)
+1,214 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3853,8 +3853,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 28
     - Unannotated parameters: 128
-    - Explicit `Any` parameters: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
     - Annotated returns: 83
     - Unannotated returns: 30
@@ -3932,7 +3932,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,296 (excluding blank lines)
+1,385 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3959,8 +3959,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 274
     - Unannotated parameters: 541
-    - Explicit `Any` parameters: 185
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 185
 - Returns:
     - Annotated returns: 139
     - Unannotated returns: 211
@@ -4065,8 +4065,8 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 105
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 22
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 21
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
     - Annotated returns: 113
     - Unannotated returns: 0
@@ -4171,8 +4171,8 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 748
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 25
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
+    - Explicit `Any` parameters: 24
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
     - Annotated returns: 630
     - Unannotated returns: 0
@@ -4250,7 +4250,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,742 (excluding blank lines)
+1,777 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4277,8 +4277,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 382
     - Unannotated parameters: 466
-    - Explicit `Any` parameters: 174
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 18
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 156
 - Returns:
     - Annotated returns: 155
     - Unannotated returns: 329
@@ -4652,8 +4652,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 18
     - Unannotated parameters: 77
-    - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
     - Annotated returns: 70
     - Unannotated returns: 56
@@ -4682,7 +4682,7 @@ Generated with aid from mypy-protobuf v3.4.0
 
 ### Number of lines
 
-4,280 (excluding blank lines)
+4,281 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4709,8 +4709,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 726
     - Unannotated parameters: 248
-    - Explicit `Any` parameters: 27
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 15
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 12
 - Returns:
     - Annotated returns: 494
     - Unannotated returns: 79
@@ -4735,7 +4735,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-1,506 (excluding blank lines)
+1,518 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4762,8 +4762,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 117
     - Unannotated parameters: 310
-    - Explicit `Any` parameters: 26
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 28
 - Returns:
     - Annotated returns: 185
     - Unannotated returns: 358
@@ -4788,7 +4788,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-1,552 (excluding blank lines)
+1,564 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4815,8 +4815,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 171
     - Unannotated parameters: 328
-    - Explicit `Any` parameters: 56
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 52
 - Returns:
     - Annotated returns: 189
     - Unannotated returns: 169
@@ -5634,7 +5634,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-441 (excluding blank lines)
+443 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5661,8 +5661,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 171
     - Unannotated parameters: 66
-    - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
 - Returns:
     - Annotated returns: 106
     - Unannotated returns: 48
@@ -5740,7 +5740,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-355 (excluding blank lines)
+356 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5767,8 +5767,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 86
     - Unannotated parameters: 39
-    - Explicit `Any` parameters: 18
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 14
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 4
 - Returns:
     - Annotated returns: 64
     - Unannotated returns: 26
@@ -6111,7 +6111,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-5,346 (excluding blank lines)
+5,430 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6138,8 +6138,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 3,472
     - Unannotated parameters: 1,291
-    - Explicit `Any` parameters: 317
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 88
+    - Explicit `Any` parameters: 58
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 347
 - Returns:
     - Annotated returns: 1,266
     - Unannotated returns: 647
@@ -6244,8 +6244,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 353
     - Unannotated parameters: 153
-    - Explicit `Any` parameters: 25
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
+    - Explicit `Any` parameters: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
 - Returns:
     - Annotated returns: 111
     - Unannotated returns: 86
@@ -6323,7 +6323,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,427 (excluding blank lines)
+2,444 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6350,8 +6350,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 821
     - Unannotated parameters: 393
-    - Explicit `Any` parameters: 73
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
+    - Explicit `Any` parameters: 29
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 47
 - Returns:
     - Annotated returns: 658
     - Unannotated returns: 262
@@ -6584,7 +6584,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,052 (excluding blank lines)
+51,114 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6690,7 +6690,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,414 (excluding blank lines)
+1,480 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6717,8 +6717,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 264
     - Unannotated parameters: 388
-    - Explicit `Any` parameters: 161
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 156
 - Returns:
     - Annotated returns: 108
     - Unannotated returns: 168
@@ -7194,8 +7194,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 30
     - Unannotated parameters: 14
-    - Explicit `Any` parameters: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
     - Annotated returns: 13
     - Unannotated returns: 10
@@ -7485,7 +7485,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-519 (excluding blank lines)
+523 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7512,8 +7512,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 101
     - Unannotated parameters: 179
-    - Explicit `Any` parameters: 21
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
     - Annotated returns: 73
     - Unannotated returns: 103
@@ -7538,7 +7538,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-628 (excluding blank lines)
+630 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7565,8 +7565,8 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 210
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 44
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicit `Any` parameters: 35
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 9
 - Returns:
     - Annotated returns: 209
     - Unannotated returns: 0
@@ -7574,8 +7574,8 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 246
-    - Explicit `Any` variables: 20
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 19
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
     - Total class definitions: 40
     - Class definitions with `Any`: 0
