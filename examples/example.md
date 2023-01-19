@@ -517,8 +517,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
     - Annotated variables: 824
-    - Explicit `Any` variables: 329
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 4
+    - Explicit `Any` variables: 325
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 8
 - Class definitions:
     - Total class definitions: 195
     - Class definitions with `Any`: 4
@@ -803,7 +803,7 @@ The `sqlalchemy-stubs` package is an alternative to this package and also includ
 
 ### Number of lines
 
-14,662 (excluding blank lines)
+14,666 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -830,8 +830,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 2,117
     - Unannotated parameters: 7,007
-    - Explicit `Any` parameters: 75
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,131
+    - Explicit `Any` parameters: 67
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,139
 - Returns:
     - Annotated returns: 2,115
     - Unannotated returns: 3,317
@@ -839,8 +839,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 3,089
-    - Explicit `Any` variables: 1,860
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 196
+    - Explicit `Any` variables: 1,859
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 197
 - Class definitions:
     - Total class definitions: 1,329
     - Class definitions with `Any`: 62
@@ -1227,7 +1227,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-795 (excluding blank lines)
+796 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1263,8 +1263,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 177
-    - Explicit `Any` variables: 71
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 69
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
     - Total class definitions: 48
     - Class definitions with `Any`: 0
@@ -1528,8 +1528,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 90
-    - Explicit `Any` variables: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
     - Total class definitions: 85
     - Class definitions with `Any`: 0
@@ -1863,7 +1863,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-686 (excluding blank lines)
+687 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1899,8 +1899,8 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 57
-    - Explicit `Any` variables: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
     - Total class definitions: 39
     - Class definitions with `Any`: 0
@@ -2607,9 +2607,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 27 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3747,8 +3747,8 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 204
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 80
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 43
+    - Explicit `Any` parameters: 76
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 47
 - Returns:
     - Annotated returns: 85
     - Unannotated returns: 0
@@ -4286,8 +4286,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 576
-    - Explicit `Any` variables: 104
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 102
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
     - Total class definitions: 143
     - Class definitions with `Any`: 2
@@ -4868,8 +4868,8 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 163
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 4
 - Returns:
     - Annotated returns: 198
     - Unannotated returns: 0
@@ -6111,7 +6111,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Number of lines
 
-5,430 (excluding blank lines)
+5,431 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6147,8 +6147,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
     - Annotated variables: 591
-    - Explicit `Any` variables: 227
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 12
+    - Explicit `Any` variables: 212
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 27
 - Class definitions:
     - Total class definitions: 207
     - Class definitions with `Any`: 0
@@ -6359,8 +6359,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 623
-    - Explicit `Any` variables: 397
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 9
+    - Explicit `Any` variables: 396
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 10
 - Class definitions:
     - Total class definitions: 154
     - Class definitions with `Any`: 0
@@ -6584,7 +6584,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,114 (excluding blank lines)
+51,177 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6600,7 +6600,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,769 allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,775 allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6609,12 +6609,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,509
+    - Annotated parameters: 24,546
     - Unannotated parameters: 713
-    - Explicit `Any` parameters: 2,043
+    - Explicit `Any` parameters: 2,049
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13,321
+    - Annotated returns: 13,327
     - Unannotated returns: 405
     - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
@@ -7521,8 +7521,8 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 184
-    - Explicit `Any` variables: 93
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 90
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
     - Total class definitions: 50
     - Class definitions with `Any`: 0
