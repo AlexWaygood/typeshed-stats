@@ -54,6 +54,5 @@ I'm glad you asked! They're in the `examples/` folder in this repo.
 
 1. Clone the repo and `cd` into it
 1. Create and activate a virtual environment
-1. Run `pip install -r requirements/all.txt`
-1. Run `pip install -e .[rich]`
+1. Run `pip install -e .[dev]`
 1. Either run the linters/tests individually (see the `.github/workflows` directory for details about what's run in CI) or use the `scripts/runtests.py` convenience script to run them all in succession.

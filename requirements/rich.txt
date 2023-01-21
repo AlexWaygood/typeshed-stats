@@ -1,0 +1,2 @@
+rich
+rich-argparse>=1

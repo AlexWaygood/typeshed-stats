@@ -33,14 +33,9 @@ jobs:
             requirements/docs.txt
             pyproject.toml
           python-version: "3.10"
-      - name: Install wheel
-        run: pip install "wheel<1"
-      - name: Install requirements
-        # Install with the [rich] extra so the CLI docs generated from --help are consistent
-        run: |
-          pip install -r requirements/docs.txt
-          pip install -e .[rich]
-          pip freeze --all
+      - run: pip install "wheel<1"
+      - run: pip install -e .[docs]
+      - run: pip freeze --all
       - name: Regenerate examples and docs
         id: regen
         run: python scripts/regenerate.py --download-typeshed
