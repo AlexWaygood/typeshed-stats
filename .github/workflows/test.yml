@@ -59,12 +59,9 @@ jobs:
             requirements/pytest.txt
             pyproject.toml
           python-version: ${{ matrix.python-version }}
-      - name: Install wheel
-        run: pip install "wheel<1"
-      - name: Install requirements
-        run: |
-          pip install coveralls -e .[pytest]
-          pip freeze --all
+      - run: pip install "wheel<1"
+      - run: pip install coveralls -e .[pytest]
+      - run: pip freeze --all
       - name: Run tests under coverage
         run: |
           coverage run -m pytest --doctest-modules

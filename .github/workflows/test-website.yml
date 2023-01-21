@@ -29,12 +29,9 @@ jobs:
             requirements/docs.txt
             pyproject.toml
           python-version: "3.10"
-      - name: Install wheel
-        run: pip install "wheel<1"
-      - name: Install requirements
-        run: |
-          pip install -e .[docs]
-          pip freeze --all
+      - run: pip install "wheel<1"
+      - run: pip install -e .[docs]
+      - run: pip freeze --all
       - name: Regenerate examples and docs
         run: python scripts/regenerate.py --download-typeshed
       - name: Check the generated files with pre-commit
