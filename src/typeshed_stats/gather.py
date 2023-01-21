@@ -580,7 +580,8 @@ class PackageStatus(_NiceReprEnum):
         "but these stubs are no longer updated by typeshed for some other reason."
     )
     OUT_OF_DATE = (
-        "These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs "
+        "These stubs may be out of date. "
+        "In typeshed's CI, [stubtest][] tests these stubs "
         "against an older version of the runtime package "
         "than the latest that's available."
     )
@@ -841,13 +842,14 @@ class PyrightSetting(_NiceReprEnum):
         "are excluded from the pyright check in typeshed's CI."
     )
     NOT_STRICT = (
-        "All files in this stubs package "
-        "are excluded from the stricter pyright settings in typeshed's CI."
+        "This package is tested with pyright in typeshed's CI, "
+        "but all files in this stubs package "
+        "are excluded from the stricter pyright settings."
     )
     STRICT_ON_SOME_FILES = (
         "Some files in this stubs package "
         "are tested with the stricter pyright settings in typeshed's CI; "
-        "some are excluded."
+        "some are excluded from the stricter settings."
     )
     STRICT = (
         "All files in this stubs package are tested with the stricter pyright settings "
@@ -923,7 +925,7 @@ def get_pyright_setting_for_package(
         Help on PyrightSetting in module typeshed_stats.gather:
         <BLANKLINE>
         PyrightSetting.STRICT_ON_SOME_FILES
-            Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded.
+            Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded from the stricter settings.
         <BLANKLINE>
     """
     return get_pyright_setting_for_path(
