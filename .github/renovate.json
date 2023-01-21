@@ -23,6 +23,10 @@
       "matchManagers": [
         "pip_requirements"
       ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "description": "Group all pip requirements",
       "stabilityDays": 7
     }
