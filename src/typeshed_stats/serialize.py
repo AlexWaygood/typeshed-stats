@@ -238,7 +238,7 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
 
         return template.render(**kwargs)
 
-    all_packages = "\n\n<hr>\n\n".join(format_package(info) for info in stats)
+    all_packages = "\n\n---\n\n".join(format_package(info) for info in stats)
     all_packages += (
         "\n\n"
         "[stubtest]: "

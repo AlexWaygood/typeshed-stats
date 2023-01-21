@@ -8,7 +8,7 @@ hide:
 
 {% for name in gather.__all__ %}
 
-<hr>
+---
 
 <a name={{ name }}></a>
 
