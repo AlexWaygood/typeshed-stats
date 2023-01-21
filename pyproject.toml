@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "typeshed_stats"
 dynamic = ["version"]
 authors = [
-  { name="Alex Waygood", email="alex.waygood@gmail.com" },
+    { name="Alex Waygood", email="alex.waygood@gmail.com" },
 ]
 description = "Library and command-line tool to gather stats on typeshed packages"
 license = { text = "MIT" }
