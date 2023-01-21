@@ -37,9 +37,7 @@ jobs:
         with:
           python-version: "3.10"
       - name: Check requirements can all be installed together
-        run: |
-          pip install -r requirements/all.txt
-          pip install -e .[rich]
+        run: pip install -e .[dev]
 
   create-issue-on-failure:
     name: Create an issue if daily requirements check failed

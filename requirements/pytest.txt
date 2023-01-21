@@ -8,4 +8,5 @@ pytest-asyncio==0.20.3
 pytest-dependency==0.5.1
 pytest-mock==3.10.0
 pytest-subtests==0.9.0
-tomli; python_version < "3.11"  # Already installed via `pip install -e .`, but better to be explicit about it (coverage also needs it)
+# Already installed via `pip install -e .`, but better to be explicit about it (coverage also needs it):
+tomli; python_version < "3.11"

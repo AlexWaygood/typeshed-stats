@@ -52,8 +52,7 @@ jobs:
         # so we detect if any of the dependencies has added a py.typed file recently
         if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && github.event_name == 'schedule' }}
         run: |
-          pip install -e .[rich]
-          pip install -r requirements/all.txt
+          pip install -e .[dev]
           pip freeze --all
       - name: Run mypy on the project
         run: mypy

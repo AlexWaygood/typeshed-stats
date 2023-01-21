@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-requirements-txt"]
 build-backend = "hatchling.build"
 
 [project]
 name = "typeshed_stats"
-dynamic = ["version"]
+dynamic = ["version", "optional-dependencies"]
 authors = [
   { name="Alex Waygood", email="alex.waygood@gmail.com" },
 ]
@@ -38,12 +38,6 @@ dependencies = [
     "tomli; python_version < '3.11'",
 ]
 
-[project.optional-dependencies]
-rich = [
-    "rich",
-    "rich-argparse>=0.6.0",
-]
-
 [project.urls]
 "Homepage" = "https://github.com/AlexWaygood/typeshed-stats"
 "Bug Tracker" = "https://github.com/AlexWaygood/typeshed-stats/issues"
@@ -53,6 +47,20 @@ typeshed-stats = "typeshed_stats._cli:main"
 
 [tool.hatch.version]
 path = "src/typeshed_stats/__init__.py"
+
+[tool.hatch.metadata.hooks.requirements_txt.optional-dependencies]
+rich = ["requirements/rich.txt"]
+# Include the [rich] extra in the [docs] extra so the CLI docs generated from --help are consistent
+docs = ["requirements/docs.txt", "requirements/rich.txt"]
+pytest = ["requirements/pytest.txt", "requirements/rich.txt"]
+dev = [
+    "requirements/rich.txt",
+    "requirements/docs.txt",
+    "requirements/flake8.txt",
+    "requirements/mypy.txt",
+    "requirements/pytest.txt",
+    "requirements/misc-lint.txt"
+]
 
 [tool.pycln]
 all = true
