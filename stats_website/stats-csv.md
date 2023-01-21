@@ -12,7 +12,7 @@ Note: This data is updated twice a day. For up-to-date results, consider using
 
 ---
 
-<input type="text" id="statsTableFilterInput" onkeyup="filterTable()" placeholder="Search for packages..">
+<input type="text" id="statsTableFilterInput" onkeyup="filterTable()" placeholder="Search for a package...">
 
 <table id="statsTable">
   <thead>
