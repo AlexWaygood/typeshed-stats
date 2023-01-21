@@ -47,7 +47,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `DateTimeRange`
 
@@ -100,7 +100,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `Deprecated`
 
@@ -153,7 +153,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `ExifRead`
 
@@ -206,7 +206,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `Flask-Cors`
 
@@ -259,7 +259,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `Flask-Migrate`
 
@@ -312,7 +312,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `Flask-SQLAlchemy`
 
@@ -365,7 +365,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `JACK-Client`
 
@@ -418,7 +418,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `Markdown`
 
@@ -471,7 +471,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `Pillow`
 
@@ -524,7 +524,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 4
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `PyAutoGUI`
 
@@ -577,7 +577,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `PyMySQL`
 
@@ -630,7 +630,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `PyScreeze`
 
@@ -683,7 +683,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `PyYAML`
 
@@ -736,7 +736,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `Pygments`
 
@@ -789,7 +789,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `SQLAlchemy`
 
@@ -846,7 +846,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 62
     - Class definitions marked as at least partially `Incomplete`: 2
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `Send2Trash`
 
@@ -899,7 +899,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `aiofiles`
 
@@ -952,7 +952,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `annoy`
 
@@ -1005,7 +1005,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `appdirs`
 
@@ -1058,7 +1058,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `aws-xray-sdk`
 
@@ -1111,7 +1111,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `babel`
 
@@ -1164,7 +1164,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `backports.ssl_match_hostname`
 
@@ -1217,7 +1217,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `beautifulsoup4`
 
@@ -1270,7 +1270,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `bleach`
 
@@ -1323,7 +1323,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `boto`
 
@@ -1376,7 +1376,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `braintree`
 
@@ -1429,7 +1429,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `cachetools`
 
@@ -1482,7 +1482,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `caldav`
 
@@ -1535,7 +1535,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `cffi`
 
@@ -1588,7 +1588,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `chardet`
 
@@ -1641,7 +1641,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `chevron`
 
@@ -1694,7 +1694,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `click-spinner`
 
@@ -1747,7 +1747,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `colorama`
 
@@ -1800,7 +1800,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `commonmark`
 
@@ -1853,7 +1853,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `console-menu`
 
@@ -1906,7 +1906,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `contextvars`
 
@@ -1959,7 +1959,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `croniter`
 
@@ -2012,7 +2012,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `dateparser`
 
@@ -2065,7 +2065,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `decorator`
 
@@ -2118,7 +2118,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `dj-database-url`
 
@@ -2171,7 +2171,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `dockerfile-parse`
 
@@ -2224,7 +2224,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `docopt`
 
@@ -2277,7 +2277,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `docutils`
 
@@ -2330,7 +2330,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `editdistance`
 
@@ -2383,7 +2383,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `emoji`
 
@@ -2436,7 +2436,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `entrypoints`
 
@@ -2489,7 +2489,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `first`
 
@@ -2542,7 +2542,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `flake8-2020`
 
@@ -2595,7 +2595,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `flake8-bugbear`
 
@@ -2648,7 +2648,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `flake8-builtins`
 
@@ -2701,7 +2701,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `flake8-docstrings`
 
@@ -2754,7 +2754,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `flake8-plugin-utils`
 
@@ -2807,7 +2807,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `flake8-rst-docstrings`
 
@@ -2860,7 +2860,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `flake8-simplify`
 
@@ -2913,7 +2913,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `flake8-typing-imports`
 
@@ -2966,7 +2966,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `fpdf2`
 
@@ -3019,7 +3019,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `gdb`
 
@@ -3074,7 +3074,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `google-cloud-ndb`
 
@@ -3127,7 +3127,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `hdbcli`
 
@@ -3180,7 +3180,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `html5lib`
 
@@ -3233,7 +3233,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 4
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `httplib2`
 
@@ -3286,7 +3286,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `humanfriendly`
 
@@ -3339,7 +3339,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `ibm-db`
 
@@ -3392,7 +3392,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `influxdb-client`
 
@@ -3445,7 +3445,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `invoke`
 
@@ -3498,7 +3498,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `jmespath`
 
@@ -3551,7 +3551,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `jsonschema`
 
@@ -3604,7 +3604,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `keyboard`
 
@@ -3657,7 +3657,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `ldap3`
 
@@ -3710,7 +3710,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `mock`
 
@@ -3763,7 +3763,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `mypy-extensions`
 
@@ -3816,7 +3816,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `mysqlclient`
 
@@ -3869,7 +3869,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `netaddr`
 
@@ -3922,7 +3922,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `oauthlib`
 
@@ -3975,7 +3975,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `openpyxl`
 
@@ -4028,7 +4028,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 5
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `opentracing`
 
@@ -4081,7 +4081,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `paho-mqtt`
 
@@ -4134,7 +4134,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `paramiko`
 
@@ -4187,7 +4187,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `parsimonious`
 
@@ -4240,7 +4240,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `passlib`
 
@@ -4293,7 +4293,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `passpy`
 
@@ -4346,7 +4346,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `peewee`
 
@@ -4399,7 +4399,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pep8-naming`
 
@@ -4452,7 +4452,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pika`
 
@@ -4509,7 +4509,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `playsound`
 
@@ -4562,7 +4562,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `polib`
 
@@ -4615,7 +4615,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `prettytable`
 
@@ -4668,7 +4668,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `protobuf`
 
@@ -4725,7 +4725,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `psutil`
 
@@ -4778,7 +4778,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 3
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `psycopg2`
 
@@ -4831,7 +4831,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pyOpenSSL`
 
@@ -4884,7 +4884,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pyRFC3339`
 
@@ -4937,7 +4937,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pyasn1`
 
@@ -4990,7 +4990,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pyaudio`
 
@@ -5043,7 +5043,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pycocotools`
 
@@ -5096,7 +5096,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pycurl`
 
@@ -5149,7 +5149,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pyfarmhash`
 
@@ -5202,7 +5202,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pyflakes`
 
@@ -5255,7 +5255,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pyinstaller`
 
@@ -5308,7 +5308,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pynput`
 
@@ -5361,7 +5361,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pyserial`
 
@@ -5412,7 +5412,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pysftp`
 
@@ -5465,7 +5465,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pytest-lazy-fixture`
 
@@ -5518,7 +5518,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `python-crontab`
 
@@ -5571,7 +5571,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 1
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `python-datemath`
 
@@ -5624,7 +5624,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `python-dateutil`
 
@@ -5677,7 +5677,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `python-gflags`
 
@@ -5730,7 +5730,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `python-jose`
 
@@ -5783,7 +5783,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `python-nmap`
 
@@ -5836,7 +5836,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `python-slugify`
 
@@ -5889,7 +5889,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `python-xlib`
 
@@ -5942,7 +5942,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pytz`
 
@@ -5995,7 +5995,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 3
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pyvmomi`
 
@@ -6048,7 +6048,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `pywin32`
 
@@ -6101,7 +6101,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `redis`
 
@@ -6154,7 +6154,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 2
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `regex`
 
@@ -6207,7 +6207,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `requests`
 
@@ -6260,7 +6260,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `retry`
 
@@ -6313,7 +6313,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `setuptools`
 
@@ -6366,7 +6366,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `simplejson`
 
@@ -6419,7 +6419,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `singledispatch`
 
@@ -6472,7 +6472,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `six`
 
@@ -6525,7 +6525,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `slumber`
 
@@ -6578,7 +6578,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for the stdlib
 
@@ -6627,7 +6627,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Class definitions with `Any`: 22
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `stdlib-list`
 
@@ -6680,7 +6680,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `stripe`
 
@@ -6733,7 +6733,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `tabulate`
 
@@ -6786,7 +6786,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `tensorflow`
 
@@ -6839,7 +6839,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `termcolor`
 
@@ -6892,7 +6892,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `toml`
 
@@ -6945,7 +6945,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `toposort`
 
@@ -6998,7 +6998,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `tqdm`
 
@@ -7051,7 +7051,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `tree-sitter`
 
@@ -7104,7 +7104,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `tree-sitter-languages`
 
@@ -7157,7 +7157,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `ttkthemes`
 
@@ -7210,7 +7210,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `typed-ast`
 
@@ -7263,7 +7263,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `tzlocal`
 
@@ -7316,7 +7316,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `ujson`
 
@@ -7369,7 +7369,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `untangle`
 
@@ -7422,7 +7422,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `urllib3`
 
@@ -7475,7 +7475,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `vobject`
 
@@ -7528,7 +7528,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `waitress`
 
@@ -7581,7 +7581,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `whatthepatch`
 
@@ -7634,7 +7634,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `xmltodict`
 
@@ -7687,7 +7687,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `xxhash`
 
@@ -7740,7 +7740,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
-<hr>
+---
 
 ## Info on typeshed's stubs for `zxcvbn`
 
