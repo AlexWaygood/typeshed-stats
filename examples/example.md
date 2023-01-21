@@ -289,7 +289,7 @@ Typeshed currently has 0 allowlist entries for `Flask-Migrate` when running stub
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `Flask-Migrate`
 
@@ -342,7 +342,7 @@ Typeshed currently has 1 allowlist entry for `Flask-SQLAlchemy` when running stu
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `Flask-SQLAlchemy`
 
@@ -448,7 +448,7 @@ Typeshed currently has 12 allowlist entries for `Markdown` when running stubtest
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `Markdown`
 
@@ -501,7 +501,7 @@ Typeshed currently has 1 allowlist entry for `Pillow` when running stubtest in C
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `Pillow`
 
@@ -607,7 +607,7 @@ Typeshed currently has 11 allowlist entries for `PyMySQL` when running stubtest 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `PyMySQL`
 
@@ -713,7 +713,7 @@ Typeshed currently has 1 allowlist entry for `PyYAML` when running stubtest in C
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `PyYAML`
 
@@ -766,7 +766,7 @@ Typeshed currently has 4 allowlist entries for `Pygments` when running stubtest 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `Pygments`
 
@@ -823,7 +823,7 @@ Typeshed currently has 1,153 allowlist entries for `SQLAlchemy` when running stu
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `SQLAlchemy`
 
@@ -1088,7 +1088,7 @@ Typeshed currently has 4 allowlist entries for `aws-xray-sdk` when running stubt
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `aws-xray-sdk`
 
@@ -1141,7 +1141,7 @@ Typeshed currently has 0 allowlist entries for `babel` when running stubtest in 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `babel`
 
@@ -1247,7 +1247,7 @@ Typeshed currently has 0 allowlist entries for `beautifulsoup4` when running stu
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `beautifulsoup4`
 
@@ -1300,7 +1300,7 @@ Typeshed currently has 2 allowlist entries for `bleach` when running stubtest in
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `bleach`
 
@@ -1353,7 +1353,7 @@ Typeshed currently has 9 allowlist entries for `boto` when running stubtest in C
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `boto`
 
@@ -1406,7 +1406,7 @@ Typeshed currently has 1 allowlist entry for `braintree` when running stubtest i
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `braintree`
 
@@ -1496,7 +1496,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *out of date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -1512,7 +1512,7 @@ Typeshed currently has 9 allowlist entries for `caldav` when running stubtest in
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `caldav`
 
@@ -1565,7 +1565,7 @@ Typeshed currently has 8 allowlist entries for `cffi` when running stubtest in C
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `cffi`
 
@@ -1830,7 +1830,7 @@ Typeshed currently has 0 allowlist entries for `commonmark` when running stubtes
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `commonmark`
 
@@ -2042,7 +2042,7 @@ Typeshed currently has 14 allowlist entries for `dateparser` when running stubte
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `dateparser`
 
@@ -2307,7 +2307,7 @@ Typeshed currently has 19 allowlist entries for `docutils` when running stubtest
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
@@ -2996,7 +2996,7 @@ Typeshed currently has 9 allowlist entries for `fpdf2` when running stubtest in 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `fpdf2`
 
@@ -3104,7 +3104,7 @@ Typeshed currently has 3 allowlist entries for `google-cloud-ndb` when running s
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `google-cloud-ndb`
 
@@ -3210,7 +3210,7 @@ Typeshed currently has 0 allowlist entries for `html5lib` when running stubtest 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `html5lib`
 
@@ -3263,7 +3263,7 @@ Typeshed currently has 1 allowlist entry for `httplib2` when running stubtest in
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `httplib2`
 
@@ -3316,7 +3316,7 @@ Typeshed currently has 7 allowlist entries for `humanfriendly` when running stub
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `humanfriendly`
 
@@ -3422,7 +3422,7 @@ Typeshed currently has 6 allowlist entries for `influxdb-client` when running st
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `influxdb-client`
 
@@ -3459,7 +3459,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *out of date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -3475,7 +3475,7 @@ Typeshed currently has 2 allowlist entries for `invoke` when running stubtest in
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `invoke`
 
@@ -3528,7 +3528,7 @@ Typeshed currently has 0 allowlist entries for `jmespath` when running stubtest 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `jmespath`
 
@@ -3581,7 +3581,7 @@ Typeshed currently has 0 allowlist entries for `jsonschema` when running stubtes
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `jsonschema`
 
@@ -3687,7 +3687,7 @@ Typeshed currently has 0 allowlist entries for `ldap3` when running stubtest in 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `ldap3`
 
@@ -3846,7 +3846,7 @@ Typeshed currently has 1 allowlist entry for `mysqlclient` when running stubtest
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `mysqlclient`
 
@@ -3952,7 +3952,7 @@ Typeshed currently has 1 allowlist entry for `oauthlib` when running stubtest in
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `oauthlib`
 
@@ -4005,7 +4005,7 @@ Typeshed currently has 1 allowlist entry for `openpyxl` when running stubtest in
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
@@ -4148,7 +4148,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *out of date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -4270,7 +4270,7 @@ Typeshed currently has 32 allowlist entries for `passlib` when running stubtest 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `passlib`
 
@@ -4376,7 +4376,7 @@ Typeshed currently has 25 allowlist entries for `peewee` when running stubtest i
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
@@ -4486,7 +4486,7 @@ Typeshed currently has 24 allowlist entries for `pika` when running stubtest in 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `pika`
 
@@ -4645,7 +4645,7 @@ Typeshed currently has 0 allowlist entries for `prettytable` when running stubte
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `prettytable`
 
@@ -4702,7 +4702,7 @@ Typeshed currently has 14 allowlist entries for `protobuf` when running stubtest
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
@@ -4755,7 +4755,7 @@ Typeshed currently has 20 allowlist entries for `psutil` when running stubtest i
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `psutil`
 
@@ -4808,7 +4808,7 @@ Typeshed currently has 5 allowlist entries for `psycopg2` when running stubtest 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `psycopg2`
 
@@ -4967,7 +4967,7 @@ Typeshed currently has 8 allowlist entries for `pyasn1` when running stubtest in
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `pyasn1`
 
@@ -5232,7 +5232,7 @@ Typeshed currently has 24 allowlist entries for `pyflakes` when running stubtest
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `pyflakes`
 
@@ -5548,7 +5548,7 @@ Typeshed currently has 2 allowlist entries for `python-crontab` when running stu
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `python-crontab`
 
@@ -5654,7 +5654,7 @@ Typeshed currently has 11 allowlist entries for `python-dateutil` when running s
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `python-dateutil`
 
@@ -5760,7 +5760,7 @@ Typeshed currently has 6 allowlist entries for `python-jose` when running stubte
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `python-jose`
 
@@ -6078,7 +6078,7 @@ Typeshed currently has 49 allowlist entries for `pywin32` when running stubtest 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
@@ -6115,7 +6115,7 @@ All files in this stubs package are excluded from the stricter pyright settings 
 
 ### Package status: *out of date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6131,7 +6131,7 @@ Typeshed currently has 66 allowlist entries for `redis` when running stubtest in
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `redis`
 
@@ -6237,7 +6237,7 @@ Typeshed currently has 26 allowlist entries for `requests` when running stubtest
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `requests`
 
@@ -6327,7 +6327,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *out of date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6343,7 +6343,7 @@ Typeshed currently has 29 allowlist entries for `setuptools` when running stubte
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
@@ -6604,7 +6604,7 @@ Typeshed currently has 1,775 allowlist entries for the stdlib when running stubt
 
 ### Pyright settings in CI: *strict on some files*
 
-Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded.
+Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded from the stricter settings.
 
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
@@ -6694,7 +6694,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Package status: *out of date*
 
-These stubs are out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6710,7 +6710,7 @@ Typeshed currently has 6 allowlist entries for `stripe` when running stubtest in
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `stripe`
 
@@ -7028,7 +7028,7 @@ Typeshed currently has 3 allowlist entries for `tqdm` when running stubtest in C
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `tqdm`
 
@@ -7187,7 +7187,7 @@ Typeshed currently has 0 allowlist entries for `ttkthemes` when running stubtest
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `ttkthemes`
 
@@ -7452,7 +7452,7 @@ Typeshed currently has 30 allowlist entries for `urllib3` when running stubtest 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `urllib3`
 
@@ -7505,7 +7505,7 @@ Typeshed currently has 11 allowlist entries for `vobject` when running stubtest 
 
 ### Pyright settings in CI: *not strict*
 
-All files in this stubs package are excluded from the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `vobject`
 
