@@ -15,6 +15,6 @@ Note: these statistics were last updated at: <b>{{ last_update_time }}</b>.
 For up-to-date statistics, consider using [the CLI tool][cli-tool] instead.
 </i>
 
-<hr>
+---
 
 {{ formatted_stats }}
