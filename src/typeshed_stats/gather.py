@@ -105,6 +105,7 @@ class _SingleAnnotationAnalyzer(ast.NodeVisitor):
                 self.analysis.Incomplete_in_annotation = True
             case _:
                 pass
+        self.generic_visit(node)
 
     def visit_Attribute(self, node: ast.Attribute) -> None:
         value = node.value
