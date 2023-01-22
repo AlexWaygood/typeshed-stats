@@ -5,7 +5,8 @@
   ],
   "pip_requirements": {
     "fileMatch": [
-      "^requirements/[^/]+\\.txt$"
+      "^requirements/[^/]+\\.txt$",
+      "^\\.github/workflows/*\\.yml$"
     ]
   },
   "packageRules": [
