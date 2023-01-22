@@ -14,12 +14,16 @@
 #       SIM905
 #       PT004
 #       PT005
+#
+# This flake8-bugbear rule has a *huge* number of false positives:
+#       B907
 
 [flake8]
 max-line-length = 80
 max-complexity = 12
+extend-select = B9
 ignore =
-  B950, E203, E501, W503, W291, W293, SIM905, PT004, PT005
+  B907, B950, E203, E501, W503, W291, W293, SIM905, PT004, PT005
 
 # flake8-noqa config
 noqa-require-code = true
