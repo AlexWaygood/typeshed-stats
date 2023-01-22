@@ -12,4 +12,3 @@ rich-argparse>=0.6.0
 tomli; python_version < '3.11'
 types-beautifulsoup4==4.11.6.1
 types-Markdown==3.4.2.1
-types-tabulate==0.9.0
