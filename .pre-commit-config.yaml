@@ -59,6 +59,11 @@ repos:
     rev: v3.0.0-alpha.4
     hooks:
       - id: prettier
+        exclude: ["examples/*"]
+        exclude_types: ["markdown"]
+  - repo: meta
+    hooks:
+      - id: check-hooks-apply
 
 ci:
     autofix_commit_msg: '[pre-commit.ci] auto fixes from pre-commit.com hooks'
