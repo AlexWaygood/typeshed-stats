@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "pip_requirements": {
-    "fileMatch": ["^requirements/[^/]+\\.txt$", "^\\.github/workflows/*\\.yml$"]
+    "fileMatch": ["^requirements/[^/]+\\.txt$", "^\\.github/workflows/[^/]+\\.ya?ml$"]
   },
   "packageRules": [
     {
@@ -16,7 +16,7 @@
       "groupName": "pip-dependencies",
       "matchManagers": ["pip_requirements"],
       "matchUpdateTypes": ["minor", "patch"],
-      "description": "Group all pip requirements",
+      "description": "Group all pip minor requirements",
       "stabilityDays": 7
     }
   ],
