@@ -4,16 +4,16 @@ on:
   push:
     branches: main
     paths-ignore:
-      - '**.json'
-      - '**.md'
-      - '**.csv'
-      - '**.html'
+      - "**.json"
+      - "**.md"
+      - "**.csv"
+      - "**.html"
   pull_request:
     paths-ignore:
-      - '**.json'
-      - '**.md'
-      - '**.csv'
-      - '**.html'
+      - "**.json"
+      - "**.md"
+      - "**.csv"
+      - "**.html"
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
@@ -22,9 +22,9 @@ permissions:
   contents: read
 
 env:
-  FORCE_COLOR: 1  # Request colored output from CLI tools supporting it
+  FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
   PIP_DISABLE_PIP_VERSION_CHECK: 1
-  TERM: xterm-256color  # needed for FORCE_COLOR to work on mypy on Ubuntu, see https://github.com/python/mypy/issues/13817
+  TERM: xterm-256color # needed for FORCE_COLOR to work on mypy on Ubuntu, see https://github.com/python/mypy/issues/13817
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}

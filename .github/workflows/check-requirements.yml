@@ -4,14 +4,14 @@ on:
   push:
     branches: main
     paths:
-      - '.github/workflows/check-requirements.yml'
-      - 'requirements/**.txt'
-      - 'pyproject.toml'
+      - ".github/workflows/check-requirements.yml"
+      - "requirements/**.txt"
+      - "pyproject.toml"
   pull_request:
     paths:
-      - '.github/workflows/check-requirements.yml'
-      - 'requirements/**.txt'
-      - 'pyproject.toml'
+      - ".github/workflows/check-requirements.yml"
+      - "requirements/**.txt"
+      - "pyproject.toml"
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
@@ -20,7 +20,7 @@ permissions:
   contents: read
 
 env:
-  FORCE_COLOR: 1  # Request colored output from CLI tools supporting it
+  FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
   PIP_DISABLE_PIP_VERSION_CHECK: 1
 
 concurrency:
