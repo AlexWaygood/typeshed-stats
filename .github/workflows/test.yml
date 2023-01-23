@@ -4,22 +4,22 @@ on:
   push:
     branches: main
     paths-ignore:
-      - 'examples/**'
-      - 'scripts/**'
-      - 'stats_website/**'
-      - '**.md'
-      - '**.json'
-      - '**.csv'
-      - '**.html'
+      - "examples/**"
+      - "scripts/**"
+      - "stats_website/**"
+      - "**.md"
+      - "**.json"
+      - "**.csv"
+      - "**.html"
   pull_request:
     paths-ignore:
-      - 'examples/**'
-      - 'scripts/**'
-      - 'stats_website/**'
-      - '**.md'
-      - '**.json'
-      - '**.csv'
-      - '**.html'
+      - "examples/**"
+      - "scripts/**"
+      - "stats_website/**"
+      - "**.md"
+      - "**.json"
+      - "**.csv"
+      - "**.html"
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
@@ -28,10 +28,10 @@ permissions:
   contents: read
 
 env:
-  FORCE_COLOR: 1  # Request colored output from CLI tools supporting it
+  FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
   PIP_DISABLE_PIP_VERSION_CHECK: 1
-  PY_COLORS: 1  # Recognized by the `py` package, dependency of `pytest`
-  TERM: xterm-256color  # needed for FORCE_COLOR to work on mypy on Ubuntu, see https://github.com/python/mypy/issues/13817
+  PY_COLORS: 1 # Recognized by the `py` package, dependency of `pytest`
+  TERM: xterm-256color # needed for FORCE_COLOR to work on mypy on Ubuntu, see https://github.com/python/mypy/issues/13817
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   COVERALLS_PARALLEL: true
 

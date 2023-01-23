@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0  # must match requirements/misc-lint.txt
+    rev: v4.4.0 # must match requirements/misc-lint.txt
     hooks:
       - id: trailing-whitespace
       - id: requirements-txt-fixer
@@ -18,48 +18,56 @@ repos:
     hooks:
       - id: python-check-mock-methods
   - repo: https://github.com/hadialqattan/pycln
-    rev: v2.1.2  # must match requirements/misc-lint.txt
+    rev: v2.1.2 # must match requirements/misc-lint.txt
     hooks:
       - id: pycln
         args: [--config=pyproject.toml, .]
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.3.1  # must match requirements/misc-lint.txt
+    rev: v3.3.1 # must match requirements/misc-lint.txt
     hooks:
       - id: pyupgrade
         args: [--py310-plus]
   - repo: https://github.com/psf/black
-    rev: 22.12.0  # must match requirements/misc-lint.txt AND the black used by blacken-docs
+    rev: 22.12.0 # must match requirements/misc-lint.txt AND the black used by blacken-docs
     hooks:
       - id: black
   - repo: https://github.com/adamchainz/blacken-docs
-    rev: v1.12.1  # must match requirements/misc-lint.txt
+    rev: v1.12.1 # must match requirements/misc-lint.txt
     hooks:
       - id: blacken-docs
         additional_dependencies: [black==22.12.0]
   - repo: https://github.com/pycqa/isort
-    rev: 5.11.4  # must match requirements/misc-lint.txt
+    rev: 5.11.4 # must match requirements/misc-lint.txt
     hooks:
       - id: isort
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.2
     hooks:
       - id: codespell
-# TODO: Figure out why this breaks CI:
-#  - repo: https://github.com/alan-turing-institute/CleverCSV-pre-commit
-#    rev: v0.7.4
-#    hooks:
-#    - id: clevercsv-standardize
+  - repo: https://github.com/alan-turing-institute/CleverCSV-pre-commit
+    rev: v0.7.5
+    hooks:
+      - id: clevercsv-standardize
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.32.2
     hooks:
-    - id: markdownlint-fix
-      args: ["--ignore", "stats_website/.snippets"]
-    - id: markdownlint
-      args: ["--ignore", "stats_website/.snippets"]
+      - id: markdownlint-fix
+        args: ["--ignore", "stats_website/.snippets"]
+      - id: markdownlint
+        args: ["--ignore", "stats_website/.snippets"]
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.0.0-alpha.4
+    hooks:
+      - id: prettier
+        exclude: "examples/*"
+        exclude_types: ["markdown"]
+  - repo: meta
+    hooks:
+      - id: check-hooks-apply
 
 ci:
-    autofix_commit_msg: '[pre-commit.ci] auto fixes from pre-commit.com hooks'
-    autofix_prs: true
-    autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
-    autoupdate_schedule: quarterly
-    submodules: false
+  autofix_commit_msg: "[pre-commit.ci] auto fixes from pre-commit.com hooks"
+  autofix_prs: true
+  autoupdate_commit_msg: "[pre-commit.ci] pre-commit autoupdate"
+  autoupdate_schedule: quarterly
+  submodules: false

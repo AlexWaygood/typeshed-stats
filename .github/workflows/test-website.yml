@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
   pull_request:
     paths-ignore:
-      - 'tests/**'
-      - 'examples/**'
-      - '**.json'
-      - '**.csv'
-      - '**.html'
+      - "tests/**"
+      - "examples/**"
+      - "**.json"
+      - "**.csv"
+      - "**.html"
 
 env:
   PIP_DISABLE_PIP_VERSION_CHECK: 1
