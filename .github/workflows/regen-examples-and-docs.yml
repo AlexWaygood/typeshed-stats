@@ -7,11 +7,11 @@ on:
     branches:
       - main
     paths-ignore:
-      - 'tests/**'
-      - 'examples/**'
-      - '**.json'
-      - '**.csv'
-      - '**.html'
+      - "tests/**"
+      - "examples/**"
+      - "**.json"
+      - "**.csv"
+      - "**.html"
   workflow_dispatch:
 
 env:
