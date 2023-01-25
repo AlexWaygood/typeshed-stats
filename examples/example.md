@@ -1280,11 +1280,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-160 (excluding blank lines)
+187 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1305,21 +1305,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `bleach`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 58
-    - Unannotated parameters: 17
+    - Annotated parameters: 64
+    - Unannotated parameters: 21
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 25
-    - Unannotated returns: 9
+    - Annotated returns: 26
+    - Unannotated returns: 16
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
 - Variables:
-    - Annotated variables: 39
-    - Explicit `Any` variables: 4
+    - Annotated variables: 45
+    - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 12
+    - Total class definitions: 13
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -2075,7 +2075,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-64 (excluding blank lines)
+66 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2110,7 +2110,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 14
+    - Annotated variables: 15
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -2181,7 +2181,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-109 (excluding blank lines)
+111 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2216,7 +2216,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 38
+    - Annotated variables: 39
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -4519,7 +4519,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-3 (excluding blank lines)
+5 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4554,7 +4554,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 0
+    - Annotated variables: 1
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -5265,7 +5265,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-423 (excluding blank lines)
+427 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5300,7 +5300,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 96
+    - Annotated variables: 98
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -6270,7 +6270,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-27 (excluding blank lines)
+28 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6305,7 +6305,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 0
+    - Annotated variables: 1
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -6584,7 +6584,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,187 (excluding blank lines)
+51,190 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6619,7 +6619,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,076
+    - Annotated variables: 8,077
     - Explicit `Any` variables: 555
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
 - Class definitions:
@@ -7485,7 +7485,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-523 (excluding blank lines)
+525 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7520,7 +7520,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 184
+    - Annotated variables: 185
     - Explicit `Any` variables: 90
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
