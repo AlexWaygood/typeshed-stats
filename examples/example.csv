@@ -50,7 +50,7 @@ first,types-first,-,14,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,2,0,2,0,0,0,0,0,ER
 flake8-2020,types-flake8-2020,-,22,UP_TO_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,12,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-bugbear,types-flake8-bugbear,-,27,UP_TO_DATE,UPLOADED,STRICT,8,0,5,0,0,2,1,0,8,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,1
 flake8-builtins,types-flake8-builtins,-,10,UP_TO_DATE,UPLOADED,STRICT,3,0,3,0,0,1,0,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
-flake8-docstrings,types-flake8-docstrings,-,19,OUT_OF_DATE,UPLOADED,STRICT,6,0,5,0,0,1,1,1,6,1,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
+flake8-docstrings,types-flake8-docstrings,-,19,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,1,1,1,6,1,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-plugin-utils,types-flake8-plugin-utils,-,61,UP_TO_DATE,UPLOADED,STRICT,30,0,17,0,0,0,6,0,9,0,0,3,0,0,MISSING_STUBS_IGNORED,linux,6
 flake8-rst-docstrings,types-flake8-rst-docstrings,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-simplify,types-flake8-simplify,-,8,UP_TO_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
