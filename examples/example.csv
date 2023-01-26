@@ -50,7 +50,7 @@ first,types-first,-,14,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,2,0,2,0,0,0,0,0,ER
 flake8-2020,types-flake8-2020,-,22,UP_TO_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,12,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-bugbear,types-flake8-bugbear,-,27,UP_TO_DATE,UPLOADED,STRICT,8,0,5,0,0,2,1,0,8,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,1
 flake8-builtins,types-flake8-builtins,-,10,UP_TO_DATE,UPLOADED,STRICT,3,0,3,0,0,1,0,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
-flake8-docstrings,types-flake8-docstrings,-,19,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,1,1,1,6,1,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
+flake8-docstrings,types-flake8-docstrings,-,19,OUT_OF_DATE,UPLOADED,STRICT,6,0,5,0,0,1,1,1,6,1,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-plugin-utils,types-flake8-plugin-utils,-,61,UP_TO_DATE,UPLOADED,STRICT,30,0,17,0,0,0,6,0,9,0,0,3,0,0,MISSING_STUBS_IGNORED,linux,6
 flake8-rst-docstrings,types-flake8-rst-docstrings,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-simplify,types-flake8-simplify,-,8,UP_TO_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
@@ -110,7 +110,7 @@ python-gflags,types-python-gflags,-,251,UP_TO_DATE,UPLOADED,STRICT,186,0,98,0,0,
 python-jose,types-python-jose,-,356,UP_TO_DATE,UPLOADED,NOT_STRICT,86,39,64,26,4,0,14,12,117,30,0,26,0,0,ERROR_ON_MISSING_STUB,linux,6
 python-nmap,types-python-nmap,-,116,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-slugify,types-python-slugify,-,45,UP_TO_DATE,UPLOADED,STRICT,19,0,3,0,0,0,0,0,12,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
-python-xlib,types-python-xlib,-,5393,UP_TO_DATE,UPLOADED,STRICT,1335,0,583,0,0,0,15,8,3525,5,0,426,0,0,ERROR_ON_MISSING_STUB,linux,14
+python-xlib,types-python-xlib,-,5387,UP_TO_DATE,UPLOADED,STRICT,1332,0,581,0,0,0,15,8,3525,5,0,425,0,0,ERROR_ON_MISSING_STUB,linux,14
 pytz,types-pytz,-,127,UP_TO_DATE,UPLOADED,STRICT,69,0,51,0,2,1,2,0,27,0,1,16,0,3,ERROR_ON_MISSING_STUB,linux,4
 pyvmomi,types-pyvmomi,-,177,UP_TO_DATE,UPLOADED,STRICT,50,0,35,0,3,16,2,0,57,7,0,44,0,0,MISSING_STUBS_IGNORED,linux,8
 pywin32,types-pywin32,-,34533,UP_TO_DATE,UPLOADED,NOT_STRICT,3635,3729,3825,2043,426,292,1,1,25025,0,2832,724,0,0,ERROR_ON_MISSING_STUB,win32,49
