@@ -805,9 +805,9 @@ The `sqlalchemy-stubs` package is an alternative to this package and also includ
 
 14,666 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
@@ -6584,7 +6584,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,216 (excluding blank lines)
+51,273 (excluding blank lines)
 
 ### Package status: *stdlib*
 
