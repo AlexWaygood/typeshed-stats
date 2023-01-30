@@ -4586,7 +4586,7 @@
     "package_name": "whatthepatch",
     "stub_distribution_name": "types-whatthepatch",
     "extra_description": null,
-    "number_of_lines": 96,
+    "number_of_lines": 97,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4598,9 +4598,9 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 31,
+      "annotated_parameters": 32,
       "unannotated_parameters": 0,
-      "annotated_returns": 24,
+      "annotated_returns": 25,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,

@@ -7591,7 +7591,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-96 (excluding blank lines)
+97 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7616,12 +7616,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `whatthepatch`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 31
+    - Annotated parameters: 32
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 24
+    - Annotated returns: 25
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
