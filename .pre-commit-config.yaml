@@ -37,7 +37,7 @@ repos:
       - id: blacken-docs
         additional_dependencies: [black==22.12.0]
   - repo: https://github.com/pycqa/isort
-    rev: 5.11.4 # must match requirements/misc-lint.txt
+    rev: 5.12.0 # must match requirements/misc-lint.txt
     hooks:
       - id: isort
   - repo: https://github.com/codespell-project/codespell
