@@ -1969,7 +1969,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-90 (excluding blank lines)
+136 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1985,7 +1985,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 allowlist entries for `croniter` when running stubtest in CI.
+Typeshed currently has 0 allowlist entries for `croniter` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1994,21 +1994,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `croniter`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 35
+    - Annotated parameters: 63
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 16
+    - Annotated returns: 23
     - Unannotated returns: 0
     - Explicit `Any` returns: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 13
+    - Annotated variables: 21
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 7
+    - Total class definitions: 8
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -6584,7 +6584,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,273 (excluding blank lines)
+51,275 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6600,7 +6600,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,775 allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,774 allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6609,17 +6609,17 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,581
+    - Annotated parameters: 24,579
     - Unannotated parameters: 713
     - Explicit `Any` parameters: 2,043
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13,343
+    - Annotated returns: 13,342
     - Unannotated returns: 405
     - Explicit `Any` returns: 826
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,078
+    - Annotated variables: 8,081
     - Explicit `Any` variables: 556
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
 - Class definitions:
