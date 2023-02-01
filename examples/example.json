@@ -386,7 +386,7 @@
     "package_name": "PyScreeze",
     "stub_distribution_name": "types-PyScreeze",
     "extra_description": null,
-    "number_of_lines": 181,
+    "number_of_lines": 184,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4105,7 +4105,7 @@
     "package_name": "tensorflow",
     "stub_distribution_name": "types-tensorflow",
     "extra_description": null,
-    "number_of_lines": 267,
+    "number_of_lines": 592,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4117,9 +4117,9 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 117,
+      "annotated_parameters": 393,
       "unannotated_parameters": 0,
-      "annotated_returns": 112,
+      "annotated_returns": 227,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 3,
       "explicit_Incomplete_returns": 13,
@@ -4128,7 +4128,7 @@
       "annotated_variables": 24,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 12,
+      "classdefs": 13,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4674,6 +4674,38 @@
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 1,
       "classdefs": 5,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "zstd",
+    "stub_distribution_name": "types-zstd",
+    "extra_description": null,
+    "number_of_lines": 13,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 13,
+      "unannotated_parameters": 0,
+      "annotated_returns": 11,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 0,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
