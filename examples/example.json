@@ -3815,7 +3815,7 @@
     "package_name": "setuptools",
     "stub_distribution_name": "types-setuptools",
     "extra_description": null,
-    "number_of_lines": 2444,
+    "number_of_lines": 2445,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3835,7 +3835,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 29,
       "explicit_Any_returns": 6,
-      "annotated_variables": 623,
+      "annotated_variables": 624,
       "explicit_Any_variables": 396,
       "explicit_Incomplete_variables": 10,
       "classdefs": 154,
