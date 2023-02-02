@@ -739,7 +739,7 @@
     "package_name": "beautifulsoup4",
     "stub_distribution_name": "types-beautifulsoup4",
     "extra_description": null,
-    "number_of_lines": 796,
+    "number_of_lines": 794,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -751,9 +751,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 240,
+      "annotated_parameters": 239,
       "unannotated_parameters": 137,
-      "annotated_returns": 193,
+      "annotated_returns": 192,
       "unannotated_returns": 49,
       "explicit_Incomplete_parameters": 31,
       "explicit_Incomplete_returns": 0,
@@ -762,7 +762,7 @@
       "annotated_variables": 177,
       "explicit_Any_variables": 69,
       "explicit_Incomplete_variables": 2,
-      "classdefs": 48,
+      "classdefs": 47,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -3241,7 +3241,7 @@
     "package_name": "pyserial",
     "stub_distribution_name": "types-pyserial",
     "extra_description": null,
-    "number_of_lines": 964,
+    "number_of_lines": 965,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3260,7 +3260,7 @@
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 4,
       "annotated_variables": 398,
-      "explicit_Any_variables": 12,
+      "explicit_Any_variables": 7,
       "explicit_Incomplete_variables": 0,
       "classdefs": 66,
       "classdefs_with_Any": 0,
@@ -3975,7 +3975,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51433,
+    "number_of_lines": 51451,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3989,10 +3989,10 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24684,
+      "annotated_parameters": 24696,
       "unannotated_parameters": 713,
-      "annotated_returns": 13367,
-      "unannotated_returns": 405,
+      "annotated_returns": 13369,
+      "unannotated_returns": 406,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2044,
