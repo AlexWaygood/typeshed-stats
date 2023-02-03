@@ -1439,11 +1439,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-115 (excluding blank lines)
+118 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1464,7 +1464,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `cachetools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 86
+    - Annotated parameters: 87
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -6323,11 +6323,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,445 (excluding blank lines)
+2,442 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6349,18 +6349,18 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 821
-    - Unannotated parameters: 393
+    - Unannotated parameters: 390
     - Explicit `Any` parameters: 29
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 47
 - Returns:
     - Annotated returns: 658
-    - Unannotated returns: 262
+    - Unannotated returns: 260
     - Explicit `Any` returns: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
     - Annotated variables: 624
-    - Explicit `Any` variables: 396
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 10
+    - Explicit `Any` variables: 381
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 24
 - Class definitions:
     - Total class definitions: 154
     - Class definitions with `Any`: 0
