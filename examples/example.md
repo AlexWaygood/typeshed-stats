@@ -1492,11 +1492,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-492 (excluding blank lines)
+500 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1517,21 +1517,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `caldav`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 204
-    - Unannotated parameters: 29
+    - Annotated parameters: 205
+    - Unannotated parameters: 30
     - Explicit `Any` parameters: 9
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 111
-    - Unannotated returns: 7
+    - Annotated returns: 116
+    - Unannotated returns: 8
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 90
+    - Annotated variables: 92
     - Explicit `Any` variables: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
-    - Total class definitions: 85
+    - Total class definitions: 86
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -6111,7 +6111,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-5,431 (excluding blank lines)
+5,586 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6127,7 +6127,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 66 allowlist entries for `redis` when running stubtest in CI.
+Typeshed currently has 68 allowlist entries for `redis` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6136,21 +6136,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `redis`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,472
-    - Unannotated parameters: 1,291
-    - Explicit `Any` parameters: 58
+    - Annotated parameters: 3,563
+    - Unannotated parameters: 1,292
+    - Explicit `Any` parameters: 69
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 347
 - Returns:
-    - Annotated returns: 1,268
+    - Annotated returns: 1,319
     - Unannotated returns: 645
-    - Explicit `Any` returns: 317
+    - Explicit `Any` returns: 322
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
-    - Annotated variables: 591
-    - Explicit `Any` variables: 209
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 30
+    - Annotated variables: 623
+    - Explicit `Any` variables: 215
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 33
 - Class definitions:
-    - Total class definitions: 207
+    - Total class definitions: 213
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 2
 
