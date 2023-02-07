@@ -77,12 +77,12 @@ def _write_stats(
     if writefile is None:
         pprint: Callable[[object], None]
         try:
-            from rich import print as pprint  # type: ignore[no-redef]
+            from rich import print as pprint
         except ImportError:
             if isinstance(formatted_stats, str):
                 pprint = print
             else:
-                from pprint import pprint  # type: ignore[no-redef]
+                from pprint import pprint
 
         pprint(formatted_stats)
     else:
@@ -104,7 +104,7 @@ def _get_help_formatter() -> type[argparse.HelpFormatter]:
         import rich  # noqa: F401
         from rich_argparse import RichHelpFormatter as HelpFormatter
     except ImportError:
-        from argparse import HelpFormatter  # type: ignore[no-redef]
+        from argparse import HelpFormatter  # type: ignore[assignment]
     else:
         HelpFormatter.styles.update(
             {

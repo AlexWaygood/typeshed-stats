@@ -604,10 +604,7 @@ async def _get_pypi_data(
     pypi_data_url = f"https://pypi.org/pypi/{urllib.parse.quote(package_name)}/json"
     async with AsyncExitStack() as stack:
         if session is None:
-            # see https://github.com/python/mypy/issues/13936
-            # for why we need the tmp_var to keep mypy happy
-            tmp_var = await stack.enter_async_context(aiohttp.ClientSession())
-            session = tmp_var
+            session = await stack.enter_async_context(aiohttp.ClientSession())
         async with session.get(pypi_data_url) as response:
             response.raise_for_status()
             response_json = await response.json()
