@@ -105,7 +105,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 6
+      "allowlist_length": 1
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -394,7 +394,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 0
+      "allowlist_length": 1
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -940,7 +940,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 8
+      "allowlist_length": 5
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -1004,7 +1004,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 2
+      "allowlist_length": 0
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -1060,7 +1060,7 @@
     "package_name": "colorama",
     "stub_distribution_name": "types-colorama",
     "extra_description": null,
-    "number_of_lines": 197,
+    "number_of_lines": 198,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1069,7 +1069,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 47
+      "allowlist_length": 45
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -1229,7 +1229,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 14
+      "allowlist_length": 6
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -1325,7 +1325,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 2
+      "allowlist_length": 0
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -1805,7 +1805,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 9
+      "allowlist_length": 6
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -2059,7 +2059,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 6
+      "allowlist_length": 1
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -2083,8 +2083,8 @@
     "package_name": "invoke",
     "stub_distribution_name": "types-invoke",
     "extra_description": null,
-    "number_of_lines": 745,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 741,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -2095,15 +2095,15 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 245,
+      "annotated_parameters": 243,
       "unannotated_parameters": 171,
-      "annotated_returns": 177,
+      "annotated_returns": 174,
       "unannotated_returns": 73,
       "explicit_Incomplete_parameters": 1,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 28,
       "explicit_Any_returns": 8,
-      "annotated_variables": 129,
+      "annotated_variables": 128,
       "explicit_Any_variables": 70,
       "explicit_Incomplete_variables": 0,
       "classdefs": 43,
@@ -2347,7 +2347,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 8
+      "allowlist_length": 2
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2499,8 +2499,8 @@
     "package_name": "paramiko",
     "stub_distribution_name": "types-paramiko",
     "extra_description": null,
-    "number_of_lines": 1750,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 1726,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -2508,20 +2508,20 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 19
+      "allowlist_length": 14
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 748,
+      "annotated_parameters": 738,
       "unannotated_parameters": 0,
-      "annotated_returns": 630,
+      "annotated_returns": 623,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 3,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 24,
+      "explicit_Any_parameters": 20,
       "explicit_Any_returns": 9,
-      "annotated_variables": 537,
-      "explicit_Any_variables": 21,
+      "annotated_variables": 529,
+      "explicit_Any_variables": 17,
       "explicit_Incomplete_variables": 0,
       "classdefs": 113,
       "classdefs_with_Any": 2,
@@ -2540,7 +2540,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 5
+      "allowlist_length": 4
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2572,7 +2572,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 32
+      "allowlist_length": 31
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -2700,7 +2700,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 24
+      "allowlist_length": 20
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -2990,7 +2990,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 8
+      "allowlist_length": 5
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3343,7 +3343,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 2
+      "allowlist_length": 1
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3567,7 +3567,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 14
+      "allowlist_length": 11
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -3759,7 +3759,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 26
+      "allowlist_length": 12
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3823,7 +3823,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 29
+      "allowlist_length": 30
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3975,7 +3975,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51465,
+    "number_of_lines": 51496,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3985,13 +3985,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1784
+      "allowlist_length": 1752
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24696,
+      "annotated_parameters": 24707,
       "unannotated_parameters": 713,
-      "annotated_returns": 13369,
+      "annotated_returns": 13380,
       "unannotated_returns": 406,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
@@ -4177,7 +4177,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 1
+      "allowlist_length": 0
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4233,30 +4233,30 @@
     "package_name": "tqdm",
     "stub_distribution_name": "types-tqdm",
     "extra_description": null,
-    "number_of_lines": 1368,
+    "number_of_lines": 1375,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
+      "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 3
+      "allowlist_length": 2
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 809,
+      "annotated_parameters": 812,
       "unannotated_parameters": 142,
-      "annotated_returns": 163,
+      "annotated_returns": 167,
       "unannotated_returns": 24,
-      "explicit_Incomplete_parameters": 39,
-      "explicit_Incomplete_returns": 8,
+      "explicit_Incomplete_parameters": 42,
+      "explicit_Incomplete_returns": 11,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 99,
+      "annotated_variables": 100,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 74,
-      "classdefs": 35,
+      "classdefs": 36,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4586,7 +4586,7 @@
     "package_name": "whatthepatch",
     "stub_distribution_name": "types-whatthepatch",
     "extra_description": null,
-    "number_of_lines": 97,
+    "number_of_lines": 101,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4606,7 +4606,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 50,
+      "annotated_variables": 54,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 9,
@@ -4722,7 +4722,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 3
+      "allowlist_length": 1
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {

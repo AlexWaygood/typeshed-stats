@@ -179,7 +179,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 allowlist entries for `ExifRead` when running stubtest in CI.
+Typeshed currently has 1 allowlist entry for `ExifRead` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -656,7 +656,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 0 allowlist entries for `PyScreeze` when running stubtest in CI.
+Typeshed currently has 1 allowlist entry for `PyScreeze` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1561,7 +1561,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 8 allowlist entries for `cffi` when running stubtest in CI.
+Typeshed currently has 5 allowlist entries for `cffi` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1667,7 +1667,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 allowlist entries for `chevron` when running stubtest in CI.
+Typeshed currently has 0 allowlist entries for `chevron` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1757,7 +1757,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-197 (excluding blank lines)
+198 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1773,7 +1773,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 47 allowlist entries for `colorama` when running stubtest in CI.
+Typeshed currently has 45 allowlist entries for `colorama` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2038,7 +2038,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 14 allowlist entries for `dateparser` when running stubtest in CI.
+Typeshed currently has 6 allowlist entries for `dateparser` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2197,7 +2197,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 allowlist entries for `dockerfile-parse` when running stubtest in CI.
+Typeshed currently has 0 allowlist entries for `dockerfile-parse` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2992,7 +2992,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 9 allowlist entries for `fpdf2` when running stubtest in CI.
+Typeshed currently has 6 allowlist entries for `fpdf2` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3418,7 +3418,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 allowlist entries for `influxdb-client` when running stubtest in CI.
+Typeshed currently has 1 allowlist entry for `influxdb-client` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3455,11 +3455,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-745 (excluding blank lines)
+741 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3480,17 +3480,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `invoke`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 245
+    - Annotated parameters: 243
     - Unannotated parameters: 171
     - Explicit `Any` parameters: 28
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 177
+    - Annotated returns: 174
     - Unannotated returns: 73
     - Explicit `Any` returns: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 129
+    - Annotated variables: 128
     - Explicit `Any` variables: 70
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -3895,7 +3895,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 8 allowlist entries for `netaddr` when running stubtest in CI.
+Typeshed currently has 2 allowlist entries for `netaddr` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4144,11 +4144,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,750 (excluding blank lines)
+1,726 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4160,7 +4160,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 19 allowlist entries for `paramiko` when running stubtest in CI.
+Typeshed currently has 14 allowlist entries for `paramiko` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4169,18 +4169,18 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `paramiko`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 748
+    - Annotated parameters: 738
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 24
+    - Explicit `Any` parameters: 20
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
-    - Annotated returns: 630
+    - Annotated returns: 623
     - Unannotated returns: 0
     - Explicit `Any` returns: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 537
-    - Explicit `Any` variables: 21
+    - Annotated variables: 529
+    - Explicit `Any` variables: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 113
@@ -4213,7 +4213,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 5 allowlist entries for `parsimonious` when running stubtest in CI.
+Typeshed currently has 4 allowlist entries for `parsimonious` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4266,7 +4266,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 32 allowlist entries for `passlib` when running stubtest in CI.
+Typeshed currently has 31 allowlist entries for `passlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4482,7 +4482,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 24 allowlist entries for `pika` when running stubtest in CI.
+Typeshed currently has 20 allowlist entries for `pika` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4963,7 +4963,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 8 allowlist entries for `pyasn1` when running stubtest in CI.
+Typeshed currently has 5 allowlist entries for `pyasn1` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5544,7 +5544,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 allowlist entries for `python-crontab` when running stubtest in CI.
+Typeshed currently has 1 allowlist entry for `python-crontab` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5915,7 +5915,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 14 allowlist entries for `python-xlib` when running stubtest in CI.
+Typeshed currently has 11 allowlist entries for `python-xlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6233,7 +6233,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 26 allowlist entries for `requests` when running stubtest in CI.
+Typeshed currently has 12 allowlist entries for `requests` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6339,7 +6339,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 29 allowlist entries for `setuptools` when running stubtest in CI.
+Typeshed currently has 30 allowlist entries for `setuptools` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6584,7 +6584,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,465 (excluding blank lines)
+51,496 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6600,7 +6600,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,784 allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,752 allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6609,12 +6609,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,696
+    - Annotated parameters: 24,707
     - Unannotated parameters: 713
     - Explicit `Any` parameters: 2,044
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13,369
+    - Annotated returns: 13,380
     - Unannotated returns: 406
     - Explicit `Any` returns: 826
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
@@ -6918,7 +6918,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1 allowlist entry for `toml` when running stubtest in CI.
+Typeshed currently has 0 allowlist entries for `toml` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7008,7 +7008,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,368 (excluding blank lines)
+1,375 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7018,13 +7018,13 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 allowlist entries for `tqdm` when running stubtest in CI.
+Typeshed currently has 2 allowlist entries for `tqdm` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7033,21 +7033,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tqdm`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 809
+    - Annotated parameters: 812
     - Unannotated parameters: 142
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 39
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 42
 - Returns:
-    - Annotated returns: 163
+    - Annotated returns: 167
     - Unannotated returns: 24
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 99
+    - Annotated variables: 100
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 74
 - Class definitions:
-    - Total class definitions: 35
+    - Total class definitions: 36
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7591,7 +7591,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-97 (excluding blank lines)
+101 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7626,7 +7626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 50
+    - Annotated variables: 54
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -7819,7 +7819,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 allowlist entries for `zxcvbn` when running stubtest in CI.
+Typeshed currently has 1 allowlist entry for `zxcvbn` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
