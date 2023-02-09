@@ -481,7 +481,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-2,462 (excluding blank lines)
+2,500 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -516,11 +516,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 824
-    - Explicit `Any` variables: 325
+    - Annotated variables: 847
+    - Explicit `Any` variables: 324
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 8
 - Class definitions:
-    - Total class definitions: 195
+    - Total class definitions: 204
     - Class definitions with `Any`: 4
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -746,7 +746,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-689 (excluding blank lines)
+687 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -909,7 +909,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-593 (excluding blank lines)
+590 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -1651,7 +1651,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-39 (excluding blank lines)
+37 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2976,7 +2976,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,137 (excluding blank lines)
+2,181 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2992,7 +2992,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 allowlist entries for `fpdf2` when running stubtest in CI.
+Typeshed currently has 7 allowlist entries for `fpdf2` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3001,21 +3001,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `fpdf2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 622
-    - Unannotated parameters: 531
+    - Annotated parameters: 642
+    - Unannotated parameters: 528
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 67
 - Returns:
-    - Annotated returns: 397
+    - Annotated returns: 417
     - Unannotated returns: 194
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
-    - Annotated variables: 674
+    - Annotated variables: 676
     - Explicit `Any` variables: 14
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 161
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 160
 - Class definitions:
-    - Total class definitions: 150
+    - Total class definitions: 156
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -5265,7 +5265,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-432 (excluding blank lines)
+431 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5901,7 +5901,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,387 (excluding blank lines)
+5,385 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6586,7 +6586,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,483 (excluding blank lines)
+51,456 (excluding blank lines)
 
 ### Package status: *stdlib*
 
