@@ -911,9 +911,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 593 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5381,11 +5381,13 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *skipped*
+### Stubtest settings in CI: *error on missing stub*
 
-Stubtest is skipped in typeshed's CI for this package.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-Typeshed currently has 83 allowlist entries for `pyserial` when running stubtest in CI.
+In CI, stubtest is run on `darwin`, `linux` and `win32`.
+
+Typeshed currently has 99 allowlist entries for `pyserial` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5404,7 +5406,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 398
+    - Annotated variables: 399
     - Explicit `Any` variables: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
