@@ -7,7 +7,7 @@ Flask-Cors,types-Flask-Cors,-,124,UP_TO_DATE,UPLOADED,STRICT,62,0,23,0,1,0,7,2,3
 Flask-Migrate,types-Flask-Migrate,-,100,UP_TO_DATE,UPLOADED,NOT_STRICT,74,4,20,2,0,0,0,0,7,1,0,2,0,0,MISSING_STUBS_IGNORED,linux,0
 Flask-SQLAlchemy,types-Flask-SQLAlchemy,-,106,OBSOLETE,UPLOADED,NOT_STRICT,54,21,24,19,23,0,2,1,16,9,0,9,0,0,MISSING_STUBS_IGNORED,linux,1
 JACK-Client,types-JACK-Client,-,310,UP_TO_DATE,UPLOADED,STRICT,107,0,151,0,0,0,0,2,46,0,0,15,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
-Markdown,types-Markdown,-,637,UP_TO_DATE,UPLOADED,NOT_STRICT,112,145,112,65,5,0,12,6,214,83,0,98,0,0,MISSING_STUBS_IGNORED,linux,12
+Markdown,types-Markdown,-,642,UP_TO_DATE,UPLOADED,NOT_STRICT,115,143,114,64,5,0,12,5,215,83,0,99,0,0,MISSING_STUBS_IGNORED,linux,12
 Pillow,types-Pillow,-,2500,UP_TO_DATE,UPLOADED,NOT_STRICT,633,617,461,345,64,2,3,4,847,324,8,204,4,0,MISSING_STUBS_IGNORED,linux,1
 PyAutoGUI,types-PyAutoGUI,-,229,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMySQL,types-PyMySQL,-,1039,UP_TO_DATE,UPLOADED,NOT_STRICT,139,53,98,40,28,0,10,18,733,62,0,24,0,0,MISSING_STUBS_IGNORED,linux,11
@@ -55,7 +55,7 @@ flake8-plugin-utils,types-flake8-plugin-utils,-,61,UP_TO_DATE,UPLOADED,STRICT,30
 flake8-rst-docstrings,types-flake8-rst-docstrings,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-simplify,types-flake8-simplify,-,8,UP_TO_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-typing-imports,types-flake8-typing-imports,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,5,0,0,1,1,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
-fpdf2,types-fpdf2,-,2181,UP_TO_DATE,UPLOADED,NOT_STRICT,642,528,417,194,67,4,4,2,676,14,160,156,0,0,ERROR_ON_MISSING_STUB,linux,7
+fpdf2,types-fpdf2,-,2186,UP_TO_DATE,UPLOADED,NOT_STRICT,642,528,417,194,67,4,4,2,676,14,160,156,0,0,ERROR_ON_MISSING_STUB,linux,7
 gdb,types-gdb,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: is is not possible to install the `gdb` package separately, for instance using `pip`.",733,NOT_ON_PYPI,UPLOADED,STRICT,233,0,257,0,0,0,0,0,290,0,0,87,0,0,SKIPPED,None,0
 google-cloud-ndb,types-google-cloud-ndb,-,1416,UP_TO_DATE,UPLOADED,NOT_STRICT,479,368,234,203,123,0,7,0,190,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
 hdbcli,types-hdbcli,-,129,UP_TO_DATE,UPLOADED,STRICT,77,0,62,0,6,4,12,7,21,2,2,16,0,0,ERROR_ON_MISSING_STUB,linux,5

@@ -428,7 +428,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-637 (excluding blank lines)
+642 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -453,21 +453,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Markdown`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 112
-    - Unannotated parameters: 145
+    - Annotated parameters: 115
+    - Unannotated parameters: 143
     - Explicit `Any` parameters: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
 - Returns:
-    - Annotated returns: 112
-    - Unannotated returns: 65
-    - Explicit `Any` returns: 6
+    - Annotated returns: 114
+    - Unannotated returns: 64
+    - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 214
+    - Annotated variables: 215
     - Explicit `Any` variables: 83
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 98
+    - Total class definitions: 99
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -2976,7 +2976,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,181 (excluding blank lines)
+2,186 (excluding blank lines)
 
 ### Package status: *up to date*
 
