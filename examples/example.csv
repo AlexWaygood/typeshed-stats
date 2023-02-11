@@ -1,6 +1,6 @@
 package_name,stub_distribution_name,extra_description,number_of_lines,package_status,upload_status,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables,classdefs,classdefs_with_Any,classdefs_with_Incomplete,stubtest_strictness,stubtest_platforms,stubtest_allowlist_length
 D3DShot,types-D3DShot,-,586,UP_TO_DATE,UPLOADED,STRICT,127,0,255,0,0,0,0,0,100,0,0,43,0,0,SKIPPED,None,0
-DateTimeRange,types-DateTimeRange,-,64,UP_TO_DATE,UPLOADED,STRICT,28,0,28,0,0,0,0,0,10,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
+DateTimeRange,types-DateTimeRange,-,64,OUT_OF_DATE,UPLOADED,STRICT,28,0,28,0,0,0,0,0,10,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 Deprecated,types-Deprecated,-,56,UP_TO_DATE,UPLOADED,STRICT,30,0,10,0,0,0,1,0,12,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 ExifRead,types-ExifRead,-,218,UP_TO_DATE,UPLOADED,STRICT,72,0,52,0,0,0,2,1,82,2,2,14,0,0,ERROR_ON_MISSING_STUB,linux,1
 Flask-Cors,types-Flask-Cors,-,124,UP_TO_DATE,UPLOADED,STRICT,62,0,23,0,1,0,7,2,30,1,0,2,0,0,MISSING_STUBS_IGNORED,linux,0
