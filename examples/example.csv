@@ -1,6 +1,6 @@
 package_name,stub_distribution_name,extra_description,number_of_lines,package_status,upload_status,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables,classdefs,classdefs_with_Any,classdefs_with_Incomplete,stubtest_strictness,stubtest_platforms,stubtest_allowlist_length
 D3DShot,types-D3DShot,-,586,UP_TO_DATE,UPLOADED,STRICT,127,0,255,0,0,0,0,0,100,0,0,43,0,0,SKIPPED,None,0
-DateTimeRange,types-DateTimeRange,-,64,OUT_OF_DATE,UPLOADED,STRICT,28,0,28,0,0,0,0,0,10,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
+DateTimeRange,types-DateTimeRange,-,64,UP_TO_DATE,UPLOADED,STRICT,30,0,28,0,0,0,0,0,10,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 Deprecated,types-Deprecated,-,56,UP_TO_DATE,UPLOADED,STRICT,30,0,10,0,0,0,1,0,12,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 ExifRead,types-ExifRead,-,218,UP_TO_DATE,UPLOADED,STRICT,72,0,52,0,0,0,2,1,82,2,2,14,0,0,ERROR_ON_MISSING_STUB,linux,1
 Flask-Cors,types-Flask-Cors,-,124,UP_TO_DATE,UPLOADED,STRICT,62,0,23,0,1,0,7,2,30,1,0,2,0,0,MISSING_STUBS_IGNORED,linux,0
@@ -98,7 +98,7 @@ pycocotools,types-pycocotools,-,172,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1
 pycurl,types-pycurl,-,674,UP_TO_DATE,UPLOADED,STRICT,22,0,32,0,7,10,0,0,629,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyfarmhash,types-pyfarmhash,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyflakes,types-pyflakes,-,428,UP_TO_DATE,UPLOADED,NOT_STRICT,267,69,210,2,0,0,4,3,76,33,0,74,0,0,MISSING_STUBS_IGNORED,linux,24
-pyinstaller,types-pyinstaller,-,431,OUT_OF_DATE,UPLOADED,STRICT,187,0,117,0,9,0,1,2,98,0,0,18,0,0,ERROR_ON_MISSING_STUB,linux,33
+pyinstaller,types-pyinstaller,-,430,UP_TO_DATE,UPLOADED,STRICT,188,0,117,0,9,0,1,2,98,0,0,18,0,0,ERROR_ON_MISSING_STUB,linux,33
 pynput,types-pynput,-,325,UP_TO_DATE,UPLOADED,STRICT,81,0,71,0,0,0,11,0,155,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,14
 pyserial,types-pyserial,-,965,UP_TO_DATE,UPLOADED,STRICT,205,0,251,0,0,0,2,4,399,7,0,66,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,99
 pysftp,types-pysftp,-,162,UP_TO_DATE,UPLOADED,STRICT,109,0,70,0,0,0,0,0,6,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
