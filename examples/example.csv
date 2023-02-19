@@ -1,6 +1,6 @@
 package_name,stub_distribution_name,extra_description,number_of_lines,package_status,upload_status,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables,classdefs,classdefs_with_Any,classdefs_with_Incomplete,stubtest_strictness,stubtest_platforms,stubtest_allowlist_length
 D3DShot,types-D3DShot,-,586,UP_TO_DATE,UPLOADED,STRICT,127,0,255,0,0,0,0,0,100,0,0,43,0,0,SKIPPED,None,0
-DateTimeRange,types-DateTimeRange,-,64,UP_TO_DATE,UPLOADED,STRICT,30,0,28,0,0,0,0,0,10,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
+DateTimeRange,types-DateTimeRange,-,64,OUT_OF_DATE,UPLOADED,STRICT,30,0,28,0,0,0,0,0,10,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 Deprecated,types-Deprecated,-,56,UP_TO_DATE,UPLOADED,STRICT,30,0,10,0,0,0,1,0,12,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 ExifRead,types-ExifRead,-,218,UP_TO_DATE,UPLOADED,STRICT,72,0,52,0,0,0,2,1,82,2,2,14,0,0,ERROR_ON_MISSING_STUB,linux,1
 Flask-Cors,types-Flask-Cors,-,124,UP_TO_DATE,UPLOADED,STRICT,62,0,23,0,1,0,7,2,30,1,0,2,0,0,MISSING_STUBS_IGNORED,linux,0
@@ -100,7 +100,7 @@ pyfarmhash,types-pyfarmhash,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,
 pyflakes,types-pyflakes,-,428,UP_TO_DATE,UPLOADED,NOT_STRICT,267,69,210,2,0,0,4,3,76,33,0,74,0,0,MISSING_STUBS_IGNORED,linux,24
 pyinstaller,types-pyinstaller,-,429,UP_TO_DATE,UPLOADED,STRICT,188,0,117,0,9,0,1,2,98,0,0,18,0,0,ERROR_ON_MISSING_STUB,linux,33
 pynput,types-pynput,-,324,UP_TO_DATE,UPLOADED,STRICT,81,0,71,0,0,0,11,0,155,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,14
-pyserial,types-pyserial,-,966,UP_TO_DATE,UPLOADED,STRICT,205,0,251,0,0,0,2,4,399,7,0,66,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,99
+pyserial,types-pyserial,-,1033,UP_TO_DATE,UPLOADED,STRICT,205,0,251,0,0,0,2,4,466,7,0,66,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,84
 pysftp,types-pysftp,-,161,UP_TO_DATE,UPLOADED,STRICT,109,0,70,0,0,0,0,0,6,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
 pytest-lazy-fixture,types-pytest-lazy-fixture,-,12,UP_TO_DATE,UPLOADED,STRICT,5,0,5,0,0,0,0,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,7
 python-crontab,types-python-crontab,-,292,UP_TO_DATE,UPLOADED,STRICT,137,0,133,0,3,4,17,1,66,1,1,17,0,1,ERROR_ON_MISSING_STUB,linux,2
@@ -123,7 +123,7 @@ simplejson,types-simplejson,-,51,UP_TO_DATE,UPLOADED,STRICT,36,0,16,0,0,0,14,4,1
 singledispatch,types-singledispatch,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 six,types-six,-,335,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,-,51476,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,24703,713,13376,406,85,18,2044,826,8079,555,101,2244,22,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1753
+stdlib,-,-,51479,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,24703,713,13376,406,85,18,2044,826,8079,555,101,2244,22,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1753
 stdlib-list,types-stdlib-list,-,16,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,0,1,4,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 stripe,types-stripe,-,1483,OUT_OF_DATE,UPLOADED,NOT_STRICT,264,388,108,168,156,0,5,4,155,42,0,134,1,0,MISSING_STUBS_IGNORED,linux,6
 tabulate,types-tabulate,-,50,UP_TO_DATE,UPLOADED,STRICT,15,0,2,0,0,0,2,0,25,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
