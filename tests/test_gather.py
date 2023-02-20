@@ -243,14 +243,14 @@ def test_get_stubtest_strictness_non_stdlib_no_stubtest_section(
 ) -> None:
     write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, "\n")
     result = get_stubtest_strictness(EXAMPLE_PACKAGE_NAME, typeshed_dir=typeshed)
-    assert result is StubtestStrictness.MISSING_STUBS_IGNORED
+    assert result is StubtestStrictness.ERROR_ON_MISSING_STUB
 
 
 @pytest.mark.parametrize(
     ("metadata_contents", "expected_result_name"),
     [
-        pytest.param("", "MISSING_STUBS_IGNORED", id="empty_metadata"),
-        pytest.param("skip = false", "MISSING_STUBS_IGNORED", id="skip=False"),
+        pytest.param("", "ERROR_ON_MISSING_STUB", id="empty_metadata"),
+        pytest.param("skip = false", "ERROR_ON_MISSING_STUB", id="skip=False"),
         pytest.param(
             "ignore_missing_stub = true",
             "MISSING_STUBS_IGNORED",

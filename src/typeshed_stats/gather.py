@@ -438,10 +438,10 @@ def get_stubtest_strictness(
     match _get_stubtest_config(package_name, typeshed_dir):
         case {"skip": True}:
             return StubtestStrictness.SKIPPED
-        case {"ignore_missing_stub": False}:
-            return StubtestStrictness.ERROR_ON_MISSING_STUB
-        case _:
+        case {"ignore_missing_stub": True}:
             return StubtestStrictness.MISSING_STUBS_IGNORED
+        case _:
+            return StubtestStrictness.ERROR_ON_MISSING_STUB
 
 
 def get_stubtest_platforms(
