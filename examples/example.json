@@ -34,7 +34,7 @@
     "stub_distribution_name": "types-DateTimeRange",
     "extra_description": null,
     "number_of_lines": 64,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -418,7 +418,7 @@
     "package_name": "PyYAML",
     "stub_distribution_name": "types-PyYAML",
     "extra_description": null,
-    "number_of_lines": 1171,
+    "number_of_lines": 1177,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -430,8 +430,8 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 389,
-      "unannotated_parameters": 321,
+      "annotated_parameters": 395,
+      "unannotated_parameters": 315,
       "annotated_returns": 158,
       "unannotated_returns": 230,
       "explicit_Incomplete_parameters": 12,
@@ -439,7 +439,7 @@
       "explicit_Any_parameters": 40,
       "explicit_Any_returns": 12,
       "annotated_variables": 220,
-      "explicit_Any_variables": 190,
+      "explicit_Any_variables": 189,
       "explicit_Incomplete_variables": 2,
       "classdefs": 91,
       "classdefs_with_Any": 0,
@@ -3979,7 +3979,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51479,
+    "number_of_lines": 51482,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3989,14 +3989,14 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1753
+      "allowlist_length": 1763
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24703,
-      "unannotated_parameters": 713,
-      "annotated_returns": 13376,
-      "unannotated_returns": 406,
+      "annotated_parameters": 24705,
+      "unannotated_parameters": 711,
+      "annotated_returns": 13380,
+      "unannotated_returns": 402,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2044,

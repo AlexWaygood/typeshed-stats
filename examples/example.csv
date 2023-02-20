@@ -1,6 +1,6 @@
 package_name,stub_distribution_name,extra_description,number_of_lines,package_status,upload_status,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables,classdefs,classdefs_with_Any,classdefs_with_Incomplete,stubtest_strictness,stubtest_platforms,stubtest_allowlist_length
 D3DShot,types-D3DShot,-,586,UP_TO_DATE,UPLOADED,STRICT,127,0,255,0,0,0,0,0,100,0,0,43,0,0,SKIPPED,None,0
-DateTimeRange,types-DateTimeRange,-,64,OUT_OF_DATE,UPLOADED,STRICT,30,0,28,0,0,0,0,0,10,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
+DateTimeRange,types-DateTimeRange,-,64,OBSOLETE,UPLOADED,STRICT,30,0,28,0,0,0,0,0,10,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 Deprecated,types-Deprecated,-,56,UP_TO_DATE,UPLOADED,STRICT,30,0,10,0,0,0,1,0,12,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 ExifRead,types-ExifRead,-,218,UP_TO_DATE,UPLOADED,STRICT,72,0,52,0,0,0,2,1,82,2,2,14,0,0,ERROR_ON_MISSING_STUB,linux,1
 Flask-Cors,types-Flask-Cors,-,124,UP_TO_DATE,UPLOADED,STRICT,62,0,23,0,1,0,7,2,30,1,0,2,0,0,MISSING_STUBS_IGNORED,linux,0
@@ -12,7 +12,7 @@ Pillow,types-Pillow,-,2537,UP_TO_DATE,UPLOADED,NOT_STRICT,653,613,466,340,60,2,5
 PyAutoGUI,types-PyAutoGUI,-,229,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMySQL,types-PyMySQL,-,1040,UP_TO_DATE,UPLOADED,NOT_STRICT,139,53,98,40,28,0,10,18,733,62,0,24,0,0,MISSING_STUBS_IGNORED,linux,11
 PyScreeze,types-PyScreeze,-,184,UP_TO_DATE,UPLOADED,STRICT,93,0,18,0,0,0,0,0,14,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
-PyYAML,types-PyYAML,-,1171,UP_TO_DATE,UPLOADED,NOT_STRICT,389,321,158,230,12,0,40,12,220,190,2,91,0,0,ERROR_ON_MISSING_STUB,linux,1
+PyYAML,types-PyYAML,-,1177,UP_TO_DATE,UPLOADED,NOT_STRICT,395,315,158,230,12,0,40,12,220,189,2,91,0,0,ERROR_ON_MISSING_STUB,linux,1
 Pygments,types-Pygments,-,687,UP_TO_DATE,UPLOADED,NOT_STRICT,108,157,96,79,17,2,7,2,313,193,0,62,1,0,MISSING_STUBS_IGNORED,linux,4
 SQLAlchemy,types-SQLAlchemy,The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.,14663,OBSOLETE,UPLOADED,NOT_STRICT,2117,7007,2115,3317,1141,0,67,23,3089,1859,197,1329,62,2,MISSING_STUBS_IGNORED,linux,1153
 Send2Trash,types-Send2Trash,-,21,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,1,3,0,2,1,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
@@ -123,7 +123,7 @@ simplejson,types-simplejson,-,51,UP_TO_DATE,UPLOADED,STRICT,36,0,16,0,0,0,14,4,1
 singledispatch,types-singledispatch,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 six,types-six,-,335,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,-,51479,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,24703,713,13376,406,85,18,2044,826,8079,555,101,2244,22,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1753
+stdlib,-,-,51482,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,24705,711,13380,402,85,18,2044,826,8079,555,101,2244,22,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1763
 stdlib-list,types-stdlib-list,-,16,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,0,1,4,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 stripe,types-stripe,-,1483,OUT_OF_DATE,UPLOADED,NOT_STRICT,264,388,108,168,156,0,5,4,155,42,0,134,1,0,MISSING_STUBS_IGNORED,linux,6
 tabulate,types-tabulate,-,50,UP_TO_DATE,UPLOADED,STRICT,15,0,2,0,0,0,2,0,25,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
