@@ -6586,7 +6586,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,473 (excluding blank lines)
+51,460 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6602,7 +6602,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,766 allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,764 allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6611,21 +6611,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,702
+    - Annotated parameters: 24,703
     - Unannotated parameters: 711
     - Explicit `Any` parameters: 2,043
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 13,373
+    - Annotated returns: 13,377
     - Unannotated returns: 402
     - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,082
+    - Annotated variables: 8,073
     - Explicit `Any` variables: 556
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
 - Class definitions:
-    - Total class definitions: 2,244
+    - Total class definitions: 2,242
     - Class definitions with `Any`: 22
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -6745,7 +6745,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-50 (excluding blank lines)
+60 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6775,16 +6775,16 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 2
+    - Annotated returns: 3
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 25
+    - Annotated variables: 26
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 3
+    - Total class definitions: 4
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
