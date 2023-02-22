@@ -6,7 +6,7 @@
 
 ### Number of lines
 
-586 (excluding blank lines)
+585 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -587,7 +587,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,040 (excluding blank lines)
+1,041 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -640,7 +640,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-184 (excluding blank lines)
+183 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -803,7 +803,7 @@ The `sqlalchemy-stubs` package is an alternative to this package and also includ
 
 ### Number of lines
 
-14,663 (excluding blank lines)
+14,666 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -1439,7 +1439,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-118 (excluding blank lines)
+119 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2287,7 +2287,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-501 (excluding blank lines)
+502 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3084,7 +3084,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,414 (excluding blank lines)
+1,415 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3667,7 +3667,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,649 (excluding blank lines)
+2,648 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3826,7 +3826,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,214 (excluding blank lines)
+1,215 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3879,7 +3879,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-658 (excluding blank lines)
+659 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4947,7 +4947,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,321 (excluding blank lines)
+1,316 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4977,8 +4977,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 38
 - Returns:
-    - Annotated returns: 110
-    - Unannotated returns: 412
+    - Annotated returns: 111
+    - Unannotated returns: 411
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
@@ -5954,7 +5954,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-127 (excluding blank lines)
+128 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6113,7 +6113,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-5,609 (excluding blank lines)
+5,610 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6586,7 +6586,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,558 (excluding blank lines)
+51,582 (excluding blank lines)
 
 ### Package status: *stdlib*
 
