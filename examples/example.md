@@ -3985,7 +3985,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-9,181 (excluding blank lines)
+9,276 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4010,19 +4010,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,597
-    - Unannotated parameters: 660
+    - Annotated parameters: 2,690
+    - Unannotated parameters: 607
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2,218
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2,186
 - Returns:
-    - Annotated returns: 744
-    - Unannotated returns: 423
+    - Annotated returns: 819
+    - Unannotated returns: 356
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 19
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
     - Annotated variables: 4,197
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3,566
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3,559
 - Class definitions:
     - Total class definitions: 566
     - Class definitions with `Any`: 0
@@ -6586,7 +6586,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,553 (excluding blank lines)
+51,558 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6602,7 +6602,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,554 allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,553 allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6611,12 +6611,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,713
+    - Annotated parameters: 24,716
     - Unannotated parameters: 720
     - Explicit `Any` parameters: 2,042
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 88
 - Returns:
-    - Annotated returns: 13,395
+    - Annotated returns: 13,396
     - Unannotated returns: 417
     - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18

@@ -2403,7 +2403,7 @@
     "package_name": "openpyxl",
     "stub_distribution_name": "types-openpyxl",
     "extra_description": null,
-    "number_of_lines": 9181,
+    "number_of_lines": 9276,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2415,17 +2415,17 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2597,
-      "unannotated_parameters": 660,
-      "annotated_returns": 744,
-      "unannotated_returns": 423,
-      "explicit_Incomplete_parameters": 2218,
-      "explicit_Incomplete_returns": 19,
+      "annotated_parameters": 2690,
+      "unannotated_parameters": 607,
+      "annotated_returns": 819,
+      "unannotated_returns": 356,
+      "explicit_Incomplete_parameters": 2186,
+      "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
       "annotated_variables": 4197,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 3566,
+      "explicit_Incomplete_variables": 3559,
       "classdefs": 566,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 5
@@ -3979,7 +3979,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51553,
+    "number_of_lines": 51558,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3989,13 +3989,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1554
+      "allowlist_length": 1553
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24713,
+      "annotated_parameters": 24716,
       "unannotated_parameters": 720,
-      "annotated_returns": 13395,
+      "annotated_returns": 13396,
       "unannotated_returns": 417,
       "explicit_Incomplete_parameters": 88,
       "explicit_Incomplete_returns": 18,
