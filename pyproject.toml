@@ -50,6 +50,7 @@ path = "src/typeshed_stats/__init__.py"
 
 [tool.hatch.metadata.hooks.requirements_txt.optional-dependencies]
 rich = ["requirements/rich.txt"]
+pyright = ["requirements/docs.txt", "requirements/typecheck.txt", "requirements/pytest.txt"]
 # Include the [rich] extra in the [docs] extra so the CLI docs generated from --help are consistent
 docs = ["requirements/docs.txt", "requirements/rich.txt"]
 pytest = ["requirements/pytest.txt", "requirements/rich.txt"]
