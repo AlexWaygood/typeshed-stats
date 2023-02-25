@@ -3402,7 +3402,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-13,317 (excluding blank lines)
+13,323 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3427,19 +3427,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `influxdb-client`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,269
-    - Unannotated parameters: 3,800
+    - Annotated parameters: 2,273
+    - Unannotated parameters: 3,797
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,979
 - Returns:
-    - Annotated returns: 1,857
-    - Unannotated returns: 3,446
+    - Annotated returns: 1,858
+    - Unannotated returns: 3,445
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 1,178
+    - Annotated variables: 1,179
     - Explicit `Any` variables: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,076
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,066
 - Class definitions:
     - Total class definitions: 423
     - Class definitions with `Any`: 0
