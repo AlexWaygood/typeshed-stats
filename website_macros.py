@@ -1,3 +1,4 @@
+# pyright: reportUnusedFunction=false
 """Macros and variables for the mkdocs-macros plugin."""
 
 import builtins
