@@ -5,17 +5,18 @@ from collections.abc import Sequence
 from functools import cache
 from operator import attrgetter
 from pathlib import Path
+from typing import Any
 
 import attrs
 import cattrs
 
+from typeshed_stats.gather import _NiceReprEnum  # pyright: ignore[reportPrivateUsage]
 from typeshed_stats.gather import (
     AnnotationStats,
     FileInfo,
     PackageInfo,
     StubtestSettings,
     StubtestStrictness,
-    _NiceReprEnum,
 )
 
 if typing.TYPE_CHECKING:
@@ -145,9 +146,11 @@ def _stats_from_csv(
 
     csvfile = io.StringIO(data, newline="")
     stats = list(csv.DictReader(csvfile))
-    converted_stats = []
+    converted_stats: list[dict[str, Any]] = []
     for stat in stats:
-        converted_stat, annotation_stats, stubtest_settings = {}, {}, {}
+        converted_stat: dict[str, Any] = {}
+        annotation_stats: dict[str, Any] = {}
+        stubtest_settings: dict[str, Any] = {}
         for key, val in stat.items():
             if key in AnnotationStats.__annotations__:
                 annotation_stats[key] = val
@@ -166,7 +169,7 @@ def _stats_from_csv(
             if converted_stat["extra_description"] == "-":
                 converted_stat["extra_description"] = None
         converted_stats.append(converted_stat)
-    return _structure(converted_stats, list[cls])  # type: ignore[valid-type]
+    return _structure(converted_stats, list[cls])  # type: ignore[valid-type]  # pyright: ignore[reportGeneralTypeIssues]
 
 
 def package_stats_from_csv(data: str) -> list[PackageInfo]:

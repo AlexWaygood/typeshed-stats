@@ -50,6 +50,7 @@ path = "src/typeshed_stats/__init__.py"
 
 [tool.hatch.metadata.hooks.requirements_txt.optional-dependencies]
 rich = ["requirements/rich.txt"]
+pyright = ["requirements/docs.txt", "requirements/typecheck.txt", "requirements/pytest.txt"]
 # Include the [rich] extra in the [docs] extra so the CLI docs generated from --help are consistent
 docs = ["requirements/docs.txt", "requirements/rich.txt"]
 pytest = ["requirements/pytest.txt", "requirements/rich.txt"]
@@ -57,7 +58,7 @@ dev = [
     "requirements/rich.txt",
     "requirements/docs.txt",
     "requirements/flake8.txt",
-    "requirements/mypy.txt",
+    "requirements/typecheck.txt",
     "requirements/pytest.txt",
     "requirements/misc-lint.txt"
 ]
@@ -83,6 +84,39 @@ pretty = true
 strict = true
 enable_error_code = 'ignore-without-code,redundant-expr,possibly-undefined'
 warn_unreachable = true
+
+[tool.pyright]
+include = ["."]
+venv = "env"
+pythonVersion = "3.10"
+typeCheckingMode = "strict"
+
+# Extra strict settings
+reportMissingModuleSource = "error"
+reportShadowedImports = "error"
+reportCallInDefaultInitializer = "error"
+reportUnnecessaryTypeIgnoreComment = "error"
+
+# Leave "type: ignore" comments to mypy
+enableTypeIgnoreComments = false
+
+# Runtime libraries used are not all py.typed
+useLibraryCodeForTypes = true
+
+# Overly strict settings with false positives
+reportMissingSuperCall = "none"
+reportImplicitStringConcatenation = "none"
+reportUninitializedInstanceVariable = false
+
+# Already flagged by mypy
+reportMissingTypeStubs = "none"
+
+# Extremely strict settings that result in lots of pyright: ignores everywhere
+reportUnknownVariableType = false
+reportUnknownArgumentType = false
+reportUnknownMemberType = false
+reportUnknownLambdaType = false
+reportUnnecessaryIsInstance = false
 
 [tool.pytest.ini_options]
 testpaths = ["src", "tests"]

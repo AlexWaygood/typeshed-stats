@@ -101,7 +101,7 @@ _LoggingLevels: TypeAlias = Literal[
 
 def _get_help_formatter() -> type[argparse.HelpFormatter]:
     try:
-        import rich  # noqa: F401
+        import rich  # noqa: F401  # pyright: ignore[reportUnusedImport]
         from rich_argparse import RichHelpFormatter as HelpFormatter
     except ImportError:
         from argparse import HelpFormatter  # type: ignore[assignment]
@@ -315,10 +315,10 @@ def _run(argv: Sequence[str] | None = None) -> None:
         logger.info("Gathering stats...")
         stats = gather_stats_on_multiple_packages(packages, typeshed_dir=typeshed_dir)
 
-    logger.info("Formatting stats...")
-    formatted_stats = output_option.convert(stats)
-    logger.info("Writing stats...")
-    _write_stats(formatted_stats, args.writefile, logger)
+        logger.info("Formatting stats...")
+        formatted_stats = output_option.convert(stats)
+        logger.info("Writing stats...")
+        _write_stats(formatted_stats, args.writefile, logger)
 
 
 def main(argv: Sequence[str] | None = None) -> None:

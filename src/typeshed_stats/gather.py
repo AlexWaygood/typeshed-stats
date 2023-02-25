@@ -15,7 +15,16 @@ from functools import lru_cache, partial
 from itertools import chain
 from operator import attrgetter
 from pathlib import Path
-from typing import Annotated, Any, Literal, NewType, TypeAlias, TypeVar, final
+from typing import (
+    Annotated,
+    Any,
+    Literal,
+    NewType,
+    TypeAlias,
+    TypeGuard,
+    TypeVar,
+    final,
+)
 
 import aiohttp
 import attrs
@@ -398,7 +407,7 @@ def _get_stubtest_config(
     package_name: PackageName, typeshed_dir: Path | str
 ) -> Mapping[str, object]:
     metadata = _get_package_metadata(package_name, typeshed_dir)
-    config = metadata.get("tool", {}).get("stubtest", {})
+    config: object = metadata.get("tool", {}).get("stubtest", {})
     assert isinstance(config, dict)
     return config
 
@@ -808,6 +817,10 @@ def get_package_size(package_name: PackageName, *, typeshed_dir: Path | str) -> 
     )
 
 
+def _is_str_list(obj: object) -> TypeGuard[list[str]]:
+    return isinstance(obj, list) and all(isinstance(item, str) for item in obj)
+
+
 @lru_cache
 def _get_pyright_excludelist(
     *,
@@ -824,7 +837,8 @@ def _get_pyright_excludelist(
     valid_json = re.sub(r",(\s*?[\}\]])", r"\1", "\n".join(lines))
     pyright_config = json.loads(valid_json)
     assert isinstance(pyright_config, dict)
-    excludelist = pyright_config.get("exclude", [])
+    excludelist: object = pyright_config.get("exclude", [])
+    assert _is_str_list(excludelist)
     return frozenset(Path(typeshed_dir, item) for item in excludelist)
 
 

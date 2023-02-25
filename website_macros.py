@@ -1,3 +1,4 @@
+# pyright: reportUnusedFunction=false
 """Macros and variables for the mkdocs-macros plugin."""
 
 import builtins
@@ -26,7 +27,7 @@ class Env(Protocol):
     variables: dict[str, Any]
     conf: dict[str, Any]
 
-    def macro(self, /, func: CF) -> CF:
+    def macro(self, /, func: CF) -> CF:  # pyright: ignore[reportGeneralTypeIssues]
         """Register a function as a macro."""
 
 

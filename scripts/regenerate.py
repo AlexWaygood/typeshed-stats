@@ -34,7 +34,7 @@ def regenerate_examples(stats: Sequence[PackageInfo]) -> None:
 # I think we need the type: ignore here
 # because mypy is worried that ExitStack() might suppress exceptions.
 # I guess that's reasonable, thought it's somewhat annoying in this case.
-def get_stats(args: argparse.Namespace) -> Sequence[PackageInfo]:  # type: ignore[return]
+def get_stats(args: argparse.Namespace) -> Sequence[PackageInfo]:  # type: ignore[return]  # pyright: ignore[reportGeneralTypeIssues]
     """Get the stats."""
     with ExitStack() as stack:
         if args.download_typeshed:
