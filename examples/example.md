@@ -375,7 +375,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-309 (excluding blank lines)
+310 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -481,7 +481,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-2,537 (excluding blank lines)
+2,545 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -506,13 +506,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Pillow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 653
-    - Unannotated parameters: 613
+    - Annotated parameters: 661
+    - Unannotated parameters: 605
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 60
 - Returns:
-    - Annotated returns: 466
-    - Unannotated returns: 340
+    - Annotated returns: 468
+    - Unannotated returns: 338
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
@@ -803,7 +803,7 @@ The `sqlalchemy-stubs` package is an alternative to this package and also includ
 
 ### Number of lines
 
-14,666 (excluding blank lines)
+14,693 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -828,13 +828,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `SQLAlchemy`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,117
-    - Unannotated parameters: 7,007
+    - Annotated parameters: 2,150
+    - Unannotated parameters: 6,974
     - Explicit `Any` parameters: 67
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,141
 - Returns:
-    - Annotated returns: 2,115
-    - Unannotated returns: 3,317
+    - Annotated returns: 2,117
+    - Unannotated returns: 3,315
     - Explicit `Any` returns: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -1068,7 +1068,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-711 (excluding blank lines)
+722 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1093,13 +1093,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `aws-xray-sdk`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 127
-    - Unannotated parameters: 166
+    - Annotated parameters: 139
+    - Unannotated parameters: 154
     - Explicit `Any` parameters: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
-    - Annotated returns: 180
-    - Unannotated returns: 94
+    - Annotated returns: 182
+    - Unannotated returns: 92
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -1492,7 +1492,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-499 (excluding blank lines)
+502 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -1570,8 +1570,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `cffi`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 295
-    - Unannotated parameters: 251
+    - Annotated parameters: 298
+    - Unannotated parameters: 248
     - Explicit `Any` parameters: 32
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
@@ -3321,8 +3321,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `humanfriendly`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 79
-    - Unannotated parameters: 181
+    - Annotated parameters: 81
+    - Unannotated parameters: 179
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 22
 - Returns:
@@ -3402,7 +3402,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-13,323 (excluding blank lines)
+13,337 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3427,8 +3427,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `influxdb-client`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,273
-    - Unannotated parameters: 3,797
+    - Annotated parameters: 2,282
+    - Unannotated parameters: 3,788
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,979
 - Returns:
@@ -3455,7 +3455,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-741 (excluding blank lines)
+744 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3480,8 +3480,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `invoke`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 243
-    - Unannotated parameters: 171
+    - Annotated parameters: 246
+    - Unannotated parameters: 168
     - Explicit `Any` parameters: 28
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
@@ -3851,8 +3851,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `mysqlclient`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28
-    - Unannotated parameters: 128
+    - Annotated parameters: 29
+    - Unannotated parameters: 127
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
@@ -4356,7 +4356,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,609 (excluding blank lines)
+1,630 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4381,8 +4381,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 370
-    - Unannotated parameters: 704
+    - Annotated parameters: 403
+    - Unannotated parameters: 671
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 244
 - Returns:
@@ -4466,7 +4466,7 @@ The `types-pika` package contains alternate, more complete type stubs, that are 
 
 ### Number of lines
 
-2,187 (excluding blank lines)
+2,192 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4491,8 +4491,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pika`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 604
-    - Unannotated parameters: 397
+    - Annotated parameters: 611
+    - Unannotated parameters: 390
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 141
 - Returns:
@@ -4760,8 +4760,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `psutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 117
-    - Unannotated parameters: 310
+    - Annotated parameters: 119
+    - Unannotated parameters: 308
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 28
 - Returns:
@@ -5371,7 +5371,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,033 (excluding blank lines)
+1,037 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6113,7 +6113,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-5,610 (excluding blank lines)
+5,631 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6138,13 +6138,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `redis`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,578
-    - Unannotated parameters: 1,293
+    - Annotated parameters: 3,594
+    - Unannotated parameters: 1,277
     - Explicit `Any` parameters: 68
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 349
 - Returns:
-    - Annotated returns: 1,325
-    - Unannotated returns: 645
+    - Annotated returns: 1,326
+    - Unannotated returns: 644
     - Explicit `Any` returns: 322
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
@@ -6219,7 +6219,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-970 (excluding blank lines)
+971 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6244,8 +6244,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `requests`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 353
-    - Unannotated parameters: 153
+    - Annotated parameters: 354
+    - Unannotated parameters: 152
     - Explicit `Any` parameters: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
 - Returns:
@@ -6325,7 +6325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,443 (excluding blank lines)
+2,449 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6350,13 +6350,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 821
-    - Unannotated parameters: 390
+    - Annotated parameters: 827
+    - Unannotated parameters: 384
     - Explicit `Any` parameters: 29
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 47
 - Returns:
-    - Annotated returns: 658
-    - Unannotated returns: 260
+    - Annotated returns: 659
+    - Unannotated returns: 259
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
@@ -6586,7 +6586,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,578 (excluding blank lines)
+51,616 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6611,14 +6611,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,716
+    - Annotated parameters: 24,723
     - Unannotated parameters: 719
-    - Explicit `Any` parameters: 2,042
+    - Explicit `Any` parameters: 2,043
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 88
 - Returns:
-    - Annotated returns: 13,395
+    - Annotated returns: 13,402
     - Unannotated returns: 417
-    - Explicit `Any` returns: 825
+    - Explicit `Any` returns: 826
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
     - Annotated variables: 8,120
@@ -6959,9 +6959,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 13 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7010,7 +7010,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,377 (excluding blank lines)
+1,380 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7035,8 +7035,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tqdm`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 812
-    - Unannotated parameters: 142
+    - Annotated parameters: 813
+    - Unannotated parameters: 141
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 42
 - Returns:
@@ -7434,7 +7434,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-696 (excluding blank lines)
+703 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7459,13 +7459,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `urllib3`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 158
-    - Unannotated parameters: 160
+    - Annotated parameters: 164
+    - Unannotated parameters: 154
     - Explicit `Any` parameters: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 95
-    - Unannotated returns: 61
+    - Annotated returns: 97
+    - Unannotated returns: 59
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
