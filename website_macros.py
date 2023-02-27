@@ -7,6 +7,7 @@ import datetime as dt
 import shutil
 import subprocess
 import types
+from abc import abstractmethod
 from collections.abc import Callable
 from enum import Enum
 from pathlib import Path
@@ -27,7 +28,8 @@ class Env(Protocol):
     variables: dict[str, Any]
     conf: dict[str, Any]
 
-    def macro(self, /, func: CF) -> CF:  # pyright: ignore[reportGeneralTypeIssues]
+    @abstractmethod
+    def macro(self, /, func: CF) -> CF:
         """Register a function as a macro."""
 
 
