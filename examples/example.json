@@ -676,7 +676,7 @@
     "stub_distribution_name": "types-babel",
     "extra_description": null,
     "number_of_lines": 1134,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
