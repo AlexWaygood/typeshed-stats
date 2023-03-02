@@ -3417,8 +3417,8 @@
     "annotation_stats": {
       "annotated_parameters": 171,
       "unannotated_parameters": 66,
-      "annotated_returns": 106,
-      "unannotated_returns": 48,
+      "annotated_returns": 107,
+      "unannotated_returns": 47,
       "explicit_Incomplete_parameters": 5,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
