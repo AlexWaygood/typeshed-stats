@@ -486,17 +486,15 @@ def get_stubtest_platforms(
             return ["linux"]
 
 
-def _num_allowlist_entries_in_file(path: Path) -> int:
+def _allowlist_entries_in_file(path: Path) -> set[str]:
     with path.open(encoding="utf-8") as file:
-        return sum(
-            1 for line in file if line.strip() and not line.strip().startswith("#")
-        )
+        return {line.split("#")[0].strip() for line in file} - {""}
 
 
 def get_stubtest_allowlist_length(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> int:
-    """Get the number of "allowlist entries" typeshed uses in CI when [stubtest][] is run on a certain package.
+    """Get the number of unique "allowlist entries" typeshed uses in CI when [stubtest][] is run on a certain package.
 
     An allowlist entry indicates a place in the stub where stubtest emits an error,
     but typeshed has chosen to silence the error rather than "fix it".
@@ -511,6 +509,7 @@ def get_stubtest_allowlist_length(
 
     Returns:
         The number of allowlist entries for that package.
+        Duplicate entries in allowlists are removed.
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_allowlist_length
@@ -524,16 +523,19 @@ def get_stubtest_allowlist_length(
     """
     if package_name == "stdlib":
         allowlist_dir = Path(typeshed_dir, "tests", "stubtest_allowlists")
-        return sum(
-            _num_allowlist_entries_in_file(file) for file in allowlist_dir.glob("*.txt")
+        combined_allowlist = chain.from_iterable(
+            _allowlist_entries_in_file(file) for file in allowlist_dir.glob("*.txt")
         )
-    allowlist_dir = Path(typeshed_dir, "stubs", package_name, "@tests")
-    if not allowlist_dir.exists():
-        return 0
-    return sum(
-        _num_allowlist_entries_in_file(file)
-        for file in allowlist_dir.glob("stubtest_allowlist*.txt")
-    )
+    else:
+        allowlist_dir = Path(typeshed_dir, "stubs", package_name, "@tests")
+        if not allowlist_dir.exists():
+            return 0
+        combined_allowlist = chain.from_iterable(
+            _allowlist_entries_in_file(file)
+            for file in allowlist_dir.glob("stubtest_allowlist*.txt")
+        )
+    deduplicated_allowlist = set(combined_allowlist)
+    return len(deduplicated_allowlist)
 
 
 @final
