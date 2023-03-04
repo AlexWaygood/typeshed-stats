@@ -54,9 +54,13 @@ In CI, stubtest is run on `{{ stubtest_platforms[0] }}`, `{{ stubtest_platforms[
 {% endif %}
 {% endif %}
 
-Typeshed currently has {{ stubtest_allowlist_length }} allowlist
-{{- " entry " if stubtest_allowlist_length == "1" else " entries " -}}
-for {{ package_name }} when running stubtest in CI.
+{% if stubtest_allowlist_length == "0" %}
+Typeshed currently has 0 allowlist entries for {{ package_name }} when running stubtest in CI.
+{% elif stubtest_allowlist_length == "1" %}
+Typeshed currently has 1 unique allowlist entry for {{ package_name }} when running stubtest in CI.
+{% else %}
+Typeshed currently has {{ stubtest_allowlist_length }} unique allowlist entries for {{ package_name }} when running stubtest in CI.
+{% endif %}
 
 ### Pyright settings in CI: *{{ pyright_setting.formatted_name }}*
 
