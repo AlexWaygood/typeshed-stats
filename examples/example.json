@@ -555,7 +555,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 57
+      "allowlist_length": 56
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -940,7 +940,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 5
+      "allowlist_length": 4
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -2187,7 +2187,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 6
+      "allowlist_length": 5
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2508,7 +2508,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 14
+      "allowlist_length": 12
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2862,7 +2862,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 20
+      "allowlist_length": 14
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3217,7 +3217,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 14
+      "allowlist_length": 13
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -3251,7 +3251,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 84
+      "allowlist_length": 72
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -3667,7 +3667,7 @@
       "platforms": [
         "win32"
       ],
-      "allowlist_length": 49
+      "allowlist_length": 48
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3989,7 +3989,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1549
+      "allowlist_length": 1038
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
@@ -4309,7 +4309,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 3
+      "allowlist_length": 2
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4566,7 +4566,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 38
+      "allowlist_length": 37
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
