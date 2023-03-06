@@ -6325,7 +6325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,678 (excluding blank lines)
+1,713 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6341,7 +6341,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 27 unique allowlist entries for `setuptools` when running stubtest in CI.
+Typeshed currently has 26 unique allowlist entries for `setuptools` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6350,21 +6350,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 438
-    - Unannotated parameters: 352
-    - Explicit `Any` parameters: 8
+    - Annotated parameters: 446
+    - Unannotated parameters: 362
+    - Explicit `Any` parameters: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 47
 - Returns:
-    - Annotated returns: 475
-    - Unannotated returns: 231
+    - Annotated returns: 489
+    - Unannotated returns: 232
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 430
+    - Annotated variables: 444
     - Explicit `Any` variables: 159
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 122
 - Class definitions:
-    - Total class definitions: 109
+    - Total class definitions: 110
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
