@@ -4197,7 +4197,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-181 (excluding blank lines)
+183 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4224,13 +4224,13 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 114
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 23
+    - Explicit `Any` parameters: 22
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 60
     - Unannotated returns: 0
-    - Explicit `Any` returns: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Explicit `Any` returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
     - Annotated variables: 34
     - Explicit `Any` variables: 3
@@ -5371,7 +5371,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,037 (excluding blank lines)
+1,077 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5387,7 +5387,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 72 unique allowlist entries for `pyserial` when running stubtest in CI.
+Typeshed currently has 59 unique allowlist entries for `pyserial` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5396,12 +5396,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `pyserial`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 205
+    - Annotated parameters: 223
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 251
+    - Annotated returns: 269
     - Unannotated returns: 0
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
