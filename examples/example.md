@@ -3932,7 +3932,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,385 (excluding blank lines)
+1,391 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3957,13 +3957,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `oauthlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 274
-    - Unannotated parameters: 541
+    - Annotated parameters: 333
+    - Unannotated parameters: 482
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 185
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 181
 - Returns:
-    - Annotated returns: 139
-    - Unannotated returns: 211
+    - Annotated returns: 155
+    - Unannotated returns: 195
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -6113,7 +6113,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-5,631 (excluding blank lines)
+5,638 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6148,8 +6148,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 322
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
-    - Annotated variables: 624
-    - Explicit `Any` variables: 214
+    - Annotated variables: 631
+    - Explicit `Any` variables: 215
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 34
 - Class definitions:
     - Total class definitions: 213
@@ -7222,7 +7222,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-578 (excluding blank lines)
+579 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7257,7 +7257,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 309
+    - Annotated variables: 310
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
