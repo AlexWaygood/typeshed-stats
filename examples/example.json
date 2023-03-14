@@ -610,9 +610,9 @@
   {
     "package_name": "appdirs",
     "stub_distribution_name": "types-appdirs",
-    "extra_description": null,
+    "extra_description": "The `appdirs` package has been deprecated in favour of the `platformdirs`package, which ships with a `py.typed` file. Users should migrate their`appdirs` code to use `platformdirs` instead, which will remove the need forthe `types-appdirs` package.",
     "number_of_lines": 54,
-    "package_status": "UP_TO_DATE",
+    "package_status": "NO_LONGER_UPDATED",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",

@@ -1009,6 +1009,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `appdirs`
 
+### Extra description
+
+The `appdirs` package has been deprecated in favour of the `platformdirs`package, which ships with a `py.typed` file. Users should migrate their`appdirs` code to use `platformdirs` instead, which will remove the need forthe `types-appdirs` package.
+
 ### Stub distribution name
 
 `types-appdirs`
@@ -1017,9 +1021,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 54 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *no longer updated*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+The runtime package has not added type hints, but these stubs are no longer updated by typeshed for some other reason.
 
 ### Upload status: *uploaded*
 
