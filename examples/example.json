@@ -608,38 +608,6 @@
     }
   },
   {
-    "package_name": "appdirs",
-    "stub_distribution_name": "types-appdirs",
-    "extra_description": "The `appdirs` package has been deprecated in favour of the `platformdirs`package, which ships with a `py.typed` file. Users should migrate their`appdirs` code to use `platformdirs` instead, which will remove the need forthe `types-appdirs` package.",
-    "number_of_lines": 54,
-    "package_status": "NO_LONGER_UPDATED",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 33,
-      "unannotated_parameters": 0,
-      "annotated_returns": 15,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 8,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 1,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "aws-xray-sdk",
     "stub_distribution_name": "types-aws-xray-sdk",
     "extra_description": null,
@@ -700,38 +668,6 @@
       "explicit_Incomplete_variables": 0,
       "classdefs": 45,
       "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
-    "package_name": "backports.ssl_match_hostname",
-    "stub_distribution_name": "types-backports.ssl_match_hostname",
-    "extra_description": null,
-    "number_of_lines": 6,
-    "package_status": "UP_TO_DATE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 3,
-      "unannotated_parameters": 0,
-      "annotated_returns": 2,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 1,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 0,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 1,
-      "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
   },
@@ -1828,7 +1764,7 @@
   {
     "package_name": "gdb",
     "stub_distribution_name": "types-gdb",
-    "extra_description": "Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: is is not possible to install the `gdb` package separately, for instance using `pip`.",
+    "extra_description": "Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",
     "number_of_lines": 733,
     "package_status": "NOT_ON_PYPI",
     "upload_status": "UPLOADED",

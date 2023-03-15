@@ -1007,63 +1007,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
-## Info on typeshed's stubs for `appdirs`
-
-### Extra description
-
-The `appdirs` package has been deprecated in favour of the `platformdirs`package, which ships with a `py.typed` file. Users should migrate their`appdirs` code to use `platformdirs` instead, which will remove the need forthe `types-appdirs` package.
-
-### Stub distribution name
-
-`types-appdirs`
-
-### Number of lines
-
-54 (excluding blank lines)
-
-### Package status: *no longer updated*
-
-The runtime package has not added type hints, but these stubs are no longer updated by typeshed for some other reason.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 0 allowlist entries for `appdirs` when running stubtest in CI.
-
-### Pyright settings in CI: *strict*
-
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
-
-### Statistics on the annotations in typeshed's stubs for `appdirs`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 33
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
-- Returns:
-    - Annotated returns: 15
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 8
-    - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 1
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
 ## Info on typeshed's stubs for `aws-xray-sdk`
 
 ### Stub distribution name
@@ -1166,59 +1109,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Class definitions:
     - Total class definitions: 45
     - Class definitions with `Any`: 1
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
-## Info on typeshed's stubs for `backports.ssl_match_hostname`
-
-### Stub distribution name
-
-`types-backports.ssl_match_hostname`
-
-### Number of lines
-
-6 (excluding blank lines)
-
-### Package status: *up to date*
-
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 0 allowlist entries for `backports.ssl_match_hostname` when running stubtest in CI.
-
-### Pyright settings in CI: *strict*
-
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
-
-### Statistics on the annotations in typeshed's stubs for `backports.ssl_match_hostname`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
-- Returns:
-    - Annotated returns: 2
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
-- Variables:
-    - Annotated variables: 0
-    - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 1
-    - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
@@ -3029,7 +2919,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Extra description
 
-Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: is is not possible to install the `gdb` package separately, for instance using `pip`.
+Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.
 
 ### Stub distribution name
 
