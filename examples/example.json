@@ -482,7 +482,7 @@
     "package_name": "SQLAlchemy",
     "stub_distribution_name": "types-SQLAlchemy",
     "extra_description": "The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.",
-    "number_of_lines": 14693,
+    "number_of_lines": 14708,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -490,23 +490,23 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 1153
+      "allowlist_length": 1157
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2150,
-      "unannotated_parameters": 6974,
-      "annotated_returns": 2117,
-      "unannotated_returns": 3315,
-      "explicit_Incomplete_parameters": 1141,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 67,
-      "explicit_Any_returns": 23,
-      "annotated_variables": 3089,
-      "explicit_Any_variables": 1859,
+      "annotated_parameters": 2167,
+      "unannotated_parameters": 6955,
+      "annotated_returns": 2143,
+      "unannotated_returns": 3288,
+      "explicit_Incomplete_parameters": 1142,
+      "explicit_Incomplete_returns": 1,
+      "explicit_Any_parameters": 73,
+      "explicit_Any_returns": 32,
+      "annotated_variables": 3088,
+      "explicit_Any_variables": 1858,
       "explicit_Incomplete_variables": 197,
       "classdefs": 1329,
-      "classdefs_with_Any": 62,
+      "classdefs_with_Any": 60,
       "classdefs_with_Incomplete": 2
     }
   },
@@ -2339,30 +2339,30 @@
     "package_name": "openpyxl",
     "stub_distribution_name": "types-openpyxl",
     "extra_description": null,
-    "number_of_lines": 9276,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 9313,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 1
+      "allowlist_length": 2
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2690,
-      "unannotated_parameters": 607,
-      "annotated_returns": 819,
-      "unannotated_returns": 356,
-      "explicit_Incomplete_parameters": 2186,
-      "explicit_Incomplete_returns": 18,
+      "annotated_parameters": 2702,
+      "unannotated_parameters": 598,
+      "annotated_returns": 817,
+      "unannotated_returns": 348,
+      "explicit_Incomplete_parameters": 2189,
+      "explicit_Incomplete_returns": 19,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 4197,
+      "annotated_variables": 4206,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 3559,
-      "classdefs": 566,
+      "explicit_Incomplete_variables": 3540,
+      "classdefs": 569,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 5
     }
@@ -3915,7 +3915,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51687,
+    "number_of_lines": 51722,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3929,9 +3929,9 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24741,
+      "annotated_parameters": 24753,
       "unannotated_parameters": 719,
-      "annotated_returns": 13415,
+      "annotated_returns": 13427,
       "unannotated_returns": 417,
       "explicit_Incomplete_parameters": 88,
       "explicit_Incomplete_returns": 18,
@@ -4045,7 +4045,7 @@
     "package_name": "tensorflow",
     "stub_distribution_name": "types-tensorflow",
     "extra_description": null,
-    "number_of_lines": 897,
+    "number_of_lines": 17964,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4053,22 +4053,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 24
+      "allowlist_length": 25
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 524,
+      "annotated_parameters": 2689,
       "unannotated_parameters": 0,
-      "annotated_returns": 297,
+      "annotated_returns": 1847,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 3,
-      "explicit_Incomplete_returns": 19,
+      "explicit_Incomplete_returns": 21,
       "explicit_Any_parameters": 9,
       "explicit_Any_returns": 9,
-      "annotated_variables": 31,
+      "annotated_variables": 3871,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 32,
+      "classdefs": 612,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }

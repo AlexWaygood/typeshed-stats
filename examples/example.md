@@ -803,7 +803,7 @@ The `sqlalchemy-stubs` package is an alternative to this package and also includ
 
 ### Number of lines
 
-14,693 (excluding blank lines)
+14,708 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -819,7 +819,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1,153 unique allowlist entries for `SQLAlchemy` when running stubtest in CI.
+Typeshed currently has 1,157 unique allowlist entries for `SQLAlchemy` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -828,22 +828,22 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `SQLAlchemy`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,150
-    - Unannotated parameters: 6,974
-    - Explicit `Any` parameters: 67
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,141
+    - Annotated parameters: 2,167
+    - Unannotated parameters: 6,955
+    - Explicit `Any` parameters: 73
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,142
 - Returns:
-    - Annotated returns: 2,117
-    - Unannotated returns: 3,315
-    - Explicit `Any` returns: 23
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Annotated returns: 2,143
+    - Unannotated returns: 3,288
+    - Explicit `Any` returns: 32
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 3,089
-    - Explicit `Any` variables: 1,859
+    - Annotated variables: 3,088
+    - Explicit `Any` variables: 1,858
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 197
 - Class definitions:
     - Total class definitions: 1,329
-    - Class definitions with `Any`: 62
+    - Class definitions with `Any`: 60
     - Class definitions marked as at least partially `Incomplete`: 2
 
 ---
@@ -3879,11 +3879,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-9,276 (excluding blank lines)
+9,313 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3895,7 +3895,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1 unique allowlist entry for `openpyxl` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `openpyxl` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3904,21 +3904,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,690
-    - Unannotated parameters: 607
+    - Annotated parameters: 2,702
+    - Unannotated parameters: 598
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2,186
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2,189
 - Returns:
-    - Annotated returns: 819
-    - Unannotated returns: 356
+    - Annotated returns: 817
+    - Unannotated returns: 348
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 19
 - Variables:
-    - Annotated variables: 4,197
+    - Annotated variables: 4,206
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3,559
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3,540
 - Class definitions:
-    - Total class definitions: 566
+    - Total class definitions: 569
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 5
 
@@ -6480,7 +6480,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,687 (excluding blank lines)
+51,722 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6505,12 +6505,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,741
+    - Annotated parameters: 24,753
     - Unannotated parameters: 719
     - Explicit `Any` parameters: 2,041
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 88
 - Returns:
-    - Annotated returns: 13,415
+    - Annotated returns: 13,427
     - Unannotated returns: 417
     - Explicit `Any` returns: 826
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
@@ -6692,7 +6692,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-897 (excluding blank lines)
+17,964 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6708,7 +6708,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 24 unique allowlist entries for `tensorflow` when running stubtest in CI.
+Typeshed currently has 25 unique allowlist entries for `tensorflow` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6717,21 +6717,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 524
+    - Annotated parameters: 2,689
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
-    - Annotated returns: 297
+    - Annotated returns: 1,847
     - Unannotated returns: 0
     - Explicit `Any` returns: 9
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 19
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
 - Variables:
-    - Annotated variables: 31
+    - Annotated variables: 3,871
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 32
+    - Total class definitions: 612
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
