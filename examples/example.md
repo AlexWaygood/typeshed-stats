@@ -6219,7 +6219,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,724 (excluding blank lines)
+1,746 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6235,7 +6235,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 26 unique allowlist entries for `setuptools` when running stubtest in CI.
+Typeshed currently has 27 unique allowlist entries for `setuptools` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6249,7 +6249,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 41
 - Returns:
-    - Annotated returns: 500
+    - Annotated returns: 521
     - Unannotated returns: 224
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
@@ -6480,7 +6480,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,723 (excluding blank lines)
+51,745 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6496,7 +6496,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,036 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,038 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6510,7 +6510,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 2,041
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 88
 - Returns:
-    - Annotated returns: 13,430
+    - Annotated returns: 13,451
     - Unannotated returns: 414
     - Explicit `Any` returns: 826
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
