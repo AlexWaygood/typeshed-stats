@@ -1828,7 +1828,7 @@
     "stub_distribution_name": "types-hdbcli",
     "extra_description": null,
     "number_of_lines": 129,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -2983,7 +2983,7 @@
     "package_name": "pycocotools",
     "stub_distribution_name": "types-pycocotools",
     "extra_description": null,
-    "number_of_lines": 172,
+    "number_of_lines": 182,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3003,10 +3003,10 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 1,
-      "annotated_variables": 64,
+      "annotated_variables": 70,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 1,
-      "classdefs": 11,
+      "classdefs": 12,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -3755,7 +3755,7 @@
     "package_name": "setuptools",
     "stub_distribution_name": "types-setuptools",
     "extra_description": null,
-    "number_of_lines": 1746,
+    "number_of_lines": 1821,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3763,21 +3763,21 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 27
+      "allowlist_length": 48
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 458,
-      "unannotated_parameters": 356,
-      "annotated_returns": 521,
-      "unannotated_returns": 224,
-      "explicit_Incomplete_parameters": 41,
+      "annotated_parameters": 494,
+      "unannotated_parameters": 348,
+      "annotated_returns": 545,
+      "unannotated_returns": 220,
+      "explicit_Incomplete_parameters": 40,
       "explicit_Incomplete_returns": 1,
-      "explicit_Any_parameters": 17,
+      "explicit_Any_parameters": 20,
       "explicit_Any_returns": 6,
-      "annotated_variables": 441,
-      "explicit_Any_variables": 153,
-      "explicit_Incomplete_variables": 122,
+      "annotated_variables": 467,
+      "explicit_Any_variables": 152,
+      "explicit_Incomplete_variables": 126,
       "classdefs": 110,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
@@ -3915,7 +3915,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51745,
+    "number_of_lines": 51759,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3925,21 +3925,21 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1038
+      "allowlist_length": 1059
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24756,
-      "unannotated_parameters": 716,
-      "annotated_returns": 13451,
-      "unannotated_returns": 414,
+      "annotated_parameters": 24765,
+      "unannotated_parameters": 713,
+      "annotated_returns": 13464,
+      "unannotated_returns": 404,
       "explicit_Incomplete_parameters": 88,
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2041,
       "explicit_Any_returns": 826,
       "annotated_variables": 8126,
       "explicit_Any_variables": 556,
-      "explicit_Incomplete_variables": 125,
+      "explicit_Incomplete_variables": 115,
       "classdefs": 2244,
       "classdefs_with_Any": 22,
       "classdefs_with_Incomplete": 0
