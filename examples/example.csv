@@ -134,7 +134,7 @@ tree-sitter,types-tree-sitter,-,124,UP_TO_DATE,UPLOADED,STRICT,25,0,52,0,0,0,0,2
 tree-sitter-languages,types-tree-sitter-languages,-,9,UP_TO_DATE,UPLOADED,STRICT,2,0,2,0,0,0,0,0,5,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,2
 ttkthemes,types-ttkthemes,-,76,UP_TO_DATE,UPLOADED,NOT_STRICT,30,14,13,10,3,0,0,0,5,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 typed-ast,types-typed-ast,-,579,UP_TO_DATE,UPLOADED,STRICT,46,0,29,0,0,0,4,6,310,1,0,223,0,0,ERROR_ON_MISSING_STUB,linux,0
-tzlocal,types-tzlocal,-,19,OUT_OF_DATE,UPLOADED,STRICT,2,0,6,0,0,0,0,0,3,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,2
+tzlocal,types-tzlocal,-,19,UP_TO_DATE,UPLOADED,STRICT,2,0,6,0,0,0,0,0,3,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,2
 ujson,types-ujson,-,34,UP_TO_DATE,UPLOADED,STRICT,28,0,6,0,0,0,3,3,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 untangle,types-untangle,-,33,UP_TO_DATE,UPLOADED,STRICT,19,0,21,0,0,0,2,2,5,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 urllib3,types-urllib3,-,703,UP_TO_DATE,UPLOADED,NOT_STRICT,164,154,97,59,0,0,3,4,155,54,0,72,1,0,MISSING_STUBS_IGNORED,linux,30
