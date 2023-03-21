@@ -3915,7 +3915,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51762,
+    "number_of_lines": 51766,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
