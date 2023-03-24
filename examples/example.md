@@ -3879,7 +3879,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-9,313 (excluding blank lines)
+9,391 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3895,7 +3895,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 unique allowlist entries for `openpyxl` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `openpyxl` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3904,23 +3904,23 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,702
-    - Unannotated parameters: 598
+    - Annotated parameters: 2,723
+    - Unannotated parameters: 587
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2,189
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2,181
 - Returns:
-    - Annotated returns: 817
-    - Unannotated returns: 348
-    - Explicit `Any` returns: 0
+    - Annotated returns: 836
+    - Unannotated returns: 339
+    - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 19
 - Variables:
-    - Annotated variables: 4,206
+    - Annotated variables: 4,225
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3,540
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3,515
 - Class definitions:
-    - Total class definitions: 569
+    - Total class definitions: 571
     - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 5
+    - Class definitions marked as at least partially `Incomplete`: 4
 
 ---
 

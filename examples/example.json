@@ -2339,7 +2339,7 @@
     "package_name": "openpyxl",
     "stub_distribution_name": "types-openpyxl",
     "extra_description": null,
-    "number_of_lines": 9313,
+    "number_of_lines": 9391,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2347,24 +2347,24 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 2
+      "allowlist_length": 3
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2702,
-      "unannotated_parameters": 598,
-      "annotated_returns": 817,
-      "unannotated_returns": 348,
-      "explicit_Incomplete_parameters": 2189,
+      "annotated_parameters": 2723,
+      "unannotated_parameters": 587,
+      "annotated_returns": 836,
+      "unannotated_returns": 339,
+      "explicit_Incomplete_parameters": 2181,
       "explicit_Incomplete_returns": 19,
       "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 4206,
+      "explicit_Any_returns": 1,
+      "annotated_variables": 4225,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 3540,
-      "classdefs": 569,
+      "explicit_Incomplete_variables": 3515,
+      "classdefs": 571,
       "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 5
+      "classdefs_with_Incomplete": 4
     }
   },
   {
