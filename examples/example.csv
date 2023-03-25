@@ -81,7 +81,7 @@ passlib,types-passlib,-,1778,UP_TO_DATE,UPLOADED,NOT_STRICT,382,466,155,329,156,
 passpy,types-passpy,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
 peewee,types-peewee,-,1629,UP_TO_DATE,UPLOADED,NOT_STRICT,404,671,298,448,245,5,0,0,436,0,367,166,0,0,ERROR_ON_MISSING_STUB,linux,25
 pep8-naming,types-pep8-naming,-,27,UP_TO_DATE,UPLOADED,STRICT,10,0,8,0,0,2,1,1,11,3,0,1,0,0,MISSING_STUBS_IGNORED,linux,2
-pika,types-pika-ts,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2192,UP_TO_DATE,UPLOADED,NOT_STRICT,611,390,390,370,141,4,4,0,470,0,261,222,0,0,ERROR_ON_MISSING_STUB,linux,17
+pika,types-pika-ts,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2210,UP_TO_DATE,UPLOADED,NOT_STRICT,618,383,413,347,141,24,4,0,470,0,258,222,0,0,ERROR_ON_MISSING_STUB,linux,9
 playsound,types-playsound,-,5,UP_TO_DATE,UPLOADED,STRICT,2,0,1,0,0,0,0,0,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 polib,types-polib,-,144,UP_TO_DATE,UPLOADED,STRICT,61,0,75,0,0,0,18,0,45,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 prettytable,types-prettytable,-,294,OBSOLETE,UPLOADED,NOT_STRICT,18,77,70,56,3,1,0,0,34,6,0,5,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -109,7 +109,7 @@ python-jose,types-python-jose,-,356,UP_TO_DATE,UPLOADED,NOT_STRICT,86,39,64,26,4
 python-nmap,types-python-nmap,-,116,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-slugify,types-python-slugify,-,45,UP_TO_DATE,UPLOADED,STRICT,19,0,3,0,0,0,0,0,12,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 python-xlib,types-python-xlib,-,5416,UP_TO_DATE,UPLOADED,STRICT,1329,0,579,0,0,0,15,8,3519,5,0,424,0,0,ERROR_ON_MISSING_STUB,linux,11
-pytz,types-pytz,-,128,UP_TO_DATE,UPLOADED,STRICT,69,0,51,0,2,1,2,0,27,0,1,16,0,3,ERROR_ON_MISSING_STUB,linux,4
+pytz,types-pytz,-,128,OUT_OF_DATE,UPLOADED,STRICT,69,0,51,0,2,1,2,0,27,0,1,16,0,3,ERROR_ON_MISSING_STUB,linux,4
 pyvmomi,types-pyvmomi,-,177,UP_TO_DATE,UPLOADED,STRICT,50,0,35,0,3,16,2,0,57,7,0,44,0,0,MISSING_STUBS_IGNORED,linux,8
 pywin32,types-pywin32,-,34546,UP_TO_DATE,UPLOADED,NOT_STRICT,3639,3725,3829,2039,426,292,1,1,25037,0,2833,725,0,0,ERROR_ON_MISSING_STUB,win32,48
 redis,types-redis,-,5688,UP_TO_DATE,UPLOADED,NOT_STRICT,3652,1256,1336,636,351,9,68,325,632,215,34,214,0,2,MISSING_STUBS_IGNORED,linux,68

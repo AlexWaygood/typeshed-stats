@@ -4360,7 +4360,7 @@ The `types-pika` package contains alternate, more complete type stubs, that are 
 
 ### Number of lines
 
-2,192 (excluding blank lines)
+2,210 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4376,7 +4376,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 17 unique allowlist entries for `pika` when running stubtest in CI.
+Typeshed currently has 9 unique allowlist entries for `pika` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4385,19 +4385,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pika`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 611
-    - Unannotated parameters: 390
+    - Annotated parameters: 618
+    - Unannotated parameters: 383
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 141
 - Returns:
-    - Annotated returns: 390
-    - Unannotated returns: 370
+    - Annotated returns: 413
+    - Unannotated returns: 347
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
     - Annotated variables: 470
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 261
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 258
 - Class definitions:
     - Total class definitions: 222
     - Class definitions with `Any`: 0
@@ -5850,9 +5850,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 128 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
