@@ -33,7 +33,7 @@
     "package_name": "DateTimeRange",
     "stub_distribution_name": "types-DateTimeRange",
     "extra_description": null,
-    "number_of_lines": 64,
+    "number_of_lines": 68,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -450,7 +450,7 @@
     "package_name": "Pygments",
     "stub_distribution_name": "types-Pygments",
     "extra_description": null,
-    "number_of_lines": 687,
+    "number_of_lines": 685,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -643,7 +643,7 @@
     "package_name": "babel",
     "stub_distribution_name": "types-babel",
     "extra_description": null,
-    "number_of_lines": 1134,
+    "number_of_lines": 1148,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -675,7 +675,7 @@
     "package_name": "beautifulsoup4",
     "stub_distribution_name": "types-beautifulsoup4",
     "extra_description": null,
-    "number_of_lines": 795,
+    "number_of_lines": 803,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -739,7 +739,7 @@
     "package_name": "boto",
     "stub_distribution_name": "types-boto",
     "extra_description": null,
-    "number_of_lines": 1891,
+    "number_of_lines": 1916,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -835,7 +835,7 @@
     "package_name": "caldav",
     "stub_distribution_name": "types-caldav",
     "extra_description": null,
-    "number_of_lines": 507,
+    "number_of_lines": 514,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -867,7 +867,7 @@
     "package_name": "cffi",
     "stub_distribution_name": "types-cffi",
     "extra_description": null,
-    "number_of_lines": 820,
+    "number_of_lines": 822,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -882,8 +882,8 @@
     "annotation_stats": {
       "annotated_parameters": 298,
       "unannotated_parameters": 248,
-      "annotated_returns": 191,
-      "unannotated_returns": 132,
+      "annotated_returns": 193,
+      "unannotated_returns": 130,
       "explicit_Incomplete_parameters": 21,
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 32,
@@ -996,7 +996,7 @@
     "package_name": "colorama",
     "stub_distribution_name": "types-colorama",
     "extra_description": null,
-    "number_of_lines": 198,
+    "number_of_lines": 200,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1093,7 +1093,7 @@
     "package_name": "contextvars",
     "stub_distribution_name": "types-contextvars",
     "extra_description": null,
-    "number_of_lines": 41,
+    "number_of_lines": 45,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1107,7 +1107,7 @@
     "annotation_stats": {
       "annotated_parameters": 12,
       "unannotated_parameters": 0,
-      "annotated_returns": 17,
+      "annotated_returns": 18,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
@@ -1157,7 +1157,7 @@
     "package_name": "dateparser",
     "stub_distribution_name": "types-dateparser",
     "extra_description": null,
-    "number_of_lines": 468,
+    "number_of_lines": 472,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1253,7 +1253,7 @@
     "package_name": "dockerfile-parse",
     "stub_distribution_name": "types-dockerfile-parse",
     "extra_description": null,
-    "number_of_lines": 111,
+    "number_of_lines": 114,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1733,8 +1733,8 @@
     "package_name": "fpdf2",
     "stub_distribution_name": "types-fpdf2",
     "extra_description": null,
-    "number_of_lines": 2185,
-    "package_status": "UP_TO_DATE",
+    "number_of_lines": 2198,
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -1987,7 +1987,7 @@
     "package_name": "influxdb-client",
     "stub_distribution_name": "types-influxdb-client",
     "extra_description": null,
-    "number_of_lines": 13337,
+    "number_of_lines": 13385,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2051,7 +2051,7 @@
     "package_name": "jmespath",
     "stub_distribution_name": "types-jmespath",
     "extra_description": null,
-    "number_of_lines": 172,
+    "number_of_lines": 174,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2147,7 +2147,7 @@
     "package_name": "ldap3",
     "stub_distribution_name": "types-ldap3",
     "extra_description": null,
-    "number_of_lines": 2648,
+    "number_of_lines": 2660,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2307,7 +2307,7 @@
     "package_name": "oauthlib",
     "stub_distribution_name": "types-oauthlib",
     "extra_description": null,
-    "number_of_lines": 1391,
+    "number_of_lines": 1413,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2371,7 +2371,7 @@
     "package_name": "opentracing",
     "stub_distribution_name": "types-opentracing",
     "extra_description": null,
-    "number_of_lines": 329,
+    "number_of_lines": 331,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2403,7 +2403,7 @@
     "package_name": "paho-mqtt",
     "stub_distribution_name": "types-paho-mqtt",
     "extra_description": null,
-    "number_of_lines": 503,
+    "number_of_lines": 513,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2435,7 +2435,7 @@
     "package_name": "paramiko",
     "stub_distribution_name": "types-paramiko",
     "extra_description": null,
-    "number_of_lines": 1724,
+    "number_of_lines": 1730,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2444,7 +2444,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 12
+      "allowlist_length": 6
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2468,7 +2468,7 @@
     "package_name": "parsimonious",
     "stub_distribution_name": "types-parsimonious",
     "extra_description": null,
-    "number_of_lines": 183,
+    "number_of_lines": 185,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2500,7 +2500,7 @@
     "package_name": "passlib",
     "stub_distribution_name": "types-passlib",
     "extra_description": null,
-    "number_of_lines": 1778,
+    "number_of_lines": 1780,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2628,7 +2628,7 @@
     "package_name": "pika",
     "stub_distribution_name": "types-pika-ts",
     "extra_description": "The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",
-    "number_of_lines": 2210,
+    "number_of_lines": 2230,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2822,7 +2822,7 @@
     "package_name": "psycopg2",
     "stub_distribution_name": "types-psycopg2",
     "extra_description": null,
-    "number_of_lines": 1563,
+    "number_of_lines": 1567,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3111,7 +3111,7 @@
     "package_name": "pyinstaller",
     "stub_distribution_name": "types-pyinstaller",
     "extra_description": null,
-    "number_of_lines": 429,
+    "number_of_lines": 431,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3211,7 +3211,7 @@
     "package_name": "pysftp",
     "stub_distribution_name": "types-pysftp",
     "extra_description": null,
-    "number_of_lines": 161,
+    "number_of_lines": 166,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3403,7 +3403,7 @@
     "package_name": "python-jose",
     "stub_distribution_name": "types-python-jose",
     "extra_description": null,
-    "number_of_lines": 356,
+    "number_of_lines": 358,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3435,7 +3435,7 @@
     "package_name": "python-nmap",
     "stub_distribution_name": "types-python-nmap",
     "extra_description": null,
-    "number_of_lines": 116,
+    "number_of_lines": 119,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {

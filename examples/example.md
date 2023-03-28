@@ -57,7 +57,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64 (excluding blank lines)
+68 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -746,7 +746,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-687 (excluding blank lines)
+685 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1068,7 +1068,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,134 (excluding blank lines)
+1,148 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -1121,7 +1121,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-795 (excluding blank lines)
+803 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1227,7 +1227,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,891 (excluding blank lines)
+1,916 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1386,7 +1386,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-507 (excluding blank lines)
+514 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1439,7 +1439,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-820 (excluding blank lines)
+822 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1469,8 +1469,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 32
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
-    - Annotated returns: 191
-    - Unannotated returns: 132
+    - Annotated returns: 193
+    - Unannotated returns: 130
     - Explicit `Any` returns: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
@@ -1651,7 +1651,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-198 (excluding blank lines)
+200 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1810,7 +1810,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-41 (excluding blank lines)
+45 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1840,7 +1840,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 17
+    - Annotated returns: 18
     - Unannotated returns: 0
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -1916,7 +1916,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-468 (excluding blank lines)
+472 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2075,7 +2075,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-111 (excluding blank lines)
+114 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2870,11 +2870,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,185 (excluding blank lines)
+2,198 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -3296,7 +3296,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-13,337 (excluding blank lines)
+13,385 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3402,7 +3402,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-172 (excluding blank lines)
+174 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3561,7 +3561,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,648 (excluding blank lines)
+2,660 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3826,7 +3826,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,391 (excluding blank lines)
+1,413 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3932,7 +3932,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-329 (excluding blank lines)
+331 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3985,7 +3985,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-503 (excluding blank lines)
+513 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4038,7 +4038,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,724 (excluding blank lines)
+1,730 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4054,7 +4054,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 12 unique allowlist entries for `paramiko` when running stubtest in CI.
+Typeshed currently has 6 unique allowlist entries for `paramiko` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4091,7 +4091,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-183 (excluding blank lines)
+185 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4144,7 +4144,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,778 (excluding blank lines)
+1,780 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4360,7 +4360,7 @@ The `types-pika` package contains alternate, more complete type stubs, that are 
 
 ### Number of lines
 
-2,210 (excluding blank lines)
+2,230 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4682,7 +4682,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,563 (excluding blank lines)
+1,567 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5159,7 +5159,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-429 (excluding blank lines)
+431 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5318,7 +5318,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-161 (excluding blank lines)
+166 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5636,7 +5636,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-356 (excluding blank lines)
+358 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5689,7 +5689,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-116 (excluding blank lines)
+119 (excluding blank lines)
 
 ### Package status: *up to date*
 
