@@ -803,7 +803,7 @@ The `sqlalchemy-stubs` package is an alternative to this package and also includ
 
 ### Number of lines
 
-14,708 (excluding blank lines)
+14,761 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -6007,7 +6007,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-5,688 (excluding blank lines)
+5,781 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6032,7 +6032,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `redis`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,652
+    - Annotated parameters: 3,656
     - Unannotated parameters: 1,256
     - Explicit `Any` parameters: 68
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 351
@@ -6113,7 +6113,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-971 (excluding blank lines)
+991 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6219,7 +6219,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,821 (excluding blank lines)
+1,829 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6378,7 +6378,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-335 (excluding blank lines)
+337 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6586,7 +6586,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,490 (excluding blank lines)
+1,501 (excluding blank lines)
 
 ### Package status: *out of date*
 
