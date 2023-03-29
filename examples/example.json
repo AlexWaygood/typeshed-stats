@@ -1222,7 +1222,7 @@
     "stub_distribution_name": "types-dj-database-url",
     "extra_description": null,
     "number_of_lines": 37,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3915,7 +3915,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51797,
+    "number_of_lines": 51787,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4461,7 +4461,7 @@
     "package_name": "urllib3",
     "stub_distribution_name": "types-urllib3",
     "extra_description": null,
-    "number_of_lines": 707,
+    "number_of_lines": 709,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4493,7 +4493,7 @@
     "package_name": "vobject",
     "stub_distribution_name": "types-vobject",
     "extra_description": null,
-    "number_of_lines": 525,
+    "number_of_lines": 523,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4525,7 +4525,7 @@
     "package_name": "waitress",
     "stub_distribution_name": "types-waitress",
     "extra_description": null,
-    "number_of_lines": 630,
+    "number_of_lines": 632,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4686,7 +4686,7 @@
     "package_name": "zxcvbn",
     "stub_distribution_name": "types-zxcvbn",
     "extra_description": null,
-    "number_of_lines": 162,
+    "number_of_lines": 164,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
