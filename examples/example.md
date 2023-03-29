@@ -1651,7 +1651,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-200 (excluding blank lines)
+201 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4360,7 +4360,7 @@ The `types-pika` package contains alternate, more complete type stubs, that are 
 
 ### Number of lines
 
-2,230 (excluding blank lines)
+2,231 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5850,9 +5850,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 128 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6480,7 +6480,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,787 (excluding blank lines)
+51,780 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7503,7 +7503,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 37 unique allowlist entries for `waitress` when running stubtest in CI.
+Typeshed currently has 34 unique allowlist entries for `waitress` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7517,12 +7517,12 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` parameters: 35
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 9
 - Returns:
-    - Annotated returns: 209
+    - Annotated returns: 211
     - Unannotated returns: 0
     - Explicit `Any` returns: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 246
+    - Annotated variables: 243
     - Explicit `Any` variables: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:

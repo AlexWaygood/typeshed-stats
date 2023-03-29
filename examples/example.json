@@ -996,7 +996,7 @@
     "package_name": "colorama",
     "stub_distribution_name": "types-colorama",
     "extra_description": null,
-    "number_of_lines": 200,
+    "number_of_lines": 201,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2628,7 +2628,7 @@
     "package_name": "pika",
     "stub_distribution_name": "types-pika-ts",
     "extra_description": "The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",
-    "number_of_lines": 2230,
+    "number_of_lines": 2231,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3532,7 +3532,7 @@
     "stub_distribution_name": "types-pytz",
     "extra_description": null,
     "number_of_lines": 128,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3915,7 +3915,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51787,
+    "number_of_lines": 51780,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4534,19 +4534,19 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 37
+      "allowlist_length": 34
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 210,
       "unannotated_parameters": 0,
-      "annotated_returns": 209,
+      "annotated_returns": 211,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 9,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 35,
       "explicit_Any_returns": 8,
-      "annotated_variables": 246,
+      "annotated_variables": 243,
       "explicit_Any_variables": 19,
       "explicit_Incomplete_variables": 1,
       "classdefs": 40,
