@@ -6007,7 +6007,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-5,781 (excluding blank lines)
+5,787 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6032,7 +6032,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `redis`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,656
+    - Annotated parameters: 3,657
     - Unannotated parameters: 1,256
     - Explicit `Any` parameters: 68
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 351
@@ -6042,7 +6042,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 325
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
 - Variables:
-    - Annotated variables: 632
+    - Annotated variables: 633
     - Explicit `Any` variables: 215
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 34
 - Class definitions:
