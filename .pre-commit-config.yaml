@@ -18,7 +18,7 @@ repos:
     hooks:
       - id: python-check-mock-methods
   - repo: https://github.com/hadialqattan/pycln
-    rev: v2.1.2 # must match requirements/misc-lint.txt
+    rev: v2.1.3 # must match requirements/misc-lint.txt
     hooks:
       - id: pycln
         args: [--config=pyproject.toml, .]
@@ -28,14 +28,14 @@ repos:
       - id: pyupgrade
         args: [--py310-plus]
   - repo: https://github.com/psf/black
-    rev: 23.1.0 # must match requirements/misc-lint.txt AND the black used by blacken-docs
+    rev: 23.3.0 # must match requirements/misc-lint.txt AND the black used by blacken-docs
     hooks:
       - id: black
   - repo: https://github.com/adamchainz/blacken-docs
-    rev: v1.12.1 # must match requirements/misc-lint.txt
+    rev: 1.13.0 # must match requirements/misc-lint.txt
     hooks:
       - id: blacken-docs
-        additional_dependencies: [black==23.1.0]
+        additional_dependencies: [black==23.3.0]
   - repo: https://github.com/pycqa/isort
     rev: 5.12.0 # must match requirements/misc-lint.txt
     hooks:
