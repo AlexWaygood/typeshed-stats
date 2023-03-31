@@ -37,7 +37,7 @@ contextvars,types-contextvars,-,45,UP_TO_DATE,UPLOADED,STRICT,12,0,18,0,0,0,2,2,
 croniter,types-croniter,-,136,UP_TO_DATE,UPLOADED,STRICT,63,0,23,0,0,0,0,9,21,3,0,8,1,0,ERROR_ON_MISSING_STUB,linux,0
 dateparser,types-dateparser,-,472,UP_TO_DATE,UPLOADED,NOT_STRICT,126,127,75,67,21,1,4,6,135,76,0,34,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,-,66,UP_TO_DATE,UPLOADED,STRICT,36,0,13,0,0,0,19,6,15,3,0,2,0,0,ERROR_ON_MISSING_STUB,linux,9
-dj-database-url,types-dj-database-url,-,37,OUT_OF_DATE,UPLOADED,STRICT,13,0,2,0,2,0,0,0,15,2,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
+dj-database-url,types-dj-database-url,-,37,UP_TO_DATE,UPLOADED,STRICT,13,0,2,0,2,0,0,0,15,2,0,1,0,0,ERROR_ON_MISSING_STUB,linux,3
 dockerfile-parse,types-dockerfile-parse,-,114,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 docopt,types-docopt,-,14,UP_TO_DATE,UPLOADED,STRICT,7,0,3,0,1,0,0,1,2,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 docutils,types-docutils,-,502,UP_TO_DATE,UPLOADED,NOT_STRICT,213,60,148,10,30,45,6,6,80,11,0,46,0,0,MISSING_STUBS_IGNORED,linux,19
@@ -51,7 +51,7 @@ flake8-builtins,types-flake8-builtins,-,10,UP_TO_DATE,UPLOADED,STRICT,3,0,3,0,0,
 flake8-docstrings,types-flake8-docstrings,-,19,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,1,1,1,6,1,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-plugin-utils,types-flake8-plugin-utils,-,61,UP_TO_DATE,UPLOADED,STRICT,30,0,17,0,0,0,6,0,9,0,0,3,0,0,MISSING_STUBS_IGNORED,linux,6
 flake8-rst-docstrings,types-flake8-rst-docstrings,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
-flake8-simplify,types-flake8-simplify,-,8,OUT_OF_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
+flake8-simplify,types-flake8-simplify,-,8,UP_TO_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-typing-imports,types-flake8-typing-imports,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,5,0,0,1,1,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 fpdf2,types-fpdf2,-,2198,OUT_OF_DATE,UPLOADED,NOT_STRICT,642,528,417,194,67,4,4,2,676,14,160,156,0,0,ERROR_ON_MISSING_STUB,linux,7
 gdb,types-gdb,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",733,NOT_ON_PYPI,UPLOADED,STRICT,233,0,257,0,0,0,0,0,290,0,0,87,0,0,SKIPPED,None,0
