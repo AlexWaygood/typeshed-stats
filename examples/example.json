@@ -3915,7 +3915,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51777,
+    "number_of_lines": 51780,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3931,17 +3931,17 @@
     "annotation_stats": {
       "annotated_parameters": 24784,
       "unannotated_parameters": 710,
-      "annotated_returns": 13473,
+      "annotated_returns": 13475,
       "unannotated_returns": 397,
       "explicit_Incomplete_parameters": 88,
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2041,
       "explicit_Any_returns": 826,
-      "annotated_variables": 8128,
+      "annotated_variables": 8126,
       "explicit_Any_variables": 557,
       "explicit_Incomplete_variables": 115,
       "classdefs": 2244,
-      "classdefs_with_Any": 22,
+      "classdefs_with_Any": 21,
       "classdefs_with_Incomplete": 0
     }
   },
