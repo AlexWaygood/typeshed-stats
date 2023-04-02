@@ -1,35 +1,5 @@
 [
   {
-    "package_name": "D3DShot",
-    "stub_distribution_name": "types-D3DShot",
-    "extra_description": null,
-    "number_of_lines": 585,
-    "package_status": "NO_LONGER_UPDATED",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "SKIPPED",
-      "platforms": [],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 127,
-      "unannotated_parameters": 0,
-      "annotated_returns": 255,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 100,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 43,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "DateTimeRange",
     "stub_distribution_name": "types-DateTimeRange",
     "extra_description": null,
