@@ -377,7 +377,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-641 (excluding blank lines)
+636 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -393,7 +393,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 12 unique allowlist entries for `Markdown` when running stubtest in CI.
+Typeshed currently has 11 unique allowlist entries for `Markdown` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -412,9 +412,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 215
-    - Explicit `Any` variables: 83
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Annotated variables: 209
+    - Explicit `Any` variables: 74
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
     - Total class definitions: 99
     - Class definitions with `Any`: 0
@@ -966,9 +966,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 722 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5426,7 +5426,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-441 (excluding blank lines)
+440 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5451,19 +5451,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `python-dateutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 171
-    - Unannotated parameters: 66
+    - Annotated parameters: 172
+    - Unannotated parameters: 65
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
 - Returns:
-    - Annotated returns: 107
-    - Unannotated returns: 47
+    - Annotated returns: 112
+    - Unannotated returns: 42
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 90
-    - Explicit `Any` variables: 13
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+    - Annotated variables: 89
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 4
 - Class definitions:
     - Total class definitions: 29
     - Class definitions with `Any`: 0
