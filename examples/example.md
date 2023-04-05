@@ -4023,8 +4023,8 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 529
-    - Explicit `Any` variables: 17
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 14
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
     - Total class definitions: 113
     - Class definitions with `Any`: 2
@@ -4472,7 +4472,7 @@ Generated with aid from mypy-protobuf v3.4.0
 
 ### Number of lines
 
-4,283 (excluding blank lines)
+4,285 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4500,7 +4500,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated parameters: 728
     - Unannotated parameters: 248
     - Explicit `Any` parameters: 15
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
     - Annotated returns: 494
     - Unannotated returns: 79
@@ -4509,7 +4509,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Variables:
     - Annotated variables: 738
     - Explicit `Any` variables: 126
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
     - Total class definitions: 147
     - Class definitions with `Any`: 0
