@@ -742,7 +742,7 @@
     "stub_distribution_name": "types-braintree",
     "extra_description": null,
     "number_of_lines": 2859,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -3853,7 +3853,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51799,
+    "number_of_lines": 51810,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3863,22 +3863,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1059
+      "allowlist_length": 1058
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
       "annotated_parameters": 24799,
       "unannotated_parameters": 710,
-      "annotated_returns": 13476,
+      "annotated_returns": 13479,
       "unannotated_returns": 397,
       "explicit_Incomplete_parameters": 88,
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2043,
       "explicit_Any_returns": 826,
-      "annotated_variables": 8126,
+      "annotated_variables": 8127,
       "explicit_Any_variables": 557,
       "explicit_Incomplete_variables": 115,
-      "classdefs": 2244,
+      "classdefs": 2245,
       "classdefs_with_Any": 21,
       "classdefs_with_Incomplete": 0
     }
