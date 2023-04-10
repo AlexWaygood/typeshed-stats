@@ -1070,7 +1070,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-807 (excluding blank lines)
+811 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1095,7 +1095,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `beautifulsoup4`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 240
+    - Annotated parameters: 241
     - Unannotated parameters: 137
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 31
@@ -1812,7 +1812,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-136 (excluding blank lines)
+141 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1828,7 +1828,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 0 allowlist entries for `croniter` when running stubtest in CI.
+Typeshed currently has 1 unique allowlist entry for `croniter` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1847,7 +1847,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 21
+    - Annotated variables: 26
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
