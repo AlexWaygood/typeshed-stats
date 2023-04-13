@@ -1388,7 +1388,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-822 (excluding blank lines)
+825 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1413,12 +1413,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `cffi`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 298
+    - Annotated parameters: 300
     - Unannotated parameters: 248
     - Explicit `Any` parameters: 32
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
-    - Annotated returns: 193
+    - Annotated returns: 194
     - Unannotated returns: 130
     - Explicit `Any` returns: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
@@ -3853,13 +3853,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,739
-    - Unannotated parameters: 595
+    - Annotated parameters: 2,740
+    - Unannotated parameters: 594
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2,189
 - Returns:
-    - Annotated returns: 854
-    - Unannotated returns: 342
+    - Annotated returns: 855
+    - Unannotated returns: 341
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
 - Variables:
@@ -5691,7 +5691,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,416 (excluding blank lines)
+5,418 (excluding blank lines)
 
 ### Package status: *up to date*
 
