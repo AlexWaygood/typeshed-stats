@@ -1828,7 +1828,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1 unique allowlist entry for `croniter` when running stubtest in CI.
+Typeshed currently has 0 allowlist entries for `croniter` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6376,7 +6376,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,815 (excluding blank lines)
+51,816 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7118,7 +7118,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-34 (excluding blank lines)
+48 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7143,10 +7143,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `ujson`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28
+    - Annotated parameters: 40
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
     - Annotated returns: 6
     - Unannotated returns: 0
