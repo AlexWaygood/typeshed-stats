@@ -752,7 +752,7 @@ The `sqlalchemy-stubs` package is an alternative to this package and also includ
 
 ### Number of lines
 
-14,761 (excluding blank lines)
+14,867 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -768,7 +768,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1,157 unique allowlist entries for `SQLAlchemy` when running stubtest in CI.
+Typeshed currently has 40 unique allowlist entries for `SQLAlchemy` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -777,22 +777,22 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `SQLAlchemy`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,167
-    - Unannotated parameters: 6,955
-    - Explicit `Any` parameters: 73
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,142
+    - Annotated parameters: 2,260
+    - Unannotated parameters: 6,897
+    - Explicit `Any` parameters: 74
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,140
 - Returns:
-    - Annotated returns: 2,143
-    - Unannotated returns: 3,288
+    - Annotated returns: 2,207
+    - Unannotated returns: 3,245
     - Explicit `Any` returns: 32
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 3,088
-    - Explicit `Any` variables: 1,858
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 197
+    - Annotated variables: 3,099
+    - Explicit `Any` variables: 1,843
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 211
 - Class definitions:
-    - Total class definitions: 1,329
-    - Class definitions with `Any`: 60
+    - Total class definitions: 1,330
+    - Class definitions with `Any`: 56
     - Class definitions marked as at least partially `Incomplete`: 2
 
 ---

@@ -452,7 +452,7 @@
     "package_name": "SQLAlchemy",
     "stub_distribution_name": "types-SQLAlchemy",
     "extra_description": "The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.",
-    "number_of_lines": 14761,
+    "number_of_lines": 14867,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -460,23 +460,23 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 1157
+      "allowlist_length": 40
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2167,
-      "unannotated_parameters": 6955,
-      "annotated_returns": 2143,
-      "unannotated_returns": 3288,
-      "explicit_Incomplete_parameters": 1142,
+      "annotated_parameters": 2260,
+      "unannotated_parameters": 6897,
+      "annotated_returns": 2207,
+      "unannotated_returns": 3245,
+      "explicit_Incomplete_parameters": 1140,
       "explicit_Incomplete_returns": 1,
-      "explicit_Any_parameters": 73,
+      "explicit_Any_parameters": 74,
       "explicit_Any_returns": 32,
-      "annotated_variables": 3088,
-      "explicit_Any_variables": 1858,
-      "explicit_Incomplete_variables": 197,
-      "classdefs": 1329,
-      "classdefs_with_Any": 60,
+      "annotated_variables": 3099,
+      "explicit_Any_variables": 1843,
+      "explicit_Incomplete_variables": 211,
+      "classdefs": 1330,
+      "classdefs_with_Any": 56,
       "classdefs_with_Incomplete": 2
     }
   },
