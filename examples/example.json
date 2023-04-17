@@ -260,7 +260,7 @@
     "package_name": "Pillow",
     "stub_distribution_name": "types-Pillow",
     "extra_description": null,
-    "number_of_lines": 2547,
+    "number_of_lines": 2849,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -280,10 +280,10 @@
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 5,
       "explicit_Any_returns": 4,
-      "annotated_variables": 847,
+      "annotated_variables": 1147,
       "explicit_Any_variables": 323,
       "explicit_Incomplete_variables": 8,
-      "classdefs": 204,
+      "classdefs": 206,
       "classdefs_with_Any": 4,
       "classdefs_with_Incomplete": 0
     }
@@ -2085,7 +2085,7 @@
     "package_name": "keyboard",
     "stub_distribution_name": "types-keyboard",
     "extra_description": null,
-    "number_of_lines": 240,
+    "number_of_lines": 246,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
