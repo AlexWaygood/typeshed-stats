@@ -1441,7 +1441,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-122 (excluding blank lines)
+118 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -6376,7 +6376,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,883 (excluding blank lines)
+51,880 (excluding blank lines)
 
 ### Package status: *stdlib*
 

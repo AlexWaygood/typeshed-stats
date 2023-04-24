@@ -870,7 +870,7 @@
     "package_name": "chardet",
     "stub_distribution_name": "types-chardet",
     "extra_description": null,
-    "number_of_lines": 122,
+    "number_of_lines": 118,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3853,7 +3853,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51883,
+    "number_of_lines": 51880,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
