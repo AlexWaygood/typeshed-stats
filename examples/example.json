@@ -2405,7 +2405,7 @@
     "package_name": "paramiko",
     "stub_distribution_name": "types-paramiko",
     "extra_description": null,
-    "number_of_lines": 1730,
+    "number_of_lines": 1735,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
