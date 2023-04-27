@@ -260,7 +260,7 @@
     "package_name": "Pillow",
     "stub_distribution_name": "types-Pillow",
     "extra_description": null,
-    "number_of_lines": 2849,
+    "number_of_lines": 2876,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -272,18 +272,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 662,
-      "unannotated_parameters": 605,
-      "annotated_returns": 468,
-      "unannotated_returns": 338,
-      "explicit_Incomplete_parameters": 60,
-      "explicit_Incomplete_returns": 2,
+      "annotated_parameters": 673,
+      "unannotated_parameters": 603,
+      "annotated_returns": 481,
+      "unannotated_returns": 331,
+      "explicit_Incomplete_parameters": 62,
+      "explicit_Incomplete_returns": 4,
       "explicit_Any_parameters": 5,
-      "explicit_Any_returns": 4,
-      "annotated_variables": 1147,
-      "explicit_Any_variables": 323,
+      "explicit_Any_returns": 6,
+      "annotated_variables": 1144,
+      "explicit_Any_variables": 320,
       "explicit_Incomplete_variables": 8,
-      "classdefs": 206,
+      "classdefs": 207,
       "classdefs_with_Any": 4,
       "classdefs_with_Incomplete": 0
     }
@@ -452,30 +452,30 @@
     "package_name": "SQLAlchemy",
     "stub_distribution_name": "types-SQLAlchemy",
     "extra_description": "The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.",
-    "number_of_lines": 14867,
+    "number_of_lines": 15201,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
+      "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 40
+      "allowlist_length": 51
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2260,
-      "unannotated_parameters": 6897,
-      "annotated_returns": 2207,
-      "unannotated_returns": 3245,
-      "explicit_Incomplete_parameters": 1140,
-      "explicit_Incomplete_returns": 1,
+      "annotated_parameters": 2267,
+      "unannotated_parameters": 6967,
+      "annotated_returns": 2235,
+      "unannotated_returns": 3271,
+      "explicit_Incomplete_parameters": 1142,
+      "explicit_Incomplete_returns": 3,
       "explicit_Any_parameters": 74,
       "explicit_Any_returns": 32,
-      "annotated_variables": 3099,
-      "explicit_Any_variables": 1843,
-      "explicit_Incomplete_variables": 211,
-      "classdefs": 1330,
+      "annotated_variables": 3136,
+      "explicit_Any_variables": 1834,
+      "explicit_Incomplete_variables": 232,
+      "classdefs": 1421,
       "classdefs_with_Any": 56,
       "classdefs_with_Incomplete": 2
     }
@@ -3049,7 +3049,7 @@
     "package_name": "pyinstaller",
     "stub_distribution_name": "types-pyinstaller",
     "extra_description": null,
-    "number_of_lines": 431,
+    "number_of_lines": 812,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3057,22 +3057,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 33
+      "allowlist_length": 39
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 188,
+      "annotated_parameters": 339,
       "unannotated_parameters": 0,
-      "annotated_returns": 117,
+      "annotated_returns": 177,
       "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 9,
-      "explicit_Incomplete_returns": 0,
+      "explicit_Incomplete_parameters": 42,
+      "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 2,
-      "annotated_variables": 98,
+      "annotated_variables": 210,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 18,
+      "explicit_Incomplete_variables": 34,
+      "classdefs": 30,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -3630,7 +3630,7 @@
     "stub_distribution_name": "types-requests",
     "extra_description": null,
     "number_of_lines": 991,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3983,7 +3983,7 @@
     "package_name": "tensorflow",
     "stub_distribution_name": "types-tensorflow",
     "extra_description": null,
-    "number_of_lines": 17964,
+    "number_of_lines": 18223,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3991,22 +3991,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 25
+      "allowlist_length": 26
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2689,
+      "annotated_parameters": 2810,
       "unannotated_parameters": 0,
-      "annotated_returns": 1847,
+      "annotated_returns": 1911,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 3,
-      "explicit_Incomplete_returns": 21,
-      "explicit_Any_parameters": 9,
-      "explicit_Any_returns": 9,
-      "annotated_variables": 3871,
+      "explicit_Incomplete_returns": 24,
+      "explicit_Any_parameters": 22,
+      "explicit_Any_returns": 21,
+      "annotated_variables": 3878,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 612,
+      "classdefs": 627,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4368,7 +4368,7 @@
     "stub_distribution_name": "types-urllib3",
     "extra_description": null,
     "number_of_lines": 709,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
