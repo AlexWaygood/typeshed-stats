@@ -850,11 +850,11 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 300,
-      "unannotated_parameters": 248,
+      "annotated_parameters": 303,
+      "unannotated_parameters": 245,
       "annotated_returns": 194,
       "unannotated_returns": 130,
-      "explicit_Incomplete_parameters": 21,
+      "explicit_Incomplete_parameters": 22,
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 32,
       "explicit_Any_returns": 8,
@@ -1965,7 +1965,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 1
+      "allowlist_length": 0
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3853,7 +3853,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 51886,
+    "number_of_lines": 51888,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3869,7 +3869,7 @@
     "annotation_stats": {
       "annotated_parameters": 24821,
       "unannotated_parameters": 710,
-      "annotated_returns": 13492,
+      "annotated_returns": 13493,
       "unannotated_returns": 395,
       "explicit_Incomplete_parameters": 88,
       "explicit_Incomplete_returns": 18,
@@ -3983,7 +3983,7 @@
     "package_name": "tensorflow",
     "stub_distribution_name": "types-tensorflow",
     "extra_description": null,
-    "number_of_lines": 18223,
+    "number_of_lines": 18683,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3991,22 +3991,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 26
+      "allowlist_length": 32
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2810,
+      "annotated_parameters": 2978,
       "unannotated_parameters": 0,
-      "annotated_returns": 1911,
+      "annotated_returns": 2014,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 3,
-      "explicit_Incomplete_returns": 24,
+      "explicit_Incomplete_returns": 27,
       "explicit_Any_parameters": 22,
       "explicit_Any_returns": 21,
-      "annotated_variables": 3878,
+      "annotated_variables": 3963,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 627,
+      "classdefs": 658,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4368,7 +4368,7 @@
     "stub_distribution_name": "types-urllib3",
     "extra_description": null,
     "number_of_lines": 709,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",

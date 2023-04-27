@@ -1413,10 +1413,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `cffi`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 300
-    - Unannotated parameters: 248
+    - Annotated parameters: 303
+    - Unannotated parameters: 245
     - Explicit `Any` parameters: 32
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 22
 - Returns:
     - Annotated returns: 194
     - Unannotated returns: 130
@@ -3261,7 +3261,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1 unique allowlist entry for `influxdb-client` when running stubtest in CI.
+Typeshed currently has 0 allowlist entries for `influxdb-client` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6376,7 +6376,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,886 (excluding blank lines)
+51,888 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6406,7 +6406,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 2,043
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 88
 - Returns:
-    - Annotated returns: 13,492
+    - Annotated returns: 13,493
     - Unannotated returns: 395
     - Explicit `Any` returns: 827
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
@@ -6588,7 +6588,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-18,223 (excluding blank lines)
+18,683 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6604,7 +6604,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 26 unique allowlist entries for `tensorflow` when running stubtest in CI.
+Typeshed currently has 32 unique allowlist entries for `tensorflow` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6613,21 +6613,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,810
+    - Annotated parameters: 2,978
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 22
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
-    - Annotated returns: 1,911
+    - Annotated returns: 2,014
     - Unannotated returns: 0
     - Explicit `Any` returns: 21
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 27
 - Variables:
-    - Annotated variables: 3,878
+    - Annotated variables: 3,963
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 627
+    - Total class definitions: 658
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7226,9 +7226,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 709 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
