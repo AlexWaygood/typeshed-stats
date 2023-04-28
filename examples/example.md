@@ -1973,9 +1973,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 37 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
@@ -6376,7 +6376,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-51,957 (excluding blank lines)
+52,575 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6401,21 +6401,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,857
-    - Unannotated parameters: 710
-    - Explicit `Any` parameters: 2,052
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 88
+    - Annotated parameters: 24,934
+    - Unannotated parameters: 862
+    - Explicit `Any` parameters: 2,040
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
 - Returns:
-    - Annotated returns: 13,519
-    - Unannotated returns: 395
-    - Explicit `Any` returns: 846
+    - Annotated returns: 13,606
+    - Unannotated returns: 448
+    - Explicit `Any` returns: 844
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,140
-    - Explicit `Any` variables: 555
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 115
+    - Annotated variables: 8,310
+    - Explicit `Any` variables: 543
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 142
 - Class definitions:
-    - Total class definitions: 2,254
+    - Total class definitions: 2,311
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 
