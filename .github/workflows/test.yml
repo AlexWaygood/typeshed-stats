@@ -80,7 +80,7 @@ jobs:
     container: python:3-slim
     steps:
       - run: |
-          pip install "coveralls==3.3.*"
+          pip install "coveralls>=3.3"
           coveralls --service=github --finish
 
   create-issue-on-failure:
