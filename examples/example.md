@@ -6376,7 +6376,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-52,579 (excluding blank lines)
+52,593 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6392,7 +6392,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,052 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,055 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -7224,7 +7224,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-709 (excluding blank lines)
+707 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -7240,7 +7240,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 30 unique allowlist entries for `urllib3` when running stubtest in CI.
+Typeshed currently has 28 unique allowlist entries for `urllib3` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7249,17 +7249,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `urllib3`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 167
-    - Unannotated parameters: 151
+    - Annotated parameters: 169
+    - Unannotated parameters: 149
     - Explicit `Any` parameters: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 100
-    - Unannotated returns: 56
+    - Annotated returns: 101
+    - Unannotated returns: 55
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 155
+    - Annotated variables: 156
     - Explicit `Any` variables: 54
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:

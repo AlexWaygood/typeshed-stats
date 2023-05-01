@@ -3853,7 +3853,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 52579,
+    "number_of_lines": 52593,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3863,7 +3863,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1052
+      "allowlist_length": 1055
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
@@ -4367,7 +4367,7 @@
     "package_name": "urllib3",
     "stub_distribution_name": "types-urllib3",
     "extra_description": null,
-    "number_of_lines": 709,
+    "number_of_lines": 707,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4375,19 +4375,19 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 30
+      "allowlist_length": 28
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 167,
-      "unannotated_parameters": 151,
-      "annotated_returns": 100,
-      "unannotated_returns": 56,
+      "annotated_parameters": 169,
+      "unannotated_parameters": 149,
+      "annotated_returns": 101,
+      "unannotated_returns": 55,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 3,
       "explicit_Any_returns": 4,
-      "annotated_variables": 155,
+      "annotated_variables": 156,
       "explicit_Any_variables": 54,
       "explicit_Incomplete_variables": 0,
       "classdefs": 72,
