@@ -3853,7 +3853,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 52593,
+    "number_of_lines": 52598,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3863,7 +3863,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1055
+      "allowlist_length": 1053
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
