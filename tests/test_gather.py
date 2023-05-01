@@ -708,7 +708,17 @@ PYRIGHT_TEST_CASES: Final = (
         expected_result="ENTIRELY_EXCLUDED",
     ),
     PyrightTestCase(
+        entirely_excluded_path="stdlib/**/*.pyi",
+        package_to_test="stdlib",
+        expected_result="ENTIRELY_EXCLUDED",
+    ),
+    PyrightTestCase(
         entirely_excluded_path="stdlib/tkinter",
+        package_to_test="stdlib",
+        expected_result="SOME_FILES_EXCLUDED",
+    ),
+    PyrightTestCase(
+        entirely_excluded_path="stdlib/lib2to3/fixes/*.pyi",
         package_to_test="stdlib",
         expected_result="SOME_FILES_EXCLUDED",
     ),
@@ -729,6 +739,11 @@ PYRIGHT_TEST_CASES: Final = (
         expected_result="ENTIRELY_EXCLUDED",
     ),
     PyrightTestCase(
+        entirely_excluded_path="stubs/aiofiles/**/*.pyi",
+        package_to_test="aiofiles",
+        expected_result="ENTIRELY_EXCLUDED",
+    ),
+    PyrightTestCase(
         entirely_excluded_path="stubs/aiofiles",
         path_excluded_from_strict=None,
         package_to_test="boto",
@@ -741,7 +756,17 @@ PYRIGHT_TEST_CASES: Final = (
         expected_result="NOT_STRICT",
     ),
     PyrightTestCase(
+        path_excluded_from_strict="stdlib/**/*.pyi",
+        package_to_test="stdlib",
+        expected_result="NOT_STRICT",
+    ),
+    PyrightTestCase(
         path_excluded_from_strict="stdlib/tkinter",
+        package_to_test="stdlib",
+        expected_result="STRICT_ON_SOME_FILES",
+    ),
+    PyrightTestCase(
+        path_excluded_from_strict="stdlib/tkinter/*.pyi",
         package_to_test="stdlib",
         expected_result="STRICT_ON_SOME_FILES",
     ),
@@ -752,6 +777,11 @@ PYRIGHT_TEST_CASES: Final = (
     ),
     PyrightTestCase(
         path_excluded_from_strict="stubs/aiofiles",
+        package_to_test="stdlib",
+        expected_result="STRICT",
+    ),
+    PyrightTestCase(
+        path_excluded_from_strict="stubs/aiofiles/*.pyi",
         package_to_test="stdlib",
         expected_result="STRICT",
     ),
@@ -779,6 +809,12 @@ PYRIGHT_TEST_CASES: Final = (
         expected_result="SOME_FILES_EXCLUDED",
     ),
     PyrightTestCase(
+        entirely_excluded_path="stdlib/tkinter/*.pyi",
+        path_excluded_from_strict="stdlib/asyncio/*.pyi",
+        package_to_test="stdlib",
+        expected_result="SOME_FILES_EXCLUDED",
+    ),
+    PyrightTestCase(
         entirely_excluded_path="stubs",
         path_excluded_from_strict="stdlib/tkinter",
         package_to_test="stdlib",
@@ -786,6 +822,12 @@ PYRIGHT_TEST_CASES: Final = (
     ),
     PyrightTestCase(
         entirely_excluded_path="stdlib",
+        path_excluded_from_strict="stubs/boto/auth.pyi",
+        package_to_test="boto",
+        expected_result="STRICT_ON_SOME_FILES",
+    ),
+    PyrightTestCase(
+        entirely_excluded_path="stdlib/*.pyi",
         path_excluded_from_strict="stubs/boto/auth.pyi",
         package_to_test="boto",
         expected_result="STRICT_ON_SOME_FILES",
@@ -1020,6 +1062,14 @@ def test_gather_stats__on_packages_integrates_with_tmpdir_typeshed() -> None:
     assert set(package_names_in_results) == package_names
 
 
+KNOWN_FULLY_ANNOTATED_FILES_WITH_LAX_PYRIGHT_SETTINGS = frozenset(
+    {
+        Path("stdlib/lib2to3/fixes/fix_imports2.pyi"),
+        Path("stdlib/lib2to3/fixes/__init__.pyi"),
+    }
+)
+
+
 @pytest.mark.dependency(depends=["integration_basic"])
 def test_basic_sanity_checks(subtests: SubTests) -> None:
     with tmpdir_typeshed() as typeshed:
@@ -1062,7 +1112,9 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
                     f"{f.file_path!r} has unannotated parameters and/or returns, "
                     "but has the strictest pyright settings in CI"
                 )
-            else:
+            elif (
+                f.file_path not in KNOWN_FULLY_ANNOTATED_FILES_WITH_LAX_PYRIGHT_SETTINGS
+            ):
                 assert is_only_partially_annotated, (
                     "Likely bug detected: "
                     f"{f.file_path!r} is fully annotated, "
