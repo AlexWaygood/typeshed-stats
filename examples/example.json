@@ -3863,7 +3863,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1053
+      "allowlist_length": 1050
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
