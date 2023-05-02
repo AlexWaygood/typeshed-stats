@@ -19,6 +19,7 @@ from typing import (
     Annotated,
     Any,
     Literal,
+    NamedTuple,
     NewType,
     TypeAlias,
     TypeGuard,
@@ -30,6 +31,8 @@ import aiohttp
 import attrs
 from packaging.specifiers import SpecifierSet
 from packaging.version import Version
+from pathspec import PathSpec
+from pathspec.patterns.gitwildmatch import GitWildMatchPattern
 
 if sys.version_info < (3, 10):
     raise ImportError("Python 3.10+ is required!")
@@ -823,12 +826,24 @@ def _is_str_list(obj: object) -> TypeGuard[list[str]]:
     return isinstance(obj, list) and all(isinstance(item, str) for item in obj)
 
 
+class _ExcludeList(NamedTuple):
+    spec: PathSpec
+    pathlist: list[Path]
+
+
+def _normalized_path(path: Path) -> str:
+    normalized_path = path.as_posix()
+    if path.is_dir():
+        normalized_path += "/"
+    return normalized_path
+
+
 @lru_cache
 def _get_pyright_excludelist(
     *,
     typeshed_dir: Path | str,
     config_filename: Literal["pyrightconfig.json", "pyrightconfig.stricter.json"],
-) -> frozenset[Path]:
+) -> _ExcludeList:
     # Read the config file;
     # do some pre-processing so that it can be passed to json.loads()
     config_path = Path(typeshed_dir, config_filename)
@@ -841,7 +856,14 @@ def _get_pyright_excludelist(
     assert isinstance(pyright_config, dict)
     excludelist: object = pyright_config.get("exclude", [])
     assert _is_str_list(excludelist)
-    return frozenset(Path(typeshed_dir, item) for item in excludelist)
+    excludelist_as_paths = [Path(typeshed_dir, item) for item in excludelist]
+    return _ExcludeList(
+        PathSpec.from_lines(
+            GitWildMatchPattern,
+            [_normalized_path(item) for item in excludelist_as_paths],
+        ),
+        excludelist_as_paths,
+    )
 
 
 class PyrightSetting(_NiceReprEnum):
@@ -871,10 +893,16 @@ class PyrightSetting(_NiceReprEnum):
     )
 
 
-def _path_or_path_ancestor_is_listed(path: Path, path_list: Collection[Path]) -> bool:
-    return path in path_list or any(
-        listed_path in path.parents for listed_path in path_list
-    )
+def _path_or_path_ancestor_is_listed(path: Path, spec: PathSpec) -> bool:
+    if spec.match_file(_normalized_path(path)):
+        return True
+    if not path.is_dir():
+        return False
+    for subpath in path.rglob("*"):
+        if not spec.match_file(_normalized_path(subpath)):
+            return False
+    else:
+        return True
 
 
 def _child_of_path_is_listed(path: Path, path_list: Collection[Path]) -> bool:
@@ -901,15 +929,17 @@ def get_pyright_setting_for_path(
     paths_excluded_from_stricter_check = _get_pyright_excludelist(
         typeshed_dir=typeshed_dir, config_filename="pyrightconfig.stricter.json"
     )
-    file_path = file_path if isinstance(file_path, Path) else Path(file_path)
+    file_path = Path(typeshed_dir, file_path)
 
-    if _path_or_path_ancestor_is_listed(file_path, entirely_excluded_paths):
+    if _path_or_path_ancestor_is_listed(file_path, entirely_excluded_paths.spec):
         return PyrightSetting.ENTIRELY_EXCLUDED
-    if _child_of_path_is_listed(file_path, entirely_excluded_paths):
+    if _child_of_path_is_listed(file_path, entirely_excluded_paths.pathlist):
         return PyrightSetting.SOME_FILES_EXCLUDED
-    if _path_or_path_ancestor_is_listed(file_path, paths_excluded_from_stricter_check):
+    if _path_or_path_ancestor_is_listed(
+        file_path, paths_excluded_from_stricter_check.spec
+    ):
         return PyrightSetting.NOT_STRICT
-    if _child_of_path_is_listed(file_path, paths_excluded_from_stricter_check):
+    if _child_of_path_is_listed(file_path, paths_excluded_from_stricter_check.pathlist):
         return PyrightSetting.STRICT_ON_SOME_FILES
     return PyrightSetting.STRICT
 
