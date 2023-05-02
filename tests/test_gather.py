@@ -722,7 +722,6 @@ PYRIGHT_TEST_CASES: Final = (
     ),
     PyrightTestCase(
         entirely_excluded_path="stdlib",
-        path_excluded_from_strict=None,
         package_to_test="boto",
         expected_result="STRICT",
     ),
@@ -743,7 +742,6 @@ PYRIGHT_TEST_CASES: Final = (
     ),
     PyrightTestCase(
         entirely_excluded_path="stubs/aiofiles",
-        path_excluded_from_strict=None,
         package_to_test="boto",
         expected_result="STRICT",
     ),
