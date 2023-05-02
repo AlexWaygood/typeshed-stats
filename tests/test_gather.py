@@ -8,7 +8,7 @@ import sys
 import textwrap
 from collections.abc import Callable
 from contextlib import AbstractAsyncContextManager, nullcontext
-from dataclasses import InitVar, dataclass, field
+from dataclasses import dataclass, field
 from itertools import chain
 from pathlib import Path
 from typing import Final, TypeAlias
