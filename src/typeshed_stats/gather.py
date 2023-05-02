@@ -893,8 +893,16 @@ class PyrightSetting(_NiceReprEnum):
     )
 
 
-def _path_or_path_ancestor_is_listed(path: Path, excludelist: _ExcludeList) -> bool:
-    return excludelist.spec.match_file(_normalized_path(path))
+def _path_or_path_ancestor_is_listed(path: Path, spec: PathSpec) -> bool:
+    if spec.match_file(_normalized_path(path)):
+        return True
+    if not path.is_dir():
+        return False
+    for subpath in path.rglob("*"):
+        if not spec.match_file(_normalized_path(subpath)):
+            return False
+    else:
+        return True
 
 
 def _child_of_path_is_listed(path: Path, path_list: Collection[Path]) -> bool:
@@ -921,13 +929,15 @@ def get_pyright_setting_for_path(
     paths_excluded_from_stricter_check = _get_pyright_excludelist(
         typeshed_dir=typeshed_dir, config_filename="pyrightconfig.stricter.json"
     )
-    file_path = file_path if isinstance(file_path, Path) else Path(file_path)
+    file_path = Path(typeshed_dir, file_path)
 
-    if _path_or_path_ancestor_is_listed(file_path, entirely_excluded_paths):
+    if _path_or_path_ancestor_is_listed(file_path, entirely_excluded_paths.spec):
         return PyrightSetting.ENTIRELY_EXCLUDED
     if _child_of_path_is_listed(file_path, entirely_excluded_paths.pathlist):
         return PyrightSetting.SOME_FILES_EXCLUDED
-    if _path_or_path_ancestor_is_listed(file_path, paths_excluded_from_stricter_check):
+    if _path_or_path_ancestor_is_listed(
+        file_path, paths_excluded_from_stricter_check.spec
+    ):
         return PyrightSetting.NOT_STRICT
     if _child_of_path_is_listed(file_path, paths_excluded_from_stricter_check.pathlist):
         return PyrightSetting.STRICT_ON_SOME_FILES

@@ -8,7 +8,7 @@ import sys
 import textwrap
 from collections.abc import Callable
 from contextlib import AbstractAsyncContextManager, nullcontext
-from dataclasses import InitVar, dataclass
+from dataclasses import InitVar, dataclass, field
 from itertools import chain
 from pathlib import Path
 from typing import Final, TypeAlias
@@ -681,22 +681,20 @@ def test_get_package_size_multiple_files(
 class PyrightTestCase:
     package_to_test: str
     expected_result: str
-    entirely_excluded_path: InitVar[str | None] = None
-    path_excluded_from_strict: InitVar[str | None] = None
+    entirely_excluded_path: str = ""
+    path_excluded_from_strict: str = ""
+    pyrightconfig_basic: str = field(init=False, repr=False)
+    pyrightconfig_strict: str = field(init=False, repr=False)
 
-    def __post_init__(
-        self,
-        entirely_excluded_path: str | None = None,
-        path_excluded_from_strict: str | None = None,
-    ) -> None:
+    def __post_init__(self) -> None:
         default_path = "foo.pyi"
-        entirely_excluded_path = entirely_excluded_path or default_path
+        self.entirely_excluded_path = self.entirely_excluded_path or default_path
         self.pyrightconfig_basic = PYRIGHTCONFIG_TEMPLATE.format(
-            f'"{entirely_excluded_path}"'
+            f'"{self.entirely_excluded_path}"'
         )
-        excluded_from_strict = path_excluded_from_strict or default_path
+        self.excluded_from_strict = self.path_excluded_from_strict or default_path
         self.pyrightconfig_strict = PYRIGHTCONFIG_TEMPLATE.format(
-            f'"{excluded_from_strict}"'
+            f'"{self.excluded_from_strict}"'
         )
 
 
@@ -854,6 +852,13 @@ def test_get_pyright_setting_for_package(
         "pyrightconfig.json": test_case.pyrightconfig_basic,
         "pyrightconfig.stricter.json": test_case.pyrightconfig_strict,
     }
+
+    if test_case.package_to_test == "stdlib":
+        (typeshed / "stdlib" / "functools.pyi").write_text("")
+    else:
+        package_dir = typeshed / "stubs" / test_case.package_to_test
+        package_dir.mkdir()
+        (package_dir / "foo.pyi").write_text("")
 
     for config_filename, config in config_filenames_to_configs.items():
         with pytest.raises(json.JSONDecodeError):
