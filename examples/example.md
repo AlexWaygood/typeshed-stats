@@ -2132,9 +2132,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 515 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -2397,9 +2397,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 27 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5850,11 +5850,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-5,796 (excluding blank lines)
+5,820 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5875,17 +5875,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `redis`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,657
+    - Annotated parameters: 3,681
     - Unannotated parameters: 1,256
     - Explicit `Any` parameters: 68
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 351
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 355
 - Returns:
-    - Annotated returns: 1,337
-    - Unannotated returns: 636
+    - Annotated returns: 1,342
+    - Unannotated returns: 640
     - Explicit `Any` returns: 325
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
 - Variables:
-    - Annotated variables: 633
+    - Annotated variables: 635
     - Explicit `Any` variables: 215
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 34
 - Class definitions:
