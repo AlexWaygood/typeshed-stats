@@ -3471,7 +3471,7 @@
     "stub_distribution_name": "types-pyvmomi",
     "extra_description": null,
     "number_of_lines": 177,
-    "package_status": "OBSOLETE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -3822,7 +3822,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 52627,
+    "number_of_lines": 52630,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3836,9 +3836,9 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24934,
+      "annotated_parameters": 24935,
       "unannotated_parameters": 862,
-      "annotated_returns": 13612,
+      "annotated_returns": 13614,
       "unannotated_returns": 448,
       "explicit_Incomplete_parameters": 92,
       "explicit_Incomplete_returns": 18,
@@ -3847,7 +3847,7 @@
       "annotated_variables": 8311,
       "explicit_Any_variables": 543,
       "explicit_Incomplete_variables": 142,
-      "classdefs": 2312,
+      "classdefs": 2313,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }
