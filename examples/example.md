@@ -1987,7 +1987,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 unique allowlist entries for `dj-database-url` when running stubtest in CI.
+Typeshed currently has 1 unique allowlist entry for `dj-database-url` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5866,7 +5866,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 69 unique allowlist entries for `redis` when running stubtest in CI.
+Typeshed currently has 67 unique allowlist entries for `redis` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 

@@ -1200,7 +1200,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 3
+      "allowlist_length": 1
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -3542,7 +3542,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 69
+      "allowlist_length": 67
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
