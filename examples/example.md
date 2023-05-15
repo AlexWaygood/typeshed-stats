@@ -3775,7 +3775,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-12,051 (excluding blank lines)
+12,121 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3812,7 +3812,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Variables:
     - Annotated variables: 4,272
     - Explicit `Any` variables: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,447
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,171
 - Class definitions:
     - Total class definitions: 584
     - Class definitions with `Any`: 1
@@ -6323,7 +6323,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-52,633 (excluding blank lines)
+52,624 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6348,12 +6348,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,935
+    - Annotated parameters: 24,933
     - Unannotated parameters: 862
-    - Explicit `Any` parameters: 2,030
+    - Explicit `Any` parameters: 2,028
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
 - Returns:
-    - Annotated returns: 13,614
+    - Annotated returns: 13,612
     - Unannotated returns: 448
     - Explicit `Any` returns: 844
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
@@ -7012,7 +7012,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-19 (excluding blank lines)
+13 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7037,12 +7037,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tzlocal`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2
+    - Annotated parameters: 3
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 6
+    - Annotated returns: 5
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -7051,7 +7051,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 2
+    - Total class definitions: 0
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
