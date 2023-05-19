@@ -6062,7 +6062,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,878 (excluding blank lines)
+2,420 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6072,11 +6072,11 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `linux` and `win32`.
 
 Typeshed currently has 48 unique allowlist entries for `setuptools` when running stubtest in CI.
 
@@ -6087,21 +6087,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 500
-    - Unannotated parameters: 349
-    - Explicit `Any` parameters: 20
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 40
+    - Annotated parameters: 662
+    - Unannotated parameters: 470
+    - Explicit `Any` parameters: 19
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 53
 - Returns:
-    - Annotated returns: 546
-    - Unannotated returns: 220
-    - Explicit `Any` returns: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+    - Annotated returns: 661
+    - Unannotated returns: 281
+    - Explicit `Any` returns: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
 - Variables:
-    - Annotated variables: 467
+    - Annotated variables: 604
     - Explicit `Any` variables: 152
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 126
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 231
 - Class definitions:
-    - Total class definitions: 131
+    - Total class definitions: 165
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 

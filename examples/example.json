@@ -3662,30 +3662,31 @@
     "package_name": "setuptools",
     "stub_distribution_name": "types-setuptools",
     "extra_description": null,
-    "number_of_lines": 1878,
+    "number_of_lines": 2420,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
+      "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "linux"
+        "linux",
+        "win32"
       ],
       "allowlist_length": 48
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 500,
-      "unannotated_parameters": 349,
-      "annotated_returns": 546,
-      "unannotated_returns": 220,
-      "explicit_Incomplete_parameters": 40,
-      "explicit_Incomplete_returns": 1,
-      "explicit_Any_parameters": 20,
-      "explicit_Any_returns": 6,
-      "annotated_variables": 467,
+      "annotated_parameters": 662,
+      "unannotated_parameters": 470,
+      "annotated_returns": 661,
+      "unannotated_returns": 281,
+      "explicit_Incomplete_parameters": 53,
+      "explicit_Incomplete_returns": 14,
+      "explicit_Any_parameters": 19,
+      "explicit_Any_returns": 7,
+      "annotated_variables": 604,
       "explicit_Any_variables": 152,
-      "explicit_Incomplete_variables": 126,
-      "classdefs": 131,
+      "explicit_Incomplete_variables": 231,
+      "classdefs": 165,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
