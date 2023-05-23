@@ -642,7 +642,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,177 (excluding blank lines)
+1,290 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -658,7 +658,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1 unique allowlist entry for `PyYAML` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `PyYAML` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -667,12 +667,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `PyYAML`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 395
-    - Unannotated parameters: 315
-    - Explicit `Any` parameters: 40
+    - Annotated parameters: 477
+    - Unannotated parameters: 321
+    - Explicit `Any` parameters: 44
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 12
 - Returns:
-    - Annotated returns: 158
+    - Annotated returns: 164
     - Unannotated returns: 230
     - Explicit `Any` returns: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -858,7 +858,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-617 (excluding blank lines)
+651 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -874,7 +874,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 83 unique allowlist entries for `aiofiles` when running stubtest in CI.
+Typeshed currently has 89 unique allowlist entries for `aiofiles` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -883,12 +883,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `aiofiles`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 348
+    - Annotated parameters: 382
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 26
+    - Explicit `Any` parameters: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 26
 - Returns:
-    - Annotated returns: 141
+    - Annotated returns: 149
     - Unannotated returns: 0
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
@@ -1231,9 +1231,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 2,859 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5958,9 +5958,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 990 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6323,7 +6323,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-52,624 (excluding blank lines)
+52,630 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6348,21 +6348,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,933
+    - Annotated parameters: 24,936
     - Unannotated parameters: 862
     - Explicit `Any` parameters: 2,028
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
 - Returns:
-    - Annotated returns: 13,612
+    - Annotated returns: 13,614
     - Unannotated returns: 448
     - Explicit `Any` returns: 844
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,312
-    - Explicit `Any` variables: 543
+    - Annotated variables: 8,315
+    - Explicit `Any` variables: 541
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 142
 - Class definitions:
-    - Total class definitions: 2,313
+    - Total class definitions: 2,314
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -6535,7 +6535,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-18,683 (excluding blank lines)
+19,036 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6551,7 +6551,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 32 unique allowlist entries for `tensorflow` when running stubtest in CI.
+Typeshed currently has 35 unique allowlist entries for `tensorflow` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6560,21 +6560,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,978
+    - Annotated parameters: 3,169
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 22
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
+    - Explicit `Any` parameters: 28
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
 - Returns:
-    - Annotated returns: 2,014
+    - Annotated returns: 2,107
     - Unannotated returns: 0
-    - Explicit `Any` returns: 21
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 27
+    - Explicit `Any` returns: 28
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 32
 - Variables:
-    - Annotated variables: 3,963
+    - Annotated variables: 3,977
     - Explicit `Any` variables: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 6
 - Class definitions:
-    - Total class definitions: 658
+    - Total class definitions: 667
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
