@@ -589,7 +589,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-183 (excluding blank lines)
+184 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -605,7 +605,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1 unique allowlist entry for `PyScreeze` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `PyScreeze` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -614,12 +614,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `PyScreeze`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 93
+    - Annotated parameters: 99
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 18
+    - Annotated returns: 20
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
