@@ -5797,7 +5797,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-34,563 (excluding blank lines)
+34,572 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5822,12 +5822,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,647
+    - Annotated parameters: 3,649
     - Unannotated parameters: 3,725
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 427
 - Returns:
-    - Annotated returns: 3,833
+    - Annotated returns: 3,839
     - Unannotated returns: 2,039
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 292
@@ -5836,7 +5836,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,833
 - Class definitions:
-    - Total class definitions: 725
+    - Total class definitions: 726
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -6323,7 +6323,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-52,855 (excluding blank lines)
+52,860 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6339,7 +6339,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,100 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,104 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6348,21 +6348,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 24,992
+    - Annotated parameters: 25,011
     - Unannotated parameters: 862
-    - Explicit `Any` parameters: 2,041
+    - Explicit `Any` parameters: 2,042
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
 - Returns:
-    - Annotated returns: 13,682
+    - Annotated returns: 13,701
     - Unannotated returns: 448
-    - Explicit `Any` returns: 861
+    - Explicit `Any` returns: 862
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
     - Annotated variables: 8,310
     - Explicit `Any` variables: 536
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 142
 - Class definitions:
-    - Total class definitions: 2,321
+    - Total class definitions: 2,324
     - Class definitions with `Any`: 25
     - Class definitions marked as at least partially `Incomplete`: 0
 

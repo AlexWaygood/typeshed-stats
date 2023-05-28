@@ -3502,7 +3502,7 @@
     "package_name": "pywin32",
     "stub_distribution_name": "types-pywin32",
     "extra_description": null,
-    "number_of_lines": 34563,
+    "number_of_lines": 34572,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3514,9 +3514,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3647,
+      "annotated_parameters": 3649,
       "unannotated_parameters": 3725,
-      "annotated_returns": 3833,
+      "annotated_returns": 3839,
       "unannotated_returns": 2039,
       "explicit_Incomplete_parameters": 427,
       "explicit_Incomplete_returns": 292,
@@ -3525,7 +3525,7 @@
       "annotated_variables": 25040,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 2833,
-      "classdefs": 725,
+      "classdefs": 726,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -3823,7 +3823,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 52855,
+    "number_of_lines": 52860,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3833,22 +3833,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1100
+      "allowlist_length": 1104
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 24992,
+      "annotated_parameters": 25011,
       "unannotated_parameters": 862,
-      "annotated_returns": 13682,
+      "annotated_returns": 13701,
       "unannotated_returns": 448,
       "explicit_Incomplete_parameters": 92,
       "explicit_Incomplete_returns": 18,
-      "explicit_Any_parameters": 2041,
-      "explicit_Any_returns": 861,
+      "explicit_Any_parameters": 2042,
+      "explicit_Any_returns": 862,
       "annotated_variables": 8310,
       "explicit_Any_variables": 536,
       "explicit_Incomplete_variables": 142,
-      "classdefs": 2321,
+      "classdefs": 2324,
       "classdefs_with_Any": 25,
       "classdefs_with_Incomplete": 0
     }
