@@ -3606,7 +3606,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 5
+      "allowlist_length": 6
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {

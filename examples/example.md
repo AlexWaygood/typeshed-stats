@@ -5972,7 +5972,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 5 unique allowlist entries for `requests` when running stubtest in CI.
+Typeshed currently has 6 unique allowlist entries for `requests` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
