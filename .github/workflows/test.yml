@@ -31,7 +31,9 @@ env:
   FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
   PIP_DISABLE_PIP_VERSION_CHECK: 1
   PY_COLORS: 1 # Recognized by the `py` package, dependency of `pytest`
-  TERM: xterm-256color # needed for FORCE_COLOR to work on mypy on Ubuntu, see https://github.com/python/mypy/issues/13817
+  # TERM is needed for FORCE_COLOR to work on mypy on Ubuntu,
+  # see https://github.com/python/mypy/issues/13817
+  TERM: xterm-256color
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   COVERALLS_PARALLEL: true
 
@@ -87,7 +89,13 @@ jobs:
     name: Create an issue if daily test failed
     runs-on: ubuntu-latest
     needs: pytest-tests
-    if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && github.event_name == 'schedule' && needs.pytest-tests.result == 'failure' }}
+    if: >-
+      ${{
+        github.repository == 'AlexWaygood/typeshed-stats'
+        && always()
+        && github.event_name == 'schedule'
+        && needs.pytest-tests.result == 'failure'
+      }}
     permissions:
       issues: write
     steps:
