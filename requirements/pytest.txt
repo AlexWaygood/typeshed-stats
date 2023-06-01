@@ -2,11 +2,11 @@ beautifulsoup4>=4,<5
 covdefaults==2.3.0
 coverage==6.5.0
 Markdown>=3,<4
-pytest==7.2.2
+pytest==7.3.1
 pytest-antilru==1.1.1
 pytest-asyncio==0.21.0
 pytest-dependency==0.5.1
 pytest-mock==3.10.0
-pytest-subtests==0.10.0
+pytest-subtests==0.11.0
 # Already installed via `pip install -e .`, but better to be explicit about it (coverage also needs it):
 tomli; python_version < "3.11"
