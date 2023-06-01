@@ -1,4 +1,4 @@
-MarkDown==3.4.3
+MarkDown==3.3.7
 mkdocs==1.4.3
 mkdocs-macros-plugin==0.7.0
 mkdocs-material==9.1.14
