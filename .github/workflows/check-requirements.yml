@@ -43,7 +43,13 @@ jobs:
     name: Create an issue if daily requirements check failed
     runs-on: ubuntu-latest
     needs: check-requirements
-    if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && github.event_name == 'schedule' && needs.check-requirements.result == 'failure' }}
+    if: >-
+      ${{
+        github.repository == 'AlexWaygood/typeshed-stats'
+        && always()
+        && github.event_name == 'schedule'
+        && needs.check-requirements.result == 'failure'
+      }}
     permissions:
       issues: write
     steps:
