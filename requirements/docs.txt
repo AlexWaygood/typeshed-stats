@@ -1,5 +1,5 @@
 MarkDown==3.3.7
 mkdocs==1.4.3
-mkdocs-macros-plugin==0.7.0
+mkdocs-macros-plugin==1.0.1
 mkdocs-material==9.1.14
 mkdocstrings[python]==0.21.2
