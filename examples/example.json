@@ -3791,7 +3791,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 52897,
+    "number_of_lines": 52952,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3805,18 +3805,18 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25013,
+      "annotated_parameters": 25023,
       "unannotated_parameters": 862,
-      "annotated_returns": 13703,
+      "annotated_returns": 13706,
       "unannotated_returns": 448,
       "explicit_Incomplete_parameters": 92,
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2042,
       "explicit_Any_returns": 862,
-      "annotated_variables": 8320,
+      "annotated_variables": 8326,
       "explicit_Any_variables": 536,
       "explicit_Incomplete_variables": 142,
-      "classdefs": 2329,
+      "classdefs": 2331,
       "classdefs_with_Any": 25,
       "classdefs_with_Incomplete": 0
     }
