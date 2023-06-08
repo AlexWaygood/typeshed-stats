@@ -3245,7 +3245,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-106 (excluding blank lines)
+122 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3261,7 +3261,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 7 unique allowlist entries for `inifile` when running stubtest in CI.
+Typeshed currently has 19 unique allowlist entries for `inifile` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3275,12 +3275,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 46
+    - Annotated returns: 58
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 9
+    - Annotated variables: 1
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -6376,7 +6376,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-53,182 (excluding blank lines)
+53,196 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6392,7 +6392,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,235 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,226 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6411,7 +6411,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 863
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,368
+    - Annotated variables: 8,370
     - Explicit `Any` variables: 536
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 142
 - Class definitions:

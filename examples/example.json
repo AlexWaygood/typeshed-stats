@@ -1958,7 +1958,7 @@
     "package_name": "inifile",
     "stub_distribution_name": "types-inifile",
     "extra_description": null,
-    "number_of_lines": 106,
+    "number_of_lines": 122,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1966,19 +1966,19 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 7
+      "allowlist_length": 19
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 56,
       "unannotated_parameters": 1,
-      "annotated_returns": 46,
+      "annotated_returns": 58,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 9,
+      "annotated_variables": 1,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 4,
@@ -3855,7 +3855,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 53182,
+    "number_of_lines": 53196,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3865,7 +3865,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1235
+      "allowlist_length": 1226
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
@@ -3877,7 +3877,7 @@
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2040,
       "explicit_Any_returns": 863,
-      "annotated_variables": 8368,
+      "annotated_variables": 8370,
       "explicit_Any_variables": 536,
       "explicit_Incomplete_variables": 142,
       "classdefs": 2333,
