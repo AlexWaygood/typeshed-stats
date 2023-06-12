@@ -32,7 +32,7 @@ jobs:
           cache-dependency-path: |
             requirements/docs.txt
             pyproject.toml
-          python-version: "3.10"
+          python-version: "3.11"
       - run: pip install "wheel<1"
       - run: pip install -e .[docs]
       - run: pip freeze --all
