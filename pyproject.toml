@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "typeshed_stats"
-dynamic = ["version", "optional-dependencies"]
+dynamic = ["version"]
 authors = [
     { name="Alex Waygood", email="alex.waygood@gmail.com" },
 ]
