@@ -60,7 +60,7 @@ jobs:
           cache-dependency-path: "pyproject.toml"
           python-version: ${{ matrix.python-version }}
       - run: pip install "wheel<1"
-      - run: pip install "coveralls==3.3.*" -e .[pytest]
+      - run: pip install "coveralls>=3.3" -e .[pytest]
       - run: pip freeze --all
       - name: Run tests under coverage
         run: |
