@@ -10,13 +10,13 @@ from typing import Any
 import attrs
 import cattrs
 
-from typeshed_stats.gather import _NiceReprEnum  # pyright: ignore[reportPrivateUsage]
 from typeshed_stats.gather import (
     AnnotationStats,
     FileInfo,
     PackageInfo,
     StubtestSettings,
     StubtestStrictness,
+    _NiceReprEnum,  # pyright: ignore[reportPrivateUsage]
 )
 
 if typing.TYPE_CHECKING:
