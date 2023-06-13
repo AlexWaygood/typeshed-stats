@@ -1,4 +1,4 @@
-name: lint
+name: Typecheck
 
 on:
   push:
@@ -59,21 +59,6 @@ jobs:
       - run: pip freeze --all
       - run: mypy
 
-  flake8:
-    name: Lint code with flake8
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          cache: "pip"
-          cache-dependency-path: "pyproject.toml"
-          python-version: "3.11"
-      - run: pip install "wheel<1"
-      - run: pip install -e ".[flake8]"
-      - run: pip freeze --all
-      - run: flake8 --color always
-
   pyright:
     name: Run pyright on the codebase
     runs-on: ubuntu-latest
@@ -93,7 +78,7 @@ jobs:
           version: "1.1.313"
 
   create-issue-on-failure:
-    name: Create an issue if daily lint failed
+    name: Create an issue if daily typecheck failed
     runs-on: ubuntu-latest
     needs: [mypy, flake8, pyright]
     if: >-
@@ -103,7 +88,6 @@ jobs:
         && github.event_name == 'schedule'
         && (
           needs.mypy.result == 'failure'
-          || needs.flake8.result == 'failure'
           || needs.pyright.result == 'failure'
         )
       }}
@@ -117,6 +101,6 @@ jobs:
             await github.rest.issues.create({
               owner: "AlexWaygood",
               repo: "typeshed-stats",
-              title: `Daily lint failed on ${new Date().toDateString()}`,
-              body: "Runs are listed here: https://github.com/AlexWaygood/typeshed-stats/actions/workflows/lint.yml",
+              title: `Daily typecheck failed on ${new Date().toDateString()}`,
+              body: "Runs are listed here: https://github.com/AlexWaygood/typeshed-stats/actions/workflows/typecheck.yml",
             })
