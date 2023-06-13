@@ -46,7 +46,7 @@ dependencies = [
 [project.scripts]
 typeshed-stats = "typeshed_stats._cli:main"
 
-[project.optional_dependencies]
+[project.optional-dependencies]
 rich = ["rich", "rich-argparse>=1"]
 # Include the [rich] extra in the [docs] extra
 # so the CLI docs generated from --help are consistent
