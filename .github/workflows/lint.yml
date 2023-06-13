@@ -49,7 +49,12 @@ jobs:
       - name: Install all requirements for daily run
         # Install all requirements for the daily run,
         # so we detect if any of the dependencies has added a py.typed file recently
-        if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && github.event_name == 'schedule' }}
+        if: >-
+          ${{
+            github.repository == 'AlexWaygood/typeshed-stats'
+            && always()
+            && github.event_name == 'schedule'
+          }}
         run: pip install -e .[dev]
       - run: pip freeze --all
       - run: mypy
@@ -90,8 +95,18 @@ jobs:
   create-issue-on-failure:
     name: Create an issue if daily lint failed
     runs-on: ubuntu-latest
-    needs: [mypy, flake8]
-    if: ${{ github.repository == 'AlexWaygood/typeshed-stats' && always() && github.event_name == 'schedule' && (needs.mypy.result == 'failure' || needs.flake8.result == 'failure') }}
+    needs: [mypy, flake8, pyright]
+    if: >-
+      ${{
+        github.repository == 'AlexWaygood/typeshed-stats'
+        && always()
+        && github.event_name == 'schedule'
+        && (
+          needs.mypy.result == 'failure'
+          || needs.flake8.result == 'failure'
+          || needs.pyright.result == 'failure'
+        )
+      }}
     permissions:
       issues: write
     steps:
