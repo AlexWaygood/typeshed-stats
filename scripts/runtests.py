@@ -56,29 +56,18 @@ def run_checks(
     download_typeshed: bool = False,
 ) -> None:
     """Run the checks."""
-    print("Running requirements-txt-fixer...")
-    subprocess.run(["requirements-txt-fixer", *Path("requirements").glob("*.txt")])
 
     print("\nRunning pycln...")
     subprocess.run(["pycln", ".", "--config=pyproject.toml"])
 
-    print("\nRunning pyupgrade...")
-    pyupgrade_files = [
-        path for path in Path(".").rglob("*.py") if Path("env") not in path.parents
-    ]
-    subprocess.run(["pyupgrade", *pyupgrade_files])
-
-    print("\nRunning isort...")
-    subprocess.run(["isort", *FILES_TO_CHECK])
+    print("\nRunning ruff...")
+    subprocess.run(["ruff", "."])
 
     print("\nRunning black...")
     black_result = subprocess.run(["black", "."])
     if black_result.returncode == 123:
         print("Exiting early since black failed!")
         raise SystemExit(1)
-
-    print("\nRunning flake8...")
-    subprocess.run(["flake8", *FILES_TO_CHECK], check=True)
 
     print("\nRunning mypy...")
     subprocess.run(["mypy"], check=True)
