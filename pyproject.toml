@@ -116,6 +116,8 @@ ignore = [
     "PT005",
     # Let mypy/pyright complain about blanket type ignores
     "PGH004",
+    # I know when to and when not to use `eval()`
+    "PGH001",
 ]
 per-file-ignores = {"tests/*.py" = ["D"]}
 
