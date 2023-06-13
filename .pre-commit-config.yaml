@@ -18,7 +18,7 @@ repos:
       - id: pycln
         args: [--config=pyproject.toml, .]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.0.272  # must match pyproject.toml
+    rev: v0.0.272 # must match pyproject.toml
     hooks:
       - id: ruff
   - repo: https://github.com/psf/black
