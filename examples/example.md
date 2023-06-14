@@ -3828,7 +3828,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-12,766 (excluding blank lines)
+12,752 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3853,19 +3853,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,566
+    - Annotated parameters: 3,575
     - Unannotated parameters: 526
     - Explicit `Any` parameters: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 311
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 279
 - Returns:
-    - Annotated returns: 1,011
+    - Annotated returns: 1,006
     - Unannotated returns: 335
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
 - Variables:
-    - Annotated variables: 4,278
+    - Annotated variables: 4,281
     - Explicit `Any` variables: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 716
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 675
 - Class definitions:
     - Total class definitions: 586
     - Class definitions with `Any`: 1
