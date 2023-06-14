@@ -42,20 +42,7 @@ jobs:
           cache-dependency-path: "pyproject.toml"
           python-version: "3.11"
       - run: pip install "wheel<1"
-      - name: Install mypy requirements only
-        # Install the minimal requirements for a PR run, so that it's fast
-        if: ${{ github.event_name != 'schedule' }}
-        run: pip install -e ".[typecheck]"
-      - name: Install all requirements for daily run
-        # Install all requirements for the daily run,
-        # so we detect if any of the dependencies has added a py.typed file recently
-        if: >-
-          ${{
-            github.repository == 'AlexWaygood/typeshed-stats'
-            && always()
-            && github.event_name == 'schedule'
-          }}
-        run: pip install -e .[dev]
+      - run: pip install -e ".[typecheck]"
       - run: pip freeze --all
       - run: mypy
 
