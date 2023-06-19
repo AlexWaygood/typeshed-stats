@@ -850,6 +850,59 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `WebOb`
+
+### Stub distribution name
+
+`types-WebOb`
+
+### Number of lines
+
+1,553 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 97 unique allowlist entries for `WebOb` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `WebOb`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 629
+    - Unannotated parameters: 92
+    - Explicit `Any` parameters: 78
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 26
+- Returns:
+    - Annotated returns: 517
+    - Unannotated returns: 54
+    - Explicit `Any` returns: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 245
+    - Explicit `Any` variables: 11
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 33
+- Class definitions:
+    - Total class definitions: 145
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `aiofiles`
 
 ### Stub distribution name
@@ -6376,7 +6429,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-53,447 (excluding blank lines)
+53,448 (excluding blank lines)
 
 ### Package status: *stdlib*
 
