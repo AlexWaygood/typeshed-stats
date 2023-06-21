@@ -4350,6 +4350,59 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `pexpect`
+
+### Stub distribution name
+
+`types-pexpect`
+
+### Number of lines
+
+539 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `pexpect` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `pexpect`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 169
+    - Unannotated parameters: 144
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 51
+- Returns:
+    - Annotated returns: 148
+    - Unannotated returns: 50
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 150
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 83
+- Class definitions:
+    - Total class definitions: 20
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `pika`
 
 ### Extra description
@@ -6168,11 +6221,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,421 (excluding blank lines)
+2,414 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6184,7 +6237,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 48 unique allowlist entries for `setuptools` when running stubtest in CI.
+Typeshed currently has 46 unique allowlist entries for `setuptools` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6193,21 +6246,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 662
-    - Unannotated parameters: 470
+    - Annotated parameters: 658
+    - Unannotated parameters: 467
     - Explicit `Any` parameters: 19
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 53
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 50
 - Returns:
-    - Annotated returns: 661
-    - Unannotated returns: 281
+    - Annotated returns: 658
+    - Unannotated returns: 278
     - Explicit `Any` returns: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
 - Variables:
-    - Annotated variables: 605
-    - Explicit `Any` variables: 152
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 231
+    - Annotated variables: 606
+    - Explicit `Any` variables: 91
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 287
 - Class definitions:
-    - Total class definitions: 165
+    - Total class definitions: 166
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
