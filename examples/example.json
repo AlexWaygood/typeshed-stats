@@ -3919,7 +3919,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 53470,
+    "number_of_lines": 53471,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3941,7 +3941,7 @@
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2042,
       "explicit_Any_returns": 864,
-      "annotated_variables": 8401,
+      "annotated_variables": 8402,
       "explicit_Any_variables": 536,
       "explicit_Incomplete_variables": 142,
       "classdefs": 2339,
