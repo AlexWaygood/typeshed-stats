@@ -583,7 +583,7 @@
     "stub_distribution_name": "types-annoy",
     "extra_description": null,
     "number_of_lines": 45,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -2000,10 +2000,10 @@
       ],
       "allowlist_length": 19
     },
-    "pyright_setting": "NOT_STRICT",
+    "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 56,
-      "unannotated_parameters": 1,
+      "annotated_parameters": 57,
+      "unannotated_parameters": 0,
       "annotated_returns": 58,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
