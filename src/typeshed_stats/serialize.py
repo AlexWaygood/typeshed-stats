@@ -38,7 +38,7 @@ _structure = _CATTRS_CONVERTER.structure
 
 _CATTRS_CONVERTER.register_unstructure_hook(_NiceReprEnum, attrgetter("name"))
 _CATTRS_CONVERTER.register_unstructure_hook(Path, Path.as_posix)
-_CATTRS_CONVERTER.register_structure_hook(_NiceReprEnum, lambda d, t: t[d])  # type: ignore[index,no-any-return]
+_CATTRS_CONVERTER.register_structure_hook(_NiceReprEnum, lambda d, t: t[d])  # type: ignore[index]
 _CATTRS_CONVERTER.register_structure_hook(
     Path, lambda d, t: Path(d)
 )  # pragma: no branch
