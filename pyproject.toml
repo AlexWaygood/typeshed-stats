@@ -63,7 +63,7 @@ pytest = [
     "beautifulsoup4>=4,<5",
     "covdefaults==2.3.0",
     "coverage==6.5.0",
-    "Markdown>=3,<4",
+    "Markdown>=3,<5",
     "pytest==7.4.0",
     "pytest-antilru==1.1.1",
     "pytest-asyncio==0.21.0",
