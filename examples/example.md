@@ -430,7 +430,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-3,030 (excluding blank lines)
+3,032 (excluding blank lines)
 
 ### Package status: *out of date*
 
