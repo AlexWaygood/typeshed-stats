@@ -1065,7 +1065,7 @@
     "stub_distribution_name": "types-contextvars",
     "extra_description": null,
     "number_of_lines": 45,
-    "package_status": "UP_TO_DATE",
+    "package_status": "NO_LONGER_UPDATED",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
