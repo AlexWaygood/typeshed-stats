@@ -1061,38 +1061,6 @@
     }
   },
   {
-    "package_name": "contextvars",
-    "stub_distribution_name": "types-contextvars",
-    "extra_description": null,
-    "number_of_lines": 45,
-    "package_status": "NO_LONGER_UPDATED",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 4
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 12,
-      "unannotated_parameters": 0,
-      "annotated_returns": 18,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 2,
-      "explicit_Any_returns": 2,
-      "annotated_variables": 1,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 3,
-      "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "croniter",
     "stub_distribution_name": "types-croniter",
     "extra_description": null,
