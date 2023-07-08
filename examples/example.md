@@ -263,59 +263,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
-## Info on typeshed's stubs for `Flask-SQLAlchemy`
-
-### Stub distribution name
-
-`types-Flask-SQLAlchemy`
-
-### Number of lines
-
-106 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *missing stubs ignored*
-
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 1 unique allowlist entry for `Flask-SQLAlchemy` when running stubtest in CI.
-
-### Pyright settings in CI: *not strict*
-
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
-
-### Statistics on the annotations in typeshed's stubs for `Flask-SQLAlchemy`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 54
-    - Unannotated parameters: 21
-    - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
-- Returns:
-    - Annotated returns: 24
-    - Unannotated returns: 19
-    - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 16
-    - Explicit `Any` variables: 9
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 9
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
 ## Info on typeshed's stubs for `JACK-Client`
 
 ### Stub distribution name
@@ -737,63 +684,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Total class definitions: 62
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
-## Info on typeshed's stubs for `SQLAlchemy`
-
-### Extra description
-
-The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.
-
-### Stub distribution name
-
-`types-SQLAlchemy`
-
-### Number of lines
-
-15,201 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 51 unique allowlist entries for `SQLAlchemy` when running stubtest in CI.
-
-### Pyright settings in CI: *not strict*
-
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
-
-### Statistics on the annotations in typeshed's stubs for `SQLAlchemy`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,267
-    - Unannotated parameters: 6,967
-    - Explicit `Any` parameters: 74
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,142
-- Returns:
-    - Annotated returns: 2,235
-    - Unannotated returns: 3,271
-    - Explicit `Any` returns: 32
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
-- Variables:
-    - Annotated variables: 3,136
-    - Explicit `Any` variables: 1,834
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 232
-- Class definitions:
-    - Total class definitions: 1,421
-    - Class definitions with `Any`: 56
-    - Class definitions marked as at least partially `Incomplete`: 2
 
 ---
 
@@ -6376,7 +6266,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-53,518 (excluding blank lines)
+53,516 (excluding blank lines)
 
 ### Package status: *stdlib*
 

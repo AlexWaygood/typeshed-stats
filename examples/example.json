@@ -160,38 +160,6 @@
     }
   },
   {
-    "package_name": "Flask-SQLAlchemy",
-    "stub_distribution_name": "types-Flask-SQLAlchemy",
-    "extra_description": null,
-    "number_of_lines": 106,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 1
-    },
-    "pyright_setting": "NOT_STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 54,
-      "unannotated_parameters": 21,
-      "annotated_returns": 24,
-      "unannotated_returns": 19,
-      "explicit_Incomplete_parameters": 23,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 2,
-      "explicit_Any_returns": 1,
-      "annotated_variables": 16,
-      "explicit_Any_variables": 9,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 9,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "JACK-Client",
     "stub_distribution_name": "types-JACK-Client",
     "extra_description": null,
@@ -447,38 +415,6 @@
       "classdefs": 62,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
-    }
-  },
-  {
-    "package_name": "SQLAlchemy",
-    "stub_distribution_name": "types-SQLAlchemy",
-    "extra_description": "The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.",
-    "number_of_lines": 15201,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 51
-    },
-    "pyright_setting": "NOT_STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 2267,
-      "unannotated_parameters": 6967,
-      "annotated_returns": 2235,
-      "unannotated_returns": 3271,
-      "explicit_Incomplete_parameters": 1142,
-      "explicit_Incomplete_returns": 3,
-      "explicit_Any_parameters": 74,
-      "explicit_Any_returns": 32,
-      "annotated_variables": 3136,
-      "explicit_Any_variables": 1834,
-      "explicit_Incomplete_variables": 232,
-      "classdefs": 1421,
-      "classdefs_with_Any": 56,
-      "classdefs_with_Incomplete": 2
     }
   },
   {
@@ -3855,7 +3791,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 53518,
+    "number_of_lines": 53516,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
