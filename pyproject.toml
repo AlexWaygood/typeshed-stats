@@ -55,7 +55,7 @@ docs = [
     "MarkDown==3.3.7",
     "mkdocs==1.4.3",
     "mkdocs-macros-plugin==1.0.1",
-    "mkdocs-material==9.1.17",
+    "mkdocs-material==9.1.18",
     "mkdocstrings[python]==0.22.0",
 ]
 pytest = [
@@ -87,7 +87,7 @@ misc-lint = [
     "blacken-docs==1.14.0",
     "pre-commit-hooks==4.4.0",
     "pycln==2.1.5",
-    "ruff==0.0.276",
+    "ruff==0.0.277",
 ]
 dev = ["typeshed-stats[rich,docs,typecheck,pytest,misc-lint]"]
 
