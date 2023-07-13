@@ -3241,7 +3241,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-389 (excluding blank lines)
+393 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -3268,17 +3268,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 108
     - Unannotated parameters: 295
-    - Explicit `Any` parameters: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 12
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 20
 - Returns:
     - Annotated returns: 145
     - Unannotated returns: 31
-    - Explicit `Any` returns: 9
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
     - Annotated variables: 54
-    - Explicit `Any` variables: 23
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 23
 - Class definitions:
     - Total class definitions: 25
     - Class definitions with `Any`: 0
@@ -6296,7 +6296,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 2,043
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
 - Returns:
-    - Annotated returns: 13,797
+    - Annotated returns: 13,796
     - Unannotated returns: 448
     - Explicit `Any` returns: 864
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
@@ -6305,7 +6305,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 536
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 142
 - Class definitions:
-    - Total class definitions: 2,338
+    - Total class definitions: 2,337
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 

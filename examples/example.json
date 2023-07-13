@@ -1958,7 +1958,7 @@
     "package_name": "jsonschema",
     "stub_distribution_name": "types-jsonschema",
     "extra_description": null,
-    "number_of_lines": 389,
+    "number_of_lines": 393,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1974,13 +1974,13 @@
       "unannotated_parameters": 295,
       "annotated_returns": 145,
       "unannotated_returns": 31,
-      "explicit_Incomplete_parameters": 12,
-      "explicit_Incomplete_returns": 1,
-      "explicit_Any_parameters": 10,
-      "explicit_Any_returns": 9,
+      "explicit_Incomplete_parameters": 20,
+      "explicit_Incomplete_returns": 10,
+      "explicit_Any_parameters": 2,
+      "explicit_Any_returns": 0,
       "annotated_variables": 54,
-      "explicit_Any_variables": 23,
-      "explicit_Incomplete_variables": 0,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 23,
       "classdefs": 25,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
@@ -3807,7 +3807,7 @@
     "annotation_stats": {
       "annotated_parameters": 25224,
       "unannotated_parameters": 862,
-      "annotated_returns": 13797,
+      "annotated_returns": 13796,
       "unannotated_returns": 448,
       "explicit_Incomplete_parameters": 92,
       "explicit_Incomplete_returns": 18,
@@ -3816,7 +3816,7 @@
       "annotated_variables": 8406,
       "explicit_Any_variables": 536,
       "explicit_Incomplete_variables": 142,
-      "classdefs": 2338,
+      "classdefs": 2337,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }
