@@ -3857,7 +3857,7 @@
     "package_name": "stripe",
     "stub_distribution_name": "types-stripe",
     "extra_description": null,
-    "number_of_lines": 1510,
+    "number_of_lines": 1532,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3865,22 +3865,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 7
+      "allowlist_length": 8
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 265,
-      "unannotated_parameters": 394,
+      "annotated_parameters": 270,
+      "unannotated_parameters": 396,
       "annotated_returns": 108,
-      "unannotated_returns": 170,
+      "unannotated_returns": 172,
       "explicit_Incomplete_parameters": 156,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 5,
       "explicit_Any_returns": 4,
-      "annotated_variables": 156,
+      "annotated_variables": 157,
       "explicit_Any_variables": 42,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 135,
+      "classdefs": 136,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
