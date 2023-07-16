@@ -6005,7 +6005,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,626 (excluding blank lines)
+2,756 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6030,21 +6030,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 850
+    - Annotated parameters: 889
     - Unannotated parameters: 467
     - Explicit `Any` parameters: 21
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 50
 - Returns:
-    - Annotated returns: 727
+    - Annotated returns: 790
     - Unannotated returns: 280
     - Explicit `Any` returns: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
 - Variables:
-    - Annotated variables: 618
+    - Annotated variables: 630
     - Explicit `Any` variables: 91
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 287
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 286
 - Class definitions:
-    - Total class definitions: 167
+    - Total class definitions: 181
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
