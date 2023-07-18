@@ -127,7 +127,7 @@ toposort,types-toposort,-,13,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,1,0,1,1,0,2,
 tqdm,types-tqdm,-,1379,UP_TO_DATE,UPLOADED,NOT_STRICT,813,141,166,24,42,11,1,1,100,0,74,36,0,0,ERROR_ON_MISSING_STUB,linux,2
 translationstring,types-translationstring,-,73,UP_TO_DATE,UPLOADED,STRICT,62,0,18,0,0,0,6,1,4,1,0,7,0,0,ERROR_ON_MISSING_STUB,linux,4
 tree-sitter,types-tree-sitter,-,124,UP_TO_DATE,UPLOADED,STRICT,25,0,52,0,0,0,0,2,4,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,36
-tree-sitter-languages,types-tree-sitter-languages,-,9,UP_TO_DATE,UPLOADED,STRICT,2,0,2,0,0,0,0,0,5,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,2
+tree-sitter-languages,types-tree-sitter-languages,-,9,OUT_OF_DATE,UPLOADED,STRICT,2,0,2,0,0,0,0,0,5,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,2
 ttkthemes,types-ttkthemes,-,76,UP_TO_DATE,UPLOADED,NOT_STRICT,30,14,13,10,3,0,0,0,5,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 tzlocal,types-tzlocal,-,13,UP_TO_DATE,UPLOADED,STRICT,3,0,5,0,0,0,0,0,3,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 ujson,types-ujson,-,49,UP_TO_DATE,UPLOADED,STRICT,40,0,6,0,3,0,3,3,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
