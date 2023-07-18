@@ -160,38 +160,6 @@
     }
   },
   {
-    "package_name": "Flask-SQLAlchemy",
-    "stub_distribution_name": "types-Flask-SQLAlchemy",
-    "extra_description": null,
-    "number_of_lines": 106,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 1
-    },
-    "pyright_setting": "NOT_STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 54,
-      "unannotated_parameters": 21,
-      "annotated_returns": 24,
-      "unannotated_returns": 19,
-      "explicit_Incomplete_parameters": 23,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 2,
-      "explicit_Any_returns": 1,
-      "annotated_variables": 16,
-      "explicit_Any_variables": 9,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 9,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "JACK-Client",
     "stub_distribution_name": "types-JACK-Client",
     "extra_description": null,
@@ -260,7 +228,7 @@
     "package_name": "Pillow",
     "stub_distribution_name": "types-Pillow",
     "extra_description": null,
-    "number_of_lines": 3030,
+    "number_of_lines": 3042,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -269,24 +237,24 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 17
+      "allowlist_length": 22
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 686,
-      "unannotated_parameters": 641,
-      "annotated_returns": 496,
-      "unannotated_returns": 358,
-      "explicit_Incomplete_parameters": 64,
-      "explicit_Incomplete_returns": 4,
-      "explicit_Any_parameters": 5,
-      "explicit_Any_returns": 6,
-      "annotated_variables": 1207,
-      "explicit_Any_variables": 316,
-      "explicit_Incomplete_variables": 46,
-      "classdefs": 218,
-      "classdefs_with_Any": 4,
-      "classdefs_with_Incomplete": 0
+      "annotated_parameters": 735,
+      "unannotated_parameters": 609,
+      "annotated_returns": 557,
+      "unannotated_returns": 341,
+      "explicit_Incomplete_parameters": 59,
+      "explicit_Incomplete_returns": 6,
+      "explicit_Any_parameters": 7,
+      "explicit_Any_returns": 4,
+      "annotated_variables": 1147,
+      "explicit_Any_variables": 5,
+      "explicit_Incomplete_variables": 321,
+      "classdefs": 217,
+      "classdefs_with_Any": 3,
+      "classdefs_with_Incomplete": 1
     }
   },
   {
@@ -325,7 +293,7 @@
     "package_name": "PyMySQL",
     "stub_distribution_name": "types-PyMySQL",
     "extra_description": null,
-    "number_of_lines": 1041,
+    "number_of_lines": 1044,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -337,16 +305,16 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 139,
-      "unannotated_parameters": 53,
-      "annotated_returns": 98,
-      "unannotated_returns": 40,
+      "annotated_parameters": 142,
+      "unannotated_parameters": 52,
+      "annotated_returns": 101,
+      "unannotated_returns": 37,
       "explicit_Incomplete_parameters": 28,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 10,
       "explicit_Any_returns": 18,
-      "annotated_variables": 733,
-      "explicit_Any_variables": 62,
+      "annotated_variables": 734,
+      "explicit_Any_variables": 60,
       "explicit_Incomplete_variables": 0,
       "classdefs": 24,
       "classdefs_with_Any": 0,
@@ -450,38 +418,6 @@
     }
   },
   {
-    "package_name": "SQLAlchemy",
-    "stub_distribution_name": "types-SQLAlchemy",
-    "extra_description": "The `sqlalchemy-stubs` package is an alternative to this package and also includes a mypy plugin for more precise types.",
-    "number_of_lines": 15201,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 51
-    },
-    "pyright_setting": "NOT_STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 2267,
-      "unannotated_parameters": 6967,
-      "annotated_returns": 2235,
-      "unannotated_returns": 3271,
-      "explicit_Incomplete_parameters": 1142,
-      "explicit_Incomplete_returns": 3,
-      "explicit_Any_parameters": 74,
-      "explicit_Any_returns": 32,
-      "annotated_variables": 3136,
-      "explicit_Any_variables": 1834,
-      "explicit_Incomplete_variables": 232,
-      "classdefs": 1421,
-      "classdefs_with_Any": 56,
-      "classdefs_with_Incomplete": 2
-    }
-  },
-  {
     "package_name": "Send2Trash",
     "stub_distribution_name": "types-Send2Trash",
     "extra_description": null,
@@ -509,6 +445,38 @@
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0,
       "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "WebOb",
+    "stub_distribution_name": "types-WebOb",
+    "extra_description": null,
+    "number_of_lines": 1553,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 97
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 629,
+      "unannotated_parameters": 92,
+      "annotated_returns": 517,
+      "unannotated_returns": 54,
+      "explicit_Incomplete_parameters": 26,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 78,
+      "explicit_Any_returns": 4,
+      "annotated_variables": 245,
+      "explicit_Any_variables": 11,
+      "explicit_Incomplete_variables": 33,
+      "classdefs": 145,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -542,38 +510,6 @@
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 16,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
-    "package_name": "annoy",
-    "stub_distribution_name": "types-annoy",
-    "extra_description": null,
-    "number_of_lines": 45,
-    "package_status": "UP_TO_DATE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 40,
-      "unannotated_parameters": 0,
-      "annotated_returns": 20,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 1,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 1,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -1061,42 +997,10 @@
     }
   },
   {
-    "package_name": "contextvars",
-    "stub_distribution_name": "types-contextvars",
-    "extra_description": null,
-    "number_of_lines": 45,
-    "package_status": "UP_TO_DATE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 4
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 12,
-      "unannotated_parameters": 0,
-      "annotated_returns": 18,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 2,
-      "explicit_Any_returns": 2,
-      "annotated_variables": 1,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 3,
-      "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "croniter",
     "stub_distribution_name": "types-croniter",
     "extra_description": null,
-    "number_of_lines": 141,
+    "number_of_lines": 147,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1108,16 +1012,16 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 63,
+      "annotated_parameters": 64,
       "unannotated_parameters": 0,
       "annotated_returns": 23,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 9,
-      "annotated_variables": 26,
-      "explicit_Any_variables": 3,
+      "explicit_Any_returns": 8,
+      "annotated_variables": 29,
+      "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 8,
       "classdefs_with_Any": 1,
@@ -1545,7 +1449,7 @@
     "stub_distribution_name": "types-flake8-plugin-utils",
     "extra_description": null,
     "number_of_lines": 61,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -1968,10 +1872,10 @@
       ],
       "allowlist_length": 19
     },
-    "pyright_setting": "NOT_STRICT",
+    "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 56,
-      "unannotated_parameters": 1,
+      "annotated_parameters": 57,
+      "unannotated_parameters": 0,
       "annotated_returns": 58,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
@@ -2054,8 +1958,8 @@
     "package_name": "jsonschema",
     "stub_distribution_name": "types-jsonschema",
     "extra_description": null,
-    "number_of_lines": 389,
-    "package_status": "UP_TO_DATE",
+    "number_of_lines": 393,
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -2070,13 +1974,13 @@
       "unannotated_parameters": 295,
       "annotated_returns": 145,
       "unannotated_returns": 31,
-      "explicit_Incomplete_parameters": 12,
-      "explicit_Incomplete_returns": 1,
-      "explicit_Any_parameters": 10,
-      "explicit_Any_returns": 9,
+      "explicit_Incomplete_parameters": 20,
+      "explicit_Incomplete_returns": 10,
+      "explicit_Any_parameters": 2,
+      "explicit_Any_returns": 0,
       "annotated_variables": 54,
-      "explicit_Any_variables": 23,
-      "explicit_Incomplete_variables": 0,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 23,
       "classdefs": 25,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
@@ -2150,8 +2054,8 @@
     "package_name": "mock",
     "stub_distribution_name": "types-mock",
     "extra_description": null,
-    "number_of_lines": 359,
-    "package_status": "UP_TO_DATE",
+    "number_of_lines": 360,
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -2214,7 +2118,7 @@
     "package_name": "mysqlclient",
     "stub_distribution_name": "types-mysqlclient",
     "extra_description": null,
-    "number_of_lines": 1215,
+    "number_of_lines": 1228,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2226,20 +2130,20 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 29,
-      "unannotated_parameters": 127,
-      "annotated_returns": 83,
-      "unannotated_returns": 30,
+      "annotated_parameters": 35,
+      "unannotated_parameters": 124,
+      "annotated_returns": 37,
+      "unannotated_returns": 79,
       "explicit_Incomplete_parameters": 3,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 1,
-      "explicit_Any_returns": 51,
-      "annotated_variables": 972,
-      "explicit_Any_variables": 31,
-      "explicit_Incomplete_variables": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 971,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 28,
       "classdefs": 35,
-      "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 0
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 1
     }
   },
   {
@@ -2310,7 +2214,7 @@
     "package_name": "openpyxl",
     "stub_distribution_name": "types-openpyxl",
     "extra_description": null,
-    "number_of_lines": 12121,
+    "number_of_lines": 12753,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2318,24 +2222,24 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 161
+      "allowlist_length": 164
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3438,
-      "unannotated_parameters": 530,
-      "annotated_returns": 955,
-      "unannotated_returns": 342,
-      "explicit_Incomplete_parameters": 610,
+      "annotated_parameters": 3575,
+      "unannotated_parameters": 526,
+      "annotated_returns": 1006,
+      "unannotated_returns": 335,
+      "explicit_Incomplete_parameters": 279,
       "explicit_Incomplete_returns": 20,
-      "explicit_Any_parameters": 2,
+      "explicit_Any_parameters": 5,
       "explicit_Any_returns": 1,
-      "annotated_variables": 4272,
-      "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 1171,
-      "classdefs": 584,
+      "annotated_variables": 4275,
+      "explicit_Any_variables": 4,
+      "explicit_Incomplete_variables": 666,
+      "classdefs": 586,
       "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 33
+      "classdefs_with_Incomplete": 23
     }
   },
   {
@@ -2596,6 +2500,38 @@
     }
   },
   {
+    "package_name": "pexpect",
+    "stub_distribution_name": "types-pexpect",
+    "extra_description": null,
+    "number_of_lines": 539,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 169,
+      "unannotated_parameters": 144,
+      "annotated_returns": 148,
+      "unannotated_returns": 50,
+      "explicit_Incomplete_parameters": 51,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 150,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 83,
+      "classdefs": 20,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "pika",
     "stub_distribution_name": "types-pika-ts",
     "extra_description": "The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",
@@ -2727,7 +2663,7 @@
     "package_name": "psutil",
     "stub_distribution_name": "types-psutil",
     "extra_description": null,
-    "number_of_lines": 1552,
+    "number_of_lines": 1559,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2743,8 +2679,8 @@
     "annotation_stats": {
       "annotated_parameters": 122,
       "unannotated_parameters": 310,
-      "annotated_returns": 187,
-      "unannotated_returns": 359,
+      "annotated_returns": 191,
+      "unannotated_returns": 355,
       "explicit_Incomplete_parameters": 28,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
@@ -2793,7 +2729,7 @@
     "package_name": "pyOpenSSL",
     "stub_distribution_name": "types-pyOpenSSL",
     "extra_description": null,
-    "number_of_lines": 377,
+    "number_of_lines": 379,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2813,7 +2749,7 @@
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 2,
-      "annotated_variables": 120,
+      "annotated_variables": 122,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0,
       "classdefs": 25,
@@ -3066,11 +3002,11 @@
       "unannotated_parameters": 0,
       "annotated_returns": 179,
       "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 42,
+      "explicit_Incomplete_parameters": 40,
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 2,
-      "annotated_variables": 210,
+      "annotated_variables": 211,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 34,
       "classdefs": 30,
@@ -3215,7 +3151,7 @@
     "stub_distribution_name": "types-python-crontab",
     "extra_description": null,
     "number_of_lines": 292,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3578,16 +3514,16 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3681,
+      "annotated_parameters": 3693,
       "unannotated_parameters": 1256,
       "annotated_returns": 1342,
-      "unannotated_returns": 640,
+      "unannotated_returns": 638,
       "explicit_Incomplete_parameters": 355,
       "explicit_Incomplete_returns": 9,
       "explicit_Any_parameters": 68,
-      "explicit_Any_returns": 325,
-      "annotated_variables": 635,
-      "explicit_Any_variables": 215,
+      "explicit_Any_returns": 327,
+      "annotated_variables": 632,
+      "explicit_Any_variables": 211,
       "explicit_Incomplete_variables": 34,
       "classdefs": 214,
       "classdefs_with_Any": 0,
@@ -3694,7 +3630,7 @@
     "package_name": "setuptools",
     "stub_distribution_name": "types-setuptools",
     "extra_description": null,
-    "number_of_lines": 2421,
+    "number_of_lines": 2756,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3703,22 +3639,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 48
+      "allowlist_length": 46
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 662,
-      "unannotated_parameters": 470,
-      "annotated_returns": 661,
-      "unannotated_returns": 281,
-      "explicit_Incomplete_parameters": 53,
+      "annotated_parameters": 889,
+      "unannotated_parameters": 467,
+      "annotated_returns": 790,
+      "unannotated_returns": 280,
+      "explicit_Incomplete_parameters": 50,
       "explicit_Incomplete_returns": 14,
-      "explicit_Any_parameters": 19,
+      "explicit_Any_parameters": 21,
       "explicit_Any_returns": 7,
-      "annotated_variables": 605,
-      "explicit_Any_variables": 152,
-      "explicit_Incomplete_variables": 231,
-      "classdefs": 165,
+      "annotated_variables": 630,
+      "explicit_Any_variables": 91,
+      "explicit_Incomplete_variables": 286,
+      "classdefs": 181,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -3855,7 +3791,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 53338,
+    "number_of_lines": 53692,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3865,23 +3801,23 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1197
+      "allowlist_length": 1132
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25140,
-      "unannotated_parameters": 862,
-      "annotated_returns": 13736,
+      "annotated_parameters": 25274,
+      "unannotated_parameters": 861,
+      "annotated_returns": 13881,
       "unannotated_returns": 448,
       "explicit_Incomplete_parameters": 92,
       "explicit_Incomplete_returns": 18,
-      "explicit_Any_parameters": 2041,
-      "explicit_Any_returns": 863,
-      "annotated_variables": 8399,
-      "explicit_Any_variables": 536,
+      "explicit_Any_parameters": 2044,
+      "explicit_Any_returns": 867,
+      "annotated_variables": 8423,
+      "explicit_Any_variables": 537,
       "explicit_Incomplete_variables": 142,
-      "classdefs": 2333,
-      "classdefs_with_Any": 25,
+      "classdefs": 2338,
+      "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }
   },
@@ -3890,7 +3826,7 @@
     "stub_distribution_name": "types-stdlib-list",
     "extra_description": null,
     "number_of_lines": 16,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3921,7 +3857,7 @@
     "package_name": "stripe",
     "stub_distribution_name": "types-stripe",
     "extra_description": null,
-    "number_of_lines": 1501,
+    "number_of_lines": 1532,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3929,22 +3865,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 7
+      "allowlist_length": 8
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 265,
-      "unannotated_parameters": 394,
+      "annotated_parameters": 270,
+      "unannotated_parameters": 396,
       "annotated_returns": 108,
-      "unannotated_returns": 170,
+      "unannotated_returns": 172,
       "explicit_Incomplete_parameters": 156,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 5,
       "explicit_Any_returns": 4,
-      "annotated_variables": 155,
+      "annotated_variables": 157,
       "explicit_Any_variables": 42,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 134,
+      "classdefs": 136,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
@@ -3986,7 +3922,7 @@
     "stub_distribution_name": "types-tensorflow",
     "extra_description": null,
     "number_of_lines": 19180,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -4233,38 +4169,6 @@
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 3,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
-    "package_name": "typed-ast",
-    "stub_distribution_name": "types-typed-ast",
-    "extra_description": null,
-    "number_of_lines": 579,
-    "package_status": "UP_TO_DATE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 46,
-      "unannotated_parameters": 0,
-      "annotated_returns": 29,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 4,
-      "explicit_Any_returns": 6,
-      "annotated_variables": 310,
-      "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 223,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
