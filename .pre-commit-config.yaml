@@ -18,18 +18,18 @@ repos:
       - id: pycln
         args: [--config=pyproject.toml, .]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.0.277 # must match pyproject.toml
+    rev: v0.0.278 # must match pyproject.toml
     hooks:
       - id: ruff
   - repo: https://github.com/psf/black
-    rev: 23.3.0 # must match pyproject.toml AND the black used by blacken-docs
+    rev: 23.7.0 # must match pyproject.toml AND the black used by blacken-docs
     hooks:
       - id: black
   - repo: https://github.com/adamchainz/blacken-docs
     rev: 1.14.0 # must match pyproject.toml
     hooks:
       - id: blacken-docs
-        additional_dependencies: [black==23.3.0]
+        additional_dependencies: [black==23.7.0]
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.5
     hooks:
