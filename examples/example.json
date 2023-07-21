@@ -774,8 +774,8 @@
     "package_name": "caldav",
     "stub_distribution_name": "types-caldav",
     "extra_description": null,
-    "number_of_lines": 514,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 530,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -786,15 +786,15 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 208,
+      "annotated_parameters": 219,
       "unannotated_parameters": 30,
-      "annotated_returns": 116,
+      "annotated_returns": 117,
       "unannotated_returns": 8,
       "explicit_Incomplete_parameters": 26,
       "explicit_Incomplete_returns": 5,
-      "explicit_Any_parameters": 0,
+      "explicit_Any_parameters": 1,
       "explicit_Any_returns": 0,
-      "annotated_variables": 92,
+      "annotated_variables": 94,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 6,
       "classdefs": 86,
@@ -3531,6 +3531,38 @@
     }
   },
   {
+    "package_name": "qrcode",
+    "stub_distribution_name": "types-qrcode",
+    "extra_description": null,
+    "number_of_lines": 467,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 6
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 67,
+      "unannotated_parameters": 184,
+      "annotated_returns": 97,
+      "unannotated_returns": 65,
+      "explicit_Incomplete_parameters": 18,
+      "explicit_Incomplete_returns": 3,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 1,
+      "annotated_variables": 166,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 101,
+      "classdefs": 40,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "redis",
     "stub_distribution_name": "types-redis",
     "extra_description": null,
@@ -3823,7 +3855,7 @@
     "package_name": "stdlib",
     "stub_distribution_name": "-",
     "extra_description": null,
-    "number_of_lines": 53708,
+    "number_of_lines": 53711,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -3837,9 +3869,9 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25285,
+      "annotated_parameters": 25286,
       "unannotated_parameters": 861,
-      "annotated_returns": 13886,
+      "annotated_returns": 13887,
       "unannotated_returns": 448,
       "explicit_Incomplete_parameters": 92,
       "explicit_Incomplete_returns": 18,
