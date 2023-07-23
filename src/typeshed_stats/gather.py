@@ -788,15 +788,15 @@ def get_completeness_level(
         ...     requests_completeness = get_completeness_level(
         ...         "requests", typeshed_dir=typeshed
         ...     )
-        >>> stdlib_setting
+        >>> requests_completeness
         CompletenessLevel.COMPLETE
         >>> help(_)
         Help on CompletenessLevel in module typeshed_stats.gather:
         <BLANKLINE>
         CompletenessLevel.COMPLETE
-            The stubs package should cover the entire API at runtime.
+            The stubs package should cover the entire API at runtime
         <BLANKLINE>
-        >>> stdlib_setting
+        >>> stdlib_completeness
         CompletenessLevel.STDLIB
     """
     if package_name == "stdlib":
