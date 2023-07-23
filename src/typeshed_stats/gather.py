@@ -45,6 +45,7 @@ else:
 
 __all__ = [
     "AnnotationStats",
+    "CompletenessLevel",
     "FileInfo",
     "PackageInfo",
     "PackageName",
@@ -58,6 +59,7 @@ __all__ = [
     "gather_stats_on_file",
     "gather_stats_on_multiple_packages",
     "gather_stats_on_package",
+    "get_completeness_level",
     "get_number_of_lines_of_file",
     "get_package_extra_description",
     "get_package_size",
@@ -714,7 +716,7 @@ def get_upload_status(
     Parameters:
         package_name: The name of the package to find the upload status for.
         typeshed_dir: A path pointing to a typeshed directory,
-            from which to retrieve the stubtest setting.
+            from which to retrieve the upload status.
 
     Returns:
         A member of the [`UploadStatus`](./#UploadStatus) enumeration
@@ -743,6 +745,67 @@ def get_upload_status(
             return UploadStatus.NOT_CURRENTLY_UPLOADED
         case _:
             return UploadStatus.UPLOADED
+
+
+class CompletenessLevel(_NiceReprEnum):
+    """Whether or not a stubs package has been explicitly marked as 'partial'.
+
+    See [PEP 561][] for an elaboration of what it means
+    for a stub to be marked as partial.
+    """
+
+    PARTIAL = "The stubs package may not cover the entire API at runtime"
+    COMPLETE = "The stubs package should cover the entire API at runtime"
+    STDLIB = (
+        "These are the stdlib stubs -- the idea of 'partial/complete' "
+        "doesn't really apply in the same way"
+    )
+
+
+def get_completeness_level(
+    package_name: PackageName, *, typeshed_dir: Path | str
+) -> CompletenessLevel:
+    """Determine whether a stubs package is explicitly marked as 'partial'.
+
+    See [PEP 561][] for an elaboration of what it means
+    for a stub to be marked as partial.
+
+    Parameters:
+        package_name: The name of the package to find the partial status for.
+        typeshed_dir: A path pointing to a typeshed directory,
+            from which to retrieve the partial status.
+
+    Returns:
+        A member of the [`CompletenessLevel`](./#CompletenessLevel) enumeration
+            (see the docs on `CompletenessLevel` for details).
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_completeness_level
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     stdlib_completeness = get_completeness_level(
+        ...         "stdlib", typeshed_dir=typeshed
+        ...     )
+        ...     requests_completeness = get_completeness_level(
+        ...         "requests", typeshed_dir=typeshed
+        ...     )
+        >>> stdlib_setting
+        CompletenessLevel.COMPLETE
+        >>> help(_)
+        Help on CompletenessLevel in module typeshed_stats.gather:
+        <BLANKLINE>
+        CompletenessLevel.COMPLETE
+            The stubs package should cover the entire API at runtime.
+        <BLANKLINE>
+        >>> stdlib_setting
+        CompletenessLevel.STDLIB
+    """
+    if package_name == "stdlib":
+        return CompletenessLevel.STDLIB
+    match _get_package_metadata(package_name, typeshed_dir):
+        case {"partial": True}:
+            return CompletenessLevel.PARTIAL
+        case _:
+            return CompletenessLevel.COMPLETE
 
 
 def get_stub_distribution_name(
@@ -985,6 +1048,7 @@ class PackageInfo:
 
     package_name: PackageName
     stub_distribution_name: str
+    completeness_level: CompletenessLevel
     extra_description: str | None
     number_of_lines: int
     package_status: PackageStatus
@@ -1036,6 +1100,9 @@ async def gather_stats_on_package(
     return PackageInfo(
         package_name=package_name,
         stub_distribution_name=get_stub_distribution_name(
+            package_name, typeshed_dir=typeshed_dir
+        ),
+        completeness_level=get_completeness_level(
             package_name, typeshed_dir=typeshed_dir
         ),
         extra_description=get_package_extra_description(

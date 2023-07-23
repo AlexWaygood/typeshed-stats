@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 
 from typeshed_stats.gather import (
     AnnotationStats,
+    CompletenessLevel,
     FileInfo,
     PackageInfo,
     PackageStatus,
@@ -63,6 +64,7 @@ def unusual_packages() -> list[PackageInfo]:
         "foo",
         stub_distribution_name="types-foo-ts",
         extra_description="a very fooey package",
+        completeness_level=CompletenessLevel.PARTIAL,
         number_of_lines=100_000_000_000,
         package_status=PackageStatus.UP_TO_DATE,
         upload_status=UploadStatus.NOT_CURRENTLY_UPLOADED,

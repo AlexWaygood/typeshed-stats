@@ -26,6 +26,7 @@ import typeshed_stats
 import typeshed_stats.gather
 from typeshed_stats.gather import (
     AnnotationStats,
+    CompletenessLevel,
     PackageInfo,
     PackageStatus,
     PyrightSetting,
@@ -36,6 +37,7 @@ from typeshed_stats.gather import (
     gather_annotation_stats_on_package,
     gather_stats_on_file,
     gather_stats_on_multiple_packages,
+    get_completeness_level,
     get_package_extra_description,
     get_package_size,
     get_package_status,
@@ -577,6 +579,39 @@ def test_get_upload_status_non_stdlib(
         EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
     )
     expected_result = UploadStatus[expected_result_name]
+    assert actual_result is expected_result
+
+
+# =================================
+# Tests for get_completeness_level
+# =================================
+
+
+def test_get_completeness_level_stdlib() -> None:
+    result = get_completeness_level("stdlib", typeshed_dir=Path("."))
+    assert result is CompletenessLevel.STDLIB
+
+
+@pytest.mark.parametrize(
+    ("metadata_text", "expected_completeness_level"),
+    [
+        pytest.param("partial = true", "PARTIAL", id="partial"),
+        pytest.param("partial = false", "COMPLETE", id="explicitly_complete"),
+        pytest.param("", "COMPLETE", id="implicitly_complete"),
+    ],
+)
+def test_get_completeness_level_non_stdlib(
+    metadata_text: str,
+    expected_completeness_level: str,
+    typeshed: Path,
+    EXAMPLE_PACKAGE_NAME: str,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, metadata_text)
+    actual_result = get_completeness_level(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    expected_result = CompletenessLevel[expected_completeness_level]
     assert actual_result is expected_result
 
 
