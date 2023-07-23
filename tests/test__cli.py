@@ -21,6 +21,7 @@ import typeshed_stats._cli
 import typeshed_stats.gather
 from typeshed_stats._cli import SUPPORTED_EXTENSIONS, OutputOption, main
 from typeshed_stats.gather import (
+    CompletenessLevel,
     PackageInfo,
     PackageStatus,
     PyrightSetting,
@@ -223,6 +224,7 @@ class TestPassingPackages:
     ) -> None:
         patches_to_apply = [
             ("get_package_status", PackageStatus.UP_TO_DATE),
+            ("get_completeness_level", CompletenessLevel.COMPLETE),
             ("get_stubtest_strictness", StubtestStrictness.MISSING_STUBS_IGNORED),
             ("get_pyright_setting_for_package", PyrightSetting.STRICT_ON_SOME_FILES),
             ("get_package_extra_description", None),
