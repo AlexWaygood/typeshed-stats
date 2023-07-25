@@ -821,8 +821,8 @@ def get_upstream_url(
 
     Returns:
         The upstream URL (as a string).
-        If no URL is listed in the stubs package's METADATA.toml file,
-        returns [`None`][].
+            If no URL is listed in the stubs package's METADATA.toml file,
+            returns [`None`][].
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_upstream_url
