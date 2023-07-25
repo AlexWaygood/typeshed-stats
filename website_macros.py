@@ -83,9 +83,15 @@ def define_env(env: Env) -> None:
     stats_as_csv: list[dict[str, str | int]] = []
     with Path("examples", "example.csv").open(newline="", encoding="utf-8") as csvfile:
         for line in csv.DictReader(csvfile):
-            stats_as_csv.append(
-                {key: int(val) if val.isdigit() else val for key, val in line.items()}
-            )
+            row: dict[str, str | int] = {}
+            for key, val in line.items():
+                if val.isdigit():
+                    row[key] = int(val)
+                elif key == "upstream_url":
+                    row[key] = "(unknown)" if val == "-" else f"[{val}]({val})"
+                else:
+                    row[key] = val
+            stats_as_csv.append(row)
 
     @env.macro
     def is_int(x: object) -> TypeGuard[int]:

@@ -21,6 +21,12 @@ It works in conjunction with the
 {{ extra_description }}
 {% endif %}
 
+{% if upstream_url %}
+### Upstream repo URL
+
+[{{ upstream_url }}]({{ upstream_url }})
+{% endif %}
+
 {% if stub_distribution_name != "-" %}
 ### Stub distribution name
 
