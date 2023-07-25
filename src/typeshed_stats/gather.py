@@ -837,9 +837,9 @@ def get_upstream_url(
         ...         "gdb", typeshed_dir=typeshed
         ...     )
         >>> stdlib_url
-        https://github.com/python/cpython
+        'https://github.com/python/cpython'
         >>> requests_url
-        https://github.com/psf/requests
+        'https://github.com/psf/requests'
         >>> gdb_url is None
         True
     """
