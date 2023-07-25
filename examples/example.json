@@ -2,6 +2,7 @@
   {
     "package_name": "DateTimeRange",
     "stub_distribution_name": "types-DateTimeRange",
+    "upstream_url": "https://github.com/thombashi/DateTimeRange",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 68,
@@ -35,6 +36,7 @@
   {
     "package_name": "Deprecated",
     "stub_distribution_name": "types-Deprecated",
+    "upstream_url": "https://github.com/tantale/deprecated",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 56,
@@ -68,6 +70,7 @@
   {
     "package_name": "ExifRead",
     "stub_distribution_name": "types-ExifRead",
+    "upstream_url": "https://github.com/ianare/exif-py",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 218,
@@ -101,6 +104,7 @@
   {
     "package_name": "Flask-Cors",
     "stub_distribution_name": "types-Flask-Cors",
+    "upstream_url": "https://github.com/corydolphin/flask-cors",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 124,
@@ -134,6 +138,7 @@
   {
     "package_name": "Flask-Migrate",
     "stub_distribution_name": "types-Flask-Migrate",
+    "upstream_url": "https://github.com/miguelgrinberg/flask-migrate",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 100,
@@ -167,6 +172,7 @@
   {
     "package_name": "JACK-Client",
     "stub_distribution_name": "types-JACK-Client",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 310,
@@ -201,6 +207,7 @@
   {
     "package_name": "Markdown",
     "stub_distribution_name": "types-Markdown",
+    "upstream_url": "https://github.com/Python-Markdown/markdown",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 637,
@@ -234,6 +241,7 @@
   {
     "package_name": "Pillow",
     "stub_distribution_name": "types-Pillow",
+    "upstream_url": "https://github.com/python-pillow/Pillow",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 3042,
@@ -268,6 +276,7 @@
   {
     "package_name": "PyAutoGUI",
     "stub_distribution_name": "types-PyAutoGUI",
+    "upstream_url": "https://github.com/asweigart/pyautogui",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 230,
@@ -301,6 +310,7 @@
   {
     "package_name": "PyMySQL",
     "stub_distribution_name": "types-PyMySQL",
+    "upstream_url": "https://github.com/PyMySQL/PyMySQL",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 1044,
@@ -334,6 +344,7 @@
   {
     "package_name": "PyScreeze",
     "stub_distribution_name": "types-PyScreeze",
+    "upstream_url": "https://github.com/asweigart/pyscreeze",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 184,
@@ -367,6 +378,7 @@
   {
     "package_name": "PyYAML",
     "stub_distribution_name": "types-PyYAML",
+    "upstream_url": "https://github.com/yaml/pyyaml",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1290,
@@ -400,6 +412,7 @@
   {
     "package_name": "Pygments",
     "stub_distribution_name": "types-Pygments",
+    "upstream_url": "https://github.com/pygments/pygments",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 685,
@@ -433,6 +446,7 @@
   {
     "package_name": "Send2Trash",
     "stub_distribution_name": "types-Send2Trash",
+    "upstream_url": "https://github.com/arsenetar/send2trash",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 15,
@@ -466,6 +480,7 @@
   {
     "package_name": "WebOb",
     "stub_distribution_name": "types-WebOb",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1553,
@@ -499,6 +514,7 @@
   {
     "package_name": "aiofiles",
     "stub_distribution_name": "types-aiofiles",
+    "upstream_url": "https://github.com/Tinche/aiofiles",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 651,
@@ -533,6 +549,7 @@
   {
     "package_name": "aws-xray-sdk",
     "stub_distribution_name": "types-aws-xray-sdk",
+    "upstream_url": "https://github.com/aws/aws-xray-sdk-python",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 722,
@@ -566,6 +583,7 @@
   {
     "package_name": "babel",
     "stub_distribution_name": "types-babel",
+    "upstream_url": "https://github.com/python-babel/babel",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 1148,
@@ -599,6 +617,7 @@
   {
     "package_name": "beautifulsoup4",
     "stub_distribution_name": "types-beautifulsoup4",
+    "upstream_url": null,
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 811,
@@ -632,6 +651,7 @@
   {
     "package_name": "bleach",
     "stub_distribution_name": "types-bleach",
+    "upstream_url": "https://github.com/mozilla/bleach",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 187,
@@ -665,6 +685,7 @@
   {
     "package_name": "boltons",
     "stub_distribution_name": "types-boltons",
+    "upstream_url": "https://github.com/mahmoud/boltons",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1201,
@@ -698,6 +719,7 @@
   {
     "package_name": "boto",
     "stub_distribution_name": "types-boto",
+    "upstream_url": "https://github.com/boto/boto",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 1916,
@@ -731,6 +753,7 @@
   {
     "package_name": "braintree",
     "stub_distribution_name": "types-braintree",
+    "upstream_url": null,
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 2859,
@@ -764,6 +787,7 @@
   {
     "package_name": "cachetools",
     "stub_distribution_name": "types-cachetools",
+    "upstream_url": "https://github.com/tkem/cachetools",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 119,
@@ -797,6 +821,7 @@
   {
     "package_name": "caldav",
     "stub_distribution_name": "types-caldav",
+    "upstream_url": "https://github.com/python-caldav/caldav",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 530,
@@ -830,6 +855,7 @@
   {
     "package_name": "cffi",
     "stub_distribution_name": "types-cffi",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 825,
@@ -864,6 +890,7 @@
   {
     "package_name": "chevron",
     "stub_distribution_name": "types-chevron",
+    "upstream_url": "https://github.com/noahmorrison/chevron",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 37,
@@ -897,6 +924,7 @@
   {
     "package_name": "click-default-group",
     "stub_distribution_name": "types-click-default-group",
+    "upstream_url": "https://github.com/click-contrib/click-default-group",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 37,
@@ -930,6 +958,7 @@
   {
     "package_name": "click-spinner",
     "stub_distribution_name": "types-click-spinner",
+    "upstream_url": "https://github.com/click-contrib/click-spinner",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 30,
@@ -963,6 +992,7 @@
   {
     "package_name": "colorama",
     "stub_distribution_name": "types-colorama",
+    "upstream_url": "https://github.com/tartley/colorama",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 201,
@@ -997,6 +1027,7 @@
   {
     "package_name": "commonmark",
     "stub_distribution_name": "types-commonmark",
+    "upstream_url": "https://github.com/rtfd/commonmark.py",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 370,
@@ -1030,6 +1061,7 @@
   {
     "package_name": "console-menu",
     "stub_distribution_name": "types-console-menu",
+    "upstream_url": "https://github.com/aegirhall/console-menu",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 711,
@@ -1063,6 +1095,7 @@
   {
     "package_name": "croniter",
     "stub_distribution_name": "types-croniter",
+    "upstream_url": "https://github.com/kiorky/croniter",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 147,
@@ -1096,6 +1129,7 @@
   {
     "package_name": "dateparser",
     "stub_distribution_name": "types-dateparser",
+    "upstream_url": "https://github.com/scrapinghub/dateparser",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 472,
@@ -1129,6 +1163,7 @@
   {
     "package_name": "decorator",
     "stub_distribution_name": "types-decorator",
+    "upstream_url": "https://github.com/micheles/decorator",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 66,
@@ -1162,6 +1197,7 @@
   {
     "package_name": "dj-database-url",
     "stub_distribution_name": "types-dj-database-url",
+    "upstream_url": "https://github.com/jazzband/dj-database-url",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 37,
@@ -1195,6 +1231,7 @@
   {
     "package_name": "dockerfile-parse",
     "stub_distribution_name": "types-dockerfile-parse",
+    "upstream_url": "https://github.com/containerbuildsystem/dockerfile-parse",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 114,
@@ -1228,6 +1265,7 @@
   {
     "package_name": "docopt",
     "stub_distribution_name": "types-docopt",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 14,
@@ -1261,6 +1299,7 @@
   {
     "package_name": "docutils",
     "stub_distribution_name": "types-docutils",
+    "upstream_url": null,
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 515,
@@ -1294,6 +1333,7 @@
   {
     "package_name": "editdistance",
     "stub_distribution_name": "types-editdistance",
+    "upstream_url": "https://github.com/roy-ht/editdistance",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 3,
@@ -1327,6 +1367,7 @@
   {
     "package_name": "entrypoints",
     "stub_distribution_name": "types-entrypoints",
+    "upstream_url": "https://github.com/takluyver/entrypoints",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 45,
@@ -1360,6 +1401,7 @@
   {
     "package_name": "first",
     "stub_distribution_name": "types-first",
+    "upstream_url": "https://github.com/hynek/first",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 14,
@@ -1393,6 +1435,7 @@
   {
     "package_name": "flake8-2020",
     "stub_distribution_name": "types-flake8-2020",
+    "upstream_url": "https://github.com/asottile/flake8-2020",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 22,
@@ -1426,6 +1469,7 @@
   {
     "package_name": "flake8-bugbear",
     "stub_distribution_name": "types-flake8-bugbear",
+    "upstream_url": "https://github.com/PyCQA/flake8-bugbear",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 27,
@@ -1459,6 +1503,7 @@
   {
     "package_name": "flake8-builtins",
     "stub_distribution_name": "types-flake8-builtins",
+    "upstream_url": "https://github.com/gforcada/flake8-builtins",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 10,
@@ -1492,6 +1537,7 @@
   {
     "package_name": "flake8-docstrings",
     "stub_distribution_name": "types-flake8-docstrings",
+    "upstream_url": "https://github.com/pycqa/flake8-docstrings",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 19,
@@ -1525,6 +1571,7 @@
   {
     "package_name": "flake8-plugin-utils",
     "stub_distribution_name": "types-flake8-plugin-utils",
+    "upstream_url": "https://github.com/afonasev/flake8-plugin-utils",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 61,
@@ -1558,6 +1605,7 @@
   {
     "package_name": "flake8-rst-docstrings",
     "stub_distribution_name": "types-flake8-rst-docstrings",
+    "upstream_url": "https://github.com/peterjc/flake8-rst-docstrings",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 31,
@@ -1591,6 +1639,7 @@
   {
     "package_name": "flake8-simplify",
     "stub_distribution_name": "types-flake8-simplify",
+    "upstream_url": "https://github.com/MartinThoma/flake8-simplify",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 8,
@@ -1624,6 +1673,7 @@
   {
     "package_name": "flake8-typing-imports",
     "stub_distribution_name": "types-flake8-typing-imports",
+    "upstream_url": "https://github.com/asottile/flake8-typing-imports",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 15,
@@ -1657,6 +1707,7 @@
   {
     "package_name": "fpdf2",
     "stub_distribution_name": "types-fpdf2",
+    "upstream_url": "https://github.com/PyFPDF/fpdf2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 2393,
@@ -1690,6 +1741,7 @@
   {
     "package_name": "gdb",
     "stub_distribution_name": "types-gdb",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": "Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",
     "number_of_lines": 733,
@@ -1721,6 +1773,7 @@
   {
     "package_name": "google-cloud-ndb",
     "stub_distribution_name": "types-google-cloud-ndb",
+    "upstream_url": "https://github.com/googleapis/python-ndb",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 1415,
@@ -1754,6 +1807,7 @@
   {
     "package_name": "greenlet",
     "stub_distribution_name": "types-greenlet",
+    "upstream_url": "https://github.com/python-greenlet/greenlet",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 76,
@@ -1787,6 +1841,7 @@
   {
     "package_name": "hdbcli",
     "stub_distribution_name": "types-hdbcli",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 130,
@@ -1820,6 +1875,7 @@
   {
     "package_name": "html5lib",
     "stub_distribution_name": "types-html5lib",
+    "upstream_url": "https://github.com/html5lib/html5lib-python",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 673,
@@ -1853,6 +1909,7 @@
   {
     "package_name": "httplib2",
     "stub_distribution_name": "types-httplib2",
+    "upstream_url": "https://github.com/httplib2/httplib2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 253,
@@ -1886,6 +1943,7 @@
   {
     "package_name": "humanfriendly",
     "stub_distribution_name": "types-humanfriendly",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 340,
@@ -1919,6 +1977,7 @@
   {
     "package_name": "ibm-db",
     "stub_distribution_name": "types-ibm-db",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 252,
@@ -1952,6 +2011,7 @@
   {
     "package_name": "influxdb-client",
     "stub_distribution_name": "types-influxdb-client",
+    "upstream_url": "https://github.com/influxdata/influxdb-client-python",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 13385,
@@ -1985,6 +2045,7 @@
   {
     "package_name": "inifile",
     "stub_distribution_name": "types-inifile",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 122,
@@ -2018,6 +2079,7 @@
   {
     "package_name": "invoke",
     "stub_distribution_name": "types-invoke",
+    "upstream_url": "https://github.com/pyinvoke/invoke",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 745,
@@ -2051,6 +2113,7 @@
   {
     "package_name": "jmespath",
     "stub_distribution_name": "types-jmespath",
+    "upstream_url": "https://github.com/jmespath/jmespath.py",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 174,
@@ -2084,6 +2147,7 @@
   {
     "package_name": "jsonschema",
     "stub_distribution_name": "types-jsonschema",
+    "upstream_url": "https://github.com/python-jsonschema/jsonschema",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 393,
@@ -2117,6 +2181,7 @@
   {
     "package_name": "keyboard",
     "stub_distribution_name": "types-keyboard",
+    "upstream_url": "https://github.com/boppreh/keyboard",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 246,
@@ -2150,6 +2215,7 @@
   {
     "package_name": "ldap3",
     "stub_distribution_name": "types-ldap3",
+    "upstream_url": "https://github.com/cannatag/ldap3",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 2660,
@@ -2183,6 +2249,7 @@
   {
     "package_name": "mock",
     "stub_distribution_name": "types-mock",
+    "upstream_url": "https://github.com/testing-cabal/mock",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 397,
@@ -2216,6 +2283,7 @@
   {
     "package_name": "mypy-extensions",
     "stub_distribution_name": "types-mypy-extensions",
+    "upstream_url": "https://github.com/python/mypy_extensions",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 71,
@@ -2249,6 +2317,7 @@
   {
     "package_name": "mysqlclient",
     "stub_distribution_name": "types-mysqlclient",
+    "upstream_url": "https://github.com/PyMySQL/mysqlclient",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1228,
@@ -2282,6 +2351,7 @@
   {
     "package_name": "netaddr",
     "stub_distribution_name": "types-netaddr",
+    "upstream_url": "https://github.com/drkjam/netaddr",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 659,
@@ -2315,6 +2385,7 @@
   {
     "package_name": "oauthlib",
     "stub_distribution_name": "types-oauthlib",
+    "upstream_url": "https://github.com/oauthlib/oauthlib",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 1413,
@@ -2348,6 +2419,7 @@
   {
     "package_name": "openpyxl",
     "stub_distribution_name": "types-openpyxl",
+    "upstream_url": "https://foss.heptapod.net/openpyxl/openpyxl",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 12895,
@@ -2381,6 +2453,7 @@
   {
     "package_name": "opentracing",
     "stub_distribution_name": "types-opentracing",
+    "upstream_url": "https://github.com/opentracing/opentracing-python",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 331,
@@ -2414,6 +2487,7 @@
   {
     "package_name": "paho-mqtt",
     "stub_distribution_name": "types-paho-mqtt",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 513,
@@ -2447,6 +2521,7 @@
   {
     "package_name": "paramiko",
     "stub_distribution_name": "types-paramiko",
+    "upstream_url": "https://github.com/paramiko/paramiko",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 1800,
@@ -2481,6 +2556,7 @@
   {
     "package_name": "parsimonious",
     "stub_distribution_name": "types-parsimonious",
+    "upstream_url": "https://github.com/erikrose/parsimonious",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 185,
@@ -2514,6 +2590,7 @@
   {
     "package_name": "passlib",
     "stub_distribution_name": "types-passlib",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1780,
@@ -2547,6 +2624,7 @@
   {
     "package_name": "passpy",
     "stub_distribution_name": "types-passpy",
+    "upstream_url": "https://github.com/bfrascher/passpy",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 47,
@@ -2580,6 +2658,7 @@
   {
     "package_name": "peewee",
     "stub_distribution_name": "types-peewee",
+    "upstream_url": "https://github.com/coleifer/peewee",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1629,
@@ -2613,6 +2692,7 @@
   {
     "package_name": "pep8-naming",
     "stub_distribution_name": "types-pep8-naming",
+    "upstream_url": "https://github.com/PyCQA/pep8-naming",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 27,
@@ -2646,6 +2726,7 @@
   {
     "package_name": "pexpect",
     "stub_distribution_name": "types-pexpect",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 539,
@@ -2679,6 +2760,7 @@
   {
     "package_name": "pika",
     "stub_distribution_name": "types-pika-ts",
+    "upstream_url": "https://github.com/pika/pika",
     "completeness_level": "COMPLETE",
     "extra_description": "The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",
     "number_of_lines": 2231,
@@ -2712,6 +2794,7 @@
   {
     "package_name": "playsound",
     "stub_distribution_name": "types-playsound",
+    "upstream_url": "https://github.com/TaylorSMarks/playsound",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 5,
@@ -2745,6 +2828,7 @@
   {
     "package_name": "pluggy",
     "stub_distribution_name": "types-pluggy",
+    "upstream_url": "https://github.com/pytest-dev/pluggy",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 201,
@@ -2778,6 +2862,7 @@
   {
     "package_name": "polib",
     "stub_distribution_name": "types-polib",
+    "upstream_url": "https://github.com/izimobil/polib",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 144,
@@ -2811,6 +2896,7 @@
   {
     "package_name": "protobuf",
     "stub_distribution_name": "types-protobuf",
+    "upstream_url": null,
     "completeness_level": "PARTIAL",
     "extra_description": "Generated with aid from mypy-protobuf v3.4.0",
     "number_of_lines": 4288,
@@ -2844,6 +2930,7 @@
   {
     "package_name": "psutil",
     "stub_distribution_name": "types-psutil",
+    "upstream_url": "https://github.com/giampaolo/psutil",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1559,
@@ -2879,6 +2966,7 @@
   {
     "package_name": "psycopg2",
     "stub_distribution_name": "types-psycopg2",
+    "upstream_url": "https://github.com/psycopg/psycopg2",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 1567,
@@ -2912,6 +3000,7 @@
   {
     "package_name": "pyOpenSSL",
     "stub_distribution_name": "types-pyOpenSSL",
+    "upstream_url": "https://github.com/pyca/pyopenssl",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 379,
@@ -2945,6 +3034,7 @@
   {
     "package_name": "pyRFC3339",
     "stub_distribution_name": "types-pyRFC3339",
+    "upstream_url": "https://github.com/kurtraschke/pyRFC3339",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 17,
@@ -2978,6 +3068,7 @@
   {
     "package_name": "pyasn1",
     "stub_distribution_name": "types-pyasn1",
+    "upstream_url": "https://github.com/pyasn1/pyasn1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1316,
@@ -3011,6 +3102,7 @@
   {
     "package_name": "pyaudio",
     "stub_distribution_name": "types-pyaudio",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 165,
@@ -3045,6 +3137,7 @@
   {
     "package_name": "pycocotools",
     "stub_distribution_name": "types-pycocotools",
+    "upstream_url": "https://github.com/ppwwyyxx/cocoapi",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 182,
@@ -3078,6 +3171,7 @@
   {
     "package_name": "pycurl",
     "stub_distribution_name": "types-pycurl",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 674,
@@ -3111,6 +3205,7 @@
   {
     "package_name": "pyfarmhash",
     "stub_distribution_name": "types-pyfarmhash",
+    "upstream_url": "https://github.com/veelion/python-farmhash",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 9,
@@ -3144,6 +3239,7 @@
   {
     "package_name": "pyflakes",
     "stub_distribution_name": "types-pyflakes",
+    "upstream_url": "https://github.com/PyCQA/pyflakes",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 428,
@@ -3177,6 +3273,7 @@
   {
     "package_name": "pyinstaller",
     "stub_distribution_name": "types-pyinstaller",
+    "upstream_url": "https://github.com/pyinstaller/pyinstaller",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 814,
@@ -3210,6 +3307,7 @@
   {
     "package_name": "pynput",
     "stub_distribution_name": "types-pynput",
+    "upstream_url": "https://github.com/moses-palmer/pynput",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 324,
@@ -3245,6 +3343,7 @@
   {
     "package_name": "pyserial",
     "stub_distribution_name": "types-pyserial",
+    "upstream_url": "https://github.com/pyserial/pyserial",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1077,
@@ -3280,6 +3379,7 @@
   {
     "package_name": "pysftp",
     "stub_distribution_name": "types-pysftp",
+    "upstream_url": "https://bitbucket.org/dundeemt/pysftp",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 166,
@@ -3313,6 +3413,7 @@
   {
     "package_name": "pytest-lazy-fixture",
     "stub_distribution_name": "types-pytest-lazy-fixture",
+    "upstream_url": "https://github.com/tvorog/pytest-lazy-fixture",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 12,
@@ -3346,6 +3447,7 @@
   {
     "package_name": "python-crontab",
     "stub_distribution_name": "types-python-crontab",
+    "upstream_url": "https://gitlab.com/doctormo/python-crontab",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 328,
@@ -3379,6 +3481,7 @@
   {
     "package_name": "python-datemath",
     "stub_distribution_name": "types-python-datemath",
+    "upstream_url": "https://github.com/nickmaccarthy/python-datemath",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 16,
@@ -3412,6 +3515,7 @@
   {
     "package_name": "python-dateutil",
     "stub_distribution_name": "types-python-dateutil",
+    "upstream_url": "https://github.com/dateutil/dateutil",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 440,
@@ -3445,6 +3549,7 @@
   {
     "package_name": "python-gflags",
     "stub_distribution_name": "types-python-gflags",
+    "upstream_url": "https://github.com/google/python-gflags",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 251,
@@ -3478,6 +3583,7 @@
   {
     "package_name": "python-jose",
     "stub_distribution_name": "types-python-jose",
+    "upstream_url": "https://github.com/mpdavis/python-jose",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 358,
@@ -3511,6 +3617,7 @@
   {
     "package_name": "python-nmap",
     "stub_distribution_name": "types-python-nmap",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 119,
@@ -3544,6 +3651,7 @@
   {
     "package_name": "python-slugify",
     "stub_distribution_name": "types-python-slugify",
+    "upstream_url": "https://github.com/un33k/python-slugify",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 45,
@@ -3577,6 +3685,7 @@
   {
     "package_name": "python-xlib",
     "stub_distribution_name": "types-python-xlib",
+    "upstream_url": "https://github.com/python-xlib/python-xlib",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 5418,
@@ -3610,6 +3719,7 @@
   {
     "package_name": "pytz",
     "stub_distribution_name": "types-pytz",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 128,
@@ -3643,6 +3753,7 @@
   {
     "package_name": "pyvmomi",
     "stub_distribution_name": "types-pyvmomi",
+    "upstream_url": "https://github.com/vmware/pyvmomi",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 177,
@@ -3676,6 +3787,7 @@
   {
     "package_name": "pywin32",
     "stub_distribution_name": "types-pywin32",
+    "upstream_url": "https://github.com/mhammond/pywin32",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 34572,
@@ -3709,6 +3821,7 @@
   {
     "package_name": "qrcode",
     "stub_distribution_name": "types-qrcode",
+    "upstream_url": "https://github.com/lincolnloop/python-qrcode",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 467,
@@ -3742,6 +3855,7 @@
   {
     "package_name": "redis",
     "stub_distribution_name": "types-redis",
+    "upstream_url": "https://github.com/redis/redis-py",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 5820,
@@ -3775,6 +3889,7 @@
   {
     "package_name": "regex",
     "stub_distribution_name": "types-regex",
+    "upstream_url": "https://github.com/mrabarnett/mrab-regex",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 748,
@@ -3808,6 +3923,7 @@
   {
     "package_name": "requests",
     "stub_distribution_name": "types-requests",
+    "upstream_url": "https://github.com/psf/requests",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 990,
@@ -3841,6 +3957,7 @@
   {
     "package_name": "retry",
     "stub_distribution_name": "types-retry",
+    "upstream_url": "https://github.com/invl/retry",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 28,
@@ -3874,6 +3991,7 @@
   {
     "package_name": "s2clientprotocol",
     "stub_distribution_name": "types-s2clientprotocol",
+    "upstream_url": "https://github.com/Blizzard/s2client-proto",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 5033,
@@ -3907,6 +4025,7 @@
   {
     "package_name": "setuptools",
     "stub_distribution_name": "types-setuptools",
+    "upstream_url": "https://github.com/pypa/setuptools",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 2756,
@@ -3941,6 +4060,7 @@
   {
     "package_name": "simplejson",
     "stub_distribution_name": "types-simplejson",
+    "upstream_url": "https://github.com/simplejson/simplejson",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 51,
@@ -3974,6 +4094,7 @@
   {
     "package_name": "singledispatch",
     "stub_distribution_name": "types-singledispatch",
+    "upstream_url": "https://github.com/jaraco/singledispatch",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 27,
@@ -4007,6 +4128,7 @@
   {
     "package_name": "six",
     "stub_distribution_name": "types-six",
+    "upstream_url": "https://github.com/benjaminp/six",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 337,
@@ -4040,6 +4162,7 @@
   {
     "package_name": "slumber",
     "stub_distribution_name": "types-slumber",
+    "upstream_url": "https://github.com/samgiles/slumber",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 74,
@@ -4073,6 +4196,7 @@
   {
     "package_name": "stdlib",
     "stub_distribution_name": "-",
+    "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
     "number_of_lines": 53795,
@@ -4108,6 +4232,7 @@
   {
     "package_name": "stdlib-list",
     "stub_distribution_name": "types-stdlib-list",
+    "upstream_url": "https://github.com/pypi/stdlib-list",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 16,
@@ -4141,6 +4266,7 @@
   {
     "package_name": "stripe",
     "stub_distribution_name": "types-stripe",
+    "upstream_url": "https://github.com/stripe/stripe-python",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 1532,
@@ -4174,6 +4300,7 @@
   {
     "package_name": "tabulate",
     "stub_distribution_name": "types-tabulate",
+    "upstream_url": "https://github.com/astanin/python-tabulate",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 60,
@@ -4207,6 +4334,7 @@
   {
     "package_name": "tensorflow",
     "stub_distribution_name": "types-tensorflow",
+    "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 19180,
@@ -4240,6 +4368,7 @@
   {
     "package_name": "toml",
     "stub_distribution_name": "types-toml",
+    "upstream_url": "https://github.com/uiri/toml",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 136,
@@ -4273,6 +4402,7 @@
   {
     "package_name": "toposort",
     "stub_distribution_name": "types-toposort",
+    "upstream_url": "https://gitlab.com/ericvsmith/toposort",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 13,
@@ -4306,6 +4436,7 @@
   {
     "package_name": "tqdm",
     "stub_distribution_name": "types-tqdm",
+    "upstream_url": "https://github.com/tqdm/tqdm",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1379,
@@ -4339,6 +4470,7 @@
   {
     "package_name": "translationstring",
     "stub_distribution_name": "types-translationstring",
+    "upstream_url": "https://github.com/Pylons/translationstring",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 73,
@@ -4372,6 +4504,7 @@
   {
     "package_name": "tree-sitter",
     "stub_distribution_name": "types-tree-sitter",
+    "upstream_url": "https://github.com/tree-sitter/py-tree-sitter",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 124,
@@ -4405,6 +4538,7 @@
   {
     "package_name": "tree-sitter-languages",
     "stub_distribution_name": "types-tree-sitter-languages",
+    "upstream_url": "https://github.com/grantjenks/py-tree-sitter-languages",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 9,
@@ -4438,6 +4572,7 @@
   {
     "package_name": "ttkthemes",
     "stub_distribution_name": "types-ttkthemes",
+    "upstream_url": "https://github.com/RedFantom/ttkthemes",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 76,
@@ -4471,6 +4606,7 @@
   {
     "package_name": "tzlocal",
     "stub_distribution_name": "types-tzlocal",
+    "upstream_url": "https://github.com/regebro/tzlocal",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 13,
@@ -4504,6 +4640,7 @@
   {
     "package_name": "uWSGI",
     "stub_distribution_name": "types-uWSGI",
+    "upstream_url": "https://github.com/unbit/uwsgi",
     "completeness_level": "COMPLETE",
     "extra_description": "Type hints for uWSGI's [Python API](https://uwsgi-docs.readthedocs.io/en/latest/PythonModule.html). Note that this API is available only when running Python code inside a uWSGI process and some parts of the API are only present when corresponding configuration options have been enabled.\n",
     "number_of_lines": 381,
@@ -4538,6 +4675,7 @@
   {
     "package_name": "ujson",
     "stub_distribution_name": "types-ujson",
+    "upstream_url": "https://github.com/ultrajson/ultrajson",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 49,
@@ -4571,6 +4709,7 @@
   {
     "package_name": "untangle",
     "stub_distribution_name": "types-untangle",
+    "upstream_url": null,
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 33,
@@ -4604,6 +4743,7 @@
   {
     "package_name": "urllib3",
     "stub_distribution_name": "types-urllib3",
+    "upstream_url": "https://github.com/urllib3/urllib3",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 707,
@@ -4637,6 +4777,7 @@
   {
     "package_name": "vobject",
     "stub_distribution_name": "types-vobject",
+    "upstream_url": "https://github.com/eventable/vobject",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 523,
@@ -4670,6 +4811,7 @@
   {
     "package_name": "waitress",
     "stub_distribution_name": "types-waitress",
+    "upstream_url": "https://github.com/Pylons/waitress",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 632,
@@ -4704,6 +4846,7 @@
   {
     "package_name": "whatthepatch",
     "stub_distribution_name": "types-whatthepatch",
+    "upstream_url": "https://github.com/cscorley/whatthepatch",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 101,
@@ -4737,6 +4880,7 @@
   {
     "package_name": "xmltodict",
     "stub_distribution_name": "types-xmltodict",
+    "upstream_url": "https://github.com/martinblech/xmltodict",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 35,
@@ -4770,6 +4914,7 @@
   {
     "package_name": "zstd",
     "stub_distribution_name": "types-zstd",
+    "upstream_url": "https://github.com/sergey-dryabzhinsky/python-zstd",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 15,
@@ -4803,6 +4948,7 @@
   {
     "package_name": "zxcvbn",
     "stub_distribution_name": "types-zxcvbn",
+    "upstream_url": "https://github.com/dwolfhub/zxcvbn-python",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 164,
