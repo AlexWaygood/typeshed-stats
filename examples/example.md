@@ -695,7 +695,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-21 (excluding blank lines)
+15 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -705,13 +705,13 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 0 allowlist entries for `Send2Trash` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `Send2Trash` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -728,10 +728,10 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Annotated returns: 4
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 2
-    - Explicit `Any` variables: 1
+    - Annotated variables: 0
+    - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 1
