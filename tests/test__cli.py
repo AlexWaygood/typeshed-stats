@@ -225,7 +225,10 @@ class TestPassingPackages:
         patches_to_apply = [
             ("get_package_status", PackageStatus.UP_TO_DATE),
             ("get_completeness_level", CompletenessLevel.COMPLETE),
-            ("get_upstream_url", f"https://github.com/who_knows/{EXAMPLE_PACKAGE_NAME}"),
+            (
+                "get_upstream_url",
+                f"https://github.com/who_knows/{EXAMPLE_PACKAGE_NAME}",
+            ),
             ("get_stubtest_strictness", StubtestStrictness.MISSING_STUBS_IGNORED),
             ("get_pyright_setting_for_package", PyrightSetting.STRICT_ON_SOME_FILES),
             ("get_package_extra_description", None),
