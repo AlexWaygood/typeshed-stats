@@ -72,6 +72,7 @@ __all__ = [
     "get_stubtest_settings",
     "get_stubtest_strictness",
     "get_upload_status",
+    "get_upstream_url",
     "tmpdir_typeshed",
 ]
 
@@ -808,6 +809,45 @@ def get_completeness_level(
             return CompletenessLevel.COMPLETE
 
 
+def get_upstream_url(
+    package_name: PackageName, *, typeshed_dir: Path | str
+) -> str | None:
+    """Get the URL for the source code of the runtime package these stubs are for.
+
+    Parameters:
+        package_name: The name of the package to find the upstream URL for.
+        typeshed_dir: A path pointing to a typeshed directory,
+            from which to retrieve the URL.
+
+    Returns:
+        The upstream URL (as a string).
+        If no URL is listed in the stubs package's METADATA.toml file,
+        returns [`None`][].
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_upstream_url
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     stdlib_url = get_upstream_url(
+        ...         "stdlib", typeshed_dir=typeshed
+        ...     )
+        ...     requests_url = get_upstream_url(
+        ...         "requests", typeshed_dir=typeshed
+        ...     )
+        ...     gdb_url = get_upstream_url(
+        ...         "gdb", typeshed_dir=typeshed
+        ...     )
+        >>> stdlib_url
+        'https://github.com/python/cpython'
+        >>> requests_url
+        'https://github.com/psf/requests'
+        >>> gdb_url is None
+        True
+    """
+    if package_name == "stdlib":
+        return "https://github.com/python/cpython"
+    return _get_package_metadata(package_name, typeshed_dir).get("upstream_repository")
+
+
 def get_stub_distribution_name(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> str:
@@ -1048,6 +1088,7 @@ class PackageInfo:
 
     package_name: PackageName
     stub_distribution_name: str
+    upstream_url: str | None
     completeness_level: CompletenessLevel
     extra_description: str | None
     number_of_lines: int
@@ -1102,6 +1143,7 @@ async def gather_stats_on_package(
         stub_distribution_name=get_stub_distribution_name(
             package_name, typeshed_dir=typeshed_dir
         ),
+        upstream_url=get_upstream_url(package_name, typeshed_dir=typeshed_dir),
         completeness_level=get_completeness_level(
             package_name, typeshed_dir=typeshed_dir
         ),
