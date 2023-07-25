@@ -1,5 +1,9 @@
 ## Info on typeshed's stubs for `DateTimeRange`
 
+### Upstream repo URL
+
+[https://github.com/thombashi/DateTimeRange](https://github.com/thombashi/DateTimeRange)
+
 ### Stub distribution name
 
 `types-DateTimeRange`
@@ -52,6 +56,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `Deprecated`
+
+### Upstream repo URL
+
+[https://github.com/tantale/deprecated](https://github.com/tantale/deprecated)
 
 ### Stub distribution name
 
@@ -106,6 +114,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `ExifRead`
 
+### Upstream repo URL
+
+[https://github.com/ianare/exif-py](https://github.com/ianare/exif-py)
+
 ### Stub distribution name
 
 `types-ExifRead`
@@ -159,6 +171,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `Flask-Cors`
 
+### Upstream repo URL
+
+[https://github.com/corydolphin/flask-cors](https://github.com/corydolphin/flask-cors)
+
 ### Stub distribution name
 
 `types-Flask-Cors`
@@ -211,6 +227,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `Flask-Migrate`
+
+### Upstream repo URL
+
+[https://github.com/miguelgrinberg/flask-migrate](https://github.com/miguelgrinberg/flask-migrate)
 
 ### Stub distribution name
 
@@ -318,6 +338,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `Markdown`
 
+### Upstream repo URL
+
+[https://github.com/Python-Markdown/markdown](https://github.com/Python-Markdown/markdown)
+
 ### Stub distribution name
 
 `types-Markdown`
@@ -370,6 +394,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `Pillow`
+
+### Upstream repo URL
+
+[https://github.com/python-pillow/Pillow](https://github.com/python-pillow/Pillow)
 
 ### Stub distribution name
 
@@ -424,6 +452,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `PyAutoGUI`
 
+### Upstream repo URL
+
+[https://github.com/asweigart/pyautogui](https://github.com/asweigart/pyautogui)
+
 ### Stub distribution name
 
 `types-PyAutoGUI`
@@ -476,6 +508,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `PyMySQL`
+
+### Upstream repo URL
+
+[https://github.com/PyMySQL/PyMySQL](https://github.com/PyMySQL/PyMySQL)
 
 ### Stub distribution name
 
@@ -530,6 +566,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `PyScreeze`
 
+### Upstream repo URL
+
+[https://github.com/asweigart/pyscreeze](https://github.com/asweigart/pyscreeze)
+
 ### Stub distribution name
 
 `types-PyScreeze`
@@ -582,6 +622,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `PyYAML`
+
+### Upstream repo URL
+
+[https://github.com/yaml/pyyaml](https://github.com/yaml/pyyaml)
 
 ### Stub distribution name
 
@@ -636,6 +680,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `Pygments`
 
+### Upstream repo URL
+
+[https://github.com/pygments/pygments](https://github.com/pygments/pygments)
+
 ### Stub distribution name
 
 `types-Pygments`
@@ -688,6 +736,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `Send2Trash`
+
+### Upstream repo URL
+
+[https://github.com/arsenetar/send2trash](https://github.com/arsenetar/send2trash)
 
 ### Stub distribution name
 
@@ -795,6 +847,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `aiofiles`
 
+### Upstream repo URL
+
+[https://github.com/Tinche/aiofiles](https://github.com/Tinche/aiofiles)
+
 ### Stub distribution name
 
 `types-aiofiles`
@@ -848,6 +904,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `aws-xray-sdk`
 
+### Upstream repo URL
+
+[https://github.com/aws/aws-xray-sdk-python](https://github.com/aws/aws-xray-sdk-python)
+
 ### Stub distribution name
 
 `types-aws-xray-sdk`
@@ -900,6 +960,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `babel`
+
+### Upstream repo URL
+
+[https://github.com/python-babel/babel](https://github.com/python-babel/babel)
 
 ### Stub distribution name
 
@@ -1007,6 +1071,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `bleach`
 
+### Upstream repo URL
+
+[https://github.com/mozilla/bleach](https://github.com/mozilla/bleach)
+
 ### Stub distribution name
 
 `types-bleach`
@@ -1060,6 +1128,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `boltons`
 
+### Upstream repo URL
+
+[https://github.com/mahmoud/boltons](https://github.com/mahmoud/boltons)
+
 ### Stub distribution name
 
 `types-boltons`
@@ -1112,6 +1184,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `boto`
+
+### Upstream repo URL
+
+[https://github.com/boto/boto](https://github.com/boto/boto)
 
 ### Stub distribution name
 
@@ -1219,6 +1295,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `cachetools`
 
+### Upstream repo URL
+
+[https://github.com/tkem/cachetools](https://github.com/tkem/cachetools)
+
 ### Stub distribution name
 
 `types-cachetools`
@@ -1271,6 +1351,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `caldav`
+
+### Upstream repo URL
+
+[https://github.com/python-caldav/caldav](https://github.com/python-caldav/caldav)
 
 ### Stub distribution name
 
@@ -1378,6 +1462,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `chevron`
 
+### Upstream repo URL
+
+[https://github.com/noahmorrison/chevron](https://github.com/noahmorrison/chevron)
+
 ### Stub distribution name
 
 `types-chevron`
@@ -1430,6 +1518,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `click-default-group`
+
+### Upstream repo URL
+
+[https://github.com/click-contrib/click-default-group](https://github.com/click-contrib/click-default-group)
 
 ### Stub distribution name
 
@@ -1484,6 +1576,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `click-spinner`
 
+### Upstream repo URL
+
+[https://github.com/click-contrib/click-spinner](https://github.com/click-contrib/click-spinner)
+
 ### Stub distribution name
 
 `types-click-spinner`
@@ -1536,6 +1632,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `colorama`
+
+### Upstream repo URL
+
+[https://github.com/tartley/colorama](https://github.com/tartley/colorama)
 
 ### Stub distribution name
 
@@ -1590,6 +1690,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `commonmark`
 
+### Upstream repo URL
+
+[https://github.com/rtfd/commonmark.py](https://github.com/rtfd/commonmark.py)
+
 ### Stub distribution name
 
 `types-commonmark`
@@ -1642,6 +1746,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `console-menu`
+
+### Upstream repo URL
+
+[https://github.com/aegirhall/console-menu](https://github.com/aegirhall/console-menu)
 
 ### Stub distribution name
 
@@ -1696,6 +1804,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `croniter`
 
+### Upstream repo URL
+
+[https://github.com/kiorky/croniter](https://github.com/kiorky/croniter)
+
 ### Stub distribution name
 
 `types-croniter`
@@ -1748,6 +1860,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `dateparser`
+
+### Upstream repo URL
+
+[https://github.com/scrapinghub/dateparser](https://github.com/scrapinghub/dateparser)
 
 ### Stub distribution name
 
@@ -1802,6 +1918,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `decorator`
 
+### Upstream repo URL
+
+[https://github.com/micheles/decorator](https://github.com/micheles/decorator)
+
 ### Stub distribution name
 
 `types-decorator`
@@ -1855,6 +1975,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `dj-database-url`
 
+### Upstream repo URL
+
+[https://github.com/jazzband/dj-database-url](https://github.com/jazzband/dj-database-url)
+
 ### Stub distribution name
 
 `types-dj-database-url`
@@ -1907,6 +2031,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `dockerfile-parse`
+
+### Upstream repo URL
+
+[https://github.com/containerbuildsystem/dockerfile-parse](https://github.com/containerbuildsystem/dockerfile-parse)
 
 ### Stub distribution name
 
@@ -2067,6 +2195,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `editdistance`
 
+### Upstream repo URL
+
+[https://github.com/roy-ht/editdistance](https://github.com/roy-ht/editdistance)
+
 ### Stub distribution name
 
 `types-editdistance`
@@ -2119,6 +2251,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `entrypoints`
+
+### Upstream repo URL
+
+[https://github.com/takluyver/entrypoints](https://github.com/takluyver/entrypoints)
 
 ### Stub distribution name
 
@@ -2173,6 +2309,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `first`
 
+### Upstream repo URL
+
+[https://github.com/hynek/first](https://github.com/hynek/first)
+
 ### Stub distribution name
 
 `types-first`
@@ -2225,6 +2365,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `flake8-2020`
+
+### Upstream repo URL
+
+[https://github.com/asottile/flake8-2020](https://github.com/asottile/flake8-2020)
 
 ### Stub distribution name
 
@@ -2279,6 +2423,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `flake8-bugbear`
 
+### Upstream repo URL
+
+[https://github.com/PyCQA/flake8-bugbear](https://github.com/PyCQA/flake8-bugbear)
+
 ### Stub distribution name
 
 `types-flake8-bugbear`
@@ -2331,6 +2479,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `flake8-builtins`
+
+### Upstream repo URL
+
+[https://github.com/gforcada/flake8-builtins](https://github.com/gforcada/flake8-builtins)
 
 ### Stub distribution name
 
@@ -2385,6 +2537,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `flake8-docstrings`
 
+### Upstream repo URL
+
+[https://github.com/pycqa/flake8-docstrings](https://github.com/pycqa/flake8-docstrings)
+
 ### Stub distribution name
 
 `types-flake8-docstrings`
@@ -2437,6 +2593,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `flake8-plugin-utils`
+
+### Upstream repo URL
+
+[https://github.com/afonasev/flake8-plugin-utils](https://github.com/afonasev/flake8-plugin-utils)
 
 ### Stub distribution name
 
@@ -2491,6 +2651,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `flake8-rst-docstrings`
 
+### Upstream repo URL
+
+[https://github.com/peterjc/flake8-rst-docstrings](https://github.com/peterjc/flake8-rst-docstrings)
+
 ### Stub distribution name
 
 `types-flake8-rst-docstrings`
@@ -2543,6 +2707,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `flake8-simplify`
+
+### Upstream repo URL
+
+[https://github.com/MartinThoma/flake8-simplify](https://github.com/MartinThoma/flake8-simplify)
 
 ### Stub distribution name
 
@@ -2597,6 +2765,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `flake8-typing-imports`
 
+### Upstream repo URL
+
+[https://github.com/asottile/flake8-typing-imports](https://github.com/asottile/flake8-typing-imports)
+
 ### Stub distribution name
 
 `types-flake8-typing-imports`
@@ -2649,6 +2821,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `fpdf2`
+
+### Upstream repo URL
+
+[https://github.com/PyFPDF/fpdf2](https://github.com/PyFPDF/fpdf2)
 
 ### Stub distribution name
 
@@ -2758,6 +2934,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `google-cloud-ndb`
 
+### Upstream repo URL
+
+[https://github.com/googleapis/python-ndb](https://github.com/googleapis/python-ndb)
+
 ### Stub distribution name
 
 `types-google-cloud-ndb`
@@ -2810,6 +2990,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `greenlet`
+
+### Upstream repo URL
+
+[https://github.com/python-greenlet/greenlet](https://github.com/python-greenlet/greenlet)
 
 ### Stub distribution name
 
@@ -2917,6 +3101,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `html5lib`
 
+### Upstream repo URL
+
+[https://github.com/html5lib/html5lib-python](https://github.com/html5lib/html5lib-python)
+
 ### Stub distribution name
 
 `types-html5lib`
@@ -2969,6 +3157,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `httplib2`
+
+### Upstream repo URL
+
+[https://github.com/httplib2/httplib2](https://github.com/httplib2/httplib2)
 
 ### Stub distribution name
 
@@ -3129,6 +3321,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `influxdb-client`
 
+### Upstream repo URL
+
+[https://github.com/influxdata/influxdb-client-python](https://github.com/influxdata/influxdb-client-python)
+
 ### Stub distribution name
 
 `types-influxdb-client`
@@ -3235,6 +3431,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `invoke`
 
+### Upstream repo URL
+
+[https://github.com/pyinvoke/invoke](https://github.com/pyinvoke/invoke)
+
 ### Stub distribution name
 
 `types-invoke`
@@ -3287,6 +3487,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `jmespath`
+
+### Upstream repo URL
+
+[https://github.com/jmespath/jmespath.py](https://github.com/jmespath/jmespath.py)
 
 ### Stub distribution name
 
@@ -3341,6 +3545,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `jsonschema`
 
+### Upstream repo URL
+
+[https://github.com/python-jsonschema/jsonschema](https://github.com/python-jsonschema/jsonschema)
+
 ### Stub distribution name
 
 `types-jsonschema`
@@ -3393,6 +3601,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `keyboard`
+
+### Upstream repo URL
+
+[https://github.com/boppreh/keyboard](https://github.com/boppreh/keyboard)
 
 ### Stub distribution name
 
@@ -3447,6 +3659,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `ldap3`
 
+### Upstream repo URL
+
+[https://github.com/cannatag/ldap3](https://github.com/cannatag/ldap3)
+
 ### Stub distribution name
 
 `types-ldap3`
@@ -3499,6 +3715,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `mock`
+
+### Upstream repo URL
+
+[https://github.com/testing-cabal/mock](https://github.com/testing-cabal/mock)
 
 ### Stub distribution name
 
@@ -3553,6 +3773,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `mypy-extensions`
 
+### Upstream repo URL
+
+[https://github.com/python/mypy_extensions](https://github.com/python/mypy_extensions)
+
 ### Stub distribution name
 
 `types-mypy-extensions`
@@ -3605,6 +3829,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `mysqlclient`
+
+### Upstream repo URL
+
+[https://github.com/PyMySQL/mysqlclient](https://github.com/PyMySQL/mysqlclient)
 
 ### Stub distribution name
 
@@ -3659,6 +3887,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `netaddr`
 
+### Upstream repo URL
+
+[https://github.com/drkjam/netaddr](https://github.com/drkjam/netaddr)
+
 ### Stub distribution name
 
 `types-netaddr`
@@ -3711,6 +3943,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `oauthlib`
+
+### Upstream repo URL
+
+[https://github.com/oauthlib/oauthlib](https://github.com/oauthlib/oauthlib)
 
 ### Stub distribution name
 
@@ -3765,6 +4001,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `openpyxl`
 
+### Upstream repo URL
+
+[https://foss.heptapod.net/openpyxl/openpyxl](https://foss.heptapod.net/openpyxl/openpyxl)
+
 ### Stub distribution name
 
 `types-openpyxl`
@@ -3817,6 +4057,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `opentracing`
+
+### Upstream repo URL
+
+[https://github.com/opentracing/opentracing-python](https://github.com/opentracing/opentracing-python)
 
 ### Stub distribution name
 
@@ -3924,6 +4168,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `paramiko`
 
+### Upstream repo URL
+
+[https://github.com/paramiko/paramiko](https://github.com/paramiko/paramiko)
+
 ### Stub distribution name
 
 `types-paramiko`
@@ -3976,6 +4224,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `parsimonious`
+
+### Upstream repo URL
+
+[https://github.com/erikrose/parsimonious](https://github.com/erikrose/parsimonious)
 
 ### Stub distribution name
 
@@ -4083,6 +4335,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `passpy`
 
+### Upstream repo URL
+
+[https://github.com/bfrascher/passpy](https://github.com/bfrascher/passpy)
+
 ### Stub distribution name
 
 `types-passpy`
@@ -4136,6 +4392,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `peewee`
 
+### Upstream repo URL
+
+[https://github.com/coleifer/peewee](https://github.com/coleifer/peewee)
+
 ### Stub distribution name
 
 `types-peewee`
@@ -4188,6 +4448,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `pep8-naming`
+
+### Upstream repo URL
+
+[https://github.com/PyCQA/pep8-naming](https://github.com/PyCQA/pep8-naming)
 
 ### Stub distribution name
 
@@ -4299,6 +4563,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.
 
+### Upstream repo URL
+
+[https://github.com/pika/pika](https://github.com/pika/pika)
+
 ### Stub distribution name
 
 `types-pika-ts`
@@ -4351,6 +4619,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `playsound`
+
+### Upstream repo URL
+
+[https://github.com/TaylorSMarks/playsound](https://github.com/TaylorSMarks/playsound)
 
 ### Stub distribution name
 
@@ -4405,6 +4677,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pluggy`
 
+### Upstream repo URL
+
+[https://github.com/pytest-dev/pluggy](https://github.com/pytest-dev/pluggy)
+
 ### Stub distribution name
 
 `types-pluggy`
@@ -4457,6 +4733,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `polib`
+
+### Upstream repo URL
+
+[https://github.com/izimobil/polib](https://github.com/izimobil/polib)
 
 ### Stub distribution name
 
@@ -4568,6 +4848,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `psutil`
 
+### Upstream repo URL
+
+[https://github.com/giampaolo/psutil](https://github.com/giampaolo/psutil)
+
 ### Stub distribution name
 
 `types-psutil`
@@ -4620,6 +4904,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `psycopg2`
+
+### Upstream repo URL
+
+[https://github.com/psycopg/psycopg2](https://github.com/psycopg/psycopg2)
 
 ### Stub distribution name
 
@@ -4674,6 +4962,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `pyOpenSSL`
 
+### Upstream repo URL
+
+[https://github.com/pyca/pyopenssl](https://github.com/pyca/pyopenssl)
+
 ### Stub distribution name
 
 `types-pyOpenSSL`
@@ -4727,6 +5019,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pyRFC3339`
 
+### Upstream repo URL
+
+[https://github.com/kurtraschke/pyRFC3339](https://github.com/kurtraschke/pyRFC3339)
+
 ### Stub distribution name
 
 `types-pyRFC3339`
@@ -4779,6 +5075,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pyasn1`
+
+### Upstream repo URL
+
+[https://github.com/pyasn1/pyasn1](https://github.com/pyasn1/pyasn1)
 
 ### Stub distribution name
 
@@ -4886,6 +5186,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pycocotools`
 
+### Upstream repo URL
+
+[https://github.com/ppwwyyxx/cocoapi](https://github.com/ppwwyyxx/cocoapi)
+
 ### Stub distribution name
 
 `types-pycocotools`
@@ -4992,6 +5296,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pyfarmhash`
 
+### Upstream repo URL
+
+[https://github.com/veelion/python-farmhash](https://github.com/veelion/python-farmhash)
+
 ### Stub distribution name
 
 `types-pyfarmhash`
@@ -5044,6 +5352,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pyflakes`
+
+### Upstream repo URL
+
+[https://github.com/PyCQA/pyflakes](https://github.com/PyCQA/pyflakes)
 
 ### Stub distribution name
 
@@ -5098,6 +5410,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `pyinstaller`
 
+### Upstream repo URL
+
+[https://github.com/pyinstaller/pyinstaller](https://github.com/pyinstaller/pyinstaller)
+
 ### Stub distribution name
 
 `types-pyinstaller`
@@ -5150,6 +5466,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pynput`
+
+### Upstream repo URL
+
+[https://github.com/moses-palmer/pynput](https://github.com/moses-palmer/pynput)
 
 ### Stub distribution name
 
@@ -5204,6 +5524,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pyserial`
 
+### Upstream repo URL
+
+[https://github.com/pyserial/pyserial](https://github.com/pyserial/pyserial)
+
 ### Stub distribution name
 
 `types-pyserial`
@@ -5256,6 +5580,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pysftp`
+
+### Upstream repo URL
+
+[https://bitbucket.org/dundeemt/pysftp](https://bitbucket.org/dundeemt/pysftp)
 
 ### Stub distribution name
 
@@ -5310,6 +5638,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pytest-lazy-fixture`
 
+### Upstream repo URL
+
+[https://github.com/tvorog/pytest-lazy-fixture](https://github.com/tvorog/pytest-lazy-fixture)
+
 ### Stub distribution name
 
 `types-pytest-lazy-fixture`
@@ -5362,6 +5694,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `python-crontab`
+
+### Upstream repo URL
+
+[https://gitlab.com/doctormo/python-crontab](https://gitlab.com/doctormo/python-crontab)
 
 ### Stub distribution name
 
@@ -5416,6 +5752,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `python-datemath`
 
+### Upstream repo URL
+
+[https://github.com/nickmaccarthy/python-datemath](https://github.com/nickmaccarthy/python-datemath)
+
 ### Stub distribution name
 
 `types-python-datemath`
@@ -5468,6 +5808,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `python-dateutil`
+
+### Upstream repo URL
+
+[https://github.com/dateutil/dateutil](https://github.com/dateutil/dateutil)
 
 ### Stub distribution name
 
@@ -5522,6 +5866,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `python-gflags`
 
+### Upstream repo URL
+
+[https://github.com/google/python-gflags](https://github.com/google/python-gflags)
+
 ### Stub distribution name
 
 `types-python-gflags`
@@ -5574,6 +5922,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `python-jose`
+
+### Upstream repo URL
+
+[https://github.com/mpdavis/python-jose](https://github.com/mpdavis/python-jose)
 
 ### Stub distribution name
 
@@ -5681,6 +6033,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `python-slugify`
 
+### Upstream repo URL
+
+[https://github.com/un33k/python-slugify](https://github.com/un33k/python-slugify)
+
 ### Stub distribution name
 
 `types-python-slugify`
@@ -5733,6 +6089,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `python-xlib`
+
+### Upstream repo URL
+
+[https://github.com/python-xlib/python-xlib](https://github.com/python-xlib/python-xlib)
 
 ### Stub distribution name
 
@@ -5840,6 +6200,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pyvmomi`
 
+### Upstream repo URL
+
+[https://github.com/vmware/pyvmomi](https://github.com/vmware/pyvmomi)
+
 ### Stub distribution name
 
 `types-pyvmomi`
@@ -5892,6 +6256,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pywin32`
+
+### Upstream repo URL
+
+[https://github.com/mhammond/pywin32](https://github.com/mhammond/pywin32)
 
 ### Stub distribution name
 
@@ -5946,6 +6314,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `qrcode`
 
+### Upstream repo URL
+
+[https://github.com/lincolnloop/python-qrcode](https://github.com/lincolnloop/python-qrcode)
+
 ### Stub distribution name
 
 `types-qrcode`
@@ -5998,6 +6370,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `redis`
+
+### Upstream repo URL
+
+[https://github.com/redis/redis-py](https://github.com/redis/redis-py)
 
 ### Stub distribution name
 
@@ -6052,6 +6428,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `regex`
 
+### Upstream repo URL
+
+[https://github.com/mrabarnett/mrab-regex](https://github.com/mrabarnett/mrab-regex)
+
 ### Stub distribution name
 
 `types-regex`
@@ -6104,6 +6484,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `requests`
+
+### Upstream repo URL
+
+[https://github.com/psf/requests](https://github.com/psf/requests)
 
 ### Stub distribution name
 
@@ -6158,6 +6542,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `retry`
 
+### Upstream repo URL
+
+[https://github.com/invl/retry](https://github.com/invl/retry)
+
 ### Stub distribution name
 
 `types-retry`
@@ -6210,6 +6598,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `s2clientprotocol`
+
+### Upstream repo URL
+
+[https://github.com/Blizzard/s2client-proto](https://github.com/Blizzard/s2client-proto)
 
 ### Stub distribution name
 
@@ -6264,6 +6656,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `setuptools`
 
+### Upstream repo URL
+
+[https://github.com/pypa/setuptools](https://github.com/pypa/setuptools)
+
 ### Stub distribution name
 
 `types-setuptools`
@@ -6316,6 +6712,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `simplejson`
+
+### Upstream repo URL
+
+[https://github.com/simplejson/simplejson](https://github.com/simplejson/simplejson)
 
 ### Stub distribution name
 
@@ -6370,6 +6770,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `singledispatch`
 
+### Upstream repo URL
+
+[https://github.com/jaraco/singledispatch](https://github.com/jaraco/singledispatch)
+
 ### Stub distribution name
 
 `types-singledispatch`
@@ -6422,6 +6826,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `six`
+
+### Upstream repo URL
+
+[https://github.com/benjaminp/six](https://github.com/benjaminp/six)
 
 ### Stub distribution name
 
@@ -6476,6 +6884,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `slumber`
 
+### Upstream repo URL
+
+[https://github.com/samgiles/slumber](https://github.com/samgiles/slumber)
+
 ### Stub distribution name
 
 `types-slumber`
@@ -6529,6 +6941,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for the stdlib
 
+### Upstream repo URL
+
+[https://github.com/python/cpython](https://github.com/python/cpython)
+
 ### Number of lines
 
 53,795 (excluding blank lines)
@@ -6577,6 +6993,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ---
 
 ## Info on typeshed's stubs for `stdlib-list`
+
+### Upstream repo URL
+
+[https://github.com/pypi/stdlib-list](https://github.com/pypi/stdlib-list)
 
 ### Stub distribution name
 
@@ -6631,6 +7051,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `stripe`
 
+### Upstream repo URL
+
+[https://github.com/stripe/stripe-python](https://github.com/stripe/stripe-python)
+
 ### Stub distribution name
 
 `types-stripe`
@@ -6683,6 +7107,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `tabulate`
+
+### Upstream repo URL
+
+[https://github.com/astanin/python-tabulate](https://github.com/astanin/python-tabulate)
 
 ### Stub distribution name
 
@@ -6737,6 +7165,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `tensorflow`
 
+### Upstream repo URL
+
+[https://github.com/tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
+
 ### Stub distribution name
 
 `types-tensorflow`
@@ -6789,6 +7221,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `toml`
+
+### Upstream repo URL
+
+[https://github.com/uiri/toml](https://github.com/uiri/toml)
 
 ### Stub distribution name
 
@@ -6843,6 +7279,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `toposort`
 
+### Upstream repo URL
+
+[https://gitlab.com/ericvsmith/toposort](https://gitlab.com/ericvsmith/toposort)
+
 ### Stub distribution name
 
 `types-toposort`
@@ -6895,6 +7335,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `tqdm`
+
+### Upstream repo URL
+
+[https://github.com/tqdm/tqdm](https://github.com/tqdm/tqdm)
 
 ### Stub distribution name
 
@@ -6949,6 +7393,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `translationstring`
 
+### Upstream repo URL
+
+[https://github.com/Pylons/translationstring](https://github.com/Pylons/translationstring)
+
 ### Stub distribution name
 
 `types-translationstring`
@@ -7001,6 +7449,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `tree-sitter`
+
+### Upstream repo URL
+
+[https://github.com/tree-sitter/py-tree-sitter](https://github.com/tree-sitter/py-tree-sitter)
 
 ### Stub distribution name
 
@@ -7055,6 +7507,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `tree-sitter-languages`
 
+### Upstream repo URL
+
+[https://github.com/grantjenks/py-tree-sitter-languages](https://github.com/grantjenks/py-tree-sitter-languages)
+
 ### Stub distribution name
 
 `types-tree-sitter-languages`
@@ -7108,6 +7564,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `ttkthemes`
 
+### Upstream repo URL
+
+[https://github.com/RedFantom/ttkthemes](https://github.com/RedFantom/ttkthemes)
+
 ### Stub distribution name
 
 `types-ttkthemes`
@@ -7160,6 +7620,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `tzlocal`
+
+### Upstream repo URL
+
+[https://github.com/regebro/tzlocal](https://github.com/regebro/tzlocal)
 
 ### Stub distribution name
 
@@ -7218,6 +7682,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 Type hints for uWSGI's [Python API](https://uwsgi-docs.readthedocs.io/en/latest/PythonModule.html). Note that this API is available only when running Python code inside a uWSGI process and some parts of the API are only present when corresponding configuration options have been enabled.
 
+### Upstream repo URL
+
+[https://github.com/unbit/uwsgi](https://github.com/unbit/uwsgi)
+
 ### Stub distribution name
 
 `types-uWSGI`
@@ -7270,6 +7738,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `ujson`
+
+### Upstream repo URL
+
+[https://github.com/ultrajson/ultrajson](https://github.com/ultrajson/ultrajson)
 
 ### Stub distribution name
 
@@ -7377,6 +7849,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `urllib3`
 
+### Upstream repo URL
+
+[https://github.com/urllib3/urllib3](https://github.com/urllib3/urllib3)
+
 ### Stub distribution name
 
 `types-urllib3`
@@ -7429,6 +7905,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `vobject`
+
+### Upstream repo URL
+
+[https://github.com/eventable/vobject](https://github.com/eventable/vobject)
 
 ### Stub distribution name
 
@@ -7483,6 +7963,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `waitress`
 
+### Upstream repo URL
+
+[https://github.com/Pylons/waitress](https://github.com/Pylons/waitress)
+
 ### Stub distribution name
 
 `types-waitress`
@@ -7535,6 +8019,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `whatthepatch`
+
+### Upstream repo URL
+
+[https://github.com/cscorley/whatthepatch](https://github.com/cscorley/whatthepatch)
 
 ### Stub distribution name
 
@@ -7589,6 +8077,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `xmltodict`
 
+### Upstream repo URL
+
+[https://github.com/martinblech/xmltodict](https://github.com/martinblech/xmltodict)
+
 ### Stub distribution name
 
 `types-xmltodict`
@@ -7642,6 +8134,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `zstd`
 
+### Upstream repo URL
+
+[https://github.com/sergey-dryabzhinsky/python-zstd](https://github.com/sergey-dryabzhinsky/python-zstd)
+
 ### Stub distribution name
 
 `types-zstd`
@@ -7694,6 +8190,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `zxcvbn`
+
+### Upstream repo URL
+
+[https://github.com/dwolfhub/zxcvbn-python](https://github.com/dwolfhub/zxcvbn-python)
 
 ### Stub distribution name
 
