@@ -47,6 +47,7 @@ from typeshed_stats.gather import (
     get_stubtest_platforms,
     get_stubtest_strictness,
     get_upload_status,
+    get_upstream_url,
     tmpdir_typeshed,
 )
 
@@ -580,6 +581,42 @@ def test_get_upload_status_non_stdlib(
     )
     expected_result = UploadStatus[expected_result_name]
     assert actual_result is expected_result
+
+
+# =================================
+# Tests for get_upstream_url
+# =================================
+
+
+def test_upstream_url_stdlib() -> None:
+    result = get_upstream_url("stdlib", typeshed_dir=Path("."))
+    assert result == "https://github.com/python/cpython"
+
+
+@pytest.mark.parametrize(
+    ("metadata_text", "expected_upstream_url"),
+    [
+        pytest.param(
+            'upstream_repository = "https://github.com/psf/requests"',
+            "https://github.com/psf/requests",
+            id="upstream_repo_given",
+        ),
+        pytest.param("", None, id="upstream_repo_not_given"),
+    ],
+)
+def test_get_upstream_url_non_stdlib(
+    metadata_text: str,
+    expected_upstream_url: str,
+    typeshed: Path,
+    EXAMPLE_PACKAGE_NAME: str,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, metadata_text)
+    actual_result = get_upstream_url(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert actual_result == expected_upstream_url
+    assert type(actual_result) is type(expected_upstream_url)
 
 
 # =================================

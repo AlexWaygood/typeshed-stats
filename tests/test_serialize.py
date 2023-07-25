@@ -63,6 +63,7 @@ def unusual_packages() -> list[PackageInfo]:
     pkg1 = PackageInfo(
         "foo",
         stub_distribution_name="types-foo-ts",
+        upstream_url=None,
         extra_description="a very fooey package",
         completeness_level=CompletenessLevel.PARTIAL,
         number_of_lines=100_000_000_000,
