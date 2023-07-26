@@ -1155,16 +1155,16 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
             for path in (typeshed / "stdlib").rglob("*.pyi")
         ]
 
-    at_least_one_incomplete_package = any(
+    at_least_one_incomplete_package = any(  # pragma: no branch
         s.completeness_level is CompletenessLevel.PARTIAL for s in stats_on_packages
     )
     no_partial_packages_msg = "Likely bug detected: no packages are marked as partial?!"
     assert at_least_one_incomplete_package, no_partial_packages_msg
 
-    at_least_one_complete_package = any(
+    at_least_one_complete_package = any(  # pragma: no branch
         s.completeness_level is CompletenessLevel.COMPLETE for s in stats_on_packages
     )
-    no_complete_packages_msg = (
+    no_complete_packages_msg = (  # pragma: no branch
         "Likely bug detected: no packages are marked as complete?!"
     )
     assert at_least_one_complete_package, no_complete_packages_msg
