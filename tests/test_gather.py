@@ -6,6 +6,7 @@ import os
 import random
 import sys
 import textwrap
+import types
 from collections.abc import Callable
 from contextlib import AbstractAsyncContextManager, nullcontext
 from dataclasses import dataclass, field
@@ -1153,6 +1154,27 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
             gather_stats_on_file(path, typeshed_dir=typeshed)
             for path in (typeshed / "stdlib").rglob("*.pyi")
         ]
+
+    at_least_one_incomplete_package = any(  # pragma: no branch
+        s.completeness_level is CompletenessLevel.PARTIAL for s in stats_on_packages
+    )
+    no_partial_packages_msg = "Likely bug detected: no packages are marked as partial?!"
+    assert at_least_one_incomplete_package, no_partial_packages_msg
+
+    at_least_one_complete_package = any(  # pragma: no branch
+        s.completeness_level is CompletenessLevel.COMPLETE for s in stats_on_packages
+    )
+    no_complete_packages_msg = (
+        "Likely bug detected: no packages are marked as complete?!"
+    )
+    assert at_least_one_complete_package, no_complete_packages_msg
+
+    at_least_one_upstream_url = any(  # pragma: no branch
+        isinstance(s.upstream_url, str) for s in stats_on_packages
+    )
+    no_upstream_urls_msg = "Likely bug detected: no packages list an upstream URL?!"
+    assert at_least_one_upstream_url, no_upstream_urls_msg
+
     for s in stats_on_packages:
         with subtests.test(package_name=s.package_name):
             annot_stats = s.annotation_stats
@@ -1172,6 +1194,10 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
                     f"{s.package_name!r} is fully annotated, "
                     "but does not have the strictest pyright settings in CI"
                 )
+            upstream_url = s.upstream_url
+            assert isinstance(upstream_url, str | types.NoneType)
+            if upstream_url is not None:
+                assert upstream_url.startswith("https://")
     for f in stats_on_stdlib_files:
         if Path("stdlib/distutils/command") in f.file_path.parents:
             continue
