@@ -56,9 +56,6 @@ def run_checks(
     download_typeshed: bool = False,
 ) -> None:
     """Run the checks."""
-    print("\nRunning pycln...")
-    subprocess.run(["pycln", ".", "--config=pyproject.toml"])
-
     print("\nRunning ruff...")
     subprocess.run(["ruff", "."])
 

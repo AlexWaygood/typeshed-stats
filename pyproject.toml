@@ -86,17 +86,12 @@ misc-lint = [
     "black==23.7.0",
     "blacken-docs==1.15.0",
     "pre-commit-hooks==4.4.0",
-    "pycln==2.1.5",
-    "ruff==0.0.278",
+    "ruff==0.0.280",
 ]
 dev = ["typeshed-stats[rich,docs,typecheck,pytest,misc-lint]"]
 
 [tool.hatch.version]
 path = "src/typeshed_stats/__init__.py"
-
-[tool.pycln]
-all = true
-disable_all_dunder_policy = true
 
 [tool.black]
 line_length = 88
@@ -118,6 +113,12 @@ ignore = [
     "PGH004",
     # I know when to and when not to use `eval()`
     "PGH001",
+]
+unfixable = [
+    "F841",  # unused variable. ruff keeps the call, but mostly we want to get rid of it all
+    "F601",  # automatic fix might obscure issue
+    "F602",  # automatic fix might obscure issue
+    "B018",  # automatic fix might obscure issue
 ]
 per-file-ignores = {"tests/*.py" = ["D"]}
 
