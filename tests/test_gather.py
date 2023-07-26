@@ -1164,12 +1164,12 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
     at_least_one_complete_package = any(  # pragma: no branch
         s.completeness_level is CompletenessLevel.COMPLETE for s in stats_on_packages
     )
-    no_complete_packages_msg = (  # pragma: no branch
+    no_complete_packages_msg = (
         "Likely bug detected: no packages are marked as complete?!"
     )
     assert at_least_one_complete_package, no_complete_packages_msg
 
-    at_least_one_upstream_url = any(
+    at_least_one_upstream_url = any(  # pragma: no branch
         isinstance(s.upstream_url, str) for s in stats_on_packages
     )
     no_upstream_urls_msg = "Likely bug detected: no packages list an upstream URL?!"
