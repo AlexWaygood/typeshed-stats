@@ -73,7 +73,7 @@ oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1413,UP_T
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,PARTIAL,-,12895,UP_TO_DATE,UPLOADED,NOT_STRICT,3629,520,1026,329,279,20,5,3,4276,4,666,591,1,23,MISSING_STUBS_IGNORED,linux,167
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,PARTIAL,-,331,UP_TO_DATE,UPLOADED,STRICT,105,0,113,0,1,0,21,0,56,4,0,26,0,0,MISSING_STUBS_IGNORED,linux,4
 paho-mqtt,types-paho-mqtt,-,COMPLETE,-,513,UP_TO_DATE,UPLOADED,STRICT,217,0,147,0,0,0,5,4,145,0,1,19,0,0,ERROR_ON_MISSING_STUB,linux,0
-paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1800,UP_TO_DATE,UPLOADED,STRICT,760,0,636,0,3,0,20,9,542,14,3,123,2,0,MISSING_STUBS_IGNORED,linux;win32,6
+paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1800,OUT_OF_DATE,UPLOADED,STRICT,760,0,636,0,3,0,20,9,542,14,3,123,2,0,MISSING_STUBS_IGNORED,linux;win32,6
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,COMPLETE,-,185,UP_TO_DATE,UPLOADED,STRICT,114,0,60,0,0,1,22,2,34,3,2,27,0,0,ERROR_ON_MISSING_STUB,linux,4
 passlib,types-passlib,-,COMPLETE,-,1780,UP_TO_DATE,UPLOADED,NOT_STRICT,382,466,155,329,156,0,18,10,576,101,3,143,2,0,ERROR_ON_MISSING_STUB,linux,31
 passpy,types-passpy,https://github.com/bfrascher/passpy,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
