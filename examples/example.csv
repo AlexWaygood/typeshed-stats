@@ -51,7 +51,7 @@ flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simp
 flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,PARTIAL,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,5,0,0,1,1,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 fpdf2,types-fpdf2,https://github.com/PyFPDF/fpdf2,COMPLETE,-,2393,UP_TO_DATE,UPLOADED,NOT_STRICT,723,527,453,189,71,4,7,4,705,14,152,171,1,0,ERROR_ON_MISSING_STUB,linux,8
 gdb,types-gdb,-,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",733,NOT_ON_PYPI,UPLOADED,STRICT,233,0,257,0,0,0,0,0,290,0,0,87,0,0,SKIPPED,None,0
-google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1415,OUT_OF_DATE,UPLOADED,NOT_STRICT,479,368,234,203,123,0,7,0,190,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
+google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1422,UP_TO_DATE,UPLOADED,NOT_STRICT,482,368,235,203,123,0,7,0,193,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,COMPLETE,-,76,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,9,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,2
 hdbcli,types-hdbcli,-,COMPLETE,-,130,UP_TO_DATE,UPLOADED,STRICT,79,0,63,0,6,4,12,7,21,2,2,16,0,0,ERROR_ON_MISSING_STUB,linux,5
 html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,PARTIAL,-,673,UP_TO_DATE,UPLOADED,NOT_STRICT,67,207,100,208,27,0,0,0,220,180,0,40,4,0,MISSING_STUBS_IGNORED,linux,0
@@ -73,7 +73,7 @@ oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1413,UP_T
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,PARTIAL,-,12895,UP_TO_DATE,UPLOADED,NOT_STRICT,3629,520,1026,329,279,20,5,3,4276,4,666,591,1,23,MISSING_STUBS_IGNORED,linux,167
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,PARTIAL,-,331,UP_TO_DATE,UPLOADED,STRICT,105,0,113,0,1,0,21,0,56,4,0,26,0,0,MISSING_STUBS_IGNORED,linux,4
 paho-mqtt,types-paho-mqtt,-,COMPLETE,-,513,UP_TO_DATE,UPLOADED,STRICT,217,0,147,0,0,0,5,4,145,0,1,19,0,0,ERROR_ON_MISSING_STUB,linux,0
-paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1800,OUT_OF_DATE,UPLOADED,STRICT,760,0,636,0,3,0,20,9,542,14,3,123,2,0,MISSING_STUBS_IGNORED,linux;win32,6
+paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1814,UP_TO_DATE,UPLOADED,STRICT,764,0,636,0,3,0,20,9,542,14,3,123,2,0,MISSING_STUBS_IGNORED,linux;win32,6
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,COMPLETE,-,185,UP_TO_DATE,UPLOADED,STRICT,114,0,60,0,0,1,22,2,34,3,2,27,0,0,ERROR_ON_MISSING_STUB,linux,4
 passlib,types-passlib,-,COMPLETE,-,1780,UP_TO_DATE,UPLOADED,NOT_STRICT,382,466,155,329,156,0,18,10,576,101,3,143,2,0,ERROR_ON_MISSING_STUB,linux,31
 passpy,types-passpy,https://github.com/bfrascher/passpy,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
