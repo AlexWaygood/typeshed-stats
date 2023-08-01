@@ -1,39 +1,5 @@
 [
   {
-    "package_name": "DateTimeRange",
-    "stub_distribution_name": "types-DateTimeRange",
-    "upstream_url": "https://github.com/thombashi/DateTimeRange",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 68,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 30,
-      "unannotated_parameters": 0,
-      "annotated_returns": 28,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 10,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 1,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "Deprecated",
     "stub_distribution_name": "types-Deprecated",
     "upstream_url": "https://github.com/tantale/deprecated",
@@ -577,40 +543,6 @@
       "explicit_Incomplete_variables": 0,
       "classdefs": 45,
       "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
-    "package_name": "babel",
-    "stub_distribution_name": "types-babel",
-    "upstream_url": "https://github.com/python-babel/babel",
-    "completeness_level": "PARTIAL",
-    "extra_description": null,
-    "number_of_lines": 1148,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "NOT_STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 497,
-      "unannotated_parameters": 136,
-      "annotated_returns": 300,
-      "unannotated_returns": 79,
-      "explicit_Incomplete_parameters": 15,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 19,
-      "explicit_Any_returns": 5,
-      "annotated_variables": 257,
-      "explicit_Any_variables": 100,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 45,
-      "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
   },
