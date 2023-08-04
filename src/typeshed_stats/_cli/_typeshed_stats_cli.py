@@ -1,4 +1,4 @@
-"""Command-line interface."""
+"""typeshed-stats CLI"""
 
 from __future__ import annotations
 
@@ -19,6 +19,7 @@ from typeshed_stats.gather import (
     tmpdir_typeshed,
 )
 from typeshed_stats.serialize import stats_to_csv, stats_to_json, stats_to_markdown
+from typeshed_stats._cli import validate_packages, validate_typeshed_dir
 
 __all__ = ["OutputOption", "SUPPORTED_EXTENSIONS", "main"]
 
@@ -261,25 +262,6 @@ def _determine_output_option(
     return OutputOption.from_file_extension(writefile.suffix)
 
 
-def _validate_packages(
-    package_names: list[str], typeshed_dir: Path, *, parser: argparse.ArgumentParser
-) -> None:
-    stubs_dir = typeshed_dir / "stubs"
-    for package_name in package_names:
-        if package_name != "stdlib":
-            package_dir = stubs_dir / package_name
-            if not (package_dir.exists() and package_dir.is_dir()):
-                parser.error(f"{package_name!r} does not have stubs in typeshed!")
-
-
-def _validate_typeshed_dir(
-    typeshed_dir: Path, *, parser: argparse.ArgumentParser
-) -> None:
-    for folder in typeshed_dir, (typeshed_dir / "stdlib"), (typeshed_dir / "stubs"):
-        if not (folder.exists() and folder.is_dir()):
-            parser.error(f'"{typeshed_dir}" is not a valid typeshed directory')
-
-
 def _setup_logger(str_level: _LoggingLevels) -> logging.Logger:
     assert str_level in get_args(_LoggingLevels)
     logger = logging.getLogger("typeshed_stats")
@@ -304,11 +286,11 @@ def _run(argv: Sequence[str] | None = None) -> None:
         else:
             assert args.typeshed_dir is not None
             typeshed_dir = args.typeshed_dir
-            _validate_typeshed_dir(typeshed_dir, parser=parser)
+            validate_typeshed_dir(typeshed_dir, parser=parser)
 
         packages: list[str] | None = args.packages or None
         if packages:
-            _validate_packages(packages, typeshed_dir, parser=parser)
+            validate_packages(packages, typeshed_dir, parser=parser)
 
         output_option = _determine_output_option(args, parser=parser)
 
