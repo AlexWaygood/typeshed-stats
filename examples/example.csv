@@ -47,7 +47,7 @@ flake8-plugin-utils,types-flake8-plugin-utils,https://github.com/afonasev/flake8
 flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/flake8-rst-docstrings,PARTIAL,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simplify,PARTIAL,-,8,UP_TO_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,PARTIAL,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,5,0,0,1,1,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
-fpdf2,types-fpdf2,https://github.com/PyFPDF/fpdf2,COMPLETE,-,2393,UP_TO_DATE,UPLOADED,NOT_STRICT,723,527,453,189,71,4,7,4,705,14,152,171,1,0,ERROR_ON_MISSING_STUB,linux,8
+fpdf2,types-fpdf2,https://github.com/PyFPDF/fpdf2,COMPLETE,-,2393,OUT_OF_DATE,UPLOADED,NOT_STRICT,723,527,453,189,71,4,7,4,705,14,152,171,1,0,ERROR_ON_MISSING_STUB,linux,8
 gdb,types-gdb,-,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",733,NOT_ON_PYPI,UPLOADED,STRICT,233,0,257,0,0,0,0,0,290,0,0,87,0,0,SKIPPED,None,0
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1422,UP_TO_DATE,UPLOADED,NOT_STRICT,482,368,235,203,123,0,7,0,193,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,COMPLETE,-,76,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,9,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,2
@@ -120,7 +120,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,5
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,337,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,53820,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25314,861,13903,448,92,18,2047,867,8425,537,142,2338,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1130
+stdlib,-,https://github.com/python/cpython,STDLIB,-,53839,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25323,861,13905,448,92,18,2047,867,8425,537,142,2338,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1130
 stdlib-list,types-stdlib-list,https://github.com/pypi/stdlib-list,COMPLETE,-,16,OBSOLETE,UPLOADED,STRICT,4,0,4,0,0,0,0,1,4,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OUT_OF_DATE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
