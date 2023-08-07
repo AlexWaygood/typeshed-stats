@@ -633,7 +633,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-685 (excluding blank lines)
+687 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -659,16 +659,16 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 108
-    - Unannotated parameters: 157
+    - Unannotated parameters: 158
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
     - Annotated returns: 96
-    - Unannotated returns: 79
+    - Unannotated returns: 80
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 313
+    - Annotated variables: 314
     - Explicit `Any` variables: 193
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -6833,7 +6833,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-53,844 (excluding blank lines)
+53,846 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6849,7 +6849,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,126 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,125 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6868,7 +6868,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 867
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,425
+    - Annotated variables: 8,426
     - Explicit `Any` variables: 537
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 142
 - Class definitions:
