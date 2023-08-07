@@ -4687,7 +4687,7 @@ Generated with aid from mypy-protobuf v3.4.0
 
 ### Number of lines
 
-4,288 (excluding blank lines)
+4,290 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4712,12 +4712,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 728
+    - Annotated parameters: 731
     - Unannotated parameters: 248
     - Explicit `Any` parameters: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 494
+    - Annotated returns: 496
     - Unannotated returns: 79
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -6833,7 +6833,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-53,846 (excluding blank lines)
+53,853 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -6849,7 +6849,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,125 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,121 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6858,12 +6858,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,323
+    - Annotated parameters: 25,324
     - Unannotated parameters: 861
     - Explicit `Any` parameters: 2,047
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
 - Returns:
-    - Annotated returns: 13,907
+    - Annotated returns: 13,910
     - Unannotated returns: 448
     - Explicit `Any` returns: 867
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
