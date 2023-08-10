@@ -111,7 +111,7 @@ pyvmomi,types-pyvmomi,https://github.com/vmware/pyvmomi,PARTIAL,-,177,OBSOLETE,U
 pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,34572,UP_TO_DATE,UPLOADED,NOT_STRICT,3649,3725,3839,2039,427,292,1,1,25040,0,2833,726,0,0,ERROR_ON_MISSING_STUB,win32,49
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,467,UP_TO_DATE,UPLOADED,NOT_STRICT,67,184,97,65,18,3,0,1,166,0,101,40,0,0,ERROR_ON_MISSING_STUB,linux,6
 redis,types-redis,https://github.com/redis/redis-py,PARTIAL,-,5820,UP_TO_DATE,UPLOADED,NOT_STRICT,3693,1256,1342,638,355,9,68,327,632,211,34,214,0,2,MISSING_STUBS_IGNORED,linux,67
-regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,748,OUT_OF_DATE,UPLOADED,STRICT,429,0,114,0,0,0,25,16,72,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,13
+regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,748,UP_TO_DATE,UPLOADED,STRICT,429,0,114,0,0,0,25,16,72,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,13
 requests,types-requests,https://github.com/psf/requests,COMPLETE,-,990,UP_TO_DATE,UPLOADED,NOT_STRICT,354,152,112,85,19,0,9,5,114,39,0,51,1,0,ERROR_ON_MISSING_STUB,linux,6
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,-,5033,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -127,7 +127,7 @@ tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,-,19180,OUT_OF_DATE,UPLOADED,STRICT,3284,0,2158,0,6,33,32,31,3984,1,6,687,0,0,MISSING_STUBS_IGNORED,linux,35
 toml,types-toml,https://github.com/uiri/toml,COMPLETE,-,136,UP_TO_DATE,UPLOADED,STRICT,71,0,41,0,0,0,21,5,14,2,0,14,2,0,ERROR_ON_MISSING_STUB,linux,0
 toposort,types-toposort,https://gitlab.com/ericvsmith/toposort,COMPLETE,-,13,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,1,0,1,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-tqdm,types-tqdm,https://github.com/tqdm/tqdm,COMPLETE,-,1379,OUT_OF_DATE,UPLOADED,NOT_STRICT,813,141,166,24,42,11,1,1,100,0,74,36,0,0,ERROR_ON_MISSING_STUB,linux,2
+tqdm,types-tqdm,https://github.com/tqdm/tqdm,COMPLETE,-,1382,UP_TO_DATE,UPLOADED,NOT_STRICT,817,141,167,24,42,11,1,1,100,0,74,36,0,0,ERROR_ON_MISSING_STUB,linux,2
 translationstring,types-translationstring,https://github.com/Pylons/translationstring,COMPLETE,-,73,UP_TO_DATE,UPLOADED,STRICT,62,0,18,0,0,0,6,1,4,1,0,7,0,0,ERROR_ON_MISSING_STUB,linux,4
 tree-sitter,types-tree-sitter,https://github.com/tree-sitter/py-tree-sitter,COMPLETE,-,124,UP_TO_DATE,UPLOADED,STRICT,25,0,52,0,0,0,0,2,4,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,36
 tree-sitter-languages,types-tree-sitter-languages,https://github.com/grantjenks/py-tree-sitter-languages,COMPLETE,-,9,UP_TO_DATE,UPLOADED,STRICT,2,0,2,0,0,0,0,0,5,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,2

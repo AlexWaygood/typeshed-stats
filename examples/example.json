@@ -3825,7 +3825,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 748,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4371,8 +4371,8 @@
     "upstream_url": "https://github.com/tqdm/tqdm",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1379,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 1382,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4383,9 +4383,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 813,
+      "annotated_parameters": 817,
       "unannotated_parameters": 141,
-      "annotated_returns": 166,
+      "annotated_returns": 167,
       "unannotated_returns": 24,
       "explicit_Incomplete_parameters": 42,
       "explicit_Incomplete_returns": 11,
