@@ -4383,11 +4383,11 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 817,
+      "annotated_parameters": 816,
       "unannotated_parameters": 141,
       "annotated_returns": 167,
       "unannotated_returns": 24,
-      "explicit_Incomplete_parameters": 42,
+      "explicit_Incomplete_parameters": 43,
       "explicit_Incomplete_returns": 11,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,

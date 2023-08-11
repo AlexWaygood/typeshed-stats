@@ -7257,10 +7257,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tqdm`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 817
+    - Annotated parameters: 816
     - Unannotated parameters: 141
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 42
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 43
 - Returns:
     - Annotated returns: 167
     - Unannotated returns: 24
