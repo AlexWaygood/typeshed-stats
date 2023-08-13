@@ -11,6 +11,7 @@ import pytest
 
 from typeshed_stats.gather import (
     AnnotationStats,
+    CompletenessLevel,
     FileInfo,
     PackageInfo,
     PackageStatus,
@@ -239,6 +240,8 @@ def random_PackageInfo() -> PackageInfo:
     return PackageInfo(
         package_name=package_name,
         stub_distribution_name=f"types-{package_name}",
+        upstream_url=f"https://github.com/who_knows/{package_name}",
+        completeness_level=CompletenessLevel.COMPLETE,
         extra_description=None,
         number_of_lines=random.randint(10, 500),
         package_status=random.choice(list(PackageStatus)),

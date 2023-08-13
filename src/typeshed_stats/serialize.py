@@ -107,6 +107,9 @@ def stats_to_csv(stats: Sequence[PackageInfo | FileInfo]) -> str:
 
         # This section is specific to PackageInfo objects
         if "stubtest_settings" in info:
+            for k, v in PackageInfo.__annotations__.items():
+                if v == (str | None) and info[k] is None:
+                    info[k] = "-"
             info |= {
                 f"stubtest_{key}": val for key, val in info["stubtest_settings"].items()
             }
@@ -116,8 +119,6 @@ def stats_to_csv(stats: Sequence[PackageInfo | FileInfo]) -> str:
                 info["stubtest_platforms"] = "None"
             else:
                 info["stubtest_platforms"] = ";".join(stubtest_platforms)
-            if info["extra_description"] is None:
-                info["extra_description"] = "-"
 
     fieldnames = converted_stats[0].keys()
     csvfile = io.StringIO(newline="")
@@ -166,8 +167,9 @@ def _stats_from_csv(
                 stubtest_settings["platforms"] = []
             else:
                 stubtest_settings["platforms"] = stubtest_platforms.split(";")
-            if converted_stat["extra_description"] == "-":
-                converted_stat["extra_description"] = None
+            for k, v in PackageInfo.__annotations__.items():
+                if converted_stat[k] == "-" and v == (str | None):
+                    converted_stat[k] = None
         converted_stats.append(converted_stat)
     return _structure(converted_stats, list[cls])  # type: ignore[valid-type]  # pyright: ignore[reportGeneralTypeIssues]
 

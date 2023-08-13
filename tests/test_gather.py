@@ -6,6 +6,7 @@ import os
 import random
 import sys
 import textwrap
+import types
 from collections.abc import Callable
 from contextlib import AbstractAsyncContextManager, nullcontext
 from dataclasses import dataclass, field
@@ -26,6 +27,7 @@ import typeshed_stats
 import typeshed_stats.gather
 from typeshed_stats.gather import (
     AnnotationStats,
+    CompletenessLevel,
     PackageInfo,
     PackageStatus,
     PyrightSetting,
@@ -36,6 +38,7 @@ from typeshed_stats.gather import (
     gather_annotation_stats_on_package,
     gather_stats_on_file,
     gather_stats_on_multiple_packages,
+    get_completeness_level,
     get_package_extra_description,
     get_package_size,
     get_package_status,
@@ -45,6 +48,7 @@ from typeshed_stats.gather import (
     get_stubtest_platforms,
     get_stubtest_strictness,
     get_upload_status,
+    get_upstream_url,
     tmpdir_typeshed,
 )
 
@@ -580,6 +584,75 @@ def test_get_upload_status_non_stdlib(
     assert actual_result is expected_result
 
 
+# =================================
+# Tests for get_upstream_url
+# =================================
+
+
+def test_upstream_url_stdlib() -> None:
+    result = get_upstream_url("stdlib", typeshed_dir=Path("."))
+    assert result == "https://github.com/python/cpython"
+
+
+@pytest.mark.parametrize(
+    ("metadata_text", "expected_upstream_url"),
+    [
+        pytest.param(
+            'upstream_repository = "https://github.com/psf/requests"',
+            "https://github.com/psf/requests",
+            id="upstream_repo_given",
+        ),
+        pytest.param("", None, id="upstream_repo_not_given"),
+    ],
+)
+def test_get_upstream_url_non_stdlib(
+    metadata_text: str,
+    expected_upstream_url: str,
+    typeshed: Path,
+    EXAMPLE_PACKAGE_NAME: str,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, metadata_text)
+    actual_result = get_upstream_url(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert actual_result == expected_upstream_url
+    assert type(actual_result) is type(expected_upstream_url)
+
+
+# =================================
+# Tests for get_completeness_level
+# =================================
+
+
+def test_get_completeness_level_stdlib() -> None:
+    result = get_completeness_level("stdlib", typeshed_dir=Path("."))
+    assert result is CompletenessLevel.STDLIB
+
+
+@pytest.mark.parametrize(
+    ("metadata_text", "expected_completeness_level"),
+    [
+        pytest.param("partial_stub = true", "PARTIAL", id="partial"),
+        pytest.param("partial_stub = false", "COMPLETE", id="explicitly_complete"),
+        pytest.param("", "COMPLETE", id="implicitly_complete"),
+    ],
+)
+def test_get_completeness_level_non_stdlib(
+    metadata_text: str,
+    expected_completeness_level: str,
+    typeshed: Path,
+    EXAMPLE_PACKAGE_NAME: str,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, metadata_text)
+    actual_result = get_completeness_level(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    expected_result = CompletenessLevel[expected_completeness_level]
+    assert actual_result is expected_result
+
+
 # ======================================
 # Tests for get_stub_distribution_name()
 # ======================================
@@ -1081,6 +1154,27 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
             gather_stats_on_file(path, typeshed_dir=typeshed)
             for path in (typeshed / "stdlib").rglob("*.pyi")
         ]
+
+    at_least_one_incomplete_package = any(  # pragma: no branch
+        s.completeness_level is CompletenessLevel.PARTIAL for s in stats_on_packages
+    )
+    no_partial_packages_msg = "Likely bug detected: no packages are marked as partial?!"
+    assert at_least_one_incomplete_package, no_partial_packages_msg
+
+    at_least_one_complete_package = any(  # pragma: no branch
+        s.completeness_level is CompletenessLevel.COMPLETE for s in stats_on_packages
+    )
+    no_complete_packages_msg = (
+        "Likely bug detected: no packages are marked as complete?!"
+    )
+    assert at_least_one_complete_package, no_complete_packages_msg
+
+    at_least_one_upstream_url = any(  # pragma: no branch
+        isinstance(s.upstream_url, str) for s in stats_on_packages
+    )
+    no_upstream_urls_msg = "Likely bug detected: no packages list an upstream URL?!"
+    assert at_least_one_upstream_url, no_upstream_urls_msg
+
     for s in stats_on_packages:
         with subtests.test(package_name=s.package_name):
             annot_stats = s.annotation_stats
@@ -1100,6 +1194,10 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
                     f"{s.package_name!r} is fully annotated, "
                     "but does not have the strictest pyright settings in CI"
                 )
+            upstream_url = s.upstream_url
+            assert isinstance(upstream_url, str | types.NoneType)
+            if upstream_url is not None:
+                assert upstream_url.startswith("https://")
     for f in stats_on_stdlib_files:
         if Path("stdlib/distutils/command") in f.file_path.parents:
             continue
