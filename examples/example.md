@@ -228,6 +228,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `JACK-Client`
 
+### Upstream repo URL
+
+[https://github.com/spatialaudio/jackclient-python](https://github.com/spatialaudio/jackclient-python)
+
 ### Stub distribution name
 
 `types-JACK-Client`
@@ -737,6 +741,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `WebOb`
 
+### Upstream repo URL
+
+[https://github.com/Pylons/webob](https://github.com/Pylons/webob)
+
 ### Stub distribution name
 
 `types-WebOb`
@@ -903,6 +911,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `beautifulsoup4`
+
+### Upstream repo URL
+
+[https://git.launchpad.net/beautifulsoup/tree](https://git.launchpad.net/beautifulsoup/tree)
 
 ### Stub distribution name
 
@@ -1128,6 +1140,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `braintree`
 
+### Upstream repo URL
+
+[https://github.com/braintree/braintree_python](https://github.com/braintree/braintree_python)
+
 ### Stub distribution name
 
 `types-braintree`
@@ -1294,6 +1310,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `cffi`
+
+### Upstream repo URL
+
+[https://foss.heptapod.net/pypy/cffi](https://foss.heptapod.net/pypy/cffi)
 
 ### Stub distribution name
 
@@ -1975,6 +1995,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `docopt`
 
+### Upstream repo URL
+
+[https://github.com/docopt/docopt](https://github.com/docopt/docopt)
+
 ### Stub distribution name
 
 `types-docopt`
@@ -2027,6 +2051,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `docutils`
+
+### Upstream repo URL
+
+[https://sourceforge.net/p/docutils/code](https://sourceforge.net/p/docutils/code)
 
 ### Stub distribution name
 
@@ -2769,6 +2797,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.
 
+### Upstream repo URL
+
+[https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree](https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree)
+
 ### Stub distribution name
 
 `types-gdb`
@@ -3101,6 +3133,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `humanfriendly`
 
+### Upstream repo URL
+
+[https://github.com/xolox/python-humanfriendly](https://github.com/xolox/python-humanfriendly)
+
 ### Stub distribution name
 
 `types-humanfriendly`
@@ -3153,6 +3189,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `ibm-db`
+
+### Upstream repo URL
+
+[https://github.com/ibmdb/python-ibmdb](https://github.com/ibmdb/python-ibmdb)
 
 ### Stub distribution name
 
@@ -3263,6 +3303,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `inifile`
+
+### Upstream repo URL
+
+[https://github.com/mitsuhiko/python-inifile](https://github.com/mitsuhiko/python-inifile)
 
 ### Stub distribution name
 
@@ -4001,6 +4045,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `paho-mqtt`
 
+### Upstream repo URL
+
+[https://github.com/eclipse/paho.mqtt.python](https://github.com/eclipse/paho.mqtt.python)
+
 ### Stub distribution name
 
 `types-paho-mqtt`
@@ -4167,6 +4215,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `passlib`
+
+### Upstream repo URL
+
+[https://foss.heptapod.net/python-libs/passlib](https://foss.heptapod.net/python-libs/passlib)
 
 ### Stub distribution name
 
@@ -4391,6 +4443,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pexpect`
+
+### Upstream repo URL
+
+[https://github.com/pexpect/pexpect](https://github.com/pexpect/pexpect)
 
 ### Stub distribution name
 
@@ -4679,7 +4735,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Extra description
 
-Generated with aid from mypy-protobuf v3.4.0
+Generated with aid from [mypy-protobuf](https://github.com/nipunn1313/mypy-protobuf) v3.4.0
+
+### Upstream repo URL
+
+[https://github.com/protocolbuffers/protobuf](https://github.com/protocolbuffers/protobuf)
 
 ### Stub distribution name
 
@@ -5128,6 +5188,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pycurl`
+
+### Upstream repo URL
+
+[https://github.com/pycurl/pycurl](https://github.com/pycurl/pycurl)
 
 ### Stub distribution name
 
@@ -5866,6 +5930,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `python-nmap`
 
+### Upstream repo URL
+
+[https://bitbucket.org/xael/python-nmap](https://bitbucket.org/xael/python-nmap)
+
 ### Stub distribution name
 
 `types-python-nmap`
@@ -6033,6 +6101,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pytz`
 
+### Upstream repo URL
+
+[https://github.com/stub42/pytz](https://github.com/stub42/pytz)
+
 ### Stub distribution name
 
 `types-pytz`
@@ -6153,7 +6225,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-34,572 (excluding blank lines)
+34,564 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6183,12 +6255,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 427
 - Returns:
-    - Annotated returns: 3,839
-    - Unannotated returns: 2,039
+    - Annotated returns: 3,835
+    - Unannotated returns: 2,035
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 292
 - Variables:
-    - Annotated variables: 25,040
+    - Annotated variables: 25,048
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,833
 - Class definitions:
@@ -7681,6 +7753,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `untangle`
+
+### Upstream repo URL
+
+[https://github.com/stchris/untangle](https://github.com/stchris/untangle)
 
 ### Stub distribution name
 
