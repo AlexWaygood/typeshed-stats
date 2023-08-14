@@ -833,14 +833,14 @@ def get_upstream_url(
         ...     requests_url = get_upstream_url(
         ...         "requests", typeshed_dir=typeshed
         ...     )
-        ...     gdb_url = get_upstream_url(
-        ...         "gdb", typeshed_dir=typeshed
+        ...     hdbcli_url = get_upstream_url(
+        ...         "hdbcli", typeshed_dir=typeshed
         ...     )
         >>> stdlib_url
         'https://github.com/python/cpython'
         >>> requests_url
         'https://github.com/psf/requests'
-        >>> gdb_url is None
+        >>> hdbcli_url is None
         True
     """
     if package_name == "stdlib":
