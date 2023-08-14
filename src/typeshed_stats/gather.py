@@ -834,7 +834,7 @@ def get_upstream_url(
         ...         "requests", typeshed_dir=typeshed
         ...     )
         ...     hdbcli_url = get_upstream_url(
-        ...         "hcbcli", typeshed_dir=typeshed
+        ...         "hdbcli", typeshed_dir=typeshed
         ...     )
         >>> stdlib_url
         'https://github.com/python/cpython'
