@@ -3941,7 +3941,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-12,895 (excluding blank lines)
+12,936 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3951,13 +3951,13 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 167 unique allowlist entries for `openpyxl` when running stubtest in CI.
+Typeshed currently has 174 unique allowlist entries for `openpyxl` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3966,23 +3966,23 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,629
-    - Unannotated parameters: 520
+    - Annotated parameters: 3,639
+    - Unannotated parameters: 518
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 279
 - Returns:
-    - Annotated returns: 1,026
-    - Unannotated returns: 329
+    - Annotated returns: 1,037
+    - Unannotated returns: 328
     - Explicit `Any` returns: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
 - Variables:
-    - Annotated variables: 4,276
+    - Annotated variables: 4,282
     - Explicit `Any` variables: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 666
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 665
 - Class definitions:
-    - Total class definitions: 591
+    - Total class definitions: 596
     - Class definitions with `Any`: 1
-    - Class definitions marked as at least partially `Incomplete`: 23
+    - Class definitions marked as at least partially `Incomplete`: 25
 
 ---
 
@@ -4340,7 +4340,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,629 (excluding blank lines)
+1,634 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4365,17 +4365,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 404
+    - Annotated parameters: 405
     - Unannotated parameters: 671
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 245
 - Returns:
-    - Annotated returns: 298
+    - Annotated returns: 300
     - Unannotated returns: 448
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
-    - Annotated variables: 436
+    - Annotated variables: 437
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 367
 - Class definitions:
@@ -6905,7 +6905,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-53,957 (excluding blank lines)
+53,952 (excluding blank lines)
 
 ### Package status: *stdlib*
 

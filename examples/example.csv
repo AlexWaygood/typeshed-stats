@@ -68,14 +68,14 @@ mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1228,UP_TO_DATE,UPLOADED,NOT_STRICT,35,124,37,79,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
 netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,659,UP_TO_DATE,UPLOADED,STRICT,292,0,310,0,5,0,1,1,103,0,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1413,UP_TO_DATE,UPLOADED,NOT_STRICT,333,482,155,195,181,0,0,0,318,207,0,106,2,0,MISSING_STUBS_IGNORED,linux,1
-openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,PARTIAL,-,12895,UP_TO_DATE,UPLOADED,NOT_STRICT,3629,520,1026,329,279,20,5,3,4276,4,666,591,1,23,MISSING_STUBS_IGNORED,linux,167
+openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,12936,UP_TO_DATE,UPLOADED,NOT_STRICT,3639,518,1037,328,279,22,5,3,4282,4,665,596,1,25,ERROR_ON_MISSING_STUB,linux,174
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,PARTIAL,-,331,UP_TO_DATE,UPLOADED,STRICT,105,0,113,0,1,0,21,0,56,4,0,26,0,0,MISSING_STUBS_IGNORED,linux,4
 paho-mqtt,types-paho-mqtt,https://github.com/eclipse/paho.mqtt.python,COMPLETE,-,513,UP_TO_DATE,UPLOADED,STRICT,217,0,147,0,0,0,5,4,145,0,1,19,0,0,ERROR_ON_MISSING_STUB,linux,0
 paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1814,UP_TO_DATE,UPLOADED,STRICT,764,0,636,0,3,0,20,9,542,14,3,123,2,0,MISSING_STUBS_IGNORED,linux;win32,6
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,COMPLETE,-,185,UP_TO_DATE,UPLOADED,STRICT,114,0,60,0,0,1,22,2,34,3,2,27,0,0,ERROR_ON_MISSING_STUB,linux,4
 passlib,types-passlib,https://foss.heptapod.net/python-libs/passlib,COMPLETE,-,1780,UP_TO_DATE,UPLOADED,NOT_STRICT,382,466,155,329,156,0,18,10,576,101,3,143,2,0,ERROR_ON_MISSING_STUB,linux,31
 passpy,types-passpy,https://github.com/bfrascher/passpy,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
-peewee,types-peewee,https://github.com/coleifer/peewee,COMPLETE,-,1629,UP_TO_DATE,UPLOADED,NOT_STRICT,404,671,298,448,245,5,0,0,436,0,367,166,0,0,ERROR_ON_MISSING_STUB,linux,25
+peewee,types-peewee,https://github.com/coleifer/peewee,COMPLETE,-,1634,UP_TO_DATE,UPLOADED,NOT_STRICT,405,671,300,448,245,5,0,0,437,0,367,166,0,0,ERROR_ON_MISSING_STUB,linux,25
 pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,PARTIAL,-,27,UP_TO_DATE,UPLOADED,STRICT,10,0,8,0,0,2,1,1,11,3,0,1,0,0,MISSING_STUBS_IGNORED,linux,2
 pexpect,types-pexpect,https://github.com/pexpect/pexpect,COMPLETE,-,539,UP_TO_DATE,UPLOADED,NOT_STRICT,169,144,148,50,51,0,0,0,150,0,83,20,0,0,ERROR_ON_MISSING_STUB,linux,0
 pika,types-pika-ts,https://github.com/pika/pika,COMPLETE,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2231,UP_TO_DATE,UPLOADED,NOT_STRICT,618,383,413,347,141,24,4,0,470,0,258,222,0,0,ERROR_ON_MISSING_STUB,linux,9
@@ -120,7 +120,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,5
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,337,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,53957,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25380,861,13929,448,92,18,2054,867,8432,537,142,2338,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1096
+stdlib,-,https://github.com/python/cpython,STDLIB,-,53952,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25380,861,13929,448,92,18,2054,867,8432,537,142,2338,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1096
 stdlib-list,types-stdlib-list,https://github.com/pypi/stdlib-list,COMPLETE,-,16,OBSOLETE,UPLOADED,STRICT,4,0,4,0,0,0,0,1,4,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OUT_OF_DATE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
