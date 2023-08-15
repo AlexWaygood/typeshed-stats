@@ -3941,7 +3941,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-12,936 (excluding blank lines)
+13,002 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3966,23 +3966,23 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,639
-    - Unannotated parameters: 518
+    - Annotated parameters: 3,649
+    - Unannotated parameters: 513
     - Explicit `Any` parameters: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 279
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 255
 - Returns:
-    - Annotated returns: 1,037
-    - Unannotated returns: 328
+    - Annotated returns: 1,049
+    - Unannotated returns: 323
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
 - Variables:
-    - Annotated variables: 4,282
+    - Annotated variables: 4,044
     - Explicit `Any` variables: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 665
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 418
 - Class definitions:
-    - Total class definitions: 596
+    - Total class definitions: 597
     - Class definitions with `Any`: 1
-    - Class definitions marked as at least partially `Incomplete`: 25
+    - Class definitions marked as at least partially `Incomplete`: 24
 
 ---
 
@@ -6341,9 +6341,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 5,820 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 

@@ -68,7 +68,7 @@ mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1228,UP_TO_DATE,UPLOADED,NOT_STRICT,35,124,37,79,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
 netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,659,UP_TO_DATE,UPLOADED,STRICT,292,0,310,0,5,0,1,1,103,0,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1413,UP_TO_DATE,UPLOADED,NOT_STRICT,333,482,155,195,181,0,0,0,318,207,0,106,2,0,MISSING_STUBS_IGNORED,linux,1
-openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,12936,UP_TO_DATE,UPLOADED,NOT_STRICT,3639,518,1037,328,279,22,5,3,4282,4,665,596,1,25,ERROR_ON_MISSING_STUB,linux,174
+openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,13002,UP_TO_DATE,UPLOADED,NOT_STRICT,3649,513,1049,323,255,22,5,3,4044,4,418,597,1,24,ERROR_ON_MISSING_STUB,linux,174
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,PARTIAL,-,331,UP_TO_DATE,UPLOADED,STRICT,105,0,113,0,1,0,21,0,56,4,0,26,0,0,MISSING_STUBS_IGNORED,linux,4
 paho-mqtt,types-paho-mqtt,https://github.com/eclipse/paho.mqtt.python,COMPLETE,-,513,UP_TO_DATE,UPLOADED,STRICT,217,0,147,0,0,0,5,4,145,0,1,19,0,0,ERROR_ON_MISSING_STUB,linux,0
 paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1814,UP_TO_DATE,UPLOADED,STRICT,764,0,636,0,3,0,20,9,542,14,3,123,2,0,MISSING_STUBS_IGNORED,linux;win32,6
@@ -110,7 +110,7 @@ pytz,types-pytz,https://github.com/stub42/pytz,COMPLETE,-,128,UP_TO_DATE,UPLOADE
 pyvmomi,types-pyvmomi,https://github.com/vmware/pyvmomi,PARTIAL,-,177,OBSOLETE,UPLOADED,STRICT,50,0,35,0,3,16,2,0,57,7,0,44,0,0,MISSING_STUBS_IGNORED,linux,8
 pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,34564,UP_TO_DATE,UPLOADED,NOT_STRICT,3649,3725,3835,2035,427,292,1,1,25048,0,2833,726,0,0,ERROR_ON_MISSING_STUB,win32,49
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,467,UP_TO_DATE,UPLOADED,NOT_STRICT,67,184,97,65,18,3,0,1,166,0,101,40,0,0,ERROR_ON_MISSING_STUB,linux,6
-redis,types-redis,https://github.com/redis/redis-py,PARTIAL,-,5820,UP_TO_DATE,UPLOADED,NOT_STRICT,3693,1256,1342,638,355,9,68,327,632,211,34,214,0,2,MISSING_STUBS_IGNORED,linux,67
+redis,types-redis,https://github.com/redis/redis-py,PARTIAL,-,5820,OUT_OF_DATE,UPLOADED,NOT_STRICT,3693,1256,1342,638,355,9,68,327,632,211,34,214,0,2,MISSING_STUBS_IGNORED,linux,67
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,748,UP_TO_DATE,UPLOADED,STRICT,429,0,114,0,0,0,25,16,72,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,13
 requests,types-requests,https://github.com/psf/requests,COMPLETE,-,990,UP_TO_DATE,UPLOADED,NOT_STRICT,354,152,112,85,19,0,9,5,114,39,0,51,1,0,ERROR_ON_MISSING_STUB,linux,6
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
