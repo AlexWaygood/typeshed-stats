@@ -619,6 +619,7 @@ async def _get_pypi_data(
     package_name: PackageName, session: aiohttp.ClientSession | None
 ) -> _PypiData:
     pypi_data_url = f"https://pypi.org/pypi/{urllib.parse.quote(package_name)}/json"
+    response_json: dict[str, Any] | None = None
     async with AsyncExitStack() as stack:
         if session is None:
             session = await stack.enter_async_context(aiohttp.ClientSession())
