@@ -74,8 +74,8 @@ pytest = [
 ]
 typecheck = [
     "typeshed-stats[rich,docs,pytest]",
-    "mypy==1.4.1",
-    "types-beautifulsoup4==4.12.0.5",
+    "mypy==1.5.1",
+    "types-beautifulsoup4==4.12.0.6",
     "types-Markdown==3.4.2.10",
 ]
 # All of these must match .pre-commit-config.yaml
@@ -85,9 +85,9 @@ typecheck = [
 # This file just lists the ones which it's convenient to have around locally.
 misc-lint = [
     "black==23.7.0",
-    "blacken-docs==1.15.0",
+    "blacken-docs==1.16.0",
     "pre-commit-hooks==4.4.0",
-    "ruff==0.0.283",
+    "ruff==0.0.284",
 ]
 dev = ["typeshed-stats[rich,docs,typecheck,pytest,misc-lint]"]
 
