@@ -138,7 +138,7 @@
   {
     "package_name": "JACK-Client",
     "stub_distribution_name": "types-JACK-Client",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/spatialaudio/jackclient-python",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 310,
@@ -446,7 +446,7 @@
   {
     "package_name": "WebOb",
     "stub_distribution_name": "types-WebOb",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/Pylons/webob",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1553,
@@ -483,8 +483,8 @@
     "upstream_url": "https://github.com/Tinche/aiofiles",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 651,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 680,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -492,13 +492,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 89
+      "allowlist_length": 90
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 382,
+      "annotated_parameters": 389,
       "unannotated_parameters": 0,
-      "annotated_returns": 149,
+      "annotated_returns": 152,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 26,
       "explicit_Incomplete_returns": 7,
@@ -549,7 +549,7 @@
   {
     "package_name": "beautifulsoup4",
     "stub_distribution_name": "types-beautifulsoup4",
-    "upstream_url": null,
+    "upstream_url": "https://git.launchpad.net/beautifulsoup/tree",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 811,
@@ -685,7 +685,7 @@
   {
     "package_name": "braintree",
     "stub_distribution_name": "types-braintree",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/braintree/braintree_python",
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 2859,
@@ -787,7 +787,7 @@
   {
     "package_name": "cffi",
     "stub_distribution_name": "types-cffi",
-    "upstream_url": null,
+    "upstream_url": "https://foss.heptapod.net/pypy/cffi",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 825,
@@ -1197,7 +1197,7 @@
   {
     "package_name": "docopt",
     "stub_distribution_name": "types-docopt",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/docopt/docopt",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 14,
@@ -1231,10 +1231,10 @@
   {
     "package_name": "docutils",
     "stub_distribution_name": "types-docutils",
-    "upstream_url": null,
+    "upstream_url": "https://sourceforge.net/p/docutils/code",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 515,
+    "number_of_lines": 516,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1247,8 +1247,8 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 222,
-      "unannotated_parameters": 61,
-      "annotated_returns": 153,
+      "unannotated_parameters": 62,
+      "annotated_returns": 154,
       "unannotated_returns": 10,
       "explicit_Incomplete_parameters": 30,
       "explicit_Incomplete_returns": 45,
@@ -1673,7 +1673,7 @@
   {
     "package_name": "gdb",
     "stub_distribution_name": "types-gdb",
-    "upstream_url": null,
+    "upstream_url": "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree",
     "completeness_level": "COMPLETE",
     "extra_description": "Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",
     "number_of_lines": 733,
@@ -1875,7 +1875,7 @@
   {
     "package_name": "humanfriendly",
     "stub_distribution_name": "types-humanfriendly",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/xolox/python-humanfriendly",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 340,
@@ -1909,7 +1909,7 @@
   {
     "package_name": "ibm-db",
     "stub_distribution_name": "types-ibm-db",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/ibmdb/python-ibmdb",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 252,
@@ -1946,8 +1946,8 @@
     "upstream_url": "https://github.com/influxdata/influxdb-client-python",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 13385,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 13372,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -1958,15 +1958,15 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2282,
-      "unannotated_parameters": 3788,
-      "annotated_returns": 1858,
-      "unannotated_returns": 3445,
-      "explicit_Incomplete_parameters": 1979,
-      "explicit_Incomplete_returns": 1,
+      "annotated_parameters": 2293,
+      "unannotated_parameters": 3783,
+      "annotated_returns": 1852,
+      "unannotated_returns": 3435,
+      "explicit_Incomplete_parameters": 1966,
+      "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 4,
-      "annotated_variables": 1179,
+      "annotated_variables": 1201,
       "explicit_Any_variables": 2,
       "explicit_Incomplete_variables": 1066,
       "classdefs": 423,
@@ -1977,7 +1977,7 @@
   {
     "package_name": "inifile",
     "stub_distribution_name": "types-inifile",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/mitsuhiko/python-inifile",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 122,
@@ -2352,34 +2352,34 @@
     "package_name": "openpyxl",
     "stub_distribution_name": "types-openpyxl",
     "upstream_url": "https://foss.heptapod.net/openpyxl/openpyxl",
-    "completeness_level": "PARTIAL",
+    "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 12895,
+    "number_of_lines": 13002,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
+      "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 167
+      "allowlist_length": 174
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3629,
-      "unannotated_parameters": 520,
-      "annotated_returns": 1026,
-      "unannotated_returns": 329,
-      "explicit_Incomplete_parameters": 279,
-      "explicit_Incomplete_returns": 20,
+      "annotated_parameters": 3649,
+      "unannotated_parameters": 513,
+      "annotated_returns": 1049,
+      "unannotated_returns": 323,
+      "explicit_Incomplete_parameters": 255,
+      "explicit_Incomplete_returns": 22,
       "explicit_Any_parameters": 5,
       "explicit_Any_returns": 3,
-      "annotated_variables": 4276,
+      "annotated_variables": 4044,
       "explicit_Any_variables": 4,
-      "explicit_Incomplete_variables": 666,
-      "classdefs": 591,
+      "explicit_Incomplete_variables": 418,
+      "classdefs": 597,
       "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 23
+      "classdefs_with_Incomplete": 24
     }
   },
   {
@@ -2419,7 +2419,7 @@
   {
     "package_name": "paho-mqtt",
     "stub_distribution_name": "types-paho-mqtt",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/eclipse/paho.mqtt.python",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 513,
@@ -2522,7 +2522,7 @@
   {
     "package_name": "passlib",
     "stub_distribution_name": "types-passlib",
-    "upstream_url": null,
+    "upstream_url": "https://foss.heptapod.net/python-libs/passlib",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1780,
@@ -2593,7 +2593,7 @@
     "upstream_url": "https://github.com/coleifer/peewee",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1629,
+    "number_of_lines": 1634,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2605,15 +2605,15 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 404,
+      "annotated_parameters": 405,
       "unannotated_parameters": 671,
-      "annotated_returns": 298,
+      "annotated_returns": 300,
       "unannotated_returns": 448,
       "explicit_Incomplete_parameters": 245,
       "explicit_Incomplete_returns": 5,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 436,
+      "annotated_variables": 437,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 367,
       "classdefs": 166,
@@ -2658,7 +2658,7 @@
   {
     "package_name": "pexpect",
     "stub_distribution_name": "types-pexpect",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/pexpect/pexpect",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 539,
@@ -2828,9 +2828,9 @@
   {
     "package_name": "protobuf",
     "stub_distribution_name": "types-protobuf",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/protocolbuffers/protobuf",
     "completeness_level": "PARTIAL",
-    "extra_description": "Generated with aid from mypy-protobuf v3.4.0",
+    "extra_description": "Generated with aid from [mypy-protobuf](https://github.com/nipunn1313/mypy-protobuf) v3.4.0",
     "number_of_lines": 4289,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
@@ -3103,7 +3103,7 @@
   {
     "package_name": "pycurl",
     "stub_distribution_name": "types-pycurl",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/pycurl/pycurl",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 674,
@@ -3549,7 +3549,7 @@
   {
     "package_name": "python-nmap",
     "stub_distribution_name": "types-python-nmap",
-    "upstream_url": null,
+    "upstream_url": "https://bitbucket.org/xael/python-nmap",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 119,
@@ -3651,7 +3651,7 @@
   {
     "package_name": "pytz",
     "stub_distribution_name": "types-pytz",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/stub42/pytz",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 128,
@@ -3722,7 +3722,7 @@
     "upstream_url": "https://github.com/mhammond/pywin32",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 34572,
+    "number_of_lines": 34564,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3736,13 +3736,13 @@
     "annotation_stats": {
       "annotated_parameters": 3649,
       "unannotated_parameters": 3725,
-      "annotated_returns": 3839,
-      "unannotated_returns": 2039,
+      "annotated_returns": 3835,
+      "unannotated_returns": 2035,
       "explicit_Incomplete_parameters": 427,
       "explicit_Incomplete_returns": 292,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 25040,
+      "annotated_variables": 25048,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 2833,
       "classdefs": 726,
@@ -3791,7 +3791,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 5820,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -4131,7 +4131,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 53957,
+    "number_of_lines": 53978,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4141,13 +4141,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1096
+      "allowlist_length": 1068
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25380,
+      "annotated_parameters": 25388,
       "unannotated_parameters": 861,
-      "annotated_returns": 13929,
+      "annotated_returns": 13930,
       "unannotated_returns": 448,
       "explicit_Incomplete_parameters": 92,
       "explicit_Incomplete_returns": 18,
@@ -4156,7 +4156,7 @@
       "annotated_variables": 8432,
       "explicit_Any_variables": 537,
       "explicit_Incomplete_variables": 142,
-      "classdefs": 2338,
+      "classdefs": 2339,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }
@@ -4641,7 +4641,7 @@
   {
     "package_name": "untangle",
     "stub_distribution_name": "types-untangle",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/stchris/untangle",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 33,

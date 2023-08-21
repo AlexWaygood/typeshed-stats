@@ -619,6 +619,7 @@ async def _get_pypi_data(
     package_name: PackageName, session: aiohttp.ClientSession | None
 ) -> _PypiData:
     pypi_data_url = f"https://pypi.org/pypi/{urllib.parse.quote(package_name)}/json"
+    response_json: dict[str, Any] | None = None
     async with AsyncExitStack() as stack:
         if session is None:
             session = await stack.enter_async_context(aiohttp.ClientSession())
@@ -833,14 +834,14 @@ def get_upstream_url(
         ...     requests_url = get_upstream_url(
         ...         "requests", typeshed_dir=typeshed
         ...     )
-        ...     gdb_url = get_upstream_url(
-        ...         "gdb", typeshed_dir=typeshed
+        ...     hdbcli_url = get_upstream_url(
+        ...         "hdbcli", typeshed_dir=typeshed
         ...     )
         >>> stdlib_url
         'https://github.com/python/cpython'
         >>> requests_url
         'https://github.com/psf/requests'
-        >>> gdb_url is None
+        >>> hdbcli_url is None
         True
     """
     if package_name == "stdlib":
