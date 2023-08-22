@@ -138,6 +138,7 @@ uWSGI,types-uWSGI,https://github.com/unbit/uwsgi,COMPLETE,"Type hints for uWSGI'
 ujson,types-ujson,https://github.com/ultrajson/ultrajson,COMPLETE,-,49,UP_TO_DATE,UPLOADED,STRICT,40,0,6,0,3,0,3,3,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 untangle,types-untangle,https://github.com/stchris/untangle,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,19,0,21,0,0,0,2,2,5,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 urllib3,types-urllib3,https://github.com/urllib3/urllib3,PARTIAL,-,707,OBSOLETE,UPLOADED,NOT_STRICT,169,149,101,55,0,0,3,4,156,54,0,72,1,0,MISSING_STUBS_IGNORED,linux,28
+usersettings,types-usersettings,https://github.com/glvnst/usersettings,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,7,0,6,0,0,0,1,1,3,0,0,1,1,0,ERROR_ON_MISSING_STUB,linux,3
 vobject,types-vobject,https://github.com/eventable/vobject,COMPLETE,-,523,UP_TO_DATE,UPLOADED,NOT_STRICT,101,179,73,103,21,0,0,3,185,90,3,50,0,0,ERROR_ON_MISSING_STUB,linux,11
 waitress,types-waitress,https://github.com/Pylons/waitress,PARTIAL,-,632,UP_TO_DATE,UPLOADED,STRICT,210,0,211,0,9,0,35,8,243,19,1,40,0,0,MISSING_STUBS_IGNORED,linux;win32,34
 whatthepatch,types-whatthepatch,https://github.com/cscorley/whatthepatch,COMPLETE,-,101,UP_TO_DATE,UPLOADED,STRICT,32,0,25,0,0,0,0,0,54,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,0
