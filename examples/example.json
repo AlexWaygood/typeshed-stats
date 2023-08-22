@@ -3802,8 +3802,8 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3693,
-      "unannotated_parameters": 1256,
+      "annotated_parameters": 3701,
+      "unannotated_parameters": 1248,
       "annotated_returns": 1342,
       "unannotated_returns": 638,
       "explicit_Incomplete_parameters": 355,
