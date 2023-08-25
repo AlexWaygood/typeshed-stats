@@ -55,7 +55,7 @@ hdbcli,types-hdbcli,-,COMPLETE,-,130,UP_TO_DATE,UPLOADED,STRICT,79,0,63,0,6,4,12
 html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,PARTIAL,-,673,UP_TO_DATE,UPLOADED,NOT_STRICT,67,207,100,208,27,0,0,0,220,180,0,40,4,0,MISSING_STUBS_IGNORED,linux,0
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,253,UP_TO_DATE,UPLOADED,NOT_STRICT,46,122,39,25,37,0,0,0,86,57,0,33,1,0,ERROR_ON_MISSING_STUB,linux,1
 humanfriendly,types-humanfriendly,https://github.com/xolox/python-humanfriendly,COMPLETE,-,340,UP_TO_DATE,UPLOADED,NOT_STRICT,81,179,82,95,22,0,0,0,75,54,0,25,0,0,ERROR_ON_MISSING_STUB,linux,7
-ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,252,UP_TO_DATE,UPLOADED,STRICT,162,0,65,0,0,0,0,2,110,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
+ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,252,OUT_OF_DATE,UPLOADED,STRICT,162,0,65,0,0,0,0,2,110,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 influxdb-client,types-influxdb-client,https://github.com/influxdata/influxdb-client-python,COMPLETE,-,13372,UP_TO_DATE,UPLOADED,NOT_STRICT,2293,3783,1852,3435,1966,2,2,4,1201,2,1066,423,0,0,ERROR_ON_MISSING_STUB,linux,0
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,COMPLETE,-,122,UP_TO_DATE,UPLOADED,STRICT,57,0,58,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,19
 invoke,types-invoke,https://github.com/pyinvoke/invoke,PARTIAL,-,745,OBSOLETE,UPLOADED,NOT_STRICT,246,168,174,73,1,0,28,8,128,70,0,43,0,0,MISSING_STUBS_IGNORED,linux,2
