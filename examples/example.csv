@@ -142,6 +142,7 @@ usersettings,types-usersettings,https://github.com/glvnst/usersettings,COMPLETE,
 vobject,types-vobject,https://github.com/eventable/vobject,COMPLETE,-,523,UP_TO_DATE,UPLOADED,NOT_STRICT,101,179,73,103,21,0,0,3,185,90,3,50,0,0,ERROR_ON_MISSING_STUB,linux,11
 waitress,types-waitress,https://github.com/Pylons/waitress,PARTIAL,-,632,UP_TO_DATE,UPLOADED,STRICT,210,0,211,0,9,0,35,8,243,19,1,40,0,0,MISSING_STUBS_IGNORED,linux;win32,34
 whatthepatch,types-whatthepatch,https://github.com/cscorley/whatthepatch,COMPLETE,-,101,UP_TO_DATE,UPLOADED,STRICT,32,0,25,0,0,0,0,0,54,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,0
+workalendar,types-workalendar,https://github.com/workalendar/workalendar,COMPLETE,-,2918,UP_TO_DATE,UPLOADED,NOT_STRICT,44,399,22,355,23,4,0,0,1367,0,249,374,0,0,ERROR_ON_MISSING_STUB,linux,5
 xmltodict,types-xmltodict,https://github.com/martinblech/xmltodict,COMPLETE,-,35,UP_TO_DATE,UPLOADED,STRICT,20,0,3,0,0,0,7,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 zstd,types-zstd,https://github.com/sergey-dryabzhinsky/python-zstd,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,13,0,13,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 zxcvbn,types-zxcvbn,https://github.com/dwolfhub/zxcvbn-python,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT,63,0,39,0,0,0,0,0,76,1,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
