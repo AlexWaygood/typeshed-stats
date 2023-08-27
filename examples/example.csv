@@ -80,7 +80,7 @@ pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,PARTIAL,-,27,
 pexpect,types-pexpect,https://github.com/pexpect/pexpect,COMPLETE,-,539,UP_TO_DATE,UPLOADED,NOT_STRICT,169,144,148,50,51,0,0,0,150,0,83,20,0,0,ERROR_ON_MISSING_STUB,linux,0
 pika,types-pika-ts,https://github.com/pika/pika,COMPLETE,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2231,UP_TO_DATE,UPLOADED,NOT_STRICT,618,383,413,347,141,24,4,0,470,0,258,222,0,0,ERROR_ON_MISSING_STUB,linux,9
 playsound,types-playsound,https://github.com/TaylorSMarks/playsound,COMPLETE,-,5,UP_TO_DATE,UPLOADED,STRICT,2,0,1,0,0,0,0,0,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
-pluggy,types-pluggy,https://github.com/pytest-dev/pluggy,COMPLETE,-,201,UP_TO_DATE,UPLOADED,STRICT,87,0,60,0,1,0,1,5,39,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,1
+pluggy,types-pluggy,https://github.com/pytest-dev/pluggy,COMPLETE,-,201,OUT_OF_DATE,UPLOADED,STRICT,87,0,60,0,1,0,1,5,39,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,1
 polib,types-polib,https://github.com/izimobil/polib,COMPLETE,-,144,UP_TO_DATE,UPLOADED,STRICT,61,0,75,0,0,0,18,0,45,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,PARTIAL,Generated with aid from [mypy-protobuf](https://github.com/nipunn1313/mypy-protobuf) v3.4.0,4289,UP_TO_DATE,UPLOADED,NOT_STRICT,731,247,496,78,17,0,15,4,738,126,1,147,0,0,MISSING_STUBS_IGNORED,linux,14
 psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1559,UP_TO_DATE,UPLOADED,NOT_STRICT,122,310,191,355,28,0,0,47,610,203,99,90,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,14
