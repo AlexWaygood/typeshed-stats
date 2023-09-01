@@ -2179,6 +2179,40 @@
     }
   },
   {
+    "package_name": "libsass",
+    "stub_distribution_name": "types-libsass",
+    "upstream_url": "https://github.com/sass/libsass-python",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 221,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 2
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 109,
+      "unannotated_parameters": 0,
+      "annotated_returns": 41,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 2,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 36,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 17,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "mock",
     "stub_distribution_name": "types-mock",
     "upstream_url": "https://github.com/testing-cabal/mock",
@@ -4131,7 +4165,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54109,
+    "number_of_lines": 54133,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4141,13 +4175,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1041
+      "allowlist_length": 1025
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25433,
+      "annotated_parameters": 25438,
       "unannotated_parameters": 861,
-      "annotated_returns": 13945,
+      "annotated_returns": 13949,
       "unannotated_returns": 448,
       "explicit_Incomplete_parameters": 92,
       "explicit_Incomplete_returns": 18,
@@ -4156,7 +4190,7 @@
       "annotated_variables": 8445,
       "explicit_Any_variables": 538,
       "explicit_Incomplete_variables": 143,
-      "classdefs": 2339,
+      "classdefs": 2341,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }

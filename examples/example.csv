@@ -63,6 +63,7 @@ jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,COMPLETE,-,174,U
 jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,PARTIAL,-,393,OUT_OF_DATE,UPLOADED,NOT_STRICT,108,295,145,31,20,10,2,0,54,0,23,25,0,0,MISSING_STUBS_IGNORED,linux,0
 keyboard,types-keyboard,https://github.com/boppreh/keyboard,COMPLETE,-,246,UP_TO_DATE,UPLOADED,STRICT,130,0,76,0,0,0,0,0,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,5
 ldap3,types-ldap3,https://github.com/cannatag/ldap3,PARTIAL,-,2660,UP_TO_DATE,UPLOADED,NOT_STRICT,558,654,219,421,282,0,0,0,931,322,57,316,0,0,MISSING_STUBS_IGNORED,linux,0
+libsass,types-libsass,https://github.com/sass/libsass-python,COMPLETE,-,221,UP_TO_DATE,UPLOADED,STRICT,109,0,41,0,0,0,2,0,36,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,2
 mock,types-mock,https://github.com/testing-cabal/mock,COMPLETE,-,397,UP_TO_DATE,UPLOADED,STRICT,218,0,91,0,47,0,84,15,58,34,0,25,2,0,ERROR_ON_MISSING_STUB,linux,4
 mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,31,0,28,0,0,0,3,7,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,6
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1228,UP_TO_DATE,UPLOADED,NOT_STRICT,35,124,37,79,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
@@ -120,7 +121,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,5
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,337,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,54109,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25433,861,13945,448,92,18,2053,867,8445,538,143,2339,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1041
+stdlib,-,https://github.com/python/cpython,STDLIB,-,54133,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25438,861,13949,448,92,18,2053,867,8445,538,143,2341,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1025
 stdlib-list,types-stdlib-list,https://github.com/pypi/stdlib-list,COMPLETE,-,16,OBSOLETE,UPLOADED,STRICT,4,0,4,0,0,0,0,1,4,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OUT_OF_DATE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
