@@ -3998,7 +3998,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-13,000 (excluding blank lines)
+13,025 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4023,23 +4023,23 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,649
-    - Unannotated parameters: 513
+    - Annotated parameters: 3,663
+    - Unannotated parameters: 500
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 255
 - Returns:
-    - Annotated returns: 1,049
-    - Unannotated returns: 323
-    - Explicit `Any` returns: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
+    - Annotated returns: 1,062
+    - Unannotated returns: 311
+    - Explicit `Any` returns: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
 - Variables:
-    - Annotated variables: 4,044
+    - Annotated variables: 4,045
     - Explicit `Any` variables: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 418
 - Class definitions:
-    - Total class definitions: 597
+    - Total class definitions: 603
     - Class definitions with `Any`: 1
-    - Class definitions marked as at least partially `Incomplete`: 24
+    - Class definitions marked as at least partially `Incomplete`: 26
 
 ---
 
@@ -6551,6 +6551,63 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Class definitions:
     - Total class definitions: 51
     - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
+## Info on typeshed's stubs for `requests-oauthlib`
+
+### Upstream repo URL
+
+[https://github.com/requests/requests-oauthlib](https://github.com/requests/requests-oauthlib)
+
+### Stub distribution name
+
+`types-requests-oauthlib`
+
+### Number of lines
+
+265 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `requests-oauthlib` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `requests-oauthlib`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 116
+    - Unannotated parameters: 17
+    - Explicit `Any` parameters: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 51
+- Returns:
+    - Annotated returns: 43
+    - Unannotated returns: 4
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
+- Variables:
+    - Annotated variables: 26
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 8
+- Class definitions:
+    - Total class definitions: 13
+    - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
