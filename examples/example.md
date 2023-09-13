@@ -6386,6 +6386,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `redis`
 
+### Extra description
+
+Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.
+
 ### Upstream repo URL
 
 [https://github.com/redis/redis-py](https://github.com/redis/redis-py)
@@ -6398,9 +6402,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 5,820 (excluding blank lines)
 
-### Package status: *obsolete*
+### Package status: *out of date*
 
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7019,7 +7023,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,343 (excluding blank lines)
+54,341 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7044,12 +7048,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,540
+    - Annotated parameters: 25,537
     - Unannotated parameters: 861
     - Explicit `Any` parameters: 2,067
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
 - Returns:
-    - Annotated returns: 13,997
+    - Annotated returns: 13,996
     - Unannotated returns: 448
     - Explicit `Any` returns: 869
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
@@ -7058,7 +7062,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 538
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 143
 - Class definitions:
-    - Total class definitions: 2,344
+    - Total class definitions: 2,343
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 

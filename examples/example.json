@@ -3823,9 +3823,9 @@
     "stub_distribution_name": "types-redis",
     "upstream_url": "https://github.com/redis/redis-py",
     "completeness_level": "PARTIAL",
-    "extra_description": null,
+    "extra_description": "Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",
     "number_of_lines": 5820,
-    "package_status": "OBSOLETE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -4199,7 +4199,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54343,
+    "number_of_lines": 54341,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4213,9 +4213,9 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25540,
+      "annotated_parameters": 25537,
       "unannotated_parameters": 861,
-      "annotated_returns": 13997,
+      "annotated_returns": 13996,
       "unannotated_returns": 448,
       "explicit_Incomplete_parameters": 92,
       "explicit_Incomplete_returns": 18,
@@ -4224,7 +4224,7 @@
       "annotated_variables": 8446,
       "explicit_Any_variables": 538,
       "explicit_Incomplete_variables": 143,
-      "classdefs": 2344,
+      "classdefs": 2343,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }

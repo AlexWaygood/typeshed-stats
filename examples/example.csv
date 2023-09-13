@@ -111,7 +111,7 @@ pytz,types-pytz,https://github.com/stub42/pytz,COMPLETE,-,128,OUT_OF_DATE,UPLOAD
 pyvmomi,types-pyvmomi,https://github.com/vmware/pyvmomi,PARTIAL,-,177,OBSOLETE,UPLOADED,STRICT,50,0,35,0,3,16,2,0,57,7,0,44,0,0,MISSING_STUBS_IGNORED,linux,8
 pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,34564,UP_TO_DATE,UPLOADED,NOT_STRICT,3649,3725,3835,2035,427,292,1,1,25048,0,2833,726,0,0,ERROR_ON_MISSING_STUB,win32,49
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,467,UP_TO_DATE,UPLOADED,NOT_STRICT,67,184,97,65,18,3,0,1,166,0,101,40,0,0,ERROR_ON_MISSING_STUB,linux,6
-redis,types-redis,https://github.com/redis/redis-py,PARTIAL,-,5820,OBSOLETE,UPLOADED,NOT_STRICT,3701,1248,1342,638,355,9,68,327,632,211,34,214,0,2,MISSING_STUBS_IGNORED,linux,67
+redis,types-redis,https://github.com/redis/redis-py,PARTIAL,"Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",5820,OUT_OF_DATE,UPLOADED,NOT_STRICT,3701,1248,1342,638,355,9,68,327,632,211,34,214,0,2,MISSING_STUBS_IGNORED,linux,67
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,748,UP_TO_DATE,UPLOADED,STRICT,429,0,114,0,0,0,25,16,72,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,13
 requests,types-requests,https://github.com/psf/requests,COMPLETE,-,990,UP_TO_DATE,UPLOADED,NOT_STRICT,354,152,112,85,19,0,9,5,114,39,0,51,1,0,ERROR_ON_MISSING_STUB,linux,6
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,265,UP_TO_DATE,UPLOADED,NOT_STRICT,116,17,43,4,51,2,1,0,26,1,8,13,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -122,7 +122,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,5
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,337,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,54343,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25540,861,13997,448,92,18,2067,869,8446,538,143,2344,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,983
+stdlib,-,https://github.com/python/cpython,STDLIB,-,54341,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25537,861,13996,448,92,18,2067,869,8446,538,143,2343,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,983
 stdlib-list,types-stdlib-list,https://github.com/pypi/stdlib-list,COMPLETE,-,16,OBSOLETE,UPLOADED,STRICT,4,0,4,0,0,0,0,1,4,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OUT_OF_DATE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
