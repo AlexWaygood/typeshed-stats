@@ -4918,7 +4918,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,567 (excluding blank lines)
+1,702 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4928,13 +4928,13 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 5 unique allowlist entries for `psycopg2` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `psycopg2` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4943,21 +4943,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `psycopg2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 171
-    - Unannotated parameters: 328
-    - Explicit `Any` parameters: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 52
+    - Annotated parameters: 323
+    - Unannotated parameters: 150
+    - Explicit `Any` parameters: 11
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 34
 - Returns:
-    - Annotated returns: 189
-    - Unannotated returns: 169
-    - Explicit `Any` returns: 7
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Annotated returns: 310
+    - Unannotated returns: 74
+    - Explicit `Any` returns: 19
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
-    - Annotated variables: 532
-    - Explicit `Any` variables: 168
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Annotated variables: 517
+    - Explicit `Any` variables: 61
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
-    - Total class definitions: 335
+    - Total class definitions: 332
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7050,7 +7050,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 25,537
     - Unannotated parameters: 861
-    - Explicit `Any` parameters: 2,067
+    - Explicit `Any` parameters: 2,068
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
 - Returns:
     - Annotated returns: 13,996
@@ -7059,7 +7059,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
     - Annotated variables: 8,446
-    - Explicit `Any` variables: 538
+    - Explicit `Any` variables: 539
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 143
 - Class definitions:
     - Total class definitions: 2,343
