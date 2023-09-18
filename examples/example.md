@@ -3941,7 +3941,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,413 (excluding blank lines)
+1,423 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3966,13 +3966,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `oauthlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 333
-    - Unannotated parameters: 482
+    - Annotated parameters: 405
+    - Unannotated parameters: 410
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 181
 - Returns:
-    - Annotated returns: 155
-    - Unannotated returns: 195
+    - Annotated returns: 160
+    - Unannotated returns: 190
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -7023,7 +7023,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,346 (excluding blank lines)
+54,352 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7039,7 +7039,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 983 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 975 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -7048,21 +7048,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,537
+    - Annotated parameters: 25,539
     - Unannotated parameters: 861
     - Explicit `Any` parameters: 2,068
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
 - Returns:
-    - Annotated returns: 13,996
+    - Annotated returns: 13,999
     - Unannotated returns: 448
     - Explicit `Any` returns: 869
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,446
+    - Annotated variables: 8,447
     - Explicit `Any` variables: 539
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 143
 - Class definitions:
-    - Total class definitions: 2,344
+    - Total class definitions: 2,345
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 
