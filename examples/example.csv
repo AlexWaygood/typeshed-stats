@@ -67,7 +67,7 @@ libsass,types-libsass,https://github.com/sass/libsass-python,COMPLETE,-,221,UP_T
 mock,types-mock,https://github.com/testing-cabal/mock,COMPLETE,-,397,UP_TO_DATE,UPLOADED,STRICT,218,0,91,0,45,0,86,15,58,34,0,25,2,0,ERROR_ON_MISSING_STUB,linux,4
 mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,31,0,28,0,0,0,3,7,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,6
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1228,UP_TO_DATE,UPLOADED,NOT_STRICT,35,124,37,79,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
-netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,659,OUT_OF_DATE,UPLOADED,STRICT,292,0,310,0,5,0,1,1,103,0,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
+netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,659,UP_TO_DATE,UPLOADED,STRICT,292,0,310,0,5,0,1,1,103,0,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1423,UP_TO_DATE,UPLOADED,NOT_STRICT,405,410,160,190,181,0,0,0,318,207,0,106,2,0,MISSING_STUBS_IGNORED,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,13025,UP_TO_DATE,UPLOADED,NOT_STRICT,3663,500,1062,311,255,21,5,5,4045,4,418,603,1,26,ERROR_ON_MISSING_STUB,linux,174
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,PARTIAL,-,331,UP_TO_DATE,UPLOADED,STRICT,105,0,113,0,1,0,21,0,56,4,0,26,0,0,MISSING_STUBS_IGNORED,linux,4
