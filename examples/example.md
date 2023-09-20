@@ -4804,7 +4804,7 @@ Generated with aid from [mypy-protobuf](https://github.com/nipunn1313/mypy-proto
 
 ### Number of lines
 
-4,289 (excluding blank lines)
+4,294 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4829,17 +4829,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 731
+    - Annotated parameters: 736
     - Unannotated parameters: 247
-    - Explicit `Any` parameters: 15
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
+    - Explicit `Any` parameters: 17
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
 - Returns:
-    - Annotated returns: 496
+    - Annotated returns: 498
     - Unannotated returns: 78
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 738
+    - Annotated variables: 739
     - Explicit `Any` variables: 126
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
@@ -7023,7 +7023,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,352 (excluding blank lines)
+54,353 (excluding blank lines)
 
 ### Package status: *stdlib*
 
