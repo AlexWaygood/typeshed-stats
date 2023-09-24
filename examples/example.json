@@ -4209,7 +4209,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 967
+      "allowlist_length": 964
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
