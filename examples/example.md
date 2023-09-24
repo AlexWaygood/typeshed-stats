@@ -580,7 +580,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,290 (excluding blank lines)
+1,298 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -605,18 +605,18 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `PyYAML`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 477
-    - Unannotated parameters: 321
+    - Annotated parameters: 516
+    - Unannotated parameters: 282
     - Explicit `Any` parameters: 44
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 12
 - Returns:
-    - Annotated returns: 164
-    - Unannotated returns: 230
+    - Annotated returns: 222
+    - Unannotated returns: 172
     - Explicit `Any` returns: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 220
-    - Explicit `Any` variables: 189
+    - Explicit `Any` variables: 160
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
     - Total class definitions: 91
