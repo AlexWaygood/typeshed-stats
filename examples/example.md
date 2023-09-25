@@ -226,6 +226,63 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
+## Info on typeshed's stubs for `Flask-SocketIO`
+
+### Upstream repo URL
+
+[https://github.com/miguelgrinberg/flask-socketio](https://github.com/miguelgrinberg/flask-socketio)
+
+### Stub distribution name
+
+`types-Flask-SocketIO`
+
+### Number of lines
+
+234 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 3 unique allowlist entries for `Flask-SocketIO` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `Flask-SocketIO`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 140
+    - Unannotated parameters: 34
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
+- Returns:
+    - Annotated returns: 37
+    - Unannotated returns: 15
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+- Variables:
+    - Annotated variables: 3
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 8
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `JACK-Client`
 
 ### Upstream repo URL
@@ -6514,7 +6571,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-993 (excluding blank lines)
+996 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7023,7 +7080,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,419 (excluding blank lines)
+54,420 (excluding blank lines)
 
 ### Package status: *stdlib*
 
