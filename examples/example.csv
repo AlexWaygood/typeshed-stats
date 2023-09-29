@@ -13,6 +13,7 @@ PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,180,
 PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,COMPLETE,-,1298,UP_TO_DATE,UPLOADED,NOT_STRICT,516,282,222,172,12,0,44,12,220,160,2,91,0,0,ERROR_ON_MISSING_STUB,linux,3
 Pygments,types-Pygments,https://github.com/pygments/pygments,PARTIAL,-,687,UP_TO_DATE,UPLOADED,NOT_STRICT,108,158,96,80,17,2,7,2,314,193,0,62,1,0,MISSING_STUBS_IGNORED,linux,4
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,2
+WTForms,types-WTForms,https://github.com/wtforms/wtforms,COMPLETE,-,1044,UP_TO_DATE,UPLOADED,STRICT,512,0,182,0,0,0,69,15,139,28,0,96,0,0,ERROR_ON_MISSING_STUB,linux,21
 WebOb,types-WebOb,https://github.com/Pylons/webob,COMPLETE,-,1553,UP_TO_DATE,UPLOADED,NOT_STRICT,629,92,517,54,26,0,78,4,245,11,33,145,0,0,ERROR_ON_MISSING_STUB,linux,97
 aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,COMPLETE,-,680,UP_TO_DATE,UPLOADED,STRICT,389,0,152,0,26,7,34,1,6,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,90
 aws-xray-sdk,types-aws-xray-sdk,https://github.com/aws/aws-xray-sdk-python,PARTIAL,-,722,UP_TO_DATE,UPLOADED,NOT_STRICT,139,154,182,92,21,0,12,3,141,46,0,45,0,0,MISSING_STUBS_IGNORED,linux,4
@@ -23,7 +24,7 @@ boto,types-boto,https://github.com/boto/boto,PARTIAL,-,1916,UP_TO_DATE,UPLOADED,
 braintree,types-braintree,https://github.com/braintree/braintree_python,PARTIAL,-,2859,UP_TO_DATE,UPLOADED,NOT_STRICT,80,394,113,304,75,0,0,2,1301,432,0,234,0,0,MISSING_STUBS_IGNORED,linux,1
 cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,87,0,48,0,0,0,4,0,1,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,20
 caldav,types-caldav,https://github.com/python-caldav/caldav,PARTIAL,-,530,UP_TO_DATE,UPLOADED,NOT_STRICT,219,30,117,8,26,5,1,0,94,0,6,86,0,0,MISSING_STUBS_IGNORED,linux,9
-cffi,types-cffi,https://foss.heptapod.net/pypy/cffi,COMPLETE,-,825,OUT_OF_DATE,UPLOADED,NOT_STRICT,303,245,194,130,22,2,32,8,252,0,115,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
+cffi,types-cffi,https://foss.heptapod.net/pypy/cffi,COMPLETE,-,825,UP_TO_DATE,UPLOADED,NOT_STRICT,303,245,194,130,22,2,32,8,252,0,115,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
 chevron,types-chevron,https://github.com/noahmorrison/chevron,COMPLETE,-,37,UP_TO_DATE,UPLOADED,STRICT,29,0,9,0,0,0,2,0,3,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-default-group,types-click-default-group,https://github.com/click-contrib/click-default-group,COMPLETE,-,37,UP_TO_DATE,UPLOADED,NOT_STRICT,16,4,10,0,0,1,0,0,7,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-spinner,types-click-spinner,https://github.com/click-contrib/click-spinner,COMPLETE,-,30,UP_TO_DATE,UPLOADED,STRICT,12,0,11,0,0,0,0,1,9,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -95,7 +96,7 @@ pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,COMPLETE,-,182
 pycurl,types-pycurl,https://github.com/pycurl/pycurl,COMPLETE,-,674,UP_TO_DATE,UPLOADED,STRICT,22,0,32,0,7,10,0,0,629,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,COMPLETE,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,PARTIAL,-,430,UP_TO_DATE,UPLOADED,NOT_STRICT,265,69,206,2,0,0,4,3,75,33,0,74,0,0,MISSING_STUBS_IGNORED,linux,24
-pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,COMPLETE,-,814,OUT_OF_DATE,UPLOADED,STRICT,341,0,179,0,40,2,1,2,211,0,34,30,0,0,ERROR_ON_MISSING_STUB,linux,39
+pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,COMPLETE,-,687,UP_TO_DATE,UPLOADED,STRICT,264,0,153,0,7,0,1,2,192,0,15,27,0,0,ERROR_ON_MISSING_STUB,linux,38
 pynput,types-pynput,https://github.com/moses-palmer/pynput,COMPLETE,-,324,UP_TO_DATE,UPLOADED,STRICT,81,0,71,0,0,0,11,0,155,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,13
 pyserial,types-pyserial,https://github.com/pyserial/pyserial,COMPLETE,-,1079,UP_TO_DATE,UPLOADED,STRICT,223,0,269,0,0,0,2,4,466,7,65,66,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,59
 pysftp,types-pysftp,https://bitbucket.org/dundeemt/pysftp,COMPLETE,-,166,UP_TO_DATE,UPLOADED,STRICT,109,0,70,0,0,0,0,0,6,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -123,7 +124,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,5
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,337,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,54492,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25652,783,14106,372,92,18,2068,877,8476,539,143,2345,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,920
+stdlib,-,https://github.com/python/cpython,STDLIB,-,54500,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25652,783,14106,372,92,18,2068,877,8477,539,143,2345,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,919
 stdlib-list,types-stdlib-list,https://github.com/pypi/stdlib-list,COMPLETE,-,16,OBSOLETE,UPLOADED,STRICT,4,0,4,0,0,0,0,1,4,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OUT_OF_DATE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0

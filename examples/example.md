@@ -796,6 +796,63 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `WTForms`
+
+### Upstream repo URL
+
+[https://github.com/wtforms/wtforms](https://github.com/wtforms/wtforms)
+
+### Stub distribution name
+
+`types-WTForms`
+
+### Number of lines
+
+1,044 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 21 unique allowlist entries for `WTForms` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `WTForms`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 512
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 69
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 182
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 15
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 139
+    - Explicit `Any` variables: 28
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 96
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `WebOb`
 
 ### Upstream repo URL
@@ -1380,9 +1437,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 825 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5484,11 +5541,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-814 (excluding blank lines)
+687 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5500,7 +5557,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 39 unique allowlist entries for `pyinstaller` when running stubtest in CI.
+Typeshed currently has 38 unique allowlist entries for `pyinstaller` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5509,21 +5566,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `pyinstaller`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 341
+    - Annotated parameters: 264
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 40
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
 - Returns:
-    - Annotated returns: 179
+    - Annotated returns: 153
     - Unannotated returns: 0
     - Explicit `Any` returns: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 211
+    - Annotated variables: 192
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 34
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 15
 - Class definitions:
-    - Total class definitions: 30
+    - Total class definitions: 27
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7080,7 +7137,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,492 (excluding blank lines)
+54,500 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7096,7 +7153,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 920 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 919 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -7115,7 +7172,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 877
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,476
+    - Annotated variables: 8,477
     - Explicit `Any` variables: 539
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 143
 - Class definitions:
