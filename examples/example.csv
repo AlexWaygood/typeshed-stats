@@ -23,7 +23,7 @@ boto,types-boto,https://github.com/boto/boto,PARTIAL,-,1916,UP_TO_DATE,UPLOADED,
 braintree,types-braintree,https://github.com/braintree/braintree_python,PARTIAL,-,2859,UP_TO_DATE,UPLOADED,NOT_STRICT,80,394,113,304,75,0,0,2,1301,432,0,234,0,0,MISSING_STUBS_IGNORED,linux,1
 cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,87,0,48,0,0,0,4,0,1,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,20
 caldav,types-caldav,https://github.com/python-caldav/caldav,PARTIAL,-,530,UP_TO_DATE,UPLOADED,NOT_STRICT,219,30,117,8,26,5,1,0,94,0,6,86,0,0,MISSING_STUBS_IGNORED,linux,9
-cffi,types-cffi,https://foss.heptapod.net/pypy/cffi,COMPLETE,-,825,UP_TO_DATE,UPLOADED,NOT_STRICT,303,245,194,130,22,2,32,8,252,0,115,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
+cffi,types-cffi,https://foss.heptapod.net/pypy/cffi,COMPLETE,-,825,OUT_OF_DATE,UPLOADED,NOT_STRICT,303,245,194,130,22,2,32,8,252,0,115,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
 chevron,types-chevron,https://github.com/noahmorrison/chevron,COMPLETE,-,37,UP_TO_DATE,UPLOADED,STRICT,29,0,9,0,0,0,2,0,3,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-default-group,types-click-default-group,https://github.com/click-contrib/click-default-group,COMPLETE,-,37,UP_TO_DATE,UPLOADED,NOT_STRICT,16,4,10,0,0,1,0,0,7,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-spinner,types-click-spinner,https://github.com/click-contrib/click-spinner,COMPLETE,-,30,UP_TO_DATE,UPLOADED,STRICT,12,0,11,0,0,0,0,1,9,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -123,7 +123,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,5
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,337,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,54489,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25651,783,14106,372,92,18,2068,878,8476,539,143,2345,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,921
+stdlib,-,https://github.com/python/cpython,STDLIB,-,54492,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25652,783,14106,372,92,18,2068,877,8476,539,143,2345,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,920
 stdlib-list,types-stdlib-list,https://github.com/pypi/stdlib-list,COMPLETE,-,16,OBSOLETE,UPLOADED,STRICT,4,0,4,0,0,0,0,1,4,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OUT_OF_DATE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
