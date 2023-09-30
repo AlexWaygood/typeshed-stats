@@ -1195,40 +1195,6 @@
     }
   },
   {
-    "package_name": "dj-database-url",
-    "stub_distribution_name": "types-dj-database-url",
-    "upstream_url": "https://github.com/jazzband/dj-database-url",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 37,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 1
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 13,
-      "unannotated_parameters": 0,
-      "annotated_returns": 2,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 2,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 15,
-      "explicit_Any_variables": 2,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 1,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "dockerfile-parse",
     "stub_distribution_name": "types-dockerfile-parse",
     "upstream_url": "https://github.com/containerbuildsystem/dockerfile-parse",
@@ -4267,7 +4233,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54500,
+    "number_of_lines": 54504,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4277,13 +4243,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 919
+      "allowlist_length": 917
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25652,
+      "annotated_parameters": 25655,
       "unannotated_parameters": 783,
-      "annotated_returns": 14106,
+      "annotated_returns": 14108,
       "unannotated_returns": 372,
       "explicit_Incomplete_parameters": 92,
       "explicit_Incomplete_returns": 18,

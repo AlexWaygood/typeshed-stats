@@ -1993,63 +1993,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
-## Info on typeshed's stubs for `dj-database-url`
-
-### Upstream repo URL
-
-[https://github.com/jazzband/dj-database-url](https://github.com/jazzband/dj-database-url)
-
-### Stub distribution name
-
-`types-dj-database-url`
-
-### Number of lines
-
-37 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 1 unique allowlist entry for `dj-database-url` when running stubtest in CI.
-
-### Pyright settings in CI: *strict*
-
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
-
-### Statistics on the annotations in typeshed's stubs for `dj-database-url`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 13
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
-- Returns:
-    - Annotated returns: 2
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 15
-    - Explicit `Any` variables: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 1
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
 ## Info on typeshed's stubs for `dockerfile-parse`
 
 ### Upstream repo URL
@@ -7137,7 +7080,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,500 (excluding blank lines)
+54,504 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7153,7 +7096,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 919 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 917 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -7162,12 +7105,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,652
+    - Annotated parameters: 25,655
     - Unannotated parameters: 783
     - Explicit `Any` parameters: 2,068
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
 - Returns:
-    - Annotated returns: 14,106
+    - Annotated returns: 14,108
     - Unannotated returns: 372
     - Explicit `Any` returns: 877
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18

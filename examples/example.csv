@@ -34,7 +34,6 @@ console-menu,types-console-menu,https://github.com/aegirhall/console-menu,COMPLE
 croniter,types-croniter,https://github.com/kiorky/croniter,COMPLETE,-,147,UP_TO_DATE,UPLOADED,STRICT,64,0,23,0,0,0,0,8,29,0,0,8,1,0,ERROR_ON_MISSING_STUB,linux,0
 dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,COMPLETE,-,472,UP_TO_DATE,UPLOADED,NOT_STRICT,126,127,75,67,21,1,4,6,135,76,0,34,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,https://github.com/micheles/decorator,COMPLETE,-,66,UP_TO_DATE,UPLOADED,STRICT,36,0,13,0,0,0,19,6,15,3,0,2,0,0,ERROR_ON_MISSING_STUB,linux,9
-dj-database-url,types-dj-database-url,https://github.com/jazzband/dj-database-url,COMPLETE,-,37,OBSOLETE,UPLOADED,STRICT,13,0,2,0,2,0,0,0,15,2,0,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,COMPLETE,-,114,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 docopt,types-docopt,https://github.com/docopt/docopt,COMPLETE,-,14,UP_TO_DATE,UPLOADED,STRICT,7,0,3,0,1,0,0,1,2,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 docutils,types-docutils,https://sourceforge.net/p/docutils/code,PARTIAL,-,516,UP_TO_DATE,UPLOADED,NOT_STRICT,222,62,154,10,30,45,6,6,81,11,0,50,0,0,MISSING_STUBS_IGNORED,linux,20
@@ -124,7 +123,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,5
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,337,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,54500,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25652,783,14106,372,92,18,2068,877,8477,539,143,2345,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,919
+stdlib,-,https://github.com/python/cpython,STDLIB,-,54504,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25655,783,14108,372,92,18,2068,877,8477,539,143,2345,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,917
 stdlib-list,types-stdlib-list,https://github.com/pypi/stdlib-list,COMPLETE,-,16,OBSOLETE,UPLOADED,STRICT,4,0,4,0,0,0,0,1,4,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OUT_OF_DATE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
