@@ -34,6 +34,9 @@ from packaging.version import Version
 from pathspec import PathSpec
 from pathspec.patterns.gitwildmatch import GitWildMatchPattern
 
+if sys.version_info < (3, 10):  # noqa: UP036
+    raise ImportError("Python 3.10+ is required!")
+
 if sys.version_info >= (3, 11):
     import tomllib  # pragma: >=3.11 cover
 else:
