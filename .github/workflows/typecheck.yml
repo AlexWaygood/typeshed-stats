@@ -35,7 +35,7 @@ jobs:
     name: Check code with mypy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
           cache: "pip"
@@ -50,7 +50,7 @@ jobs:
     name: Run pyright on the codebase
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
           cache: "pip"
