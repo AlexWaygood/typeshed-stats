@@ -47,7 +47,7 @@ flake8-docstrings,types-flake8-docstrings,https://github.com/pycqa/flake8-docstr
 flake8-plugin-utils,types-flake8-plugin-utils,https://github.com/afonasev/flake8-plugin-utils,PARTIAL,-,61,OBSOLETE,UPLOADED,STRICT,30,0,17,0,0,0,6,0,9,0,0,3,0,0,MISSING_STUBS_IGNORED,linux,6
 flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/flake8-rst-docstrings,PARTIAL,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simplify,PARTIAL,-,8,UP_TO_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
-flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,PARTIAL,-,15,OUT_OF_DATE,UPLOADED,STRICT,4,0,5,0,0,1,1,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
+flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,PARTIAL,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,5,0,0,1,1,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 fpdf2,types-fpdf2,https://github.com/PyFPDF/fpdf2,COMPLETE,-,2393,OUT_OF_DATE,UPLOADED,NOT_STRICT,723,527,453,189,71,4,7,4,705,14,152,171,1,0,ERROR_ON_MISSING_STUB,linux,8
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",733,NOT_ON_PYPI,UPLOADED,STRICT,233,0,257,0,0,0,0,0,290,0,0,87,0,0,SKIPPED,None,0
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1422,UP_TO_DATE,UPLOADED,NOT_STRICT,482,368,235,203,123,0,7,0,193,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
@@ -57,7 +57,7 @@ html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,PARTIAL,-,67
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,253,UP_TO_DATE,UPLOADED,NOT_STRICT,46,122,39,25,37,0,0,0,86,57,0,33,1,0,ERROR_ON_MISSING_STUB,linux,1
 humanfriendly,types-humanfriendly,https://github.com/xolox/python-humanfriendly,COMPLETE,-,340,UP_TO_DATE,UPLOADED,NOT_STRICT,81,179,82,95,22,0,0,0,75,54,0,25,0,0,ERROR_ON_MISSING_STUB,linux,7
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,338,UP_TO_DATE,UPLOADED,STRICT,162,0,65,0,0,0,0,2,195,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
-influxdb-client,types-influxdb-client,https://github.com/influxdata/influxdb-client-python,COMPLETE,-,13372,OUT_OF_DATE,UPLOADED,NOT_STRICT,2293,3783,1852,3435,1966,2,2,4,1201,2,1066,423,0,0,ERROR_ON_MISSING_STUB,linux,0
+influxdb-client,types-influxdb-client,https://github.com/influxdata/influxdb-client-python,COMPLETE,-,13372,UP_TO_DATE,UPLOADED,NOT_STRICT,2293,3783,1852,3435,1966,2,2,4,1201,2,1066,423,0,0,ERROR_ON_MISSING_STUB,linux,0
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,COMPLETE,-,122,UP_TO_DATE,UPLOADED,STRICT,57,0,58,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,19
 invoke,types-invoke,https://github.com/pyinvoke/invoke,PARTIAL,-,745,OBSOLETE,UPLOADED,NOT_STRICT,246,168,174,73,1,0,28,8,128,70,0,43,0,0,MISSING_STUBS_IGNORED,linux,2
 jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,COMPLETE,-,174,UP_TO_DATE,UPLOADED,NOT_STRICT,81,52,50,24,0,1,27,27,45,6,0,22,0,0,ERROR_ON_MISSING_STUB,linux,0
