@@ -87,7 +87,7 @@ misc-lint = [
     "black==23.9.1",
     "blacken-docs==1.16.0",
     "pre-commit-hooks==4.4.0",
-    "ruff==0.0.291",
+    "ruff==0.0.292",
 ]
 dev = ["typeshed-stats[rich,docs,typecheck,pytest,misc-lint]"]
 
