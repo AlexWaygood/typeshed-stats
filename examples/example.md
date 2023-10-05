@@ -3304,6 +3304,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `influxdb-client`
 
+### Extra description
+
+Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you need to install `types-influxdb-client` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-influxdb-client<1.37.0.1`.
+
 ### Upstream repo URL
 
 [https://github.com/influxdata/influxdb-client-python](https://github.com/influxdata/influxdb-client-python)
@@ -6617,6 +6621,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `requests`
+
+### Extra description
+
+Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.
 
 ### Upstream repo URL
 
