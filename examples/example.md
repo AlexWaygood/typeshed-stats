@@ -5504,7 +5504,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 38 unique allowlist entries for `pyinstaller` when running stubtest in CI.
+Typeshed currently has 50 unique allowlist entries for `pyinstaller` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -5545,7 +5545,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-302 (excluding blank lines)
+374 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5570,19 +5570,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pyjks`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 101
-    - Unannotated parameters: 21
-    - Explicit `Any` parameters: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
+    - Annotated parameters: 132
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 56
-    - Unannotated returns: 9
+    - Annotated returns: 59
+    - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 56
+    - Annotated variables: 73
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 17
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 31
     - Class definitions with `Any`: 0
