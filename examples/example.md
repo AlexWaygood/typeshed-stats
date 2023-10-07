@@ -5563,9 +5563,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 55 unique allowlist entries for `pyjks` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `pyjks`
 
@@ -7145,7 +7145,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,592 (excluding blank lines)
+54,594 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7161,7 +7161,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 890 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 889 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -7175,7 +7175,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 2,066
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
 - Returns:
-    - Annotated returns: 14,120
+    - Annotated returns: 14,121
     - Unannotated returns: 372
     - Explicit `Any` returns: 875
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
