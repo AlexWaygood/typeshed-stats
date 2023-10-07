@@ -21,7 +21,7 @@ jobs:
   regen_examples_and_docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: git config
         run: |
           git config --global user.name statsabot

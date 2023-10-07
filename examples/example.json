@@ -136,6 +136,40 @@
     }
   },
   {
+    "package_name": "Flask-SocketIO",
+    "stub_distribution_name": "types-Flask-SocketIO",
+    "upstream_url": "https://github.com/miguelgrinberg/flask-socketio",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 234,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 3
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 140,
+      "unannotated_parameters": 34,
+      "annotated_returns": 37,
+      "unannotated_returns": 15,
+      "explicit_Incomplete_parameters": 19,
+      "explicit_Incomplete_returns": 1,
+      "explicit_Any_parameters": 2,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 3,
+      "explicit_Any_variables": 1,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 8,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "JACK-Client",
     "stub_distribution_name": "types-JACK-Client",
     "upstream_url": "https://github.com/spatialaudio/jackclient-python",
@@ -313,7 +347,7 @@
     "upstream_url": "https://github.com/asweigart/pyscreeze",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 184,
+    "number_of_lines": 180,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -347,7 +381,7 @@
     "upstream_url": "https://github.com/yaml/pyyaml",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1290,
+    "number_of_lines": 1298,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -359,16 +393,16 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 477,
-      "unannotated_parameters": 321,
-      "annotated_returns": 164,
-      "unannotated_returns": 230,
+      "annotated_parameters": 516,
+      "unannotated_parameters": 282,
+      "annotated_returns": 222,
+      "unannotated_returns": 172,
       "explicit_Incomplete_parameters": 12,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 44,
       "explicit_Any_returns": 12,
       "annotated_variables": 220,
-      "explicit_Any_variables": 189,
+      "explicit_Any_variables": 160,
       "explicit_Incomplete_variables": 2,
       "classdefs": 91,
       "classdefs_with_Any": 0,
@@ -439,6 +473,40 @@
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "WTForms",
+    "stub_distribution_name": "types-WTForms",
+    "upstream_url": "https://github.com/wtforms/wtforms",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 1044,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 21
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 512,
+      "unannotated_parameters": 0,
+      "annotated_returns": 182,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 69,
+      "explicit_Any_returns": 15,
+      "annotated_variables": 139,
+      "explicit_Any_variables": 28,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 96,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -586,7 +654,7 @@
     "upstream_url": "https://github.com/mozilla/bleach",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 187,
+    "number_of_lines": 190,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -599,16 +667,16 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 64,
-      "unannotated_parameters": 21,
-      "annotated_returns": 26,
+      "unannotated_parameters": 22,
+      "annotated_returns": 28,
       "unannotated_returns": 16,
       "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 7,
+      "explicit_Incomplete_returns": 8,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 45,
+      "annotated_variables": 46,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
+      "explicit_Incomplete_variables": 1,
       "classdefs": 13,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
@@ -1122,40 +1190,6 @@
       "explicit_Any_variables": 3,
       "explicit_Incomplete_variables": 0,
       "classdefs": 2,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
-    "package_name": "dj-database-url",
-    "stub_distribution_name": "types-dj-database-url",
-    "upstream_url": "https://github.com/jazzband/dj-database-url",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 37,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 1
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 13,
-      "unannotated_parameters": 0,
-      "annotated_returns": 2,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 2,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 15,
-      "explicit_Any_variables": 2,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 1,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -1742,7 +1776,7 @@
     "upstream_url": "https://github.com/python-greenlet/greenlet",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 76,
+    "number_of_lines": 79,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1762,10 +1796,10 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 4,
       "explicit_Any_returns": 4,
-      "annotated_variables": 9,
+      "annotated_variables": 11,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 4,
+      "classdefs": 5,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -1945,7 +1979,7 @@
     "stub_distribution_name": "types-influxdb-client",
     "upstream_url": "https://github.com/influxdata/influxdb-client-python",
     "completeness_level": "COMPLETE",
-    "extra_description": null,
+    "extra_description": "Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you need to install `types-influxdb-client` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-influxdb-client<1.37.0.1`.",
     "number_of_lines": 13372,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
@@ -2082,8 +2116,8 @@
     "upstream_url": "https://github.com/python-jsonschema/jsonschema",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 393,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 416,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -2094,18 +2128,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 108,
+      "annotated_parameters": 115,
       "unannotated_parameters": 295,
-      "annotated_returns": 145,
+      "annotated_returns": 147,
       "unannotated_returns": 31,
-      "explicit_Incomplete_parameters": 20,
+      "explicit_Incomplete_parameters": 21,
       "explicit_Incomplete_returns": 10,
-      "explicit_Any_parameters": 2,
+      "explicit_Any_parameters": 4,
       "explicit_Any_returns": 0,
-      "annotated_variables": 54,
+      "annotated_variables": 52,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 23,
-      "classdefs": 25,
+      "explicit_Incomplete_variables": 20,
+      "classdefs": 26,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -2354,7 +2388,7 @@
     "upstream_url": "https://github.com/oauthlib/oauthlib",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1413,
+    "number_of_lines": 1423,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2366,10 +2400,10 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 333,
-      "unannotated_parameters": 482,
-      "annotated_returns": 155,
-      "unannotated_returns": 195,
+      "annotated_parameters": 405,
+      "unannotated_parameters": 410,
+      "annotated_returns": 160,
+      "unannotated_returns": 190,
       "explicit_Incomplete_parameters": 181,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
@@ -2388,7 +2422,7 @@
     "upstream_url": "https://foss.heptapod.net/openpyxl/openpyxl",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 13002,
+    "number_of_lines": 13103,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2400,20 +2434,20 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3649,
-      "unannotated_parameters": 513,
-      "annotated_returns": 1049,
-      "unannotated_returns": 323,
+      "annotated_parameters": 3720,
+      "unannotated_parameters": 465,
+      "annotated_returns": 1187,
+      "unannotated_returns": 196,
       "explicit_Incomplete_parameters": 255,
-      "explicit_Incomplete_returns": 22,
-      "explicit_Any_parameters": 5,
-      "explicit_Any_returns": 3,
-      "annotated_variables": 4044,
+      "explicit_Incomplete_returns": 14,
+      "explicit_Any_parameters": 12,
+      "explicit_Any_returns": 8,
+      "annotated_variables": 4045,
       "explicit_Any_variables": 4,
-      "explicit_Incomplete_variables": 418,
-      "classdefs": 597,
+      "explicit_Incomplete_variables": 407,
+      "classdefs": 603,
       "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 24
+      "classdefs_with_Incomplete": 25
     }
   },
   {
@@ -2865,7 +2899,7 @@
     "upstream_url": "https://github.com/protocolbuffers/protobuf",
     "completeness_level": "PARTIAL",
     "extra_description": "Generated with aid from [mypy-protobuf](https://github.com/nipunn1313/mypy-protobuf) v3.4.0",
-    "number_of_lines": 4289,
+    "number_of_lines": 4294,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2877,15 +2911,15 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 731,
+      "annotated_parameters": 736,
       "unannotated_parameters": 247,
-      "annotated_returns": 496,
+      "annotated_returns": 498,
       "unannotated_returns": 78,
-      "explicit_Incomplete_parameters": 17,
+      "explicit_Incomplete_parameters": 19,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 15,
+      "explicit_Any_parameters": 17,
       "explicit_Any_returns": 4,
-      "annotated_variables": 738,
+      "annotated_variables": 739,
       "explicit_Any_variables": 126,
       "explicit_Incomplete_variables": 1,
       "classdefs": 147,
@@ -2933,32 +2967,32 @@
     "package_name": "psycopg2",
     "stub_distribution_name": "types-psycopg2",
     "upstream_url": "https://github.com/psycopg/psycopg2",
-    "completeness_level": "PARTIAL",
+    "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1567,
+    "number_of_lines": 1701,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
+      "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 5
+      "allowlist_length": 3
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 171,
-      "unannotated_parameters": 328,
-      "annotated_returns": 189,
-      "unannotated_returns": 169,
-      "explicit_Incomplete_parameters": 52,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 4,
-      "explicit_Any_returns": 7,
-      "annotated_variables": 532,
-      "explicit_Any_variables": 168,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 335,
+      "annotated_parameters": 323,
+      "unannotated_parameters": 150,
+      "annotated_returns": 310,
+      "unannotated_returns": 74,
+      "explicit_Incomplete_parameters": 34,
+      "explicit_Incomplete_returns": 8,
+      "explicit_Any_parameters": 11,
+      "explicit_Any_returns": 19,
+      "annotated_variables": 517,
+      "explicit_Any_variables": 61,
+      "explicit_Incomplete_variables": 3,
+      "classdefs": 332,
       "classdefs_with_Any": 2,
       "classdefs_with_Incomplete": 0
     }
@@ -3037,30 +3071,30 @@
     "upstream_url": "https://github.com/pyasn1/pyasn1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1316,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 1507,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 5
+      "allowlist_length": 9
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 196,
-      "unannotated_parameters": 501,
-      "annotated_returns": 111,
-      "unannotated_returns": 411,
-      "explicit_Incomplete_parameters": 38,
-      "explicit_Incomplete_returns": 6,
+      "annotated_parameters": 209,
+      "unannotated_parameters": 533,
+      "annotated_returns": 118,
+      "unannotated_returns": 425,
+      "explicit_Incomplete_parameters": 39,
+      "explicit_Incomplete_returns": 9,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 207,
+      "annotated_variables": 251,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 1,
-      "classdefs": 164,
+      "classdefs": 178,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -3242,7 +3276,7 @@
     "upstream_url": "https://github.com/pyinstaller/pyinstaller",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 814,
+    "number_of_lines": 687,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3250,22 +3284,56 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 39
+      "allowlist_length": 50
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 341,
+      "annotated_parameters": 264,
       "unannotated_parameters": 0,
-      "annotated_returns": 179,
+      "annotated_returns": 153,
       "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 40,
-      "explicit_Incomplete_returns": 2,
+      "explicit_Incomplete_parameters": 7,
+      "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 2,
-      "annotated_variables": 211,
+      "annotated_variables": 192,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 34,
-      "classdefs": 30,
+      "explicit_Incomplete_variables": 15,
+      "classdefs": 27,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "pyjks",
+    "stub_distribution_name": "types-pyjks",
+    "upstream_url": "https://github.com/kurtbrose/pyjks",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 374,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 55
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 132,
+      "unannotated_parameters": 0,
+      "annotated_returns": 59,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 73,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 31,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -3688,8 +3756,8 @@
     "upstream_url": "https://github.com/stub42/pytz",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 128,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 130,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3708,7 +3776,7 @@
       "explicit_Incomplete_returns": 1,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 0,
-      "annotated_variables": 27,
+      "annotated_variables": 29,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 1,
       "classdefs": 16,
@@ -3823,9 +3891,9 @@
     "stub_distribution_name": "types-redis",
     "upstream_url": "https://github.com/redis/redis-py",
     "completeness_level": "PARTIAL",
-    "extra_description": null,
-    "number_of_lines": 5820,
-    "package_status": "OBSOLETE",
+    "extra_description": "Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",
+    "number_of_lines": 5931,
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -3836,14 +3904,14 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3701,
-      "unannotated_parameters": 1248,
-      "annotated_returns": 1342,
+      "annotated_parameters": 3795,
+      "unannotated_parameters": 1247,
+      "annotated_returns": 1344,
       "unannotated_returns": 638,
       "explicit_Incomplete_parameters": 355,
       "explicit_Incomplete_returns": 9,
       "explicit_Any_parameters": 68,
-      "explicit_Any_returns": 327,
+      "explicit_Any_returns": 326,
       "annotated_variables": 632,
       "explicit_Any_variables": 211,
       "explicit_Incomplete_variables": 34,
@@ -3891,8 +3959,8 @@
     "stub_distribution_name": "types-requests",
     "upstream_url": "https://github.com/psf/requests",
     "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 990,
+    "extra_description": "Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",
+    "number_of_lines": 996,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3900,23 +3968,57 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 6
+      "allowlist_length": 4
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 354,
-      "unannotated_parameters": 152,
-      "annotated_returns": 112,
+      "annotated_parameters": 360,
+      "unannotated_parameters": 150,
+      "annotated_returns": 113,
       "unannotated_returns": 85,
       "explicit_Incomplete_parameters": 19,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 9,
       "explicit_Any_returns": 5,
-      "annotated_variables": 114,
-      "explicit_Any_variables": 39,
+      "annotated_variables": 116,
+      "explicit_Any_variables": 37,
       "explicit_Incomplete_variables": 0,
       "classdefs": 51,
       "classdefs_with_Any": 1,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "requests-oauthlib",
+    "stub_distribution_name": "types-requests-oauthlib",
+    "upstream_url": "https://github.com/requests/requests-oauthlib",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 265,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 116,
+      "unannotated_parameters": 17,
+      "annotated_returns": 43,
+      "unannotated_returns": 4,
+      "explicit_Incomplete_parameters": 51,
+      "explicit_Incomplete_returns": 2,
+      "explicit_Any_parameters": 1,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 26,
+      "explicit_Any_variables": 1,
+      "explicit_Incomplete_variables": 8,
+      "classdefs": 13,
+      "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
   },
@@ -4165,7 +4267,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54197,
+    "number_of_lines": 54598,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4175,22 +4277,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1010
+      "allowlist_length": 886
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25479,
-      "unannotated_parameters": 861,
-      "annotated_returns": 13968,
-      "unannotated_returns": 448,
+      "annotated_parameters": 25700,
+      "unannotated_parameters": 783,
+      "annotated_returns": 14124,
+      "unannotated_returns": 372,
       "explicit_Incomplete_parameters": 92,
       "explicit_Incomplete_returns": 18,
-      "explicit_Any_parameters": 2062,
-      "explicit_Any_returns": 868,
-      "annotated_variables": 8445,
-      "explicit_Any_variables": 538,
+      "explicit_Any_parameters": 2066,
+      "explicit_Any_returns": 875,
+      "annotated_variables": 8480,
+      "explicit_Any_variables": 539,
       "explicit_Incomplete_variables": 143,
-      "classdefs": 2341,
+      "classdefs": 2346,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }
@@ -4474,7 +4576,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 124,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4696,47 +4798,13 @@
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 2,
+      "explicit_Any_parameters": 1,
       "explicit_Any_returns": 2,
       "annotated_variables": 5,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 2,
       "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
-    "package_name": "urllib3",
-    "stub_distribution_name": "types-urllib3",
-    "upstream_url": "https://github.com/urllib3/urllib3",
-    "completeness_level": "PARTIAL",
-    "extra_description": null,
-    "number_of_lines": 707,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 28
-    },
-    "pyright_setting": "NOT_STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 169,
-      "unannotated_parameters": 149,
-      "annotated_returns": 101,
-      "unannotated_returns": 55,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 3,
-      "explicit_Any_returns": 4,
-      "annotated_variables": 156,
-      "explicit_Any_variables": 54,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 72,
-      "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
   },
