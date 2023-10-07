@@ -33,7 +33,7 @@ classifiers = [
 dependencies = [
     "attrs>=22.2.0",
     "cattrs",
-    "aiohttp[speedups]>=3.8.5",
+    "aiohttp[speedups]>=3.8.6",
     "packaging",
     "pathspec>=0.10.3",  # needs to be py.typed
     "Jinja2>=3",
