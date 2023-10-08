@@ -4267,7 +4267,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54612,
+    "number_of_lines": 54700,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4277,7 +4277,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 877
+      "allowlist_length": 875
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
