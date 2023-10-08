@@ -24,6 +24,7 @@ classifiers = [
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Software Development",
@@ -32,7 +33,8 @@ classifiers = [
 dependencies = [
     "attrs>=22.2.0",
     "cattrs",
-    "aiohttp[speedups]",
+    "aiohttp[speedups]; python_version <'3.12'",
+    "aiohttp[speedups]>=3.9.0b0,<4; python_version >= '3.12'",
     "packaging",
     "pathspec>=0.10.3",  # needs to be py.typed
     "Jinja2>=3",
@@ -63,7 +65,7 @@ pytest = [
     "typeshed-stats[rich]",
     "beautifulsoup4>=4,<5",
     "covdefaults==2.3.0",
-    "coverage==6.5.0",
+    "coverage==7.3.2",
     "Markdown>=3,<4",
     "pytest==7.4.2",
     "pytest-antilru==1.1.1",

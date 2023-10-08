@@ -35,7 +35,6 @@ env:
   # see https://github.com/python/mypy/issues/13817
   TERM: xterm-256color
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  COVERALLS_PARALLEL: true
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
@@ -48,7 +47,7 @@ jobs:
     strategy:
       matrix:
         os: ["ubuntu-latest", "windows-latest", "macos-latest"]
-        python-version: ["3.10", "3.11"]
+        python-version: ["3.10", "3.11", "3.12"]
       fail-fast: false
 
     steps:
@@ -59,29 +58,14 @@ jobs:
           cache: "pip"
           cache-dependency-path: "pyproject.toml"
           python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
       - run: pip install "wheel<1"
-      - run: pip install "coveralls>=3.3" -e .[pytest]
+      - run: pip install -e .[pytest]
       - run: pip freeze --all
       - name: Run tests under coverage
         run: |
           coverage run -m pytest --doctest-modules
           coverage report --no-skip-covered
-      - name: Upload coverage to coveralls
-        if: github.repository == 'AlexWaygood/typeshed-stats'
-        env:
-          COVERALLS_FLAG_NAME: ${{ matrix.os }}-${{ matrix.python-version }}
-        run: coveralls --service=github
-
-  coveralls-finish:
-    name: Indicate completion to coveralls.io
-    needs: pytest-tests
-    if: github.repository == 'AlexWaygood/typeshed-stats'
-    runs-on: ubuntu-latest
-    container: python:3-slim
-    steps:
-      - run: |
-          pip install "coveralls>=3.3"
-          coveralls --service=github --finish
 
   create-issue-on-failure:
     name: Create an issue if daily test failed
