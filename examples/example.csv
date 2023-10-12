@@ -13,7 +13,7 @@ PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,180,
 PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,COMPLETE,-,1298,UP_TO_DATE,UPLOADED,NOT_STRICT,516,282,222,172,12,0,44,12,220,160,2,91,0,0,ERROR_ON_MISSING_STUB,linux,3
 Pygments,types-Pygments,https://github.com/pygments/pygments,PARTIAL,-,687,UP_TO_DATE,UPLOADED,NOT_STRICT,108,158,96,80,17,2,7,2,314,193,0,62,1,0,MISSING_STUBS_IGNORED,linux,4
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,2
-WTForms,types-WTForms,https://github.com/wtforms/wtforms,COMPLETE,-,1044,OUT_OF_DATE,UPLOADED,STRICT,512,0,182,0,0,0,69,15,139,28,0,96,0,0,ERROR_ON_MISSING_STUB,linux,21
+WTForms,types-WTForms,https://github.com/wtforms/wtforms,COMPLETE,-,1071,UP_TO_DATE,UPLOADED,STRICT,531,0,185,0,0,0,71,15,139,28,0,100,0,0,ERROR_ON_MISSING_STUB,linux,21
 WebOb,types-WebOb,https://github.com/Pylons/webob,COMPLETE,-,1553,UP_TO_DATE,UPLOADED,NOT_STRICT,629,92,517,54,26,0,78,4,245,11,33,145,0,0,ERROR_ON_MISSING_STUB,linux,97
 aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,COMPLETE,-,680,UP_TO_DATE,UPLOADED,STRICT,389,0,152,0,26,7,34,1,6,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,90
 aws-xray-sdk,types-aws-xray-sdk,https://github.com/aws/aws-xray-sdk-python,PARTIAL,-,722,UP_TO_DATE,UPLOADED,NOT_STRICT,139,154,182,92,21,0,12,3,141,46,0,45,0,0,MISSING_STUBS_IGNORED,linux,4
