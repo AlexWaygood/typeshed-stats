@@ -18,6 +18,6 @@ __license__ = "MIT"
 
 # This file is created at build time by hatch-vcs
 try:
-    from ._version import __version__  # type: ignore[import-not-found]
+    from ._version import __version__  # type: ignore[import-not-found]  # pyright: ignore[reportMissingImports]
 except ImportError:
     __version__ = None
