@@ -6,15 +6,13 @@
       "groupName": "github-actions",
       "matchManagers": ["github-actions"],
       "description": "Group all GitHub Action dependencies",
-      "separateMajorMinor": "false",
-      "stabilityDays": 7
+      "separateMajorMinor": "false"
     },
     {
       "groupName": "pip-dependencies",
       "matchManagers": ["pep621"],
       "matchUpdateTypes": ["minor", "patch"],
-      "description": "Group all pip minor requirements",
-      "stabilityDays": 7
+      "description": "Group all pip minor requirements"
     }
   ],
   "schedule": ["every 3 months on the first day of the month"],
