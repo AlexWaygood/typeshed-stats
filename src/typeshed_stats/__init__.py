@@ -15,4 +15,9 @@ __summary__ = __about__ = __doc__
 __author__ = "Alex Waygood"
 __email__ = "alex.waygood@gmail.com"
 __license__ = "MIT"
-__version__ = "23.2.1"
+
+# This file is created at build time by hatch-vcs
+try:
+    from ._version import __version__  # type: ignore[import-not-found]
+except ImportError:
+    __version__ = None
