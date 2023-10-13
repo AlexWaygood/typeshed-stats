@@ -15,7 +15,7 @@ from unittest import mock
 import markdown
 import pytest
 from pytest_mock import MockerFixture
-from pytest_subtests import SubTests  # type: ignore[import]
+from pytest_subtests import SubTests  # type: ignore[import-untyped]
 
 import typeshed_stats._cli
 import typeshed_stats.gather
