@@ -979,7 +979,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-722 (excluding blank lines)
+675 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -995,7 +995,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `aws-xray-sdk` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `aws-xray-sdk` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1014,7 +1014,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 141
+    - Annotated variables: 139
     - Explicit `Any` variables: 46
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
