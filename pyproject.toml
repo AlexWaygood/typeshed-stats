@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
@@ -94,7 +94,10 @@ misc-lint = [
 dev = ["typeshed-stats[rich,docs,typecheck,pytest,misc-lint]"]
 
 [tool.hatch.version]
-path = "src/typeshed_stats/__init__.py"
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "_version.py"
 
 [tool.black]
 line_length = 88
