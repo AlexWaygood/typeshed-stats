@@ -17,6 +17,7 @@ import typeshed_stats
 ALL_SUBMODULES: Final = [
     importlib.import_module(f"typeshed_stats.{m.name}")
     for m in pkgutil.iter_modules(typeshed_stats.__path__)
+    if m.name != "_version"
 ]
 
 
