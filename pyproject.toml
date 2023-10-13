@@ -97,7 +97,7 @@ dev = ["typeshed-stats[rich,docs,typecheck,pytest,misc-lint]"]
 source = "vcs"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "_version.py"
+version-file = "src/typeshed_stats/_version.py"
 
 [tool.black]
 line_length = 88

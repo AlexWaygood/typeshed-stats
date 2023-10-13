@@ -10,16 +10,11 @@ __all__ = [
     "__version__",
 ]
 
+# This file is created at build time by hatch-vcs
+from ._version import __version__
+
 __title__ = "typeshed-stats"
 __summary__ = __about__ = __doc__
 __author__ = "Alex Waygood"
 __email__ = "alex.waygood@gmail.com"
 __license__ = "MIT"
-
-# This file is created at build time by hatch-vcs
-try:
-    from ._version import (  # type: ignore[import-not-found]  # pyright: ignore[reportMissingImports]
-        __version__,
-    )
-except ImportError:
-    __version__ = None
