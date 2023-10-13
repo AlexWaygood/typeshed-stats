@@ -21,7 +21,7 @@ import aiohttp
 import pytest
 from packaging.version import Version
 from pytest_mock import MockerFixture
-from pytest_subtests import SubTests  # type: ignore[import]
+from pytest_subtests import SubTests  # type: ignore[import-untyped]
 
 import typeshed_stats
 import typeshed_stats.gather
