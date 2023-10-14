@@ -4460,9 +4460,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 1,634 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5490,9 +5490,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 687 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6636,7 +6636,7 @@ Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to
 
 ### Number of lines
 
-996 (excluding blank lines)
+993 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6661,17 +6661,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `requests`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 360
+    - Annotated parameters: 357
     - Unannotated parameters: 150
     - Explicit `Any` parameters: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
 - Returns:
-    - Annotated returns: 113
+    - Annotated returns: 112
     - Unannotated returns: 85
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 116
+    - Annotated variables: 114
     - Explicit `Any` variables: 37
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:

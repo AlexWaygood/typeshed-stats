@@ -77,7 +77,7 @@ paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1814,UP_T
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,COMPLETE,-,185,UP_TO_DATE,UPLOADED,STRICT,114,0,60,0,0,1,22,2,34,3,2,27,0,0,ERROR_ON_MISSING_STUB,linux,4
 passlib,types-passlib,https://foss.heptapod.net/python-libs/passlib,COMPLETE,-,1780,UP_TO_DATE,UPLOADED,NOT_STRICT,382,466,155,329,156,0,18,10,576,101,3,143,2,0,ERROR_ON_MISSING_STUB,linux,31
 passpy,types-passpy,https://github.com/bfrascher/passpy,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
-peewee,types-peewee,https://github.com/coleifer/peewee,COMPLETE,-,1634,UP_TO_DATE,UPLOADED,NOT_STRICT,405,671,300,448,245,5,0,0,437,0,367,166,0,0,ERROR_ON_MISSING_STUB,linux,25
+peewee,types-peewee,https://github.com/coleifer/peewee,COMPLETE,-,1634,OUT_OF_DATE,UPLOADED,NOT_STRICT,405,671,300,448,245,5,0,0,437,0,367,166,0,0,ERROR_ON_MISSING_STUB,linux,25
 pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,PARTIAL,-,27,UP_TO_DATE,UPLOADED,STRICT,10,0,8,0,0,2,1,1,11,3,0,1,0,0,MISSING_STUBS_IGNORED,linux,2
 pexpect,types-pexpect,https://github.com/pexpect/pexpect,COMPLETE,-,539,UP_TO_DATE,UPLOADED,NOT_STRICT,169,144,148,50,51,0,0,0,150,0,83,20,0,0,ERROR_ON_MISSING_STUB,linux,0
 pika,types-pika-ts,https://github.com/pika/pika,COMPLETE,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2231,UP_TO_DATE,UPLOADED,NOT_STRICT,618,383,413,347,141,24,4,0,470,0,258,222,0,0,ERROR_ON_MISSING_STUB,linux,9
@@ -95,7 +95,7 @@ pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,COMPLETE,-,182
 pycurl,types-pycurl,https://github.com/pycurl/pycurl,COMPLETE,-,674,UP_TO_DATE,UPLOADED,STRICT,22,0,32,0,7,10,0,0,629,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,COMPLETE,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,PARTIAL,-,430,UP_TO_DATE,UPLOADED,NOT_STRICT,265,69,206,2,0,0,4,3,75,33,0,74,0,0,MISSING_STUBS_IGNORED,linux,24
-pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,COMPLETE,-,687,UP_TO_DATE,UPLOADED,STRICT,264,0,153,0,7,0,1,2,192,0,15,27,0,0,ERROR_ON_MISSING_STUB,linux,50
+pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,COMPLETE,-,687,OUT_OF_DATE,UPLOADED,STRICT,264,0,153,0,7,0,1,2,192,0,15,27,0,0,ERROR_ON_MISSING_STUB,linux,50
 pyjks,types-pyjks,https://github.com/kurtbrose/pyjks,COMPLETE,-,374,UP_TO_DATE,UPLOADED,STRICT,132,0,59,0,0,0,0,0,73,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,55
 pynput,types-pynput,https://github.com/moses-palmer/pynput,COMPLETE,-,324,UP_TO_DATE,UPLOADED,STRICT,81,0,71,0,0,0,11,0,155,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,13
 pyserial,types-pyserial,https://github.com/pyserial/pyserial,COMPLETE,-,1079,UP_TO_DATE,UPLOADED,STRICT,223,0,269,0,0,0,2,4,466,7,65,66,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,59
@@ -115,7 +115,7 @@ pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,34564,UP_TO
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,467,UP_TO_DATE,UPLOADED,NOT_STRICT,67,184,97,65,18,3,0,1,166,0,101,40,0,0,ERROR_ON_MISSING_STUB,linux,6
 redis,types-redis,https://github.com/redis/redis-py,PARTIAL,"Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",5931,OUT_OF_DATE,UPLOADED,NOT_STRICT,3795,1247,1344,638,355,9,68,326,632,211,34,214,0,2,MISSING_STUBS_IGNORED,linux,67
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,748,UP_TO_DATE,UPLOADED,STRICT,429,0,114,0,0,0,25,16,72,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,13
-requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",996,UP_TO_DATE,UPLOADED,NOT_STRICT,360,150,113,85,19,0,9,5,116,37,0,51,1,0,ERROR_ON_MISSING_STUB,linux,4
+requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",993,UP_TO_DATE,UPLOADED,NOT_STRICT,357,150,112,85,19,0,9,5,114,37,0,51,1,0,ERROR_ON_MISSING_STUB,linux,4
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,265,UP_TO_DATE,UPLOADED,NOT_STRICT,116,17,43,4,51,2,1,0,26,1,8,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,-,5033,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
