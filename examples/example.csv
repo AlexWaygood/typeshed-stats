@@ -6,7 +6,7 @@ Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/flask-migrat
 Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,COMPLETE,-,234,UP_TO_DATE,UPLOADED,NOT_STRICT,140,34,37,15,19,1,2,0,3,1,0,8,0,0,ERROR_ON_MISSING_STUB,linux,3
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,COMPLETE,-,310,UP_TO_DATE,UPLOADED,STRICT,107,0,151,0,0,0,0,2,46,0,0,15,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,PARTIAL,-,637,UP_TO_DATE,UPLOADED,NOT_STRICT,115,143,114,64,5,0,12,5,210,74,2,99,0,0,MISSING_STUBS_IGNORED,linux,11
-Pillow,types-Pillow,https://github.com/python-pillow/Pillow,PARTIAL,-,3042,UP_TO_DATE,UPLOADED,NOT_STRICT,735,609,557,341,59,6,7,4,1147,5,321,217,3,1,ERROR_ON_MISSING_STUB,linux;win32,22
+Pillow,types-Pillow,https://github.com/python-pillow/Pillow,PARTIAL,-,3042,OUT_OF_DATE,UPLOADED,NOT_STRICT,735,609,557,341,59,6,7,4,1147,5,321,217,3,1,ERROR_ON_MISSING_STUB,linux;win32,22
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,COMPLETE,-,230,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,PARTIAL,-,1044,UP_TO_DATE,UPLOADED,NOT_STRICT,142,52,101,37,28,0,10,18,734,60,0,24,0,0,MISSING_STUBS_IGNORED,linux,11
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,180,UP_TO_DATE,UPLOADED,STRICT,99,0,20,0,0,0,0,0,14,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
@@ -70,7 +70,7 @@ mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1228,UP_TO_DATE,UPLOADED,NOT_STRICT,35,124,37,79,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
 netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,659,UP_TO_DATE,UPLOADED,STRICT,292,0,310,0,5,0,1,1,103,0,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1423,UP_TO_DATE,UPLOADED,NOT_STRICT,405,410,160,190,181,0,0,0,318,207,0,106,2,0,MISSING_STUBS_IGNORED,linux,1
-openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,13103,UP_TO_DATE,UPLOADED,NOT_STRICT,3720,465,1187,196,255,14,12,8,4045,4,407,603,1,25,ERROR_ON_MISSING_STUB,linux,174
+openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,13155,UP_TO_DATE,UPLOADED,NOT_STRICT,3749,457,1199,194,244,14,12,8,4045,4,396,603,1,22,ERROR_ON_MISSING_STUB,linux,176
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,PARTIAL,-,331,UP_TO_DATE,UPLOADED,STRICT,105,0,113,0,1,0,21,0,56,4,0,26,0,0,MISSING_STUBS_IGNORED,linux,4
 paho-mqtt,types-paho-mqtt,https://github.com/eclipse/paho.mqtt.python,COMPLETE,-,513,UP_TO_DATE,UPLOADED,STRICT,217,0,147,0,0,0,5,4,145,0,1,19,0,0,ERROR_ON_MISSING_STUB,linux,0
 paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1814,UP_TO_DATE,UPLOADED,STRICT,764,0,636,0,3,0,20,9,542,14,3,123,2,0,MISSING_STUBS_IGNORED,linux;win32,6
