@@ -242,10 +242,10 @@
     "package_name": "Pillow",
     "stub_distribution_name": "types-Pillow",
     "upstream_url": "https://github.com/python-pillow/Pillow",
-    "completeness_level": "PARTIAL",
+    "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3042,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 3056,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -253,13 +253,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 22
+      "allowlist_length": 17
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 735,
+      "annotated_parameters": 743,
       "unannotated_parameters": 609,
-      "annotated_returns": 557,
+      "annotated_returns": 560,
       "unannotated_returns": 341,
       "explicit_Incomplete_parameters": 59,
       "explicit_Incomplete_returns": 6,
@@ -267,7 +267,7 @@
       "explicit_Any_returns": 4,
       "annotated_variables": 1147,
       "explicit_Any_variables": 5,
-      "explicit_Incomplete_variables": 321,
+      "explicit_Incomplete_variables": 316,
       "classdefs": 217,
       "classdefs_with_Any": 3,
       "classdefs_with_Incomplete": 1
@@ -2422,7 +2422,7 @@
     "upstream_url": "https://foss.heptapod.net/openpyxl/openpyxl",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 13155,
+    "number_of_lines": 13163,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2434,17 +2434,17 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3749,
-      "unannotated_parameters": 457,
-      "annotated_returns": 1199,
-      "unannotated_returns": 194,
+      "annotated_parameters": 3750,
+      "unannotated_parameters": 456,
+      "annotated_returns": 1209,
+      "unannotated_returns": 184,
       "explicit_Incomplete_parameters": 244,
-      "explicit_Incomplete_returns": 14,
+      "explicit_Incomplete_returns": 13,
       "explicit_Any_parameters": 12,
-      "explicit_Any_returns": 8,
+      "explicit_Any_returns": 9,
       "annotated_variables": 4045,
       "explicit_Any_variables": 4,
-      "explicit_Incomplete_variables": 396,
+      "explicit_Incomplete_variables": 394,
       "classdefs": 603,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 22
@@ -4267,7 +4267,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54714,
+    "number_of_lines": 54760,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4277,22 +4277,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 876
+      "allowlist_length": 877
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25710,
+      "annotated_parameters": 25725,
       "unannotated_parameters": 783,
-      "annotated_returns": 14129,
+      "annotated_returns": 14138,
       "unannotated_returns": 372,
       "explicit_Incomplete_parameters": 92,
       "explicit_Incomplete_returns": 18,
-      "explicit_Any_parameters": 2064,
-      "explicit_Any_returns": 875,
-      "annotated_variables": 8481,
+      "explicit_Any_parameters": 2065,
+      "explicit_Any_returns": 876,
+      "annotated_variables": 8506,
       "explicit_Any_variables": 539,
       "explicit_Incomplete_variables": 143,
-      "classdefs": 2346,
+      "classdefs": 2347,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }
