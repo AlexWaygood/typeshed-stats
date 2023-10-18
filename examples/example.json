@@ -4277,7 +4277,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 877
+      "allowlist_length": 961
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
@@ -4289,8 +4289,8 @@
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2065,
       "explicit_Any_returns": 876,
-      "annotated_variables": 8506,
-      "explicit_Any_variables": 539,
+      "annotated_variables": 8507,
+      "explicit_Any_variables": 540,
       "explicit_Incomplete_variables": 143,
       "classdefs": 2347,
       "classdefs_with_Any": 24,
