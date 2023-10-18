@@ -1146,6 +1146,9 @@ KNOWN_FULLY_ANNOTATED_FILES_WITH_LAX_PYRIGHT_SETTINGS = frozenset(
 )
 
 
+# without the pytest.mark.sdist_group marker,
+# we get weird crashes resulting from WindowsPath objects not being serialisable...
+@pytest.mark.xdist_group("sanity_checks")
 @pytest.mark.dependency(depends=["integration_basic"])
 def test_basic_sanity_checks(subtests: SubTests) -> None:
     with tmpdir_typeshed() as typeshed:
