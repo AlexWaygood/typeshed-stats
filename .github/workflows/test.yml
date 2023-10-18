@@ -64,8 +64,8 @@ jobs:
       - run: pip freeze --all
       - name: Run tests under coverage
         run: |
-          coverage run -m pytest --doctest-modules
-          coverage report --no-skip-covered
+          pytest -m "not unserialisable" -n logical --dist=worksteal --doctest-modules --cov --cov-report= --cov-fail-under=0
+          pytest -m unserialisable -n0 --cov --cov-append
 
   create-issue-on-failure:
     name: Create an issue if daily test failed

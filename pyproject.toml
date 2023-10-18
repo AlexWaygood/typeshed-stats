@@ -70,7 +70,7 @@ pytest = [
     "pytest==7.4.2",
     "pytest-antilru==1.1.1",
     "pytest-asyncio==0.21.1",
-    "pytest-dependency==0.5.1",
+    "pytest-cov==4.1.0",
     "pytest-mock==3.11.1",
     "pytest-subtests==0.11.0",
     "pytest-xdist[psutil]==3.3.1",  # speeds up pytest by using many cores simultaneously
@@ -193,7 +193,7 @@ testpaths = ["src", "tests"]
 addopts = "--strict-config --strict-markers -n logical --dist loadgroup"
 xfail_strict = true
 asyncio_mode = "auto"
-markers = ["requires_network"]
+markers = ["requires_network", "unserialisable"]
 filterwarnings = [
     "error",
     # Ignore ResourceWarnings about unclosed sockets

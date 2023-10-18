@@ -1119,7 +1119,6 @@ def test_tmpdir_typeshed_with_mocked_git_clone() -> None:
 
 
 @pytest.mark.requires_network
-@pytest.mark.dependency(name="integration_basic")
 def test_gather_stats__on_packages_integrates_with_tmpdir_typeshed() -> None:
     num_packages = random.randint(3, 10)
     print(f"Testing {num_packages}")
@@ -1146,10 +1145,10 @@ KNOWN_FULLY_ANNOTATED_FILES_WITH_LAX_PYRIGHT_SETTINGS = frozenset(
 )
 
 
-# without the pytest.mark.sdist_group marker,
-# we get weird crashes resulting from WindowsPath objects not being serialisable...
-@pytest.mark.xdist_group("sanity_checks")
-@pytest.mark.dependency(depends=["integration_basic"])
+# We get weird crashes resulting from WindowsPath objects not being serialisable
+# if we try to run this test with pytest-xdist
+@pytest.mark.requires_network
+@pytest.mark.unserialisable
 def test_basic_sanity_checks(subtests: SubTests) -> None:
     with tmpdir_typeshed() as typeshed:
         stats_on_packages = gather_stats_on_multiple_packages(typeshed_dir=typeshed)

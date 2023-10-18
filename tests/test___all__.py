@@ -78,7 +78,7 @@ def test_all_public_names_in___all__(submodule: types.ModuleType) -> None:
 def test_import_fails_on_less_than_3_point_10(module_name: str) -> None:
     for submod in ALL_SUBMODULES:
         submod_name = submod.__name__
-        if submod_name in sys.modules:
+        if submod_name in sys.modules:  # pragma: no branch
             del sys.modules[submod_name]
     with pytest.raises(ImportError, match=r"Python 3\.10\+ is required"):
         importlib.import_module(module_name)
