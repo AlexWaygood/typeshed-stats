@@ -6661,13 +6661,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `requests`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 357
-    - Unannotated parameters: 150
+    - Annotated parameters: 358
+    - Unannotated parameters: 149
     - Explicit `Any` parameters: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
 - Returns:
-    - Annotated returns: 112
-    - Unannotated returns: 85
+    - Annotated returns: 113
+    - Unannotated returns: 84
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
