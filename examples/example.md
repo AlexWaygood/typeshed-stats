@@ -1264,7 +1264,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-2,859 (excluding blank lines)
+2,873 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1289,19 +1289,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `braintree`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 80
-    - Unannotated parameters: 394
+    - Annotated parameters: 84
+    - Unannotated parameters: 390
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 75
 - Returns:
-    - Annotated returns: 113
-    - Unannotated returns: 304
+    - Annotated returns: 124
+    - Unannotated returns: 293
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 1,301
-    - Explicit `Any` variables: 432
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Annotated variables: 1,306
+    - Explicit `Any` variables: 429
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
     - Total class definitions: 234
     - Class definitions with `Any`: 0
