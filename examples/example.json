@@ -4678,7 +4678,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 13,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
