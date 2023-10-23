@@ -4853,7 +4853,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Extra description
 
-Generated with aid from [mypy-protobuf](https://github.com/nipunn1313/mypy-protobuf) v3.4.0
+Generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on protobuf==4.21.8
 
 ### Upstream repo URL
 
@@ -7363,6 +7363,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `tensorflow`
 
+### Extra description
+
+Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1
+
 ### Upstream repo URL
 
 [https://github.com/tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
@@ -7373,7 +7377,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-19,180 (excluding blank lines)
+21,085 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7398,21 +7402,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,284
+    - Annotated parameters: 3,523
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 32
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
 - Returns:
-    - Annotated returns: 2,158
+    - Annotated returns: 2,370
     - Unannotated returns: 0
     - Explicit `Any` returns: 31
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 33
 - Variables:
-    - Annotated variables: 3,984
+    - Annotated variables: 4,438
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 6
 - Class definitions:
-    - Total class definitions: 687
+    - Total class definitions: 781
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7831,9 +7835,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 13 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
