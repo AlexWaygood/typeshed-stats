@@ -865,7 +865,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,553 (excluding blank lines)
+1,587 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -890,21 +890,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `WebOb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 629
-    - Unannotated parameters: 92
-    - Explicit `Any` parameters: 78
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 26
+    - Annotated parameters: 662
+    - Unannotated parameters: 62
+    - Explicit `Any` parameters: 84
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 15
 - Returns:
-    - Annotated returns: 517
-    - Unannotated returns: 54
-    - Explicit `Any` returns: 4
+    - Annotated returns: 532
+    - Unannotated returns: 42
+    - Explicit `Any` returns: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 245
+    - Annotated variables: 246
     - Explicit `Any` variables: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 33
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 12
 - Class definitions:
-    - Total class definitions: 145
+    - Total class definitions: 146
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -5038,9 +5038,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 379 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 

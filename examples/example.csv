@@ -14,7 +14,7 @@ PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,COMPLETE,-,1298,UP_TO_DATE,UP
 Pygments,types-Pygments,https://github.com/pygments/pygments,PARTIAL,-,687,UP_TO_DATE,UPLOADED,NOT_STRICT,108,158,96,80,17,2,7,2,314,193,0,62,1,0,MISSING_STUBS_IGNORED,linux,4
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,2
 WTForms,types-WTForms,https://github.com/wtforms/wtforms,COMPLETE,-,1071,UP_TO_DATE,UPLOADED,STRICT,531,0,185,0,0,0,71,15,139,28,0,100,0,0,ERROR_ON_MISSING_STUB,linux,21
-WebOb,types-WebOb,https://github.com/Pylons/webob,COMPLETE,-,1553,UP_TO_DATE,UPLOADED,NOT_STRICT,629,92,517,54,26,0,78,4,245,11,33,145,0,0,ERROR_ON_MISSING_STUB,linux,97
+WebOb,types-WebOb,https://github.com/Pylons/webob,COMPLETE,-,1587,UP_TO_DATE,UPLOADED,NOT_STRICT,662,62,532,42,15,0,84,9,246,11,12,146,0,0,ERROR_ON_MISSING_STUB,linux,97
 aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,COMPLETE,-,680,UP_TO_DATE,UPLOADED,STRICT,389,0,152,0,26,7,34,1,6,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,90
 aws-xray-sdk,types-aws-xray-sdk,https://github.com/aws/aws-xray-sdk-python,PARTIAL,-,675,UP_TO_DATE,UPLOADED,NOT_STRICT,139,154,182,92,21,0,12,3,139,46,0,45,0,0,MISSING_STUBS_IGNORED,linux,3
 beautifulsoup4,types-beautifulsoup4,https://git.launchpad.net/beautifulsoup/tree,PARTIAL,-,811,UP_TO_DATE,UPLOADED,NOT_STRICT,241,137,192,49,31,0,1,1,177,69,2,47,0,0,MISSING_STUBS_IGNORED,linux,0
@@ -87,7 +87,7 @@ polib,types-polib,https://github.com/izimobil/polib,COMPLETE,-,144,UP_TO_DATE,UP
 protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,PARTIAL,Generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on protobuf==4.21.8,4294,UP_TO_DATE,UPLOADED,NOT_STRICT,736,247,498,78,19,0,17,4,739,126,1,147,0,0,MISSING_STUBS_IGNORED,linux,14
 psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1561,UP_TO_DATE,UPLOADED,NOT_STRICT,125,310,194,355,28,0,0,47,610,203,99,89,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,14
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,COMPLETE,-,1701,UP_TO_DATE,UPLOADED,NOT_STRICT,323,150,310,74,34,8,11,19,517,61,3,332,2,0,ERROR_ON_MISSING_STUB,linux,3
-pyOpenSSL,types-pyOpenSSL,https://github.com/pyca/pyopenssl,PARTIAL,-,379,UP_TO_DATE,UPLOADED,STRICT,163,0,201,0,4,2,2,2,122,1,0,25,0,0,MISSING_STUBS_IGNORED,linux,1
+pyOpenSSL,types-pyOpenSSL,https://github.com/pyca/pyopenssl,PARTIAL,-,379,OUT_OF_DATE,UPLOADED,STRICT,163,0,201,0,4,2,2,2,122,1,0,25,0,0,MISSING_STUBS_IGNORED,linux,1
 pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,17,UP_TO_DATE,UPLOADED,STRICT,15,0,9,0,0,0,1,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1507,UP_TO_DATE,UPLOADED,NOT_STRICT,209,533,118,425,39,9,0,0,251,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,9
 pyaudio,types-pyaudio,-,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
