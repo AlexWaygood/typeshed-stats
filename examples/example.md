@@ -7145,7 +7145,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,875 (excluding blank lines)
+54,887 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7161,7 +7161,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 961 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 962 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -7170,21 +7170,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,727
-    - Unannotated parameters: 783
+    - Annotated parameters: 25,715
+    - Unannotated parameters: 786
     - Explicit `Any` parameters: 2,065
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
 - Returns:
-    - Annotated returns: 14,140
-    - Unannotated returns: 372
-    - Explicit `Any` returns: 876
+    - Annotated returns: 14,159
+    - Unannotated returns: 373
+    - Explicit `Any` returns: 875
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,508
+    - Annotated variables: 8,512
     - Explicit `Any` variables: 540
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 143
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 144
 - Class definitions:
-    - Total class definitions: 2,347
+    - Total class definitions: 2,351
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 
