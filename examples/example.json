@@ -2894,6 +2894,40 @@
     }
   },
   {
+    "package_name": "portpicker",
+    "stub_distribution_name": "types-portpicker",
+    "upstream_url": "https://github.com/google/python_portpicker",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 16,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 10,
+      "unannotated_parameters": 0,
+      "annotated_returns": 6,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 0,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "protobuf",
     "stub_distribution_name": "types-protobuf",
     "upstream_url": "https://github.com/protocolbuffers/protobuf",
@@ -3824,7 +3858,7 @@
     "upstream_url": "https://github.com/mhammond/pywin32",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 34564,
+    "number_of_lines": 34565,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3836,8 +3870,8 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3649,
-      "unannotated_parameters": 3725,
+      "annotated_parameters": 3650,
+      "unannotated_parameters": 3724,
       "annotated_returns": 3835,
       "unannotated_returns": 2035,
       "explicit_Incomplete_parameters": 427,
@@ -4091,6 +4125,40 @@
     }
   },
   {
+    "package_name": "seaborn",
+    "stub_distribution_name": "types-seaborn",
+    "upstream_url": null,
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 2204,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 3
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 1247,
+      "unannotated_parameters": 15,
+      "annotated_returns": 343,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 230,
+      "explicit_Incomplete_returns": 8,
+      "explicit_Any_parameters": 148,
+      "explicit_Any_returns": 12,
+      "annotated_variables": 281,
+      "explicit_Any_variables": 9,
+      "explicit_Incomplete_variables": 30,
+      "classdefs": 97,
+      "classdefs_with_Any": 1,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "setuptools",
     "stub_distribution_name": "types-setuptools",
     "upstream_url": "https://github.com/pypa/setuptools",
@@ -4267,7 +4335,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54887,
+    "number_of_lines": 54937,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4277,22 +4345,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 962
+      "allowlist_length": 961
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25715,
+      "annotated_parameters": 25733,
       "unannotated_parameters": 786,
-      "annotated_returns": 14159,
-      "unannotated_returns": 373,
-      "explicit_Incomplete_parameters": 92,
+      "annotated_returns": 14180,
+      "unannotated_returns": 372,
+      "explicit_Incomplete_parameters": 96,
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 2065,
-      "explicit_Any_returns": 875,
-      "annotated_variables": 8512,
+      "explicit_Any_returns": 876,
+      "annotated_variables": 8514,
       "explicit_Any_variables": 540,
       "explicit_Incomplete_variables": 144,
-      "classdefs": 2351,
+      "classdefs": 2355,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }
@@ -4405,7 +4473,7 @@
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1",
-    "number_of_lines": 21085,
+    "number_of_lines": 21081,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {

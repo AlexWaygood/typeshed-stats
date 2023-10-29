@@ -4849,6 +4849,63 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `portpicker`
+
+### Upstream repo URL
+
+[https://github.com/google/python_portpicker](https://github.com/google/python_portpicker)
+
+### Stub distribution name
+
+`types-portpicker`
+
+### Number of lines
+
+16 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `portpicker` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `portpicker`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 10
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 6
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 0
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `protobuf`
 
 ### Extra description
@@ -6400,7 +6457,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-34,564 (excluding blank lines)
+34,565 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6425,8 +6482,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,649
-    - Unannotated parameters: 3,725
+    - Annotated parameters: 3,650
+    - Unannotated parameters: 3,724
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 427
 - Returns:
@@ -6852,6 +6909,59 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `seaborn`
+
+### Stub distribution name
+
+`types-seaborn`
+
+### Number of lines
+
+2,204 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 3 unique allowlist entries for `seaborn` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `seaborn`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 1,247
+    - Unannotated parameters: 15
+    - Explicit `Any` parameters: 148
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 230
+- Returns:
+    - Annotated returns: 343
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 12
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
+- Variables:
+    - Annotated variables: 281
+    - Explicit `Any` variables: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 30
+- Class definitions:
+    - Total class definitions: 97
+    - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `setuptools`
 
 ### Upstream repo URL
@@ -7145,7 +7255,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,887 (excluding blank lines)
+54,937 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7161,7 +7271,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 962 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 961 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -7170,21 +7280,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,715
+    - Annotated parameters: 25,733
     - Unannotated parameters: 786
     - Explicit `Any` parameters: 2,065
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 96
 - Returns:
-    - Annotated returns: 14,159
-    - Unannotated returns: 373
-    - Explicit `Any` returns: 875
+    - Annotated returns: 14,180
+    - Unannotated returns: 372
+    - Explicit `Any` returns: 876
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,512
+    - Annotated variables: 8,514
     - Explicit `Any` variables: 540
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 144
 - Class definitions:
-    - Total class definitions: 2,351
+    - Total class definitions: 2,355
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7377,7 +7487,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-21,085 (excluding blank lines)
+21,081 (excluding blank lines)
 
 ### Package status: *out of date*
 
