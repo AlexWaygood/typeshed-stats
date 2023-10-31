@@ -2043,40 +2043,6 @@
     }
   },
   {
-    "package_name": "invoke",
-    "stub_distribution_name": "types-invoke",
-    "upstream_url": "https://github.com/pyinvoke/invoke",
-    "completeness_level": "PARTIAL",
-    "extra_description": null,
-    "number_of_lines": 745,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 2
-    },
-    "pyright_setting": "NOT_STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 246,
-      "unannotated_parameters": 168,
-      "annotated_returns": 174,
-      "unannotated_returns": 73,
-      "explicit_Incomplete_parameters": 1,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 28,
-      "explicit_Any_returns": 8,
-      "annotated_variables": 128,
-      "explicit_Any_variables": 70,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 43,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "jmespath",
     "stub_distribution_name": "types-jmespath",
     "upstream_url": "https://github.com/jmespath/jmespath.py",
@@ -3816,40 +3782,6 @@
       "classdefs": 16,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 3
-    }
-  },
-  {
-    "package_name": "pyvmomi",
-    "stub_distribution_name": "types-pyvmomi",
-    "upstream_url": "https://github.com/vmware/pyvmomi",
-    "completeness_level": "PARTIAL",
-    "extra_description": null,
-    "number_of_lines": 177,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 8
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 50,
-      "unannotated_parameters": 0,
-      "annotated_returns": 35,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 3,
-      "explicit_Incomplete_returns": 16,
-      "explicit_Any_parameters": 2,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 57,
-      "explicit_Any_variables": 7,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 44,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
     }
   },
   {
