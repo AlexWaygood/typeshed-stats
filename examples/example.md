@@ -352,7 +352,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-637 (excluding blank lines)
+665 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -368,7 +368,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 11 unique allowlist entries for `Markdown` when running stubtest in CI.
+Typeshed currently has 6 unique allowlist entries for `Markdown` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -377,19 +377,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Markdown`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 115
-    - Unannotated parameters: 143
-    - Explicit `Any` parameters: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
+    - Annotated parameters: 227
+    - Unannotated parameters: 37
+    - Explicit `Any` parameters: 15
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 114
-    - Unannotated returns: 64
-    - Explicit `Any` returns: 5
+    - Annotated returns: 171
+    - Unannotated returns: 9
+    - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 210
-    - Explicit `Any` variables: 74
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
+    - Annotated variables: 216
+    - Explicit `Any` variables: 64
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 99
     - Class definitions with `Any`: 0
@@ -4002,7 +4002,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-13,163 (excluding blank lines)
+13,217 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4018,7 +4018,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 176 unique allowlist entries for `openpyxl` when running stubtest in CI.
+Typeshed currently has 177 unique allowlist entries for `openpyxl` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4027,23 +4027,23 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,750
-    - Unannotated parameters: 456
+    - Annotated parameters: 3,810
+    - Unannotated parameters: 406
     - Explicit `Any` parameters: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 244
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 241
 - Returns:
-    - Annotated returns: 1,209
-    - Unannotated returns: 184
+    - Annotated returns: 1,249
+    - Unannotated returns: 148
     - Explicit `Any` returns: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 13
 - Variables:
-    - Annotated variables: 4,045
+    - Annotated variables: 4,047
     - Explicit `Any` variables: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 394
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 387
 - Class definitions:
-    - Total class definitions: 603
+    - Total class definitions: 604
     - Class definitions with `Any`: 1
-    - Class definitions marked as at least partially `Incomplete`: 22
+    - Class definitions marked as at least partially `Incomplete`: 21
 
 ---
 
@@ -6461,7 +6461,7 @@ Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incom
 
 ### Number of lines
 
-5,931 (excluding blank lines)
+5,933 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6486,7 +6486,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `redis`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,795
+    - Annotated parameters: 3,797
     - Unannotated parameters: 1,247
     - Explicit `Any` parameters: 68
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 355
@@ -7257,9 +7257,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 1,532 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 

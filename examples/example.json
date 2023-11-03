@@ -210,7 +210,7 @@
     "upstream_url": "https://github.com/Python-Markdown/markdown",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 637,
+    "number_of_lines": 665,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -218,21 +218,21 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 11
+      "allowlist_length": 6
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 115,
-      "unannotated_parameters": 143,
-      "annotated_returns": 114,
-      "unannotated_returns": 64,
-      "explicit_Incomplete_parameters": 5,
+      "annotated_parameters": 227,
+      "unannotated_parameters": 37,
+      "annotated_returns": 171,
+      "unannotated_returns": 9,
+      "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 12,
-      "explicit_Any_returns": 5,
-      "annotated_variables": 210,
-      "explicit_Any_variables": 74,
-      "explicit_Incomplete_variables": 2,
+      "explicit_Any_parameters": 15,
+      "explicit_Any_returns": 2,
+      "annotated_variables": 216,
+      "explicit_Any_variables": 64,
+      "explicit_Incomplete_variables": 0,
       "classdefs": 99,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
@@ -2388,7 +2388,7 @@
     "upstream_url": "https://foss.heptapod.net/openpyxl/openpyxl",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 13163,
+    "number_of_lines": 13217,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2396,24 +2396,24 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 176
+      "allowlist_length": 177
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3750,
-      "unannotated_parameters": 456,
-      "annotated_returns": 1209,
-      "unannotated_returns": 184,
-      "explicit_Incomplete_parameters": 244,
+      "annotated_parameters": 3810,
+      "unannotated_parameters": 406,
+      "annotated_returns": 1249,
+      "unannotated_returns": 148,
+      "explicit_Incomplete_parameters": 241,
       "explicit_Incomplete_returns": 13,
       "explicit_Any_parameters": 12,
       "explicit_Any_returns": 9,
-      "annotated_variables": 4045,
+      "annotated_variables": 4047,
       "explicit_Any_variables": 4,
-      "explicit_Incomplete_variables": 394,
-      "classdefs": 603,
+      "explicit_Incomplete_variables": 387,
+      "classdefs": 604,
       "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 22
+      "classdefs_with_Incomplete": 21
     }
   },
   {
@@ -3858,7 +3858,7 @@
     "upstream_url": "https://github.com/redis/redis-py",
     "completeness_level": "PARTIAL",
     "extra_description": "Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",
-    "number_of_lines": 5931,
+    "number_of_lines": 5933,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3870,7 +3870,7 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3795,
+      "annotated_parameters": 3797,
       "unannotated_parameters": 1247,
       "annotated_returns": 1344,
       "unannotated_returns": 638,
@@ -4338,7 +4338,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 1532,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
