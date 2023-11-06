@@ -54,10 +54,10 @@ rich = ["rich", "rich-argparse>=1"]
 # so the CLI docs generated from --help are consistent
 docs = [
     "typeshed-stats[rich]",
-    "MarkDown==3.5",
+    "MarkDown==3.5.1",
     "mkdocs==1.5.3",
-    "mkdocs-macros-plugin==1.0.4",
-    "mkdocs-material==9.4.6",
+    "mkdocs-macros-plugin==1.0.5",
+    "mkdocs-material==9.4.8",
     "mkdocstrings==0.23.0",
     "mkdocstrings-python==1.7.3",
 ]
@@ -67,18 +67,18 @@ pytest = [
     "covdefaults==2.3.0",
     "coverage==7.3.2",
     "Markdown>=3,<4",
-    "pytest==7.4.2",
+    "pytest==7.4.3",
     "pytest-antilru==1.1.1",
     "pytest-asyncio==0.21.1",
     "pytest-dependency==0.5.1",
-    "pytest-mock==3.11.1",
+    "pytest-mock==3.12.0",
     "pytest-subtests==0.11.0",
 ]
 typecheck = [
     "typeshed-stats[rich,docs,pytest]",
     "mypy==1.6.1",
-    "types-beautifulsoup4==4.12.0.6",
-    "types-Markdown==3.5.0.0",
+    "types-beautifulsoup4==4.12.0.7",
+    "types-Markdown==3.5.0.1",
 ]
 # All of these must match .pre-commit-config.yaml
 #
@@ -86,10 +86,10 @@ typecheck = [
 # That's deliberate (it's not necessary to run them all locally).
 # This file just lists the ones which it's convenient to have around locally.
 misc-lint = [
-    "black==23.10.0",
+    "black==23.10.1",
     "blacken-docs==1.16.0",
     "pre-commit-hooks==4.5.0",
-    "ruff==0.1.0",
+    "ruff==0.1.4",
 ]
 dev = ["typeshed-stats[rich,docs,typecheck,pytest,misc-lint]"]
 
