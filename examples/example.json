@@ -3858,7 +3858,7 @@
     "upstream_url": "https://github.com/redis/redis-py",
     "completeness_level": "PARTIAL",
     "extra_description": "Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",
-    "number_of_lines": 5933,
+    "number_of_lines": 5924,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4059,7 +4059,7 @@
   {
     "package_name": "seaborn",
     "stub_distribution_name": "types-seaborn",
-    "upstream_url": null,
+    "upstream_url": "https://github.com/mwaskom/seaborn",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 2204,
@@ -4267,7 +4267,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54999,
+    "number_of_lines": 55002,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4292,7 +4292,7 @@
       "annotated_variables": 8513,
       "explicit_Any_variables": 540,
       "explicit_Incomplete_variables": 144,
-      "classdefs": 2355,
+      "classdefs": 2356,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }

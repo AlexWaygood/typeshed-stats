@@ -6461,7 +6461,7 @@ Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incom
 
 ### Number of lines
 
-5,933 (excluding blank lines)
+5,924 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6796,6 +6796,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `seaborn`
+
+### Upstream repo URL
+
+[https://github.com/mwaskom/seaborn](https://github.com/mwaskom/seaborn)
 
 ### Stub distribution name
 
@@ -7141,7 +7145,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,999 (excluding blank lines)
+55,002 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7180,7 +7184,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 540
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 144
 - Class definitions:
-    - Total class definitions: 2,355
+    - Total class definitions: 2,356
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 
