@@ -694,7 +694,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-687 (excluding blank lines)
+690 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -719,13 +719,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Pygments`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 108
-    - Unannotated parameters: 158
+    - Annotated parameters: 110
+    - Unannotated parameters: 156
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 96
-    - Unannotated returns: 80
+    - Annotated returns: 97
+    - Unannotated returns: 79
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
@@ -4515,7 +4515,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-539 (excluding blank lines)
+543 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4541,20 +4541,20 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 169
-    - Unannotated parameters: 144
+    - Unannotated parameters: 145
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 51
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 45
 - Returns:
-    - Annotated returns: 148
+    - Annotated returns: 150
     - Unannotated returns: 50
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 150
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 83
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 80
 - Class definitions:
-    - Total class definitions: 20
+    - Total class definitions: 21
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
