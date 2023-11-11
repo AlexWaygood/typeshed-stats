@@ -9,7 +9,7 @@ Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,PARTIAL,-,66
 Pillow,types-Pillow,https://github.com/python-pillow/Pillow,COMPLETE,-,3056,UP_TO_DATE,UPLOADED,NOT_STRICT,743,609,560,341,59,6,7,4,1147,5,316,217,3,1,ERROR_ON_MISSING_STUB,linux;win32,17
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,COMPLETE,-,230,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,PARTIAL,-,1044,UP_TO_DATE,UPLOADED,NOT_STRICT,142,52,101,37,28,0,10,18,734,60,0,24,0,0,MISSING_STUBS_IGNORED,linux,11
-PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,180,UP_TO_DATE,UPLOADED,STRICT,99,0,20,0,0,0,0,0,14,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
+PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,180,OUT_OF_DATE,UPLOADED,STRICT,99,0,20,0,0,0,0,0,14,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
 PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,COMPLETE,-,1298,UP_TO_DATE,UPLOADED,NOT_STRICT,516,282,222,172,12,0,44,12,220,160,2,91,0,0,ERROR_ON_MISSING_STUB,linux,3
 Pygments,types-Pygments,https://github.com/pygments/pygments,PARTIAL,-,690,UP_TO_DATE,UPLOADED,NOT_STRICT,110,156,97,79,17,2,7,2,314,193,0,62,1,0,MISSING_STUBS_IGNORED,linux,4
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,2
@@ -125,7 +125,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,5
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,337,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,55018,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25786,772,14195,365,94,18,2070,878,8513,540,144,2353,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,965
+stdlib,-,https://github.com/python/cpython,STDLIB,-,55021,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25784,774,14194,366,94,18,2057,878,8513,540,144,2353,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,966
 stdlib-list,types-stdlib-list,https://github.com/pypi/stdlib-list,COMPLETE,-,16,OBSOLETE,UPLOADED,STRICT,4,0,4,0,0,0,0,1,4,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OBSOLETE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0

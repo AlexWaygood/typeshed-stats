@@ -582,9 +582,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 180 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7202,7 +7202,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-55,018 (excluding blank lines)
+55,021 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7218,7 +7218,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 965 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 966 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -7227,13 +7227,13 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,786
-    - Unannotated parameters: 772
-    - Explicit `Any` parameters: 2,070
+    - Annotated parameters: 25,784
+    - Unannotated parameters: 774
+    - Explicit `Any` parameters: 2,057
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 94
 - Returns:
-    - Annotated returns: 14,195
-    - Unannotated returns: 365
+    - Annotated returns: 14,194
+    - Unannotated returns: 366
     - Explicit `Any` returns: 878
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
