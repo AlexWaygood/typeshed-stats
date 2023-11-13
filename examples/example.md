@@ -580,11 +580,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-180 (excluding blank lines)
+193 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -594,7 +594,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `linux` and `win32`.
 
 Typeshed currently has 2 unique allowlist entries for `PyScreeze` when running stubtest in CI.
 
@@ -605,17 +605,17 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `PyScreeze`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 99
+    - Annotated parameters: 102
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 20
+    - Annotated returns: 21
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 14
+    - Annotated variables: 17
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
