@@ -7202,7 +7202,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-55,030 (excluding blank lines)
+55,037 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7227,12 +7227,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,792
+    - Annotated parameters: 25,794
     - Unannotated parameters: 774
     - Explicit `Any` parameters: 2,057
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 94
 - Returns:
-    - Annotated returns: 14,198
+    - Annotated returns: 14,200
     - Unannotated returns: 366
     - Explicit `Any` returns: 878
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
@@ -7241,7 +7241,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 540
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 144
 - Class definitions:
-    - Total class definitions: 2,353
+    - Total class definitions: 2,355
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7721,9 +7721,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 124 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
