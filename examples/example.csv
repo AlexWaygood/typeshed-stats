@@ -119,7 +119,7 @@ requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-r
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,265,UP_TO_DATE,UPLOADED,NOT_STRICT,116,17,43,4,51,2,1,0,26,1,8,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,-,5033,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
-seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2204,UP_TO_DATE,UPLOADED,NOT_STRICT,1247,15,343,0,230,8,148,12,281,9,30,97,1,0,ERROR_ON_MISSING_STUB,linux,3
+seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2280,UP_TO_DATE,UPLOADED,STRICT,1285,0,343,0,228,8,150,12,281,9,30,97,1,0,ERROR_ON_MISSING_STUB,linux,3
 setuptools,types-setuptools,https://github.com/pypa/setuptools,PARTIAL,-,2767,UP_TO_DATE,UPLOADED,NOT_STRICT,892,464,794,277,50,14,21,7,639,91,286,181,0,0,ERROR_ON_MISSING_STUB,linux;win32,46
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,51,UP_TO_DATE,UPLOADED,STRICT,35,0,16,0,0,0,14,4,17,0,0,6,0,0,MISSING_STUBS_IGNORED,linux,14
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0

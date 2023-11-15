@@ -6864,7 +6864,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,204 (excluding blank lines)
+2,280 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6882,17 +6882,17 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 3 unique allowlist entries for `seaborn` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `seaborn`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,247
-    - Unannotated parameters: 15
-    - Explicit `Any` parameters: 148
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 230
+    - Annotated parameters: 1,285
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 150
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 228
 - Returns:
     - Annotated returns: 343
     - Unannotated returns: 0
