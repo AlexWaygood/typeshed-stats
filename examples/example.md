@@ -3489,11 +3489,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-416 (excluding blank lines)
+422 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3514,19 +3514,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `jsonschema`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 115
-    - Unannotated parameters: 295
+    - Annotated parameters: 119
+    - Unannotated parameters: 305
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
-    - Annotated returns: 147
-    - Unannotated returns: 31
+    - Annotated returns: 153
+    - Unannotated returns: 29
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
     - Annotated variables: 52
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 20
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 19
 - Class definitions:
     - Total class definitions: 26
     - Class definitions with `Any`: 0
@@ -7202,7 +7202,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-55,038 (excluding blank lines)
+55,043 (excluding blank lines)
 
 ### Package status: *stdlib*
 
