@@ -295,7 +295,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-310 (excluding blank lines)
+311 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -325,7 +325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 151
+    - Annotated returns: 152
     - Unannotated returns: 0
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -1150,7 +1150,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,201 (excluding blank lines)
+1,202 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -1180,7 +1180,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 61
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 73
 - Returns:
-    - Annotated returns: 456
+    - Annotated returns: 457
     - Unannotated returns: 168
     - Explicit `Any` returns: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
@@ -2273,6 +2273,63 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 5
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
+## Info on typeshed's stubs for `fanstatic`
+
+### Upstream repo URL
+
+[https://github.com/zopefoundation/fanstatic](https://github.com/zopefoundation/fanstatic)
+
+### Stub distribution name
+
+`types-fanstatic`
+
+### Number of lines
+
+532 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 39 unique allowlist entries for `fanstatic` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `fanstatic`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 167
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 133
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 128
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 49
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -5659,7 +5716,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,079 (excluding blank lines)
+1,080 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5689,7 +5746,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 269
+    - Annotated returns: 270
     - Unannotated returns: 0
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -6864,7 +6921,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,280 (excluding blank lines)
+2,335 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6880,7 +6937,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 unique allowlist entries for `seaborn` when running stubtest in CI.
+Typeshed currently has 4 unique allowlist entries for `seaborn` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6889,12 +6946,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `seaborn`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,285
+    - Annotated parameters: 1,328
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 150
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 228
+    - Explicit `Any` parameters: 154
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 218
 - Returns:
-    - Annotated returns: 343
+    - Annotated returns: 345
     - Unannotated returns: 0
     - Explicit `Any` returns: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
