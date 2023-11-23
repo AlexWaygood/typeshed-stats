@@ -3314,7 +3314,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-338 (excluding blank lines)
+339 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3330,7 +3330,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1 unique allowlist entry for `ibm-db` when running stubtest in CI.
+Typeshed currently has 0 allowlist entries for `ibm-db` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3349,7 +3349,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 195
+    - Annotated variables: 196
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -7259,7 +7259,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-55,069 (excluding blank lines)
+55,137 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7284,12 +7284,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,794
+    - Annotated parameters: 25,826
     - Unannotated parameters: 774
-    - Explicit `Any` parameters: 2,057
+    - Explicit `Any` parameters: 2,061
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 94
 - Returns:
-    - Annotated returns: 14,223
+    - Annotated returns: 14,250
     - Unannotated returns: 366
     - Explicit `Any` returns: 878
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
@@ -7298,7 +7298,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 540
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 144
 - Class definitions:
-    - Total class definitions: 2,355
+    - Total class definitions: 2,359
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 
