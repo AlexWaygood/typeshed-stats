@@ -694,11 +694,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-690 (excluding blank lines)
+852 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -719,23 +719,23 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Pygments`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 110
+    - Annotated parameters: 116
     - Unannotated parameters: 156
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 97
+    - Annotated returns: 105
     - Unannotated returns: 79
     - Explicit `Any` returns: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
-    - Annotated variables: 314
-    - Explicit `Any` variables: 193
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Annotated variables: 381
+    - Explicit `Any` variables: 171
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 24
 - Class definitions:
-    - Total class definitions: 62
-    - Class definitions with `Any`: 1
-    - Class definitions marked as at least partially `Incomplete`: 0
+    - Total class definitions: 94
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 1
 
 ---
 
@@ -4059,7 +4059,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-13,219 (excluding blank lines)
+13,213 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4287,7 +4287,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-185 (excluding blank lines)
+187 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4633,7 +4633,7 @@ The `types-pika` package contains alternate, more complete type stubs, that are 
 
 ### Number of lines
 
-2,231 (excluding blank lines)
+2,234 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6575,7 +6575,7 @@ Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incom
 
 ### Number of lines
 
-5,924 (excluding blank lines)
+5,955 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7259,7 +7259,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-55,137 (excluding blank lines)
+55,141 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7662,7 +7662,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,382 (excluding blank lines)
+1,380 (excluding blank lines)
 
 ### Package status: *up to date*
 

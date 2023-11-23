@@ -416,8 +416,8 @@
     "upstream_url": "https://github.com/pygments/pygments",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 690,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 852,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -428,20 +428,20 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 110,
+      "annotated_parameters": 116,
       "unannotated_parameters": 156,
-      "annotated_returns": 97,
+      "annotated_returns": 105,
       "unannotated_returns": 79,
       "explicit_Incomplete_parameters": 17,
-      "explicit_Incomplete_returns": 2,
+      "explicit_Incomplete_returns": 5,
       "explicit_Any_parameters": 7,
       "explicit_Any_returns": 2,
-      "annotated_variables": 314,
-      "explicit_Any_variables": 193,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 62,
-      "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 0
+      "annotated_variables": 381,
+      "explicit_Any_variables": 171,
+      "explicit_Incomplete_variables": 24,
+      "classdefs": 94,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 1
     }
   },
   {
@@ -2423,7 +2423,7 @@
     "upstream_url": "https://foss.heptapod.net/openpyxl/openpyxl",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 13219,
+    "number_of_lines": 13213,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2560,7 +2560,7 @@
     "upstream_url": "https://github.com/erikrose/parsimonious",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 185,
+    "number_of_lines": 187,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2764,7 +2764,7 @@
     "upstream_url": "https://github.com/pika/pika",
     "completeness_level": "COMPLETE",
     "extra_description": "The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",
-    "number_of_lines": 2231,
+    "number_of_lines": 2234,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3927,7 +3927,7 @@
     "upstream_url": "https://github.com/redis/redis-py",
     "completeness_level": "PARTIAL",
     "extra_description": "Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",
-    "number_of_lines": 5924,
+    "number_of_lines": 5955,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4336,7 +4336,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 55137,
+    "number_of_lines": 55141,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4576,7 +4576,7 @@
     "upstream_url": "https://github.com/tqdm/tqdm",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1382,
+    "number_of_lines": 1380,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
