@@ -56,9 +56,9 @@ docs = [
     "MarkDown==3.5.1",
     "mkdocs==1.5.3",
     "mkdocs-macros-plugin==1.0.5",
-    "mkdocs-material==9.4.9",
+    "mkdocs-material==9.4.11",
     "mkdocstrings==0.24.0",
-    "mkdocstrings-python==1.7.4",
+    "mkdocstrings-python==1.7.5",
 ]
 pytest = [
     "typeshed-stats[rich]",
@@ -75,7 +75,7 @@ pytest = [
 ]
 typecheck = [
     "typeshed-stats[rich,docs,pytest]",
-    "mypy==1.7.0",
+    "mypy==1.7.1",
     "types-beautifulsoup4==4.12.0.7",
     "types-Markdown==3.5.0.3",
 ]
