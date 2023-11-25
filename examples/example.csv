@@ -79,7 +79,7 @@ passlib,types-passlib,https://foss.heptapod.net/python-libs/passlib,COMPLETE,-,1
 passpy,types-passpy,https://github.com/bfrascher/passpy,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
 peewee,types-peewee,https://github.com/coleifer/peewee,COMPLETE,-,1638,UP_TO_DATE,UPLOADED,NOT_STRICT,411,670,305,446,243,5,0,0,437,0,366,166,0,0,ERROR_ON_MISSING_STUB,linux,25
 pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,PARTIAL,-,27,UP_TO_DATE,UPLOADED,STRICT,10,0,8,0,0,2,1,1,11,3,0,1,0,0,MISSING_STUBS_IGNORED,linux,2
-pexpect,types-pexpect,https://github.com/pexpect/pexpect,COMPLETE,-,543,UP_TO_DATE,UPLOADED,NOT_STRICT,169,145,150,50,45,0,0,0,150,0,80,21,0,0,ERROR_ON_MISSING_STUB,linux,0
+pexpect,types-pexpect,https://github.com/pexpect/pexpect,COMPLETE,-,543,OUT_OF_DATE,UPLOADED,NOT_STRICT,169,145,150,50,45,0,0,0,150,0,80,21,0,0,ERROR_ON_MISSING_STUB,linux,0
 pika,types-pika-ts,https://github.com/pika/pika,COMPLETE,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2234,UP_TO_DATE,UPLOADED,NOT_STRICT,618,383,413,347,141,24,4,0,470,0,258,222,0,0,ERROR_ON_MISSING_STUB,linux,9
 playsound,types-playsound,https://github.com/TaylorSMarks/playsound,COMPLETE,-,5,UP_TO_DATE,UPLOADED,STRICT,2,0,1,0,0,0,0,0,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 pluggy,types-pluggy,https://github.com/pytest-dev/pluggy,COMPLETE,-,201,OBSOLETE,UPLOADED,STRICT,87,0,60,0,1,0,1,5,39,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,1
