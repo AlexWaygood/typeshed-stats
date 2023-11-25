@@ -4230,7 +4230,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,814 (excluding blank lines)
+1,826 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4255,12 +4255,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `paramiko`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 764
+    - Annotated parameters: 768
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 20
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
-    - Annotated returns: 636
+    - Annotated returns: 642
     - Unannotated returns: 0
     - Explicit `Any` returns: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -7259,7 +7259,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-55,141 (excluding blank lines)
+55,150 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7284,12 +7284,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,826
+    - Annotated parameters: 25,834
     - Unannotated parameters: 774
     - Explicit `Any` parameters: 2,061
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 94
 - Returns:
-    - Annotated returns: 14,250
+    - Annotated returns: 14,254
     - Unannotated returns: 366
     - Explicit `Any` returns: 878
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
