@@ -6921,7 +6921,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,335 (excluding blank lines)
+2,526 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6937,7 +6937,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `seaborn` when running stubtest in CI.
+Typeshed currently has 5 unique allowlist entries for `seaborn` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6946,21 +6946,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `seaborn`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,328
+    - Annotated parameters: 1,447
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 154
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 218
+    - Explicit `Any` parameters: 161
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 197
 - Returns:
-    - Annotated returns: 345
+    - Annotated returns: 346
     - Unannotated returns: 0
     - Explicit `Any` returns: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
 - Variables:
     - Annotated variables: 281
-    - Explicit `Any` variables: 9
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 30
+    - Explicit `Any` variables: 13
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 24
 - Class definitions:
-    - Total class definitions: 97
+    - Total class definitions: 98
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
