@@ -3377,9 +3377,9 @@ Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you 
 
 13,372 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -4059,7 +4059,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-13,197 (excluding blank lines)
+13,199 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4084,19 +4084,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,885
-    - Unannotated parameters: 359
+    - Annotated parameters: 3,895
+    - Unannotated parameters: 350
     - Explicit `Any` parameters: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 221
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 220
 - Returns:
-    - Annotated returns: 1,307
-    - Unannotated returns: 98
+    - Annotated returns: 1,313
+    - Unannotated returns: 93
     - Explicit `Any` returns: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
 - Variables:
     - Annotated variables: 4,047
     - Explicit `Any` variables: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 377
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 364
 - Class definitions:
     - Total class definitions: 607
     - Class definitions with `Any`: 1
@@ -7259,7 +7259,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-55,203 (excluding blank lines)
+55,208 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7298,7 +7298,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 540
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 145
 - Class definitions:
-    - Total class definitions: 2,361
+    - Total class definitions: 2,362
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 
