@@ -1772,6 +1772,42 @@
     }
   },
   {
+    "package_name": "gevent",
+    "stub_distribution_name": "types-gevent",
+    "upstream_url": "https://github.com/gevent/gevent",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 3019,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "darwin",
+        "linux",
+        "win32"
+      ],
+      "allowlist_length": 164
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 1359,
+      "unannotated_parameters": 0,
+      "annotated_returns": 824,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 5,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 75,
+      "explicit_Any_returns": 21,
+      "annotated_variables": 359,
+      "explicit_Any_variables": 26,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 207,
+      "classdefs_with_Any": 2,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "google-cloud-ndb",
     "stub_distribution_name": "types-google-cloud-ndb",
     "upstream_url": "https://github.com/googleapis/python-ndb",
@@ -4363,40 +4399,6 @@
       "explicit_Incomplete_variables": 145,
       "classdefs": 2362,
       "classdefs_with_Any": 24,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
-    "package_name": "stdlib-list",
-    "stub_distribution_name": "types-stdlib-list",
-    "upstream_url": "https://github.com/pypi/stdlib-list",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 16,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 1
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 4,
-      "unannotated_parameters": 0,
-      "annotated_returns": 4,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 1,
-      "annotated_variables": 4,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 0,
-      "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
   },
