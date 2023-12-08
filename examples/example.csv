@@ -127,7 +127,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,5
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,337,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,55217,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25853,774,14268,366,94,18,2063,878,8536,540,145,2362,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,970
+stdlib,-,https://github.com/python/cpython,STDLIB,-,55217,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25853,774,14268,366,94,18,2063,878,8536,540,145,2362,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,969
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OBSOLETE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1,21081,OUT_OF_DATE,UPLOADED,STRICT,3523,0,2370,0,6,33,32,31,4438,1,6,781,0,0,MISSING_STUBS_IGNORED,linux,35
