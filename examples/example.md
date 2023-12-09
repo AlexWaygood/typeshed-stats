@@ -7316,7 +7316,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-55,217 (excluding blank lines)
+55,228 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7343,7 +7343,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 25,853
     - Unannotated parameters: 774
-    - Explicit `Any` parameters: 2,063
+    - Explicit `Any` parameters: 2,031
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 94
 - Returns:
     - Annotated returns: 14,268
