@@ -2317,7 +2317,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 167
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 9
+    - Explicit `Any` parameters: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 133
@@ -2976,7 +2976,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-3,019 (excluding blank lines)
+3,007 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2992,7 +2992,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 164 unique allowlist entries for `gevent` when running stubtest in CI.
+Typeshed currently has 160 unique allowlist entries for `gevent` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3001,9 +3001,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `gevent`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,359
+    - Annotated parameters: 1,346
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 75
+    - Explicit `Any` parameters: 65
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
 - Returns:
     - Annotated returns: 824
@@ -6978,7 +6978,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,526 (excluding blank lines)
+2,549 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7003,12 +7003,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `seaborn`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,447
+    - Annotated parameters: 1,454
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 161
+    - Explicit `Any` parameters: 164
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 197
 - Returns:
-    - Annotated returns: 346
+    - Annotated returns: 347
     - Unannotated returns: 0
     - Explicit `Any` returns: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
@@ -7316,7 +7316,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-55,228 (excluding blank lines)
+55,243 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7341,12 +7341,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,853
+    - Annotated parameters: 25,855
     - Unannotated parameters: 774
-    - Explicit `Any` parameters: 2,031
+    - Explicit `Any` parameters: 2,029
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 94
 - Returns:
-    - Annotated returns: 14,268
+    - Annotated returns: 14,271
     - Unannotated returns: 366
     - Explicit `Any` returns: 878
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
@@ -7355,7 +7355,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 540
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 145
 - Class definitions:
-    - Total class definitions: 2,362
+    - Total class definitions: 2,412
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 
