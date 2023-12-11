@@ -141,7 +141,7 @@ ttkthemes,types-ttkthemes,https://github.com/RedFantom/ttkthemes,COMPLETE,-,76,U
 tzlocal,types-tzlocal,https://github.com/regebro/tzlocal,COMPLETE,-,13,OBSOLETE,UPLOADED,STRICT,3,0,5,0,0,0,0,0,3,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 uWSGI,types-uWSGI,https://github.com/unbit/uwsgi,COMPLETE,"Type hints for uWSGI's [Python API](https://uwsgi-docs.readthedocs.io/en/latest/PythonModule.html). Note that this API is available only when running Python code inside a uWSGI process and some parts of the API are only present when corresponding configuration options have been enabled.
 ",381,UP_TO_DATE,UPLOADED,STRICT,338,0,216,0,0,0,15,1,61,5,0,26,0,0,ERROR_ON_MISSING_STUB,darwin;linux,7
-ujson,types-ujson,https://github.com/ultrajson/ultrajson,COMPLETE,-,49,OUT_OF_DATE,UPLOADED,STRICT,40,0,6,0,3,0,3,3,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
+ujson,types-ujson,https://github.com/ultrajson/ultrajson,COMPLETE,-,49,UP_TO_DATE,UPLOADED,STRICT,40,0,6,0,3,0,3,3,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 untangle,types-untangle,https://github.com/stchris/untangle,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,19,0,21,0,0,0,1,2,5,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 usersettings,types-usersettings,https://github.com/glvnst/usersettings,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,7,0,6,0,0,0,1,1,3,0,0,1,1,0,ERROR_ON_MISSING_STUB,linux,3
 vobject,types-vobject,https://github.com/eventable/vobject,COMPLETE,-,523,UP_TO_DATE,UPLOADED,NOT_STRICT,101,179,73,103,21,0,0,3,185,90,3,50,0,0,ERROR_ON_MISSING_STUB,linux,11
