@@ -1142,6 +1142,7 @@ KNOWN_FULLY_ANNOTATED_FILES_WITH_LAX_PYRIGHT_SETTINGS = frozenset(
     {
         Path("stdlib/lib2to3/fixes/fix_imports2.pyi"),
         Path("stdlib/lib2to3/fixes/__init__.pyi"),
+        Path("stdlib/xml/sax/__init__.pyi"),
     }
 )
 
