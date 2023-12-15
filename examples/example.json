@@ -2420,6 +2420,40 @@
     }
   },
   {
+    "package_name": "networkx",
+    "stub_distribution_name": "types-networkx",
+    "upstream_url": "https://github.com/networkx/networkx",
+    "completeness_level": "PARTIAL",
+    "extra_description": null,
+    "number_of_lines": 3814,
+    "package_status": "OUT_OF_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 1933,
+      "unannotated_parameters": 1540,
+      "annotated_returns": 487,
+      "unannotated_returns": 829,
+      "explicit_Incomplete_parameters": 786,
+      "explicit_Incomplete_returns": 103,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 304,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 241,
+      "classdefs": 126,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 2
+    }
+  },
+  {
     "package_name": "oauthlib",
     "stub_distribution_name": "types-oauthlib",
     "upstream_url": "https://github.com/oauthlib/oauthlib",

@@ -4047,6 +4047,63 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `networkx`
+
+### Upstream repo URL
+
+[https://github.com/networkx/networkx](https://github.com/networkx/networkx)
+
+### Stub distribution name
+
+`types-networkx`
+
+### Number of lines
+
+3,814 (excluding blank lines)
+
+### Package status: *out of date*
+
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *missing stubs ignored*
+
+The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `networkx` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `networkx`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 1,933
+    - Unannotated parameters: 1,540
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 786
+- Returns:
+    - Annotated returns: 487
+    - Unannotated returns: 829
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 103
+- Variables:
+    - Annotated variables: 304
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 241
+- Class definitions:
+    - Total class definitions: 126
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 2
+
+---
+
 ## Info on typeshed's stubs for `oauthlib`
 
 ### Upstream repo URL
