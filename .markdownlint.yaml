@@ -19,8 +19,9 @@ MD048:
   style: "backtick"
 
 # Disabled rules
+no-bare-urls: false
 no-inline-html: false
 first-line-h1: false
-no-duplicate-header: false
+no-duplicate-heading: false
 line-length: false
 reference-links-images: false
