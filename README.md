@@ -2,7 +2,7 @@
 
 # typeshed-stats
 
-<img src="https://user-images.githubusercontent.com/66076021/202873196-3af493e6-bca0-4c1a-8853-73635b5c1ca8.png" width="500", alt="A Python in a field of wheat with a shed behind it, golden-red sunset in the background">
+<img src="https://user-images.githubusercontent.com/66076021/202873196-3af493e6-bca0-4c1a-8853-73635b5c1ca8.png" width="500" alt="A Python in a field of wheat with a shed behind it, golden-red sunset in the background">
 
 <br>
 
