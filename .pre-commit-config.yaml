@@ -12,18 +12,18 @@ repos:
       - id: name-tests-test
         args: [--pytest-test-first]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.1.6 # must match pyproject.toml
+    rev: v0.1.9 # must match pyproject.toml
     hooks:
       - id: ruff
   - repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 23.11.0 # must match pyproject.toml AND the black used by blacken-docs
+    rev: 23.12.0 # must match pyproject.toml AND the black used by blacken-docs
     hooks:
       - id: black
   - repo: https://github.com/adamchainz/blacken-docs
     rev: 1.16.0 # must match pyproject.toml
     hooks:
       - id: blacken-docs
-        additional_dependencies: [black==23.11.0]
+        additional_dependencies: [black==23.12.0]
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.6
     hooks:
@@ -33,14 +33,14 @@ repos:
     hooks:
       - id: clevercsv-standardize
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.37.0
+    rev: v0.38.0
     hooks:
       - id: markdownlint-fix
         args: ["--ignore", "stats_website/.snippets"]
       - id: markdownlint
         args: ["--ignore", "stats_website/.snippets"]
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v3.0.3
+    rev: v4.0.0-alpha.8
     hooks:
       - id: prettier
         exclude: "^examples/.*"
