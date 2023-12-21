@@ -5337,7 +5337,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 9 unique allowlist entries for `pyasn1` when running stubtest in CI.
+Typeshed currently has 8 unique allowlist entries for `pyasn1` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5789,7 +5789,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 13 unique allowlist entries for `pynput` when running stubtest in CI.
+Typeshed currently has 15 unique allowlist entries for `pynput` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6400,7 +6400,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,416 (excluding blank lines)
+5,415 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6416,7 +6416,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 11 unique allowlist entries for `python-xlib` when running stubtest in CI.
+Typeshed currently has 10 unique allowlist entries for `python-xlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7373,7 +7373,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-55,512 (excluding blank lines)
+55,513 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7389,7 +7389,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 973 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 970 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -7403,7 +7403,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 2,021
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 94
 - Returns:
-    - Annotated returns: 14,317
+    - Annotated returns: 14,318
     - Unannotated returns: 366
     - Explicit `Any` returns: 883
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
