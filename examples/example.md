@@ -6807,7 +6807,7 @@ Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to
 
 ### Number of lines
 
-993 (excluding blank lines)
+996 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6842,8 +6842,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 114
-    - Explicit `Any` variables: 37
+    - Annotated variables: 116
+    - Explicit `Any` variables: 39
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 51
