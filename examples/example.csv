@@ -69,7 +69,7 @@ libsass,types-libsass,https://github.com/sass/libsass-python,COMPLETE,-,220,UP_T
 mock,types-mock,https://github.com/testing-cabal/mock,COMPLETE,-,397,UP_TO_DATE,UPLOADED,STRICT,218,0,91,0,45,0,86,15,58,34,0,25,2,0,ERROR_ON_MISSING_STUB,linux,4
 mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,31,0,28,0,0,0,3,7,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,6
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1228,UP_TO_DATE,UPLOADED,NOT_STRICT,35,124,37,79,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
-netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,660,UP_TO_DATE,UPLOADED,STRICT,292,0,310,0,5,0,1,1,103,0,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
+netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,660,OUT_OF_DATE,UPLOADED,STRICT,292,0,310,0,5,0,1,1,103,0,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 networkx,types-networkx,https://github.com/networkx/networkx,PARTIAL,-,3819,OUT_OF_DATE,UPLOADED,NOT_STRICT,1940,1533,489,827,786,102,0,3,304,0,241,126,1,2,MISSING_STUBS_IGNORED,linux,0
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1423,UP_TO_DATE,UPLOADED,NOT_STRICT,405,410,160,190,181,0,0,0,318,207,0,106,2,0,MISSING_STUBS_IGNORED,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,13199,UP_TO_DATE,UPLOADED,NOT_STRICT,3895,350,1313,93,220,12,12,10,4047,3,364,607,1,21,ERROR_ON_MISSING_STUB,linux,180
@@ -122,7 +122,7 @@ requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-r
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,265,UP_TO_DATE,UPLOADED,NOT_STRICT,116,17,43,4,51,2,1,0,26,1,8,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,-,5033,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
-seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2574,UP_TO_DATE,UPLOADED,STRICT,1464,0,359,0,92,9,166,17,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,5
+seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2574,OUT_OF_DATE,UPLOADED,STRICT,1464,0,359,0,92,9,166,17,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,5
 setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,-,2781,UP_TO_DATE,UPLOADED,NOT_STRICT,893,472,794,280,50,14,21,7,639,91,286,183,0,0,ERROR_ON_MISSING_STUB,linux;win32,48
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,51,UP_TO_DATE,UPLOADED,STRICT,35,0,16,0,0,0,14,4,17,0,0,6,0,0,MISSING_STUBS_IGNORED,linux,14
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
