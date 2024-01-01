@@ -26,7 +26,7 @@ jobs:
         run: |
           git config --global user.name statsabot
           git config --global user.email ''
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           cache: "pip"
           cache-dependency-path: "pyproject.toml"
@@ -78,7 +78,7 @@ jobs:
     permissions:
       issues: write
     steps:
-      - uses: actions/github-script@v6
+      - uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
