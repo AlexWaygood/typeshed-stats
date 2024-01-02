@@ -2391,27 +2391,27 @@
     "upstream_url": "https://github.com/drkjam/netaddr",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 660,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 672,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 2
+      "allowlist_length": 1
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 292,
       "unannotated_parameters": 0,
-      "annotated_returns": 310,
+      "annotated_returns": 314,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 5,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 103,
+      "annotated_variables": 110,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 2,
       "classdefs": 43,
