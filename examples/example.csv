@@ -71,13 +71,13 @@ mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1228,UP_TO_DATE,UPLOADED,NOT_STRICT,35,124,37,79,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
 netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,672,UP_TO_DATE,UPLOADED,STRICT,292,0,314,0,5,0,1,1,110,0,2,43,0,0,ERROR_ON_MISSING_STUB,linux,1
 networkx,types-networkx,https://github.com/networkx/networkx,PARTIAL,-,3819,OUT_OF_DATE,UPLOADED,NOT_STRICT,1940,1533,489,827,786,102,0,3,304,0,241,126,1,2,MISSING_STUBS_IGNORED,linux,0
-oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1423,UP_TO_DATE,UPLOADED,NOT_STRICT,405,410,160,190,181,0,0,0,318,207,0,106,2,0,MISSING_STUBS_IGNORED,linux,1
+oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1431,UP_TO_DATE,UPLOADED,NOT_STRICT,406,414,161,191,182,0,0,0,320,207,2,107,2,0,MISSING_STUBS_IGNORED,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,13199,UP_TO_DATE,UPLOADED,NOT_STRICT,3895,350,1313,93,220,12,12,10,4047,3,364,607,1,21,ERROR_ON_MISSING_STUB,linux,180
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,PARTIAL,-,331,UP_TO_DATE,UPLOADED,STRICT,105,0,113,0,1,0,21,0,56,4,0,26,0,0,MISSING_STUBS_IGNORED,linux,4
 paho-mqtt,types-paho-mqtt,https://github.com/eclipse/paho.mqtt.python,COMPLETE,-,513,UP_TO_DATE,UPLOADED,STRICT,217,0,147,0,0,0,5,4,145,0,1,19,0,0,ERROR_ON_MISSING_STUB,linux,0
 paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1832,UP_TO_DATE,UPLOADED,STRICT,770,0,642,0,3,0,20,9,545,14,3,124,2,0,MISSING_STUBS_IGNORED,linux;win32,6
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,COMPLETE,-,187,UP_TO_DATE,UPLOADED,STRICT,114,0,60,0,0,1,22,2,34,3,2,27,0,0,ERROR_ON_MISSING_STUB,linux,4
-passlib,types-passlib,https://foss.heptapod.net/python-libs/passlib,COMPLETE,-,1780,UP_TO_DATE,UPLOADED,NOT_STRICT,382,466,155,329,156,0,18,10,576,101,3,143,2,0,ERROR_ON_MISSING_STUB,linux,31
+passlib,types-passlib,https://foss.heptapod.net/python-libs/passlib,COMPLETE,-,1780,UP_TO_DATE,UPLOADED,NOT_STRICT,382,466,155,329,156,0,19,10,576,101,3,143,2,0,ERROR_ON_MISSING_STUB,linux,31
 passpy,types-passpy,https://github.com/bfrascher/passpy,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
 peewee,types-peewee,https://github.com/coleifer/peewee,COMPLETE,-,1638,UP_TO_DATE,UPLOADED,NOT_STRICT,411,670,305,446,243,5,0,0,437,0,366,166,0,0,ERROR_ON_MISSING_STUB,linux,25
 pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,PARTIAL,-,27,UP_TO_DATE,UPLOADED,STRICT,10,0,8,0,0,2,1,1,11,3,0,1,0,0,MISSING_STUBS_IGNORED,linux,2

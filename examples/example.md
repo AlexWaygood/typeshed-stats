@@ -4116,7 +4116,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,423 (excluding blank lines)
+1,431 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4141,21 +4141,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `oauthlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 405
-    - Unannotated parameters: 410
+    - Annotated parameters: 406
+    - Unannotated parameters: 414
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 181
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 182
 - Returns:
-    - Annotated returns: 160
-    - Unannotated returns: 190
+    - Annotated returns: 161
+    - Unannotated returns: 191
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 318
+    - Annotated variables: 320
     - Explicit `Any` variables: 207
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
-    - Total class definitions: 106
+    - Total class definitions: 107
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -4485,7 +4485,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 382
     - Unannotated parameters: 466
-    - Explicit `Any` parameters: 18
+    - Explicit `Any` parameters: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 156
 - Returns:
     - Annotated returns: 155
