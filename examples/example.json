@@ -1337,7 +1337,7 @@
     "upstream_url": "https://github.com/takluyver/entrypoints",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 45,
+    "number_of_lines": 41,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1777,7 +1777,7 @@
     "upstream_url": "https://github.com/gevent/gevent",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3007,
+    "number_of_lines": 3006,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2289,7 +2289,7 @@
     "upstream_url": "https://github.com/testing-cabal/mock",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 397,
+    "number_of_lines": 390,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2301,9 +2301,9 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 218,
+      "annotated_parameters": 217,
       "unannotated_parameters": 0,
-      "annotated_returns": 91,
+      "annotated_returns": 90,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 45,
       "explicit_Incomplete_returns": 0,
@@ -2312,7 +2312,7 @@
       "annotated_variables": 58,
       "explicit_Any_variables": 34,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 25,
+      "classdefs": 24,
       "classdefs_with_Any": 2,
       "classdefs_with_Incomplete": 0
     }
@@ -2493,7 +2493,7 @@
     "upstream_url": "https://foss.heptapod.net/openpyxl/openpyxl",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 13199,
+    "number_of_lines": 13191,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2505,9 +2505,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3895,
+      "annotated_parameters": 3892,
       "unannotated_parameters": 350,
-      "annotated_returns": 1313,
+      "annotated_returns": 1312,
       "unannotated_returns": 93,
       "explicit_Incomplete_parameters": 220,
       "explicit_Incomplete_returns": 12,
@@ -2902,7 +2902,7 @@
     "upstream_url": "https://github.com/pytest-dev/pluggy",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 201,
+    "number_of_lines": 197,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3347,7 +3347,7 @@
     "upstream_url": "https://github.com/PyCQA/pyflakes",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 430,
+    "number_of_lines": 426,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3381,7 +3381,7 @@
     "upstream_url": "https://github.com/pyinstaller/pyinstaller",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 690,
+    "number_of_lines": 682,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3393,9 +3393,9 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 263,
+      "annotated_parameters": 262,
       "unannotated_parameters": 0,
-      "annotated_returns": 152,
+      "annotated_returns": 149,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 7,
       "explicit_Incomplete_returns": 0,
@@ -3404,7 +3404,7 @@
       "annotated_variables": 194,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 15,
-      "classdefs": 27,
+      "classdefs": 26,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4406,7 +4406,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 55511,
+    "number_of_lines": 53944,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4420,18 +4420,18 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25929,
+      "annotated_parameters": 25134,
       "unannotated_parameters": 774,
-      "annotated_returns": 14303,
-      "unannotated_returns": 366,
-      "explicit_Incomplete_parameters": 94,
+      "annotated_returns": 14064,
+      "unannotated_returns": 365,
+      "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
-      "explicit_Any_parameters": 2021,
-      "explicit_Any_returns": 881,
-      "annotated_variables": 8553,
-      "explicit_Any_variables": 540,
+      "explicit_Any_parameters": 1979,
+      "explicit_Any_returns": 856,
+      "annotated_variables": 8535,
+      "explicit_Any_variables": 539,
       "explicit_Incomplete_variables": 145,
-      "classdefs": 2428,
+      "classdefs": 2417,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }
