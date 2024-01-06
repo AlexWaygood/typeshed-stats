@@ -5,7 +5,7 @@
     "upstream_url": "https://github.com/tantale/deprecated",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 56,
+    "number_of_lines": 55,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -39,7 +39,7 @@
     "upstream_url": "https://github.com/ianare/exif-py",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 218,
+    "number_of_lines": 217,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -141,7 +141,7 @@
     "upstream_url": "https://github.com/miguelgrinberg/flask-socketio",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 234,
+    "number_of_lines": 233,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -210,7 +210,7 @@
     "upstream_url": "https://github.com/Python-Markdown/markdown",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 687,
+    "number_of_lines": 685,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -244,7 +244,7 @@
     "upstream_url": "https://github.com/python-pillow/Pillow",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3056,
+    "number_of_lines": 3013,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -484,7 +484,7 @@
     "upstream_url": "https://github.com/wtforms/wtforms",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1071,
+    "number_of_lines": 1069,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -552,7 +552,7 @@
     "upstream_url": "https://github.com/Tinche/aiofiles",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 680,
+    "number_of_lines": 679,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -621,7 +621,7 @@
     "upstream_url": "https://git.launchpad.net/beautifulsoup/tree",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 811,
+    "number_of_lines": 810,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -894,7 +894,7 @@
     "upstream_url": "https://github.com/noahmorrison/chevron",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 37,
+    "number_of_lines": 36,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1201,7 +1201,7 @@
     "upstream_url": "https://github.com/containerbuildsystem/dockerfile-parse",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 114,
+    "number_of_lines": 113,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1269,7 +1269,7 @@
     "upstream_url": "https://sourceforge.net/p/docutils/code",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 516,
+    "number_of_lines": 515,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1371,7 +1371,7 @@
     "upstream_url": "https://github.com/zopefoundation/fanstatic",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 532,
+    "number_of_lines": 530,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1711,7 +1711,7 @@
     "upstream_url": "https://github.com/PyFPDF/fpdf2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2856,
+    "number_of_lines": 2854,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1777,7 +1777,7 @@
     "upstream_url": "https://github.com/gevent/gevent",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3006,
+    "number_of_lines": 3003,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1915,7 +1915,7 @@
     "upstream_url": "https://github.com/html5lib/html5lib-python",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 673,
+    "number_of_lines": 672,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2051,7 +2051,7 @@
     "upstream_url": "https://github.com/influxdata/influxdb-client-python",
     "completeness_level": "COMPLETE",
     "extra_description": "Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you need to install `types-influxdb-client` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-influxdb-client<1.37.0.1`.",
-    "number_of_lines": 13372,
+    "number_of_lines": 13371,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2119,7 +2119,7 @@
     "upstream_url": "https://github.com/jmespath/jmespath.py",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 174,
+    "number_of_lines": 172,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2221,7 +2221,7 @@
     "upstream_url": "https://github.com/cannatag/ldap3",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 2660,
+    "number_of_lines": 2659,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2391,7 +2391,7 @@
     "upstream_url": "https://github.com/drkjam/netaddr",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 672,
+    "number_of_lines": 669,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2425,7 +2425,7 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 3819,
+    "number_of_lines": 3815,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2493,7 +2493,7 @@
     "upstream_url": "https://foss.heptapod.net/openpyxl/openpyxl",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 13191,
+    "number_of_lines": 13149,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2834,7 +2834,7 @@
     "upstream_url": "https://github.com/pika/pika",
     "completeness_level": "COMPLETE",
     "extra_description": "The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",
-    "number_of_lines": 2234,
+    "number_of_lines": 2235,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2936,7 +2936,7 @@
     "upstream_url": "https://github.com/izimobil/polib",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 144,
+    "number_of_lines": 143,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3004,7 +3004,7 @@
     "upstream_url": "https://github.com/protocolbuffers/protobuf",
     "completeness_level": "PARTIAL",
     "extra_description": "Generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on protobuf==4.21.8",
-    "number_of_lines": 4294,
+    "number_of_lines": 4292,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3038,7 +3038,7 @@
     "upstream_url": "https://github.com/giampaolo/psutil",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1561,
+    "number_of_lines": 1560,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3176,7 +3176,7 @@
     "upstream_url": "https://github.com/pyasn1/pyasn1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1505,
+    "number_of_lines": 1503,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3245,7 +3245,7 @@
     "upstream_url": "https://github.com/ppwwyyxx/cocoapi",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 182,
+    "number_of_lines": 183,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3279,7 +3279,7 @@
     "upstream_url": "https://github.com/pycurl/pycurl",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 674,
+    "number_of_lines": 675,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3381,7 +3381,7 @@
     "upstream_url": "https://github.com/pyinstaller/pyinstaller",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 682,
+    "number_of_lines": 681,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3415,7 +3415,7 @@
     "upstream_url": "https://github.com/kurtbrose/pyjks",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 374,
+    "number_of_lines": 377,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3485,7 +3485,7 @@
     "upstream_url": "https://github.com/pyserial/pyserial",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1080,
+    "number_of_lines": 1079,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3657,7 +3657,7 @@
     "upstream_url": "https://github.com/dateutil/dateutil",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 440,
+    "number_of_lines": 439,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3725,7 +3725,7 @@
     "upstream_url": "https://github.com/mpdavis/python-jose",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 358,
+    "number_of_lines": 357,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3827,7 +3827,7 @@
     "upstream_url": "https://github.com/python-xlib/python-xlib",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 5415,
+    "number_of_lines": 5414,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3895,7 +3895,7 @@
     "upstream_url": "https://github.com/mhammond/pywin32",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 34581,
+    "number_of_lines": 34582,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3963,7 +3963,7 @@
     "upstream_url": "https://github.com/lincolnloop/python-qrcode",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 467,
+    "number_of_lines": 466,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3997,7 +3997,7 @@
     "upstream_url": "https://github.com/redis/redis-py",
     "completeness_level": "PARTIAL",
     "extra_description": "Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",
-    "number_of_lines": 5955,
+    "number_of_lines": 5952,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4065,7 +4065,7 @@
     "upstream_url": "https://github.com/psf/requests",
     "completeness_level": "COMPLETE",
     "extra_description": "Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",
-    "number_of_lines": 996,
+    "number_of_lines": 997,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4099,7 +4099,7 @@
     "upstream_url": "https://github.com/requests/requests-oauthlib",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 265,
+    "number_of_lines": 266,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4201,7 +4201,7 @@
     "upstream_url": "https://github.com/mwaskom/seaborn",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2574,
+    "number_of_lines": 2571,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4235,7 +4235,7 @@
     "upstream_url": "https://github.com/pypa/setuptools",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2781,
+    "number_of_lines": 2778,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4338,7 +4338,7 @@
     "upstream_url": "https://github.com/benjaminp/six",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 337,
+    "number_of_lines": 336,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4406,7 +4406,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 53944,
+    "number_of_lines": 53890,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4680,7 +4680,7 @@
     "upstream_url": "https://github.com/tree-sitter/py-tree-sitter",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 124,
+    "number_of_lines": 123,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4953,7 +4953,7 @@
     "upstream_url": "https://github.com/eventable/vobject",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 523,
+    "number_of_lines": 522,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4987,7 +4987,7 @@
     "upstream_url": "https://github.com/Pylons/waitress",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 632,
+    "number_of_lines": 630,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
