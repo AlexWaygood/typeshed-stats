@@ -2921,7 +2921,7 @@ Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Pyth
 
 ### Number of lines
 
-733 (excluding blank lines)
+750 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -2944,12 +2944,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `gdb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 233
+    - Annotated parameters: 234
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 257
+    - Annotated returns: 258
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
