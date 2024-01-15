@@ -1993,6 +1993,63 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `defusedxml`
+
+### Upstream repo URL
+
+[https://github.com/tiran/defusedxml](https://github.com/tiran/defusedxml)
+
+### Stub distribution name
+
+`types-defusedxml`
+
+### Number of lines
+
+234 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *missing stubs ignored*
+
+The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `defusedxml` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `defusedxml`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 81
+    - Unannotated parameters: 97
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
+- Returns:
+    - Annotated returns: 36
+    - Unannotated returns: 15
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 37
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 19
+- Class definitions:
+    - Total class definitions: 12
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `dockerfile-parse`
 
 ### Upstream repo URL
@@ -7035,11 +7092,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,571 (excluding blank lines)
+2,588 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7051,7 +7108,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 5 unique allowlist entries for `seaborn` when running stubtest in CI.
+Typeshed currently has 4 unique allowlist entries for `seaborn` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7060,10 +7117,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `seaborn`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,464
+    - Annotated parameters: 1,470
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 166
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 92
+    - Explicit `Any` parameters: 155
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 59
 - Returns:
     - Annotated returns: 359
     - Unannotated returns: 0
