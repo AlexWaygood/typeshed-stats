@@ -967,6 +967,63 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `antlr4-python3-runtime`
+
+### Upstream repo URL
+
+[https://github.com/antlr/antlr4](https://github.com/antlr/antlr4)
+
+### Stub distribution name
+
+`types-antlr4-python3-runtime`
+
+### Number of lines
+
+1,781 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *missing stubs ignored*
+
+The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+
+In CI, stubtest is run on `linux` and `win32`.
+
+Typeshed currently has 0 allowlist entries for `antlr4-python3-runtime` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `antlr4-python3-runtime`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 778
+    - Unannotated parameters: 221
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 28
+- Returns:
+    - Annotated returns: 208
+    - Unannotated returns: 485
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
+- Variables:
+    - Annotated variables: 408
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 269
+- Class definitions:
+    - Total class definitions: 142
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `aws-xray-sdk`
 
 ### Upstream repo URL
@@ -2520,9 +2577,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 27 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -4116,7 +4173,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-3,815 (excluding blank lines)
+3,820 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4141,13 +4198,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,940
-    - Unannotated parameters: 1,533
+    - Annotated parameters: 1,951
+    - Unannotated parameters: 1,522
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 786
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 783
 - Returns:
-    - Annotated returns: 489
-    - Unannotated returns: 827
+    - Annotated returns: 497
+    - Unannotated returns: 819
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 102
 - Variables:
@@ -7430,7 +7487,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-53,924 (excluding blank lines)
+53,925 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7455,7 +7512,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,153
+    - Annotated parameters: 25,154
     - Unannotated parameters: 774
     - Explicit `Any` parameters: 1,983
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85

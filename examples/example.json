@@ -582,6 +582,41 @@
     }
   },
   {
+    "package_name": "antlr4-python3-runtime",
+    "stub_distribution_name": "types-antlr4-python3-runtime",
+    "upstream_url": "https://github.com/antlr/antlr4",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 1781,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "platforms": [
+        "linux",
+        "win32"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 778,
+      "unannotated_parameters": 221,
+      "annotated_returns": 208,
+      "unannotated_returns": 485,
+      "explicit_Incomplete_parameters": 28,
+      "explicit_Incomplete_returns": 2,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 408,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 269,
+      "classdefs": 142,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "aws-xray-sdk",
     "stub_distribution_name": "types-aws-xray-sdk",
     "upstream_url": "https://github.com/aws/aws-xray-sdk-python",
@@ -1508,7 +1543,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 27,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -2459,7 +2494,7 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 3815,
+    "number_of_lines": 3820,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2471,11 +2506,11 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1940,
-      "unannotated_parameters": 1533,
-      "annotated_returns": 489,
-      "unannotated_returns": 827,
-      "explicit_Incomplete_parameters": 786,
+      "annotated_parameters": 1951,
+      "unannotated_parameters": 1522,
+      "annotated_returns": 497,
+      "unannotated_returns": 819,
+      "explicit_Incomplete_parameters": 783,
       "explicit_Incomplete_returns": 102,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 3,
@@ -4440,7 +4475,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 53924,
+    "number_of_lines": 53925,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4454,7 +4489,7 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25153,
+      "annotated_parameters": 25154,
       "unannotated_parameters": 774,
       "annotated_returns": 14068,
       "unannotated_returns": 365,
