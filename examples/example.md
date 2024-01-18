@@ -4711,13 +4711,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 411
-    - Unannotated parameters: 670
+    - Annotated parameters: 415
+    - Unannotated parameters: 666
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 243
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 216
 - Returns:
-    - Annotated returns: 305
-    - Unannotated returns: 446
+    - Annotated returns: 332
+    - Unannotated returns: 419
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
@@ -5264,7 +5264,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,705 (excluding blank lines)
+1,708 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5289,12 +5289,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `psycopg2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 323
+    - Annotated parameters: 325
     - Unannotated parameters: 150
     - Explicit `Any` parameters: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 34
 - Returns:
-    - Annotated returns: 310
+    - Annotated returns: 311
     - Unannotated returns: 74
     - Explicit `Any` returns: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
