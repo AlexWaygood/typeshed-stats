@@ -4475,7 +4475,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 53925,
+    "number_of_lines": 53928,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
