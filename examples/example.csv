@@ -6,7 +6,7 @@ Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrat
 Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,COMPLETE,-,233,UP_TO_DATE,UPLOADED,NOT_STRICT,140,34,37,15,19,1,2,0,3,1,0,8,0,0,ERROR_ON_MISSING_STUB,linux,3
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,COMPLETE,-,311,UP_TO_DATE,UPLOADED,STRICT,107,0,152,0,0,0,0,2,46,0,0,15,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,PARTIAL,-,685,UP_TO_DATE,UPLOADED,NOT_STRICT,247,30,192,2,0,0,15,3,217,15,0,101,0,0,MISSING_STUBS_IGNORED,linux,0
-Pillow,types-Pillow,https://github.com/python-pillow/Pillow,COMPLETE,-,3242,UP_TO_DATE,UPLOADED,NOT_STRICT,758,597,571,331,59,6,7,4,1160,5,307,224,3,1,ERROR_ON_MISSING_STUB,linux;win32,18
+Pillow,types-Pillow,https://github.com/python-pillow/Pillow,COMPLETE,-,3247,UP_TO_DATE,UPLOADED,NOT_STRICT,758,597,571,331,59,6,7,4,1165,5,307,224,3,1,ERROR_ON_MISSING_STUB,linux;win32,18
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,COMPLETE,-,234,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,PARTIAL,-,1044,UP_TO_DATE,UPLOADED,NOT_STRICT,142,52,101,37,28,0,10,18,734,60,0,24,0,0,MISSING_STUBS_IGNORED,linux,11
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,193,UP_TO_DATE,UPLOADED,STRICT,102,0,21,0,0,0,0,0,17,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
@@ -38,7 +38,7 @@ decorator,types-decorator,https://github.com/micheles/decorator,COMPLETE,-,66,UP
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,PARTIAL,-,235,UP_TO_DATE,UPLOADED,NOT_STRICT,81,97,38,13,13,0,0,1,37,0,19,12,0,0,MISSING_STUBS_IGNORED,linux,0
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,COMPLETE,-,113,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 docopt,types-docopt,https://github.com/docopt/docopt,COMPLETE,-,14,UP_TO_DATE,UPLOADED,STRICT,7,0,3,0,1,0,0,1,2,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-docutils,types-docutils,https://sourceforge.net/p/docutils/code,PARTIAL,-,515,UP_TO_DATE,UPLOADED,NOT_STRICT,222,62,154,10,30,45,6,6,81,11,0,50,0,0,MISSING_STUBS_IGNORED,linux,20
+docutils,types-docutils,https://sourceforge.net/p/docutils/code,PARTIAL,-,523,UP_TO_DATE,UPLOADED,NOT_STRICT,225,63,155,10,30,45,6,6,82,11,0,56,0,0,MISSING_STUBS_IGNORED,linux,20
 editdistance,types-editdistance,https://github.com/roy-ht/editdistance,COMPLETE,-,3,UP_TO_DATE,UPLOADED,STRICT,4,0,2,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 entrypoints,types-entrypoints,https://github.com/takluyver/entrypoints,COMPLETE,-,41,UP_TO_DATE,UPLOADED,STRICT,23,0,12,0,0,0,0,1,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,COMPLETE,-,530,UP_TO_DATE,UPLOADED,STRICT,167,0,133,0,0,0,8,3,128,0,0,49,0,0,ERROR_ON_MISSING_STUB,linux,39
@@ -120,12 +120,12 @@ pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,COMPLETE,-,860,UP_TO_DATE,U
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,466,UP_TO_DATE,UPLOADED,NOT_STRICT,67,184,97,65,18,3,0,1,166,0,101,40,0,0,ERROR_ON_MISSING_STUB,linux,6
 redis,types-redis,https://github.com/redis/redis-py,PARTIAL,"Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",5952,OUT_OF_DATE,UPLOADED,NOT_STRICT,3797,1247,1344,638,355,9,68,326,632,211,34,214,0,2,MISSING_STUBS_IGNORED,linux,67
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,748,UP_TO_DATE,UPLOADED,STRICT,429,0,114,0,0,0,25,16,72,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,13
-requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",997,UP_TO_DATE,UPLOADED,NOT_STRICT,358,149,113,84,19,0,9,5,116,39,0,51,1,0,ERROR_ON_MISSING_STUB,linux,4
+requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",997,UP_TO_DATE,UPLOADED,NOT_STRICT,359,148,113,84,19,0,9,5,116,39,0,51,1,0,ERROR_ON_MISSING_STUB,linux,4
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,266,UP_TO_DATE,UPLOADED,NOT_STRICT,116,17,43,4,51,2,1,0,26,1,8,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,-,5033,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2588,UP_TO_DATE,UPLOADED,STRICT,1470,0,359,0,59,9,155,17,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,4
-setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,-,2778,UP_TO_DATE,UPLOADED,NOT_STRICT,893,472,794,280,50,14,21,7,639,91,286,183,0,0,ERROR_ON_MISSING_STUB,linux;win32,48
+setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,-,2779,UP_TO_DATE,UPLOADED,NOT_STRICT,894,472,794,280,50,14,21,7,639,91,286,183,0,0,ERROR_ON_MISSING_STUB,linux;win32,48
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,51,UP_TO_DATE,UPLOADED,STRICT,35,0,16,0,0,0,14,4,17,0,0,6,0,0,MISSING_STUBS_IGNORED,linux,14
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,336,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
