@@ -6459,9 +6459,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 45 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *obsolete*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
@@ -6473,7 +6473,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1 unique allowlist entry for `python-slugify` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `python-slugify` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 

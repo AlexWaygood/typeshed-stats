@@ -3863,14 +3863,14 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 45,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 1
+      "allowlist_length": 2
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
