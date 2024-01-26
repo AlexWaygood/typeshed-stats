@@ -7151,9 +7151,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 2,588 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7487,7 +7487,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-53,928 (excluding blank lines)
+53,931 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7522,8 +7522,8 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 858
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,535
-    - Explicit `Any` variables: 539
+    - Annotated variables: 8,538
+    - Explicit `Any` variables: 542
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 145
 - Class definitions:
     - Total class definitions: 2,417
@@ -7662,7 +7662,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-21,081 (excluding blank lines)
+21,087 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7687,12 +7687,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,523
+    - Annotated parameters: 3,527
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 32
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
 - Returns:
-    - Annotated returns: 2,370
+    - Annotated returns: 2,371
     - Unannotated returns: 0
     - Explicit `Any` returns: 31
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 33
