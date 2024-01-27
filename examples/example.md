@@ -6628,7 +6628,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-34,582 (excluding blank lines)
+34,657 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6644,7 +6644,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `win32` only.
 
-Typeshed currently has 49 unique allowlist entries for `pywin32` when running stubtest in CI.
+Typeshed currently has 50 unique allowlist entries for `pywin32` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6653,17 +6653,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,683
-    - Unannotated parameters: 3,695
+    - Annotated parameters: 3,697
+    - Unannotated parameters: 3,588
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 424
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 423
 - Returns:
-    - Annotated returns: 3,846
-    - Unannotated returns: 2,026
+    - Annotated returns: 3,827
+    - Unannotated returns: 2,014
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 291
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 288
 - Variables:
-    - Annotated variables: 25,048
+    - Annotated variables: 25,091
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,832
 - Class definitions:
