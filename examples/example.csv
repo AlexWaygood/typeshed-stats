@@ -5,7 +5,7 @@ Flask-Cors,types-Flask-Cors,https://github.com/corydolphin/flask-cors,PARTIAL,-,
 Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrate,COMPLETE,-,126,UP_TO_DATE,UPLOADED,STRICT,85,0,24,0,0,0,0,0,7,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,1
 Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,COMPLETE,-,233,UP_TO_DATE,UPLOADED,NOT_STRICT,140,34,37,15,19,1,2,0,3,1,0,8,0,0,ERROR_ON_MISSING_STUB,linux,3
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,COMPLETE,-,311,UP_TO_DATE,UPLOADED,STRICT,107,0,152,0,0,0,0,2,46,0,0,15,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
-Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,PARTIAL,-,685,UP_TO_DATE,UPLOADED,NOT_STRICT,247,30,192,2,0,0,15,3,217,15,0,101,0,0,MISSING_STUBS_IGNORED,linux,0
+Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,PARTIAL,-,686,UP_TO_DATE,UPLOADED,NOT_STRICT,247,30,192,2,0,0,15,3,217,15,0,102,0,0,MISSING_STUBS_IGNORED,linux,0
 Pillow,types-Pillow,https://github.com/python-pillow/Pillow,COMPLETE,-,3247,UP_TO_DATE,UPLOADED,NOT_STRICT,758,597,571,331,59,6,7,4,1165,5,307,224,3,1,ERROR_ON_MISSING_STUB,linux;win32,18
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,COMPLETE,-,234,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,PARTIAL,-,1044,UP_TO_DATE,UPLOADED,NOT_STRICT,142,52,101,37,28,0,10,18,734,60,0,24,0,0,MISSING_STUBS_IGNORED,linux,11

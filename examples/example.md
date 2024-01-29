@@ -352,7 +352,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-685 (excluding blank lines)
+686 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -391,7 +391,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` variables: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 101
+    - Total class definitions: 102
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
