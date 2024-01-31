@@ -739,6 +739,61 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
+## Info on typeshed's stubs for `RPi.GPIO`
+
+### Upstream repo URL
+
+[https://sourceforge.net/p/raspberry-gpio-python/code/](https://sourceforge.net/p/raspberry-gpio-python/code/)
+
+### Stub distribution name
+
+`types-RPi.GPIO`
+
+### Number of lines
+
+50 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *skipped*
+
+Stubtest is skipped in typeshed's CI for this package.
+
+Typeshed currently has 0 allowlist entries for `RPi.GPIO` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `RPi.GPIO`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 28
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 18
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 26
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 2
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `Send2Trash`
 
 ### Upstream repo URL
@@ -7430,7 +7485,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-53,930 (excluding blank lines)
+53,931 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7455,14 +7510,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,154
-    - Unannotated parameters: 774
-    - Explicit `Any` parameters: 1,983
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
+    - Annotated parameters: 25,125
+    - Unannotated parameters: 803
+    - Explicit `Any` parameters: 1,953
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 86
 - Returns:
-    - Annotated returns: 14,068
-    - Unannotated returns: 365
-    - Explicit `Any` returns: 858
+    - Annotated returns: 14,033
+    - Unannotated returns: 400
+    - Explicit `Any` returns: 823
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
     - Annotated variables: 8,538
