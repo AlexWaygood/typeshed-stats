@@ -1370,7 +1370,7 @@
     "upstream_url": "https://sourceforge.net/p/docutils/code",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 530,
+    "number_of_lines": 693,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1378,22 +1378,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 20
+      "allowlist_length": 19
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 228,
-      "unannotated_parameters": 64,
-      "annotated_returns": 158,
-      "unannotated_returns": 10,
+      "annotated_parameters": 240,
+      "unannotated_parameters": 66,
+      "annotated_returns": 167,
+      "unannotated_returns": 9,
       "explicit_Incomplete_parameters": 30,
-      "explicit_Incomplete_returns": 45,
-      "explicit_Any_parameters": 6,
-      "explicit_Any_returns": 6,
-      "annotated_variables": 82,
-      "explicit_Any_variables": 11,
+      "explicit_Incomplete_returns": 44,
+      "explicit_Any_parameters": 7,
+      "explicit_Any_returns": 10,
+      "annotated_variables": 97,
+      "explicit_Any_variables": 13,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 60,
+      "classdefs": 172,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -1575,7 +1575,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 27,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -2492,29 +2492,29 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 3820,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 4756,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 0
+      "allowlist_length": 13
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1951,
-      "unannotated_parameters": 1522,
-      "annotated_returns": 497,
-      "unannotated_returns": 819,
-      "explicit_Incomplete_parameters": 783,
-      "explicit_Incomplete_returns": 102,
-      "explicit_Any_parameters": 0,
+      "annotated_parameters": 1943,
+      "unannotated_parameters": 1523,
+      "annotated_returns": 489,
+      "unannotated_returns": 820,
+      "explicit_Incomplete_parameters": 780,
+      "explicit_Incomplete_returns": 101,
+      "explicit_Any_parameters": 4,
       "explicit_Any_returns": 3,
-      "annotated_variables": 304,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 241,
+      "annotated_variables": 320,
+      "explicit_Any_variables": 2,
+      "explicit_Incomplete_variables": 249,
       "classdefs": 126,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 2
@@ -3141,7 +3141,7 @@
     "upstream_url": "https://github.com/psycopg/psycopg2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1708,
+    "number_of_lines": 1733,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3153,9 +3153,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 325,
+      "annotated_parameters": 337,
       "unannotated_parameters": 150,
-      "annotated_returns": 311,
+      "annotated_returns": 314,
       "unannotated_returns": 74,
       "explicit_Incomplete_parameters": 34,
       "explicit_Incomplete_returns": 8,
@@ -4473,7 +4473,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 53931,
+    "number_of_lines": 53977,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4487,18 +4487,18 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25125,
+      "annotated_parameters": 25124,
       "unannotated_parameters": 803,
       "annotated_returns": 14033,
       "unannotated_returns": 400,
       "explicit_Incomplete_parameters": 86,
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 1953,
-      "explicit_Any_returns": 823,
-      "annotated_variables": 8538,
+      "explicit_Any_returns": 824,
+      "annotated_variables": 8546,
       "explicit_Any_variables": 542,
       "explicit_Incomplete_variables": 145,
-      "classdefs": 2417,
+      "classdefs": 2388,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }
@@ -4577,7 +4577,7 @@
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1",
-    "number_of_lines": 21087,
+    "number_of_lines": 21149,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4589,14 +4589,14 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3527,
+      "annotated_parameters": 3569,
       "unannotated_parameters": 0,
-      "annotated_returns": 2371,
+      "annotated_returns": 2384,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 6,
       "explicit_Incomplete_returns": 33,
       "explicit_Any_parameters": 32,
-      "explicit_Any_returns": 31,
+      "explicit_Any_returns": 30,
       "annotated_variables": 4438,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 6,
@@ -4782,7 +4782,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 9,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
