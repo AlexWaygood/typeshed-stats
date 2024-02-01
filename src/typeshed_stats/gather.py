@@ -24,7 +24,6 @@ from typing import (
     Self,
     TypeAlias,
     TypeGuard,
-    TypeVar,
     final,
 )
 

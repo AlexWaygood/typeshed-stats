@@ -1,12 +1,12 @@
 """Library and command-line tool for getting stats on various typeshed packages."""
 
 __all__ = [
-    "__title__",
-    "__summary__",
     "__about__",
     "__author__",
     "__email__",
     "__license__",
+    "__summary__",
+    "__title__",
     "__version__",
 ]
 

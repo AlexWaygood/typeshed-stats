@@ -20,7 +20,7 @@ from typeshed_stats.gather import (
 )
 from typeshed_stats.serialize import stats_to_csv, stats_to_json, stats_to_markdown
 
-__all__ = ["OutputOption", "SUPPORTED_EXTENSIONS", "main"]
+__all__ = ["SUPPORTED_EXTENSIONS", "OutputOption", "main"]
 
 
 def _format_stats_for_pprinting(
