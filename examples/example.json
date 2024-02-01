@@ -4439,7 +4439,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 53977,
+    "number_of_lines": 53999,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4455,8 +4455,8 @@
     "annotation_stats": {
       "annotated_parameters": 25124,
       "unannotated_parameters": 803,
-      "annotated_returns": 14033,
-      "unannotated_returns": 400,
+      "annotated_returns": 14068,
+      "unannotated_returns": 365,
       "explicit_Incomplete_parameters": 86,
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 1953,
@@ -4543,7 +4543,7 @@
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1",
-    "number_of_lines": 21173,
+    "number_of_lines": 21248,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4551,22 +4551,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 35
+      "allowlist_length": 42
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3581,
+      "annotated_parameters": 3612,
       "unannotated_parameters": 0,
-      "annotated_returns": 2394,
+      "annotated_returns": 2416,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 6,
-      "explicit_Incomplete_returns": 35,
+      "explicit_Incomplete_returns": 37,
       "explicit_Any_parameters": 32,
-      "explicit_Any_returns": 30,
-      "annotated_variables": 4442,
+      "explicit_Any_returns": 31,
+      "annotated_variables": 4445,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 6,
-      "classdefs": 783,
+      "classdefs": 789,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
