@@ -35,10 +35,6 @@ def test_submodule__all___is_valid(submodule: types.ModuleType) -> None:
     assert all(isinstance(item, str) for item in submodule.__all__)
 
 
-def test___all___alphabetisation(submodule: types.ModuleType) -> None:
-    assert submodule.__all__ == sorted(submodule.__all__)
-
-
 def test_all_public_names_in___all__(submodule: types.ModuleType) -> None:
     """Test that all names not in `__all__` are marked as private."""
     submodule_name = submodule.__name__

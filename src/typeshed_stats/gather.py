@@ -21,9 +21,9 @@ from typing import (
     Literal,
     NamedTuple,
     NewType,
-    Self,
     TypeAlias,
     TypeGuard,
+    TypeVar,
     final,
 )
 
@@ -79,12 +79,13 @@ __all__ = [
 PackageName: TypeAlias = str
 _AbsolutePath = NewType("_AbsolutePath", Path)
 _PathRelativeToTypeshed: TypeAlias = Path
+_NiceReprEnumSelf = TypeVar("_NiceReprEnumSelf", bound="_NiceReprEnum")
 
 
 class _NiceReprEnum(Enum):
     """Base class for several public-API enums in this package."""
 
-    def __new__(cls, doc: str) -> Self:
+    def __new__(cls: type[_NiceReprEnumSelf], doc: str) -> _NiceReprEnumSelf:
         assert isinstance(doc, str)
         member = object.__new__(cls)
         member._value_ = member.__doc__ = doc

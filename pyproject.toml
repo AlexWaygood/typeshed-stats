@@ -127,6 +127,9 @@ ignore = [
     # Makes code slower and more verbose
     # https://github.com/astral-sh/ruff/issues/7871
     "UP038",
+    # wants us to use typing.Self,
+    # but we support Python 3.10 and don't depend on typing_extensions
+    "PYI019"
 ]
 unfixable = [
     "F841",  # unused variable. ruff keeps the call, but mostly we want to get rid of it all
