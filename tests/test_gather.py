@@ -1225,10 +1225,13 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
 
 
 def test_exceptions_bubble_up(typeshed: Path) -> None:
-    with pytest.raises(KeyError), mock.patch.object(
-        typeshed_stats.gather,
-        "gather_stats_on_package",
-        autospec=True,
-        side_effect=KeyError,
+    with (
+        pytest.raises(KeyError),
+        mock.patch.object(
+            typeshed_stats.gather,
+            "gather_stats_on_package",
+            autospec=True,
+            side_effect=KeyError,
+        ),
     ):
         gather_stats_on_multiple_packages(typeshed_dir=typeshed)
