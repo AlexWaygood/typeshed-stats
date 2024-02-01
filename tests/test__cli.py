@@ -617,11 +617,14 @@ def test_KeyboardInterrupt_caught(
     args: list[str], typeshed: Path, capsys: pytest.CaptureFixture[str]
 ) -> None:
     args += ["--log", "CRITICAL"]
-    with pytest.raises(SystemExit) as exc_info, mock.patch.object(
-        typeshed_stats.gather,
-        "gather_stats_on_package",
-        autospec=True,
-        side_effect=KeyboardInterrupt(),
+    with (
+        pytest.raises(SystemExit) as exc_info,
+        mock.patch.object(
+            typeshed_stats.gather,
+            "gather_stats_on_package",
+            autospec=True,
+            side_effect=KeyboardInterrupt(),
+        ),
     ):
         main(args)
 

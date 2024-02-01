@@ -7428,7 +7428,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-53,977 (excluding blank lines)
+53,999 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7458,8 +7458,8 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 1,953
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 86
 - Returns:
-    - Annotated returns: 14,033
-    - Unannotated returns: 400
+    - Annotated returns: 14,068
+    - Unannotated returns: 365
     - Explicit `Any` returns: 824
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
@@ -7603,7 +7603,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-21,173 (excluding blank lines)
+21,248 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7619,7 +7619,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 35 unique allowlist entries for `tensorflow` when running stubtest in CI.
+Typeshed currently has 42 unique allowlist entries for `tensorflow` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7628,21 +7628,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,581
+    - Annotated parameters: 3,612
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 32
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
 - Returns:
-    - Annotated returns: 2,394
+    - Annotated returns: 2,416
     - Unannotated returns: 0
-    - Explicit `Any` returns: 30
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 35
+    - Explicit `Any` returns: 31
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 37
 - Variables:
-    - Annotated variables: 4,442
+    - Annotated variables: 4,445
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 6
 - Class definitions:
-    - Total class definitions: 783
+    - Total class definitions: 789
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 

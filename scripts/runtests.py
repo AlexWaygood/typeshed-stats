@@ -15,8 +15,7 @@ def run_checks(
     regenerate_examples: Literal[True],
     typeshed_dir: Path,
     download_typeshed: Literal[False] = ...,
-) -> None:
-    ...
+) -> None: ...
 
 
 @overload
@@ -25,8 +24,7 @@ def run_checks(
     regenerate_examples: Literal[True],
     download_typeshed: Literal[True],
     typeshed_dir: None = ...,
-) -> None:
-    ...
+) -> None: ...
 
 
 @overload
@@ -35,8 +33,7 @@ def run_checks(
     regenerate_examples: Literal[False],
     download_typeshed: Literal[False] = ...,
     typeshed_dir: None = ...,
-) -> None:
-    ...
+) -> None: ...
 
 
 @overload
@@ -45,8 +42,7 @@ def run_checks(
     regenerate_examples: bool = ...,
     typeshed_dir: Path | None = ...,
     download_typeshed: bool = ...,
-) -> None:
-    ...
+) -> None: ...
 
 
 def run_checks(
