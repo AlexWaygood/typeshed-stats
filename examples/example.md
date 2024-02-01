@@ -4961,63 +4961,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
-## Info on typeshed's stubs for `pluggy`
-
-### Upstream repo URL
-
-[https://github.com/pytest-dev/pluggy](https://github.com/pytest-dev/pluggy)
-
-### Stub distribution name
-
-`types-pluggy`
-
-### Number of lines
-
-197 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 1 unique allowlist entry for `pluggy` when running stubtest in CI.
-
-### Pyright settings in CI: *strict*
-
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
-
-### Statistics on the annotations in typeshed's stubs for `pluggy`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 87
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
-- Returns:
-    - Annotated returns: 60
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 39
-    - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 15
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
 ## Info on typeshed's stubs for `polib`
 
 ### Upstream repo URL
@@ -7660,7 +7603,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-21,149 (excluding blank lines)
+21,173 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7685,21 +7628,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,569
+    - Annotated parameters: 3,581
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 32
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
 - Returns:
-    - Annotated returns: 2,384
+    - Annotated returns: 2,394
     - Unannotated returns: 0
     - Explicit `Any` returns: 30
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 33
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 35
 - Variables:
-    - Annotated variables: 4,438
+    - Annotated variables: 4,442
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 6
 - Class definitions:
-    - Total class definitions: 781
+    - Total class definitions: 783
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 

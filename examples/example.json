@@ -2964,40 +2964,6 @@
     }
   },
   {
-    "package_name": "pluggy",
-    "stub_distribution_name": "types-pluggy",
-    "upstream_url": "https://github.com/pytest-dev/pluggy",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 197,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 1
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 87,
-      "unannotated_parameters": 0,
-      "annotated_returns": 60,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 1,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 1,
-      "explicit_Any_returns": 5,
-      "annotated_variables": 39,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 15,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "polib",
     "stub_distribution_name": "types-polib",
     "upstream_url": "https://github.com/izimobil/polib",
@@ -4577,7 +4543,7 @@
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1",
-    "number_of_lines": 21149,
+    "number_of_lines": 21173,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4589,18 +4555,18 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3569,
+      "annotated_parameters": 3581,
       "unannotated_parameters": 0,
-      "annotated_returns": 2384,
+      "annotated_returns": 2394,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 6,
-      "explicit_Incomplete_returns": 33,
+      "explicit_Incomplete_returns": 35,
       "explicit_Any_parameters": 32,
       "explicit_Any_returns": 30,
-      "annotated_variables": 4438,
+      "annotated_variables": 4442,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 6,
-      "classdefs": 781,
+      "classdefs": 783,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
