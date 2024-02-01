@@ -72,7 +72,7 @@ def define_env(env: Env) -> None:
                 return f"[`{typ_name}`][{typ_name}]"
             if typ is Path:
                 return "[`Path`][pathlib.Path]"
-            if typ is types.NoneType:  # noqa: E721
+            if typ is types.NoneType:
                 return "[`None`][None]"
             return f"`{typ_name}`"
         return f"`{typ}`"

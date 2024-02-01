@@ -953,7 +953,7 @@ def test_get_pyright_setting_for_package(
 @pytest.mark.requires_network
 def test_tmpdir_typeshed() -> None:
     with tmpdir_typeshed() as typeshed:
-        typeshed = typeshed  # noqa: SIM909
+        typeshed = typeshed
         assert isinstance(typeshed, Path)
         assert typeshed.exists()
         assert typeshed.is_dir()

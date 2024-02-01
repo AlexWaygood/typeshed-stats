@@ -104,7 +104,8 @@ skip-magic-trailing-comma = true
 
 [tool.ruff]
 fix = true
-select = ["E", "F", "B", "B9", "D", "SIM", "I", "PT", "UP", "PGH"]
+preview = true
+select = ["E", "F", "B", "B9", "D", "SIM", "I", "PT", "UP", "PGH", "PYI", "RUF"]
 ignore = [
     # These are all enforced by, or incompatible with, Black:
     "E203",
@@ -117,16 +118,22 @@ ignore = [
     # Stylistic lints with which I disagree:
     "PT004",
     "PT005",
-    # Let mypy/pyright complain about blanket type ignores
+    "RUF005",
+    # Let mypy/pyright complain about blanket type ignores or implicit optional
     "PGH004",
+    "RUF013",
     # I know when to and when not to use `eval()`
     "PGH001",
+    # Makes code slower and more verbose
+    # https://github.com/astral-sh/ruff/issues/7871
+    "UP038",
 ]
 unfixable = [
     "F841",  # unused variable. ruff keeps the call, but mostly we want to get rid of it all
     "F601",  # automatic fix might obscure issue
     "F602",  # automatic fix might obscure issue
     "B018",  # automatic fix might obscure issue
+    "RUF017"  # Ruff's fix is faster, but I prefer using itertools.chain_from_iterable
 ]
 
 [tool.ruff.per-file-ignores]
