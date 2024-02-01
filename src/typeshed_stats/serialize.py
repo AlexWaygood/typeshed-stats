@@ -130,13 +130,11 @@ def stats_to_csv(stats: Sequence[PackageInfo | FileInfo]) -> str:
 
 
 @typing.overload
-def _stats_from_csv(data: str, cls: type[PackageInfo]) -> list[PackageInfo]:
-    ...
+def _stats_from_csv(data: str, cls: type[PackageInfo]) -> list[PackageInfo]: ...
 
 
 @typing.overload
-def _stats_from_csv(data: str, cls: type[FileInfo]) -> list[FileInfo]:
-    ...
+def _stats_from_csv(data: str, cls: type[FileInfo]) -> list[FileInfo]: ...
 
 
 def _stats_from_csv(
