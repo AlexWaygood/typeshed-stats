@@ -85,7 +85,7 @@ typecheck = [
 # That's deliberate (it's not necessary to run them all locally).
 # This file just lists the ones which it's convenient to have around locally.
 misc-lint = [
-    "black==23.12.1",
+    "black==24.1.1",
     "blacken-docs==1.16.0",
     "pre-commit-hooks==4.5.0",
     "ruff==0.1.9",
