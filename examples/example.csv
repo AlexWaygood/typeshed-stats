@@ -113,7 +113,7 @@ python-jose,types-python-jose,https://github.com/mpdavis/python-jose,COMPLETE,-,
 python-nmap,types-python-nmap,https://bitbucket.org/xael/python-nmap,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-slugify,types-python-slugify,https://github.com/un33k/python-slugify,COMPLETE,-,45,OBSOLETE,UPLOADED,STRICT,19,0,3,0,0,0,0,0,12,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,2
 python-xlib,types-python-xlib,https://github.com/python-xlib/python-xlib,COMPLETE,-,5414,UP_TO_DATE,UPLOADED,STRICT,1329,0,579,0,0,0,15,8,3519,5,0,424,0,0,ERROR_ON_MISSING_STUB,linux,10
-pytz,types-pytz,https://github.com/stub42/pytz,COMPLETE,-,130,OUT_OF_DATE,UPLOADED,STRICT,69,0,51,0,2,1,2,0,29,0,1,16,0,3,ERROR_ON_MISSING_STUB,linux,4
+pytz,types-pytz,https://github.com/stub42/pytz,COMPLETE,-,130,UP_TO_DATE,UPLOADED,STRICT,69,0,51,0,2,1,2,0,29,0,1,16,0,3,ERROR_ON_MISSING_STUB,linux,4
 pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,34653,UP_TO_DATE,UPLOADED,NOT_STRICT,3697,3588,3827,2014,423,288,1,1,25091,0,2832,726,0,0,ERROR_ON_MISSING_STUB,win32,50
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,COMPLETE,-,860,UP_TO_DATE,UPLOADED,NOT_STRICT,511,1,297,0,2,0,0,0,165,0,1,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,466,UP_TO_DATE,UPLOADED,NOT_STRICT,67,184,97,65,18,3,0,1,166,0,101,40,0,0,ERROR_ON_MISSING_STUB,linux,6
