@@ -132,7 +132,7 @@ slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DA
 stdlib,-,https://github.com/python/cpython,STDLIB,-,53999,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25124,803,14068,365,86,18,1953,824,8546,542,145,2388,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,968
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OBSOLETE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
-tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1,21248,OUT_OF_DATE,UPLOADED,STRICT,3612,0,2416,0,6,37,32,31,4445,1,6,789,0,0,MISSING_STUBS_IGNORED,linux,42
+tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1,21271,UP_TO_DATE,UPLOADED,STRICT,3621,0,2420,0,6,37,33,32,4448,1,7,790,0,0,MISSING_STUBS_IGNORED,linux,45
 toml,types-toml,https://github.com/uiri/toml,COMPLETE,-,136,UP_TO_DATE,UPLOADED,STRICT,71,0,41,0,0,0,21,5,14,2,0,14,2,0,ERROR_ON_MISSING_STUB,linux,0
 toposort,types-toposort,https://gitlab.com/ericvsmith/toposort,COMPLETE,-,13,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,1,0,1,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 tqdm,types-tqdm,https://github.com/tqdm/tqdm,COMPLETE,-,1380,UP_TO_DATE,UPLOADED,NOT_STRICT,816,141,167,24,43,11,1,1,100,0,74,36,0,0,ERROR_ON_MISSING_STUB,linux,2

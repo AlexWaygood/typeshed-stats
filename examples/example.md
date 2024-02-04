@@ -7603,11 +7603,11 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-21,248 (excluding blank lines)
+21,271 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7619,7 +7619,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 42 unique allowlist entries for `tensorflow` when running stubtest in CI.
+Typeshed currently has 45 unique allowlist entries for `tensorflow` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7628,21 +7628,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,612
+    - Annotated parameters: 3,621
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 32
+    - Explicit `Any` parameters: 33
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
 - Returns:
-    - Annotated returns: 2,416
+    - Annotated returns: 2,420
     - Unannotated returns: 0
-    - Explicit `Any` returns: 31
+    - Explicit `Any` returns: 32
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 37
 - Variables:
-    - Annotated variables: 4,445
+    - Annotated variables: 4,448
     - Explicit `Any` variables: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 6
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 7
 - Class definitions:
-    - Total class definitions: 789
+    - Total class definitions: 790
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
