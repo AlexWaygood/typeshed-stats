@@ -107,7 +107,7 @@
     "upstream_url": "https://github.com/miguelgrinberg/Flask-Migrate",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 126,
+    "number_of_lines": 128,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2118,7 +2118,7 @@
     "upstream_url": "https://github.com/influxdata/influxdb-client-python",
     "completeness_level": "COMPLETE",
     "extra_description": "Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you need to install `types-influxdb-client` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-influxdb-client<1.37.0.1`.",
-    "number_of_lines": 13371,
+    "number_of_lines": 13375,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2560,7 +2560,7 @@
     "upstream_url": "https://foss.heptapod.net/openpyxl/openpyxl",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 13149,
+    "number_of_lines": 13155,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4234,7 +4234,7 @@
     "upstream_url": "https://github.com/mwaskom/seaborn",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2588,
+    "number_of_lines": 2592,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4439,7 +4439,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 53999,
+    "number_of_lines": 54002,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5021,7 +5021,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 630,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",

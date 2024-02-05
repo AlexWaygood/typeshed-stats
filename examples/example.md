@@ -181,7 +181,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-126 (excluding blank lines)
+128 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3544,7 +3544,7 @@ Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you 
 
 ### Number of lines
 
-13,371 (excluding blank lines)
+13,375 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4285,7 +4285,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-13,149 (excluding blank lines)
+13,155 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7090,7 +7090,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,588 (excluding blank lines)
+2,592 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7428,7 +7428,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-53,999 (excluding blank lines)
+54,002 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8407,9 +8407,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 630 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
