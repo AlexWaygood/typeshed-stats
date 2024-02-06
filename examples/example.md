@@ -409,7 +409,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-3,247 (excluding blank lines)
+3,252 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -434,21 +434,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Pillow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 758
-    - Unannotated parameters: 597
+    - Annotated parameters: 759
+    - Unannotated parameters: 596
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 59
 - Returns:
-    - Annotated returns: 571
+    - Annotated returns: 572
     - Unannotated returns: 331
-    - Explicit `Any` returns: 4
+    - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
     - Annotated variables: 1,165
     - Explicit `Any` variables: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 307
 - Class definitions:
-    - Total class definitions: 224
+    - Total class definitions: 225
     - Class definitions with `Any`: 3
     - Class definitions marked as at least partially `Incomplete`: 1
 
@@ -3544,7 +3544,7 @@ Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you 
 
 ### Number of lines
 
-13,375 (excluding blank lines)
+13,439 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -3569,19 +3569,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `influxdb-client`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,293
-    - Unannotated parameters: 3,783
+    - Annotated parameters: 2,343
+    - Unannotated parameters: 3,782
     - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,966
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,964
 - Returns:
-    - Annotated returns: 1,852
-    - Unannotated returns: 3,435
-    - Explicit `Any` returns: 4
+    - Annotated returns: 1,860
+    - Unannotated returns: 3,426
+    - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 1,201
+    - Annotated variables: 1,203
     - Explicit `Any` variables: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,066
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,063
 - Class definitions:
     - Total class definitions: 423
     - Class definitions with `Any`: 0
@@ -7603,7 +7603,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-21,271 (excluding blank lines)
+21,441 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7628,21 +7628,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,621
+    - Annotated parameters: 3,746
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 33
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
+    - Explicit `Any` parameters: 38
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
 - Returns:
-    - Annotated returns: 2,420
+    - Annotated returns: 2,472
     - Unannotated returns: 0
     - Explicit `Any` returns: 32
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 37
 - Variables:
-    - Annotated variables: 4,448
-    - Explicit `Any` variables: 1
+    - Annotated variables: 4,460
+    - Explicit `Any` variables: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 7
 - Class definitions:
-    - Total class definitions: 790
+    - Total class definitions: 805
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
