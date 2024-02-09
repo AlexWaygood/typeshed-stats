@@ -99,12 +99,14 @@ source = "vcs"
 version-file = "src/typeshed_stats/_version.py"
 
 [tool.black]
-line_length = 88
+line-length = 88
 skip-magic-trailing-comma = true
 
 [tool.ruff]
 fix = true
 preview = true
+
+[tool.ruff.lint]
 select = ["E", "F", "B", "B9", "D", "SIM", "I", "PT", "UP", "PGH", "PYI", "RUF"]
 ignore = [
     # These are all enforced by, or incompatible with, Black:
@@ -122,8 +124,6 @@ ignore = [
     # Let mypy/pyright complain about blanket type ignores or implicit optional
     "PGH004",
     "RUF013",
-    # I know when to and when not to use `eval()`
-    "PGH001",
     # Makes code slower and more verbose
     # https://github.com/astral-sh/ruff/issues/7871
     "UP038",
@@ -139,19 +139,19 @@ unfixable = [
     "RUF017"  # Ruff's fix is faster, but I prefer using itertools.chain_from_iterable
 ]
 
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "tests/*.py" = [
     "D",  # Don't need docstrings in test methods
 ]
 
-[tool.ruff.pydocstyle]
+[tool.ruff.lint.pydocstyle]
 convention = "google"
 
-[tool.ruff.flake8-pytest-style]
+[tool.ruff.lint.flake8-pytest-style]
 fixture-parentheses = false
 mark-parentheses = false
 
-[tool.ruff.isort]
+[tool.ruff.lint.isort]
 combine-as-imports = true
 known-first-party = ["typeshed_stats"]
 
