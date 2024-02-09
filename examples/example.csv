@@ -72,7 +72,7 @@ mock,types-mock,https://github.com/testing-cabal/mock,COMPLETE,-,390,UP_TO_DATE,
 mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,31,0,28,0,0,0,3,7,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,6
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1228,UP_TO_DATE,UPLOADED,NOT_STRICT,35,124,37,79,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
 netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,669,UP_TO_DATE,UPLOADED,STRICT,292,0,314,0,5,0,1,1,110,0,2,43,0,0,ERROR_ON_MISSING_STUB,linux,1
-networkx,types-networkx,https://github.com/networkx/networkx,PARTIAL,-,4756,UP_TO_DATE,UPLOADED,NOT_STRICT,1943,1523,489,820,780,101,4,3,320,2,249,126,1,2,MISSING_STUBS_IGNORED,linux,13
+networkx,types-networkx,https://github.com/networkx/networkx,PARTIAL,-,4757,UP_TO_DATE,UPLOADED,NOT_STRICT,1943,1523,489,820,780,101,4,3,320,2,249,126,1,2,MISSING_STUBS_IGNORED,linux,13
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1431,UP_TO_DATE,UPLOADED,NOT_STRICT,406,414,161,191,182,0,0,0,320,207,2,107,2,0,MISSING_STUBS_IGNORED,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,13155,UP_TO_DATE,UPLOADED,NOT_STRICT,3892,350,1312,93,220,12,12,10,4047,3,364,607,1,21,ERROR_ON_MISSING_STUB,linux,180
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,PARTIAL,-,331,UP_TO_DATE,UPLOADED,STRICT,105,0,113,0,1,0,21,0,56,4,0,26,0,0,MISSING_STUBS_IGNORED,linux,4
@@ -129,7 +129,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,5
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,336,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,54008,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25125,802,14069,364,86,18,1953,824,8547,542,145,2388,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,969
+stdlib,-,https://github.com/python/cpython,STDLIB,-,54009,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25126,802,14070,364,86,18,1953,824,8547,542,145,2388,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,970
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OBSOLETE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1,21441,UP_TO_DATE,UPLOADED,STRICT,3746,0,2472,0,7,37,38,32,4460,6,7,805,0,0,MISSING_STUBS_IGNORED,linux,45
