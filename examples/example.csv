@@ -53,7 +53,7 @@ flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simp
 flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,PARTIAL,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,5,0,0,1,1,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 fpdf2,types-fpdf2,https://github.com/PyFPDF/fpdf2,COMPLETE,-,2854,OUT_OF_DATE,UPLOADED,NOT_STRICT,925,598,524,212,90,7,7,4,813,14,186,192,1,0,ERROR_ON_MISSING_STUB,linux,8
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",750,NOT_ON_PYPI,UPLOADED,STRICT,234,0,258,0,0,0,0,0,290,0,0,87,0,0,SKIPPED,None,0
-gevent,types-gevent,https://github.com/gevent/gevent,COMPLETE,-,3003,UP_TO_DATE,UPLOADED,STRICT,1346,0,824,0,5,0,65,21,359,26,0,207,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,160
+gevent,types-gevent,https://github.com/gevent/gevent,COMPLETE,-,3003,OUT_OF_DATE,UPLOADED,STRICT,1346,0,824,0,5,0,65,21,359,26,0,207,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,160
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1422,UP_TO_DATE,UPLOADED,NOT_STRICT,482,368,235,203,123,0,7,0,193,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,11,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
 hdbcli,types-hdbcli,-,COMPLETE,-,138,UP_TO_DATE,UPLOADED,STRICT,81,0,67,0,6,3,12,10,21,2,1,16,0,0,ERROR_ON_MISSING_STUB,linux,5
