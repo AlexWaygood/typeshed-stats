@@ -71,7 +71,7 @@ libsass,types-libsass,https://github.com/sass/libsass-python,COMPLETE,-,220,UP_T
 mock,types-mock,https://github.com/testing-cabal/mock,COMPLETE,-,390,UP_TO_DATE,UPLOADED,STRICT,217,0,90,0,45,0,86,15,58,34,0,24,2,0,ERROR_ON_MISSING_STUB,linux,4
 mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,31,0,28,0,0,0,3,7,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,6
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1228,UP_TO_DATE,UPLOADED,NOT_STRICT,35,124,37,79,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
-netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,691,UP_TO_DATE,UPLOADED,STRICT,289,0,306,0,5,0,1,1,99,0,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
+netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,691,OUT_OF_DATE,UPLOADED,STRICT,289,0,306,0,5,0,1,1,99,0,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 networkx,types-networkx,https://github.com/networkx/networkx,PARTIAL,-,4757,UP_TO_DATE,UPLOADED,NOT_STRICT,1943,1523,489,820,780,101,4,3,320,2,249,126,1,2,MISSING_STUBS_IGNORED,linux,13
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1431,UP_TO_DATE,UPLOADED,NOT_STRICT,406,414,161,191,182,0,0,0,320,207,2,107,2,0,MISSING_STUBS_IGNORED,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,13155,UP_TO_DATE,UPLOADED,NOT_STRICT,3892,350,1312,93,220,12,12,10,4047,3,364,607,1,21,ERROR_ON_MISSING_STUB,linux,180
@@ -124,12 +124,12 @@ requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-o
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,-,5033,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2592,UP_TO_DATE,UPLOADED,STRICT,1470,0,359,0,59,9,155,17,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,4
-setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,-,2779,OUT_OF_DATE,UPLOADED,NOT_STRICT,894,472,794,280,50,14,21,7,639,91,286,183,0,0,ERROR_ON_MISSING_STUB,linux;win32,48
+setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,-,2786,UP_TO_DATE,UPLOADED,NOT_STRICT,894,472,793,281,50,14,21,7,639,91,286,183,0,0,ERROR_ON_MISSING_STUB,linux;win32,36
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,51,UP_TO_DATE,UPLOADED,STRICT,35,0,16,0,0,0,14,4,17,0,0,6,0,0,MISSING_STUBS_IGNORED,linux,14
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,336,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,54020,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25140,798,14070,364,85,18,1953,824,8547,542,143,2388,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,970
+stdlib,-,https://github.com/python/cpython,STDLIB,-,54053,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25143,798,14083,364,85,18,1953,825,8547,543,143,2389,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,970
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OBSOLETE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1,21441,UP_TO_DATE,UPLOADED,STRICT,3746,0,2472,0,7,37,38,32,4460,6,7,805,0,0,MISSING_STUBS_IGNORED,linux,45
