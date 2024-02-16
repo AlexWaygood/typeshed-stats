@@ -57,7 +57,7 @@ gevent,types-gevent,https://github.com/gevent/gevent,COMPLETE,-,3003,OUT_OF_DATE
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1422,UP_TO_DATE,UPLOADED,NOT_STRICT,482,368,235,203,123,0,7,0,193,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,11,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
 hdbcli,types-hdbcli,-,COMPLETE,-,138,UP_TO_DATE,UPLOADED,STRICT,81,0,67,0,6,3,12,10,21,2,1,16,0,0,ERROR_ON_MISSING_STUB,linux,5
-html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,PARTIAL,-,672,UP_TO_DATE,UPLOADED,NOT_STRICT,67,207,100,208,27,0,0,0,220,180,0,40,4,0,MISSING_STUBS_IGNORED,linux,0
+html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,PARTIAL,-,673,UP_TO_DATE,UPLOADED,NOT_STRICT,67,207,101,207,27,0,0,0,221,181,0,40,4,0,MISSING_STUBS_IGNORED,linux,0
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,253,UP_TO_DATE,UPLOADED,NOT_STRICT,46,122,39,25,37,0,0,0,86,57,0,33,1,0,ERROR_ON_MISSING_STUB,linux,1
 humanfriendly,types-humanfriendly,https://github.com/xolox/python-humanfriendly,COMPLETE,-,340,UP_TO_DATE,UPLOADED,NOT_STRICT,81,179,82,95,22,0,0,0,75,54,0,25,0,0,ERROR_ON_MISSING_STUB,linux,7
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,339,UP_TO_DATE,UPLOADED,STRICT,162,0,65,0,0,0,0,2,196,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -129,7 +129,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,PARTIAL,-,5
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,336,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,54053,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25143,798,14083,364,85,18,1953,825,8547,543,143,2389,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,970
+stdlib,-,https://github.com/python/cpython,STDLIB,-,54105,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25145,798,14105,364,85,18,1953,825,8547,543,143,2392,24,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,970
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OBSOLETE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1,21441,UP_TO_DATE,UPLOADED,STRICT,3746,0,2472,0,7,37,38,32,4460,6,7,805,0,0,MISSING_STUBS_IGNORED,linux,45

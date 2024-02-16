@@ -1982,7 +1982,7 @@
     "upstream_url": "https://github.com/html5lib/html5lib-python",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 672,
+    "number_of_lines": 673,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1996,14 +1996,14 @@
     "annotation_stats": {
       "annotated_parameters": 67,
       "unannotated_parameters": 207,
-      "annotated_returns": 100,
-      "unannotated_returns": 208,
+      "annotated_returns": 101,
+      "unannotated_returns": 207,
       "explicit_Incomplete_parameters": 27,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 220,
-      "explicit_Any_variables": 180,
+      "annotated_variables": 221,
+      "explicit_Any_variables": 181,
       "explicit_Incomplete_variables": 0,
       "classdefs": 40,
       "classdefs_with_Any": 4,
@@ -4439,7 +4439,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54053,
+    "number_of_lines": 54105,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4453,9 +4453,9 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25143,
+      "annotated_parameters": 25145,
       "unannotated_parameters": 798,
-      "annotated_returns": 14083,
+      "annotated_returns": 14105,
       "unannotated_returns": 364,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
@@ -4464,7 +4464,7 @@
       "annotated_variables": 8547,
       "explicit_Any_variables": 543,
       "explicit_Incomplete_variables": 143,
-      "classdefs": 2389,
+      "classdefs": 2392,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }
