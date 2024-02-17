@@ -50,10 +50,6 @@ jobs:
         python-version: ["3.10", "3.11", "3.12"]
       fail-fast: false
 
-    defaults:
-      run:
-        shell: pwsh
-
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }} on ${{ matrix.os }}
@@ -75,8 +71,8 @@ jobs:
       - run: uv pip freeze
       - name: Run tests under coverage
         run: |
-          coverage run -m pytest --doctest-modules
-          coverage report --no-skip-covered
+          python -m coverage run -m pytest --doctest-modules
+          python -m coverage report --no-skip-covered
 
   create-issue-on-failure:
     name: Create an issue if daily test failed
