@@ -50,16 +50,19 @@ jobs:
         python-version: ["3.10", "3.11", "3.12"]
       fail-fast: false
 
+    defaults:
+      run:
+        shell: bash
+
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }} on ${{ matrix.os }}
         uses: actions/setup-python@v5
         with:
+          cache: "pip"
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
-          cache: "pip"
       - name: Trick uv into thinking we've activated a venv
-        shell: bash
         run: echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
       - name: Install dependencies
         # we need to uninstall pip or uv complains about how setup-python
