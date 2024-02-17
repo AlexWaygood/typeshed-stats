@@ -63,7 +63,7 @@ jobs:
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
       - name: Install depdencies
         run: |
-          python -m pip uninstall pip --no-interactive
+          python -m pip uninstall pip --yes
           uv pip install -e ".[pytest]"
       - run: uv pip freeze --all
       - name: Run tests under coverage
