@@ -52,7 +52,7 @@ jobs:
 
     defaults:
       run:
-        shell: bash
+        shell: pwsh
 
     steps:
       - uses: actions/checkout@v4
@@ -63,6 +63,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
       - name: Trick uv into thinking we've activated a venv
+        shell: bash
         run: echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
       - name: Install dependencies
         # we need to uninstall pip or uv complains about how setup-python
