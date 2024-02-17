@@ -2972,11 +2972,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,854 (excluding blank lines)
+2,958 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2988,7 +2988,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 8 unique allowlist entries for `fpdf2` when running stubtest in CI.
+Typeshed currently has 9 unique allowlist entries for `fpdf2` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2997,23 +2997,23 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `fpdf2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 925
-    - Unannotated parameters: 598
+    - Annotated parameters: 962
+    - Unannotated parameters: 590
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 90
 - Returns:
-    - Annotated returns: 524
-    - Unannotated returns: 212
+    - Annotated returns: 561
+    - Unannotated returns: 206
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
 - Variables:
-    - Annotated variables: 813
+    - Annotated variables: 847
     - Explicit `Any` variables: 14
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 186
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 184
 - Class definitions:
-    - Total class definitions: 192
+    - Total class definitions: 201
     - Class definitions with `Any`: 1
-    - Class definitions marked as at least partially `Incomplete`: 0
+    - Class definitions marked as at least partially `Incomplete`: 1
 
 ---
 
@@ -4228,7 +4228,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,431 (excluding blank lines)
+1,444 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4263,11 +4263,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 320
+    - Annotated variables: 329
     - Explicit `Any` variables: 207
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
-    - Total class definitions: 107
+    - Total class definitions: 109
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7428,7 +7428,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,105 (excluding blank lines)
+54,119 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7453,22 +7453,22 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,145
+    - Annotated parameters: 25,137
     - Unannotated parameters: 798
-    - Explicit `Any` parameters: 1,953
+    - Explicit `Any` parameters: 1,944
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
     - Annotated returns: 14,105
     - Unannotated returns: 364
-    - Explicit `Any` returns: 825
+    - Explicit `Any` returns: 823
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,547
+    - Annotated variables: 8,560
     - Explicit `Any` variables: 543
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 143
 - Class definitions:
-    - Total class definitions: 2,392
-    - Class definitions with `Any`: 24
+    - Total class definitions: 2,395
+    - Class definitions with `Any`: 26
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
@@ -7603,7 +7603,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-21,441 (excluding blank lines)
+21,515 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7619,7 +7619,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 45 unique allowlist entries for `tensorflow` when running stubtest in CI.
+Typeshed currently has 46 unique allowlist entries for `tensorflow` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7628,21 +7628,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,746
+    - Annotated parameters: 3,802
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 38
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 10
 - Returns:
-    - Annotated returns: 2,472
+    - Annotated returns: 2,494
     - Unannotated returns: 0
     - Explicit `Any` returns: 32
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 37
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 38
 - Variables:
     - Annotated variables: 4,460
     - Explicit `Any` variables: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 7
 - Class definitions:
-    - Total class definitions: 805
+    - Total class definitions: 807
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 

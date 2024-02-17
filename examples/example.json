@@ -1778,32 +1778,32 @@
     "upstream_url": "https://github.com/PyFPDF/fpdf2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2854,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 2958,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 8
+      "allowlist_length": 9
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 925,
-      "unannotated_parameters": 598,
-      "annotated_returns": 524,
-      "unannotated_returns": 212,
+      "annotated_parameters": 962,
+      "unannotated_parameters": 590,
+      "annotated_returns": 561,
+      "unannotated_returns": 206,
       "explicit_Incomplete_parameters": 90,
       "explicit_Incomplete_returns": 7,
       "explicit_Any_parameters": 7,
       "explicit_Any_returns": 4,
-      "annotated_variables": 813,
+      "annotated_variables": 847,
       "explicit_Any_variables": 14,
-      "explicit_Incomplete_variables": 186,
-      "classdefs": 192,
+      "explicit_Incomplete_variables": 184,
+      "classdefs": 201,
       "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 0
+      "classdefs_with_Incomplete": 1
     }
   },
   {
@@ -2526,7 +2526,7 @@
     "upstream_url": "https://github.com/oauthlib/oauthlib",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1431,
+    "number_of_lines": 1444,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2546,10 +2546,10 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 320,
+      "annotated_variables": 329,
       "explicit_Any_variables": 207,
       "explicit_Incomplete_variables": 2,
-      "classdefs": 107,
+      "classdefs": 109,
       "classdefs_with_Any": 2,
       "classdefs_with_Incomplete": 0
     }
@@ -4439,7 +4439,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54105,
+    "number_of_lines": 54119,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4453,19 +4453,19 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25145,
+      "annotated_parameters": 25137,
       "unannotated_parameters": 798,
       "annotated_returns": 14105,
       "unannotated_returns": 364,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
-      "explicit_Any_parameters": 1953,
-      "explicit_Any_returns": 825,
-      "annotated_variables": 8547,
+      "explicit_Any_parameters": 1944,
+      "explicit_Any_returns": 823,
+      "annotated_variables": 8560,
       "explicit_Any_variables": 543,
       "explicit_Incomplete_variables": 143,
-      "classdefs": 2392,
-      "classdefs_with_Any": 24,
+      "classdefs": 2395,
+      "classdefs_with_Any": 26,
       "classdefs_with_Incomplete": 0
     }
   },
@@ -4543,7 +4543,7 @@
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1",
-    "number_of_lines": 21441,
+    "number_of_lines": 21515,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4551,22 +4551,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 45
+      "allowlist_length": 46
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3746,
+      "annotated_parameters": 3802,
       "unannotated_parameters": 0,
-      "annotated_returns": 2472,
+      "annotated_returns": 2494,
       "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 7,
-      "explicit_Incomplete_returns": 37,
+      "explicit_Incomplete_parameters": 10,
+      "explicit_Incomplete_returns": 38,
       "explicit_Any_parameters": 38,
       "explicit_Any_returns": 32,
       "annotated_variables": 4460,
       "explicit_Any_variables": 6,
       "explicit_Incomplete_variables": 7,
-      "classdefs": 805,
+      "classdefs": 807,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
