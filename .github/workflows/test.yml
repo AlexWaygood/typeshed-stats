@@ -62,10 +62,12 @@ jobs:
       - name: Install uv
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
       - name: Install depdencies
+        # we need to uninstall pip or uv complains about how setup-python
+        # has pip install twice for some reason??
         run: |
           python -m pip uninstall pip --yes
           uv pip install -e ".[pytest]"
-      - run: uv pip freeze --all
+      - run: uv pip freeze
       - name: Run tests under coverage
         run: |
           coverage run -m pytest --doctest-modules
