@@ -38,12 +38,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          cache: "pip"
-          cache-dependency-path: "pyproject.toml"
           python-version: "3.11"
-      - run: pip install "wheel<1"
-      - run: pip install -e ".[typecheck]"
-      - run: pip freeze --all
+      - run: |
+          echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          uv pip install -e ".[typecheck]"
+      - run: uv pip freeze
       - run: mypy
 
   pyright:
@@ -53,12 +53,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          cache: "pip"
-          cache-dependency-path: "pyproject.toml"
           python-version: "3.10"
-      - run: pip install "wheel<1"
-      - run: pip install -e ".[typecheck]"
-      - run: pip freeze --all
+      - run: |
+          echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          uv pip install -e ".[typecheck]"
+      - run: uv pip freeze
       - name: Run pyright
         uses: jakebailey/pyright-action@v2
         with:
