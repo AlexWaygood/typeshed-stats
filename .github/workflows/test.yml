@@ -65,6 +65,7 @@ jobs:
         # has pip install twice for some reason??
         run: |
           pip install uv
+          python -m pip uninstall pip --yes
           uv pip install -e ".[pytest]"
       - run: uv pip freeze
       - name: Run tests under coverage
