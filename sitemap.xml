@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://alexwaygood.github.io/</loc>
+         <lastmod>2024-02-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alexwaygood.github.io/cli/</loc>
+         <lastmod>2024-02-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alexwaygood.github.io/gather/</loc>
+         <lastmod>2024-02-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alexwaygood.github.io/serialize/</loc>
+         <lastmod>2024-02-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alexwaygood.github.io/stats-csv/</loc>
+         <lastmod>2024-02-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alexwaygood.github.io/stats/</loc>
+         <lastmod>2024-02-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
