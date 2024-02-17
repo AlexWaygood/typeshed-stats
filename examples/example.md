@@ -3090,9 +3090,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 3,003 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7428,7 +7428,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,119 (excluding blank lines)
+54,121 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7453,8 +7453,8 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,137
-    - Unannotated parameters: 798
+    - Annotated parameters: 25,142
+    - Unannotated parameters: 797
     - Explicit `Any` parameters: 1,944
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
@@ -7603,7 +7603,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-21,515 (excluding blank lines)
+22,151 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7619,7 +7619,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 46 unique allowlist entries for `tensorflow` when running stubtest in CI.
+Typeshed currently has 47 unique allowlist entries for `tensorflow` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7628,21 +7628,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,802
+    - Annotated parameters: 4,297
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 38
+    - Explicit `Any` parameters: 40
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 10
 - Returns:
-    - Annotated returns: 2,494
+    - Annotated returns: 2,625
     - Unannotated returns: 0
-    - Explicit `Any` returns: 32
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 38
+    - Explicit `Any` returns: 33
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 41
 - Variables:
-    - Annotated variables: 4,460
+    - Annotated variables: 4,463
     - Explicit `Any` variables: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 7
 - Class definitions:
-    - Total class definitions: 807
+    - Total class definitions: 820
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
