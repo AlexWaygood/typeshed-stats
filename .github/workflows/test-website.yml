@@ -25,8 +25,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: |
-          echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
+      - name: Trick uv into thinking we've activated a venv
+        run: echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
+      - name: Install dependencies
+        run: |
           curl -LsSf https://astral.sh/uv/install.sh | sh
           uv pip install -e ".[docs]"
       - run: uv pip freeze
