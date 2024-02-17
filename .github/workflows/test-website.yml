@@ -28,7 +28,7 @@ jobs:
       - name: Trick uv into thinking we've activated a venv
         run: echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
         # we need to uninstall pip or uv complains about how setup-python
-        # has pip install twice for some reason??
+        # has pip installed twice for some reason??
       - name: Install dependencies
         run: |
           python -m pip uninstall pip

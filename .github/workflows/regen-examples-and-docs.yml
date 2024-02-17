@@ -33,7 +33,7 @@ jobs:
         run: echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
       - name: Install dependencies
         # we need to uninstall pip or uv complains about how setup-python
-        # has pip install twice for some reason??
+        # has pip installed twice for some reason??
         run: |
           python -m pip uninstall pip
           curl -LsSf https://astral.sh/uv/install.sh | sh
