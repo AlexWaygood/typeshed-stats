@@ -35,7 +35,7 @@ jobs:
         # we need to uninstall pip or uv complains about how setup-python
         # has pip installed twice for some reason??
         run: |
-          python -m pip uninstall pip
+          python -m pip uninstall pip --yes
           curl -LsSf https://astral.sh/uv/install.sh | sh
           uv pip install -e ".[docs]"
       - run: uv pip freeze
