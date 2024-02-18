@@ -1268,7 +1268,7 @@
     "upstream_url": "https://github.com/tiran/defusedxml",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 235,
+    "number_of_lines": 234,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2458,7 +2458,7 @@
     "upstream_url": "https://github.com/drkjam/netaddr",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 691,
+    "number_of_lines": 694,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2478,8 +2478,8 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 99,
-      "explicit_Any_variables": 0,
+      "annotated_variables": 101,
+      "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 2,
       "classdefs": 43,
       "classdefs_with_Any": 0,
@@ -2551,6 +2551,40 @@
       "explicit_Incomplete_variables": 2,
       "classdefs": 109,
       "classdefs_with_Any": 2,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "olefile",
+    "stub_distribution_name": "types-olefile",
+    "upstream_url": "https://github.com/decalage2/olefile",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 214,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 103,
+      "unannotated_parameters": 0,
+      "annotated_returns": 66,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 73,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 7,
+      "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
   },
@@ -3107,7 +3141,7 @@
     "upstream_url": "https://github.com/psycopg/psycopg2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1733,
+    "number_of_lines": 1737,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3115,20 +3149,20 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 3
+      "allowlist_length": 2
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 337,
-      "unannotated_parameters": 150,
-      "annotated_returns": 314,
-      "unannotated_returns": 74,
-      "explicit_Incomplete_parameters": 34,
+      "annotated_parameters": 340,
+      "unannotated_parameters": 149,
+      "annotated_returns": 317,
+      "unannotated_returns": 72,
+      "explicit_Incomplete_parameters": 32,
       "explicit_Incomplete_returns": 8,
-      "explicit_Any_parameters": 11,
-      "explicit_Any_returns": 19,
+      "explicit_Any_parameters": 14,
+      "explicit_Any_returns": 21,
       "annotated_variables": 517,
-      "explicit_Any_variables": 61,
+      "explicit_Any_variables": 60,
       "explicit_Incomplete_variables": 3,
       "classdefs": 331,
       "classdefs_with_Any": 2,
@@ -4030,7 +4064,7 @@
     "upstream_url": "https://github.com/redis/redis-py",
     "completeness_level": "PARTIAL",
     "extra_description": "Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",
-    "number_of_lines": 5952,
+    "number_of_lines": 5954,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4048,7 +4082,7 @@
       "unannotated_returns": 638,
       "explicit_Incomplete_parameters": 355,
       "explicit_Incomplete_returns": 9,
-      "explicit_Any_parameters": 68,
+      "explicit_Any_parameters": 70,
       "explicit_Any_returns": 326,
       "annotated_variables": 632,
       "explicit_Any_variables": 211,
@@ -4301,30 +4335,30 @@
     "package_name": "simplejson",
     "stub_distribution_name": "types-simplejson",
     "upstream_url": "https://github.com/simplejson/simplejson",
-    "completeness_level": "PARTIAL",
+    "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 51,
+    "number_of_lines": 277,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
+      "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 14
+      "allowlist_length": 8
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 35,
+      "annotated_parameters": 180,
       "unannotated_parameters": 0,
-      "annotated_returns": 16,
+      "annotated_returns": 24,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 14,
-      "explicit_Any_returns": 4,
-      "annotated_variables": 17,
-      "explicit_Any_variables": 0,
+      "explicit_Any_parameters": 46,
+      "explicit_Any_returns": 6,
+      "annotated_variables": 49,
+      "explicit_Any_variables": 7,
       "explicit_Incomplete_variables": 0,
       "classdefs": 6,
       "classdefs_with_Any": 0,
@@ -4439,7 +4473,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54121,
+    "number_of_lines": 54124,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4543,7 +4577,7 @@
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1",
-    "number_of_lines": 22151,
+    "number_of_lines": 22203,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4555,12 +4589,12 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 4297,
+      "annotated_parameters": 4332,
       "unannotated_parameters": 0,
-      "annotated_returns": 2625,
+      "annotated_returns": 2631,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 10,
-      "explicit_Incomplete_returns": 41,
+      "explicit_Incomplete_returns": 42,
       "explicit_Any_parameters": 40,
       "explicit_Any_returns": 33,
       "annotated_variables": 4463,
