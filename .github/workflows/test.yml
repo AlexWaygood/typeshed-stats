@@ -70,7 +70,7 @@ jobs:
         # in the context of GitHub Actions
         run: |
           if [ "${{ runner.os }}" = "Windows" ]; then
-            pip install uv
+            pip install "uv>=0.1.4"
           else
             curl -LsSf https://astral.sh/uv/install.sh | sh
           fi
@@ -83,8 +83,8 @@ jobs:
       - run: uv pip freeze
       - name: Run tests under coverage
         run: |
-          python -m coverage run -m pytest --doctest-modules
-          python -m coverage report --no-skip-covered
+          coverage run -m pytest --doctest-modules
+          coverage report --no-skip-covered
 
   create-issue-on-failure:
     name: Create an issue if daily test failed
