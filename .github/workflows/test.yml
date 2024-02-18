@@ -62,27 +62,27 @@ jobs:
           cache: "pip"
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
-      - name: Trick uv into thinking we've activated a venv
-        run: echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
-      - name: Install uv
+      - name: Install dependencies and run tests
         # Installing uv via curl is much faster than via pip,
         # but there doesn't seem to be a great alternative to pip on Windows
         # in the context of GitHub Actions
+        #
+        # Unfortunately uv doesn't allow you to install packages globally,
+        # and if you activate a venv, it is deactivated again
+        # as soon as the step ends,
+        # so we have to do the whole thing in one massive step here:
         run: |
           if [ "${{ runner.os }}" = "Windows" ]; then
             pip install "uv>=0.1.4"
+            uv venv
+            .venv\Scripts\activate.bat
           else
             curl -LsSf https://astral.sh/uv/install.sh | sh
+            uv venv
+            source .venv/bin/activate
           fi
-      - name: Uninstall pip
-        # we need to uninstall pip or uv complains about how setup-python
-        # has pip installed twice for some reason??
-        run: python -m pip uninstall pip --yes
-      - name: Install dependencies
-        run: uv pip install -e ".[pytest]"
-      - run: uv pip freeze
-      - name: Run tests under coverage
-        run: |
+          uv pip install -e ".[pytest]"
+          uv pip freeze
           coverage run -m pytest --doctest-modules
           coverage report --no-skip-covered
 
