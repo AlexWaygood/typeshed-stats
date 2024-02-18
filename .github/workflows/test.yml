@@ -68,14 +68,14 @@ jobs:
         # we need to uninstall pip or uv complains about how setup-python
         # has pip installed twice for some reason??
         run: |
-          pip install uv
+          curl -LsSf https://astral.sh/uv/install.sh | sh
           python -m pip uninstall pip --yes
           uv pip install -e ".[pytest]"
       - run: uv pip freeze
       - name: Run tests under coverage
         run: |
-          coverage run -m pytest --doctest-modules
-          coverage report --no-skip-covered
+          python -m coverage run -m pytest --doctest-modules
+          python -m coverage report --no-skip-covered
 
   create-issue-on-failure:
     name: Create an issue if daily test failed
