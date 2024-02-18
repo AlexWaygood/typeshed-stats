@@ -50,18 +50,37 @@ jobs:
         python-version: ["3.10", "3.11", "3.12"]
       fail-fast: false
 
+    defaults:
+      run:
+        shell: bash
+
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }} on ${{ matrix.os }}
         uses: actions/setup-python@v5
         with:
           cache: "pip"
-          cache-dependency-path: "pyproject.toml"
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
-      - run: pip install "wheel<1"
-      - run: pip install -e .[pytest]
-      - run: pip freeze --all
+      - name: Trick uv into thinking we've activated a venv
+        run: echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
+      - name: Install uv
+        # Installing uv via curl is much faster than via pip,
+        # but there doesn't seem to be a great alternative to pip on Windows
+        # in the context of GitHub Actions
+        run: |
+          if [ "${{ runner.os }}" = "Windows" ]; then
+            pip install "uv>=0.1.4"
+          else
+            curl -LsSf https://astral.sh/uv/install.sh | sh
+          fi
+      - name: Uninstall pip
+        # we need to uninstall pip or uv complains about how setup-python
+        # has pip installed twice for some reason??
+        run: python -m pip uninstall pip --yes
+      - name: Install dependencies
+        run: uv pip install -e ".[pytest]"
+      - run: uv pip freeze
       - name: Run tests under coverage
         run: |
           coverage run -m pytest --doctest-modules
