@@ -64,13 +64,20 @@ jobs:
           allow-prereleases: true
       - name: Trick uv into thinking we've activated a venv
         run: echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
-      - name: Install dependencies
+      - name: Install uv
+        # We could install uv via pip, but this is much faster...
+        run: |
+          if [ "${{ runner.os }}" = "Windows" ]; then
+            irm https://astral.sh/uv/install.ps1 | iex
+          else
+            curl -LsSf https://astral.sh/uv/install.sh | sh
+          fi
+      - name: Uninstall pip
         # we need to uninstall pip or uv complains about how setup-python
         # has pip installed twice for some reason??
-        run: |
-          curl -LsSf https://astral.sh/uv/install.sh | sh
-          python -m pip uninstall pip --yes
-          uv pip install -e ".[pytest]"
+        run: python -m pip uninstall pip --yes
+      - name: Install dependencies
+        run: uv pip install -e ".[pytest]"
       - run: uv pip freeze
       - name: Run tests under coverage
         run: |
