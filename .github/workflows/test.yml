@@ -65,10 +65,12 @@ jobs:
       - name: Trick uv into thinking we've activated a venv
         run: echo "VIRTUAL_ENV=${Python_ROOT_DIR}" >> $GITHUB_ENV
       - name: Install uv
-        # We could install uv via pip, but this is much faster...
+        # Installing uv via curl is much faster than via pip,
+        # but there doesn't seem to be a great alternative to pip on Windows
+        # in the context of GitHub Actions
         run: |
           if [ "${{ runner.os }}" = "Windows" ]; then
-            irm https://astral.sh/uv/install.ps1 | iex
+            pip install uv
           else
             curl -LsSf https://astral.sh/uv/install.sh | sh
           fi
