@@ -56,12 +56,29 @@ jobs:
         uses: actions/setup-python@v5
         with:
           cache: "pip"
-          cache-dependency-path: "pyproject.toml"
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
-      - run: pip install "wheel<1"
-      - run: pip install -e .[pytest]
-      - run: pip freeze --all
+      - name: Create and activate a virtual environment (Windows)
+        if: ${{ runner.os == 'Windows' }}
+        # uv doesn't (yet) allow us to install packages globally;
+        # we have to create and activate a virtual environment
+        run: |
+          irm https://astral.sh/uv/install.ps1 | iex
+          uv venv .venv
+          "VIRTUAL_ENV=.venv" | Out-File -FilePath $env:GITHUB_ENV -Append
+          "$PWD/.venv/Scripts" | Out-File -FilePath $env:GITHUB_PATH -Append
+      - name: Create and activate a virtual environment (Unix)
+        if: ${{ runner.os != 'Windows' }}
+        # uv doesn't (yet) allow us to install packages globally;
+        # we have to create and activate a virtual environment
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          uv venv .venv
+          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
+      - name: Install dependencies
+        run: uv pip install -e ".[pytest]"
+      - run: uv pip freeze
       - name: Run tests under coverage
         run: |
           coverage run -m pytest --doctest-modules
