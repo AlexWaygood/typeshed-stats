@@ -62,27 +62,9 @@ jobs:
           cache: "pip"
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
-      - name: Install uv
-        # Installing uv via curl is much faster than via pip,
-        # but there doesn't seem to be a great alternative to pip on Windows
-        # in the context of GitHub Actions
-        run: |
-          if [ "${{ runner.os }}" = "Windows" ]; then
-            pip install "uv>=0.1.4"
-          else
-            curl -LsSf https://astral.sh/uv/install.sh | sh
-          fi
-        # uv doesn't allow us to install packages globally;
-        # we have to create a venv and install things into that
-      - name: Create and activate a virtual environment
-        run: |
-          uv venv .venv
-          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
-          echo "$PWD/.venv/bin" >> $GITHUB_PATH
-          echo "$PWD/.venv/Scripts" >> $GITHUB_PATH
-      - name: Install dependencies
-        run: uv pip install -e ".[pytest]"
-      - run: uv pip freeze
+      - run: pip install "wheel<1"
+      - run: pip install -e .[pytest]
+      - run: pip freeze --all
       - name: Run tests under coverage
         run: |
           coverage run -m pytest --doctest-modules
