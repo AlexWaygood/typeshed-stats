@@ -60,14 +60,10 @@ jobs:
           allow-prereleases: true
       - name: Create and activate a virtual environment (Windows)
         if: ${{ runner.os == 'Windows' }}
-        # `pip install uv` is annoyingly slow,
-        # but there doesn't seem to be a better option on Windows currently
-        # that's available on GitHub Actions :(
-        #
         # uv doesn't (yet) allow us to install packages globally;
         # we have to create and activate a virtual environment
         run: |
-          pip install uv
+          irm https://astral.sh/uv/install.ps1 | iex
           uv venv .venv
           "VIRTUAL_ENV=.venv" | Out-File -FilePath $env:GITHUB_ENV -Append
           "$PWD/.venv/Scripts" | Out-File -FilePath $env:GITHUB_PATH -Append
