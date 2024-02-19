@@ -4358,7 +4358,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 180 unique allowlist entries for `openpyxl` when running stubtest in CI.
+Typeshed currently has 181 unique allowlist entries for `openpyxl` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7485,7 +7485,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,215 (excluding blank lines)
+54,248 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7510,21 +7510,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,167
+    - Annotated parameters: 25,178
     - Unannotated parameters: 797
     - Explicit `Any` parameters: 1,946
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 14,116
+    - Annotated returns: 14,123
     - Unannotated returns: 364
     - Explicit `Any` returns: 824
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
-    - Annotated variables: 8,563
+    - Annotated variables: 8,564
     - Explicit `Any` variables: 544
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 143
 - Class definitions:
-    - Total class definitions: 2,395
+    - Total class definitions: 2,396
     - Class definitions with `Any`: 26
     - Class definitions marked as at least partially `Incomplete`: 0
 
