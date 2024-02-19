@@ -67,7 +67,7 @@ jobs:
           uv venv .venv
           "VIRTUAL_ENV=.venv" | Out-File -FilePath $env:GITHUB_ENV -Append
           "$PWD/.venv/Scripts" | Out-File -FilePath $env:GITHUB_PATH -Append
-      - name: Create and activate a virtual environment (Windows)
+      - name: Create and activate a virtual environment (Unix)
         if: ${{ runner.os != 'Windows' }}
         # uv doesn't (yet) allow us to install packages globally;
         # we have to create and activate a virtual environment
