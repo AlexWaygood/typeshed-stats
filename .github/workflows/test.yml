@@ -77,6 +77,7 @@ jobs:
           "VIRTUAL_ENV=.venv" | Out-File -FilePath $env:GITHUB_ENV -Append
           "$PWD/.venv/Scripts" | Out-File -FilePath $env:GITHUB_PATH -Append
       - run: env
+      - run: python -c "import os; print(os.environ['PATH'])"
       - name: Install dependencies
         run: uv pip install -e ".[pytest]"
       - run: uv pip freeze
