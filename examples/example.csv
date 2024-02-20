@@ -57,7 +57,7 @@ gevent,types-gevent,https://github.com/gevent/gevent,COMPLETE,-,3003,UP_TO_DATE,
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1422,UP_TO_DATE,UPLOADED,NOT_STRICT,482,368,235,203,123,0,7,0,193,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,11,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
 hdbcli,types-hdbcli,-,COMPLETE,-,138,UP_TO_DATE,UPLOADED,STRICT,81,0,67,0,6,3,12,10,21,2,1,16,0,0,ERROR_ON_MISSING_STUB,linux,5
-html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,PARTIAL,-,673,UP_TO_DATE,UPLOADED,NOT_STRICT,67,207,101,207,27,0,0,0,221,181,0,40,4,0,MISSING_STUBS_IGNORED,linux,0
+html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,PARTIAL,-,690,UP_TO_DATE,UPLOADED,NOT_STRICT,84,196,132,177,23,0,0,0,222,178,1,40,4,0,MISSING_STUBS_IGNORED,linux,0
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,253,UP_TO_DATE,UPLOADED,NOT_STRICT,46,122,39,25,37,0,0,0,86,57,0,33,1,0,ERROR_ON_MISSING_STUB,linux,1
 humanfriendly,types-humanfriendly,https://github.com/xolox/python-humanfriendly,COMPLETE,-,340,UP_TO_DATE,UPLOADED,NOT_STRICT,81,179,82,95,22,0,0,0,75,54,0,25,0,0,ERROR_ON_MISSING_STUB,linux,7
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,339,UP_TO_DATE,UPLOADED,STRICT,162,0,65,0,0,0,0,2,196,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
