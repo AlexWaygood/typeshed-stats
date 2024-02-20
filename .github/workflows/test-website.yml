@@ -10,9 +10,6 @@ on:
       - "**.csv"
       - "**.html"
 
-env:
-  PIP_DISABLE_PIP_VERSION_CHECK: 1
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
@@ -24,12 +21,18 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          cache: "pip"
-          cache-dependency-path: "pyproject.toml"
           python-version: "3.11"
-      - run: pip install "wheel<1"
-      - run: pip install -e .[docs]
-      - run: pip freeze --all
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - name: Create and activate a venv
+        # uv doesn't (yet) allow us to install packages globally;
+        # we have to create and activate a virtual environment
+        run: |
+          uv venv .venv --seed
+          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
+      - run: uv pip install -e .[docs]
+      - run: uv pip freeze
       - name: Regenerate examples and docs
         run: python scripts/regenerate.py --download-typeshed
       - name: Check the generated files with pre-commit

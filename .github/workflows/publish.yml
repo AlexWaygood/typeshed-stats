@@ -5,9 +5,6 @@ name: Publish Python distributions to PyPI
 
 on: push
 
-env:
-  PIP_DISABLE_PIP_VERSION_CHECK: 1
-
 permissions:
   contents: read
 
@@ -24,8 +21,17 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install build --user
-      - run: pip freeze --all
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - name: Create and activate a venv
+        # uv doesn't (yet) allow us to install packages globally;
+        # we have to create and activate a virtual environment
+        run: |
+          uv venv .venv
+          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
+      - run: uv pip install build
+      - run: uv pip freeze
       - name: Build a binary wheel and a source tarball
         run: python -m build --sdist --wheel --outdir dist/ .
       - name: Publish distribution to PyPI

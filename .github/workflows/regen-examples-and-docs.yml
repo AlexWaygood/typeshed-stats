@@ -14,9 +14,6 @@ on:
       - "**.html"
   workflow_dispatch:
 
-env:
-  PIP_DISABLE_PIP_VERSION_CHECK: 1
-
 jobs:
   regen_examples_and_docs:
     runs-on: ubuntu-latest
@@ -28,12 +25,18 @@ jobs:
           git config --global user.email ''
       - uses: actions/setup-python@v5
         with:
-          cache: "pip"
-          cache-dependency-path: "pyproject.toml"
           python-version: "3.11"
-      - run: pip install "wheel<1"
-      - run: pip install -e .[docs]
-      - run: pip freeze --all
+      - name: Setup uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - name: Create and activate a venv
+        # uv doesn't (yet) allow us to install packages globally;
+        # we have to create and activate a virtual environment
+        run: |
+          uv venv .venv --seed
+          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
+      - run: uv pip install -e .[docs]
+      - run: uv pip freeze
       - name: Regenerate examples and docs
         id: regen
         run: python scripts/regenerate.py --download-typeshed
