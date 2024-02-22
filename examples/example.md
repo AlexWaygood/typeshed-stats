@@ -1205,7 +1205,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-190 (excluding blank lines)
+240 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1215,34 +1215,34 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 2 unique allowlist entries for `bleach` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `bleach`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 64
-    - Unannotated parameters: 22
-    - Explicit `Any` parameters: 0
+    - Annotated parameters: 91
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 28
-    - Unannotated returns: 16
+    - Annotated returns: 50
+    - Unannotated returns: 0
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 46
-    - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+    - Annotated variables: 60
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 13
     - Class definitions with `Any`: 0
@@ -3312,7 +3312,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-690 (excluding blank lines)
+696 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3337,21 +3337,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `html5lib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 84
-    - Unannotated parameters: 196
+    - Annotated parameters: 87
+    - Unannotated parameters: 195
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 132
+    - Annotated returns: 133
     - Unannotated returns: 177
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 222
-    - Explicit `Any` variables: 178
+    - Annotated variables: 224
+    - Explicit `Any` variables: 175
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
-    - Total class definitions: 40
+    - Total class definitions: 41
     - Class definitions with `Any`: 4
     - Class definitions marked as at least partially `Incomplete`: 0
 
