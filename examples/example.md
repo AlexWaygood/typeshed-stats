@@ -2288,7 +2288,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-693 (excluding blank lines)
+747 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2304,7 +2304,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 19 unique allowlist entries for `docutils` when running stubtest in CI.
+Typeshed currently has 18 unique allowlist entries for `docutils` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2313,17 +2313,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 240
-    - Unannotated parameters: 66
-    - Explicit `Any` parameters: 7
+    - Annotated parameters: 281
+    - Unannotated parameters: 64
+    - Explicit `Any` parameters: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 30
 - Returns:
-    - Annotated returns: 167
+    - Annotated returns: 193
     - Unannotated returns: 9
-    - Explicit `Any` returns: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 44
+    - Explicit `Any` returns: 11
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 43
 - Variables:
-    - Annotated variables: 97
+    - Annotated variables: 123
     - Explicit `Any` variables: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -7485,7 +7485,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,262 (excluding blank lines)
+54,264 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7501,7 +7501,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 974 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 972 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
