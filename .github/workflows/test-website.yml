@@ -24,14 +24,7 @@ jobs:
           python-version: "3.11"
       - name: Install uv
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
-      - name: Create and activate a venv
-        # uv doesn't (yet) allow us to install packages globally;
-        # we have to create and activate a virtual environment
-        run: |
-          uv venv .venv --seed
-          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
-          echo "$PWD/.venv/bin" >> $GITHUB_PATH
-      - run: uv pip install -e .[docs]
+      - run: uv pip install -e .[docs] --system
       - run: uv pip freeze
       - name: Regenerate examples and docs
         run: python scripts/regenerate.py --download-typeshed
