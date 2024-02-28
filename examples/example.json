@@ -4507,7 +4507,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54241,
+    "number_of_lines": 54271,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4521,9 +4521,9 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25172,
+      "annotated_parameters": 25190,
       "unannotated_parameters": 797,
-      "annotated_returns": 14124,
+      "annotated_returns": 14126,
       "unannotated_returns": 364,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
