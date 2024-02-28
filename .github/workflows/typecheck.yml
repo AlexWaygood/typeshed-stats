@@ -40,14 +40,7 @@ jobs:
           python-version: "3.11"
       - name: Install uv
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
-      - name: Create and activate a venv
-        # uv doesn't (yet) allow us to install packages globally;
-        # we have to create and activate a virtual environment
-        run: |
-          uv venv .venv
-          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
-          echo "$PWD/.venv/bin" >> $GITHUB_PATH
-      - run: uv pip install -e ".[typecheck]"
+      - run: uv pip install -e ".[typecheck]" --system
       - run: uv pip freeze
       - run: mypy
 
@@ -61,14 +54,7 @@ jobs:
           python-version: "3.10"
       - name: Install uv
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
-      - name: Create and activate a venv
-        # uv doesn't (yet) allow us to install packages globally;
-        # we have to create and activate a virtual environment
-        run: |
-          uv venv .venv
-          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
-          echo "$PWD/.venv/bin" >> $GITHUB_PATH
-      - run: uv pip install -e ".[typecheck]"
+      - run: uv pip install -e ".[typecheck]" --system
       - run: uv pip freeze
       - name: Run pyright
         uses: jakebailey/pyright-action@v2
