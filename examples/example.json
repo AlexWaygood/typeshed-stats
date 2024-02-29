@@ -550,7 +550,7 @@
     "upstream_url": "https://github.com/Pylons/webob",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1587,
+    "number_of_lines": 1786,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -558,22 +558,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 97
+      "allowlist_length": 100
     },
-    "pyright_setting": "NOT_STRICT",
+    "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 662,
-      "unannotated_parameters": 62,
-      "annotated_returns": 532,
-      "unannotated_returns": 42,
-      "explicit_Incomplete_parameters": 15,
+      "annotated_parameters": 808,
+      "unannotated_parameters": 0,
+      "annotated_returns": 606,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 84,
-      "explicit_Any_returns": 9,
+      "explicit_Any_parameters": 91,
+      "explicit_Any_returns": 13,
       "annotated_variables": 246,
-      "explicit_Any_variables": 11,
-      "explicit_Incomplete_variables": 12,
-      "classdefs": 146,
+      "explicit_Any_variables": 15,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 149,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4336,7 +4336,7 @@
     "upstream_url": "https://github.com/pypa/setuptools",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2794,
+    "number_of_lines": 2818,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4345,22 +4345,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 36
+      "allowlist_length": 33
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 896,
-      "unannotated_parameters": 472,
-      "annotated_returns": 795,
-      "unannotated_returns": 281,
-      "explicit_Incomplete_parameters": 50,
+      "annotated_parameters": 911,
+      "unannotated_parameters": 466,
+      "annotated_returns": 806,
+      "unannotated_returns": 278,
+      "explicit_Incomplete_parameters": 47,
       "explicit_Incomplete_returns": 14,
       "explicit_Any_parameters": 21,
       "explicit_Any_returns": 7,
-      "annotated_variables": 639,
-      "explicit_Any_variables": 91,
-      "explicit_Incomplete_variables": 286,
-      "classdefs": 183,
+      "annotated_variables": 645,
+      "explicit_Any_variables": 87,
+      "explicit_Incomplete_variables": 288,
+      "classdefs": 184,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4507,7 +4507,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54241,
+    "number_of_lines": 54277,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4521,18 +4521,18 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25172,
+      "annotated_parameters": 25189,
       "unannotated_parameters": 797,
-      "annotated_returns": 14124,
+      "annotated_returns": 14127,
       "unannotated_returns": 364,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
       "explicit_Any_parameters": 1946,
       "explicit_Any_returns": 825,
-      "annotated_variables": 8564,
+      "annotated_variables": 8565,
       "explicit_Any_variables": 544,
       "explicit_Incomplete_variables": 143,
-      "classdefs": 2396,
+      "classdefs": 2397,
       "classdefs_with_Any": 26,
       "classdefs_with_Incomplete": 0
     }
