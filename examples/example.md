@@ -7717,7 +7717,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-22,203 (excluding blank lines)
+22,250 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7733,7 +7733,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 47 unique allowlist entries for `tensorflow` when running stubtest in CI.
+Typeshed currently has 48 unique allowlist entries for `tensorflow` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7742,12 +7742,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 4,332
+    - Annotated parameters: 4,354
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 40
+    - Explicit `Any` parameters: 42
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 10
 - Returns:
-    - Annotated returns: 2,631
+    - Annotated returns: 2,642
     - Unannotated returns: 0
     - Explicit `Any` returns: 33
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 42
@@ -7756,7 +7756,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` variables: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 7
 - Class definitions:
-    - Total class definitions: 820
+    - Total class definitions: 822
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
