@@ -7432,7 +7432,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-336 (excluding blank lines)
+339 (excluding blank lines)
 
 ### Package status: *up to date*
 

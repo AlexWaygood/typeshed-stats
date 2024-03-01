@@ -129,7 +129,7 @@ seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2592,UP_TO_D
 setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,-,2818,UP_TO_DATE,UPLOADED,NOT_STRICT,911,466,806,278,47,14,21,7,645,87,288,184,0,0,ERROR_ON_MISSING_STUB,linux;win32,33
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,277,UP_TO_DATE,UPLOADED,STRICT,180,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,8
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-six,types-six,https://github.com/benjaminp/six,COMPLETE,-,336,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
+six,types-six,https://github.com/benjaminp/six,COMPLETE,-,339,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
 stdlib,-,https://github.com/python/cpython,STDLIB,-,54277,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25189,797,14127,364,85,18,1946,825,8565,544,143,2397,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,972
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OBSOLETE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
