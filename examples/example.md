@@ -2288,7 +2288,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-747 (excluding blank lines)
+767 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2313,21 +2313,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 281
+    - Annotated parameters: 287
     - Unannotated parameters: 64
     - Explicit `Any` parameters: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 30
 - Returns:
-    - Annotated returns: 193
+    - Annotated returns: 200
     - Unannotated returns: 9
     - Explicit `Any` returns: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 43
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 42
 - Variables:
-    - Annotated variables: 123
-    - Explicit `Any` variables: 13
+    - Annotated variables: 129
+    - Explicit `Any` variables: 14
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 172
+    - Total class definitions: 174
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -5205,7 +5205,7 @@ Generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protob
 
 ### Number of lines
 
-4,292 (excluding blank lines)
+4,260 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7147,7 +7147,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,033 (excluding blank lines)
+5,029 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7261,7 +7261,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,818 (excluding blank lines)
+2,899 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7277,7 +7277,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 33 unique allowlist entries for `setuptools` when running stubtest in CI.
+Typeshed currently has 34 unique allowlist entries for `setuptools` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7286,17 +7286,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 911
-    - Unannotated parameters: 466
+    - Annotated parameters: 898
+    - Unannotated parameters: 465
     - Explicit `Any` parameters: 21
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 47
 - Returns:
-    - Annotated returns: 806
-    - Unannotated returns: 278
+    - Annotated returns: 798
+    - Unannotated returns: 277
     - Explicit `Any` returns: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
 - Variables:
-    - Annotated variables: 645
+    - Annotated variables: 649
     - Explicit `Any` variables: 87
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 288
 - Class definitions:
@@ -7542,7 +7542,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,277 (excluding blank lines)
+54,275 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7717,7 +7717,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-22,250 (excluding blank lines)
+22,092 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7742,15 +7742,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 4,354
+    - Annotated parameters: 4,419
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 42
+    - Explicit `Any` parameters: 44
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 10
 - Returns:
-    - Annotated returns: 2,642
+    - Annotated returns: 2,671
     - Unannotated returns: 0
-    - Explicit `Any` returns: 33
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 42
+    - Explicit `Any` returns: 35
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 41
 - Variables:
     - Annotated variables: 4,463
     - Explicit `Any` variables: 6
