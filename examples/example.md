@@ -2288,7 +2288,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-767 (excluding blank lines)
+874 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2313,21 +2313,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 287
+    - Annotated parameters: 362
     - Unannotated parameters: 64
-    - Explicit `Any` parameters: 9
+    - Explicit `Any` parameters: 20
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 30
 - Returns:
-    - Annotated returns: 200
+    - Annotated returns: 215
     - Unannotated returns: 9
-    - Explicit `Any` returns: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 42
+    - Explicit `Any` returns: 12
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 41
 - Variables:
-    - Annotated variables: 129
-    - Explicit `Any` variables: 14
+    - Annotated variables: 138
+    - Explicit `Any` variables: 16
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 174
+    - Total class definitions: 176
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7717,7 +7717,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-22,092 (excluding blank lines)
+22,288 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7733,7 +7733,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 48 unique allowlist entries for `tensorflow` when running stubtest in CI.
+Typeshed currently has 49 unique allowlist entries for `tensorflow` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7742,15 +7742,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 4,419
+    - Annotated parameters: 4,596
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 44
+    - Explicit `Any` parameters: 45
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 10
 - Returns:
-    - Annotated returns: 2,671
+    - Annotated returns: 2,706
     - Unannotated returns: 0
     - Explicit `Any` returns: 35
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 41
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 42
 - Variables:
     - Annotated variables: 4,463
     - Explicit `Any` variables: 6

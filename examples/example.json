@@ -1370,7 +1370,7 @@
     "upstream_url": "https://sourceforge.net/p/docutils/code",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 767,
+    "number_of_lines": 874,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1382,18 +1382,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 287,
+      "annotated_parameters": 362,
       "unannotated_parameters": 64,
-      "annotated_returns": 200,
+      "annotated_returns": 215,
       "unannotated_returns": 9,
       "explicit_Incomplete_parameters": 30,
-      "explicit_Incomplete_returns": 42,
-      "explicit_Any_parameters": 9,
-      "explicit_Any_returns": 11,
-      "annotated_variables": 129,
-      "explicit_Any_variables": 14,
+      "explicit_Incomplete_returns": 41,
+      "explicit_Any_parameters": 20,
+      "explicit_Any_returns": 12,
+      "annotated_variables": 138,
+      "explicit_Any_variables": 16,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 174,
+      "classdefs": 176,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4611,7 +4611,7 @@
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1",
-    "number_of_lines": 22092,
+    "number_of_lines": 22288,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4619,17 +4619,17 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 48
+      "allowlist_length": 49
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 4419,
+      "annotated_parameters": 4596,
       "unannotated_parameters": 0,
-      "annotated_returns": 2671,
+      "annotated_returns": 2706,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 10,
-      "explicit_Incomplete_returns": 41,
-      "explicit_Any_parameters": 44,
+      "explicit_Incomplete_returns": 42,
+      "explicit_Any_parameters": 45,
       "explicit_Any_returns": 35,
       "annotated_variables": 4463,
       "explicit_Any_variables": 6,
