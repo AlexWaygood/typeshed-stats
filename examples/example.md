@@ -2313,21 +2313,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 362
+    - Annotated parameters: 361
     - Unannotated parameters: 64
     - Explicit `Any` parameters: 20
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 30
 - Returns:
-    - Annotated returns: 215
+    - Annotated returns: 214
     - Unannotated returns: 9
     - Explicit `Any` returns: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 41
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 40
 - Variables:
     - Annotated variables: 138
     - Explicit `Any` variables: 16
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 176
+    - Total class definitions: 177
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 

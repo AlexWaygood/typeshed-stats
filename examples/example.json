@@ -1382,18 +1382,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 362,
+      "annotated_parameters": 361,
       "unannotated_parameters": 64,
-      "annotated_returns": 215,
+      "annotated_returns": 214,
       "unannotated_returns": 9,
       "explicit_Incomplete_parameters": 30,
-      "explicit_Incomplete_returns": 41,
+      "explicit_Incomplete_returns": 40,
       "explicit_Any_parameters": 20,
       "explicit_Any_returns": 12,
       "annotated_variables": 138,
       "explicit_Any_variables": 16,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 176,
+      "classdefs": 177,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
