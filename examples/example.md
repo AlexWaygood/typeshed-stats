@@ -3033,7 +3033,7 @@ Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Pyth
 
 ### Number of lines
 
-750 (excluding blank lines)
+751 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -3066,7 +3066,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 290
+    - Annotated variables: 291
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:

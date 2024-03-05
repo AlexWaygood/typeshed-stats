@@ -1812,7 +1812,7 @@
     "upstream_url": "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree",
     "completeness_level": "COMPLETE",
     "extra_description": "Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",
-    "number_of_lines": 750,
+    "number_of_lines": 751,
     "package_status": "NOT_ON_PYPI",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1830,7 +1830,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 290,
+      "annotated_variables": 291,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 87,
