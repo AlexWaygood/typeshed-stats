@@ -1370,7 +1370,7 @@
     "upstream_url": "https://sourceforge.net/p/docutils/code",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1018,
+    "number_of_lines": 1112,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1378,22 +1378,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 18
+      "allowlist_length": 15
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 446,
-      "unannotated_parameters": 67,
-      "annotated_returns": 257,
-      "unannotated_returns": 9,
-      "explicit_Incomplete_parameters": 30,
-      "explicit_Incomplete_returns": 40,
-      "explicit_Any_parameters": 21,
-      "explicit_Any_returns": 12,
-      "annotated_variables": 183,
-      "explicit_Any_variables": 17,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 182,
+      "annotated_parameters": 513,
+      "unannotated_parameters": 66,
+      "annotated_returns": 299,
+      "unannotated_returns": 8,
+      "explicit_Incomplete_parameters": 29,
+      "explicit_Incomplete_returns": 37,
+      "explicit_Any_parameters": 33,
+      "explicit_Any_returns": 14,
+      "annotated_variables": 207,
+      "explicit_Any_variables": 16,
+      "explicit_Incomplete_variables": 1,
+      "classdefs": 187,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4336,7 +4336,7 @@
     "upstream_url": "https://github.com/pypa/setuptools",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2905,
+    "number_of_lines": 2910,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4347,19 +4347,19 @@
       ],
       "allowlist_length": 34
     },
-    "pyright_setting": "NOT_STRICT",
+    "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 908,
-      "unannotated_parameters": 465,
-      "annotated_returns": 801,
-      "unannotated_returns": 277,
+      "annotated_parameters": 929,
+      "unannotated_parameters": 447,
+      "annotated_returns": 809,
+      "unannotated_returns": 269,
       "explicit_Incomplete_parameters": 47,
-      "explicit_Incomplete_returns": 14,
+      "explicit_Incomplete_returns": 13,
       "explicit_Any_parameters": 21,
       "explicit_Any_returns": 1,
-      "annotated_variables": 649,
+      "annotated_variables": 650,
       "explicit_Any_variables": 87,
-      "explicit_Incomplete_variables": 288,
+      "explicit_Incomplete_variables": 287,
       "classdefs": 184,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
@@ -4612,7 +4612,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1",
     "number_of_lines": 22288,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",

@@ -39,7 +39,7 @@ decorator,types-decorator,https://github.com/micheles/decorator,COMPLETE,-,66,UP
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,PARTIAL,-,234,UP_TO_DATE,UPLOADED,NOT_STRICT,81,97,38,13,13,0,0,1,37,0,19,12,0,0,MISSING_STUBS_IGNORED,linux,0
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,COMPLETE,-,113,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 docopt,types-docopt,https://github.com/docopt/docopt,COMPLETE,-,14,UP_TO_DATE,UPLOADED,STRICT,7,0,3,0,1,0,0,1,2,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-docutils,types-docutils,https://sourceforge.net/p/docutils/code,PARTIAL,-,1018,UP_TO_DATE,UPLOADED,NOT_STRICT,446,67,257,9,30,40,21,12,183,17,0,182,0,0,MISSING_STUBS_IGNORED,linux,18
+docutils,types-docutils,https://sourceforge.net/p/docutils/code,PARTIAL,-,1112,UP_TO_DATE,UPLOADED,NOT_STRICT,513,66,299,8,29,37,33,14,207,16,1,187,0,0,MISSING_STUBS_IGNORED,linux,15
 editdistance,types-editdistance,https://github.com/roy-ht/editdistance,COMPLETE,-,3,OUT_OF_DATE,UPLOADED,STRICT,4,0,2,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 entrypoints,types-entrypoints,https://github.com/takluyver/entrypoints,COMPLETE,-,41,UP_TO_DATE,UPLOADED,STRICT,23,0,12,0,0,0,0,1,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,COMPLETE,-,530,UP_TO_DATE,UPLOADED,STRICT,167,0,133,0,0,0,8,3,128,0,0,49,0,0,ERROR_ON_MISSING_STUB,linux,39
@@ -126,7 +126,7 @@ requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-o
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,-,5029,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2592,UP_TO_DATE,UPLOADED,STRICT,1470,0,359,0,59,9,155,17,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,4
-setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,-,2905,UP_TO_DATE,UPLOADED,NOT_STRICT,908,465,801,277,47,14,21,1,649,87,288,184,0,0,ERROR_ON_MISSING_STUB,linux;win32,34
+setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,-,2910,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,929,447,809,269,47,13,21,1,650,87,287,184,0,0,ERROR_ON_MISSING_STUB,linux;win32,34
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,277,UP_TO_DATE,UPLOADED,STRICT,180,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,8
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,339,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
@@ -134,7 +134,7 @@ slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DA
 stdlib,-,https://github.com/python/cpython,STDLIB,-,54280,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25192,797,14128,364,85,18,1946,825,8565,544,143,2397,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,972
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OBSOLETE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
-tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1,22288,UP_TO_DATE,UPLOADED,STRICT,4596,0,2706,0,10,42,45,35,4463,6,7,822,0,0,MISSING_STUBS_IGNORED,linux,49
+tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1,22288,OUT_OF_DATE,UPLOADED,STRICT,4596,0,2706,0,10,42,45,35,4463,6,7,822,0,0,MISSING_STUBS_IGNORED,linux,49
 toml,types-toml,https://github.com/uiri/toml,COMPLETE,-,136,UP_TO_DATE,UPLOADED,STRICT,71,0,41,0,0,0,21,5,14,2,0,14,2,0,ERROR_ON_MISSING_STUB,linux,0
 toposort,types-toposort,https://gitlab.com/ericvsmith/toposort,COMPLETE,-,13,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,1,0,1,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 tqdm,types-tqdm,https://github.com/tqdm/tqdm,COMPLETE,-,1380,UP_TO_DATE,UPLOADED,NOT_STRICT,816,141,167,24,43,11,1,1,100,0,74,36,0,0,ERROR_ON_MISSING_STUB,linux,2
