@@ -416,7 +416,7 @@
     "upstream_url": "https://github.com/pygments/pygments",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 852,
+    "number_of_lines": 845,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -430,14 +430,14 @@
     "annotation_stats": {
       "annotated_parameters": 116,
       "unannotated_parameters": 156,
-      "annotated_returns": 105,
-      "unannotated_returns": 79,
+      "annotated_returns": 108,
+      "unannotated_returns": 75,
       "explicit_Incomplete_parameters": 17,
       "explicit_Incomplete_returns": 5,
       "explicit_Any_parameters": 7,
       "explicit_Any_returns": 2,
-      "annotated_variables": 381,
-      "explicit_Any_variables": 171,
+      "annotated_variables": 376,
+      "explicit_Any_variables": 169,
       "explicit_Incomplete_variables": 24,
       "classdefs": 94,
       "classdefs_with_Any": 0,
@@ -584,7 +584,7 @@
     "upstream_url": "https://github.com/Tinche/aiofiles",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 679,
+    "number_of_lines": 681,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -597,9 +597,9 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 389,
+      "annotated_parameters": 391,
       "unannotated_parameters": 0,
-      "annotated_returns": 152,
+      "annotated_returns": 154,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 26,
       "explicit_Incomplete_returns": 7,
@@ -764,7 +764,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 7
+      "allowlist_length": 18
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -961,7 +961,7 @@
     "upstream_url": "https://github.com/noahmorrison/chevron",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 36,
+    "number_of_lines": 38,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1072,7 +1072,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 45
+      "allowlist_length": 44
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -1242,7 +1242,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 9
+      "allowlist_length": 10
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -1370,7 +1370,7 @@
     "upstream_url": "https://sourceforge.net/p/docutils/code",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1112,
+    "number_of_lines": 1124,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1378,23 +1378,23 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 15
+      "allowlist_length": 14
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 513,
+      "annotated_parameters": 517,
       "unannotated_parameters": 66,
-      "annotated_returns": 299,
+      "annotated_returns": 300,
       "unannotated_returns": 8,
       "explicit_Incomplete_parameters": 29,
       "explicit_Incomplete_returns": 37,
       "explicit_Any_parameters": 33,
       "explicit_Any_returns": 14,
-      "annotated_variables": 207,
+      "annotated_variables": 212,
       "explicit_Any_variables": 16,
       "explicit_Incomplete_variables": 1,
       "classdefs": 187,
-      "classdefs_with_Any": 0,
+      "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
   },
@@ -1480,7 +1480,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 39
+      "allowlist_length": 40
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -1786,7 +1786,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 9
+      "allowlist_length": 6
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -1854,7 +1854,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 160
+      "allowlist_length": 149
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -1956,7 +1956,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 5
+      "allowlist_length": 8
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2016,7 +2016,7 @@
     "upstream_url": "https://github.com/httplib2/httplib2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 253,
+    "number_of_lines": 254,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2036,8 +2036,8 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 86,
-      "explicit_Any_variables": 57,
+      "annotated_variables": 87,
+      "explicit_Any_variables": 58,
       "explicit_Incomplete_variables": 0,
       "classdefs": 33,
       "classdefs_with_Any": 1,
@@ -2160,7 +2160,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 19
+      "allowlist_length": 20
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2262,7 +2262,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 5
+      "allowlist_length": 7
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -3210,7 +3210,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 380,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -3483,7 +3483,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 681,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3524,7 +3524,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 55
+      "allowlist_length": 38
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -3596,7 +3596,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 59
+      "allowlist_length": 64
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -3664,7 +3664,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 7
+      "allowlist_length": 8
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -3902,7 +3902,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 2
+      "allowlist_length": 1
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4004,7 +4004,7 @@
       "platforms": [
         "win32"
       ],
-      "allowlist_length": 50
+      "allowlist_length": 49
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -4166,7 +4166,7 @@
     "upstream_url": "https://github.com/psf/requests",
     "completeness_level": "COMPLETE",
     "extra_description": "Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",
-    "number_of_lines": 997,
+    "number_of_lines": 998,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4180,7 +4180,7 @@
     "annotation_stats": {
       "annotated_parameters": 359,
       "unannotated_parameters": 148,
-      "annotated_returns": 113,
+      "annotated_returns": 114,
       "unannotated_returns": 84,
       "explicit_Incomplete_parameters": 19,
       "explicit_Incomplete_returns": 0,
@@ -4200,7 +4200,7 @@
     "upstream_url": "https://github.com/requests/requests-oauthlib",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 266,
+    "number_of_lines": 267,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4310,7 +4310,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 4
+      "allowlist_length": 5
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4336,7 +4336,7 @@
     "upstream_url": "https://github.com/pypa/setuptools",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2910,
+    "number_of_lines": 2947,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4349,9 +4349,9 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 929,
+      "annotated_parameters": 949,
       "unannotated_parameters": 447,
-      "annotated_returns": 809,
+      "annotated_returns": 814,
       "unannotated_returns": 269,
       "explicit_Incomplete_parameters": 47,
       "explicit_Incomplete_returns": 13,
@@ -4379,7 +4379,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 8
+      "allowlist_length": 11
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4439,7 +4439,7 @@
     "upstream_url": "https://github.com/benjaminp/six",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 339,
+    "number_of_lines": 340,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4507,7 +4507,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54280,
+    "number_of_lines": 54344,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4517,13 +4517,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 972
+      "allowlist_length": 964
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25192,
+      "annotated_parameters": 25194,
       "unannotated_parameters": 797,
-      "annotated_returns": 14128,
+      "annotated_returns": 14130,
       "unannotated_returns": 364,
       "explicit_Incomplete_parameters": 85,
       "explicit_Incomplete_returns": 18,
@@ -4653,7 +4653,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 0
+      "allowlist_length": 4
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -5181,6 +5181,40 @@
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 249,
       "classdefs": 374,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "wurlitzer",
+    "stub_distribution_name": "types-wurlitzer",
+    "upstream_url": "https://github.com/minrk/wurlitzer",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 90,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 62,
+      "unannotated_parameters": 0,
+      "annotated_returns": 20,
+      "unannotated_returns": 1,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 4,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 2,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
