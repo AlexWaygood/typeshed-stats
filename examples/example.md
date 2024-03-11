@@ -181,7 +181,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-128 (excluding blank lines)
+130 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -206,7 +206,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `Flask-Migrate`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 85
+    - Annotated parameters: 86
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -1547,7 +1547,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-825 (excluding blank lines)
+827 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3088,7 +3088,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-3,003 (excluding blank lines)
+3,001 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3104,7 +3104,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 149 unique allowlist entries for `gevent` when running stubtest in CI.
+Typeshed currently has 148 unique allowlist entries for `gevent` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3145,11 +3145,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,422 (excluding blank lines)
+1,536 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3170,17 +3170,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `google-cloud-ndb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 482
+    - Annotated parameters: 486
     - Unannotated parameters: 368
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 123
 - Returns:
-    - Annotated returns: 235
+    - Annotated returns: 236
     - Unannotated returns: 203
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 193
+    - Annotated variables: 194
     - Explicit `Any` variables: 132
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
@@ -3483,7 +3483,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-339 (excluding blank lines)
+336 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4570,7 +4570,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,832 (excluding blank lines)
+1,833 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5319,7 +5319,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,737 (excluding blank lines)
+1,731 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5828,11 +5828,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-681 (excluding blank lines)
+684 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5863,7 +5863,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 194
+    - Annotated variables: 195
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 15
 - Class definitions:
@@ -5958,7 +5958,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 15 unique allowlist entries for `pynput` when running stubtest in CI.
+Typeshed currently has 12 unique allowlist entries for `pynput` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7035,9 +7035,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 267 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7542,7 +7542,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,344 (excluding blank lines)
+54,349 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7717,7 +7717,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-22,288 (excluding blank lines)
+22,289 (excluding blank lines)
 
 ### Package status: *out of date*
 

@@ -107,7 +107,7 @@
     "upstream_url": "https://github.com/miguelgrinberg/Flask-Migrate",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 128,
+    "number_of_lines": 130,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -119,7 +119,7 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 85,
+      "annotated_parameters": 86,
       "unannotated_parameters": 0,
       "annotated_returns": 24,
       "unannotated_returns": 0,
@@ -926,7 +926,7 @@
     "upstream_url": "https://foss.heptapod.net/pypy/cffi",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 825,
+    "number_of_lines": 827,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1844,7 +1844,7 @@
     "upstream_url": "https://github.com/gevent/gevent",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3003,
+    "number_of_lines": 3001,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1854,7 +1854,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 149
+      "allowlist_length": 148
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -1880,8 +1880,8 @@
     "upstream_url": "https://github.com/googleapis/python-ndb",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1422,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 1536,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -1892,15 +1892,15 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 482,
+      "annotated_parameters": 486,
       "unannotated_parameters": 368,
-      "annotated_returns": 235,
+      "annotated_returns": 236,
       "unannotated_returns": 203,
       "explicit_Incomplete_parameters": 123,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 7,
       "explicit_Any_returns": 0,
-      "annotated_variables": 193,
+      "annotated_variables": 194,
       "explicit_Any_variables": 132,
       "explicit_Incomplete_variables": 2,
       "classdefs": 143,
@@ -2084,7 +2084,7 @@
     "upstream_url": "https://github.com/ibmdb/python-ibmdb",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 339,
+    "number_of_lines": 336,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2730,7 +2730,7 @@
     "upstream_url": "https://github.com/paramiko/paramiko",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1832,
+    "number_of_lines": 1833,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3175,7 +3175,7 @@
     "upstream_url": "https://github.com/psycopg/psycopg2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1737,
+    "number_of_lines": 1731,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3482,8 +3482,8 @@
     "upstream_url": "https://github.com/pyinstaller/pyinstaller",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 681,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 684,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3502,7 +3502,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 2,
-      "annotated_variables": 194,
+      "annotated_variables": 195,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 15,
       "classdefs": 26,
@@ -3560,7 +3560,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 15
+      "allowlist_length": 12
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4201,7 +4201,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 267,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4507,7 +4507,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54344,
+    "number_of_lines": 54349,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4611,7 +4611,7 @@
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1",
-    "number_of_lines": 22288,
+    "number_of_lines": 22289,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
