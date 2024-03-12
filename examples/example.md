@@ -6683,7 +6683,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-34,653 (excluding blank lines)
+34,796 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6699,7 +6699,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `win32` only.
 
-Typeshed currently has 49 unique allowlist entries for `pywin32` when running stubtest in CI.
+Typeshed currently has 46 unique allowlist entries for `pywin32` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6708,21 +6708,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,697
-    - Unannotated parameters: 3,588
+    - Annotated parameters: 3,741
+    - Unannotated parameters: 3,603
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 423
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 422
 - Returns:
-    - Annotated returns: 3,827
-    - Unannotated returns: 2,014
+    - Annotated returns: 3,850
+    - Unannotated returns: 2,016
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 288
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 289
 - Variables:
     - Annotated variables: 25,091
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,832
 - Class definitions:
-    - Total class definitions: 726
+    - Total class definitions: 724
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7542,7 +7542,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,349 (excluding blank lines)
+54,353 (excluding blank lines)
 
 ### Package status: *stdlib*
 
