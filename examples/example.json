@@ -2526,7 +2526,7 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 4757,
+    "number_of_lines": 4761,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2538,9 +2538,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1943,
+      "annotated_parameters": 1946,
       "unannotated_parameters": 1523,
-      "annotated_returns": 489,
+      "annotated_returns": 490,
       "unannotated_returns": 820,
       "explicit_Incomplete_parameters": 780,
       "explicit_Incomplete_returns": 101,
@@ -3477,6 +3477,42 @@
     }
   },
   {
+    "package_name": "pygit2",
+    "stub_distribution_name": "types-pygit2",
+    "upstream_url": "https://github.com/libgit2/pygit2",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 1935,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "darwin",
+        "linux",
+        "win32"
+      ],
+      "allowlist_length": 13
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 682,
+      "unannotated_parameters": 0,
+      "annotated_returns": 504,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 3,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 803,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 1,
+      "classdefs": 119,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "pyinstaller",
     "stub_distribution_name": "types-pyinstaller",
     "upstream_url": "https://github.com/pyinstaller/pyinstaller",
@@ -3996,7 +4032,7 @@
     "upstream_url": "https://github.com/mhammond/pywin32",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 34796,
+    "number_of_lines": 34777,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4008,18 +4044,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3741,
+      "annotated_parameters": 3740,
       "unannotated_parameters": 3603,
-      "annotated_returns": 3850,
-      "unannotated_returns": 2016,
+      "annotated_returns": 3849,
+      "unannotated_returns": 2007,
       "explicit_Incomplete_parameters": 422,
       "explicit_Incomplete_returns": 289,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 25091,
+      "annotated_variables": 25092,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 2832,
-      "classdefs": 724,
+      "classdefs": 720,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }

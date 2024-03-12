@@ -4228,7 +4228,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-4,757 (excluding blank lines)
+4,761 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4253,12 +4253,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,943
+    - Annotated parameters: 1,946
     - Unannotated parameters: 1,523
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 780
 - Returns:
-    - Annotated returns: 489
+    - Annotated returns: 490
     - Unannotated returns: 820
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 101
@@ -5816,6 +5816,63 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
+## Info on typeshed's stubs for `pygit2`
+
+### Upstream repo URL
+
+[https://github.com/libgit2/pygit2](https://github.com/libgit2/pygit2)
+
+### Stub distribution name
+
+`types-pygit2`
+
+### Number of lines
+
+1,935 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `darwin`, `linux` and `win32`.
+
+Typeshed currently has 13 unique allowlist entries for `pygit2` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `pygit2`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 682
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 504
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 803
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+- Class definitions:
+    - Total class definitions: 119
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `pyinstaller`
 
 ### Upstream repo URL
@@ -6683,7 +6740,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-34,796 (excluding blank lines)
+34,777 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6708,21 +6765,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,741
+    - Annotated parameters: 3,740
     - Unannotated parameters: 3,603
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 422
 - Returns:
-    - Annotated returns: 3,850
-    - Unannotated returns: 2,016
+    - Annotated returns: 3,849
+    - Unannotated returns: 2,007
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 289
 - Variables:
-    - Annotated variables: 25,091
+    - Annotated variables: 25,092
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,832
 - Class definitions:
-    - Total class definitions: 724
+    - Total class definitions: 720
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
