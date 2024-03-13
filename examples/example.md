@@ -5846,9 +5846,9 @@ In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
 Typeshed currently has 13 unique allowlist entries for `pygit2` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `pygit2`
 
@@ -7320,9 +7320,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 2,947 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7599,7 +7599,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,353 (excluding blank lines)
+54,404 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7624,12 +7624,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,194
+    - Annotated parameters: 25,226
     - Unannotated parameters: 797
     - Explicit `Any` parameters: 1,946
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 14,130
+    - Annotated returns: 14,134
     - Unannotated returns: 364
     - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
@@ -7774,7 +7774,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-22,289 (excluding blank lines)
+22,891 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7790,7 +7790,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 49 unique allowlist entries for `tensorflow` when running stubtest in CI.
+Typeshed currently has 53 unique allowlist entries for `tensorflow` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7799,22 +7799,22 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 4,596
+    - Annotated parameters: 4,912
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 45
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 10
+    - Explicit `Any` parameters: 64
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 30
 - Returns:
-    - Annotated returns: 2,706
+    - Annotated returns: 2,806
     - Unannotated returns: 0
-    - Explicit `Any` returns: 35
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 42
+    - Explicit `Any` returns: 38
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 62
 - Variables:
-    - Annotated variables: 4,463
-    - Explicit `Any` variables: 6
+    - Annotated variables: 4,515
+    - Explicit `Any` variables: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 7
 - Class definitions:
-    - Total class definitions: 822
-    - Class definitions with `Any`: 0
+    - Total class definitions: 848
+    - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
