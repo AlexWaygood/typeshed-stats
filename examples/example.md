@@ -751,7 +751,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-50 (excluding blank lines)
+56 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2288,7 +2288,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,124 (excluding blank lines)
+1,332 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2304,7 +2304,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 14 unique allowlist entries for `docutils` when running stubtest in CI.
+Typeshed currently has 18 unique allowlist entries for `docutils` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2313,21 +2313,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 517
-    - Unannotated parameters: 66
-    - Explicit `Any` parameters: 33
+    - Annotated parameters: 644
+    - Unannotated parameters: 67
+    - Explicit `Any` parameters: 37
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 29
 - Returns:
-    - Annotated returns: 300
+    - Annotated returns: 390
     - Unannotated returns: 8
     - Explicit `Any` returns: 14
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 37
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 36
 - Variables:
-    - Annotated variables: 212
-    - Explicit `Any` variables: 16
+    - Annotated variables: 244
+    - Explicit `Any` variables: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
-    - Total class definitions: 187
+    - Total class definitions: 218
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 

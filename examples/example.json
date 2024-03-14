@@ -450,7 +450,7 @@
     "upstream_url": "https://sourceforge.net/p/raspberry-gpio-python/code/",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 50,
+    "number_of_lines": 56,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1370,7 +1370,7 @@
     "upstream_url": "https://sourceforge.net/p/docutils/code",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1124,
+    "number_of_lines": 1332,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1378,22 +1378,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 14
+      "allowlist_length": 18
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 517,
-      "unannotated_parameters": 66,
-      "annotated_returns": 300,
+      "annotated_parameters": 644,
+      "unannotated_parameters": 67,
+      "annotated_returns": 390,
       "unannotated_returns": 8,
       "explicit_Incomplete_parameters": 29,
-      "explicit_Incomplete_returns": 37,
-      "explicit_Any_parameters": 33,
+      "explicit_Incomplete_returns": 36,
+      "explicit_Any_parameters": 37,
       "explicit_Any_returns": 14,
-      "annotated_variables": 212,
-      "explicit_Any_variables": 16,
+      "annotated_variables": 244,
+      "explicit_Any_variables": 19,
       "explicit_Incomplete_variables": 1,
-      "classdefs": 187,
+      "classdefs": 218,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
