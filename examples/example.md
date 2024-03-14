@@ -3088,7 +3088,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-3,001 (excluding blank lines)
+3,009 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3104,7 +3104,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 148 unique allowlist entries for `gevent` when running stubtest in CI.
+Typeshed currently has 150 unique allowlist entries for `gevent` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7599,7 +7599,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,404 (excluding blank lines)
+54,412 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7615,7 +7615,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 964 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 965 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -7624,14 +7624,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,226
+    - Annotated parameters: 25,227
     - Unannotated parameters: 797
     - Explicit `Any` parameters: 1,946
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 14,134
+    - Annotated returns: 14,135
     - Unannotated returns: 364
-    - Explicit `Any` returns: 825
+    - Explicit `Any` returns: 826
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
 - Variables:
     - Annotated variables: 8,565
