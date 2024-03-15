@@ -2288,7 +2288,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,357 (excluding blank lines)
+1,406 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2313,10 +2313,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 668
+    - Annotated parameters: 685
     - Unannotated parameters: 67
-    - Explicit `Any` parameters: 37
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 29
+    - Explicit `Any` parameters: 25
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 35
 - Returns:
     - Annotated returns: 410
     - Unannotated returns: 8
@@ -5262,7 +5262,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,560 (excluding blank lines)
+1,562 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5297,8 +5297,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 47
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 610
-    - Explicit `Any` variables: 203
+    - Annotated variables: 611
+    - Explicit `Any` variables: 204
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 99
 - Class definitions:
     - Total class definitions: 89
@@ -7320,9 +7320,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 2,947 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7343,19 +7343,19 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 949
-    - Unannotated parameters: 447
+    - Annotated parameters: 950
+    - Unannotated parameters: 446
     - Explicit `Any` parameters: 21
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 47
 - Returns:
-    - Annotated returns: 814
-    - Unannotated returns: 269
+    - Annotated returns: 815
+    - Unannotated returns: 268
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 13
 - Variables:
-    - Annotated variables: 650
-    - Explicit `Any` variables: 87
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 287
+    - Annotated variables: 654
+    - Explicit `Any` variables: 86
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 286
 - Class definitions:
     - Total class definitions: 184
     - Class definitions with `Any`: 0
@@ -7599,7 +7599,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,412 (excluding blank lines)
+54,420 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7624,12 +7624,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,227
+    - Annotated parameters: 25,230
     - Unannotated parameters: 797
     - Explicit `Any` parameters: 1,946
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
 - Returns:
-    - Annotated returns: 14,135
+    - Annotated returns: 14,137
     - Unannotated returns: 364
     - Explicit `Any` returns: 826
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
