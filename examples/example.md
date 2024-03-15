@@ -354,9 +354,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 686 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -2288,7 +2288,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,332 (excluding blank lines)
+1,357 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2313,17 +2313,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 644
+    - Annotated parameters: 668
     - Unannotated parameters: 67
     - Explicit `Any` parameters: 37
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 29
 - Returns:
-    - Annotated returns: 390
+    - Annotated returns: 410
     - Unannotated returns: 8
     - Explicit `Any` returns: 14
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 36
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 35
 - Variables:
-    - Annotated variables: 244
+    - Annotated variables: 246
     - Explicit `Any` variables: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
@@ -6343,9 +6343,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 439 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7090,11 +7090,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-267 (excluding blank lines)
+270 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7115,19 +7115,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `requests-oauthlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 116
+    - Annotated parameters: 118
     - Unannotated parameters: 17
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 51
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 53
 - Returns:
-    - Annotated returns: 43
+    - Annotated returns: 45
     - Unannotated returns: 4
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
 - Variables:
-    - Annotated variables: 26
+    - Annotated variables: 25
     - Explicit `Any` variables: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 7
 - Class definitions:
     - Total class definitions: 13
     - Class definitions with `Any`: 0
