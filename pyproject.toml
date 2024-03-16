@@ -53,7 +53,7 @@ rich = ["rich", "rich-argparse>=1"]
 # so the CLI docs generated from --help are consistent
 docs = [
     "typeshed-stats[rich]",
-    "MarkDown==3.6",
+    "MarkDown==3.5.2",
     "mkdocs==1.5.3",
     "mkdocs-macros-plugin==1.0.5",
     "mkdocs-material==9.5.13",
