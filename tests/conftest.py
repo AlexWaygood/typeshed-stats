@@ -225,9 +225,9 @@ def random_identifier() -> str:
 
 
 def random_AnnotationStats() -> AnnotationStats:
-    return AnnotationStats(
-        *[random.randint(0, 1000) for _ in AnnotationStats.__annotations__]
-    )
+    return AnnotationStats(*[
+        random.randint(0, 1000) for _ in AnnotationStats.__annotations__
+    ])
 
 
 def random_PackageInfo() -> PackageInfo:
