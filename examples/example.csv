@@ -5,7 +5,7 @@ Flask-Cors,types-Flask-Cors,https://github.com/corydolphin/flask-cors,PARTIAL,-,
 Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrate,COMPLETE,-,130,UP_TO_DATE,UPLOADED,STRICT,86,0,24,0,0,0,0,0,7,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,1
 Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,COMPLETE,-,233,UP_TO_DATE,UPLOADED,NOT_STRICT,140,34,37,15,19,1,2,0,3,1,0,8,0,0,ERROR_ON_MISSING_STUB,linux,3
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,COMPLETE,-,311,UP_TO_DATE,UPLOADED,STRICT,107,0,152,0,0,0,0,2,46,0,0,15,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
-Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,PARTIAL,-,686,OUT_OF_DATE,UPLOADED,NOT_STRICT,247,30,192,2,0,0,15,3,217,15,0,102,0,0,MISSING_STUBS_IGNORED,linux,0
+Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,PARTIAL,-,695,UP_TO_DATE,UPLOADED,NOT_STRICT,256,30,198,2,0,0,15,3,217,15,0,102,0,0,MISSING_STUBS_IGNORED,linux,0
 Pillow,types-Pillow,https://github.com/python-pillow/Pillow,COMPLETE,-,3256,UP_TO_DATE,UPLOADED,NOT_STRICT,759,596,572,331,59,6,7,5,1165,5,307,225,3,1,ERROR_ON_MISSING_STUB,linux;win32,18
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,COMPLETE,-,234,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,PARTIAL,-,1044,UP_TO_DATE,UPLOADED,NOT_STRICT,142,52,101,37,28,0,10,18,734,60,0,24,0,0,MISSING_STUBS_IGNORED,linux,11
@@ -61,7 +61,7 @@ html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,PARTIAL,-,69
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,254,UP_TO_DATE,UPLOADED,NOT_STRICT,46,122,39,25,37,0,0,0,87,58,0,33,1,0,ERROR_ON_MISSING_STUB,linux,1
 humanfriendly,types-humanfriendly,https://github.com/xolox/python-humanfriendly,COMPLETE,-,340,UP_TO_DATE,UPLOADED,NOT_STRICT,81,179,82,95,22,0,0,0,75,54,0,25,0,0,ERROR_ON_MISSING_STUB,linux,7
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,336,UP_TO_DATE,UPLOADED,STRICT,162,0,65,0,0,0,0,2,196,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
-influxdb-client,types-influxdb-client,https://github.com/influxdata/influxdb-client-python,COMPLETE,"Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you need to install `types-influxdb-client` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-influxdb-client<1.37.0.1`.",13440,OUT_OF_DATE,UPLOADED,NOT_STRICT,2344,3782,1861,3426,1964,2,2,5,1203,2,1063,423,0,0,ERROR_ON_MISSING_STUB,linux,0
+influxdb-client,types-influxdb-client,https://github.com/influxdata/influxdb-client-python,COMPLETE,"Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you need to install `types-influxdb-client` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-influxdb-client<1.37.0.1`.",13454,UP_TO_DATE,UPLOADED,NOT_STRICT,2353,3778,1864,3423,1958,2,2,5,1203,2,1063,423,0,0,ERROR_ON_MISSING_STUB,linux,0
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,COMPLETE,-,122,UP_TO_DATE,UPLOADED,STRICT,57,0,58,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,20
 jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,COMPLETE,-,172,UP_TO_DATE,UPLOADED,NOT_STRICT,81,52,50,24,0,1,27,27,45,6,0,22,0,0,ERROR_ON_MISSING_STUB,linux,0
 jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,PARTIAL,-,422,UP_TO_DATE,UPLOADED,NOT_STRICT,119,305,153,29,21,11,4,0,52,0,19,26,0,0,MISSING_STUBS_IGNORED,linux,0
@@ -132,7 +132,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,340,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,54420,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25230,797,14137,364,85,18,1946,826,8565,544,143,2397,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,965
+stdlib,-,https://github.com/python/cpython,STDLIB,-,54425,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25208,820,14132,369,95,19,1906,814,8566,532,152,2397,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,965
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OBSOLETE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1,22891,OUT_OF_DATE,UPLOADED,STRICT,4912,0,2806,0,30,62,64,38,4515,8,7,848,1,0,MISSING_STUBS_IGNORED,linux,53

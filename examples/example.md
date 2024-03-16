@@ -352,11 +352,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-686 (excluding blank lines)
+695 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -377,12 +377,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Markdown`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 247
+    - Annotated parameters: 256
     - Unannotated parameters: 30
     - Explicit `Any` parameters: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 192
+    - Annotated returns: 198
     - Unannotated returns: 2
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -3544,11 +3544,11 @@ Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you 
 
 ### Number of lines
 
-13,440 (excluding blank lines)
+13,454 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3569,13 +3569,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `influxdb-client`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,344
-    - Unannotated parameters: 3,782
+    - Annotated parameters: 2,353
+    - Unannotated parameters: 3,778
     - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,964
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1,958
 - Returns:
-    - Annotated returns: 1,861
-    - Unannotated returns: 3,426
+    - Annotated returns: 1,864
+    - Unannotated returns: 3,423
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
@@ -7599,7 +7599,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,420 (excluding blank lines)
+54,425 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7624,19 +7624,19 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,230
-    - Unannotated parameters: 797
-    - Explicit `Any` parameters: 1,946
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 85
+    - Annotated parameters: 25,208
+    - Unannotated parameters: 820
+    - Explicit `Any` parameters: 1,906
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 95
 - Returns:
-    - Annotated returns: 14,137
-    - Unannotated returns: 364
-    - Explicit `Any` returns: 826
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 18
+    - Annotated returns: 14,132
+    - Unannotated returns: 369
+    - Explicit `Any` returns: 814
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 19
 - Variables:
-    - Annotated variables: 8,565
-    - Explicit `Any` variables: 544
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 143
+    - Annotated variables: 8,566
+    - Explicit `Any` variables: 532
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 152
 - Class definitions:
     - Total class definitions: 2,397
     - Class definitions with `Any`: 26
