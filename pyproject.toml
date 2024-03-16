@@ -85,9 +85,6 @@ typecheck = [
 # That's deliberate (it's not necessary to run them all locally).
 # This file just lists the ones which it's convenient to have around locally.
 misc-lint = [
-    "black==24.1.1",
-    "blacken-docs==1.16.0",
-    "pre-commit-hooks==4.5.0",
     "ruff==0.2.1",
 ]
 dev = ["typeshed-stats[rich,docs,typecheck,pytest,misc-lint]"]
@@ -98,18 +95,19 @@ source = "vcs"
 [tool.hatch.build.hooks.vcs]
 version-file = "src/typeshed_stats/_version.py"
 
-[tool.black]
-line-length = 88
-skip-magic-trailing-comma = true
-
 [tool.ruff]
 fix = true
 preview = true
+line-length = 88
+
+[tool.ruff.format]
+docstring-code-format = true
+skip-magic-trailing-comma = true
 
 [tool.ruff.lint]
 select = ["E", "F", "B", "B9", "D", "SIM", "I", "PT", "UP", "PGH", "PYI", "RUF"]
 ignore = [
-    # These are all enforced by, or incompatible with, Black:
+    # These are all enforced by, or incompatible with, the ruff formatter:
     "E203",
     "E501",
     "W291",
@@ -153,6 +151,7 @@ mark-parentheses = false
 
 [tool.ruff.lint.isort]
 combine-as-imports = true
+split-on-trailing-comma = false
 known-first-party = ["typeshed_stats"]
 
 [tool.mypy]

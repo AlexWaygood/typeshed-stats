@@ -106,13 +106,11 @@ def _get_help_formatter() -> type[argparse.HelpFormatter]:
     except ImportError:
         from argparse import HelpFormatter  # type: ignore[assignment]
     else:
-        HelpFormatter.styles.update(
-            {
-                "argparse.groups": "gold3",
-                "argparse.args": "navajo_white1",
-                "argparse.metavar": "dark_orange3",
-            }
-        )
+        HelpFormatter.styles.update({
+            "argparse.groups": "gold3",
+            "argparse.args": "navajo_white1",
+            "argparse.metavar": "dark_orange3",
+        })
         HelpFormatter.group_name_formatter = str.title
     return HelpFormatter
 
