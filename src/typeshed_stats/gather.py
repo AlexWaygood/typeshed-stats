@@ -299,10 +299,14 @@ def gather_annotation_stats_on_file(path: Path | str) -> AnnotationStats:
             containing data about the annotations in the file.
 
     Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, gather_annotation_stats_on_file
+        >>> from typeshed_stats.gather import (
+        ...     tmpdir_typeshed,
+        ...     gather_annotation_stats_on_file,
+        ... )
         >>> with tmpdir_typeshed() as typeshed:
-        ...     stats_on_functools = gather_annotation_stats_on_file(typeshed / "stdlib" / "functools.pyi")
-        ...
+        ...     stats_on_functools = gather_annotation_stats_on_file(
+        ...         typeshed / "stdlib" / "functools.pyi"
+        ...     )
         >>> type(stats_on_functools)
         <class 'typeshed_stats.gather.AnnotationStats'>
         >>> stats_on_functools.unannotated_parameters
@@ -336,10 +340,14 @@ def gather_annotation_stats_on_package(
             containing data about the annotations in the package.
 
     Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, gather_annotation_stats_on_package
+        >>> from typeshed_stats.gather import (
+        ...     tmpdir_typeshed,
+        ...     gather_annotation_stats_on_package,
+        ... )
         >>> with tmpdir_typeshed() as typeshed:
-        ...     mypy_extensions_stats = gather_annotation_stats_on_package("mypy-extensions", typeshed_dir=typeshed)
-        ...
+        ...     mypy_extensions_stats = gather_annotation_stats_on_package(
+        ...         "mypy-extensions", typeshed_dir=typeshed
+        ...     )
         >>> type(mypy_extensions_stats)
         <class 'typeshed_stats.gather.AnnotationStats'>
         >>> mypy_extensions_stats.unannotated_parameters
@@ -383,8 +391,12 @@ def get_package_extra_description(
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_extra_description
         >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_description = get_package_extra_description("stdlib", typeshed_dir=typeshed)
-        ...     protobuf_description = get_package_extra_description("protobuf", typeshed_dir=typeshed)
+        ...     stdlib_description = get_package_extra_description(
+        ...         "stdlib", typeshed_dir=typeshed
+        ...     )
+        ...     protobuf_description = get_package_extra_description(
+        ...         "protobuf", typeshed_dir=typeshed
+        ...     )
         >>> stdlib_description is None
         True
         >>> isinstance(protobuf_description, str)
@@ -520,8 +532,12 @@ def get_stubtest_allowlist_length(
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_allowlist_length
         >>> with tmpdir_typeshed() as typeshed:
-        ...     num_stdlib_allows = get_stubtest_allowlist_length("stdlib", typeshed_dir=typeshed)
-        ...     num_requests_allows = get_stubtest_allowlist_length("requests", typeshed_dir=typeshed)
+        ...     num_stdlib_allows = get_stubtest_allowlist_length(
+        ...         "stdlib", typeshed_dir=typeshed
+        ...     )
+        ...     num_requests_allows = get_stubtest_allowlist_length(
+        ...         "requests", typeshed_dir=typeshed
+        ...     )
         >>> type(num_stdlib_allows)
         <class 'int'>
         >>> num_stdlib_allows > 0 and num_requests_allows > 0
@@ -666,9 +682,10 @@ async def get_package_status(
         >>> import asyncio
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_status
         >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_status = asyncio.run(get_package_status("stdlib", typeshed_dir=typeshed))
+        ...     stdlib_status = asyncio.run(
+        ...         get_package_status("stdlib", typeshed_dir=typeshed)
+        ...     )
         ...     gdb_status = asyncio.run(get_package_status("gdb", typeshed_dir=typeshed))
-        ...
         >>> stdlib_status
         PackageStatus.STDLIB
         >>> help(_)
@@ -828,15 +845,9 @@ def get_upstream_url(
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_upstream_url
         >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_url = get_upstream_url(
-        ...         "stdlib", typeshed_dir=typeshed
-        ...     )
-        ...     requests_url = get_upstream_url(
-        ...         "requests", typeshed_dir=typeshed
-        ...     )
-        ...     hdbcli_url = get_upstream_url(
-        ...         "hdbcli", typeshed_dir=typeshed
-        ...     )
+        ...     stdlib_url = get_upstream_url("stdlib", typeshed_dir=typeshed)
+        ...     requests_url = get_upstream_url("requests", typeshed_dir=typeshed)
+        ...     hdbcli_url = get_upstream_url("hdbcli", typeshed_dir=typeshed)
         >>> stdlib_url
         'https://github.com/python/cpython'
         >>> requests_url
@@ -870,8 +881,12 @@ def get_stub_distribution_name(
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_stub_distribution_name
         >>> with tmpdir_typeshed() as typeshed:
-        ...     requests_stub_dist_name = get_stub_distribution_name("requests", typeshed_dir=typeshed)
-        ...     pika_stub_dist_name = get_stub_distribution_name("pika", typeshed_dir=typeshed)
+        ...     requests_stub_dist_name = get_stub_distribution_name(
+        ...         "requests", typeshed_dir=typeshed
+        ...     )
+        ...     pika_stub_dist_name = get_stub_distribution_name(
+        ...         "pika", typeshed_dir=typeshed
+        ...     )
         >>> requests_stub_dist_name
         'types-requests'
         >>> pika_stub_dist_name
@@ -915,8 +930,9 @@ def get_package_size(package_name: PackageName, *, typeshed_dir: Path | str) -> 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_size
         >>> with tmpdir_typeshed() as typeshed:
-        ...     mypy_extensions_size = get_package_size("mypy-extensions", typeshed_dir=typeshed)
-        ...
+        ...     mypy_extensions_size = get_package_size(
+        ...         "mypy-extensions", typeshed_dir=typeshed
+        ...     )
         >>> type(mypy_extensions_size) is int and mypy_extensions_size > 0
         True
     """
@@ -1063,10 +1079,14 @@ def get_pyright_setting_for_package(
             (see the docs on `PyrightSetting` for details).
 
     Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_pyright_setting_for_package
+        >>> from typeshed_stats.gather import (
+        ...     tmpdir_typeshed,
+        ...     get_pyright_setting_for_package,
+        ... )
         >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_setting = get_pyright_setting_for_package("stdlib", typeshed_dir=typeshed)
-        ...
+        ...     stdlib_setting = get_pyright_setting_for_package(
+        ...         "stdlib", typeshed_dir=typeshed
+        ...     )
         >>> stdlib_setting
         PyrightSetting.STRICT_ON_SOME_FILES
         >>> help(_)
@@ -1130,8 +1150,9 @@ async def gather_stats_on_package(
         >>> import asyncio
         >>> from typeshed_stats.gather import tmpdir_typeshed, gather_stats_on_package
         >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_info = asyncio.run(gather_stats_on_package("stdlib", typeshed_dir=typeshed))
-        ...
+        ...     stdlib_info = asyncio.run(
+        ...         gather_stats_on_package("stdlib", typeshed_dir=typeshed)
+        ...     )
         >>> stdlib_info.package_name
         'stdlib'
         >>> stdlib_info.stubtest_settings.strictness
@@ -1343,12 +1364,15 @@ def gather_stats_on_multiple_packages(
             of a certain stubs package in typeshed.
 
     Examples:
-        >>> from typeshed_stats.gather import PackageInfo, tmpdir_typeshed, gather_stats_on_multiple_packages
+        >>> from typeshed_stats.gather import (
+        ...     PackageInfo,
+        ...     tmpdir_typeshed,
+        ...     gather_stats_on_multiple_packages,
+        ... )
         >>> with tmpdir_typeshed() as typeshed:
         ...     infos = gather_stats_on_multiple_packages(
         ...         ["stdlib", "aiofiles", "boto"], typeshed_dir=typeshed
         ...     )
-        ...
         >>> [info.package_name for info in infos]
         ['aiofiles', 'boto', 'stdlib']
         >>> all(type(info) is PackageInfo for info in infos)
