@@ -2288,7 +2288,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,406 (excluding blank lines)
+1,468 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2313,18 +2313,18 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 685
+    - Annotated parameters: 747
     - Unannotated parameters: 67
-    - Explicit `Any` parameters: 25
+    - Explicit `Any` parameters: 39
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 35
 - Returns:
-    - Annotated returns: 410
-    - Unannotated returns: 8
-    - Explicit `Any` returns: 14
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 35
+    - Annotated returns: 449
+    - Unannotated returns: 7
+    - Explicit `Any` returns: 19
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 34
 - Variables:
-    - Annotated variables: 246
-    - Explicit `Any` variables: 19
+    - Annotated variables: 249
+    - Explicit `Any` variables: 20
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
     - Total class definitions: 218
@@ -7318,7 +7318,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,947 (excluding blank lines)
+2,968 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7334,7 +7334,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 34 unique allowlist entries for `setuptools` when running stubtest in CI.
+Typeshed currently has 113 unique allowlist entries for `setuptools` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
