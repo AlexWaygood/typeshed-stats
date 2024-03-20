@@ -1166,7 +1166,7 @@
     "upstream_url": "https://github.com/kiorky/croniter",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 147,
+    "number_of_lines": 151,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1178,9 +1178,9 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 64,
+      "annotated_parameters": 68,
       "unannotated_parameters": 0,
-      "annotated_returns": 23,
+      "annotated_returns": 24,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
@@ -1949,7 +1949,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 138,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -2697,7 +2697,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 513,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",

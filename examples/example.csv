@@ -33,7 +33,7 @@ click-spinner,types-click-spinner,https://github.com/click-contrib/click-spinner
 colorama,types-colorama,https://github.com/tartley/colorama,COMPLETE,-,201,UP_TO_DATE,UPLOADED,STRICT,89,0,60,0,0,0,3,1,85,0,0,11,0,0,ERROR_ON_MISSING_STUB,linux;win32,44
 commonmark,types-commonmark,https://github.com/rtfd/commonmark.py,PARTIAL,-,370,UP_TO_DATE,UPLOADED,NOT_STRICT,63,158,84,76,55,0,0,0,133,86,0,18,0,0,MISSING_STUBS_IGNORED,linux,0
 console-menu,types-console-menu,https://github.com/aegirhall/console-menu,COMPLETE,-,711,UP_TO_DATE,UPLOADED,STRICT,217,0,278,0,0,0,7,1,58,3,1,39,0,0,ERROR_ON_MISSING_STUB,linux,0
-croniter,types-croniter,https://github.com/kiorky/croniter,COMPLETE,-,147,UP_TO_DATE,UPLOADED,STRICT,64,0,23,0,0,0,0,8,29,0,0,8,1,0,ERROR_ON_MISSING_STUB,linux,0
+croniter,types-croniter,https://github.com/kiorky/croniter,COMPLETE,-,151,UP_TO_DATE,UPLOADED,STRICT,68,0,24,0,0,0,0,8,29,0,0,8,1,0,ERROR_ON_MISSING_STUB,linux,0
 dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,COMPLETE,-,472,OUT_OF_DATE,UPLOADED,NOT_STRICT,126,127,75,67,21,1,4,6,135,76,0,34,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,https://github.com/micheles/decorator,COMPLETE,-,66,UP_TO_DATE,UPLOADED,STRICT,36,0,13,0,0,0,19,6,15,3,0,2,0,0,ERROR_ON_MISSING_STUB,linux,10
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,PARTIAL,-,234,UP_TO_DATE,UPLOADED,NOT_STRICT,81,97,38,13,13,0,0,1,37,0,19,12,0,0,MISSING_STUBS_IGNORED,linux,0
@@ -56,7 +56,7 @@ gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,CO
 gevent,types-gevent,https://github.com/gevent/gevent,COMPLETE,-,3009,UP_TO_DATE,UPLOADED,STRICT,1346,0,824,0,5,0,65,21,359,26,0,207,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,150
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1536,UP_TO_DATE,UPLOADED,NOT_STRICT,486,368,236,203,123,0,7,0,194,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,11,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
-hdbcli,types-hdbcli,-,COMPLETE,-,138,OUT_OF_DATE,UPLOADED,STRICT,81,0,67,0,6,3,12,10,21,2,1,16,0,0,ERROR_ON_MISSING_STUB,linux,8
+hdbcli,types-hdbcli,-,COMPLETE,-,138,UP_TO_DATE,UPLOADED,STRICT,81,0,67,0,6,3,12,10,21,2,1,16,0,0,ERROR_ON_MISSING_STUB,linux,8
 html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,PARTIAL,-,696,UP_TO_DATE,UPLOADED,NOT_STRICT,87,195,133,177,23,0,0,0,224,175,1,41,4,0,MISSING_STUBS_IGNORED,linux,0
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,254,UP_TO_DATE,UPLOADED,NOT_STRICT,46,122,39,25,37,0,0,0,87,58,0,33,1,0,ERROR_ON_MISSING_STUB,linux,1
 humanfriendly,types-humanfriendly,https://github.com/xolox/python-humanfriendly,COMPLETE,-,340,UP_TO_DATE,UPLOADED,NOT_STRICT,81,179,82,95,22,0,0,0,75,54,0,25,0,0,ERROR_ON_MISSING_STUB,linux,7
@@ -78,7 +78,7 @@ oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1444,UP_T
 olefile,types-olefile,https://github.com/decalage2/olefile,COMPLETE,-,214,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,73,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,13173,UP_TO_DATE,UPLOADED,NOT_STRICT,3893,349,1312,93,218,9,12,12,4048,3,361,607,1,21,ERROR_ON_MISSING_STUB,linux,181
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,PARTIAL,-,331,UP_TO_DATE,UPLOADED,STRICT,105,0,113,0,1,0,21,0,56,4,0,26,0,0,MISSING_STUBS_IGNORED,linux,4
-paho-mqtt,types-paho-mqtt,https://github.com/eclipse/paho.mqtt.python,COMPLETE,-,513,OUT_OF_DATE,UPLOADED,STRICT,217,0,147,0,0,0,5,4,145,0,1,19,0,0,ERROR_ON_MISSING_STUB,linux,0
+paho-mqtt,types-paho-mqtt,https://github.com/eclipse/paho.mqtt.python,COMPLETE,-,513,OBSOLETE,UPLOADED,STRICT,217,0,147,0,0,0,5,4,145,0,1,19,0,0,ERROR_ON_MISSING_STUB,linux,0
 paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1833,UP_TO_DATE,UPLOADED,STRICT,770,0,642,0,3,0,20,9,545,14,3,124,2,0,MISSING_STUBS_IGNORED,linux;win32,6
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,COMPLETE,-,187,UP_TO_DATE,UPLOADED,STRICT,114,0,60,0,0,1,22,2,34,3,2,27,0,0,ERROR_ON_MISSING_STUB,linux,4
 passlib,types-passlib,https://foss.heptapod.net/python-libs/passlib,COMPLETE,-,1780,UP_TO_DATE,UPLOADED,NOT_STRICT,382,466,155,329,156,0,19,10,576,101,3,143,2,0,ERROR_ON_MISSING_STUB,linux,31
