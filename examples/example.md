@@ -409,7 +409,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-3,256 (excluding blank lines)
+3,258 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -434,19 +434,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Pillow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 759
-    - Unannotated parameters: 596
+    - Annotated parameters: 762
+    - Unannotated parameters: 593
     - Explicit `Any` parameters: 7
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 59
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 58
 - Returns:
-    - Annotated returns: 572
-    - Unannotated returns: 331
+    - Annotated returns: 576
+    - Unannotated returns: 327
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
     - Annotated variables: 1,165
     - Explicit `Any` variables: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 307
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 305
 - Class definitions:
     - Total class definitions: 225
     - Class definitions with `Any`: 3
