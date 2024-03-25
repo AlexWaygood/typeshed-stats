@@ -3471,6 +3471,63 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
+## Info on typeshed's stubs for `hvac`
+
+### Upstream repo URL
+
+[https://github.com/hvac/hvac](https://github.com/hvac/hvac)
+
+### Stub distribution name
+
+`types-hvac`
+
+### Number of lines
+
+2,056 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 2 unique allowlist entries for `hvac` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `hvac`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 981
+    - Unannotated parameters: 701
+    - Explicit `Any` parameters: 22
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 533
+- Returns:
+    - Annotated returns: 48
+    - Unannotated returns: 509
+    - Explicit `Any` returns: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 93
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 15
+- Class definitions:
+    - Total class definitions: 71
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `ibm-db`
 
 ### Upstream repo URL
