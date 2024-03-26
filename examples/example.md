@@ -3043,11 +3043,13 @@ The runtime package that these stubs are for doesn't exist on PyPI, so whether o
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *skipped*
+### Stubtest settings in CI: *error on missing stub*
 
-Stubtest is skipped in typeshed's CI for this package.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-Typeshed currently has 0 allowlist entries for `gdb` when running stubtest in CI.
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 117 unique allowlist entries for `gdb` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -7656,7 +7658,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,430 (excluding blank lines)
+54,426 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7681,12 +7683,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,211
+    - Annotated parameters: 25,208
     - Unannotated parameters: 820
     - Explicit `Any` parameters: 1,906
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 95
 - Returns:
-    - Annotated returns: 14,137
+    - Annotated returns: 14,135
     - Unannotated returns: 369
     - Explicit `Any` returns: 814
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 19
