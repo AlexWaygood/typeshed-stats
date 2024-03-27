@@ -4743,7 +4743,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,780 (excluding blank lines)
+1,798 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4768,18 +4768,18 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `passlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 382
-    - Unannotated parameters: 466
-    - Explicit `Any` parameters: 19
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 156
+    - Annotated parameters: 410
+    - Unannotated parameters: 442
+    - Explicit `Any` parameters: 27
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 132
 - Returns:
-    - Annotated returns: 155
-    - Unannotated returns: 329
-    - Explicit `Any` returns: 10
+    - Annotated returns: 187
+    - Unannotated returns: 297
+    - Explicit `Any` returns: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 576
-    - Explicit `Any` variables: 101
+    - Explicit `Any` variables: 92
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
     - Total class definitions: 143
@@ -5551,9 +5551,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 1,503 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
