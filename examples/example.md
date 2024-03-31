@@ -2687,11 +2687,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-10 (excluding blank lines)
+37 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2712,17 +2712,17 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `flake8-builtins`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3
+    - Annotated parameters: 16
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 3
+    - Annotated returns: 14
     - Unannotated returns: 0
-    - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 2
+    - Annotated variables: 10
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -6799,7 +6799,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-34,775 (excluding blank lines)
+34,801 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6824,21 +6824,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,740
-    - Unannotated parameters: 3,603
+    - Annotated parameters: 3,799
+    - Unannotated parameters: 3,559
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 422
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 419
 - Returns:
-    - Annotated returns: 3,849
-    - Unannotated returns: 2,007
+    - Annotated returns: 3,865
+    - Unannotated returns: 1,987
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 289
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 288
 - Variables:
-    - Annotated variables: 25,085
+    - Annotated variables: 25,095
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,824
 - Class definitions:
-    - Total class definitions: 725
+    - Total class definitions: 724
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
