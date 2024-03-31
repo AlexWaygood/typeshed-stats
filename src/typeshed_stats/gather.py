@@ -448,7 +448,7 @@ def get_stubtest_strictness(
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_strictness
         >>> with tmpdir_typeshed() as typeshed:
         ...     stdlib_setting = get_stubtest_strictness("stdlib", typeshed_dir=typeshed)
-        ...     gdb_setting = get_stubtest_strictness("gdb", typeshed_dir=typeshed)
+        ...     gdb_setting = get_stubtest_strictness("RPi.GPIO", typeshed_dir=typeshed)
         >>> stdlib_setting
         StubtestStrictness.ERROR_ON_MISSING_STUB
         >>> help(_)
