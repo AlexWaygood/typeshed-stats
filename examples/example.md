@@ -1264,9 +1264,9 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 1,199 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -3033,7 +3033,7 @@ Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Pyth
 
 ### Number of lines
 
-758 (excluding blank lines)
+819 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -3049,7 +3049,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 117 unique allowlist entries for `gdb` when running stubtest in CI.
+Typeshed currently has 50 unique allowlist entries for `gdb` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3058,21 +3058,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `gdb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 242
+    - Annotated parameters: 232
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 0
+    - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 261
+    - Annotated returns: 258
     - Unannotated returns: 0
-    - Explicit `Any` returns: 0
+    - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 291
+    - Annotated variables: 318
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 87
+    - Total class definitions: 82
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
