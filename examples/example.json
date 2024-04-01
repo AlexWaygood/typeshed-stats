@@ -245,7 +245,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 3258,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
