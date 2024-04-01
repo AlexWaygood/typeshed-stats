@@ -15,7 +15,7 @@
     {
       groupName: "most test/lint dependencies",
       matchManagers: ["pep621", "pre-commit"],
-      description: "Quarterly update of most test/lint dependencies"
+      description: "Quarterly update of most test/lint dependencies",
     },
   ],
   schedule: ["every 3 months on the first day of the month"],
