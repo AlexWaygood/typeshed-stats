@@ -28,7 +28,7 @@ jobs:
       - name: Regenerate examples and docs
         run: python scripts/regenerate.py --download-typeshed
       - name: Check the generated files with pre-commit
-        uses: pre-commit/action@v3.0.0
+        uses: pre-commit/action@v3.0.1
       - name: Build docs
         run: mkdocs build --strict
       - name: Upload docs
