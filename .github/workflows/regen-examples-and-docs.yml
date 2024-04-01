@@ -34,7 +34,7 @@ jobs:
         run: python scripts/regenerate.py --download-typeshed
       - name: Check the generated files with pre-commit
         id: lint
-        uses: pre-commit/action@v3.0.0
+        uses: pre-commit/action@v3.0.1
       - name: Commit and push the changes
         id: commit
         if: >-
