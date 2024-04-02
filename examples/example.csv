@@ -23,7 +23,7 @@ beautifulsoup4,types-beautifulsoup4,https://git.launchpad.net/beautifulsoup/tree
 bleach,types-bleach,https://github.com/mozilla/bleach,COMPLETE,-,239,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,91,0,49,1,0,1,2,0,60,1,0,13,0,0,ERROR_ON_MISSING_STUB,linux,2
 boltons,types-boltons,https://github.com/mahmoud/boltons,COMPLETE,-,1199,OUT_OF_DATE,UPLOADED,NOT_STRICT,626,250,454,171,72,8,61,34,235,7,69,81,1,3,ERROR_ON_MISSING_STUB,linux,18
 boto,types-boto,https://github.com/boto/boto,PARTIAL,-,1916,UP_TO_DATE,UPLOADED,NOT_STRICT,837,685,168,442,345,2,21,31,363,267,0,136,0,0,MISSING_STUBS_IGNORED,linux,9
-braintree,types-braintree,https://github.com/braintree/braintree_python,PARTIAL,-,2872,OUT_OF_DATE,UPLOADED,NOT_STRICT,83,391,124,293,74,0,0,2,1306,429,1,234,0,0,MISSING_STUBS_IGNORED,linux,1
+braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,2932,UP_TO_DATE,UPLOADED,NOT_STRICT,91,429,142,324,80,2,1,1,1504,0,131,267,0,0,ERROR_ON_MISSING_STUB,linux,1
 cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,87,0,48,0,0,0,4,0,1,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,20
 caldav,types-caldav,https://github.com/python-caldav/caldav,PARTIAL,-,526,UP_TO_DATE,UPLOADED,NOT_STRICT,214,35,117,8,21,5,1,0,94,0,6,86,0,0,MISSING_STUBS_IGNORED,linux,9
 cffi,types-cffi,https://foss.heptapod.net/pypy/cffi,COMPLETE,-,827,UP_TO_DATE,UPLOADED,NOT_STRICT,302,246,194,130,21,2,32,8,252,0,115,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
@@ -77,7 +77,7 @@ netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,696,UP_TO_DAT
 networkx,types-networkx,https://github.com/networkx/networkx,PARTIAL,-,4764,UP_TO_DATE,UPLOADED,NOT_STRICT,1941,1528,489,821,775,100,4,3,320,2,249,126,1,2,MISSING_STUBS_IGNORED,linux,13
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1444,UP_TO_DATE,UPLOADED,NOT_STRICT,406,414,161,191,182,0,0,0,329,207,2,109,2,0,MISSING_STUBS_IGNORED,linux,1
 olefile,types-olefile,https://github.com/decalage2/olefile,COMPLETE,-,214,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,73,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
-openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,13173,UP_TO_DATE,UPLOADED,NOT_STRICT,3888,354,1312,93,213,9,12,12,4048,3,361,607,1,21,ERROR_ON_MISSING_STUB,linux,181
+openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,13218,UP_TO_DATE,UPLOADED,NOT_STRICT,3901,341,1314,91,211,8,12,12,4048,3,352,607,1,21,ERROR_ON_MISSING_STUB,linux,183
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,PARTIAL,-,331,UP_TO_DATE,UPLOADED,STRICT,105,0,113,0,1,0,21,0,56,4,0,26,0,0,MISSING_STUBS_IGNORED,linux,4
 paho-mqtt,types-paho-mqtt,https://github.com/eclipse/paho.mqtt.python,COMPLETE,-,513,OBSOLETE,UPLOADED,STRICT,217,0,147,0,0,0,5,4,145,0,1,19,0,0,ERROR_ON_MISSING_STUB,linux,0
 paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1833,UP_TO_DATE,UPLOADED,STRICT,770,0,642,0,3,0,20,9,545,14,3,124,2,0,MISSING_STUBS_IGNORED,linux;win32,6
@@ -116,14 +116,14 @@ python-gflags,types-python-gflags,https://github.com/google/python-gflags,COMPLE
 python-jose,types-python-jose,https://github.com/mpdavis/python-jose,COMPLETE,-,357,UP_TO_DATE,UPLOADED,NOT_STRICT,86,39,64,26,4,0,14,12,117,30,0,26,0,0,ERROR_ON_MISSING_STUB,linux,6
 python-nmap,types-python-nmap,https://bitbucket.org/xael/python-nmap,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-slugify,types-python-slugify,https://github.com/un33k/python-slugify,COMPLETE,-,45,OBSOLETE,UPLOADED,STRICT,19,0,3,0,0,0,0,0,12,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
-python-xlib,types-python-xlib,https://github.com/python-xlib/python-xlib,COMPLETE,-,5414,UP_TO_DATE,UPLOADED,STRICT,1329,0,579,0,0,0,15,8,3519,5,0,424,0,0,ERROR_ON_MISSING_STUB,linux,10
+python-xlib,types-python-xlib,https://github.com/python-xlib/python-xlib,COMPLETE,-,5413,UP_TO_DATE,UPLOADED,STRICT,1329,0,579,0,0,0,15,8,3519,5,0,424,0,0,ERROR_ON_MISSING_STUB,linux,10
 pytz,types-pytz,https://github.com/stub42/pytz,COMPLETE,-,130,UP_TO_DATE,UPLOADED,STRICT,69,0,51,0,2,1,2,0,29,0,1,16,0,3,ERROR_ON_MISSING_STUB,linux,4
 pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,34801,UP_TO_DATE,UPLOADED,NOT_STRICT,3799,3559,3865,1987,419,288,1,1,25095,0,2824,724,0,0,ERROR_ON_MISSING_STUB,win32,46
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,COMPLETE,-,860,UP_TO_DATE,UPLOADED,NOT_STRICT,511,1,297,0,2,0,0,0,165,0,1,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,466,UP_TO_DATE,UPLOADED,NOT_STRICT,67,184,97,65,18,3,0,1,166,0,101,40,0,0,ERROR_ON_MISSING_STUB,linux,6
 redis,types-redis,https://github.com/redis/redis-py,PARTIAL,"Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",5954,OUT_OF_DATE,UPLOADED,NOT_STRICT,3797,1247,1344,638,355,9,70,326,632,211,34,214,0,2,MISSING_STUBS_IGNORED,linux,67
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,748,UP_TO_DATE,UPLOADED,STRICT,429,0,114,0,0,0,25,16,72,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,13
-requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",998,UP_TO_DATE,UPLOADED,NOT_STRICT,359,148,114,84,19,0,9,5,116,39,0,51,1,0,ERROR_ON_MISSING_STUB,linux,4
+requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",1000,UP_TO_DATE,UPLOADED,NOT_STRICT,373,134,129,69,19,0,9,5,116,39,0,51,0,0,ERROR_ON_MISSING_STUB,linux,4
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,270,UP_TO_DATE,UPLOADED,NOT_STRICT,118,17,45,4,53,3,1,0,25,1,7,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,-,5029,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -133,7 +133,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,340,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,54425,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25191,837,14127,377,78,11,1906,814,8566,532,152,2397,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,973
+stdlib,-,https://github.com/python/cpython,STDLIB,-,54450,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25213,824,14136,370,74,11,1918,820,8566,532,152,2397,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,973
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OBSOLETE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1,22891,OUT_OF_DATE,UPLOADED,STRICT,4912,0,2806,0,30,62,64,38,4515,8,7,848,1,0,MISSING_STUBS_IGNORED,linux,53
