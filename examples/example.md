@@ -1007,8 +1007,8 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 25
 - Returns:
-    - Annotated returns: 150
-    - Unannotated returns: 4
+    - Annotated returns: 151
+    - Unannotated returns: 3
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
 - Variables:
