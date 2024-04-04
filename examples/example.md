@@ -124,7 +124,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-124 (excluding blank lines)
+126 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -149,12 +149,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `Flask-Cors`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 62
+    - Annotated parameters: 63
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 7
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 23
+    - Annotated returns: 24
     - Unannotated returns: 0
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
