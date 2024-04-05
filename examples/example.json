@@ -244,7 +244,7 @@
     "upstream_url": "https://github.com/python-pillow/Pillow",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3258,
+    "number_of_lines": 3265,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -257,10 +257,10 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 759,
-      "unannotated_parameters": 596,
-      "annotated_returns": 572,
-      "unannotated_returns": 331,
+      "annotated_parameters": 763,
+      "unannotated_parameters": 598,
+      "annotated_returns": 574,
+      "unannotated_returns": 333,
       "explicit_Incomplete_parameters": 55,
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 7,
@@ -268,7 +268,7 @@
       "annotated_variables": 1165,
       "explicit_Any_variables": 5,
       "explicit_Incomplete_variables": 305,
-      "classdefs": 225,
+      "classdefs": 226,
       "classdefs_with_Any": 3,
       "classdefs_with_Incomplete": 1
     }
@@ -4000,7 +4000,7 @@
     "upstream_url": "https://github.com/python-xlib/python-xlib",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 5413,
+    "number_of_lines": 5414,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
