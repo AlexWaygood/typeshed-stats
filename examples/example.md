@@ -7092,7 +7092,7 @@ Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to
 
 ### Number of lines
 
-1,000 (excluding blank lines)
+1,001 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7658,7 +7658,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,450 (excluding blank lines)
+54,456 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7688,7 +7688,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 1,918
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 74
 - Returns:
-    - Annotated returns: 14,136
+    - Annotated returns: 14,140
     - Unannotated returns: 370
     - Explicit `Any` returns: 820
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
