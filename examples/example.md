@@ -1535,6 +1535,63 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
+## Info on typeshed's stubs for `capturer`
+
+### Upstream repo URL
+
+[https://github.com/xolox/python-capturer](https://github.com/xolox/python-capturer)
+
+### Stub distribution name
+
+`types-capturer`
+
+### Number of lines
+
+114 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 1 unique allowlist entry for `capturer` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `capturer`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 50
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 42
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 38
+    - Explicit `Any` variables: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 6
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `cffi`
 
 ### Upstream repo URL
@@ -3033,7 +3090,7 @@ Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Pyth
 
 ### Number of lines
 
-819 (excluding blank lines)
+824 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -3058,12 +3115,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `gdb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 232
+    - Annotated parameters: 237
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 258
+    - Annotated returns: 263
     - Unannotated returns: 0
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -4458,7 +4515,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-13,218 (excluding blank lines)
+13,223 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4483,14 +4540,14 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,901
+    - Annotated parameters: 3,902
     - Unannotated parameters: 341
     - Explicit `Any` parameters: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 211
 - Returns:
-    - Annotated returns: 1,314
+    - Annotated returns: 1,315
     - Unannotated returns: 91
-    - Explicit `Any` returns: 12
+    - Explicit `Any` returns: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
     - Annotated variables: 4,048
@@ -5252,7 +5309,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Extra description
 
-Generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on protobuf==4.21.8
+Generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on [protobuf v24.4](https://github.com/protocolbuffers/protobuf/releases/tag/v24.4) (python protobuf==4.24.4)
 
 ### Upstream repo URL
 
@@ -5264,7 +5321,7 @@ Generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protob
 
 ### Number of lines
 
-4,260 (excluding blank lines)
+4,699 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -5289,21 +5346,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 736
+    - Annotated parameters: 781
     - Unannotated parameters: 247
     - Explicit `Any` parameters: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
 - Returns:
-    - Annotated returns: 498
+    - Annotated returns: 523
     - Unannotated returns: 78
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 739
+    - Annotated variables: 892
     - Explicit `Any` variables: 126
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
-    - Total class definitions: 147
+    - Total class definitions: 180
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -6824,8 +6881,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,799
-    - Unannotated parameters: 3,559
+    - Annotated parameters: 3,800
+    - Unannotated parameters: 3,558
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 419
 - Returns:
@@ -6913,7 +6970,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-466 (excluding blank lines)
+524 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6929,7 +6986,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 unique allowlist entries for `qrcode` when running stubtest in CI.
+Typeshed currently has 8 unique allowlist entries for `qrcode` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6938,19 +6995,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `qrcode`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 67
-    - Unannotated parameters: 184
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 18
+    - Annotated parameters: 109
+    - Unannotated parameters: 174
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 97
-    - Unannotated returns: 65
+    - Annotated returns: 109
+    - Unannotated returns: 60
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
     - Annotated variables: 166
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 101
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 91
 - Class definitions:
     - Total class definitions: 40
     - Class definitions with `Any`: 0
