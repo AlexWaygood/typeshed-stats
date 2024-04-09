@@ -3644,6 +3644,63 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `icalendar`
+
+### Upstream repo URL
+
+[https://github.com/collective/icalendar](https://github.com/collective/icalendar)
+
+### Stub distribution name
+
+`types-icalendar`
+
+### Number of lines
+
+417 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 4 unique allowlist entries for `icalendar` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `icalendar`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 109
+    - Unannotated parameters: 85
+    - Explicit `Any` parameters: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
+- Returns:
+    - Annotated returns: 87
+    - Unannotated returns: 73
+    - Explicit `Any` returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+- Variables:
+    - Annotated variables: 89
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 41
+- Class definitions:
+    - Total class definitions: 41
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 3
+
+---
+
 ## Info on typeshed's stubs for `influxdb-client`
 
 ### Extra description
@@ -7031,7 +7088,7 @@ Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incom
 
 ### Number of lines
 
-5,954 (excluding blank lines)
+6,165 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7056,21 +7113,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `redis`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,797
-    - Unannotated parameters: 1,247
-    - Explicit `Any` parameters: 70
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 355
+    - Annotated parameters: 3,947
+    - Unannotated parameters: 1,221
+    - Explicit `Any` parameters: 92
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 354
 - Returns:
-    - Annotated returns: 1,344
-    - Unannotated returns: 638
-    - Explicit `Any` returns: 326
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
+    - Annotated returns: 1,379
+    - Unannotated returns: 607
+    - Explicit `Any` returns: 330
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
-    - Annotated variables: 632
-    - Explicit `Any` variables: 211
+    - Annotated variables: 619
+    - Explicit `Any` variables: 158
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 34
 - Class definitions:
-    - Total class definitions: 214
+    - Total class definitions: 215
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 2
 

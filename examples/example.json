@@ -2183,6 +2183,40 @@
     }
   },
   {
+    "package_name": "icalendar",
+    "stub_distribution_name": "types-icalendar",
+    "upstream_url": "https://github.com/collective/icalendar",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 417,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 4
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 109,
+      "unannotated_parameters": 85,
+      "annotated_returns": 87,
+      "unannotated_returns": 73,
+      "explicit_Incomplete_parameters": 6,
+      "explicit_Incomplete_returns": 1,
+      "explicit_Any_parameters": 5,
+      "explicit_Any_returns": 2,
+      "annotated_variables": 89,
+      "explicit_Any_variables": 1,
+      "explicit_Incomplete_variables": 41,
+      "classdefs": 41,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 3
+    }
+  },
+  {
     "package_name": "influxdb-client",
     "stub_distribution_name": "types-influxdb-client",
     "upstream_url": "https://github.com/influxdata/influxdb-client-python",
@@ -4204,7 +4238,7 @@
     "upstream_url": "https://github.com/redis/redis-py",
     "completeness_level": "PARTIAL",
     "extra_description": "Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",
-    "number_of_lines": 5954,
+    "number_of_lines": 6165,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4216,18 +4250,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3797,
-      "unannotated_parameters": 1247,
-      "annotated_returns": 1344,
-      "unannotated_returns": 638,
-      "explicit_Incomplete_parameters": 355,
-      "explicit_Incomplete_returns": 9,
-      "explicit_Any_parameters": 70,
-      "explicit_Any_returns": 326,
-      "annotated_variables": 632,
-      "explicit_Any_variables": 211,
+      "annotated_parameters": 3947,
+      "unannotated_parameters": 1221,
+      "annotated_returns": 1379,
+      "unannotated_returns": 607,
+      "explicit_Incomplete_parameters": 354,
+      "explicit_Incomplete_returns": 5,
+      "explicit_Any_parameters": 92,
+      "explicit_Any_returns": 330,
+      "annotated_variables": 619,
+      "explicit_Any_variables": 158,
       "explicit_Incomplete_variables": 34,
-      "classdefs": 214,
+      "classdefs": 215,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 2
     }
