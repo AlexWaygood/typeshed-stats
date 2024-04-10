@@ -2347,9 +2347,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 1,448 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5366,7 +5366,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Extra description
 
-Generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on [protobuf v24.4](https://github.com/protocolbuffers/protobuf/releases/tag/v24.4) (python protobuf==4.24.4)
+Generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) on [protobuf v25.3](https://github.com/protocolbuffers/protobuf/releases/tag/v25.3) (python protobuf==4.25.3)
 
 ### Upstream repo URL
 
@@ -5378,7 +5378,7 @@ Generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protob
 
 ### Number of lines
 
-4,699 (excluding blank lines)
+4,812 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -5403,21 +5403,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 781
-    - Unannotated parameters: 247
+    - Annotated parameters: 789
+    - Unannotated parameters: 249
     - Explicit `Any` parameters: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
 - Returns:
-    - Annotated returns: 523
-    - Unannotated returns: 78
+    - Annotated returns: 530
+    - Unannotated returns: 80
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 892
-    - Explicit `Any` variables: 126
+    - Annotated variables: 916
+    - Explicit `Any` variables: 124
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
-    - Total class definitions: 180
+    - Total class definitions: 185
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
