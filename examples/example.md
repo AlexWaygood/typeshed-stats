@@ -7935,7 +7935,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Extra description
 
-Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1
+Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) on tensorflow==2.12.1
 
 ### Upstream repo URL
 
@@ -7947,7 +7947,7 @@ Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-22,891 (excluding blank lines)
+22,728 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7972,21 +7972,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 4,912
+    - Annotated parameters: 4,894
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 64
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 30
 - Returns:
-    - Annotated returns: 2,806
+    - Annotated returns: 2,793
     - Unannotated returns: 0
     - Explicit `Any` returns: 38
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 62
 - Variables:
-    - Annotated variables: 4,515
+    - Annotated variables: 4,482
     - Explicit `Any` variables: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 7
 - Class definitions:
-    - Total class definitions: 848
+    - Total class definitions: 842
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 

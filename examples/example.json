@@ -4750,8 +4750,8 @@
     "stub_distribution_name": "types-tensorflow",
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
-    "extra_description": "Partially generated using [mypy-protobuf==3.5.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.5.0) on tensorflow==2.12.1",
-    "number_of_lines": 22891,
+    "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) on tensorflow==2.12.1",
+    "number_of_lines": 22728,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4763,18 +4763,18 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 4912,
+      "annotated_parameters": 4894,
       "unannotated_parameters": 0,
-      "annotated_returns": 2806,
+      "annotated_returns": 2793,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 30,
       "explicit_Incomplete_returns": 62,
       "explicit_Any_parameters": 64,
       "explicit_Any_returns": 38,
-      "annotated_variables": 4515,
+      "annotated_variables": 4482,
       "explicit_Any_variables": 8,
       "explicit_Incomplete_variables": 7,
-      "classdefs": 848,
+      "classdefs": 842,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
