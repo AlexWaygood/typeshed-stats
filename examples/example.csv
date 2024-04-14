@@ -6,7 +6,7 @@ Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrat
 Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,COMPLETE,-,233,UP_TO_DATE,UPLOADED,NOT_STRICT,138,36,37,15,17,1,2,0,3,1,0,8,0,0,ERROR_ON_MISSING_STUB,linux,3
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,COMPLETE,-,311,UP_TO_DATE,UPLOADED,STRICT,107,0,152,0,0,0,0,2,46,0,0,15,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,PARTIAL,-,695,UP_TO_DATE,UPLOADED,NOT_STRICT,256,30,198,2,0,0,15,3,217,15,0,102,0,0,MISSING_STUBS_IGNORED,linux,0
-Pillow,types-Pillow,https://github.com/python-pillow/Pillow,COMPLETE,-,3265,OUT_OF_DATE,UPLOADED,NOT_STRICT,763,598,574,333,55,2,7,5,1165,5,305,226,3,1,ERROR_ON_MISSING_STUB,linux;win32,18
+Pillow,types-Pillow,https://github.com/python-pillow/Pillow,COMPLETE,-,3265,OBSOLETE,UPLOADED,NOT_STRICT,763,598,574,333,55,2,7,5,1165,5,305,226,3,1,ERROR_ON_MISSING_STUB,linux;win32,18
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,COMPLETE,-,234,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,PARTIAL,-,1044,UP_TO_DATE,UPLOADED,NOT_STRICT,142,52,101,37,28,0,10,18,734,60,0,24,0,0,MISSING_STUBS_IGNORED,linux,11
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,193,UP_TO_DATE,UPLOADED,STRICT,102,0,21,0,0,0,0,0,17,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
@@ -132,12 +132,12 @@ requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-o
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,-,5029,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2592,UP_TO_DATE,UPLOADED,STRICT,1470,0,359,0,59,9,155,17,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,5
-setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,-,2968,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,950,446,815,268,47,13,21,1,654,86,286,184,0,0,ERROR_ON_MISSING_STUB,linux;win32,113
+setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,-,3019,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,961,446,831,268,47,13,21,1,661,86,286,186,0,0,ERROR_ON_MISSING_STUB,linux;win32,113
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,277,UP_TO_DATE,UPLOADED,STRICT,180,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,11
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,340,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,54478,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25234,823,14146,368,74,11,1917,820,8566,532,152,2397,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,973
+stdlib,-,https://github.com/python/cpython,STDLIB,-,54481,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25235,823,14147,368,74,11,1917,820,8566,532,152,2398,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,973
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OBSOLETE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) on tensorflow==2.12.1,22728,OUT_OF_DATE,UPLOADED,STRICT,4894,0,2793,0,30,62,64,38,4482,8,7,842,1,0,MISSING_STUBS_IGNORED,linux,53
@@ -148,9 +148,8 @@ translationstring,types-translationstring,https://github.com/Pylons/translations
 tree-sitter,types-tree-sitter,https://github.com/tree-sitter/py-tree-sitter,COMPLETE,-,123,OBSOLETE,UPLOADED,STRICT,25,0,52,0,0,0,0,2,4,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,36
 tree-sitter-languages,types-tree-sitter-languages,https://github.com/grantjenks/py-tree-sitter-languages,COMPLETE,-,9,UP_TO_DATE,UPLOADED,STRICT,2,0,2,0,0,0,0,0,5,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,2
 ttkthemes,types-ttkthemes,https://github.com/RedFantom/ttkthemes,COMPLETE,-,76,UP_TO_DATE,UPLOADED,NOT_STRICT,30,14,13,10,3,0,0,0,5,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
-tzlocal,types-tzlocal,https://github.com/regebro/tzlocal,COMPLETE,-,13,OBSOLETE,UPLOADED,STRICT,3,0,5,0,0,0,0,0,3,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 uWSGI,types-uWSGI,https://github.com/unbit/uwsgi,COMPLETE,"Type hints for uWSGI's [Python API](https://uwsgi-docs.readthedocs.io/en/latest/PythonModule.html). Note that this API is available only when running Python code inside a uWSGI process and some parts of the API are only present when corresponding configuration options have been enabled.
-",381,UP_TO_DATE,UPLOADED,STRICT,338,0,216,0,0,0,15,1,61,5,0,26,0,0,ERROR_ON_MISSING_STUB,darwin;linux,7
+",381,UP_TO_DATE,UPLOADED,STRICT,338,0,216,0,0,0,15,1,61,5,0,26,0,0,ERROR_ON_MISSING_STUB,darwin;linux,6
 ujson,types-ujson,https://github.com/ultrajson/ultrajson,COMPLETE,-,49,UP_TO_DATE,UPLOADED,STRICT,40,0,6,0,3,0,3,3,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 untangle,types-untangle,https://github.com/stchris/untangle,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,19,0,21,0,0,0,1,2,5,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 usersettings,types-usersettings,https://github.com/glvnst/usersettings,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,7,0,6,0,0,0,1,1,3,0,0,1,1,0,ERROR_ON_MISSING_STUB,linux,3
