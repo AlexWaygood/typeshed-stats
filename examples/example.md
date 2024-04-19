@@ -2060,11 +2060,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-472 (excluding blank lines)
+473 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2086,12 +2086,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 126
-    - Unannotated parameters: 127
+    - Unannotated parameters: 130
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
     - Annotated returns: 74
-    - Unannotated returns: 68
+    - Unannotated returns: 69
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -5028,11 +5028,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,638 (excluding blank lines)
+1,668 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5044,7 +5044,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 25 unique allowlist entries for `peewee` when running stubtest in CI.
+Typeshed currently has 7 unique allowlist entries for `peewee` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5053,21 +5053,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 415
-    - Unannotated parameters: 666
+    - Annotated parameters: 420
+    - Unannotated parameters: 668
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 216
 - Returns:
-    - Annotated returns: 332
-    - Unannotated returns: 419
+    - Annotated returns: 340
+    - Unannotated returns: 438
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
-    - Annotated variables: 437
+    - Annotated variables: 419
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 366
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 348
 - Class definitions:
-    - Total class definitions: 166
+    - Total class definitions: 167
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -5423,7 +5423,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Extra description
 
-Generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) on [protobuf v25.3](https://github.com/protocolbuffers/protobuf/releases/tag/v25.3) (python protobuf==4.25.3)
+Generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) on [protobuf v26.1](https://github.com/protocolbuffers/protobuf/releases/tag/v26.1) (python protobuf==5.26.1)
 
 ### Upstream repo URL
 
@@ -5435,11 +5435,11 @@ Generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protob
 
 ### Number of lines
 
-4,809 (excluding blank lines)
+4,825 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5451,7 +5451,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 14 unique allowlist entries for `protobuf` when running stubtest in CI.
+Typeshed currently has 11 unique allowlist entries for `protobuf` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5460,18 +5460,18 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 784
+    - Annotated parameters: 785
     - Unannotated parameters: 254
     - Explicit `Any` parameters: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
     - Annotated returns: 530
-    - Unannotated returns: 80
+    - Unannotated returns: 75
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 916
-    - Explicit `Any` variables: 124
+    - Annotated variables: 921
+    - Explicit `Any` variables: 123
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
     - Total class definitions: 185
