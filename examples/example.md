@@ -8806,7 +8806,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-630 (excluding blank lines)
+652 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -8816,13 +8816,13 @@ These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 34 unique allowlist entries for `waitress` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `waitress` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -8831,19 +8831,19 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `waitress`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 210
+    - Annotated parameters: 202
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 35
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 9
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 211
+    - Annotated returns: 204
     - Unannotated returns: 0
-    - Explicit `Any` returns: 8
+    - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 243
-    - Explicit `Any` variables: 19
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+    - Annotated variables: 246
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 40
     - Class definitions with `Any`: 0

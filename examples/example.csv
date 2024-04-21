@@ -154,7 +154,7 @@ ujson,types-ujson,https://github.com/ultrajson/ultrajson,COMPLETE,-,49,UP_TO_DAT
 untangle,types-untangle,https://github.com/stchris/untangle,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,19,0,21,0,0,0,1,2,5,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 usersettings,types-usersettings,https://github.com/glvnst/usersettings,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,7,0,6,0,0,0,1,1,3,0,0,1,1,0,ERROR_ON_MISSING_STUB,linux,3
 vobject,types-vobject,https://github.com/eventable/vobject,COMPLETE,-,522,UP_TO_DATE,UPLOADED,NOT_STRICT,101,179,73,103,21,0,0,3,185,90,3,50,0,0,ERROR_ON_MISSING_STUB,linux,11
-waitress,types-waitress,https://github.com/Pylons/waitress,PARTIAL,-,630,OUT_OF_DATE,UPLOADED,STRICT,210,0,211,0,9,0,35,8,243,19,1,40,0,0,MISSING_STUBS_IGNORED,linux;win32,34
+waitress,types-waitress,https://github.com/Pylons/waitress,COMPLETE,-,652,OUT_OF_DATE,UPLOADED,STRICT,202,0,204,0,0,0,2,2,246,1,0,40,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
 whatthepatch,types-whatthepatch,https://github.com/cscorley/whatthepatch,COMPLETE,-,101,UP_TO_DATE,UPLOADED,STRICT,32,0,25,0,0,0,0,0,54,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,0
 workalendar,types-workalendar,https://github.com/workalendar/workalendar,COMPLETE,-,2918,UP_TO_DATE,UPLOADED,NOT_STRICT,44,399,22,355,23,4,0,0,1367,0,249,374,0,0,ERROR_ON_MISSING_STUB,linux,5
 wurlitzer,types-wurlitzer,https://github.com/minrk/wurlitzer,COMPLETE,-,90,UP_TO_DATE,UPLOADED,NOT_STRICT,62,0,20,1,0,0,0,0,4,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
