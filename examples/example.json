@@ -3003,9 +3003,9 @@
     "package_name": "peewee",
     "stub_distribution_name": "types-peewee",
     "upstream_url": "https://github.com/coleifer/peewee",
-    "completeness_level": "COMPLETE",
+    "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1668,
+    "number_of_lines": 1693,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3013,22 +3013,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 7
+      "allowlist_length": 11
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 420,
-      "unannotated_parameters": 668,
-      "annotated_returns": 340,
+      "annotated_parameters": 425,
+      "unannotated_parameters": 669,
+      "annotated_returns": 346,
       "unannotated_returns": 438,
       "explicit_Incomplete_parameters": 216,
       "explicit_Incomplete_returns": 5,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 419,
+      "annotated_variables": 420,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 348,
-      "classdefs": 167,
+      "classdefs": 168,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4717,7 +4717,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54490,
+    "number_of_lines": 54487,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4731,15 +4731,15 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25235,
+      "annotated_parameters": 25225,
       "unannotated_parameters": 823,
-      "annotated_returns": 14147,
+      "annotated_returns": 14139,
       "unannotated_returns": 368,
       "explicit_Incomplete_parameters": 74,
       "explicit_Incomplete_returns": 11,
       "explicit_Any_parameters": 1917,
-      "explicit_Any_returns": 820,
-      "annotated_variables": 8202,
+      "explicit_Any_returns": 821,
+      "annotated_variables": 8203,
       "explicit_Any_variables": 532,
       "explicit_Incomplete_variables": 152,
       "classdefs": 2400,
