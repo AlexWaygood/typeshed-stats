@@ -309,7 +309,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin` and `linux`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 0 allowlist entries for `JACK-Client` when running stubtest in CI.
 
@@ -523,7 +523,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,044 (excluding blank lines)
+1,045 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3204,7 +3204,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-3,009 (excluding blank lines)
+3,018 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4116,7 +4116,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-220 (excluding blank lines)
+230 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5787,7 +5787,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin` and `linux`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 0 allowlist entries for `pyaudio` when running stubtest in CI.
 
@@ -7890,7 +7890,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,487 (excluding blank lines)
+54,521 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8539,7 +8539,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin` and `linux`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 6 unique allowlist entries for `uWSGI` when running stubtest in CI.
 
