@@ -97,7 +97,7 @@ portpicker,types-portpicker,https://github.com/google/python_portpicker,COMPLETE
 protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,PARTIAL,Generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 25.1 on [protobuf v26.1](https://github.com/protocolbuffers/protobuf/releases/tag/v26.1) (python protobuf==5.26.1),4825,UP_TO_DATE,UPLOADED,NOT_STRICT,785,254,530,75,14,0,17,4,921,123,1,185,0,0,MISSING_STUBS_IGNORED,linux,11
 psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1563,UP_TO_DATE,UPLOADED,NOT_STRICT,125,310,194,355,28,0,0,47,592,198,99,89,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,14
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,COMPLETE,-,1731,UP_TO_DATE,UPLOADED,NOT_STRICT,337,152,314,75,29,5,14,21,517,60,3,331,2,0,ERROR_ON_MISSING_STUB,linux,2
-pyOpenSSL,types-pyOpenSSL,https://github.com/pyca/pyopenssl,PARTIAL,-,379,OUT_OF_DATE,UPLOADED,STRICT,159,0,195,0,1,1,2,2,125,1,0,24,0,0,MISSING_STUBS_IGNORED,linux,1
+pyOpenSSL,types-pyOpenSSL,https://github.com/pyca/pyopenssl,PARTIAL,-,363,UP_TO_DATE,UPLOADED,STRICT,148,0,179,0,1,1,2,2,125,1,0,22,0,0,MISSING_STUBS_IGNORED,linux,1
 pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,17,UP_TO_DATE,UPLOADED,STRICT,15,0,9,0,0,0,1,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1502,UP_TO_DATE,UPLOADED,NOT_STRICT,209,533,118,425,39,9,0,0,251,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,8
 pyaudio,types-pyaudio,-,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -135,9 +135,9 @@ seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2587,UP_TO_D
 setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,-,3019,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,961,446,831,268,47,13,21,1,658,86,286,186,0,0,ERROR_ON_MISSING_STUB,linux;win32,113
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,277,UP_TO_DATE,UPLOADED,STRICT,180,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,11
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-six,types-six,https://github.com/benjaminp/six,COMPLETE,-,340,UP_TO_DATE,UPLOADED,STRICT,71,0,40,0,0,0,9,6,13,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,25
+six,types-six,https://github.com/benjaminp/six,COMPLETE,-,335,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,54521,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25225,823,14139,368,74,11,1917,821,8203,532,152,2400,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,974
+stdlib,-,https://github.com/python/cpython,STDLIB,-,54529,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,25229,823,14143,368,74,11,1919,821,8203,532,152,2401,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,974
 stripe,types-stripe,https://github.com/stripe/stripe-python,PARTIAL,-,1532,OBSOLETE,UPLOADED,NOT_STRICT,270,396,108,172,156,0,5,4,157,42,0,136,1,0,MISSING_STUBS_IGNORED,linux,8
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 25.1 on tensorflow==2.16.1 .,25536,UP_TO_DATE,UPLOADED,NOT_STRICT,5326,8,3034,4,23,58,60,34,5294,5,7,928,1,0,MISSING_STUBS_IGNORED,linux,51

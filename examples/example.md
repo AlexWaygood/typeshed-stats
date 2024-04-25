@@ -5606,11 +5606,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-379 (excluding blank lines)
+363 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5631,12 +5631,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `pyOpenSSL`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 159
+    - Annotated parameters: 148
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 195
+    - Annotated returns: 179
     - Unannotated returns: 0
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
@@ -5645,7 +5645,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 24
+    - Total class definitions: 22
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7780,7 +7780,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-340 (excluding blank lines)
+335 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7805,12 +7805,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `six`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 71
+    - Annotated parameters: 69
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 9
+    - Explicit `Any` parameters: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 40
+    - Annotated returns: 38
     - Unannotated returns: 0
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -7819,7 +7819,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 4
+    - Total class definitions: 3
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7890,7 +7890,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,521 (excluding blank lines)
+54,529 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7915,12 +7915,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,225
+    - Annotated parameters: 25,229
     - Unannotated parameters: 823
-    - Explicit `Any` parameters: 1,917
+    - Explicit `Any` parameters: 1,919
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 74
 - Returns:
-    - Annotated returns: 14,139
+    - Annotated returns: 14,143
     - Unannotated returns: 368
     - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
@@ -7929,7 +7929,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 532
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 152
 - Class definitions:
-    - Total class definitions: 2,400
+    - Total class definitions: 2,401
     - Class definitions with `Any`: 26
     - Class definitions marked as at least partially `Incomplete`: 0
 

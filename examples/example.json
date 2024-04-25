@@ -3346,8 +3346,8 @@
     "upstream_url": "https://github.com/pyca/pyopenssl",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 379,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 363,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -3358,9 +3358,9 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 159,
+      "annotated_parameters": 148,
       "unannotated_parameters": 0,
-      "annotated_returns": 195,
+      "annotated_returns": 179,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 1,
       "explicit_Incomplete_returns": 1,
@@ -3369,7 +3369,7 @@
       "annotated_variables": 125,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 24,
+      "classdefs": 22,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4647,7 +4647,7 @@
     "upstream_url": "https://github.com/benjaminp/six",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 340,
+    "number_of_lines": 335,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4659,18 +4659,18 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 71,
+      "annotated_parameters": 69,
       "unannotated_parameters": 0,
-      "annotated_returns": 40,
+      "annotated_returns": 38,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 9,
+      "explicit_Any_parameters": 8,
       "explicit_Any_returns": 6,
       "annotated_variables": 13,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 4,
+      "classdefs": 3,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4715,7 +4715,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54521,
+    "number_of_lines": 54529,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4729,18 +4729,18 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 25225,
+      "annotated_parameters": 25229,
       "unannotated_parameters": 823,
-      "annotated_returns": 14139,
+      "annotated_returns": 14143,
       "unannotated_returns": 368,
       "explicit_Incomplete_parameters": 74,
       "explicit_Incomplete_returns": 11,
-      "explicit_Any_parameters": 1917,
+      "explicit_Any_parameters": 1919,
       "explicit_Any_returns": 821,
       "annotated_variables": 8203,
       "explicit_Any_variables": 532,
       "explicit_Incomplete_variables": 152,
-      "classdefs": 2400,
+      "classdefs": 2401,
       "classdefs_with_Any": 26,
       "classdefs_with_Incomplete": 0
     }
