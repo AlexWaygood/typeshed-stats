@@ -2154,7 +2154,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 2059,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -2765,7 +2765,7 @@
     "upstream_url": "https://foss.heptapod.net/openpyxl/openpyxl",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 13223,
+    "number_of_lines": 13238,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2788,7 +2788,7 @@
       "annotated_variables": 4048,
       "explicit_Any_variables": 3,
       "explicit_Incomplete_variables": 352,
-      "classdefs": 607,
+      "classdefs": 609,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 21
     }

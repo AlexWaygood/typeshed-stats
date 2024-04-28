@@ -3601,9 +3601,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 2,059 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -4629,7 +4629,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-13,223 (excluding blank lines)
+13,238 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4668,7 +4668,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 352
 - Class definitions:
-    - Total class definitions: 607
+    - Total class definitions: 609
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 21
 
