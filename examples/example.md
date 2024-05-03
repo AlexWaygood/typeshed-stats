@@ -1148,7 +1148,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-810 (excluding blank lines)
+814 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1173,7 +1173,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `beautifulsoup4`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 241
+    - Annotated parameters: 245
     - Unannotated parameters: 137
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 31
