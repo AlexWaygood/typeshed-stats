@@ -38,7 +38,7 @@ croniter,types-croniter,https://github.com/kiorky/croniter,COMPLETE,-,151,UP_TO_
 dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,COMPLETE,-,473,UP_TO_DATE,UPLOADED,NOT_STRICT,126,130,74,69,21,0,4,6,135,76,0,34,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,https://github.com/micheles/decorator,COMPLETE,-,66,UP_TO_DATE,UPLOADED,STRICT,36,0,13,0,0,0,19,6,15,3,0,2,0,0,ERROR_ON_MISSING_STUB,linux,10
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,PARTIAL,-,234,UP_TO_DATE,UPLOADED,NOT_STRICT,81,97,38,13,13,0,0,1,37,0,19,12,0,0,MISSING_STUBS_IGNORED,linux,0
-docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,1807,UP_TO_DATE,UPLOADED,NOT_STRICT,690,438,213,343,376,5,10,17,206,1,94,125,2,24,ERROR_ON_MISSING_STUB,linux,6
+docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,1816,UP_TO_DATE,UPLOADED,NOT_STRICT,712,424,262,296,358,5,18,24,204,2,86,125,2,24,ERROR_ON_MISSING_STUB,linux,7
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,COMPLETE,-,113,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 docopt,types-docopt,https://github.com/docopt/docopt,COMPLETE,-,14,UP_TO_DATE,UPLOADED,STRICT,7,0,3,0,1,0,0,1,2,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 docutils,types-docutils,https://sourceforge.net/p/docutils/code,PARTIAL,-,1493,UP_TO_DATE,UPLOADED,NOT_STRICT,762,51,448,7,51,33,39,19,250,20,1,222,1,0,MISSING_STUBS_IGNORED,linux,18
@@ -126,7 +126,7 @@ pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,COMPLETE,-,860,UP_TO_DATE,U
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,COMPLETE,-,172,UP_TO_DATE,UPLOADED,STRICT,96,0,31,0,0,0,0,4,33,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,524,UP_TO_DATE,UPLOADED,NOT_STRICT,109,174,109,60,14,2,2,1,166,0,91,40,0,0,ERROR_ON_MISSING_STUB,linux,8
 redis,types-redis,https://github.com/redis/redis-py,PARTIAL,"Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",6165,OUT_OF_DATE,UPLOADED,NOT_STRICT,3945,1223,1379,607,352,5,92,330,618,158,34,215,0,2,MISSING_STUBS_IGNORED,linux,67
-regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,748,UP_TO_DATE,UPLOADED,STRICT,429,0,114,0,0,0,25,16,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,13
+regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,750,UP_TO_DATE,UPLOADED,STRICT,431,0,114,0,0,0,25,16,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,13
 requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",1001,UP_TO_DATE,UPLOADED,NOT_STRICT,373,134,129,69,19,0,9,5,116,39,0,51,0,0,ERROR_ON_MISSING_STUB,linux,4
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,268,UP_TO_DATE,UPLOADED,NOT_STRICT,115,20,45,4,50,3,1,0,25,1,7,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3

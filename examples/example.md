@@ -2231,7 +2231,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,807 (excluding blank lines)
+1,816 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2247,7 +2247,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 unique allowlist entries for `docker` when running stubtest in CI.
+Typeshed currently has 7 unique allowlist entries for `docker` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2256,19 +2256,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docker`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 690
-    - Unannotated parameters: 438
-    - Explicit `Any` parameters: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 376
+    - Annotated parameters: 712
+    - Unannotated parameters: 424
+    - Explicit `Any` parameters: 18
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 358
 - Returns:
-    - Annotated returns: 213
-    - Unannotated returns: 343
-    - Explicit `Any` returns: 17
+    - Annotated returns: 262
+    - Unannotated returns: 296
+    - Explicit `Any` returns: 24
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
-    - Annotated variables: 206
-    - Explicit `Any` variables: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 94
+    - Annotated variables: 204
+    - Explicit `Any` variables: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 86
 - Class definitions:
     - Total class definitions: 125
     - Class definitions with `Any`: 2
@@ -7259,7 +7259,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-748 (excluding blank lines)
+750 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7284,7 +7284,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `regex`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 429
+    - Annotated parameters: 431
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 25
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
