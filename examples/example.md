@@ -7890,7 +7890,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,629 (excluding blank lines)
+54,633 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7915,18 +7915,18 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,287
+    - Annotated parameters: 25,288
     - Unannotated parameters: 823
     - Explicit `Any` parameters: 1,926
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 74
 - Returns:
-    - Annotated returns: 14,155
+    - Annotated returns: 14,156
     - Unannotated returns: 368
     - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
     - Annotated variables: 8,203
-    - Explicit `Any` variables: 532
+    - Explicit `Any` variables: 531
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 152
 - Class definitions:
     - Total class definitions: 2,401
