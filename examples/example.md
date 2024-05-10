@@ -2705,9 +2705,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 2 unique allowlist entries for `flake8` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `flake8`
 
@@ -5087,9 +5087,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 1,693 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7947,7 +7947,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,642 (excluding blank lines)
+54,645 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -7972,12 +7972,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,288
+    - Annotated parameters: 25,289
     - Unannotated parameters: 823
     - Explicit `Any` parameters: 1,926
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 74
 - Returns:
-    - Annotated returns: 14,156
+    - Annotated returns: 14,157
     - Unannotated returns: 368
     - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
