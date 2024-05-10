@@ -243,7 +243,7 @@
     "upstream_url": "https://github.com/python-pillow/Pillow",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3265,
+    "number_of_lines": 3266,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -256,10 +256,10 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 763,
-      "unannotated_parameters": 598,
-      "annotated_returns": 574,
-      "unannotated_returns": 333,
+      "annotated_parameters": 764,
+      "unannotated_parameters": 597,
+      "annotated_returns": 575,
+      "unannotated_returns": 332,
       "explicit_Incomplete_parameters": 55,
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 7,
@@ -687,7 +687,7 @@
     "upstream_url": "https://git.launchpad.net/beautifulsoup/tree",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 814,
+    "number_of_lines": 822,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1335,7 +1335,7 @@
     "upstream_url": "https://github.com/docker/docker-py",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1816,
+    "number_of_lines": 1822,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1347,11 +1347,11 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 712,
-      "unannotated_parameters": 424,
+      "annotated_parameters": 715,
+      "unannotated_parameters": 421,
       "annotated_returns": 264,
       "unannotated_returns": 294,
-      "explicit_Incomplete_parameters": 358,
+      "explicit_Incomplete_parameters": 356,
       "explicit_Incomplete_returns": 5,
       "explicit_Any_parameters": 18,
       "explicit_Any_returns": 24,
@@ -1597,6 +1597,40 @@
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 0,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "flake8",
+    "stub_distribution_name": "types-flake8",
+    "upstream_url": "https://github.com/pycqa/flake8",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 570,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 2
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 221,
+      "unannotated_parameters": 0,
+      "annotated_returns": 163,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 35,
+      "explicit_Any_returns": 8,
+      "annotated_variables": 189,
+      "explicit_Any_variables": 1,
+      "explicit_Incomplete_variables": 94,
+      "classdefs": 39,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4715,7 +4749,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 54633,
+    "number_of_lines": 54642,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5398,8 +5432,8 @@
     "upstream_url": "https://github.com/minrk/wurlitzer",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 90,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 130,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -5410,18 +5444,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 62,
+      "annotated_parameters": 95,
       "unannotated_parameters": 0,
-      "annotated_returns": 20,
+      "annotated_returns": 32,
       "unannotated_returns": 1,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 4,
+      "annotated_variables": 7,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 2,
+      "classdefs": 3,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
