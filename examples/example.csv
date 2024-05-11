@@ -109,7 +109,7 @@ pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,PARTIAL,-,426,UP_TO_DA
 pygit2,types-pygit2,https://github.com/libgit2/pygit2,COMPLETE,-,1940,UP_TO_DATE,UPLOADED,STRICT,682,0,504,0,0,0,3,0,803,0,1,119,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,11
 pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,COMPLETE,-,703,UP_TO_DATE,UPLOADED,STRICT,274,0,149,0,6,0,1,2,195,0,15,26,0,0,ERROR_ON_MISSING_STUB,linux,49
 pyjks,types-pyjks,https://github.com/kurtbrose/pyjks,COMPLETE,-,377,UP_TO_DATE,UPLOADED,STRICT,132,0,59,0,0,0,0,0,73,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,38
-pynput,types-pynput,https://github.com/moses-palmer/pynput,COMPLETE,-,324,UP_TO_DATE,UPLOADED,STRICT,81,0,71,0,0,0,11,0,58,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,12
+pynput,types-pynput,https://github.com/moses-palmer/pynput,COMPLETE,-,324,OUT_OF_DATE,UPLOADED,STRICT,81,0,71,0,0,0,11,0,58,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,12
 pyserial,types-pyserial,https://github.com/pyserial/pyserial,COMPLETE,-,1079,UP_TO_DATE,UPLOADED,STRICT,223,0,270,0,0,0,2,4,466,7,65,66,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,64
 pysftp,types-pysftp,https://bitbucket.org/dundeemt/pysftp,COMPLETE,-,166,UP_TO_DATE,UPLOADED,STRICT,109,0,70,0,0,0,0,0,6,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
 pytest-lazy-fixture,types-pytest-lazy-fixture,https://github.com/tvorog/pytest-lazy-fixture,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,5,0,5,0,0,0,0,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,8
@@ -127,7 +127,7 @@ pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,COMPLETE,-,860,UP_TO_DATE,U
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,COMPLETE,-,172,UP_TO_DATE,UPLOADED,STRICT,96,0,31,0,0,0,0,4,33,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,524,UP_TO_DATE,UPLOADED,NOT_STRICT,109,174,109,60,14,2,2,1,166,0,91,40,0,0,ERROR_ON_MISSING_STUB,linux,8
 redis,types-redis,https://github.com/redis/redis-py,PARTIAL,"Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.",6165,OUT_OF_DATE,UPLOADED,NOT_STRICT,3945,1223,1379,607,352,5,92,330,618,158,34,215,0,2,MISSING_STUBS_IGNORED,linux,67
-regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,750,OUT_OF_DATE,UPLOADED,STRICT,431,0,114,0,0,0,25,16,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,13
+regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,750,UP_TO_DATE,UPLOADED,STRICT,431,0,114,0,0,0,25,16,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,13
 requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",1001,UP_TO_DATE,UPLOADED,NOT_STRICT,373,134,129,69,19,0,9,5,116,39,0,51,0,0,ERROR_ON_MISSING_STUB,linux,4
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,268,UP_TO_DATE,UPLOADED,NOT_STRICT,115,20,45,4,50,3,1,0,25,1,7,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
