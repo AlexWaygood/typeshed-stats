@@ -3656,7 +3656,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-2,059 (excluding blank lines)
+2,071 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -3681,14 +3681,14 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `hvac`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 984
-    - Unannotated parameters: 698
+    - Annotated parameters: 987
+    - Unannotated parameters: 697
     - Explicit `Any` parameters: 27
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 532
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 530
 - Returns:
-    - Annotated returns: 57
-    - Unannotated returns: 500
-    - Explicit `Any` returns: 7
+    - Annotated returns: 77
+    - Unannotated returns: 481
+    - Explicit `Any` returns: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 93

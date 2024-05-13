@@ -63,7 +63,7 @@ hdbcli,types-hdbcli,-,COMPLETE,-,138,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,75
 html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,PARTIAL,-,696,UP_TO_DATE,UPLOADED,NOT_STRICT,87,195,133,177,23,0,0,0,224,175,1,41,4,0,MISSING_STUBS_IGNORED,linux,0
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,254,UP_TO_DATE,UPLOADED,NOT_STRICT,46,122,39,25,37,0,0,0,87,58,0,33,1,0,ERROR_ON_MISSING_STUB,linux,1
 humanfriendly,types-humanfriendly,https://github.com/xolox/python-humanfriendly,COMPLETE,-,340,UP_TO_DATE,UPLOADED,NOT_STRICT,81,179,82,95,22,0,0,0,75,54,0,25,0,0,ERROR_ON_MISSING_STUB,linux,7
-hvac,types-hvac,https://github.com/hvac/hvac,COMPLETE,-,2059,OUT_OF_DATE,UPLOADED,NOT_STRICT,984,698,57,500,532,0,27,7,93,1,15,72,1,0,ERROR_ON_MISSING_STUB,linux,2
+hvac,types-hvac,https://github.com/hvac/hvac,COMPLETE,-,2071,OUT_OF_DATE,UPLOADED,NOT_STRICT,987,697,77,481,530,0,27,19,93,1,15,72,1,0,ERROR_ON_MISSING_STUB,linux,2
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,336,UP_TO_DATE,UPLOADED,STRICT,162,0,65,0,0,0,0,2,196,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,417,UP_TO_DATE,UPLOADED,NOT_STRICT,109,85,87,73,6,1,5,2,89,1,41,41,0,3,ERROR_ON_MISSING_STUB,linux,4
 influxdb-client,types-influxdb-client,https://github.com/influxdata/influxdb-client-python,COMPLETE,"Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you need to install `types-influxdb-client` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-influxdb-client<1.37.0.1`.",13454,UP_TO_DATE,UPLOADED,NOT_STRICT,2353,3778,1864,3423,1958,2,2,5,1195,2,1063,423,0,0,ERROR_ON_MISSING_STUB,linux,0
