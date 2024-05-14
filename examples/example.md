@@ -2231,7 +2231,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,877 (excluding blank lines)
+1,879 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2256,19 +2256,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docker`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 763
-    - Unannotated parameters: 391
+    - Annotated parameters: 769
+    - Unannotated parameters: 385
     - Explicit `Any` parameters: 18
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 318
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 316
 - Returns:
-    - Annotated returns: 276
-    - Unannotated returns: 284
+    - Annotated returns: 287
+    - Unannotated returns: 273
     - Explicit `Any` returns: 24
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
 - Variables:
     - Annotated variables: 206
     - Explicit `Any` variables: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 86
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 84
 - Class definitions:
     - Total class definitions: 127
     - Class definitions with `Any`: 2
@@ -6058,7 +6058,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-426 (excluding blank lines)
+434 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8641,9 +8641,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 49 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
