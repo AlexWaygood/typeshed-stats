@@ -1079,6 +1079,63 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
+## Info on typeshed's stubs for `assertpy`
+
+### Upstream repo URL
+
+[https://github.com/assertpy/assertpy](https://github.com/assertpy/assertpy)
+
+### Stub distribution name
+
+`types-assertpy`
+
+### Number of lines
+
+208 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 11 unique allowlist entries for `assertpy` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `assertpy`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 84
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 29
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 87
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 21
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 15
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `aws-xray-sdk`
 
 ### Upstream repo URL
@@ -5549,7 +5606,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,563 (excluding blank lines)
+1,565 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5844,7 +5901,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `darwin` and `linux`.
 
 Typeshed currently has 0 allowlist entries for `pyaudio` when running stubtest in CI.
 
@@ -8596,9 +8653,9 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `darwin` and `linux`.
 
-Typeshed currently has 6 unique allowlist entries for `uWSGI` when running stubtest in CI.
+Typeshed currently has 9 unique allowlist entries for `uWSGI` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
