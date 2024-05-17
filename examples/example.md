@@ -3890,9 +3890,9 @@ Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you 
 
 13,454 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -4572,7 +4572,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-4,779 (excluding blank lines)
+4,781 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4597,12 +4597,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,958
+    - Annotated parameters: 1,959
     - Unannotated parameters: 1,511
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 763
 - Returns:
-    - Annotated returns: 502
+    - Annotated returns: 503
     - Unannotated returns: 808
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 102
@@ -7723,7 +7723,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-3,022 (excluding blank lines)
+3,066 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8004,7 +8004,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-54,713 (excluding blank lines)
+54,803 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8029,14 +8029,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,315
+    - Annotated parameters: 25,338
     - Unannotated parameters: 823
-    - Explicit `Any` parameters: 1,926
+    - Explicit `Any` parameters: 1,935
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 74
 - Returns:
-    - Annotated returns: 14,166
+    - Annotated returns: 14,183
     - Unannotated returns: 368
-    - Explicit `Any` returns: 822
+    - Explicit `Any` returns: 828
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
     - Annotated variables: 8,208
