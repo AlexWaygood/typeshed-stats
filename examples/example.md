@@ -920,7 +920,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,786 (excluding blank lines)
+1,796 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8004,7 +8004,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-55,684 (excluding blank lines)
+55,685 (excluding blank lines)
 
 ### Package status: *stdlib*
 
