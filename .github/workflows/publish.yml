@@ -40,6 +40,10 @@ jobs:
         run: |
           DATE=$(date '+%y.%-m.%-d')
           echo $DATE
+          git config --global user.name releasebot
+          git config --global user.email ""
+          git tag -a $DATE -m ""
+          git push --tags
           gh release create $DATE --notes "Automated weekly release"
       - name: Build a binary wheel and a source tarball
         run: python -m build --outdir dist/ .
