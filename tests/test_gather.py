@@ -346,7 +346,7 @@ def test_get_stubtest_platform_non_stdlib(
 def test_get_stubtest_allowlist_length_stdlib(
     typeshed: Path, maybe_stringize_path: Callable[[Path], Path | str]
 ) -> None:
-    tests_dir = typeshed / "stdlib" / "@tests"
+    tests_dir = typeshed / "tests"
     tests_dir.mkdir()
     allowlist_dir = tests_dir / "stubtest_allowlists"
     allowlist_dir.mkdir()

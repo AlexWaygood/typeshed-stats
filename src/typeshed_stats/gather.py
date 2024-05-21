@@ -544,7 +544,7 @@ def get_stubtest_allowlist_length(
         True
     """
     if package_name == "stdlib":
-        allowlist_dir = Path(typeshed_dir, "stdlib", "@tests", "stubtest_allowlists")
+        allowlist_dir = Path(typeshed_dir, "tests", "stubtest_allowlists")
         combined_allowlist = chain.from_iterable(
             _allowlist_entries_in_file(file) for file in allowlist_dir.glob("*.txt")
         )
