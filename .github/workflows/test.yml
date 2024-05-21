@@ -61,6 +61,7 @@ jobs:
         run: uv pip install -e ".[pytest]" --system
       - run: uv pip freeze
       - name: Run tests under coverage
+        shell: bash
         run: |
           coverage run -m pytest --doctest-modules
           coverage report --no-skip-covered
