@@ -34,9 +34,20 @@ jobs:
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
       - run: uv pip install build --system
       - run: uv pip freeze
-      - if: ${{ github.event_name != 'push' }}
+      - if: ${{ github.event_name == 'workflow_dispatch' }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          DATE=$(date '+%y.%-m.%-d')
+          echo $DATE
+          git config --global user.name releasebot
+          git config --global user.email ""
+          git tag -a $DATE -m ""
+          git push --tags
+          gh release create $DATE --notes "Automated weekly release"
+      - if: ${{ github.event_name == 'schedule' }}
+        env:
+          GITHUB_TOKEN: ${{github.token}}
         run: |
           DATE=$(date '+%y.%-m.%-d')
           echo $DATE
