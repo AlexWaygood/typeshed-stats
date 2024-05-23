@@ -39,7 +39,7 @@ croniter,types-croniter,https://github.com/kiorky/croniter,COMPLETE,-,151,UP_TO_
 dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,COMPLETE,-,473,UP_TO_DATE,UPLOADED,NOT_STRICT,126,130,74,69,21,0,4,6,135,76,0,34,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,https://github.com/micheles/decorator,COMPLETE,-,66,UP_TO_DATE,UPLOADED,STRICT,36,0,13,0,0,0,19,6,15,3,0,2,0,0,ERROR_ON_MISSING_STUB,linux,10
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,PARTIAL,-,234,UP_TO_DATE,UPLOADED,NOT_STRICT,81,97,38,13,13,0,0,1,37,0,19,12,0,0,MISSING_STUBS_IGNORED,linux,0
-docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,1899,UP_TO_DATE,UPLOADED,NOT_STRICT,781,378,292,270,315,7,19,25,206,2,83,128,2,24,ERROR_ON_MISSING_STUB,linux,7
+docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,1899,OUT_OF_DATE,UPLOADED,NOT_STRICT,782,376,292,270,315,7,19,25,206,2,83,128,2,24,ERROR_ON_MISSING_STUB,linux,7
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,COMPLETE,-,113,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 docopt,types-docopt,https://github.com/docopt/docopt,COMPLETE,-,14,UP_TO_DATE,UPLOADED,STRICT,7,0,3,0,1,0,0,1,2,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 docutils,types-docutils,https://sourceforge.net/p/docutils/code,PARTIAL,-,1493,UP_TO_DATE,UPLOADED,NOT_STRICT,762,51,448,7,51,33,39,19,250,20,1,222,1,0,MISSING_STUBS_IGNORED,linux,18
@@ -114,7 +114,7 @@ pynput,types-pynput,https://github.com/moses-palmer/pynput,COMPLETE,-,324,OUT_OF
 pyserial,types-pyserial,https://github.com/pyserial/pyserial,COMPLETE,-,1079,UP_TO_DATE,UPLOADED,STRICT,223,0,270,0,0,0,2,4,466,7,65,66,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,64
 pysftp,types-pysftp,https://bitbucket.org/dundeemt/pysftp,COMPLETE,-,166,UP_TO_DATE,UPLOADED,STRICT,109,0,70,0,0,0,0,0,6,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
 pytest-lazy-fixture,types-pytest-lazy-fixture,https://github.com/tvorog/pytest-lazy-fixture,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,5,0,5,0,0,0,0,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,8
-python-crontab,types-python-crontab,https://gitlab.com/doctormo/python-crontab,COMPLETE,-,328,OUT_OF_DATE,UPLOADED,NOT_STRICT,174,2,146,4,1,0,17,0,72,1,1,18,0,1,ERROR_ON_MISSING_STUB,linux,2
+python-crontab,types-python-crontab,https://gitlab.com/doctormo/python-crontab,COMPLETE,-,329,UP_TO_DATE,UPLOADED,NOT_STRICT,176,2,147,4,1,0,17,0,72,1,1,18,0,1,ERROR_ON_MISSING_STUB,linux,2
 python-datemath,types-python-datemath,https://github.com/nickmaccarthy/python-datemath,PARTIAL,-,16,UP_TO_DATE,UPLOADED,STRICT,16,0,4,0,0,1,0,0,0,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 python-dateutil,types-python-dateutil,https://github.com/dateutil/dateutil,PARTIAL,-,439,UP_TO_DATE,UPLOADED,NOT_STRICT,172,65,112,42,5,0,0,0,89,0,4,29,0,0,MISSING_STUBS_IGNORED,linux,11
 python-gflags,types-python-gflags,https://github.com/google/python-gflags,COMPLETE,-,251,UP_TO_DATE,UPLOADED,STRICT,186,0,98,0,0,0,39,9,19,2,0,27,0,0,ERROR_ON_MISSING_STUB,linux,1
