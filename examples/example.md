@@ -523,7 +523,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,045 (excluding blank lines)
+1,051 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -548,7 +548,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `PyMySQL`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 142
+    - Annotated parameters: 143
     - Unannotated parameters: 52
     - Explicit `Any` parameters: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 28
@@ -558,7 +558,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 18
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 734
+    - Annotated variables: 736
     - Explicit `Any` variables: 60
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -5551,9 +5551,9 @@ Generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protob
 
 4,825 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -8004,7 +8004,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-55,796 (excluding blank lines)
+55,973 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8020,7 +8020,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,620 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,466 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8029,12 +8029,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 25,999
+    - Annotated parameters: 26,105
     - Unannotated parameters: 823
-    - Explicit `Any` parameters: 1,939
+    - Explicit `Any` parameters: 1,945
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 74
 - Returns:
-    - Annotated returns: 14,373
+    - Annotated returns: 14,387
     - Unannotated returns: 368
     - Explicit `Any` returns: 831
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
@@ -8045,63 +8045,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Class definitions:
     - Total class definitions: 2,410
     - Class definitions with `Any`: 26
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
-## Info on typeshed's stubs for `stripe`
-
-### Upstream repo URL
-
-[https://github.com/stripe/stripe-python](https://github.com/stripe/stripe-python)
-
-### Stub distribution name
-
-`types-stripe`
-
-### Number of lines
-
-1,532 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *missing stubs ignored*
-
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 8 unique allowlist entries for `stripe` when running stubtest in CI.
-
-### Pyright settings in CI: *not strict*
-
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
-
-### Statistics on the annotations in typeshed's stubs for `stripe`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 270
-    - Unannotated parameters: 396
-    - Explicit `Any` parameters: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 156
-- Returns:
-    - Annotated returns: 108
-    - Unannotated returns: 172
-    - Explicit `Any` returns: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 157
-    - Explicit `Any` variables: 42
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 136
-    - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
