@@ -2313,8 +2313,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docker`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 782
-    - Unannotated parameters: 376
+    - Annotated parameters: 784
+    - Unannotated parameters: 375
     - Explicit `Any` parameters: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 315
 - Returns:
@@ -8114,7 +8114,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-56,111 (excluding blank lines)
+56,139 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8130,7 +8130,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,411 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,398 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8139,21 +8139,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 26,189
+    - Annotated parameters: 26,205
     - Unannotated parameters: 823
     - Explicit `Any` parameters: 1,959
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 74
 - Returns:
-    - Annotated returns: 14,412
+    - Annotated returns: 14,421
     - Unannotated returns: 368
     - Explicit `Any` returns: 837
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 8,260
+    - Annotated variables: 8,261
     - Explicit `Any` variables: 535
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 152
 - Class definitions:
-    - Total class definitions: 2,412
+    - Total class definitions: 2,413
     - Class definitions with `Any`: 26
     - Class definitions marked as at least partially `Incomplete`: 0
 
