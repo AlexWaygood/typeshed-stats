@@ -1369,7 +1369,7 @@
     "upstream_url": "https://github.com/docker/docker-py",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1910,
+    "number_of_lines": 1936,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1381,9 +1381,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 784,
-      "unannotated_parameters": 375,
-      "annotated_returns": 293,
+      "annotated_parameters": 800,
+      "unannotated_parameters": 374,
+      "annotated_returns": 294,
       "unannotated_returns": 269,
       "explicit_Incomplete_parameters": 315,
       "explicit_Incomplete_returns": 7,
