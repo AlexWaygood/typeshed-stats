@@ -78,7 +78,7 @@ lzstring,types-lzstring,https://github.com/gkovacs/lz-string-python,COMPLETE,-,1
 mock,types-mock,https://github.com/testing-cabal/mock,COMPLETE,-,390,UP_TO_DATE,UPLOADED,STRICT,217,0,90,0,45,0,86,15,58,34,0,24,2,0,ERROR_ON_MISSING_STUB,linux,4
 mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,31,0,28,0,0,0,3,7,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,6
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1228,UP_TO_DATE,UPLOADED,NOT_STRICT,35,124,37,79,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
-netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,696,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,286,4,308,0,1,0,1,1,101,1,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
+netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,696,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,286,4,308,0,1,0,1,1,101,1,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 networkx,types-networkx,https://github.com/networkx/networkx,PARTIAL,-,4781,OUT_OF_DATE,UPLOADED,NOT_STRICT,1959,1511,503,808,763,102,4,3,320,2,249,126,1,2,MISSING_STUBS_IGNORED,linux,13
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1444,UP_TO_DATE,UPLOADED,NOT_STRICT,406,414,161,191,182,0,0,0,329,207,2,109,2,0,MISSING_STUBS_IGNORED,linux,1
 olefile,types-olefile,https://github.com/decalage2/olefile,COMPLETE,-,214,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,73,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
