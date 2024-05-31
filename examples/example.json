@@ -2731,7 +2731,7 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 4781,
+    "number_of_lines": 4784,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2743,9 +2743,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1959,
+      "annotated_parameters": 1961,
       "unannotated_parameters": 1511,
-      "annotated_returns": 503,
+      "annotated_returns": 504,
       "unannotated_returns": 808,
       "explicit_Incomplete_parameters": 763,
       "explicit_Incomplete_returns": 102,
@@ -4852,7 +4852,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 56239,
+    "number_of_lines": 56254,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4862,13 +4862,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1392
+      "allowlist_length": 1384
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 26262,
+      "annotated_parameters": 26271,
       "unannotated_parameters": 823,
-      "annotated_returns": 14428,
+      "annotated_returns": 14433,
       "unannotated_returns": 368,
       "explicit_Incomplete_parameters": 74,
       "explicit_Incomplete_returns": 11,

@@ -4572,7 +4572,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-4,781 (excluding blank lines)
+4,784 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4597,12 +4597,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,959
+    - Annotated parameters: 1,961
     - Unannotated parameters: 1,511
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 763
 - Returns:
-    - Annotated returns: 503
+    - Annotated returns: 504
     - Unannotated returns: 808
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 102
@@ -8114,7 +8114,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-56,239 (excluding blank lines)
+56,254 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8130,7 +8130,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,392 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,384 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8139,12 +8139,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 26,262
+    - Annotated parameters: 26,271
     - Unannotated parameters: 823
     - Explicit `Any` parameters: 1,959
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 74
 - Returns:
-    - Annotated returns: 14,428
+    - Annotated returns: 14,433
     - Unannotated returns: 368
     - Explicit `Any` returns: 837
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
