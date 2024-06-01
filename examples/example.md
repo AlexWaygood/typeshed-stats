@@ -7544,7 +7544,7 @@ Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to
 
 ### Number of lines
 
-1,015 (excluding blank lines)
+1,033 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7569,21 +7569,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `requests`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 379
-    - Unannotated parameters: 132
+    - Annotated parameters: 384
+    - Unannotated parameters: 130
     - Explicit `Any` parameters: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
 - Returns:
-    - Annotated returns: 133
-    - Unannotated returns: 66
-    - Explicit `Any` returns: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+    - Annotated returns: 135
+    - Unannotated returns: 65
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
-    - Annotated variables: 116
-    - Explicit `Any` variables: 34
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 5
+    - Annotated variables: 125
+    - Explicit `Any` variables: 17
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 22
 - Class definitions:
-    - Total class definitions: 51
+    - Total class definitions: 53
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -8171,7 +8171,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-56,254 (excluding blank lines)
+56,261 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8187,7 +8187,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,384 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,381 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8201,7 +8201,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 1,959
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 74
 - Returns:
-    - Annotated returns: 14,433
+    - Annotated returns: 14,434
     - Unannotated returns: 368
     - Explicit `Any` returns: 837
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
