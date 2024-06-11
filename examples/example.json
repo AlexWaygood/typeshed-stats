@@ -5121,40 +5121,6 @@
     }
   },
   {
-    "package_name": "tree-sitter",
-    "stub_distribution_name": "types-tree-sitter",
-    "upstream_url": "https://github.com/tree-sitter/py-tree-sitter",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 123,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 36
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 25,
-      "unannotated_parameters": 0,
-      "annotated_returns": 52,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 2,
-      "annotated_variables": 4,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 7,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "tree-sitter-languages",
     "stub_distribution_name": "types-tree-sitter-languages",
     "upstream_url": "https://github.com/grantjenks/py-tree-sitter-languages",
