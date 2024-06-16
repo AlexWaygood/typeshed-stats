@@ -254,7 +254,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 unique allowlist entries for `Flask-SocketIO` when running stubtest in CI.
+Typeshed currently has 4 unique allowlist entries for `Flask-SocketIO` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2288,7 +2288,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,936 (excluding blank lines)
+1,950 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2304,7 +2304,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 7 unique allowlist entries for `docker` when running stubtest in CI.
+Typeshed currently has 8 unique allowlist entries for `docker` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2313,13 +2313,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docker`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 801
-    - Unannotated parameters: 373
+    - Annotated parameters: 817
+    - Unannotated parameters: 366
     - Explicit `Any` parameters: 19
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 315
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 316
 - Returns:
-    - Annotated returns: 294
-    - Unannotated returns: 269
+    - Annotated returns: 297
+    - Unannotated returns: 266
     - Explicit `Any` returns: 25
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
 - Variables:
