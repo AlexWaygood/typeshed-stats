@@ -3485,11 +3485,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-138 (excluding blank lines)
+139 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3515,7 +3515,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 64
+    - Annotated returns: 65
     - Unannotated returns: 3
     - Explicit `Any` returns: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
