@@ -977,7 +977,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-681 (excluding blank lines)
+745 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1002,12 +1002,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `aiofiles`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 390
+    - Annotated parameters: 434
     - Unannotated parameters: 1
     - Explicit `Any` parameters: 34
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 25
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 29
 - Returns:
-    - Annotated returns: 151
+    - Annotated returns: 155
     - Unannotated returns: 3
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
@@ -8171,7 +8171,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-56,461 (excluding blank lines)
+56,464 (excluding blank lines)
 
 ### Package status: *stdlib*
 

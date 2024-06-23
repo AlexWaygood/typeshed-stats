@@ -583,7 +583,7 @@
     "upstream_url": "https://github.com/Tinche/aiofiles",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 681,
+    "number_of_lines": 745,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -596,11 +596,11 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 390,
+      "annotated_parameters": 434,
       "unannotated_parameters": 1,
-      "annotated_returns": 151,
+      "annotated_returns": 155,
       "unannotated_returns": 3,
-      "explicit_Incomplete_parameters": 25,
+      "explicit_Incomplete_parameters": 29,
       "explicit_Incomplete_returns": 3,
       "explicit_Any_parameters": 34,
       "explicit_Any_returns": 1,
@@ -4886,7 +4886,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 56461,
+    "number_of_lines": 56464,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
