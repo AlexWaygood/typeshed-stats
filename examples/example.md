@@ -979,9 +979,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 745 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -2288,7 +2288,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,952 (excluding blank lines)
+1,986 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2313,21 +2313,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docker`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 818
-    - Unannotated parameters: 365
-    - Explicit `Any` parameters: 21
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 308
+    - Annotated parameters: 839
+    - Unannotated parameters: 352
+    - Explicit `Any` parameters: 23
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 248
 - Returns:
     - Annotated returns: 298
     - Unannotated returns: 265
     - Explicit `Any` returns: 25
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
 - Variables:
-    - Annotated variables: 210
+    - Annotated variables: 214
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 83
 - Class definitions:
-    - Total class definitions: 131
+    - Total class definitions: 134
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 24
 
@@ -3890,9 +3890,9 @@ Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you 
 
 13,460 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -8207,7 +8207,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
     - Annotated variables: 8,272
-    - Explicit `Any` variables: 535
+    - Explicit `Any` variables: 536
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 152
 - Class definitions:
     - Total class definitions: 2,418
