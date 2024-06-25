@@ -4681,8 +4681,8 @@
     "upstream_url": "https://github.com/pypa/setuptools",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3140,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 3214,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4690,22 +4690,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 109
+      "allowlist_length": 110
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 1001,
-      "unannotated_parameters": 434,
-      "annotated_returns": 845,
-      "unannotated_returns": 262,
+      "annotated_parameters": 1042,
+      "unannotated_parameters": 435,
+      "annotated_returns": 875,
+      "unannotated_returns": 261,
       "explicit_Incomplete_parameters": 45,
       "explicit_Incomplete_returns": 13,
-      "explicit_Any_parameters": 21,
+      "explicit_Any_parameters": 18,
       "explicit_Any_returns": 1,
-      "annotated_variables": 660,
-      "explicit_Any_variables": 87,
-      "explicit_Incomplete_variables": 285,
-      "classdefs": 187,
+      "annotated_variables": 684,
+      "explicit_Any_variables": 88,
+      "explicit_Incomplete_variables": 290,
+      "classdefs": 192,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
