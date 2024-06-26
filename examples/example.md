@@ -7485,9 +7485,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 7,851 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7833,7 +7833,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-3,214 (excluding blank lines)
+3,222 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7860,7 +7860,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 1,042
     - Unannotated parameters: 435
-    - Explicit `Any` parameters: 18
+    - Explicit `Any` parameters: 20
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 45
 - Returns:
     - Annotated returns: 875
