@@ -2288,7 +2288,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-2,065 (excluding blank lines)
+2,326 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2313,21 +2313,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docker`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 876
-    - Unannotated parameters: 349
+    - Annotated parameters: 1,128
+    - Unannotated parameters: 346
     - Explicit `Any` parameters: 29
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 246
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 288
 - Returns:
-    - Annotated returns: 300
-    - Unannotated returns: 264
+    - Annotated returns: 301
+    - Unannotated returns: 263
     - Explicit `Any` returns: 24
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
 - Variables:
-    - Annotated variables: 218
+    - Annotated variables: 217
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 83
 - Class definitions:
-    - Total class definitions: 135
+    - Total class definitions: 134
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 24
 
