@@ -1091,7 +1091,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-208 (excluding blank lines)
+214 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1116,7 +1116,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `assertpy`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 84
+    - Annotated parameters: 85
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 29
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -7477,6 +7477,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `reportlab`
 
+### Upstream repo URL
+
+[https://github.com/MrBitBucket/reportlab-mirror](https://github.com/MrBitBucket/reportlab-mirror)
+
 ### Stub distribution name
 
 `types-reportlab`
@@ -8171,7 +8175,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-56,507 (excluding blank lines)
+56,587 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8196,21 +8200,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 26,379
+    - Annotated parameters: 26,406
     - Unannotated parameters: 822
     - Explicit `Any` parameters: 1,971
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 74
 - Returns:
-    - Annotated returns: 14,461
+    - Annotated returns: 14,499
     - Unannotated returns: 368
     - Explicit `Any` returns: 839
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 8,272
+    - Annotated variables: 8,273
     - Explicit `Any` variables: 535
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 152
 - Class definitions:
-    - Total class definitions: 2,418
+    - Total class definitions: 2,425
     - Class definitions with `Any`: 26
     - Class definitions marked as at least partially `Incomplete`: 0
 
