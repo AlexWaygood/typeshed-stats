@@ -4802,9 +4802,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 13,207 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4825,13 +4825,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,890
+    - Annotated parameters: 3,891
     - Unannotated parameters: 327
     - Explicit `Any` parameters: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 204
 - Returns:
-    - Annotated returns: 1,316
-    - Unannotated returns: 88
+    - Annotated returns: 1,317
+    - Unannotated returns: 87
     - Explicit `Any` returns: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:

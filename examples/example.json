@@ -2868,7 +2868,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 13207,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -2879,10 +2879,10 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3890,
+      "annotated_parameters": 3891,
       "unannotated_parameters": 327,
-      "annotated_returns": 1316,
-      "unannotated_returns": 88,
+      "annotated_returns": 1317,
+      "unannotated_returns": 87,
       "explicit_Incomplete_parameters": 204,
       "explicit_Incomplete_returns": 8,
       "explicit_Any_parameters": 13,
