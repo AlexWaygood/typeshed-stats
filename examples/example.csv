@@ -80,7 +80,7 @@ mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1228,UP_TO_DATE,UPLOADED,NOT_STRICT,35,124,37,79,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
 nanoid,types-nanoid,https://github.com/puyuan/py-nanoid,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,698,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,288,4,308,0,1,0,1,1,101,1,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
-networkx,types-networkx,https://github.com/networkx/networkx,PARTIAL,-,4784,OUT_OF_DATE,UPLOADED,NOT_STRICT,1961,1511,504,808,763,102,4,3,320,2,249,126,1,2,MISSING_STUBS_IGNORED,linux,13
+networkx,types-networkx,https://github.com/networkx/networkx,PARTIAL,-,4784,OUT_OF_DATE,UPLOADED,NOT_STRICT,1964,1508,505,807,763,102,4,3,320,2,249,126,1,2,MISSING_STUBS_IGNORED,linux,13
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1444,UP_TO_DATE,UPLOADED,NOT_STRICT,406,414,161,191,182,0,0,0,329,207,2,109,2,0,MISSING_STUBS_IGNORED,linux,1
 olefile,types-olefile,https://github.com/decalage2/olefile,COMPLETE,-,222,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,75,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,13207,UP_TO_DATE,UPLOADED,NOT_STRICT,3891,327,1317,87,204,8,13,15,4016,4,340,603,1,20,ERROR_ON_MISSING_STUB,linux,182
@@ -115,7 +115,7 @@ pynput,types-pynput,https://github.com/moses-palmer/pynput,COMPLETE,-,324,UP_TO_
 pyserial,types-pyserial,https://github.com/pyserial/pyserial,COMPLETE,-,1079,UP_TO_DATE,UPLOADED,STRICT,223,0,270,0,0,0,2,4,466,7,65,66,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,64
 pysftp,types-pysftp,https://bitbucket.org/dundeemt/pysftp,COMPLETE,-,166,UP_TO_DATE,UPLOADED,STRICT,109,0,70,0,0,0,0,0,6,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
 pytest-lazy-fixture,types-pytest-lazy-fixture,https://github.com/tvorog/pytest-lazy-fixture,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,5,0,5,0,0,0,0,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,8
-python-crontab,types-python-crontab,https://gitlab.com/doctormo/python-crontab,COMPLETE,-,329,OUT_OF_DATE,UPLOADED,NOT_STRICT,176,2,147,4,1,0,17,0,72,1,1,18,0,1,ERROR_ON_MISSING_STUB,linux,2
+python-crontab,types-python-crontab,https://gitlab.com/doctormo/python-crontab,COMPLETE,-,329,UP_TO_DATE,UPLOADED,NOT_STRICT,176,2,147,4,1,0,17,0,72,1,1,18,0,1,ERROR_ON_MISSING_STUB,linux,2
 python-datemath,types-python-datemath,https://github.com/nickmaccarthy/python-datemath,PARTIAL,-,16,UP_TO_DATE,UPLOADED,STRICT,16,0,4,0,0,1,0,0,0,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 python-dateutil,types-python-dateutil,https://github.com/dateutil/dateutil,PARTIAL,-,439,UP_TO_DATE,UPLOADED,NOT_STRICT,172,65,112,42,5,0,0,0,89,0,4,29,0,0,MISSING_STUBS_IGNORED,linux,11
 python-gflags,types-python-gflags,https://github.com/google/python-gflags,COMPLETE,-,251,UP_TO_DATE,UPLOADED,STRICT,186,0,98,0,0,0,39,9,19,2,0,27,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -142,7 +142,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,335,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,56614,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,26409,822,14507,368,74,11,1971,839,8273,535,152,2426,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1275
+stdlib,-,https://github.com/python/cpython,STDLIB,-,56634,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,26412,822,14508,368,74,11,1971,839,8273,535,152,2425,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1275
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 25.1 on tensorflow==2.16.1 .,25539,UP_TO_DATE,UPLOADED,NOT_STRICT,5328,8,3035,4,23,58,60,34,5294,5,7,928,1,0,MISSING_STUBS_IGNORED,linux,51
 toml,types-toml,https://github.com/uiri/toml,COMPLETE,-,136,UP_TO_DATE,UPLOADED,STRICT,71,0,41,0,0,0,21,5,14,2,0,14,2,0,ERROR_ON_MISSING_STUB,linux,4
