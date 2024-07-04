@@ -4886,7 +4886,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 56637,
+    "number_of_lines": 56688,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4896,23 +4896,57 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1272
+      "allowlist_length": 1270
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 26412,
+      "annotated_parameters": 26453,
       "unannotated_parameters": 822,
-      "annotated_returns": 14508,
+      "annotated_returns": 14528,
       "unannotated_returns": 368,
       "explicit_Incomplete_parameters": 74,
       "explicit_Incomplete_returns": 11,
-      "explicit_Any_parameters": 1971,
-      "explicit_Any_returns": 839,
-      "annotated_variables": 8273,
+      "explicit_Any_parameters": 1972,
+      "explicit_Any_returns": 843,
+      "annotated_variables": 8279,
       "explicit_Any_variables": 535,
       "explicit_Incomplete_variables": 152,
-      "classdefs": 2425,
+      "classdefs": 2429,
       "classdefs_with_Any": 26,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "str2bool",
+    "stub_distribution_name": "types-str2bool",
+    "upstream_url": "https://github.com/symonsoft/str2bool",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 6,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 5,
+      "unannotated_parameters": 0,
+      "annotated_returns": 3,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 0,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
   },
