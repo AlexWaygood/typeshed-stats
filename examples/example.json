@@ -1959,7 +1959,7 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 237,
+      "annotated_parameters": 238,
       "unannotated_parameters": 0,
       "annotated_returns": 263,
       "unannotated_returns": 0,
