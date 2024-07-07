@@ -2459,7 +2459,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,539 (excluding blank lines)
+1,538 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2487,7 +2487,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated parameters: 771
     - Unannotated parameters: 84
     - Explicit `Any` parameters: 39
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 57
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 56
 - Returns:
     - Annotated returns: 453
     - Unannotated returns: 17
@@ -2496,7 +2496,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Variables:
     - Annotated variables: 258
     - Explicit `Any` variables: 20
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 7
 - Class definitions:
     - Total class definitions: 223
     - Class definitions with `Any`: 1
