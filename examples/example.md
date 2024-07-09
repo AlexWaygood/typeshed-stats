@@ -2484,10 +2484,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 771
-    - Unannotated parameters: 84
+    - Annotated parameters: 788
+    - Unannotated parameters: 67
     - Explicit `Any` parameters: 39
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 56
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 55
 - Returns:
     - Annotated returns: 453
     - Unannotated returns: 17
@@ -2496,7 +2496,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Variables:
     - Annotated variables: 258
     - Explicit `Any` variables: 20
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 5
 - Class definitions:
     - Total class definitions: 223
     - Class definitions with `Any`: 1
@@ -6288,9 +6288,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 701 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
