@@ -25,7 +25,7 @@ bleach,types-bleach,https://github.com/mozilla/bleach,COMPLETE,-,239,UP_TO_DATE,
 boltons,types-boltons,https://github.com/mahmoud/boltons,COMPLETE,-,1212,UP_TO_DATE,UPLOADED,NOT_STRICT,634,263,456,172,72,8,61,34,234,7,69,81,1,3,ERROR_ON_MISSING_STUB,linux,5
 boto,types-boto,https://github.com/boto/boto,PARTIAL,-,1916,UP_TO_DATE,UPLOADED,NOT_STRICT,837,685,168,442,345,2,21,31,363,267,0,136,0,0,MISSING_STUBS_IGNORED,linux,9
 braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,2932,UP_TO_DATE,UPLOADED,NOT_STRICT,91,429,142,324,80,2,1,1,1504,0,131,267,0,0,ERROR_ON_MISSING_STUB,linux,1
-cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,87,0,48,0,0,0,4,0,1,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,20
+cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,119,OUT_OF_DATE,UPLOADED,STRICT,87,0,48,0,0,0,4,0,1,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,20
 caldav,types-caldav,https://github.com/python-caldav/caldav,PARTIAL,-,526,UP_TO_DATE,UPLOADED,NOT_STRICT,214,35,117,8,21,5,1,0,94,0,6,86,0,0,MISSING_STUBS_IGNORED,linux,9
 capturer,types-capturer,https://github.com/xolox/python-capturer,COMPLETE,-,114,UP_TO_DATE,UPLOADED,STRICT,50,0,42,0,0,0,4,1,38,4,0,6,0,0,ERROR_ON_MISSING_STUB,linux,1
 cffi,types-cffi,https://foss.heptapod.net/pypy/cffi,COMPLETE,-,827,UP_TO_DATE,UPLOADED,NOT_STRICT,302,246,194,130,21,2,32,8,252,0,115,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
@@ -142,7 +142,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,335,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,25
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,57166,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,26687,822,14637,368,74,11,1985,847,8290,535,152,2439,27,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1151
+stdlib,-,https://github.com/python/cpython,STDLIB,-,57167,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,26687,822,14637,368,74,11,1985,847,8289,535,152,2439,27,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1149
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 25.1 on tensorflow==2.16.1 .,25539,OUT_OF_DATE,UPLOADED,NOT_STRICT,5328,8,3035,4,23,58,60,34,5294,5,7,928,1,0,MISSING_STUBS_IGNORED,linux,51
