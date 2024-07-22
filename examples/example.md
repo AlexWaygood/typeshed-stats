@@ -7827,6 +7827,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `setuptools`
 
+### Extra description
+
+If using `setuptools >= 71.1` *only* for `pkg_resources`,
+you don't need `types-setuptools` since `pkg_resources` is now typed.
+
 ### Upstream repo URL
 
 [https://github.com/pypa/setuptools](https://github.com/pypa/setuptools)
@@ -7837,11 +7842,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-3,163 (excluding blank lines)
+3,165 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 

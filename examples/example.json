@@ -4680,9 +4680,9 @@
     "stub_distribution_name": "types-setuptools",
     "upstream_url": "https://github.com/pypa/setuptools",
     "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 3163,
-    "package_status": "OUT_OF_DATE",
+    "extra_description": "If using `setuptools >= 71.1` *only* for `pkg_resources`,\nyou don't need `types-setuptools` since `pkg_resources` is now typed.",
+    "number_of_lines": 3165,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
