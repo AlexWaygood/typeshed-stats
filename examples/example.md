@@ -7359,10 +7359,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `redis`
 
-### Extra description
-
-Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incomplete. Continuing to use `types-redis` for the time being may lead to superior results.
-
 ### Upstream repo URL
 
 [https://github.com/redis/redis-py](https://github.com/redis/redis-py)
@@ -7375,9 +7371,9 @@ Note: Redis-py 5.0.0 added a py.typed file, but the inline annotations are incom
 
 6,165 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
@@ -7842,7 +7838,7 @@ you don't need `types-setuptools` since `pkg_resources` is now typed.
 
 ### Number of lines
 
-3,210 (excluding blank lines)
+3,221 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7867,19 +7863,19 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,021
-    - Unannotated parameters: 436
-    - Explicit `Any` parameters: 4
+    - Annotated parameters: 1,029
+    - Unannotated parameters: 433
+    - Explicit `Any` parameters: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 47
 - Returns:
-    - Annotated returns: 861
-    - Unannotated returns: 261
-    - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 13
+    - Annotated returns: 868
+    - Unannotated returns: 256
+    - Explicit `Any` returns: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
 - Variables:
-    - Annotated variables: 673
-    - Explicit `Any` variables: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 296
+    - Annotated variables: 668
+    - Explicit `Any` variables: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 264
 - Class definitions:
     - Total class definitions: 189
     - Class definitions with `Any`: 0
@@ -8180,7 +8176,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-57,287 (excluding blank lines)
+57,291 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8205,12 +8201,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 26,717
+    - Annotated parameters: 26,719
     - Unannotated parameters: 822
     - Explicit `Any` parameters: 1,982
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 75
 - Returns:
-    - Annotated returns: 14,655
+    - Annotated returns: 14,656
     - Unannotated returns: 368
     - Explicit `Any` returns: 847
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
