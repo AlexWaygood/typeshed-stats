@@ -14,6 +14,7 @@ PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,COMPLETE,-,1298,UP_TO_DATE,UP
 Pygments,types-Pygments,https://github.com/pygments/pygments,PARTIAL,-,845,UP_TO_DATE,UPLOADED,NOT_STRICT,116,156,108,75,17,5,7,2,376,169,24,94,0,1,MISSING_STUBS_IGNORED,linux,4
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,COMPLETE,-,56,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,2
+TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,COMPLETE,-,7,UP_TO_DATE,UPLOADED,STRICT,20,0,6,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,6
 WTForms,types-WTForms,https://github.com/wtforms/wtforms,COMPLETE,-,1069,UP_TO_DATE,UPLOADED,STRICT,531,0,185,0,0,0,71,15,139,28,0,100,0,0,ERROR_ON_MISSING_STUB,linux,21
 WebOb,types-WebOb,https://github.com/Pylons/webob,COMPLETE,-,1796,UP_TO_DATE,UPLOADED,STRICT,808,0,606,0,0,0,91,13,246,15,0,149,0,0,ERROR_ON_MISSING_STUB,linux,100
 aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,COMPLETE,-,732,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,431,1,148,3,29,3,34,1,6,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,86
