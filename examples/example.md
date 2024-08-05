@@ -2744,7 +2744,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-14 (excluding blank lines)
+16 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2769,12 +2769,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `first`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 8
+    - Annotated parameters: 11
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 2
+    - Explicit `Any` parameters: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 4
+    - Annotated returns: 5
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -3375,7 +3375,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-3,018 (excluding blank lines)
+3,020 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4857,7 +4857,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-13,210 (excluding blank lines)
+13,208 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5281,18 +5281,18 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 425
+    - Annotated parameters: 427
     - Unannotated parameters: 668
-    - Explicit `Any` parameters: 0
+    - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 216
 - Returns:
-    - Annotated returns: 352
+    - Annotated returns: 354
     - Unannotated returns: 431
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
-    - Annotated variables: 425
-    - Explicit `Any` variables: 33
+    - Annotated variables: 423
+    - Explicit `Any` variables: 31
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 320
 - Class definitions:
     - Total class definitions: 169
@@ -7426,7 +7426,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-6,165 (excluding blank lines)
+6,169 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -7540,7 +7540,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,867 (excluding blank lines)
+7,868 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8233,7 +8233,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-57,305 (excluding blank lines)
+57,310 (excluding blank lines)
 
 ### Package status: *stdlib*
 
