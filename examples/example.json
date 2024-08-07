@@ -389,7 +389,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 3
+      "allowlist_length": 4
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
