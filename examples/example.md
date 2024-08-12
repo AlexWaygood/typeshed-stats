@@ -3947,9 +3947,9 @@ Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you 
 
 13,494 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -4686,7 +4686,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-4,808 (excluding blank lines)
+4,809 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4721,8 +4721,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 108
 - Variables:
-    - Annotated variables: 306
-    - Explicit `Any` variables: 2
+    - Annotated variables: 307
+    - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 246
 - Class definitions:
     - Total class definitions: 126
@@ -7895,7 +7895,7 @@ you don't need `types-setuptools` since `pkg_resources` is now typed.
 
 ### Number of lines
 
-3,221 (excluding blank lines)
+3,541 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7920,12 +7920,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,029
-    - Unannotated parameters: 433
+    - Annotated parameters: 1,255
+    - Unannotated parameters: 457
     - Explicit `Any` parameters: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 47
 - Returns:
-    - Annotated returns: 868
+    - Annotated returns: 993
     - Unannotated returns: 256
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
@@ -8233,7 +8233,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-57,501 (excluding blank lines)
+57,766 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8258,12 +8258,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 26,805
+    - Annotated parameters: 26,985
     - Unannotated parameters: 819
     - Explicit `Any` parameters: 1,982
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 75
 - Returns:
-    - Annotated returns: 14,685
+    - Annotated returns: 14,785
     - Unannotated returns: 367
     - Explicit `Any` returns: 847
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
@@ -8396,7 +8396,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Extra description
 
-Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 25.1 on tensorflow==2.16.1 .
+Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on tensorflow==2.17.0 .
 
 ### Upstream repo URL
 
@@ -8408,11 +8408,11 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-25,539 (excluding blank lines)
+25,919 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8433,21 +8433,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 5,328
+    - Annotated parameters: 5,365
     - Unannotated parameters: 8
     - Explicit `Any` parameters: 60
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 24
 - Returns:
-    - Annotated returns: 3,035
+    - Annotated returns: 3,048
     - Unannotated returns: 4
     - Explicit `Any` returns: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 58
 - Variables:
-    - Annotated variables: 5,294
+    - Annotated variables: 5,427
     - Explicit `Any` variables: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 9
 - Class definitions:
-    - Total class definitions: 928
+    - Total class definitions: 945
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
