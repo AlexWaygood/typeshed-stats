@@ -156,6 +156,9 @@ combine-as-imports = true
 split-on-trailing-comma = false
 known-first-party = ["typeshed_stats"]
 
+[tool.codespell]
+ignore-words-list = ["corus"]
+
 [tool.mypy]
 files = ['website_macros.py', 'src', 'tests', 'scripts']
 show_traceback = true
