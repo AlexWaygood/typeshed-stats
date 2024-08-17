@@ -12,7 +12,7 @@ repos:
       - id: name-tests-test
         args: [--pytest-test-first]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.5.5 # must match pyproject.toml
+    rev: v0.6.1 # must match pyproject.toml
     hooks:
       - id: ruff
       - id: ruff-format
