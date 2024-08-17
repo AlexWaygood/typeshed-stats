@@ -147,14 +147,9 @@ unfixable = [
 [tool.ruff.lint.pydocstyle]
 convention = "google"
 
-[tool.ruff.lint.flake8-pytest-style]
-fixture-parentheses = false
-mark-parentheses = false
-
 [tool.ruff.lint.isort]
 combine-as-imports = true
 split-on-trailing-comma = false
-known-first-party = ["typeshed_stats"]
 
 [tool.codespell]
 ignore-words-list = ["corus"]
