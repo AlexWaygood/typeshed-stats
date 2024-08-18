@@ -1738,40 +1738,6 @@
     }
   },
   {
-    "package_name": "flake8-2020",
-    "stub_distribution_name": "types-flake8-2020",
-    "upstream_url": "https://github.com/asottile/flake8-2020",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 23,
-    "package_status": "NO_LONGER_UPDATED",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 1,
-      "unannotated_parameters": 0,
-      "annotated_returns": 2,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 12,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 2,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "flake8-bugbear",
     "stub_distribution_name": "types-flake8-bugbear",
     "upstream_url": "https://github.com/PyCQA/flake8-bugbear",
