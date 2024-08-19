@@ -1549,9 +1549,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 124 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -4857,7 +4857,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-13,208 (excluding blank lines)
+13,211 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4889,7 +4889,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Returns:
     - Annotated returns: 1,317
     - Unannotated returns: 87
-    - Explicit `Any` returns: 15
+    - Explicit `Any` returns: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
     - Annotated variables: 4,018
@@ -5142,7 +5142,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-1,798 (excluding blank lines)
+1,802 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7426,7 +7426,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-6,169 (excluding blank lines)
+6,185 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -7540,7 +7540,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,868 (excluding blank lines)
+7,874 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8233,7 +8233,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-57,786 (excluding blank lines)
+57,795 (excluding blank lines)
 
 ### Package status: *stdlib*
 
