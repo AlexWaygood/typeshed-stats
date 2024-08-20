@@ -926,7 +926,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 124,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -2964,40 +2964,6 @@
     }
   },
   {
-    "package_name": "paho-mqtt",
-    "stub_distribution_name": "types-paho-mqtt",
-    "upstream_url": "https://github.com/eclipse/paho.mqtt.python",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 513,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 217,
-      "unannotated_parameters": 0,
-      "annotated_returns": 147,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 5,
-      "explicit_Any_returns": 4,
-      "annotated_variables": 145,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 1,
-      "classdefs": 19,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "paramiko",
     "stub_distribution_name": "types-paramiko",
     "upstream_url": "https://github.com/paramiko/paramiko",
@@ -4196,40 +4162,6 @@
       "explicit_Incomplete_variables": 0,
       "classdefs": 14,
       "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
-    "package_name": "python-slugify",
-    "stub_distribution_name": "types-python-slugify",
-    "upstream_url": "https://github.com/un33k/python-slugify",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 45,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 1
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 19,
-      "unannotated_parameters": 0,
-      "annotated_returns": 3,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 12,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 0,
-      "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
   },
