@@ -50,7 +50,7 @@ entrypoints,types-entrypoints,https://github.com/takluyver/entrypoints,COMPLETE,
 fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,COMPLETE,-,530,UP_TO_DATE,UPLOADED,STRICT,167,0,133,0,0,0,8,3,128,0,0,49,0,0,ERROR_ON_MISSING_STUB,linux,40
 first,types-first,https://github.com/hynek/first,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,11,0,5,0,0,0,3,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8,types-flake8,https://github.com/pycqa/flake8,COMPLETE,-,570,UP_TO_DATE,UPLOADED,STRICT,222,0,164,0,0,0,35,8,182,1,90,39,0,0,ERROR_ON_MISSING_STUB,linux,2
-flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,PARTIAL,-,27,OUT_OF_DATE,UPLOADED,STRICT,8,0,5,0,0,2,1,0,8,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,1
+flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,PARTIAL,-,27,UP_TO_DATE,UPLOADED,STRICT,8,0,5,0,0,2,1,0,8,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,1
 flake8-builtins,types-flake8-builtins,https://github.com/gforcada/flake8-builtins,PARTIAL,-,39,UP_TO_DATE,UPLOADED,STRICT,17,0,15,0,0,0,0,0,11,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-docstrings,types-flake8-docstrings,https://github.com/pycqa/flake8-docstrings,PARTIAL,-,19,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,1,1,1,6,1,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/flake8-rst-docstrings,PARTIAL,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
@@ -136,7 +136,7 @@ retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADE
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 3.6.1 on [s2client-proto 5.0.12.91115.0](https://github.com/Blizzard/s2client-proto/tree/c04df4adbe274858a4eb8417175ee32ad02fd609),5029,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2587,UP_TO_DATE,UPLOADED,NOT_STRICT,1445,25,357,2,34,7,155,17,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,5
 setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,"If using `setuptools >= 71.1` *only* for `pkg_resources`,
-you don't need `types-setuptools` since `pkg_resources` is now typed.",3519,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,1248,453,984,254,46,14,3,4,663,4,260,187,0,0,ERROR_ON_MISSING_STUB,linux;win32,109
+you don't need `types-setuptools` since `pkg_resources` is now typed.",3539,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1249,452,984,254,46,14,3,4,676,4,256,187,0,0,ERROR_ON_MISSING_STUB,linux;win32,109
 shapely,types-shapely,https://github.com/shapely/shapely,COMPLETE,-,2595,UP_TO_DATE,UPLOADED,NOT_STRICT,1424,390,710,0,0,0,14,15,151,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,3
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,277,UP_TO_DATE,UPLOADED,STRICT,180,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,11
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
