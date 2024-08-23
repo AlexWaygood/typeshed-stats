@@ -27,7 +27,7 @@ boltons,types-boltons,https://github.com/mahmoud/boltons,COMPLETE,-,1212,UP_TO_D
 boto,types-boto,https://github.com/boto/boto,PARTIAL,-,1916,UP_TO_DATE,UPLOADED,NOT_STRICT,837,685,168,442,345,2,21,31,363,267,0,136,0,0,MISSING_STUBS_IGNORED,linux,9
 braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,2937,UP_TO_DATE,UPLOADED,NOT_STRICT,91,429,142,325,80,2,1,1,1506,0,131,268,0,0,ERROR_ON_MISSING_STUB,linux,1
 cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,124,UP_TO_DATE,UPLOADED,STRICT,90,0,49,0,0,0,4,0,1,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,20
-caldav,types-caldav,https://github.com/python-caldav/caldav,PARTIAL,-,526,UP_TO_DATE,UPLOADED,NOT_STRICT,214,35,117,8,21,5,1,0,94,0,6,86,0,0,MISSING_STUBS_IGNORED,linux,9
+caldav,types-caldav,https://github.com/python-caldav/caldav,PARTIAL,-,527,UP_TO_DATE,UPLOADED,NOT_STRICT,214,35,117,8,21,5,1,0,94,0,6,86,0,0,MISSING_STUBS_IGNORED,linux,7
 capturer,types-capturer,https://github.com/xolox/python-capturer,COMPLETE,-,114,UP_TO_DATE,UPLOADED,STRICT,50,0,42,0,0,0,4,1,38,4,0,6,0,0,ERROR_ON_MISSING_STUB,linux,1
 cffi,types-cffi,https://foss.heptapod.net/pypy/cffi,COMPLETE,-,827,OUT_OF_DATE,UPLOADED,NOT_STRICT,302,246,194,130,21,2,32,8,252,0,115,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
 chevron,types-chevron,https://github.com/noahmorrison/chevron,COMPLETE,-,38,UP_TO_DATE,UPLOADED,STRICT,29,0,9,0,0,0,2,0,3,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -102,7 +102,7 @@ psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1564,UP_TO_DA
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,COMPLETE,-,1731,UP_TO_DATE,UPLOADED,NOT_STRICT,337,152,314,75,29,5,14,21,517,60,3,331,2,0,ERROR_ON_MISSING_STUB,linux,2
 pyOpenSSL,types-pyOpenSSL,https://github.com/pyca/pyopenssl,PARTIAL,-,363,OBSOLETE,UPLOADED,STRICT,148,0,179,0,1,1,2,2,125,1,0,22,0,0,MISSING_STUBS_IGNORED,linux,1
 pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,17,UP_TO_DATE,UPLOADED,STRICT,15,0,9,0,0,0,1,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
-pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1502,UP_TO_DATE,UPLOADED,NOT_STRICT,209,533,118,425,39,9,0,0,251,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,8
+pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1502,UP_TO_DATE,UPLOADED,NOT_STRICT,209,533,118,425,39,9,0,0,251,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,4
 pyaudio,types-pyaudio,-,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,COMPLETE,-,183,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,70,0,1,12,0,0,ERROR_ON_MISSING_STUB,linux,0
 pycurl,types-pycurl,https://github.com/pycurl/pycurl,COMPLETE,-,706,UP_TO_DATE,UPLOADED,NOT_STRICT,15,7,26,6,0,4,0,0,659,0,0,4,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,0

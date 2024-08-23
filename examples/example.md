@@ -1604,7 +1604,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-526 (excluding blank lines)
+527 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1620,7 +1620,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 9 unique allowlist entries for `caldav` when running stubtest in CI.
+Typeshed currently has 7 unique allowlist entries for `caldav` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5907,7 +5907,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 8 unique allowlist entries for `pyasn1` when running stubtest in CI.
+Typeshed currently has 4 unique allowlist entries for `pyasn1` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
