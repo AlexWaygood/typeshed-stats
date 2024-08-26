@@ -6457,7 +6457,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,079 (excluding blank lines)
+1,085 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6482,12 +6482,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `pyserial`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 223
+    - Annotated parameters: 224
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 270
+    - Annotated returns: 271
     - Unannotated returns: 0
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -6496,7 +6496,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` variables: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 65
 - Class definitions:
-    - Total class definitions: 66
+    - Total class definitions: 68
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
