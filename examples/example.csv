@@ -99,7 +99,7 @@ playsound,types-playsound,https://github.com/TaylorSMarks/playsound,COMPLETE,-,5
 polib,types-polib,https://github.com/izimobil/polib,COMPLETE,-,145,UP_TO_DATE,UPLOADED,STRICT,61,0,75,0,0,0,18,0,45,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 portpicker,types-portpicker,https://github.com/google/python_portpicker,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,10,0,6,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on [protobuf v27.1](https://github.com/protocolbuffers/protobuf/releases/tag/v27.1) (python protobuf==5.27.1).,4886,OUT_OF_DATE,UPLOADED,NOT_STRICT,794,254,536,75,14,0,17,4,935,123,1,186,0,0,MISSING_STUBS_IGNORED,linux,11
-psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1564,UP_TO_DATE,UPLOADED,NOT_STRICT,126,309,195,354,28,0,0,47,590,198,99,89,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,14
+psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1588,UP_TO_DATE,UPLOADED,NOT_STRICT,131,309,201,352,28,0,0,47,599,178,95,90,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,14
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,COMPLETE,-,1731,UP_TO_DATE,UPLOADED,NOT_STRICT,337,152,314,75,29,5,14,21,517,60,3,331,2,0,ERROR_ON_MISSING_STUB,linux,2
 pyOpenSSL,types-pyOpenSSL,https://github.com/pyca/pyopenssl,PARTIAL,-,363,OBSOLETE,UPLOADED,STRICT,148,0,179,0,1,1,2,2,125,1,0,22,0,0,MISSING_STUBS_IGNORED,linux,1
 pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,17,UP_TO_DATE,UPLOADED,STRICT,15,0,9,0,0,0,1,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
