@@ -1,7 +1,7 @@
 package_name,stub_distribution_name,upstream_url,completeness_level,extra_description,number_of_lines,package_status,upload_status,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables,classdefs,classdefs_with_Any,classdefs_with_Incomplete,stubtest_strictness,stubtest_platforms,stubtest_allowlist_length
 Deprecated,types-Deprecated,https://github.com/tantale/deprecated,COMPLETE,-,55,UP_TO_DATE,UPLOADED,STRICT,30,0,10,0,0,0,1,0,12,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 ExifRead,types-ExifRead,https://github.com/ianare/exif-py,COMPLETE,-,218,UP_TO_DATE,UPLOADED,STRICT,72,0,52,0,0,0,2,1,82,2,2,14,0,0,ERROR_ON_MISSING_STUB,linux,1
-Flask-Cors,types-Flask-Cors,https://github.com/corydolphin/flask-cors,PARTIAL,-,128,OUT_OF_DATE,UPLOADED,STRICT,63,0,24,0,0,0,7,2,32,1,0,2,0,0,MISSING_STUBS_IGNORED,linux,0
+Flask-Cors,types-Flask-Cors,https://github.com/corydolphin/flask-cors,PARTIAL,-,128,UP_TO_DATE,UPLOADED,STRICT,63,0,24,0,0,0,7,2,32,1,0,2,0,0,MISSING_STUBS_IGNORED,linux,0
 Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrate,COMPLETE,-,130,UP_TO_DATE,UPLOADED,STRICT,86,0,24,0,0,0,0,0,7,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,1
 Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,COMPLETE,-,233,UP_TO_DATE,UPLOADED,NOT_STRICT,138,36,37,15,17,1,2,0,3,1,0,8,0,0,ERROR_ON_MISSING_STUB,linux,4
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,COMPLETE,-,311,UP_TO_DATE,UPLOADED,STRICT,107,0,152,0,0,0,0,2,46,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -107,7 +107,7 @@ pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1502,UP_TO_DATE,
 pyaudio,types-pyaudio,-,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,COMPLETE,-,183,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,70,0,1,12,0,0,ERROR_ON_MISSING_STUB,linux,0
 pycurl,types-pycurl,https://github.com/pycurl/pycurl,COMPLETE,-,706,UP_TO_DATE,UPLOADED,NOT_STRICT,15,7,26,6,0,4,0,0,659,0,0,4,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,0
-pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,COMPLETE,-,9,OUT_OF_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
+pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,COMPLETE,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,PARTIAL,-,434,UP_TO_DATE,UPLOADED,NOT_STRICT,265,69,206,2,0,0,4,3,75,33,0,74,0,0,MISSING_STUBS_IGNORED,linux,24
 pygit2,types-pygit2,https://github.com/libgit2/pygit2,COMPLETE,-,1935,UP_TO_DATE,UPLOADED,STRICT,678,0,504,0,0,0,3,0,474,0,1,119,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,11
 pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,COMPLETE,-,702,UP_TO_DATE,UPLOADED,STRICT,272,0,148,0,6,0,1,2,196,0,14,26,0,0,ERROR_ON_MISSING_STUB,linux,50
@@ -117,7 +117,7 @@ pyserial,types-pyserial,https://github.com/pyserial/pyserial,COMPLETE,-,1085,UP_
 pysftp,types-pysftp,https://bitbucket.org/dundeemt/pysftp,COMPLETE,-,166,UP_TO_DATE,UPLOADED,STRICT,109,0,70,0,0,0,0,0,6,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
 pytest-lazy-fixture,types-pytest-lazy-fixture,https://github.com/tvorog/pytest-lazy-fixture,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,5,0,5,0,0,0,0,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,8
 python-crontab,types-python-crontab,https://gitlab.com/doctormo/python-crontab,COMPLETE,-,329,UP_TO_DATE,UPLOADED,NOT_STRICT,176,2,147,4,1,0,17,0,72,1,1,18,0,1,ERROR_ON_MISSING_STUB,linux,2
-python-datemath,types-python-datemath,https://github.com/nickmaccarthy/python-datemath,PARTIAL,-,16,OUT_OF_DATE,UPLOADED,STRICT,16,0,4,0,0,1,0,0,0,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
+python-datemath,types-python-datemath,https://github.com/nickmaccarthy/python-datemath,PARTIAL,-,16,UP_TO_DATE,UPLOADED,STRICT,16,0,4,0,0,1,0,0,0,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 python-dateutil,types-python-dateutil,https://github.com/dateutil/dateutil,PARTIAL,-,439,UP_TO_DATE,UPLOADED,NOT_STRICT,172,65,112,42,5,0,0,0,89,0,4,29,0,0,MISSING_STUBS_IGNORED,linux,11
 python-gflags,types-python-gflags,https://github.com/google/python-gflags,COMPLETE,-,251,UP_TO_DATE,UPLOADED,STRICT,186,0,98,0,0,0,39,9,19,2,0,27,0,0,ERROR_ON_MISSING_STUB,linux,1
 python-jose,types-python-jose,https://github.com/mpdavis/python-jose,COMPLETE,-,357,UP_TO_DATE,UPLOADED,NOT_STRICT,86,39,64,26,4,0,14,12,117,30,0,26,0,0,ERROR_ON_MISSING_STUB,linux,6
