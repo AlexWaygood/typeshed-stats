@@ -340,6 +340,63 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `Jetson.GPIO`
+
+### Upstream repo URL
+
+[https://github.com/NVIDIA/jetson-gpio](https://github.com/NVIDIA/jetson-gpio)
+
+### Stub distribution name
+
+`types-Jetson.GPIO`
+
+### Number of lines
+
+173 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 3 unique allowlist entries for `Jetson.GPIO` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `Jetson.GPIO`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 82
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 42
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 90
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 10
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `Markdown`
 
 ### Upstream repo URL
@@ -7840,9 +7897,9 @@ you don't need `types-setuptools` since `pkg_resources` is now typed.
 
 3,410 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 

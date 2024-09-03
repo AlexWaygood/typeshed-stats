@@ -204,6 +204,40 @@
     }
   },
   {
+    "package_name": "Jetson.GPIO",
+    "stub_distribution_name": "types-Jetson.GPIO",
+    "upstream_url": "https://github.com/NVIDIA/jetson-gpio",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 173,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 3
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 82,
+      "unannotated_parameters": 0,
+      "annotated_returns": 42,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 2,
+      "annotated_variables": 90,
+      "explicit_Any_variables": 1,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 10,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "Markdown",
     "stub_distribution_name": "types-Markdown",
     "upstream_url": "https://github.com/Python-Markdown/markdown",
@@ -4682,7 +4716,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": "If using `setuptools >= 71.1` *only* for `pkg_resources`,\nyou don't need `types-setuptools` since `pkg_resources` is now typed.",
     "number_of_lines": 3410,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
