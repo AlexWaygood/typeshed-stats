@@ -35,13 +35,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-      - uses: hynek/setup-cached-uv@v2
-      - run: uv pip install -e ".[typecheck]" --system
-      - run: uv pip freeze
-      - run: mypy
+      - run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - run: uv run --python=3.11 --extra=typecheck mypy
 
   pyright:
     name: Run pyright on the codebase
