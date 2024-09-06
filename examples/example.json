@@ -4715,8 +4715,8 @@
     "upstream_url": "https://github.com/pypa/setuptools",
     "completeness_level": "COMPLETE",
     "extra_description": "If using `setuptools >= 71.1` *only* for `pkg_resources`,\nyou don't need `types-setuptools` since `pkg_resources` is now typed.",
-    "number_of_lines": 3410,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 3565,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4724,22 +4724,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 107
+      "allowlist_length": 106
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 1244,
+      "annotated_parameters": 1263,
       "unannotated_parameters": 442,
-      "annotated_returns": 984,
+      "annotated_returns": 1046,
       "unannotated_returns": 192,
       "explicit_Incomplete_parameters": 44,
       "explicit_Incomplete_returns": 13,
       "explicit_Any_parameters": 3,
       "explicit_Any_returns": 5,
-      "annotated_variables": 665,
+      "annotated_variables": 692,
       "explicit_Any_variables": 4,
       "explicit_Incomplete_variables": 241,
-      "classdefs": 183,
+      "classdefs": 189,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
