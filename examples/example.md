@@ -2687,7 +2687,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,559 (excluding blank lines)
+1,564 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2712,21 +2712,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 793
+    - Annotated parameters: 792
     - Unannotated parameters: 67
     - Explicit `Any` parameters: 39
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 55
 - Returns:
-    - Annotated returns: 459
+    - Annotated returns: 458
     - Unannotated returns: 17
     - Explicit `Any` returns: 19
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 33
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 32
 - Variables:
     - Annotated variables: 266
     - Explicit `Any` variables: 20
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 5
 - Class definitions:
-    - Total class definitions: 228
+    - Total class definitions: 229
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -4898,6 +4898,63 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Class definitions:
     - Total class definitions: 109
     - Class definitions with `Any`: 2
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
+## Info on typeshed's stubs for `objgraph`
+
+### Upstream repo URL
+
+[https://github.com/mgedmin/objgraph](https://github.com/mgedmin/objgraph)
+
+### Stub distribution name
+
+`types-objgraph`
+
+### Number of lines
+
+87 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `objgraph` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `objgraph`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 71
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 17
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 6
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
+    - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
@@ -7637,7 +7694,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
     - Annotated variables: 126
-    - Explicit `Any` variables: 17
+    - Explicit `Any` variables: 16
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 21
 - Class definitions:
     - Total class definitions: 53
@@ -7895,7 +7952,7 @@ you don't need `types-setuptools` since `pkg_resources` is now typed.
 
 ### Number of lines
 
-3,565 (excluding blank lines)
+3,587 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7930,7 +7987,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 13
 - Variables:
-    - Annotated variables: 692
+    - Annotated variables: 713
     - Explicit `Any` variables: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 241
 - Class definitions:
@@ -8233,7 +8290,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-58,210 (excluding blank lines)
+58,233 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8268,7 +8325,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 848
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 8,352
+    - Annotated variables: 8,374
     - Explicit `Any` variables: 483
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 151
 - Class definitions:

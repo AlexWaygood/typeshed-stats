@@ -1607,7 +1607,7 @@
     "upstream_url": "https://sourceforge.net/p/docutils/code",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1559,
+    "number_of_lines": 1564,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1619,18 +1619,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 793,
+      "annotated_parameters": 792,
       "unannotated_parameters": 67,
-      "annotated_returns": 459,
+      "annotated_returns": 458,
       "unannotated_returns": 17,
       "explicit_Incomplete_parameters": 55,
-      "explicit_Incomplete_returns": 33,
+      "explicit_Incomplete_returns": 32,
       "explicit_Any_parameters": 39,
       "explicit_Any_returns": 19,
       "annotated_variables": 266,
       "explicit_Any_variables": 20,
       "explicit_Incomplete_variables": 5,
-      "classdefs": 228,
+      "classdefs": 229,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
@@ -2926,6 +2926,40 @@
       "explicit_Incomplete_variables": 2,
       "classdefs": 109,
       "classdefs_with_Any": 2,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "objgraph",
+    "stub_distribution_name": "types-objgraph",
+    "upstream_url": "https://github.com/mgedmin/objgraph",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 87,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 71,
+      "unannotated_parameters": 0,
+      "annotated_returns": 17,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 6,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
   },
@@ -4566,7 +4600,7 @@
       "explicit_Any_parameters": 8,
       "explicit_Any_returns": 1,
       "annotated_variables": 126,
-      "explicit_Any_variables": 17,
+      "explicit_Any_variables": 16,
       "explicit_Incomplete_variables": 21,
       "classdefs": 53,
       "classdefs_with_Any": 0,
@@ -4715,7 +4749,7 @@
     "upstream_url": "https://github.com/pypa/setuptools",
     "completeness_level": "COMPLETE",
     "extra_description": "If using `setuptools >= 71.1` *only* for `pkg_resources`,\nyou don't need `types-setuptools` since `pkg_resources` is now typed.",
-    "number_of_lines": 3565,
+    "number_of_lines": 3587,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4736,7 +4770,7 @@
       "explicit_Incomplete_returns": 13,
       "explicit_Any_parameters": 3,
       "explicit_Any_returns": 5,
-      "annotated_variables": 692,
+      "annotated_variables": 713,
       "explicit_Any_variables": 4,
       "explicit_Incomplete_variables": 241,
       "classdefs": 189,
@@ -4920,7 +4954,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 58210,
+    "number_of_lines": 58233,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4942,7 +4976,7 @@
       "explicit_Incomplete_returns": 11,
       "explicit_Any_parameters": 1983,
       "explicit_Any_returns": 848,
-      "annotated_variables": 8352,
+      "annotated_variables": 8374,
       "explicit_Any_variables": 483,
       "explicit_Incomplete_variables": 151,
       "classdefs": 2452,
