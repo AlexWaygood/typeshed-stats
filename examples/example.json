@@ -2779,8 +2779,8 @@
     "annotation_stats": {
       "annotated_parameters": 35,
       "unannotated_parameters": 124,
-      "annotated_returns": 37,
-      "unannotated_returns": 79,
+      "annotated_returns": 38,
+      "unannotated_returns": 78,
       "explicit_Incomplete_parameters": 3,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
