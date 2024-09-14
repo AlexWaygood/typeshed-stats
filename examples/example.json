@@ -2426,7 +2426,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": "Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you need to install `types-influxdb-client` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-influxdb-client<1.37.0.1`.",
     "number_of_lines": 13494,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4988,7 +4988,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 58263,
+    "number_of_lines": 58291,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4998,19 +4998,19 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1066
+      "allowlist_length": 1043
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 27272,
+      "annotated_parameters": 27293,
       "unannotated_parameters": 819,
-      "annotated_returns": 14880,
+      "annotated_returns": 14890,
       "unannotated_returns": 367,
       "explicit_Incomplete_parameters": 75,
       "explicit_Incomplete_returns": 11,
-      "explicit_Any_parameters": 1981,
+      "explicit_Any_parameters": 1983,
       "explicit_Any_returns": 848,
-      "annotated_variables": 8383,
+      "annotated_variables": 8395,
       "explicit_Any_variables": 483,
       "explicit_Incomplete_variables": 151,
       "classdefs": 2454,
