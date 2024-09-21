@@ -1606,9 +1606,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 2,937 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7597,7 +7597,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-524 (excluding blank lines)
+650 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7613,30 +7613,30 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 8 unique allowlist entries for `qrcode` when running stubtest in CI.
+Typeshed currently has 11 unique allowlist entries for `qrcode` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `qrcode`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 109
-    - Unannotated parameters: 174
-    - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
+    - Annotated parameters: 280
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 21
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 109
-    - Unannotated returns: 60
-    - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
+    - Annotated returns: 151
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 166
+    - Annotated variables: 151
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 91
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 40
+    - Total class definitions: 42
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
