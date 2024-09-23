@@ -51,20 +51,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Python ${{ matrix.python-version }} on ${{ matrix.os }}
-        uses: actions/setup-python@v5
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v1
         with:
-          python-version: ${{ matrix.python-version }}
-          allow-prereleases: true
-      - uses: hynek/setup-cached-uv@v2
-      - name: Install dependencies
-        run: uv pip install -e ".[pytest]" --system
-      - run: uv pip freeze
+          version: "latest"
       - name: Run tests under coverage
         shell: bash
         run: |
-          coverage run -m pytest --doctest-modules
-          coverage report --no-skip-covered
+          uv python pin ${{ matrix.python-version }}
+          uv run --extra=dev coverage run -m pytest --doctest-modules
+          uv run --extra=dev coverage report --no-skip-covered
 
   create-issue-on-failure:
     name: Create an issue if daily test failed
