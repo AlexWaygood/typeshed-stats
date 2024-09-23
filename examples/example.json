@@ -2154,7 +2154,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 81,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -2188,7 +2188,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 139,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3479,9 +3479,9 @@
     "stub_distribution_name": "types-protobuf",
     "upstream_url": "https://github.com/protocolbuffers/protobuf",
     "completeness_level": "PARTIAL",
-    "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on [protobuf v27.1](https://github.com/protocolbuffers/protobuf/releases/tag/v27.1) (python `protobuf==5.27.1`).",
+    "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on [protobuf v28.2](https://github.com/protocolbuffers/protobuf/releases/tag/v28.2) (python `protobuf==5.28.2`).",
     "number_of_lines": 4886,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -3492,9 +3492,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 794,
+      "annotated_parameters": 793,
       "unannotated_parameters": 254,
-      "annotated_returns": 536,
+      "annotated_returns": 535,
       "unannotated_returns": 75,
       "explicit_Incomplete_parameters": 14,
       "explicit_Incomplete_returns": 0,
@@ -5750,7 +5750,7 @@
       ],
       "allowlist_length": 1
     },
-    "pyright_setting": "NOT_STRICT",
+    "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 1,
       "unannotated_parameters": 0,
