@@ -25,9 +25,11 @@ jobs:
           git config --global user.email ''
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-      - run: curl -LsSf https://astral.sh/uv/install.sh | sh
-      - run: uv pip install -e .[docs] --system
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v1
+        with:
+          version: "latest"
+      - run: uv pip install -e .[dev] --system
       - run: uv pip freeze
       - name: Regenerate examples and docs
         id: regen

@@ -51,9 +51,7 @@ typeshed-stats = "typeshed_stats._cli:main"
 
 [project.optional-dependencies]
 rich = ["rich", "rich-argparse>=1"]
-# Include the [rich] extra in the [docs] extra
-# so the CLI docs generated from --help are consistent
-docs = [
+dev = [
     "typeshed-stats[rich]",
     "MarkDown==3.7",
     "mkdocs==1.6.0",
@@ -61,9 +59,6 @@ docs = [
     "mkdocs-material==9.5.31",
     "mkdocstrings==0.25.2",
     "mkdocstrings-python==1.10.8",
-]
-pytest = [
-    "typeshed-stats[rich]",
     "beautifulsoup4>=4,<5",
     "covdefaults==2.3.0",
     "coverage==7.6.1",
@@ -74,22 +69,10 @@ pytest = [
     "pytest-dependency==0.6.0",
     "pytest-mock==3.14.0",
     "pytest-subtests==0.13.1",
-]
-typecheck = [
-    "typeshed-stats[rich,docs,pytest]",
     "mypy==1.11.1",
     "types-beautifulsoup4==4.12.0.20240511",
     "types-Markdown==3.6.0.20240316",
 ]
-# All of these must match .pre-commit-config.yaml
-#
-# Note that not all of the dependencies in the pre-commit config file are listed here.
-# That's deliberate (it's not necessary to run them all locally).
-# This file just lists the ones which it's convenient to have around locally.
-misc-lint = [
-    "ruff==0.6.1",
-]
-dev = ["typeshed-stats[rich,docs,typecheck,pytest,misc-lint]"]
 
 [tool.hatch.version]
 source = "vcs"
