@@ -8493,7 +8493,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Returns:
     - Annotated returns: 14,908
     - Unannotated returns: 367
-    - Explicit `Any` returns: 848
+    - Explicit `Any` returns: 849
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
     - Annotated variables: 8,395
