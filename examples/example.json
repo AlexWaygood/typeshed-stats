@@ -3139,7 +3139,7 @@
     "upstream_url": "https://github.com/paramiko/paramiko",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1844,
+    "number_of_lines": 1845,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
