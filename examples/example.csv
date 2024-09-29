@@ -136,7 +136,7 @@ qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,COMPLETE,-,172,UP_T
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,650,UP_TO_DATE,UPLOADED,STRICT,280,0,151,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,11
 redis,types-redis,https://github.com/redis/redis-py,PARTIAL,-,6185,OBSOLETE,UPLOADED,NOT_STRICT,3945,1223,1379,607,352,5,92,330,618,158,34,215,0,2,MISSING_STUBS_IGNORED,linux,67
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,750,UP_TO_DATE,UPLOADED,STRICT,431,0,114,0,0,0,25,16,4,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,13
-reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,COMPLETE,-,7874,OUT_OF_DATE,UPLOADED,NOT_STRICT,1917,2350,1514,1021,330,3,26,12,2743,6,1210,577,0,2,ERROR_ON_MISSING_STUB,linux,66
+reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,COMPLETE,-,7874,UP_TO_DATE,UPLOADED,NOT_STRICT,1917,2350,1514,1021,330,3,26,12,2743,6,1210,577,0,2,ERROR_ON_MISSING_STUB,linux,66
 requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",1037,UP_TO_DATE,UPLOADED,NOT_STRICT,384,130,135,65,19,4,8,1,126,16,21,53,0,0,ERROR_ON_MISSING_STUB,linux,4
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,268,UP_TO_DATE,UPLOADED,NOT_STRICT,115,20,45,4,50,3,1,0,25,1,7,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
