@@ -12,7 +12,7 @@ repos:
       - id: name-tests-test
         args: [--pytest-test-first]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.6.1 # must match pyproject.toml
+    rev: v0.6.8 # must match pyproject.toml
     hooks:
       - id: ruff
       - id: ruff-format
@@ -31,7 +31,7 @@ repos:
     hooks:
       - id: clevercsv-standardize
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.41.0
+    rev: v0.42.0
     hooks:
       - id: markdownlint-fix
         args: ["--ignore", "stats_website/.snippets"]
