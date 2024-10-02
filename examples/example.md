@@ -7713,9 +7713,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 650 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7884,9 +7884,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 7,874 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -8575,7 +8575,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-58,484 (excluding blank lines)
+58,497 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8602,16 +8602,16 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 27,386
     - Unannotated parameters: 819
-    - Explicit `Any` parameters: 1,983
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 75
+    - Explicit `Any` parameters: 1,987
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 76
 - Returns:
     - Annotated returns: 14,920
     - Unannotated returns: 367
-    - Explicit `Any` returns: 849
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
+    - Explicit `Any` returns: 853
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
 - Variables:
     - Annotated variables: 8,395
-    - Explicit `Any` variables: 483
+    - Explicit `Any` variables: 485
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 151
 - Class definitions:
     - Total class definitions: 2,454
