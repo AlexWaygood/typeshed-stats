@@ -7508,7 +7508,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `pytz`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 69
+    - Annotated parameters: 71
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
@@ -7713,9 +7713,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 650 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7884,9 +7884,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 7,874 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8193,9 +8193,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 5 unique allowlist entries for `seaborn` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *entirely excluded*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are excluded from the pyright check in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `seaborn`
 
@@ -8312,9 +8312,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 3 unique allowlist entries for `shapely` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *entirely excluded*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are excluded from the pyright check in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `shapely`
 
@@ -8575,7 +8575,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-58,497 (excluding blank lines)
+58,764 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8591,7 +8591,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,031 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,033 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8600,21 +8600,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 27,386
+    - Annotated parameters: 27,406
     - Unannotated parameters: 819
-    - Explicit `Any` parameters: 1,987
+    - Explicit `Any` parameters: 1,986
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 76
 - Returns:
-    - Annotated returns: 14,920
+    - Annotated returns: 14,943
     - Unannotated returns: 367
-    - Explicit `Any` returns: 853
+    - Explicit `Any` returns: 854
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
 - Variables:
-    - Annotated variables: 8,395
+    - Annotated variables: 8,519
     - Explicit `Any` variables: 485
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 151
 - Class definitions:
-    - Total class definitions: 2,454
+    - Total class definitions: 2,458
     - Class definitions with `Any`: 27
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9438,7 +9438,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-522 (excluding blank lines)
+535 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9454,7 +9454,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 11 unique allowlist entries for `vobject` when running stubtest in CI.
+Typeshed currently has 9 unique allowlist entries for `vobject` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -9463,12 +9463,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `vobject`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 101
-    - Unannotated parameters: 179
-    - Explicit `Any` parameters: 0
+    - Annotated parameters: 107
+    - Unannotated parameters: 183
+    - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
-    - Annotated returns: 73
+    - Annotated returns: 75
     - Unannotated returns: 103
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0

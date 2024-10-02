@@ -4489,7 +4489,7 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 69,
+      "annotated_parameters": 71,
       "unannotated_parameters": 0,
       "annotated_returns": 51,
       "unannotated_returns": 0,
@@ -4614,7 +4614,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 650,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4716,7 +4716,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 7874,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4895,7 +4895,7 @@
       ],
       "allowlist_length": 5
     },
-    "pyright_setting": "NOT_STRICT",
+    "pyright_setting": "ENTIRELY_EXCLUDED",
     "annotation_stats": {
       "annotated_parameters": 1445,
       "unannotated_parameters": 25,
@@ -4964,7 +4964,7 @@
       ],
       "allowlist_length": 3
     },
-    "pyright_setting": "NOT_STRICT",
+    "pyright_setting": "ENTIRELY_EXCLUDED",
     "annotation_stats": {
       "annotated_parameters": 1424,
       "unannotated_parameters": 390,
@@ -5124,7 +5124,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 58497,
+    "number_of_lines": 58764,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5134,22 +5134,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1031
+      "allowlist_length": 1033
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 27386,
+      "annotated_parameters": 27406,
       "unannotated_parameters": 819,
-      "annotated_returns": 14920,
+      "annotated_returns": 14943,
       "unannotated_returns": 367,
       "explicit_Incomplete_parameters": 76,
       "explicit_Incomplete_returns": 12,
-      "explicit_Any_parameters": 1987,
-      "explicit_Any_returns": 853,
-      "annotated_variables": 8395,
+      "explicit_Any_parameters": 1986,
+      "explicit_Any_returns": 854,
+      "annotated_variables": 8519,
       "explicit_Any_variables": 485,
       "explicit_Incomplete_variables": 151,
-      "classdefs": 2454,
+      "classdefs": 2458,
       "classdefs_with_Any": 27,
       "classdefs_with_Incomplete": 0
     }
@@ -5637,7 +5637,7 @@
     "upstream_url": "https://github.com/eventable/vobject",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 522,
+    "number_of_lines": 535,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5645,17 +5645,17 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 11
+      "allowlist_length": 9
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 101,
-      "unannotated_parameters": 179,
-      "annotated_returns": 73,
+      "annotated_parameters": 107,
+      "unannotated_parameters": 183,
+      "annotated_returns": 75,
       "unannotated_returns": 103,
       "explicit_Incomplete_parameters": 21,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
+      "explicit_Any_parameters": 4,
       "explicit_Any_returns": 3,
       "annotated_variables": 185,
       "explicit_Any_variables": 90,
