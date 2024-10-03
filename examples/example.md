@@ -454,63 +454,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
-## Info on typeshed's stubs for `Pillow`
-
-### Upstream repo URL
-
-[https://github.com/python-pillow/Pillow](https://github.com/python-pillow/Pillow)
-
-### Stub distribution name
-
-`types-Pillow`
-
-### Number of lines
-
-3,266 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` and `win32`.
-
-Typeshed currently has 18 unique allowlist entries for `Pillow` when running stubtest in CI.
-
-### Pyright settings in CI: *not strict*
-
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
-
-### Statistics on the annotations in typeshed's stubs for `Pillow`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 777
-    - Unannotated parameters: 584
-    - Explicit `Any` parameters: 7
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 55
-- Returns:
-    - Annotated returns: 588
-    - Unannotated returns: 319
-    - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
-- Variables:
-    - Annotated variables: 766
-    - Explicit `Any` variables: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 305
-- Class definitions:
-    - Total class definitions: 226
-    - Class definitions with `Any`: 3
-    - Class definitions marked as at least partially `Incomplete`: 1
-
----
-
 ## Info on typeshed's stubs for `PyAutoGUI`
 
 ### Upstream repo URL
@@ -2687,7 +2630,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,564 (excluding blank lines)
+1,591 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2703,7 +2646,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 18 unique allowlist entries for `docutils` when running stubtest in CI.
+Typeshed currently has 19 unique allowlist entries for `docutils` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2712,21 +2655,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 792
+    - Annotated parameters: 793
     - Unannotated parameters: 67
     - Explicit `Any` parameters: 39
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 55
 - Returns:
-    - Annotated returns: 458
+    - Annotated returns: 461
     - Unannotated returns: 17
     - Explicit `Any` returns: 19
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 32
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 30
 - Variables:
-    - Annotated variables: 266
-    - Explicit `Any` variables: 20
+    - Annotated variables: 272
+    - Explicit `Any` variables: 21
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 5
 - Class definitions:
-    - Total class definitions: 229
+    - Total class definitions: 242
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7768,7 +7711,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-6,185 (excluding blank lines)
+6,203 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -7793,10 +7736,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `redis`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,945
+    - Annotated parameters: 3,963
     - Unannotated parameters: 1,223
     - Explicit `Any` parameters: 92
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 352
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 362
 - Returns:
     - Annotated returns: 1,379
     - Unannotated returns: 607
@@ -8575,7 +8518,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-58,828 (excluding blank lines)
+58,945 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8591,7 +8534,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,034 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,033 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8600,12 +8543,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 27,428
+    - Annotated parameters: 27,516
     - Unannotated parameters: 819
     - Explicit `Any` parameters: 1,991
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 76
 - Returns:
-    - Annotated returns: 14,946
+    - Annotated returns: 14,953
     - Unannotated returns: 367
     - Explicit `Any` returns: 854
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
@@ -8614,7 +8557,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 486
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 151
 - Class definitions:
-    - Total class definitions: 2,459
+    - Total class definitions: 2,460
     - Class definitions with `Any`: 27
     - Class definitions marked as at least partially `Incomplete`: 0
 
