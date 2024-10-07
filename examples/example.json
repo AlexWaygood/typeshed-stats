@@ -5103,9 +5103,9 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 27519,
+      "annotated_parameters": 27514,
       "unannotated_parameters": 819,
-      "annotated_returns": 14955,
+      "annotated_returns": 14951,
       "unannotated_returns": 367,
       "explicit_Incomplete_parameters": 76,
       "explicit_Incomplete_returns": 12,
@@ -5114,7 +5114,7 @@
       "annotated_variables": 8523,
       "explicit_Any_variables": 486,
       "explicit_Incomplete_variables": 151,
-      "classdefs": 2453,
+      "classdefs": 2454,
       "classdefs_with_Any": 28,
       "classdefs_with_Incomplete": 0
     }
