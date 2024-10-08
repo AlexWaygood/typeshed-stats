@@ -2934,32 +2934,32 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 4817,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 4910,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 17
+      "allowlist_length": 26
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1965,
-      "unannotated_parameters": 1508,
-      "annotated_returns": 524,
-      "unannotated_returns": 807,
-      "explicit_Incomplete_parameters": 763,
-      "explicit_Incomplete_returns": 108,
+      "annotated_parameters": 1999,
+      "unannotated_parameters": 1515,
+      "annotated_returns": 547,
+      "unannotated_returns": 809,
+      "explicit_Incomplete_parameters": 768,
+      "explicit_Incomplete_returns": 112,
       "explicit_Any_parameters": 4,
       "explicit_Any_returns": 3,
-      "annotated_variables": 307,
+      "annotated_variables": 312,
       "explicit_Any_variables": 3,
       "explicit_Incomplete_variables": 246,
-      "classdefs": 126,
+      "classdefs": 129,
       "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 2
+      "classdefs_with_Incomplete": 3
     }
   },
   {
@@ -4476,30 +4476,30 @@
     "upstream_url": "https://github.com/mhammond/pywin32",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 34801,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 34415,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "win32"
       ],
-      "allowlist_length": 46
+      "allowlist_length": 47
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3800,
-      "unannotated_parameters": 3558,
-      "annotated_returns": 3865,
-      "unannotated_returns": 1987,
-      "explicit_Incomplete_parameters": 419,
-      "explicit_Incomplete_returns": 288,
+      "annotated_parameters": 3818,
+      "unannotated_parameters": 3623,
+      "annotated_returns": 3929,
+      "unannotated_returns": 2009,
+      "explicit_Incomplete_parameters": 423,
+      "explicit_Incomplete_returns": 285,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 25095,
+      "annotated_variables": 24682,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 2824,
-      "classdefs": 724,
+      "explicit_Incomplete_variables": 2854,
+      "classdefs": 734,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -5089,7 +5089,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 59576,
+    "number_of_lines": 59578,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5099,13 +5099,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1035
+      "allowlist_length": 1036
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
       "annotated_parameters": 27514,
       "unannotated_parameters": 819,
-      "annotated_returns": 14951,
+      "annotated_returns": 14952,
       "unannotated_returns": 367,
       "explicit_Incomplete_parameters": 76,
       "explicit_Incomplete_returns": 12,
