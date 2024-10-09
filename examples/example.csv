@@ -147,9 +147,9 @@ you don't need `types-setuptools` since `pkg_resources` is now typed.",3526,UP_T
 shapely,types-shapely,https://github.com/shapely/shapely,COMPLETE,-,2595,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1424,390,710,0,0,0,14,15,151,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,3
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,277,UP_TO_DATE,UPLOADED,STRICT,180,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,11
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-six,types-six,https://github.com/benjaminp/six,COMPLETE,-,335,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,25
+six,types-six,https://github.com/benjaminp/six,COMPLETE,-,335,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,26
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,59578,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,27514,819,14952,367,76,12,1991,854,8523,486,151,2454,28,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1036
+stdlib,-,https://github.com/python/cpython,STDLIB,-,59616,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,27517,819,14955,367,76,12,1991,854,8523,486,151,2458,28,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1050
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on `tensorflow==2.17.0`.,25919,UP_TO_DATE,UPLOADED,NOT_STRICT,5365,8,3048,4,24,58,60,34,5427,5,9,945,1,0,MISSING_STUBS_IGNORED,linux,51
@@ -171,6 +171,6 @@ whatthepatch,types-whatthepatch,https://github.com/cscorley/whatthepatch,COMPLET
 workalendar,types-workalendar,https://github.com/workalendar/workalendar,COMPLETE,-,2918,UP_TO_DATE,UPLOADED,NOT_STRICT,44,399,22,355,23,4,0,0,1367,0,249,374,0,0,ERROR_ON_MISSING_STUB,linux,5
 wurlitzer,types-wurlitzer,https://github.com/minrk/wurlitzer,COMPLETE,-,130,UP_TO_DATE,UPLOADED,NOT_STRICT,95,0,32,1,0,0,0,0,7,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 xdgenvpy,types-xdgenvpy,https://gitlab.com/deliberist-group/xdgenvpy,COMPLETE,-,40,UP_TO_DATE,UPLOADED,STRICT,1,0,23,0,0,0,0,0,0,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,1
-xmltodict,types-xmltodict,https://github.com/martinblech/xmltodict,COMPLETE,-,35,OUT_OF_DATE,UPLOADED,STRICT,20,0,3,0,0,0,7,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
+xmltodict,types-xmltodict,https://github.com/martinblech/xmltodict,COMPLETE,-,35,UP_TO_DATE,UPLOADED,STRICT,20,0,3,0,0,0,7,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 zstd,types-zstd,https://github.com/sergey-dryabzhinsky/python-zstd,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,13,0,13,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 zxcvbn,types-zxcvbn,https://github.com/dwolfhub/zxcvbn-python,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT,63,0,39,0,0,0,0,0,76,1,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
