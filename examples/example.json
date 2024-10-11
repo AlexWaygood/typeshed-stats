@@ -1980,30 +1980,30 @@
     "upstream_url": "https://github.com/PyFPDF/fpdf2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3001,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 3255,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 6
+      "allowlist_length": 5
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 977,
-      "unannotated_parameters": 591,
-      "annotated_returns": 566,
-      "unannotated_returns": 206,
-      "explicit_Incomplete_parameters": 84,
-      "explicit_Incomplete_returns": 7,
-      "explicit_Any_parameters": 7,
+      "annotated_parameters": 1003,
+      "unannotated_parameters": 618,
+      "annotated_returns": 581,
+      "unannotated_returns": 201,
+      "explicit_Incomplete_parameters": 81,
+      "explicit_Incomplete_returns": 8,
+      "explicit_Any_parameters": 9,
       "explicit_Any_returns": 4,
-      "annotated_variables": 681,
+      "annotated_variables": 692,
       "explicit_Any_variables": 14,
-      "explicit_Incomplete_variables": 165,
-      "classdefs": 204,
+      "explicit_Incomplete_variables": 164,
+      "classdefs": 206,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 1
     }
@@ -2935,7 +2935,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 4910,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -5099,7 +5099,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1051
+      "allowlist_length": 1052
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
