@@ -5514,8 +5514,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 216
 - Returns:
-    - Annotated returns: 354
-    - Unannotated returns: 431
+    - Annotated returns: 358
+    - Unannotated returns: 427
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
@@ -8180,7 +8180,7 @@ you don't need `types-setuptools` since `pkg_resources` is now typed.
 
 ### Number of lines
 
-3,526 (excluding blank lines)
+3,535 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8215,11 +8215,11 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 13
 - Variables:
-    - Annotated variables: 688
+    - Annotated variables: 693
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 236
 - Class definitions:
-    - Total class definitions: 183
+    - Total class definitions: 184
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -8518,7 +8518,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-59,703 (excluding blank lines)
+59,702 (excluding blank lines)
 
 ### Package status: *stdlib*
 
