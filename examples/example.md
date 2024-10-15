@@ -3375,7 +3375,7 @@ Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Pyth
 
 ### Number of lines
 
-824 (excluding blank lines)
+1,007 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -3391,30 +3391,30 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 50 unique allowlist entries for `gdb` when running stubtest in CI.
+Typeshed currently has 47 unique allowlist entries for `gdb` when running stubtest in CI.
 
-### Pyright settings in CI: *strict*
+### Pyright settings in CI: *not strict*
 
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `gdb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 238
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Annotated parameters: 282
+    - Unannotated parameters: 25
+    - Explicit `Any` parameters: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 263
-    - Unannotated returns: 0
+    - Annotated returns: 328
+    - Unannotated returns: 18
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
 - Variables:
-    - Annotated variables: 318
+    - Annotated variables: 372
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 17
 - Class definitions:
-    - Total class definitions: 82
+    - Total class definitions: 106
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -3941,7 +3941,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-658 (excluding blank lines)
+706 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3957,7 +3957,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 13 unique allowlist entries for `icalendar` when running stubtest in CI.
+Typeshed currently has 7 unique allowlist entries for `icalendar` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3966,12 +3966,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `icalendar`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 164
+    - Annotated parameters: 178
     - Unannotated parameters: 77
-    - Explicit `Any` parameters: 5
+    - Explicit `Any` parameters: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 4
 - Returns:
-    - Annotated returns: 169
+    - Annotated returns: 188
     - Unannotated returns: 42
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -3980,7 +3980,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 20
 - Class definitions:
-    - Total class definitions: 45
+    - Total class definitions: 47
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 3
 
@@ -8518,7 +8518,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-59,719 (excluding blank lines)
+59,718 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8558,7 +8558,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 151
 - Class definitions:
     - Total class definitions: 2,458
-    - Class definitions with `Any`: 28
+    - Class definitions with `Any`: 27
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---

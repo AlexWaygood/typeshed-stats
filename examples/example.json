@@ -2014,7 +2014,7 @@
     "upstream_url": "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree",
     "completeness_level": "COMPLETE",
     "extra_description": "Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",
-    "number_of_lines": 824,
+    "number_of_lines": 1007,
     "package_status": "NOT_ON_PYPI",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2022,22 +2022,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 50
+      "allowlist_length": 47
     },
-    "pyright_setting": "STRICT",
+    "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 238,
-      "unannotated_parameters": 0,
-      "annotated_returns": 263,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 1,
+      "annotated_parameters": 282,
+      "unannotated_parameters": 25,
+      "annotated_returns": 328,
+      "unannotated_returns": 18,
+      "explicit_Incomplete_parameters": 2,
+      "explicit_Incomplete_returns": 22,
+      "explicit_Any_parameters": 3,
       "explicit_Any_returns": 1,
-      "annotated_variables": 318,
+      "annotated_variables": 372,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 82,
+      "explicit_Incomplete_variables": 17,
+      "classdefs": 106,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -2356,7 +2356,7 @@
     "upstream_url": "https://github.com/collective/icalendar",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 658,
+    "number_of_lines": 706,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2364,22 +2364,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 13
+      "allowlist_length": 7
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 164,
+      "annotated_parameters": 178,
       "unannotated_parameters": 77,
-      "annotated_returns": 169,
+      "annotated_returns": 188,
       "unannotated_returns": 42,
       "explicit_Incomplete_parameters": 4,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 5,
+      "explicit_Any_parameters": 6,
       "explicit_Any_returns": 3,
       "annotated_variables": 92,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 20,
-      "classdefs": 45,
+      "classdefs": 47,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 3
     }
@@ -5089,7 +5089,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 59719,
+    "number_of_lines": 59718,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5115,7 +5115,7 @@
       "explicit_Any_variables": 486,
       "explicit_Incomplete_variables": 151,
       "classdefs": 2458,
-      "classdefs_with_Any": 28,
+      "classdefs_with_Any": 27,
       "classdefs_with_Incomplete": 0
     }
   },
