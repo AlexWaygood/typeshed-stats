@@ -4899,8 +4899,8 @@
     "annotation_stats": {
       "annotated_parameters": 1224,
       "unannotated_parameters": 435,
-      "annotated_returns": 1001,
-      "unannotated_returns": 189,
+      "annotated_returns": 1002,
+      "unannotated_returns": 188,
       "explicit_Incomplete_parameters": 43,
       "explicit_Incomplete_returns": 13,
       "explicit_Any_parameters": 3,
@@ -5105,8 +5105,8 @@
     "annotation_stats": {
       "annotated_parameters": 27532,
       "unannotated_parameters": 819,
-      "annotated_returns": 14963,
-      "unannotated_returns": 367,
+      "annotated_returns": 14968,
+      "unannotated_returns": 362,
       "explicit_Incomplete_parameters": 76,
       "explicit_Incomplete_returns": 12,
       "explicit_Any_parameters": 1991,
