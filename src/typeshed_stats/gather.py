@@ -713,7 +713,7 @@ async def get_package_status(
         case _:
             pass
 
-    if metadata["version"].startswith("~"):
+    if isinstance(metadata["version"], str) and metadata["version"].startswith("~"):
         typeshed_pinned_version = SpecifierSet(metadata["version"])
     else:
         typeshed_pinned_version = SpecifierSet(f"=={metadata['version']}")
