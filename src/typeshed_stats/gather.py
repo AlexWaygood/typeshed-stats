@@ -713,7 +713,10 @@ async def get_package_status(
         case _:
             pass
 
-    typeshed_pinned_version = SpecifierSet(f"=={metadata['version']}")
+    if metadata["version"].startswith("~"):
+        typeshed_pinned_version = SpecifierSet(metadata["version"])
+    else:
+        typeshed_pinned_version = SpecifierSet(f"=={metadata['version']}")
     pypi_data = await _get_pypi_data(package_name, session)
     pypi_version = Version(pypi_data["info"]["version"])
     status = "UP_TO_DATE" if pypi_version in typeshed_pinned_version else "OUT_OF_DATE"
