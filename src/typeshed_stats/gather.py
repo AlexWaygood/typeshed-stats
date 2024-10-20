@@ -1374,10 +1374,10 @@ def gather_stats_on_multiple_packages(
         ... )
         >>> with tmpdir_typeshed() as typeshed:
         ...     infos = gather_stats_on_multiple_packages(
-        ...         ["stdlib", "aiofiles", "boto"], typeshed_dir=typeshed
+        ...         ["stdlib", "aiofiles"], typeshed_dir=typeshed
         ...     )
         >>> [info.package_name for info in infos]
-        ['aiofiles', 'boto', 'stdlib']
+        ['aiofiles', 'stdlib']
         >>> all(type(info) is PackageInfo for info in infos)
         True
     """
