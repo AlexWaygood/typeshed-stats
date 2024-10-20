@@ -788,7 +788,7 @@
     "upstream_url": "https://git.launchpad.net/beautifulsoup/tree",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 822,
+    "number_of_lines": 831,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -800,9 +800,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 245,
+      "annotated_parameters": 251,
       "unannotated_parameters": 137,
-      "annotated_returns": 192,
+      "annotated_returns": 195,
       "unannotated_returns": 49,
       "explicit_Incomplete_parameters": 31,
       "explicit_Incomplete_returns": 0,
@@ -882,40 +882,6 @@
       "classdefs": 81,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 3
-    }
-  },
-  {
-    "package_name": "boto",
-    "stub_distribution_name": "types-boto",
-    "upstream_url": "https://github.com/boto/boto",
-    "completeness_level": "PARTIAL",
-    "extra_description": null,
-    "number_of_lines": 1916,
-    "package_status": "UP_TO_DATE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 9
-    },
-    "pyright_setting": "NOT_STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 837,
-      "unannotated_parameters": 685,
-      "annotated_returns": 168,
-      "unannotated_returns": 442,
-      "explicit_Incomplete_parameters": 345,
-      "explicit_Incomplete_returns": 2,
-      "explicit_Any_parameters": 21,
-      "explicit_Any_returns": 31,
-      "annotated_variables": 363,
-      "explicit_Any_variables": 267,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 136,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
     }
   },
   {
@@ -1750,7 +1716,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 2
+      "allowlist_length": 1
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2942,7 +2908,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 26
+      "allowlist_length": 22
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3401,40 +3367,6 @@
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 258,
       "classdefs": 222,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
-    "package_name": "playsound",
-    "stub_distribution_name": "types-playsound",
-    "upstream_url": "https://github.com/TaylorSMarks/playsound",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 5,
-    "package_status": "UP_TO_DATE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 2,
-      "unannotated_parameters": 0,
-      "annotated_returns": 1,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 1,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 1,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -3902,7 +3834,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 11
+      "allowlist_length": 8
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -5099,7 +5031,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1059
+      "allowlist_length": 1055
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
