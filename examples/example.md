@@ -912,7 +912,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Upstream repo URL
 
-[https://github.com/wtforms/wtforms](https://github.com/wtforms/wtforms)
+[https://github.com/pallets-eco/wtforms](https://github.com/pallets-eco/wtforms)
 
 ### Stub distribution name
 
@@ -920,11 +920,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,069 (excluding blank lines)
+1,328 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -955,7 +955,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 139
+    - Annotated variables: 140
     - Explicit `Any` variables: 28
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -8404,7 +8404,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-59,763 (excluding blank lines)
+59,772 (excluding blank lines)
 
 ### Package status: *stdlib*
 
