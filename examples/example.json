@@ -2895,6 +2895,40 @@
     }
   },
   {
+    "package_name": "netifaces",
+    "stub_distribution_name": "types-netifaces",
+    "upstream_url": "https://github.com/al45tair/netifaces",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 69,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 33
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 1,
+      "unannotated_parameters": 0,
+      "annotated_returns": 3,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 65,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "networkx",
     "stub_distribution_name": "types-networkx",
     "upstream_url": "https://github.com/networkx/networkx",
@@ -3480,7 +3514,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1588,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3493,7 +3527,7 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 131,
+      "annotated_parameters": 132,
       "unannotated_parameters": 309,
       "annotated_returns": 201,
       "unannotated_returns": 352,

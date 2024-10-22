@@ -84,6 +84,7 @@ mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1228,UP_TO_DATE,UPLOADED,NOT_STRICT,35,124,38,78,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
 nanoid,types-nanoid,https://github.com/puyuan/py-nanoid,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,698,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,288,4,308,0,1,0,1,1,101,1,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
+netifaces,types-netifaces,https://github.com/al45tair/netifaces,COMPLETE,-,69,UP_TO_DATE,UPLOADED,NOT_STRICT,1,0,3,0,0,0,0,0,65,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,33
 networkx,types-networkx,https://github.com/networkx/networkx,PARTIAL,-,4910,OUT_OF_DATE,UPLOADED,NOT_STRICT,1999,1515,547,809,768,112,4,3,312,3,246,129,1,3,MISSING_STUBS_IGNORED,linux,22
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,PARTIAL,-,1444,UP_TO_DATE,UPLOADED,NOT_STRICT,406,414,161,191,182,0,0,0,329,207,2,109,2,0,MISSING_STUBS_IGNORED,linux,1
 objgraph,types-objgraph,https://github.com/mgedmin/objgraph,COMPLETE,-,87,UP_TO_DATE,UPLOADED,STRICT,71,0,17,0,0,0,0,0,6,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -101,7 +102,7 @@ pika,types-pika-ts,https://github.com/pika/pika,COMPLETE,"The `types-pika` packa
 polib,types-polib,https://github.com/izimobil/polib,COMPLETE,-,145,UP_TO_DATE,UPLOADED,STRICT,61,0,75,0,0,0,18,0,45,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 portpicker,types-portpicker,https://github.com/google/python_portpicker,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,10,0,6,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on [protobuf v28.2](https://github.com/protocolbuffers/protobuf/releases/tag/v28.2) (python `protobuf==5.28.2`).,4886,UP_TO_DATE,UPLOADED,NOT_STRICT,793,254,535,75,14,0,17,4,935,123,1,186,0,0,MISSING_STUBS_IGNORED,linux,11
-psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1588,OUT_OF_DATE,UPLOADED,NOT_STRICT,131,309,201,352,28,0,0,47,599,178,95,90,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,14
+psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1588,UP_TO_DATE,UPLOADED,NOT_STRICT,132,309,201,352,28,0,0,47,599,178,95,90,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,14
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,COMPLETE,-,1734,UP_TO_DATE,UPLOADED,NOT_STRICT,337,152,314,75,29,5,14,21,518,60,3,332,2,0,ERROR_ON_MISSING_STUB,linux,2
 pyOpenSSL,types-pyOpenSSL,https://github.com/pyca/pyopenssl,PARTIAL,-,363,OBSOLETE,UPLOADED,STRICT,148,0,179,0,1,1,2,2,125,1,0,22,0,0,MISSING_STUBS_IGNORED,linux,1
 pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,17,UP_TO_DATE,UPLOADED,STRICT,15,0,9,0,0,0,1,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
