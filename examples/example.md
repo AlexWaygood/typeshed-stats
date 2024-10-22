@@ -8461,7 +8461,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-59,772 (excluding blank lines)
+59,775 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8491,7 +8491,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 1,986
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 81
 - Returns:
-    - Annotated returns: 14,968
+    - Annotated returns: 14,972
     - Unannotated returns: 362
     - Explicit `Any` returns: 831
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12

@@ -148,7 +148,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,335,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,26
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,59772,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,27532,819,14968,362,81,12,1986,831,8533,313,320,2458,25,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1055
+stdlib,-,https://github.com/python/cpython,STDLIB,-,59775,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,27532,819,14972,362,81,12,1986,831,8533,313,320,2458,25,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1055
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on `tensorflow==2.17.0`.,25919,UP_TO_DATE,UPLOADED,NOT_STRICT,5365,8,3048,4,24,58,60,34,5427,5,9,945,1,0,MISSING_STUBS_IGNORED,linux,51
