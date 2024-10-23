@@ -920,7 +920,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,328 (excluding blank lines)
+1,329 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -952,7 +952,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Returns:
     - Annotated returns: 185
     - Unannotated returns: 0
-    - Explicit `Any` returns: 15
+    - Explicit `Any` returns: 14
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 140
@@ -4875,9 +4875,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 33 unique allowlist entries for `netifaces` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `netifaces`
 
