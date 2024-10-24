@@ -15,7 +15,7 @@ Pygments,types-Pygments,https://github.com/pygments/pygments,PARTIAL,-,845,UP_TO
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,COMPLETE,-,56,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,2
 TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,COMPLETE,-,7,UP_TO_DATE,UPLOADED,STRICT,20,0,6,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,6
-WTForms,types-WTForms,https://github.com/pallets-eco/wtforms,COMPLETE,-,1329,UP_TO_DATE,UPLOADED,STRICT,531,0,185,0,0,0,71,14,140,28,0,100,0,0,ERROR_ON_MISSING_STUB,linux,21
+WTForms,types-WTForms,https://github.com/pallets-eco/wtforms,COMPLETE,-,1334,UP_TO_DATE,UPLOADED,STRICT,531,0,185,0,0,0,71,14,141,29,0,100,0,0,ERROR_ON_MISSING_STUB,linux,21
 WebOb,types-WebOb,https://github.com/Pylons/webob,COMPLETE,-,1796,UP_TO_DATE,UPLOADED,STRICT,808,0,606,0,0,0,91,13,246,15,0,149,0,0,ERROR_ON_MISSING_STUB,linux,100
 aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,COMPLETE,-,732,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,431,1,148,3,29,3,34,1,6,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,86
 antlr4-python3-runtime,types-antlr4-python3-runtime,https://github.com/antlr/antlr4,COMPLETE,-,1781,UP_TO_DATE,UPLOADED,NOT_STRICT,777,222,208,485,27,2,0,0,395,0,269,142,0,0,MISSING_STUBS_IGNORED,linux;win32,0
@@ -129,7 +129,7 @@ python-jose,types-python-jose,https://github.com/mpdavis/python-jose,COMPLETE,-,
 python-nmap,types-python-nmap,https://bitbucket.org/xael/python-nmap,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-xlib,types-python-xlib,https://github.com/python-xlib/python-xlib,COMPLETE,-,5421,UP_TO_DATE,UPLOADED,STRICT,1334,0,583,0,0,0,15,8,3519,5,0,425,0,0,ERROR_ON_MISSING_STUB,linux,10
 pytz,types-pytz,https://github.com/stub42/pytz,COMPLETE,-,133,UP_TO_DATE,UPLOADED,STRICT,71,0,51,0,2,0,2,0,29,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux,4
-pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,34386,UP_TO_DATE,UPLOADED,NOT_STRICT,3768,3641,3892,2021,423,284,1,1,24687,0,2852,733,0,0,ERROR_ON_MISSING_STUB,win32,41
+pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,34390,UP_TO_DATE,UPLOADED,NOT_STRICT,3768,3641,3892,2021,423,284,1,1,24687,0,2852,733,0,0,ERROR_ON_MISSING_STUB,win32,41
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,COMPLETE,-,860,UP_TO_DATE,UPLOADED,NOT_STRICT,511,1,297,0,2,0,0,0,165,0,1,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,COMPLETE,-,172,UP_TO_DATE,UPLOADED,STRICT,96,0,31,0,0,0,0,4,33,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,650,UP_TO_DATE,UPLOADED,STRICT,280,0,151,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,11
@@ -142,13 +142,13 @@ retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADE
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on [s2client-proto 5.0.12.91115.0](https://github.com/Blizzard/s2client-proto/tree/c04df4adbe274858a4eb8417175ee32ad02fd609).,5029,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2587,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1445,25,357,2,34,7,155,17,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,5
 setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,"If using `setuptools >= 71.1` *only* for `pkg_resources`,
-you don't need `types-setuptools` since `pkg_resources` is now typed.",3536,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1225,434,1002,188,43,13,4,5,693,3,236,184,0,0,ERROR_ON_MISSING_STUB,linux;win32,93
+you don't need `types-setuptools` since `pkg_resources` is now typed.",3571,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1226,434,1007,190,43,13,4,5,709,3,243,186,0,0,ERROR_ON_MISSING_STUB,linux;win32,93
 shapely,types-shapely,https://github.com/shapely/shapely,COMPLETE,-,2595,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1424,390,710,0,0,0,14,15,151,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,3
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,277,UP_TO_DATE,UPLOADED,STRICT,180,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,11
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,335,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,26
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,59873,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,27574,819,14988,362,81,12,1986,831,8554,314,320,2460,25,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1058
+stdlib,-,https://github.com/python/cpython,STDLIB,-,59888,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,27577,819,14989,362,81,12,1986,831,8560,314,321,2461,25,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1058
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on `tensorflow==2.17.0`.,25919,UP_TO_DATE,UPLOADED,NOT_STRICT,5365,8,3048,4,24,58,60,34,5427,5,9,945,1,0,MISSING_STUBS_IGNORED,linux,51
