@@ -148,10 +148,10 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,335,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,26
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,59888,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,27577,819,14989,362,81,12,1986,831,8560,314,321,2461,25,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1058
+stdlib,-,https://github.com/python/cpython,STDLIB,-,59900,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,27583,819,14992,362,81,12,1982,830,8560,314,321,2461,25,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1060
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
-tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on `tensorflow==2.17.0`.,25919,UP_TO_DATE,UPLOADED,NOT_STRICT,5365,8,3048,4,24,58,60,34,5427,5,9,945,1,0,MISSING_STUBS_IGNORED,linux,51
+tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on `tensorflow==2.17.0`.,25919,OUT_OF_DATE,UPLOADED,NOT_STRICT,5365,8,3048,4,24,58,60,34,5427,5,9,945,1,0,MISSING_STUBS_IGNORED,linux,51
 toml,types-toml,https://github.com/uiri/toml,COMPLETE,-,136,UP_TO_DATE,UPLOADED,STRICT,71,0,41,0,0,0,21,5,14,2,0,14,2,0,ERROR_ON_MISSING_STUB,linux,4
 toposort,types-toposort,https://gitlab.com/ericvsmith/toposort,COMPLETE,-,13,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,1,0,1,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 tqdm,types-tqdm,https://github.com/tqdm/tqdm,COMPLETE,-,1379,UP_TO_DATE,UPLOADED,NOT_STRICT,811,146,164,27,38,8,1,1,100,0,74,36,0,0,ERROR_ON_MISSING_STUB,linux,2
