@@ -2176,9 +2176,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 231 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5822,7 +5822,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Extra description
 
-Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on [protobuf v28.2](https://github.com/protocolbuffers/protobuf/releases/tag/v28.2) (python `protobuf==5.28.2`).
+Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on [protobuf v28.3](https://github.com/protocolbuffers/protobuf/releases/tag/v28.3) (python `protobuf==5.28.3`).
 
 ### Upstream repo URL
 
@@ -7451,8 +7451,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,768
-    - Unannotated parameters: 3,641
+    - Annotated parameters: 3,769
+    - Unannotated parameters: 3,640
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 423
 - Returns:
@@ -7461,9 +7461,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 284
 - Variables:
-    - Annotated variables: 24,687
+    - Annotated variables: 24,686
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,852
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,850
 - Class definitions:
     - Total class definitions: 733
     - Class definitions with `Any`: 0
@@ -7992,7 +7992,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Extra description
 
-Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on [s2client-proto 5.0.12.91115.0](https://github.com/Blizzard/s2client-proto/tree/c04df4adbe274858a4eb8417175ee32ad02fd609).
+Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on [s2client-proto 5.0.12.91115.0](https://github.com/Blizzard/s2client-proto/tree/c04df4adbe274858a4eb8417175ee32ad02fd609).
 
 ### Upstream repo URL
 
@@ -8624,7 +8624,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Extra description
 
-Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 26.1 on `tensorflow==2.17.0`.
+Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.17.1`.
 
 ### Upstream repo URL
 
