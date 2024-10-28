@@ -3894,21 +3894,21 @@
     "upstream_url": "https://github.com/pyinstaller/pyinstaller",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 702,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 703,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 50
+      "allowlist_length": 49
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 272,
+      "annotated_parameters": 273,
       "unannotated_parameters": 0,
-      "annotated_returns": 148,
+      "annotated_returns": 149,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 6,
       "explicit_Incomplete_returns": 0,
@@ -5055,7 +5055,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 59911,
+    "number_of_lines": 59914,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5069,9 +5069,9 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 27599,
+      "annotated_parameters": 27601,
       "unannotated_parameters": 819,
-      "annotated_returns": 15004,
+      "annotated_returns": 15005,
       "unannotated_returns": 362,
       "explicit_Incomplete_parameters": 81,
       "explicit_Incomplete_returns": 12,
@@ -5080,7 +5080,7 @@
       "annotated_variables": 8560,
       "explicit_Any_variables": 314,
       "explicit_Incomplete_variables": 321,
-      "classdefs": 2461,
+      "classdefs": 2462,
       "classdefs_with_Any": 25,
       "classdefs_with_Incomplete": 0
     }
