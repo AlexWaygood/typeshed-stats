@@ -1301,7 +1301,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 231,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4851,7 +4851,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": "If using `setuptools >= 71.1` *only* for `pkg_resources`,\nyou don't need `types-setuptools` since `pkg_resources` is now typed.",
     "number_of_lines": 3571,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -5055,7 +5055,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 59914,
+    "number_of_lines": 60023,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5065,22 +5065,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1060
+      "allowlist_length": 1074
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 27601,
+      "annotated_parameters": 27641,
       "unannotated_parameters": 819,
-      "annotated_returns": 15005,
+      "annotated_returns": 15039,
       "unannotated_returns": 362,
       "explicit_Incomplete_parameters": 81,
       "explicit_Incomplete_returns": 12,
       "explicit_Any_parameters": 1982,
-      "explicit_Any_returns": 830,
-      "annotated_variables": 8560,
+      "explicit_Any_returns": 832,
+      "annotated_variables": 8568,
       "explicit_Any_variables": 314,
       "explicit_Incomplete_variables": 321,
-      "classdefs": 2462,
+      "classdefs": 2467,
       "classdefs_with_Any": 25,
       "classdefs_with_Incomplete": 0
     }
@@ -5158,9 +5158,9 @@
     "stub_distribution_name": "types-tensorflow",
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
-    "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.17.1`.",
-    "number_of_lines": 25919,
-    "package_status": "OUT_OF_DATE",
+    "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.",
+    "number_of_lines": 25798,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -5171,18 +5171,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 5365,
+      "annotated_parameters": 5346,
       "unannotated_parameters": 8,
-      "annotated_returns": 3048,
+      "annotated_returns": 2954,
       "unannotated_returns": 4,
-      "explicit_Incomplete_parameters": 24,
+      "explicit_Incomplete_parameters": 40,
       "explicit_Incomplete_returns": 58,
       "explicit_Any_parameters": 60,
       "explicit_Any_returns": 34,
-      "annotated_variables": 5427,
+      "annotated_variables": 5431,
       "explicit_Any_variables": 5,
       "explicit_Incomplete_variables": 9,
-      "classdefs": 945,
+      "classdefs": 920,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
@@ -5602,7 +5602,7 @@
     "upstream_url": "https://github.com/Pylons/waitress",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 651,
+    "number_of_lines": 643,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5615,18 +5615,18 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 203,
+      "annotated_parameters": 199,
       "unannotated_parameters": 0,
-      "annotated_returns": 205,
+      "annotated_returns": 200,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 1,
-      "annotated_variables": 246,
+      "annotated_variables": 245,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 39,
+      "classdefs": 38,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }

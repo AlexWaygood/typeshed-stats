@@ -37,7 +37,7 @@ colorama,types-colorama,https://github.com/tartley/colorama,COMPLETE,-,201,UP_TO
 commonmark,types-commonmark,https://github.com/rtfd/commonmark.py,PARTIAL,-,370,UP_TO_DATE,UPLOADED,NOT_STRICT,63,158,84,76,55,0,0,0,133,86,0,18,0,0,MISSING_STUBS_IGNORED,linux,0
 console-menu,types-console-menu,https://github.com/aegirhall/console-menu,COMPLETE,-,711,UP_TO_DATE,UPLOADED,STRICT,217,0,278,0,0,0,7,1,58,3,1,39,0,0,ERROR_ON_MISSING_STUB,linux,0
 corus,types-corus,https://github.com/natasha/corus,COMPLETE,-,999,UP_TO_DATE,UPLOADED,NOT_STRICT,101,567,153,157,44,72,0,0,422,0,368,68,0,0,ERROR_ON_MISSING_STUB,linux,0
-croniter,types-croniter,https://github.com/kiorky/croniter,COMPLETE,-,231,OUT_OF_DATE,UPLOADED,STRICT,86,0,25,0,0,0,0,8,46,0,0,8,1,0,ERROR_ON_MISSING_STUB,linux,0
+croniter,types-croniter,https://github.com/kiorky/croniter,COMPLETE,-,231,UP_TO_DATE,UPLOADED,STRICT,86,0,25,0,0,0,0,8,46,0,0,8,1,0,ERROR_ON_MISSING_STUB,linux,0
 dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,COMPLETE,-,473,UP_TO_DATE,UPLOADED,NOT_STRICT,126,130,74,69,21,0,4,6,135,76,0,34,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,https://github.com/micheles/decorator,COMPLETE,-,66,UP_TO_DATE,UPLOADED,STRICT,36,0,13,0,0,0,19,6,15,3,0,2,0,0,ERROR_ON_MISSING_STUB,linux,10
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,PARTIAL,-,234,UP_TO_DATE,UPLOADED,NOT_STRICT,81,97,38,13,13,0,0,1,37,0,19,12,0,0,MISSING_STUBS_IGNORED,linux,0
@@ -142,16 +142,16 @@ retry,types-retry,https://github.com/invl/retry,COMPLETE,-,28,UP_TO_DATE,UPLOADE
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on [s2client-proto 5.0.12.91115.0](https://github.com/Blizzard/s2client-proto/tree/c04df4adbe274858a4eb8417175ee32ad02fd609).,5029,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2587,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1445,25,357,2,34,7,155,17,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,5
 setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,"If using `setuptools >= 71.1` *only* for `pkg_resources`,
-you don't need `types-setuptools` since `pkg_resources` is now typed.",3571,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1226,434,1007,190,43,13,4,5,709,3,243,186,0,0,ERROR_ON_MISSING_STUB,linux;win32,93
+you don't need `types-setuptools` since `pkg_resources` is now typed.",3571,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,1226,434,1007,190,43,13,4,5,709,3,243,186,0,0,ERROR_ON_MISSING_STUB,linux;win32,93
 shapely,types-shapely,https://github.com/shapely/shapely,COMPLETE,-,2595,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1424,390,710,0,0,0,14,15,151,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,3
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,277,UP_TO_DATE,UPLOADED,STRICT,180,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,11
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,335,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,26
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,59914,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,27601,819,15005,362,81,12,1982,830,8560,314,321,2462,25,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1060
+stdlib,-,https://github.com/python/cpython,STDLIB,-,60023,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,27641,819,15039,362,81,12,1982,832,8568,314,321,2467,25,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1074
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
-tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.17.1`.,25919,OUT_OF_DATE,UPLOADED,NOT_STRICT,5365,8,3048,4,24,58,60,34,5427,5,9,945,1,0,MISSING_STUBS_IGNORED,linux,51
+tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,25798,UP_TO_DATE,UPLOADED,NOT_STRICT,5346,8,2954,4,40,58,60,34,5431,5,9,920,1,0,MISSING_STUBS_IGNORED,linux,51
 toml,types-toml,https://github.com/uiri/toml,COMPLETE,-,136,UP_TO_DATE,UPLOADED,STRICT,71,0,41,0,0,0,21,5,14,2,0,14,2,0,ERROR_ON_MISSING_STUB,linux,4
 toposort,types-toposort,https://gitlab.com/ericvsmith/toposort,COMPLETE,-,13,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,1,0,1,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 tqdm,types-tqdm,https://github.com/tqdm/tqdm,COMPLETE,-,1379,UP_TO_DATE,UPLOADED,NOT_STRICT,811,146,164,27,38,8,1,1,100,0,74,36,0,0,ERROR_ON_MISSING_STUB,linux,2
@@ -165,7 +165,7 @@ unidiff,types-unidiff,https://github.com/matiasb/python-unidiff,COMPLETE,-,144,U
 untangle,types-untangle,https://github.com/stchris/untangle,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,19,0,21,0,0,0,1,2,5,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 usersettings,types-usersettings,https://github.com/glvnst/usersettings,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,7,0,6,0,0,0,1,1,3,0,0,1,1,0,ERROR_ON_MISSING_STUB,linux,3
 vobject,types-vobject,https://github.com/eventable/vobject,COMPLETE,-,535,UP_TO_DATE,UPLOADED,NOT_STRICT,107,183,75,103,21,0,4,3,185,90,3,50,0,0,ERROR_ON_MISSING_STUB,linux,9
-waitress,types-waitress,https://github.com/Pylons/waitress,COMPLETE,-,651,UP_TO_DATE,UPLOADED,STRICT,203,0,205,0,0,0,2,1,246,0,0,39,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
+waitress,types-waitress,https://github.com/Pylons/waitress,COMPLETE,-,643,UP_TO_DATE,UPLOADED,STRICT,199,0,200,0,0,0,2,1,245,0,0,38,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
 whatthepatch,types-whatthepatch,https://github.com/cscorley/whatthepatch,COMPLETE,-,101,UP_TO_DATE,UPLOADED,STRICT,32,0,25,0,0,0,0,0,54,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,0
 workalendar,types-workalendar,https://github.com/workalendar/workalendar,COMPLETE,-,2918,UP_TO_DATE,UPLOADED,NOT_STRICT,44,399,22,355,23,4,0,0,1367,0,249,374,0,0,ERROR_ON_MISSING_STUB,linux,5
 wurlitzer,types-wurlitzer,https://github.com/minrk/wurlitzer,COMPLETE,-,130,UP_TO_DATE,UPLOADED,NOT_STRICT,95,0,32,1,0,0,0,0,7,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
