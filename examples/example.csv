@@ -50,7 +50,7 @@ entrypoints,types-entrypoints,https://github.com/takluyver/entrypoints,COMPLETE,
 fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,COMPLETE,-,530,UP_TO_DATE,UPLOADED,STRICT,167,0,133,0,0,0,8,3,128,0,0,49,0,0,ERROR_ON_MISSING_STUB,linux,40
 first,types-first,https://github.com/hynek/first,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,11,0,5,0,0,0,3,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8,types-flake8,https://github.com/pycqa/flake8,COMPLETE,-,570,UP_TO_DATE,UPLOADED,STRICT,222,0,164,0,0,0,35,8,182,1,90,39,0,0,ERROR_ON_MISSING_STUB,linux,1
-flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,PARTIAL,-,27,UP_TO_DATE,UPLOADED,STRICT,8,0,5,0,0,2,1,0,8,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,1
+flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,PARTIAL,-,27,OUT_OF_DATE,UPLOADED,STRICT,8,0,5,0,0,2,1,0,8,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,1
 flake8-builtins,types-flake8-builtins,https://github.com/gforcada/flake8-builtins,PARTIAL,-,39,UP_TO_DATE,UPLOADED,STRICT,17,0,15,0,0,0,0,0,11,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-docstrings,types-flake8-docstrings,https://github.com/pycqa/flake8-docstrings,PARTIAL,-,19,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,1,1,1,6,1,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
 flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/flake8-rst-docstrings,PARTIAL,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
