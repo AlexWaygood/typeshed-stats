@@ -857,7 +857,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1212,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -890,8 +890,8 @@
     "upstream_url": "https://github.com/braintree/braintree_python",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2938,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 2943,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -910,10 +910,10 @@
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 1507,
+      "annotated_variables": 1510,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 131,
-      "classdefs": 268,
+      "classdefs": 269,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -1743,7 +1743,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 27,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
