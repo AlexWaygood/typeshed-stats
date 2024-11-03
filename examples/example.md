@@ -523,7 +523,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,051 (excluding blank lines)
+1,107 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -539,7 +539,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 11 unique allowlist entries for `PyMySQL` when running stubtest in CI.
+Typeshed currently has 10 unique allowlist entries for `PyMySQL` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -548,21 +548,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `PyMySQL`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 143
-    - Unannotated parameters: 52
+    - Annotated parameters: 162
+    - Unannotated parameters: 53
     - Explicit `Any` parameters: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 28
 - Returns:
-    - Annotated returns: 101
-    - Unannotated returns: 37
+    - Annotated returns: 127
+    - Unannotated returns: 45
     - Explicit `Any` returns: 18
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 736
-    - Explicit `Any` variables: 60
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Annotated variables: 750
+    - Explicit `Any` variables: 55
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
-    - Total class definitions: 24
+    - Total class definitions: 25
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
