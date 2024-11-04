@@ -105,7 +105,7 @@ protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,PARTIAL,Part
 psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1588,UP_TO_DATE,UPLOADED,NOT_STRICT,132,309,201,352,28,0,0,47,599,178,95,90,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,14
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,COMPLETE,-,1734,UP_TO_DATE,UPLOADED,NOT_STRICT,337,152,314,75,29,5,14,21,518,60,3,332,2,0,ERROR_ON_MISSING_STUB,linux,2
 pyOpenSSL,types-pyOpenSSL,https://github.com/pyca/pyopenssl,PARTIAL,-,363,OBSOLETE,UPLOADED,STRICT,148,0,179,0,1,1,2,2,125,1,0,22,0,0,MISSING_STUBS_IGNORED,linux,1
-pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,17,UP_TO_DATE,UPLOADED,STRICT,15,0,9,0,0,0,1,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
+pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,17,OUT_OF_DATE,UPLOADED,STRICT,15,0,9,0,0,0,1,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1485,UP_TO_DATE,UPLOADED,NOT_STRICT,203,529,112,422,39,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,4
 pyaudio,types-pyaudio,-,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,COMPLETE,-,183,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,70,0,1,12,0,0,ERROR_ON_MISSING_STUB,linux,0
