@@ -2228,7 +2228,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 7
+      "allowlist_length": 5
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3385,7 +3385,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 9
+      "allowlist_length": 7
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -4850,8 +4850,8 @@
     "upstream_url": "https://github.com/pypa/setuptools",
     "completeness_level": "COMPLETE",
     "extra_description": "If using `setuptools >= 71.1` *only* for `pkg_resources`,\nyou don't need `types-setuptools` since `pkg_resources` is now typed.",
-    "number_of_lines": 3571,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 3582,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4863,12 +4863,12 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 1226,
-      "unannotated_parameters": 434,
-      "annotated_returns": 1007,
-      "unannotated_returns": 190,
+      "annotated_parameters": 1227,
+      "unannotated_parameters": 433,
+      "annotated_returns": 1008,
+      "unannotated_returns": 189,
       "explicit_Incomplete_parameters": 43,
-      "explicit_Incomplete_returns": 13,
+      "explicit_Incomplete_returns": 12,
       "explicit_Any_parameters": 4,
       "explicit_Any_returns": 5,
       "annotated_variables": 709,
@@ -4995,7 +4995,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 26
+      "allowlist_length": 22
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -5055,7 +5055,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 60034,
+    "number_of_lines": 60062,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5065,22 +5065,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1074
+      "allowlist_length": 1048
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 27641,
+      "annotated_parameters": 27659,
       "unannotated_parameters": 819,
-      "annotated_returns": 15039,
+      "annotated_returns": 15056,
       "unannotated_returns": 362,
       "explicit_Incomplete_parameters": 81,
       "explicit_Incomplete_returns": 12,
       "explicit_Any_parameters": 1982,
-      "explicit_Any_returns": 832,
-      "annotated_variables": 8569,
+      "explicit_Any_returns": 831,
+      "annotated_variables": 8571,
       "explicit_Any_variables": 314,
       "explicit_Incomplete_variables": 321,
-      "classdefs": 2467,
+      "classdefs": 2466,
       "classdefs_with_Any": 25,
       "classdefs_with_Incomplete": 0
     }
