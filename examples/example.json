@@ -959,7 +959,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 527,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
