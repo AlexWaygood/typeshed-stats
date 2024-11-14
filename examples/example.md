@@ -3318,11 +3318,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-3,035 (excluding blank lines)
+3,037 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3343,7 +3343,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `gevent`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,353
+    - Annotated parameters: 1,354
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 65
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
@@ -3353,7 +3353,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 21
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 360
+    - Annotated variables: 362
     - Explicit `Any` variables: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -4857,11 +4857,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-4,910 (excluding blank lines)
+4,907 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4882,21 +4882,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,999
-    - Unannotated parameters: 1,515
+    - Annotated parameters: 1,992
+    - Unannotated parameters: 1,501
     - Explicit `Any` parameters: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 768
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 760
 - Returns:
-    - Annotated returns: 547
-    - Unannotated returns: 809
+    - Annotated returns: 538
+    - Unannotated returns: 806
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 112
 - Variables:
-    - Annotated variables: 312
+    - Annotated variables: 309
     - Explicit `Any` variables: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 246
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 242
 - Class definitions:
-    - Total class definitions: 129
+    - Total class definitions: 128
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 3
 
@@ -8066,7 +8066,7 @@ you don't need `types-setuptools` since `pkg_resources` is now typed.
 
 ### Number of lines
 
-3,594 (excluding blank lines)
+3,587 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -8091,12 +8091,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,227
+    - Annotated parameters: 1,218
     - Unannotated parameters: 433
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 43
 - Returns:
-    - Annotated returns: 1,008
+    - Annotated returns: 1,005
     - Unannotated returns: 189
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
