@@ -5,7 +5,7 @@
     "upstream_url": "https://github.com/tantale/deprecated",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 55,
+    "number_of_lines": 61,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -17,7 +17,7 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 30,
+      "annotated_parameters": 32,
       "unannotated_parameters": 0,
       "annotated_returns": 10,
       "unannotated_returns": 0,
@@ -3241,8 +3241,8 @@
     "upstream_url": "https://github.com/coleifer/peewee",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1698,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 1700,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3253,7 +3253,7 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 427,
+      "annotated_parameters": 428,
       "unannotated_parameters": 668,
       "annotated_returns": 358,
       "unannotated_returns": 427,
@@ -5021,7 +5021,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 60158,
+    "number_of_lines": 60191,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5031,22 +5031,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1058
+      "allowlist_length": 1060
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
       "annotated_parameters": 27683,
       "unannotated_parameters": 819,
-      "annotated_returns": 15078,
+      "annotated_returns": 15080,
       "unannotated_returns": 362,
       "explicit_Incomplete_parameters": 81,
       "explicit_Incomplete_returns": 12,
       "explicit_Any_parameters": 1984,
       "explicit_Any_returns": 830,
-      "annotated_variables": 8573,
+      "annotated_variables": 8569,
       "explicit_Any_variables": 315,
       "explicit_Incomplete_variables": 321,
-      "classdefs": 2469,
+      "classdefs": 2471,
       "classdefs_with_Any": 25,
       "classdefs_with_Incomplete": 0
     }
@@ -5568,7 +5568,7 @@
     "upstream_url": "https://github.com/Pylons/waitress",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 643,
+    "number_of_lines": 639,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5581,15 +5581,15 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 199,
+      "annotated_parameters": 196,
       "unannotated_parameters": 0,
-      "annotated_returns": 200,
+      "annotated_returns": 198,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 2,
-      "explicit_Any_returns": 1,
-      "annotated_variables": 245,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 244,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 38,
