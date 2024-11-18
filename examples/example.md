@@ -8066,7 +8066,7 @@ you don't need `types-setuptools` since `pkg_resources` is now typed.
 
 ### Number of lines
 
-3,587 (excluding blank lines)
+3,586 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8091,19 +8091,19 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,218
-    - Unannotated parameters: 433
+    - Annotated parameters: 1,211
+    - Unannotated parameters: 431
     - Explicit `Any` parameters: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 43
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 44
 - Returns:
-    - Annotated returns: 1,005
-    - Unannotated returns: 189
-    - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
+    - Annotated returns: 1,017
+    - Unannotated returns: 175
+    - Explicit `Any` returns: 6
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
     - Annotated variables: 715
     - Explicit `Any` variables: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 243
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 242
 - Class definitions:
     - Total class definitions: 186
     - Class definitions with `Any`: 0
@@ -8404,7 +8404,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-60,203 (excluding blank lines)
+60,391 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8420,7 +8420,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,061 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,062 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8429,21 +8429,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 27,683
+    - Annotated parameters: 27,770
     - Unannotated parameters: 819
-    - Explicit `Any` parameters: 1,984
+    - Explicit `Any` parameters: 2,003
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 81
 - Returns:
-    - Annotated returns: 15,083
+    - Annotated returns: 15,155
     - Unannotated returns: 362
-    - Explicit `Any` returns: 830
+    - Explicit `Any` returns: 832
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
 - Variables:
     - Annotated variables: 8,567
     - Explicit `Any` variables: 315
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 321
 - Class definitions:
-    - Total class definitions: 2,472
+    - Total class definitions: 2,479
     - Class definitions with `Any`: 25
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -8750,11 +8750,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,379 (excluding blank lines)
+1,389 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8766,7 +8766,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 unique allowlist entries for `tqdm` when running stubtest in CI.
+Typeshed currently has 1 unique allowlist entry for `tqdm` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -8780,14 +8780,14 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 38
 - Returns:
-    - Annotated returns: 164
-    - Unannotated returns: 27
+    - Annotated returns: 165
+    - Unannotated returns: 28
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
 - Variables:
-    - Annotated variables: 100
+    - Annotated variables: 105
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 74
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 76
 - Class definitions:
     - Total class definitions: 36
     - Class definitions with `Any`: 0

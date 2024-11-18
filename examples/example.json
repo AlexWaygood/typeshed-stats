@@ -4816,7 +4816,7 @@
     "upstream_url": "https://github.com/pypa/setuptools",
     "completeness_level": "COMPLETE",
     "extra_description": "If using `setuptools >= 71.1` *only* for `pkg_resources`,\nyou don't need `types-setuptools` since `pkg_resources` is now typed.",
-    "number_of_lines": 3587,
+    "number_of_lines": 3586,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4829,17 +4829,17 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 1218,
-      "unannotated_parameters": 433,
-      "annotated_returns": 1005,
-      "unannotated_returns": 189,
-      "explicit_Incomplete_parameters": 43,
-      "explicit_Incomplete_returns": 12,
+      "annotated_parameters": 1211,
+      "unannotated_parameters": 431,
+      "annotated_returns": 1017,
+      "unannotated_returns": 175,
+      "explicit_Incomplete_parameters": 44,
+      "explicit_Incomplete_returns": 11,
       "explicit_Any_parameters": 4,
-      "explicit_Any_returns": 5,
+      "explicit_Any_returns": 6,
       "annotated_variables": 715,
       "explicit_Any_variables": 3,
-      "explicit_Incomplete_variables": 243,
+      "explicit_Incomplete_variables": 242,
       "classdefs": 186,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
@@ -5021,7 +5021,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 60203,
+    "number_of_lines": 60391,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5031,22 +5031,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1061
+      "allowlist_length": 1062
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 27683,
+      "annotated_parameters": 27770,
       "unannotated_parameters": 819,
-      "annotated_returns": 15083,
+      "annotated_returns": 15155,
       "unannotated_returns": 362,
       "explicit_Incomplete_parameters": 81,
       "explicit_Incomplete_returns": 12,
-      "explicit_Any_parameters": 1984,
-      "explicit_Any_returns": 830,
+      "explicit_Any_parameters": 2003,
+      "explicit_Any_returns": 832,
       "annotated_variables": 8567,
       "explicit_Any_variables": 315,
       "explicit_Incomplete_variables": 321,
-      "classdefs": 2472,
+      "classdefs": 2479,
       "classdefs_with_Any": 25,
       "classdefs_with_Incomplete": 0
     }
@@ -5227,29 +5227,29 @@
     "upstream_url": "https://github.com/tqdm/tqdm",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1379,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 1389,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 2
+      "allowlist_length": 1
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 811,
       "unannotated_parameters": 146,
-      "annotated_returns": 164,
-      "unannotated_returns": 27,
+      "annotated_returns": 165,
+      "unannotated_returns": 28,
       "explicit_Incomplete_parameters": 38,
-      "explicit_Incomplete_returns": 8,
+      "explicit_Incomplete_returns": 9,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
-      "annotated_variables": 100,
+      "annotated_variables": 105,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 74,
+      "explicit_Incomplete_variables": 76,
       "classdefs": 36,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
