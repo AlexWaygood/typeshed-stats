@@ -289,7 +289,7 @@ def gather_annotation_stats_on_file(path: Path | str) -> AnnotationStats:
         path: The location of the file to be analysed.
 
     Returns:
-        An [`AnnotationStats`](./#AnnotationStats) object
+        An [`AnnotationStats`](gather.md#AnnotationStats) object
             containing data about the annotations in the file.
 
     Examples:
@@ -330,7 +330,7 @@ def gather_annotation_stats_on_package(
             in which to find the stubs package source.
 
     Returns:
-        An [`AnnotationStats`](./#AnnotationStats) object
+        An [`AnnotationStats`](gather.md#AnnotationStats) object
             containing data about the annotations in the package.
 
     Examples:
@@ -438,7 +438,7 @@ def get_stubtest_strictness(
             from which to retrieve the stubtest setting.
 
     Returns:
-        A member of the [`StubtestStrictness`](./#StubtestStrictness)
+        A member of the [`StubtestStrictness`](gather.md#StubtestStrictness)
             enumeration (see the docs on `StubtestStrictness` for details).
 
     Examples:
@@ -585,7 +585,7 @@ def get_stubtest_settings(
             from which to retrieve the stubtest settings.
 
     Returns:
-        An instance of the [`StubtestSettings`](./#StubtestSettings) class.
+        An instance of the [`StubtestSettings`](gather.md#StubtestSettings) class.
     """
     return StubtestSettings(
         strictness=get_stubtest_strictness(package_name, typeshed_dir=typeshed_dir),
@@ -679,7 +679,7 @@ async def get_package_status(
             created to make the network request.
 
     Returns:
-        A member of the [`PackageStatus`](./#PackageStatus) enumeration
+        A member of the [`PackageStatus`](gather.md#PackageStatus) enumeration
             (see the docs on `PackageStatus` for details).
 
     Examples:
@@ -747,7 +747,7 @@ def get_upload_status(
             from which to retrieve the upload status.
 
     Returns:
-        A member of the [`UploadStatus`](./#UploadStatus) enumeration
+        A member of the [`UploadStatus`](gather.md#UploadStatus) enumeration
             (see the docs on `UploadStatus` for details).
 
     Examples:
@@ -804,7 +804,7 @@ def get_completeness_level(
             from which to retrieve the partial status.
 
     Returns:
-        A member of the [`CompletenessLevel`](./#CompletenessLevel) enumeration
+        A member of the [`CompletenessLevel`](gather.md#CompletenessLevel) enumeration
             (see the docs on `CompletenessLevel` for details).
 
     Examples:
@@ -1052,7 +1052,7 @@ def get_pyright_setting_for_path(
             from which to retrieve the pyright setting.
 
     Returns:
-        A member of the [`PyrightSetting`](./#PyrightSetting) enumeration
+        A member of the [`PyrightSetting`](gather.md#PyrightSetting) enumeration
             (see the docs on `PyrightSetting` for details).
     """
     entirely_excluded_paths = _get_pyright_excludelist(
@@ -1087,7 +1087,7 @@ def get_pyright_setting_for_package(
             from which to retrieve the pyright setting.
 
     Returns:
-        A member of the [`PyrightSetting`](./#PyrightSetting) enumeration
+        A member of the [`PyrightSetting`](gather.md#PyrightSetting) enumeration
             (see the docs on `PyrightSetting` for details).
 
     Examples:
@@ -1142,7 +1142,7 @@ async def gather_stats_on_package(
 
     !!! note
 
-        This function calls [`get_package_status()`](./#get_package_status),
+        This function calls [`get_package_status()`](gather.md#get_package_status),
         which makes network requests to PyPI.
         See the docs on `get_package_status()` for details.
 
@@ -1156,7 +1156,7 @@ async def gather_stats_on_package(
             created to make the network request.
 
     Returns:
-        An instance of the [`PackageInfo`](./#PackageInfo) class.
+        An instance of the [`PackageInfo`](gather.md#PackageInfo) class.
 
     Examples:
         >>> import asyncio
@@ -1284,7 +1284,7 @@ def gather_stats_on_file(
             This can be an absolute or relative path.
 
     Returns:
-        An instance of the [`FileInfo`](./#FileInfo) class.
+        An instance of the [`FileInfo`](gather.md#FileInfo) class.
 
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, gather_stats_on_file
@@ -1371,7 +1371,7 @@ def gather_stats_on_multiple_packages(
         typeshed_dir: The path to a local clone of typeshed.
 
     Returns:
-        A sequence of [`PackageInfo`](./#PackageInfo) objects.
+        A sequence of [`PackageInfo`](gather.md#PackageInfo) objects.
             Each `PackageInfo` object contains information representing an analysis
             of a certain stubs package in typeshed.
 
