@@ -24,6 +24,7 @@ permissions:
 env:
   FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
   TERM: xterm-256color # needed for FORCE_COLOR to work on mypy on Ubuntu, see https://github.com/python/mypy/issues/13817
+  CLICOLOR_FORCE: 1 # recognized by uv
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
