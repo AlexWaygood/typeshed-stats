@@ -389,7 +389,10 @@ def get_package_extra_description(
             if one is given, else [None][].
 
     Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_package_extra_description
+        >>> from typeshed_stats.gather import (
+        ...     tmpdir_typeshed,
+        ...     get_package_extra_description,
+        ... )
         >>> with tmpdir_typeshed() as typeshed:
         ...     stdlib_description = get_package_extra_description(
         ...         "stdlib", typeshed_dir=typeshed
@@ -447,7 +450,9 @@ def get_stubtest_strictness(
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_strictness
         >>> with tmpdir_typeshed() as typeshed:
-        ...     stdlib_setting = get_stubtest_strictness("stdlib", typeshed_dir=typeshed)
+        ...     stdlib_setting = get_stubtest_strictness(
+        ...         "stdlib", typeshed_dir=typeshed
+        ...     )
         ...     gdb_setting = get_stubtest_strictness("RPi.GPIO", typeshed_dir=typeshed)
         >>> stdlib_setting
         StubtestStrictness.ERROR_ON_MISSING_STUB
@@ -489,7 +494,9 @@ def get_stubtest_platforms(
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_platforms
         >>> with tmpdir_typeshed() as typeshed:
-        ...     pywin_platforms = get_stubtest_platforms("pywin32", typeshed_dir=typeshed)
+        ...     pywin_platforms = get_stubtest_platforms(
+        ...         "pywin32", typeshed_dir=typeshed
+        ...     )
         >>> pywin_platforms
         ['win32']
     """
@@ -530,7 +537,10 @@ def get_stubtest_allowlist_length(
         Duplicate entries in allowlists are removed.
 
     Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_allowlist_length
+        >>> from typeshed_stats.gather import (
+        ...     tmpdir_typeshed,
+        ...     get_stubtest_allowlist_length,
+        ... )
         >>> with tmpdir_typeshed() as typeshed:
         ...     num_stdlib_allows = get_stubtest_allowlist_length(
         ...         "stdlib", typeshed_dir=typeshed
@@ -685,7 +695,9 @@ async def get_package_status(
         ...     stdlib_status = asyncio.run(
         ...         get_package_status("stdlib", typeshed_dir=typeshed)
         ...     )
-        ...     gdb_status = asyncio.run(get_package_status("gdb", typeshed_dir=typeshed))
+        ...     gdb_status = asyncio.run(
+        ...         get_package_status("gdb", typeshed_dir=typeshed)
+        ...     )
         >>> stdlib_status
         PackageStatus.STDLIB
         >>> help(_)
@@ -882,7 +894,10 @@ def get_stub_distribution_name(
         The name under which the stubs package is uploaded to PyPI.
 
     Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stub_distribution_name
+        >>> from typeshed_stats.gather import (
+        ...     tmpdir_typeshed,
+        ...     get_stub_distribution_name,
+        ... )
         >>> with tmpdir_typeshed() as typeshed:
         ...     requests_stub_dist_name = get_stub_distribution_name(
         ...         "requests", typeshed_dir=typeshed

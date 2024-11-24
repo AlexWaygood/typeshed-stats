@@ -59,9 +59,9 @@ def test_all_public_names_in___all__(submodule: types.ModuleType) -> None:
         )
     }
 
-    assert (
-        not public_names_not_in___all__
-    ), f"Public names not in __all__: {public_names_not_in___all__!r}"
+    assert not public_names_not_in___all__, (
+        f"Public names not in __all__: {public_names_not_in___all__!r}"
+    )
 
 
 # ========================================
