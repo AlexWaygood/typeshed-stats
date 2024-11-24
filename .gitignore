@@ -64,9 +64,7 @@ analyze.py
 .idea/
 
 # virtual environments
-.venv*/
-venv/
-env/
+.venv/
 
 # Mypy cache
 .mypy_cache/

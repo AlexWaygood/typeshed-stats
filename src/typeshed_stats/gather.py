@@ -6,6 +6,7 @@ import json
 import os
 import re
 import sys
+import tomllib
 import urllib.parse
 from collections import Counter
 from collections.abc import Collection, Container, Iterable, Iterator, Mapping, Sequence
@@ -21,9 +22,9 @@ from typing import (
     Literal,
     NamedTuple,
     NewType,
+    Self,
     TypeAlias,
     TypeGuard,
-    TypeVar,
     final,
 )
 
@@ -34,14 +35,8 @@ from packaging.version import Version
 from pathspec import PathSpec
 from pathspec.patterns.gitwildmatch import GitWildMatchPattern
 
-if sys.version_info < (3, 10):  # noqa: UP036
-    raise ImportError("Python 3.10+ is required!")
-
-if sys.version_info >= (3, 11):
-    import tomllib  # pragma: >=3.11 cover
-else:
-    import tomli as tomllib  # pragma: <3.11 cover
-
+if sys.version_info < (3, 11):  # noqa: UP036
+    raise ImportError("Python 3.11+ is required!")
 
 __all__ = [
     "AnnotationStats",
@@ -79,13 +74,12 @@ __all__ = [
 PackageName: TypeAlias = str
 _AbsolutePath = NewType("_AbsolutePath", Path)
 _PathRelativeToTypeshed: TypeAlias = Path
-_NiceReprEnumSelf = TypeVar("_NiceReprEnumSelf", bound="_NiceReprEnum")
 
 
 class _NiceReprEnum(Enum):
     """Base class for several public-API enums in this package."""
 
-    def __new__(cls: type[_NiceReprEnumSelf], doc: str) -> _NiceReprEnumSelf:
+    def __new__(cls, doc: str) -> Self:
         assert isinstance(doc, str)
         member = object.__new__(cls)
         member._value_ = member.__doc__ = doc

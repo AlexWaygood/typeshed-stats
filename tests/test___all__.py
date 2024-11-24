@@ -65,16 +65,16 @@ def test_all_public_names_in___all__(submodule: types.ModuleType) -> None:
 
 
 # ========================================
-# Test the package doesn't import on <3.10
+# Test the package doesn't import on <3.11
 # ========================================
 
 
 @mock.patch.object(sys, "version_info", new=(3, 9, 8, "final", 0))
 @pytest.mark.parametrize("module_name", [mod.__name__ for mod in ALL_SUBMODULES])
-def test_import_fails_on_less_than_3_point_10(module_name: str) -> None:
+def test_import_fails_on_less_than_3_point_11(module_name: str) -> None:
     for submod in ALL_SUBMODULES:
         submod_name = submod.__name__
         if submod_name in sys.modules:
             del sys.modules[submod_name]
-    with pytest.raises(ImportError, match=r"Python 3\.10\+ is required"):
+    with pytest.raises(ImportError, match=r"Python 3\.11\+ is required"):
         importlib.import_module(module_name)
