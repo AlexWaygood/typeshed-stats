@@ -23,17 +23,12 @@ jobs:
         run: |
           git config --global user.name statsabot
           git config --global user.email ''
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
       - uses: astral-sh/setup-uv@v4
         with:
           version: "latest"
-      - run: uv pip install -e .[dev] --system
-      - run: uv pip freeze
       - name: Regenerate examples and docs
         id: regen
-        run: python scripts/regenerate.py --download-typeshed
+        run: uv run --python=3.13 --extra=dev scripts/regenerate.py --download-typeshed
       - name: Check the generated files with pre-commit
         id: lint
         uses: pre-commit/action@v3.0.1
