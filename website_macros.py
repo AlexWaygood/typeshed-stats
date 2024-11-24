@@ -98,7 +98,7 @@ def define_env(env: Env) -> None:
         return isinstance(x, int)
 
     env.variables.update(
-        last_update_time=dt.datetime.utcnow().strftime("%H:%M UTC on %Y-%m-%d"),
+        last_update_time=dt.datetime.now(dt.timezone.utc).strftime("%H:%M UTC on %Y-%m-%d"),
         num_packages=len(stats_as_csv),
         formatted_stats=Path("examples", "example.md").read_text(encoding="utf-8"),
         num_lines=sum(int(s["number_of_lines"]) for s in stats_as_csv),
