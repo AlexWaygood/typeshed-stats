@@ -5,13 +5,14 @@ import os
 import re
 import sys
 import types
+import unittest.mock
 from collections.abc import Iterator, Sequence
 from pathlib import Path
 from typing import Any, cast
 from unittest import mock
 
-# Make sure not to import rich here, as it's optional dependencies
-# Some tests assert behaviour that's predicated on rich not yet being imported
+# Make sure not to import rich here, as it's an optional dependency.
+# Some tests assert behaviour that's predicated on rich not yet being imported.
 import markdown
 import pytest
 from pytest_mock import MockerFixture
@@ -133,10 +134,7 @@ def test_pprinting_conversion(
 
 @pytest.mark.usefixtures("mocked_gather_stats_on_multiple_packages")
 def test_each_output_option_has_code_written_for_it(
-    args: list[str],
-    capsys: pytest.CaptureFixture[str],
-    typeshed: Path,
-    subtests: SubTests,
+    args: list[str], capsys: pytest.CaptureFixture[str], subtests: SubTests
 ) -> None:
     options_to_output = {}
     assert_returncode_0(args + ["--pprint"])
@@ -608,13 +606,56 @@ def test_logs_to_terminal_with_info_or_lower(
     assert logging_occurred is logging_expected
 
 
+# ================================
+# Tests for `--upstream-repo` flag
+# ================================
+
+
+@pytest.mark.usefixtures("mocked_gather_stats_on_multiple_packages")
+def test_upstream_url_flag(
+    typeshed: Path, args: list[str], random_PackageInfo_sequence: Sequence[PackageInfo]
+) -> None:
+    random_PackageInfo_sequence[-1].upstream_url = None
+
+    package_names = [package.package_name for package in random_PackageInfo_sequence]
+    for name in package_names:
+        (typeshed / "stubs" / name).mkdir()
+
+    args += package_names
+    args += ["--upstream-repo"]
+
+    webbrowser_mock_path = "webbrowser.open_new_tab"
+    with unittest.mock.patch(webbrowser_mock_path, autospec=True) as webbrowser_mock:
+        assert_returncode_0(args)
+        opened_urls = {call.args[0] for call in webbrowser_mock.call_args_list}
+        assert len(opened_urls) == len(random_PackageInfo_sequence) - 1
+        expected_urls = {
+            package.upstream_url for package in random_PackageInfo_sequence[:-1]
+        }
+        assert expected_urls == opened_urls
+
+
+@pytest.mark.usefixtures("mocked_gather_stats_on_multiple_packages")
+def test_upstream_url_flag_no_known_urls(
+    typeshed: Path, args: list[str], random_PackageInfo_sequence: Sequence[PackageInfo]
+) -> None:
+    for package in random_PackageInfo_sequence:
+        package.upstream_url = None
+
+    package_names = [package.package_name for package in random_PackageInfo_sequence]
+    for name in package_names:
+        (typeshed / "stubs" / name).mkdir()
+
+    assert_argparsing_fails(args + package_names + ["--upstream-repo"])
+
+
 # ====================================
 # Tests for KeyboardInterrupt-handling
 # ====================================
 
 
 def test_KeyboardInterrupt_caught(
-    args: list[str], typeshed: Path, capsys: pytest.CaptureFixture[str]
+    args: list[str], capsys: pytest.CaptureFixture[str]
 ) -> None:
     args += ["--log", "CRITICAL"]
     with (
