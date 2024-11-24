@@ -1329,28 +1329,22 @@ def gather_stats_on_file(
 
 async def _gather_stats_on_multiple_packages(
     packages: Iterable[str], *, typeshed_dir: Path | str
-) -> Sequence[PackageInfo | BaseException]:
+) -> list[PackageInfo]:
     conn = aiohttp.TCPConnector(limit_per_host=10)
-    async with aiohttp.ClientSession(connector=conn) as session:
-        tasks = (
-            gather_stats_on_package(
-                package_name, typeshed_dir=typeshed_dir, session=session
-            )
-            for package_name in packages
+    async with (
+        aiohttp.ClientSession(connector=conn) as session,
+        asyncio.TaskGroup() as tg,
+    ):
+        gather_stats = partial(
+            gather_stats_on_package, typeshed_dir=typeshed_dir, session=session
         )
-        return await asyncio.gather(*tasks, return_exceptions=True)
+        tasks = [
+            tg.create_task(gather_stats(package_name)) for package_name in packages
+        ]
+    return [task.result() for task in tasks]
 
 
 _get_package_name = attrgetter("package_name")
-
-
-def _raise_any_exceptions(
-    results: Iterable[PackageInfo | BaseException],
-) -> TypeGuard[Iterable[PackageInfo]]:
-    for result in results:
-        if isinstance(result, BaseException):
-            raise result
-    return True
 
 
 def gather_stats_on_multiple_packages(
@@ -1395,7 +1389,6 @@ def gather_stats_on_multiple_packages(
     results = asyncio.run(
         _gather_stats_on_multiple_packages(packages, typeshed_dir=typeshed_dir)
     )
-    assert _raise_any_exceptions(results)
     return sorted(results, key=_get_package_name)
 
 
