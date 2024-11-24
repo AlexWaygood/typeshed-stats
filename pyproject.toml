@@ -63,7 +63,7 @@ dev = [
     "covdefaults==2.3.0",
     "coverage==7.6.8",
     "Markdown>=3,<4",
-    "pyright==1.1.331",
+    "pyright==1.1.389",
     "pytest==8.3.3",
     "pytest-antilru==2.0.0",
     "pytest-asyncio==0.24.0",
@@ -101,9 +101,6 @@ ignore = [
     # It's often necessary to compare types instead of using isinstance();
     # on this code base, this check has 0 true positives and many false positives:
     "E721",
-    # Stylistic lints with which I disagree:
-    "PT004",
-    "PT005",
     "RUF005",
     # Let mypy/pyright complain about blanket type ignores or implicit optional
     "PGH004",
@@ -145,6 +142,7 @@ pretty = true
 strict = true
 enable_error_code = 'ignore-without-code,redundant-expr,possibly-undefined'
 warn_unreachable = true
+local_partial_types = true
 
 [tool.pyright]
 include = ["."]
