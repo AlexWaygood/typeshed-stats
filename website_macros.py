@@ -77,7 +77,7 @@ def define_env(env: Env) -> None:
             return f"`{typ_name}`"
         return f"`{typ}`"
 
-    env.variables.update(gather=typeshed_stats.gather, attrs=attrs)
+    env.variables.update({"gather": typeshed_stats.gather, "attrs": attrs})
 
     # Variables needed for stats.md and stats-csv.md
     stats_as_csv: list[dict[str, str | int]] = []
@@ -97,14 +97,14 @@ def define_env(env: Env) -> None:
     def is_int(x: object) -> TypeGuard[int]:
         return isinstance(x, int)
 
-    env.variables.update(
-        last_update_time=dt.datetime.now(dt.UTC).strftime("%H:%M UTC on %Y-%m-%d"),
-        num_packages=len(stats_as_csv),
-        formatted_stats=Path("examples", "example.md").read_text(encoding="utf-8"),
-        num_lines=sum(int(s["number_of_lines"]) for s in stats_as_csv),
-        stats_as_csv=stats_as_csv,
-        markdown=markdown,
-    )
+    env.variables.update({
+        "last_update_time": dt.datetime.now(dt.UTC).strftime("%H:%M UTC on %Y-%m-%d"),
+        "num_packages": len(stats_as_csv),
+        "formatted_stats": Path("examples", "example.md").read_text(encoding="utf-8"),
+        "num_lines": sum(int(s["number_of_lines"]) for s in stats_as_csv),
+        "stats_as_csv": stats_as_csv,
+        "markdown": markdown,
+    })
 
 
 def on_post_build(env: Env) -> None:
