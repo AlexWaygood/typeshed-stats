@@ -185,6 +185,16 @@ def _get_argument_parser() -> argparse.ArgumentParser:
         ),
         dest="writefile",
     )
+    format_options.add_argument(
+        "--upstream-repo",
+        action="store_const",
+        const=None,
+        dest="output_option",
+        help=(
+            "Don't output anything to the terminal; "
+            "open the URL of the upstream repo in a web browser instead"
+        ),
+    )
 
     output_options.add_argument(
         "-o",
@@ -229,12 +239,14 @@ class _CmdArgs:
     overwrite: bool
     writefile: Path | None
     # OutputOption defaults to PPRINT if no argument was specified on the command line
-    output_option: OutputOption = OutputOption.PPRINT
+    # If `None`, it indicates that we should open the upstream URL in the default web browser
+    # rather than outputting anything to the terminal at all
+    output_option: OutputOption | None = OutputOption.PPRINT
 
 
 def _determine_output_option(
     args: _CmdArgs, *, parser: argparse.ArgumentParser
-) -> OutputOption:
+) -> OutputOption | None:
     writefile = args.writefile
     if not writefile:
         return args.output_option
@@ -313,10 +325,25 @@ def _run(argv: Sequence[str] | None = None) -> None:
         logger.info("Gathering stats...")
         stats = gather_stats_on_multiple_packages(packages, typeshed_dir=typeshed_dir)
 
-        logger.info("Formatting stats...")
-        formatted_stats = output_option.convert(stats)
-        logger.info("Writing stats...")
-        _write_stats(formatted_stats, args.writefile, logger)
+        if output_option is None:
+            import webbrowser
+
+            any_urls_opened = False
+            for package_info in stats:
+                if package_info.upstream_url is not None:
+                    any_urls_opened = True
+                    webbrowser.open_new_tab(package_info.upstream_url)
+            if not any_urls_opened:
+                parser.error(
+                    f"None of the packages selected "
+                    f"({','.join(package.package_name for package in stats)}) "
+                    f"have known upstream URLs!"
+                )
+        else:
+            logger.info("Formatting stats...")
+            formatted_stats = output_option.convert(stats)
+            logger.info("Writing stats...")
+            _write_stats(formatted_stats, args.writefile, logger)
 
 
 def main(argv: Sequence[str] | None = None) -> None:

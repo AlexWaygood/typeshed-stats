@@ -5,8 +5,8 @@ import textwrap
 from collections.abc import Callable, Iterator, Sequence
 from pathlib import Path
 
-# Make sure not to import rich or markdown here, since they're optional dependencies
-# Some tests assert behaviour that's predicated on these modules not yet being imported
+# Make sure not to import rich or markdown here, since they're optional dependencies.
+# Some tests assert behaviour that's predicated on these modules not yet being imported.
 import pytest
 
 from typeshed_stats.gather import (

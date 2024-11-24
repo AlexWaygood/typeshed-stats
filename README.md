@@ -34,6 +34,7 @@ Some examples of things you can do from the command line:
 - Create a `.csv` file with stats on all typeshed stubs: `typeshed-stats --typeshed-dir <PATH_TO_TYPESHED_CLONE> --to-file stats.csv` (the `.csv` file extension will be automatically detected by the script to identify the format required).
 - Pretty-print stats on typeshed stubs for emoji and redis to the terminal, in JSON format: `typeshed-stats --typeshed-dir <PATH_TO_TYPESHED_CLONE> --to-json emoji redis`
 - Generate a MarkDown file detailing stats on typeshed's stubs for protobuf and the stdlib: `typeshed-stats --typeshed-dir <PATH_TO_TYPESHED_CLONE> --to-file stats.md stdlib protobuf`
+- Open the upstream repository URLs for `requests`, `Flask-SocketIO` and `CPython` in your default web browser: `typeshed-stats --typeshed-dir <PATH_TO_TYPESHED_CLONE> --upstream-repo requests Flask-SocketIO stdlib`
 
 Example usage of the Python-level API:
 

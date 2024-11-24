@@ -5,18 +5,12 @@ build-backend = "hatchling.build"
 [project]
 name = "typeshed_stats"
 dynamic = ["version"]
-authors = [
-    { name="Alex Waygood", email="alex.waygood@gmail.com" },
-]
+authors = [{ name = "Alex Waygood", email = "alex.waygood@gmail.com" }]
 description = "Library and command-line tool to gather stats on typeshed packages"
 license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.11"
-keywords = [
-    "typeshed",
-    "typing",
-    "stubs",
-]
+keywords = ["typeshed", "typing", "stubs"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -35,7 +29,7 @@ dependencies = [
     "cattrs",
     "aiohttp[speedups]>=3.9.0",
     "packaging",
-    "pathspec>=0.10.3",  # needs to be py.typed
+    "pathspec>=0.10.3",         # needs to be py.typed
     "Jinja2>=3",
 ]
 
@@ -88,7 +82,21 @@ docstring-code-format = true
 skip-magic-trailing-comma = true
 
 [tool.ruff.lint]
-select = ["E", "F", "B", "B9", "D", "SIM", "I", "PT", "UP", "PGH", "PYI", "RUF"]
+select = [
+    "ARG",
+    "E",
+    "F",
+    "B",
+    "B9",
+    "D",
+    "SIM",
+    "I",
+    "PT",
+    "UP",
+    "PGH",
+    "PYI",
+    "RUF",
+]
 ignore = [
     # These are all enforced by, or incompatible with, the ruff formatter:
     "E203",
@@ -107,16 +115,16 @@ ignore = [
     "UP038",
 ]
 unfixable = [
-    "F841",  # unused variable. ruff keeps the call, but mostly we want to get rid of it all
-    "F601",  # automatic fix might obscure issue
-    "F602",  # automatic fix might obscure issue
-    "B018",  # automatic fix might obscure issue
-    "RUF017"  # Ruff's fix is faster, but I prefer using itertools.chain_from_iterable
+    "F841",   # unused variable. ruff keeps the call, but mostly we want to get rid of it all
+    "F601",   # automatic fix might obscure issue
+    "F602",   # automatic fix might obscure issue
+    "B018",   # automatic fix might obscure issue
+    "RUF017", # Ruff's fix is faster, but I prefer using itertools.chain_from_iterable
 ]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/*.py" = [
-    "D",  # Don't need docstrings in test methods
+    "D", # Don't need docstrings in test methods
 ]
 
 [tool.ruff.lint.pydocstyle]
