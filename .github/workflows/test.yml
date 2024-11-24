@@ -30,9 +30,6 @@ permissions:
 env:
   FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
   PY_COLORS: 1 # Recognized by the `py` package, dependency of `pytest`
-  # TERM is needed for FORCE_COLOR to work on mypy on Ubuntu,
-  # see https://github.com/python/mypy/issues/13817
-  TERM: xterm-256color
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 concurrency:

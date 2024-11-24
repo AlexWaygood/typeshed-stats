@@ -10,6 +10,9 @@ on:
       - "**.csv"
       - "**.html"
 
+env:
+  FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
