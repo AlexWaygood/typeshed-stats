@@ -20,7 +20,7 @@ repos:
     rev: 1.19.1 # must match pyproject.toml
     hooks:
       - id: blacken-docs
-        additional_dependencies: [black==24.4.2]
+        additional_dependencies: [black==24.10.0]
   - repo: https://github.com/codespell-project/codespell
     rev: v2.3.0
     hooks:
