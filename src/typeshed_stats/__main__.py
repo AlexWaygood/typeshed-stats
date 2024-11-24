@@ -2,8 +2,8 @@
 
 import sys
 
-if sys.version_info < (3, 10):  # noqa: UP036
-    raise ImportError("Python 3.10+ is required!")
+if sys.version_info < (3, 11):  # noqa: UP036
+    raise ImportError("Python 3.11+ is required!")
 
 __all__: list[str] = []
 
