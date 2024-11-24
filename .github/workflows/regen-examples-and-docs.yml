@@ -47,7 +47,7 @@ jobs:
             && steps.lint.outcome == 'success'
           }}
         run: |
-          git add .
+          git add examples
           git diff --staged --quiet || git commit -m "👷 Automated regeneration of examples and docs"
           git push
       - name: Deploy docs
