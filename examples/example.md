@@ -5085,7 +5085,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-13,212 (excluding blank lines)
+13,218 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5110,19 +5110,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,891
-    - Unannotated parameters: 327
-    - Explicit `Any` parameters: 13
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 204
+    - Annotated parameters: 3,892
+    - Unannotated parameters: 323
+    - Explicit `Any` parameters: 14
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 203
 - Returns:
-    - Annotated returns: 1,317
+    - Annotated returns: 1,313
     - Unannotated returns: 87
-    - Explicit `Any` returns: 13
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
+    - Explicit `Any` returns: 11
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
 - Variables:
-    - Annotated variables: 4,018
+    - Annotated variables: 4,019
     - Explicit `Any` variables: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 340
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 339
 - Class definitions:
     - Total class definitions: 603
     - Class definitions with `Any`: 1
@@ -8404,7 +8404,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-62,373 (excluding blank lines)
+62,797 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8420,7 +8420,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,042 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,032 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8429,21 +8429,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28,199
+    - Annotated parameters: 28,221
     - Unannotated parameters: 819
     - Explicit `Any` parameters: 2,007
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 81
 - Returns:
-    - Annotated returns: 15,435
+    - Annotated returns: 15,481
     - Unannotated returns: 362
     - Explicit `Any` returns: 834
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
 - Variables:
-    - Annotated variables: 8,707
+    - Annotated variables: 8,833
     - Explicit `Any` variables: 315
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 321
 - Class definitions:
-    - Total class definitions: 2,747
+    - Total class definitions: 2,872
     - Class definitions with `Any`: 25
     - Class definitions marked as at least partially `Incomplete`: 0
 
