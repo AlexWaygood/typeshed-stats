@@ -8404,7 +8404,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-63,195 (excluding blank lines)
+63,194 (excluding blank lines)
 
 ### Package status: *stdlib*
 
