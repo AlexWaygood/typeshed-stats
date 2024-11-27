@@ -2,8 +2,6 @@ import subprocess
 import sys
 from pathlib import Path
 
-# Make sure not to import rich here, since it's an optional dependency
-# Some tests assert behaviour that's predicated on it not yet being imported
 import pytest
 
 

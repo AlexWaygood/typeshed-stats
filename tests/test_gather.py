@@ -15,8 +15,6 @@ from pathlib import Path
 from typing import Final, TypeAlias
 from unittest import mock
 
-# Make sure not to import rich here, since it's an optional dependency
-# Some tests assert behaviour that's predicated on rich not yet being imported
 import aiohttp
 import pytest
 from packaging.version import Version

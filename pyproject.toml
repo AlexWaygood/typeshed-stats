@@ -31,6 +31,8 @@ dependencies = [
     "packaging",
     "pathspec>=0.10.3",         # needs to be py.typed
     "Jinja2>=3",
+    "rich",
+    "rich-argparse>=1",
 ]
 
 [project.urls]
@@ -41,9 +43,7 @@ dependencies = [
 typeshed-stats = "typeshed_stats._cli:main"
 
 [project.optional-dependencies]
-rich = ["rich", "rich-argparse>=1"]
 dev = [
-    "typeshed-stats[rich]",
     "MarkDown==3.7",
     "mkdocs==1.6.1",
     "mkdocs-macros-plugin==1.3.7",

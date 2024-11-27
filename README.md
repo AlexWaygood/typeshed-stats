@@ -47,8 +47,11 @@ with tmpdir_typeshed() as typeshed:
 
 ## How can I use this?
 
-1. Run `pip install typeshed-stats[rich]` to install the package
+1. Run `pip install typeshed-stats` to install the package
 1. Run `typeshed-stats --help` for information about various options
+
+Alternatively, if you have [`uv`](https://docs.astral.sh/uv/) installed,
+`uvx typeshed-stats` can be used to invoke the tool without any previous installation step.
 
 ## Are there any examples of things this script can produce, other than [the website](https://alexwaygood.github.io/typeshed-stats/)?
 

@@ -27,7 +27,7 @@ def _format_stats_for_pprinting(
     stats: Sequence[PackageInfo],
 ) -> dict[PackageName, PackageInfo]:
     # *Don't* stringify this one
-    # It makes it harder for pprint or rich to format it nicely
+    # It makes it harder for rich to format it nicely
     return {info_bundle.package_name: info_bundle for info_bundle in stats}
 
 
@@ -75,16 +75,9 @@ def _write_stats(
     formatted_stats: object, writefile: Path | None, logger: logging.Logger
 ) -> None:
     if writefile is None:
-        pprint: Callable[[object], None]
-        try:
-            from rich import print as pprint
-        except ImportError:
-            if isinstance(formatted_stats, str):
-                pprint = print
-            else:
-                from pprint import pprint
+        import rich
 
-        pprint(formatted_stats)
+        rich.print(formatted_stats)
     else:
         newline = "" if writefile.suffix == ".csv" else "\n"
         if not isinstance(formatted_stats, str):
@@ -100,19 +93,15 @@ _LoggingLevels: TypeAlias = Literal[
 
 
 def _get_help_formatter() -> type[argparse.HelpFormatter]:
-    try:
-        import rich  # noqa: F401  # pyright: ignore[reportUnusedImport]
-        from rich_argparse import RichHelpFormatter as HelpFormatter
-    except ImportError:
-        from argparse import HelpFormatter  # type: ignore[assignment]
-    else:
-        HelpFormatter.styles.update({
-            "argparse.groups": "gold3",
-            "argparse.args": "navajo_white1",
-            "argparse.metavar": "dark_orange3",
-        })
-        HelpFormatter.group_name_formatter = str.title
-    return HelpFormatter
+    import rich_argparse
+
+    rich_argparse.RichHelpFormatter.styles.update({
+        "argparse.groups": "gold3",
+        "argparse.args": "navajo_white1",
+        "argparse.metavar": "dark_orange3",
+    })
+    rich_argparse.RichHelpFormatter.group_name_formatter = str.title
+    return rich_argparse.RichHelpFormatter
 
 
 def _get_argument_parser() -> argparse.ArgumentParser:

@@ -1,3 +1,4 @@
+import builtins
 import csv
 import io
 import json
@@ -11,8 +12,6 @@ from pathlib import Path
 from typing import Any, cast
 from unittest import mock
 
-# Make sure not to import rich here, as it's an optional dependency.
-# Some tests assert behaviour that's predicated on rich not yet being imported.
 import markdown
 import pytest
 from pytest_mock import MockerFixture
@@ -45,8 +44,12 @@ def args(typeshed: Path) -> list[str]:
 @pytest.fixture
 def disabled_rich() -> Iterator[None]:
     """This is necessary for several of the tests that depend on reading from stdout."""
-    assert "rich" not in sys.modules
-    with mock.patch.dict("sys.modules", rich=None):
+    if "rich" not in sys.modules:
+        import rich
+
+        assert "rich" in sys.modules
+
+    with mock.patch.object(rich, "print", builtins.print):
         yield
 
 
@@ -523,50 +526,34 @@ class TestOutputOptionsToTerminalSuccessCases(OutputOptionsPrintingToTerminalTes
         result = self._get_stdout()
         markdown.markdown(result)
 
-    def test_pprint_option_with_rich_available(self) -> None:
+    def test_pprint_option(self) -> None:
         sys_modules = cast(dict[str, types.ModuleType | None], sys.modules)
-        assert sys_modules["rich"] is None
-        del sys.modules["rich"]
+        previous_rich = sys_modules.get("rich")
 
-        import rich
+        try:
+            sys.modules.pop("rich", None)
 
-        old_rich_print = rich.print
-        rich_print_called = False
+            import rich
 
-        def new_rich_print(*args: Any, **kwargs: Any) -> None:
-            nonlocal rich_print_called
-            rich_print_called = True
-            old_rich_print(*args, **kwargs)
+            assert rich is not previous_rich
 
-        rich.print = new_rich_print
+            old_rich_print = rich.print
+            rich_print_called = False
 
-        self._assert_outputoption_works("--pprint")
-        assert rich_print_called
+            def new_rich_print(*args: Any, **kwargs: Any) -> None:
+                nonlocal rich_print_called
+                rich_print_called = True
+                old_rich_print(*args, **kwargs)
 
-        rich.print = old_rich_print
-        sys_modules["rich"] = None
+            rich.print = new_rich_print
 
-    @pytest.mark.usefixtures("disabled_rich")
-    def test_pprint_option_with_rich_unavailable(
-        self, mocked_pprint_dot_pprint: mock.MagicMock
-    ) -> None:
-        self._assert_outputoption_works("--pprint")
-        mocked_pprint_dot_pprint.assert_called_once()
-
-    @pytest.mark.usefixtures("disabled_rich")
-    @pytest.mark.parametrize(
-        "option",
-        [
-            _OutputOption_to_argparse(option)
-            for option in OutputOption
-            if option is not OutputOption.PPRINT
-        ],
-    )
-    def test_other_options_with_rich_unavailable(
-        self, option: str, mocked_pprint_dot_pprint: mock.MagicMock
-    ) -> None:
-        self._assert_outputoption_works(option)
-        mocked_pprint_dot_pprint.assert_not_called()
+            try:
+                self._assert_outputoption_works("--pprint")
+                assert rich_print_called
+            finally:
+                rich.print = old_rich_print
+        finally:
+            sys_modules["rich"] = previous_rich
 
 
 # ========================
