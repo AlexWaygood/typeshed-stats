@@ -2288,8 +2288,8 @@
     "upstream_url": "https://github.com/collective/icalendar",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 706,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 923,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -2300,18 +2300,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 178,
-      "unannotated_parameters": 77,
-      "annotated_returns": 188,
-      "unannotated_returns": 42,
-      "explicit_Incomplete_parameters": 4,
+      "annotated_parameters": 244,
+      "unannotated_parameters": 74,
+      "annotated_returns": 278,
+      "unannotated_returns": 40,
+      "explicit_Incomplete_parameters": 5,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 6,
       "explicit_Any_returns": 3,
-      "annotated_variables": 92,
+      "annotated_variables": 99,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 20,
-      "classdefs": 47,
+      "classdefs": 54,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 3
     }
@@ -3446,7 +3446,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on [protobuf v28.3](https://github.com/protocolbuffers/protobuf/releases/tag/v28.3) (python `protobuf==5.28.3`).",
     "number_of_lines": 4886,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -5021,7 +5021,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 63684,
+    "number_of_lines": 63704,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5031,19 +5031,19 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 998
+      "allowlist_length": 997
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 28722,
+      "annotated_parameters": 28727,
       "unannotated_parameters": 819,
-      "annotated_returns": 15760,
+      "annotated_returns": 15764,
       "unannotated_returns": 362,
       "explicit_Incomplete_parameters": 81,
       "explicit_Incomplete_returns": 12,
       "explicit_Any_parameters": 2011,
       "explicit_Any_returns": 831,
-      "annotated_variables": 8923,
+      "annotated_variables": 8924,
       "explicit_Any_variables": 315,
       "explicit_Incomplete_variables": 321,
       "classdefs": 3086,
