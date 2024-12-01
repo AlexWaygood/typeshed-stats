@@ -4539,40 +4539,6 @@
     }
   },
   {
-    "package_name": "redis",
-    "stub_distribution_name": "types-redis",
-    "upstream_url": "https://github.com/redis/redis-py",
-    "completeness_level": "PARTIAL",
-    "extra_description": null,
-    "number_of_lines": 6203,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 67
-    },
-    "pyright_setting": "NOT_STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 3963,
-      "unannotated_parameters": 1223,
-      "annotated_returns": 1379,
-      "unannotated_returns": 607,
-      "explicit_Incomplete_parameters": 362,
-      "explicit_Incomplete_returns": 5,
-      "explicit_Any_parameters": 92,
-      "explicit_Any_returns": 330,
-      "annotated_variables": 618,
-      "explicit_Any_variables": 158,
-      "explicit_Incomplete_variables": 34,
-      "classdefs": 215,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 2
-    }
-  },
-  {
     "package_name": "regex",
     "stub_distribution_name": "types-regex",
     "upstream_url": "https://github.com/mrabarnett/mrab-regex",
