@@ -5602,7 +5602,7 @@ The `types-pika` package contains alternate, more complete type stubs, that are 
 
 ### Number of lines
 
-2,235 (excluding blank lines)
+2,238 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5627,21 +5627,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pika`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 618
+    - Annotated parameters: 621
     - Unannotated parameters: 383
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 141
 - Returns:
-    - Annotated returns: 413
+    - Annotated returns: 417
     - Unannotated returns: 347
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
-    - Annotated variables: 464
+    - Annotated variables: 466
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 258
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 257
 - Class definitions:
-    - Total class definitions: 222
+    - Total class definitions: 223
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -5777,7 +5777,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-4,886 (excluding blank lines)
+4,905 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -5802,21 +5802,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 793
+    - Annotated parameters: 799
     - Unannotated parameters: 254
     - Explicit `Any` parameters: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 535
+    - Annotated returns: 536
     - Unannotated returns: 75
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 935
+    - Annotated variables: 945
     - Explicit `Any` variables: 123
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
-    - Total class definitions: 186
+    - Total class definitions: 188
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
