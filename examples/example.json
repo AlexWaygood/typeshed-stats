@@ -1300,8 +1300,8 @@
     "upstream_url": "https://github.com/kiorky/croniter",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 231,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 238,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -1312,13 +1312,13 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 86,
+      "annotated_parameters": 89,
       "unannotated_parameters": 0,
-      "annotated_returns": 25,
+      "annotated_returns": 26,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
+      "explicit_Any_parameters": 1,
       "explicit_Any_returns": 8,
       "annotated_variables": 46,
       "explicit_Any_variables": 0,
@@ -4987,7 +4987,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 63737,
+    "number_of_lines": 63805,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4997,22 +4997,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 948
+      "allowlist_length": 942
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 28721,
+      "annotated_parameters": 28736,
       "unannotated_parameters": 819,
-      "annotated_returns": 15740,
+      "annotated_returns": 15755,
       "unannotated_returns": 362,
       "explicit_Incomplete_parameters": 81,
       "explicit_Incomplete_returns": 12,
-      "explicit_Any_parameters": 2010,
-      "explicit_Any_returns": 833,
-      "annotated_variables": 8958,
-      "explicit_Any_variables": 316,
+      "explicit_Any_parameters": 2015,
+      "explicit_Any_returns": 838,
+      "annotated_variables": 8965,
+      "explicit_Any_variables": 321,
       "explicit_Incomplete_variables": 321,
-      "classdefs": 3075,
+      "classdefs": 3079,
       "classdefs_with_Any": 25,
       "classdefs_with_Incomplete": 0
     }
