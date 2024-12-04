@@ -1946,7 +1946,7 @@
     "upstream_url": "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree",
     "completeness_level": "COMPLETE",
     "extra_description": "Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",
-    "number_of_lines": 1007,
+    "number_of_lines": 1118,
     "package_status": "NOT_ON_PYPI",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1958,18 +1958,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 282,
+      "annotated_parameters": 323,
       "unannotated_parameters": 25,
-      "annotated_returns": 328,
+      "annotated_returns": 336,
       "unannotated_returns": 18,
       "explicit_Incomplete_parameters": 2,
       "explicit_Incomplete_returns": 22,
       "explicit_Any_parameters": 3,
       "explicit_Any_returns": 1,
-      "annotated_variables": 372,
+      "annotated_variables": 373,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 17,
-      "classdefs": 106,
+      "classdefs": 107,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -4760,14 +4760,14 @@
     },
     "pyright_setting": "ENTIRELY_EXCLUDED",
     "annotation_stats": {
-      "annotated_parameters": 1445,
+      "annotated_parameters": 1451,
       "unannotated_parameters": 25,
-      "annotated_returns": 357,
+      "annotated_returns": 358,
       "unannotated_returns": 2,
       "explicit_Incomplete_parameters": 34,
       "explicit_Incomplete_returns": 7,
-      "explicit_Any_parameters": 155,
-      "explicit_Any_returns": 17,
+      "explicit_Any_parameters": 156,
+      "explicit_Any_returns": 18,
       "annotated_variables": 282,
       "explicit_Any_variables": 13,
       "explicit_Incomplete_variables": 24,
@@ -4987,7 +4987,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 63722,
+    "number_of_lines": 63737,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -4997,13 +4997,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 959
+      "allowlist_length": 948
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 28707,
+      "annotated_parameters": 28721,
       "unannotated_parameters": 819,
-      "annotated_returns": 15739,
+      "annotated_returns": 15740,
       "unannotated_returns": 362,
       "explicit_Incomplete_parameters": 81,
       "explicit_Incomplete_returns": 12,
