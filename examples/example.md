@@ -6913,7 +6913,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-440 (excluding blank lines)
+432 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6938,12 +6938,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `python-dateutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 172
+    - Annotated parameters: 169
     - Unannotated parameters: 65
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
 - Returns:
-    - Annotated returns: 112
+    - Annotated returns: 109
     - Unannotated returns: 42
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -6953,63 +6953,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 4
 - Class definitions:
     - Total class definitions: 30
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
-## Info on typeshed's stubs for `python-gflags`
-
-### Upstream repo URL
-
-[https://github.com/google/python-gflags](https://github.com/google/python-gflags)
-
-### Stub distribution name
-
-`types-python-gflags`
-
-### Number of lines
-
-251 (excluding blank lines)
-
-### Package status: *up to date*
-
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 1 unique allowlist entry for `python-gflags` when running stubtest in CI.
-
-### Pyright settings in CI: *strict*
-
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
-
-### Statistics on the annotations in typeshed's stubs for `python-gflags`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 186
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 39
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
-- Returns:
-    - Annotated returns: 98
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 9
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 19
-    - Explicit `Any` variables: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 27
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -8347,7 +8290,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-63,976 (excluding blank lines)
+64,050 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8363,7 +8306,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 941 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 932 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8372,21 +8315,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28,815
-    - Unannotated parameters: 819
-    - Explicit `Any` parameters: 2,015
+    - Annotated parameters: 28,858
+    - Unannotated parameters: 840
+    - Explicit `Any` parameters: 2,016
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 81
 - Returns:
-    - Annotated returns: 15,799
-    - Unannotated returns: 363
+    - Annotated returns: 15,832
+    - Unannotated returns: 370
     - Explicit `Any` returns: 839
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
 - Variables:
-    - Annotated variables: 8,984
+    - Annotated variables: 8,985
     - Explicit `Any` variables: 321
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 321
 - Class definitions:
-    - Total class definitions: 3,082
+    - Total class definitions: 3,085
     - Class definitions with `Any`: 25
     - Class definitions marked as at least partially `Incomplete`: 0
 
