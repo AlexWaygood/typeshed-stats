@@ -240,9 +240,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 233 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -8290,7 +8290,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64,062 (excluding blank lines)
+64,095 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8306,7 +8306,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 921 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 920 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8315,7 +8315,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28,859
+    - Annotated parameters: 28,867
     - Unannotated parameters: 840
     - Explicit `Any` parameters: 2,016
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 81
@@ -8325,7 +8325,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 837
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
 - Variables:
-    - Annotated variables: 8,992
+    - Annotated variables: 9,005
     - Explicit `Any` variables: 321
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 321
 - Class definitions:
@@ -9145,7 +9145,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Upstream repo URL
 
-[https://github.com/eventable/vobject](https://github.com/eventable/vobject)
+[https://github.com/py-vobject/vobject](https://github.com/py-vobject/vobject)
 
 ### Stub distribution name
 
@@ -9153,7 +9153,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-535 (excluding blank lines)
+526 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9178,21 +9178,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `vobject`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 107
+    - Annotated parameters: 108
     - Unannotated parameters: 183
     - Explicit `Any` parameters: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 20
 - Returns:
-    - Annotated returns: 75
-    - Unannotated returns: 103
-    - Explicit `Any` returns: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Annotated returns: 76
+    - Unannotated returns: 102
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 185
-    - Explicit `Any` variables: 90
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
+    - Annotated variables: 174
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 80
 - Class definitions:
-    - Total class definitions: 50
+    - Total class definitions: 51
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
