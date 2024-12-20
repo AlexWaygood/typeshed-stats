@@ -4963,13 +4963,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 920
+      "allowlist_length": 919
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 28867,
+      "annotated_parameters": 28868,
       "unannotated_parameters": 840,
-      "annotated_returns": 15828,
+      "annotated_returns": 15829,
       "unannotated_returns": 370,
       "explicit_Incomplete_parameters": 81,
       "explicit_Incomplete_returns": 12,
