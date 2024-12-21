@@ -388,7 +388,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 4
+      "allowlist_length": 16
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -556,7 +556,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 21
+      "allowlist_length": 22
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -590,7 +590,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 100
+      "allowlist_length": 113
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -625,7 +625,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 86
+      "allowlist_length": 89
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
@@ -864,7 +864,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 2
+      "allowlist_length": 17
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -1035,7 +1035,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 4
+      "allowlist_length": 5
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -1103,7 +1103,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 0
+      "allowlist_length": 1
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -1240,7 +1240,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 0
+      "allowlist_length": 3
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -1546,7 +1546,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 1
+      "allowlist_length": 2
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -1990,7 +1990,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 148
+      "allowlist_length": 188
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2058,7 +2058,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 2
+      "allowlist_length": 3
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2092,7 +2092,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 8
+      "allowlist_length": 9
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
@@ -2160,7 +2160,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 1
+      "allowlist_length": 2
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -2194,7 +2194,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 5
+      "allowlist_length": 20
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -2330,7 +2330,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 0
+      "allowlist_length": 1
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -2478,7 +2478,7 @@
       "explicit_Incomplete_returns": 1,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 1,
-      "annotated_variables": 51,
+      "annotated_variables": 47,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 36,
       "classdefs": 36,
@@ -2568,7 +2568,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 2
+      "allowlist_length": 6
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2772,7 +2772,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 1
+      "allowlist_length": 3
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3181,7 +3181,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 31
+      "allowlist_length": 71
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3249,7 +3249,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 11
+      "allowlist_length": 12
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3385,7 +3385,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 0
+      "allowlist_length": 1
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -3489,7 +3489,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 14
+      "allowlist_length": 18
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3950,7 +3950,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 11,
       "explicit_Any_returns": 0,
-      "annotated_variables": 122,
+      "annotated_variables": 58,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0,
       "classdefs": 24,
@@ -3974,7 +3974,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 64
+      "allowlist_length": 65
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4348,7 +4348,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 4
+      "allowlist_length": 7
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4518,7 +4518,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 13
+      "allowlist_length": 16
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4552,7 +4552,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 66
+      "allowlist_length": 88
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -4654,7 +4654,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 3
+      "allowlist_length": 4
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4791,7 +4791,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 3
+      "allowlist_length": 4
     },
     "pyright_setting": "ENTIRELY_EXCLUDED",
     "annotation_stats": {
@@ -4825,7 +4825,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 11
+      "allowlist_length": 14
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4859,7 +4859,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 0
+      "allowlist_length": 1
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4963,7 +4963,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 919
+      "allowlist_length": 920
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
@@ -5133,7 +5133,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 0
+      "allowlist_length": 1
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -5167,7 +5167,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 1
+      "allowlist_length": 5
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -5543,7 +5543,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 0
+      "allowlist_length": 1
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -5577,7 +5577,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 5
+      "allowlist_length": 13
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
