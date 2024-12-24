@@ -238,7 +238,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-233 (excluding blank lines)
+256 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -263,8 +263,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Flask-SocketIO`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 138
-    - Unannotated parameters: 36
+    - Annotated parameters: 140
+    - Unannotated parameters: 34
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
@@ -273,11 +273,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 3
-    - Explicit `Any` variables: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Annotated variables: 21
+    - Explicit `Any` variables: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
-    - Total class definitions: 8
+    - Total class definitions: 11
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -8290,7 +8290,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64,152 (excluding blank lines)
+64,219 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8315,19 +8315,19 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28,882
-    - Unannotated parameters: 838
-    - Explicit `Any` parameters: 2,016
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 81
+    - Annotated parameters: 28,932
+    - Unannotated parameters: 827
+    - Explicit `Any` parameters: 2,023
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 84
 - Returns:
-    - Annotated returns: 15,835
-    - Unannotated returns: 370
-    - Explicit `Any` returns: 837
+    - Annotated returns: 15,849
+    - Unannotated returns: 367
+    - Explicit `Any` returns: 839
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
 - Variables:
-    - Annotated variables: 9,014
-    - Explicit `Any` variables: 320
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 320
+    - Annotated variables: 9,016
+    - Explicit `Any` variables: 322
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 316
 - Class definitions:
     - Total class definitions: 3,088
     - Class definitions with `Any`: 25
