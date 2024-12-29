@@ -1533,6 +1533,38 @@
     }
   },
   {
+    "package_name": "django-import-export",
+    "stub_distribution_name": "types-django-import-export",
+    "upstream_url": "https://github.com/django-import-export/django-import-export",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 660,
+    "package_status": "OUT_OF_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "SKIPPED",
+      "platforms": [],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 374,
+      "unannotated_parameters": 2,
+      "annotated_returns": 228,
+      "unannotated_returns": 8,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 129,
+      "explicit_Any_returns": 26,
+      "annotated_variables": 140,
+      "explicit_Any_variables": 8,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 64,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "docker",
     "stub_distribution_name": "types-docker",
     "upstream_url": "https://github.com/docker/docker-py",
@@ -5089,7 +5121,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 65699,
+    "number_of_lines": 65710,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5099,22 +5131,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 841
+      "allowlist_length": 840
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 28981,
+      "annotated_parameters": 28986,
       "unannotated_parameters": 827,
-      "annotated_returns": 15884,
+      "annotated_returns": 15887,
       "unannotated_returns": 367,
       "explicit_Incomplete_parameters": 83,
       "explicit_Incomplete_returns": 12,
       "explicit_Any_parameters": 2023,
       "explicit_Any_returns": 838,
-      "annotated_variables": 9053,
+      "annotated_variables": 9054,
       "explicit_Any_variables": 313,
       "explicit_Incomplete_variables": 316,
-      "classdefs": 3095,
+      "classdefs": 3096,
       "classdefs_with_Any": 25,
       "classdefs_with_Incomplete": 0
     }

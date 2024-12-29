@@ -2561,6 +2561,61 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
+## Info on typeshed's stubs for `django-import-export`
+
+### Upstream repo URL
+
+[https://github.com/django-import-export/django-import-export](https://github.com/django-import-export/django-import-export)
+
+### Stub distribution name
+
+`types-django-import-export`
+
+### Number of lines
+
+660 (excluding blank lines)
+
+### Package status: *out of date*
+
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *skipped*
+
+Stubtest is skipped in typeshed's CI for this package.
+
+Typeshed currently has 0 allowlist entries for `django-import-export` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `django-import-export`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 374
+    - Unannotated parameters: 2
+    - Explicit `Any` parameters: 129
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 228
+    - Unannotated returns: 8
+    - Explicit `Any` returns: 26
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 140
+    - Explicit `Any` variables: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 64
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `docker`
 
 ### Upstream repo URL
@@ -8518,7 +8573,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-65,699 (excluding blank lines)
+65,710 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8534,7 +8589,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 841 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 840 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8543,21 +8598,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28,981
+    - Annotated parameters: 28,986
     - Unannotated parameters: 827
     - Explicit `Any` parameters: 2,023
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 83
 - Returns:
-    - Annotated returns: 15,884
+    - Annotated returns: 15,887
     - Unannotated returns: 367
     - Explicit `Any` returns: 838
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
 - Variables:
-    - Annotated variables: 9,053
+    - Annotated variables: 9,054
     - Explicit `Any` variables: 313
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 316
 - Class definitions:
-    - Total class definitions: 3,095
+    - Total class definitions: 3,096
     - Class definitions with `Any`: 25
     - Class definitions marked as at least partially `Incomplete`: 0
 
