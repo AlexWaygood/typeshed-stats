@@ -12,7 +12,7 @@ repos:
       - id: name-tests-test
         args: [--pytest-test-first]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.8.0 # must match pyproject.toml
+    rev: v0.8.5 # must match pyproject.toml
     hooks:
       - id: ruff
       - id: ruff-format
@@ -27,7 +27,7 @@ repos:
       - id: codespell
         additional_dependencies: ["tomli"]
   - repo: https://github.com/alan-turing-institute/CleverCSV-pre-commit
-    rev: v0.8.2
+    rev: v0.8.3
     hooks:
       - id: clevercsv-standardize
   - repo: https://github.com/igorshubovych/markdownlint-cli

@@ -1008,7 +1008,7 @@ def test_gather_stats_on_file_directory_passed(tmp_path: Path) -> None:
 def test_gather_stats_on_file_non_pyi_file_passed(tmp_path: Path) -> None:
     file = tmp_path / "foo.py"
     file.write_text("\n", encoding="utf-8")
-    with pytest.raises(ValueError, match="Expected a path pointing to a .pyi file"):
+    with pytest.raises(ValueError, match=r"Expected a path pointing to a \.pyi file"):
         gather_stats_on_file(file, typeshed_dir=".")
 
 
