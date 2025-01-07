@@ -12,7 +12,7 @@ PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,COMPLETE,-,234,
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,PARTIAL,-,1107,UP_TO_DATE,UPLOADED,NOT_STRICT,162,53,127,45,28,2,10,18,750,55,1,25,0,0,MISSING_STUBS_IGNORED,linux,10
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,193,UP_TO_DATE,UPLOADED,STRICT,102,0,21,0,0,0,0,0,17,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
 PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,COMPLETE,-,1296,UP_TO_DATE,UPLOADED,NOT_STRICT,528,270,222,172,12,0,46,12,220,160,2,91,0,0,ERROR_ON_MISSING_STUB,linux,16
-Pygments,types-Pygments,https://github.com/pygments/pygments,PARTIAL,-,845,OUT_OF_DATE,UPLOADED,NOT_STRICT,116,156,108,75,17,5,7,2,376,169,24,94,0,1,MISSING_STUBS_IGNORED,linux,4
+Pygments,types-Pygments,https://github.com/pygments/pygments,PARTIAL,-,845,UP_TO_DATE,UPLOADED,NOT_STRICT,116,156,108,75,17,5,7,2,376,169,24,94,0,1,MISSING_STUBS_IGNORED,linux,4
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,COMPLETE,-,56,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,2
 TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,COMPLETE,-,7,UP_TO_DATE,UPLOADED,STRICT,20,0,6,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,6
