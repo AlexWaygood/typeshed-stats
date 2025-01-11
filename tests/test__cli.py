@@ -619,7 +619,7 @@ def test_upstream_url_flag(
 
     package_names = [package.package_name for package in random_PackageInfo_sequence]
     for name in package_names:
-        (typeshed / "stubs" / name).mkdir()
+        (typeshed / "stubs" / name).mkdir(exist_ok=True)
 
     args += package_names
     args += ["--upstream-repo"]
