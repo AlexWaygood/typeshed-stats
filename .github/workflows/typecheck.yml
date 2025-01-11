@@ -88,5 +88,5 @@ jobs:
               owner: "AlexWaygood",
               repo: "typeshed-stats",
               title: `Daily typecheck failed on ${new Date().toDateString()}`,
-              body: "Runs are listed here: https://github.com/AlexWaygood/typeshed-stats/actions/workflows/typecheck.yml",
+              body: "Run listed here: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
             })
