@@ -20,11 +20,13 @@ repos:
     rev: 1.19.1 # must match pyproject.toml
     hooks:
       - id: blacken-docs
+        language: python # means renovate will update the `additional_dependencies` for the hook
         additional_dependencies: [black==24.10.0]
   - repo: https://github.com/codespell-project/codespell
     rev: v2.3.0
     hooks:
       - id: codespell
+        language: python # means renovate will update the `additional_dependencies` for the hook
         additional_dependencies: ["tomli"]
   - repo: https://github.com/alan-turing-institute/CleverCSV-pre-commit
     rev: v0.8.3
@@ -43,6 +45,32 @@ repos:
       - id: prettier
         exclude: "^examples/.*"
         exclude_types: ["markdown"]
+  - repo: https://github.com/abravalheri/validate-pyproject
+    rev: v0.23
+    hooks:
+      - id: validate-pyproject
+  - repo: https://github.com/woodruffw/zizmor-pre-commit
+    rev: v1.0.0
+    hooks:
+      - id: zizmor
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.30.0
+    hooks:
+      - id: check-github-workflows
+      - id: check-renovate
+        language: python # means renovate will update the `additional_dependencies` for the hook
+        additional_dependencies:
+          - "json5"
+  # `actionlint` hook, for verifying correct syntax in GitHub Actions workflows.
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.6
+    hooks:
+      - id: actionlint
+        additional_dependencies:
+          # actionlint has a shellcheck integration which extracts shell scripts in `run:` steps from GitHub Actions
+          # and checks these with shellcheck. This is arguably its most useful feature,
+          # but the integration only works if shellcheck is installed
+          - "github.com/wasilibs/go-shellcheck/cmd/shellcheck@v0.10.0"
   - repo: meta
     hooks:
       - id: check-hooks-apply

@@ -2,7 +2,8 @@ name: Typecheck
 
 on:
   push:
-    branches: main
+    branches:
+      - "main"
     paths-ignore:
       - "**.json"
       - "**.md"
@@ -36,6 +37,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: astral-sh/setup-uv@v5
         with:
           version: "latest"
@@ -46,13 +49,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: astral-sh/setup-uv@v5
         with:
           version: "latest"
       - run: |
           uv python pin 3.11
           uv sync --extra=dev
-          echo "$PWD/.venv/bin" >> $GITHUB_PATH
+          echo "${PWD}/.venv/bin" >> "${GITHUB_PATH}"
       - name: Run pyright
         uses: jakebailey/pyright-action@v2
         with:
