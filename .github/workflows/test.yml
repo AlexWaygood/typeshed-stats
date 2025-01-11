@@ -2,7 +2,8 @@ name: tests
 
 on:
   push:
-    branches: main
+    branches:
+      - "main"
     paths-ignore:
       - "examples/**"
       - "scripts/**"
@@ -49,6 +50,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Set up uv
         uses: astral-sh/setup-uv@v5
         with:
