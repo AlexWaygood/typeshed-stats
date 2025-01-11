@@ -12,7 +12,7 @@ repos:
       - id: name-tests-test
         args: [--pytest-test-first]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.9.0 # must match pyproject.toml
+    rev: v0.9.1 # must match pyproject.toml
     hooks:
       - id: ruff
       - id: ruff-format
@@ -50,11 +50,11 @@ repos:
     hooks:
       - id: validate-pyproject
   - repo: https://github.com/woodruffw/zizmor-pre-commit
-    rev: v1.0.0
+    rev: v1.0.1
     hooks:
       - id: zizmor
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.30.0
+    rev: 0.31.0
     hooks:
       - id: check-github-workflows
       - id: check-renovate
