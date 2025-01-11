@@ -84,18 +84,20 @@ skip-magic-trailing-comma = true
 [tool.ruff.lint]
 select = [
     "ARG",
-    "E",
-    "F",
     "B",
     "B9",
     "D",
-    "SIM",
+    "E",
+    "EXE",
+    "F",
     "I",
-    "PT",
-    "UP",
+    "ISC",
     "PGH",
     "PYI",
+    "PT",
     "RUF",
+    "SIM",
+    "UP",
 ]
 ignore = [
     # These are all enforced by, or incompatible with, the ruff formatter:
