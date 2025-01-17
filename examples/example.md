@@ -2573,7 +2573,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-660 (excluding blank lines)
+664 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -2589,21 +2589,21 @@ Stubtest is skipped in typeshed's CI for this package.
 
 Typeshed currently has 0 allowlist entries for `django-import-export` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `django-import-export`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 374
-    - Unannotated parameters: 2
+    - Annotated parameters: 376
+    - Unannotated parameters: 0
     - Explicit `Any` parameters: 129
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 228
-    - Unannotated returns: 8
-    - Explicit `Any` returns: 26
+    - Annotated returns: 236
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 31
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 140
@@ -8573,7 +8573,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-65,745 (excluding blank lines)
+65,744 (excluding blank lines)
 
 ### Package status: *stdlib*
 
