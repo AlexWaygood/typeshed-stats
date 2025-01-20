@@ -3532,6 +3532,63 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
+## Info on typeshed's stubs for `geopandas`
+
+### Upstream repo URL
+
+[https://github.com/geopandas/geopandas](https://github.com/geopandas/geopandas)
+
+### Stub distribution name
+
+`types-geopandas`
+
+### Number of lines
+
+1,789 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 15 unique allowlist entries for `geopandas` when running stubtest in CI.
+
+### Pyright settings in CI: *entirely excluded*
+
+All files in this stubs package are excluded from the pyright check in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `geopandas`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 1,002
+    - Unannotated parameters: 68
+    - Explicit `Any` parameters: 34
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 38
+- Returns:
+    - Annotated returns: 402
+    - Unannotated returns: 7
+    - Explicit `Any` returns: 10
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
+- Variables:
+    - Annotated variables: 30
+    - Explicit `Any` variables: 6
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 19
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `gevent`
 
 ### Upstream repo URL
@@ -8573,7 +8630,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-65,747 (excluding blank lines)
+65,745 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8598,15 +8655,15 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,004
-    - Unannotated parameters: 824
-    - Explicit `Any` parameters: 2,030
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 75
+    - Annotated parameters: 29,008
+    - Unannotated parameters: 818
+    - Explicit `Any` parameters: 2,032
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 70
 - Returns:
     - Annotated returns: 15,891
     - Unannotated returns: 365
     - Explicit `Any` returns: 840
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
     - Annotated variables: 9,058
     - Explicit `Any` variables: 315
