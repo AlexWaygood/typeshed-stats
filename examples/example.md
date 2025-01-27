@@ -7652,7 +7652,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-34,523 (excluding blank lines)
+34,524 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7677,14 +7677,14 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,791
-    - Unannotated parameters: 3,676
+    - Annotated parameters: 3,792
+    - Unannotated parameters: 3,675
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 428
 - Returns:
     - Annotated returns: 3,942
     - Unannotated returns: 2,003
-    - Explicit `Any` returns: 2
+    - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 284
 - Variables:
     - Annotated variables: 24,758

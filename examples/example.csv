@@ -133,7 +133,7 @@ python-jose,types-python-jose,https://github.com/mpdavis/python-jose,COMPLETE,-,
 python-nmap,types-python-nmap,https://bitbucket.org/xael/python-nmap,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-xlib,types-python-xlib,https://github.com/python-xlib/python-xlib,COMPLETE,-,5421,UP_TO_DATE,UPLOADED,STRICT,1334,0,583,0,0,0,15,8,3519,5,0,425,0,0,ERROR_ON_MISSING_STUB,linux,10
 pytz,types-pytz,https://github.com/stub42/pytz,COMPLETE,-,133,UP_TO_DATE,UPLOADED,STRICT,71,0,51,0,2,0,2,0,29,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux,7
-pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,34523,UP_TO_DATE,UPLOADED,NOT_STRICT,3791,3676,3942,2003,428,284,1,2,24758,0,2880,742,0,0,ERROR_ON_MISSING_STUB,win32,40
+pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,34524,UP_TO_DATE,UPLOADED,NOT_STRICT,3792,3675,3942,2003,428,284,1,3,24758,0,2880,742,0,0,ERROR_ON_MISSING_STUB,win32,40
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,COMPLETE,-,860,UP_TO_DATE,UPLOADED,NOT_STRICT,511,1,297,0,2,0,0,0,165,0,1,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,COMPLETE,-,172,UP_TO_DATE,UPLOADED,STRICT,96,0,31,0,0,0,0,4,33,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,650,UP_TO_DATE,UPLOADED,STRICT,280,0,151,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,11
