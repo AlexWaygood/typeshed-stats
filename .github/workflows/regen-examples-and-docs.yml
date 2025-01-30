@@ -18,6 +18,8 @@ env:
   FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
   CLICOLOR_FORCE: 1 # recognized by uv
 
+permissions: {}
+
 jobs:
   regen_examples_and_docs:
     runs-on: ubuntu-latest
