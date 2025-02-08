@@ -2402,7 +2402,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-473 (excluding blank lines)
+478 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2427,12 +2427,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `dateparser`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 126
+    - Annotated parameters: 129
     - Unannotated parameters: 130
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
-    - Annotated returns: 74
+    - Annotated returns: 77
     - Unannotated returns: 69
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -6117,7 +6117,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-4,901 (excluding blank lines)
+4,900 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6143,11 +6143,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 799
-    - Unannotated parameters: 254
+    - Unannotated parameters: 251
     - Explicit `Any` parameters: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 536
+    - Annotated returns: 535
     - Unannotated returns: 75
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -6402,7 +6402,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,485 (excluding blank lines)
+1,484 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6418,7 +6418,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `pyasn1` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `pyasn1` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 

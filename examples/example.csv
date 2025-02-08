@@ -41,7 +41,7 @@ commonmark,types-commonmark,https://github.com/rtfd/commonmark.py,PARTIAL,-,370,
 console-menu,types-console-menu,https://github.com/aegirhall/console-menu,COMPLETE,-,711,UP_TO_DATE,UPLOADED,STRICT,217,0,278,0,0,0,7,1,58,3,1,39,0,0,ERROR_ON_MISSING_STUB,linux,3
 corus,types-corus,https://github.com/natasha/corus,COMPLETE,-,999,UP_TO_DATE,UPLOADED,NOT_STRICT,101,567,153,157,44,72,0,0,422,0,368,68,0,0,ERROR_ON_MISSING_STUB,linux,0
 croniter,types-croniter,https://github.com/kiorky/croniter,COMPLETE,-,238,OUT_OF_DATE,UPLOADED,STRICT,89,0,26,0,0,0,1,8,46,0,0,8,1,0,ERROR_ON_MISSING_STUB,linux,0
-dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,COMPLETE,-,473,UP_TO_DATE,UPLOADED,NOT_STRICT,126,130,74,69,21,0,4,6,135,76,0,34,0,0,ERROR_ON_MISSING_STUB,linux,6
+dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,COMPLETE,-,478,UP_TO_DATE,UPLOADED,NOT_STRICT,129,130,77,69,21,0,4,6,135,76,0,34,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,https://github.com/micheles/decorator,COMPLETE,-,64,UP_TO_DATE,UPLOADED,STRICT,35,0,12,0,0,0,19,6,15,3,0,2,0,0,ERROR_ON_MISSING_STUB,linux,10
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,PARTIAL,-,234,UP_TO_DATE,UPLOADED,NOT_STRICT,81,97,38,13,13,0,0,1,37,0,19,12,0,0,MISSING_STUBS_IGNORED,linux,0
 django-import-export,types-django-import-export,https://github.com/django-import-export/django-import-export,COMPLETE,-,687,OUT_OF_DATE,UPLOADED,STRICT,367,0,250,0,0,0,128,35,154,10,0,70,0,0,SKIPPED,None,0
@@ -106,12 +106,12 @@ pexpect,types-pexpect,https://github.com/pexpect/pexpect,COMPLETE,-,673,UP_TO_DA
 pika,types-pika-ts,https://github.com/pika/pika,COMPLETE,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2238,UP_TO_DATE,UPLOADED,NOT_STRICT,621,383,417,347,141,24,4,0,466,0,257,223,0,0,ERROR_ON_MISSING_STUB,linux,7
 polib,types-polib,https://github.com/izimobil/polib,COMPLETE,-,146,UP_TO_DATE,UPLOADED,STRICT,61,0,75,0,0,0,18,0,45,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,1
 portpicker,types-portpicker,https://github.com/google/python_portpicker,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,10,0,6,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
-protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 28.1 on [protobuf v29.1](https://github.com/protocolbuffers/protobuf/releases/tag/v29.1) (python `protobuf==5.29.1`).,4901,UP_TO_DATE,UPLOADED,NOT_STRICT,799,254,536,75,14,0,17,4,945,123,1,188,0,0,MISSING_STUBS_IGNORED,linux,11
+protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 28.1 on [protobuf v29.1](https://github.com/protocolbuffers/protobuf/releases/tag/v29.1) (python `protobuf==5.29.1`).,4900,UP_TO_DATE,UPLOADED,NOT_STRICT,799,251,535,75,14,0,17,4,945,123,1,188,0,0,MISSING_STUBS_IGNORED,linux,11
 psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1588,UP_TO_DATE,UPLOADED,NOT_STRICT,132,309,201,352,28,0,0,47,599,178,95,90,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,18
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,COMPLETE,-,1743,UP_TO_DATE,UPLOADED,NOT_STRICT,337,152,314,75,29,5,14,21,518,60,3,332,2,0,ERROR_ON_MISSING_STUB,linux,2
 pyOpenSSL,types-pyOpenSSL,https://github.com/pyca/pyopenssl,PARTIAL,-,363,OBSOLETE,UPLOADED,STRICT,148,0,179,0,1,1,2,2,125,1,0,22,0,0,MISSING_STUBS_IGNORED,linux,1
 pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,8,UP_TO_DATE,UPLOADED,STRICT,8,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
-pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1485,UP_TO_DATE,UPLOADED,NOT_STRICT,203,529,112,422,39,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,4
+pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1484,UP_TO_DATE,UPLOADED,NOT_STRICT,203,529,112,422,39,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,2
 pyaudio,types-pyaudio,-,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,COMPLETE,-,162,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,70,0,0,12,0,0,ERROR_ON_MISSING_STUB,linux,0
 pycurl,types-pycurl,https://github.com/pycurl/pycurl,COMPLETE,-,708,UP_TO_DATE,UPLOADED,NOT_STRICT,15,7,26,6,0,4,0,0,662,0,0,4,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,0

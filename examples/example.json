@@ -1436,7 +1436,7 @@
     "upstream_url": "https://github.com/scrapinghub/dateparser",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 473,
+    "number_of_lines": 478,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1448,9 +1448,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 126,
+      "annotated_parameters": 129,
       "unannotated_parameters": 130,
-      "annotated_returns": 74,
+      "annotated_returns": 77,
       "unannotated_returns": 69,
       "explicit_Incomplete_parameters": 21,
       "explicit_Incomplete_returns": 0,
@@ -3647,7 +3647,7 @@
     "upstream_url": "https://github.com/protocolbuffers/protobuf",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 28.1 on [protobuf v29.1](https://github.com/protocolbuffers/protobuf/releases/tag/v29.1) (python `protobuf==5.29.1`).",
-    "number_of_lines": 4901,
+    "number_of_lines": 4900,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3660,8 +3660,8 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 799,
-      "unannotated_parameters": 254,
-      "annotated_returns": 536,
+      "unannotated_parameters": 251,
+      "annotated_returns": 535,
       "unannotated_returns": 75,
       "explicit_Incomplete_parameters": 14,
       "explicit_Incomplete_returns": 0,
@@ -3819,7 +3819,7 @@
     "upstream_url": "https://github.com/pyasn1/pyasn1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1485,
+    "number_of_lines": 1484,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3827,7 +3827,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 4
+      "allowlist_length": 2
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
