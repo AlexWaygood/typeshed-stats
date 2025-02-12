@@ -3746,40 +3746,6 @@
     }
   },
   {
-    "package_name": "pyOpenSSL",
-    "stub_distribution_name": "types-pyOpenSSL",
-    "upstream_url": "https://github.com/pyca/pyopenssl",
-    "completeness_level": "PARTIAL",
-    "extra_description": null,
-    "number_of_lines": 363,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 1
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 148,
-      "unannotated_parameters": 0,
-      "annotated_returns": 179,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 1,
-      "explicit_Incomplete_returns": 1,
-      "explicit_Any_parameters": 2,
-      "explicit_Any_returns": 2,
-      "annotated_variables": 125,
-      "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 22,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "pyRFC3339",
     "stub_distribution_name": "types-pyRFC3339",
     "upstream_url": "https://github.com/kurtraschke/pyRFC3339",

@@ -109,7 +109,6 @@ portpicker,types-portpicker,https://github.com/google/python_portpicker,COMPLETE
 protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 28.1 on [protobuf v29.1](https://github.com/protocolbuffers/protobuf/releases/tag/v29.1) (python `protobuf==5.29.1`).,4900,UP_TO_DATE,UPLOADED,NOT_STRICT,799,251,535,75,14,0,17,4,945,123,1,188,0,0,MISSING_STUBS_IGNORED,linux,11
 psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1588,UP_TO_DATE,UPLOADED,NOT_STRICT,132,309,201,352,28,0,0,47,599,178,95,90,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,18
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,COMPLETE,-,1743,UP_TO_DATE,UPLOADED,NOT_STRICT,337,152,314,75,29,5,14,21,518,60,3,332,2,0,ERROR_ON_MISSING_STUB,linux,2
-pyOpenSSL,types-pyOpenSSL,https://github.com/pyca/pyopenssl,PARTIAL,-,363,OBSOLETE,UPLOADED,STRICT,148,0,179,0,1,1,2,2,125,1,0,22,0,0,MISSING_STUBS_IGNORED,linux,1
 pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,8,UP_TO_DATE,UPLOADED,STRICT,8,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1484,UP_TO_DATE,UPLOADED,NOT_STRICT,203,529,112,422,39,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,2
 pyaudio,types-pyaudio,-,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
