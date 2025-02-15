@@ -146,7 +146,7 @@ seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2587,UP_TO_D
 setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,"If using `setuptools >= 71.1` *only* for `pkg_resources`,
 you don't need `types-setuptools` since `pkg_resources` is now typed.",3578,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1215,428,1019,173,44,11,4,6,713,3,237,186,0,0,ERROR_ON_MISSING_STUB,linux;win32,93
 shapely,types-shapely,https://github.com/shapely/shapely,COMPLETE,-,2595,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1424,390,710,0,0,0,14,15,151,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,4
-simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,277,UP_TO_DATE,UPLOADED,STRICT,180,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,14
+simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,277,OUT_OF_DATE,UPLOADED,STRICT,180,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,14
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,27,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,335,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
