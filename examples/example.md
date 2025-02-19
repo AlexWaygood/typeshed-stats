@@ -1547,11 +1547,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-2,943 (excluding blank lines)
+3,104 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1572,21 +1572,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `braintree`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 91
-    - Unannotated parameters: 429
+    - Annotated parameters: 140
+    - Unannotated parameters: 434
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 80
 - Returns:
-    - Annotated returns: 142
-    - Unannotated returns: 325
+    - Annotated returns: 165
+    - Unannotated returns: 353
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
 - Variables:
-    - Annotated variables: 1,510
+    - Annotated variables: 1,518
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 131
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 139
 - Class definitions:
-    - Total class definitions: 269
+    - Total class definitions: 286
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7426,9 +7426,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 357 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7937,11 +7937,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,874 (excluding blank lines)
+7,912 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7953,7 +7953,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 88 unique allowlist entries for `reportlab` when running stubtest in CI.
+Typeshed currently has 89 unique allowlist entries for `reportlab` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7962,23 +7962,23 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `reportlab`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,917
-    - Unannotated parameters: 2,350
+    - Annotated parameters: 1,936
+    - Unannotated parameters: 2,355
     - Explicit `Any` parameters: 26
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 330
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 336
 - Returns:
-    - Annotated returns: 1,514
-    - Unannotated returns: 1,021
+    - Annotated returns: 1,525
+    - Unannotated returns: 1,024
     - Explicit `Any` returns: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
-    - Annotated variables: 2,743
+    - Annotated variables: 2,752
     - Explicit `Any` variables: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,210
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,212
 - Class definitions:
-    - Total class definitions: 577
+    - Total class definitions: 580
     - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 2
+    - Class definitions marked as at least partially `Incomplete`: 3
 
 ---
 
