@@ -8349,7 +8349,7 @@ you don't need `types-setuptools` since `pkg_resources` is now typed.
 
 ### Number of lines
 
-3,578 (excluding blank lines)
+3,590 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8365,7 +8365,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 93 unique allowlist entries for `setuptools` when running stubtest in CI.
+Typeshed currently has 90 unique allowlist entries for `setuptools` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8374,13 +8374,13 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,215
-    - Unannotated parameters: 428
+    - Annotated parameters: 1,221
+    - Unannotated parameters: 429
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 44
 - Returns:
-    - Annotated returns: 1,019
-    - Unannotated returns: 173
+    - Annotated returns: 1,020
+    - Unannotated returns: 174
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
