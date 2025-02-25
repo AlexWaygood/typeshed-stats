@@ -12,9 +12,9 @@
 
 2,580 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -1034,7 +1034,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,796 (excluding blank lines)
+2,203 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1050,7 +1050,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 113 unique allowlist entries for `WebOb` when running stubtest in CI.
+Typeshed currently has 99 unique allowlist entries for `WebOb` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1059,22 +1059,22 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `WebOb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 808
+    - Annotated parameters: 793
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 91
+    - Explicit `Any` parameters: 80
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 606
+    - Annotated returns: 605
     - Unannotated returns: 0
     - Explicit `Any` returns: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 246
+    - Annotated variables: 250
     - Explicit `Any` variables: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 149
-    - Class definitions with `Any`: 0
+    - Total class definitions: 136
+    - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
