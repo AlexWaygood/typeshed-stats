@@ -3825,7 +3825,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-58 (excluding blank lines)
+60 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3850,10 +3850,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `hnswlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30
-    - Unannotated parameters: 2
+    - Annotated parameters: 32
+    - Unannotated parameters: 0
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 26
     - Unannotated returns: 0
