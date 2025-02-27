@@ -5254,7 +5254,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-4,907 (excluding blank lines)
+5,478 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5279,21 +5279,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,992
-    - Unannotated parameters: 1,501
-    - Explicit `Any` parameters: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 760
+    - Annotated parameters: 2,541
+    - Unannotated parameters: 1,003
+    - Explicit `Any` parameters: 33
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 569
 - Returns:
-    - Annotated returns: 538
-    - Unannotated returns: 806
-    - Explicit `Any` returns: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 112
+    - Annotated returns: 548
+    - Unannotated returns: 804
+    - Explicit `Any` returns: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 116
 - Variables:
-    - Annotated variables: 309
+    - Annotated variables: 300
     - Explicit `Any` variables: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 242
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
-    - Total class definitions: 128
+    - Total class definitions: 126
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 3
 
@@ -8687,7 +8687,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-65,800 (excluding blank lines)
+65,622 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8862,7 +8862,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-25,798 (excluding blank lines)
+25,838 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8887,12 +8887,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 5,346
+    - Annotated parameters: 5,373
     - Unannotated parameters: 8
     - Explicit `Any` parameters: 60
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 40
 - Returns:
-    - Annotated returns: 2,954
+    - Annotated returns: 2,962
     - Unannotated returns: 4
     - Explicit `Any` returns: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 58
