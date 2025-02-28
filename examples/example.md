@@ -2591,9 +2591,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 0 allowlist entries for `dirhash` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `dirhash`
 
@@ -8744,7 +8744,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,018 (excluding blank lines)
+66,038 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8769,14 +8769,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,372
+    - Annotated parameters: 29,388
     - Unannotated parameters: 580
     - Explicit `Any` parameters: 2,048
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 65
 - Returns:
-    - Annotated returns: 16,099
+    - Annotated returns: 16,103
     - Unannotated returns: 271
-    - Explicit `Any` returns: 840
+    - Explicit `Any` returns: 846
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
     - Annotated variables: 9,154
@@ -9090,7 +9090,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,396 (excluding blank lines)
+1,397 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9123,7 +9123,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated returns: 166
     - Unannotated returns: 28
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
 - Variables:
     - Annotated variables: 105
     - Explicit `Any` variables: 0
