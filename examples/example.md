@@ -2561,6 +2561,63 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
+## Info on typeshed's stubs for `dirhash`
+
+### Upstream repo URL
+
+[https://github.com/andhus/dirhash-python](https://github.com/andhus/dirhash-python)
+
+### Stub distribution name
+
+`types-dirhash`
+
+### Number of lines
+
+88 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `dirhash` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `dirhash`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 39
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 13
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 12
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 3
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `django-import-export`
 
 ### Upstream repo URL
@@ -3843,9 +3900,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 1 unique allowlist entry for `hnswlib` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `hnswlib`
 
@@ -8687,7 +8744,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,002 (excluding blank lines)
+66,018 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8712,21 +8769,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,368
-    - Unannotated parameters: 583
+    - Annotated parameters: 29,372
+    - Unannotated parameters: 580
     - Explicit `Any` parameters: 2,048
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 65
 - Returns:
-    - Annotated returns: 16,092
+    - Annotated returns: 16,099
     - Unannotated returns: 271
     - Explicit `Any` returns: 840
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
     - Annotated variables: 9,154
     - Explicit `Any` variables: 309
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 236
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 235
 - Class definitions:
-    - Total class definitions: 3,106
+    - Total class definitions: 3,107
     - Class definitions with `Any`: 24
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9033,7 +9090,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,389 (excluding blank lines)
+1,396 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9058,15 +9115,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tqdm`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 811
+    - Annotated parameters: 816
     - Unannotated parameters: 146
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 38
 - Returns:
-    - Annotated returns: 165
+    - Annotated returns: 166
     - Unannotated returns: 28
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
     - Annotated variables: 105
     - Explicit `Any` variables: 0
@@ -9550,7 +9607,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-526 (excluding blank lines)
+533 (excluding blank lines)
 
 ### Package status: *up to date*
 

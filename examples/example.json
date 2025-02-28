@@ -1533,6 +1533,40 @@
     }
   },
   {
+    "package_name": "dirhash",
+    "stub_distribution_name": "types-dirhash",
+    "upstream_url": "https://github.com/andhus/dirhash-python",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 88,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 39,
+      "unannotated_parameters": 0,
+      "annotated_returns": 13,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 1,
+      "annotated_variables": 12,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 3,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "django-import-export",
     "stub_distribution_name": "types-django-import-export",
     "upstream_url": "https://github.com/django-import-export/django-import-export",
@@ -2296,7 +2330,7 @@
       ],
       "allowlist_length": 1
     },
-    "pyright_setting": "NOT_STRICT",
+    "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 32,
       "unannotated_parameters": 0,
@@ -5191,7 +5225,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 66002,
+    "number_of_lines": 66018,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5205,9 +5239,9 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 29368,
-      "unannotated_parameters": 583,
-      "annotated_returns": 16092,
+      "annotated_parameters": 29372,
+      "unannotated_parameters": 580,
+      "annotated_returns": 16099,
       "unannotated_returns": 271,
       "explicit_Incomplete_parameters": 65,
       "explicit_Incomplete_returns": 11,
@@ -5215,8 +5249,8 @@
       "explicit_Any_returns": 840,
       "annotated_variables": 9154,
       "explicit_Any_variables": 309,
-      "explicit_Incomplete_variables": 236,
-      "classdefs": 3106,
+      "explicit_Incomplete_variables": 235,
+      "classdefs": 3107,
       "classdefs_with_Any": 24,
       "classdefs_with_Incomplete": 0
     }
@@ -5397,7 +5431,7 @@
     "upstream_url": "https://github.com/tqdm/tqdm",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1389,
+    "number_of_lines": 1396,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5409,12 +5443,12 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 811,
+      "annotated_parameters": 816,
       "unannotated_parameters": 146,
-      "annotated_returns": 165,
+      "annotated_returns": 166,
       "unannotated_returns": 28,
       "explicit_Incomplete_parameters": 38,
-      "explicit_Incomplete_returns": 9,
+      "explicit_Incomplete_returns": 8,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 1,
       "annotated_variables": 105,
@@ -5704,7 +5738,7 @@
     "upstream_url": "https://github.com/py-vobject/vobject",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 526,
+    "number_of_lines": 533,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
