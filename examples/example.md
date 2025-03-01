@@ -1549,9 +1549,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 3,104 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -4224,7 +4224,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-923 (excluding blank lines)
+922 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8112,7 +8112,7 @@ Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to
 
 ### Number of lines
 
-1,037 (excluding blank lines)
+1,035 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8406,7 +8406,7 @@ you don't need `types-setuptools` since `pkg_resources` is now typed.
 
 ### Number of lines
 
-3,590 (excluding blank lines)
+3,588 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8431,12 +8431,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,221
+    - Annotated parameters: 1,219
     - Unannotated parameters: 429
     - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 44
 - Returns:
-    - Annotated returns: 1,020
+    - Annotated returns: 1,018
     - Unannotated returns: 174
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
