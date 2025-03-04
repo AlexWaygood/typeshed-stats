@@ -751,7 +751,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-845 (excluding blank lines)
+850 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -776,12 +776,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Pygments`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 116
+    - Annotated parameters: 117
     - Unannotated parameters: 156
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 108
+    - Annotated returns: 109
     - Unannotated returns: 75
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
@@ -2970,7 +2970,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-530 (excluding blank lines)
+534 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3000,16 +3000,16 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` parameters: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 133
+    - Annotated returns: 134
     - Unannotated returns: 0
-    - Explicit `Any` returns: 3
+    - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 128
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 49
+    - Total class definitions: 50
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -3683,7 +3683,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `gevent`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,360
+    - Annotated parameters: 1,359
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 65
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
@@ -8019,7 +8019,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `regex`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 431
+    - Annotated parameters: 433
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 25
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -8393,8 +8393,7 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 
 ### Extra description
 
-If using `setuptools >= 71.1` *only* for `pkg_resources`,
-you don't need `types-setuptools` since `pkg_resources` is now typed.
+Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.
 
 ### Upstream repo URL
 
@@ -8406,7 +8405,7 @@ you don't need `types-setuptools` since `pkg_resources` is now typed.
 
 ### Number of lines
 
-3,588 (excluding blank lines)
+2,965 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8422,7 +8421,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 90 unique allowlist entries for `setuptools` when running stubtest in CI.
+Typeshed currently has 85 unique allowlist entries for `setuptools` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8431,21 +8430,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,219
+    - Annotated parameters: 933
     - Unannotated parameters: 429
-    - Explicit `Any` parameters: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 44
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 42
 - Returns:
-    - Annotated returns: 1,018
+    - Annotated returns: 792
     - Unannotated returns: 174
-    - Explicit `Any` returns: 6
+    - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 713
+    - Annotated variables: 644
     - Explicit `Any` variables: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 237
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 236
 - Class definitions:
-    - Total class definitions: 186
+    - Total class definitions: 142
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9739,9 +9738,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 1 unique allowlist entry for `watchpoints` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `watchpoints`
 
@@ -10065,9 +10064,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 25 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
