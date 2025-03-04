@@ -39,7 +39,7 @@
     "upstream_url": "https://github.com/tantale/deprecated",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 61,
+    "number_of_lines": 67,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -51,7 +51,7 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 32,
+      "annotated_parameters": 34,
       "unannotated_parameters": 0,
       "annotated_returns": 10,
       "unannotated_returns": 0,
@@ -582,7 +582,7 @@
     "upstream_url": "https://github.com/pallets-eco/wtforms",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1334,
+    "number_of_lines": 1342,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -890,7 +890,7 @@
     "upstream_url": "https://github.com/mahmoud/boltons",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1319,
+    "number_of_lines": 1317,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -903,8 +903,8 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 673,
-      "unannotated_parameters": 268,
-      "annotated_returns": 476,
+      "unannotated_parameters": 270,
+      "annotated_returns": 477,
       "unannotated_returns": 170,
       "explicit_Incomplete_parameters": 73,
       "explicit_Incomplete_returns": 8,
@@ -2148,7 +2148,7 @@
     "upstream_url": "https://github.com/geopandas/geopandas",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1789,
+    "number_of_lines": 1787,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3170,7 +3170,7 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 5478,
+    "number_of_lines": 5481,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3184,7 +3184,7 @@
     "annotation_stats": {
       "annotated_parameters": 2541,
       "unannotated_parameters": 1003,
-      "annotated_returns": 548,
+      "annotated_returns": 549,
       "unannotated_returns": 804,
       "explicit_Incomplete_parameters": 569,
       "explicit_Incomplete_returns": 116,
@@ -4165,7 +4165,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 324,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -5157,7 +5157,7 @@
     "upstream_url": "https://github.com/benjaminp/six",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 335,
+    "number_of_lines": 334,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5225,7 +5225,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 66038,
+    "number_of_lines": 66078,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5235,23 +5235,23 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 783
+      "allowlist_length": 781
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 29388,
+      "annotated_parameters": 29397,
       "unannotated_parameters": 580,
-      "annotated_returns": 16103,
+      "annotated_returns": 16108,
       "unannotated_returns": 271,
       "explicit_Incomplete_parameters": 65,
       "explicit_Incomplete_returns": 11,
-      "explicit_Any_parameters": 2048,
+      "explicit_Any_parameters": 2047,
       "explicit_Any_returns": 846,
       "annotated_variables": 9154,
       "explicit_Any_variables": 309,
       "explicit_Incomplete_variables": 235,
-      "classdefs": 3107,
-      "classdefs_with_Any": 24,
+      "classdefs": 3111,
+      "classdefs_with_Any": 25,
       "classdefs_with_Incomplete": 0
     }
   },
@@ -5329,7 +5329,7 @@
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.",
-    "number_of_lines": 25838,
+    "number_of_lines": 25842,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5802,6 +5802,40 @@
     }
   },
   {
+    "package_name": "watchpoints",
+    "stub_distribution_name": "types-watchpoints",
+    "upstream_url": "https://github.com/gaogaotiantian/watchpoints",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 146,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 54,
+      "unannotated_parameters": 0,
+      "annotated_returns": 26,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 7,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 32,
+      "explicit_Any_variables": 9,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 4,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "whatthepatch",
     "stub_distribution_name": "types-whatthepatch",
     "upstream_url": "https://github.com/cscorley/whatthepatch",
@@ -5978,7 +6012,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 25,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
