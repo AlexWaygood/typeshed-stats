@@ -6233,9 +6233,9 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 4,900 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -8743,7 +8743,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,078 (excluding blank lines)
+66,082 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8770,7 +8770,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 29,397
     - Unannotated parameters: 580
-    - Explicit `Any` parameters: 2,047
+    - Explicit `Any` parameters: 2,043
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 65
 - Returns:
     - Annotated returns: 16,108
