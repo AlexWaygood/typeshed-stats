@@ -1272,11 +1272,9 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *skipped*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
+Stubtest is skipped in typeshed's CI for this package.
 
 Typeshed currently has 0 allowlist entries for `atheris` when running stubtest in CI.
 
@@ -3554,11 +3552,9 @@ The runtime package that these stubs are for doesn't exist on PyPI, so whether o
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *error on missing stub*
+### Stubtest settings in CI: *skipped*
 
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
+Stubtest is skipped in typeshed's CI for this package.
 
 Typeshed currently has 47 unique allowlist entries for `gdb` when running stubtest in CI.
 
@@ -5555,7 +5551,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 182 unique allowlist entries for `openpyxl` when running stubtest in CI.
+Typeshed currently has 181 unique allowlist entries for `openpyxl` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -8128,7 +8124,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `requests` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `requests` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -8169,7 +8165,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-268 (excluding blank lines)
+271 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8194,10 +8190,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `requests-oauthlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 115
+    - Annotated parameters: 117
     - Unannotated parameters: 20
-    - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 50
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 51
 - Returns:
     - Annotated returns: 45
     - Unannotated returns: 4
