@@ -26,7 +26,7 @@ aws-xray-sdk,types-aws-xray-sdk,https://github.com/aws/aws-xray-sdk-python,PARTI
 beautifulsoup4,types-beautifulsoup4,https://git.launchpad.net/beautifulsoup/tree,PARTIAL,-,831,OBSOLETE,UPLOADED,NOT_STRICT,251,137,195,49,31,0,1,1,177,70,2,47,0,0,MISSING_STUBS_IGNORED,linux,0
 bleach,types-bleach,https://github.com/mozilla/bleach,COMPLETE,-,239,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,91,0,49,1,0,1,2,0,60,1,0,13,0,0,ERROR_ON_MISSING_STUB,linux,3
 boltons,types-boltons,https://github.com/mahmoud/boltons,COMPLETE,-,1317,UP_TO_DATE,UPLOADED,NOT_STRICT,673,270,477,170,73,8,60,16,233,6,68,83,1,3,ERROR_ON_MISSING_STUB,linux,17
-braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,3104,OUT_OF_DATE,UPLOADED,NOT_STRICT,140,434,165,353,80,7,1,1,1518,0,139,286,0,0,ERROR_ON_MISSING_STUB,linux,1
+braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,3166,UP_TO_DATE,UPLOADED,NOT_STRICT,141,438,169,354,80,8,1,1,1562,0,139,289,0,0,ERROR_ON_MISSING_STUB,linux,1
 cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,124,UP_TO_DATE,UPLOADED,STRICT,90,0,49,0,0,0,4,0,1,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,20
 caldav,types-caldav,https://github.com/python-caldav/caldav,PARTIAL,-,527,OBSOLETE,UPLOADED,NOT_STRICT,214,35,117,8,21,5,1,0,94,0,6,86,0,0,MISSING_STUBS_IGNORED,linux,7
 capturer,types-capturer,https://github.com/xolox/python-capturer,COMPLETE,-,114,UP_TO_DATE,UPLOADED,STRICT,50,0,42,0,0,0,4,1,38,4,0,6,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -102,7 +102,7 @@ paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1845,UP_T
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,COMPLETE,-,187,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,114,0,59,1,0,0,22,2,34,3,2,27,0,0,ERROR_ON_MISSING_STUB,linux,4
 passlib,types-passlib,https://foss.heptapod.net/python-libs/passlib,COMPLETE,-,1802,UP_TO_DATE,UPLOADED,NOT_STRICT,410,442,187,297,132,0,27,13,576,92,3,143,2,0,ERROR_ON_MISSING_STUB,linux,71
 passpy,types-passpy,https://github.com/bfrascher/passpy,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
-peewee,types-peewee,https://github.com/coleifer/peewee,PARTIAL,-,1701,UP_TO_DATE,UPLOADED,NOT_STRICT,429,668,363,423,215,5,2,0,423,31,319,169,0,0,ERROR_ON_MISSING_STUB,linux,12
+peewee,types-peewee,https://github.com/coleifer/peewee,PARTIAL,-,1701,UP_TO_DATE,UPLOADED,NOT_STRICT,438,659,363,423,224,5,2,0,423,31,319,169,0,0,ERROR_ON_MISSING_STUB,linux,21
 pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,PARTIAL,-,26,UP_TO_DATE,UPLOADED,STRICT,10,0,8,0,0,2,1,1,10,3,0,1,0,0,MISSING_STUBS_IGNORED,linux,2
 pexpect,types-pexpect,https://github.com/pexpect/pexpect,COMPLETE,-,673,UP_TO_DATE,UPLOADED,NOT_STRICT,234,120,181,33,8,0,0,0,160,0,24,22,0,0,ERROR_ON_MISSING_STUB,linux,1
 pika,types-pika-ts,https://github.com/pika/pika,COMPLETE,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2238,UP_TO_DATE,UPLOADED,NOT_STRICT,621,383,417,347,141,24,4,0,466,0,257,223,0,0,ERROR_ON_MISSING_STUB,linux,7
@@ -115,7 +115,7 @@ pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,8,
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1484,UP_TO_DATE,UPLOADED,NOT_STRICT,203,529,112,422,39,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,2
 pyaudio,types-pyaudio,-,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,COMPLETE,-,162,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,70,0,0,12,0,0,ERROR_ON_MISSING_STUB,linux,0
-pycurl,types-pycurl,https://github.com/pycurl/pycurl,COMPLETE,-,708,UP_TO_DATE,UPLOADED,NOT_STRICT,15,7,26,6,0,4,0,0,662,0,0,4,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,0
+pycurl,types-pycurl,https://github.com/pycurl/pycurl,COMPLETE,-,708,OUT_OF_DATE,UPLOADED,NOT_STRICT,15,7,26,6,0,4,0,0,662,0,0,4,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,0
 pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,COMPLETE,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,PARTIAL,-,434,UP_TO_DATE,UPLOADED,NOT_STRICT,265,69,206,2,0,0,4,3,75,33,0,74,0,0,MISSING_STUBS_IGNORED,linux,24
 pygit2,types-pygit2,https://github.com/libgit2/pygit2,COMPLETE,-,1935,OBSOLETE,UPLOADED,STRICT,678,0,504,0,0,0,3,0,474,0,1,119,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,8
