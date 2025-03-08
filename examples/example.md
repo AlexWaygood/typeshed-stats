@@ -3552,9 +3552,11 @@ The runtime package that these stubs are for doesn't exist on PyPI, so whether o
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *skipped*
+### Stubtest settings in CI: *error on missing stub*
 
-Stubtest is skipped in typeshed's CI for this package.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 47 unique allowlist entries for `gdb` when running stubtest in CI.
 
@@ -6850,7 +6852,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-714 (excluding blank lines)
+716 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6885,9 +6887,9 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 206
+    - Annotated variables: 208
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 14
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 26
     - Class definitions with `Any`: 0
@@ -8739,7 +8741,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,081 (excluding blank lines)
+66,100 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8755,7 +8757,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 781 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 780 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8764,21 +8766,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,389
+    - Annotated parameters: 29,401
     - Unannotated parameters: 580
-    - Explicit `Any` parameters: 2,043
+    - Explicit `Any` parameters: 2,053
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 65
 - Returns:
-    - Annotated returns: 16,099
+    - Annotated returns: 16,106
     - Unannotated returns: 271
-    - Explicit `Any` returns: 846
+    - Explicit `Any` returns: 847
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 9,154
-    - Explicit `Any` variables: 309
+    - Annotated variables: 9,159
+    - Explicit `Any` variables: 312
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 235
 - Class definitions:
-    - Total class definitions: 3,111
+    - Total class definitions: 3,112
     - Class definitions with `Any`: 25
     - Class definitions marked as at least partially `Incomplete`: 0
 
