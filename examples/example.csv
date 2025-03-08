@@ -115,7 +115,7 @@ pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,8,
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1484,UP_TO_DATE,UPLOADED,NOT_STRICT,203,529,112,422,39,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,2
 pyaudio,types-pyaudio,-,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,COMPLETE,-,162,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,70,0,0,12,0,0,ERROR_ON_MISSING_STUB,linux,0
-pycurl,types-pycurl,https://github.com/pycurl/pycurl,COMPLETE,-,708,OUT_OF_DATE,UPLOADED,NOT_STRICT,15,7,26,6,0,4,0,0,662,0,0,4,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,0
+pycurl,types-pycurl,https://github.com/pycurl/pycurl,COMPLETE,-,725,UP_TO_DATE,UPLOADED,NOT_STRICT,15,7,26,6,0,4,0,0,679,0,0,4,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,0
 pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,COMPLETE,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,PARTIAL,-,434,UP_TO_DATE,UPLOADED,NOT_STRICT,265,69,206,2,0,0,4,3,75,33,0,74,0,0,MISSING_STUBS_IGNORED,linux,24
 pygit2,types-pygit2,https://github.com/libgit2/pygit2,COMPLETE,-,1935,OBSOLETE,UPLOADED,STRICT,678,0,504,0,0,0,3,0,474,0,1,119,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,8
