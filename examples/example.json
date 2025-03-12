@@ -5223,7 +5223,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 66105,
+    "number_of_lines": 66110,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5233,13 +5233,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 777
+      "allowlist_length": 773
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
       "annotated_parameters": 29405,
       "unannotated_parameters": 580,
-      "annotated_returns": 16107,
+      "annotated_returns": 16110,
       "unannotated_returns": 271,
       "explicit_Incomplete_parameters": 65,
       "explicit_Incomplete_returns": 11,
@@ -5328,7 +5328,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.",
     "number_of_lines": 25842,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",

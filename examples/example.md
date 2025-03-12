@@ -8741,7 +8741,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,105 (excluding blank lines)
+66,110 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8757,7 +8757,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 777 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 773 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8771,7 +8771,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 2,049
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 65
 - Returns:
-    - Annotated returns: 16,107
+    - Annotated returns: 16,110
     - Unannotated returns: 271
     - Explicit `Any` returns: 847
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
@@ -8918,9 +8918,9 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 25,842 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
