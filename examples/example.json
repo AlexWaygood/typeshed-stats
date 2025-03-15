@@ -3713,7 +3713,7 @@
     "upstream_url": "https://github.com/protocolbuffers/protobuf",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 28.1 on [protobuf v29.1](https://github.com/protocolbuffers/protobuf/releases/tag/v29.1) (python `protobuf==5.29.1`).",
-    "number_of_lines": 4900,
+    "number_of_lines": 4906,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3727,7 +3727,7 @@
     "annotation_stats": {
       "annotated_parameters": 799,
       "unannotated_parameters": 251,
-      "annotated_returns": 535,
+      "annotated_returns": 538,
       "unannotated_returns": 75,
       "explicit_Incomplete_parameters": 14,
       "explicit_Incomplete_returns": 0,

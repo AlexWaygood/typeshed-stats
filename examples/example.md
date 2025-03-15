@@ -6229,7 +6229,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-4,900 (excluding blank lines)
+4,906 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6259,7 +6259,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 535
+    - Annotated returns: 538
     - Unannotated returns: 75
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
