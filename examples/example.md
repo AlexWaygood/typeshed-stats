@@ -8768,12 +8768,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 29,405
     - Unannotated parameters: 580
-    - Explicit `Any` parameters: 2,049
+    - Explicit `Any` parameters: 2,048
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 65
 - Returns:
-    - Annotated returns: 16,110
+    - Annotated returns: 16,111
     - Unannotated returns: 271
-    - Explicit `Any` returns: 847
+    - Explicit `Any` returns: 848
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
     - Annotated variables: 9,159
