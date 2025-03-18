@@ -1034,7 +1034,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,203 (excluding blank lines)
+2,205 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1064,7 +1064,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` parameters: 80
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 605
+    - Annotated returns: 606
     - Unannotated returns: 0
     - Explicit `Any` returns: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -1773,11 +1773,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-827 (excluding blank lines)
+828 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1798,13 +1798,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `cffi`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 302
-    - Unannotated parameters: 246
+    - Annotated parameters: 303
+    - Unannotated parameters: 244
     - Explicit `Any` parameters: 32
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
 - Returns:
-    - Annotated returns: 194
-    - Unannotated returns: 130
+    - Annotated returns: 195
+    - Unannotated returns: 129
     - Explicit `Any` returns: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
@@ -2296,11 +2296,9 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *error on missing stub*
+### Stubtest settings in CI: *skipped*
 
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
+Stubtest is skipped in typeshed's CI for this package.
 
 Typeshed currently has 0 allowlist entries for `corus` when running stubtest in CI.
 
@@ -4061,11 +4059,9 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *error on missing stub*
+### Stubtest settings in CI: *skipped*
 
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
+Stubtest is skipped in typeshed's CI for this package.
 
 Typeshed currently has 20 unique allowlist entries for `humanfriendly` when running stubtest in CI.
 
@@ -5309,7 +5305,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,481 (excluding blank lines)
+5,484 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5334,15 +5330,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,541
-    - Unannotated parameters: 1,003
-    - Explicit `Any` parameters: 33
+    - Annotated parameters: 2,544
+    - Unannotated parameters: 1,001
+    - Explicit `Any` parameters: 35
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 569
 - Returns:
-    - Annotated returns: 549
+    - Annotated returns: 551
     - Unannotated returns: 804
-    - Explicit `Any` returns: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 116
+    - Explicit `Any` returns: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 115
 - Variables:
     - Annotated variables: 300
     - Explicit `Any` variables: 3
@@ -5781,7 +5777,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 71 unique allowlist entries for `passlib` when running stubtest in CI.
+Typeshed currently has 72 unique allowlist entries for `passlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6805,11 +6801,9 @@ The runtime package has added inline type hints; these typeshed stubs are now ob
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *error on missing stub*
+### Stubtest settings in CI: *skipped*
 
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `darwin`, `linux` and `win32`.
+Stubtest is skipped in typeshed's CI for this package.
 
 Typeshed currently has 8 unique allowlist entries for `pygit2` when running stubtest in CI.
 
@@ -8741,7 +8735,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,113 (excluding blank lines)
+66,115 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8926,11 +8920,9 @@ These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *skipped*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
+Stubtest is skipped in typeshed's CI for this package.
 
 Typeshed currently has 51 unique allowlist entries for `tensorflow` when running stubtest in CI.
 
@@ -9103,7 +9095,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 5 unique allowlist entries for `tqdm` when running stubtest in CI.
+Typeshed currently has 6 unique allowlist entries for `tqdm` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -9211,11 +9203,9 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *error on missing stub*
+### Stubtest settings in CI: *skipped*
 
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
+Stubtest is skipped in typeshed's CI for this package.
 
 Typeshed currently has 2 unique allowlist entries for `tree-sitter-languages` when running stubtest in CI.
 

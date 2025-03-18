@@ -616,7 +616,7 @@
     "upstream_url": "https://github.com/Pylons/webob",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2203,
+    "number_of_lines": 2205,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -630,7 +630,7 @@
     "annotation_stats": {
       "annotated_parameters": 793,
       "unannotated_parameters": 0,
-      "annotated_returns": 605,
+      "annotated_returns": 606,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
@@ -1058,8 +1058,8 @@
     "upstream_url": "https://github.com/python-cffi/cffi/",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 827,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 828,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -1071,10 +1071,10 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 302,
-      "unannotated_parameters": 246,
-      "annotated_returns": 194,
-      "unannotated_returns": 130,
+      "annotated_parameters": 303,
+      "unannotated_parameters": 244,
+      "annotated_returns": 195,
+      "unannotated_returns": 129,
       "explicit_Incomplete_parameters": 21,
       "explicit_Incomplete_returns": 2,
       "explicit_Any_parameters": 32,
@@ -1370,10 +1370,8 @@
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
+      "strictness": "SKIPPED",
+      "platforms": [],
       "allowlist_length": 0
     },
     "pyright_setting": "NOT_STRICT",
@@ -2424,10 +2422,8 @@
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
+      "strictness": "SKIPPED",
+      "platforms": [],
       "allowlist_length": 20
     },
     "pyright_setting": "NOT_STRICT",
@@ -3168,7 +3164,7 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 5481,
+    "number_of_lines": 5484,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3180,14 +3176,14 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2541,
-      "unannotated_parameters": 1003,
-      "annotated_returns": 549,
+      "annotated_parameters": 2544,
+      "unannotated_parameters": 1001,
+      "annotated_returns": 551,
       "unannotated_returns": 804,
       "explicit_Incomplete_parameters": 569,
-      "explicit_Incomplete_returns": 116,
-      "explicit_Any_parameters": 33,
-      "explicit_Any_returns": 4,
+      "explicit_Incomplete_returns": 115,
+      "explicit_Any_parameters": 35,
+      "explicit_Any_returns": 5,
       "annotated_variables": 300,
       "explicit_Any_variables": 3,
       "explicit_Incomplete_variables": 234,
@@ -3449,7 +3445,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 71
+      "allowlist_length": 72
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -4062,12 +4058,8 @@
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "darwin",
-        "linux",
-        "win32"
-      ],
+      "strictness": "SKIPPED",
+      "platforms": [],
       "allowlist_length": 8
     },
     "pyright_setting": "STRICT",
@@ -5223,7 +5215,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 66113,
+    "number_of_lines": 66115,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5331,10 +5323,8 @@
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
-        "linux"
-      ],
+      "strictness": "SKIPPED",
+      "platforms": [],
       "allowlist_length": 51
     },
     "pyright_setting": "NOT_STRICT",
@@ -5437,7 +5427,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 5
+      "allowlist_length": 6
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -5501,10 +5491,8 @@
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
+      "strictness": "SKIPPED",
+      "platforms": [],
       "allowlist_length": 2
     },
     "pyright_setting": "STRICT",
