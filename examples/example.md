@@ -3823,9 +3823,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 139 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -4051,9 +4051,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 340 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *no longer updated*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+The runtime package has not added type hints, but these stubs are no longer updated by typeshed for some other reason.
 
 ### Upload status: *uploaded*
 
@@ -7760,9 +7760,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 39,270 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7774,7 +7774,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `win32` only.
 
-Typeshed currently has 41 unique allowlist entries for `pywin32` when running stubtest in CI.
+Typeshed currently has 40 unique allowlist entries for `pywin32` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
