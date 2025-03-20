@@ -3540,7 +3540,7 @@ Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Pyth
 
 ### Number of lines
 
-1,118 (excluding blank lines)
+1,117 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -8735,7 +8735,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,170 (excluding blank lines)
+66,168 (excluding blank lines)
 
 ### Package status: *stdlib*
 
