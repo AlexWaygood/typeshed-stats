@@ -4218,7 +4218,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-922 (excluding blank lines)
+958 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4234,7 +4234,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 7 unique allowlist entries for `icalendar` when running stubtest in CI.
+Typeshed currently has 13 unique allowlist entries for `icalendar` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4243,23 +4243,23 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `icalendar`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 244
-    - Unannotated parameters: 74
-    - Explicit `Any` parameters: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
+    - Annotated parameters: 312
+    - Unannotated parameters: 21
+    - Explicit `Any` parameters: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 278
-    - Unannotated returns: 40
-    - Explicit `Any` returns: 3
+    - Annotated returns: 314
+    - Unannotated returns: 8
+    - Explicit `Any` returns: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 99
+    - Annotated variables: 100
     - Explicit `Any` variables: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 20
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
-    - Total class definitions: 54
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 3
+    - Total class definitions: 55
+    - Class definitions with `Any`: 1
+    - Class definitions marked as at least partially `Incomplete`: 2
 
 ---
 

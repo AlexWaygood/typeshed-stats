@@ -73,7 +73,7 @@ httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,254,UP_T
 humanfriendly,types-humanfriendly,https://github.com/xolox/python-humanfriendly,COMPLETE,-,340,NO_LONGER_UPDATED,UPLOADED,NOT_STRICT,81,179,82,95,22,0,0,0,75,54,0,25,0,0,SKIPPED,None,20
 hvac,types-hvac,https://github.com/hvac/hvac,COMPLETE,-,2135,UP_TO_DATE,UPLOADED,NOT_STRICT,1038,694,82,491,531,0,28,19,94,1,15,75,1,0,ERROR_ON_MISSING_STUB,linux,2
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,346,UP_TO_DATE,UPLOADED,STRICT,168,0,70,0,0,0,0,2,202,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
-icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,922,UP_TO_DATE,UPLOADED,NOT_STRICT,244,74,278,40,5,0,6,3,99,1,20,54,0,3,ERROR_ON_MISSING_STUB,linux,7
+icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,958,UP_TO_DATE,UPLOADED,NOT_STRICT,312,21,314,8,2,0,9,7,100,1,2,55,1,2,ERROR_ON_MISSING_STUB,linux,13
 influxdb-client,types-influxdb-client,https://github.com/influxdata/influxdb-client-python,COMPLETE,"Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you need to install `types-influxdb-client` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-influxdb-client<1.37.0.1`.",13494,OBSOLETE,UPLOADED,NOT_STRICT,2372,3773,1878,3419,1953,2,3,5,1202,2,1063,427,0,0,ERROR_ON_MISSING_STUB,linux,1
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,COMPLETE,-,122,UP_TO_DATE,UPLOADED,STRICT,57,0,58,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,20
 jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,COMPLETE,-,172,UP_TO_DATE,UPLOADED,NOT_STRICT,81,52,50,24,0,1,27,27,45,6,0,22,0,0,ERROR_ON_MISSING_STUB,linux,0
