@@ -8218,7 +8218,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-28 (excluding blank lines)
+29 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8234,7 +8234,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `retry` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `retry` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
