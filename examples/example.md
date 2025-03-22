@@ -466,7 +466,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-705 (excluding blank lines)
+703 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -501,8 +501,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 220
-    - Explicit `Any` variables: 15
+    - Annotated variables: 219
+    - Explicit `Any` variables: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 102
@@ -1887,7 +1887,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-37 (excluding blank lines)
+38 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1903,7 +1903,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1 unique allowlist entry for `click-default-group` when running stubtest in CI.
+Typeshed currently has 0 allowlist entries for `click-default-group` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2333,7 +2333,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Upstream repo URL
 
-[https://github.com/kiorky/croniter](https://github.com/kiorky/croniter)
+[https://github.com/pallets-eco/croniter](https://github.com/pallets-eco/croniter)
 
 ### Stub distribution name
 
@@ -5761,7 +5761,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-1,804 (excluding blank lines)
+1,925 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5777,7 +5777,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 72 unique allowlist entries for `passlib` when running stubtest in CI.
+Typeshed currently has 74 unique allowlist entries for `passlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5786,18 +5786,18 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `passlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 410
-    - Unannotated parameters: 442
-    - Explicit `Any` parameters: 27
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 132
+    - Annotated parameters: 519
+    - Unannotated parameters: 385
+    - Explicit `Any` parameters: 32
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 103
 - Returns:
-    - Annotated returns: 187
-    - Unannotated returns: 297
-    - Explicit `Any` returns: 13
+    - Annotated returns: 233
+    - Unannotated returns: 255
+    - Explicit `Any` returns: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 576
-    - Explicit `Any` variables: 92
+    - Explicit `Any` variables: 80
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
     - Total class definitions: 143
@@ -8263,6 +8263,63 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `rfc3339-validator`
+
+### Upstream repo URL
+
+[https://github.com/naimetti/rfc3339-validator](https://github.com/naimetti/rfc3339-validator)
+
+### Stub distribution name
+
+`types-rfc3339-validator`
+
+### Number of lines
+
+8 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `rfc3339-validator` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `rfc3339-validator`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 1
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 1
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 5
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `s2clientprotocol`
 
 ### Extra description
@@ -8751,7 +8808,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 774 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 775 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8774,7 +8831,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 312
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 235
 - Class definitions:
-    - Total class definitions: 3,114
+    - Total class definitions: 3,115
     - Class definitions with `Any`: 25
     - Class definitions marked as at least partially `Incomplete`: 0
 
