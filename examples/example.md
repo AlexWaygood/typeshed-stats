@@ -2455,7 +2455,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-66 (excluding blank lines)
+67 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2471,7 +2471,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 10 unique allowlist entries for `decorator` when running stubtest in CI.
+Typeshed currently has 5 unique allowlist entries for `decorator` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2480,9 +2480,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `decorator`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 36
+    - Annotated parameters: 40
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 19
+    - Explicit `Any` parameters: 21
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 13
@@ -2490,7 +2490,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 15
+    - Annotated variables: 16
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -4033,61 +4033,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Class definitions:
     - Total class definitions: 33
     - Class definitions with `Any`: 1
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
-## Info on typeshed's stubs for `humanfriendly`
-
-### Upstream repo URL
-
-[https://github.com/xolox/python-humanfriendly](https://github.com/xolox/python-humanfriendly)
-
-### Stub distribution name
-
-`types-humanfriendly`
-
-### Number of lines
-
-340 (excluding blank lines)
-
-### Package status: *no longer updated*
-
-The runtime package has not added type hints, but these stubs are no longer updated by typeshed for some other reason.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *skipped*
-
-Stubtest is skipped in typeshed's CI for this package.
-
-Typeshed currently has 20 unique allowlist entries for `humanfriendly` when running stubtest in CI.
-
-### Pyright settings in CI: *not strict*
-
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
-
-### Statistics on the annotations in typeshed's stubs for `humanfriendly`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 81
-    - Unannotated parameters: 179
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 22
-- Returns:
-    - Annotated returns: 82
-    - Unannotated returns: 95
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 75
-    - Explicit `Any` variables: 54
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 25
-    - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
