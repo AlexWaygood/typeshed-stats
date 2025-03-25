@@ -99,7 +99,7 @@ openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,COMPLETE,-,1
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,PARTIAL,-,331,UP_TO_DATE,UPLOADED,STRICT,105,0,113,0,1,0,21,0,56,4,0,26,0,0,MISSING_STUBS_IGNORED,linux,4
 paramiko,types-paramiko,https://github.com/paramiko/paramiko,PARTIAL,-,1845,UP_TO_DATE,UPLOADED,STRICT,774,0,642,0,3,0,20,9,545,14,3,124,2,0,MISSING_STUBS_IGNORED,linux;win32,6
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,COMPLETE,-,187,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,114,0,59,1,0,0,22,2,34,3,2,27,0,0,ERROR_ON_MISSING_STUB,linux,4
-passlib,types-passlib,https://foss.heptapod.net/python-libs/passlib,COMPLETE,-,1925,UP_TO_DATE,UPLOADED,NOT_STRICT,519,385,233,255,103,0,32,15,576,80,3,143,2,0,ERROR_ON_MISSING_STUB,linux,74
+passlib,types-passlib,https://foss.heptapod.net/python-libs/passlib,COMPLETE,-,1942,UP_TO_DATE,UPLOADED,NOT_STRICT,519,385,233,255,103,0,32,15,576,75,3,143,2,0,ERROR_ON_MISSING_STUB,linux,68
 passpy,types-passpy,https://github.com/bfrascher/passpy,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
 peewee,types-peewee,https://github.com/coleifer/peewee,PARTIAL,-,1701,UP_TO_DATE,UPLOADED,NOT_STRICT,438,659,363,423,224,5,2,0,423,31,319,169,0,0,ERROR_ON_MISSING_STUB,linux,21
 pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,PARTIAL,-,26,UP_TO_DATE,UPLOADED,STRICT,10,0,8,0,0,2,1,1,10,3,0,1,0,0,MISSING_STUBS_IGNORED,linux,2
@@ -133,7 +133,7 @@ python-jenkins,types-python-jenkins,https://opendev.org/jjb/python-jenkins,COMPL
 python-jose,types-python-jose,https://github.com/mpdavis/python-jose,COMPLETE,-,362,UP_TO_DATE,UPLOADED,NOT_STRICT,88,39,66,26,4,0,14,12,119,30,0,26,0,0,ERROR_ON_MISSING_STUB,linux,7
 python-nmap,types-python-nmap,https://bitbucket.org/xael/python-nmap,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-xlib,types-python-xlib,https://github.com/python-xlib/python-xlib,COMPLETE,-,5421,UP_TO_DATE,UPLOADED,STRICT,1334,0,583,0,0,0,15,8,3519,5,0,425,0,0,ERROR_ON_MISSING_STUB,linux,10
-pytz,types-pytz,https://github.com/stub42/pytz,COMPLETE,-,133,UP_TO_DATE,UPLOADED,STRICT,71,0,51,0,2,0,2,0,29,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux,7
+pytz,types-pytz,https://github.com/stub42/pytz,COMPLETE,-,133,OUT_OF_DATE,UPLOADED,STRICT,71,0,51,0,2,0,2,0,29,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux,7
 pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,39270,UP_TO_DATE,UPLOADED,NOT_STRICT,3818,3657,3974,1979,427,284,1,3,29459,0,2872,744,0,0,ERROR_ON_MISSING_STUB,win32,40
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,COMPLETE,-,860,UP_TO_DATE,UPLOADED,NOT_STRICT,511,1,297,0,2,0,0,0,165,0,1,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,COMPLETE,-,172,UP_TO_DATE,UPLOADED,STRICT,96,0,31,0,0,0,0,4,33,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,2
