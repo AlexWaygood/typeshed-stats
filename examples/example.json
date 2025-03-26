@@ -414,7 +414,7 @@
     "upstream_url": "https://github.com/yaml/pyyaml",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1296,
+    "number_of_lines": 1308,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -422,7 +422,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 16
+      "allowlist_length": 4
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -650,7 +650,7 @@
     "upstream_url": "https://github.com/Tinche/aiofiles",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 732,
+    "number_of_lines": 735,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -659,7 +659,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 89
+      "allowlist_length": 86
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
@@ -888,7 +888,7 @@
     "upstream_url": "https://github.com/mahmoud/boltons",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1317,
+    "number_of_lines": 1381,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -896,7 +896,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 17
+      "allowlist_length": 2
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -1058,7 +1058,7 @@
     "upstream_url": "https://github.com/python-cffi/cffi/",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 828,
+    "number_of_lines": 842,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1067,21 +1067,21 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 5
+      "allowlist_length": 4
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 303,
-      "unannotated_parameters": 244,
-      "annotated_returns": 195,
-      "unannotated_returns": 129,
-      "explicit_Incomplete_parameters": 21,
-      "explicit_Incomplete_returns": 2,
-      "explicit_Any_parameters": 32,
+      "annotated_parameters": 345,
+      "unannotated_parameters": 202,
+      "annotated_returns": 238,
+      "unannotated_returns": 86,
+      "explicit_Incomplete_parameters": 10,
+      "explicit_Incomplete_returns": 1,
+      "explicit_Any_parameters": 33,
       "explicit_Any_returns": 8,
       "annotated_variables": 252,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 115,
+      "explicit_Incomplete_variables": 75,
       "classdefs": 52,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
@@ -1298,7 +1298,7 @@
     "upstream_url": "https://github.com/rtfd/commonmark.py",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 370,
+    "number_of_lines": 389,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1310,16 +1310,16 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 63,
-      "unannotated_parameters": 158,
-      "annotated_returns": 84,
-      "unannotated_returns": 76,
-      "explicit_Incomplete_parameters": 55,
+      "annotated_parameters": 219,
+      "unannotated_parameters": 4,
+      "annotated_returns": 162,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 133,
-      "explicit_Any_variables": 86,
+      "explicit_Any_parameters": 9,
+      "explicit_Any_returns": 3,
+      "annotated_variables": 132,
+      "explicit_Any_variables": 7,
       "explicit_Incomplete_variables": 0,
       "classdefs": 18,
       "classdefs_with_Any": 0,
@@ -1332,7 +1332,7 @@
     "upstream_url": "https://github.com/aegirhall/console-menu",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 711,
+    "number_of_lines": 736,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1340,7 +1340,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 3
+      "allowlist_length": 0
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2656,7 +2656,7 @@
     "upstream_url": "https://github.com/latchset/jwcrypto",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 329,
+    "number_of_lines": 449,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2668,19 +2668,19 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 107,
-      "unannotated_parameters": 48,
-      "annotated_returns": 83,
-      "unannotated_returns": 44,
-      "explicit_Incomplete_parameters": 31,
+      "annotated_parameters": 149,
+      "unannotated_parameters": 22,
+      "annotated_returns": 127,
+      "unannotated_returns": 12,
+      "explicit_Incomplete_parameters": 15,
       "explicit_Incomplete_returns": 1,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 1,
-      "annotated_variables": 47,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 36,
-      "classdefs": 36,
-      "classdefs_with_Any": 2,
+      "explicit_Any_parameters": 6,
+      "explicit_Any_returns": 11,
+      "annotated_variables": 55,
+      "explicit_Any_variables": 2,
+      "explicit_Incomplete_variables": 3,
+      "classdefs": 40,
+      "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
   },
@@ -2962,7 +2962,7 @@
     "upstream_url": "https://github.com/PyMySQL/mysqlclient",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1228,
+    "number_of_lines": 1272,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2970,7 +2970,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 3
+      "allowlist_length": 1
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3405,7 +3405,7 @@
     "upstream_url": "https://foss.heptapod.net/python-libs/passlib",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1942,
+    "number_of_lines": 1957,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3413,20 +3413,20 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 68
+      "allowlist_length": 67
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 519,
-      "unannotated_parameters": 385,
-      "annotated_returns": 233,
-      "unannotated_returns": 255,
+      "annotated_parameters": 530,
+      "unannotated_parameters": 383,
+      "annotated_returns": 239,
+      "unannotated_returns": 253,
       "explicit_Incomplete_parameters": 103,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 32,
       "explicit_Any_returns": 15,
       "annotated_variables": 576,
-      "explicit_Any_variables": 75,
+      "explicit_Any_variables": 74,
       "explicit_Incomplete_variables": 3,
       "classdefs": 143,
       "classdefs_with_Any": 2,
@@ -4194,7 +4194,7 @@
     "upstream_url": "https://github.com/pyserial/pyserial",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1087,
+    "number_of_lines": 1171,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4204,7 +4204,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 65
+      "allowlist_length": 64
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4570,15 +4570,15 @@
     "upstream_url": "https://github.com/stub42/pytz",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 133,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 151,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 7
+      "allowlist_length": 4
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -4590,7 +4590,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 0,
-      "annotated_variables": 29,
+      "annotated_variables": 30,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 16,
@@ -5047,7 +5047,7 @@
     "upstream_url": "https://github.com/shapely/shapely",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2595,
+    "number_of_lines": 2596,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5055,7 +5055,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 4
+      "allowlist_length": 3
     },
     "pyright_setting": "ENTIRELY_EXCLUDED",
     "annotation_stats": {
@@ -5081,7 +5081,7 @@
     "upstream_url": "https://github.com/simplejson/simplejson",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 277,
+    "number_of_lines": 292,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5089,7 +5089,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 14
+      "allowlist_length": 10
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -5115,7 +5115,7 @@
     "upstream_url": "https://github.com/jaraco/singledispatch",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 27,
+    "number_of_lines": 28,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5123,7 +5123,7 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 1
+      "allowlist_length": 0
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -5606,9 +5606,9 @@
       "unannotated_parameters": 0,
       "annotated_returns": 6,
       "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 3,
+      "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 3,
+      "explicit_Any_parameters": 6,
       "explicit_Any_returns": 3,
       "annotated_variables": 1,
       "explicit_Any_variables": 0,
@@ -5955,6 +5955,40 @@
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 3,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "xlrd",
+    "stub_distribution_name": "types-xlrd",
+    "upstream_url": "https://github.com/python-excel/xlrd",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 765,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 299,
+      "unannotated_parameters": 0,
+      "annotated_returns": 143,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 6,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 426,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 33,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
