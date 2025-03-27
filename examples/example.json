@@ -215,6 +215,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
+        "darwin",
         "linux"
       ],
       "allowlist_length": 0

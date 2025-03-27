@@ -366,7 +366,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `darwin` and `linux`.
 
 Typeshed currently has 0 allowlist entries for `JACK-Client` when running stubtest in CI.
 
