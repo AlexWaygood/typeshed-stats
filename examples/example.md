@@ -2172,7 +2172,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-389 (excluding blank lines)
+391 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2182,24 +2182,24 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 0 allowlist entries for `commonmark` when running stubtest in CI.
+Typeshed currently has 1 unique allowlist entry for `commonmark` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `commonmark`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 219
-    - Unannotated parameters: 4
-    - Explicit `Any` parameters: 9
+    - Annotated parameters: 223
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 162
@@ -8049,7 +8049,7 @@ Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to
 
 ### Number of lines
 
-1,035 (excluding blank lines)
+1,033 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8084,8 +8084,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
-    - Annotated variables: 126
-    - Explicit `Any` variables: 16
+    - Annotated variables: 125
+    - Explicit `Any` variables: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 21
 - Class definitions:
     - Total class definitions: 53
@@ -8399,7 +8399,7 @@ Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer 
 
 ### Number of lines
 
-3,016 (excluding blank lines)
+3,031 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -8415,7 +8415,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 79 unique allowlist entries for `setuptools` when running stubtest in CI.
+Typeshed currently has 77 unique allowlist entries for `setuptools` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8424,7 +8424,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 934
+    - Annotated parameters: 935
     - Unannotated parameters: 430
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 42
@@ -8434,11 +8434,11 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 650
+    - Annotated variables: 658
     - Explicit `Any` variables: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 237
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 236
 - Class definitions:
-    - Total class definitions: 142
+    - Total class definitions: 143
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
