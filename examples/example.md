@@ -2162,6 +2162,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `commonmark`
 
+### Extra description
+
+`commonmark` is deprecated in favor of [markdown-it-py](https://pypi.org/project/markdown-it-py/).
+See [this issue](https://github.com/readthedocs/commonmark.py/issues/308) for background and discussion.
+
 ### Upstream repo URL
 
 [https://github.com/rtfd/commonmark.py](https://github.com/rtfd/commonmark.py)
@@ -2174,9 +2179,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 391 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *no longer updated*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+The runtime package has not added type hints, but these stubs are no longer updated by typeshed for some other reason.
 
 ### Upload status: *uploaded*
 
@@ -8399,11 +8404,11 @@ Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer 
 
 ### Number of lines
 
-3,031 (excluding blank lines)
+3,028 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8415,7 +8420,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 77 unique allowlist entries for `setuptools` when running stubtest in CI.
+Typeshed currently has 76 unique allowlist entries for `setuptools` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8424,19 +8429,19 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 935
+    - Annotated parameters: 931
     - Unannotated parameters: 430
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 42
 - Returns:
-    - Annotated returns: 794
+    - Annotated returns: 792
     - Unannotated returns: 174
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
     - Annotated variables: 658
-    - Explicit `Any` variables: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 236
+    - Explicit `Any` variables: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 235
 - Class definitions:
     - Total class definitions: 143
     - Class definitions with `Any`: 0

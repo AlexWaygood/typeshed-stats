@@ -37,7 +37,8 @@ click-log,types-click-log,https://github.com/click-contrib/click-log,COMPLETE,-,
 click-spinner,types-click-spinner,https://github.com/click-contrib/click-spinner,COMPLETE,-,30,UP_TO_DATE,UPLOADED,STRICT,12,0,11,0,0,0,0,1,9,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-web,types-click-web,https://github.com/fredrik-corneliusson/click-web,COMPLETE,-,139,UP_TO_DATE,UPLOADED,NOT_STRICT,66,2,57,3,0,0,0,4,18,0,1,28,0,0,ERROR_ON_MISSING_STUB,linux,0
 colorama,types-colorama,https://github.com/tartley/colorama,COMPLETE,-,201,UP_TO_DATE,UPLOADED,STRICT,89,0,60,0,0,0,3,1,85,0,0,11,0,0,ERROR_ON_MISSING_STUB,linux;win32,44
-commonmark,types-commonmark,https://github.com/rtfd/commonmark.py,COMPLETE,-,391,UP_TO_DATE,UPLOADED,STRICT,223,0,162,0,0,0,10,3,132,7,0,18,0,0,ERROR_ON_MISSING_STUB,linux,1
+commonmark,types-commonmark,https://github.com/rtfd/commonmark.py,COMPLETE,"`commonmark` is deprecated in favor of [markdown-it-py](https://pypi.org/project/markdown-it-py/).
+See [this issue](https://github.com/readthedocs/commonmark.py/issues/308) for background and discussion.",391,NO_LONGER_UPDATED,UPLOADED,STRICT,223,0,162,0,0,0,10,3,132,7,0,18,0,0,ERROR_ON_MISSING_STUB,linux,1
 console-menu,types-console-menu,https://github.com/aegirhall/console-menu,COMPLETE,-,736,UP_TO_DATE,UPLOADED,STRICT,217,0,278,0,0,0,7,1,58,3,1,39,0,0,ERROR_ON_MISSING_STUB,linux,0
 corus,types-corus,https://github.com/natasha/corus,COMPLETE,-,999,UP_TO_DATE,UPLOADED,NOT_STRICT,101,567,153,157,44,72,0,0,422,0,368,68,0,0,SKIPPED,None,0
 croniter,types-croniter,https://github.com/pallets-eco/croniter,COMPLETE,-,238,OUT_OF_DATE,UPLOADED,STRICT,89,0,26,0,0,0,1,8,46,0,0,8,1,0,ERROR_ON_MISSING_STUB,linux,0
@@ -147,7 +148,7 @@ rfc3339-validator,types-rfc3339-validator,https://github.com/naimetti/rfc3339-va
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on [s2client-proto 5.0.12.91115.0](https://github.com/Blizzard/s2client-proto/tree/c04df4adbe274858a4eb8417175ee32ad02fd609).,5029,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2587,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1451,25,358,2,34,7,156,18,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,5
 setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,"Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.
-",3031,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,935,430,794,174,42,11,2,5,658,3,236,143,0,0,ERROR_ON_MISSING_STUB,linux;win32,77
+",3028,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,931,430,792,174,42,11,2,5,658,4,235,143,0,0,ERROR_ON_MISSING_STUB,linux;win32,76
 shapely,types-shapely,https://github.com/shapely/shapely,COMPLETE,-,2596,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1424,390,710,0,0,0,14,15,151,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,3
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,292,UP_TO_DATE,UPLOADED,STRICT,179,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,10
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
