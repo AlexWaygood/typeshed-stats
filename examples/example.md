@@ -2160,68 +2160,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
-## Info on typeshed's stubs for `commonmark`
-
-### Extra description
-
-`commonmark` is deprecated in favor of [markdown-it-py](https://pypi.org/project/markdown-it-py/).
-See [this issue](https://github.com/readthedocs/commonmark.py/issues/308) for background and discussion.
-
-### Upstream repo URL
-
-[https://github.com/rtfd/commonmark.py](https://github.com/rtfd/commonmark.py)
-
-### Stub distribution name
-
-`types-commonmark`
-
-### Number of lines
-
-391 (excluding blank lines)
-
-### Package status: *no longer updated*
-
-The runtime package has not added type hints, but these stubs are no longer updated by typeshed for some other reason.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 1 unique allowlist entry for `commonmark` when running stubtest in CI.
-
-### Pyright settings in CI: *strict*
-
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
-
-### Statistics on the annotations in typeshed's stubs for `commonmark`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 223
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
-- Returns:
-    - Annotated returns: 162
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 132
-    - Explicit `Any` variables: 7
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 18
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
 ## Info on typeshed's stubs for `console-menu`
 
 ### Upstream repo URL
@@ -4168,7 +4106,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-958 (excluding blank lines)
+957 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4193,12 +4131,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `icalendar`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 312
+    - Annotated parameters: 311
     - Unannotated parameters: 21
     - Explicit `Any` parameters: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 314
+    - Annotated returns: 313
     - Unannotated returns: 8
     - Explicit `Any` returns: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
