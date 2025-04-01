@@ -6622,7 +6622,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-437 (excluding blank lines)
+438 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6652,7 +6652,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 4
 - Returns:
-    - Annotated returns: 205
+    - Annotated returns: 206
     - Unannotated returns: 2
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
