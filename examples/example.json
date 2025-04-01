@@ -2482,40 +2482,6 @@
     }
   },
   {
-    "package_name": "influxdb-client",
-    "stub_distribution_name": "types-influxdb-client",
-    "upstream_url": "https://github.com/influxdata/influxdb-client-python",
-    "completeness_level": "COMPLETE",
-    "extra_description": "Note: `types-influxdb-client` has required `urllib3>=2` since v1.37.0.1. If you need to install `types-influxdb-client` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-influxdb-client<1.37.0.1`.",
-    "number_of_lines": 13494,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 1
-    },
-    "pyright_setting": "NOT_STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 2372,
-      "unannotated_parameters": 3773,
-      "annotated_returns": 1878,
-      "unannotated_returns": 3419,
-      "explicit_Incomplete_parameters": 1953,
-      "explicit_Incomplete_returns": 2,
-      "explicit_Any_parameters": 3,
-      "explicit_Any_returns": 5,
-      "annotated_variables": 1202,
-      "explicit_Any_variables": 2,
-      "explicit_Incomplete_variables": 1063,
-      "classdefs": 427,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "inifile",
     "stub_distribution_name": "types-inifile",
     "upstream_url": "https://github.com/mitsuhiko/python-inifile",
