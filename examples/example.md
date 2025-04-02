@@ -6052,7 +6052,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-4,906 (excluding blank lines)
+4,904 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -8619,7 +8619,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,170 (excluding blank lines)
+66,171 (excluding blank lines)
 
 ### Package status: *stdlib*
 
