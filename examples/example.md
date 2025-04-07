@@ -10,7 +10,7 @@
 
 ### Number of lines
 
-2,580 (excluding blank lines)
+2,592 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -35,19 +35,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 467
-    - Unannotated parameters: 883
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 265
+    - Annotated parameters: 490
+    - Unannotated parameters: 866
+    - Explicit `Any` parameters: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 254
 - Returns:
-    - Annotated returns: 412
-    - Unannotated returns: 426
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+    - Annotated returns: 429
+    - Unannotated returns: 411
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
 - Variables:
-    - Annotated variables: 523
+    - Annotated variables: 526
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 303
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 295
 - Class definitions:
     - Total class definitions: 201
     - Class definitions with `Any`: 0
@@ -2398,7 +2398,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-478 (excluding blank lines)
+511 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2423,19 +2423,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `dateparser`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 129
-    - Unannotated parameters: 130
-    - Explicit `Any` parameters: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 21
+    - Annotated parameters: 169
+    - Unannotated parameters: 94
+    - Explicit `Any` parameters: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
 - Returns:
-    - Annotated returns: 77
-    - Unannotated returns: 69
+    - Annotated returns: 108
+    - Unannotated returns: 40
     - Explicit `Any` returns: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
     - Annotated variables: 135
-    - Explicit `Any` variables: 76
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicit `Any` variables: 29
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
     - Total class definitions: 34
     - Class definitions with `Any`: 0
@@ -5246,7 +5246,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,570 (excluding blank lines)
+1,750 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5271,19 +5271,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `oauthlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 522
-    - Unannotated parameters: 336
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 143
+    - Annotated parameters: 681
+    - Unannotated parameters: 246
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 101
 - Returns:
-    - Annotated returns: 238
-    - Unannotated returns: 122
+    - Annotated returns: 285
+    - Unannotated returns: 75
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
 - Variables:
     - Annotated variables: 333
-    - Explicit `Any` variables: 140
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 4
+    - Explicit `Any` variables: 96
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
     - Total class definitions: 110
     - Class definitions with `Any`: 0
@@ -5645,7 +5645,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-2,068 (excluding blank lines)
+2,084 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5670,18 +5670,18 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `passlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 530
-    - Unannotated parameters: 383
+    - Annotated parameters: 569
+    - Unannotated parameters: 354
     - Explicit `Any` parameters: 32
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 103
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 101
 - Returns:
-    - Annotated returns: 239
-    - Unannotated returns: 253
-    - Explicit `Any` returns: 15
+    - Annotated returns: 267
+    - Unannotated returns: 231
+    - Explicit `Any` returns: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 577
-    - Explicit `Any` variables: 74
+    - Annotated variables: 579
+    - Explicit `Any` variables: 59
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
     - Total class definitions: 143
@@ -8676,7 +8676,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64,440 (excluding blank lines)
+64,475 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8711,7 +8711,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 835
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 9,133
+    - Annotated variables: 9,165
     - Explicit `Any` variables: 312
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 235
 - Class definitions:
