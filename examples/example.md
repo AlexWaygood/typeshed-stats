@@ -2341,11 +2341,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-238 (excluding blank lines)
+357 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2366,22 +2366,22 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `croniter`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 89
+    - Annotated parameters: 164
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 26
+    - Annotated returns: 42
     - Unannotated returns: 0
-    - Explicit `Any` returns: 8
+    - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 46
+    - Annotated variables: 48
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 8
-    - Class definitions with `Any`: 1
+    - Total class definitions: 9
+    - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
@@ -8676,7 +8676,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64,475 (excluding blank lines)
+64,481 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8701,12 +8701,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28,618
+    - Annotated parameters: 28,619
     - Unannotated parameters: 580
     - Explicit `Any` parameters: 1,990
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 65
 - Returns:
-    - Annotated returns: 15,934
+    - Annotated returns: 15,935
     - Unannotated returns: 271
     - Explicit `Any` returns: 835
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
