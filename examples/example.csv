@@ -7,7 +7,7 @@ Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrat
 Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,COMPLETE,-,256,UP_TO_DATE,UPLOADED,NOT_STRICT,140,34,37,15,17,1,2,0,21,2,3,11,0,0,ERROR_ON_MISSING_STUB,linux,4
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,COMPLETE,-,310,UP_TO_DATE,UPLOADED,STRICT,107,0,152,0,0,0,0,2,46,0,0,15,0,0,ERROR_ON_MISSING_STUB,darwin;linux,1
 Jetson.GPIO,types-Jetson.GPIO,https://github.com/NVIDIA/jetson-gpio,COMPLETE,-,173,UP_TO_DATE,UPLOADED,STRICT,82,0,42,0,0,0,0,2,90,1,0,10,0,0,ERROR_ON_MISSING_STUB,linux,3
-Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,PARTIAL,-,703,UP_TO_DATE,UPLOADED,NOT_STRICT,257,30,198,2,0,0,15,3,219,10,0,102,0,0,MISSING_STUBS_IGNORED,linux,2
+Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,PARTIAL,-,703,OUT_OF_DATE,UPLOADED,NOT_STRICT,257,30,198,2,0,0,15,3,219,10,0,102,0,0,MISSING_STUBS_IGNORED,linux,2
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,COMPLETE,-,234,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,PARTIAL,-,1107,UP_TO_DATE,UPLOADED,NOT_STRICT,162,53,127,45,28,2,10,18,750,55,1,25,0,0,MISSING_STUBS_IGNORED,linux,10
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,193,UP_TO_DATE,UPLOADED,STRICT,102,0,21,0,0,0,0,0,17,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
@@ -36,7 +36,7 @@ chevron,types-chevron,https://github.com/noahmorrison/chevron,COMPLETE,-,38,UP_T
 click-default-group,types-click-default-group,https://github.com/click-contrib/click-default-group,COMPLETE,-,38,UP_TO_DATE,UPLOADED,NOT_STRICT,16,4,10,0,0,1,0,0,7,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-log,types-click-log,https://github.com/click-contrib/click-log,COMPLETE,-,23,UP_TO_DATE,UPLOADED,STRICT,6,0,4,0,0,0,0,0,6,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-spinner,types-click-spinner,https://github.com/click-contrib/click-spinner,COMPLETE,-,30,UP_TO_DATE,UPLOADED,STRICT,12,0,11,0,0,0,0,1,9,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-click-web,types-click-web,https://github.com/fredrik-corneliusson/click-web,COMPLETE,-,139,UP_TO_DATE,UPLOADED,NOT_STRICT,66,2,57,3,0,0,0,4,18,0,1,28,0,0,ERROR_ON_MISSING_STUB,linux,0
+click-web,types-click-web,https://github.com/fredrik-corneliusson/click-web,COMPLETE,-,179,UP_TO_DATE,UPLOADED,NOT_STRICT,66,2,57,3,0,0,0,4,52,0,1,28,0,0,ERROR_ON_MISSING_STUB,linux,0
 colorama,types-colorama,https://github.com/tartley/colorama,COMPLETE,-,201,UP_TO_DATE,UPLOADED,STRICT,89,0,60,0,0,0,3,1,85,0,0,11,0,0,ERROR_ON_MISSING_STUB,linux;win32,44
 console-menu,types-console-menu,https://github.com/aegirhall/console-menu,COMPLETE,-,736,UP_TO_DATE,UPLOADED,STRICT,217,0,278,0,0,0,7,1,58,3,1,39,0,0,ERROR_ON_MISSING_STUB,linux,0
 corus,types-corus,https://github.com/natasha/corus,COMPLETE,-,999,UP_TO_DATE,UPLOADED,NOT_STRICT,101,567,153,157,44,72,0,0,422,0,368,68,0,0,SKIPPED,None,0
