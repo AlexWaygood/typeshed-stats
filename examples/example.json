@@ -105,13 +105,13 @@
     "package_name": "Flask-Cors",
     "stub_distribution_name": "types-Flask-Cors",
     "upstream_url": "https://github.com/corydolphin/flask-cors",
-    "completeness_level": "PARTIAL",
+    "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 128,
+    "number_of_lines": 129,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
+      "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
@@ -787,8 +787,8 @@
     "upstream_url": "https://github.com/auth0/auth0-python",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1593,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 1603,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -799,17 +799,17 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1099,
-      "unannotated_parameters": 18,
-      "annotated_returns": 365,
-      "unannotated_returns": 117,
+      "annotated_parameters": 1110,
+      "unannotated_parameters": 16,
+      "annotated_returns": 364,
+      "unannotated_returns": 120,
       "explicit_Incomplete_parameters": 140,
       "explicit_Incomplete_returns": 293,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
       "annotated_variables": 156,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 152,
+      "explicit_Incomplete_variables": 122,
       "classdefs": 62,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
@@ -1196,7 +1196,7 @@
     "upstream_url": "https://github.com/click-contrib/click-log",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 23,
+    "number_of_lines": 22,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1214,7 +1214,7 @@
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
+      "explicit_Any_parameters": 1,
       "explicit_Any_returns": 0,
       "annotated_variables": 6,
       "explicit_Any_variables": 0,
@@ -1264,7 +1264,7 @@
     "upstream_url": "https://github.com/fredrik-corneliusson/click-web",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 179,
+    "number_of_lines": 180,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2623,7 +2623,7 @@
     "upstream_url": "https://github.com/latchset/jwcrypto",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 449,
+    "number_of_lines": 471,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2635,10 +2635,10 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 149,
-      "unannotated_parameters": 22,
-      "annotated_returns": 127,
-      "unannotated_returns": 12,
+      "annotated_parameters": 164,
+      "unannotated_parameters": 16,
+      "annotated_returns": 132,
+      "unannotated_returns": 8,
       "explicit_Incomplete_parameters": 15,
       "explicit_Incomplete_returns": 1,
       "explicit_Any_parameters": 6,
@@ -5184,7 +5184,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 64539,
+    "number_of_lines": 64533,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5194,7 +5194,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 775
+      "allowlist_length": 779
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
@@ -5206,8 +5206,8 @@
       "explicit_Incomplete_returns": 11,
       "explicit_Any_parameters": 1990,
       "explicit_Any_returns": 835,
-      "annotated_variables": 9165,
-      "explicit_Any_variables": 312,
+      "annotated_variables": 9163,
+      "explicit_Any_variables": 310,
       "explicit_Incomplete_variables": 235,
       "classdefs": 3096,
       "classdefs_with_Any": 25,
