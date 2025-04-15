@@ -1317,7 +1317,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,603 (excluding blank lines)
+1,585 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1333,7 +1333,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 10 unique allowlist entries for `auth0-python` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `auth0-python` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1342,19 +1342,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `auth0-python`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,110
-    - Unannotated parameters: 16
+    - Annotated parameters: 1,118
+    - Unannotated parameters: 13
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 140
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 142
 - Returns:
-    - Annotated returns: 364
-    - Unannotated returns: 120
+    - Annotated returns: 366
+    - Unannotated returns: 119
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 293
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 294
 - Variables:
     - Annotated variables: 156
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 122
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 92
 - Class definitions:
     - Total class definitions: 62
     - Class definitions with `Any`: 0
@@ -2681,7 +2681,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,336 (excluding blank lines)
+2,406 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2706,21 +2706,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docker`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,132
-    - Unannotated parameters: 343
+    - Annotated parameters: 1,208
+    - Unannotated parameters: 280
     - Explicit `Any` parameters: 29
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 284
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 283
 - Returns:
-    - Annotated returns: 303
-    - Unannotated returns: 261
+    - Annotated returns: 364
+    - Unannotated returns: 207
     - Explicit `Any` returns: 24
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 15
 - Variables:
-    - Annotated variables: 219
+    - Annotated variables: 221
     - Explicit `Any` variables: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 83
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 69
 - Class definitions:
-    - Total class definitions: 135
+    - Total class definitions: 136
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 24
 
@@ -3137,7 +3137,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-27 (excluding blank lines)
+277 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3147,13 +3147,13 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1 unique allowlist entry for `flake8-bugbear` when running stubtest in CI.
+Typeshed currently has 35 unique allowlist entries for `flake8-bugbear` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3162,21 +3162,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `flake8-bugbear`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 8
+    - Annotated parameters: 130
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 5
+    - Annotated returns: 119
     - Unannotated returns: 0
-    - Explicit `Any` returns: 0
+    - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 8
+    - Annotated variables: 99
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
-    - Total class definitions: 1
+    - Total class definitions: 13
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
