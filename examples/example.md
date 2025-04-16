@@ -10,7 +10,7 @@
 
 ### Number of lines
 
-2,592 (excluding blank lines)
+2,627 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -26,7 +26,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 36 unique allowlist entries for `Authlib` when running stubtest in CI.
+Typeshed currently has 32 unique allowlist entries for `Authlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -35,22 +35,22 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 490
-    - Unannotated parameters: 866
+    - Annotated parameters: 501
+    - Unannotated parameters: 864
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 254
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 260
 - Returns:
-    - Annotated returns: 429
-    - Unannotated returns: 411
-    - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
+    - Annotated returns: 455
+    - Unannotated returns: 407
+    - Explicit `Any` returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
-    - Annotated variables: 526
+    - Annotated variables: 524
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 295
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 291
 - Class definitions:
-    - Total class definitions: 201
-    - Class definitions with `Any`: 0
+    - Total class definitions: 203
+    - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
@@ -3770,9 +3770,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 84 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6732,9 +6732,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 716 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -8676,7 +8676,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64,538 (excluding blank lines)
+64,542 (excluding blank lines)
 
 ### Package status: *stdlib*
 
