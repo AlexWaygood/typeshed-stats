@@ -2250,7 +2250,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 84,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4021,7 +4021,7 @@
     "upstream_url": "https://github.com/pyinstaller/pyinstaller",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 716,
+    "number_of_lines": 758,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4033,18 +4033,18 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 273,
+      "annotated_parameters": 305,
       "unannotated_parameters": 0,
-      "annotated_returns": 149,
+      "annotated_returns": 167,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 1,
+      "explicit_Any_parameters": 2,
       "explicit_Any_returns": 2,
-      "annotated_variables": 208,
-      "explicit_Any_variables": 0,
+      "annotated_variables": 224,
+      "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 26,
+      "classdefs": 31,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -5184,7 +5184,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 64542,
+    "number_of_lines": 64538,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5402,8 +5402,8 @@
     "annotation_stats": {
       "annotated_parameters": 816,
       "unannotated_parameters": 146,
-      "annotated_returns": 166,
-      "unannotated_returns": 28,
+      "annotated_returns": 167,
+      "unannotated_returns": 27,
       "explicit_Incomplete_parameters": 38,
       "explicit_Incomplete_returns": 7,
       "explicit_Any_parameters": 1,

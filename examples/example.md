@@ -3770,9 +3770,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 84 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6730,7 +6730,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-716 (excluding blank lines)
+758 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6755,21 +6755,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `pyinstaller`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 273
+    - Annotated parameters: 305
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 1
+    - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 149
+    - Annotated returns: 167
     - Unannotated returns: 0
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 208
-    - Explicit `Any` variables: 0
+    - Annotated variables: 224
+    - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 26
+    - Total class definitions: 31
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -8676,7 +8676,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64,542 (excluding blank lines)
+64,538 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9050,8 +9050,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 38
 - Returns:
-    - Annotated returns: 166
-    - Unannotated returns: 28
+    - Annotated returns: 167
+    - Unannotated returns: 27
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
 - Variables:
