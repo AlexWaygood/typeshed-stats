@@ -8395,11 +8395,11 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-2,596 (excluding blank lines)
+2,796 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8420,17 +8420,17 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 ### Statistics on the annotations in typeshed's stubs for `shapely`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,424
-    - Unannotated parameters: 390
+    - Annotated parameters: 1,518
+    - Unannotated parameters: 424
     - Explicit `Any` parameters: 14
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 710
-    - Unannotated returns: 0
+    - Annotated returns: 735
+    - Unannotated returns: 1
     - Explicit `Any` returns: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 151
+    - Annotated variables: 157
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:

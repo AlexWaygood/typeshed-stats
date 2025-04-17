@@ -147,7 +147,7 @@ s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-pro
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2587,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1451,25,358,2,34,7,156,18,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,5
 setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,"Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.
 ",3028,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,931,430,792,174,42,11,2,5,658,4,235,143,0,0,ERROR_ON_MISSING_STUB,linux;win32,76
-shapely,types-shapely,https://github.com/shapely/shapely,COMPLETE,-,2596,OUT_OF_DATE,UPLOADED,ENTIRELY_EXCLUDED,1424,390,710,0,0,0,14,15,151,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,3
+shapely,types-shapely,https://github.com/shapely/shapely,COMPLETE,-,2796,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1518,424,735,1,0,0,14,15,157,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,3
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,292,UP_TO_DATE,UPLOADED,STRICT,179,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,10
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,330,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
