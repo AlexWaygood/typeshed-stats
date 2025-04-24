@@ -1944,7 +1944,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-38 (excluding blank lines)
+79 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1962,22 +1962,22 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 0 allowlist entries for `click-default-group` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `click-default-group`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 16
-    - Unannotated parameters: 4
-    - Explicit `Any` parameters: 0
+    - Annotated parameters: 52
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 10
+    - Annotated returns: 14
     - Unannotated returns: 0
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+    - Explicit `Any` returns: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 7
     - Explicit `Any` variables: 0
@@ -3251,7 +3251,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-19 (excluding blank lines)
+21 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3261,9 +3261,9 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
@@ -3276,17 +3276,17 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `flake8-docstrings`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 6
+    - Annotated parameters: 5
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 1
+    - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 5
+    - Annotated returns: 4
     - Unannotated returns: 0
-    - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 6
+    - Annotated variables: 7
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -3318,9 +3318,9 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
@@ -8676,7 +8676,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64,544 (excluding blank lines)
+64,555 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8701,12 +8701,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28,654
+    - Annotated parameters: 28,655
     - Unannotated parameters: 580
     - Explicit `Any` parameters: 1,988
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 65
 - Returns:
-    - Annotated returns: 15,941
+    - Annotated returns: 15,942
     - Unannotated returns: 271
     - Explicit `Any` returns: 835
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
