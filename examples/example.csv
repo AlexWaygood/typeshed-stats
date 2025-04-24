@@ -84,7 +84,7 @@ lupa,types-lupa,https://github.com/scoder/lupa,COMPLETE,-,480,UP_TO_DATE,UPLOADE
 lzstring,types-lzstring,https://github.com/gkovacs/lz-string-python,COMPLETE,-,17,UP_TO_DATE,UPLOADED,STRICT,8,0,8,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,5
 m3u8,types-m3u8,https://github.com/globocom/m3u8,COMPLETE,-,550,UP_TO_DATE,UPLOADED,NOT_STRICT,153,17,85,1,13,0,3,1,214,0,12,42,0,0,ERROR_ON_MISSING_STUB,linux,15
 mock,types-mock,https://github.com/testing-cabal/mock,COMPLETE,-,394,UP_TO_DATE,UPLOADED,STRICT,216,0,90,0,45,0,86,15,58,34,0,24,2,0,ERROR_ON_MISSING_STUB,linux,4
-mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,COMPLETE,-,77,UP_TO_DATE,UPLOADED,STRICT,31,0,28,0,0,0,3,7,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,6
+mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,COMPLETE,-,80,UP_TO_DATE,UPLOADED,STRICT,31,0,28,0,0,0,3,7,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,6
 mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,COMPLETE,-,1272,UP_TO_DATE,UPLOADED,NOT_STRICT,35,64,40,76,3,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,1
 nanoid,types-nanoid,https://github.com/puyuan/py-nanoid,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 nanoleafapi,types-nanoleafapi,https://github.com/MylesMor/nanoleafapi,COMPLETE,-,91,UP_TO_DATE,UPLOADED,STRICT,33,0,49,0,2,3,1,0,16,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
