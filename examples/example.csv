@@ -22,7 +22,7 @@ aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,COMPLETE,-,735,UP_TO_
 antlr4-python3-runtime,types-antlr4-python3-runtime,https://github.com/antlr/antlr4,COMPLETE,-,1781,UP_TO_DATE,UPLOADED,NOT_STRICT,777,222,208,485,27,2,0,0,395,0,269,142,0,0,MISSING_STUBS_IGNORED,linux;win32,0
 assertpy,types-assertpy,https://github.com/assertpy/assertpy,COMPLETE,-,213,UP_TO_DATE,UPLOADED,STRICT,85,0,87,0,0,0,29,1,21,1,0,15,0,0,ERROR_ON_MISSING_STUB,linux,11
 atheris,types-atheris,https://github.com/google/atheris,PARTIAL,-,88,UP_TO_DATE,UPLOADED,STRICT,54,0,41,0,0,0,2,0,9,0,0,9,0,0,SKIPPED,None,0
-auth0-python,types-auth0-python,https://github.com/auth0/auth0-python,COMPLETE,-,1585,UP_TO_DATE,UPLOADED,NOT_STRICT,1118,13,366,119,142,294,0,0,156,0,92,62,0,0,ERROR_ON_MISSING_STUB,linux,3
+auth0-python,types-auth0-python,https://github.com/auth0/auth0-python,COMPLETE,-,1647,UP_TO_DATE,UPLOADED,NOT_STRICT,1118,13,366,119,142,294,0,0,186,0,92,62,0,0,ERROR_ON_MISSING_STUB,linux,3
 aws-xray-sdk,types-aws-xray-sdk,https://github.com/aws/aws-xray-sdk-python,PARTIAL,-,675,UP_TO_DATE,UPLOADED,NOT_STRICT,139,154,182,92,21,0,12,3,136,46,0,45,0,0,MISSING_STUBS_IGNORED,linux,3
 beautifulsoup4,types-beautifulsoup4,https://git.launchpad.net/beautifulsoup/tree,PARTIAL,-,831,OBSOLETE,UPLOADED,NOT_STRICT,251,137,195,49,31,0,1,1,177,70,2,47,0,0,MISSING_STUBS_IGNORED,linux,0
 bleach,types-bleach,https://github.com/mozilla/bleach,COMPLETE,-,239,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,91,0,49,1,0,1,2,0,60,1,0,13,0,0,ERROR_ON_MISSING_STUB,linux,3
