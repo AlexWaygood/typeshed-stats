@@ -126,9 +126,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 218 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
@@ -3825,7 +3825,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,066 (excluding blank lines)
+1,062 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3850,14 +3850,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `grpcio`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 360
-    - Unannotated parameters: 4
-    - Explicit `Any` parameters: 22
+    - Annotated parameters: 359
+    - Unannotated parameters: 5
+    - Explicit `Any` parameters: 21
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 246
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 21
+    - Annotated returns: 245
+    - Unannotated returns: 1
+    - Explicit `Any` returns: 20
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
 - Variables:
     - Annotated variables: 32
@@ -4106,7 +4106,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-2,135 (excluding blank lines)
+2,137 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4131,9 +4131,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `hvac`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,038
-    - Unannotated parameters: 694
-    - Explicit `Any` parameters: 28
+    - Annotated parameters: 1,039
+    - Unannotated parameters: 693
+    - Explicit `Any` parameters: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 531
 - Returns:
     - Annotated returns: 82
@@ -4142,7 +4142,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 94
-    - Explicit `Any` variables: 1
+    - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 15
 - Class definitions:
     - Total class definitions: 75
@@ -6675,7 +6675,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-438 (excluding blank lines)
+460 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6685,36 +6685,36 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 25 unique allowlist entries for `pyflakes` when running stubtest in CI.
+Typeshed currently has 27 unique allowlist entries for `pyflakes` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `pyflakes`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 294
-    - Unannotated parameters: 41
+    - Annotated parameters: 341
+    - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 206
-    - Unannotated returns: 2
+    - Annotated returns: 214
+    - Unannotated returns: 0
     - Explicit `Any` returns: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 76
+    - Annotated variables: 77
     - Explicit `Any` variables: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 31
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 75
+    - Total class definitions: 76
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7699,7 +7699,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-39,270 (excluding blank lines)
+39,274 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7724,19 +7724,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,820
-    - Unannotated parameters: 3,657
+    - Annotated parameters: 3,839
+    - Unannotated parameters: 3,638
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 427
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 420
 - Returns:
-    - Annotated returns: 3,974
-    - Unannotated returns: 1,979
+    - Annotated returns: 3,982
+    - Unannotated returns: 1,971
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 284
 - Variables:
     - Annotated variables: 29,459
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,872
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,857
 - Class definitions:
     - Total class definitions: 744
     - Class definitions with `Any`: 0
@@ -7984,11 +7984,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-8,037 (excluding blank lines)
+8,107 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8000,7 +8000,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 71 unique allowlist entries for `reportlab` when running stubtest in CI.
+Typeshed currently has 70 unique allowlist entries for `reportlab` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -8009,21 +8009,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `reportlab`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,936
-    - Unannotated parameters: 2,355
+    - Annotated parameters: 2,055
+    - Unannotated parameters: 2,298
     - Explicit `Any` parameters: 26
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 336
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 330
 - Returns:
-    - Annotated returns: 1,525
-    - Unannotated returns: 1,024
+    - Annotated returns: 1,585
+    - Unannotated returns: 980
     - Explicit `Any` returns: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
-    - Annotated variables: 2,752
+    - Annotated variables: 2,757
     - Explicit `Any` variables: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,212
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,177
 - Class definitions:
-    - Total class definitions: 580
+    - Total class definitions: 582
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 3
 
@@ -8395,11 +8395,11 @@ Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer 
 
 ### Number of lines
 
-3,028 (excluding blank lines)
+2,965 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8420,21 +8420,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 931
-    - Unannotated parameters: 430
+    - Annotated parameters: 923
+    - Unannotated parameters: 342
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 42
 - Returns:
-    - Annotated returns: 792
-    - Unannotated returns: 174
+    - Annotated returns: 782
+    - Unannotated returns: 142
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 658
+    - Annotated variables: 650
     - Explicit `Any` variables: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 235
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 233
 - Class definitions:
-    - Total class definitions: 143
+    - Total class definitions: 138
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -8733,7 +8733,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64,563 (excluding blank lines)
+64,573 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8763,7 +8763,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 1,988
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 65
 - Returns:
-    - Annotated returns: 15,943
+    - Annotated returns: 15,947
     - Unannotated returns: 271
     - Explicit `Any` returns: 835
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
