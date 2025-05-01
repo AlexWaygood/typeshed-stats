@@ -27,7 +27,7 @@ aws-xray-sdk,types-aws-xray-sdk,https://github.com/aws/aws-xray-sdk-python,PARTI
 beautifulsoup4,types-beautifulsoup4,https://git.launchpad.net/beautifulsoup/tree,PARTIAL,-,831,OBSOLETE,UPLOADED,NOT_STRICT,251,137,195,49,31,0,1,1,177,70,2,47,0,0,MISSING_STUBS_IGNORED,linux,0
 bleach,types-bleach,https://github.com/mozilla/bleach,COMPLETE,-,239,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,91,0,49,1,0,1,2,0,60,1,0,13,0,0,ERROR_ON_MISSING_STUB,linux,3
 boltons,types-boltons,https://github.com/mahmoud/boltons,COMPLETE,-,1381,UP_TO_DATE,UPLOADED,NOT_STRICT,673,270,477,170,73,8,60,16,233,6,68,83,1,3,ERROR_ON_MISSING_STUB,linux,2
-braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,3409,UP_TO_DATE,UPLOADED,NOT_STRICT,300,291,359,167,76,10,4,2,1569,0,119,292,0,0,ERROR_ON_MISSING_STUB,linux,1
+braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,3409,OUT_OF_DATE,UPLOADED,NOT_STRICT,300,291,359,167,76,10,4,2,1569,0,119,292,0,0,ERROR_ON_MISSING_STUB,linux,1
 cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,124,UP_TO_DATE,UPLOADED,STRICT,90,0,49,0,0,0,4,0,1,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,20
 caldav,types-caldav,https://github.com/python-caldav/caldav,PARTIAL,-,527,OBSOLETE,UPLOADED,NOT_STRICT,214,35,117,8,21,5,1,0,94,0,6,86,0,0,MISSING_STUBS_IGNORED,linux,7
 capturer,types-capturer,https://github.com/xolox/python-capturer,COMPLETE,-,114,UP_TO_DATE,UPLOADED,STRICT,50,0,42,0,0,0,4,1,38,4,0,6,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -102,7 +102,7 @@ parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,COMPLET
 passlib,types-passlib,https://foss.heptapod.net/python-libs/passlib,COMPLETE,-,2084,UP_TO_DATE,UPLOADED,NOT_STRICT,569,354,267,231,101,0,32,13,579,59,3,143,2,0,ERROR_ON_MISSING_STUB,linux,35
 passpy,types-passpy,https://github.com/bfrascher/passpy,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
 peewee,types-peewee,https://github.com/coleifer/peewee,PARTIAL,-,1778,OUT_OF_DATE,UPLOADED,NOT_STRICT,438,659,363,423,224,5,2,0,423,31,319,169,0,0,ERROR_ON_MISSING_STUB,linux,20
-pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,COMPLETE,-,137,OUT_OF_DATE,UPLOADED,STRICT,89,0,39,0,0,0,0,0,34,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
+pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,COMPLETE,-,150,UP_TO_DATE,UPLOADED,STRICT,92,0,42,0,0,0,1,0,33,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,0
 pexpect,types-pexpect,https://github.com/pexpect/pexpect,COMPLETE,-,673,UP_TO_DATE,UPLOADED,NOT_STRICT,234,120,181,33,8,0,0,0,160,0,24,22,0,0,ERROR_ON_MISSING_STUB,linux,1
 pika,types-pika-ts,https://github.com/pika/pika,COMPLETE,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2281,UP_TO_DATE,UPLOADED,NOT_STRICT,717,288,623,142,119,24,4,0,468,0,148,223,0,0,ERROR_ON_MISSING_STUB,linux,7
 polib,types-polib,https://github.com/izimobil/polib,COMPLETE,-,158,UP_TO_DATE,UPLOADED,STRICT,61,0,75,0,0,0,18,0,45,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -138,6 +138,7 @@ pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,39274,UP_TO
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,COMPLETE,-,860,UP_TO_DATE,UPLOADED,NOT_STRICT,511,1,297,0,2,0,0,0,165,0,1,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,COMPLETE,-,172,UP_TO_DATE,UPLOADED,STRICT,96,0,31,0,0,0,0,4,33,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,650,UP_TO_DATE,UPLOADED,STRICT,280,0,151,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,11
+ratelimit,types-ratelimit,https://github.com/tomasbasham/ratelimit,COMPLETE,-,19,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,1,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,746,UP_TO_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,4,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,16
 reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,COMPLETE,-,8107,UP_TO_DATE,UPLOADED,NOT_STRICT,2055,2298,1585,980,330,8,26,12,2757,6,1177,582,0,3,ERROR_ON_MISSING_STUB,linux,70
 requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",1033,UP_TO_DATE,UPLOADED,NOT_STRICT,384,130,135,65,19,4,8,1,125,15,21,53,0,0,ERROR_ON_MISSING_STUB,linux,3
@@ -147,7 +148,7 @@ rfc3339-validator,types-rfc3339-validator,https://github.com/naimetti/rfc3339-va
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on [s2client-proto 5.0.12.91115.0](https://github.com/Blizzard/s2client-proto/tree/c04df4adbe274858a4eb8417175ee32ad02fd609).,5029,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2587,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1451,25,358,2,34,7,156,18,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,5
 setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,"Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.
-",2965,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,923,342,782,142,42,11,2,5,650,4,233,138,0,0,ERROR_ON_MISSING_STUB,linux;win32,76
+",2965,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,923,342,782,142,42,11,2,5,650,4,233,138,0,0,ERROR_ON_MISSING_STUB,linux;win32,76
 shapely,types-shapely,https://github.com/shapely/shapely,COMPLETE,-,2796,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1518,424,735,1,0,0,14,15,157,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,3
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,292,UP_TO_DATE,UPLOADED,STRICT,179,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,10
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
