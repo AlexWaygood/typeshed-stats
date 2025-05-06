@@ -1602,11 +1602,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-3,409 (excluding blank lines)
+3,283 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1627,21 +1627,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `braintree`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 300
-    - Unannotated parameters: 291
+    - Annotated parameters: 297
+    - Unannotated parameters: 284
     - Explicit `Any` parameters: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 76
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 74
 - Returns:
-    - Annotated returns: 359
-    - Unannotated returns: 167
+    - Annotated returns: 355
+    - Unannotated returns: 162
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
-    - Annotated variables: 1,569
+    - Annotated variables: 1,471
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 119
 - Class definitions:
-    - Total class definitions: 292
+    - Total class definitions: 284
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -3825,7 +3825,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,062 (excluding blank lines)
+928 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3841,7 +3841,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `grpcio` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `grpcio` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -3850,21 +3850,249 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `grpcio`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 359
-    - Unannotated parameters: 5
-    - Explicit `Any` parameters: 21
+    - Annotated parameters: 315
+    - Unannotated parameters: 4
+    - Explicit `Any` parameters: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 245
+    - Annotated returns: 211
     - Unannotated returns: 1
-    - Explicit `Any` returns: 20
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
+    - Explicit `Any` returns: 18
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 32
+    - Annotated variables: 29
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 80
+    - Total class definitions: 73
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
+## Info on typeshed's stubs for `grpcio-channelz`
+
+### Upstream repo URL
+
+[https://github.com/grpc/grpc](https://github.com/grpc/grpc)
+
+### Stub distribution name
+
+`types-grpcio-channelz`
+
+### Number of lines
+
+724 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `grpcio-channelz` when running stubtest in CI.
+
+### Pyright settings in CI: *strict on some files*
+
+Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded from the stricter settings.
+
+### Statistics on the annotations in typeshed's stubs for `grpcio-channelz`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 156
+    - Unannotated parameters: 94
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 54
+- Returns:
+    - Annotated returns: 55
+    - Unannotated returns: 15
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 324
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 21
+- Class definitions:
+    - Total class definitions: 44
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
+## Info on typeshed's stubs for `grpcio-health-checking`
+
+### Upstream repo URL
+
+[https://github.com/grpc/grpc](https://github.com/grpc/grpc)
+
+### Stub distribution name
+
+`types-grpcio-health-checking`
+
+### Number of lines
+
+89 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `grpcio-health-checking` when running stubtest in CI.
+
+### Pyright settings in CI: *strict on some files*
+
+Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded from the stricter settings.
+
+### Statistics on the annotations in typeshed's stubs for `grpcio-health-checking`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 15
+    - Unannotated parameters: 27
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
+- Returns:
+    - Annotated returns: 16
+    - Unannotated returns: 4
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 16
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 6
+- Class definitions:
+    - Total class definitions: 7
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
+## Info on typeshed's stubs for `grpcio-reflection`
+
+### Upstream repo URL
+
+[https://github.com/grpc/grpc](https://github.com/grpc/grpc)
+
+### Stub distribution name
+
+`types-grpcio-reflection`
+
+### Number of lines
+
+165 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `grpcio-reflection` when running stubtest in CI.
+
+### Pyright settings in CI: *strict on some files*
+
+Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded from the stricter settings.
+
+### Statistics on the annotations in typeshed's stubs for `grpcio-reflection`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 34
+    - Unannotated parameters: 17
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
+- Returns:
+    - Annotated returns: 18
+    - Unannotated returns: 4
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 55
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+- Class definitions:
+    - Total class definitions: 15
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
+## Info on typeshed's stubs for `grpcio-status`
+
+### Upstream repo URL
+
+[https://github.com/grpc/grpc](https://github.com/grpc/grpc)
+
+### Stub distribution name
+
+`types-grpcio-status`
+
+### Number of lines
+
+10 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `grpcio-status` when running stubtest in CI.
+
+### Pyright settings in CI: *strict on some files*
+
+Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded from the stricter settings.
+
+### Statistics on the annotations in typeshed's stubs for `grpcio-status`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 1
+    - Unannotated parameters: 2
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 2
+    - Unannotated returns: 1
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+- Variables:
+    - Annotated variables: 0
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -5474,7 +5702,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-13,218 (excluding blank lines)
+13,216 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5499,12 +5727,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,892
-    - Unannotated parameters: 323
-    - Explicit `Any` parameters: 14
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 203
+    - Annotated parameters: 3,896
+    - Unannotated parameters: 322
+    - Explicit `Any` parameters: 13
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 201
 - Returns:
-    - Annotated returns: 1,313
+    - Annotated returns: 1,314
     - Unannotated returns: 87
     - Explicit `Any` returns: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
@@ -6166,7 +6394,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-4,945 (excluding blank lines)
+6,004 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6191,21 +6419,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 789
-    - Unannotated parameters: 248
+    - Annotated parameters: 813
+    - Unannotated parameters: 363
     - Explicit `Any` parameters: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 526
-    - Unannotated returns: 73
+    - Annotated returns: 579
+    - Unannotated returns: 157
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 953
+    - Annotated variables: 1,074
     - Explicit `Any` variables: 122
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 88
 - Class definitions:
-    - Total class definitions: 187
+    - Total class definitions: 208
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7870,11 +8098,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-650 (excluding blank lines)
+651 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7895,12 +8123,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `qrcode`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 280
+    - Annotated parameters: 282
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 21
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 151
+    - Annotated returns: 152
     - Unannotated returns: 0
     - Explicit `Any` returns: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -8334,7 +8562,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-5,029 (excluding blank lines)
+6,947 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8790,7 +9018,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64,580 (excluding blank lines)
+64,584 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8815,12 +9043,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28,659
+    - Annotated parameters: 28,661
     - Unannotated parameters: 580
     - Explicit `Any` parameters: 1,988
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 65
 - Returns:
-    - Annotated returns: 15,947
+    - Annotated returns: 15,949
     - Unannotated returns: 271
     - Explicit `Any` returns: 835
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
@@ -8965,7 +9193,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-25,842 (excluding blank lines)
+30,264 (excluding blank lines)
 
 ### Package status: *out of date*
 
