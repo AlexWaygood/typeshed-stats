@@ -1476,6 +1476,63 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
+## Info on typeshed's stubs for `binaryornot`
+
+### Upstream repo URL
+
+[https://github.com/binaryornot/binaryornot](https://github.com/binaryornot/binaryornot)
+
+### Stub distribution name
+
+`types-binaryornot`
+
+### Number of lines
+
+10 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 1 unique allowlist entry for `binaryornot` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `binaryornot`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 5
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 4
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 3
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 0
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `bleach`
 
 ### Upstream repo URL
@@ -5474,7 +5531,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,484 (excluding blank lines)
+5,501 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5499,10 +5556,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,544
-    - Unannotated parameters: 1,001
+    - Annotated parameters: 2,546
+    - Unannotated parameters: 999
     - Explicit `Any` parameters: 35
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 569
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 565
 - Returns:
     - Annotated returns: 551
     - Unannotated returns: 804
@@ -10392,9 +10449,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 25 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 

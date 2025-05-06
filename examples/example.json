@@ -884,6 +884,40 @@
     }
   },
   {
+    "package_name": "binaryornot",
+    "stub_distribution_name": "types-binaryornot",
+    "upstream_url": "https://github.com/binaryornot/binaryornot",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 10,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 5,
+      "unannotated_parameters": 0,
+      "annotated_returns": 4,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 3,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 0,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "bleach",
     "stub_distribution_name": "types-bleach",
     "upstream_url": "https://github.com/mozilla/bleach",
@@ -3269,7 +3303,7 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 5484,
+    "number_of_lines": 5501,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3281,11 +3315,11 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2544,
-      "unannotated_parameters": 1001,
+      "annotated_parameters": 2546,
+      "unannotated_parameters": 999,
       "annotated_returns": 551,
       "unannotated_returns": 804,
-      "explicit_Incomplete_parameters": 569,
+      "explicit_Incomplete_parameters": 565,
       "explicit_Incomplete_returns": 115,
       "explicit_Any_parameters": 35,
       "explicit_Any_returns": 5,
@@ -6205,7 +6239,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 25,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
