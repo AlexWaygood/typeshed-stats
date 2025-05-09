@@ -5531,7 +5531,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,501 (excluding blank lines)
+6,289 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5557,16 +5557,16 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 2,546
-    - Unannotated parameters: 999
+    - Unannotated parameters: 1,133
     - Explicit `Any` parameters: 35
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 565
 - Returns:
-    - Annotated returns: 551
-    - Unannotated returns: 804
+    - Annotated returns: 582
+    - Unannotated returns: 813
     - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 115
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 134
 - Variables:
-    - Annotated variables: 300
+    - Annotated variables: 301
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
@@ -9075,7 +9075,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64,584 (excluding blank lines)
+64,555 (excluding blank lines)
 
 ### Package status: *stdlib*
 
