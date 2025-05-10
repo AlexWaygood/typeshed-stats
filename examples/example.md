@@ -2115,7 +2115,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-30 (excluding blank lines)
+36 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2147,14 +2147,14 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Returns:
     - Annotated returns: 11
     - Unannotated returns: 0
-    - Explicit `Any` returns: 1
+    - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 9
+    - Annotated variables: 13
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 2
+    - Total class definitions: 3
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -8739,9 +8739,9 @@ Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer 
 
 2,743 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -9075,7 +9075,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64,555 (excluding blank lines)
+64,561 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9100,7 +9100,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28,661
+    - Annotated parameters: 28,662
     - Unannotated parameters: 580
     - Explicit `Any` parameters: 1,988
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 65
