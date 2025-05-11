@@ -1545,7 +1545,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-239 (excluding blank lines)
+238 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1563,9 +1563,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 3 unique allowlist entries for `bleach` when running stubtest in CI.
 
-### Pyright settings in CI: *strict on some files*
+### Pyright settings in CI: *strict*
 
-Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded from the stricter settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `bleach`
 
@@ -1575,10 +1575,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 49
-    - Unannotated returns: 1
+    - Annotated returns: 50
+    - Unannotated returns: 0
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 60
     - Explicit `Any` variables: 1
@@ -6103,9 +6103,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 1,778 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -9075,7 +9075,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-64,964 (excluding blank lines)
+65,188 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9091,7 +9091,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,118 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,076 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -9100,21 +9100,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28,837
+    - Annotated parameters: 28,935
     - Unannotated parameters: 580
-    - Explicit `Any` parameters: 1,995
+    - Explicit `Any` parameters: 2,005
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 65
 - Returns:
-    - Annotated returns: 16,010
+    - Annotated returns: 16,033
     - Unannotated returns: 271
-    - Explicit `Any` returns: 805
+    - Explicit `Any` returns: 806
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 9,173
+    - Annotated variables: 9,189
     - Explicit `Any` variables: 302
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 235
 - Class definitions:
-    - Total class definitions: 3,099
+    - Total class definitions: 3,106
     - Class definitions with `Any`: 25
     - Class definitions marked as at least partially `Incomplete`: 0
 
