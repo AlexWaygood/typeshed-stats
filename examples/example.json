@@ -1298,7 +1298,7 @@
     "upstream_url": "https://github.com/fredrik-corneliusson/click-web",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 180,
+    "number_of_lines": 184,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1318,8 +1318,8 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 4,
-      "annotated_variables": 52,
-      "explicit_Any_variables": 0,
+      "annotated_variables": 53,
+      "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 1,
       "classdefs": 28,
       "classdefs_with_Any": 0,
@@ -4159,7 +4159,7 @@
     "upstream_url": "https://github.com/PyCQA/pyflakes",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 460,
+    "number_of_lines": 464,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5422,7 +5422,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 64561,
+    "number_of_lines": 64964,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5432,22 +5432,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 779
+      "allowlist_length": 1118
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 28662,
+      "annotated_parameters": 28837,
       "unannotated_parameters": 580,
-      "annotated_returns": 15949,
+      "annotated_returns": 16010,
       "unannotated_returns": 271,
       "explicit_Incomplete_parameters": 65,
       "explicit_Incomplete_returns": 11,
-      "explicit_Any_parameters": 1988,
-      "explicit_Any_returns": 835,
-      "annotated_variables": 9160,
-      "explicit_Any_variables": 306,
+      "explicit_Any_parameters": 1995,
+      "explicit_Any_returns": 805,
+      "annotated_variables": 9173,
+      "explicit_Any_variables": 302,
       "explicit_Incomplete_variables": 235,
-      "classdefs": 3097,
+      "classdefs": 3099,
       "classdefs_with_Any": 25,
       "classdefs_with_Incomplete": 0
     }
