@@ -64,7 +64,7 @@ flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/fl
 fpdf2,types-fpdf2,https://github.com/PyFPDF/fpdf2,COMPLETE,-,3684,UP_TO_DATE,UPLOADED,NOT_STRICT,1131,626,660,196,90,10,9,4,772,13,173,224,1,1,ERROR_ON_MISSING_STUB,linux,6
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1117,NOT_ON_PYPI,UPLOADED,NOT_STRICT,323,25,336,18,2,22,3,1,373,0,17,107,0,0,ERROR_ON_MISSING_STUB,linux,47
 geopandas,types-geopandas,https://github.com/geopandas/geopandas,COMPLETE,-,1787,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1002,68,402,7,38,5,34,10,30,6,0,19,0,0,ERROR_ON_MISSING_STUB,linux,15
-gevent,types-gevent,https://github.com/gevent/gevent,COMPLETE,-,3162,UP_TO_DATE,UPLOADED,STRICT,1366,0,839,0,5,0,68,21,371,26,0,211,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,144
+gevent,types-gevent,https://github.com/gevent/gevent,COMPLETE,-,3162,OUT_OF_DATE,UPLOADED,STRICT,1366,0,839,0,5,0,68,21,371,26,0,211,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,144
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1536,UP_TO_DATE,UPLOADED,NOT_STRICT,486,368,236,203,123,0,7,0,194,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,COMPLETE,-,84,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
 grpcio,types-grpcio,https://github.com/grpc/grpc,PARTIAL,-,928,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,315,4,211,1,0,1,19,18,29,0,0,73,0,0,MISSING_STUBS_IGNORED,linux,3
@@ -159,7 +159,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,330,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,65370,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,28980,580,16082,271,67,11,2035,825,9198,306,235,3116,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1065
+stdlib,-,https://github.com/python/cpython,STDLIB,-,65473,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,29026,580,16093,271,67,11,2045,825,9211,307,235,3119,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1048
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30264,OUT_OF_DATE,UPLOADED,NOT_STRICT,5373,8,2962,4,40,58,60,34,5431,5,9,920,1,0,SKIPPED,None,51
