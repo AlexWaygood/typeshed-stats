@@ -2213,8 +2213,8 @@
     "upstream_url": "https://github.com/gevent/gevent",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3158,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 3162,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -2223,22 +2223,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 149
+      "allowlist_length": 144
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 1366,
       "unannotated_parameters": 0,
-      "annotated_returns": 836,
+      "annotated_returns": 839,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 5,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 65,
+      "explicit_Any_parameters": 68,
       "explicit_Any_returns": 21,
-      "annotated_variables": 367,
+      "annotated_variables": 371,
       "explicit_Any_variables": 26,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 210,
+      "classdefs": 211,
       "classdefs_with_Any": 2,
       "classdefs_with_Incomplete": 0
     }
@@ -5252,7 +5252,7 @@
     "upstream_url": "https://github.com/shapely/shapely",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2796,
+    "number_of_lines": 2803,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5264,9 +5264,9 @@
     },
     "pyright_setting": "ENTIRELY_EXCLUDED",
     "annotation_stats": {
-      "annotated_parameters": 1518,
-      "unannotated_parameters": 424,
-      "annotated_returns": 735,
+      "annotated_parameters": 1524,
+      "unannotated_parameters": 426,
+      "annotated_returns": 737,
       "unannotated_returns": 1,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
@@ -5422,7 +5422,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 65188,
+    "number_of_lines": 65370,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5432,23 +5432,23 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1076
+      "allowlist_length": 1065
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 28935,
+      "annotated_parameters": 28980,
       "unannotated_parameters": 580,
-      "annotated_returns": 16033,
+      "annotated_returns": 16082,
       "unannotated_returns": 271,
-      "explicit_Incomplete_parameters": 65,
+      "explicit_Incomplete_parameters": 67,
       "explicit_Incomplete_returns": 11,
-      "explicit_Any_parameters": 2005,
-      "explicit_Any_returns": 806,
-      "annotated_variables": 9189,
-      "explicit_Any_variables": 302,
+      "explicit_Any_parameters": 2035,
+      "explicit_Any_returns": 825,
+      "annotated_variables": 9198,
+      "explicit_Any_variables": 306,
       "explicit_Incomplete_variables": 235,
-      "classdefs": 3106,
-      "classdefs_with_Any": 25,
+      "classdefs": 3116,
+      "classdefs_with_Any": 26,
       "classdefs_with_Incomplete": 0
     }
   },
