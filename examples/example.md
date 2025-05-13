@@ -5531,7 +5531,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-6,289 (excluding blank lines)
+6,531 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5541,13 +5541,13 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 22 unique allowlist entries for `networkx` when running stubtest in CI.
+Typeshed currently has 30 unique allowlist entries for `networkx` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5556,23 +5556,23 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,546
-    - Unannotated parameters: 1,133
+    - Annotated parameters: 2,739
+    - Unannotated parameters: 1,138
     - Explicit `Any` parameters: 35
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 565
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 566
 - Returns:
-    - Annotated returns: 582
-    - Unannotated returns: 813
+    - Annotated returns: 655
+    - Unannotated returns: 816
     - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 134
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 160
 - Variables:
-    - Annotated variables: 301
+    - Annotated variables: 308
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
-    - Total class definitions: 126
+    - Total class definitions: 128
     - Class definitions with `Any`: 1
-    - Class definitions marked as at least partially `Incomplete`: 3
+    - Class definitions marked as at least partially `Incomplete`: 2
 
 ---
 
@@ -9075,7 +9075,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-65,473 (excluding blank lines)
+65,780 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9091,7 +9091,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,048 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,026 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -9100,21 +9100,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,026
+    - Annotated parameters: 29,161
     - Unannotated parameters: 580
-    - Explicit `Any` parameters: 2,045
+    - Explicit `Any` parameters: 2,060
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 67
 - Returns:
-    - Annotated returns: 16,093
+    - Annotated returns: 16,138
     - Unannotated returns: 271
-    - Explicit `Any` returns: 825
+    - Explicit `Any` returns: 828
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 9,211
-    - Explicit `Any` variables: 307
+    - Annotated variables: 9,226
+    - Explicit `Any` variables: 308
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 235
 - Class definitions:
-    - Total class definitions: 3,119
+    - Total class definitions: 3,131
     - Class definitions with `Any`: 26
     - Class definitions marked as at least partially `Incomplete`: 0
 
