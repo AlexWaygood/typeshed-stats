@@ -2827,7 +2827,7 @@
     "upstream_url": "https://github.com/latchset/jwcrypto",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 471,
+    "number_of_lines": 475,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2839,9 +2839,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 164,
+      "annotated_parameters": 166,
       "unannotated_parameters": 16,
-      "annotated_returns": 132,
+      "annotated_returns": 133,
       "unannotated_returns": 8,
       "explicit_Incomplete_parameters": 15,
       "explicit_Incomplete_returns": 1,
@@ -5422,7 +5422,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 65867,
+    "number_of_lines": 65912,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5432,22 +5432,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1000
+      "allowlist_length": 997
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 29204,
+      "annotated_parameters": 29229,
       "unannotated_parameters": 580,
-      "annotated_returns": 16162,
+      "annotated_returns": 16167,
       "unannotated_returns": 273,
       "explicit_Incomplete_parameters": 67,
       "explicit_Incomplete_returns": 10,
-      "explicit_Any_parameters": 2061,
+      "explicit_Any_parameters": 2063,
       "explicit_Any_returns": 829,
-      "annotated_variables": 9235,
+      "annotated_variables": 9240,
       "explicit_Any_variables": 309,
       "explicit_Incomplete_variables": 235,
-      "classdefs": 3133,
+      "classdefs": 3135,
       "classdefs_with_Any": 26,
       "classdefs_with_Incomplete": 0
     }

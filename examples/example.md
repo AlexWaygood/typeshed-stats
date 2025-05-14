@@ -4733,7 +4733,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-471 (excluding blank lines)
+475 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4758,12 +4758,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `jwcrypto`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 164
+    - Annotated parameters: 166
     - Unannotated parameters: 16
     - Explicit `Any` parameters: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 15
 - Returns:
-    - Annotated returns: 132
+    - Annotated returns: 133
     - Unannotated returns: 8
     - Explicit `Any` returns: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
@@ -9075,7 +9075,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-65,867 (excluding blank lines)
+65,912 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9091,7 +9091,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,000 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 997 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -9100,21 +9100,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,204
+    - Annotated parameters: 29,229
     - Unannotated parameters: 580
-    - Explicit `Any` parameters: 2,061
+    - Explicit `Any` parameters: 2,063
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 67
 - Returns:
-    - Annotated returns: 16,162
+    - Annotated returns: 16,167
     - Unannotated returns: 273
     - Explicit `Any` returns: 829
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
-    - Annotated variables: 9,235
+    - Annotated variables: 9,240
     - Explicit `Any` variables: 309
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 235
 - Class definitions:
-    - Total class definitions: 3,133
+    - Total class definitions: 3,135
     - Class definitions with `Any`: 26
     - Class definitions marked as at least partially `Incomplete`: 0
 
