@@ -6453,9 +6453,9 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 6,004 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -8356,8 +8356,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 330
 - Returns:
-    - Annotated returns: 1,585
-    - Unannotated returns: 980
+    - Annotated returns: 1,586
+    - Unannotated returns: 979
     - Explicit `Any` returns: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
@@ -8412,10 +8412,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `requests`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 384
-    - Unannotated parameters: 130
+    - Annotated parameters: 382
+    - Unannotated parameters: 132
     - Explicit `Any` parameters: 8
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 135
     - Unannotated returns: 65
@@ -8424,7 +8424,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Variables:
     - Annotated variables: 125
     - Explicit `Any` variables: 15
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 21
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 20
 - Class definitions:
     - Total class definitions: 53
     - Class definitions with `Any`: 0
@@ -8739,9 +8739,9 @@ Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer 
 
 2,743 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -9075,7 +9075,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-65,994 (excluding blank lines)
+66,002 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9100,12 +9100,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,248
+    - Annotated parameters: 29,250
     - Unannotated parameters: 580
     - Explicit `Any` parameters: 2,063
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 67
 - Returns:
-    - Annotated returns: 16,174
+    - Annotated returns: 16,176
     - Unannotated returns: 273
     - Explicit `Any` returns: 829
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
