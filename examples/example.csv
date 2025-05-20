@@ -78,7 +78,7 @@ html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,PARTIAL,-,68
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,234,UP_TO_DATE,UPLOADED,NOT_STRICT,9,159,39,25,0,0,0,0,87,58,0,33,1,0,ERROR_ON_MISSING_STUB,linux,1
 hvac,types-hvac,https://github.com/hvac/hvac,COMPLETE,-,1824,UP_TO_DATE,UPLOADED,NOT_STRICT,510,1222,82,491,2,0,23,19,94,0,15,75,1,0,ERROR_ON_MISSING_STUB,linux,2
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,346,UP_TO_DATE,UPLOADED,STRICT,168,0,70,0,0,0,0,2,202,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
-icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,1333,UP_TO_DATE,UPLOADED,NOT_STRICT,354,21,418,8,2,0,9,6,151,1,2,65,1,2,ERROR_ON_MISSING_STUB,linux,14
+icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,1334,UP_TO_DATE,UPLOADED,NOT_STRICT,354,21,418,8,2,0,9,6,152,1,2,65,1,2,ERROR_ON_MISSING_STUB,linux,14
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,COMPLETE,-,122,UP_TO_DATE,UPLOADED,STRICT,57,0,58,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,20
 jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,COMPLETE,-,172,UP_TO_DATE,UPLOADED,NOT_STRICT,81,52,50,24,0,1,27,27,45,6,0,22,0,0,ERROR_ON_MISSING_STUB,linux,0
 jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,PARTIAL,-,412,UP_TO_DATE,UPLOADED,NOT_STRICT,109,314,152,29,8,11,7,0,52,3,16,26,0,0,MISSING_STUBS_IGNORED,linux,0
