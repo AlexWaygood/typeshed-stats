@@ -156,6 +156,7 @@ strict = true
 enable_error_code = 'ignore-without-code,redundant-expr,possibly-undefined'
 warn_unreachable = true
 local_partial_types = true
+allow_redefinition = true
 
 [tool.pyright]
 include = ["."]
