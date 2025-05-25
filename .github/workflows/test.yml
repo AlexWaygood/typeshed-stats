@@ -60,8 +60,8 @@ jobs:
         shell: bash
         run: |
           uv python pin ${{ matrix.python-version }}
-          uv run --extra=dev coverage run -m pytest --doctest-modules
-          uv run --extra=dev coverage report --no-skip-covered
+          uv run --group=dev coverage run -m pytest --doctest-modules
+          uv run --group=dev coverage report --no-skip-covered
 
   create-issue-on-failure:
     name: Create an issue if daily test failed
