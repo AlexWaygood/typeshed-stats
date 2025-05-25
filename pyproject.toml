@@ -43,6 +43,8 @@ typeshed-stats = "typeshed_stats._cli:main"
 
 [project.optional-dependencies]
 rich = ["rich", "rich-argparse>=1"]
+
+[dependency-groups]
 dev = [
     "typeshed-stats[rich]",
     "MarkDown==3.7",

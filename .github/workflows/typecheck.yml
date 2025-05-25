@@ -40,7 +40,7 @@ jobs:
         with:
           persist-credentials: false
       - uses: astral-sh/setup-uv@v5
-      - run: uv run --python=3.11 --extra=dev mypy
+      - run: uv run --python=3.11 --group=dev mypy
 
   pyright:
     name: Run pyright on the codebase
@@ -52,7 +52,7 @@ jobs:
       - uses: astral-sh/setup-uv@v5
       - run: |
           uv python pin 3.11
-          uv sync --extra=dev
+          uv sync --group=dev
           echo "${PWD}/.venv/bin" >> "${GITHUB_PATH}"
       - name: Run pyright
         uses: jakebailey/pyright-action@v2

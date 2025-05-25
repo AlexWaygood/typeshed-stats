@@ -31,7 +31,7 @@ jobs:
         with:
           python-version: "3.13"
       - uses: astral-sh/setup-uv@v5
-      - run: uv pip install -e .[dev] --system
+      - run: uv pip install -e . --group=dev --system
       - run: uv pip freeze
       - name: Regenerate examples and docs
         run: python scripts/regenerate.py --download-typeshed
