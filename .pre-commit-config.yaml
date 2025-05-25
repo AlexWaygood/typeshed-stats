@@ -12,7 +12,7 @@ repos:
       - id: name-tests-test
         args: [--pytest-test-first]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.8.0 # must match pyproject.toml
+    rev: v0.11.4 # must match pyproject.toml
     hooks:
       - id: ruff
       - id: ruff-format
@@ -20,18 +20,20 @@ repos:
     rev: 1.19.1 # must match pyproject.toml
     hooks:
       - id: blacken-docs
-        additional_dependencies: [black==24.10.0]
+        language: python # means renovate will update the `additional_dependencies` for the hook
+        additional_dependencies: [black==25.1.0]
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.3.0
+    rev: v2.4.1
     hooks:
       - id: codespell
+        language: python # means renovate will update the `additional_dependencies` for the hook
         additional_dependencies: ["tomli"]
   - repo: https://github.com/alan-turing-institute/CleverCSV-pre-commit
-    rev: v0.8.2
+    rev: v0.8.3
     hooks:
       - id: clevercsv-standardize
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.43.0
+    rev: v0.44.0
     hooks:
       - id: markdownlint-fix
         args: ["--ignore", "stats_website/.snippets"]
@@ -43,6 +45,32 @@ repos:
       - id: prettier
         exclude: "^examples/.*"
         exclude_types: ["markdown"]
+  - repo: https://github.com/abravalheri/validate-pyproject
+    rev: v0.24.1
+    hooks:
+      - id: validate-pyproject
+  - repo: https://github.com/woodruffw/zizmor-pre-commit
+    rev: v1.5.2
+    hooks:
+      - id: zizmor
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.32.1
+    hooks:
+      - id: check-github-workflows
+      - id: check-renovate
+        language: python # means renovate will update the `additional_dependencies` for the hook
+        additional_dependencies:
+          - "json5"
+  # `actionlint` hook, for verifying correct syntax in GitHub Actions workflows.
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.7
+    hooks:
+      - id: actionlint
+        additional_dependencies:
+          # actionlint has a shellcheck integration which extracts shell scripts in `run:` steps from GitHub Actions
+          # and checks these with shellcheck. This is arguably its most useful feature,
+          # but the integration only works if shellcheck is installed
+          - "github.com/wasilibs/go-shellcheck/cmd/shellcheck@v0.10.0"
   - repo: meta
     hooks:
       - id: check-hooks-apply

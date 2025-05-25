@@ -12,6 +12,10 @@ on:
 permissions:
   contents: read
 
+env:
+  FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
+  CLICOLOR_FORCE: 1 # recognized by uv
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
@@ -26,8 +30,10 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
       - name: Install uv
-        uses: astral-sh/setup-uv@v4
+        uses: astral-sh/setup-uv@v5
         with:
           version: "latest"
       - if: ${{ github.event_name != 'push' }}
@@ -35,12 +41,12 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           DATE=$(date '+%y.%-m.%-d')
-          echo $DATE
+          echo "${DATE}"
           git config --global user.name releasebot
           git config --global user.email ""
-          git tag -a $DATE -m ""
+          git tag -a "${DATE}" -m ""
           git push --tags
-          gh release create $DATE --notes "Automated weekly release"
+          gh release create "${DATE}" --notes "Automated weekly release"
       - name: Build a binary wheel and a source tarball
         run: uv build
       - name: Publish distribution to PyPI

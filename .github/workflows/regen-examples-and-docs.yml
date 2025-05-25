@@ -14,19 +14,29 @@ on:
       - "**.html"
   workflow_dispatch:
 
+env:
+  FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
+  CLICOLOR_FORCE: 1 # recognized by uv
+
+permissions: {}
+
 jobs:
   regen_examples_and_docs:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
       - name: git config
         run: |
           git config --global user.name statsabot
           git config --global user.email ''
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - uses: astral-sh/setup-uv@v4
+          python-version: "3.13"
+      - uses: astral-sh/setup-uv@v5
         with:
           version: "latest"
       - run: uv pip install -e . --group=dev --system
@@ -83,5 +93,5 @@ jobs:
               owner: "AlexWaygood",
               repo: "typeshed-stats",
               title: `Automated regeneration of examples failed on ${new Date().toDateString()}`,
-              body: "Runs are listed here: https://github.com/AlexWaygood/typeshed-stats/actions/workflows/regen-examples-and-docs.yml",
+              body: "Run listed here: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
             })

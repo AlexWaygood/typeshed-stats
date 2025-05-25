@@ -10,19 +10,27 @@ on:
       - "**.csv"
       - "**.html"
 
+env:
+  FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
+  CLICOLOR_FORCE: 1 # recognized by uv
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
+
+permissions: {}
 
 jobs:
   test-website:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - uses: astral-sh/setup-uv@v4
+          python-version: "3.13"
+      - uses: astral-sh/setup-uv@v5
         with:
           version: "latest"
       - run: uv pip install -e . --group=dev --system

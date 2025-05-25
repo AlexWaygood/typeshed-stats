@@ -28,7 +28,6 @@ import typeshed_stats.gather
 from typeshed_stats.gather import (
     AnnotationStats,
     CompletenessLevel,
-    PackageInfo,
     PackageStatus,
     PyrightSetting,
     StubtestStrictness,
@@ -1009,7 +1008,7 @@ def test_gather_stats_on_file_directory_passed(tmp_path: Path) -> None:
 def test_gather_stats_on_file_non_pyi_file_passed(tmp_path: Path) -> None:
     file = tmp_path / "foo.py"
     file.write_text("\n", encoding="utf-8")
-    with pytest.raises(ValueError, match="Expected a path pointing to a .pyi file"):
+    with pytest.raises(ValueError, match=r"Expected a path pointing to a \.pyi file"):
         gather_stats_on_file(file, typeshed_dir=".")
 
 
@@ -1102,7 +1101,6 @@ def test_gather_stats__on_packages_no_network_access(
     results = gather_stats_on_multiple_packages(
         packages_to_pass, typeshed_dir=typeshed_dir_to_pass
     )
-    assert all(isinstance(item, PackageInfo) for item in results)
     package_names_in_results = [item.package_name for item in results]
     assert package_names_in_results == sorted(package_names_in_results)
     expected_package_names = real_typeshed_package_names | {"stdlib"}
@@ -1132,7 +1130,6 @@ def test_gather_stats__on_packages_integrates_with_tmpdir_typeshed() -> None:
             package_names, typeshed_dir=typeshed
         )
 
-    assert all(isinstance(item, PackageInfo) for item in results)
     package_names_in_results = [item.package_name for item in results]
     assert package_names_in_results == sorted(package_names_in_results)
     assert set(package_names_in_results) == package_names
@@ -1224,7 +1221,7 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
 
 def test_exceptions_bubble_up(typeshed: Path) -> None:
     with (
-        pytest.raises(KeyError),
+        pytest.raises(ExceptionGroup) as exc_info,
         mock.patch.object(
             typeshed_stats.gather,
             "gather_stats_on_package",
@@ -1233,3 +1230,5 @@ def test_exceptions_bubble_up(typeshed: Path) -> None:
         ),
     ):
         gather_stats_on_multiple_packages(typeshed_dir=typeshed)
+    assert isinstance(exc_info.value, ExceptionGroup)
+    assert any(isinstance(exc, KeyError) for exc in exc_info.value.exceptions)

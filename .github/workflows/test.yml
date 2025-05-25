@@ -2,7 +2,8 @@ name: tests
 
 on:
   push:
-    branches: [main]
+    branches:
+      - "main"
     paths-ignore:
       - "examples/**"
       - "scripts/**"
@@ -30,9 +31,7 @@ permissions:
 env:
   FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
   PY_COLORS: 1 # Recognized by the `py` package, dependency of `pytest`
-  # TERM is needed for FORCE_COLOR to work on mypy on Ubuntu,
-  # see https://github.com/python/mypy/issues/13817
-  TERM: xterm-256color
+  CLICOLOR_FORCE: 1 # recognized by uv
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 concurrency:
@@ -51,8 +50,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Set up uv
-        uses: astral-sh/setup-uv@v4
+        uses: astral-sh/setup-uv@v5
         with:
           version: "latest"
       - name: Run tests under coverage
@@ -84,5 +85,5 @@ jobs:
               owner: "AlexWaygood",
               repo: "typeshed-stats",
               title: `Daily test failed on ${new Date().toDateString()}`,
-              body: "Runs are listed here: https://github.com/AlexWaygood/typeshed-stats/actions/workflows/test.yml",
+              body: "Run listed here: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
             })

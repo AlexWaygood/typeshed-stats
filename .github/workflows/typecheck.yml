@@ -2,7 +2,8 @@ name: Typecheck
 
 on:
   push:
-    branches: [main]
+    branches:
+      - "main"
     paths-ignore:
       - "**.json"
       - "**.md"
@@ -24,6 +25,7 @@ permissions:
 env:
   FORCE_COLOR: 1 # Request colored output from CLI tools supporting it
   TERM: xterm-256color # needed for FORCE_COLOR to work on mypy on Ubuntu, see https://github.com/python/mypy/issues/13817
+  CLICOLOR_FORCE: 1 # recognized by uv
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
@@ -35,7 +37,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v5
         with:
           version: "latest"
       - run: uv run --python=3.11 --group=dev mypy
@@ -45,14 +49,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-      - uses: astral-sh/setup-uv@v4
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v5
         with:
           version: "latest"
-      - run: uv pip install -e . --group=dev --system
-      - run: uv pip freeze
+      - run: |
+          uv python pin 3.11
+          uv sync --group=dev
+          echo "${PWD}/.venv/bin" >> "${GITHUB_PATH}"
       - name: Run pyright
         uses: jakebailey/pyright-action@v2
         with:
@@ -83,5 +88,5 @@ jobs:
               owner: "AlexWaygood",
               repo: "typeshed-stats",
               title: `Daily typecheck failed on ${new Date().toDateString()}`,
-              body: "Runs are listed here: https://github.com/AlexWaygood/typeshed-stats/actions/workflows/typecheck.yml",
+              body: "Run listed here: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
             })
