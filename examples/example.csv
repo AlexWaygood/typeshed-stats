@@ -29,7 +29,7 @@ binaryornot,types-binaryornot,https://github.com/binaryornot/binaryornot,COMPLET
 bleach,types-bleach,https://github.com/mozilla/bleach,COMPLETE,-,241,UP_TO_DATE,UPLOADED,STRICT,91,0,50,0,0,0,2,0,60,1,0,13,0,0,ERROR_ON_MISSING_STUB,linux,3
 boltons,types-boltons,https://github.com/mahmoud/boltons,COMPLETE,-,1350,UP_TO_DATE,UPLOADED,NOT_STRICT,608,335,477,170,8,8,60,16,233,6,68,83,1,3,ERROR_ON_MISSING_STUB,linux,2
 braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,3278,UP_TO_DATE,UPLOADED,NOT_STRICT,254,327,355,162,31,10,4,2,1471,0,119,284,0,0,ERROR_ON_MISSING_STUB,linux,1
-cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,124,OUT_OF_DATE,UPLOADED,STRICT,90,0,49,0,0,0,4,0,1,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,20
+cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,131,UP_TO_DATE,UPLOADED,STRICT,94,0,49,0,0,0,6,0,1,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,17
 caldav,types-caldav,https://github.com/python-caldav/caldav,PARTIAL,-,521,OBSOLETE,UPLOADED,NOT_STRICT,198,51,117,8,5,5,1,0,94,0,6,86,0,0,MISSING_STUBS_IGNORED,linux,7
 capturer,types-capturer,https://github.com/xolox/python-capturer,COMPLETE,-,114,UP_TO_DATE,UPLOADED,STRICT,50,0,42,0,0,0,4,1,38,4,0,6,0,0,ERROR_ON_MISSING_STUB,linux,1
 cffi,types-cffi,https://github.com/python-cffi/cffi/,COMPLETE,-,840,UP_TO_DATE,UPLOADED,NOT_STRICT,335,212,238,86,0,1,33,8,252,0,75,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
@@ -49,7 +49,7 @@ dirhash,types-dirhash,https://github.com/andhus/dirhash-python,COMPLETE,-,88,UP_
 django-import-export,types-django-import-export,https://github.com/django-import-export/django-import-export,COMPLETE,-,687,UP_TO_DATE,UPLOADED,STRICT,367,0,250,0,0,0,128,35,154,10,0,70,0,0,SKIPPED,None,0
 docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,2403,UP_TO_DATE,UPLOADED,NOT_STRICT,1135,354,376,196,63,15,31,24,221,2,59,136,2,24,ERROR_ON_MISSING_STUB,linux,9
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,COMPLETE,-,113,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
-docutils,types-docutils,https://sourceforge.net/p/docutils/code,PARTIAL,-,3069,UP_TO_DATE,UPLOADED,NOT_STRICT,1088,533,859,208,1,10,39,217,823,20,125,365,1,0,MISSING_STUBS_IGNORED,linux,20
+docutils,types-docutils,https://sourceforge.net/p/docutils/code,PARTIAL,-,3073,UP_TO_DATE,UPLOADED,NOT_STRICT,1092,533,862,207,1,10,39,217,824,20,125,365,1,0,MISSING_STUBS_IGNORED,linux,20
 editdistance,types-editdistance,https://github.com/roy-ht/editdistance,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,10,0,4,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 entrypoints,types-entrypoints,https://github.com/takluyver/entrypoints,COMPLETE,-,41,UP_TO_DATE,UPLOADED,STRICT,23,0,12,0,0,0,0,1,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,COMPLETE,-,534,UP_TO_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,40
@@ -67,7 +67,7 @@ geopandas,types-geopandas,https://github.com/geopandas/geopandas,COMPLETE,-,1787
 gevent,types-gevent,https://github.com/gevent/gevent,COMPLETE,-,3165,OUT_OF_DATE,UPLOADED,STRICT,1366,0,839,0,0,0,68,21,371,26,0,211,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,144
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1536,UP_TO_DATE,UPLOADED,NOT_STRICT,486,368,236,203,123,0,7,0,194,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,COMPLETE,-,84,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
-grpcio,types-grpcio,https://github.com/grpc/grpc,PARTIAL,-,928,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,315,4,211,1,0,1,19,18,29,0,0,73,0,0,MISSING_STUBS_IGNORED,linux,3
+grpcio,types-grpcio,https://github.com/grpc/grpc,PARTIAL,-,929,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,315,4,211,1,0,1,19,18,29,0,0,73,0,0,MISSING_STUBS_IGNORED,linux,3
 grpcio-channelz,types-grpcio-channelz,https://github.com/grpc/grpc,COMPLETE,-,724,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,156,94,55,15,54,0,0,0,324,0,21,44,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-health-checking,types-grpcio-health-checking,https://github.com/grpc/grpc,COMPLETE,-,89,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,15,27,16,4,2,0,0,0,16,0,6,7,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-reflection,types-grpcio-reflection,https://github.com/grpc/grpc,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,34,17,18,4,7,0,0,0,55,0,1,15,0,0,ERROR_ON_MISSING_STUB,linux,0
