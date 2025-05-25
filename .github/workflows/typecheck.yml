@@ -2,7 +2,7 @@ name: Typecheck
 
 on:
   push:
-    branches: main
+    branches: [main]
     paths-ignore:
       - "**.json"
       - "**.md"
@@ -38,7 +38,7 @@ jobs:
       - uses: astral-sh/setup-uv@v4
         with:
           version: "latest"
-      - run: uv run --python=3.11 --extra=dev mypy
+      - run: uv run --python=3.11 --group=dev mypy
 
   pyright:
     name: Run pyright on the codebase
@@ -51,7 +51,7 @@ jobs:
       - uses: astral-sh/setup-uv@v4
         with:
           version: "latest"
-      - run: uv pip install -e ".[dev]" --system
+      - run: uv pip install -e . --group=dev --system
       - run: uv pip freeze
       - name: Run pyright
         uses: jakebailey/pyright-action@v2
