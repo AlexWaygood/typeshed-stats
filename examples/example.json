@@ -1054,40 +1054,6 @@
     }
   },
   {
-    "package_name": "caldav",
-    "stub_distribution_name": "types-caldav",
-    "upstream_url": "https://github.com/python-caldav/caldav",
-    "completeness_level": "PARTIAL",
-    "extra_description": null,
-    "number_of_lines": 521,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
-        "linux"
-      ],
-      "allowlist_length": 7
-    },
-    "pyright_setting": "NOT_STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 198,
-      "unannotated_parameters": 51,
-      "annotated_returns": 117,
-      "unannotated_returns": 8,
-      "explicit_Incomplete_parameters": 5,
-      "explicit_Incomplete_returns": 5,
-      "explicit_Any_parameters": 1,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 94,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 6,
-      "classdefs": 86,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "capturer",
     "stub_distribution_name": "types-capturer",
     "upstream_url": "https://github.com/xolox/python-capturer",
@@ -1715,11 +1681,11 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1092,
-      "unannotated_parameters": 533,
+      "annotated_parameters": 1091,
+      "unannotated_parameters": 534,
       "annotated_returns": 862,
       "unannotated_returns": 207,
-      "explicit_Incomplete_parameters": 1,
+      "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 10,
       "explicit_Any_parameters": 39,
       "explicit_Any_returns": 217,
@@ -4188,38 +4154,6 @@
     }
   },
   {
-    "package_name": "pygit2",
-    "stub_distribution_name": "types-pygit2",
-    "upstream_url": "https://github.com/libgit2/pygit2",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 1935,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "SKIPPED",
-      "platforms": [],
-      "allowlist_length": 8
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 678,
-      "unannotated_parameters": 0,
-      "annotated_returns": 504,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 3,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 474,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 1,
-      "classdefs": 119,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "pyinstaller",
     "stub_distribution_name": "types-pyinstaller",
     "upstream_url": "https://github.com/pyinstaller/pyinstaller",
@@ -5422,7 +5356,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 66221,
+    "number_of_lines": 66317,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5432,22 +5366,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 910
+      "allowlist_length": 864
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 29315,
+      "annotated_parameters": 29331,
       "unannotated_parameters": 633,
-      "annotated_returns": 16242,
+      "annotated_returns": 16260,
       "unannotated_returns": 271,
       "explicit_Incomplete_parameters": 14,
       "explicit_Incomplete_returns": 10,
-      "explicit_Any_parameters": 2077,
+      "explicit_Any_parameters": 2082,
       "explicit_Any_returns": 830,
-      "annotated_variables": 9270,
+      "annotated_variables": 9274,
       "explicit_Any_variables": 310,
       "explicit_Incomplete_variables": 235,
-      "classdefs": 3137,
+      "classdefs": 3144,
       "classdefs_with_Any": 26,
       "classdefs_with_Incomplete": 0
     }

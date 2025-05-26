@@ -1761,63 +1761,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
-## Info on typeshed's stubs for `caldav`
-
-### Upstream repo URL
-
-[https://github.com/python-caldav/caldav](https://github.com/python-caldav/caldav)
-
-### Stub distribution name
-
-`types-caldav`
-
-### Number of lines
-
-521 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *missing stubs ignored*
-
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 7 unique allowlist entries for `caldav` when running stubtest in CI.
-
-### Pyright settings in CI: *not strict*
-
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
-
-### Statistics on the annotations in typeshed's stubs for `caldav`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 198
-    - Unannotated parameters: 51
-    - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
-- Returns:
-    - Annotated returns: 117
-    - Unannotated returns: 8
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
-- Variables:
-    - Annotated variables: 94
-    - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 6
-- Class definitions:
-    - Total class definitions: 86
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
 ## Info on typeshed's stubs for `capturer`
 
 ### Upstream repo URL
@@ -2877,10 +2820,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,092
-    - Unannotated parameters: 533
+    - Annotated parameters: 1,091
+    - Unannotated parameters: 534
     - Explicit `Any` parameters: 39
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 862
     - Unannotated returns: 207
@@ -7005,61 +6948,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
-## Info on typeshed's stubs for `pygit2`
-
-### Upstream repo URL
-
-[https://github.com/libgit2/pygit2](https://github.com/libgit2/pygit2)
-
-### Stub distribution name
-
-`types-pygit2`
-
-### Number of lines
-
-1,935 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *skipped*
-
-Stubtest is skipped in typeshed's CI for this package.
-
-Typeshed currently has 8 unique allowlist entries for `pygit2` when running stubtest in CI.
-
-### Pyright settings in CI: *strict*
-
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
-
-### Statistics on the annotations in typeshed's stubs for `pygit2`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 678
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
-- Returns:
-    - Annotated returns: 504
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 474
-    - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
-- Class definitions:
-    - Total class definitions: 119
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
 ## Info on typeshed's stubs for `pyinstaller`
 
 ### Upstream repo URL
@@ -9075,7 +8963,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,221 (excluding blank lines)
+66,317 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9091,7 +8979,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 910 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 864 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -9100,21 +8988,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,315
+    - Annotated parameters: 29,331
     - Unannotated parameters: 633
-    - Explicit `Any` parameters: 2,077
+    - Explicit `Any` parameters: 2,082
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 16,242
+    - Annotated returns: 16,260
     - Unannotated returns: 271
     - Explicit `Any` returns: 830
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
-    - Annotated variables: 9,270
+    - Annotated variables: 9,274
     - Explicit `Any` variables: 310
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 235
 - Class definitions:
-    - Total class definitions: 3,137
+    - Total class definitions: 3,144
     - Class definitions with `Any`: 26
     - Class definitions marked as at least partially `Incomplete`: 0
 
