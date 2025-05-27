@@ -1368,7 +1368,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 970,
-    "package_status": "UP_TO_DATE",
+    "package_status": "NO_LONGER_UPDATED",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "SKIPPED",
@@ -2760,7 +2760,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 412,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -3269,7 +3269,7 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 6534,
+    "number_of_lines": 6538,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4913,7 +4913,7 @@
     "upstream_url": "https://github.com/MrBitBucket/reportlab-mirror",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 7920,
+    "number_of_lines": 7924,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4925,8 +4925,8 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1739,
-      "unannotated_parameters": 2619,
+      "annotated_parameters": 1780,
+      "unannotated_parameters": 2578,
       "annotated_returns": 1586,
       "unannotated_returns": 979,
       "explicit_Incomplete_parameters": 10,
@@ -5152,7 +5152,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": "Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.\n",
     "number_of_lines": 2741,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -5356,7 +5356,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 66322,
+    "number_of_lines": 66437,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5366,22 +5366,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 862
+      "allowlist_length": 853
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 29331,
+      "annotated_parameters": 29351,
       "unannotated_parameters": 633,
-      "annotated_returns": 16262,
+      "annotated_returns": 16288,
       "unannotated_returns": 271,
       "explicit_Incomplete_parameters": 14,
       "explicit_Incomplete_returns": 10,
-      "explicit_Any_parameters": 2082,
+      "explicit_Any_parameters": 2083,
       "explicit_Any_returns": 831,
-      "annotated_variables": 9274,
+      "annotated_variables": 9275,
       "explicit_Any_variables": 310,
       "explicit_Incomplete_variables": 235,
-      "classdefs": 3144,
+      "classdefs": 3147,
       "classdefs_with_Any": 26,
       "classdefs_with_Incomplete": 0
     }
