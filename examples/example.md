@@ -2274,61 +2274,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
-## Info on typeshed's stubs for `corus`
-
-### Upstream repo URL
-
-[https://github.com/natasha/corus](https://github.com/natasha/corus)
-
-### Stub distribution name
-
-`types-corus`
-
-### Number of lines
-
-970 (excluding blank lines)
-
-### Package status: *no longer updated*
-
-The runtime package has not added type hints, but these stubs are no longer updated by typeshed for some other reason.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *skipped*
-
-Stubtest is skipped in typeshed's CI for this package.
-
-Typeshed currently has 0 allowlist entries for `corus` when running stubtest in CI.
-
-### Pyright settings in CI: *not strict*
-
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
-
-### Statistics on the annotations in typeshed's stubs for `corus`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 57
-    - Unannotated parameters: 611
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
-- Returns:
-    - Annotated returns: 153
-    - Unannotated returns: 157
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 72
-- Variables:
-    - Annotated variables: 422
-    - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 368
-- Class definitions:
-    - Total class definitions: 68
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
 ## Info on typeshed's stubs for `croniter`
 
 ### Upstream repo URL
@@ -4619,11 +4564,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-412 (excluding blank lines)
+427 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4644,15 +4589,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `jsonschema`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 109
-    - Unannotated parameters: 314
+    - Annotated parameters: 116
+    - Unannotated parameters: 310
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 8
 - Returns:
-    - Annotated returns: 152
-    - Unannotated returns: 29
+    - Annotated returns: 159
+    - Unannotated returns: 25
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 13
 - Variables:
     - Annotated variables: 52
     - Explicit `Any` variables: 3
@@ -8963,7 +8908,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,437 (excluding blank lines)
+66,474 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8979,7 +8924,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 853 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 840 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8988,18 +8933,18 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,351
+    - Annotated parameters: 29,357
     - Unannotated parameters: 633
-    - Explicit `Any` parameters: 2,083
+    - Explicit `Any` parameters: 2,081
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 16,288
+    - Annotated returns: 16,299
     - Unannotated returns: 271
-    - Explicit `Any` returns: 831
+    - Explicit `Any` returns: 832
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
-    - Annotated variables: 9,275
-    - Explicit `Any` variables: 310
+    - Annotated variables: 9,276
+    - Explicit `Any` variables: 308
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 235
 - Class definitions:
     - Total class definitions: 3,147
