@@ -78,7 +78,7 @@ hvac,types-hvac,https://github.com/hvac/hvac,COMPLETE,-,1824,UP_TO_DATE,UPLOADED
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,346,UP_TO_DATE,UPLOADED,STRICT,168,0,70,0,0,0,0,2,202,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,1334,UP_TO_DATE,UPLOADED,NOT_STRICT,354,21,418,8,2,0,9,6,152,1,2,65,1,2,ERROR_ON_MISSING_STUB,linux,14
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,COMPLETE,-,122,UP_TO_DATE,UPLOADED,STRICT,57,0,58,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,20
-jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,COMPLETE,-,172,UP_TO_DATE,UPLOADED,NOT_STRICT,81,52,50,24,0,1,27,27,45,6,0,22,0,0,ERROR_ON_MISSING_STUB,linux,0
+jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,COMPLETE,-,207,UP_TO_DATE,UPLOADED,NOT_STRICT,122,11,74,0,0,0,26,23,49,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,0
 jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,PARTIAL,-,427,UP_TO_DATE,UPLOADED,NOT_STRICT,116,310,159,25,8,13,7,0,52,3,16,26,0,0,MISSING_STUBS_IGNORED,linux,0
 jwcrypto,types-jwcrypto,https://github.com/latchset/jwcrypto,COMPLETE,-,472,UP_TO_DATE,UPLOADED,NOT_STRICT,151,31,133,8,0,1,6,11,55,2,3,40,1,0,ERROR_ON_MISSING_STUB,linux,3
 keyboard,types-keyboard,https://github.com/boppreh/keyboard,COMPLETE,-,246,UP_TO_DATE,UPLOADED,STRICT,130,0,76,0,0,0,0,0,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,7
@@ -150,13 +150,13 @@ rfc3339-validator,types-rfc3339-validator,https://github.com/naimetti/rfc3339-va
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,COMPLETE,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on [s2client-proto 5.0.12.91115.0](https://github.com/Blizzard/s2client-proto/tree/c04df4adbe274858a4eb8417175ee32ad02fd609).,6947,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2587,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1447,29,358,2,30,7,156,18,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,5
 setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,"Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.
-",2741,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,872,239,719,108,13,11,2,6,581,3,198,124,0,0,ERROR_ON_MISSING_STUB,linux;win32,76
+",2741,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,872,239,719,108,13,11,2,6,581,3,198,124,0,0,ERROR_ON_MISSING_STUB,linux;win32,76
 shapely,types-shapely,https://github.com/shapely/shapely,COMPLETE,-,2803,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1524,426,737,1,0,0,14,15,157,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,3
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,292,UP_TO_DATE,UPLOADED,STRICT,179,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,10
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,43,0,25,0,0,0,11,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,2
-stdlib,-,https://github.com/python/cpython,STDLIB,-,66474,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,29357,633,16299,271,14,10,2081,832,9276,308,235,3147,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,840
+stdlib,-,https://github.com/python/cpython,STDLIB,-,66496,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,29366,633,16302,271,14,10,2083,832,9283,308,235,3146,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,839
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30204,OUT_OF_DATE,UPLOADED,NOT_STRICT,5345,36,2927,39,12,23,60,34,5431,5,9,920,1,0,SKIPPED,None,51
