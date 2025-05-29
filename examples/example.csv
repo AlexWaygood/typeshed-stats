@@ -28,7 +28,7 @@ beautifulsoup4,types-beautifulsoup4,https://git.launchpad.net/beautifulsoup/tree
 binaryornot,types-binaryornot,https://github.com/binaryornot/binaryornot,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,3,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 bleach,types-bleach,https://github.com/mozilla/bleach,COMPLETE,-,241,UP_TO_DATE,UPLOADED,STRICT,91,0,50,0,0,0,2,0,60,1,0,13,0,0,ERROR_ON_MISSING_STUB,linux,3
 boltons,types-boltons,https://github.com/mahmoud/boltons,COMPLETE,-,1350,UP_TO_DATE,UPLOADED,NOT_STRICT,608,335,477,170,8,8,60,16,233,6,68,83,1,3,ERROR_ON_MISSING_STUB,linux,2
-braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,3278,UP_TO_DATE,UPLOADED,NOT_STRICT,254,327,355,162,31,10,4,2,1471,0,119,284,0,0,ERROR_ON_MISSING_STUB,linux,1
+braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,3278,OUT_OF_DATE,UPLOADED,NOT_STRICT,254,327,355,162,31,10,4,2,1471,0,119,284,0,0,ERROR_ON_MISSING_STUB,linux,1
 cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,131,UP_TO_DATE,UPLOADED,STRICT,94,0,49,0,0,0,6,0,1,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,17
 capturer,types-capturer,https://github.com/xolox/python-capturer,COMPLETE,-,114,UP_TO_DATE,UPLOADED,STRICT,50,0,42,0,0,0,4,1,38,4,0,6,0,0,ERROR_ON_MISSING_STUB,linux,1
 cffi,types-cffi,https://github.com/python-cffi/cffi/,COMPLETE,-,840,UP_TO_DATE,UPLOADED,NOT_STRICT,335,212,238,86,0,1,33,8,252,0,75,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
@@ -132,7 +132,7 @@ python-datemath,types-python-datemath,https://github.com/nickmaccarthy/python-da
 python-dateutil,types-python-dateutil,https://github.com/dateutil/dateutil,PARTIAL,-,427,UP_TO_DATE,UPLOADED,NOT_STRICT,164,70,109,42,0,0,0,0,89,0,4,30,0,0,MISSING_STUBS_IGNORED,linux,11
 python-http-client,types-python-http-client,https://github.com/sendgrid/python-http-client,COMPLETE,-,71,UP_TO_DATE,UPLOADED,NOT_STRICT,8,3,8,4,0,0,0,0,12,0,0,14,0,0,ERROR_ON_MISSING_STUB,linux,1
 python-jenkins,types-python-jenkins,https://opendev.org/jjb/python-jenkins,COMPLETE,-,248,UP_TO_DATE,UPLOADED,STRICT,195,0,101,0,7,1,1,0,73,0,2,9,1,0,ERROR_ON_MISSING_STUB,linux,1
-python-jose,types-python-jose,https://github.com/mpdavis/python-jose,COMPLETE,-,359,UP_TO_DATE,UPLOADED,NOT_STRICT,84,43,66,26,0,0,14,12,119,30,0,26,0,0,ERROR_ON_MISSING_STUB,linux,7
+python-jose,types-python-jose,https://github.com/mpdavis/python-jose,COMPLETE,-,359,OUT_OF_DATE,UPLOADED,NOT_STRICT,84,43,66,26,0,0,14,12,119,30,0,26,0,0,ERROR_ON_MISSING_STUB,linux,7
 python-nmap,types-python-nmap,https://bitbucket.org/xael/python-nmap,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-xlib,types-python-xlib,https://github.com/python-xlib/python-xlib,COMPLETE,-,5421,UP_TO_DATE,UPLOADED,STRICT,1334,0,583,0,0,0,15,8,3519,5,0,425,0,0,ERROR_ON_MISSING_STUB,linux,10
 pytz,types-pytz,https://github.com/stub42/pytz,COMPLETE,-,150,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,69,2,51,0,0,0,2,0,30,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux,4
