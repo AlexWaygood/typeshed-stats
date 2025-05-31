@@ -37,7 +37,7 @@ def define_env(env: Env) -> None:
     """Define environment variables."""
     # Variables needed for cli.md
     help_result = subprocess.run(
-        ["typeshed-stats", "--help"], text=True, capture_output=True
+        ["typeshed-stats", "--help"], text=True, capture_output=True, check=True
     )
     env.variables["cli_help"] = help_result.stdout + "\n"
 
