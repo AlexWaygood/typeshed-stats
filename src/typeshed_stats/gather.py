@@ -307,8 +307,7 @@ def gather_annotation_stats_on_file(path: Path | str) -> AnnotationStats:
         0
     """
     visitor = _AnnotationStatsCollector()
-    with open(path, encoding="utf-8") as file:
-        visitor.visit(ast.parse(file.read()))
+    visitor.visit(ast.parse(Path(path).read_text(encoding="utf-8")))
     return visitor.stats
 
 

@@ -53,10 +53,10 @@ def run_checks(
 ) -> None:
     """Run the checks."""
     print("\nRunning ruff...")
-    subprocess.run(["ruff", "check", "."])
+    subprocess.run(["ruff", "check", "."], check=False)
 
     print("\nRunning ruff formatter...")
-    ruff_format_result = subprocess.run(["ruff", "format", "."])
+    ruff_format_result = subprocess.run(["ruff", "format", "."], check=False)
     if ruff_format_result.returncode == 123:
         print("Exiting early since `ruff format` failed!")
         raise SystemExit(1)

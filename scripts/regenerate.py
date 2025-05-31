@@ -24,10 +24,10 @@ def regenerate_examples(stats: Sequence[PackageInfo]) -> None:
         "examples/example.md": stats_to_markdown(stats),
     }
     print("Writing stats...")
-    for path, formatted_stats in path_to_formatted_stats.items():
-        newline = "" if Path(path).suffix == ".csv" else None
-        with open(path, "w", encoding="utf-8", newline=newline) as f:
-            f.write(formatted_stats)
+    for str_path, formatted_stats in path_to_formatted_stats.items():
+        path = Path(str_path)
+        newline = "" if path.suffix == ".csv" else None
+        path.write_text(formatted_stats, encoding="utf-8", newline=newline)
     print("Examples successfully regenerated!")
 
 
