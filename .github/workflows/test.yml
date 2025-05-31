@@ -45,7 +45,7 @@ jobs:
     strategy:
       matrix:
         os: ["ubuntu-latest", "windows-latest", "macos-latest"]
-        python-version: ["3.11", "3.12", "3.13"]
+        python-version: ["3.11", "3.12", "3.13", "3.14"]
       fail-fast: false
 
     steps:
@@ -54,8 +54,6 @@ jobs:
           persist-credentials: false
       - name: Set up uv
         uses: astral-sh/setup-uv@v5
-        with:
-          version: "latest"
       - name: Run tests under coverage
         shell: bash
         run: |

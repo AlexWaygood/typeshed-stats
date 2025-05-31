@@ -40,8 +40,6 @@ jobs:
         with:
           persist-credentials: false
       - uses: astral-sh/setup-uv@v5
-        with:
-          version: "latest"
       - run: uv run --python=3.11 --group=dev mypy
 
   pyright:
@@ -52,8 +50,6 @@ jobs:
         with:
           persist-credentials: false
       - uses: astral-sh/setup-uv@v5
-        with:
-          version: "latest"
       - run: |
           uv python pin 3.11
           uv sync --group=dev

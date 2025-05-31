@@ -19,6 +19,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Software Development",
@@ -202,6 +203,17 @@ filterwarnings = [
     "error",
     # Ignore ResourceWarnings about unclosed sockets
     'ignore:Exception ignored in:pytest.PytestUnraisableExceptionWarning',
+    #
+    # The following are only issues on Python 3.14+
+    #
+    # SyntaxWarning from pluggy._callers
+    '''ignore::SyntaxWarning:pluggy._callers''',
+    # DeprecationWarning from cattrs
+    '''ignore:'_UnionGenericAlias' is deprecated:DeprecationWarning''',
+    # DeprecationWarnings from `pytest-asyncio`
+    '''ignore:'asyncio.get_event_loop_policy' is deprecated:DeprecationWarning''',
+    '''ignore:'asyncio.set_event_loop_policy' is deprecated:DeprecationWarning''',
+    '''ignore:'asyncio.set_event_loop' is deprecated:DeprecationWarning''',
 ]
 
 [tool.coverage.run]
