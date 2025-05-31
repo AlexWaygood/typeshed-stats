@@ -195,6 +195,10 @@ filterwarnings = [
     "error",
     # Ignore ResourceWarnings about unclosed sockets
     'ignore:Exception ignored in:pytest.PytestUnraisableExceptionWarning',
+    # SyntaxWarning from pluggy._callers
+    '''ignore:'return' in a 'finally' block:SyntaxWarning:pluggy._callers''',
+    # DeprecationWarning from cattrs
+    '''ignore:'_UnionGenericAlias' is deprecated:DeprecationWarning:cattrs.converters''',
 ]
 
 [tool.coverage.run]
