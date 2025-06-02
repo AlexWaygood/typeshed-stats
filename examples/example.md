@@ -993,7 +993,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 21 unique allowlist entries for `WTForms` when running stubtest in CI.
+Typeshed currently has 27 unique allowlist entries for `WTForms` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3544,9 +3544,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 1,787 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5647,7 +5647,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-13,146 (excluding blank lines)
+13,144 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5672,12 +5672,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,708
+    - Annotated parameters: 3,706
     - Unannotated parameters: 510
     - Explicit `Any` parameters: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
 - Returns:
-    - Annotated returns: 1,314
+    - Annotated returns: 1,313
     - Unannotated returns: 87
     - Explicit `Any` returns: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
@@ -5891,7 +5891,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 35 unique allowlist entries for `passlib` when running stubtest in CI.
+Typeshed currently has 32 unique allowlist entries for `passlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7719,7 +7719,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 10 unique allowlist entries for `python-xlib` when running stubtest in CI.
+Typeshed currently has 11 unique allowlist entries for `python-xlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -8175,7 +8175,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 71 unique allowlist entries for `reportlab` when running stubtest in CI.
+Typeshed currently has 57 unique allowlist entries for `reportlab` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -8236,7 +8236,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 unique allowlist entries for `requests` when running stubtest in CI.
+Typeshed currently has 4 unique allowlist entries for `requests` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -8924,7 +8924,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 839 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 844 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -9956,7 +9956,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 unique allowlist entries for `workalendar` when running stubtest in CI.
+Typeshed currently has 5 unique allowlist entries for `workalendar` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
