@@ -1605,7 +1605,7 @@
     "upstream_url": "https://sourceforge.net/p/docutils/code",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 3073,
+    "number_of_lines": 3482,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1613,22 +1613,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 20
+      "allowlist_length": 19
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1091,
-      "unannotated_parameters": 534,
-      "annotated_returns": 862,
-      "unannotated_returns": 207,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 10,
-      "explicit_Any_parameters": 39,
+      "annotated_parameters": 1163,
+      "unannotated_parameters": 743,
+      "annotated_returns": 905,
+      "unannotated_returns": 325,
+      "explicit_Incomplete_parameters": 1,
+      "explicit_Incomplete_returns": 9,
+      "explicit_Any_parameters": 38,
       "explicit_Any_returns": 217,
-      "annotated_variables": 824,
-      "explicit_Any_variables": 20,
-      "explicit_Incomplete_variables": 125,
-      "classdefs": 365,
+      "annotated_variables": 940,
+      "explicit_Any_variables": 15,
+      "explicit_Incomplete_variables": 159,
+      "classdefs": 415,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
@@ -4096,7 +4096,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 759,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -5292,7 +5292,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 66780,
+    "number_of_lines": 66794,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5302,13 +5302,13 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 843
+      "allowlist_length": 841
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 29462,
+      "annotated_parameters": 29472,
       "unannotated_parameters": 633,
-      "annotated_returns": 16352,
+      "annotated_returns": 16357,
       "unannotated_returns": 271,
       "explicit_Incomplete_parameters": 14,
       "explicit_Incomplete_returns": 10,
