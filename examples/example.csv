@@ -1,5 +1,5 @@
 package_name,stub_distribution_name,upstream_url,completeness_level,extra_description,number_of_lines,package_status,upload_status,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables,classdefs,classdefs_with_Any,classdefs_with_Incomplete,stubtest_strictness,stubtest_platforms,stubtest_allowlist_length
-Authlib,types-Authlib,https://github.com/lepture/authlib,PARTIAL,-,2483,OUT_OF_DATE,UPLOADED,NOT_STRICT,246,1119,455,407,5,6,1,2,524,0,291,203,1,0,MISSING_STUBS_IGNORED,linux,32
+Authlib,types-Authlib,https://github.com/lepture/authlib,PARTIAL,-,2483,OUT_OF_DATE,UPLOADED,NOT_STRICT,246,1119,455,407,5,6,1,2,524,0,291,203,1,0,MISSING_STUBS_IGNORED,linux,35
 Deprecated,types-Deprecated,https://github.com/tantale/deprecated,COMPLETE,-,67,UP_TO_DATE,UPLOADED,STRICT,34,0,10,0,0,0,1,0,12,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 ExifRead,types-ExifRead,https://github.com/ianare/exif-py,COMPLETE,-,218,OBSOLETE,UPLOADED,STRICT,72,0,52,0,0,0,2,1,82,2,2,14,0,0,ERROR_ON_MISSING_STUB,linux,1
 Flask-Cors,types-Flask-Cors,https://github.com/corydolphin/flask-cors,COMPLETE,-,129,UP_TO_DATE,UPLOADED,STRICT,65,0,24,0,0,0,7,2,32,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -179,5 +179,5 @@ wurlitzer,types-wurlitzer,https://github.com/minrk/wurlitzer,COMPLETE,-,130,UP_T
 xdgenvpy,types-xdgenvpy,https://gitlab.com/deliberist-group/xdgenvpy,COMPLETE,-,40,UP_TO_DATE,UPLOADED,STRICT,1,0,23,0,0,0,0,0,0,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,1
 xlrd,types-xlrd,https://github.com/python-excel/xlrd,COMPLETE,-,765,UP_TO_DATE,UPLOADED,STRICT,299,0,143,0,0,0,6,0,426,0,0,33,0,0,ERROR_ON_MISSING_STUB,linux,0
 xmltodict,types-xmltodict,https://github.com/martinblech/xmltodict,COMPLETE,-,35,UP_TO_DATE,UPLOADED,STRICT,20,0,3,0,0,0,7,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
-zstd,types-zstd,https://github.com/sergey-dryabzhinsky/python-zstd,COMPLETE,-,25,UP_TO_DATE,UPLOADED,STRICT,5,0,14,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
+zstd,types-zstd,https://github.com/sergey-dryabzhinsky/python-zstd,COMPLETE,-,25,OUT_OF_DATE,UPLOADED,STRICT,5,0,14,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 zxcvbn,types-zxcvbn,https://github.com/dwolfhub/zxcvbn-python,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT,64,0,39,0,0,0,0,0,76,1,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
