@@ -21,7 +21,7 @@ WebOb,types-WebOb,https://github.com/Pylons/webob,COMPLETE,-,2205,UP_TO_DATE,UPL
 aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,COMPLETE,-,734,UP_TO_DATE,UPLOADED,NOT_STRICT,410,22,148,3,3,3,34,1,6,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,86
 antlr4-python3-runtime,types-antlr4-python3-runtime,https://github.com/antlr/antlr4,COMPLETE,-,1777,UP_TO_DATE,UPLOADED,NOT_STRICT,768,231,208,485,18,2,0,0,395,0,269,142,0,0,MISSING_STUBS_IGNORED,linux;win32,0
 assertpy,types-assertpy,https://github.com/assertpy/assertpy,COMPLETE,-,214,UP_TO_DATE,UPLOADED,STRICT,85,0,87,0,0,0,29,1,21,1,0,15,0,0,ERROR_ON_MISSING_STUB,linux,11
-auth0-python,types-auth0-python,https://github.com/auth0/auth0-python,COMPLETE,-,1647,UP_TO_DATE,UPLOADED,NOT_STRICT,1117,14,366,119,141,294,0,0,186,0,92,62,0,0,ERROR_ON_MISSING_STUB,linux,3
+auth0-python,types-auth0-python,https://github.com/auth0/auth0-python,COMPLETE,-,1647,OUT_OF_DATE,UPLOADED,NOT_STRICT,1117,14,366,119,141,294,0,0,186,0,92,62,0,0,ERROR_ON_MISSING_STUB,linux,3
 aws-xray-sdk,types-aws-xray-sdk,https://github.com/aws/aws-xray-sdk-python,PARTIAL,-,655,UP_TO_DATE,UPLOADED,NOT_STRICT,118,175,182,92,0,0,12,3,136,46,0,45,0,0,MISSING_STUBS_IGNORED,linux,3
 beautifulsoup4,types-beautifulsoup4,https://git.launchpad.net/beautifulsoup/tree,PARTIAL,-,794,OBSOLETE,UPLOADED,NOT_STRICT,224,164,195,49,4,0,1,1,177,70,2,47,0,0,MISSING_STUBS_IGNORED,linux,0
 binaryornot,types-binaryornot,https://github.com/binaryornot/binaryornot,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,3,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -119,7 +119,7 @@ pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,COMPLETE,-,162
 pycurl,types-pycurl,https://github.com/pycurl/pycurl,COMPLETE,-,725,UP_TO_DATE,UPLOADED,NOT_STRICT,15,7,26,6,0,4,0,0,679,0,0,4,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,0
 pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,COMPLETE,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,COMPLETE,-,464,UP_TO_DATE,UPLOADED,STRICT,341,0,214,0,0,0,0,2,77,1,0,76,0,0,ERROR_ON_MISSING_STUB,linux,27
-pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,COMPLETE,-,759,OUT_OF_DATE,UPLOADED,STRICT,305,0,167,0,0,0,2,2,225,1,0,31,0,0,ERROR_ON_MISSING_STUB,linux,49
+pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,COMPLETE,-,759,UP_TO_DATE,UPLOADED,STRICT,305,0,167,0,0,0,2,2,225,1,0,31,0,0,ERROR_ON_MISSING_STUB,linux,49
 pyjks,types-pyjks,https://github.com/kurtbrose/pyjks,COMPLETE,-,377,UP_TO_DATE,UPLOADED,STRICT,132,0,59,0,0,0,0,0,73,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,38
 pynput,types-pynput,https://github.com/moses-palmer/pynput,COMPLETE,-,332,UP_TO_DATE,UPLOADED,STRICT,87,0,71,0,0,0,11,0,63,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,12
 pyperclip,types-pyperclip,https://github.com/asweigart/pyperclip,COMPLETE,-,18,UP_TO_DATE,UPLOADED,STRICT,3,0,6,0,0,0,0,0,0,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1
@@ -142,7 +142,7 @@ qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,651,
 ratelimit,types-ratelimit,https://github.com/tomasbasham/ratelimit,COMPLETE,-,19,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,1,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,746,UP_TO_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,4,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,16
 reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,COMPLETE,-,7924,UP_TO_DATE,UPLOADED,NOT_STRICT,1780,2578,1586,979,10,8,26,12,2759,6,1177,582,0,3,ERROR_ON_MISSING_STUB,linux,57
-requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",1033,UP_TO_DATE,UPLOADED,NOT_STRICT,382,132,135,65,0,4,8,1,125,15,20,53,0,0,ERROR_ON_MISSING_STUB,linux,4
+requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",1034,UP_TO_DATE,UPLOADED,NOT_STRICT,382,132,135,65,0,4,8,1,126,15,20,53,0,0,ERROR_ON_MISSING_STUB,linux,4
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,267,UP_TO_DATE,UPLOADED,NOT_STRICT,68,69,45,4,2,3,2,0,25,1,7,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
 rfc3339-validator,types-rfc3339-validator,https://github.com/naimetti/rfc3339-validator,COMPLETE,-,8,UP_TO_DATE,UPLOADED,STRICT,1,0,1,0,0,0,0,0,5,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0

@@ -1264,9 +1264,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 1,647 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6852,9 +6852,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 759 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8165,7 +8165,7 @@ Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to
 
 ### Number of lines
 
-1,033 (excluding blank lines)
+1,034 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8200,7 +8200,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
-    - Annotated variables: 125
+    - Annotated variables: 126
     - Explicit `Any` variables: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 20
 - Class definitions:
