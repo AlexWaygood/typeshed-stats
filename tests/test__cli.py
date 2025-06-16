@@ -644,7 +644,7 @@ def test_upstream_url_flag_no_known_urls(
 
     package_names = [package.package_name for package in random_PackageInfo_sequence]
     for name in package_names:
-        (typeshed / "stubs" / name).mkdir()
+        (typeshed / "stubs" / name).mkdir(exist_ok=True)
 
     assert_argparsing_fails(args + package_names + ["--upstream-repo"])
 
