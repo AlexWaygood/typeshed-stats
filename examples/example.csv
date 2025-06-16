@@ -83,7 +83,7 @@ jwcrypto,types-jwcrypto,https://github.com/latchset/jwcrypto,COMPLETE,-,472,UP_T
 keyboard,types-keyboard,https://github.com/boppreh/keyboard,COMPLETE,-,246,UP_TO_DATE,UPLOADED,STRICT,130,0,76,0,0,0,0,0,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,7
 ldap3,types-ldap3,https://github.com/cannatag/ldap3,PARTIAL,-,2484,UP_TO_DATE,UPLOADED,NOT_STRICT,276,936,219,421,0,0,0,0,931,322,57,316,0,0,MISSING_STUBS_IGNORED,linux,0
 libsass,types-libsass,https://github.com/sass/libsass-python,COMPLETE,-,250,UP_TO_DATE,UPLOADED,STRICT,109,0,41,0,0,0,2,0,36,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,2
-lupa,types-lupa,https://github.com/scoder/lupa,COMPLETE,-,480,UP_TO_DATE,UPLOADED,STRICT,150,0,126,0,0,0,30,0,61,12,0,54,0,0,ERROR_ON_MISSING_STUB,linux,0
+lupa,types-lupa,https://github.com/scoder/lupa,COMPLETE,-,480,OUT_OF_DATE,UPLOADED,STRICT,150,0,126,0,0,0,30,0,61,12,0,54,0,0,ERROR_ON_MISSING_STUB,linux,0
 lzstring,types-lzstring,https://github.com/gkovacs/lz-string-python,COMPLETE,-,17,UP_TO_DATE,UPLOADED,STRICT,8,0,8,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,5
 m3u8,types-m3u8,https://github.com/globocom/m3u8,COMPLETE,-,549,UP_TO_DATE,UPLOADED,NOT_STRICT,147,23,85,1,7,0,3,1,214,0,12,42,0,0,ERROR_ON_MISSING_STUB,linux,15
 mock,types-mock,https://github.com/testing-cabal/mock,COMPLETE,-,367,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,196,20,90,0,25,0,86,15,58,34,0,24,2,0,ERROR_ON_MISSING_STUB,linux,4
