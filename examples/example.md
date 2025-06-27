@@ -1606,9 +1606,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 3,366 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -2288,7 +2288,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-502 (excluding blank lines)
+508 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2313,17 +2313,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `dateparser`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 161
+    - Annotated parameters: 163
     - Unannotated parameters: 102
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
-    - Annotated returns: 110
+    - Annotated returns: 111
     - Unannotated returns: 38
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
 - Variables:
-    - Annotated variables: 135
+    - Annotated variables: 137
     - Explicit `Any` variables: 29
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
@@ -8796,7 +8796,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,911 (excluding blank lines)
+66,913 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8821,9 +8821,9 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,554
-    - Unannotated parameters: 618
-    - Explicit `Any` parameters: 2,084
+    - Annotated parameters: 29,557
+    - Unannotated parameters: 615
+    - Explicit `Any` parameters: 2,086
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
     - Annotated returns: 16,384
@@ -8832,8 +8832,8 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
     - Annotated variables: 9,340
-    - Explicit `Any` variables: 308
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 231
+    - Explicit `Any` variables: 309
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 229
 - Class definitions:
     - Total class definitions: 3,164
     - Class definitions with `Any`: 26
