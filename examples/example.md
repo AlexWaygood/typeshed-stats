@@ -1604,11 +1604,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-3,366 (excluding blank lines)
+3,374 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1629,17 +1629,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `braintree`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 279
+    - Annotated parameters: 284
     - Unannotated parameters: 325
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 31
 - Returns:
     - Annotated returns: 406
-    - Unannotated returns: 135
+    - Unannotated returns: 136
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
 - Variables:
-    - Annotated variables: 1,486
+    - Annotated variables: 1,487
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 114
 - Class definitions:
@@ -5389,13 +5389,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,618
-    - Unannotated parameters: 1,583
+    - Annotated parameters: 2,620
+    - Unannotated parameters: 1,581
     - Explicit `Any` parameters: 35
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 246
 - Returns:
-    - Annotated returns: 744
-    - Unannotated returns: 834
+    - Annotated returns: 745
+    - Unannotated returns: 833
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 168
 - Variables:
@@ -8796,7 +8796,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,913 (excluding blank lines)
+66,915 (excluding blank lines)
 
 ### Package status: *stdlib*
 
