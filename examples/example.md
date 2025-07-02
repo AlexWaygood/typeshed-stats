@@ -1034,7 +1034,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,205 (excluding blank lines)
+2,209 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1059,12 +1059,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `WebOb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 793
+    - Annotated parameters: 798
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 80
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 606
+    - Annotated returns: 608
     - Unannotated returns: 0
     - Explicit `Any` returns: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -1547,7 +1547,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,350 (excluding blank lines)
+1,352 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1572,12 +1572,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `boltons`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 608
+    - Annotated parameters: 610
     - Unannotated parameters: 335
     - Explicit `Any` parameters: 60
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 8
 - Returns:
-    - Annotated returns: 477
+    - Annotated returns: 478
     - Unannotated returns: 170
     - Explicit `Any` returns: 16
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
@@ -3715,7 +3715,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-907 (excluding blank lines)
+909 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3740,12 +3740,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `grpcio`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 307
+    - Annotated parameters: 310
     - Unannotated parameters: 4
     - Explicit `Any` parameters: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 207
+    - Annotated returns: 208
     - Unannotated returns: 1
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
@@ -4395,7 +4395,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-122 (excluding blank lines)
+124 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4420,12 +4420,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `inifile`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 57
+    - Annotated parameters: 60
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 58
+    - Annotated returns: 59
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -5421,7 +5421,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,867 (excluding blank lines)
+1,870 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5446,13 +5446,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `oauthlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 748
+    - Annotated parameters: 750
     - Unannotated parameters: 217
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 29
 - Returns:
     - Annotated returns: 313
-    - Unannotated returns: 61
+    - Unannotated returns: 62
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
@@ -6284,7 +6284,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-6,003 (excluding blank lines)
+6,007 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6309,12 +6309,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 800
+    - Annotated parameters: 804
     - Unannotated parameters: 376
     - Explicit `Any` parameters: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 579
+    - Annotated returns: 581
     - Unannotated returns: 157
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -8796,7 +8796,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-66,979 (excluding blank lines)
+66,993 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8821,12 +8821,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,589
+    - Annotated parameters: 29,603
     - Unannotated parameters: 607
     - Explicit `Any` parameters: 2,086
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 16,385
+    - Annotated returns: 16,392
     - Unannotated returns: 268
     - Explicit `Any` returns: 832
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
