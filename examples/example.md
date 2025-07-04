@@ -10,11 +10,11 @@
 
 ### Number of lines
 
-2,518 (excluding blank lines)
+2,655 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -26,7 +26,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 35 unique allowlist entries for `Authlib` when running stubtest in CI.
+Typeshed currently has 61 unique allowlist entries for `Authlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -35,21 +35,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 259
-    - Unannotated parameters: 1,118
+    - Annotated parameters: 277
+    - Unannotated parameters: 1,133
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
 - Returns:
-    - Annotated returns: 462
-    - Unannotated returns: 404
+    - Annotated returns: 497
+    - Unannotated returns: 406
     - Explicit `Any` returns: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
 - Variables:
-    - Annotated variables: 525
+    - Annotated variables: 544
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 289
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 279
 - Class definitions:
-    - Total class definitions: 204
+    - Total class definitions: 216
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -2571,7 +2571,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,403 (excluding blank lines)
+2,404 (excluding blank lines)
 
 ### Package status: *up to date*
 

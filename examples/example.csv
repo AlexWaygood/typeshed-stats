@@ -1,5 +1,5 @@
 package_name,stub_distribution_name,upstream_url,completeness_level,extra_description,number_of_lines,package_status,upload_status,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables,classdefs,classdefs_with_Any,classdefs_with_Incomplete,stubtest_strictness,stubtest_platforms,stubtest_allowlist_length
-Authlib,types-Authlib,https://github.com/lepture/authlib,PARTIAL,-,2518,OUT_OF_DATE,UPLOADED,NOT_STRICT,259,1118,462,404,8,6,1,3,525,0,289,204,1,0,MISSING_STUBS_IGNORED,linux,35
+Authlib,types-Authlib,https://github.com/lepture/authlib,PARTIAL,-,2655,UP_TO_DATE,UPLOADED,NOT_STRICT,277,1133,497,406,7,9,1,3,544,0,279,216,1,0,MISSING_STUBS_IGNORED,linux,61
 Deprecated,types-Deprecated,https://github.com/tantale/deprecated,COMPLETE,-,67,UP_TO_DATE,UPLOADED,STRICT,34,0,10,0,0,0,1,0,12,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 ExifRead,types-ExifRead,https://github.com/ianare/exif-py,COMPLETE,-,218,OBSOLETE,UPLOADED,STRICT,72,0,52,0,0,0,2,1,82,2,2,14,0,0,ERROR_ON_MISSING_STUB,linux,1
 Flask-Cors,types-Flask-Cors,https://github.com/corydolphin/flask-cors,COMPLETE,-,129,UP_TO_DATE,UPLOADED,STRICT,65,0,24,0,0,0,7,2,32,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -44,7 +44,7 @@ decorator,types-decorator,https://github.com/micheles/decorator,COMPLETE,-,67,UP
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,PARTIAL,-,228,UP_TO_DATE,UPLOADED,NOT_STRICT,78,100,38,13,10,0,0,1,37,0,19,12,0,0,MISSING_STUBS_IGNORED,linux,0
 dirhash,types-dirhash,https://github.com/andhus/dirhash-python,COMPLETE,-,88,UP_TO_DATE,UPLOADED,STRICT,39,0,13,0,0,0,0,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 django-import-export,types-django-import-export,https://github.com/django-import-export/django-import-export,COMPLETE,-,687,UP_TO_DATE,UPLOADED,STRICT,367,0,250,0,0,0,128,35,154,10,0,70,0,0,SKIPPED,None,0
-docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,2403,UP_TO_DATE,UPLOADED,NOT_STRICT,1135,354,376,196,63,15,31,24,221,2,59,136,2,24,ERROR_ON_MISSING_STUB,linux,9
+docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,2404,UP_TO_DATE,UPLOADED,NOT_STRICT,1135,354,376,196,63,15,31,24,221,2,59,136,2,24,ERROR_ON_MISSING_STUB,linux,9
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,COMPLETE,-,113,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 docutils,types-docutils,https://sourceforge.net/p/docutils/code,PARTIAL,-,3482,UP_TO_DATE,UPLOADED,NOT_STRICT,1163,743,905,325,1,9,38,217,940,15,159,415,1,0,MISSING_STUBS_IGNORED,linux,19
 editdistance,types-editdistance,https://github.com/roy-ht/editdistance,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,10,0,4,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1

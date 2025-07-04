@@ -5,30 +5,30 @@
     "upstream_url": "https://github.com/lepture/authlib",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 2518,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 2655,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 35
+      "allowlist_length": 61
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 259,
-      "unannotated_parameters": 1118,
-      "annotated_returns": 462,
-      "unannotated_returns": 404,
-      "explicit_Incomplete_parameters": 8,
-      "explicit_Incomplete_returns": 6,
+      "annotated_parameters": 277,
+      "unannotated_parameters": 1133,
+      "annotated_returns": 497,
+      "unannotated_returns": 406,
+      "explicit_Incomplete_parameters": 7,
+      "explicit_Incomplete_returns": 9,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 3,
-      "annotated_variables": 525,
+      "annotated_variables": 544,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 289,
-      "classdefs": 204,
+      "explicit_Incomplete_variables": 279,
+      "classdefs": 216,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
@@ -1537,7 +1537,7 @@
     "upstream_url": "https://github.com/docker/docker-py",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2403,
+    "number_of_lines": 2404,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
