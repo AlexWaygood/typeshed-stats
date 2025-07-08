@@ -1242,7 +1242,7 @@
       ],
       "allowlist_length": 0
     },
-    "pyright_setting": "STRICT_ON_SOME_FILES",
+    "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 68,
       "unannotated_parameters": 0,

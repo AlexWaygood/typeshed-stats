@@ -2078,9 +2078,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 0 allowlist entries for `click-web` when running stubtest in CI.
 
-### Pyright settings in CI: *strict on some files*
+### Pyright settings in CI: *strict*
 
-Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded from the stricter settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `click-web`
 

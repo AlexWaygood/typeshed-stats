@@ -35,7 +35,7 @@ chevron,types-chevron,https://github.com/noahmorrison/chevron,COMPLETE,-,38,UP_T
 click-default-group,types-click-default-group,https://github.com/click-contrib/click-default-group,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,52,0,14,0,0,0,7,4,7,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-log,types-click-log,https://github.com/click-contrib/click-log,COMPLETE,-,22,UP_TO_DATE,UPLOADED,STRICT,6,0,4,0,0,0,1,0,6,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-spinner,types-click-spinner,https://github.com/click-contrib/click-spinner,COMPLETE,-,36,UP_TO_DATE,UPLOADED,STRICT,12,0,11,0,0,0,0,0,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
-click-web,types-click-web,https://github.com/fredrik-corneliusson/click-web,COMPLETE,-,189,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,68,0,60,0,0,0,0,4,55,2,1,29,0,0,ERROR_ON_MISSING_STUB,linux,0
+click-web,types-click-web,https://github.com/fredrik-corneliusson/click-web,COMPLETE,-,189,UP_TO_DATE,UPLOADED,STRICT,68,0,60,0,0,0,0,4,55,2,1,29,0,0,ERROR_ON_MISSING_STUB,linux,0
 colorama,types-colorama,https://github.com/tartley/colorama,COMPLETE,-,201,UP_TO_DATE,UPLOADED,STRICT,89,0,60,0,0,0,3,1,85,0,0,11,0,0,ERROR_ON_MISSING_STUB,linux;win32,44
 console-menu,types-console-menu,https://github.com/aegirhall/console-menu,COMPLETE,-,736,UP_TO_DATE,UPLOADED,STRICT,217,0,278,0,0,0,7,1,58,3,1,39,0,0,ERROR_ON_MISSING_STUB,linux,0
 croniter,types-croniter,https://github.com/pallets-eco/croniter,COMPLETE,-,357,UP_TO_DATE,UPLOADED,STRICT,164,0,42,0,0,0,1,0,48,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,0
