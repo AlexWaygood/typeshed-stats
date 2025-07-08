@@ -7,7 +7,7 @@ Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrat
 Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,COMPLETE,-,249,UP_TO_DATE,UPLOADED,NOT_STRICT,137,37,37,15,14,1,2,0,21,2,3,11,0,0,ERROR_ON_MISSING_STUB,linux,4
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,COMPLETE,-,310,UP_TO_DATE,UPLOADED,STRICT,107,0,152,0,0,0,0,2,46,0,0,15,0,0,ERROR_ON_MISSING_STUB,darwin;linux,1
 Jetson.GPIO,types-Jetson.GPIO,https://github.com/NVIDIA/jetson-gpio,COMPLETE,-,173,UP_TO_DATE,UPLOADED,STRICT,82,0,42,0,0,0,0,2,90,1,0,10,0,0,ERROR_ON_MISSING_STUB,linux,3
-Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,PARTIAL,-,708,UP_TO_DATE,UPLOADED,NOT_STRICT,257,30,199,2,0,0,15,3,219,10,0,102,0,0,MISSING_STUBS_IGNORED,linux,2
+Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,COMPLETE,-,811,UP_TO_DATE,UPLOADED,NOT_STRICT,295,33,225,4,0,0,17,4,248,11,0,111,1,0,ERROR_ON_MISSING_STUB,linux,3
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,COMPLETE,-,234,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,COMPLETE,-,1203,UP_TO_DATE,UPLOADED,NOT_STRICT,171,64,124,33,9,2,2,12,767,6,44,28,0,0,ERROR_ON_MISSING_STUB,linux,2
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,193,UP_TO_DATE,UPLOADED,STRICT,102,0,21,0,0,0,0,0,17,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
@@ -21,8 +21,8 @@ WebOb,types-WebOb,https://github.com/Pylons/webob,COMPLETE,-,2209,UP_TO_DATE,UPL
 aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,COMPLETE,-,772,UP_TO_DATE,UPLOADED,STRICT,432,0,151,0,1,2,0,1,6,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,86
 antlr4-python3-runtime,types-antlr4-python3-runtime,https://github.com/antlr/antlr4,COMPLETE,-,1777,UP_TO_DATE,UPLOADED,NOT_STRICT,768,231,208,485,18,2,0,0,395,0,269,142,0,0,ERROR_ON_MISSING_STUB,linux;win32,0
 assertpy,types-assertpy,https://github.com/assertpy/assertpy,COMPLETE,-,214,UP_TO_DATE,UPLOADED,STRICT,85,0,87,0,0,0,29,1,21,1,0,15,0,0,ERROR_ON_MISSING_STUB,linux,11
-auth0-python,types-auth0-python,https://github.com/auth0/auth0-python,COMPLETE,-,1647,OUT_OF_DATE,UPLOADED,NOT_STRICT,1117,14,366,119,141,294,0,0,186,0,92,62,0,0,ERROR_ON_MISSING_STUB,linux,3
-aws-xray-sdk,types-aws-xray-sdk,https://github.com/aws/aws-xray-sdk-python,PARTIAL,-,655,UP_TO_DATE,UPLOADED,NOT_STRICT,118,175,182,92,0,0,12,3,136,46,0,45,0,0,MISSING_STUBS_IGNORED,linux,3
+auth0-python,types-auth0-python,https://github.com/auth0/auth0-python,COMPLETE,-,1683,UP_TO_DATE,UPLOADED,NOT_STRICT,1143,14,376,119,146,301,0,0,187,0,92,63,0,0,ERROR_ON_MISSING_STUB,linux,3
+aws-xray-sdk,types-aws-xray-sdk,https://github.com/aws/aws-xray-sdk-python,COMPLETE,-,926,UP_TO_DATE,UPLOADED,NOT_STRICT,222,205,267,68,9,9,11,5,183,2,8,67,0,0,ERROR_ON_MISSING_STUB,linux,30
 beautifulsoup4,types-beautifulsoup4,https://git.launchpad.net/beautifulsoup/tree,PARTIAL,-,794,OBSOLETE,UPLOADED,NOT_STRICT,224,164,195,49,4,0,1,1,177,70,2,47,0,0,MISSING_STUBS_IGNORED,linux,0
 binaryornot,types-binaryornot,https://github.com/binaryornot/binaryornot,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,3,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 bleach,types-bleach,https://github.com/mozilla/bleach,COMPLETE,-,241,UP_TO_DATE,UPLOADED,STRICT,91,0,50,0,0,0,2,0,60,1,0,13,0,0,ERROR_ON_MISSING_STUB,linux,3
@@ -41,12 +41,12 @@ console-menu,types-console-menu,https://github.com/aegirhall/console-menu,COMPLE
 croniter,types-croniter,https://github.com/pallets-eco/croniter,COMPLETE,-,357,UP_TO_DATE,UPLOADED,STRICT,164,0,42,0,0,0,1,0,48,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,0
 dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,COMPLETE,-,508,UP_TO_DATE,UPLOADED,NOT_STRICT,163,102,111,38,3,3,7,6,137,29,3,34,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,https://github.com/micheles/decorator,COMPLETE,-,67,UP_TO_DATE,UPLOADED,STRICT,40,0,13,0,0,0,21,6,16,3,0,2,0,0,ERROR_ON_MISSING_STUB,linux,5
-defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,PARTIAL,-,228,UP_TO_DATE,UPLOADED,NOT_STRICT,78,100,38,13,10,0,0,1,37,0,19,12,0,0,MISSING_STUBS_IGNORED,linux,0
+defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,COMPLETE,-,358,UP_TO_DATE,UPLOADED,NOT_STRICT,211,11,50,13,9,0,0,0,42,0,3,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 dirhash,types-dirhash,https://github.com/andhus/dirhash-python,COMPLETE,-,88,UP_TO_DATE,UPLOADED,STRICT,39,0,13,0,0,0,0,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 django-import-export,types-django-import-export,https://github.com/django-import-export/django-import-export,COMPLETE,-,687,UP_TO_DATE,UPLOADED,STRICT,367,0,250,0,0,0,128,35,154,10,0,70,0,0,SKIPPED,None,0
 docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,2404,UP_TO_DATE,UPLOADED,NOT_STRICT,1135,354,376,196,63,15,31,24,221,2,59,136,2,24,ERROR_ON_MISSING_STUB,linux,9
-dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,COMPLETE,-,113,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
-docutils,types-docutils,https://sourceforge.net/p/docutils/code,PARTIAL,-,3482,UP_TO_DATE,UPLOADED,NOT_STRICT,1163,743,905,325,1,9,38,217,940,15,159,415,1,0,MISSING_STUBS_IGNORED,linux,19
+dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,COMPLETE,-,115,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
+docutils,types-docutils,https://sourceforge.net/p/docutils/code,PARTIAL,-,3633,UP_TO_DATE,UPLOADED,NOT_STRICT,1239,730,920,338,9,6,38,217,978,14,178,417,1,0,MISSING_STUBS_IGNORED,linux,15
 editdistance,types-editdistance,https://github.com/roy-ht/editdistance,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,10,0,4,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 entrypoints,types-entrypoints,https://github.com/takluyver/entrypoints,COMPLETE,-,41,UP_TO_DATE,UPLOADED,STRICT,23,0,12,0,0,0,0,1,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,COMPLETE,-,534,UP_TO_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,40
@@ -56,8 +56,8 @@ flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,COMP
 flake8-builtins,types-flake8-builtins,https://github.com/gforcada/flake8-builtins,COMPLETE,-,38,UP_TO_DATE,UPLOADED,STRICT,17,0,15,0,0,0,0,0,11,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-docstrings,types-flake8-docstrings,https://github.com/pycqa/flake8-docstrings,COMPLETE,-,21,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,7,1,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/flake8-rst-docstrings,COMPLETE,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
-flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simplify,PARTIAL,-,8,OUT_OF_DATE,UPLOADED,STRICT,1,0,2,0,0,0,0,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
-flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,PARTIAL,-,14,UP_TO_DATE,UPLOADED,NOT_STRICT,4,0,4,1,0,0,1,1,2,0,0,1,0,0,MISSING_STUBS_IGNORED,linux,0
+flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simplify,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,76,0,73,0,0,0,0,1,14,0,2,7,0,0,ERROR_ON_MISSING_STUB,linux,0
+flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,COMPLETE,-,36,UP_TO_DATE,UPLOADED,STRICT,11,0,13,0,0,0,1,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 fpdf2,types-fpdf2,https://github.com/PyFPDF/fpdf2,COMPLETE,-,3622,UP_TO_DATE,UPLOADED,NOT_STRICT,1054,703,660,196,13,10,9,4,772,13,173,224,1,1,ERROR_ON_MISSING_STUB,linux,6
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1096,NOT_ON_PYPI,UPLOADED,NOT_STRICT,322,26,315,39,1,1,3,1,373,0,17,107,0,0,ERROR_ON_MISSING_STUB,linux,47
 geopandas,types-geopandas,https://github.com/geopandas/geopandas,COMPLETE,-,1840,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1023,68,424,6,42,4,34,11,33,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,13
@@ -71,14 +71,15 @@ grpcio-reflection,types-grpcio-reflection,https://github.com/grpc/grpc,COMPLETE,
 grpcio-status,types-grpcio-status,https://github.com/grpc/grpc,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1,2,2,1,0,1,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 hdbcli,types-hdbcli,-,COMPLETE,-,140,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,78,4,65,3,0,0,13,10,21,2,1,16,0,0,ERROR_ON_MISSING_STUB,linux,8
 hnswlib,types-hnswlib,https://github.com/nmslib/hnswlib,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,32,0,26,0,0,0,1,0,3,0,1,1,0,0,ERROR_ON_MISSING_STUB,linux,1
-html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,PARTIAL,-,685,UP_TO_DATE,UPLOADED,NOT_STRICT,64,218,133,177,0,1,0,0,224,175,1,41,4,0,MISSING_STUBS_IGNORED,linux,0
+html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,COMPLETE,-,745,UP_TO_DATE,UPLOADED,NOT_STRICT,93,191,149,163,0,4,0,0,243,0,103,41,0,4,ERROR_ON_MISSING_STUB,linux,0
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,291,UP_TO_DATE,UPLOADED,NOT_STRICT,60,116,63,7,1,2,0,0,99,0,35,33,0,0,ERROR_ON_MISSING_STUB,linux,1
 hvac,types-hvac,https://github.com/hvac/hvac,COMPLETE,-,1824,UP_TO_DATE,UPLOADED,NOT_STRICT,510,1222,82,491,2,0,23,19,94,0,15,75,1,0,ERROR_ON_MISSING_STUB,linux,2
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,346,UP_TO_DATE,UPLOADED,STRICT,168,0,70,0,0,0,0,2,202,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,1334,UP_TO_DATE,UPLOADED,NOT_STRICT,354,21,418,8,2,0,9,6,152,1,2,65,1,2,ERROR_ON_MISSING_STUB,linux,14
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,COMPLETE,-,124,UP_TO_DATE,UPLOADED,STRICT,60,0,59,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,20
 jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,COMPLETE,-,207,UP_TO_DATE,UPLOADED,NOT_STRICT,122,11,74,0,0,0,26,23,49,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,0
-jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,PARTIAL,-,427,UP_TO_DATE,UPLOADED,NOT_STRICT,116,310,159,25,8,13,7,0,52,3,16,26,0,0,MISSING_STUBS_IGNORED,linux,0
+jsonnet,types-jsonnet,https://github.com/google/jsonnet,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,25,0,2,0,0,0,0,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
+jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,COMPLETE,-,472,UP_TO_DATE,UPLOADED,NOT_STRICT,171,259,175,11,8,10,7,2,58,3,15,26,0,0,ERROR_ON_MISSING_STUB,linux,87
 jwcrypto,types-jwcrypto,https://github.com/latchset/jwcrypto,COMPLETE,-,472,UP_TO_DATE,UPLOADED,NOT_STRICT,151,31,133,8,0,1,6,11,55,2,3,40,1,0,ERROR_ON_MISSING_STUB,linux,3
 keyboard,types-keyboard,https://github.com/boppreh/keyboard,COMPLETE,-,246,UP_TO_DATE,UPLOADED,STRICT,130,0,76,0,0,0,0,0,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,7
 ldap3,types-ldap3,https://github.com/cannatag/ldap3,COMPLETE,-,2492,UP_TO_DATE,UPLOADED,NOT_STRICT,276,936,219,421,0,0,0,0,937,322,57,316,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -127,7 +128,7 @@ pyserial,types-pyserial,https://github.com/pyserial/pyserial,COMPLETE,-,1171,UP_
 pysftp,types-pysftp,https://bitbucket.org/dundeemt/pysftp,COMPLETE,-,166,UP_TO_DATE,UPLOADED,STRICT,109,0,70,0,0,0,0,0,6,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
 pytest-lazy-fixture,types-pytest-lazy-fixture,https://github.com/tvorog/pytest-lazy-fixture,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,5,0,5,0,0,0,0,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,8
 python-crontab,types-python-crontab,https://gitlab.com/doctormo/python-crontab,COMPLETE,-,351,UP_TO_DATE,UPLOADED,STRICT,185,0,152,0,1,0,13,0,78,0,2,19,0,0,ERROR_ON_MISSING_STUB,linux,3
-python-dateutil,types-python-dateutil,https://github.com/dateutil/dateutil,PARTIAL,-,427,UP_TO_DATE,UPLOADED,NOT_STRICT,164,70,109,42,0,0,0,0,89,0,4,30,0,0,MISSING_STUBS_IGNORED,linux,11
+python-dateutil,types-python-dateutil,https://github.com/dateutil/dateutil,COMPLETE,-,675,UP_TO_DATE,UPLOADED,NOT_STRICT,240,50,160,31,0,2,0,1,150,0,3,41,0,1,ERROR_ON_MISSING_STUB,linux,11
 python-http-client,types-python-http-client,https://github.com/sendgrid/python-http-client,COMPLETE,-,76,UP_TO_DATE,UPLOADED,STRICT,15,0,13,0,0,0,0,2,12,0,0,14,0,0,ERROR_ON_MISSING_STUB,linux,1
 python-jenkins,types-python-jenkins,https://opendev.org/jjb/python-jenkins,COMPLETE,-,248,UP_TO_DATE,UPLOADED,STRICT,195,0,101,0,7,1,1,0,73,0,2,9,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-jose,types-python-jose,https://github.com/mpdavis/python-jose,COMPLETE,-,359,UP_TO_DATE,UPLOADED,NOT_STRICT,83,43,65,26,0,0,14,12,119,30,0,26,0,0,ERROR_ON_MISSING_STUB,linux,6
@@ -149,7 +150,7 @@ s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-pro
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,COMPLETE,-,2587,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1447,29,358,2,30,7,156,18,282,13,24,100,1,0,ERROR_ON_MISSING_STUB,linux,5
 setuptools,types-setuptools,https://github.com/pypa/setuptools,COMPLETE,"Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.
 ",2741,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,872,239,719,108,13,11,2,6,581,3,198,124,0,0,ERROR_ON_MISSING_STUB,linux;win32,76
-shapely,types-shapely,https://github.com/shapely/shapely,COMPLETE,-,2803,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1524,426,737,1,0,0,14,15,157,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,3
+shapely,types-shapely,https://github.com/shapely/shapely,COMPLETE,-,2815,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1526,428,739,1,0,0,14,15,157,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,3
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,292,UP_TO_DATE,UPLOADED,STRICT,179,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,10
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,28,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
@@ -169,7 +170,7 @@ ujson,types-ujson,https://github.com/ultrajson/ultrajson,COMPLETE,-,49,UP_TO_DAT
 unidiff,types-unidiff,https://github.com/matiasb/python-unidiff,COMPLETE,-,144,UP_TO_DATE,UPLOADED,STRICT,34,0,32,0,0,0,0,0,38,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,6
 untangle,types-untangle,https://github.com/stchris/untangle,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,19,0,21,0,0,0,1,2,5,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 usersettings,types-usersettings,https://github.com/glvnst/usersettings,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,7,0,6,0,0,0,1,1,3,0,0,1,1,0,ERROR_ON_MISSING_STUB,linux,3
-vobject,types-vobject,https://github.com/py-vobject/vobject,COMPLETE,-,515,UP_TO_DATE,UPLOADED,NOT_STRICT,94,197,83,95,0,2,4,1,174,1,80,51,0,0,ERROR_ON_MISSING_STUB,linux,9
+vobject,types-vobject,https://github.com/py-vobject/vobject,COMPLETE,-,557,UP_TO_DATE,UPLOADED,NOT_STRICT,172,122,131,50,1,4,4,4,174,0,37,51,0,0,ERROR_ON_MISSING_STUB,linux,7
 waitress,types-waitress,https://github.com/Pylons/waitress,COMPLETE,-,639,UP_TO_DATE,UPLOADED,STRICT,196,0,198,0,0,0,2,0,244,0,0,38,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
 watchpoints,types-watchpoints,https://github.com/gaogaotiantian/watchpoints,COMPLETE,-,146,UP_TO_DATE,UPLOADED,STRICT,54,0,26,0,0,0,7,0,32,9,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
 whatthepatch,types-whatthepatch,https://github.com/cscorley/whatthepatch,COMPLETE,-,102,UP_TO_DATE,UPLOADED,STRICT,32,0,25,0,0,0,0,0,54,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -178,5 +179,5 @@ wurlitzer,types-wurlitzer,https://github.com/minrk/wurlitzer,COMPLETE,-,139,UP_T
 xdgenvpy,types-xdgenvpy,https://gitlab.com/deliberist-group/xdgenvpy,COMPLETE,-,40,UP_TO_DATE,UPLOADED,STRICT,1,0,23,0,0,0,0,0,0,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,1
 xlrd,types-xlrd,https://github.com/python-excel/xlrd,COMPLETE,-,765,UP_TO_DATE,UPLOADED,STRICT,299,0,143,0,0,0,6,0,426,0,0,33,0,0,ERROR_ON_MISSING_STUB,linux,0
 xmltodict,types-xmltodict,https://github.com/martinblech/xmltodict,COMPLETE,-,35,UP_TO_DATE,UPLOADED,STRICT,20,0,3,0,0,0,7,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
-zstd,types-zstd,https://github.com/sergey-dryabzhinsky/python-zstd,COMPLETE,-,25,OUT_OF_DATE,UPLOADED,STRICT,5,0,14,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
+zstd,types-zstd,https://github.com/sergey-dryabzhinsky/python-zstd,COMPLETE,-,31,UP_TO_DATE,UPLOADED,STRICT,5,0,19,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 zxcvbn,types-zxcvbn,https://github.com/dwolfhub/zxcvbn-python,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT,64,0,39,0,0,0,0,0,76,1,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
