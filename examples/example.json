@@ -1617,8 +1617,8 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1239,
-      "unannotated_parameters": 730,
+      "annotated_parameters": 1243,
+      "unannotated_parameters": 726,
       "annotated_returns": 920,
       "unannotated_returns": 338,
       "explicit_Incomplete_parameters": 9,
@@ -3581,7 +3581,7 @@
     "completeness_level": "PARTIAL",
     "extra_description": null,
     "number_of_lines": 1758,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -5122,7 +5122,7 @@
     "upstream_url": "https://github.com/shapely/shapely",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2815,
+    "number_of_lines": 2851,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5134,10 +5134,10 @@
     },
     "pyright_setting": "ENTIRELY_EXCLUDED",
     "annotation_stats": {
-      "annotated_parameters": 1526,
-      "unannotated_parameters": 428,
-      "annotated_returns": 739,
-      "unannotated_returns": 1,
+      "annotated_parameters": 1534,
+      "unannotated_parameters": 427,
+      "annotated_returns": 741,
+      "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 14,
@@ -5302,7 +5302,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 858
+      "allowlist_length": 869
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
