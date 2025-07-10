@@ -580,7 +580,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,203 (excluding blank lines)
+1,202 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4452,7 +4452,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-207 (excluding blank lines)
+210 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4470,16 +4470,16 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 0 allowlist entries for `jmespath` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `jmespath`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 122
-    - Unannotated parameters: 11
-    - Explicit `Any` parameters: 26
+    - Annotated parameters: 133
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 30
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 74
