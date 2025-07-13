@@ -1106,7 +1106,7 @@
       ],
       "allowlist_length": 7
     },
-    "pyright_setting": "NOT_STRICT",
+    "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 239,
       "unannotated_parameters": 0,
@@ -2081,7 +2081,7 @@
     "upstream_url": "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree",
     "completeness_level": "COMPLETE",
     "extra_description": "Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",
-    "number_of_lines": 1096,
+    "number_of_lines": 1538,
     "package_status": "NOT_ON_PYPI",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2089,22 +2089,22 @@
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 47
+      "allowlist_length": 46
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 322,
-      "unannotated_parameters": 26,
-      "annotated_returns": 315,
-      "unannotated_returns": 39,
+      "annotated_parameters": 486,
+      "unannotated_parameters": 24,
+      "annotated_returns": 414,
+      "unannotated_returns": 23,
       "explicit_Incomplete_parameters": 1,
       "explicit_Incomplete_returns": 1,
-      "explicit_Any_parameters": 3,
-      "explicit_Any_returns": 1,
-      "annotated_variables": 373,
+      "explicit_Any_parameters": 2,
+      "explicit_Any_returns": 2,
+      "annotated_variables": 486,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 17,
-      "classdefs": 107,
+      "explicit_Incomplete_variables": 19,
+      "classdefs": 151,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }

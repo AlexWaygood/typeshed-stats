@@ -1850,9 +1850,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 7 unique allowlist entries for `channels` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `channels`
 
@@ -3487,7 +3487,7 @@ Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Pyth
 
 ### Number of lines
 
-1,096 (excluding blank lines)
+1,538 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -3503,7 +3503,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 47 unique allowlist entries for `gdb` when running stubtest in CI.
+Typeshed currently has 46 unique allowlist entries for `gdb` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3512,21 +3512,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `gdb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 322
-    - Unannotated parameters: 26
-    - Explicit `Any` parameters: 3
+    - Annotated parameters: 486
+    - Unannotated parameters: 24
+    - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 315
-    - Unannotated returns: 39
-    - Explicit `Any` returns: 1
+    - Annotated returns: 414
+    - Unannotated returns: 23
+    - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 373
+    - Annotated variables: 486
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 17
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 19
 - Class definitions:
-    - Total class definitions: 107
+    - Total class definitions: 151
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
