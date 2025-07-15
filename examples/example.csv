@@ -70,7 +70,7 @@ grpcio-channelz,types-grpcio-channelz,https://github.com/grpc/grpc,COMPLETE,-,72
 grpcio-health-checking,types-grpcio-health-checking,https://github.com/grpc/grpc,COMPLETE,-,89,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,15,27,16,4,2,0,0,0,16,0,6,7,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-reflection,types-grpcio-reflection,https://github.com/grpc/grpc,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,34,17,18,4,7,0,0,0,55,0,1,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-status,types-grpcio-status,https://github.com/grpc/grpc,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1,2,2,1,0,1,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
-hdbcli,types-hdbcli,-,COMPLETE,-,140,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,78,4,65,3,0,0,13,10,21,2,1,16,0,0,ERROR_ON_MISSING_STUB,linux,8
+hdbcli,types-hdbcli,-,COMPLETE,-,142,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,78,4,65,3,0,0,13,10,21,2,1,16,0,0,ERROR_ON_MISSING_STUB,linux,8
 hnswlib,types-hnswlib,https://github.com/nmslib/hnswlib,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,32,0,26,0,0,0,1,0,3,0,1,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,COMPLETE,-,745,UP_TO_DATE,UPLOADED,NOT_STRICT,93,191,149,163,0,4,0,0,243,0,103,41,0,4,ERROR_ON_MISSING_STUB,linux,0
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,291,UP_TO_DATE,UPLOADED,NOT_STRICT,60,116,63,7,1,2,0,0,99,0,35,33,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -136,7 +136,7 @@ python-jose,types-python-jose,https://github.com/mpdavis/python-jose,COMPLETE,-,
 python-nmap,types-python-nmap,https://bitbucket.org/xael/python-nmap,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-xlib,types-python-xlib,https://github.com/python-xlib/python-xlib,COMPLETE,-,5421,UP_TO_DATE,UPLOADED,STRICT,1334,0,583,0,0,0,15,8,3519,5,0,425,0,0,ERROR_ON_MISSING_STUB,linux,11
 pytz,types-pytz,https://github.com/stub42/pytz,COMPLETE,-,150,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,69,2,51,0,0,0,2,0,30,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux,4
-pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,39269,UP_TO_DATE,UPLOADED,NOT_STRICT,3832,3645,3982,1971,413,284,1,3,29459,0,2857,744,0,0,ERROR_ON_MISSING_STUB,win32,40
+pywin32,types-pywin32,https://github.com/mhammond/pywin32,COMPLETE,-,39269,OUT_OF_DATE,UPLOADED,NOT_STRICT,3832,3645,3982,1971,413,284,1,3,29459,0,2857,744,0,0,ERROR_ON_MISSING_STUB,win32,40
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,COMPLETE,-,860,UP_TO_DATE,UPLOADED,STRICT,512,0,297,0,2,0,0,0,165,0,1,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,COMPLETE,-,172,UP_TO_DATE,UPLOADED,STRICT,96,0,31,0,0,0,0,4,33,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,651,UP_TO_DATE,UPLOADED,STRICT,282,0,152,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,11
