@@ -6569,7 +6569,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,731 (excluding blank lines)
+1,733 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6594,13 +6594,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `psycopg2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 309
-    - Unannotated parameters: 178
+    - Annotated parameters: 311
+    - Unannotated parameters: 176
     - Explicit `Any` parameters: 14
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 315
-    - Unannotated returns: 74
+    - Annotated returns: 316
+    - Unannotated returns: 73
     - Explicit `Any` returns: 21
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
