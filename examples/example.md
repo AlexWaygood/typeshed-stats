@@ -7876,11 +7876,11 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-39,269 (excluding blank lines)
+39,273 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7901,19 +7901,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,832
-    - Unannotated parameters: 3,645
+    - Annotated parameters: 3,834
+    - Unannotated parameters: 3,643
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 413
 - Returns:
-    - Annotated returns: 3,982
-    - Unannotated returns: 1,971
+    - Annotated returns: 3,987
+    - Unannotated returns: 1,966
     - Explicit `Any` returns: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 284
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 285
 - Variables:
-    - Annotated variables: 29,459
+    - Annotated variables: 29,462
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,857
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,858
 - Class definitions:
     - Total class definitions: 744
     - Class definitions with `Any`: 0
