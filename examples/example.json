@@ -1637,32 +1637,32 @@
     "package_name": "docutils",
     "stub_distribution_name": "types-docutils",
     "upstream_url": "https://sourceforge.net/p/docutils/code",
-    "completeness_level": "PARTIAL",
+    "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 5453,
+    "number_of_lines": 5498,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
+      "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
         "linux"
       ],
-      "allowlist_length": 14
+      "allowlist_length": 15
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2294,
+      "annotated_parameters": 2301,
       "unannotated_parameters": 825,
-      "annotated_returns": 2054,
-      "unannotated_returns": 349,
+      "annotated_returns": 2058,
+      "unannotated_returns": 348,
       "explicit_Incomplete_parameters": 11,
-      "explicit_Incomplete_returns": 5,
+      "explicit_Incomplete_returns": 6,
       "explicit_Any_parameters": 38,
       "explicit_Any_returns": 217,
-      "annotated_variables": 1453,
+      "annotated_variables": 1488,
       "explicit_Any_variables": 22,
-      "explicit_Incomplete_variables": 249,
-      "classdefs": 494,
+      "explicit_Incomplete_variables": 246,
+      "classdefs": 496,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
@@ -3273,7 +3273,7 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 6846,
+    "number_of_lines": 6844,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5121,7 +5121,7 @@
     "upstream_url": "https://github.com/mwaskom/seaborn",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2610,
+    "number_of_lines": 2609,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5360,7 +5360,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 67361,
+    "number_of_lines": 67374,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5370,22 +5370,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 869
+      "allowlist_length": 867
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 29756,
+      "annotated_parameters": 29808,
       "unannotated_parameters": 607,
-      "annotated_returns": 16453,
+      "annotated_returns": 16460,
       "unannotated_returns": 268,
       "explicit_Incomplete_parameters": 14,
       "explicit_Incomplete_returns": 10,
-      "explicit_Any_parameters": 2094,
+      "explicit_Any_parameters": 2091,
       "explicit_Any_returns": 832,
       "annotated_variables": 9345,
       "explicit_Any_variables": 309,
       "explicit_Incomplete_variables": 229,
-      "classdefs": 3173,
+      "classdefs": 3171,
       "classdefs_with_Any": 26,
       "classdefs_with_Incomplete": 0
     }
@@ -5464,7 +5464,7 @@
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.",
-    "number_of_lines": 30204,
+    "number_of_lines": 30200,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
