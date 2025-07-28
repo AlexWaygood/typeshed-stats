@@ -10284,7 +10284,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-3,482 (excluding blank lines)
+3,483 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10309,8 +10309,8 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `yt-dlp`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,052
-    - Unannotated parameters: 1
+    - Annotated parameters: 2,053
+    - Unannotated parameters: 0
     - Explicit `Any` parameters: 276
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
