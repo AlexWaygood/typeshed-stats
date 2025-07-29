@@ -31,7 +31,7 @@ braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE
 cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,131,UP_TO_DATE,UPLOADED,STRICT,94,0,49,0,0,0,6,0,1,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,17
 capturer,types-capturer,https://github.com/xolox/python-capturer,COMPLETE,-,114,UP_TO_DATE,UPLOADED,STRICT,50,0,42,0,0,0,4,1,38,4,0,6,0,0,ERROR_ON_MISSING_STUB,linux,1
 cffi,types-cffi,https://github.com/python-cffi/cffi/,COMPLETE,-,840,UP_TO_DATE,UPLOADED,NOT_STRICT,335,212,238,86,0,1,33,8,252,0,75,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
-channels,types-channels,https://github.com/django/channels,COMPLETE,-,544,OUT_OF_DATE,UPLOADED,STRICT,239,0,150,0,0,0,36,13,102,4,0,47,0,0,ERROR_ON_MISSING_STUB,linux,7
+channels,types-channels,https://github.com/django/channels,COMPLETE,-,545,UP_TO_DATE,UPLOADED,STRICT,239,0,151,0,0,0,36,13,102,4,0,47,0,0,ERROR_ON_MISSING_STUB,linux,7
 chevron,types-chevron,https://github.com/noahmorrison/chevron,COMPLETE,-,38,UP_TO_DATE,UPLOADED,STRICT,29,0,9,0,0,0,2,0,3,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-default-group,types-click-default-group,https://github.com/click-contrib/click-default-group,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,52,0,14,0,0,0,7,4,7,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-log,types-click-log,https://github.com/click-contrib/click-log,COMPLETE,-,22,UP_TO_DATE,UPLOADED,STRICT,6,0,4,0,0,0,1,0,6,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
