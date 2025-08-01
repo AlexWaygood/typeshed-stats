@@ -215,7 +215,6 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "darwin",
         "linux"
       ],
       "allowlist_length": 1
@@ -386,8 +385,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 2
     },
@@ -487,8 +485,10 @@
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "SKIPPED",
-      "platforms": [],
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "platforms": [
+        "linux"
+      ],
       "allowlist_length": 0
     },
     "pyright_setting": "STRICT",
@@ -657,8 +657,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 86
     },
@@ -692,8 +691,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 0
     },
@@ -1067,8 +1065,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 4
     },
@@ -1306,8 +1303,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 44
     },
@@ -2155,9 +2151,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "darwin",
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 144
     },
@@ -3483,8 +3477,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 5
     },
@@ -3892,9 +3885,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "darwin",
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 12
     },
@@ -4030,7 +4021,6 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "darwin",
         "linux"
       ],
       "allowlist_length": 0
@@ -4099,9 +4089,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "darwin",
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 0
     },
@@ -4271,9 +4259,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "darwin",
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 12
     },
@@ -4307,9 +4293,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "darwin",
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 1
     },
@@ -4343,9 +4327,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "darwin",
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 64
     },
@@ -4719,7 +4701,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "win32"
+        "linux"
       ],
       "allowlist_length": 37
     },
@@ -5161,8 +5143,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 76
     },
@@ -5672,7 +5653,6 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "darwin",
         "linux"
       ],
       "allowlist_length": 9
@@ -5877,8 +5857,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "platforms": [
-        "linux",
-        "win32"
+        "linux"
       ],
       "allowlist_length": 2
     },
