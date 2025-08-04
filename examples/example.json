@@ -4525,7 +4525,7 @@
     "upstream_url": "https://opendev.org/jjb/python-jenkins",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 248,
+    "number_of_lines": 253,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4537,15 +4537,15 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 195,
+      "annotated_parameters": 198,
       "unannotated_parameters": 0,
-      "annotated_returns": 101,
+      "annotated_returns": 102,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 7,
       "explicit_Incomplete_returns": 1,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 0,
-      "annotated_variables": 73,
+      "annotated_variables": 74,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 2,
       "classdefs": 9,
@@ -5341,7 +5341,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 67547,
+    "number_of_lines": 67551,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5351,7 +5351,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 866
+      "allowlist_length": 864
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
@@ -5363,7 +5363,7 @@
       "explicit_Incomplete_returns": 10,
       "explicit_Any_parameters": 2091,
       "explicit_Any_returns": 832,
-      "annotated_variables": 9345,
+      "annotated_variables": 9346,
       "explicit_Any_variables": 309,
       "explicit_Incomplete_variables": 229,
       "classdefs": 3172,

@@ -7593,7 +7593,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-248 (excluding blank lines)
+253 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7618,17 +7618,17 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `python-jenkins`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 195
+    - Annotated parameters: 198
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
 - Returns:
-    - Annotated returns: 101
+    - Annotated returns: 102
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 73
+    - Annotated variables: 74
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
@@ -8969,7 +8969,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-67,547 (excluding blank lines)
+67,551 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8985,7 +8985,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 866 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 864 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -9004,7 +9004,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 832
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
-    - Annotated variables: 9,345
+    - Annotated variables: 9,346
     - Explicit `Any` variables: 309
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 229
 - Class definitions:
