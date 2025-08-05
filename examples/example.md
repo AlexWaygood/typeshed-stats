@@ -5822,11 +5822,11 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-1,964 (excluding blank lines)
+1,886 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5847,21 +5847,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `paramiko`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 791
+    - Annotated parameters: 775
     - Unannotated parameters: 8
     - Explicit `Any` parameters: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 655
+    - Annotated returns: 644
     - Unannotated returns: 3
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 566
+    - Annotated variables: 559
     - Explicit `Any` variables: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 23
 - Class definitions:
-    - Total class definitions: 130
+    - Total class definitions: 129
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
