@@ -1606,11 +1606,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-3,374 (excluding blank lines)
+3,381 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1632,20 +1632,20 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 284
-    - Unannotated parameters: 325
+    - Unannotated parameters: 326
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 31
 - Returns:
-    - Annotated returns: 406
+    - Annotated returns: 407
     - Unannotated returns: 136
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
 - Variables:
-    - Annotated variables: 1,487
+    - Annotated variables: 1,489
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 114
 - Class definitions:
-    - Total class definitions: 290
+    - Total class definitions: 291
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
