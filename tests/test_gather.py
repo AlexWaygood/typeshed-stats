@@ -44,7 +44,7 @@ from typeshed_stats.gather import (
     get_pyright_setting_for_package,
     get_stub_distribution_name,
     get_stubtest_allowlist_length,
-    get_stubtest_platforms,
+    get_stubtest_ci_platforms,
     get_stubtest_strictness,
     get_upload_status,
     get_upstream_url,
@@ -260,7 +260,8 @@ def test_get_stubtest_strictness_non_stdlib_no_stubtest_section(
             "MISSING_STUBS_IGNORED",
             id="ignore_missing_stub=true",
         ),
-        pytest.param("skip = true", "SKIPPED", id="skipped_stubtest"),
+        pytest.param("skip = true", "SKIPPED", id="explicitly_skipped_stubtest"),
+        pytest.param("ci_platforms = []", "SKIPPED", id="implicitly_skipped_stubtest"),
         pytest.param(
             "skip = true\nignore_missing_stub = true", "SKIPPED", id="skipped_stubtest2"
         ),
@@ -299,7 +300,7 @@ def test_get_stubtest_strictness_non_stdlib_with_stubtest_section(
 
 
 def test_get_stubtest_platform_stdlib() -> None:
-    result = get_stubtest_platforms("stdlib", typeshed_dir=Path("."))
+    result = get_stubtest_ci_platforms("stdlib", typeshed_dir=Path("."))
     assert len(result) == len(set(result))
     assert set(result) == {"linux", "darwin", "win32"}
     assert sorted(result) == result
@@ -310,7 +311,7 @@ def test_get_stubtest_platform_stdlib() -> None:
     [
         pytest.param("[tool.stubtest]\nskip = true", [], id="Skipped stubtest"),
         pytest.param(
-            "[tool.stubtest]\nplatforms = ['win32', 'darwin']",
+            "[tool.stubtest]\nci_platforms = ['win32', 'darwin']",
             ["darwin", "win32"],
             id="Platforms specified",
         ),
@@ -330,7 +331,7 @@ def test_get_stubtest_platform_non_stdlib(
     maybe_stringize_path: Callable[[Path], Path | str],
 ) -> None:
     write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, metadata_contents)
-    actual_result = get_stubtest_platforms(
+    actual_result = get_stubtest_ci_platforms(
         EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
     )
     assert actual_result == expected_result
@@ -1134,11 +1135,13 @@ def test_gather_stats__on_packages_integrates_with_tmpdir_typeshed() -> None:
     assert set(package_names_in_results) == package_names
 
 
-KNOWN_FULLY_ANNOTATED_FILES_WITH_LAX_PYRIGHT_SETTINGS = frozenset({
-    Path("stdlib/lib2to3/fixes/fix_imports2.pyi"),
-    Path("stdlib/lib2to3/fixes/__init__.pyi"),
-    Path("stdlib/xml/sax/__init__.pyi"),
-})
+KNOWN_FULLY_ANNOTATED_FILES_WITH_LAX_PYRIGHT_SETTINGS = frozenset(
+    {
+        Path("stdlib/lib2to3/fixes/fix_imports2.pyi"),
+        Path("stdlib/lib2to3/fixes/__init__.pyi"),
+        Path("stdlib/xml/sax/__init__.pyi"),
+    }
+)
 
 
 @pytest.mark.dependency(depends=["integration_basic"])

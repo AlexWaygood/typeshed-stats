@@ -115,11 +115,11 @@ def stats_to_csv(stats: Sequence[PackageInfo | FileInfo]) -> str:
                 f"stubtest_{key}": val for key, val in info["stubtest_settings"].items()
             }
             del info["stubtest_settings"]
-            stubtest_platforms = info["stubtest_platforms"]
-            if not stubtest_platforms:
-                info["stubtest_platforms"] = "None"
+            stubtest_ci_platforms = info["stubtest_ci_platforms"]
+            if not stubtest_ci_platforms:
+                info["stubtest_ci_platforms"] = "None"
             else:
-                info["stubtest_platforms"] = ";".join(stubtest_platforms)
+                info["stubtest_ci_platforms"] = ";".join(stubtest_ci_platforms)
 
     fieldnames = converted_stats[0].keys()
     csvfile = io.StringIO(newline="")
@@ -161,11 +161,11 @@ def _stats_from_csv(
         converted_stat["annotation_stats"] = annotation_stats
         converted_stat["stubtest_settings"] = stubtest_settings
         if cls is PackageInfo:
-            stubtest_platforms = stubtest_settings["platforms"]
-            if stubtest_platforms == "None":
-                stubtest_settings["platforms"] = []
+            stubtest_ci_platforms = stubtest_settings["ci_platforms"]
+            if stubtest_ci_platforms == "None":
+                stubtest_settings["ci_platforms"] = []
             else:
-                stubtest_settings["platforms"] = stubtest_platforms.split(";")
+                stubtest_settings["ci_platforms"] = stubtest_ci_platforms.split(";")
             for k, v in PackageInfo.__annotations__.items():
                 if converted_stat[k] == "-" and v == (str | None):
                     converted_stat[k] = None
