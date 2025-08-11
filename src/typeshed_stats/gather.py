@@ -446,8 +446,12 @@ def get_stubtest_strictness(
         ...     stdlib_setting = get_stubtest_strictness(
         ...         "stdlib", typeshed_dir=typeshed
         ...     )
-        ...     rpi_gpio_setting = get_stubtest_strictness("RPi.GPIO", typeshed_dir=typeshed)
-        ...     tensorflow_setting = get_stubtest_strictness("tensorflow", typeshed_dir=typeshed)
+        ...     rpi_gpio_setting = get_stubtest_strictness(
+        ...         "RPi.GPIO", typeshed_dir=typeshed
+        ...     )
+        ...     tensorflow_setting = get_stubtest_strictness(
+        ...         "tensorflow", typeshed_dir=typeshed
+        ...     )
         >>> stdlib_setting
         StubtestStrictness.ERROR_ON_MISSING_STUB
         >>> help(_)

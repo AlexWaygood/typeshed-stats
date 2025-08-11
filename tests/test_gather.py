@@ -1135,13 +1135,11 @@ def test_gather_stats__on_packages_integrates_with_tmpdir_typeshed() -> None:
     assert set(package_names_in_results) == package_names
 
 
-KNOWN_FULLY_ANNOTATED_FILES_WITH_LAX_PYRIGHT_SETTINGS = frozenset(
-    {
-        Path("stdlib/lib2to3/fixes/fix_imports2.pyi"),
-        Path("stdlib/lib2to3/fixes/__init__.pyi"),
-        Path("stdlib/xml/sax/__init__.pyi"),
-    }
-)
+KNOWN_FULLY_ANNOTATED_FILES_WITH_LAX_PYRIGHT_SETTINGS = frozenset({
+    Path("stdlib/lib2to3/fixes/fix_imports2.pyi"),
+    Path("stdlib/lib2to3/fixes/__init__.pyi"),
+    Path("stdlib/xml/sax/__init__.pyi"),
+})
 
 
 @pytest.mark.dependency(depends=["integration_basic"])

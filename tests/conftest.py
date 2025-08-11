@@ -245,7 +245,9 @@ def random_PackageInfo() -> PackageInfo:
         extra_description=None,
         number_of_lines=random.randint(10, 500),
         package_status=random.choice(list(PackageStatus)),
-        stubtest_settings=StubtestSettings(stubtest_strictness, stubtest_ci_platforms, 55),
+        stubtest_settings=StubtestSettings(
+            stubtest_strictness, stubtest_ci_platforms, 55
+        ),
         upload_status=random.choice(list(UploadStatus)),
         pyright_setting=random.choice(list(PyrightSetting)),
         annotation_stats=random_AnnotationStats(),
