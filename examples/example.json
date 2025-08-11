@@ -10,7 +10,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 66
@@ -44,7 +44,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -78,7 +78,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -112,7 +112,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -146,7 +146,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -180,7 +180,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 4
@@ -214,7 +214,8 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
+        "darwin",
         "linux"
       ],
       "allowlist_length": 1
@@ -248,7 +249,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -282,7 +283,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -316,7 +317,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -350,7 +351,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 2
@@ -384,8 +385,9 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "linux",
+        "win32"
       ],
       "allowlist_length": 2
     },
@@ -418,7 +420,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 4
@@ -452,7 +454,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 4
@@ -485,10 +487,8 @@
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
-      ],
+      "strictness": "SKIPPED",
+      "ci_platforms": [],
       "allowlist_length": 0
     },
     "pyright_setting": "STRICT",
@@ -520,7 +520,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 2
@@ -554,7 +554,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 6
@@ -588,7 +588,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 27
@@ -622,7 +622,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 99
@@ -656,8 +656,9 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "linux",
+        "win32"
       ],
       "allowlist_length": 86
     },
@@ -690,8 +691,9 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "linux",
+        "win32"
       ],
       "allowlist_length": 0
     },
@@ -724,7 +726,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 11
@@ -758,7 +760,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -792,7 +794,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 30
@@ -826,7 +828,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -860,7 +862,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -894,7 +896,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 2
@@ -928,7 +930,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -962,7 +964,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 17
@@ -996,7 +998,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -1030,8 +1032,9 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "linux",
+        "win32"
       ],
       "allowlist_length": 4
     },
@@ -1064,7 +1067,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 7
@@ -1098,7 +1101,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1132,7 +1135,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1166,7 +1169,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1200,7 +1203,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1234,7 +1237,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1268,8 +1271,9 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "linux",
+        "win32"
       ],
       "allowlist_length": 44
     },
@@ -1302,7 +1306,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1336,7 +1340,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1370,7 +1374,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 6
@@ -1404,7 +1408,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 5
@@ -1438,7 +1442,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1472,7 +1476,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1506,7 +1510,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 7
@@ -1540,7 +1544,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "SKIPPED",
-      "platforms": [],
+      "ci_platforms": [],
       "allowlist_length": 0
     },
     "pyright_setting": "STRICT",
@@ -1572,7 +1576,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 9
@@ -1606,7 +1610,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1640,7 +1644,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 15
@@ -1674,7 +1678,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -1708,7 +1712,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -1742,7 +1746,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 40
@@ -1776,7 +1780,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1810,7 +1814,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -1844,7 +1848,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 35
@@ -1878,7 +1882,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1912,7 +1916,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1946,7 +1950,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -1980,7 +1984,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -2014,7 +2018,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -2048,7 +2052,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 6
@@ -2082,7 +2086,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 46
@@ -2116,7 +2120,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 13
@@ -2150,8 +2154,10 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "darwin",
+        "linux",
+        "win32"
       ],
       "allowlist_length": 144
     },
@@ -2184,7 +2190,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -2218,7 +2224,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 2
@@ -2252,7 +2258,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -2286,7 +2292,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -2320,7 +2326,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -2354,7 +2360,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -2388,7 +2394,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -2422,7 +2428,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 8
@@ -2456,7 +2462,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -2490,7 +2496,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -2524,7 +2530,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -2558,7 +2564,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 2
@@ -2592,7 +2598,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -2626,7 +2632,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 14
@@ -2660,7 +2666,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 20
@@ -2694,7 +2700,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -2728,7 +2734,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -2762,7 +2768,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 87
@@ -2796,7 +2802,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -2830,7 +2836,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 7
@@ -2864,7 +2870,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -2898,7 +2904,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 2
@@ -2932,7 +2938,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -2966,7 +2972,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 5
@@ -3000,7 +3006,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -3034,7 +3040,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 4
@@ -3068,7 +3074,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 6
@@ -3102,7 +3108,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -3136,7 +3142,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -3170,7 +3176,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -3204,7 +3210,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 2
@@ -3238,7 +3244,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 33
@@ -3272,7 +3278,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 24
@@ -3306,7 +3312,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -3340,7 +3346,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -3374,7 +3380,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -3408,7 +3414,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 181
@@ -3442,7 +3448,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 4
@@ -3476,8 +3482,9 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "linux",
+        "win32"
       ],
       "allowlist_length": 5
     },
@@ -3510,7 +3517,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 4
@@ -3544,7 +3551,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 32
@@ -3578,7 +3585,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -3612,7 +3619,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 20
@@ -3646,7 +3653,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -3680,7 +3687,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -3714,7 +3721,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 7
@@ -3748,7 +3755,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -3782,7 +3789,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 9
@@ -3816,7 +3823,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -3850,7 +3857,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 10
@@ -3884,8 +3891,10 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "darwin",
+        "linux",
+        "win32"
       ],
       "allowlist_length": 12
     },
@@ -3918,7 +3927,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 2
@@ -3952,7 +3961,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -3986,7 +3995,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 2
@@ -4020,7 +4029,8 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
+        "darwin",
         "linux"
       ],
       "allowlist_length": 0
@@ -4054,7 +4064,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -4088,8 +4098,10 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "darwin",
+        "linux",
+        "win32"
       ],
       "allowlist_length": 0
     },
@@ -4122,7 +4134,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -4156,7 +4168,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 27
@@ -4190,7 +4202,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 49
@@ -4224,7 +4236,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 38
@@ -4258,8 +4270,10 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "darwin",
+        "linux",
+        "win32"
       ],
       "allowlist_length": 12
     },
@@ -4292,8 +4306,10 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "darwin",
+        "linux",
+        "win32"
       ],
       "allowlist_length": 1
     },
@@ -4326,8 +4342,10 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "darwin",
+        "linux",
+        "win32"
       ],
       "allowlist_length": 64
     },
@@ -4360,7 +4378,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -4394,7 +4412,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 8
@@ -4428,7 +4446,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -4462,7 +4480,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 11
@@ -4496,7 +4514,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -4530,7 +4548,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -4564,7 +4582,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 6
@@ -4598,7 +4616,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -4632,7 +4650,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 11
@@ -4666,7 +4684,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 4
@@ -4700,8 +4718,8 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "win32"
       ],
       "allowlist_length": 37
     },
@@ -4734,7 +4752,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 2
@@ -4768,7 +4786,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 2
@@ -4802,7 +4820,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 11
@@ -4836,7 +4854,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -4870,7 +4888,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 16
@@ -4904,7 +4922,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 57
@@ -4938,7 +4956,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 4
@@ -4972,7 +4990,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -5006,7 +5024,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -5040,7 +5058,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -5074,7 +5092,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -5108,7 +5126,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 5
@@ -5142,8 +5160,9 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "linux",
+        "win32"
       ],
       "allowlist_length": 76
     },
@@ -5176,7 +5195,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -5210,7 +5229,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 10
@@ -5244,7 +5263,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -5278,7 +5297,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 22
@@ -5312,7 +5331,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -5346,7 +5365,7 @@
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "darwin",
         "linux",
         "win32"
@@ -5382,7 +5401,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -5416,7 +5435,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -5450,7 +5469,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "SKIPPED",
-      "platforms": [],
+      "ci_platforms": [],
       "allowlist_length": 51
     },
     "pyright_setting": "NOT_STRICT",
@@ -5482,7 +5501,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 4
@@ -5516,7 +5535,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -5550,7 +5569,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 2
@@ -5584,7 +5603,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 4
@@ -5618,7 +5637,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -5652,7 +5671,8 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
+        "darwin",
         "linux"
       ],
       "allowlist_length": 9
@@ -5686,7 +5706,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -5720,7 +5740,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 6
@@ -5754,7 +5774,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -5788,7 +5808,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 3
@@ -5822,7 +5842,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 7
@@ -5856,8 +5876,9 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
-        "linux"
+      "ci_platforms": [
+        "linux",
+        "win32"
       ],
       "allowlist_length": 2
     },
@@ -5890,7 +5911,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -5924,7 +5945,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -5958,7 +5979,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 5
@@ -5992,7 +6013,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -6026,7 +6047,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1
@@ -6060,7 +6081,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -6094,7 +6115,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -6124,11 +6145,11 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 3483,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 19
@@ -6162,7 +6183,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 0
@@ -6196,7 +6217,7 @@
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
-      "platforms": [
+      "ci_platforms": [
         "linux"
       ],
       "allowlist_length": 1

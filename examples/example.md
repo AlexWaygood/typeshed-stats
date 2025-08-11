@@ -366,7 +366,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `darwin` and `linux`.
 
 Typeshed currently has 1 unique allowlist entry for `JACK-Client` when running stubtest in CI.
 
@@ -651,7 +651,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `linux` and `win32`.
 
 Typeshed currently has 2 unique allowlist entries for `PyScreeze` when running stubtest in CI.
 
@@ -818,11 +818,9 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *error on missing stub*
+### Stubtest settings in CI: *skipped*
 
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
+Stubtest is skipped in typeshed's CI for this package.
 
 Typeshed currently has 0 allowlist entries for `RPi.GPIO` when running stubtest in CI.
 
@@ -1107,7 +1105,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `linux` and `win32`.
 
 Typeshed currently has 86 unique allowlist entries for `aiofiles` when running stubtest in CI.
 
@@ -1164,7 +1162,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `linux` and `win32`.
 
 Typeshed currently has 0 allowlist entries for `antlr4-python3-runtime` when running stubtest in CI.
 
@@ -1734,7 +1732,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `linux` and `win32`.
 
 Typeshed currently has 4 unique allowlist entries for `cffi` when running stubtest in CI.
 
@@ -2133,7 +2131,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `linux` and `win32`.
 
 Typeshed currently has 44 unique allowlist entries for `colorama` when running stubtest in CI.
 
@@ -3617,7 +3615,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
 Typeshed currently has 144 unique allowlist entries for `gevent` when running stubtest in CI.
 
@@ -5836,7 +5834,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `linux` and `win32`.
 
 Typeshed currently has 5 unique allowlist entries for `paramiko` when running stubtest in CI.
 
@@ -6528,7 +6526,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
 Typeshed currently has 12 unique allowlist entries for `psutil` when running stubtest in CI.
 
@@ -6752,7 +6750,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `darwin` and `linux`.
 
 Typeshed currently has 0 allowlist entries for `pyaudio` when running stubtest in CI.
 
@@ -6866,7 +6864,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
 Typeshed currently has 0 allowlist entries for `pycurl` when running stubtest in CI.
 
@@ -7151,7 +7149,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
 Typeshed currently has 12 unique allowlist entries for `pynput` when running stubtest in CI.
 
@@ -7208,7 +7206,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
 Typeshed currently has 1 unique allowlist entry for `pyperclip` when running stubtest in CI.
 
@@ -7265,7 +7263,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
 Typeshed currently has 64 unique allowlist entries for `pyserial` when running stubtest in CI.
 
@@ -7892,7 +7890,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `win32` only.
 
 Typeshed currently has 37 unique allowlist entries for `pywin32` when running stubtest in CI.
 
@@ -8645,7 +8643,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `linux` and `win32`.
 
 Typeshed currently has 76 unique allowlist entries for `setuptools` when running stubtest in CI.
 
@@ -9502,7 +9500,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `darwin` and `linux`.
 
 Typeshed currently has 9 unique allowlist entries for `uWSGI` when running stubtest in CI.
 
@@ -9844,7 +9842,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` only.
+In CI, stubtest is run on `linux` and `win32`.
 
 Typeshed currently has 2 unique allowlist entries for `waitress` when running stubtest in CI.
 
@@ -10288,9 +10286,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 3,483 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
