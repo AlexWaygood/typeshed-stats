@@ -2048,7 +2048,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 3623,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -2081,7 +2081,7 @@
     "upstream_url": "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree",
     "completeness_level": "COMPLETE",
     "extra_description": "Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",
-    "number_of_lines": 1546,
+    "number_of_lines": 1578,
     "package_status": "NOT_ON_PYPI",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2089,22 +2089,22 @@
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 46
+      "allowlist_length": 52
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 486,
-      "unannotated_parameters": 24,
-      "annotated_returns": 414,
-      "unannotated_returns": 23,
-      "explicit_Incomplete_parameters": 1,
-      "explicit_Incomplete_returns": 1,
+      "annotated_parameters": 515,
+      "unannotated_parameters": 15,
+      "annotated_returns": 421,
+      "unannotated_returns": 26,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 2,
-      "annotated_variables": 486,
+      "annotated_variables": 489,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 19,
-      "classdefs": 151,
+      "explicit_Incomplete_variables": 2,
+      "classdefs": 154,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -2149,7 +2149,7 @@
     "upstream_url": "https://github.com/gevent/gevent",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3176,
+    "number_of_lines": 3173,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2159,18 +2159,18 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 144
+      "allowlist_length": 143
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1366,
+      "annotated_parameters": 1364,
       "unannotated_parameters": 0,
       "annotated_returns": 839,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 68,
-      "explicit_Any_returns": 21,
+      "explicit_Any_returns": 20,
       "annotated_variables": 371,
       "explicit_Any_variables": 26,
       "explicit_Incomplete_variables": 0,
@@ -3273,7 +3273,7 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 6816,
+    "number_of_lines": 6904,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3281,22 +3281,22 @@
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 24
+      "allowlist_length": 23
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2659,
-      "unannotated_parameters": 1544,
-      "annotated_returns": 971,
-      "unannotated_returns": 606,
-      "explicit_Incomplete_parameters": 245,
-      "explicit_Incomplete_returns": 292,
+      "annotated_parameters": 2721,
+      "unannotated_parameters": 1541,
+      "annotated_returns": 986,
+      "unannotated_returns": 600,
+      "explicit_Incomplete_parameters": 237,
+      "explicit_Incomplete_returns": 288,
       "explicit_Any_parameters": 17,
-      "explicit_Any_returns": 13,
+      "explicit_Any_returns": 14,
       "annotated_variables": 343,
       "explicit_Any_variables": 4,
       "explicit_Incomplete_variables": 242,
-      "classdefs": 129,
+      "classdefs": 130,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 1
     }
