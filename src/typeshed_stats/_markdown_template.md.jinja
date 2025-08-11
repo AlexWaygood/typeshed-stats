@@ -50,13 +50,13 @@ It works in conjunction with the
 {{ stubtest_strictness.value }}
 
 {% if not stubtest_is_skipped %}
-{% set num_platforms = stubtest_platforms|length %}
+{% set num_platforms = stubtest_ci_platforms|length %}
 {% if num_platforms == 1 %}
-In CI, stubtest is run on `{{ stubtest_platforms[0] }}` only.
+In CI, stubtest is run on `{{ stubtest_ci_platforms[0] }}` only.
 {% elif num_platforms == 2 %}
-In CI, stubtest is run on `{{ stubtest_platforms[0] }}` and `{{ stubtest_platforms[1] }}`.
+In CI, stubtest is run on `{{ stubtest_ci_platforms[0] }}` and `{{ stubtest_ci_platforms[1] }}`.
 {% else %}
-In CI, stubtest is run on `{{ stubtest_platforms[0] }}`, `{{ stubtest_platforms[1] }}` and `{{ stubtest_platforms[2] }}`.
+In CI, stubtest is run on `{{ stubtest_ci_platforms[0] }}`, `{{ stubtest_ci_platforms[1] }}` and `{{ stubtest_ci_platforms[2] }}`.
 {% endif %}
 {% endif %}
 

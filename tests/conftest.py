@@ -234,9 +234,9 @@ def random_PackageInfo() -> PackageInfo:
     package_name = random_identifier()
     stubtest_strictness = random.choice(list(StubtestStrictness))
     if stubtest_strictness is StubtestStrictness.SKIPPED:
-        stubtest_platforms = []
+        stubtest_ci_platforms = []
     else:
-        stubtest_platforms = [random.choice(["win32", "darwin", "linux"])]
+        stubtest_ci_platforms = [random.choice(["win32", "darwin", "linux"])]
     return PackageInfo(
         package_name=package_name,
         stub_distribution_name=f"types-{package_name}",
@@ -245,7 +245,9 @@ def random_PackageInfo() -> PackageInfo:
         extra_description=None,
         number_of_lines=random.randint(10, 500),
         package_status=random.choice(list(PackageStatus)),
-        stubtest_settings=StubtestSettings(stubtest_strictness, stubtest_platforms, 55),
+        stubtest_settings=StubtestSettings(
+            stubtest_strictness, stubtest_ci_platforms, 55
+        ),
         upload_status=random.choice(list(UploadStatus)),
         pyright_setting=random.choice(list(PyrightSetting)),
         annotation_stats=random_AnnotationStats(),

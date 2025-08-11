@@ -70,7 +70,7 @@ def unusual_packages() -> list[PackageInfo]:
         package_status=PackageStatus.UP_TO_DATE,
         upload_status=UploadStatus.NOT_CURRENTLY_UPLOADED,
         stubtest_settings=StubtestSettings(
-            strictness=StubtestStrictness.SKIPPED, platforms=[], allowlist_length=0
+            strictness=StubtestStrictness.SKIPPED, ci_platforms=[], allowlist_length=0
         ),
         pyright_setting=PyrightSetting.STRICT,
         annotation_stats=AnnotationStats(),
@@ -78,10 +78,10 @@ def unusual_packages() -> list[PackageInfo]:
     pkg2 = copy.deepcopy(pkg1)
     pkg2.package_name = "stdlib"
     pkg2.stubtest_settings.strictness = StubtestStrictness.ERROR_ON_MISSING_STUB
-    pkg2.stubtest_settings.platforms = ["win32", "darwin"]
+    pkg2.stubtest_settings.ci_platforms = ["win32", "darwin"]
     pkg2.stub_distribution_name = "-"
     pkg3 = copy.deepcopy(pkg2)
-    pkg3.stubtest_settings.platforms = ["win32", "darwin", "linux"]
+    pkg3.stubtest_settings.ci_platforms = ["win32", "darwin", "linux"]
     return [pkg1, pkg2, pkg3]
 
 

@@ -63,7 +63,7 @@ __all__ = [
     "get_pyright_setting_for_path",
     "get_stub_distribution_name",
     "get_stubtest_allowlist_length",
-    "get_stubtest_platforms",
+    "get_stubtest_ci_platforms",
     "get_stubtest_settings",
     "get_stubtest_strictness",
     "get_upload_status",
@@ -446,7 +446,12 @@ def get_stubtest_strictness(
         ...     stdlib_setting = get_stubtest_strictness(
         ...         "stdlib", typeshed_dir=typeshed
         ...     )
-        ...     gdb_setting = get_stubtest_strictness("RPi.GPIO", typeshed_dir=typeshed)
+        ...     rpi_gpio_setting = get_stubtest_strictness(
+        ...         "RPi.GPIO", typeshed_dir=typeshed
+        ...     )
+        ...     tensorflow_setting = get_stubtest_strictness(
+        ...         "tensorflow", typeshed_dir=typeshed
+        ...     )
         >>> stdlib_setting
         StubtestStrictness.ERROR_ON_MISSING_STUB
         >>> help(_)
@@ -455,13 +460,15 @@ def get_stubtest_strictness(
         StubtestStrictness.ERROR_ON_MISSING_STUB
             Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
         <BLANKLINE>
-        >>> gdb_setting
+        >>> rpi_gpio_setting
+        StubtestStrictness.SKIPPED
+        >>> tensorflow_setting
         StubtestStrictness.SKIPPED
     """
     if package_name == "stdlib":
         return StubtestStrictness.ERROR_ON_MISSING_STUB
     match _get_stubtest_config(package_name, typeshed_dir):
-        case {"skip": True}:
+        case {"skip": True} | {"ci_platforms": []}:
             return StubtestStrictness.SKIPPED
         case {"ignore_missing_stub": True}:
             return StubtestStrictness.MISSING_STUBS_IGNORED
@@ -469,7 +476,7 @@ def get_stubtest_strictness(
             return StubtestStrictness.ERROR_ON_MISSING_STUB
 
 
-def get_stubtest_platforms(
+def get_stubtest_ci_platforms(
     package_name: PackageName, *, typeshed_dir: Path | str
 ) -> list[str]:
     """Get the list of platforms on which [stubtest][] is run in typeshed's CI.
@@ -485,9 +492,9 @@ def get_stubtest_platforms(
             given by [sys.platform][] at runtime.
 
     Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_platforms
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_stubtest_ci_platforms
         >>> with tmpdir_typeshed() as typeshed:
-        ...     pywin_platforms = get_stubtest_platforms(
+        ...     pywin_platforms = get_stubtest_ci_platforms(
         ...         "pywin32", typeshed_dir=typeshed
         ...     )
         >>> pywin_platforms
@@ -498,7 +505,7 @@ def get_stubtest_platforms(
     match _get_stubtest_config(package_name, typeshed_dir):
         case {"skip": True}:
             return []
-        case {"platforms": list() as platforms}:
+        case {"ci_platforms": list() as platforms}:
             return sorted(platforms)
         case _:
             return ["linux"]
@@ -569,7 +576,7 @@ class StubtestSettings:
     """Information on the settings under which [stubtest][] is run on a certain package."""
 
     strictness: StubtestStrictness
-    platforms: list[str]
+    ci_platforms: list[str]
     allowlist_length: int
 
 
@@ -588,7 +595,7 @@ def get_stubtest_settings(
     """
     return StubtestSettings(
         strictness=get_stubtest_strictness(package_name, typeshed_dir=typeshed_dir),
-        platforms=get_stubtest_platforms(package_name, typeshed_dir=typeshed_dir),
+        ci_platforms=get_stubtest_ci_platforms(package_name, typeshed_dir=typeshed_dir),
         allowlist_length=get_stubtest_allowlist_length(
             package_name, typeshed_dir=typeshed_dir
         ),
