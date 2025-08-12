@@ -5478,7 +5478,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-6,904 (excluding blank lines)
+7,009 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5494,7 +5494,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 23 unique allowlist entries for `networkx` when running stubtest in CI.
+Typeshed currently has 24 unique allowlist entries for `networkx` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5503,21 +5503,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,721
-    - Unannotated parameters: 1,541
+    - Annotated parameters: 2,764
+    - Unannotated parameters: 1,492
     - Explicit `Any` parameters: 17
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 237
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 228
 - Returns:
-    - Annotated returns: 986
-    - Unannotated returns: 600
-    - Explicit `Any` returns: 14
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 288
+    - Annotated returns: 1,004
+    - Unannotated returns: 578
+    - Explicit `Any` returns: 16
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 289
 - Variables:
     - Annotated variables: 343
     - Explicit `Any` variables: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 242
 - Class definitions:
-    - Total class definitions: 130
+    - Total class definitions: 128
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 1
 
