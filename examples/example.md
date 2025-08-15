@@ -2516,7 +2516,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-627 (excluding blank lines)
+800 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2532,7 +2532,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 7 unique allowlist entries for `django-filter` when running stubtest in CI.
+Typeshed currently has 15 unique allowlist entries for `django-filter` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2541,14 +2541,14 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `django-filter`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 243
+    - Annotated parameters: 298
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 143
+    - Explicit `Any` parameters: 121
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 140
+    - Annotated returns: 128
     - Unannotated returns: 0
-    - Explicit `Any` returns: 43
+    - Explicit `Any` returns: 42
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 113
