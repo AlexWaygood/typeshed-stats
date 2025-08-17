@@ -54,7 +54,7 @@ fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,COMPLETE,-
 first,types-first,https://github.com/hynek/first,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,11,0,5,0,0,0,3,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8,types-flake8,https://github.com/pycqa/flake8,COMPLETE,-,574,UP_TO_DATE,UPLOADED,STRICT,223,0,165,0,0,0,35,8,185,1,90,39,0,0,ERROR_ON_MISSING_STUB,linux,1
 flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,COMPLETE,-,277,UP_TO_DATE,UPLOADED,STRICT,130,0,119,0,0,2,1,3,99,0,1,13,0,0,ERROR_ON_MISSING_STUB,linux,35
-flake8-builtins,types-flake8-builtins,https://github.com/gforcada/flake8-builtins,COMPLETE,-,38,UP_TO_DATE,UPLOADED,STRICT,17,0,15,0,0,0,0,0,11,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
+flake8-builtins,types-flake8-builtins,https://github.com/gforcada/flake8-builtins,COMPLETE,-,38,OUT_OF_DATE,UPLOADED,STRICT,17,0,15,0,0,0,0,0,11,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-docstrings,types-flake8-docstrings,https://github.com/pycqa/flake8-docstrings,COMPLETE,-,21,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,7,1,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/flake8-rst-docstrings,COMPLETE,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simplify,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,76,0,73,0,0,0,0,1,14,0,2,7,0,0,ERROR_ON_MISSING_STUB,linux,0
