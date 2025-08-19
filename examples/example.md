@@ -5478,7 +5478,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,232 (excluding blank lines)
+7,285 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5503,21 +5503,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,897
-    - Unannotated parameters: 1,439
-    - Explicit `Any` parameters: 19
+    - Annotated parameters: 2,946
+    - Unannotated parameters: 1,390
+    - Explicit `Any` parameters: 21
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 230
 - Returns:
-    - Annotated returns: 1,015
-    - Unannotated returns: 571
+    - Annotated returns: 1,019
+    - Unannotated returns: 568
     - Explicit `Any` returns: 21
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 285
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 273
 - Variables:
     - Annotated variables: 377
     - Explicit `Any` variables: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 242
 - Class definitions:
-    - Total class definitions: 129
+    - Total class definitions: 130
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 1
 
@@ -8967,7 +8967,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-67,744 (excluding blank lines)
+67,748 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -8992,12 +8992,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,849
+    - Annotated parameters: 29,851
     - Unannotated parameters: 607
     - Explicit `Any` parameters: 2,093
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 16,499
+    - Annotated returns: 16,501
     - Unannotated returns: 268
     - Explicit `Any` returns: 832
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
