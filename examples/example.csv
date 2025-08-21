@@ -81,7 +81,7 @@ icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,133
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,COMPLETE,-,124,UP_TO_DATE,UPLOADED,STRICT,60,0,59,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,20
 jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,COMPLETE,-,214,UP_TO_DATE,UPLOADED,STRICT,133,0,74,0,0,0,30,23,49,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,0
 jsonnet,types-jsonnet,https://github.com/google/jsonnet,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,25,0,2,0,0,0,0,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
-jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,COMPLETE,-,473,UP_TO_DATE,UPLOADED,NOT_STRICT,171,259,175,11,8,10,7,2,58,3,15,26,0,0,ERROR_ON_MISSING_STUB,linux,87
+jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,COMPLETE,-,474,UP_TO_DATE,UPLOADED,NOT_STRICT,173,257,175,11,9,10,9,2,58,3,14,26,0,0,ERROR_ON_MISSING_STUB,linux,87
 jwcrypto,types-jwcrypto,https://github.com/latchset/jwcrypto,COMPLETE,-,472,UP_TO_DATE,UPLOADED,NOT_STRICT,151,31,133,8,0,1,6,11,55,2,3,40,1,0,ERROR_ON_MISSING_STUB,linux,3
 keyboard,types-keyboard,https://github.com/boppreh/keyboard,COMPLETE,-,246,UP_TO_DATE,UPLOADED,STRICT,130,0,76,0,0,0,0,0,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,7
 ldap3,types-ldap3,https://github.com/cannatag/ldap3,COMPLETE,-,2492,UP_TO_DATE,UPLOADED,NOT_STRICT,276,936,219,421,0,0,0,0,937,322,57,316,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -96,7 +96,7 @@ nanoid,types-nanoid,https://github.com/puyuan/py-nanoid,COMPLETE,-,16,UP_TO_DATE
 nanoleafapi,types-nanoleafapi,https://github.com/MylesMor/nanoleafapi,COMPLETE,-,91,UP_TO_DATE,UPLOADED,STRICT,33,0,49,0,2,3,1,0,16,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,698,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,288,4,308,0,1,0,1,1,101,1,2,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 netifaces,types-netifaces,https://github.com/al45tair/netifaces,COMPLETE,-,69,UP_TO_DATE,UPLOADED,STRICT,1,0,3,0,0,0,0,0,65,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,33
-networkx,types-networkx,https://github.com/networkx/networkx,COMPLETE,-,7316,UP_TO_DATE,UPLOADED,NOT_STRICT,2970,1383,1021,566,230,273,21,21,377,5,242,130,1,1,ERROR_ON_MISSING_STUB,linux,24
+networkx,types-networkx,https://github.com/networkx/networkx,COMPLETE,-,7328,UP_TO_DATE,UPLOADED,NOT_STRICT,2984,1371,1023,565,231,272,23,20,377,5,240,130,1,1,ERROR_ON_MISSING_STUB,linux,24
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,COMPLETE,-,1881,UP_TO_DATE,UPLOADED,NOT_STRICT,753,219,314,62,29,11,2,0,342,29,12,118,0,2,ERROR_ON_MISSING_STUB,linux,0
 objgraph,types-objgraph,https://github.com/mgedmin/objgraph,COMPLETE,-,87,UP_TO_DATE,UPLOADED,STRICT,71,0,17,0,0,0,0,0,6,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 olefile,types-olefile,https://github.com/decalage2/olefile,COMPLETE,-,222,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,75,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -158,7 +158,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,72,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,STDLIB,-,67749,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,29851,607,16501,268,14,10,2093,832,9447,310,229,3171,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,851
+stdlib,-,https://github.com/python/cpython,STDLIB,-,67748,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,29851,607,16501,268,14,10,2093,832,9447,310,229,3171,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,851
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30201,OUT_OF_DATE,UPLOADED,NOT_STRICT,5346,36,2928,39,12,23,60,34,5431,5,9,920,1,0,SKIPPED,None,51
