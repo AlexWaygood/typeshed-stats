@@ -5535,7 +5535,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,372 (excluding blank lines)
+7,376 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5560,12 +5560,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,984
+    - Annotated parameters: 2,985
     - Unannotated parameters: 1,371
     - Explicit `Any` parameters: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 231
 - Returns:
-    - Annotated returns: 1,026
+    - Annotated returns: 1,027
     - Unannotated returns: 562
     - Explicit `Any` returns: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 272
@@ -9024,7 +9024,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,109 (excluding blank lines)
+68,194 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9049,17 +9049,17 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,901
+    - Annotated parameters: 29,941
     - Unannotated parameters: 614
     - Explicit `Any` parameters: 2,095
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
 - Returns:
-    - Annotated returns: 16,532
+    - Annotated returns: 16,541
     - Unannotated returns: 267
     - Explicit `Any` returns: 832
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
-    - Annotated variables: 9,470
+    - Annotated variables: 9,471
     - Explicit `Any` variables: 307
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 227
 - Class definitions:
@@ -10343,9 +10343,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 3,510 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
