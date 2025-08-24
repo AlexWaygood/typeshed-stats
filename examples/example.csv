@@ -116,7 +116,7 @@ portpicker,types-portpicker,https://github.com/google/python_portpicker,COMPLETE
 protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 29.0 on [protobuf v30.2](https://github.com/protocolbuffers/protobuf/releases/tag/v30.2) (python `protobuf==6.30.2`).,6014,OUT_OF_DATE,UPLOADED,NOT_STRICT,792,376,576,155,0,0,17,4,1077,122,88,207,0,0,MISSING_STUBS_IGNORED,linux,11
 psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1630,UP_TO_DATE,UPLOADED,NOT_STRICT,113,326,201,350,9,0,0,47,597,177,95,90,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,12
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,COMPLETE,-,1735,UP_TO_DATE,UPLOADED,NOT_STRICT,311,176,316,73,1,6,14,21,518,60,3,332,2,0,ERROR_ON_MISSING_STUB,linux,2
-pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,8,UP_TO_DATE,UPLOADED,STRICT,8,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
+pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,8,OUT_OF_DATE,UPLOADED,STRICT,8,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1484,UP_TO_DATE,UPLOADED,NOT_STRICT,197,535,112,422,33,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,2
 pyaudio,types-pyaudio,-,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,COMPLETE,-,171,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,70,0,0,12,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -158,7 +158,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,72,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,STDLIB,-,68195,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,29941,614,16541,267,13,10,2095,832,9471,307,227,3174,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,852
+stdlib,-,https://github.com/python/cpython,STDLIB,-,68201,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,29947,614,16543,267,13,10,2099,832,9471,307,227,3174,26,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,852
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30201,OUT_OF_DATE,UPLOADED,NOT_STRICT,5346,36,2928,39,12,23,60,34,5431,5,9,920,1,0,SKIPPED,None,51
