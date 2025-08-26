@@ -244,7 +244,7 @@
     "upstream_url": "https://github.com/NVIDIA/jetson-gpio",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 173,
+    "number_of_lines": 176,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -264,7 +264,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 2,
-      "annotated_variables": 90,
+      "annotated_variables": 93,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0,
       "classdefs": 10,
@@ -959,8 +959,8 @@
     "upstream_url": "https://github.com/tkem/cachetools",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 131,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 133,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -971,9 +971,9 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 94,
+      "annotated_parameters": 99,
       "unannotated_parameters": 0,
-      "annotated_returns": 49,
+      "annotated_returns": 51,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
@@ -1359,6 +1359,40 @@
       "explicit_Any_variables": 3,
       "explicit_Incomplete_variables": 1,
       "classdefs": 39,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "convertdate",
+    "stub_distribution_name": "types-convertdate",
+    "upstream_url": "https://github.com/fitnr/convertdate",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 558,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "ci_platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 486,
+      "unannotated_parameters": 0,
+      "annotated_returns": 266,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 135,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 2,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -3307,7 +3341,7 @@
     "upstream_url": "https://github.com/networkx/networkx",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 7376,
+    "number_of_lines": 7427,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3319,15 +3353,15 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2985,
-      "unannotated_parameters": 1371,
-      "annotated_returns": 1027,
-      "unannotated_returns": 562,
-      "explicit_Incomplete_parameters": 231,
-      "explicit_Incomplete_returns": 272,
+      "annotated_parameters": 3009,
+      "unannotated_parameters": 1347,
+      "annotated_returns": 1034,
+      "unannotated_returns": 555,
+      "explicit_Incomplete_parameters": 213,
+      "explicit_Incomplete_returns": 262,
       "explicit_Any_parameters": 23,
       "explicit_Any_returns": 19,
-      "annotated_variables": 377,
+      "annotated_variables": 381,
       "explicit_Any_variables": 5,
       "explicit_Incomplete_variables": 240,
       "classdefs": 130,
@@ -4289,6 +4323,40 @@
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 31,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "pyluach",
+    "stub_distribution_name": "types-pyluach",
+    "upstream_url": "https://github.com/simlist/pyluach",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 270,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "ci_platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 161,
+      "unannotated_parameters": 0,
+      "annotated_returns": 126,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 35,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 17,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -6008,7 +6076,7 @@
     "upstream_url": "https://github.com/workalendar/workalendar",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3248,
+    "number_of_lines": 1861,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -6020,17 +6088,17 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 21,
-      "unannotated_parameters": 422,
-      "annotated_returns": 22,
-      "unannotated_returns": 355,
+      "annotated_parameters": 271,
+      "unannotated_parameters": 23,
+      "annotated_returns": 235,
+      "unannotated_returns": 3,
       "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 4,
+      "explicit_Incomplete_returns": 1,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 1367,
+      "annotated_variables": 199,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 249,
+      "explicit_Incomplete_variables": 2,
       "classdefs": 374,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
