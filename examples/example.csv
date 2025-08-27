@@ -9,6 +9,7 @@ JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,
 Jetson.GPIO,types-Jetson.GPIO,https://github.com/NVIDIA/jetson-gpio,COMPLETE,-,176,UP_TO_DATE,UPLOADED,STRICT,82,0,42,0,0,0,0,2,93,1,0,10,0,0,ERROR_ON_MISSING_STUB,linux,3
 Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,COMPLETE,-,814,UP_TO_DATE,UPLOADED,NOT_STRICT,295,33,225,4,0,0,17,4,248,11,0,111,1,0,ERROR_ON_MISSING_STUB,linux,3
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,COMPLETE,-,234,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
+PyMeeus,types-PyMeeus,https://github.com/architest/pymeeus,COMPLETE,-,954,UP_TO_DATE,UPLOADED,STRICT,706,0,374,0,0,0,0,0,59,0,0,18,0,0,ERROR_ON_MISSING_STUB,linux,0
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,COMPLETE,-,1203,UP_TO_DATE,UPLOADED,NOT_STRICT,171,64,124,33,9,2,2,12,767,6,44,28,0,0,ERROR_ON_MISSING_STUB,linux,2
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,193,UP_TO_DATE,UPLOADED,STRICT,102,0,21,0,0,0,0,0,17,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
 PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,COMPLETE,-,1314,UP_TO_DATE,UPLOADED,NOT_STRICT,520,278,222,172,4,0,46,12,220,160,2,91,0,0,ERROR_ON_MISSING_STUB,linux,4
@@ -87,6 +88,7 @@ jwcrypto,types-jwcrypto,https://github.com/latchset/jwcrypto,COMPLETE,-,472,UP_T
 keyboard,types-keyboard,https://github.com/boppreh/keyboard,COMPLETE,-,246,UP_TO_DATE,UPLOADED,STRICT,130,0,76,0,0,0,0,0,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,7
 ldap3,types-ldap3,https://github.com/cannatag/ldap3,COMPLETE,-,2492,UP_TO_DATE,UPLOADED,NOT_STRICT,276,936,219,421,0,0,0,0,937,322,57,316,0,0,ERROR_ON_MISSING_STUB,linux,1
 libsass,types-libsass,https://github.com/sass/libsass-python,COMPLETE,-,250,UP_TO_DATE,UPLOADED,STRICT,109,0,41,0,0,0,2,0,36,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,2
+lunardate,types-lunardate,https://github.com/lidaobing/python-lunardate,COMPLETE,-,34,UP_TO_DATE,UPLOADED,STRICT,20,0,17,0,0,0,0,0,7,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 lupa,types-lupa,https://github.com/scoder/lupa,COMPLETE,-,508,UP_TO_DATE,UPLOADED,STRICT,170,0,138,0,0,0,30,0,61,12,0,46,0,0,ERROR_ON_MISSING_STUB,linux,0
 lzstring,types-lzstring,https://github.com/gkovacs/lz-string-python,COMPLETE,-,17,UP_TO_DATE,UPLOADED,STRICT,8,0,8,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,5
 m3u8,types-m3u8,https://github.com/globocom/m3u8,COMPLETE,-,602,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,200,12,99,0,9,0,4,1,214,0,12,42,0,0,ERROR_ON_MISSING_STUB,linux,3
@@ -160,7 +162,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,72,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,STDLIB,-,68605,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30031,614,16618,267,13,10,2103,843,9485,309,227,3194,28,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,840
+stdlib,-,https://github.com/python/cpython,STDLIB,-,68731,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30090,591,16632,261,13,10,2106,846,9497,309,225,3199,28,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,841
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30201,OUT_OF_DATE,UPLOADED,NOT_STRICT,5346,36,2928,39,12,23,60,34,5431,5,9,920,1,0,SKIPPED,None,51

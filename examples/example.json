@@ -341,6 +341,40 @@
     }
   },
   {
+    "package_name": "PyMeeus",
+    "stub_distribution_name": "types-PyMeeus",
+    "upstream_url": "https://github.com/architest/pymeeus",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 954,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "ci_platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 706,
+      "unannotated_parameters": 0,
+      "annotated_returns": 374,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 59,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 18,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "PyMySQL",
     "stub_distribution_name": "types-PyMySQL",
     "upstream_url": "https://github.com/PyMySQL/PyMySQL",
@@ -2996,6 +3030,40 @@
     }
   },
   {
+    "package_name": "lunardate",
+    "stub_distribution_name": "types-lunardate",
+    "upstream_url": "https://github.com/lidaobing/python-lunardate",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 34,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "ci_platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 20,
+      "unannotated_parameters": 0,
+      "annotated_returns": 17,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 7,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 1,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "lupa",
     "stub_distribution_name": "types-lupa",
     "upstream_url": "https://github.com/scoder/lupa",
@@ -5462,7 +5530,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 68605,
+    "number_of_lines": 68731,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5472,22 +5540,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 840
+      "allowlist_length": 841
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30031,
-      "unannotated_parameters": 614,
-      "annotated_returns": 16618,
-      "unannotated_returns": 267,
+      "annotated_parameters": 30090,
+      "unannotated_parameters": 591,
+      "annotated_returns": 16632,
+      "unannotated_returns": 261,
       "explicit_Incomplete_parameters": 13,
       "explicit_Incomplete_returns": 10,
-      "explicit_Any_parameters": 2103,
-      "explicit_Any_returns": 843,
-      "annotated_variables": 9485,
+      "explicit_Any_parameters": 2106,
+      "explicit_Any_returns": 846,
+      "annotated_variables": 9497,
       "explicit_Any_variables": 309,
-      "explicit_Incomplete_variables": 227,
-      "classdefs": 3194,
+      "explicit_Incomplete_variables": 225,
+      "classdefs": 3199,
       "classdefs_with_Any": 28,
       "classdefs_with_Incomplete": 0
     }
