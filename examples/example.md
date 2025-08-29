@@ -5763,7 +5763,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,427 (excluding blank lines)
+7,429 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5788,8 +5788,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,009
-    - Unannotated parameters: 1,347
+    - Annotated parameters: 3,011
+    - Unannotated parameters: 1,345
     - Explicit `Any` parameters: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 213
 - Returns:
