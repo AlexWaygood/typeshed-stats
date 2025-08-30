@@ -77,7 +77,7 @@ grpcio-status,types-grpcio-status,https://github.com/grpc/grpc,COMPLETE,-,10,UP_
 hdbcli,types-hdbcli,-,COMPLETE,-,142,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,78,4,65,3,0,0,13,10,21,2,1,16,0,0,ERROR_ON_MISSING_STUB,linux,8
 hnswlib,types-hnswlib,https://github.com/nmslib/hnswlib,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,32,0,26,0,0,0,1,0,3,0,1,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,COMPLETE,-,746,UP_TO_DATE,UPLOADED,NOT_STRICT,93,191,149,163,0,4,0,0,243,0,103,41,0,4,ERROR_ON_MISSING_STUB,linux,0
-httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,291,UP_TO_DATE,UPLOADED,NOT_STRICT,60,116,63,7,1,2,0,0,99,0,35,33,0,0,ERROR_ON_MISSING_STUB,linux,1
+httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,291,OUT_OF_DATE,UPLOADED,NOT_STRICT,60,116,63,7,1,2,0,0,99,0,35,33,0,0,ERROR_ON_MISSING_STUB,linux,1
 hvac,types-hvac,https://github.com/hvac/hvac,COMPLETE,-,1826,UP_TO_DATE,UPLOADED,NOT_STRICT,510,1222,82,491,2,0,23,19,94,0,15,75,1,0,ERROR_ON_MISSING_STUB,linux,2
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,346,UP_TO_DATE,UPLOADED,STRICT,168,0,70,0,0,0,0,2,202,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,1335,UP_TO_DATE,UPLOADED,NOT_STRICT,354,21,418,8,2,0,9,6,152,1,2,65,1,2,ERROR_ON_MISSING_STUB,linux,14
@@ -148,7 +148,7 @@ pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,COMPLETE,-,860,UP_TO_DATE,U
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,COMPLETE,-,172,UP_TO_DATE,UPLOADED,STRICT,96,0,31,0,0,0,0,4,33,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,651,UP_TO_DATE,UPLOADED,STRICT,282,0,152,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,11
 ratelimit,types-ratelimit,https://github.com/tomasbasham/ratelimit,COMPLETE,-,19,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,1,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
-regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,746,UP_TO_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,4,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,16
+regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,746,OUT_OF_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,4,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,16
 reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,COMPLETE,-,7949,UP_TO_DATE,UPLOADED,NOT_STRICT,1780,2578,1586,979,10,8,26,12,2759,6,1177,582,0,3,ERROR_ON_MISSING_STUB,linux,57
 requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",1043,UP_TO_DATE,UPLOADED,NOT_STRICT,382,132,135,65,0,4,8,1,126,15,20,53,0,0,ERROR_ON_MISSING_STUB,linux,4
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,272,UP_TO_DATE,UPLOADED,NOT_STRICT,68,69,45,4,2,3,2,0,25,1,7,13,0,0,ERROR_ON_MISSING_STUB,linux,0
