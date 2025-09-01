@@ -5763,7 +5763,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,428 (excluding blank lines)
+7,433 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5791,12 +5791,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated parameters: 3,011
     - Unannotated parameters: 1,345
     - Explicit `Any` parameters: 23
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 213
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 205
 - Returns:
-    - Annotated returns: 1,036
-    - Unannotated returns: 553
+    - Annotated returns: 1,042
+    - Unannotated returns: 547
     - Explicit `Any` returns: 19
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 260
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 258
 - Variables:
     - Annotated variables: 381
     - Explicit `Any` variables: 5
