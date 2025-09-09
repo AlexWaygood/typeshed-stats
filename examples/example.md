@@ -637,7 +637,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,203 (excluding blank lines)
+1,313 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -662,19 +662,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `PyMySQL`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 171
-    - Unannotated parameters: 64
-    - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 9
+    - Annotated parameters: 292
+    - Unannotated parameters: 24
+    - Explicit `Any` parameters: 12
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
 - Returns:
-    - Annotated returns: 124
-    - Unannotated returns: 33
-    - Explicit `Any` returns: 12
+    - Annotated returns: 129
+    - Unannotated returns: 31
+    - Explicit `Any` returns: 14
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 767
-    - Explicit `Any` variables: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 44
+    - Annotated variables: 766
+    - Explicit `Any` variables: 10
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 4
 - Class definitions:
     - Total class definitions: 28
     - Class definitions with `Any`: 0
@@ -1834,9 +1834,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 849 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
