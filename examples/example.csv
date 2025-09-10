@@ -129,7 +129,7 @@ pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,COMPLETE,
 pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,COMPLETE,-,472,UP_TO_DATE,UPLOADED,STRICT,344,0,216,0,0,0,0,2,77,1,0,77,0,0,ERROR_ON_MISSING_STUB,linux,27
 pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,COMPLETE,-,772,UP_TO_DATE,UPLOADED,STRICT,305,0,167,0,0,0,2,2,226,1,0,31,0,0,ERROR_ON_MISSING_STUB,linux,49
 pyjks,types-pyjks,https://github.com/kurtbrose/pyjks,COMPLETE,-,377,UP_TO_DATE,UPLOADED,STRICT,132,0,59,0,0,0,0,0,73,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,38
-pyluach,types-pyluach,https://github.com/simlist/pyluach,COMPLETE,-,270,UP_TO_DATE,UPLOADED,STRICT,161,0,126,0,0,0,0,0,35,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,1
+pyluach,types-pyluach,https://github.com/simlist/pyluach,COMPLETE,-,270,OUT_OF_DATE,UPLOADED,STRICT,161,0,126,0,0,0,0,0,35,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,1
 pynput,types-pynput,https://github.com/moses-palmer/pynput,COMPLETE,-,333,UP_TO_DATE,UPLOADED,STRICT,87,0,71,0,0,0,11,0,63,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,12
 pyperclip,types-pyperclip,https://github.com/asweigart/pyperclip,COMPLETE,-,18,UP_TO_DATE,UPLOADED,STRICT,3,0,6,0,0,0,0,0,0,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1
 pyserial,types-pyserial,https://github.com/pyserial/pyserial,COMPLETE,-,1172,UP_TO_DATE,UPLOADED,STRICT,224,0,271,0,0,0,2,4,466,7,65,68,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,64
