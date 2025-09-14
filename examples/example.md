@@ -26,7 +26,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 66 unique allowlist entries for `Authlib` when running stubtest in CI.
+Typeshed currently has 56 unique allowlist entries for `Authlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -653,7 +653,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 unique allowlist entries for `PyMySQL` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `PyMySQL` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2760,7 +2760,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 15 unique allowlist entries for `django-filter` when running stubtest in CI.
+Typeshed currently has 12 unique allowlist entries for `django-filter` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -2970,7 +2970,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,658 (excluding blank lines)
+5,657 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2986,7 +2986,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 32 unique allowlist entries for `docutils` when running stubtest in CI.
+Typeshed currently has 35 unique allowlist entries for `docutils` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2995,12 +2995,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,436
+    - Annotated parameters: 2,435
     - Unannotated parameters: 708
     - Explicit `Any` parameters: 39
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 2,108
+    - Annotated returns: 2,107
     - Unannotated returns: 324
     - Explicit `Any` returns: 219
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
@@ -4525,7 +4525,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 unique allowlist entries for `hvac` when running stubtest in CI.
+Typeshed currently has 0 allowlist entries for `hvac` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4639,7 +4639,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 14 unique allowlist entries for `icalendar` when running stubtest in CI.
+Typeshed currently has 8 unique allowlist entries for `icalendar` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5779,7 +5779,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 24 unique allowlist entries for `networkx` when running stubtest in CI.
+Typeshed currently has 23 unique allowlist entries for `networkx` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5991,7 +5991,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-13,160 (excluding blank lines)
+13,159 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6007,7 +6007,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 181 unique allowlist entries for `openpyxl` when running stubtest in CI.
+Typeshed currently has 176 unique allowlist entries for `openpyxl` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6016,12 +6016,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `openpyxl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,705
+    - Annotated parameters: 3,704
     - Unannotated parameters: 511
     - Explicit `Any` parameters: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 12
 - Returns:
-    - Annotated returns: 1,313
+    - Annotated returns: 1,312
     - Unannotated returns: 87
     - Explicit `Any` returns: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
@@ -6524,7 +6524,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 7 unique allowlist entries for `pika` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `pika` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6740,7 +6740,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-6,014 (excluding blank lines)
+6,015 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6984,7 +6984,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 unique allowlist entries for `pyasn1` when running stubtest in CI.
+Typeshed currently has 0 allowlist entries for `pyasn1` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7308,9 +7308,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 772 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7607,7 +7607,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 64 unique allowlist entries for `pyserial` when running stubtest in CI.
+Typeshed currently has 65 unique allowlist entries for `pyserial` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -8405,7 +8405,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 11 unique allowlist entries for `qrcode` when running stubtest in CI.
+Typeshed currently has 10 unique allowlist entries for `qrcode` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -8576,7 +8576,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 57 unique allowlist entries for `reportlab` when running stubtest in CI.
+Typeshed currently has 52 unique allowlist entries for `reportlab` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -8926,7 +8926,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 5 unique allowlist entries for `seaborn` when running stubtest in CI.
+Typeshed currently has 4 unique allowlist entries for `seaborn` when running stubtest in CI.
 
 ### Pyright settings in CI: *entirely excluded*
 
@@ -10537,12 +10537,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `xlrd`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 299
+    - Annotated parameters: 298
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 143
+    - Annotated returns: 142
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
