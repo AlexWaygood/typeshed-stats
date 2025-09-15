@@ -808,7 +808,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,314 (excluding blank lines)
+1,318 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1832,7 +1832,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-849 (excluding blank lines)
+850 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -3715,7 +3715,7 @@ Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Pyth
 
 ### Number of lines
 
-1,578 (excluding blank lines)
+1,588 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -3829,7 +3829,7 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 
 ### Number of lines
 
-3,232 (excluding blank lines)
+3,241 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -3845,7 +3845,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 143 unique allowlist entries for `gevent` when running stubtest in CI.
+Typeshed currently has 144 unique allowlist entries for `gevent` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3943,7 +3943,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-85 (excluding blank lines)
+86 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4281,7 +4281,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-142 (excluding blank lines)
+147 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5193,7 +5193,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-508 (excluding blank lines)
+522 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5478,7 +5478,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,272 (excluding blank lines)
+1,275 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6854,7 +6854,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,735 (excluding blank lines)
+1,756 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8218,7 +8218,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-39,345 (excluding blank lines)
+39,362 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9028,7 +9028,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-2,861 (excluding blank lines)
+2,862 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9309,7 +9309,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,740 (excluding blank lines)
+68,744 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9334,12 +9334,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,100
+    - Annotated parameters: 30,101
     - Unannotated parameters: 591
     - Explicit `Any` parameters: 2,106
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
 - Returns:
-    - Annotated returns: 16,636
+    - Annotated returns: 16,639
     - Unannotated returns: 261
     - Explicit `Any` returns: 846
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
@@ -9348,8 +9348,8 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 309
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 225
 - Class definitions:
-    - Total class definitions: 3,199
-    - Class definitions with `Any`: 28
+    - Total class definitions: 3,200
+    - Class definitions with `Any`: 29
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
