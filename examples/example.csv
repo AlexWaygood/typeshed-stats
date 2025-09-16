@@ -10,7 +10,7 @@ Jetson.GPIO,types-Jetson.GPIO,https://github.com/NVIDIA/jetson-gpio,COMPLETE,-,1
 Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,COMPLETE,-,824,UP_TO_DATE,UPLOADED,NOT_STRICT,301,33,231,4,0,0,17,4,251,11,0,112,1,0,ERROR_ON_MISSING_STUB,linux,3
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,COMPLETE,-,234,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMeeus,types-PyMeeus,https://github.com/architest/pymeeus,COMPLETE,-,954,UP_TO_DATE,UPLOADED,STRICT,706,0,374,0,0,0,0,0,59,0,0,18,0,0,ERROR_ON_MISSING_STUB,linux,0
-PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,COMPLETE,-,1313,UP_TO_DATE,UPLOADED,NOT_STRICT,292,24,129,31,5,2,12,14,766,10,4,28,0,0,ERROR_ON_MISSING_STUB,linux,3
+PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,COMPLETE,-,1218,UP_TO_DATE,UPLOADED,NOT_STRICT,212,24,127,31,3,2,8,14,766,10,4,28,0,0,ERROR_ON_MISSING_STUB,linux,2
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,193,UP_TO_DATE,UPLOADED,STRICT,102,0,21,0,0,0,0,0,17,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
 PySocks,types-PySocks,https://github.com/Anorov/PySocks,COMPLETE,-,218,UP_TO_DATE,UPLOADED,STRICT,113,0,35,0,0,0,1,0,26,0,2,12,0,0,ERROR_ON_MISSING_STUB,linux,2
 PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,COMPLETE,-,1318,UP_TO_DATE,UPLOADED,NOT_STRICT,520,278,222,172,4,0,46,12,220,160,2,91,0,0,ERROR_ON_MISSING_STUB,linux,4

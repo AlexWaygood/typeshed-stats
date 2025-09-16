@@ -637,7 +637,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,313 (excluding blank lines)
+1,218 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -653,7 +653,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 unique allowlist entries for `PyMySQL` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `PyMySQL` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -662,12 +662,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `PyMySQL`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 292
+    - Annotated parameters: 212
     - Unannotated parameters: 24
-    - Explicit `Any` parameters: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 5
+    - Explicit `Any` parameters: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
-    - Annotated returns: 129
+    - Annotated returns: 127
     - Unannotated returns: 31
     - Explicit `Any` returns: 14
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
