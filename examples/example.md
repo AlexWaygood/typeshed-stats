@@ -10,7 +10,7 @@
 
 ### Number of lines
 
-2,712 (excluding blank lines)
+2,713 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -35,14 +35,14 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 282
-    - Unannotated parameters: 1,134
+    - Annotated parameters: 283
+    - Unannotated parameters: 1,133
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
 - Returns:
-    - Annotated returns: 512
-    - Unannotated returns: 398
-    - Explicit `Any` returns: 3
+    - Annotated returns: 513
+    - Unannotated returns: 397
+    - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
 - Variables:
     - Annotated variables: 565
@@ -9309,7 +9309,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,743 (excluding blank lines)
+68,740 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10569,11 +10569,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-35 (excluding blank lines)
+72 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -10587,24 +10587,24 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 0 allowlist entries for `xmltodict` when running stubtest in CI.
 
-### Pyright settings in CI: *strict*
+### Pyright settings in CI: *not strict*
 
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `xmltodict`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 20
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 7
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Annotated parameters: 38
+    - Unannotated parameters: 14
+    - Explicit `Any` parameters: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
     - Annotated returns: 3
     - Unannotated returns: 0
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 1
+    - Annotated variables: 3
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
