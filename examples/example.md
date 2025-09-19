@@ -10,7 +10,7 @@
 
 ### Number of lines
 
-2,709 (excluding blank lines)
+2,712 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -35,21 +35,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 281
+    - Annotated parameters: 282
     - Unannotated parameters: 1,134
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
 - Returns:
-    - Annotated returns: 511
+    - Annotated returns: 512
     - Unannotated returns: 398
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
 - Variables:
-    - Annotated variables: 564
+    - Annotated variables: 565
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 244
 - Class definitions:
-    - Total class definitions: 216
+    - Total class definitions: 217
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -2970,7 +2970,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,657 (excluding blank lines)
+5,658 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2986,7 +2986,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 35 unique allowlist entries for `docutils` when running stubtest in CI.
+Typeshed currently has 32 unique allowlist entries for `docutils` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6007,7 +6007,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 176 unique allowlist entries for `openpyxl` when running stubtest in CI.
+Typeshed currently has 175 unique allowlist entries for `openpyxl` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -8505,9 +8505,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 746 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 

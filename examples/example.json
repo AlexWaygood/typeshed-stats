@@ -5,7 +5,7 @@
     "upstream_url": "https://github.com/lepture/authlib",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 2709,
+    "number_of_lines": 2712,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -17,18 +17,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 281,
+      "annotated_parameters": 282,
       "unannotated_parameters": 1134,
-      "annotated_returns": 511,
+      "annotated_returns": 512,
       "unannotated_returns": 398,
       "explicit_Incomplete_parameters": 7,
       "explicit_Incomplete_returns": 9,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 3,
-      "annotated_variables": 564,
+      "annotated_variables": 565,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 244,
-      "classdefs": 216,
+      "classdefs": 217,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
@@ -1775,7 +1775,7 @@
     "upstream_url": "https://sourceforge.net/p/docutils/code",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 5657,
+    "number_of_lines": 5658,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1783,7 +1783,7 @@
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 35
+      "allowlist_length": 32
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -3587,7 +3587,7 @@
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 176
+      "allowlist_length": 175
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -5088,7 +5088,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 746,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
