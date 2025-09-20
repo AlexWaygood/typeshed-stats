@@ -9309,7 +9309,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,740 (excluding blank lines)
+68,758 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9325,7 +9325,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 840 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 841 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -9334,17 +9334,17 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,124
+    - Annotated parameters: 30,132
     - Unannotated parameters: 568
     - Explicit `Any` parameters: 2,106
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
 - Returns:
-    - Annotated returns: 16,666
+    - Annotated returns: 16,669
     - Unannotated returns: 234
     - Explicit `Any` returns: 846
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
 - Variables:
-    - Annotated variables: 9,494
+    - Annotated variables: 9,495
     - Explicit `Any` variables: 309
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
@@ -10569,7 +10569,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-72 (excluding blank lines)
+118 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10594,21 +10594,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `xmltodict`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 38
-    - Unannotated parameters: 14
-    - Explicit `Any` parameters: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
+    - Annotated parameters: 76
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 3
+    - Annotated returns: 10
     - Unannotated returns: 0
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 3
+    - Annotated variables: 19
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 1
+    - Total class definitions: 2
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 

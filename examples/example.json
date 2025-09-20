@@ -5564,7 +5564,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 68740,
+    "number_of_lines": 68758,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5574,19 +5574,19 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 840
+      "allowlist_length": 841
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30124,
+      "annotated_parameters": 30132,
       "unannotated_parameters": 568,
-      "annotated_returns": 16666,
+      "annotated_returns": 16669,
       "unannotated_returns": 234,
       "explicit_Incomplete_parameters": 13,
       "explicit_Incomplete_returns": 20,
       "explicit_Any_parameters": 2106,
       "explicit_Any_returns": 846,
-      "annotated_variables": 9494,
+      "annotated_variables": 9495,
       "explicit_Any_variables": 309,
       "explicit_Incomplete_variables": 221,
       "classdefs": 3200,
@@ -6314,7 +6314,7 @@
     "upstream_url": "https://github.com/martinblech/xmltodict",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 72,
+    "number_of_lines": 118,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -6326,18 +6326,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 38,
-      "unannotated_parameters": 14,
-      "annotated_returns": 3,
+      "annotated_parameters": 76,
+      "unannotated_parameters": 0,
+      "annotated_returns": 10,
       "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 2,
+      "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 4,
+      "explicit_Any_parameters": 5,
       "explicit_Any_returns": 1,
-      "annotated_variables": 3,
+      "annotated_variables": 19,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 1,
+      "classdefs": 2,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
