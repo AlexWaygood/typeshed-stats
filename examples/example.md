@@ -2970,11 +2970,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-5,658 (excluding blank lines)
+5,655 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -2986,7 +2986,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 32 unique allowlist entries for `docutils` when running stubtest in CI.
+Typeshed currently has 18 unique allowlist entries for `docutils` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -2995,19 +2995,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,435
+    - Annotated parameters: 2,440
     - Unannotated parameters: 708
     - Explicit `Any` parameters: 39
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 16
 - Returns:
-    - Annotated returns: 2,107
-    - Unannotated returns: 324
+    - Annotated returns: 2,109
+    - Unannotated returns: 323
     - Explicit `Any` returns: 219
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
 - Variables:
-    - Annotated variables: 1,511
+    - Annotated variables: 1,507
     - Explicit `Any` variables: 23
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 236
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
     - Total class definitions: 499
     - Class definitions with `Any`: 1
@@ -10644,9 +10644,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 0 allowlist entries for `xmltodict` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `xmltodict`
 
