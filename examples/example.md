@@ -4303,9 +4303,9 @@ In CI, stubtest is run on `darwin` and `linux`.
 
 Typeshed currently has 2 unique allowlist entries for `gunicorn` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `gunicorn`
 
@@ -5457,11 +5457,11 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 58
-    - Explicit `Any` variables: 34
+    - Explicit `Any` variables: 33
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 24
-    - Class definitions with `Any`: 2
+    - Class definitions with `Any`: 3
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
@@ -9366,7 +9366,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,762 (excluding blank lines)
+68,750 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9393,7 +9393,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 30,135
     - Unannotated parameters: 568
-    - Explicit `Any` parameters: 2,106
+    - Explicit `Any` parameters: 2,118
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
 - Returns:
     - Annotated returns: 16,670
@@ -9824,7 +9824,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-126 (excluding blank lines)
+127 (excluding blank lines)
 
 ### Package status: *up to date*
 
