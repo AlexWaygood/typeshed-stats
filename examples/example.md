@@ -7194,9 +7194,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 725 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10683,11 +10683,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-3,511 (excluding blank lines)
+3,502 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -10708,21 +10708,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `yt-dlp`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,059
+    - Annotated parameters: 2,060
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 278
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 919
+    - Annotated returns: 920
     - Unannotated returns: 0
     - Explicit `Any` returns: 131
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 493
+    - Annotated variables: 483
     - Explicit `Any` variables: 29
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 185
+    - Total class definitions: 184
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
