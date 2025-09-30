@@ -751,7 +751,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-218 (excluding blank lines)
+213 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4000,7 +4000,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-909 (excluding blank lines)
+912 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4027,7 +4027,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 310
     - Unannotated parameters: 4
-    - Explicit `Any` parameters: 11
+    - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 208
@@ -4285,7 +4285,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-1,955 (excluding blank lines)
+1,902 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5820,7 +5820,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,436 (excluding blank lines)
+7,503 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5845,13 +5845,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,012
-    - Unannotated parameters: 1,346
+    - Annotated parameters: 3,132
+    - Unannotated parameters: 1,239
     - Explicit `Any` parameters: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 205
 - Returns:
-    - Annotated returns: 1,043
-    - Unannotated returns: 547
+    - Annotated returns: 1,044
+    - Unannotated returns: 548
     - Explicit `Any` returns: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 258
 - Variables:
@@ -9366,7 +9366,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,756 (excluding blank lines)
+68,760 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9396,7 +9396,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 2,119
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
 - Returns:
-    - Annotated returns: 16,671
+    - Annotated returns: 16,672
     - Unannotated returns: 234
     - Explicit `Any` returns: 848
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
@@ -9541,7 +9541,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-30,201 (excluding blank lines)
+30,199 (excluding blank lines)
 
 ### Package status: *out of date*
 
