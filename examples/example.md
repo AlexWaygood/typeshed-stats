@@ -6854,7 +6854,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,630 (excluding blank lines)
+1,634 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6870,7 +6870,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 12 unique allowlist entries for `psutil` when running stubtest in CI.
+Typeshed currently has 13 unique allowlist entries for `psutil` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6884,16 +6884,16 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 9
 - Returns:
-    - Annotated returns: 201
+    - Annotated returns: 202
     - Unannotated returns: 350
     - Explicit `Any` returns: 47
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 597
+    - Annotated variables: 598
     - Explicit `Any` variables: 177
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 95
 - Class definitions:
-    - Total class definitions: 90
+    - Total class definitions: 91
     - Class definitions with `Any`: 3
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7648,7 +7648,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,172 (excluding blank lines)
+1,173 (excluding blank lines)
 
 ### Package status: *up to date*
 
