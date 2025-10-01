@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0 # must match pyproject.toml
+    rev: v6.0.0 # must match pyproject.toml
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -12,16 +12,16 @@ repos:
       - id: name-tests-test
         args: [--pytest-test-first]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.12.2 # must match pyproject.toml
+    rev: v0.13.2 # must match pyproject.toml
     hooks:
       - id: ruff
       - id: ruff-format
   - repo: https://github.com/adamchainz/blacken-docs
-    rev: 1.19.1 # must match pyproject.toml
+    rev: 1.20.0 # must match pyproject.toml
     hooks:
       - id: blacken-docs
         language: python # means renovate will update the `additional_dependencies` for the hook
-        additional_dependencies: [black==25.1.0]
+        additional_dependencies: [black==25.9.0]
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
@@ -50,11 +50,11 @@ repos:
     hooks:
       - id: validate-pyproject
   - repo: https://github.com/woodruffw/zizmor-pre-commit
-    rev: v1.11.0
+    rev: v1.14.2
     hooks:
       - id: zizmor
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.33.2
+    rev: 0.34.0
     hooks:
       - id: check-github-workflows
       - id: check-renovate
