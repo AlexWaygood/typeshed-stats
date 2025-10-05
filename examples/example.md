@@ -10,7 +10,7 @@
 
 ### Number of lines
 
-2,713 (excluding blank lines)
+2,718 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -35,19 +35,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 283
-    - Unannotated parameters: 1,133
+    - Annotated parameters: 287
+    - Unannotated parameters: 1,132
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
 - Returns:
-    - Annotated returns: 513
-    - Unannotated returns: 397
+    - Annotated returns: 519
+    - Unannotated returns: 391
     - Explicit `Any` returns: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
-    - Annotated variables: 565
+    - Annotated variables: 568
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 244
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 243
 - Class definitions:
     - Total class definitions: 217
     - Class definitions with `Any`: 1
