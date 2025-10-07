@@ -1987,7 +1987,7 @@
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 35
+      "allowlist_length": 31
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -2082,7 +2082,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 31,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -2942,7 +2942,7 @@
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 87
+      "allowlist_length": 45
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
@@ -4714,7 +4714,7 @@
     "upstream_url": "https://github.com/dateutil/dateutil",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 697,
+    "number_of_lines": 726,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4726,9 +4726,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 240,
-      "unannotated_parameters": 50,
-      "annotated_returns": 160,
+      "annotated_parameters": 254,
+      "unannotated_parameters": 54,
+      "annotated_returns": 162,
       "unannotated_returns": 30,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 2,
@@ -5599,7 +5599,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 68802,
+    "number_of_lines": 68807,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5613,9 +5613,9 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30147,
+      "annotated_parameters": 30148,
       "unannotated_parameters": 568,
-      "annotated_returns": 16674,
+      "annotated_returns": 16675,
       "unannotated_returns": 234,
       "explicit_Incomplete_parameters": 13,
       "explicit_Incomplete_returns": 20,
@@ -5703,7 +5703,7 @@
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.",
-    "number_of_lines": 30199,
+    "number_of_lines": 30200,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {

@@ -3328,7 +3328,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 35 unique allowlist entries for `flake8-bugbear` when running stubtest in CI.
+Typeshed currently has 31 unique allowlist entries for `flake8-bugbear` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3485,9 +3485,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 31 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4924,7 +4924,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 87 unique allowlist entries for `jsonschema` when running stubtest in CI.
+Typeshed currently has 45 unique allowlist entries for `jsonschema` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7876,7 +7876,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-697 (excluding blank lines)
+726 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7901,12 +7901,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `python-dateutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 240
-    - Unannotated parameters: 50
+    - Annotated parameters: 254
+    - Unannotated parameters: 54
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 160
+    - Annotated returns: 162
     - Unannotated returns: 30
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
@@ -9366,7 +9366,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,802 (excluding blank lines)
+68,807 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9391,12 +9391,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,147
+    - Annotated parameters: 30,148
     - Unannotated parameters: 568
     - Explicit `Any` parameters: 2,121
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
 - Returns:
-    - Annotated returns: 16,674
+    - Annotated returns: 16,675
     - Unannotated returns: 234
     - Explicit `Any` returns: 848
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
@@ -9541,7 +9541,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-30,199 (excluding blank lines)
+30,200 (excluding blank lines)
 
 ### Package status: *out of date*
 
