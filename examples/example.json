@@ -4969,7 +4969,7 @@
       "annotated_returns": 4003,
       "unannotated_returns": 1965,
       "explicit_Incomplete_parameters": 413,
-      "explicit_Incomplete_returns": 285,
+      "explicit_Incomplete_returns": 284,
       "explicit_Any_parameters": 1,
       "explicit_Any_returns": 3,
       "annotated_variables": 29473,
@@ -5599,7 +5599,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 68807,
+    "number_of_lines": 68803,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5615,7 +5615,7 @@
     "annotation_stats": {
       "annotated_parameters": 30148,
       "unannotated_parameters": 568,
-      "annotated_returns": 16675,
+      "annotated_returns": 16676,
       "unannotated_returns": 234,
       "explicit_Incomplete_parameters": 13,
       "explicit_Incomplete_returns": 20,
@@ -5624,7 +5624,7 @@
       "annotated_variables": 9495,
       "explicit_Any_variables": 309,
       "explicit_Incomplete_variables": 221,
-      "classdefs": 3200,
+      "classdefs": 3201,
       "classdefs_with_Any": 29,
       "classdefs_with_Incomplete": 0
     }
@@ -6339,6 +6339,40 @@
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 33,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "xmldiff",
+    "stub_distribution_name": "types-xmldiff",
+    "upstream_url": "https://github.com/Shoobx/xmldiff",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 295,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "ci_platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "NOT_STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 36,
+      "unannotated_parameters": 167,
+      "annotated_returns": 51,
+      "unannotated_returns": 57,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 10,
+      "explicit_Any_parameters": 6,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 90,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 43,
+      "classdefs": 24,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
