@@ -2856,7 +2856,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,407 (excluding blank lines)
+2,430 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2881,21 +2881,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docker`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,135
-    - Unannotated parameters: 354
-    - Explicit `Any` parameters: 31
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 63
+    - Annotated parameters: 1,179
+    - Unannotated parameters: 310
+    - Explicit `Any` parameters: 32
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 46
 - Returns:
-    - Annotated returns: 376
-    - Unannotated returns: 196
+    - Annotated returns: 411
+    - Unannotated returns: 161
     - Explicit `Any` returns: 24
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 15
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
 - Variables:
-    - Annotated variables: 221
+    - Annotated variables: 220
     - Explicit `Any` variables: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 59
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 4
 - Class definitions:
-    - Total class definitions: 136
+    - Total class definitions: 137
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 24
 
@@ -4000,7 +4000,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-912 (excluding blank lines)
+926 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9366,7 +9366,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,803 (excluding blank lines)
+68,805 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9393,7 +9393,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 30,148
     - Unannotated parameters: 568
-    - Explicit `Any` parameters: 2,121
+    - Explicit `Any` parameters: 2,134
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
 - Returns:
     - Annotated returns: 16,676
@@ -10500,6 +10500,63 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `www-authenticate`
+
+### Upstream repo URL
+
+[https://github.com/alexsdutton/www-authenticate](https://github.com/alexsdutton/www-authenticate)
+
+### Stub distribution name
+
+`types-www-authenticate`
+
+### Number of lines
+
+29 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `www-authenticate` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `www-authenticate`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 17
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 12
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
+- Variables:
+    - Annotated variables: 0
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 3
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `xdgenvpy`
 
 ### Upstream repo URL
@@ -10626,7 +10683,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-295 (excluding blank lines)
+297 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10740,7 +10797,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-3,503 (excluding blank lines)
+3,521 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10765,17 +10822,17 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `yt-dlp`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,060
+    - Annotated parameters: 2,068
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 278
+    - Explicit `Any` parameters: 280
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 920
+    - Annotated returns: 924
     - Unannotated returns: 0
     - Explicit `Any` returns: 131
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 483
+    - Annotated variables: 484
     - Explicit `Any` variables: 29
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
