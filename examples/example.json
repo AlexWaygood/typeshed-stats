@@ -244,30 +244,30 @@
     "upstream_url": "https://github.com/NVIDIA/jetson-gpio",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 176,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 212,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 3
+      "allowlist_length": 4
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 82,
+      "annotated_parameters": 88,
       "unannotated_parameters": 0,
-      "annotated_returns": 42,
+      "annotated_returns": 47,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 2,
-      "annotated_variables": 93,
+      "annotated_variables": 108,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 10,
+      "classdefs": 11,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -5599,7 +5599,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 68805,
+    "number_of_lines": 68811,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5615,7 +5615,7 @@
     "annotation_stats": {
       "annotated_parameters": 30148,
       "unannotated_parameters": 568,
-      "annotated_returns": 16676,
+      "annotated_returns": 16677,
       "unannotated_returns": 234,
       "explicit_Incomplete_parameters": 13,
       "explicit_Incomplete_returns": 20,
