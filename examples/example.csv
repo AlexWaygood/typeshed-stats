@@ -20,7 +20,7 @@ Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,1
 TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,COMPLETE,-,7,UP_TO_DATE,UPLOADED,STRICT,20,0,6,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,6
 WTForms,types-WTForms,https://github.com/pallets-eco/wtforms,COMPLETE,-,1351,UP_TO_DATE,UPLOADED,STRICT,531,0,185,0,0,0,71,14,141,29,0,100,0,0,ERROR_ON_MISSING_STUB,linux,27
 WebOb,types-WebOb,https://github.com/Pylons/webob,COMPLETE,-,2222,UP_TO_DATE,UPLOADED,STRICT,799,0,609,0,0,0,80,13,250,15,0,136,1,0,ERROR_ON_MISSING_STUB,linux,99
-aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,COMPLETE,-,776,UP_TO_DATE,UPLOADED,STRICT,432,0,151,0,1,2,0,1,6,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,86
+aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,COMPLETE,-,776,OUT_OF_DATE,UPLOADED,STRICT,432,0,151,0,1,2,0,1,6,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,86
 antlr4-python3-runtime,types-antlr4-python3-runtime,https://github.com/antlr/antlr4,COMPLETE,-,1911,UP_TO_DATE,UPLOADED,NOT_STRICT,768,231,208,485,18,2,0,0,395,0,269,142,0,0,ERROR_ON_MISSING_STUB,linux;win32,0
 assertpy,types-assertpy,https://github.com/assertpy/assertpy,COMPLETE,-,214,UP_TO_DATE,UPLOADED,STRICT,85,0,87,0,0,0,29,1,21,1,0,15,0,0,ERROR_ON_MISSING_STUB,linux,11
 auth0-python,types-auth0-python,https://github.com/auth0/auth0-python,COMPLETE,-,1683,OUT_OF_DATE,UPLOADED,NOT_STRICT,1143,14,376,119,146,301,0,0,187,0,92,63,0,0,ERROR_ON_MISSING_STUB,linux,3
@@ -62,7 +62,7 @@ flake8-builtins,types-flake8-builtins,https://github.com/gforcada/flake8-builtin
 flake8-docstrings,types-flake8-docstrings,https://github.com/pycqa/flake8-docstrings,COMPLETE,-,21,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,7,1,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/flake8-rst-docstrings,COMPLETE,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simplify,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,76,0,73,0,0,0,0,1,14,0,2,7,0,0,ERROR_ON_MISSING_STUB,linux,0
-flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,COMPLETE,-,36,UP_TO_DATE,UPLOADED,STRICT,11,0,13,0,0,0,1,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
+flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,COMPLETE,-,36,OUT_OF_DATE,UPLOADED,STRICT,11,0,13,0,0,0,1,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 fpdf2,types-fpdf2,https://github.com/PyFPDF/fpdf2,COMPLETE,-,3790,UP_TO_DATE,UPLOADED,NOT_STRICT,1135,705,683,194,13,10,9,4,791,13,173,234,1,1,ERROR_ON_MISSING_STUB,linux,6
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1588,NOT_ON_PYPI,UPLOADED,NOT_STRICT,515,15,421,26,0,0,2,2,489,0,2,154,0,0,ERROR_ON_MISSING_STUB,linux,52
 geopandas,types-geopandas,https://github.com/geopandas/geopandas,COMPLETE,-,1845,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1023,68,424,6,42,4,34,11,33,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,13
