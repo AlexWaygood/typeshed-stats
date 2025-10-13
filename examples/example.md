@@ -4477,9 +4477,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `html5lib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 95
-    - Unannotated parameters: 189
-    - Explicit `Any` parameters: 1
+    - Annotated parameters: 101
+    - Unannotated parameters: 183
+    - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 150
