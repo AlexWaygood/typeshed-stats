@@ -1718,7 +1718,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-133 (excluding blank lines)
+193 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1743,21 +1743,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `cachetools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 99
+    - Annotated parameters: 125
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 6
+    - Explicit `Any` parameters: 14
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 51
+    - Annotated returns: 65
     - Unannotated returns: 0
-    - Explicit `Any` returns: 0
+    - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 1
+    - Annotated variables: 12
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 9
+    - Total class definitions: 14
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9393,7 +9393,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 30,147
     - Unannotated parameters: 568
-    - Explicit `Any` parameters: 2,134
+    - Explicit `Any` parameters: 2,130
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
 - Returns:
     - Annotated returns: 16,678
