@@ -28,7 +28,7 @@ aws-xray-sdk,types-aws-xray-sdk,https://github.com/aws/aws-xray-sdk-python,COMPL
 binaryornot,types-binaryornot,https://github.com/binaryornot/binaryornot,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,3,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 bleach,types-bleach,https://github.com/mozilla/bleach,COMPLETE,-,243,UP_TO_DATE,UPLOADED,STRICT,91,0,50,0,0,0,2,0,60,1,0,13,0,0,ERROR_ON_MISSING_STUB,linux,3
 boltons,types-boltons,https://github.com/mahmoud/boltons,COMPLETE,-,1359,UP_TO_DATE,UPLOADED,NOT_STRICT,610,335,478,170,8,8,60,16,233,6,68,83,1,3,ERROR_ON_MISSING_STUB,linux,2
-braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,3462,UP_TO_DATE,UPLOADED,NOT_STRICT,291,331,425,138,31,14,7,2,1505,0,117,299,0,0,ERROR_ON_MISSING_STUB,linux,1
+braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,3462,OUT_OF_DATE,UPLOADED,NOT_STRICT,291,331,425,138,31,14,7,2,1505,0,117,299,0,0,ERROR_ON_MISSING_STUB,linux,1
 cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,193,UP_TO_DATE,UPLOADED,STRICT,125,0,65,0,0,0,14,1,12,0,0,14,0,0,ERROR_ON_MISSING_STUB,linux,17
 capturer,types-capturer,https://github.com/xolox/python-capturer,COMPLETE,-,114,UP_TO_DATE,UPLOADED,STRICT,50,0,42,0,0,0,4,1,38,4,0,6,0,0,ERROR_ON_MISSING_STUB,linux,1
 cffi,types-cffi,https://github.com/python-cffi/cffi/,COMPLETE,-,850,OUT_OF_DATE,UPLOADED,NOT_STRICT,336,212,239,86,0,1,33,8,254,0,75,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
@@ -57,7 +57,7 @@ entrypoints,types-entrypoints,https://github.com/takluyver/entrypoints,COMPLETE,
 fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,COMPLETE,-,537,UP_TO_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,40
 first,types-first,https://github.com/hynek/first,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,11,0,5,0,0,0,3,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8,types-flake8,https://github.com/pycqa/flake8,COMPLETE,-,574,UP_TO_DATE,UPLOADED,STRICT,223,0,165,0,0,0,35,8,185,1,90,39,0,0,ERROR_ON_MISSING_STUB,linux,1
-flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,COMPLETE,-,277,OUT_OF_DATE,UPLOADED,STRICT,130,0,119,0,0,2,1,3,99,0,1,13,0,0,ERROR_ON_MISSING_STUB,linux,31
+flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,COMPLETE,-,246,UP_TO_DATE,UPLOADED,STRICT,139,0,124,0,0,2,1,3,58,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,31
 flake8-builtins,types-flake8-builtins,https://github.com/gforcada/flake8-builtins,COMPLETE,-,40,UP_TO_DATE,UPLOADED,STRICT,17,0,15,0,0,0,0,0,13,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-docstrings,types-flake8-docstrings,https://github.com/pycqa/flake8-docstrings,COMPLETE,-,21,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,7,1,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/flake8-rst-docstrings,COMPLETE,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
