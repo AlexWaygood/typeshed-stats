@@ -25,7 +25,7 @@ assertpy,types-assertpy,https://github.com/assertpy/assertpy,COMPLETE,-,214,UP_T
 auth0-python,types-auth0-python,https://github.com/auth0/auth0-python,COMPLETE,-,1683,OUT_OF_DATE,UPLOADED,NOT_STRICT,1143,14,376,119,146,301,0,0,187,0,92,63,0,0,ERROR_ON_MISSING_STUB,linux,3
 aws-xray-sdk,types-aws-xray-sdk,https://github.com/aws/aws-xray-sdk-python,COMPLETE,-,926,UP_TO_DATE,UPLOADED,NOT_STRICT,222,205,267,68,9,9,11,5,183,2,8,67,0,0,ERROR_ON_MISSING_STUB,linux,30
 binaryornot,types-binaryornot,https://github.com/binaryornot/binaryornot,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,3,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
-bleach,types-bleach,https://github.com/mozilla/bleach,COMPLETE,-,243,OUT_OF_DATE,UPLOADED,STRICT,91,0,50,0,0,0,2,0,60,1,0,13,0,0,ERROR_ON_MISSING_STUB,linux,3
+bleach,types-bleach,https://github.com/mozilla/bleach,COMPLETE,-,243,UP_TO_DATE,UPLOADED,STRICT,91,0,50,0,0,0,2,0,60,1,0,13,0,0,ERROR_ON_MISSING_STUB,linux,3
 boltons,types-boltons,https://github.com/mahmoud/boltons,COMPLETE,-,1359,UP_TO_DATE,UPLOADED,NOT_STRICT,610,335,478,170,8,8,60,16,233,6,68,83,1,3,ERROR_ON_MISSING_STUB,linux,2
 braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,3472,UP_TO_DATE,UPLOADED,NOT_STRICT,291,331,425,138,31,14,7,2,1515,0,117,299,0,0,ERROR_ON_MISSING_STUB,linux,1
 cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,193,UP_TO_DATE,UPLOADED,STRICT,125,0,65,0,0,0,14,1,12,0,0,14,0,0,ERROR_ON_MISSING_STUB,linux,17
@@ -163,7 +163,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,72,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,STDLIB,-,68905,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30147,568,16678,234,13,20,2130,848,9495,309,221,3201,29,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,845
+stdlib,-,https://github.com/python/cpython,STDLIB,-,68906,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30148,568,16679,234,13,20,2130,848,9495,309,221,3201,29,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,845
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30200,OUT_OF_DATE,UPLOADED,NOT_STRICT,5346,36,2928,39,12,23,60,34,5431,5,9,920,1,0,SKIPPED,None,51
