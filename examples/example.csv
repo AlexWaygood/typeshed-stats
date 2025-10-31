@@ -27,7 +27,7 @@ aws-xray-sdk,types-aws-xray-sdk,https://github.com/aws/aws-xray-sdk-python,COMPL
 binaryornot,types-binaryornot,https://github.com/binaryornot/binaryornot,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,3,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 bleach,types-bleach,https://github.com/mozilla/bleach,COMPLETE,-,243,UP_TO_DATE,UPLOADED,STRICT,91,0,50,0,0,0,2,0,60,1,0,13,0,0,ERROR_ON_MISSING_STUB,linux,3
 boltons,types-boltons,https://github.com/mahmoud/boltons,COMPLETE,-,1359,UP_TO_DATE,UPLOADED,NOT_STRICT,610,335,478,170,8,8,60,16,233,6,68,83,1,3,ERROR_ON_MISSING_STUB,linux,2
-braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,3472,UP_TO_DATE,UPLOADED,NOT_STRICT,291,331,425,138,31,14,7,2,1515,0,117,299,0,0,ERROR_ON_MISSING_STUB,linux,1
+braintree,types-braintree,https://github.com/braintree/braintree_python,COMPLETE,-,3557,UP_TO_DATE,UPLOADED,NOT_STRICT,308,314,445,118,37,14,7,2,1520,0,115,299,0,0,ERROR_ON_MISSING_STUB,linux,1
 cachetools,types-cachetools,https://github.com/tkem/cachetools,COMPLETE,-,193,UP_TO_DATE,UPLOADED,STRICT,125,0,65,0,0,0,14,1,12,0,0,14,0,0,ERROR_ON_MISSING_STUB,linux,17
 capturer,types-capturer,https://github.com/xolox/python-capturer,COMPLETE,-,114,UP_TO_DATE,UPLOADED,STRICT,50,0,42,0,0,0,4,1,38,4,0,6,0,0,ERROR_ON_MISSING_STUB,linux,1
 cffi,types-cffi,https://github.com/python-cffi/cffi/,COMPLETE,-,850,OUT_OF_DATE,UPLOADED,NOT_STRICT,336,212,239,86,0,1,33,8,254,0,75,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
@@ -62,7 +62,7 @@ flake8-docstrings,types-flake8-docstrings,https://github.com/pycqa/flake8-docstr
 flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/flake8-rst-docstrings,COMPLETE,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simplify,COMPLETE,-,119,UP_TO_DATE,UPLOADED,STRICT,76,0,73,0,0,0,0,1,14,0,2,7,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,COMPLETE,-,36,UP_TO_DATE,UPLOADED,STRICT,11,0,13,0,0,0,1,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
-fpdf2,types-fpdf2,https://github.com/PyFPDF/fpdf2,COMPLETE,-,3790,OUT_OF_DATE,UPLOADED,NOT_STRICT,1135,705,683,194,13,10,9,4,791,13,173,234,1,1,ERROR_ON_MISSING_STUB,linux,6
+fpdf2,types-fpdf2,https://github.com/PyFPDF/fpdf2,COMPLETE,-,3851,OUT_OF_DATE,UPLOADED,NOT_STRICT,1271,569,729,150,13,9,9,4,791,13,171,236,1,1,ERROR_ON_MISSING_STUB,linux,6
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1588,NOT_ON_PYPI,UPLOADED,NOT_STRICT,515,15,421,26,0,0,2,2,489,0,2,154,0,0,ERROR_ON_MISSING_STUB,linux,52
 geopandas,types-geopandas,https://github.com/geopandas/geopandas,COMPLETE,-,1845,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1023,68,424,6,42,4,34,11,33,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,13
 gevent,types-gevent,https://github.com/gevent/gevent,COMPLETE,-,3241,OUT_OF_DATE,UPLOADED,STRICT,1364,0,839,0,0,0,68,20,371,26,0,211,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,144
@@ -73,12 +73,12 @@ grpcio-channelz,types-grpcio-channelz,https://github.com/grpc/grpc,COMPLETE,-,72
 grpcio-health-checking,types-grpcio-health-checking,https://github.com/grpc/grpc,COMPLETE,-,89,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,15,27,16,4,2,0,0,0,16,0,6,7,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-reflection,types-grpcio-reflection,https://github.com/grpc/grpc,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,34,17,18,4,7,0,0,0,55,0,1,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-status,types-grpcio-status,https://github.com/grpc/grpc,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1,2,2,1,0,1,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
-gunicorn,types-gunicorn,https://github.com/benoitc/gunicorn,COMPLETE,-,1902,UP_TO_DATE,UPLOADED,STRICT,479,0,382,0,0,0,11,11,921,21,0,164,1,0,ERROR_ON_MISSING_STUB,darwin;linux,2
+gunicorn,types-gunicorn,https://github.com/benoitc/gunicorn,COMPLETE,-,1903,UP_TO_DATE,UPLOADED,STRICT,479,0,382,0,0,0,11,11,922,21,0,164,1,0,ERROR_ON_MISSING_STUB,darwin;linux,2
 hdbcli,types-hdbcli,-,COMPLETE,-,147,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,78,4,65,3,0,0,13,10,21,2,1,16,0,0,ERROR_ON_MISSING_STUB,linux,8
 hnswlib,types-hnswlib,https://github.com/nmslib/hnswlib,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,32,0,26,0,0,0,1,0,3,0,1,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,COMPLETE,-,748,UP_TO_DATE,UPLOADED,NOT_STRICT,101,183,150,162,0,4,7,1,243,0,103,41,0,4,ERROR_ON_MISSING_STUB,linux,0
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,243,UP_TO_DATE,UPLOADED,NOT_STRICT,39,116,54,7,1,0,0,0,95,0,35,26,0,0,ERROR_ON_MISSING_STUB,linux,1
-hvac,types-hvac,https://github.com/hvac/hvac,COMPLETE,-,1826,UP_TO_DATE,UPLOADED,NOT_STRICT,510,1222,82,491,2,0,23,19,94,0,15,75,1,0,ERROR_ON_MISSING_STUB,linux,0
+hvac,types-hvac,https://github.com/hvac/hvac,COMPLETE,-,1826,OUT_OF_DATE,UPLOADED,NOT_STRICT,510,1222,82,491,2,0,23,19,94,0,15,75,1,0,ERROR_ON_MISSING_STUB,linux,0
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,346,OUT_OF_DATE,UPLOADED,STRICT,168,0,70,0,0,0,0,2,202,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,1335,UP_TO_DATE,UPLOADED,NOT_STRICT,354,21,418,8,2,0,9,6,152,1,2,65,1,2,ERROR_ON_MISSING_STUB,linux,8
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,COMPLETE,-,124,UP_TO_DATE,UPLOADED,STRICT,60,0,59,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,20
@@ -163,7 +163,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,72,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,STDLIB,-,68918,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30149,568,16685,234,13,20,2130,848,9495,309,221,3201,29,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,847
+stdlib,-,https://github.com/python/cpython,STDLIB,-,68925,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30150,568,16687,234,13,20,2130,848,9495,309,221,3202,29,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,847
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30200,OUT_OF_DATE,UPLOADED,NOT_STRICT,5346,36,2928,39,12,23,60,34,5431,5,9,920,1,0,SKIPPED,None,51
@@ -189,6 +189,6 @@ xdgenvpy,types-xdgenvpy,https://gitlab.com/deliberist-group/xdgenvpy,COMPLETE,-,
 xlrd,types-xlrd,https://github.com/python-excel/xlrd,COMPLETE,-,778,UP_TO_DATE,UPLOADED,STRICT,298,0,142,0,0,0,6,0,426,0,0,33,0,0,ERROR_ON_MISSING_STUB,linux,0
 xmldiff,types-xmldiff,https://github.com/Shoobx/xmldiff,COMPLETE,-,297,UP_TO_DATE,UPLOADED,NOT_STRICT,36,167,51,57,0,10,6,0,90,0,43,24,0,0,ERROR_ON_MISSING_STUB,linux,0
 xmltodict,types-xmltodict,https://github.com/martinblech/xmltodict,COMPLETE,-,118,UP_TO_DATE,UPLOADED,STRICT,76,0,10,0,0,0,5,1,19,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-yt-dlp,types-yt-dlp,https://github.com/yt-dlp/yt-dlp,COMPLETE,-,3521,OUT_OF_DATE,UPLOADED,STRICT,2068,0,924,0,0,0,280,131,484,29,0,184,1,0,ERROR_ON_MISSING_STUB,linux,19
+yt-dlp,types-yt-dlp,https://github.com/yt-dlp/yt-dlp,COMPLETE,-,3457,UP_TO_DATE,UPLOADED,STRICT,2027,0,916,0,0,0,280,131,481,29,0,183,1,0,ERROR_ON_MISSING_STUB,linux,19
 zstd,types-zstd,https://github.com/sergey-dryabzhinsky/python-zstd,COMPLETE,-,31,UP_TO_DATE,UPLOADED,STRICT,5,0,19,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 zxcvbn,types-zxcvbn,https://github.com/dwolfhub/zxcvbn-python,COMPLETE,-,173,UP_TO_DATE,UPLOADED,STRICT,64,0,39,0,0,0,0,0,76,1,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
