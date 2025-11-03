@@ -5763,7 +5763,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,503 (excluding blank lines)
+7,529 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5788,12 +5788,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,132
+    - Annotated parameters: 3,134
     - Unannotated parameters: 1,239
     - Explicit `Any` parameters: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 205
 - Returns:
-    - Annotated returns: 1,044
+    - Annotated returns: 1,047
     - Unannotated returns: 548
     - Explicit `Any` returns: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 258
@@ -9366,7 +9366,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,928 (excluding blank lines)
+68,924 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9401,7 +9401,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 847
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
 - Variables:
-    - Annotated variables: 9,497
+    - Annotated variables: 9,496
     - Explicit `Any` variables: 310
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
