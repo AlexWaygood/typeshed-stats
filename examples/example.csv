@@ -53,7 +53,7 @@ dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/
 docutils,types-docutils,https://sourceforge.net/p/docutils/code,COMPLETE,-,5655,UP_TO_DATE,UPLOADED,NOT_STRICT,2440,708,2109,323,16,7,39,219,1507,23,234,499,1,0,ERROR_ON_MISSING_STUB,linux,18
 editdistance,types-editdistance,https://github.com/roy-ht/editdistance,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,10,0,4,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 entrypoints,types-entrypoints,https://github.com/takluyver/entrypoints,COMPLETE,-,41,UP_TO_DATE,UPLOADED,STRICT,23,0,12,0,0,0,0,1,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
-fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,COMPLETE,-,537,UP_TO_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,40
+fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,COMPLETE,-,537,OUT_OF_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,40
 first,types-first,https://github.com/hynek/first,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,11,0,5,0,0,0,3,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8,types-flake8,https://github.com/pycqa/flake8,COMPLETE,-,574,UP_TO_DATE,UPLOADED,STRICT,223,0,165,0,0,0,35,8,185,1,90,39,0,0,ERROR_ON_MISSING_STUB,linux,1
 flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,COMPLETE,-,246,UP_TO_DATE,UPLOADED,STRICT,139,0,124,0,0,2,1,3,58,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,31
