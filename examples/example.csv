@@ -50,7 +50,7 @@ django-filter,types-django-filter,https://github.com/carltongibson/django-filter
 django-import-export,types-django-import-export,https://github.com/django-import-export/django-import-export,COMPLETE,-,687,UP_TO_DATE,UPLOADED,STRICT,367,0,250,0,0,0,128,35,154,10,0,70,0,0,SKIPPED,None,0
 docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,2430,UP_TO_DATE,UPLOADED,NOT_STRICT,1179,310,411,161,46,14,32,24,220,2,4,137,2,24,ERROR_ON_MISSING_STUB,linux,9
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,COMPLETE,-,116,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
-docutils,types-docutils,https://sourceforge.net/p/docutils/code,COMPLETE,-,5655,UP_TO_DATE,UPLOADED,NOT_STRICT,2440,708,2109,323,16,7,39,219,1507,23,234,499,1,0,ERROR_ON_MISSING_STUB,linux,18
+docutils,types-docutils,https://sourceforge.net/p/docutils/code,COMPLETE,-,5655,OUT_OF_DATE,UPLOADED,NOT_STRICT,2440,708,2109,323,16,7,39,219,1507,23,234,499,1,0,ERROR_ON_MISSING_STUB,linux,18
 editdistance,types-editdistance,https://github.com/roy-ht/editdistance,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,10,0,4,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 entrypoints,types-entrypoints,https://github.com/takluyver/entrypoints,COMPLETE,-,41,UP_TO_DATE,UPLOADED,STRICT,23,0,12,0,0,0,0,1,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,COMPLETE,-,537,UP_TO_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,40
@@ -80,7 +80,7 @@ html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,COMPLETE,-,7
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,COMPLETE,-,243,UP_TO_DATE,UPLOADED,NOT_STRICT,39,116,54,7,1,0,0,0,95,0,35,26,0,0,ERROR_ON_MISSING_STUB,linux,1
 hvac,types-hvac,https://github.com/hvac/hvac,COMPLETE,-,1827,UP_TO_DATE,UPLOADED,NOT_STRICT,511,1222,82,491,2,0,23,19,94,0,15,75,1,0,ERROR_ON_MISSING_STUB,linux,0
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,COMPLETE,-,346,OUT_OF_DATE,UPLOADED,STRICT,168,0,70,0,0,0,0,2,202,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
-icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,1335,OUT_OF_DATE,UPLOADED,NOT_STRICT,354,21,418,8,2,0,9,6,152,1,2,65,1,2,ERROR_ON_MISSING_STUB,linux,8
+icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,1335,UP_TO_DATE,UPLOADED,NOT_STRICT,354,21,418,8,2,0,9,6,152,1,2,65,1,2,ERROR_ON_MISSING_STUB,linux,8
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,COMPLETE,-,124,UP_TO_DATE,UPLOADED,STRICT,60,0,59,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,20
 jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,COMPLETE,-,214,UP_TO_DATE,UPLOADED,STRICT,133,0,74,0,0,0,30,23,49,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,0
 jsonnet,types-jsonnet,https://github.com/google/jsonnet,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,25,0,2,0,0,0,0,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
