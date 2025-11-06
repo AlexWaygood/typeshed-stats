@@ -3086,9 +3086,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 537 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5763,7 +5763,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,529 (excluding blank lines)
+7,533 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5788,15 +5788,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,134
-    - Unannotated parameters: 1,239
+    - Annotated parameters: 3,138
+    - Unannotated parameters: 1,235
     - Explicit `Any` parameters: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 205
 - Returns:
-    - Annotated returns: 1,047
-    - Unannotated returns: 548
+    - Annotated returns: 1,050
+    - Unannotated returns: 545
     - Explicit `Any` returns: 19
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 258
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 257
 - Variables:
     - Annotated variables: 381
     - Explicit `Any` variables: 5
@@ -8505,9 +8505,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 910 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -9391,17 +9391,17 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,154
+    - Annotated parameters: 30,156
     - Unannotated parameters: 568
     - Explicit `Any` parameters: 2,130
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
 - Returns:
-    - Annotated returns: 16,687
+    - Annotated returns: 16,686
     - Unannotated returns: 234
     - Explicit `Any` returns: 847
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
 - Variables:
-    - Annotated variables: 9,496
+    - Annotated variables: 9,498
     - Explicit `Any` variables: 310
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
