@@ -2276,6 +2276,63 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `colorful`
+
+### Upstream repo URL
+
+[https://github.com/timofurrer/colorful](https://github.com/timofurrer/colorful)
+
+### Stub distribution name
+
+`types-colorful`
+
+### Number of lines
+
+128 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `colorful` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `colorful`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 73
+    - Unannotated parameters: 1
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 49
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 40
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 6
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `console-menu`
 
 ### Upstream repo URL
@@ -8332,11 +8389,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-172 (excluding blank lines)
+182 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8357,7 +8414,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `qrbill`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 96
+    - Annotated parameters: 99
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -8367,7 +8424,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 33
+    - Annotated variables: 40
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -10324,6 +10381,63 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 4
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
+## Info on typeshed's stubs for `webencodings`
+
+### Upstream repo URL
+
+[https://github.com/gsnedders/python-webencodings](https://github.com/gsnedders/python-webencodings)
+
+### Stub distribution name
+
+`types-webencodings`
+
+### Number of lines
+
+48 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 1 unique allowlist entry for `webencodings` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `webencodings`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 32
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 16
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 12
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 8
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
