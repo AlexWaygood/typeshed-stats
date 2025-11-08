@@ -5706,7 +5706,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-709 (excluding blank lines)
+712 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5731,10 +5731,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `netaddr`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 288
-    - Unannotated parameters: 4
-    - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
+    - Annotated parameters: 291
+    - Unannotated parameters: 1
+    - Explicit `Any` parameters: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 308
     - Unannotated returns: 0
@@ -5742,8 +5742,8 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 101
-    - Explicit `Any` variables: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
+    - Explicit `Any` variables: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 43
     - Class definitions with `Any`: 0
@@ -7876,7 +7876,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-726 (excluding blank lines)
+730 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7901,23 +7901,23 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `python-dateutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 254
-    - Unannotated parameters: 54
+    - Annotated parameters: 301
+    - Unannotated parameters: 5
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 162
-    - Unannotated returns: 30
-    - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
+    - Annotated returns: 182
+    - Unannotated returns: 9
+    - Explicit `Any` returns: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 150
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 40
     - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 1
+    - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
 
@@ -8243,8 +8243,8 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `pytz`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 69
-    - Unannotated parameters: 2
+    - Annotated parameters: 71
+    - Unannotated parameters: 0
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -9423,7 +9423,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,927 (excluding blank lines)
+68,929 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9448,12 +9448,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,156
+    - Annotated parameters: 30,157
     - Unannotated parameters: 568
     - Explicit `Any` parameters: 2,130
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
 - Returns:
-    - Annotated returns: 16,686
+    - Annotated returns: 16,687
     - Unannotated returns: 234
     - Explicit `Any` returns: 847
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
