@@ -119,7 +119,7 @@ polib,types-polib,https://github.com/izimobil/polib,COMPLETE,-,158,UP_TO_DATE,UP
 pony,types-pony,https://github.com/ponyorm/pony,COMPLETE,-,3596,UP_TO_DATE,UPLOADED,NOT_STRICT,505,1671,675,868,2,9,6,2,994,3,494,394,0,4,ERROR_ON_MISSING_STUB,linux,9
 portpicker,types-portpicker,https://github.com/google/python_portpicker,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,10,0,6,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 31.1 on [protobuf v32.1](https://github.com/protocolbuffers/protobuf/releases/tag/v32.1) (python `protobuf==6.32.1`).,6162,OUT_OF_DATE,UPLOADED,NOT_STRICT,798,376,579,155,0,0,17,4,1107,122,88,214,0,0,MISSING_STUBS_IGNORED,linux,11
-psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1634,OUT_OF_DATE,UPLOADED,NOT_STRICT,113,326,202,350,9,0,0,47,598,177,95,91,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,13
+psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1631,OUT_OF_DATE,UPLOADED,NOT_STRICT,113,326,157,395,9,1,0,1,598,0,272,91,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,13
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,COMPLETE,-,1759,UP_TO_DATE,UPLOADED,NOT_STRICT,311,176,316,73,1,6,14,21,521,60,3,332,2,0,ERROR_ON_MISSING_STUB,linux,2
 pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,8,OBSOLETE,UPLOADED,STRICT,8,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1484,UP_TO_DATE,UPLOADED,NOT_STRICT,197,535,112,422,33,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -173,7 +173,8 @@ toml,types-toml,https://github.com/uiri/toml,COMPLETE,-,136,UP_TO_DATE,UPLOADED,
 toposort,types-toposort,https://gitlab.com/ericvsmith/toposort,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,1,0,1,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 tqdm,types-tqdm,https://github.com/tqdm/tqdm,COMPLETE,-,1375,UP_TO_DATE,UPLOADED,NOT_STRICT,809,153,167,27,31,7,1,1,105,0,76,36,0,0,ERROR_ON_MISSING_STUB,linux,2
 translationstring,types-translationstring,https://github.com/Pylons/translationstring,COMPLETE,-,80,UP_TO_DATE,UPLOADED,STRICT,62,0,18,0,0,0,6,1,4,1,0,7,0,0,ERROR_ON_MISSING_STUB,linux,4
-ttkthemes,types-ttkthemes,https://github.com/RedFantom/ttkthemes,COMPLETE,-,127,OUT_OF_DATE,UPLOADED,STRICT,79,0,23,0,0,0,3,4,5,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
+ttkthemes,types-ttkthemes,https://github.com/RedFantom/ttkthemes,COMPLETE,-,126,UP_TO_DATE,UPLOADED,STRICT,79,0,23,0,0,0,3,4,5,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,4
+tzdata,types-tzdata,https://github.com/python/tzdata,COMPLETE,-,3,UP_TO_DATE,UPLOADED,STRICT,0,0,0,0,0,0,0,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 uWSGI,types-uWSGI,https://github.com/unbit/uwsgi,COMPLETE,"Type hints for uWSGI's [Python API](https://uwsgi-docs.readthedocs.io/en/latest/PythonModule.html). Note that this API is available only when running Python code inside a uWSGI process and some parts of the API are only present when corresponding configuration options have been enabled.
 ",382,UP_TO_DATE,UPLOADED,STRICT,338,0,216,0,0,0,15,1,61,5,0,26,0,0,ERROR_ON_MISSING_STUB,darwin;linux,9
 ujson,types-ujson,https://github.com/ultrajson/ultrajson,COMPLETE,-,49,OBSOLETE,UPLOADED,STRICT,40,0,6,0,0,0,6,3,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
