@@ -1376,7 +1376,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-929 (excluding blank lines)
+975 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1392,7 +1392,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 30 unique allowlist entries for `aws-xray-sdk` when running stubtest in CI.
+Typeshed currently has 31 unique allowlist entries for `aws-xray-sdk` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1401,21 +1401,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `aws-xray-sdk`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 222
-    - Unannotated parameters: 205
-    - Explicit `Any` parameters: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 9
+    - Annotated parameters: 258
+    - Unannotated parameters: 169
+    - Explicit `Any` parameters: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 15
 - Returns:
-    - Annotated returns: 268
-    - Unannotated returns: 68
+    - Annotated returns: 295
+    - Unannotated returns: 36
     - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
-    - Annotated variables: 183
-    - Explicit `Any` variables: 2
+    - Annotated variables: 191
+    - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 8
 - Class definitions:
-    - Total class definitions: 67
+    - Total class definitions: 69
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
