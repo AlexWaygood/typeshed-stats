@@ -3718,7 +3718,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 196,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4928,7 +4928,7 @@
       ],
       "allowlist_length": 4
     },
-    "pyright_setting": "STRICT_ON_SOME_FILES",
+    "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 71,
       "unannotated_parameters": 0,
@@ -6554,7 +6554,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 3457,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
