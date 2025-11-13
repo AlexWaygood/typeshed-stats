@@ -6219,11 +6219,11 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Number of lines
 
-196 (excluding blank lines)
+197 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6235,7 +6235,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `parsimonious` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `parsimonious` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6258,7 +6258,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
-    - Total class definitions: 27
+    - Total class definitions: 28
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
