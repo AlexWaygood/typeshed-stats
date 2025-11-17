@@ -1205,7 +1205,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,911 (excluding blank lines)
+1,968 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1230,19 +1230,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `antlr4-python3-runtime`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 768
-    - Unannotated parameters: 231
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 18
+    - Annotated parameters: 782
+    - Unannotated parameters: 217
+    - Explicit `Any` parameters: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 208
-    - Unannotated returns: 485
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
+    - Annotated returns: 355
+    - Unannotated returns: 338
+    - Explicit `Any` returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 395
+    - Annotated variables: 424
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 269
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 219
 - Class definitions:
     - Total class definitions: 142
     - Class definitions with `Any`: 0
@@ -8733,9 +8733,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 7,963 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -9537,7 +9537,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,091 (excluding blank lines)
+69,090 (excluding blank lines)
 
 ### Package status: *stdlib*
 
