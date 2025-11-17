@@ -4509,7 +4509,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-796 (excluding blank lines)
+850 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4525,7 +4525,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 0 allowlist entries for `html5lib` when running stubtest in CI.
+Typeshed currently has 5 unique allowlist entries for `html5lib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4534,19 +4534,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `html5lib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 158
-    - Unannotated parameters: 134
+    - Annotated parameters: 204
+    - Unannotated parameters: 128
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
 - Returns:
-    - Annotated returns: 248
-    - Unannotated returns: 63
+    - Annotated returns: 252
+    - Unannotated returns: 60
     - Explicit `Any` returns: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
-    - Annotated variables: 251
+    - Annotated variables: 246
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 70
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 68
 - Class definitions:
     - Total class definitions: 42
     - Class definitions with `Any`: 0
