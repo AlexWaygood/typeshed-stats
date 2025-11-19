@@ -9537,7 +9537,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,100 (excluding blank lines)
+69,102 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9572,7 +9572,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 846
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
 - Variables:
-    - Annotated variables: 9,513
+    - Annotated variables: 9,515
     - Explicit `Any` variables: 310
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
