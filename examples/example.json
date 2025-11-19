@@ -4327,40 +4327,6 @@
     }
   },
   {
-    "package_name": "pycountry",
-    "stub_distribution_name": "types-pycountry",
-    "upstream_url": "https://github.com/pycountry/pycountry",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 90,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "ci_platforms": [
-        "linux"
-      ],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 22,
-      "unannotated_parameters": 0,
-      "annotated_returns": 24,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 37,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 12,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "pycurl",
     "stub_distribution_name": "types-pycurl",
     "upstream_url": "https://github.com/pycurl/pycurl",
