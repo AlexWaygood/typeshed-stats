@@ -13,7 +13,7 @@ PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,COMPLETE,-,1218,UP_TO_D
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,COMPLETE,-,193,UP_TO_DATE,UPLOADED,STRICT,102,0,21,0,0,0,0,0,17,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
 PySocks,types-PySocks,https://github.com/Anorov/PySocks,COMPLETE,-,213,UP_TO_DATE,UPLOADED,STRICT,113,0,35,0,0,0,1,0,26,0,2,12,0,0,ERROR_ON_MISSING_STUB,linux,2
 PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,COMPLETE,-,1318,UP_TO_DATE,UPLOADED,NOT_STRICT,520,278,222,172,4,0,46,12,220,160,2,91,0,0,ERROR_ON_MISSING_STUB,linux,4
-Pygments,types-Pygments,https://github.com/pygments/pygments,PARTIAL,-,838,UP_TO_DATE,UPLOADED,NOT_STRICT,100,173,107,77,0,3,7,2,376,169,24,94,0,1,MISSING_STUBS_IGNORED,linux,4
+Pygments,types-Pygments,https://github.com/pygments/pygments,PARTIAL,-,849,UP_TO_DATE,UPLOADED,NOT_STRICT,94,179,107,77,0,5,1,0,376,0,193,94,0,1,MISSING_STUBS_IGNORED,linux,4
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,COMPLETE,-,56,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,2
 TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,COMPLETE,-,7,UP_TO_DATE,UPLOADED,STRICT,20,0,6,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,6
@@ -68,7 +68,7 @@ fpdf2,types-fpdf2,https://github.com/PyFPDF/fpdf2,COMPLETE,-,3851,OUT_OF_DATE,UP
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1588,NOT_ON_PYPI,UPLOADED,NOT_STRICT,515,15,421,26,0,0,2,2,489,0,2,154,0,0,ERROR_ON_MISSING_STUB,linux,52
 geopandas,types-geopandas,https://github.com/geopandas/geopandas,COMPLETE,-,1845,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1023,68,424,6,42,4,34,11,33,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,13
 gevent,types-gevent,https://github.com/gevent/gevent,COMPLETE,-,3244,UP_TO_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,211,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,145
-google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1536,UP_TO_DATE,UPLOADED,NOT_STRICT,486,368,236,203,123,0,7,0,194,132,2,143,0,0,MISSING_STUBS_IGNORED,linux,3
+google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1531,UP_TO_DATE,UPLOADED,NOT_STRICT,484,370,236,203,123,0,5,0,194,0,134,143,0,0,MISSING_STUBS_IGNORED,linux,3
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,COMPLETE,-,86,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
 grpcio,types-grpcio,https://github.com/grpc/grpc,PARTIAL,-,926,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,310,4,208,1,0,1,5,2,29,0,0,68,0,0,MISSING_STUBS_IGNORED,linux,3
 grpcio-channelz,types-grpcio-channelz,https://github.com/grpc/grpc,COMPLETE,-,724,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,156,94,55,15,54,0,0,0,324,0,21,44,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -89,7 +89,7 @@ jsonnet,types-jsonnet,https://github.com/google/jsonnet,COMPLETE,-,33,UP_TO_DATE
 jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,COMPLETE,-,484,UP_TO_DATE,UPLOADED,NOT_STRICT,173,257,175,11,9,10,9,2,58,3,14,26,0,0,ERROR_ON_MISSING_STUB,linux,45
 jwcrypto,types-jwcrypto,https://github.com/latchset/jwcrypto,COMPLETE,-,472,UP_TO_DATE,UPLOADED,NOT_STRICT,151,31,133,8,0,1,6,11,55,2,3,40,1,0,ERROR_ON_MISSING_STUB,linux,4
 keyboard,types-keyboard,https://github.com/boppreh/keyboard,COMPLETE,-,246,UP_TO_DATE,UPLOADED,STRICT,130,0,76,0,0,0,0,0,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,7
-ldap3,types-ldap3,https://github.com/cannatag/ldap3,COMPLETE,-,2492,UP_TO_DATE,UPLOADED,NOT_STRICT,276,936,219,421,0,0,0,0,937,322,57,316,0,0,ERROR_ON_MISSING_STUB,linux,1
+ldap3,types-ldap3,https://github.com/cannatag/ldap3,COMPLETE,-,2494,UP_TO_DATE,UPLOADED,NOT_STRICT,276,936,219,421,0,0,0,0,937,0,375,316,0,0,ERROR_ON_MISSING_STUB,linux,1
 libsass,types-libsass,https://github.com/sass/libsass-python,COMPLETE,-,250,UP_TO_DATE,UPLOADED,STRICT,109,0,41,0,0,0,2,0,36,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,2
 lunardate,types-lunardate,https://github.com/lidaobing/python-lunardate,COMPLETE,-,34,UP_TO_DATE,UPLOADED,STRICT,20,0,17,0,0,0,0,0,7,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 lupa,types-lupa,https://github.com/scoder/lupa,COMPLETE,-,522,UP_TO_DATE,UPLOADED,STRICT,170,0,138,0,0,0,30,0,61,12,0,46,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -151,7 +151,7 @@ qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,COMPLETE,-,182,UP_T
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,651,UP_TO_DATE,UPLOADED,STRICT,282,0,152,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,10
 ratelimit,types-ratelimit,https://github.com/tomasbasham/ratelimit,COMPLETE,-,19,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,1,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,910,UP_TO_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,3,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,12
-reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,COMPLETE,-,7963,OUT_OF_DATE,UPLOADED,NOT_STRICT,1781,2579,1587,980,10,8,26,12,2764,6,1179,583,0,3,ERROR_ON_MISSING_STUB,linux,52
+reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,COMPLETE,-,7964,UP_TO_DATE,UPLOADED,NOT_STRICT,1794,2567,1597,971,10,8,26,12,2764,6,1172,583,0,3,ERROR_ON_MISSING_STUB,linux,52
 requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",1043,UP_TO_DATE,UPLOADED,NOT_STRICT,382,132,135,65,0,4,8,1,126,15,20,53,0,0,ERROR_ON_MISSING_STUB,linux,4
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,272,UP_TO_DATE,UPLOADED,NOT_STRICT,68,69,45,4,2,3,2,0,25,1,7,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3

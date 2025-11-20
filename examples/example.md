@@ -808,7 +808,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-838 (excluding blank lines)
+849 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -833,19 +833,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Pygments`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 100
-    - Unannotated parameters: 173
-    - Explicit `Any` parameters: 7
+    - Annotated parameters: 94
+    - Unannotated parameters: 179
+    - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 107
     - Unannotated returns: 77
-    - Explicit `Any` returns: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
     - Annotated variables: 376
-    - Explicit `Any` variables: 169
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 24
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 193
 - Class definitions:
     - Total class definitions: 94
     - Class definitions with `Any`: 0
@@ -3943,7 +3943,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,536 (excluding blank lines)
+1,531 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3968,9 +3968,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `google-cloud-ndb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 486
-    - Unannotated parameters: 368
-    - Explicit `Any` parameters: 7
+    - Annotated parameters: 484
+    - Unannotated parameters: 370
+    - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 123
 - Returns:
     - Annotated returns: 236
@@ -3979,8 +3979,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 194
-    - Explicit `Any` variables: 132
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 134
 - Class definitions:
     - Total class definitions: 143
     - Class definitions with `Any`: 0
@@ -5136,7 +5136,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-2,492 (excluding blank lines)
+2,494 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5172,8 +5172,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 937
-    - Explicit `Any` variables: 322
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 57
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 375
 - Class definitions:
     - Total class definitions: 316
     - Class definitions with `Any`: 0
@@ -8674,11 +8674,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,963 (excluding blank lines)
+7,964 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8699,19 +8699,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `reportlab`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,781
-    - Unannotated parameters: 2,579
+    - Annotated parameters: 1,794
+    - Unannotated parameters: 2,567
     - Explicit `Any` parameters: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 10
 - Returns:
-    - Annotated returns: 1,587
-    - Unannotated returns: 980
+    - Annotated returns: 1,597
+    - Unannotated returns: 971
     - Explicit `Any` returns: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
     - Annotated variables: 2,764
     - Explicit `Any` variables: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,179
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,172
 - Class definitions:
     - Total class definitions: 583
     - Class definitions with `Any`: 0
