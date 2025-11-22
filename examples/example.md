@@ -6911,7 +6911,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,704 (excluding blank lines)
+1,707 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6927,7 +6927,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 13 unique allowlist entries for `psutil` when running stubtest in CI.
+Typeshed currently has 15 unique allowlist entries for `psutil` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6936,19 +6936,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `psutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 233
-    - Unannotated parameters: 95
+    - Annotated parameters: 238
+    - Unannotated parameters: 93
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 9
 - Returns:
-    - Annotated returns: 352
-    - Unannotated returns: 204
+    - Annotated returns: 357
+    - Unannotated returns: 201
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
 - Variables:
-    - Annotated variables: 592
+    - Annotated variables: 591
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 197
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 193
 - Class definitions:
     - Total class definitions: 94
     - Class definitions with `Any`: 3

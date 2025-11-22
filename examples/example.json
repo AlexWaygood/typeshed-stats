@@ -4125,7 +4125,7 @@
     "upstream_url": "https://github.com/giampaolo/psutil",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1704,
+    "number_of_lines": 1707,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4135,21 +4135,21 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 13
+      "allowlist_length": 15
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 233,
-      "unannotated_parameters": 95,
-      "annotated_returns": 352,
-      "unannotated_returns": 204,
+      "annotated_parameters": 238,
+      "unannotated_parameters": 93,
+      "annotated_returns": 357,
+      "unannotated_returns": 201,
       "explicit_Incomplete_parameters": 9,
-      "explicit_Incomplete_returns": 2,
+      "explicit_Incomplete_returns": 3,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 1,
-      "annotated_variables": 592,
+      "annotated_variables": 591,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 197,
+      "explicit_Incomplete_variables": 193,
       "classdefs": 94,
       "classdefs_with_Any": 3,
       "classdefs_with_Incomplete": 0
