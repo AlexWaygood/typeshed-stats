@@ -49,7 +49,7 @@ defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,COMPLETE,-,352,U
 dirhash,types-dirhash,https://github.com/andhus/dirhash-python,COMPLETE,-,88,UP_TO_DATE,UPLOADED,STRICT,39,0,13,0,0,0,0,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 django-filter,types-django-filter,https://github.com/carltongibson/django-filter/,COMPLETE,-,803,UP_TO_DATE,UPLOADED,STRICT,298,0,128,0,0,0,121,42,113,25,0,73,3,0,ERROR_ON_MISSING_STUB,linux,12
 django-import-export,types-django-import-export,https://github.com/django-import-export/django-import-export,COMPLETE,-,687,UP_TO_DATE,UPLOADED,STRICT,367,0,250,0,0,0,128,35,154,10,0,70,0,0,SKIPPED,None,0
-docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,2430,UP_TO_DATE,UPLOADED,NOT_STRICT,1179,310,411,161,46,14,32,24,220,2,4,137,2,24,ERROR_ON_MISSING_STUB,linux,9
+docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,2442,UP_TO_DATE,UPLOADED,NOT_STRICT,1185,312,420,154,46,13,33,30,220,2,4,137,2,24,ERROR_ON_MISSING_STUB,linux,9
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,COMPLETE,-,116,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 docutils,types-docutils,https://sourceforge.net/p/docutils/code,COMPLETE,-,5665,UP_TO_DATE,UPLOADED,NOT_STRICT,2440,708,2109,323,16,7,39,219,1508,23,234,499,1,0,ERROR_ON_MISSING_STUB,linux,18
 editdistance,types-editdistance,https://github.com/roy-ht/editdistance,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,10,0,4,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -120,7 +120,7 @@ polib,types-polib,https://github.com/izimobil/polib,COMPLETE,-,158,UP_TO_DATE,UP
 pony,types-pony,https://github.com/ponyorm/pony,COMPLETE,-,3596,UP_TO_DATE,UPLOADED,NOT_STRICT,505,1671,675,868,2,9,6,2,994,3,494,394,0,4,ERROR_ON_MISSING_STUB,linux,9
 portpicker,types-portpicker,https://github.com/google/python_portpicker,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,10,0,6,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 31.1 on [protobuf v32.1](https://github.com/protocolbuffers/protobuf/releases/tag/v32.1) (python `protobuf==6.32.1`).,6162,OUT_OF_DATE,UPLOADED,NOT_STRICT,798,376,579,155,0,0,17,4,1107,122,88,214,0,0,MISSING_STUBS_IGNORED,linux,11
-psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1707,OUT_OF_DATE,UPLOADED,NOT_STRICT,238,93,357,201,9,3,0,1,591,0,193,94,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,15
+psutil,types-psutil,https://github.com/giampaolo/psutil,COMPLETE,-,1886,UP_TO_DATE,UPLOADED,NOT_STRICT,308,150,389,277,9,6,0,1,657,0,260,94,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,17
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,COMPLETE,-,1759,UP_TO_DATE,UPLOADED,NOT_STRICT,311,176,316,73,1,6,14,21,521,60,3,332,2,0,ERROR_ON_MISSING_STUB,linux,2
 pyRFC3339,types-pyRFC3339,https://github.com/kurtraschke/pyRFC3339,COMPLETE,-,8,OBSOLETE,UPLOADED,STRICT,8,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,COMPLETE,-,1484,UP_TO_DATE,UPLOADED,NOT_STRICT,197,535,112,422,33,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -129,7 +129,7 @@ pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,COMPLETE,-,171
 pycurl,types-pycurl,https://github.com/pycurl/pycurl,COMPLETE,-,731,UP_TO_DATE,UPLOADED,NOT_STRICT,17,5,28,4,0,4,0,2,683,0,0,4,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,0
 pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,COMPLETE,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,COMPLETE,-,472,UP_TO_DATE,UPLOADED,STRICT,344,0,216,0,0,0,0,2,77,1,0,77,0,0,ERROR_ON_MISSING_STUB,linux,27
-pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,COMPLETE,-,771,UP_TO_DATE,UPLOADED,STRICT,305,0,167,0,0,0,2,2,225,1,0,31,0,0,ERROR_ON_MISSING_STUB,linux,49
+pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,COMPLETE,-,771,OUT_OF_DATE,UPLOADED,STRICT,305,0,167,0,0,0,2,2,225,1,0,31,0,0,ERROR_ON_MISSING_STUB,linux,49
 pyjks,types-pyjks,https://github.com/kurtbrose/pyjks,COMPLETE,-,377,UP_TO_DATE,UPLOADED,STRICT,132,0,59,0,0,0,0,0,73,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,38
 pyluach,types-pyluach,https://github.com/simlist/pyluach,COMPLETE,-,271,UP_TO_DATE,UPLOADED,STRICT,163,0,127,0,0,0,0,0,35,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,1
 pynput,types-pynput,https://github.com/moses-palmer/pynput,COMPLETE,-,333,UP_TO_DATE,UPLOADED,STRICT,87,0,71,0,0,0,11,0,63,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,12
@@ -166,7 +166,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,72,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,STDLIB,-,69104,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30173,568,16705,234,11,20,2129,846,9515,310,221,3210,30,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,848
+stdlib,-,https://github.com/python/cpython,STDLIB,-,69115,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30173,568,16708,234,11,20,2129,846,9516,309,221,3210,30,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,846
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30200,OUT_OF_DATE,UPLOADED,NOT_STRICT,5346,36,2928,39,12,23,60,34,5431,5,9,920,1,0,SKIPPED,None,51
