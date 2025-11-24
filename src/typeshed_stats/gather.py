@@ -997,7 +997,7 @@ def _get_pyright_excludelist(
     excludelist_as_paths = [Path(typeshed_dir, item) for item in excludelist]
     return _ExcludeList(
         PathSpec.from_lines(
-            GitWildMatchPattern,
+            GitWildMatchPattern,  # ty: ignore[invalid-argument-type]
             [_normalized_path(item) for item in excludelist_as_paths],
         ),
         excludelist_as_paths,
