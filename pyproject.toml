@@ -65,6 +65,7 @@ dev = [
     "pytest-mock==3.14.1",
     "pytest-subtests==0.14.2",
     "mypy==1.16.1",
+    "ty==0.0.1a27",
     "types-beautifulsoup4==4.12.0.20250516",
     "types-Markdown==3.8.0.20250415",
 ]
@@ -148,6 +149,10 @@ split-on-trailing-comma = false
 
 [tool.codespell]
 ignore-words-list = ["corus"]
+
+[tool.ty.rules]
+possibly-unresolved-reference = "error"
+division-by-zero = "error"
 
 [tool.mypy]
 files = ['website_macros.py', 'src', 'tests', 'scripts']
