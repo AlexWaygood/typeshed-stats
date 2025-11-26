@@ -5,6 +5,7 @@
   separateMajorMinor: false,
   suppressNotifications: ["prEditedNotification"],
   semanticCommits: "disabled",
+  enabledManagers: ["github-actions", "pre-commit", "pep621"],
   "pre-commit": {
     enabled: true,
   },
