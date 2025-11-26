@@ -23,7 +23,6 @@ from packaging.version import Version
 from pytest_mock import MockerFixture
 from pytest_subtests import SubTests
 
-import typeshed_stats
 import typeshed_stats.gather
 from typeshed_stats.gather import (
     AnnotationStats,
