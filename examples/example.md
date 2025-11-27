@@ -6911,7 +6911,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-1,901 (excluding blank lines)
+1,923 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6936,21 +6936,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `psutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 315
-    - Unannotated parameters: 145
+    - Annotated parameters: 322
+    - Unannotated parameters: 140
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
 - Returns:
-    - Annotated returns: 445
-    - Unannotated returns: 222
+    - Annotated returns: 503
+    - Unannotated returns: 165
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
     - Annotated variables: 652
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 219
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 171
 - Class definitions:
-    - Total class definitions: 94
+    - Total class definitions: 95
     - Class definitions with `Any`: 3
     - Class definitions marked as at least partially `Incomplete`: 0
 
