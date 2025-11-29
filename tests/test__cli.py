@@ -66,7 +66,7 @@ def assert_returncode_0(args: list[str]) -> None:
     """Assert the return code is 0 when running `main` with the specified args."""
     with pytest.raises(SystemExit) as exc_info:
         main(args)
-    code = exc_info.value.code  # ty: ignore[unresolved-attribute]
+    code = exc_info.value.code
     assert code == 0
 
 
@@ -79,7 +79,7 @@ def assert_argparsing_fails(
     """Helper function for lots of argparsing tests."""
     with pytest.raises(SystemExit) as exc_info:
         main(args)
-    return_code = exc_info.value.code  # ty: ignore[unresolved-attribute]
+    return_code = exc_info.value.code
     assert return_code == 2
     if failure_message is not None and capsys is not None:
         err = capsys.readouterr().err
@@ -673,7 +673,7 @@ def test_KeyboardInterrupt_caught(
     num_stderr_lines = len(stderr.strip().splitlines())
     assert num_stderr_lines == 1
     assert "Interrupted!" in stderr
-    return_code = exc_info.value.code  # ty: ignore[unresolved-attribute]
+    return_code = exc_info.value.code
     assert return_code == 2
 
 
