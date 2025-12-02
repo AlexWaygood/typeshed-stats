@@ -6911,7 +6911,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-2,075 (excluding blank lines)
+2,124 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6936,21 +6936,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `psutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 403
-    - Unannotated parameters: 30
+    - Annotated parameters: 409
+    - Unannotated parameters: 25
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 650
-    - Unannotated returns: 24
+    - Annotated returns: 664
+    - Unannotated returns: 11
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
     - Annotated variables: 671
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 94
 - Class definitions:
-    - Total class definitions: 97
+    - Total class definitions: 98
     - Class definitions with `Any`: 3
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9480,7 +9480,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,120 (excluding blank lines)
+69,123 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9515,7 +9515,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 846
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
 - Variables:
-    - Annotated variables: 9,518
+    - Annotated variables: 9,519
     - Explicit `Any` variables: 309
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
