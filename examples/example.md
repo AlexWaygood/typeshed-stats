@@ -1376,7 +1376,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-975 (excluding blank lines)
+976 (excluding blank lines)
 
 ### Package status: *up to date*
 
