@@ -69,7 +69,7 @@ gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,CO
 geopandas,types-geopandas,https://github.com/geopandas/geopandas,COMPLETE,-,1845,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1023,68,424,6,42,4,34,11,33,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,13
 gevent,types-gevent,https://github.com/gevent/gevent,COMPLETE,-,3244,UP_TO_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,211,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,145
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1531,UP_TO_DATE,UPLOADED,NOT_STRICT,484,370,236,203,123,0,5,0,194,0,134,143,0,0,MISSING_STUBS_IGNORED,linux,3
-greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,COMPLETE,-,86,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
+greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,COMPLETE,-,86,OUT_OF_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
 grpcio,types-grpcio,https://github.com/grpc/grpc,PARTIAL,-,926,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,310,4,208,1,0,1,5,2,29,0,0,68,0,0,MISSING_STUBS_IGNORED,linux,3
 grpcio-channelz,types-grpcio-channelz,https://github.com/grpc/grpc,COMPLETE,-,724,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,156,94,55,15,54,0,0,0,324,0,21,44,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-health-checking,types-grpcio-health-checking,https://github.com/grpc/grpc,COMPLETE,-,89,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,15,27,16,4,2,0,0,0,16,0,6,7,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -166,7 +166,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,72,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,STDLIB,-,69127,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30175,568,16710,234,11,20,2130,846,9519,309,221,3210,30,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,846
+stdlib,-,https://github.com/python/cpython,STDLIB,-,69157,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30186,568,16715,234,11,20,2133,846,9519,309,221,3210,30,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,855
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30200,OUT_OF_DATE,UPLOADED,NOT_STRICT,5346,36,2928,39,12,23,60,34,5431,5,9,920,1,0,SKIPPED,None,51
