@@ -5877,11 +5877,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,611 (excluding blank lines)
+7,624 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5902,15 +5902,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,170
-    - Unannotated parameters: 1,266
-    - Explicit `Any` parameters: 26
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 210
+    - Annotated parameters: 3,172
+    - Unannotated parameters: 1,269
+    - Explicit `Any` parameters: 24
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 213
 - Returns:
-    - Annotated returns: 1,068
-    - Unannotated returns: 547
+    - Annotated returns: 1,071
+    - Unannotated returns: 546
     - Explicit `Any` returns: 19
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 263
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 266
 - Variables:
     - Annotated variables: 387
     - Explicit `Any` variables: 5
@@ -6854,7 +6854,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-6,162 (excluding blank lines)
+6,167 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6879,12 +6879,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 798
+    - Annotated parameters: 802
     - Unannotated parameters: 376
     - Explicit `Any` parameters: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 579
+    - Annotated returns: 582
     - Unannotated returns: 155
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -6911,7 +6911,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-2,124 (excluding blank lines)
+2,127 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6936,12 +6936,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `psutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 409
+    - Annotated parameters: 410
     - Unannotated parameters: 25
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 664
+    - Annotated returns: 665
     - Unannotated returns: 11
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
@@ -9480,7 +9480,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,167 (excluding blank lines)
+69,170 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9505,12 +9505,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,186
+    - Annotated parameters: 30,187
     - Unannotated parameters: 568
     - Explicit `Any` parameters: 2,133
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,715
+    - Annotated returns: 16,716
     - Unannotated returns: 234
     - Explicit `Any` returns: 846
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
@@ -11025,11 +11025,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-3,500 (excluding blank lines)
+3,501 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -11041,7 +11041,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 20 unique allowlist entries for `yt-dlp` when running stubtest in CI.
+Typeshed currently has 19 unique allowlist entries for `yt-dlp` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -11050,7 +11050,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `yt-dlp`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,028
+    - Annotated parameters: 2,029
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 280
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -11060,7 +11060,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 131
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 498
+    - Annotated variables: 499
     - Explicit `Any` variables: 29
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
