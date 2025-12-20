@@ -10,7 +10,7 @@
 
 ### Number of lines
 
-2,721 (excluding blank lines)
+3,565 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -35,21 +35,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 289
-    - Unannotated parameters: 1,132
-    - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
+    - Annotated parameters: 337
+    - Unannotated parameters: 1,509
+    - Explicit `Any` parameters: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 8
 - Returns:
-    - Annotated returns: 519
-    - Unannotated returns: 391
-    - Explicit `Any` returns: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
+    - Annotated returns: 666
+    - Unannotated returns: 458
+    - Explicit `Any` returns: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 58
 - Variables:
-    - Annotated variables: 568
+    - Annotated variables: 657
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 243
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 309
 - Class definitions:
-    - Total class definitions: 217
+    - Total class definitions: 273
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -5934,7 +5934,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,625 (excluding blank lines)
+7,630 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9564,7 +9564,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 30,226
     - Unannotated parameters: 568
-    - Explicit `Any` parameters: 2,137
+    - Explicit `Any` parameters: 2,077
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
     - Annotated returns: 16,724

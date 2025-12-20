@@ -1,5 +1,5 @@
 package_name,stub_distribution_name,upstream_url,completeness_level,extra_description,number_of_lines,package_status,upload_status,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables,classdefs,classdefs_with_Any,classdefs_with_Incomplete,stubtest_strictness,stubtest_ci_platforms,stubtest_allowlist_length
-Authlib,types-Authlib,https://github.com/lepture/authlib,PARTIAL,-,2721,UP_TO_DATE,UPLOADED,NOT_STRICT,289,1132,519,391,7,11,1,4,568,0,243,217,1,0,ERROR_ON_MISSING_STUB,linux,53
+Authlib,types-Authlib,https://github.com/lepture/authlib,COMPLETE,-,3565,UP_TO_DATE,UPLOADED,NOT_STRICT,337,1509,666,458,8,58,5,5,657,0,309,273,1,0,ERROR_ON_MISSING_STUB,linux,53
 Deprecated,types-Deprecated,https://github.com/tantale/deprecated,COMPLETE,-,88,UP_TO_DATE,UPLOADED,STRICT,44,0,15,0,0,0,3,0,16,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 Flask-Cors,types-Flask-Cors,https://github.com/corydolphin/flask-cors,COMPLETE,-,130,UP_TO_DATE,UPLOADED,STRICT,65,0,24,0,0,0,7,2,32,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrate,COMPLETE,-,129,UP_TO_DATE,UPLOADED,STRICT,86,0,23,0,0,0,0,0,7,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -103,7 +103,7 @@ nanoid,types-nanoid,https://github.com/puyuan/py-nanoid,COMPLETE,-,16,UP_TO_DATE
 nanoleafapi,types-nanoleafapi,https://github.com/MylesMor/nanoleafapi,COMPLETE,-,91,UP_TO_DATE,UPLOADED,STRICT,33,0,49,0,2,3,1,0,16,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 netaddr,types-netaddr,https://github.com/drkjam/netaddr,COMPLETE,-,712,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,291,1,308,0,0,0,3,1,101,2,0,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 netifaces,types-netifaces,https://github.com/al45tair/netifaces,COMPLETE,-,69,UP_TO_DATE,UPLOADED,STRICT,1,0,3,0,0,0,0,0,65,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,33
-networkx,types-networkx,https://github.com/networkx/networkx,COMPLETE,-,7625,UP_TO_DATE,UPLOADED,NOT_STRICT,3175,1266,1073,544,213,264,24,19,387,5,240,132,1,1,ERROR_ON_MISSING_STUB,linux,23
+networkx,types-networkx,https://github.com/networkx/networkx,COMPLETE,-,7630,UP_TO_DATE,UPLOADED,NOT_STRICT,3175,1266,1073,544,213,264,24,19,387,5,240,132,1,1,ERROR_ON_MISSING_STUB,linux,23
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,COMPLETE,-,1884,UP_TO_DATE,UPLOADED,NOT_STRICT,753,219,314,62,29,11,2,0,342,29,12,118,0,2,ERROR_ON_MISSING_STUB,linux,0
 objgraph,types-objgraph,https://github.com/mgedmin/objgraph,COMPLETE,-,87,UP_TO_DATE,UPLOADED,STRICT,71,0,17,0,0,0,0,0,6,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 olefile,types-olefile,https://github.com/decalage2/olefile,COMPLETE,-,222,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,75,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -167,7 +167,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,72,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,STDLIB,-,69223,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30226,568,16724,234,11,20,2137,846,9519,309,221,3210,30,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,837
+stdlib,-,https://github.com/python/cpython,STDLIB,-,69223,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30226,568,16724,234,11,20,2077,846,9519,309,221,3210,30,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,837
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30200,OUT_OF_DATE,UPLOADED,NOT_STRICT,5346,36,2928,39,12,23,60,34,5431,5,9,920,1,0,SKIPPED,None,51
