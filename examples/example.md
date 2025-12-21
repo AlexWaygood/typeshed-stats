@@ -4794,7 +4794,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-1,335 (excluding blank lines)
+1,334 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9142,7 +9142,7 @@ Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer 
 
 ### Number of lines
 
-2,793 (excluding blank lines)
+2,815 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9167,13 +9167,13 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 892
+    - Annotated parameters: 906
     - Unannotated parameters: 250
     - Explicit `Any` parameters: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 727
-    - Unannotated returns: 108
+    - Annotated returns: 730
+    - Unannotated returns: 109
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
@@ -9537,7 +9537,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,223 (excluding blank lines)
+69,245 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9562,21 +9562,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,226
+    - Annotated parameters: 30,232
     - Unannotated parameters: 568
-    - Explicit `Any` parameters: 2,077
+    - Explicit `Any` parameters: 2,081
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,724
+    - Annotated returns: 16,727
     - Unannotated returns: 234
     - Explicit `Any` returns: 846
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
 - Variables:
-    - Annotated variables: 9,519
+    - Annotated variables: 9,529
     - Explicit `Any` variables: 309
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
-    - Total class definitions: 3,210
+    - Total class definitions: 3,211
     - Class definitions with `Any`: 30
     - Class definitions marked as at least partially `Incomplete`: 0
 
