@@ -3888,9 +3888,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 1,838 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -8733,9 +8733,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 7,964 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -9142,7 +9142,7 @@ Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer 
 
 ### Number of lines
 
-2,815 (excluding blank lines)
+2,814 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9167,12 +9167,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 906
-    - Unannotated parameters: 250
-    - Explicit `Any` parameters: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
+    - Annotated parameters: 916
+    - Unannotated parameters: 239
+    - Explicit `Any` parameters: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 730
+    - Annotated returns: 729
     - Unannotated returns: 109
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
