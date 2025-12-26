@@ -3,7 +3,7 @@ Authlib,types-Authlib,https://github.com/lepture/authlib,COMPLETE,-,3565,UP_TO_D
 Deprecated,types-Deprecated,https://github.com/tantale/deprecated,COMPLETE,-,88,UP_TO_DATE,UPLOADED,STRICT,44,0,15,0,0,0,3,0,16,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 Flask-Cors,types-Flask-Cors,https://github.com/corydolphin/flask-cors,COMPLETE,-,130,UP_TO_DATE,UPLOADED,STRICT,65,0,24,0,0,0,7,2,32,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrate,COMPLETE,-,129,UP_TO_DATE,UPLOADED,STRICT,86,0,23,0,0,0,0,0,7,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,1
-Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,COMPLETE,-,256,UP_TO_DATE,UPLOADED,NOT_STRICT,137,37,37,15,14,1,2,0,21,2,3,11,0,0,ERROR_ON_MISSING_STUB,linux,4
+Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,COMPLETE,-,256,OUT_OF_DATE,UPLOADED,NOT_STRICT,137,37,37,15,14,1,2,0,21,2,3,11,0,0,ERROR_ON_MISSING_STUB,linux,4
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,COMPLETE,-,312,UP_TO_DATE,UPLOADED,STRICT,107,0,152,0,0,0,0,2,46,0,0,15,0,0,ERROR_ON_MISSING_STUB,darwin;linux,1
 Jetson.GPIO,types-Jetson.GPIO,https://github.com/NVIDIA/jetson-gpio,COMPLETE,-,212,UP_TO_DATE,UPLOADED,STRICT,88,0,47,0,0,0,0,2,108,1,0,11,0,0,ERROR_ON_MISSING_STUB,linux,4
 Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,COMPLETE,-,826,UP_TO_DATE,UPLOADED,NOT_STRICT,301,33,231,4,0,0,17,4,253,11,0,112,1,0,ERROR_ON_MISSING_STUB,linux,3
