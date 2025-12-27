@@ -142,7 +142,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 256,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -1675,7 +1675,7 @@
     "upstream_url": "https://github.com/carltongibson/django-filter/",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 803,
+    "number_of_lines": 805,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1694,7 +1694,7 @@
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 121,
-      "explicit_Any_returns": 42,
+      "explicit_Any_returns": 43,
       "annotated_variables": 113,
       "explicit_Any_variables": 25,
       "explicit_Incomplete_variables": 0,
@@ -2353,7 +2353,7 @@
     "upstream_url": "https://github.com/gevent/gevent",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3244,
+    "number_of_lines": 3234,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2378,8 +2378,8 @@
       "annotated_variables": 371,
       "explicit_Any_variables": 26,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 211,
-      "classdefs_with_Any": 2,
+      "classdefs": 210,
+      "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
   },
@@ -4159,8 +4159,8 @@
     "upstream_url": "https://github.com/giampaolo/psutil",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2163,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 2168,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -4169,22 +4169,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 17
+      "allowlist_length": 16
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
       "annotated_parameters": 433,
       "unannotated_parameters": 4,
-      "annotated_returns": 676,
+      "annotated_returns": 686,
       "unannotated_returns": 1,
       "explicit_Incomplete_parameters": 1,
       "explicit_Incomplete_returns": 3,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 1,
-      "annotated_variables": 670,
+      "annotated_variables": 675,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 93,
-      "classdefs": 98,
+      "explicit_Incomplete_variables": 89,
+      "classdefs": 100,
       "classdefs_with_Any": 3,
       "classdefs_with_Incomplete": 0
     }
@@ -5701,7 +5701,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 69246,
+    "number_of_lines": 69315,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5711,18 +5711,18 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 837
+      "allowlist_length": 838
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30232,
+      "annotated_parameters": 30283,
       "unannotated_parameters": 568,
-      "annotated_returns": 16727,
+      "annotated_returns": 16743,
       "unannotated_returns": 234,
       "explicit_Incomplete_parameters": 11,
       "explicit_Incomplete_returns": 20,
-      "explicit_Any_parameters": 2081,
-      "explicit_Any_returns": 846,
+      "explicit_Any_parameters": 2086,
+      "explicit_Any_returns": 847,
       "annotated_variables": 9530,
       "explicit_Any_variables": 309,
       "explicit_Incomplete_variables": 221,

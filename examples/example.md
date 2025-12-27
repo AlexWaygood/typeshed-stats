@@ -240,9 +240,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 256 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2801,7 +2801,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-803 (excluding blank lines)
+805 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2833,7 +2833,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Returns:
     - Annotated returns: 128
     - Unannotated returns: 0
-    - Explicit `Any` returns: 42
+    - Explicit `Any` returns: 43
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 113
@@ -3943,7 +3943,7 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 
 ### Number of lines
 
-3,244 (excluding blank lines)
+3,234 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3982,8 +3982,8 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` variables: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 211
-    - Class definitions with `Any`: 2
+    - Total class definitions: 210
+    - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
@@ -6968,11 +6968,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-2,163 (excluding blank lines)
+2,168 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6984,7 +6984,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 17 unique allowlist entries for `psutil` when running stubtest in CI.
+Typeshed currently has 16 unique allowlist entries for `psutil` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6998,16 +6998,16 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 676
+    - Annotated returns: 686
     - Unannotated returns: 1
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
 - Variables:
-    - Annotated variables: 670
+    - Annotated variables: 675
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 93
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 89
 - Class definitions:
-    - Total class definitions: 98
+    - Total class definitions: 100
     - Class definitions with `Any`: 3
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9537,7 +9537,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,246 (excluding blank lines)
+69,315 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9553,7 +9553,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 837 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 838 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -9562,14 +9562,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,232
+    - Annotated parameters: 30,283
     - Unannotated parameters: 568
-    - Explicit `Any` parameters: 2,081
+    - Explicit `Any` parameters: 2,086
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,727
+    - Annotated returns: 16,743
     - Unannotated returns: 234
-    - Explicit `Any` returns: 846
+    - Explicit `Any` returns: 847
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
 - Variables:
     - Annotated variables: 9,530
