@@ -15,7 +15,7 @@ PySocks,types-PySocks,https://github.com/Anorov/PySocks,COMPLETE,-,213,UP_TO_DAT
 PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,COMPLETE,-,1318,UP_TO_DATE,UPLOADED,NOT_STRICT,520,278,222,172,4,0,46,12,220,160,2,91,0,0,ERROR_ON_MISSING_STUB,linux,4
 Pygments,types-Pygments,https://github.com/pygments/pygments,PARTIAL,-,849,UP_TO_DATE,UPLOADED,NOT_STRICT,94,179,107,77,0,5,1,0,376,0,193,94,0,1,MISSING_STUBS_IGNORED,linux,4
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,COMPLETE,-,56,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
-Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,2
+Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,15,OUT_OF_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,2
 TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,COMPLETE,-,7,UP_TO_DATE,UPLOADED,STRICT,20,0,6,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,6
 WTForms,types-WTForms,https://github.com/pallets-eco/wtforms,COMPLETE,-,1351,UP_TO_DATE,UPLOADED,STRICT,531,0,185,0,0,0,71,14,141,29,0,100,0,0,ERROR_ON_MISSING_STUB,linux,27
 WebOb,types-WebOb,https://github.com/Pylons/webob,COMPLETE,-,2222,UP_TO_DATE,UPLOADED,STRICT,799,0,609,0,0,0,80,13,250,15,0,136,1,0,ERROR_ON_MISSING_STUB,linux,99
