@@ -26,7 +26,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           persist-credentials: true
       - name: git config
@@ -35,8 +35,8 @@ jobs:
           git config --global user.email ''
       - uses: actions/setup-python@v6
         with:
-          python-version: "3.13"
-      - uses: astral-sh/setup-uv@v6
+          python-version: "3.14"
+      - uses: astral-sh/setup-uv@v7
       - run: uv pip install -e . --group=dev --system
       - run: uv pip freeze
       - name: Regenerate examples and docs

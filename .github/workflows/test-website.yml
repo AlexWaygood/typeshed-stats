@@ -24,13 +24,13 @@ jobs:
   test-website:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
       - uses: actions/setup-python@v6
         with:
-          python-version: "3.13"
-      - uses: astral-sh/setup-uv@v6
+          python-version: "3.14"
+      - uses: astral-sh/setup-uv@v7
       - run: uv pip install -e . --group=dev --system
       - run: uv pip freeze
       - name: Regenerate examples and docs
@@ -40,7 +40,7 @@ jobs:
       - name: Build docs
         run: mkdocs build --strict
       - name: Upload docs
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: doc-html
           path: site
