@@ -973,7 +973,7 @@ def test_tmpdir_typeshed() -> None:
 # Tests for bad arguments passed into typeshed_dir
 def test_gather_stats_on_file_bad_typeshed_dir_type() -> None:
     with pytest.raises(TypeError, match="Expected str or Path argument"):
-        gather_stats_on_file("stdlib/functools.pyi", typeshed_dir=5)  # type: ignore[arg-type]  # pyright: ignore[reportArgumentType]
+        gather_stats_on_file("stdlib/functools.pyi", typeshed_dir=5)  # type: ignore[arg-type]  # pyright: ignore[reportArgumentType]  # ty: ignore[invalid-argument-type]
 
 
 def test_gather_stats_on_file_nonexistent_typeshed_dir() -> None:
@@ -991,7 +991,7 @@ def test_gather_stats_on_file_typeshed_dir_points_to_file(tmp_path: Path) -> Non
 # Tests for bad arguments passed into file_path
 def test_gather_stats_on_file_bad_file_path_type() -> None:
     with pytest.raises(TypeError, match="Expected str or Path argument"):
-        gather_stats_on_file(5, typeshed_dir=".")  # type: ignore[arg-type]  # pyright: ignore[reportArgumentType]
+        gather_stats_on_file(5, typeshed_dir=".")  # type: ignore[arg-type]  # pyright: ignore[reportArgumentType]  # ty: ignore[invalid-argument-type]
 
 
 def test_gather_stats_on_file_nonexistent_file() -> None:

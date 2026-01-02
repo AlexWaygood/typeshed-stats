@@ -170,7 +170,7 @@ def _stats_from_csv(
                 if converted_stat[k] == "-" and v == (str | None):
                     converted_stat[k] = None
         converted_stats.append(converted_stat)
-    return _structure(converted_stats, list[cls])  # type: ignore[valid-type]  # pyright: ignore[reportReturnType]
+    return _structure(converted_stats, list[cls])  # type: ignore[valid-type]  # pyright: ignore[reportReturnType]  # ty: ignore[invalid-return-type]
 
 
 def package_stats_from_csv(data: str) -> list[PackageInfo]:

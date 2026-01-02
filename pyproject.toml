@@ -153,6 +153,10 @@ ignore-words-list = ["corus"]
 [tool.ty.rules]
 possibly-unresolved-reference = "error"
 division-by-zero = "error"
+unused-ignore-comment = "error"
+
+[tool.ty.analysis]
+respect-type-ignore-comments = false
 
 [tool.mypy]
 files = ['website_macros.py', 'src', 'tests', 'scripts']
