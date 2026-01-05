@@ -12,7 +12,7 @@ repos:
       - id: name-tests-test
         args: [--pytest-test-first]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.13.3
+    rev: v0.14.10
     hooks:
       - id: ruff
       - id: ruff-format
@@ -29,11 +29,11 @@ repos:
         language: python # means renovate will update the `additional_dependencies` for the hook
         additional_dependencies: ["tomli"]
   - repo: https://github.com/alan-turing-institute/CleverCSV-pre-commit
-    rev: v0.8.3
+    rev: v0.8.4
     hooks:
       - id: clevercsv-standardize
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.45.0
+    rev: v0.47.0
     hooks:
       - id: markdownlint-fix
         args: ["--ignore", "stats_website/.snippets"]
@@ -50,11 +50,11 @@ repos:
     hooks:
       - id: validate-pyproject
   - repo: https://github.com/woodruffw/zizmor-pre-commit
-    rev: v1.14.2
+    rev: v1.19.0
     hooks:
       - id: zizmor
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.34.0
+    rev: 0.36.0
     hooks:
       - id: check-github-workflows
       - id: check-renovate
@@ -63,7 +63,7 @@ repos:
           - "json5"
   # `actionlint` hook, for verifying correct syntax in GitHub Actions workflows.
   - repo: https://github.com/rhysd/actionlint
-    rev: v1.7.7
+    rev: v1.7.10
     hooks:
       - id: actionlint
         additional_dependencies:
