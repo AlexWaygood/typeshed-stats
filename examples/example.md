@@ -8792,7 +8792,7 @@ Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to
 
 ### Number of lines
 
-1,043 (excluding blank lines)
+1,044 (excluding blank lines)
 
 ### Package status: *up to date*
 
