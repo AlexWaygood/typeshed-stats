@@ -33,7 +33,6 @@ import attrs
 from packaging.specifiers import SpecifierSet
 from packaging.version import Version
 from pathspec import PathSpec
-from pathspec.patterns.gitwildmatch import GitWildMatchPattern
 
 if sys.version_info < (3, 11):  # noqa: UP036
     raise ImportError("Python 3.11+ is required!")
@@ -997,8 +996,7 @@ def _get_pyright_excludelist(
     excludelist_as_paths = [Path(typeshed_dir, item) for item in excludelist]
     return _ExcludeList(
         PathSpec.from_lines(
-            GitWildMatchPattern,
-            [_normalized_path(item) for item in excludelist_as_paths],
+            "gitignore", [_normalized_path(item) for item in excludelist_as_paths]
         ),
         excludelist_as_paths,
     )

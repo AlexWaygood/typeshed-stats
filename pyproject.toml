@@ -30,7 +30,7 @@ dependencies = [
     "cattrs",
     "aiohttp[speedups]>=3.9.0",
     "packaging",
-    "pathspec>=0.10.3, <1",         # needs to be py.typed
+    "pathspec>=1",
     "Jinja2>=3",
 ]
 
