@@ -66,7 +66,7 @@ flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/fla
 flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simplify,COMPLETE,-,121,UP_TO_DATE,UPLOADED,STRICT,75,0,72,0,0,0,0,1,15,0,2,7,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,COMPLETE,-,36,UP_TO_DATE,UPLOADED,STRICT,11,0,13,0,0,0,1,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 fpdf2,types-fpdf2,https://github.com/PyFPDF/fpdf2,COMPLETE,-,3851,OUT_OF_DATE,UPLOADED,NOT_STRICT,1271,569,729,150,13,9,9,4,791,13,171,236,1,1,ERROR_ON_MISSING_STUB,linux,6
-gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1588,NOT_ON_PYPI,UPLOADED,NOT_STRICT,515,15,421,26,0,0,2,2,489,0,2,154,0,0,ERROR_ON_MISSING_STUB,linux,52
+gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1588,NOT_ON_PYPI,UPLOADED,NOT_STRICT,515,15,421,26,0,0,2,2,489,0,2,154,0,0,SKIPPED,None,52
 geopandas,types-geopandas,https://github.com/geopandas/geopandas,COMPLETE,-,1839,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1022,69,424,6,42,4,31,11,33,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,13
 gevent,types-gevent,https://github.com/gevent/gevent,COMPLETE,-,3234,UP_TO_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,210,1,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,145
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,PARTIAL,-,1531,UP_TO_DATE,UPLOADED,NOT_STRICT,484,370,236,203,123,0,5,0,194,0,134,143,0,0,MISSING_STUBS_IGNORED,linux,3
@@ -87,7 +87,7 @@ icalendar,types-icalendar,https://github.com/collective/icalendar,COMPLETE,-,133
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,COMPLETE,-,124,UP_TO_DATE,UPLOADED,STRICT,60,0,59,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,20
 jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,COMPLETE,-,214,UP_TO_DATE,UPLOADED,STRICT,133,0,74,0,0,0,30,23,49,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,0
 jsonnet,types-jsonnet,https://github.com/google/jsonnet,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,25,0,2,0,0,0,0,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
-jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,COMPLETE,-,484,OUT_OF_DATE,UPLOADED,NOT_STRICT,173,257,175,11,9,10,9,2,58,3,14,26,0,0,ERROR_ON_MISSING_STUB,linux,45
+jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,COMPLETE,-,484,UP_TO_DATE,UPLOADED,NOT_STRICT,173,257,175,11,9,10,9,2,58,3,14,26,0,0,ERROR_ON_MISSING_STUB,linux,45
 jwcrypto,types-jwcrypto,https://github.com/latchset/jwcrypto,COMPLETE,-,472,UP_TO_DATE,UPLOADED,NOT_STRICT,151,31,133,8,0,1,6,11,55,2,3,40,1,0,ERROR_ON_MISSING_STUB,linux,4
 keyboard,types-keyboard,https://github.com/boppreh/keyboard,COMPLETE,-,246,UP_TO_DATE,UPLOADED,STRICT,130,0,76,0,0,0,0,0,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,7
 ldap3,types-ldap3,https://github.com/cannatag/ldap3,COMPLETE,-,2494,UP_TO_DATE,UPLOADED,NOT_STRICT,276,936,219,421,0,0,0,0,937,0,375,316,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -113,7 +113,7 @@ paramiko,types-paramiko,https://github.com/paramiko/paramiko,COMPLETE,-,1895,UP_
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,COMPLETE,-,197,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,114,0,59,1,0,0,22,2,34,3,2,28,0,0,ERROR_ON_MISSING_STUB,linux,3
 passlib,types-passlib,https://foss.heptapod.net/python-libs/passlib,COMPLETE,-,2056,UP_TO_DATE,UPLOADED,NOT_STRICT,470,453,291,207,2,0,32,13,579,54,8,143,2,0,ERROR_ON_MISSING_STUB,linux,32
 passpy,types-passpy,https://github.com/bfrascher/passpy,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
-peewee,types-peewee,https://github.com/coleifer/peewee,PARTIAL,-,1758,OUT_OF_DATE,UPLOADED,NOT_STRICT,416,681,363,423,202,5,2,0,403,31,319,169,0,0,ERROR_ON_MISSING_STUB,linux,20
+peewee,types-peewee,https://github.com/coleifer/peewee,PARTIAL,-,1758,UP_TO_DATE,UPLOADED,NOT_STRICT,416,681,363,423,202,5,2,0,403,31,319,169,0,0,ERROR_ON_MISSING_STUB,linux,20
 pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,COMPLETE,-,150,UP_TO_DATE,UPLOADED,STRICT,92,0,42,0,0,0,1,0,33,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,0
 pexpect,types-pexpect,https://github.com/pexpect/pexpect,COMPLETE,-,670,UP_TO_DATE,UPLOADED,NOT_STRICT,226,128,181,33,0,0,0,0,160,0,24,22,0,0,ERROR_ON_MISSING_STUB,linux,1
 pika,types-pika-ts,https://github.com/pika/pika,COMPLETE,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2225,UP_TO_DATE,UPLOADED,NOT_STRICT,632,373,623,142,34,24,4,0,468,0,148,224,0,0,ERROR_ON_MISSING_STUB,linux,3
@@ -167,7 +167,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,72,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,STDLIB,-,69362,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30312,560,16760,232,11,20,2088,850,9530,309,221,3211,30,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,838
+stdlib,-,https://github.com/python/cpython,STDLIB,-,69413,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30334,560,16767,232,11,20,2089,850,9530,309,221,3211,30,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,838
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30200,OUT_OF_DATE,UPLOADED,NOT_STRICT,5346,36,2928,39,12,23,60,34,5431,5,9,920,1,0,SKIPPED,None,51
