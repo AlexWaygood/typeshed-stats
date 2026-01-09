@@ -50,7 +50,7 @@ defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,COMPLETE,-,352,U
 dirhash,types-dirhash,https://github.com/andhus/dirhash-python,COMPLETE,-,88,UP_TO_DATE,UPLOADED,STRICT,39,0,13,0,0,0,0,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 django-filter,types-django-filter,https://github.com/carltongibson/django-filter/,COMPLETE,-,805,UP_TO_DATE,UPLOADED,STRICT,298,0,128,0,0,0,121,43,113,25,0,73,3,0,ERROR_ON_MISSING_STUB,linux,12
 django-import-export,types-django-import-export,https://github.com/django-import-export/django-import-export,COMPLETE,-,687,UP_TO_DATE,UPLOADED,STRICT,367,0,250,0,0,0,128,35,154,10,0,70,0,0,SKIPPED,None,0
-docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,2569,UP_TO_DATE,UPLOADED,NOT_STRICT,1258,299,445,139,48,18,33,30,224,2,4,139,2,24,ERROR_ON_MISSING_STUB,linux,9
+docker,types-docker,https://github.com/docker/docker-py,COMPLETE,-,2634,UP_TO_DATE,UPLOADED,NOT_STRICT,1296,298,452,138,48,18,33,30,224,2,4,139,2,24,ERROR_ON_MISSING_STUB,linux,9
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,COMPLETE,-,116,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 docutils,types-docutils,https://sourceforge.net/p/docutils/code,COMPLETE,-,5665,OUT_OF_DATE,UPLOADED,NOT_STRICT,2440,708,2109,323,16,7,39,219,1508,23,234,499,1,0,ERROR_ON_MISSING_STUB,linux,18
 editdistance,types-editdistance,https://github.com/roy-ht/editdistance,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,10,0,4,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
