@@ -11137,7 +11137,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-31 (excluding blank lines)
+37 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -11162,12 +11162,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `zstd`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 5
+    - Annotated parameters: 6
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 19
+    - Annotated returns: 23
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
