@@ -2858,11 +2858,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-687 (excluding blank lines)
+696 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2881,21 +2881,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `django-import-export`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 367
+    - Annotated parameters: 376
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 128
+    - Explicit `Any` parameters: 135
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 250
+    - Annotated returns: 255
     - Unannotated returns: 0
     - Explicit `Any` returns: 35
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 154
+    - Annotated variables: 156
     - Explicit `Any` variables: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 70
+    - Total class definitions: 72
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9535,7 +9535,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,575 (excluding blank lines)
+69,577 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9710,7 +9710,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-30,200 (excluding blank lines)
+30,232 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -9733,21 +9733,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 5,346
-    - Unannotated parameters: 36
+    - Annotated parameters: 5,364
+    - Unannotated parameters: 38
     - Explicit `Any` parameters: 60
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 12
 - Returns:
-    - Annotated returns: 2,928
-    - Unannotated returns: 39
+    - Annotated returns: 2,934
+    - Unannotated returns: 40
     - Explicit `Any` returns: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 23
 - Variables:
-    - Annotated variables: 5,431
+    - Annotated variables: 5,434
     - Explicit `Any` variables: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 11
 - Class definitions:
-    - Total class definitions: 920
+    - Total class definitions: 923
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
