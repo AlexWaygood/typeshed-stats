@@ -3186,6 +3186,63 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `ephem`
+
+### Upstream repo URL
+
+[https://github.com/brandon-rhodes/pyephem](https://github.com/brandon-rhodes/pyephem)
+
+### Stub distribution name
+
+`types-ephem`
+
+### Number of lines
+
+591 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 6 unique allowlist entries for `ephem` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `ephem`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 182
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 187
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 150
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 55
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `et_xmlfile`
 
 ### Upstream repo URL
@@ -7064,6 +7121,63 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Class definitions:
     - Total class definitions: 332
     - Class definitions with `Any`: 2
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
+## Info on typeshed's stubs for `punq`
+
+### Upstream repo URL
+
+[https://github.com/bobthemighty/punq](https://github.com/bobthemighty/punq)
+
+### Stub distribution name
+
+`types-punq`
+
+### Number of lines
+
+82 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 1 unique allowlist entry for `punq` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `punq`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 44
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 22
+    - Unannotated returns: 1
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 13
+    - Explicit `Any` variables: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 12
+    - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
