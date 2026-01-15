@@ -66,6 +66,7 @@ repos:
     rev: v1.7.10
     hooks:
       - id: actionlint
+        language: golang # means renovate will also update `additional_dependencies`
         additional_dependencies:
           # actionlint has a shellcheck integration which extracts shell scripts in `run:` steps from GitHub Actions
           # and checks these with shellcheck. This is arguably its most useful feature,
