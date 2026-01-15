@@ -1921,7 +1921,7 @@
       ],
       "allowlist_length": 6
     },
-    "pyright_setting": "NOT_STRICT",
+    "pyright_setting": "STRICT",
     "annotation_stats": {
       "annotated_parameters": 182,
       "unannotated_parameters": 0,

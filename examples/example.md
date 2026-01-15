@@ -3216,9 +3216,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 6 unique allowlist entries for `ephem` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `ephem`
 

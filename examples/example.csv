@@ -55,7 +55,7 @@ dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/
 docutils,types-docutils,https://sourceforge.net/p/docutils/code,COMPLETE,-,5665,OUT_OF_DATE,UPLOADED,NOT_STRICT,2440,708,2109,323,16,7,39,219,1508,23,234,499,1,0,ERROR_ON_MISSING_STUB,linux,18
 editdistance,types-editdistance,https://github.com/roy-ht/editdistance,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,10,0,4,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 entrypoints,types-entrypoints,https://github.com/takluyver/entrypoints,COMPLETE,-,41,UP_TO_DATE,UPLOADED,STRICT,23,0,12,0,0,0,0,1,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
-ephem,types-ephem,https://github.com/brandon-rhodes/pyephem,COMPLETE,-,591,UP_TO_DATE,UPLOADED,NOT_STRICT,182,0,187,0,0,0,0,0,150,0,0,55,0,0,ERROR_ON_MISSING_STUB,linux,6
+ephem,types-ephem,https://github.com/brandon-rhodes/pyephem,COMPLETE,-,591,UP_TO_DATE,UPLOADED,STRICT,182,0,187,0,0,0,0,0,150,0,0,55,0,0,ERROR_ON_MISSING_STUB,linux,6
 et_xmlfile,types-et_xmlfile,https://foss.heptapod.net/openpyxl/et_xmlfile,COMPLETE,-,208,UP_TO_DATE,UPLOADED,STRICT,133,0,21,0,0,0,12,3,9,0,1,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,COMPLETE,-,537,UP_TO_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,40
 first,types-first,https://github.com/hynek/first,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,11,0,5,0,0,0,3,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
