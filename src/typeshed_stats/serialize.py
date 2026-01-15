@@ -16,6 +16,7 @@ from typeshed_stats.gather import (
     PackageInfo,
     StubtestSettings,
     StubtestStrictness,
+    StubVersion,
     _NiceReprEnum,  # pyright: ignore[reportPrivateUsage]
 )
 
@@ -38,11 +39,13 @@ _structure = _CATTRS_CONVERTER.structure
 
 _CATTRS_CONVERTER.register_unstructure_hook(_NiceReprEnum, attrgetter("name"))
 _CATTRS_CONVERTER.register_unstructure_hook(Path, Path.as_posix)
+_CATTRS_CONVERTER.register_unstructure_hook(StubVersion, str)
 _CATTRS_CONVERTER.register_structure_hook(_NiceReprEnum, lambda d, t: t[d])
 _CATTRS_CONVERTER.register_structure_hook(
     Path,
     lambda d, t: Path(d),  # noqa: ARG005
 )  # pragma: no branch
+_CATTRS_CONVERTER.register_structure_hook(StubVersion, StubVersion)
 
 
 def stats_to_json(stats: Sequence[PackageInfo | FileInfo]) -> str:

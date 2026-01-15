@@ -18,6 +18,7 @@ from typeshed_stats.gather import (
     PyrightSetting,
     StubtestSettings,
     StubtestStrictness,
+    StubVersion,
     UploadStatus,
 )
 
@@ -241,6 +242,7 @@ def random_PackageInfo() -> PackageInfo:
         package_name=package_name,
         stub_distribution_name=f"types-{package_name}",
         upstream_url=f"https://github.com/who_knows/{package_name}",
+        version=StubVersion("==1.2.*"),
         completeness_level=CompletenessLevel.COMPLETE,
         extra_description=None,
         number_of_lines=random.randint(10, 500),

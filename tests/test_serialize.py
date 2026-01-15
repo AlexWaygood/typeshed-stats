@@ -17,6 +17,7 @@ from typeshed_stats.gather import (
     PyrightSetting,
     StubtestSettings,
     StubtestStrictness,
+    StubVersion,
     UploadStatus,
 )
 from typeshed_stats.serialize import (
@@ -64,6 +65,7 @@ def unusual_packages() -> list[PackageInfo]:
         "foo",
         stub_distribution_name="types-foo-ts",
         upstream_url=None,
+        version=StubVersion("==1.2.*"),
         extra_description="a very fooey package",
         completeness_level=CompletenessLevel.PARTIAL,
         number_of_lines=100_000_000_000,

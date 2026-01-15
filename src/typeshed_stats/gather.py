@@ -45,6 +45,7 @@ __all__ = [
     "PackageName",
     "PackageStatus",
     "PyrightSetting",
+    "StubVersion",
     "StubtestSettings",
     "StubtestStrictness",
     "UploadStatus",
@@ -67,6 +68,7 @@ __all__ = [
     "get_stubtest_strictness",
     "get_upload_status",
     "get_upstream_url",
+    "get_version",
     "tmpdir_typeshed",
 ]
 
@@ -716,7 +718,7 @@ async def get_package_status(
         case _:
             pass
 
-    match metadata := _get_package_metadata(package_name, typeshed_dir):
+    match _get_package_metadata(package_name, typeshed_dir):
         case {"obsolete_since": _}:
             return PackageStatus.OBSOLETE
         case {"no_longer_updated": True}:
@@ -724,10 +726,7 @@ async def get_package_status(
         case _:
             pass
 
-    if isinstance(metadata["version"], str) and metadata["version"].startswith("~"):
-        typeshed_pinned_version = SpecifierSet(metadata["version"])
-    else:
-        typeshed_pinned_version = SpecifierSet(f"=={metadata['version']}")
+    typeshed_pinned_version = get_version(package_name, typeshed_dir=typeshed_dir)
     pypi_data = await _get_pypi_data(package_name, session)
     pypi_version = Version(pypi_data["info"]["version"])
     status = "UP_TO_DATE" if pypi_version in typeshed_pinned_version else "OUT_OF_DATE"
@@ -1118,6 +1117,58 @@ def get_pyright_setting_for_package(
     )
 
 
+class StubVersion(SpecifierSet):
+    """Wrapper around SpecifierSet to provide repr."""
+
+    def __repr__(self):
+        """Wraps SpecifierSet.__repr__ to make it `eval`able."""
+        # Normal repr is `<SpecifierSet('1.2.*')>`
+        return (
+            super()
+            .__repr__()
+            .strip("<>")
+            .replace("SpecifierSet", "StubVersion", count=1)
+        )
+
+
+def get_version(package_name: PackageName, *, typeshed_dir: Path | str) -> StubVersion:
+    """Get a StubVersion (SpecifierSet) containing the versions of the runtime package these stubs are for.
+
+    Parameters:
+        package_name: The name of the package to find the upstream URL for.
+        typeshed_dir: A path pointing to a typeshed directory,
+            from which to retrieve the version.
+
+    Returns:
+        The versions of the runtime package these stubs are for.
+
+    Examples:
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_upstream_url
+        >>> with tmpdir_typeshed() as typeshed:
+        ...     requests_version = get_version_for_package(
+        ...         "requests", typeshed_dir=typeshed
+        ...     )
+        ...     colorama_version = get_version_for_package(
+        ...         "colorama", typeshed_dir=typeshed
+        ...     )
+        >>> requests_version
+        StubVersion('~=2.32.4')
+        >>> colorama_version
+        StubVersion('==0.4.*')
+    """
+    if package_name == "stdlib":
+        # TODO: don't know if this is a good idea
+        return StubVersion("==0.0.0")
+
+    # All stubs have a version
+    version = _get_package_metadata(package_name, typeshed_dir)["version"]
+    if isinstance(version, str) and version.startswith("~"):
+        return StubVersion(version)
+    else:
+        # Versions without explicit specifier are == (usually x.y.*)
+        return StubVersion(f"=={version}")
+
+
 @final
 @attrs.define
 class PackageInfo:
@@ -1126,6 +1177,7 @@ class PackageInfo:
     package_name: PackageName
     stub_distribution_name: str
     upstream_url: str | None
+    version: StubVersion
     completeness_level: CompletenessLevel
     extra_description: str | None
     number_of_lines: int
@@ -1182,6 +1234,7 @@ async def gather_stats_on_package(
             package_name, typeshed_dir=typeshed_dir
         ),
         upstream_url=get_upstream_url(package_name, typeshed_dir=typeshed_dir),
+        version=get_version(package_name, typeshed_dir=typeshed_dir),
         completeness_level=get_completeness_level(
             package_name, typeshed_dir=typeshed_dir
         ),
