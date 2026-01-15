@@ -1120,7 +1120,7 @@ def get_pyright_setting_for_package(
 class StubVersion(SpecifierSet):
     """Wrapper around SpecifierSet to provide repr."""
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         """Wraps SpecifierSet.__repr__ to make it `eval`able."""
         # Normal repr is `<SpecifierSet('1.2.*')>`
         return (
