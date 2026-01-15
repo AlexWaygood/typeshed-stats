@@ -10,7 +10,7 @@
 
 ### Number of lines
 
-3,565 (excluding blank lines)
+3,611 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -26,7 +26,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 53 unique allowlist entries for `Authlib` when running stubtest in CI.
+Typeshed currently has 70 unique allowlist entries for `Authlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -35,19 +35,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 337
-    - Unannotated parameters: 1,509
+    - Annotated parameters: 373
+    - Unannotated parameters: 1,477
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 8
 - Returns:
-    - Annotated returns: 666
-    - Unannotated returns: 458
+    - Annotated returns: 707
+    - Unannotated returns: 417
     - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 58
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 71
 - Variables:
-    - Annotated variables: 657
+    - Annotated variables: 652
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 309
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 258
 - Class definitions:
     - Total class definitions: 273
     - Class definitions with `Any`: 1
@@ -936,7 +936,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 unique allowlist entries for `Send2Trash` when running stubtest in CI.
+Typeshed currently has 1 unique allowlist entry for `Send2Trash` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6966,7 +6966,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Number of lines
 
-2,168 (excluding blank lines)
+2,259 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6991,12 +6991,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `psutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 433
-    - Unannotated parameters: 4
-    - Explicit `Any` parameters: 0
+    - Annotated parameters: 508
+    - Unannotated parameters: 2
+    - Explicit `Any` parameters: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 686
+    - Annotated returns: 688
     - Unannotated returns: 1
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
@@ -8674,9 +8674,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 910 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8731,9 +8731,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 7,964 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -9535,7 +9535,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,586 (excluding blank lines)
+69,593 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9560,12 +9560,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,405
+    - Annotated parameters: 30,407
     - Unannotated parameters: 560
     - Explicit `Any` parameters: 2,088
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,781
+    - Annotated returns: 16,782
     - Unannotated returns: 232
     - Explicit `Any` returns: 851
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
@@ -9710,7 +9710,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-30,232 (excluding blank lines)
+30,234 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -9733,12 +9733,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 5,364
+    - Annotated parameters: 5,366
     - Unannotated parameters: 38
     - Explicit `Any` parameters: 60
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 12
 - Returns:
-    - Annotated returns: 2,934
+    - Annotated returns: 2,935
     - Unannotated returns: 40
     - Explicit `Any` returns: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 23
@@ -9747,7 +9747,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` variables: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 11
 - Class definitions:
-    - Total class definitions: 923
+    - Total class definitions: 924
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
