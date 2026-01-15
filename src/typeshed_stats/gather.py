@@ -1145,12 +1145,8 @@ def get_version(package_name: PackageName, *, typeshed_dir: Path | str) -> StubV
     Examples:
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_upstream_url
         >>> with tmpdir_typeshed() as typeshed:
-        ...     requests_version = get_version_for_package(
-        ...         "requests", typeshed_dir=typeshed
-        ...     )
-        ...     colorama_version = get_version_for_package(
-        ...         "colorama", typeshed_dir=typeshed
-        ...     )
+        ...     requests_version = get_version("requests", typeshed_dir=typeshed)
+        ...     colorama_version = get_version("colorama", typeshed_dir=typeshed)
         >>> requests_version
         StubVersion('~=2.32.4')
         >>> colorama_version
