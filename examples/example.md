@@ -922,9 +922,9 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 15 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8843,11 +8843,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-7,964 (excluding blank lines)
+7,968 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8868,12 +8868,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `reportlab`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,794
+    - Annotated parameters: 1,797
     - Unannotated parameters: 2,567
     - Explicit `Any` parameters: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 10
 - Returns:
-    - Annotated returns: 1,597
+    - Annotated returns: 1,599
     - Unannotated returns: 971
     - Explicit `Any` returns: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
@@ -9649,7 +9649,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,610 (excluding blank lines)
+69,615 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9679,7 +9679,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 2,088
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,814
+    - Annotated returns: 16,815
     - Unannotated returns: 204
     - Explicit `Any` returns: 851
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22

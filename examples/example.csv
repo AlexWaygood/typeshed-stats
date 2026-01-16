@@ -15,7 +15,7 @@ PySocks,types-PySocks,https://github.com/Anorov/PySocks,COMPLETE,-,213,UP_TO_DAT
 PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,COMPLETE,-,1318,UP_TO_DATE,UPLOADED,NOT_STRICT,520,278,222,172,4,0,46,12,220,160,2,91,0,0,ERROR_ON_MISSING_STUB,linux,4
 Pygments,types-Pygments,https://github.com/pygments/pygments,PARTIAL,-,849,UP_TO_DATE,UPLOADED,NOT_STRICT,94,179,107,77,0,5,1,0,376,0,193,94,0,1,MISSING_STUBS_IGNORED,linux,4
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,COMPLETE,-,56,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
-Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,15,OUT_OF_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,1
+Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,COMPLETE,-,7,UP_TO_DATE,UPLOADED,STRICT,20,0,6,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,6
 WTForms,types-WTForms,https://github.com/pallets-eco/wtforms,COMPLETE,-,1351,UP_TO_DATE,UPLOADED,STRICT,531,0,185,0,0,0,71,14,141,29,0,100,0,0,ERROR_ON_MISSING_STUB,linux,27
 WebOb,types-WebOb,https://github.com/Pylons/webob,COMPLETE,-,2222,UP_TO_DATE,UPLOADED,STRICT,799,0,609,0,0,0,80,13,250,15,0,136,1,0,ERROR_ON_MISSING_STUB,linux,99
@@ -154,7 +154,7 @@ qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,COMPLETE,-,182,UP_T
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,COMPLETE,-,651,UP_TO_DATE,UPLOADED,STRICT,282,0,152,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,10
 ratelimit,types-ratelimit,https://github.com/tomasbasham/ratelimit,COMPLETE,-,19,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,1,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,COMPLETE,-,910,UP_TO_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,3,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,12
-reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,COMPLETE,-,7964,OUT_OF_DATE,UPLOADED,NOT_STRICT,1794,2567,1597,971,10,8,26,12,2764,6,1172,583,0,3,ERROR_ON_MISSING_STUB,linux,52
+reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,COMPLETE,-,7968,UP_TO_DATE,UPLOADED,NOT_STRICT,1797,2567,1599,971,10,8,26,12,2764,6,1172,583,0,3,ERROR_ON_MISSING_STUB,linux,52
 requests,types-requests,https://github.com/psf/requests,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",1044,UP_TO_DATE,UPLOADED,NOT_STRICT,382,132,135,65,0,4,8,1,126,15,20,53,0,0,ERROR_ON_MISSING_STUB,linux,4
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,COMPLETE,-,272,UP_TO_DATE,UPLOADED,NOT_STRICT,68,69,45,4,2,3,2,0,25,1,7,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 retry,types-retry,https://github.com/invl/retry,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
@@ -169,7 +169,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,COMPLETE,-,
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,COMPLETE,-,72,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,STDLIB,-,69610,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30419,546,16814,204,11,22,2088,851,9535,309,221,3212,30,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,838
+stdlib,-,https://github.com/python/cpython,STDLIB,-,69615,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30419,546,16815,204,11,22,2088,851,9535,309,221,3212,30,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,838
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30234,OUT_OF_DATE,UPLOADED,NOT_STRICT,5366,38,2935,40,12,23,60,34,5434,5,11,924,1,0,SKIPPED,None,51
