@@ -1155,7 +1155,6 @@ def get_version(package_name: PackageName, *, typeshed_dir: Path | str) -> StubV
         StubVersion('==0.4.*')
     """
     if package_name == "stdlib":
-        # TODO: don't know if this is a good idea
         return StubVersion("==0.0.0")
 
     # All stubs have a version
