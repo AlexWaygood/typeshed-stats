@@ -9824,7 +9824,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-30,234 (excluding blank lines)
+30,275 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -9847,12 +9847,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 5,366
+    - Annotated parameters: 5,388
     - Unannotated parameters: 38
     - Explicit `Any` parameters: 60
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 12
 - Returns:
-    - Annotated returns: 2,935
+    - Annotated returns: 2,938
     - Unannotated returns: 40
     - Explicit `Any` returns: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 23
@@ -9861,7 +9861,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` variables: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 11
 - Class definitions:
-    - Total class definitions: 924
+    - Total class definitions: 927
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
