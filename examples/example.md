@@ -7167,8 +7167,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 22
-    - Unannotated returns: 1
+    - Annotated returns: 23
+    - Unannotated returns: 0
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -9649,7 +9649,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,622 (excluding blank lines)
+69,624 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9665,7 +9665,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 838 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 845 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -9824,7 +9824,7 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Number of lines
 
-30,275 (excluding blank lines)
+30,277 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -9847,12 +9847,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 5,388
+    - Annotated parameters: 5,391
     - Unannotated parameters: 38
     - Explicit `Any` parameters: 60
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 12
 - Returns:
-    - Annotated returns: 2,938
+    - Annotated returns: 2,939
     - Unannotated returns: 40
     - Explicit `Any` returns: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 23

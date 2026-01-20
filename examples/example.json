@@ -4275,8 +4275,8 @@
     "annotation_stats": {
       "annotated_parameters": 44,
       "unannotated_parameters": 0,
-      "annotated_returns": 22,
-      "unannotated_returns": 1,
+      "annotated_returns": 23,
+      "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 9,
@@ -5767,7 +5767,7 @@
     "upstream_url": "https://github.com/python/cpython",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 69622,
+    "number_of_lines": 69624,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5777,7 +5777,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 838
+      "allowlist_length": 845
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
@@ -5871,7 +5871,7 @@
     "upstream_url": "https://github.com/tensorflow/tensorflow",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.",
-    "number_of_lines": 30275,
+    "number_of_lines": 30277,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5881,9 +5881,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 5388,
+      "annotated_parameters": 5391,
       "unannotated_parameters": 38,
-      "annotated_returns": 2938,
+      "annotated_returns": 2939,
       "unannotated_returns": 40,
       "explicit_Incomplete_parameters": 12,
       "explicit_Incomplete_returns": 23,
