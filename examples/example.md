@@ -8,6 +8,10 @@
 
 `types-Authlib`
 
+### Version
+
+The latest version of `types-Authlib` aims to provide accurate annotations for `Authlib==1.6.6`.
+
 ### Number of lines
 
 3,611 (excluding blank lines)
@@ -64,6 +68,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-Deprecated`
+
+### Version
+
+The latest version of `types-Deprecated` aims to provide accurate annotations for `Deprecated~=1.3.1`.
 
 ### Number of lines
 
@@ -122,6 +130,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-Flask-Cors`
 
+### Version
+
+The latest version of `types-Flask-Cors` aims to provide accurate annotations for `Flask-Cors==6.0.*`.
+
 ### Number of lines
 
 130 (excluding blank lines)
@@ -178,6 +190,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-Flask-Migrate`
+
+### Version
+
+The latest version of `types-Flask-Migrate` aims to provide accurate annotations for `Flask-Migrate==4.1.*`.
 
 ### Number of lines
 
@@ -236,6 +252,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-Flask-SocketIO`
 
+### Version
+
+The latest version of `types-Flask-SocketIO` aims to provide accurate annotations for `Flask-SocketIO==5.6.*`.
+
 ### Number of lines
 
 256 (excluding blank lines)
@@ -292,6 +312,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-JACK-Client`
+
+### Version
+
+The latest version of `types-JACK-Client` aims to provide accurate annotations for `JACK-Client==0.5.*`.
 
 ### Number of lines
 
@@ -350,6 +374,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-Jetson.GPIO`
 
+### Version
+
+The latest version of `types-Jetson.GPIO` aims to provide accurate annotations for `Jetson.GPIO==2.1.12`.
+
 ### Number of lines
 
 212 (excluding blank lines)
@@ -406,6 +434,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-Markdown`
+
+### Version
+
+The latest version of `types-Markdown` aims to provide accurate annotations for `Markdown==3.10.*`.
 
 ### Number of lines
 
@@ -464,6 +496,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-PyAutoGUI`
 
+### Version
+
+The latest version of `types-PyAutoGUI` aims to provide accurate annotations for `PyAutoGUI==0.9.*`.
+
 ### Number of lines
 
 234 (excluding blank lines)
@@ -520,6 +556,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-PyMeeus`
+
+### Version
+
+The latest version of `types-PyMeeus` aims to provide accurate annotations for `PyMeeus==0.5.*`.
 
 ### Number of lines
 
@@ -578,6 +618,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-PyMySQL`
 
+### Version
+
+The latest version of `types-PyMySQL` aims to provide accurate annotations for `PyMySQL==1.1.*`.
+
 ### Number of lines
 
 1,219 (excluding blank lines)
@@ -634,6 +678,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-PyScreeze`
+
+### Version
+
+The latest version of `types-PyScreeze` aims to provide accurate annotations for `PyScreeze==1.0.1`.
 
 ### Number of lines
 
@@ -692,6 +740,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-PySocks`
 
+### Version
+
+The latest version of `types-PySocks` aims to provide accurate annotations for `PySocks==1.7.1`.
+
 ### Number of lines
 
 213 (excluding blank lines)
@@ -748,6 +800,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-PyYAML`
+
+### Version
+
+The latest version of `types-PyYAML` aims to provide accurate annotations for `PyYAML==6.0.*`.
 
 ### Number of lines
 
@@ -806,6 +862,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-Pygments`
 
+### Version
+
+The latest version of `types-Pygments` aims to provide accurate annotations for `Pygments==2.19.*`.
+
 ### Number of lines
 
 849 (excluding blank lines)
@@ -863,6 +923,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-RPi.GPIO`
 
+### Version
+
+The latest version of `types-RPi.GPIO` aims to provide accurate annotations for `RPi.GPIO==0.7.*`.
+
 ### Number of lines
 
 56 (excluding blank lines)
@@ -917,6 +981,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-Send2Trash`
+
+### Version
+
+The latest version of `types-Send2Trash` aims to provide accurate annotations for `Send2Trash==2.1.*`.
 
 ### Number of lines
 
@@ -975,6 +1043,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-TgCrypto`
 
+### Version
+
+The latest version of `types-TgCrypto` aims to provide accurate annotations for `TgCrypto==1.2.*`.
+
 ### Number of lines
 
 7 (excluding blank lines)
@@ -1031,6 +1103,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-WTForms`
+
+### Version
+
+The latest version of `types-WTForms` aims to provide accurate annotations for `WTForms~=3.2.1`.
 
 ### Number of lines
 
@@ -1089,6 +1165,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-WebOb`
 
+### Version
+
+The latest version of `types-WebOb` aims to provide accurate annotations for `WebOb==1.8.*`.
+
 ### Number of lines
 
 2,222 (excluding blank lines)
@@ -1145,6 +1225,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-aiofiles`
+
+### Version
+
+The latest version of `types-aiofiles` aims to provide accurate annotations for `aiofiles==25.1.*`.
 
 ### Number of lines
 
@@ -1203,6 +1287,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-antlr4-python3-runtime`
 
+### Version
+
+The latest version of `types-antlr4-python3-runtime` aims to provide accurate annotations for `antlr4-python3-runtime==4.13.*`.
+
 ### Number of lines
 
 1,968 (excluding blank lines)
@@ -1259,6 +1347,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-assertpy`
+
+### Version
+
+The latest version of `types-assertpy` aims to provide accurate annotations for `assertpy==1.1.*`.
 
 ### Number of lines
 
@@ -1317,6 +1409,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-atheris`
 
+### Version
+
+The latest version of `types-atheris` aims to provide accurate annotations for `atheris==3.0.*`.
+
 ### Number of lines
 
 88 (excluding blank lines)
@@ -1373,6 +1469,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-auth0-python`
+
+### Version
+
+The latest version of `types-auth0-python` aims to provide accurate annotations for `auth0-python==4.10.*`.
 
 ### Number of lines
 
@@ -1431,6 +1531,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-aws-xray-sdk`
 
+### Version
+
+The latest version of `types-aws-xray-sdk` aims to provide accurate annotations for `aws-xray-sdk==2.15.*`.
+
 ### Number of lines
 
 976 (excluding blank lines)
@@ -1487,6 +1591,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-binaryornot`
+
+### Version
+
+The latest version of `types-binaryornot` aims to provide accurate annotations for `binaryornot==0.4.*`.
 
 ### Number of lines
 
@@ -1545,6 +1653,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-bleach`
 
+### Version
+
+The latest version of `types-bleach` aims to provide accurate annotations for `bleach==6.3.*`.
+
 ### Number of lines
 
 243 (excluding blank lines)
@@ -1601,6 +1713,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-boltons`
+
+### Version
+
+The latest version of `types-boltons` aims to provide accurate annotations for `boltons==25.0.*`.
 
 ### Number of lines
 
@@ -1659,6 +1775,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-braintree`
 
+### Version
+
+The latest version of `types-braintree` aims to provide accurate annotations for `braintree==4.41.*`.
+
 ### Number of lines
 
 3,556 (excluding blank lines)
@@ -1715,6 +1835,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-cachetools`
+
+### Version
+
+The latest version of `types-cachetools` aims to provide accurate annotations for `cachetools==6.2.*`.
 
 ### Number of lines
 
@@ -1773,6 +1897,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-capturer`
 
+### Version
+
+The latest version of `types-capturer` aims to provide accurate annotations for `capturer==3.0.*`.
+
 ### Number of lines
 
 114 (excluding blank lines)
@@ -1829,6 +1957,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-cffi`
+
+### Version
+
+The latest version of `types-cffi` aims to provide accurate annotations for `cffi==1.17.*`.
 
 ### Number of lines
 
@@ -1887,6 +2019,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-channels`
 
+### Version
+
+The latest version of `types-channels` aims to provide accurate annotations for `channels==4.3.*`.
+
 ### Number of lines
 
 545 (excluding blank lines)
@@ -1943,6 +2079,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-chevron`
+
+### Version
+
+The latest version of `types-chevron` aims to provide accurate annotations for `chevron==0.14.*`.
 
 ### Number of lines
 
@@ -2001,6 +2141,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-click-default-group`
 
+### Version
+
+The latest version of `types-click-default-group` aims to provide accurate annotations for `click-default-group==1.2.*`.
+
 ### Number of lines
 
 79 (excluding blank lines)
@@ -2057,6 +2201,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-click-log`
+
+### Version
+
+The latest version of `types-click-log` aims to provide accurate annotations for `click-log==0.4.*`.
 
 ### Number of lines
 
@@ -2115,6 +2263,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-click-shell`
 
+### Version
+
+The latest version of `types-click-shell` aims to provide accurate annotations for `click-shell==2.1`.
+
 ### Number of lines
 
 71 (excluding blank lines)
@@ -2171,6 +2323,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-click-spinner`
+
+### Version
+
+The latest version of `types-click-spinner` aims to provide accurate annotations for `click-spinner==0.1.*`.
 
 ### Number of lines
 
@@ -2229,6 +2385,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-click-web`
 
+### Version
+
+The latest version of `types-click-web` aims to provide accurate annotations for `click-web==0.8.*`.
+
 ### Number of lines
 
 189 (excluding blank lines)
@@ -2285,6 +2445,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-colorama`
+
+### Version
+
+The latest version of `types-colorama` aims to provide accurate annotations for `colorama==0.4.*`.
 
 ### Number of lines
 
@@ -2343,6 +2507,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-colorful`
 
+### Version
+
+The latest version of `types-colorful` aims to provide accurate annotations for `colorful==0.5.*`.
+
 ### Number of lines
 
 128 (excluding blank lines)
@@ -2399,6 +2567,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-console-menu`
+
+### Version
+
+The latest version of `types-console-menu` aims to provide accurate annotations for `console-menu==0.8.*`.
 
 ### Number of lines
 
@@ -2457,6 +2629,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-convertdate`
 
+### Version
+
+The latest version of `types-convertdate` aims to provide accurate annotations for `convertdate==2.4.*`.
+
 ### Number of lines
 
 558 (excluding blank lines)
@@ -2513,6 +2689,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-croniter`
+
+### Version
+
+The latest version of `types-croniter` aims to provide accurate annotations for `croniter==6.0.0`.
 
 ### Number of lines
 
@@ -2571,6 +2751,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-dateparser`
 
+### Version
+
+The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser~=1.2.2`.
+
 ### Number of lines
 
 509 (excluding blank lines)
@@ -2627,6 +2811,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-decorator`
+
+### Version
+
+The latest version of `types-decorator` aims to provide accurate annotations for `decorator==5.2.*`.
 
 ### Number of lines
 
@@ -2685,6 +2873,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-defusedxml`
 
+### Version
+
+The latest version of `types-defusedxml` aims to provide accurate annotations for `defusedxml==0.7.*`.
+
 ### Number of lines
 
 352 (excluding blank lines)
@@ -2741,6 +2933,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-dirhash`
+
+### Version
+
+The latest version of `types-dirhash` aims to provide accurate annotations for `dirhash==0.5.*`.
 
 ### Number of lines
 
@@ -2799,6 +2995,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-django-filter`
 
+### Version
+
+The latest version of `types-django-filter` aims to provide accurate annotations for `django-filter==25.2.*`.
+
 ### Number of lines
 
 805 (excluding blank lines)
@@ -2856,6 +3056,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-django-import-export`
 
+### Version
+
+The latest version of `types-django-import-export` aims to provide accurate annotations for `django-import-export==4.4.*`.
+
 ### Number of lines
 
 696 (excluding blank lines)
@@ -2910,6 +3114,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-docker`
+
+### Version
+
+The latest version of `types-docker` aims to provide accurate annotations for `docker==7.1.*`.
 
 ### Number of lines
 
@@ -2968,6 +3176,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-dockerfile-parse`
 
+### Version
+
+The latest version of `types-dockerfile-parse` aims to provide accurate annotations for `dockerfile-parse==2.0.*`.
+
 ### Number of lines
 
 116 (excluding blank lines)
@@ -3024,6 +3236,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-docutils`
+
+### Version
+
+The latest version of `types-docutils` aims to provide accurate annotations for `docutils==0.22.3`.
 
 ### Number of lines
 
@@ -3082,6 +3298,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-editdistance`
 
+### Version
+
+The latest version of `types-editdistance` aims to provide accurate annotations for `editdistance==0.8.*`.
+
 ### Number of lines
 
 6 (excluding blank lines)
@@ -3138,6 +3358,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-entrypoints`
+
+### Version
+
+The latest version of `types-entrypoints` aims to provide accurate annotations for `entrypoints==0.4.*`.
 
 ### Number of lines
 
@@ -3196,6 +3420,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-ephem`
 
+### Version
+
+The latest version of `types-ephem` aims to provide accurate annotations for `ephem==4.2.*`.
+
 ### Number of lines
 
 591 (excluding blank lines)
@@ -3252,6 +3480,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-et_xmlfile`
+
+### Version
+
+The latest version of `types-et_xmlfile` aims to provide accurate annotations for `et_xmlfile==2.0.*`.
 
 ### Number of lines
 
@@ -3310,6 +3542,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-fanstatic`
 
+### Version
+
+The latest version of `types-fanstatic` aims to provide accurate annotations for `fanstatic==1.6.*`.
+
 ### Number of lines
 
 537 (excluding blank lines)
@@ -3366,6 +3602,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-first`
+
+### Version
+
+The latest version of `types-first` aims to provide accurate annotations for `first==2.0.*`.
 
 ### Number of lines
 
@@ -3424,6 +3664,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-flake8`
 
+### Version
+
+The latest version of `types-flake8` aims to provide accurate annotations for `flake8==7.3.*`.
+
 ### Number of lines
 
 574 (excluding blank lines)
@@ -3480,6 +3724,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-flake8-bugbear`
+
+### Version
+
+The latest version of `types-flake8-bugbear` aims to provide accurate annotations for `flake8-bugbear==25.11.29`.
 
 ### Number of lines
 
@@ -3538,6 +3786,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-flake8-builtins`
 
+### Version
+
+The latest version of `types-flake8-builtins` aims to provide accurate annotations for `flake8-builtins==3.1.*`.
+
 ### Number of lines
 
 40 (excluding blank lines)
@@ -3594,6 +3846,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-flake8-docstrings`
+
+### Version
+
+The latest version of `types-flake8-docstrings` aims to provide accurate annotations for `flake8-docstrings==1.7.*`.
 
 ### Number of lines
 
@@ -3652,6 +3908,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-flake8-rst-docstrings`
 
+### Version
+
+The latest version of `types-flake8-rst-docstrings` aims to provide accurate annotations for `flake8-rst-docstrings==0.4.*`.
+
 ### Number of lines
 
 31 (excluding blank lines)
@@ -3708,6 +3968,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-flake8-simplify`
+
+### Version
+
+The latest version of `types-flake8-simplify` aims to provide accurate annotations for `flake8-simplify==0.30.*`.
 
 ### Number of lines
 
@@ -3766,6 +4030,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-flake8-typing-imports`
 
+### Version
+
+The latest version of `types-flake8-typing-imports` aims to provide accurate annotations for `flake8-typing-imports==1.17.*`.
+
 ### Number of lines
 
 36 (excluding blank lines)
@@ -3822,6 +4090,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-fpdf2`
+
+### Version
+
+The latest version of `types-fpdf2` aims to provide accurate annotations for `fpdf2==2.8.4`.
 
 ### Number of lines
 
@@ -3884,6 +4156,10 @@ Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Pyth
 
 `types-gdb`
 
+### Version
+
+The latest version of `types-gdb` aims to provide accurate annotations for `gdb==16.3.*`.
+
 ### Number of lines
 
 1,588 (excluding blank lines)
@@ -3938,6 +4214,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-geopandas`
+
+### Version
+
+The latest version of `types-geopandas` aims to provide accurate annotations for `geopandas==1.1.2`.
 
 ### Number of lines
 
@@ -3996,6 +4276,10 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 
 `types-gevent`
 
+### Version
+
+The latest version of `types-gevent` aims to provide accurate annotations for `gevent==25.9.*`.
+
 ### Number of lines
 
 3,234 (excluding blank lines)
@@ -4052,6 +4336,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-google-cloud-ndb`
+
+### Version
+
+The latest version of `types-google-cloud-ndb` aims to provide accurate annotations for `google-cloud-ndb==2.4.*`.
 
 ### Number of lines
 
@@ -4110,6 +4398,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-greenlet`
 
+### Version
+
+The latest version of `types-greenlet` aims to provide accurate annotations for `greenlet==3.3.*`.
+
 ### Number of lines
 
 86 (excluding blank lines)
@@ -4166,6 +4458,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-grpcio`
+
+### Version
+
+The latest version of `types-grpcio` aims to provide accurate annotations for `grpcio==1.*`.
 
 ### Number of lines
 
@@ -4224,6 +4520,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 `types-grpcio-channelz`
 
+### Version
+
+The latest version of `types-grpcio-channelz` aims to provide accurate annotations for `grpcio-channelz==1.*`.
+
 ### Number of lines
 
 724 (excluding blank lines)
@@ -4280,6 +4580,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Stub distribution name
 
 `types-grpcio-health-checking`
+
+### Version
+
+The latest version of `types-grpcio-health-checking` aims to provide accurate annotations for `grpcio-health-checking==1.*`.
 
 ### Number of lines
 
@@ -4338,6 +4642,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 `types-grpcio-reflection`
 
+### Version
+
+The latest version of `types-grpcio-reflection` aims to provide accurate annotations for `grpcio-reflection==1.*`.
+
 ### Number of lines
 
 165 (excluding blank lines)
@@ -4394,6 +4702,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Stub distribution name
 
 `types-grpcio-status`
+
+### Version
+
+The latest version of `types-grpcio-status` aims to provide accurate annotations for `grpcio-status==1.*`.
 
 ### Number of lines
 
@@ -4452,6 +4764,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 `types-gunicorn`
 
+### Version
+
+The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==23.0.*`.
+
 ### Number of lines
 
 1,903 (excluding blank lines)
@@ -4504,6 +4820,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-hdbcli`
+
+### Version
+
+The latest version of `types-hdbcli` aims to provide accurate annotations for `hdbcli==2.25.*`.
 
 ### Number of lines
 
@@ -4562,6 +4882,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 `types-hnswlib`
 
+### Version
+
+The latest version of `types-hnswlib` aims to provide accurate annotations for `hnswlib==0.8.*`.
+
 ### Number of lines
 
 60 (excluding blank lines)
@@ -4618,6 +4942,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-html5lib`
+
+### Version
+
+The latest version of `types-html5lib` aims to provide accurate annotations for `html5lib==1.1.*`.
 
 ### Number of lines
 
@@ -4676,6 +5004,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-httplib2`
 
+### Version
+
+The latest version of `types-httplib2` aims to provide accurate annotations for `httplib2==0.31.1`.
+
 ### Number of lines
 
 242 (excluding blank lines)
@@ -4732,6 +5064,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-hvac`
+
+### Version
+
+The latest version of `types-hvac` aims to provide accurate annotations for `hvac==2.4.*`.
 
 ### Number of lines
 
@@ -4790,6 +5126,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-ibm-db`
 
+### Version
+
+The latest version of `types-ibm-db` aims to provide accurate annotations for `ibm-db==3.2.6`.
+
 ### Number of lines
 
 346 (excluding blank lines)
@@ -4846,6 +5186,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-icalendar`
+
+### Version
+
+The latest version of `types-icalendar` aims to provide accurate annotations for `icalendar==6.3.2`.
 
 ### Number of lines
 
@@ -4904,6 +5248,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 `types-inifile`
 
+### Version
+
+The latest version of `types-inifile` aims to provide accurate annotations for `inifile==0.4.*`.
+
 ### Number of lines
 
 124 (excluding blank lines)
@@ -4961,13 +5309,17 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-jmespath`
 
+### Version
+
+The latest version of `types-jmespath` aims to provide accurate annotations for `jmespath==1.0.*`.
+
 ### Number of lines
 
 214 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5017,6 +5369,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-jsonnet`
+
+### Version
+
+The latest version of `types-jsonnet` aims to provide accurate annotations for `jsonnet==0.21.*`.
 
 ### Number of lines
 
@@ -5075,6 +5431,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-jsonschema`
 
+### Version
+
+The latest version of `types-jsonschema` aims to provide accurate annotations for `jsonschema~=4.26.0`.
+
 ### Number of lines
 
 484 (excluding blank lines)
@@ -5131,6 +5491,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-jwcrypto`
+
+### Version
+
+The latest version of `types-jwcrypto` aims to provide accurate annotations for `jwcrypto==1.5.*`.
 
 ### Number of lines
 
@@ -5189,6 +5553,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-keyboard`
 
+### Version
+
+The latest version of `types-keyboard` aims to provide accurate annotations for `keyboard==0.13.*`.
+
 ### Number of lines
 
 246 (excluding blank lines)
@@ -5245,6 +5613,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-ldap3`
+
+### Version
+
+The latest version of `types-ldap3` aims to provide accurate annotations for `ldap3==2.9.*`.
 
 ### Number of lines
 
@@ -5303,6 +5675,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-libsass`
 
+### Version
+
+The latest version of `types-libsass` aims to provide accurate annotations for `libsass==0.23.*`.
+
 ### Number of lines
 
 250 (excluding blank lines)
@@ -5359,6 +5735,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-lunardate`
+
+### Version
+
+The latest version of `types-lunardate` aims to provide accurate annotations for `lunardate==0.2.*`.
 
 ### Number of lines
 
@@ -5417,6 +5797,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-lupa`
 
+### Version
+
+The latest version of `types-lupa` aims to provide accurate annotations for `lupa==2.6.*`.
+
 ### Number of lines
 
 522 (excluding blank lines)
@@ -5473,6 +5857,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-lzstring`
+
+### Version
+
+The latest version of `types-lzstring` aims to provide accurate annotations for `lzstring==1.0.*`.
 
 ### Number of lines
 
@@ -5531,6 +5919,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-m3u8`
 
+### Version
+
+The latest version of `types-m3u8` aims to provide accurate annotations for `m3u8==6.0.*`.
+
 ### Number of lines
 
 602 (excluding blank lines)
@@ -5587,6 +5979,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Stub distribution name
 
 `types-mock`
+
+### Version
+
+The latest version of `types-mock` aims to provide accurate annotations for `mock==5.2.*`.
 
 ### Number of lines
 
@@ -5645,6 +6041,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 `types-mypy-extensions`
 
+### Version
+
+The latest version of `types-mypy-extensions` aims to provide accurate annotations for `mypy-extensions==1.1.*`.
+
 ### Number of lines
 
 80 (excluding blank lines)
@@ -5701,6 +6101,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-mysqlclient`
+
+### Version
+
+The latest version of `types-mysqlclient` aims to provide accurate annotations for `mysqlclient==2.2.*`.
 
 ### Number of lines
 
@@ -5759,6 +6163,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-nanoid`
 
+### Version
+
+The latest version of `types-nanoid` aims to provide accurate annotations for `nanoid==2.0.0`.
+
 ### Number of lines
 
 16 (excluding blank lines)
@@ -5815,6 +6223,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-nanoleafapi`
+
+### Version
+
+The latest version of `types-nanoleafapi` aims to provide accurate annotations for `nanoleafapi==2.1.*`.
 
 ### Number of lines
 
@@ -5873,6 +6285,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-netaddr`
 
+### Version
+
+The latest version of `types-netaddr` aims to provide accurate annotations for `netaddr==1.3.*`.
+
 ### Number of lines
 
 712 (excluding blank lines)
@@ -5929,6 +6345,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Stub distribution name
 
 `types-netifaces`
+
+### Version
+
+The latest version of `types-netifaces` aims to provide accurate annotations for `netifaces==0.11.*`.
 
 ### Number of lines
 
@@ -5987,6 +6407,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-networkx`
 
+### Version
+
+The latest version of `types-networkx` aims to provide accurate annotations for `networkx==3.6.1`.
+
 ### Number of lines
 
 7,630 (excluding blank lines)
@@ -6043,6 +6467,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-oauthlib`
+
+### Version
+
+The latest version of `types-oauthlib` aims to provide accurate annotations for `oauthlib==3.3.*`.
 
 ### Number of lines
 
@@ -6101,6 +6529,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-objgraph`
 
+### Version
+
+The latest version of `types-objgraph` aims to provide accurate annotations for `objgraph==3.6.*`.
+
 ### Number of lines
 
 87 (excluding blank lines)
@@ -6157,6 +6589,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-olefile`
+
+### Version
+
+The latest version of `types-olefile` aims to provide accurate annotations for `olefile==0.47.*`.
 
 ### Number of lines
 
@@ -6215,6 +6651,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-openpyxl`
 
+### Version
+
+The latest version of `types-openpyxl` aims to provide accurate annotations for `openpyxl==3.1.5`.
+
 ### Number of lines
 
 13,159 (excluding blank lines)
@@ -6271,6 +6711,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-opentracing`
+
+### Version
+
+The latest version of `types-opentracing` aims to provide accurate annotations for `opentracing==2.4.*`.
 
 ### Number of lines
 
@@ -6329,6 +6773,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 `types-paramiko`
 
+### Version
+
+The latest version of `types-paramiko` aims to provide accurate annotations for `paramiko==4.0.*`.
+
 ### Number of lines
 
 1,895 (excluding blank lines)
@@ -6385,6 +6833,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Stub distribution name
 
 `types-parsimonious`
+
+### Version
+
+The latest version of `types-parsimonious` aims to provide accurate annotations for `parsimonious==0.11.*`.
 
 ### Number of lines
 
@@ -6443,6 +6895,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 `types-passlib`
 
+### Version
+
+The latest version of `types-passlib` aims to provide accurate annotations for `passlib==1.7.*`.
+
 ### Number of lines
 
 2,056 (excluding blank lines)
@@ -6499,6 +6955,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-passpy`
+
+### Version
+
+The latest version of `types-passpy` aims to provide accurate annotations for `passpy==1.0.*`.
 
 ### Number of lines
 
@@ -6557,6 +7017,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-peewee`
 
+### Version
+
+The latest version of `types-peewee` aims to provide accurate annotations for `peewee==3.19.0`.
+
 ### Number of lines
 
 1,758 (excluding blank lines)
@@ -6614,6 +7078,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-pep8-naming`
 
+### Version
+
+The latest version of `types-pep8-naming` aims to provide accurate annotations for `pep8-naming==0.15.*`.
+
 ### Number of lines
 
 150 (excluding blank lines)
@@ -6670,6 +7138,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-pexpect`
+
+### Version
+
+The latest version of `types-pexpect` aims to provide accurate annotations for `pexpect==4.9.*`.
 
 ### Number of lines
 
@@ -6732,6 +7204,10 @@ The `types-pika` package contains alternate, more complete type stubs, that are 
 
 `types-pika-ts`
 
+### Version
+
+The latest version of `types-pika-ts` aims to provide accurate annotations for `pika==1.3.*`.
+
 ### Number of lines
 
 2,225 (excluding blank lines)
@@ -6788,6 +7264,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-polib`
+
+### Version
+
+The latest version of `types-polib` aims to provide accurate annotations for `polib==1.2.*`.
 
 ### Number of lines
 
@@ -6846,6 +7326,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-pony`
 
+### Version
+
+The latest version of `types-pony` aims to provide accurate annotations for `pony==0.7.*`.
+
 ### Number of lines
 
 3,596 (excluding blank lines)
@@ -6902,6 +7386,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-portpicker`
+
+### Version
+
+The latest version of `types-portpicker` aims to provide accurate annotations for `portpicker==1.6.*`.
 
 ### Number of lines
 
@@ -6964,6 +7452,10 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 `types-protobuf`
 
+### Version
+
+The latest version of `types-protobuf` aims to provide accurate annotations for `protobuf~=6.32.1`.
+
 ### Number of lines
 
 6,167 (excluding blank lines)
@@ -7020,6 +7512,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-psutil`
+
+### Version
+
+The latest version of `types-psutil` aims to provide accurate annotations for `psutil==7.2.1`.
 
 ### Number of lines
 
@@ -7078,6 +7574,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 `types-psycopg2`
 
+### Version
+
+The latest version of `types-psycopg2` aims to provide accurate annotations for `psycopg2==2.9.11`.
+
 ### Number of lines
 
 1,759 (excluding blank lines)
@@ -7134,6 +7634,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-punq`
+
+### Version
+
+The latest version of `types-punq` aims to provide accurate annotations for `punq==0.7.*`.
 
 ### Number of lines
 
@@ -7192,6 +7696,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-pyRFC3339`
 
+### Version
+
+The latest version of `types-pyRFC3339` aims to provide accurate annotations for `pyRFC3339~=2.0.1`.
+
 ### Number of lines
 
 8 (excluding blank lines)
@@ -7249,6 +7757,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-pyasn1`
 
+### Version
+
+The latest version of `types-pyasn1` aims to provide accurate annotations for `pyasn1==0.6.*`.
+
 ### Number of lines
 
 1,484 (excluding blank lines)
@@ -7301,6 +7813,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-pyaudio`
+
+### Version
+
+The latest version of `types-pyaudio` aims to provide accurate annotations for `pyaudio==0.2.*`.
 
 ### Number of lines
 
@@ -7359,6 +7875,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-pycocotools`
 
+### Version
+
+The latest version of `types-pycocotools` aims to provide accurate annotations for `pycocotools==2.0.*`.
+
 ### Number of lines
 
 171 (excluding blank lines)
@@ -7415,6 +7935,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-pycurl`
+
+### Version
+
+The latest version of `types-pycurl` aims to provide accurate annotations for `pycurl==7.45.7`.
 
 ### Number of lines
 
@@ -7473,6 +7997,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-pyfarmhash`
 
+### Version
+
+The latest version of `types-pyfarmhash` aims to provide accurate annotations for `pyfarmhash==0.4.*`.
+
 ### Number of lines
 
 9 (excluding blank lines)
@@ -7529,6 +8057,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-pyflakes`
+
+### Version
+
+The latest version of `types-pyflakes` aims to provide accurate annotations for `pyflakes==3.4.*`.
 
 ### Number of lines
 
@@ -7587,6 +8119,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-pyinstaller`
 
+### Version
+
+The latest version of `types-pyinstaller` aims to provide accurate annotations for `pyinstaller==6.18.*`.
+
 ### Number of lines
 
 770 (excluding blank lines)
@@ -7643,6 +8179,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-pyjks`
+
+### Version
+
+The latest version of `types-pyjks` aims to provide accurate annotations for `pyjks==20.0.*`.
 
 ### Number of lines
 
@@ -7701,6 +8241,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-pyluach`
 
+### Version
+
+The latest version of `types-pyluach` aims to provide accurate annotations for `pyluach==2.3.*`.
+
 ### Number of lines
 
 271 (excluding blank lines)
@@ -7757,6 +8301,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-pynput`
+
+### Version
+
+The latest version of `types-pynput` aims to provide accurate annotations for `pynput~=1.8.1`.
 
 ### Number of lines
 
@@ -7815,6 +8363,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-pyperclip`
 
+### Version
+
+The latest version of `types-pyperclip` aims to provide accurate annotations for `pyperclip==1.9.*`.
+
 ### Number of lines
 
 18 (excluding blank lines)
@@ -7871,6 +8423,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-pyserial`
+
+### Version
+
+The latest version of `types-pyserial` aims to provide accurate annotations for `pyserial==3.5.*`.
 
 ### Number of lines
 
@@ -7929,6 +8485,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-pysftp`
 
+### Version
+
+The latest version of `types-pysftp` aims to provide accurate annotations for `pysftp==0.2.*`.
+
 ### Number of lines
 
 166 (excluding blank lines)
@@ -7985,6 +8545,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-pytest-lazy-fixture`
+
+### Version
+
+The latest version of `types-pytest-lazy-fixture` aims to provide accurate annotations for `pytest-lazy-fixture==0.6.*`.
 
 ### Number of lines
 
@@ -8043,6 +8607,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-python-crontab`
 
+### Version
+
+The latest version of `types-python-crontab` aims to provide accurate annotations for `python-crontab==3.3.*`.
+
 ### Number of lines
 
 355 (excluding blank lines)
@@ -8099,6 +8667,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-python-dateutil`
+
+### Version
+
+The latest version of `types-python-dateutil` aims to provide accurate annotations for `python-dateutil==2.9.*`.
 
 ### Number of lines
 
@@ -8157,6 +8729,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-python-http-client`
 
+### Version
+
+The latest version of `types-python-http-client` aims to provide accurate annotations for `python-http-client==3.3.7`.
+
 ### Number of lines
 
 76 (excluding blank lines)
@@ -8213,6 +8789,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-python-jenkins`
+
+### Version
+
+The latest version of `types-python-jenkins` aims to provide accurate annotations for `python-jenkins~=1.8.3`.
 
 ### Number of lines
 
@@ -8271,6 +8851,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-python-jose`
 
+### Version
+
+The latest version of `types-python-jose` aims to provide accurate annotations for `python-jose==3.5.*`.
+
 ### Number of lines
 
 359 (excluding blank lines)
@@ -8327,6 +8911,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-python-nmap`
+
+### Version
+
+The latest version of `types-python-nmap` aims to provide accurate annotations for `python-nmap==0.7.*`.
 
 ### Number of lines
 
@@ -8385,6 +8973,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-python-xlib`
 
+### Version
+
+The latest version of `types-python-xlib` aims to provide accurate annotations for `python-xlib==0.33.*`.
+
 ### Number of lines
 
 5,423 (excluding blank lines)
@@ -8441,6 +9033,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-pytz`
+
+### Version
+
+The latest version of `types-pytz` aims to provide accurate annotations for `pytz==2025.2`.
 
 ### Number of lines
 
@@ -8499,6 +9095,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-pywin32`
 
+### Version
+
+The latest version of `types-pywin32` aims to provide accurate annotations for `pywin32==311.*`.
+
 ### Number of lines
 
 39,362 (excluding blank lines)
@@ -8555,6 +9155,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-pyxdg`
+
+### Version
+
+The latest version of `types-pyxdg` aims to provide accurate annotations for `pyxdg==0.28.*`.
 
 ### Number of lines
 
@@ -8613,6 +9217,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-qrbill`
 
+### Version
+
+The latest version of `types-qrbill` aims to provide accurate annotations for `qrbill==1.2.*`.
+
 ### Number of lines
 
 182 (excluding blank lines)
@@ -8669,6 +9277,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-qrcode`
+
+### Version
+
+The latest version of `types-qrcode` aims to provide accurate annotations for `qrcode==8.2.*`.
 
 ### Number of lines
 
@@ -8727,6 +9339,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-ratelimit`
 
+### Version
+
+The latest version of `types-ratelimit` aims to provide accurate annotations for `ratelimit==2.2.*`.
+
 ### Number of lines
 
 19 (excluding blank lines)
@@ -8784,6 +9400,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-regex`
 
+### Version
+
+The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.1.15`.
+
 ### Number of lines
 
 910 (excluding blank lines)
@@ -8840,6 +9460,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-reportlab`
+
+### Version
+
+The latest version of `types-reportlab` aims to provide accurate annotations for `reportlab==4.4.9`.
 
 ### Number of lines
 
@@ -8902,6 +9526,10 @@ Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to
 
 `types-requests`
 
+### Version
+
+The latest version of `types-requests` aims to provide accurate annotations for `requests~=2.32.4`.
+
 ### Number of lines
 
 1,044 (excluding blank lines)
@@ -8958,6 +9586,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-requests-oauthlib`
+
+### Version
+
+The latest version of `types-requests-oauthlib` aims to provide accurate annotations for `requests-oauthlib==2.0.*`.
 
 ### Number of lines
 
@@ -9016,6 +9648,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-retry`
 
+### Version
+
+The latest version of `types-retry` aims to provide accurate annotations for `retry==0.9.*`.
+
 ### Number of lines
 
 29 (excluding blank lines)
@@ -9072,6 +9708,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-rfc3339-validator`
+
+### Version
+
+The latest version of `types-rfc3339-validator` aims to provide accurate annotations for `rfc3339-validator==0.1.*`.
 
 ### Number of lines
 
@@ -9134,6 +9774,10 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 `types-s2clientprotocol`
 
+### Version
+
+The latest version of `types-s2clientprotocol` aims to provide accurate annotations for `s2clientprotocol==5.*`.
+
 ### Number of lines
 
 6,947 (excluding blank lines)
@@ -9190,6 +9834,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-seaborn`
+
+### Version
+
+The latest version of `types-seaborn` aims to provide accurate annotations for `seaborn==0.13.2`.
 
 ### Number of lines
 
@@ -9252,6 +9900,10 @@ Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer 
 
 `types-setuptools`
 
+### Version
+
+The latest version of `types-setuptools` aims to provide accurate annotations for `setuptools==80.9.*`.
+
 ### Number of lines
 
 2,814 (excluding blank lines)
@@ -9308,6 +9960,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Stub distribution name
 
 `types-shapely`
+
+### Version
+
+The latest version of `types-shapely` aims to provide accurate annotations for `shapely==2.1.*`.
 
 ### Number of lines
 
@@ -9366,6 +10022,10 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 
 `types-simple-websocket`
 
+### Version
+
+The latest version of `types-simple-websocket` aims to provide accurate annotations for `simple-websocket==1.1.*`.
+
 ### Number of lines
 
 304 (excluding blank lines)
@@ -9422,6 +10082,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-simplejson`
+
+### Version
+
+The latest version of `types-simplejson` aims to provide accurate annotations for `simplejson==3.20.*`.
 
 ### Number of lines
 
@@ -9480,6 +10144,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-singledispatch`
 
+### Version
+
+The latest version of `types-singledispatch` aims to provide accurate annotations for `singledispatch==4.1.*`.
+
 ### Number of lines
 
 29 (excluding blank lines)
@@ -9537,6 +10205,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-six`
 
+### Version
+
+The latest version of `types-six` aims to provide accurate annotations for `six==1.17.*`.
+
 ### Number of lines
 
 331 (excluding blank lines)
@@ -9593,6 +10265,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-slumber`
+
+### Version
+
+The latest version of `types-slumber` aims to provide accurate annotations for `slumber==0.7.*`.
 
 ### Number of lines
 
@@ -9704,6 +10380,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 `types-str2bool`
 
+### Version
+
+The latest version of `types-str2bool` aims to provide accurate annotations for `str2bool==1.1`.
+
 ### Number of lines
 
 6 (excluding blank lines)
@@ -9760,6 +10440,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-tabulate`
+
+### Version
+
+The latest version of `types-tabulate` aims to provide accurate annotations for `tabulate==0.9.*`.
 
 ### Number of lines
 
@@ -9822,6 +10506,10 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 `types-tensorflow`
 
+### Version
+
+The latest version of `types-tensorflow` aims to provide accurate annotations for `tensorflow~=2.18.0`.
+
 ### Number of lines
 
 30,277 (excluding blank lines)
@@ -9876,6 +10564,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-toml`
+
+### Version
+
+The latest version of `types-toml` aims to provide accurate annotations for `toml==0.10.*`.
 
 ### Number of lines
 
@@ -9934,6 +10626,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-toposort`
 
+### Version
+
+The latest version of `types-toposort` aims to provide accurate annotations for `toposort==1.10`.
+
 ### Number of lines
 
 15 (excluding blank lines)
@@ -9990,6 +10686,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-tqdm`
+
+### Version
+
+The latest version of `types-tqdm` aims to provide accurate annotations for `tqdm==4.67.*`.
 
 ### Number of lines
 
@@ -10048,6 +10748,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-translationstring`
 
+### Version
+
+The latest version of `types-translationstring` aims to provide accurate annotations for `translationstring==1.4.*`.
+
 ### Number of lines
 
 80 (excluding blank lines)
@@ -10105,6 +10809,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-ttkthemes`
 
+### Version
+
+The latest version of `types-ttkthemes` aims to provide accurate annotations for `ttkthemes==3.3.*`.
+
 ### Number of lines
 
 126 (excluding blank lines)
@@ -10161,6 +10869,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-tzdata`
+
+### Version
+
+The latest version of `types-tzdata` aims to provide accurate annotations for `tzdata==2025.*`.
 
 ### Number of lines
 
@@ -10223,6 +10935,10 @@ Type hints for uWSGI's [Python API](https://uwsgi-docs.readthedocs.io/en/latest/
 
 `types-uWSGI`
 
+### Version
+
+The latest version of `types-uWSGI` aims to provide accurate annotations for `uWSGI==2.0.*`.
+
 ### Number of lines
 
 382 (excluding blank lines)
@@ -10279,6 +10995,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-ujson`
+
+### Version
+
+The latest version of `types-ujson` aims to provide accurate annotations for `ujson==5.10.*`.
 
 ### Number of lines
 
@@ -10337,6 +11057,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-unidiff`
 
+### Version
+
+The latest version of `types-unidiff` aims to provide accurate annotations for `unidiff==0.7.*`.
+
 ### Number of lines
 
 144 (excluding blank lines)
@@ -10393,6 +11117,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-untangle`
+
+### Version
+
+The latest version of `types-untangle` aims to provide accurate annotations for `untangle==1.2.*`.
 
 ### Number of lines
 
@@ -10451,6 +11179,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-usersettings`
 
+### Version
+
+The latest version of `types-usersettings` aims to provide accurate annotations for `usersettings==1.1.*`.
+
 ### Number of lines
 
 12 (excluding blank lines)
@@ -10507,6 +11239,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-vobject`
+
+### Version
+
+The latest version of `types-vobject` aims to provide accurate annotations for `vobject~=0.9.9`.
 
 ### Number of lines
 
@@ -10565,6 +11301,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-waitress`
 
+### Version
+
+The latest version of `types-waitress` aims to provide accurate annotations for `waitress~=3.0.1`.
+
 ### Number of lines
 
 639 (excluding blank lines)
@@ -10621,6 +11361,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-watchpoints`
+
+### Version
+
+The latest version of `types-watchpoints` aims to provide accurate annotations for `watchpoints==0.2.5`.
 
 ### Number of lines
 
@@ -10679,6 +11423,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-webencodings`
 
+### Version
+
+The latest version of `types-webencodings` aims to provide accurate annotations for `webencodings==0.5.*`.
+
 ### Number of lines
 
 48 (excluding blank lines)
@@ -10735,6 +11483,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-whatthepatch`
+
+### Version
+
+The latest version of `types-whatthepatch` aims to provide accurate annotations for `whatthepatch==1.0.*`.
 
 ### Number of lines
 
@@ -10793,6 +11545,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-workalendar`
 
+### Version
+
+The latest version of `types-workalendar` aims to provide accurate annotations for `workalendar==17.0.*`.
+
 ### Number of lines
 
 1,861 (excluding blank lines)
@@ -10849,6 +11605,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Stub distribution name
 
 `types-wurlitzer`
+
+### Version
+
+The latest version of `types-wurlitzer` aims to provide accurate annotations for `wurlitzer==3.1.*`.
 
 ### Number of lines
 
@@ -10907,6 +11667,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-www-authenticate`
 
+### Version
+
+The latest version of `types-www-authenticate` aims to provide accurate annotations for `www-authenticate==0.9.*`.
+
 ### Number of lines
 
 29 (excluding blank lines)
@@ -10963,6 +11727,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-xdgenvpy`
+
+### Version
+
+The latest version of `types-xdgenvpy` aims to provide accurate annotations for `xdgenvpy==3.0.*`.
 
 ### Number of lines
 
@@ -11021,6 +11789,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-xlrd`
 
+### Version
+
+The latest version of `types-xlrd` aims to provide accurate annotations for `xlrd==2.0.*`.
+
 ### Number of lines
 
 778 (excluding blank lines)
@@ -11077,6 +11849,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-xmldiff`
+
+### Version
+
+The latest version of `types-xmldiff` aims to provide accurate annotations for `xmldiff==2.7.*`.
 
 ### Number of lines
 
@@ -11135,6 +11911,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 `types-xmltodict`
 
+### Version
+
+The latest version of `types-xmltodict` aims to provide accurate annotations for `xmltodict~=1.0.1`.
+
 ### Number of lines
 
 118 (excluding blank lines)
@@ -11191,6 +11971,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-yt-dlp`
+
+### Version
+
+The latest version of `types-yt-dlp` aims to provide accurate annotations for `yt-dlp==2025.12.08`.
 
 ### Number of lines
 
@@ -11249,6 +12033,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 `types-zstd`
 
+### Version
+
+The latest version of `types-zstd` aims to provide accurate annotations for `zstd~=1.5.7.3`.
+
 ### Number of lines
 
 37 (excluding blank lines)
@@ -11305,6 +12093,10 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Stub distribution name
 
 `types-zxcvbn`
+
+### Version
+
+The latest version of `types-zxcvbn` aims to provide accurate annotations for `zxcvbn==4.5.*`.
 
 ### Number of lines
 
