@@ -1123,14 +1123,7 @@ class StubVersion(SpecifierSet):
     def __repr__(self) -> str:
         """Wraps SpecifierSet.__repr__ to make it `eval`able."""
         # Normal repr is `<SpecifierSet('1.2.*')>`
-        # Equivalent to:
-        # return (
-        #     super()
-        #     .__repr__()
-        #     .strip("<>")
-        #     .replace("SpecifierSet", "StubVersion", count=1)
-        # )
-        return f"StubVersion{super().__repr__()[13:-1]}"
+        return f"StubVersion({str(self)!r})"
 
 
 def get_version(package_name: PackageName, *, typeshed_dir: Path | str) -> StubVersion:
