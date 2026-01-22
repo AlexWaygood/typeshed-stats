@@ -27,6 +27,7 @@ from typeshed_stats.gather import (
     PackageStatus,
     PyrightSetting,
     StubtestStrictness,
+    StubVersion,
     UploadStatus,
 )
 
@@ -227,6 +228,7 @@ class TestPassingPackages:
                 "get_upstream_url",
                 f"https://github.com/who_knows/{EXAMPLE_PACKAGE_NAME}",
             ),
+            ("get_version", StubVersion("==1.2.*")),
             ("get_stubtest_strictness", StubtestStrictness.MISSING_STUBS_IGNORED),
             ("get_pyright_setting_for_package", PyrightSetting.STRICT_ON_SOME_FILES),
             ("get_package_extra_description", None),

@@ -19,6 +19,7 @@ from unittest import mock
 # Some tests assert behaviour that's predicated on rich not yet being imported
 import aiohttp
 import pytest
+from packaging.specifiers import SpecifierSet
 from packaging.version import Version
 from pytest_mock import MockerFixture
 from pytest_subtests import SubTests
@@ -30,6 +31,7 @@ from typeshed_stats.gather import (
     PackageStatus,
     PyrightSetting,
     StubtestStrictness,
+    StubVersion,
     UploadStatus,
     _get_pypi_data,
     gather_annotation_stats_on_file,
@@ -47,6 +49,7 @@ from typeshed_stats.gather import (
     get_stubtest_strictness,
     get_upload_status,
     get_upstream_url,
+    get_version,
     tmpdir_typeshed,
 )
 
@@ -581,6 +584,49 @@ def test_get_upload_status_non_stdlib(
     )
     expected_result = UploadStatus[expected_result_name]
     assert actual_result is expected_result
+
+
+# =================================
+# Tests for get_version
+# =================================
+
+
+def test_get_version_stdlib() -> None:
+    result = get_version("stdlib", typeshed_dir=Path("."))
+    assert result == StubVersion("==0.0.0")
+
+
+@pytest.mark.parametrize(
+    ("metadata_text", "expected_result"),
+    [
+        pytest.param(
+            'version = "0.4.*"', StubVersion("==0.4.*"), id="implicit_eqeq_star"
+        ),
+        pytest.param('version = "~=2.32.4"', StubVersion("~=2.32.4"), id="tilde"),
+    ],
+)
+def test_get_version_non_stdlib(
+    metadata_text: str,
+    expected_result: str,
+    typeshed: Path,
+    EXAMPLE_PACKAGE_NAME: str,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, metadata_text)
+    actual_result = get_version(
+        EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
+    )
+    assert actual_result == expected_result
+
+
+def test_get_version_no_version(
+    typeshed: Path,
+    EXAMPLE_PACKAGE_NAME: str,
+    maybe_stringize_path: Callable[[Path], Path | str],
+) -> None:
+    write_metadata_text(typeshed, EXAMPLE_PACKAGE_NAME, "")
+    with pytest.raises(KeyError):
+        get_version(EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed))
 
 
 # =================================
@@ -1231,3 +1277,9 @@ def test_exceptions_bubble_up(typeshed: Path) -> None:
         gather_stats_on_multiple_packages(typeshed_dir=typeshed)
     assert isinstance(exc_info.value, ExceptionGroup)
     assert any(isinstance(exc, KeyError) for exc in exc_info.value.exceptions)
+
+
+def test_stub_version_repr() -> None:
+    version = StubVersion("==1.2.*")
+    assert repr(version) == "StubVersion('==1.2.*')"
+    assert SpecifierSet.__repr__(version) == "<SpecifierSet('==1.2.*')>"
