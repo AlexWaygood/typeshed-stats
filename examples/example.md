@@ -5012,9 +5012,9 @@ The latest version of `types-httplib2` aims to provide accurate annotations for 
 
 242 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5311,15 +5311,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-jmespath` aims to provide accurate annotations for `jmespath==1.0.*`.
+The latest version of `types-jmespath` aims to provide accurate annotations for `jmespath==1.1.*`.
 
 ### Number of lines
 
 214 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,624 (excluding blank lines)
+69,637 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10350,12 +10350,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,422
+    - Annotated parameters: 30,424
     - Unannotated parameters: 546
     - Explicit `Any` parameters: 2,088
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,816
+    - Annotated returns: 16,818
     - Unannotated returns: 204
     - Explicit `Any` returns: 851
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
