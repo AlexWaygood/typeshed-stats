@@ -8674,7 +8674,7 @@ The latest version of `types-python-dateutil` aims to provide accurate annotatio
 
 ### Number of lines
 
-738 (excluding blank lines)
+742 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8699,8 +8699,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `python-dateutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 305
-    - Unannotated parameters: 1
+    - Annotated parameters: 306
+    - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -9902,15 +9902,15 @@ Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer 
 
 ### Version
 
-The latest version of `types-setuptools` aims to provide accurate annotations for `setuptools==80.9.*`.
+The latest version of `types-setuptools` aims to provide accurate annotations for `setuptools==80.10.*`.
 
 ### Number of lines
 
 2,814 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
