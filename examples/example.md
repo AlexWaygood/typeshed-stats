@@ -4766,11 +4766,11 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Version
 
-The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==23.0.*`.
+The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==24.1.0`.
 
 ### Number of lines
 
-1,903 (excluding blank lines)
+2,244 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4795,21 +4795,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `gunicorn`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 479
+    - Annotated parameters: 537
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 382
+    - Annotated returns: 438
     - Unannotated returns: 0
     - Explicit `Any` returns: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 922
+    - Annotated variables: 1,082
     - Explicit `Any` variables: 21
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
-    - Total class definitions: 164
+    - Total class definitions: 189
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7145,7 +7145,7 @@ The latest version of `types-pexpect` aims to provide accurate annotations for `
 
 ### Number of lines
 
-670 (excluding blank lines)
+668 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,639 (excluding blank lines)
+69,645 (excluding blank lines)
 
 ### Package status: *stdlib*
 
