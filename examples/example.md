@@ -4766,15 +4766,15 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Version
 
-The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==24.1.0`.
+The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==24.1.*`.
 
 ### Number of lines
 
 2,244 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4786,7 +4786,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin` and `linux`.
 
-Typeshed currently has 2 unique allowlist entries for `gunicorn` when running stubtest in CI.
+Typeshed currently has 4 unique allowlist entries for `gunicorn` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
