@@ -2,7 +2,7 @@
 
 ### Upstream repo URL
 
-[https://github.com/lepture/authlib](https://github.com/lepture/authlib)
+[https://github.com/authlib/authlib](https://github.com/authlib/authlib)
 
 ### Stub distribution name
 
@@ -63,7 +63,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Upstream repo URL
 
-[https://github.com/tantale/deprecated](https://github.com/tantale/deprecated)
+[https://github.com/laurent-laporte-pro/deprecated](https://github.com/laurent-laporte-pro/deprecated)
 
 ### Stub distribution name
 
@@ -4085,7 +4085,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Upstream repo URL
 
-[https://github.com/PyFPDF/fpdf2](https://github.com/PyFPDF/fpdf2)
+[https://github.com/py-pdf/fpdf2](https://github.com/py-pdf/fpdf2)
 
 ### Stub distribution name
 
@@ -6279,7 +6279,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Upstream repo URL
 
-[https://github.com/drkjam/netaddr](https://github.com/drkjam/netaddr)
+[https://github.com/netaddr/netaddr](https://github.com/netaddr/netaddr)
 
 ### Stub distribution name
 
@@ -7515,15 +7515,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-psutil` aims to provide accurate annotations for `psutil==7.2.1`.
+The latest version of `types-psutil` aims to provide accurate annotations for `psutil==7.2.2`.
 
 ### Number of lines
 
-2,259 (excluding blank lines)
+2,264 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7544,12 +7544,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `psutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 508
+    - Annotated parameters: 514
     - Unannotated parameters: 2
     - Explicit `Any` parameters: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 688
+    - Annotated returns: 694
     - Unannotated returns: 1
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
@@ -10803,7 +10803,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Upstream repo URL
 
-[https://github.com/RedFantom/ttkthemes](https://github.com/RedFantom/ttkthemes)
+[https://github.com/TkinterEP/ttkthemes](https://github.com/TkinterEP/ttkthemes)
 
 ### Stub distribution name
 
@@ -11661,7 +11661,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Upstream repo URL
 
-[https://github.com/alexsdutton/www-authenticate](https://github.com/alexsdutton/www-authenticate)
+[https://github.com/alexdutton/www-authenticate](https://github.com/alexdutton/www-authenticate)
 
 ### Stub distribution name
 
@@ -11980,9 +11980,9 @@ The latest version of `types-yt-dlp` aims to provide accurate annotations for `y
 
 3,501 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
