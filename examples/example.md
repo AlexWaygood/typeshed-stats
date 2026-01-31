@@ -11974,15 +11974,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-yt-dlp` aims to provide accurate annotations for `yt-dlp==2025.12.08`.
+The latest version of `types-yt-dlp` aims to provide accurate annotations for `yt-dlp==2026.01.29`.
 
 ### Number of lines
 
-3,501 (excluding blank lines)
+3,581 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -12003,7 +12003,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `yt-dlp`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,029
+    - Annotated parameters: 2,030
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 280
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -12013,9 +12013,9 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 131
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 499
+    - Annotated variables: 577
     - Explicit `Any` variables: 29
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 30
 - Class definitions:
     - Total class definitions: 190
     - Class definitions with `Any`: 1
