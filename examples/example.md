@@ -10689,7 +10689,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-tqdm` aims to provide accurate annotations for `tqdm==4.67.*`.
+The latest version of `types-tqdm` aims to provide accurate annotations for `tqdm==4.67.2`.
 
 ### Number of lines
 
@@ -10719,7 +10719,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 809
-    - Unannotated parameters: 153
+    - Unannotated parameters: 151
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 31
 - Returns:

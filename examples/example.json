@@ -6144,7 +6144,7 @@
     "package_name": "tqdm",
     "stub_distribution_name": "types-tqdm",
     "upstream_url": "https://github.com/tqdm/tqdm",
-    "version": "==4.67.*",
+    "version": "==4.67.2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 1375,
@@ -6160,7 +6160,7 @@
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
       "annotated_parameters": 809,
-      "unannotated_parameters": 153,
+      "unannotated_parameters": 151,
       "annotated_returns": 167,
       "unannotated_returns": 27,
       "explicit_Incomplete_parameters": 31,
