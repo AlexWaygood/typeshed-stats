@@ -1844,9 +1844,9 @@ The latest version of `types-cachetools` aims to provide accurate annotations fo
 
 193 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -4772,9 +4772,9 @@ The latest version of `types-gunicorn` aims to provide accurate annotations for 
 
 2,244 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5437,7 +5437,7 @@ The latest version of `types-jsonschema` aims to provide accurate annotations fo
 
 ### Number of lines
 
-484 (excluding blank lines)
+483 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -11974,15 +11974,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-yt-dlp` aims to provide accurate annotations for `yt-dlp==2026.01.29`.
+The latest version of `types-yt-dlp` aims to provide accurate annotations for `yt-dlp==2026.01.31`.
 
 ### Number of lines
 
-3,581 (excluding blank lines)
+3,583 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -12017,7 +12017,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` variables: 29
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 30
 - Class definitions:
-    - Total class definitions: 190
+    - Total class definitions: 191
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
