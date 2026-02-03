@@ -1777,15 +1777,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-braintree` aims to provide accurate annotations for `braintree==4.41.*`.
+The latest version of `types-braintree` aims to provide accurate annotations for `braintree==4.42.*`.
 
 ### Number of lines
 
-3,556 (excluding blank lines)
+3,563 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1811,12 +1811,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 37
 - Returns:
-    - Annotated returns: 445
+    - Annotated returns: 448
     - Unannotated returns: 118
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
 - Variables:
-    - Annotated variables: 1,519
+    - Annotated variables: 1,521
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 115
 - Class definitions:
@@ -4766,15 +4766,15 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Version
 
-The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==24.1.*`.
+The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==25.0.*`.
 
 ### Number of lines
 
-2,244 (excluding blank lines)
+2,947 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4788,28 +4788,28 @@ In CI, stubtest is run on `darwin` and `linux`.
 
 Typeshed currently has 4 unique allowlist entries for `gunicorn` when running stubtest in CI.
 
-### Pyright settings in CI: *strict*
+### Pyright settings in CI: *strict on some files*
 
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded from the stricter settings.
 
 ### Statistics on the annotations in typeshed's stubs for `gunicorn`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 537
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
+    - Annotated parameters: 753
+    - Unannotated parameters: 3
+    - Explicit `Any` parameters: 23
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 24
 - Returns:
-    - Annotated returns: 438
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Annotated returns: 590
+    - Unannotated returns: 1
+    - Explicit `Any` returns: 15
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 13
 - Variables:
-    - Annotated variables: 1,082
-    - Explicit `Any` variables: 21
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
+    - Annotated variables: 1,355
+    - Explicit `Any` variables: 25
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 19
 - Class definitions:
-    - Total class definitions: 189
+    - Total class definitions: 246
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
