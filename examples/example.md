@@ -10689,15 +10689,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-tqdm` aims to provide accurate annotations for `tqdm==4.67.2`.
+The latest version of `types-tqdm` aims to provide accurate annotations for `tqdm==4.67.3`.
 
 ### Number of lines
 
 1,375 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
