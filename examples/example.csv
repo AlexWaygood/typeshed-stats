@@ -44,7 +44,7 @@ colorful,types-colorful,https://github.com/timofurrer/colorful,==0.5.*,COMPLETE,
 console-menu,types-console-menu,https://github.com/aegirhall/console-menu,==0.8.*,COMPLETE,-,736,UP_TO_DATE,UPLOADED,STRICT,217,0,278,0,0,0,7,1,58,3,1,39,0,0,ERROR_ON_MISSING_STUB,linux,0
 convertdate,types-convertdate,https://github.com/fitnr/convertdate,==2.4.*,COMPLETE,-,558,UP_TO_DATE,UPLOADED,STRICT,486,0,266,0,0,0,0,0,135,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 croniter,types-croniter,https://github.com/pallets-eco/croniter,==6.0.0,COMPLETE,-,358,UP_TO_DATE,UPLOADED,STRICT,164,0,42,0,0,0,1,0,48,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,0
-dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,~=1.2.2,COMPLETE,-,509,UP_TO_DATE,UPLOADED,NOT_STRICT,163,102,111,38,3,3,7,6,137,29,3,34,0,0,ERROR_ON_MISSING_STUB,linux,6
+dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,~=1.2.2,COMPLETE,-,509,OUT_OF_DATE,UPLOADED,NOT_STRICT,163,102,111,38,3,3,7,6,137,29,3,34,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,https://github.com/micheles/decorator,==5.2.*,COMPLETE,-,67,UP_TO_DATE,UPLOADED,STRICT,40,0,13,0,0,0,21,6,16,4,0,2,0,0,ERROR_ON_MISSING_STUB,linux,5
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,==0.7.*,COMPLETE,-,352,UP_TO_DATE,UPLOADED,NOT_STRICT,202,20,50,13,0,0,0,0,42,0,3,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 dirhash,types-dirhash,https://github.com/andhus/dirhash-python,==0.5.*,COMPLETE,-,88,UP_TO_DATE,UPLOADED,STRICT,39,0,13,0,0,0,0,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
