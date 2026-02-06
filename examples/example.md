@@ -2753,15 +2753,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser~=1.2.2`.
+The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser~=1.3.0`.
 
 ### Number of lines
 
-509 (excluding blank lines)
+551 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2782,21 +2782,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `dateparser`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 163
-    - Unannotated parameters: 102
+    - Annotated parameters: 179
+    - Unannotated parameters: 101
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
 - Returns:
-    - Annotated returns: 111
-    - Unannotated returns: 38
-    - Explicit `Any` returns: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
+    - Annotated returns: 119
+    - Unannotated returns: 37
+    - Explicit `Any` returns: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
-    - Annotated variables: 137
-    - Explicit `Any` variables: 29
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
+    - Annotated variables: 150
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 31
 - Class definitions:
-    - Total class definitions: 34
+    - Total class definitions: 35
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
