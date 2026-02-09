@@ -9902,11 +9902,11 @@ Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer 
 
 ### Version
 
-The latest version of `types-setuptools` aims to provide accurate annotations for `setuptools==80.10.*`.
+The latest version of `types-setuptools` aims to provide accurate annotations for `setuptools==81.0.*`.
 
 ### Number of lines
 
-2,814 (excluding blank lines)
+2,789 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -9931,7 +9931,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 916
+    - Annotated parameters: 903
     - Unannotated parameters: 239
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
@@ -9941,7 +9941,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 581
+    - Annotated variables: 578
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 198
 - Class definitions:
