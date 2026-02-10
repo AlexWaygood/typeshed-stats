@@ -2631,11 +2631,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-convertdate` aims to provide accurate annotations for `convertdate==2.4.*`.
+The latest version of `types-convertdate` aims to provide accurate annotations for `convertdate==2.4.1`.
 
 ### Number of lines
 
-558 (excluding blank lines)
+560 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2660,12 +2660,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `convertdate`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 486
+    - Annotated parameters: 488
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 266
+    - Annotated returns: 267
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -2757,7 +2757,7 @@ The latest version of `types-dateparser` aims to provide accurate annotations fo
 
 ### Number of lines
 
-551 (excluding blank lines)
+682 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2782,21 +2782,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `dateparser`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 179
-    - Unannotated parameters: 101
-    - Explicit `Any` parameters: 7
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
+    - Annotated parameters: 289
+    - Unannotated parameters: 11
+    - Explicit `Any` parameters: 11
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
 - Returns:
-    - Annotated returns: 119
-    - Unannotated returns: 37
-    - Explicit `Any` returns: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
+    - Annotated returns: 155
+    - Unannotated returns: 4
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
-    - Annotated variables: 150
+    - Annotated variables: 177
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 31
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 5
 - Class definitions:
-    - Total class definitions: 35
+    - Total class definitions: 40
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9902,15 +9902,15 @@ Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer 
 
 ### Version
 
-The latest version of `types-setuptools` aims to provide accurate annotations for `setuptools==81.0.*`.
+The latest version of `types-setuptools` aims to provide accurate annotations for `setuptools==82.0.*`.
 
 ### Number of lines
 
-2,789 (excluding blank lines)
+2,945 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -9931,21 +9931,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `setuptools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 903
+    - Annotated parameters: 956
     - Unannotated parameters: 239
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 729
+    - Annotated returns: 757
     - Unannotated returns: 109
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 578
+    - Annotated variables: 607
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 198
 - Class definitions:
-    - Total class definitions: 123
+    - Total class definitions: 129
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -10341,7 +10341,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 845 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 799 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
