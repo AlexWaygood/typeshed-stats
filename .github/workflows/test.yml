@@ -33,7 +33,6 @@ env:
   PY_COLORS: 1 # Recognized by the `py` package, dependency of `pytest`
   CLICOLOR_FORCE: 1 # recognized by uv
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  UV_BUILD_CONSTRAINT: build_constraints.txt
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
@@ -59,7 +58,9 @@ jobs:
         shell: bash
         run: |
           uv python pin ${{ matrix.python-version }}
-          uv run -v --group=dev coverage run -m pytest --doctest-modules
+          uv venv
+          uv pip install "setuptools<81"  # workaround for https://github.com/RKrahl/pytest-dependency/issues/91
+          uv run --no-build-isolation-package=pytest-dependency --group=dev coverage run -m pytest --doctest-modules
           uv run --group=dev coverage report --no-skip-covered
 
   create-issue-on-failure:
