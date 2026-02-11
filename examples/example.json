@@ -3258,41 +3258,6 @@
     }
   },
   {
-    "package_name": "libsass",
-    "stub_distribution_name": "types-libsass",
-    "upstream_url": "https://github.com/sass/libsass-python",
-    "version": "==0.23.*",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 250,
-    "package_status": "NO_LONGER_UPDATED",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "ci_platforms": [
-        "linux"
-      ],
-      "allowlist_length": 2
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 109,
-      "unannotated_parameters": 0,
-      "annotated_returns": 41,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 2,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 36,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 17,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "lunardate",
     "stub_distribution_name": "types-lunardate",
     "upstream_url": "https://github.com/lidaobing/python-lunardate",
