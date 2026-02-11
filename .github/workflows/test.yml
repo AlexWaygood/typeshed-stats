@@ -33,6 +33,7 @@ env:
   PY_COLORS: 1 # Recognized by the `py` package, dependency of `pytest`
   CLICOLOR_FORCE: 1 # recognized by uv
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  UV_BUILD_CONSTRAINT: build_constraints.txt
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
