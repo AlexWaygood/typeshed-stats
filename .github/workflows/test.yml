@@ -59,7 +59,7 @@ jobs:
         shell: bash
         run: |
           uv python pin ${{ matrix.python-version }}
-          uv run --group=dev coverage run -m pytest --doctest-modules
+          uv run -v --group=dev coverage run -m pytest --doctest-modules
           uv run --group=dev coverage report --no-skip-covered
 
   create-issue-on-failure:
