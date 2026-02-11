@@ -437,11 +437,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-Markdown` aims to provide accurate annotations for `Markdown==3.10.*`.
+The latest version of `types-Markdown` aims to provide accurate annotations for `Markdown~=3.10.2`.
 
 ### Number of lines
 
-826 (excluding blank lines)
+825 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -476,7 +476,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 253
+    - Annotated variables: 252
     - Explicit `Any` variables: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -2757,7 +2757,7 @@ The latest version of `types-dateparser` aims to provide accurate annotations fo
 
 ### Number of lines
 
-682 (excluding blank lines)
+685 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2782,15 +2782,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `dateparser`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 289
-    - Unannotated parameters: 11
+    - Annotated parameters: 292
+    - Unannotated parameters: 8
     - Explicit `Any` parameters: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
 - Returns:
     - Annotated returns: 155
     - Unannotated returns: 4
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
     - Annotated variables: 177
     - Explicit `Any` variables: 0
@@ -5683,9 +5683,9 @@ The latest version of `types-libsass` aims to provide accurate annotations for `
 
 250 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *no longer updated*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+The runtime package has not added type hints, but these stubs are no longer updated by typeshed for some other reason.
 
 ### Upload status: *uploaded*
 
@@ -6881,67 +6881,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Class definitions:
     - Total class definitions: 28
     - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
-## Info on typeshed's stubs for `passlib`
-
-### Upstream repo URL
-
-[https://foss.heptapod.net/python-libs/passlib](https://foss.heptapod.net/python-libs/passlib)
-
-### Stub distribution name
-
-`types-passlib`
-
-### Version
-
-The latest version of `types-passlib` aims to provide accurate annotations for `passlib==1.7.*`.
-
-### Number of lines
-
-2,056 (excluding blank lines)
-
-### Package status: *up to date*
-
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 32 unique allowlist entries for `passlib` when running stubtest in CI.
-
-### Pyright settings in CI: *not strict*
-
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
-
-### Statistics on the annotations in typeshed's stubs for `passlib`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 470
-    - Unannotated parameters: 453
-    - Explicit `Any` parameters: 32
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
-- Returns:
-    - Annotated returns: 291
-    - Unannotated returns: 207
-    - Explicit `Any` returns: 13
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 579
-    - Explicit `Any` variables: 54
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 8
-- Class definitions:
-    - Total class definitions: 143
-    - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
