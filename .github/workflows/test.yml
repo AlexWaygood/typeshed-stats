@@ -59,7 +59,7 @@ jobs:
         run: |
           uv python pin ${{ matrix.python-version }}
           uv venv
-          uv pip install "hatchling setuptools<81"  # workaround for https://github.com/RKrahl/pytest-dependency/issues/91
+          uv pip install hatchling "setuptools<81"  # workaround for https://github.com/RKrahl/pytest-dependency/issues/91
           uv run --no-build-isolation --group=dev coverage run -m pytest --doctest-modules
           uv run --group=dev coverage report --no-skip-covered
 
