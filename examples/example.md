@@ -3033,7 +3033,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Returns:
     - Annotated returns: 128
     - Unannotated returns: 0
-    - Explicit `Any` returns: 43
+    - Explicit `Any` returns: 44
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 113
@@ -5195,9 +5195,9 @@ The latest version of `types-icalendar` aims to provide accurate annotations for
 
 1,338 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
@@ -9347,9 +9347,9 @@ The latest version of `types-reportlab` aims to provide accurate annotations for
 
 7,968 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10203,7 +10203,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,689 (excluding blank lines)
+69,695 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10228,12 +10228,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,438
+    - Annotated parameters: 30,441
     - Unannotated parameters: 546
     - Explicit `Any` parameters: 2,090
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,825
+    - Annotated returns: 16,828
     - Unannotated returns: 204
     - Explicit `Any` returns: 851
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
