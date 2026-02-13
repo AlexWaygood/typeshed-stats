@@ -28,7 +28,7 @@
       matchManagers: ["pep621"],
       matchPackageNames: ["ty"],
       description: "Daily ty update",
-      schedule: ["before 4am"],
+      schedule: ["at any time"],
     },
   ],
   vulnerabilityAlerts: {
