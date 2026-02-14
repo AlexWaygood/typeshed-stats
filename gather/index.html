@@ -1,0 +1,4595 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A website providing statistics and analysis of typeshed's stubs packages">
+      
+      
+        <meta name="author" content="Alex Waygood">
+      
+      
+        <link rel="canonical" href="https://alexwaygood.github.io/gather/">
+      
+      
+        <link rel="prev" href="../stats-csv/">
+      
+      
+        <link rel="next" href="../serialize/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>typeshed_stats.gather API reference - typeshed-stats</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#typeshed_stats.gather.AnnotationStats" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="typeshed-stats" class="md-header__button md-logo" aria-label="typeshed-stats" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            typeshed-stats
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              typeshed_stats.gather API reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="yellow"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AlexWaygood/typeshed-stats" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AlexWaygood/typeshed-stats
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome to typeshed-stats
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../stats/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Stats on typeshed's stubs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../stats-csv/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Stats in CSV format
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  typeshed_stats.gather API reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../serialize/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  typeshed_stats.serialize API reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../cli/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CLI reference
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="typeshed-stats" class="md-nav__button md-logo" aria-label="typeshed-stats" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    typeshed-stats
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AlexWaygood/typeshed-stats" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AlexWaygood/typeshed-stats
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to typeshed-stats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stats on typeshed's stubs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stats-csv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stats in CSV format
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    typeshed_stats.gather API reference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    typeshed_stats.gather API reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.AnnotationStats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AnnotationStats
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.CompletenessLevel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CompletenessLevel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.FileInfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FileInfo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.PackageInfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PackageInfo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.PackageName" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PackageName
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.PackageStatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PackageStatus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.PyrightSetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PyrightSetting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.StubVersion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        StubVersion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="StubVersion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.StubVersion.__repr__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __repr__
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.StubtestSettings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        StubtestSettings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.StubtestStrictness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        StubtestStrictness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.UploadStatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UploadStatus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.gather_annotation_stats_on_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gather_annotation_stats_on_file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.gather_annotation_stats_on_package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gather_annotation_stats_on_package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.gather_stats_on_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gather_stats_on_file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.gather_stats_on_multiple_packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gather_stats_on_multiple_packages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.gather_stats_on_package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gather_stats_on_package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_completeness_level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_completeness_level
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_number_of_lines_of_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_number_of_lines_of_file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_package_extra_description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_package_extra_description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_package_size" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_package_size
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_package_status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_package_status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_pyright_setting_for_package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_pyright_setting_for_package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_pyright_setting_for_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_pyright_setting_for_path
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_stub_distribution_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_stub_distribution_name
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_stubtest_allowlist_length" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_stubtest_allowlist_length
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_stubtest_ci_platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_stubtest_ci_platforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_stubtest_settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_stubtest_settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_stubtest_strictness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_stubtest_strictness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_upload_status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_upload_status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_upstream_url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_upstream_url
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_version
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.tmpdir_typeshed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tmpdir_typeshed
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../serialize/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    typeshed_stats.serialize API reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.AnnotationStats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AnnotationStats
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.CompletenessLevel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CompletenessLevel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.FileInfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FileInfo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.PackageInfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PackageInfo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.PackageName" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PackageName
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.PackageStatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PackageStatus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.PyrightSetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PyrightSetting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.StubVersion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        StubVersion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="StubVersion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.StubVersion.__repr__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        __repr__
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.StubtestSettings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        StubtestSettings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.StubtestStrictness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        StubtestStrictness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.UploadStatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UploadStatus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.gather_annotation_stats_on_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gather_annotation_stats_on_file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.gather_annotation_stats_on_package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gather_annotation_stats_on_package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.gather_stats_on_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gather_stats_on_file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.gather_stats_on_multiple_packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gather_stats_on_multiple_packages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.gather_stats_on_package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gather_stats_on_package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_completeness_level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_completeness_level
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_number_of_lines_of_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_number_of_lines_of_file
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_package_extra_description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_package_extra_description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_package_size" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_package_size
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_package_status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_package_status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_pyright_setting_for_package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_pyright_setting_for_package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_pyright_setting_for_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_pyright_setting_for_path
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_stub_distribution_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_stub_distribution_name
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_stubtest_allowlist_length" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_stubtest_allowlist_length
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_stubtest_ci_platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_stubtest_ci_platforms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_stubtest_settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_stubtest_settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_stubtest_strictness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_stubtest_strictness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_upload_status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_upload_status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_upstream_url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_upstream_url
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.get_version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_version
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typeshed_stats.gather.tmpdir_typeshed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tmpdir_typeshed
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  
+  
+
+
+  <h1>typeshed_stats.gather API reference</h1>
+
+<p>Tools for gathering stats about typeshed packages.</p>
+<hr />
+<p><a name=AnnotationStats></a></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="typeshed_stats.gather.AnnotationStats" class="doc doc-heading">
+            <code>AnnotationStats</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+        <p>Stats on the annotations for a source file or a directory of source files.</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p><strong>Attributes:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>annotated_parameters</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>unannotated_parameters</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>annotated_returns</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>unannotated_returns</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>explicit_Incomplete_parameters</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>explicit_Incomplete_returns</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>explicit_Any_parameters</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>explicit_Any_returns</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>annotated_variables</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>explicit_Any_variables</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>explicit_Incomplete_variables</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>classdefs</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>classdefs_with_Any</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>classdefs_with_Incomplete</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a name=CompletenessLevel></a></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="typeshed_stats.gather.CompletenessLevel" class="doc doc-heading">
+            <code>CompletenessLevel</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+        <p>Whether or not a stubs package has been explicitly marked as 'partial'.</p>
+<p>See <a href="https://peps.python.org/pep-0561" title="PEP 561 – Distributing and Packaging Type Information">PEP 561</a> for an elaboration of what it means
+for a stub to be marked as partial.</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p><strong>Members:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PARTIAL</code></td>
+<td>The stubs package may not cover the entire API at runtime</td>
+</tr>
+<tr>
+<td><code>COMPLETE</code></td>
+<td>The stubs package should cover the entire API at runtime</td>
+</tr>
+<tr>
+<td><code>STDLIB</code></td>
+<td>These are the stdlib stubs -- the idea of 'partial/complete' doesn't really apply in the same way</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a name=FileInfo></a></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="typeshed_stats.gather.FileInfo" class="doc doc-heading">
+            <code>FileInfo</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+        <p>Statistics about a single <code>.pyi</code> file in typeshed.</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p><strong>Attributes:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>file_path</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path"><code>Path</code></a></td>
+</tr>
+<tr>
+<td><code>parent_package</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str"><code>str</code></a></td>
+</tr>
+<tr>
+<td><code>number_of_lines</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>pyright_setting</code></td>
+<td><a class="autorefs autorefs-internal" href="#typeshed_stats.gather.PyrightSetting"><code>PyrightSetting</code></a></td>
+</tr>
+<tr>
+<td><code>annotation_stats</code></td>
+<td><a class="autorefs autorefs-internal" href="#typeshed_stats.gather.AnnotationStats"><code>AnnotationStats</code></a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a name=PackageInfo></a></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="typeshed_stats.gather.PackageInfo" class="doc doc-heading">
+            <code>PackageInfo</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+        <p>Statistics about a single stubs package in typeshed.</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p><strong>Attributes:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>package_name</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str"><code>str</code></a></td>
+</tr>
+<tr>
+<td><code>stub_distribution_name</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str"><code>str</code></a></td>
+</tr>
+<tr>
+<td><code>upstream_url</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str"><code>str</code></a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#None"><code>None</code></a></td>
+</tr>
+<tr>
+<td><code>version</code></td>
+<td><a class="autorefs autorefs-internal" href="#typeshed_stats.gather.StubVersion"><code>StubVersion</code></a></td>
+</tr>
+<tr>
+<td><code>completeness_level</code></td>
+<td><a class="autorefs autorefs-internal" href="#typeshed_stats.gather.CompletenessLevel"><code>CompletenessLevel</code></a></td>
+</tr>
+<tr>
+<td><code>extra_description</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str"><code>str</code></a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#None"><code>None</code></a></td>
+</tr>
+<tr>
+<td><code>number_of_lines</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+<tr>
+<td><code>package_status</code></td>
+<td><a class="autorefs autorefs-internal" href="#typeshed_stats.gather.PackageStatus"><code>PackageStatus</code></a></td>
+</tr>
+<tr>
+<td><code>upload_status</code></td>
+<td><a class="autorefs autorefs-internal" href="#typeshed_stats.gather.UploadStatus"><code>UploadStatus</code></a></td>
+</tr>
+<tr>
+<td><code>stubtest_settings</code></td>
+<td><a class="autorefs autorefs-internal" href="#typeshed_stats.gather.StubtestSettings"><code>StubtestSettings</code></a></td>
+</tr>
+<tr>
+<td><code>pyright_setting</code></td>
+<td><a class="autorefs autorefs-internal" href="#typeshed_stats.gather.PyrightSetting"><code>PyrightSetting</code></a></td>
+</tr>
+<tr>
+<td><code>annotation_stats</code></td>
+<td><a class="autorefs autorefs-internal" href="#typeshed_stats.gather.AnnotationStats"><code>AnnotationStats</code></a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a name=PackageName></a></p>
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typeshed_stats.gather.PackageName" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">PackageName</span> <span class="o">=</span> <span class="nb">str</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+    </div>
+
+</div><hr />
+<p><a name=PackageStatus></a></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="typeshed_stats.gather.PackageStatus" class="doc doc-heading">
+            <code>PackageStatus</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+        <p>The various states of freshness/staleness a stubs package can be in.</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p><strong>Members:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>STDLIB</code></td>
+<td>These are typeshed's stubs for the standard library. Typeshed's stdlib stubs are generally fairly up to date, and are tested against all currently supported Python versions in typeshed's CI.</td>
+</tr>
+<tr>
+<td><code>NOT_ON_PYPI</code></td>
+<td>The runtime package that these stubs are for doesn't exist on PyPI, so whether or not these stubs are up to date or not is unknown.</td>
+</tr>
+<tr>
+<td><code>OBSOLETE</code></td>
+<td>The runtime package has added inline type hints; these typeshed stubs are now obsolete.</td>
+</tr>
+<tr>
+<td><code>NO_LONGER_UPDATED</code></td>
+<td>The runtime package has not added type hints, but these stubs are no longer updated by typeshed for some other reason.</td>
+</tr>
+<tr>
+<td><code>OUT_OF_DATE</code></td>
+<td>These stubs may be out of date. In typeshed's CI, <a href="https://mypy.readthedocs.io/en/stable/stubtest.html" title="A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package">stubtest</a> tests these stubs against an older version of the runtime package than the latest that's available.</td>
+</tr>
+<tr>
+<td><code>UP_TO_DATE</code></td>
+<td>These stubs should be fairly up to date. In typeshed's CI, <a href="https://mypy.readthedocs.io/en/stable/stubtest.html" title="A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package">stubtest</a> tests these stubs against the latest version of the runtime package that's available.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a name=PyrightSetting></a></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="typeshed_stats.gather.PyrightSetting" class="doc doc-heading">
+            <code>PyrightSetting</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+        <p>The various possible <a href="https://github.com/microsoft/pyright">pyright</a> settings typeshed uses in CI.</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p><strong>Members:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ENTIRELY_EXCLUDED</code></td>
+<td>All files in this stubs package are excluded from the pyright check in typeshed's CI.</td>
+</tr>
+<tr>
+<td><code>SOME_FILES_EXCLUDED</code></td>
+<td>Some files in this stubs package are excluded from the pyright check in typeshed's CI.</td>
+</tr>
+<tr>
+<td><code>NOT_STRICT</code></td>
+<td>This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.</td>
+</tr>
+<tr>
+<td><code>STRICT_ON_SOME_FILES</code></td>
+<td>Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded from the stricter settings.</td>
+</tr>
+<tr>
+<td><code>STRICT</code></td>
+<td>All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a name=StubVersion></a></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="typeshed_stats.gather.StubVersion" class="doc doc-heading">
+            <code>StubVersion</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+        <p>Wrapper around SpecifierSet to provide repr.</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="typeshed_stats.gather.StubVersion.__repr__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="fm">__repr__</span><span class="p">()</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Wraps SpecifierSet.<strong>repr</strong> to make it <code>eval</code>able.</p>
+
+
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+<p><a name=StubtestSettings></a></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="typeshed_stats.gather.StubtestSettings" class="doc doc-heading">
+            <code>StubtestSettings</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+        <p>Information on the settings under which <a href="https://mypy.readthedocs.io/en/stable/stubtest.html" title="A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package">stubtest</a> is run on a certain package.</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p><strong>Attributes:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>strictness</code></td>
+<td><a class="autorefs autorefs-internal" href="#typeshed_stats.gather.StubtestStrictness"><code>StubtestStrictness</code></a></td>
+</tr>
+<tr>
+<td><code>ci_platforms</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list"><code>list</code></a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str"><code>str</code></a>]</td>
+</tr>
+<tr>
+<td><code>allowlist_length</code></td>
+<td><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a name=StubtestStrictness></a></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="typeshed_stats.gather.StubtestStrictness" class="doc doc-heading">
+            <code>StubtestStrictness</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+        <p>Enumeration of the various possible settings typeshed uses for <a href="https://mypy.readthedocs.io/en/stable/stubtest.html" title="A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package">stubtest</a> in CI.</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p><strong>Members:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SKIPPED</code></td>
+<td>Stubtest is skipped in typeshed's CI for this package.</td>
+</tr>
+<tr>
+<td><code>MISSING_STUBS_IGNORED</code></td>
+<td>The <code>--ignore-missing-stub</code> stubtest setting is used in typeshed's CI.</td>
+</tr>
+<tr>
+<td><code>ERROR_ON_MISSING_STUB</code></td>
+<td>Objects missing from the stub cause stubtest to emit an error in typeshed's CI.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a name=UploadStatus></a></p>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="typeshed_stats.gather.UploadStatus" class="doc doc-heading">
+            <code>UploadStatus</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+        <p>Whether or not a stubs package is currently uploaded to PyPI.</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><p><strong>Members:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>UPLOADED</code></td>
+<td>These stubs are currently uploaded to PyPI.</td>
+</tr>
+<tr>
+<td><code>NOT_CURRENTLY_UPLOADED</code></td>
+<td>These stubs are not currently uploaded to PyPI.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a name=gather_annotation_stats_on_file></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.gather_annotation_stats_on_file" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">gather_annotation_stats_on_file</span><span class="p">(</span><span class="n">path</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Gather annotation stats on a single typeshed stub file.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>path</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The location of the file to be analysed.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="AnnotationStats (typeshed_stats.gather.AnnotationStats)" href="#typeshed_stats.gather.AnnotationStats">AnnotationStats</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>An <a href="./#AnnotationStats"><code>AnnotationStats</code></a> object
+containing data about the annotations in the file.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="gp">... </span>    <span class="n">tmpdir_typeshed</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">gather_annotation_stats_on_file</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">stats_on_functools</span> <span class="o">=</span> <span class="n">gather_annotation_stats_on_file</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="n">typeshed</span> <span class="o">/</span> <span class="s2">&quot;stdlib&quot;</span> <span class="o">/</span> <span class="s2">&quot;functools.pyi&quot;</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">stats_on_functools</span><span class="p">)</span>
+<span class="go">&lt;class &#39;typeshed_stats.gather.AnnotationStats&#39;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stats_on_functools</span><span class="o">.</span><span class="n">unannotated_parameters</span>
+<span class="go">0</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=gather_annotation_stats_on_package></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.gather_annotation_stats_on_package" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">gather_annotation_stats_on_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Aggregate annotation stats on a typeshed stubs package.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the stubs package to analyze.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to the location of a typeshed directory
+in which to find the stubs package source.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="AnnotationStats (typeshed_stats.gather.AnnotationStats)" href="#typeshed_stats.gather.AnnotationStats">AnnotationStats</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>An <a href="./#AnnotationStats"><code>AnnotationStats</code></a> object
+containing data about the annotations in the package.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="gp">... </span>    <span class="n">tmpdir_typeshed</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">gather_annotation_stats_on_package</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">mypy_extensions_stats</span> <span class="o">=</span> <span class="n">gather_annotation_stats_on_package</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;mypy-extensions&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">mypy_extensions_stats</span><span class="p">)</span>
+<span class="go">&lt;class &#39;typeshed_stats.gather.AnnotationStats&#39;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mypy_extensions_stats</span><span class="o">.</span><span class="n">unannotated_parameters</span>
+<span class="go">0</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=gather_stats_on_file></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.gather_stats_on_file" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">gather_stats_on_file</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Gather stats on a single <code>.pyi</code> file in typeshed.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>file_path</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to the file on which to gather stats.
+This can be an absolute path,
+or a path relative to the <code>typeshed_dir</code> argument.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to the overall typeshed directory.
+This can be an absolute or relative path.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="FileInfo (typeshed_stats.gather.FileInfo)" href="#typeshed_stats.gather.FileInfo">FileInfo</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>An instance of the <a href="./#FileInfo"><code>FileInfo</code></a> class.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="n">tmpdir_typeshed</span><span class="p">,</span> <span class="n">gather_stats_on_file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="c1"># Paths can be relative to typeshed_dir</span>
+<span class="gp">... </span>    <span class="n">functools_info</span> <span class="o">=</span> <span class="n">gather_stats_on_file</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;stdlib/functools.pyi&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">... </span>    <span class="c1"># Absolute paths are also fine</span>
+<span class="gp">... </span>    <span class="n">stubs_dir</span> <span class="o">=</span> <span class="n">typeshed</span> <span class="o">/</span> <span class="s2">&quot;stubs&quot;</span>
+<span class="gp">... </span>    <span class="n">requests_api_info</span> <span class="o">=</span> <span class="n">gather_stats_on_file</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="n">stubs_dir</span> <span class="o">/</span> <span class="s2">&quot;requests/requests/api.pyi&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">... </span>    <span class="c1"># Gather per-file stats on a directory</span>
+<span class="gp">... </span>    <span class="n">markdown_per_file_stats</span> <span class="o">=</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="n">gather_stats_on_file</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="k">for</span> <span class="n">module</span> <span class="ow">in</span> <span class="p">(</span><span class="n">stubs_dir</span> <span class="o">/</span> <span class="s2">&quot;Markdown&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">rglob</span><span class="p">(</span><span class="s2">&quot;*.pyi&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">functools_info</span><span class="p">)</span>
+<span class="go">&lt;class &#39;typeshed_stats.gather.FileInfo&#39;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">functools_info</span><span class="o">.</span><span class="n">parent_package</span>
+<span class="go">&#39;stdlib&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">functools_info</span><span class="o">.</span><span class="n">file_path</span><span class="o">.</span><span class="n">as_posix</span><span class="p">()</span>
+<span class="go">&#39;stdlib/functools.pyi&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">requests_api_info</span><span class="o">.</span><span class="n">parent_package</span>
+<span class="go">&#39;requests&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">requests_api_info</span><span class="o">.</span><span class="n">file_path</span><span class="o">.</span><span class="n">as_posix</span><span class="p">()</span>
+<span class="go">&#39;stubs/requests/requests/api.pyi&#39;</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=gather_stats_on_multiple_packages></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.gather_stats_on_multiple_packages" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">gather_stats_on_multiple_packages</span><span class="p">(</span><span class="n">packages</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Concurrently gather statistics on multiple packages.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function calls <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/asyncio-runner.html#asyncio.run">asyncio.run</a>
+to start an <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/asyncio.html#module-asyncio">asyncio</a> event loop.
+It is therefore not suitable to be called from inside functions
+that are themselves called as part of an asyncio event loop.</p>
+</div>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>packages</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="collections.abc.Iterable" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterable">Iterable</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>] | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>An iterable of package names to be analysed, or <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#None">None</a>.
+If <code>None</code>, defaults to all third-party stubs, plus the stubs for the stdlib.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The path to a local clone of typeshed.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" title="collections.abc.Sequence" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence">Sequence</a>[<a class="autorefs autorefs-internal" title="PackageInfo (typeshed_stats.gather.PackageInfo)" href="#typeshed_stats.gather.PackageInfo">PackageInfo</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A sequence of <a href="./#PackageInfo"><code>PackageInfo</code></a> objects.
+Each <code>PackageInfo</code> object contains information representing an analysis
+of a certain stubs package in typeshed.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="gp">... </span>    <span class="n">PackageInfo</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">tmpdir_typeshed</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">gather_stats_on_multiple_packages</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">infos</span> <span class="o">=</span> <span class="n">gather_stats_on_multiple_packages</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="p">[</span><span class="s2">&quot;stdlib&quot;</span><span class="p">,</span> <span class="s2">&quot;aiofiles&quot;</span><span class="p">],</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="n">info</span><span class="o">.</span><span class="n">package_name</span> <span class="k">for</span> <span class="n">info</span> <span class="ow">in</span> <span class="n">infos</span><span class="p">]</span>
+<span class="go">[&#39;aiofiles&#39;, &#39;stdlib&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">info</span><span class="p">)</span> <span class="ow">is</span> <span class="n">PackageInfo</span> <span class="k">for</span> <span class="n">info</span> <span class="ow">in</span> <span class="n">infos</span><span class="p">)</span>
+<span class="go">True</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=gather_stats_on_package></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.gather_stats_on_package" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">gather_stats_on_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Gather miscellaneous statistics about a single stubs package in typeshed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function calls <a href="./#get_package_status"><code>get_package_status()</code></a>,
+which makes network requests to PyPI.
+See the docs on <code>get_package_status()</code> for details.</p>
+</div>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the package to gather statistics on.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+in which the source code for the stubs package can be found.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>session</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="aiohttp.ClientSession" href="https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientSession">ClientSession</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>An <a class="autorefs autorefs-external" href="https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientSession">aiohttp.ClientSession</a> instance,
+to be used for making a network requests, or <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#None">None</a>. If <code>None</code> is provided
+for this argument, a new <code>aiohttp.ClientSession</code> instance will be
+created to make the network request.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageInfo (typeshed_stats.gather.PackageInfo)" href="#typeshed_stats.gather.PackageInfo">PackageInfo</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>An instance of the <a href="./#PackageInfo"><code>PackageInfo</code></a> class.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="n">tmpdir_typeshed</span><span class="p">,</span> <span class="n">gather_stats_on_package</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">stdlib_info</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="n">gather_stats_on_package</span><span class="p">(</span><span class="s2">&quot;stdlib&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stdlib_info</span><span class="o">.</span><span class="n">package_name</span>
+<span class="go">&#39;stdlib&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stdlib_info</span><span class="o">.</span><span class="n">stubtest_settings</span><span class="o">.</span><span class="n">strictness</span>
+<span class="go">StubtestStrictness.ERROR_ON_MISSING_STUB</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">stdlib_info</span><span class="o">.</span><span class="n">number_of_lines</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">int</span> <span class="ow">and</span> <span class="n">stdlib_info</span><span class="o">.</span><span class="n">number_of_lines</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<span class="go">True</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_completeness_level></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_completeness_level" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_completeness_level</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Determine whether a stubs package is explicitly marked as 'partial'.</p>
+<p>See <a href="https://peps.python.org/pep-0561" title="PEP 561 – Distributing and Packaging Type Information">PEP 561</a> for an elaboration of what it means
+for a stub to be marked as partial.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the package to find the partial status for.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+from which to retrieve the partial status.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="CompletenessLevel (typeshed_stats.gather.CompletenessLevel)" href="#typeshed_stats.gather.CompletenessLevel">CompletenessLevel</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A member of the <a href="./#CompletenessLevel"><code>CompletenessLevel</code></a> enumeration
+(see the docs on <code>CompletenessLevel</code> for details).</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="n">tmpdir_typeshed</span><span class="p">,</span> <span class="n">get_completeness_level</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">stdlib_completeness</span> <span class="o">=</span> <span class="n">get_completeness_level</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;stdlib&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">... </span>    <span class="n">requests_completeness</span> <span class="o">=</span> <span class="n">get_completeness_level</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;requests&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">requests_completeness</span>
+<span class="go">CompletenessLevel.COMPLETE</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+<span class="go">Help on CompletenessLevel in module typeshed_stats.gather:</span>
+
+<span class="go">CompletenessLevel.COMPLETE</span>
+<span class="go">    The stubs package should cover the entire API at runtime</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stdlib_completeness</span>
+<span class="go">CompletenessLevel.STDLIB</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_number_of_lines_of_file></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_number_of_lines_of_file" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_number_of_lines_of_file</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Get the total number of lines of code for a single stub file in typeshed.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>file_path</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path to the file to analyse.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The number of lines of code the stubs file contains,
+excluding empty lines.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_package_extra_description></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_package_extra_description" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_package_extra_description</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Get the "extra description" of the package given in the <code>METADATA.toml</code> file.</p>
+<p>Each typeshed package comes with a <code>METADATA.toml</code> file,
+containing various useful pieces of information about the package.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the package to find the extra description for.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+from which to retrieve the description.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The "extra description" of the package given in the <code>METADATA.toml</code> file,
+if one is given, else <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#None">None</a>.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="gp">... </span>    <span class="n">tmpdir_typeshed</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">get_package_extra_description</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">stdlib_description</span> <span class="o">=</span> <span class="n">get_package_extra_description</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;stdlib&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">... </span>    <span class="n">protobuf_description</span> <span class="o">=</span> <span class="n">get_package_extra_description</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;protobuf&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stdlib_description</span> <span class="ow">is</span> <span class="kc">None</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">protobuf_description</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="go">True</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_package_size></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_package_size" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_package_size</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Get the total number of lines of code for a stubs package in typeshed.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the stubs package to find the line number for.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory
+in which to find the stubs package.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The number of lines of code the stubs package contains,
+excluding empty lines.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="n">tmpdir_typeshed</span><span class="p">,</span> <span class="n">get_package_size</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">mypy_extensions_size</span> <span class="o">=</span> <span class="n">get_package_size</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;mypy-extensions&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">mypy_extensions_size</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">int</span> <span class="ow">and</span> <span class="n">mypy_extensions_size</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<span class="go">True</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_package_status></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_package_status" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_package_status</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-async"><code>async</code></small>
+  </span>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Retrieve information on how up to date a stubs package is.</p>
+<p>If <a href="https://mypy.readthedocs.io/en/stable/stubtest.html" title="A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package">stubtest</a> tests these stubs against the latest version of the runtime package
+in typeshed's CI, it's a fair bet that the stubs are relatively up to date.
+If stubtest tests these stubs against an older version, however,
+the stubs <em>may</em> be out of date.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function makes network requests to PyPI in order to determine what the
+latest version of the runtime is, and then compares this against
+the metadata of the stubs package.</p>
+</div>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the stubs package to analyze.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory
+in which to find the stubs package.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>session</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="aiohttp.ClientSession" href="https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientSession">ClientSession</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>An <a class="autorefs autorefs-external" href="https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientSession">aiohttp.ClientSession</a> instance,
+to be used for making a network requests, or <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#None">None</a>. If <code>None</code> is provided
+for this argument, a new <code>aiohttp.ClientSession</code> instance will be
+created to make the network request.</p>
+              </div>
+            </td>
+            <td>
+                  <code>None</code>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageStatus (typeshed_stats.gather.PackageStatus)" href="#typeshed_stats.gather.PackageStatus">PackageStatus</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A member of the <a href="./#PackageStatus"><code>PackageStatus</code></a> enumeration
+(see the docs on <code>PackageStatus</code> for details).</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="n">tmpdir_typeshed</span><span class="p">,</span> <span class="n">get_package_status</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">stdlib_status</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="n">get_package_status</span><span class="p">(</span><span class="s2">&quot;stdlib&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">... </span>    <span class="n">gdb_status</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="n">get_package_status</span><span class="p">(</span><span class="s2">&quot;gdb&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stdlib_status</span>
+<span class="go">PackageStatus.STDLIB</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+<span class="go">Help on PackageStatus in module typeshed_stats.gather:</span>
+
+<span class="go">PackageStatus.STDLIB</span>
+<span class="go">    These are typeshed&#39;s stubs for the standard library. Typeshed&#39;s stdlib stubs are generally fairly up to date, and are tested against all currently supported Python versions in typeshed&#39;s CI.</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gdb_status</span>
+<span class="go">PackageStatus.NOT_ON_PYPI</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_pyright_setting_for_package></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_pyright_setting_for_package" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_pyright_setting_for_package</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Get the settings typeshed uses in CI when <a href="https://github.com/microsoft/pyright">pyright</a> is run on a certain package.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the package to find the pyright setting for.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+from which to retrieve the pyright setting.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PyrightSetting (typeshed_stats.gather.PyrightSetting)" href="#typeshed_stats.gather.PyrightSetting">PyrightSetting</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A member of the <a href="./#PyrightSetting"><code>PyrightSetting</code></a> enumeration
+(see the docs on <code>PyrightSetting</code> for details).</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="gp">... </span>    <span class="n">tmpdir_typeshed</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">get_pyright_setting_for_package</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">stdlib_setting</span> <span class="o">=</span> <span class="n">get_pyright_setting_for_package</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;stdlib&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stdlib_setting</span>
+<span class="go">PyrightSetting.STRICT_ON_SOME_FILES</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+<span class="go">Help on PyrightSetting in module typeshed_stats.gather:</span>
+
+<span class="go">PyrightSetting.STRICT_ON_SOME_FILES</span>
+<span class="go">    Some files in this stubs package are tested with the stricter pyright settings in typeshed&#39;s CI; some are excluded from the stricter settings.</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_pyright_setting_for_path></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_pyright_setting_for_path" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_pyright_setting_for_path</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Get the settings typeshed uses in CI when <a href="https://github.com/microsoft/pyright">pyright</a> is run on a certain path.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>file_path</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The path to query.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+from which to retrieve the pyright setting.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PyrightSetting (typeshed_stats.gather.PyrightSetting)" href="#typeshed_stats.gather.PyrightSetting">PyrightSetting</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A member of the <a href="./#PyrightSetting"><code>PyrightSetting</code></a> enumeration
+(see the docs on <code>PyrightSetting</code> for details).</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_stub_distribution_name></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_stub_distribution_name" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_stub_distribution_name</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Get the name this stubs package is uploaded to PyPI under.</p>
+<p>For the vast majority of packages in typeshed, this is <code>types-{runtime-name}</code>,
+but there may be a small number of packages
+that are uploaded under nonstandard names to PyPI.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The (runtime) name of the package
+to find the stub distribution name for.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+from which to retrieve the information.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name under which the stubs package is uploaded to PyPI.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="gp">... </span>    <span class="n">tmpdir_typeshed</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">get_stub_distribution_name</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">requests_stub_dist_name</span> <span class="o">=</span> <span class="n">get_stub_distribution_name</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;requests&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">... </span>    <span class="n">pika_stub_dist_name</span> <span class="o">=</span> <span class="n">get_stub_distribution_name</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;pika&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">requests_stub_dist_name</span>
+<span class="go">&#39;types-requests&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pika_stub_dist_name</span>
+<span class="go">&#39;types-pika-ts&#39;</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_stubtest_allowlist_length></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_stubtest_allowlist_length" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_stubtest_allowlist_length</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Get the number of unique "allowlist entries" typeshed uses in CI when <a href="https://mypy.readthedocs.io/en/stable/stubtest.html" title="A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package">stubtest</a> is run on a certain package.</p>
+<p>An allowlist entry indicates a place in the stub where stubtest emits an error,
+but typeshed has chosen to silence the error rather than "fix it".
+Not all allowlist entries are bad:
+sometimes there are good reasons to ignore an error emitted by stubtest.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the package
+to find the number of allowlist entries for.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+from which to retrieve the number of stubtest allowlist entries.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The number of allowlist entries for that package.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Duplicate entries in allowlists are removed.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="gp">... </span>    <span class="n">tmpdir_typeshed</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">get_stubtest_allowlist_length</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">num_stdlib_allows</span> <span class="o">=</span> <span class="n">get_stubtest_allowlist_length</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;stdlib&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">... </span>    <span class="n">num_requests_allows</span> <span class="o">=</span> <span class="n">get_stubtest_allowlist_length</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;requests&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">num_stdlib_allows</span><span class="p">)</span>
+<span class="go">&lt;class &#39;int&#39;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">num_stdlib_allows</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">num_requests_allows</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<span class="go">True</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_stubtest_ci_platforms></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_stubtest_ci_platforms" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_stubtest_ci_platforms</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Get the list of platforms on which <a href="https://mypy.readthedocs.io/en/stable/stubtest.html" title="A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package">stubtest</a> is run in typeshed's CI.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the package to find the stubtest setting for.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+from which to retrieve the stubtest configuration.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A list of strings describing platforms stubtest is run on.
+The names correspond to the platform names
+given by <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/sys.html#sys.platform">sys.platform</a> at runtime.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="n">tmpdir_typeshed</span><span class="p">,</span> <span class="n">get_stubtest_ci_platforms</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">pywin_platforms</span> <span class="o">=</span> <span class="n">get_stubtest_ci_platforms</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;pywin32&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pywin_platforms</span>
+<span class="go">[&#39;win32&#39;]</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_stubtest_settings></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_stubtest_settings" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_stubtest_settings</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Get the <a href="https://mypy.readthedocs.io/en/stable/stubtest.html" title="A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package">stubtest</a> settings for a certain stubs package in typeshed.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the package to find the stubtest settings for.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+from which to retrieve the stubtest settings.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="StubtestSettings (typeshed_stats.gather.StubtestSettings)" href="#typeshed_stats.gather.StubtestSettings">StubtestSettings</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>An instance of the <a href="./#StubtestSettings"><code>StubtestSettings</code></a> class.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_stubtest_strictness></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_stubtest_strictness" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_stubtest_strictness</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Get the setting typeshed uses in CI when <a href="https://mypy.readthedocs.io/en/stable/stubtest.html" title="A tool shipped with the mypy type checker for automatically verifying that stubs are consistent with the runtime package">stubtest</a> is run on a certain package.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the package to find the stubtest setting for.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+from which to retrieve the stubtest setting.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="StubtestStrictness (typeshed_stats.gather.StubtestStrictness)" href="#typeshed_stats.gather.StubtestStrictness">StubtestStrictness</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A member of the <a href="./#StubtestStrictness"><code>StubtestStrictness</code></a>
+enumeration (see the docs on <code>StubtestStrictness</code> for details).</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="n">tmpdir_typeshed</span><span class="p">,</span> <span class="n">get_stubtest_strictness</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">stdlib_setting</span> <span class="o">=</span> <span class="n">get_stubtest_strictness</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;stdlib&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">... </span>    <span class="n">rpi_gpio_setting</span> <span class="o">=</span> <span class="n">get_stubtest_strictness</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;RPi.GPIO&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">... </span>    <span class="n">tensorflow_setting</span> <span class="o">=</span> <span class="n">get_stubtest_strictness</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">&quot;tensorflow&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span>
+<span class="gp">... </span>    <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stdlib_setting</span>
+<span class="go">StubtestStrictness.ERROR_ON_MISSING_STUB</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+<span class="go">Help on StubtestStrictness in module typeshed_stats.gather:</span>
+
+<span class="go">StubtestStrictness.ERROR_ON_MISSING_STUB</span>
+<span class="go">    Objects missing from the stub cause stubtest to emit an error in typeshed&#39;s CI.</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rpi_gpio_setting</span>
+<span class="go">StubtestStrictness.SKIPPED</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tensorflow_setting</span>
+<span class="go">StubtestStrictness.SKIPPED</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_upload_status></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_upload_status" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_upload_status</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Determine whether a certain package is currently uploaded to PyPI.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the package to find the upload status for.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+from which to retrieve the upload status.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="UploadStatus (typeshed_stats.gather.UploadStatus)" href="#typeshed_stats.gather.UploadStatus">UploadStatus</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A member of the <a href="./#UploadStatus"><code>UploadStatus</code></a> enumeration
+(see the docs on <code>UploadStatus</code> for details).</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="n">tmpdir_typeshed</span><span class="p">,</span> <span class="n">get_upload_status</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">stdlib_setting</span> <span class="o">=</span> <span class="n">get_upload_status</span><span class="p">(</span><span class="s2">&quot;stdlib&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">requests_setting</span> <span class="o">=</span> <span class="n">get_upload_status</span><span class="p">(</span><span class="s2">&quot;requests&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stdlib_setting</span>
+<span class="go">UploadStatus.NOT_CURRENTLY_UPLOADED</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+<span class="go">Help on UploadStatus in module typeshed_stats.gather:</span>
+
+<span class="go">UploadStatus.NOT_CURRENTLY_UPLOADED</span>
+<span class="go">    These stubs are not currently uploaded to PyPI.</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">requests_setting</span>
+<span class="go">UploadStatus.UPLOADED</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_upstream_url></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_upstream_url" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_upstream_url</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Get the URL for the source code of the runtime package these stubs are for.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the package to find the upstream URL for.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+from which to retrieve the URL.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | None</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The upstream URL (as a string).
+If no URL is listed in the stubs package's METADATA.toml file,
+returns <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#None"><code>None</code></a>.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="n">tmpdir_typeshed</span><span class="p">,</span> <span class="n">get_upstream_url</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">stdlib_url</span> <span class="o">=</span> <span class="n">get_upstream_url</span><span class="p">(</span><span class="s2">&quot;stdlib&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">requests_url</span> <span class="o">=</span> <span class="n">get_upstream_url</span><span class="p">(</span><span class="s2">&quot;requests&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">hdbcli_url</span> <span class="o">=</span> <span class="n">get_upstream_url</span><span class="p">(</span><span class="s2">&quot;hdbcli&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">stdlib_url</span>
+<span class="go">&#39;https://github.com/python/cpython&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">requests_url</span>
+<span class="go">&#39;https://github.com/psf/requests&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hdbcli_url</span> <span class="ow">is</span> <span class="kc">None</span>
+<span class="go">True</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=get_version></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.get_version" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_version</span><span class="p">(</span><span class="n">package_name</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Get a StubVersion (SpecifierSet) containing the versions of the runtime package these stubs are for.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>package_name</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="PackageName = str
+
+  
+      module-attribute
+   (typeshed_stats.gather.PackageName)" href="#typeshed_stats.gather.PackageName">PackageName</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The name of the package to find the upstream URL for.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td>
+                <code>typeshed_dir</code>
+            </td>
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a> | <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A path pointing to a typeshed directory,
+from which to retrieve the version.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="StubVersion (typeshed_stats.gather.StubVersion)" href="#typeshed_stats.gather.StubVersion">StubVersion</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>The versions of the runtime package these stubs are for.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<p><span class="doc-section-title">Examples:</span></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">typeshed_stats.gather</span><span class="w"> </span><span class="kn">import</span> <span class="n">tmpdir_typeshed</span><span class="p">,</span> <span class="n">get_upstream_url</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">tmpdir_typeshed</span><span class="p">()</span> <span class="k">as</span> <span class="n">typeshed</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">requests_version</span> <span class="o">=</span> <span class="n">get_version</span><span class="p">(</span><span class="s2">&quot;requests&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">colorama_version</span> <span class="o">=</span> <span class="n">get_version</span><span class="p">(</span><span class="s2">&quot;colorama&quot;</span><span class="p">,</span> <span class="n">typeshed_dir</span><span class="o">=</span><span class="n">typeshed</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">requests_version</span>
+<span class="go">StubVersion(&#39;~=2.32.4&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">colorama_version</span>
+<span class="go">StubVersion(&#39;==0.4.*&#39;)</span>
+</code></pre></div>
+
+
+    </div>
+
+</div><hr />
+<p><a name=tmpdir_typeshed></a></p>
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="typeshed_stats.gather.tmpdir_typeshed" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">tmpdir_typeshed</span><span class="p">()</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+        <p>Clone typeshed into a tempdir, then yield a <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path"><code>Path</code></a> pointing to it.</p>
+<p>A context manager.</p>
+
+
+    <p><span class="doc-section-title">Yields:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><a class="autorefs autorefs-external" title="pathlib.Path" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path">Path</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>A <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path"><code>Path</code></a> pointing to a tempdir with a clone of typeshed inside.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.number.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+        <script src="../javascripts/filtertable.js"></script>
+      
+    
+  </body>
+</html>
