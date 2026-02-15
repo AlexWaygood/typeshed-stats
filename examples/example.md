@@ -10,15 +10,15 @@
 
 ### Version
 
-The latest version of `types-Authlib` aims to provide accurate annotations for `Authlib==1.6.7`.
+The latest version of `types-Authlib` aims to provide accurate annotations for `Authlib==1.6.8`.
 
 ### Number of lines
 
 3,611 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7999,7 +7999,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-pyinstaller` aims to provide accurate annotations for `pyinstaller==6.18.*`.
+The latest version of `types-pyinstaller` aims to provide accurate annotations for `pyinstaller==6.19.*`.
 
 ### Number of lines
 
@@ -9345,7 +9345,7 @@ The latest version of `types-reportlab` aims to provide accurate annotations for
 
 ### Number of lines
 
-7,968 (excluding blank lines)
+8,000 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -9370,19 +9370,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `reportlab`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,797
-    - Unannotated parameters: 2,567
-    - Explicit `Any` parameters: 26
+    - Annotated parameters: 1,854
+    - Unannotated parameters: 2,517
+    - Explicit `Any` parameters: 27
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 10
 - Returns:
-    - Annotated returns: 1,599
-    - Unannotated returns: 971
+    - Annotated returns: 1,728
+    - Unannotated returns: 845
     - Explicit `Any` returns: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
 - Variables:
-    - Annotated variables: 2,764
+    - Annotated variables: 2,765
     - Explicit `Any` variables: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,172
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,134
 - Class definitions:
     - Total class definitions: 583
     - Class definitions with `Any`: 0
