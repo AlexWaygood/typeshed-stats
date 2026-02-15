@@ -275,7 +275,7 @@ def random_PackageInfo_sequence() -> Sequence[PackageInfo]:
     seen_names: set[str] = set()
     for _ in range(random.randint(3, 10)):
         info = random_PackageInfo()
-        if info.package_name not in seen_names:
+        if info.package_name not in seen_names:  # pragma: no branch
             seen_names.add(info.package_name)
             result.append(info)
     return result
