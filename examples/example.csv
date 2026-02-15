@@ -134,7 +134,7 @@ pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,==6.19.
 pyjks,types-pyjks,https://github.com/kurtbrose/pyjks,==20.0.*,COMPLETE,-,377,UP_TO_DATE,UPLOADED,STRICT,132,0,59,0,0,0,0,0,73,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,38
 pyluach,types-pyluach,https://github.com/simlist/pyluach,==2.3.*,COMPLETE,-,271,UP_TO_DATE,UPLOADED,STRICT,163,0,127,0,0,0,0,0,35,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,1
 pynput,types-pynput,https://github.com/moses-palmer/pynput,~=1.8.1,COMPLETE,-,333,UP_TO_DATE,UPLOADED,STRICT,87,0,71,0,0,0,11,0,63,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,12
-pyperclip,types-pyperclip,https://github.com/asweigart/pyperclip,==1.9.*,COMPLETE,-,18,OUT_OF_DATE,UPLOADED,STRICT,3,0,6,0,0,0,0,0,0,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1
+pyperclip,types-pyperclip,https://github.com/asweigart/pyperclip,==1.11.*,COMPLETE,-,18,UP_TO_DATE,UPLOADED,STRICT,3,0,6,0,0,0,0,0,0,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1
 pyserial,types-pyserial,https://github.com/pyserial/pyserial,==3.5.*,COMPLETE,-,1173,UP_TO_DATE,UPLOADED,STRICT,224,0,271,0,0,0,2,4,466,7,65,68,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,65
 pysftp,types-pysftp,https://bitbucket.org/dundeemt/pysftp,==0.2.*,COMPLETE,-,166,UP_TO_DATE,UPLOADED,STRICT,109,0,70,0,0,0,0,0,6,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
 pytest-lazy-fixture,types-pytest-lazy-fixture,https://github.com/tvorog/pytest-lazy-fixture,==0.6.*,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,5,0,5,0,0,0,0,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,8
