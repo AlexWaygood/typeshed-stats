@@ -5373,25 +5373,25 @@
     "package_name": "reportlab",
     "stub_distribution_name": "types-reportlab",
     "upstream_url": "https://github.com/MrBitBucket/reportlab-mirror",
-    "version": "==4.4.9",
+    "version": "==4.4.10",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 8000,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 8027,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 52
+      "allowlist_length": 51
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1854,
-      "unannotated_parameters": 2517,
-      "annotated_returns": 1728,
-      "unannotated_returns": 845,
+      "annotated_parameters": 1860,
+      "unannotated_parameters": 2516,
+      "annotated_returns": 1732,
+      "unannotated_returns": 844,
       "explicit_Incomplete_parameters": 10,
       "explicit_Incomplete_returns": 14,
       "explicit_Any_parameters": 27,
