@@ -255,7 +255,7 @@ def _determine_output_option(
     if writefile.suffix not in SUPPORTED_EXTENSIONS:
         parser.error(
             f"Unrecognised file extension {writefile.suffix!r} passed to --file"
-            f" (choose from {SUPPORTED_EXTENSIONS})"
+            f" (choose from {sorted(SUPPORTED_EXTENSIONS)})"
         )
     if not (writefile.parent.exists() and writefile.parent.is_dir()):
         parser.error(
