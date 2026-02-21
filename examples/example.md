@@ -6897,15 +6897,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-peewee` aims to provide accurate annotations for `peewee==3.19.0`.
+The latest version of `types-peewee` aims to provide accurate annotations for `peewee==4.0.0`.
 
 ### Number of lines
 
-1,758 (excluding blank lines)
+1,725 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6926,21 +6926,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 416
-    - Unannotated parameters: 681
+    - Annotated parameters: 217
+    - Unannotated parameters: 896
     - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 202
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 363
-    - Unannotated returns: 423
+    - Annotated returns: 379
+    - Unannotated returns: 424
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
 - Variables:
-    - Annotated variables: 403
+    - Annotated variables: 411
     - Explicit `Any` variables: 31
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 319
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 322
 - Class definitions:
-    - Total class definitions: 169
+    - Total class definitions: 172
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
