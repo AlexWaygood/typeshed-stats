@@ -6903,9 +6903,9 @@ The latest version of `types-peewee` aims to provide accurate annotations for `p
 
 1,758 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7336,7 +7336,7 @@ The latest version of `types-protobuf` aims to provide accurate annotations for 
 
 ### Number of lines
 
-6,167 (excluding blank lines)
+6,179 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7371,7 +7371,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 1,107
+    - Annotated variables: 1,119
     - Explicit `Any` variables: 122
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 88
 - Class definitions:
@@ -9345,7 +9345,7 @@ The latest version of `types-reportlab` aims to provide accurate annotations for
 
 ### Number of lines
 
-8,027 (excluding blank lines)
+8,181 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9370,19 +9370,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `reportlab`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,860
-    - Unannotated parameters: 2,516
-    - Explicit `Any` parameters: 27
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 10
+    - Annotated parameters: 1,977
+    - Unannotated parameters: 2,495
+    - Explicit `Any` parameters: 28
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 1,732
-    - Unannotated returns: 844
+    - Annotated returns: 1,911
+    - Unannotated returns: 671
     - Explicit `Any` returns: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 33
 - Variables:
-    - Annotated variables: 2,765
+    - Annotated variables: 2,777
     - Explicit `Any` variables: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,134
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,031
 - Class definitions:
     - Total class definitions: 583
     - Class definitions with `Any`: 0
@@ -10203,7 +10203,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,726 (excluding blank lines)
+69,758 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10219,7 +10219,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 799 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 794 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10228,14 +10228,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,453
+    - Annotated parameters: 30,466
     - Unannotated parameters: 546
     - Explicit `Any` parameters: 2,090
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,830
+    - Annotated returns: 16,846
     - Unannotated returns: 204
-    - Explicit `Any` returns: 851
+    - Explicit `Any` returns: 852
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
 - Variables:
     - Annotated variables: 9,541
