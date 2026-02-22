@@ -6901,7 +6901,7 @@ The latest version of `types-peewee` aims to provide accurate annotations for `p
 
 ### Number of lines
 
-1,725 (excluding blank lines)
+1,757 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6926,19 +6926,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 217
-    - Unannotated parameters: 896
+    - Annotated parameters: 216
+    - Unannotated parameters: 919
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 379
-    - Unannotated returns: 424
+    - Annotated returns: 566
+    - Unannotated returns: 260
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 29
 - Variables:
-    - Annotated variables: 411
+    - Annotated variables: 384
     - Explicit `Any` variables: 31
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 322
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 277
 - Class definitions:
     - Total class definitions: 172
     - Class definitions with `Any`: 0
@@ -9345,7 +9345,7 @@ The latest version of `types-reportlab` aims to provide accurate annotations for
 
 ### Number of lines
 
-8,181 (excluding blank lines)
+8,208 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9370,19 +9370,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `reportlab`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,977
-    - Unannotated parameters: 2,495
+    - Annotated parameters: 1,983
+    - Unannotated parameters: 2,489
     - Explicit `Any` parameters: 28
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 1,911
-    - Unannotated returns: 671
+    - Annotated returns: 1,932
+    - Unannotated returns: 650
     - Explicit `Any` returns: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 33
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 40
 - Variables:
     - Annotated variables: 2,777
     - Explicit `Any` variables: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,031
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,028
 - Class definitions:
     - Total class definitions: 583
     - Class definitions with `Any`: 0
@@ -11791,15 +11791,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-yt-dlp` aims to provide accurate annotations for `yt-dlp==2026.2.4`.
+The latest version of `types-yt-dlp` aims to provide accurate annotations for `yt-dlp==2026.2.21`.
 
 ### Number of lines
 
-3,583 (excluding blank lines)
+3,584 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -11820,12 +11820,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `yt-dlp`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,030
+    - Annotated parameters: 2,031
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 280
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 922
+    - Annotated returns: 923
     - Unannotated returns: 0
     - Explicit `Any` returns: 131
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
