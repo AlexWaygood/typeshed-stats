@@ -319,7 +319,7 @@ The latest version of `types-JACK-Client` aims to provide accurate annotations f
 
 ### Number of lines
 
-312 (excluding blank lines)
+314 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1171,7 +1171,7 @@ The latest version of `types-WebOb` aims to provide accurate annotations for `We
 
 ### Number of lines
 
-2,222 (excluding blank lines)
+2,225 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1210,7 +1210,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` variables: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 136
+    - Total class definitions: 137
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -3243,7 +3243,7 @@ The latest version of `types-docutils` aims to provide accurate annotations for 
 
 ### Number of lines
 
-5,665 (excluding blank lines)
+5,666 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4343,7 +4343,7 @@ The latest version of `types-google-cloud-ndb` aims to provide accurate annotati
 
 ### Number of lines
 
-1,531 (excluding blank lines)
+1,566 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5193,7 +5193,7 @@ The latest version of `types-icalendar` aims to provide accurate annotations for
 
 ### Number of lines
 
-1,338 (excluding blank lines)
+1,345 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -7210,7 +7210,7 @@ The latest version of `types-pony` aims to provide accurate annotations for `pon
 
 ### Number of lines
 
-3,596 (excluding blank lines)
+3,597 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7245,7 +7245,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
 - Variables:
-    - Annotated variables: 994
+    - Annotated variables: 995
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 494
 - Class definitions:
@@ -7458,7 +7458,7 @@ The latest version of `types-psycopg2` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,759 (excluding blank lines)
+1,761 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10219,7 +10219,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 794 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 807 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
