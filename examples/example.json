@@ -4346,41 +4346,6 @@
     }
   },
   {
-    "package_name": "pyRFC3339",
-    "stub_distribution_name": "types-pyRFC3339",
-    "upstream_url": "https://github.com/kurtraschke/pyRFC3339",
-    "version": "~=2.0.1",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 8,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "ci_platforms": [
-        "linux"
-      ],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 8,
-      "unannotated_parameters": 0,
-      "annotated_returns": 3,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
-      "explicit_Any_returns": 0,
-      "annotated_variables": 0,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 0,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "pyasn1",
     "stub_distribution_name": "types-pyasn1",
     "upstream_url": "https://github.com/pyasn1/pyasn1",
