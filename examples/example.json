@@ -5939,7 +5939,7 @@
     "version": "~=2.18.0",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.",
-    "number_of_lines": 30277,
+    "number_of_lines": 30301,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5957,9 +5957,9 @@
       "explicit_Incomplete_returns": 23,
       "explicit_Any_parameters": 60,
       "explicit_Any_returns": 34,
-      "annotated_variables": 5434,
+      "annotated_variables": 5437,
       "explicit_Any_variables": 5,
-      "explicit_Incomplete_variables": 11,
+      "explicit_Incomplete_variables": 12,
       "classdefs": 927,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0

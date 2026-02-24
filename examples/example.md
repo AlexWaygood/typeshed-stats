@@ -10329,7 +10329,7 @@ The latest version of `types-tensorflow` aims to provide accurate annotations fo
 
 ### Number of lines
 
-30,277 (excluding blank lines)
+30,301 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -10362,9 +10362,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 23
 - Variables:
-    - Annotated variables: 5,434
+    - Annotated variables: 5,437
     - Explicit `Any` variables: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 11
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 12
 - Class definitions:
     - Total class definitions: 927
     - Class definitions with `Any`: 1
