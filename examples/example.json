@@ -2949,7 +2949,7 @@
     "version": "==3.2.8",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 346,
+    "number_of_lines": 352,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2961,9 +2961,9 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 168,
+      "annotated_parameters": 174,
       "unannotated_parameters": 0,
-      "annotated_returns": 70,
+      "annotated_returns": 73,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
@@ -2972,7 +2972,7 @@
       "annotated_variables": 202,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 4,
+      "classdefs": 5,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }

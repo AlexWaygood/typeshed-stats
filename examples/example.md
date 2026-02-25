@@ -5132,7 +5132,7 @@ The latest version of `types-ibm-db` aims to provide accurate annotations for `i
 
 ### Number of lines
 
-346 (excluding blank lines)
+352 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5157,12 +5157,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `ibm-db`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 168
+    - Annotated parameters: 174
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 70
+    - Annotated returns: 73
     - Unannotated returns: 0
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -5171,7 +5171,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 4
+    - Total class definitions: 5
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 

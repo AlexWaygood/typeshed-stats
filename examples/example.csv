@@ -83,7 +83,7 @@ hnswlib,types-hnswlib,https://github.com/nmslib/hnswlib,==0.8.*,COMPLETE,-,60,UP
 html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,==1.1.*,COMPLETE,-,850,UP_TO_DATE,UPLOADED,NOT_STRICT,204,128,252,60,6,6,7,2,246,0,68,42,0,9,ERROR_ON_MISSING_STUB,linux,5
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,==0.31.2,COMPLETE,-,242,UP_TO_DATE,UPLOADED,NOT_STRICT,39,116,54,7,1,0,0,0,94,0,34,26,0,0,ERROR_ON_MISSING_STUB,linux,1
 hvac,types-hvac,https://github.com/hvac/hvac,==2.4.*,COMPLETE,-,1825,UP_TO_DATE,UPLOADED,NOT_STRICT,511,1222,82,491,1,0,23,19,94,0,0,75,1,0,ERROR_ON_MISSING_STUB,linux,0
-ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,==3.2.8,COMPLETE,-,346,UP_TO_DATE,UPLOADED,STRICT,168,0,70,0,0,0,0,2,202,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
+ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,==3.2.8,COMPLETE,-,352,UP_TO_DATE,UPLOADED,STRICT,174,0,73,0,0,0,0,2,202,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,0
 icalendar,types-icalendar,https://github.com/collective/icalendar,==6.3.2,COMPLETE,-,1345,OBSOLETE,UPLOADED,STRICT_ON_SOME_FILES,364,3,422,0,3,3,9,6,152,1,2,65,1,2,ERROR_ON_MISSING_STUB,linux,6
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,==0.4.*,COMPLETE,-,124,UP_TO_DATE,UPLOADED,STRICT,60,0,59,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,20
 jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,==1.1.*,COMPLETE,-,214,UP_TO_DATE,UPLOADED,STRICT,133,0,74,0,0,0,30,23,49,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,0
