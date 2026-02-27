@@ -5132,7 +5132,7 @@ The latest version of `types-ibm-db` aims to provide accurate annotations for `i
 
 ### Number of lines
 
-352 (excluding blank lines)
+353 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5167,7 +5167,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 202
+    - Annotated variables: 203
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
