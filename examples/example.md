@@ -16,9 +16,9 @@ The latest version of `types-Authlib` aims to provide accurate annotations for `
 
 3,611 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10203,7 +10203,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,757 (excluding blank lines)
+69,758 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10230,7 +10230,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 30,463
     - Unannotated parameters: 546
-    - Explicit `Any` parameters: 2,090
+    - Explicit `Any` parameters: 2,083
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
     - Annotated returns: 16,845
@@ -10571,7 +10571,7 @@ The latest version of `types-tqdm` aims to provide accurate annotations for `tqd
 
 ### Number of lines
 
-1,375 (excluding blank lines)
+1,506 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10596,21 +10596,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tqdm`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 809
-    - Unannotated parameters: 151
-    - Explicit `Any` parameters: 1
+    - Annotated parameters: 877
+    - Unannotated parameters: 145
+    - Explicit `Any` parameters: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 31
 - Returns:
-    - Annotated returns: 167
-    - Unannotated returns: 27
+    - Annotated returns: 179
+    - Unannotated returns: 25
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
 - Variables:
-    - Annotated variables: 105
+    - Annotated variables: 133
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 76
 - Class definitions:
-    - Total class definitions: 36
+    - Total class definitions: 37
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
