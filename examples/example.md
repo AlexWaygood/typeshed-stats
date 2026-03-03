@@ -10,15 +10,15 @@
 
 ### Version
 
-The latest version of `types-Authlib` aims to provide accurate annotations for `Authlib==1.6.8`.
+The latest version of `types-Authlib` aims to provide accurate annotations for `Authlib==1.6.9`.
 
 ### Number of lines
 
-3,611 (excluding blank lines)
+3,615 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -49,7 +49,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 71
 - Variables:
-    - Annotated variables: 652
+    - Annotated variables: 656
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 258
 - Class definitions:
@@ -8920,9 +8920,9 @@ The latest version of `types-pytz` aims to provide accurate annotations for `pyt
 
 151 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
