@@ -5128,11 +5128,11 @@
     "package_name": "pytz",
     "stub_distribution_name": "types-pytz",
     "upstream_url": "https://github.com/stub42/pytz",
-    "version": "==2025.2",
+    "version": "==2026.1.post1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 151,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -5877,11 +5877,11 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 807
+      "allowlist_length": 808
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30463,
+      "annotated_parameters": 30461,
       "unannotated_parameters": 546,
       "annotated_returns": 16845,
       "unannotated_returns": 204,
@@ -6776,11 +6776,11 @@
     "package_name": "yt-dlp",
     "stub_distribution_name": "types-yt-dlp",
     "upstream_url": "https://github.com/yt-dlp/yt-dlp",
-    "version": "==2026.2.21",
+    "version": "==2026.3.3",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 3584,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
