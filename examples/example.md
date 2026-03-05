@@ -8552,7 +8552,7 @@ The latest version of `types-python-dateutil` aims to provide accurate annotatio
 
 ### Number of lines
 
-770 (excluding blank lines)
+773 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8570,9 +8570,9 @@ In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 11 unique allowlist entries for `python-dateutil` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `python-dateutil`
 
@@ -8582,8 +8582,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 188
-    - Unannotated returns: 5
+    - Annotated returns: 193
+    - Unannotated returns: 0
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -10327,9 +10327,9 @@ The latest version of `types-tabulate` aims to provide accurate annotations for 
 
 61 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 

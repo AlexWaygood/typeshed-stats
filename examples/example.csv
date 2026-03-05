@@ -139,7 +139,7 @@ pyserial,types-pyserial,https://github.com/pyserial/pyserial,==3.5.*,COMPLETE,-,
 pysftp,types-pysftp,https://bitbucket.org/dundeemt/pysftp,==0.2.*,COMPLETE,-,166,UP_TO_DATE,UPLOADED,STRICT,109,0,70,0,0,0,0,0,6,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
 pytest-lazy-fixture,types-pytest-lazy-fixture,https://github.com/tvorog/pytest-lazy-fixture,==0.6.*,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,5,0,5,0,0,0,0,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,8
 python-crontab,types-python-crontab,https://gitlab.com/doctormo/python-crontab,==3.3.*,COMPLETE,-,355,UP_TO_DATE,UPLOADED,STRICT,183,0,153,0,0,0,13,0,80,0,0,19,0,0,ERROR_ON_MISSING_STUB,linux,3
-python-dateutil,types-python-dateutil,https://github.com/dateutil/dateutil,==2.9.*,COMPLETE,-,770,UP_TO_DATE,UPLOADED,NOT_STRICT,323,0,188,5,0,0,0,3,151,0,0,40,0,0,ERROR_ON_MISSING_STUB,linux,11
+python-dateutil,types-python-dateutil,https://github.com/dateutil/dateutil,==2.9.*,COMPLETE,-,773,UP_TO_DATE,UPLOADED,STRICT,323,0,193,0,0,0,0,3,151,0,0,40,0,0,ERROR_ON_MISSING_STUB,linux,11
 python-http-client,types-python-http-client,https://github.com/sendgrid/python-http-client,==3.3.7,COMPLETE,-,76,UP_TO_DATE,UPLOADED,STRICT,15,0,13,0,0,0,0,2,12,0,0,14,0,0,ERROR_ON_MISSING_STUB,linux,1
 python-jenkins,types-python-jenkins,https://opendev.org/jjb/python-jenkins,~=1.8.3,COMPLETE,-,259,UP_TO_DATE,UPLOADED,STRICT,198,0,102,0,7,1,1,0,80,0,2,10,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-jose,types-python-jose,https://github.com/mpdavis/python-jose,==3.5.*,COMPLETE,-,359,UP_TO_DATE,UPLOADED,NOT_STRICT,83,43,65,26,0,0,14,12,119,30,0,26,0,0,ERROR_ON_MISSING_STUB,linux,6
@@ -169,7 +169,7 @@ six,types-six,https://github.com/benjaminp/six,==1.17.*,COMPLETE,-,331,UP_TO_DAT
 slumber,types-slumber,https://github.com/samgiles/slumber,==0.7.*,COMPLETE,-,72,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,69758,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30461,546,16845,204,11,22,2083,852,9542,309,221,3214,31,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,808
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,==1.1,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
-tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.9.*,COMPLETE,-,61,UP_TO_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
+tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.9.*,COMPLETE,-,61,OUT_OF_DATE,UPLOADED,STRICT,15,0,3,0,0,0,2,0,26,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30301,OUT_OF_DATE,UPLOADED,NOT_STRICT,5391,38,2939,40,12,23,60,34,5437,5,12,927,1,0,SKIPPED,None,51
 toml,types-toml,https://github.com/uiri/toml,==0.10.*,COMPLETE,-,136,UP_TO_DATE,UPLOADED,STRICT,71,0,41,0,0,0,21,5,14,2,0,14,2,0,ERROR_ON_MISSING_STUB,linux,4
 toposort,types-toposort,https://gitlab.com/ericvsmith/toposort,==1.10,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,1,0,1,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
