@@ -1842,7 +1842,7 @@ The latest version of `types-cachetools` aims to provide accurate annotations fo
 
 ### Number of lines
 
-193 (excluding blank lines)
+192 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -1877,11 +1877,11 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 12
+    - Annotated variables: 8
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 14
+    - Total class definitions: 13
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -10264,7 +10264,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,823 (excluding blank lines)
+69,850 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10289,21 +10289,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,517
+    - Annotated parameters: 30,533
     - Unannotated parameters: 546
     - Explicit `Any` parameters: 2,083
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,857
+    - Annotated returns: 16,872
     - Unannotated returns: 204
     - Explicit `Any` returns: 852
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
 - Variables:
-    - Annotated variables: 9,540
+    - Annotated variables: 9,541
     - Explicit `Any` variables: 307
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
-    - Total class definitions: 3,214
+    - Total class definitions: 3,216
     - Class definitions with `Any`: 31
     - Class definitions marked as at least partially `Incomplete`: 0
 

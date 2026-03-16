@@ -1058,7 +1058,7 @@
     "version": "==6.2.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 193,
+    "number_of_lines": 192,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1078,10 +1078,10 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 14,
       "explicit_Any_returns": 1,
-      "annotated_variables": 12,
+      "annotated_variables": 8,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 14,
+      "classdefs": 13,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -5902,7 +5902,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 69823,
+    "number_of_lines": 69850,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5916,18 +5916,18 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30517,
+      "annotated_parameters": 30533,
       "unannotated_parameters": 546,
-      "annotated_returns": 16857,
+      "annotated_returns": 16872,
       "unannotated_returns": 204,
       "explicit_Incomplete_parameters": 11,
       "explicit_Incomplete_returns": 22,
       "explicit_Any_parameters": 2083,
       "explicit_Any_returns": 852,
-      "annotated_variables": 9540,
+      "annotated_variables": 9541,
       "explicit_Any_variables": 307,
       "explicit_Incomplete_variables": 221,
-      "classdefs": 3214,
+      "classdefs": 3216,
       "classdefs_with_Any": 31,
       "classdefs_with_Incomplete": 0
     }
