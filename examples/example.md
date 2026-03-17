@@ -1582,6 +1582,67 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
+## Info on typeshed's stubs for `behave`
+
+### Upstream repo URL
+
+[https://github.com/behave/behave](https://github.com/behave/behave)
+
+### Stub distribution name
+
+`types-behave`
+
+### Version
+
+The latest version of `types-behave` aims to provide accurate annotations for `behave==1.3.*`.
+
+### Number of lines
+
+72 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *missing stubs ignored*
+
+The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `behave` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `behave`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 30
+    - Unannotated parameters: 7
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
+- Returns:
+    - Annotated returns: 19
+    - Unannotated returns: 3
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
+- Variables:
+    - Annotated variables: 12
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 5
+- Class definitions:
+    - Total class definitions: 1
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `binaryornot`
 
 ### Upstream repo URL
@@ -8979,7 +9040,7 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 ### Number of lines
 
-39,374 (excluding blank lines)
+39,375 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9004,15 +9065,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,874
-    - Unannotated parameters: 3,642
+    - Annotated parameters: 3,967
+    - Unannotated parameters: 3,646
     - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 413
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 415
 - Returns:
-    - Annotated returns: 4,003
-    - Unannotated returns: 1,965
+    - Annotated returns: 4,047
+    - Unannotated returns: 1,920
     - Explicit `Any` returns: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 284
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 286
 - Variables:
     - Annotated variables: 29,473
     - Explicit `Any` variables: 0
