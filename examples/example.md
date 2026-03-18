@@ -11913,7 +11913,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-yt-dlp` aims to provide accurate annotations for `yt-dlp==2026.3.13`.
+The latest version of `types-yt-dlp` aims to provide accurate annotations for `yt-dlp==2026.3.17`.
 
 ### Number of lines
 
