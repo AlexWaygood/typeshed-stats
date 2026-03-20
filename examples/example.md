@@ -2102,7 +2102,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 7 unique allowlist entries for `channels` when running stubtest in CI.
+Typeshed currently has 8 unique allowlist entries for `channels` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -3672,9 +3672,9 @@ The latest version of `types-fanstatic` aims to provide accurate annotations for
 
 537 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6474,7 +6474,7 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 ### Number of lines
 
-7,630 (excluding blank lines)
+7,632 (excluding blank lines)
 
 ### Package status: *up to date*
 

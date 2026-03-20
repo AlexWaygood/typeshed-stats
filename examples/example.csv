@@ -33,7 +33,7 @@ braintree,types-braintree,https://github.com/braintree/braintree_python,==4.42.*
 cachetools,types-cachetools,https://github.com/tkem/cachetools,==6.2.*,COMPLETE,-,192,OUT_OF_DATE,UPLOADED,STRICT,125,0,65,0,0,0,14,1,8,0,0,13,0,0,ERROR_ON_MISSING_STUB,linux,17
 capturer,types-capturer,https://github.com/xolox/python-capturer,==3.0.*,COMPLETE,-,114,UP_TO_DATE,UPLOADED,STRICT,50,0,42,0,0,0,4,1,38,4,0,6,0,0,ERROR_ON_MISSING_STUB,linux,1
 cffi,types-cffi,https://github.com/python-cffi/cffi/,==2.0.*,COMPLETE,-,850,UP_TO_DATE,UPLOADED,NOT_STRICT,336,212,239,86,0,1,33,8,254,0,75,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
-channels,types-channels,https://github.com/django/channels,==4.3.*,COMPLETE,-,545,UP_TO_DATE,UPLOADED,STRICT,239,0,151,0,0,0,36,13,102,4,0,47,0,0,ERROR_ON_MISSING_STUB,linux,7
+channels,types-channels,https://github.com/django/channels,==4.3.*,COMPLETE,-,545,UP_TO_DATE,UPLOADED,STRICT,239,0,151,0,0,0,36,13,102,4,0,47,0,0,ERROR_ON_MISSING_STUB,linux,8
 chevron,types-chevron,https://github.com/noahmorrison/chevron,==0.14.*,COMPLETE,-,38,UP_TO_DATE,UPLOADED,STRICT,29,0,9,0,0,0,2,0,3,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-default-group,types-click-default-group,https://github.com/click-contrib/click-default-group,==1.2.*,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,52,0,14,0,0,0,7,4,7,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-log,types-click-log,https://github.com/click-contrib/click-log,==0.4.*,COMPLETE,-,22,UP_TO_DATE,UPLOADED,STRICT,6,0,4,0,0,0,1,0,6,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -59,7 +59,7 @@ editdistance,types-editdistance,https://github.com/roy-ht/editdistance,==0.8.*,C
 entrypoints,types-entrypoints,https://github.com/takluyver/entrypoints,==0.4.*,COMPLETE,-,41,UP_TO_DATE,UPLOADED,STRICT,23,0,12,0,0,0,0,1,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 ephem,types-ephem,https://github.com/brandon-rhodes/pyephem,==4.2.*,COMPLETE,-,591,UP_TO_DATE,UPLOADED,STRICT,182,0,187,0,0,0,0,0,150,0,0,55,0,0,ERROR_ON_MISSING_STUB,linux,6
 et_xmlfile,types-et_xmlfile,https://foss.heptapod.net/openpyxl/et_xmlfile,==2.0.*,COMPLETE,-,208,UP_TO_DATE,UPLOADED,STRICT,133,0,21,0,0,0,12,3,9,0,1,4,0,0,ERROR_ON_MISSING_STUB,linux,0
-fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,==1.6.*,COMPLETE,-,537,UP_TO_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,40
+fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,==1.6.*,COMPLETE,-,537,OUT_OF_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,40
 first,types-first,https://github.com/hynek/first,==2.0.*,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,11,0,5,0,0,0,3,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8,types-flake8,https://github.com/pycqa/flake8,==7.3.*,COMPLETE,-,574,UP_TO_DATE,UPLOADED,STRICT,223,0,165,0,0,0,35,8,185,1,90,39,0,0,ERROR_ON_MISSING_STUB,linux,1
 flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,==25.11.29,COMPLETE,-,246,UP_TO_DATE,UPLOADED,STRICT,139,0,124,0,0,2,1,3,58,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,31
@@ -105,7 +105,7 @@ nanoid,types-nanoid,https://github.com/puyuan/py-nanoid,==2.0.0,COMPLETE,-,16,UP
 nanoleafapi,types-nanoleafapi,https://github.com/MylesMor/nanoleafapi,==2.1.*,COMPLETE,-,91,UP_TO_DATE,UPLOADED,STRICT,33,0,49,0,2,3,1,0,16,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 netaddr,types-netaddr,https://github.com/netaddr/netaddr,==1.3.*,COMPLETE,-,712,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,291,1,308,0,0,0,3,1,101,2,0,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 netifaces,types-netifaces,https://github.com/al45tair/netifaces,==0.11.*,COMPLETE,-,69,UP_TO_DATE,UPLOADED,STRICT,1,0,3,0,0,0,0,0,65,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,33
-networkx,types-networkx,https://github.com/networkx/networkx,==3.6.1,COMPLETE,-,7630,UP_TO_DATE,UPLOADED,NOT_STRICT,3175,1266,1073,544,213,264,24,19,387,5,240,132,1,1,ERROR_ON_MISSING_STUB,linux,23
+networkx,types-networkx,https://github.com/networkx/networkx,==3.6.1,COMPLETE,-,7632,UP_TO_DATE,UPLOADED,NOT_STRICT,3175,1266,1073,544,213,264,24,19,387,5,240,132,1,1,ERROR_ON_MISSING_STUB,linux,23
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,==3.3.*,COMPLETE,-,1884,UP_TO_DATE,UPLOADED,NOT_STRICT,753,219,314,62,29,11,2,0,342,29,12,118,0,2,ERROR_ON_MISSING_STUB,linux,0
 objgraph,types-objgraph,https://github.com/mgedmin/objgraph,==3.6.*,COMPLETE,-,87,UP_TO_DATE,UPLOADED,STRICT,71,0,17,0,0,0,0,0,6,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 olefile,types-olefile,https://github.com/decalage2/olefile,==0.47.*,COMPLETE,-,222,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,75,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
