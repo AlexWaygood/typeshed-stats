@@ -929,7 +929,7 @@ The latest version of `types-RPi.GPIO` aims to provide accurate annotations for 
 
 ### Number of lines
 
-56 (excluding blank lines)
+57 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1171,7 +1171,7 @@ The latest version of `types-WebOb` aims to provide accurate annotations for `We
 
 ### Number of lines
 
-2,225 (excluding blank lines)
+2,227 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3243,7 +3243,7 @@ The latest version of `types-docker` aims to provide accurate annotations for `d
 
 ### Number of lines
 
-2,634 (excluding blank lines)
+2,635 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3365,7 +3365,7 @@ The latest version of `types-docutils` aims to provide accurate annotations for 
 
 ### Number of lines
 
-5,666 (excluding blank lines)
+5,667 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4219,7 +4219,7 @@ The latest version of `types-fpdf2` aims to provide accurate annotations for `fp
 
 ### Number of lines
 
-3,851 (excluding blank lines)
+3,855 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -4404,7 +4404,7 @@ The latest version of `types-gevent` aims to provide accurate annotations for `g
 
 ### Number of lines
 
-3,234 (excluding blank lines)
+3,244 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6718,7 +6718,7 @@ The latest version of `types-openpyxl` aims to provide accurate annotations for 
 
 ### Number of lines
 
-13,159 (excluding blank lines)
+13,172 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6840,7 +6840,7 @@ The latest version of `types-paramiko` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,895 (excluding blank lines)
+1,893 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6856,7 +6856,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 5 unique allowlist entries for `paramiko` when running stubtest in CI.
+Typeshed currently has 4 unique allowlist entries for `paramiko` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6870,7 +6870,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 644
+    - Annotated returns: 643
     - Unannotated returns: 3
     - Explicit `Any` returns: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -6879,7 +6879,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 23
 - Class definitions:
-    - Total class definitions: 129
+    - Total class definitions: 128
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7332,7 +7332,7 @@ The latest version of `types-pony` aims to provide accurate annotations for `pon
 
 ### Number of lines
 
-3,597 (excluding blank lines)
+3,598 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8064,7 +8064,7 @@ The latest version of `types-pyinstaller` aims to provide accurate annotations f
 
 ### Number of lines
 
-770 (excluding blank lines)
+771 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9223,7 +9223,7 @@ The latest version of `types-qrcode` aims to provide accurate annotations for `q
 
 ### Number of lines
 
-651 (excluding blank lines)
+652 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10512,7 +10512,7 @@ The latest version of `types-tensorflow` aims to provide accurate annotations fo
 
 ### Number of lines
 
-30,301 (excluding blank lines)
+30,304 (excluding blank lines)
 
 ### Package status: *out of date*
 
