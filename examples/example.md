@@ -8613,7 +8613,7 @@ The latest version of `types-python-dateutil` aims to provide accurate annotatio
 
 ### Number of lines
 
-773 (excluding blank lines)
+775 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8638,12 +8638,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `python-dateutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 323
+    - Annotated parameters: 324
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 193
+    - Annotated returns: 195
     - Unannotated returns: 0
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -9040,7 +9040,7 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 ### Number of lines
 
-39,375 (excluding blank lines)
+39,487 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9056,7 +9056,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `win32` only.
 
-Typeshed currently has 37 unique allowlist entries for `pywin32` when running stubtest in CI.
+Typeshed currently has 34 unique allowlist entries for `pywin32` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -9065,21 +9065,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,967
-    - Unannotated parameters: 3,646
-    - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 415
+    - Annotated parameters: 3,984
+    - Unannotated parameters: 3,695
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 384
 - Returns:
-    - Annotated returns: 4,047
-    - Unannotated returns: 1,920
-    - Explicit `Any` returns: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 286
+    - Annotated returns: 4,106
+    - Unannotated returns: 1,892
+    - Explicit `Any` returns: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 293
 - Variables:
-    - Annotated variables: 29,473
+    - Annotated variables: 29,498
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,858
 - Class definitions:
-    - Total class definitions: 749
+    - Total class definitions: 752
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
