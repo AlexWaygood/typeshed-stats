@@ -5559,7 +5559,7 @@ The latest version of `types-jsonschema` aims to provide accurate annotations fo
 
 ### Number of lines
 
-483 (excluding blank lines)
+491 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6535,7 +6535,7 @@ The latest version of `types-oauthlib` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,884 (excluding blank lines)
+1,913 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6560,19 +6560,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `oauthlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 753
-    - Unannotated parameters: 219
-    - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 29
+    - Annotated parameters: 751
+    - Unannotated parameters: 221
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 27
 - Returns:
     - Annotated returns: 314
     - Unannotated returns: 62
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 342
-    - Explicit `Any` variables: 29
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 12
+    - Annotated variables: 372
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 69
 - Class definitions:
     - Total class definitions: 118
     - Class definitions with `Any`: 0
@@ -9471,7 +9471,7 @@ The latest version of `types-requests` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,044 (excluding blank lines)
+1,046 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,850 (excluding blank lines)
+69,851 (excluding blank lines)
 
 ### Package status: *stdlib*
 
