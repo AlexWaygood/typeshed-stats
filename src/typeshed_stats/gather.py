@@ -1143,7 +1143,7 @@ def get_version(package_name: PackageName, *, typeshed_dir: Path | str) -> StubV
         ...     requests_version = get_version("requests", typeshed_dir=typeshed)
         ...     colorama_version = get_version("colorama", typeshed_dir=typeshed)
         >>> requests_version
-        StubVersion('~=2.32.4')
+        StubVersion('~=2.33.0')
         >>> colorama_version
         StubVersion('==0.4.*')
     """
