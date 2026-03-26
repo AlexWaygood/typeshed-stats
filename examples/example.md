@@ -2881,9 +2881,9 @@ The latest version of `types-dateparser` aims to provide accurate annotations fo
 
 685 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -9467,15 +9467,15 @@ Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to
 
 ### Version
 
-The latest version of `types-requests` aims to provide accurate annotations for `requests~=2.32.4`.
+The latest version of `types-requests` aims to provide accurate annotations for `requests~=2.33.0`.
 
 ### Number of lines
 
 1,046 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,851 (excluding blank lines)
+69,863 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10350,12 +10350,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,533
+    - Annotated parameters: 30,541
     - Unannotated parameters: 546
-    - Explicit `Any` parameters: 2,083
+    - Explicit `Any` parameters: 2,085
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,872
+    - Annotated returns: 16,877
     - Unannotated returns: 204
     - Explicit `Any` returns: 852
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
