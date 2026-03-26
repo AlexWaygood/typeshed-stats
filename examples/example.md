@@ -4888,15 +4888,15 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Version
 
-The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==25.1.0`.
+The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==25.2.0`.
 
 ### Number of lines
 
-3,237 (excluding blank lines)
+3,396 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4917,21 +4917,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `gunicorn`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 884
+    - Annotated parameters: 909
     - Unannotated parameters: 18
-    - Explicit `Any` parameters: 23
+    - Explicit `Any` parameters: 22
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 43
 - Returns:
-    - Annotated returns: 693
+    - Annotated returns: 723
     - Unannotated returns: 6
     - Explicit `Any` returns: 15
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 42
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 43
 - Variables:
-    - Annotated variables: 1,449
+    - Annotated variables: 1,488
     - Explicit `Any` variables: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 20
 - Class definitions:
-    - Total class definitions: 262
+    - Total class definitions: 275
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9473,9 +9473,9 @@ The latest version of `types-requests` aims to provide accurate annotations for 
 
 1,046 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
