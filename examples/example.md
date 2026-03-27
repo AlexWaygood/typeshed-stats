@@ -2875,15 +2875,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser~=1.3.0`.
+The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser~=1.4.0`.
 
 ### Number of lines
 
-685 (excluding blank lines)
+682 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2914,7 +2914,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 177
+    - Annotated variables: 175
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 5
 - Class definitions:
@@ -4888,15 +4888,15 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Version
 
-The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==25.2.0`.
+The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==25.3.0`.
 
 ### Number of lines
 
-3,396 (excluding blank lines)
+3,394 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4917,21 +4917,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `gunicorn`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 909
+    - Annotated parameters: 901
     - Unannotated parameters: 18
     - Explicit `Any` parameters: 22
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 43
 - Returns:
-    - Annotated returns: 723
+    - Annotated returns: 719
     - Unannotated returns: 6
     - Explicit `Any` returns: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 43
 - Variables:
-    - Annotated variables: 1,488
+    - Annotated variables: 1,470
     - Explicit `Any` variables: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 20
 - Class definitions:
-    - Total class definitions: 275
+    - Total class definitions: 286
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
