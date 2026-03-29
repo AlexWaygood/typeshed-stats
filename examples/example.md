@@ -9341,7 +9341,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.2.28`.
+The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.3.32`.
 
 ### Number of lines
 

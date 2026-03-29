@@ -5373,7 +5373,7 @@
     "package_name": "regex",
     "stub_distribution_name": "types-regex",
     "upstream_url": "https://github.com/mrabarnett/mrab-regex",
-    "version": "==2026.2.28",
+    "version": "==2026.3.32",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 914,
