@@ -4892,7 +4892,7 @@ The latest version of `types-gunicorn` aims to provide accurate annotations for 
 
 ### Number of lines
 
-3,394 (excluding blank lines)
+3,474 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4925,13 +4925,13 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Annotated returns: 719
     - Unannotated returns: 6
     - Explicit `Any` returns: 15
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 43
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 31
 - Variables:
-    - Annotated variables: 1,470
+    - Annotated variables: 1,517
     - Explicit `Any` variables: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 20
 - Class definitions:
-    - Total class definitions: 286
+    - Total class definitions: 302
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -10941,7 +10941,7 @@ The latest version of `types-uWSGI` aims to provide accurate annotations for `uW
 
 ### Number of lines
 
-382 (excluding blank lines)
+380 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10957,7 +10957,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin` and `linux`.
 
-Typeshed currently has 9 unique allowlist entries for `uWSGI` when running stubtest in CI.
+Typeshed currently has 8 unique allowlist entries for `uWSGI` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -10966,7 +10966,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `uWSGI`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 338
+    - Annotated parameters: 337
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0

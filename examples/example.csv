@@ -79,7 +79,7 @@ grpcio-channelz,types-grpcio-channelz,https://github.com/grpc/grpc,==1.*,COMPLET
 grpcio-health-checking,types-grpcio-health-checking,https://github.com/grpc/grpc,==1.*,COMPLETE,-,89,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,15,27,16,4,2,0,0,0,16,0,6,7,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-reflection,types-grpcio-reflection,https://github.com/grpc/grpc,==1.*,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,34,17,18,4,7,0,0,0,55,0,1,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-status,types-grpcio-status,https://github.com/grpc/grpc,==1.*,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1,2,2,1,0,1,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
-gunicorn,types-gunicorn,https://github.com/benoitc/gunicorn,==25.3.0,COMPLETE,-,3394,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,901,18,719,6,43,43,22,15,1470,26,20,286,1,0,ERROR_ON_MISSING_STUB,darwin;linux,4
+gunicorn,types-gunicorn,https://github.com/benoitc/gunicorn,==25.3.0,COMPLETE,-,3474,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,901,18,719,6,43,31,22,15,1517,26,20,302,1,0,ERROR_ON_MISSING_STUB,darwin;linux,4
 hdbcli,types-hdbcli,-,==2.25.*,COMPLETE,-,147,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,78,4,65,3,0,0,13,10,21,2,1,16,0,0,ERROR_ON_MISSING_STUB,linux,8
 hnswlib,types-hnswlib,https://github.com/nmslib/hnswlib,==0.8.*,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,32,0,26,0,0,0,1,0,3,0,1,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,==1.1.*,COMPLETE,-,850,UP_TO_DATE,UPLOADED,NOT_STRICT,204,128,252,60,6,6,7,2,246,0,68,42,0,9,ERROR_ON_MISSING_STUB,linux,5
@@ -180,7 +180,7 @@ translationstring,types-translationstring,https://github.com/Pylons/translations
 ttkthemes,types-ttkthemes,https://github.com/TkinterEP/ttkthemes,==3.3.*,COMPLETE,-,126,UP_TO_DATE,UPLOADED,STRICT,79,0,23,0,0,0,3,4,5,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,4
 tzdata,types-tzdata,https://github.com/python/tzdata,==2025.*,COMPLETE,-,3,UP_TO_DATE,UPLOADED,STRICT,0,0,0,0,0,0,0,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 uWSGI,types-uWSGI,https://github.com/unbit/uwsgi,==2.0.*,COMPLETE,"Type hints for uWSGI's [Python API](https://uwsgi-docs.readthedocs.io/en/latest/PythonModule.html). Note that this API is available only when running Python code inside a uWSGI process and some parts of the API are only present when corresponding configuration options have been enabled.
-",382,UP_TO_DATE,UPLOADED,STRICT,338,0,216,0,0,0,15,1,61,5,0,26,0,0,ERROR_ON_MISSING_STUB,darwin;linux,9
+",380,UP_TO_DATE,UPLOADED,STRICT,337,0,216,0,0,0,15,1,61,5,0,26,0,0,ERROR_ON_MISSING_STUB,darwin;linux,8
 unidiff,types-unidiff,https://github.com/matiasb/python-unidiff,==0.7.*,COMPLETE,-,144,UP_TO_DATE,UPLOADED,STRICT,34,0,32,0,0,0,0,0,38,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,6
 untangle,types-untangle,https://github.com/stchris/untangle,==1.2.*,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,19,0,21,0,0,0,1,2,5,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 usersettings,types-usersettings,https://github.com/glvnst/usersettings,==1.1.*,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,7,0,6,0,0,0,1,1,3,0,0,1,1,0,ERROR_ON_MISSING_STUB,linux,3
