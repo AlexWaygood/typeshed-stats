@@ -10352,7 +10352,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 30,541
     - Unannotated parameters: 546
-    - Explicit `Any` parameters: 2,085
+    - Explicit `Any` parameters: 2,084
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
     - Annotated returns: 16,877
