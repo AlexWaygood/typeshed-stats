@@ -65,7 +65,7 @@ jobs:
           uv sync --group=dev
           echo "${PWD}/.venv/bin" >> "${GITHUB_PATH}"
       - name: Run pyright
-        uses: jakebailey/pyright-action@v2
+        uses: jakebailey/pyright-action@v3
         with:
           version: PATH
 
