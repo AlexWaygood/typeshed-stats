@@ -2086,7 +2086,7 @@ The latest version of `types-channels` aims to provide accurate annotations for 
 
 ### Number of lines
 
-545 (excluding blank lines)
+543 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2102,7 +2102,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 8 unique allowlist entries for `channels` when running stubtest in CI.
+Typeshed currently has 9 unique allowlist entries for `channels` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,868 (excluding blank lines)
+69,876 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10360,11 +10360,11 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 852
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
 - Variables:
-    - Annotated variables: 9,541
+    - Annotated variables: 9,544
     - Explicit `Any` variables: 307
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
-    - Total class definitions: 3,216
+    - Total class definitions: 3,217
     - Class definitions with `Any`: 31
     - Class definitions marked as at least partially `Incomplete`: 0
 
