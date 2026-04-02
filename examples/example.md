@@ -30,7 +30,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 70 unique allowlist entries for `Authlib` when running stubtest in CI.
+Typeshed currently has 46 unique allowlist entries for `Authlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -274,7 +274,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `Flask-SocketIO` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `Flask-SocketIO` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1126,7 +1126,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 27 unique allowlist entries for `WTForms` when running stubtest in CI.
+Typeshed currently has 4 unique allowlist entries for `WTForms` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1187,7 +1187,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 99 unique allowlist entries for `WebOb` when running stubtest in CI.
+Typeshed currently has 98 unique allowlist entries for `WebOb` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1492,7 +1492,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 unique allowlist entries for `auth0-python` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `auth0-python` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -1781,7 +1781,7 @@ The latest version of `types-boltons` aims to provide accurate annotations for `
 
 ### Number of lines
 
-1,359 (excluding blank lines)
+1,357 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3259,7 +3259,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 9 unique allowlist entries for `docker` when running stubtest in CI.
+Typeshed currently has 6 unique allowlist entries for `docker` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3686,7 +3686,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 40 unique allowlist entries for `fanstatic` when running stubtest in CI.
+Typeshed currently has 30 unique allowlist entries for `fanstatic` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4235,7 +4235,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 unique allowlist entries for `fpdf2` when running stubtest in CI.
+Typeshed currently has 5 unique allowlist entries for `fpdf2` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4359,7 +4359,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 13 unique allowlist entries for `geopandas` when running stubtest in CI.
+Typeshed currently has 16 unique allowlist entries for `geopandas` when running stubtest in CI.
 
 ### Pyright settings in CI: *entirely excluded*
 
@@ -4420,7 +4420,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 145 unique allowlist entries for `gevent` when running stubtest in CI.
+Typeshed currently has 98 unique allowlist entries for `gevent` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -4481,7 +4481,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 unique allowlist entries for `google-cloud-ndb` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `google-cloud-ndb` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5331,7 +5331,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 unique allowlist entries for `icalendar` when running stubtest in CI.
+Typeshed currently has 4 unique allowlist entries for `icalendar` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -5575,7 +5575,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 45 unique allowlist entries for `jsonschema` when running stubtest in CI.
+Typeshed currently has 29 unique allowlist entries for `jsonschema` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5697,7 +5697,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 7 unique allowlist entries for `keyboard` when running stubtest in CI.
+Typeshed currently has 6 unique allowlist entries for `keyboard` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -6063,7 +6063,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `mock` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `mock` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -6185,7 +6185,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1 unique allowlist entry for `mysqlclient` when running stubtest in CI.
+Typeshed currently has 0 allowlist entries for `mysqlclient` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6474,7 +6474,7 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 ### Number of lines
 
-7,632 (excluding blank lines)
+7,618 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6718,7 +6718,7 @@ The latest version of `types-openpyxl` aims to provide accurate annotations for 
 
 ### Number of lines
 
-13,172 (excluding blank lines)
+13,170 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6734,7 +6734,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 175 unique allowlist entries for `openpyxl` when running stubtest in CI.
+Typeshed currently has 169 unique allowlist entries for `openpyxl` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7023,7 +7023,7 @@ The latest version of `types-peewee` aims to provide accurate annotations for `p
 
 ### Number of lines
 
-1,757 (excluding blank lines)
+1,755 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7226,7 +7226,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 unique allowlist entries for `pika` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `pika` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7442,7 +7442,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Extra description
 
-Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 31.1 on [protobuf v32.1](https://github.com/protocolbuffers/protobuf/releases/tag/v32.1) (python `protobuf==6.32.1`).
+Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 34.1 on [protobuf v34.1](https://github.com/protocolbuffers/protobuf/releases/tag/v34.1) (python `protobuf==7.34.1`).
 
 ### Upstream repo URL
 
@@ -7454,15 +7454,15 @@ Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/m
 
 ### Version
 
-The latest version of `types-protobuf` aims to provide accurate annotations for `protobuf~=6.32.1`.
+The latest version of `types-protobuf` aims to provide accurate annotations for `protobuf~=7.34.1`.
 
 ### Number of lines
 
-6,179 (excluding blank lines)
+6,448 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7474,7 +7474,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 11 unique allowlist entries for `protobuf` when running stubtest in CI.
+Typeshed currently has 10 unique allowlist entries for `protobuf` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7483,21 +7483,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 802
-    - Unannotated parameters: 376
-    - Explicit `Any` parameters: 17
+    - Annotated parameters: 1,131
+    - Unannotated parameters: 177
+    - Explicit `Any` parameters: 46
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 582
-    - Unannotated returns: 155
-    - Explicit `Any` returns: 4
+    - Annotated returns: 844
+    - Unannotated returns: 10
+    - Explicit `Any` returns: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 1,119
-    - Explicit `Any` variables: 122
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 88
+    - Annotated variables: 1,130
+    - Explicit `Any` variables: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 214
+    - Total class definitions: 233
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7535,7 +7535,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 16 unique allowlist entries for `psutil` when running stubtest in CI.
+Typeshed currently has 15 unique allowlist entries for `psutil` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -8141,7 +8141,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 38 unique allowlist entries for `pyjks` when running stubtest in CI.
+Typeshed currently has 32 unique allowlist entries for `pyjks` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -8263,7 +8263,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 12 unique allowlist entries for `pynput` when running stubtest in CI.
+Typeshed currently has 7 unique allowlist entries for `pynput` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -8385,7 +8385,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 65 unique allowlist entries for `pyserial` when running stubtest in CI.
+Typeshed currently has 46 unique allowlist entries for `pyserial` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -8629,7 +8629,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 11 unique allowlist entries for `python-dateutil` when running stubtest in CI.
+Typeshed currently has 7 unique allowlist entries for `python-dateutil` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -8812,7 +8812,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 unique allowlist entries for `python-jose` when running stubtest in CI.
+Typeshed currently has 1 unique allowlist entry for `python-jose` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -8995,7 +8995,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `pytz` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `pytz` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -9040,7 +9040,7 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 ### Number of lines
 
-39,487 (excluding blank lines)
+39,481 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9178,7 +9178,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 unique allowlist entries for `qrbill` when running stubtest in CI.
+Typeshed currently has 1 unique allowlist entry for `qrbill` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -9239,7 +9239,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 10 unique allowlist entries for `qrcode` when running stubtest in CI.
+Typeshed currently has 9 unique allowlist entries for `qrcode` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -9422,7 +9422,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 51 unique allowlist entries for `reportlab` when running stubtest in CI.
+Typeshed currently has 50 unique allowlist entries for `reportlab` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -9906,7 +9906,7 @@ The latest version of `types-setuptools` aims to provide accurate annotations fo
 
 ### Number of lines
 
-2,945 (excluding blank lines)
+2,941 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9922,7 +9922,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` and `win32`.
 
-Typeshed currently has 76 unique allowlist entries for `setuptools` when running stubtest in CI.
+Typeshed currently has 75 unique allowlist entries for `setuptools` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10105,7 +10105,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 10 unique allowlist entries for `simplejson` when running stubtest in CI.
+Typeshed currently has 9 unique allowlist entries for `simplejson` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,876 (excluding blank lines)
+69,874 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10341,7 +10341,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 810 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 712 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10831,7 +10831,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `ttkthemes` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `ttkthemes` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -11933,7 +11933,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 19 unique allowlist entries for `yt-dlp` when running stubtest in CI.
+Typeshed currently has 20 unique allowlist entries for `yt-dlp` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
