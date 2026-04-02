@@ -3243,7 +3243,7 @@ The latest version of `types-docker` aims to provide accurate annotations for `d
 
 ### Number of lines
 
-2,652 (excluding blank lines)
+2,680 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3268,13 +3268,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docker`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,302
-    - Unannotated parameters: 296
-    - Explicit `Any` parameters: 38
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 19
+    - Annotated parameters: 1,351
+    - Unannotated parameters: 273
+    - Explicit `Any` parameters: 39
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 9
 - Returns:
-    - Annotated returns: 458
-    - Unannotated returns: 133
+    - Annotated returns: 473
+    - Unannotated returns: 118
     - Explicit `Any` returns: 36
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
 - Variables:
@@ -3283,8 +3283,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
     - Total class definitions: 139
-    - Class definitions with `Any`: 2
-    - Class definitions marked as at least partially `Incomplete`: 24
+    - Class definitions with `Any`: 28
+    - Class definitions marked as at least partially `Incomplete`: 1
 
 ---
 
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,874 (excluding blank lines)
+69,878 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10350,14 +10350,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,541
-    - Unannotated parameters: 546
-    - Explicit `Any` parameters: 2,084
+    - Annotated parameters: 30,491
+    - Unannotated parameters: 598
+    - Explicit `Any` parameters: 2,031
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,877
-    - Unannotated returns: 204
-    - Explicit `Any` returns: 852
+    - Annotated returns: 16,852
+    - Unannotated returns: 230
+    - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
 - Variables:
     - Annotated variables: 9,544
