@@ -152,7 +152,7 @@ pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,==0.28.*,COMPLETE,-,858,UP_
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,==1.2.*,COMPLETE,-,182,UP_TO_DATE,UPLOADED,STRICT,99,0,31,0,0,0,0,4,40,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,==8.2.*,COMPLETE,-,652,UP_TO_DATE,UPLOADED,STRICT,282,0,152,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,9
 ratelimit,types-ratelimit,https://github.com/tomasbasham/ratelimit,==2.2.*,COMPLETE,-,19,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,1,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
-regex,types-regex,https://github.com/mrabarnett/mrab-regex,==2026.3.32,COMPLETE,-,914,OUT_OF_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,3,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,12
+regex,types-regex,https://github.com/mrabarnett/mrab-regex,==2026.4.4,COMPLETE,-,914,UP_TO_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,3,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,12
 reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,==4.4.10,COMPLETE,-,8208,UP_TO_DATE,UPLOADED,NOT_STRICT,1983,2489,1932,650,14,40,28,12,2777,6,1028,583,0,3,ERROR_ON_MISSING_STUB,linux,50
 requests,types-requests,https://github.com/psf/requests,~=2.33.0,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",1046,UP_TO_DATE,UPLOADED,NOT_STRICT,382,132,135,65,0,4,8,1,126,15,20,53,0,0,ERROR_ON_MISSING_STUB,linux,4
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,==2.0.*,COMPLETE,-,272,UP_TO_DATE,UPLOADED,NOT_STRICT,68,69,45,4,2,3,2,0,25,1,7,13,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -178,7 +178,7 @@ toposort,types-toposort,https://gitlab.com/ericvsmith/toposort,==1.10,COMPLETE,-
 tqdm,types-tqdm,https://github.com/tqdm/tqdm,==4.67.3,COMPLETE,-,1506,UP_TO_DATE,UPLOADED,NOT_STRICT,877,145,179,25,31,7,15,1,133,0,76,37,0,0,ERROR_ON_MISSING_STUB,linux,2
 translationstring,types-translationstring,https://github.com/Pylons/translationstring,==1.4.*,COMPLETE,-,80,UP_TO_DATE,UPLOADED,STRICT,62,0,18,0,0,0,6,1,4,1,0,7,0,0,ERROR_ON_MISSING_STUB,linux,4
 ttkthemes,types-ttkthemes,https://github.com/TkinterEP/ttkthemes,==3.3.*,COMPLETE,-,126,UP_TO_DATE,UPLOADED,STRICT,79,0,23,0,0,0,3,4,5,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,2
-tzdata,types-tzdata,https://github.com/python/tzdata,==2025.*,COMPLETE,-,3,OUT_OF_DATE,UPLOADED,STRICT,0,0,0,0,0,0,0,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
+tzdata,types-tzdata,https://github.com/python/tzdata,==2026.*,COMPLETE,-,3,UP_TO_DATE,UPLOADED,STRICT,0,0,0,0,0,0,0,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 uWSGI,types-uWSGI,https://github.com/unbit/uwsgi,==2.0.*,COMPLETE,"Type hints for uWSGI's [Python API](https://uwsgi-docs.readthedocs.io/en/latest/PythonModule.html). Note that this API is available only when running Python code inside a uWSGI process and some parts of the API are only present when corresponding configuration options have been enabled.
 ",380,UP_TO_DATE,UPLOADED,STRICT,337,0,216,0,0,0,15,1,61,5,0,26,0,0,ERROR_ON_MISSING_STUB,darwin;linux,8
 unidiff,types-unidiff,https://github.com/matiasb/python-unidiff,==0.7.*,COMPLETE,-,144,UP_TO_DATE,UPLOADED,STRICT,34,0,32,0,0,0,0,0,38,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,6
