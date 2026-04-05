@@ -495,33 +495,33 @@
     "package_name": "Pygments",
     "stub_distribution_name": "types-Pygments",
     "upstream_url": "https://github.com/pygments/pygments",
-    "version": "==2.19.*",
+    "version": "==2.20.*",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 849,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 925,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
-      "strictness": "MISSING_STUBS_IGNORED",
+      "strictness": "ERROR_ON_MISSING_STUB",
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 4
+      "allowlist_length": 25
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 94,
-      "unannotated_parameters": 179,
-      "annotated_returns": 107,
+      "annotated_parameters": 99,
+      "unannotated_parameters": 180,
+      "annotated_returns": 113,
       "unannotated_returns": 77,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 5,
-      "explicit_Any_parameters": 1,
+      "explicit_Any_parameters": 2,
       "explicit_Any_returns": 0,
-      "annotated_variables": 376,
+      "annotated_variables": 382,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 193,
-      "classdefs": 94,
+      "classdefs": 95,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 1
     }
@@ -3156,11 +3156,11 @@
     "package_name": "jsonnet",
     "stub_distribution_name": "types-jsonnet",
     "upstream_url": "https://github.com/google/jsonnet",
-    "version": "==0.21.*",
+    "version": "==0.22.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 33,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",

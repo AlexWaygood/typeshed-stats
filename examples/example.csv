@@ -13,7 +13,7 @@ PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,==1.1.*,COMPLETE,-,1219
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,==1.0.1,COMPLETE,-,193,UP_TO_DATE,UPLOADED,STRICT,102,0,21,0,0,0,0,0,17,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
 PySocks,types-PySocks,https://github.com/Anorov/PySocks,==1.7.1,COMPLETE,-,213,UP_TO_DATE,UPLOADED,STRICT,113,0,35,0,0,0,1,0,26,0,2,12,0,0,ERROR_ON_MISSING_STUB,linux,2
 PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,==6.0.*,COMPLETE,-,1318,UP_TO_DATE,UPLOADED,NOT_STRICT,520,278,222,172,4,0,46,12,220,160,2,91,0,0,ERROR_ON_MISSING_STUB,linux,4
-Pygments,types-Pygments,https://github.com/pygments/pygments,==2.19.*,PARTIAL,-,849,OUT_OF_DATE,UPLOADED,NOT_STRICT,94,179,107,77,0,5,1,0,376,0,193,94,0,1,MISSING_STUBS_IGNORED,linux,4
+Pygments,types-Pygments,https://github.com/pygments/pygments,==2.20.*,PARTIAL,-,925,UP_TO_DATE,UPLOADED,NOT_STRICT,99,180,113,77,0,5,2,0,382,0,193,95,0,1,ERROR_ON_MISSING_STUB,linux,25
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,==0.7.*,COMPLETE,-,57,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,==2.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,==1.2.*,COMPLETE,-,7,UP_TO_DATE,UPLOADED,STRICT,20,0,6,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,6
@@ -89,7 +89,7 @@ ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,==3.2.8,COMPLETE,-,353
 icalendar,types-icalendar,https://github.com/collective/icalendar,==6.3.2,COMPLETE,-,1345,OBSOLETE,UPLOADED,STRICT_ON_SOME_FILES,364,3,422,0,3,3,9,6,152,1,2,65,1,2,ERROR_ON_MISSING_STUB,linux,4
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,==0.4.*,COMPLETE,-,124,UP_TO_DATE,UPLOADED,STRICT,60,0,59,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,20
 jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,==1.1.*,COMPLETE,-,214,UP_TO_DATE,UPLOADED,STRICT,133,0,74,0,0,0,30,23,49,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,0
-jsonnet,types-jsonnet,https://github.com/google/jsonnet,==0.21.*,COMPLETE,-,33,OUT_OF_DATE,UPLOADED,STRICT,25,0,2,0,0,0,0,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
+jsonnet,types-jsonnet,https://github.com/google/jsonnet,==0.22.*,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,25,0,2,0,0,0,0,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,~=4.26.0,COMPLETE,-,496,UP_TO_DATE,UPLOADED,NOT_STRICT,173,257,175,11,9,10,13,3,58,4,14,26,1,0,ERROR_ON_MISSING_STUB,linux,29
 jwcrypto,types-jwcrypto,https://github.com/latchset/jwcrypto,==1.5.*,COMPLETE,-,472,UP_TO_DATE,UPLOADED,NOT_STRICT,151,31,133,8,0,1,6,11,55,2,3,40,1,0,ERROR_ON_MISSING_STUB,linux,4
 keyboard,types-keyboard,https://github.com/boppreh/keyboard,==0.13.*,COMPLETE,-,246,UP_TO_DATE,UPLOADED,STRICT,130,0,76,0,0,0,0,0,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,6

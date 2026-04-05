@@ -864,27 +864,27 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-Pygments` aims to provide accurate annotations for `Pygments==2.19.*`.
+The latest version of `types-Pygments` aims to provide accurate annotations for `Pygments==2.20.*`.
 
 ### Number of lines
 
-849 (excluding blank lines)
+925 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `Pygments` when running stubtest in CI.
+Typeshed currently has 25 unique allowlist entries for `Pygments` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -893,21 +893,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Pygments`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 94
-    - Unannotated parameters: 179
-    - Explicit `Any` parameters: 1
+    - Annotated parameters: 99
+    - Unannotated parameters: 180
+    - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 107
+    - Annotated returns: 113
     - Unannotated returns: 77
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
-    - Annotated variables: 376
+    - Annotated variables: 382
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 193
 - Class definitions:
-    - Total class definitions: 94
+    - Total class definitions: 95
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 1
 
@@ -5494,15 +5494,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-jsonnet` aims to provide accurate annotations for `jsonnet==0.21.*`.
+The latest version of `types-jsonnet` aims to provide accurate annotations for `jsonnet==0.22.*`.
 
 ### Number of lines
 
 33 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
