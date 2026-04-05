@@ -498,7 +498,7 @@
     "version": "==2.20.*",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 925,
+    "number_of_lines": 920,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -506,21 +506,21 @@
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 25
+      "allowlist_length": 10
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 99,
-      "unannotated_parameters": 180,
-      "annotated_returns": 113,
-      "unannotated_returns": 77,
+      "annotated_parameters": 143,
+      "unannotated_parameters": 145,
+      "annotated_returns": 117,
+      "unannotated_returns": 73,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 5,
-      "explicit_Any_parameters": 2,
+      "explicit_Any_parameters": 5,
       "explicit_Any_returns": 0,
-      "annotated_variables": 382,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 193,
+      "annotated_variables": 330,
+      "explicit_Any_variables": 1,
+      "explicit_Incomplete_variables": 151,
       "classdefs": 95,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 1
@@ -5937,7 +5937,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 69878,
+    "number_of_lines": 69901,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5951,10 +5951,10 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30491,
-      "unannotated_parameters": 598,
-      "annotated_returns": 16852,
-      "unannotated_returns": 230,
+      "annotated_parameters": 30505,
+      "unannotated_parameters": 592,
+      "annotated_returns": 16860,
+      "unannotated_returns": 227,
       "explicit_Incomplete_parameters": 11,
       "explicit_Incomplete_returns": 22,
       "explicit_Any_parameters": 2031,
@@ -5962,7 +5962,7 @@
       "annotated_variables": 9544,
       "explicit_Any_variables": 307,
       "explicit_Incomplete_variables": 221,
-      "classdefs": 3217,
+      "classdefs": 3219,
       "classdefs_with_Any": 31,
       "classdefs_with_Incomplete": 0
     }

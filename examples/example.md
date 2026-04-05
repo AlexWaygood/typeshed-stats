@@ -868,7 +868,7 @@ The latest version of `types-Pygments` aims to provide accurate annotations for 
 
 ### Number of lines
 
-925 (excluding blank lines)
+920 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -884,7 +884,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 25 unique allowlist entries for `Pygments` when running stubtest in CI.
+Typeshed currently has 10 unique allowlist entries for `Pygments` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -893,19 +893,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Pygments`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 99
-    - Unannotated parameters: 180
-    - Explicit `Any` parameters: 2
+    - Annotated parameters: 143
+    - Unannotated parameters: 145
+    - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 113
-    - Unannotated returns: 77
+    - Annotated returns: 117
+    - Unannotated returns: 73
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
-    - Annotated variables: 382
-    - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 193
+    - Annotated variables: 330
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 151
 - Class definitions:
     - Total class definitions: 95
     - Class definitions with `Any`: 0
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,878 (excluding blank lines)
+69,901 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10350,13 +10350,13 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,491
-    - Unannotated parameters: 598
+    - Annotated parameters: 30,505
+    - Unannotated parameters: 592
     - Explicit `Any` parameters: 2,031
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,852
-    - Unannotated returns: 230
+    - Annotated returns: 16,860
+    - Unannotated returns: 227
     - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
 - Variables:
@@ -10364,7 +10364,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 307
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
-    - Total class definitions: 3,217
+    - Total class definitions: 3,219
     - Class definitions with `Any`: 31
     - Class definitions marked as at least partially `Incomplete`: 0
 
