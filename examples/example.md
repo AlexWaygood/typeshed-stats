@@ -1,9 +1,5 @@
 ## Info on typeshed's stubs for `Authlib`
 
-### Upstream repo URL
-
-[https://github.com/authlib/authlib](https://github.com/authlib/authlib)
-
 ### Stub distribution name
 
 `types-Authlib`
@@ -60,10 +56,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `Deprecated`
-
-### Upstream repo URL
-
-[https://github.com/laurent-laporte-pro/deprecated](https://github.com/laurent-laporte-pro/deprecated)
 
 ### Stub distribution name
 
@@ -122,10 +114,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `Flask-Cors`
 
-### Upstream repo URL
-
-[https://github.com/corydolphin/flask-cors](https://github.com/corydolphin/flask-cors)
-
 ### Stub distribution name
 
 `types-Flask-Cors`
@@ -182,10 +170,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `Flask-Migrate`
-
-### Upstream repo URL
-
-[https://github.com/miguelgrinberg/Flask-Migrate](https://github.com/miguelgrinberg/Flask-Migrate)
 
 ### Stub distribution name
 
@@ -244,10 +228,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `Flask-SocketIO`
 
-### Upstream repo URL
-
-[https://github.com/miguelgrinberg/flask-socketio](https://github.com/miguelgrinberg/flask-socketio)
-
 ### Stub distribution name
 
 `types-Flask-SocketIO`
@@ -305,10 +285,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `JACK-Client`
 
-### Upstream repo URL
-
-[https://github.com/spatialaudio/jackclient-python](https://github.com/spatialaudio/jackclient-python)
-
 ### Stub distribution name
 
 `types-JACK-Client`
@@ -333,7 +309,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin` and `linux`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 1 unique allowlist entry for `JACK-Client` when running stubtest in CI.
 
@@ -365,10 +341,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `Jetson.GPIO`
-
-### Upstream repo URL
-
-[https://github.com/NVIDIA/jetson-gpio](https://github.com/NVIDIA/jetson-gpio)
 
 ### Stub distribution name
 
@@ -427,10 +399,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `Markdown`
 
-### Upstream repo URL
-
-[https://github.com/Python-Markdown/markdown](https://github.com/Python-Markdown/markdown)
-
 ### Stub distribution name
 
 `types-Markdown`
@@ -487,10 +455,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `PyAutoGUI`
-
-### Upstream repo URL
-
-[https://github.com/asweigart/pyautogui](https://github.com/asweigart/pyautogui)
 
 ### Stub distribution name
 
@@ -549,10 +513,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `PyMeeus`
 
-### Upstream repo URL
-
-[https://github.com/architest/pymeeus](https://github.com/architest/pymeeus)
-
 ### Stub distribution name
 
 `types-PyMeeus`
@@ -609,10 +569,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `PyMySQL`
-
-### Upstream repo URL
-
-[https://github.com/PyMySQL/PyMySQL](https://github.com/PyMySQL/PyMySQL)
 
 ### Stub distribution name
 
@@ -671,10 +627,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `PyScreeze`
 
-### Upstream repo URL
-
-[https://github.com/asweigart/pyscreeze](https://github.com/asweigart/pyscreeze)
-
 ### Stub distribution name
 
 `types-PyScreeze`
@@ -699,7 +651,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 2 unique allowlist entries for `PyScreeze` when running stubtest in CI.
 
@@ -731,10 +683,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `PySocks`
-
-### Upstream repo URL
-
-[https://github.com/Anorov/PySocks](https://github.com/Anorov/PySocks)
 
 ### Stub distribution name
 
@@ -793,10 +741,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `PyYAML`
 
-### Upstream repo URL
-
-[https://github.com/yaml/pyyaml](https://github.com/yaml/pyyaml)
-
 ### Stub distribution name
 
 `types-PyYAML`
@@ -853,10 +797,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `Pygments`
-
-### Upstream repo URL
-
-[https://github.com/pygments/pygments](https://github.com/pygments/pygments)
 
 ### Stub distribution name
 
@@ -915,10 +855,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `RPi.GPIO`
 
-### Upstream repo URL
-
-[https://sourceforge.net/p/raspberry-gpio-python/code/](https://sourceforge.net/p/raspberry-gpio-python/code/)
-
 ### Stub distribution name
 
 `types-RPi.GPIO`
@@ -939,9 +875,11 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *skipped*
+### Stubtest settings in CI: *error on missing stub*
 
-Stubtest is skipped in typeshed's CI for this package.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 0 allowlist entries for `RPi.GPIO` when running stubtest in CI.
 
@@ -973,10 +911,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `Send2Trash`
-
-### Upstream repo URL
-
-[https://github.com/arsenetar/send2trash](https://github.com/arsenetar/send2trash)
 
 ### Stub distribution name
 
@@ -1035,10 +969,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `TgCrypto`
 
-### Upstream repo URL
-
-[https://github.com/pyrogram/tgcrypto](https://github.com/pyrogram/tgcrypto)
-
 ### Stub distribution name
 
 `types-TgCrypto`
@@ -1095,10 +1025,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `WTForms`
-
-### Upstream repo URL
-
-[https://github.com/pallets-eco/wtforms](https://github.com/pallets-eco/wtforms)
 
 ### Stub distribution name
 
@@ -1157,10 +1083,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `WebOb`
 
-### Upstream repo URL
-
-[https://github.com/Pylons/webob](https://github.com/Pylons/webob)
-
 ### Stub distribution name
 
 `types-WebOb`
@@ -1218,10 +1140,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `aiofiles`
 
-### Upstream repo URL
-
-[https://github.com/Tinche/aiofiles](https://github.com/Tinche/aiofiles)
-
 ### Stub distribution name
 
 `types-aiofiles`
@@ -1246,7 +1164,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 86 unique allowlist entries for `aiofiles` when running stubtest in CI.
 
@@ -1279,10 +1197,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `antlr4-python3-runtime`
 
-### Upstream repo URL
-
-[https://github.com/antlr/antlr4](https://github.com/antlr/antlr4)
-
 ### Stub distribution name
 
 `types-antlr4-python3-runtime`
@@ -1307,7 +1221,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 0 allowlist entries for `antlr4-python3-runtime` when running stubtest in CI.
 
@@ -1339,10 +1253,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `assertpy`
-
-### Upstream repo URL
-
-[https://github.com/assertpy/assertpy](https://github.com/assertpy/assertpy)
 
 ### Stub distribution name
 
@@ -1401,10 +1311,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `atheris`
 
-### Upstream repo URL
-
-[https://github.com/google/atheris](https://github.com/google/atheris)
-
 ### Stub distribution name
 
 `types-atheris`
@@ -1425,9 +1331,9 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
@@ -1461,10 +1367,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `auth0-python`
-
-### Upstream repo URL
-
-[https://github.com/auth0/auth0-python](https://github.com/auth0/auth0-python)
 
 ### Stub distribution name
 
@@ -1523,10 +1425,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `aws-xray-sdk`
 
-### Upstream repo URL
-
-[https://github.com/aws/aws-xray-sdk-python](https://github.com/aws/aws-xray-sdk-python)
-
 ### Stub distribution name
 
 `types-aws-xray-sdk`
@@ -1584,10 +1482,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `behave`
 
-### Upstream repo URL
-
-[https://github.com/behave/behave](https://github.com/behave/behave)
-
 ### Stub distribution name
 
 `types-behave`
@@ -1608,9 +1502,9 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
@@ -1645,10 +1539,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `binaryornot`
 
-### Upstream repo URL
-
-[https://github.com/binaryornot/binaryornot](https://github.com/binaryornot/binaryornot)
-
 ### Stub distribution name
 
 `types-binaryornot`
@@ -1661,9 +1551,9 @@ The latest version of `types-binaryornot` aims to provide accurate annotations f
 
 10 (excluding blank lines)
 
-### Package status: *obsolete*
+### Package status: *out of date*
 
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -1705,10 +1595,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `bleach`
-
-### Upstream repo URL
-
-[https://github.com/mozilla/bleach](https://github.com/mozilla/bleach)
 
 ### Stub distribution name
 
@@ -1767,10 +1653,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `boltons`
 
-### Upstream repo URL
-
-[https://github.com/mahmoud/boltons](https://github.com/mahmoud/boltons)
-
 ### Stub distribution name
 
 `types-boltons`
@@ -1827,10 +1709,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `braintree`
-
-### Upstream repo URL
-
-[https://github.com/braintree/braintree_python](https://github.com/braintree/braintree_python)
 
 ### Stub distribution name
 
@@ -1889,10 +1767,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `cachetools`
 
-### Upstream repo URL
-
-[https://github.com/tkem/cachetools](https://github.com/tkem/cachetools)
-
 ### Stub distribution name
 
 `types-cachetools`
@@ -1949,10 +1823,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `capturer`
-
-### Upstream repo URL
-
-[https://github.com/xolox/python-capturer](https://github.com/xolox/python-capturer)
 
 ### Stub distribution name
 
@@ -2011,10 +1881,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `cffi`
 
-### Upstream repo URL
-
-[https://github.com/python-cffi/cffi/](https://github.com/python-cffi/cffi/)
-
 ### Stub distribution name
 
 `types-cffi`
@@ -2039,7 +1905,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 4 unique allowlist entries for `cffi` when running stubtest in CI.
 
@@ -2071,10 +1937,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `channels`
-
-### Upstream repo URL
-
-[https://github.com/django/channels](https://github.com/django/channels)
 
 ### Stub distribution name
 
@@ -2133,10 +1995,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `chevron`
 
-### Upstream repo URL
-
-[https://github.com/noahmorrison/chevron](https://github.com/noahmorrison/chevron)
-
 ### Stub distribution name
 
 `types-chevron`
@@ -2193,10 +2051,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `click-default-group`
-
-### Upstream repo URL
-
-[https://github.com/click-contrib/click-default-group](https://github.com/click-contrib/click-default-group)
 
 ### Stub distribution name
 
@@ -2255,10 +2109,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `click-log`
 
-### Upstream repo URL
-
-[https://github.com/click-contrib/click-log](https://github.com/click-contrib/click-log)
-
 ### Stub distribution name
 
 `types-click-log`
@@ -2315,10 +2165,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `click-shell`
-
-### Upstream repo URL
-
-[https://github.com/clarkperkins/click-shell](https://github.com/clarkperkins/click-shell)
 
 ### Stub distribution name
 
@@ -2377,10 +2223,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `click-spinner`
 
-### Upstream repo URL
-
-[https://github.com/click-contrib/click-spinner](https://github.com/click-contrib/click-spinner)
-
 ### Stub distribution name
 
 `types-click-spinner`
@@ -2437,10 +2279,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `click-web`
-
-### Upstream repo URL
-
-[https://github.com/fredrik-corneliusson/click-web](https://github.com/fredrik-corneliusson/click-web)
 
 ### Stub distribution name
 
@@ -2499,10 +2337,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `colorama`
 
-### Upstream repo URL
-
-[https://github.com/tartley/colorama](https://github.com/tartley/colorama)
-
 ### Stub distribution name
 
 `types-colorama`
@@ -2527,7 +2361,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 44 unique allowlist entries for `colorama` when running stubtest in CI.
 
@@ -2559,10 +2393,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `colorful`
-
-### Upstream repo URL
-
-[https://github.com/timofurrer/colorful](https://github.com/timofurrer/colorful)
 
 ### Stub distribution name
 
@@ -2621,10 +2451,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `console-menu`
 
-### Upstream repo URL
-
-[https://github.com/aegirhall/console-menu](https://github.com/aegirhall/console-menu)
-
 ### Stub distribution name
 
 `types-console-menu`
@@ -2681,10 +2507,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `convertdate`
-
-### Upstream repo URL
-
-[https://github.com/fitnr/convertdate](https://github.com/fitnr/convertdate)
 
 ### Stub distribution name
 
@@ -2743,10 +2565,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `croniter`
 
-### Upstream repo URL
-
-[https://github.com/pallets-eco/croniter](https://github.com/pallets-eco/croniter)
-
 ### Stub distribution name
 
 `types-croniter`
@@ -2803,10 +2621,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `datauri`
-
-### Upstream repo URL
-
-[https://github.com/eclecticiq/python-data-uri](https://github.com/eclecticiq/python-data-uri)
 
 ### Stub distribution name
 
@@ -2865,10 +2679,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `dateparser`
 
-### Upstream repo URL
-
-[https://github.com/scrapinghub/dateparser](https://github.com/scrapinghub/dateparser)
-
 ### Stub distribution name
 
 `types-dateparser`
@@ -2925,10 +2735,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `decorator`
-
-### Upstream repo URL
-
-[https://github.com/micheles/decorator](https://github.com/micheles/decorator)
 
 ### Stub distribution name
 
@@ -2987,10 +2793,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `defusedxml`
 
-### Upstream repo URL
-
-[https://github.com/tiran/defusedxml](https://github.com/tiran/defusedxml)
-
 ### Stub distribution name
 
 `types-defusedxml`
@@ -3047,10 +2849,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `dirhash`
-
-### Upstream repo URL
-
-[https://github.com/andhus/dirhash-python](https://github.com/andhus/dirhash-python)
 
 ### Stub distribution name
 
@@ -3109,10 +2907,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `django-filter`
 
-### Upstream repo URL
-
-[https://github.com/carltongibson/django-filter/](https://github.com/carltongibson/django-filter/)
-
 ### Stub distribution name
 
 `types-django-filter`
@@ -3170,10 +2964,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `django-import-export`
 
-### Upstream repo URL
-
-[https://github.com/django-import-export/django-import-export](https://github.com/django-import-export/django-import-export)
-
 ### Stub distribution name
 
 `types-django-import-export`
@@ -3228,10 +3018,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `docker`
-
-### Upstream repo URL
-
-[https://github.com/docker/docker-py](https://github.com/docker/docker-py)
 
 ### Stub distribution name
 
@@ -3290,10 +3076,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `dockerfile-parse`
 
-### Upstream repo URL
-
-[https://github.com/containerbuildsystem/dockerfile-parse](https://github.com/containerbuildsystem/dockerfile-parse)
-
 ### Stub distribution name
 
 `types-dockerfile-parse`
@@ -3350,10 +3132,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `docutils`
-
-### Upstream repo URL
-
-[https://sourceforge.net/p/docutils/code](https://sourceforge.net/p/docutils/code)
 
 ### Stub distribution name
 
@@ -3412,10 +3190,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `editdistance`
 
-### Upstream repo URL
-
-[https://github.com/roy-ht/editdistance](https://github.com/roy-ht/editdistance)
-
 ### Stub distribution name
 
 `types-editdistance`
@@ -3472,10 +3246,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `entrypoints`
-
-### Upstream repo URL
-
-[https://github.com/takluyver/entrypoints](https://github.com/takluyver/entrypoints)
 
 ### Stub distribution name
 
@@ -3534,10 +3304,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `ephem`
 
-### Upstream repo URL
-
-[https://github.com/brandon-rhodes/pyephem](https://github.com/brandon-rhodes/pyephem)
-
 ### Stub distribution name
 
 `types-ephem`
@@ -3594,10 +3360,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `et_xmlfile`
-
-### Upstream repo URL
-
-[https://foss.heptapod.net/openpyxl/et_xmlfile](https://foss.heptapod.net/openpyxl/et_xmlfile)
 
 ### Stub distribution name
 
@@ -3656,10 +3418,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `fanstatic`
 
-### Upstream repo URL
-
-[https://github.com/zopefoundation/fanstatic](https://github.com/zopefoundation/fanstatic)
-
 ### Stub distribution name
 
 `types-fanstatic`
@@ -3716,10 +3474,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `first`
-
-### Upstream repo URL
-
-[https://github.com/hynek/first](https://github.com/hynek/first)
 
 ### Stub distribution name
 
@@ -3778,10 +3532,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `flake8`
 
-### Upstream repo URL
-
-[https://github.com/pycqa/flake8](https://github.com/pycqa/flake8)
-
 ### Stub distribution name
 
 `types-flake8`
@@ -3838,10 +3588,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `flake8-bugbear`
-
-### Upstream repo URL
-
-[https://github.com/PyCQA/flake8-bugbear](https://github.com/PyCQA/flake8-bugbear)
 
 ### Stub distribution name
 
@@ -3900,10 +3646,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `flake8-builtins`
 
-### Upstream repo URL
-
-[https://github.com/gforcada/flake8-builtins](https://github.com/gforcada/flake8-builtins)
-
 ### Stub distribution name
 
 `types-flake8-builtins`
@@ -3960,10 +3702,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `flake8-docstrings`
-
-### Upstream repo URL
-
-[https://github.com/pycqa/flake8-docstrings](https://github.com/pycqa/flake8-docstrings)
 
 ### Stub distribution name
 
@@ -4022,10 +3760,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `flake8-rst-docstrings`
 
-### Upstream repo URL
-
-[https://github.com/peterjc/flake8-rst-docstrings](https://github.com/peterjc/flake8-rst-docstrings)
-
 ### Stub distribution name
 
 `types-flake8-rst-docstrings`
@@ -4082,10 +3816,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `flake8-simplify`
-
-### Upstream repo URL
-
-[https://github.com/MartinThoma/flake8-simplify](https://github.com/MartinThoma/flake8-simplify)
 
 ### Stub distribution name
 
@@ -4144,10 +3874,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `flake8-typing-imports`
 
-### Upstream repo URL
-
-[https://github.com/asottile/flake8-typing-imports](https://github.com/asottile/flake8-typing-imports)
-
 ### Stub distribution name
 
 `types-flake8-typing-imports`
@@ -4205,10 +3931,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `fpdf2`
 
-### Upstream repo URL
-
-[https://github.com/py-pdf/fpdf2](https://github.com/py-pdf/fpdf2)
-
 ### Stub distribution name
 
 `types-fpdf2`
@@ -4221,9 +3943,9 @@ The latest version of `types-fpdf2` aims to provide accurate annotations for `fp
 
 3,855 (excluding blank lines)
 
-### Package status: *obsolete*
+### Package status: *out of date*
 
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -4265,14 +3987,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `gdb`
-
-### Extra description
-
-Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.
-
-### Upstream repo URL
-
-[https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree](https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree)
 
 ### Stub distribution name
 
@@ -4328,10 +4042,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `geopandas`
-
-### Upstream repo URL
-
-[https://github.com/geopandas/geopandas](https://github.com/geopandas/geopandas)
 
 ### Stub distribution name
 
@@ -4390,10 +4100,6 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 
 ## Info on typeshed's stubs for `gevent`
 
-### Upstream repo URL
-
-[https://github.com/gevent/gevent](https://github.com/gevent/gevent)
-
 ### Stub distribution name
 
 `types-gevent`
@@ -4418,7 +4124,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin`, `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 98 unique allowlist entries for `gevent` when running stubtest in CI.
 
@@ -4451,10 +4157,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `google-cloud-ndb`
 
-### Upstream repo URL
-
-[https://github.com/googleapis/python-ndb](https://github.com/googleapis/python-ndb)
-
 ### Stub distribution name
 
 `types-google-cloud-ndb`
@@ -4475,9 +4177,9 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
@@ -4511,10 +4213,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `greenlet`
-
-### Upstream repo URL
-
-[https://github.com/python-greenlet/greenlet](https://github.com/python-greenlet/greenlet)
 
 ### Stub distribution name
 
@@ -4573,10 +4271,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `grpcio`
 
-### Upstream repo URL
-
-[https://github.com/grpc/grpc](https://github.com/grpc/grpc)
-
 ### Stub distribution name
 
 `types-grpcio`
@@ -4597,9 +4291,9 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
@@ -4633,10 +4327,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ---
 
 ## Info on typeshed's stubs for `grpcio-channelz`
-
-### Upstream repo URL
-
-[https://github.com/grpc/grpc](https://github.com/grpc/grpc)
 
 ### Stub distribution name
 
@@ -4695,10 +4385,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ## Info on typeshed's stubs for `grpcio-health-checking`
 
-### Upstream repo URL
-
-[https://github.com/grpc/grpc](https://github.com/grpc/grpc)
-
 ### Stub distribution name
 
 `types-grpcio-health-checking`
@@ -4755,10 +4441,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ---
 
 ## Info on typeshed's stubs for `grpcio-reflection`
-
-### Upstream repo URL
-
-[https://github.com/grpc/grpc](https://github.com/grpc/grpc)
 
 ### Stub distribution name
 
@@ -4817,10 +4499,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ## Info on typeshed's stubs for `grpcio-status`
 
-### Upstream repo URL
-
-[https://github.com/grpc/grpc](https://github.com/grpc/grpc)
-
 ### Stub distribution name
 
 `types-grpcio-status`
@@ -4878,10 +4556,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ## Info on typeshed's stubs for `gunicorn`
 
-### Upstream repo URL
-
-[https://github.com/benoitc/gunicorn](https://github.com/benoitc/gunicorn)
-
 ### Stub distribution name
 
 `types-gunicorn`
@@ -4906,7 +4580,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin` and `linux`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 4 unique allowlist entries for `gunicorn` when running stubtest in CI.
 
@@ -4996,10 +4670,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ## Info on typeshed's stubs for `hnswlib`
 
-### Upstream repo URL
-
-[https://github.com/nmslib/hnswlib](https://github.com/nmslib/hnswlib)
-
 ### Stub distribution name
 
 `types-hnswlib`
@@ -5056,10 +4726,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `html5lib`
-
-### Upstream repo URL
-
-[https://github.com/html5lib/html5lib-python](https://github.com/html5lib/html5lib-python)
 
 ### Stub distribution name
 
@@ -5118,10 +4784,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `httplib2`
 
-### Upstream repo URL
-
-[https://github.com/httplib2/httplib2](https://github.com/httplib2/httplib2)
-
 ### Stub distribution name
 
 `types-httplib2`
@@ -5178,10 +4840,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `hvac`
-
-### Upstream repo URL
-
-[https://github.com/hvac/hvac](https://github.com/hvac/hvac)
 
 ### Stub distribution name
 
@@ -5240,10 +4898,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `ibm-db`
 
-### Upstream repo URL
-
-[https://github.com/ibmdb/python-ibmdb](https://github.com/ibmdb/python-ibmdb)
-
 ### Stub distribution name
 
 `types-ibm-db`
@@ -5301,10 +4955,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `icalendar`
 
-### Upstream repo URL
-
-[https://github.com/collective/icalendar](https://github.com/collective/icalendar)
-
 ### Stub distribution name
 
 `types-icalendar`
@@ -5317,9 +4967,9 @@ The latest version of `types-icalendar` aims to provide accurate annotations for
 
 1,345 (excluding blank lines)
 
-### Package status: *obsolete*
+### Package status: *out of date*
 
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5361,10 +5011,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ---
 
 ## Info on typeshed's stubs for `inifile`
-
-### Upstream repo URL
-
-[https://github.com/mitsuhiko/python-inifile](https://github.com/mitsuhiko/python-inifile)
 
 ### Stub distribution name
 
@@ -5423,10 +5069,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `jmespath`
 
-### Upstream repo URL
-
-[https://github.com/jmespath/jmespath.py](https://github.com/jmespath/jmespath.py)
-
 ### Stub distribution name
 
 `types-jmespath`
@@ -5483,10 +5125,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `jsonnet`
-
-### Upstream repo URL
-
-[https://github.com/google/jsonnet](https://github.com/google/jsonnet)
 
 ### Stub distribution name
 
@@ -5545,10 +5183,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `jsonschema`
 
-### Upstream repo URL
-
-[https://github.com/python-jsonschema/jsonschema](https://github.com/python-jsonschema/jsonschema)
-
 ### Stub distribution name
 
 `types-jsonschema`
@@ -5605,10 +5239,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `jwcrypto`
-
-### Upstream repo URL
-
-[https://github.com/latchset/jwcrypto](https://github.com/latchset/jwcrypto)
 
 ### Stub distribution name
 
@@ -5667,10 +5297,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `keyboard`
 
-### Upstream repo URL
-
-[https://github.com/boppreh/keyboard](https://github.com/boppreh/keyboard)
-
 ### Stub distribution name
 
 `types-keyboard`
@@ -5727,10 +5353,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `ldap3`
-
-### Upstream repo URL
-
-[https://github.com/cannatag/ldap3](https://github.com/cannatag/ldap3)
 
 ### Stub distribution name
 
@@ -5789,10 +5411,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `lunardate`
 
-### Upstream repo URL
-
-[https://github.com/lidaobing/python-lunardate](https://github.com/lidaobing/python-lunardate)
-
 ### Stub distribution name
 
 `types-lunardate`
@@ -5850,10 +5468,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `lupa`
 
-### Upstream repo URL
-
-[https://github.com/scoder/lupa](https://github.com/scoder/lupa)
-
 ### Stub distribution name
 
 `types-lupa`
@@ -5866,9 +5480,9 @@ The latest version of `types-lupa` aims to provide accurate annotations for `lup
 
 522 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5910,10 +5524,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `lzstring`
-
-### Upstream repo URL
-
-[https://github.com/gkovacs/lz-string-python](https://github.com/gkovacs/lz-string-python)
 
 ### Stub distribution name
 
@@ -5972,10 +5582,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `m3u8`
 
-### Upstream repo URL
-
-[https://github.com/globocom/m3u8](https://github.com/globocom/m3u8)
-
 ### Stub distribution name
 
 `types-m3u8`
@@ -6032,10 +5638,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ---
 
 ## Info on typeshed's stubs for `mock`
-
-### Upstream repo URL
-
-[https://github.com/testing-cabal/mock](https://github.com/testing-cabal/mock)
 
 ### Stub distribution name
 
@@ -6094,10 +5696,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ## Info on typeshed's stubs for `mypy-extensions`
 
-### Upstream repo URL
-
-[https://github.com/python/mypy_extensions](https://github.com/python/mypy_extensions)
-
 ### Stub distribution name
 
 `types-mypy-extensions`
@@ -6154,10 +5752,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `mysqlclient`
-
-### Upstream repo URL
-
-[https://github.com/PyMySQL/mysqlclient](https://github.com/PyMySQL/mysqlclient)
 
 ### Stub distribution name
 
@@ -6216,10 +5810,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `nanoid`
 
-### Upstream repo URL
-
-[https://github.com/puyuan/py-nanoid](https://github.com/puyuan/py-nanoid)
-
 ### Stub distribution name
 
 `types-nanoid`
@@ -6276,10 +5866,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `nanoleafapi`
-
-### Upstream repo URL
-
-[https://github.com/MylesMor/nanoleafapi](https://github.com/MylesMor/nanoleafapi)
 
 ### Stub distribution name
 
@@ -6338,10 +5924,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `netaddr`
 
-### Upstream repo URL
-
-[https://github.com/netaddr/netaddr](https://github.com/netaddr/netaddr)
-
 ### Stub distribution name
 
 `types-netaddr`
@@ -6398,10 +5980,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ---
 
 ## Info on typeshed's stubs for `netifaces`
-
-### Upstream repo URL
-
-[https://github.com/al45tair/netifaces](https://github.com/al45tair/netifaces)
 
 ### Stub distribution name
 
@@ -6460,10 +6038,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `networkx`
 
-### Upstream repo URL
-
-[https://github.com/networkx/networkx](https://github.com/networkx/networkx)
-
 ### Stub distribution name
 
 `types-networkx`
@@ -6520,10 +6094,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `oauthlib`
-
-### Upstream repo URL
-
-[https://github.com/oauthlib/oauthlib](https://github.com/oauthlib/oauthlib)
 
 ### Stub distribution name
 
@@ -6582,10 +6152,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `objgraph`
 
-### Upstream repo URL
-
-[https://github.com/mgedmin/objgraph](https://github.com/mgedmin/objgraph)
-
 ### Stub distribution name
 
 `types-objgraph`
@@ -6642,10 +6208,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `olefile`
-
-### Upstream repo URL
-
-[https://github.com/decalage2/olefile](https://github.com/decalage2/olefile)
 
 ### Stub distribution name
 
@@ -6704,10 +6266,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `openpyxl`
 
-### Upstream repo URL
-
-[https://foss.heptapod.net/openpyxl/openpyxl](https://foss.heptapod.net/openpyxl/openpyxl)
-
 ### Stub distribution name
 
 `types-openpyxl`
@@ -6764,10 +6322,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `opentracing`
-
-### Upstream repo URL
-
-[https://github.com/opentracing/opentracing-python](https://github.com/opentracing/opentracing-python)
 
 ### Stub distribution name
 
@@ -6826,10 +6380,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ## Info on typeshed's stubs for `paramiko`
 
-### Upstream repo URL
-
-[https://github.com/paramiko/paramiko](https://github.com/paramiko/paramiko)
-
 ### Stub distribution name
 
 `types-paramiko`
@@ -6854,7 +6404,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 4 unique allowlist entries for `paramiko` when running stubtest in CI.
 
@@ -6886,10 +6436,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ---
 
 ## Info on typeshed's stubs for `parsimonious`
-
-### Upstream repo URL
-
-[https://github.com/erikrose/parsimonious](https://github.com/erikrose/parsimonious)
 
 ### Stub distribution name
 
@@ -6948,10 +6494,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ## Info on typeshed's stubs for `passpy`
 
-### Upstream repo URL
-
-[https://github.com/bfrascher/passpy](https://github.com/bfrascher/passpy)
-
 ### Stub distribution name
 
 `types-passpy`
@@ -7008,10 +6550,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `peewee`
-
-### Upstream repo URL
-
-[https://github.com/coleifer/peewee](https://github.com/coleifer/peewee)
 
 ### Stub distribution name
 
@@ -7070,10 +6608,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `pep8-naming`
 
-### Upstream repo URL
-
-[https://github.com/PyCQA/pep8-naming](https://github.com/PyCQA/pep8-naming)
-
 ### Stub distribution name
 
 `types-pep8-naming`
@@ -7130,10 +6664,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pexpect`
-
-### Upstream repo URL
-
-[https://github.com/pexpect/pexpect](https://github.com/pexpect/pexpect)
 
 ### Stub distribution name
 
@@ -7192,21 +6722,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `pika`
 
-### Extra description
-
-The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.
-
-### Upstream repo URL
-
-[https://github.com/pika/pika](https://github.com/pika/pika)
-
 ### Stub distribution name
 
-`types-pika-ts`
+`types-pika`
 
 ### Version
 
-The latest version of `types-pika-ts` aims to provide accurate annotations for `pika==1.3.*`.
+The latest version of `types-pika` aims to provide accurate annotations for `pika==1.3.*`.
 
 ### Number of lines
 
@@ -7256,10 +6778,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `polib`
-
-### Upstream repo URL
-
-[https://github.com/izimobil/polib](https://github.com/izimobil/polib)
 
 ### Stub distribution name
 
@@ -7318,10 +6836,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pony`
 
-### Upstream repo URL
-
-[https://github.com/ponyorm/pony](https://github.com/ponyorm/pony)
-
 ### Stub distribution name
 
 `types-pony`
@@ -7378,10 +6892,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `portpicker`
-
-### Upstream repo URL
-
-[https://github.com/google/python_portpicker](https://github.com/google/python_portpicker)
 
 ### Stub distribution name
 
@@ -7440,14 +6950,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `protobuf`
 
-### Extra description
-
-Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 34.1 on [protobuf v34.1](https://github.com/protocolbuffers/protobuf/releases/tag/v34.1) (python `protobuf==7.34.1`).
-
-### Upstream repo URL
-
-[https://github.com/protocolbuffers/protobuf](https://github.com/protocolbuffers/protobuf)
-
 ### Stub distribution name
 
 `types-protobuf`
@@ -7468,9 +6970,9 @@ These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests th
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *missing stubs ignored*
+### Stubtest settings in CI: *error on missing stub*
 
-The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
@@ -7505,10 +7007,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `psutil`
 
-### Upstream repo URL
-
-[https://github.com/giampaolo/psutil](https://github.com/giampaolo/psutil)
-
 ### Stub distribution name
 
 `types-psutil`
@@ -7533,7 +7031,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin`, `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 15 unique allowlist entries for `psutil` when running stubtest in CI.
 
@@ -7565,10 +7063,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ---
 
 ## Info on typeshed's stubs for `psycopg2`
-
-### Upstream repo URL
-
-[https://github.com/psycopg/psycopg2](https://github.com/psycopg/psycopg2)
 
 ### Stub distribution name
 
@@ -7627,10 +7121,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `punq`
 
-### Upstream repo URL
-
-[https://github.com/bobthemighty/punq](https://github.com/bobthemighty/punq)
-
 ### Stub distribution name
 
 `types-punq`
@@ -7687,10 +7177,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pyasn1`
-
-### Upstream repo URL
-
-[https://github.com/pyasn1/pyasn1](https://github.com/pyasn1/pyasn1)
 
 ### Stub distribution name
 
@@ -7773,7 +7259,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin` and `linux`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 0 allowlist entries for `pyaudio` when running stubtest in CI.
 
@@ -7805,10 +7291,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pycocotools`
-
-### Upstream repo URL
-
-[https://github.com/ppwwyyxx/cocoapi](https://github.com/ppwwyyxx/cocoapi)
 
 ### Stub distribution name
 
@@ -7867,10 +7349,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pycurl`
 
-### Upstream repo URL
-
-[https://github.com/pycurl/pycurl](https://github.com/pycurl/pycurl)
-
 ### Stub distribution name
 
 `types-pycurl`
@@ -7895,7 +7373,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin`, `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 0 allowlist entries for `pycurl` when running stubtest in CI.
 
@@ -7927,10 +7405,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `pyfarmhash`
-
-### Upstream repo URL
-
-[https://github.com/veelion/python-farmhash](https://github.com/veelion/python-farmhash)
 
 ### Stub distribution name
 
@@ -7989,10 +7463,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pyflakes`
 
-### Upstream repo URL
-
-[https://github.com/PyCQA/pyflakes](https://github.com/PyCQA/pyflakes)
-
 ### Stub distribution name
 
 `types-pyflakes`
@@ -8049,10 +7519,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pyinstaller`
-
-### Upstream repo URL
-
-[https://github.com/pyinstaller/pyinstaller](https://github.com/pyinstaller/pyinstaller)
 
 ### Stub distribution name
 
@@ -8111,10 +7577,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pyjks`
 
-### Upstream repo URL
-
-[https://github.com/kurtbrose/pyjks](https://github.com/kurtbrose/pyjks)
-
 ### Stub distribution name
 
 `types-pyjks`
@@ -8171,10 +7633,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pyluach`
-
-### Upstream repo URL
-
-[https://github.com/simlist/pyluach](https://github.com/simlist/pyluach)
 
 ### Stub distribution name
 
@@ -8233,10 +7691,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pynput`
 
-### Upstream repo URL
-
-[https://github.com/moses-palmer/pynput](https://github.com/moses-palmer/pynput)
-
 ### Stub distribution name
 
 `types-pynput`
@@ -8261,7 +7715,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin`, `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 7 unique allowlist entries for `pynput` when running stubtest in CI.
 
@@ -8294,10 +7748,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pyperclip`
 
-### Upstream repo URL
-
-[https://github.com/asweigart/pyperclip](https://github.com/asweigart/pyperclip)
-
 ### Stub distribution name
 
 `types-pyperclip`
@@ -8322,7 +7772,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin`, `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 1 unique allowlist entry for `pyperclip` when running stubtest in CI.
 
@@ -8355,10 +7805,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pyserial`
 
-### Upstream repo URL
-
-[https://github.com/pyserial/pyserial](https://github.com/pyserial/pyserial)
-
 ### Stub distribution name
 
 `types-pyserial`
@@ -8383,7 +7829,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin`, `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 46 unique allowlist entries for `pyserial` when running stubtest in CI.
 
@@ -8415,10 +7861,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `pysftp`
-
-### Upstream repo URL
-
-[https://bitbucket.org/dundeemt/pysftp](https://bitbucket.org/dundeemt/pysftp)
 
 ### Stub distribution name
 
@@ -8477,10 +7919,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pytest-lazy-fixture`
 
-### Upstream repo URL
-
-[https://github.com/tvorog/pytest-lazy-fixture](https://github.com/tvorog/pytest-lazy-fixture)
-
 ### Stub distribution name
 
 `types-pytest-lazy-fixture`
@@ -8537,10 +7975,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `python-crontab`
-
-### Upstream repo URL
-
-[https://gitlab.com/doctormo/python-crontab](https://gitlab.com/doctormo/python-crontab)
 
 ### Stub distribution name
 
@@ -8599,10 +8033,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `python-dateutil`
 
-### Upstream repo URL
-
-[https://github.com/dateutil/dateutil](https://github.com/dateutil/dateutil)
-
 ### Stub distribution name
 
 `types-python-dateutil`
@@ -8659,10 +8089,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `python-http-client`
-
-### Upstream repo URL
-
-[https://github.com/sendgrid/python-http-client](https://github.com/sendgrid/python-http-client)
 
 ### Stub distribution name
 
@@ -8721,10 +8147,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `python-jenkins`
 
-### Upstream repo URL
-
-[https://opendev.org/jjb/python-jenkins](https://opendev.org/jjb/python-jenkins)
-
 ### Stub distribution name
 
 `types-python-jenkins`
@@ -8781,10 +8203,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `python-jose`
-
-### Upstream repo URL
-
-[https://github.com/mpdavis/python-jose](https://github.com/mpdavis/python-jose)
 
 ### Stub distribution name
 
@@ -8843,10 +8261,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `python-nmap`
 
-### Upstream repo URL
-
-[https://bitbucket.org/xael/python-nmap](https://bitbucket.org/xael/python-nmap)
-
 ### Stub distribution name
 
 `types-python-nmap`
@@ -8903,10 +8317,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `python-xlib`
-
-### Upstream repo URL
-
-[https://github.com/python-xlib/python-xlib](https://github.com/python-xlib/python-xlib)
 
 ### Stub distribution name
 
@@ -8965,10 +8375,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pytz`
 
-### Upstream repo URL
-
-[https://github.com/stub42/pytz](https://github.com/stub42/pytz)
-
 ### Stub distribution name
 
 `types-pytz`
@@ -9026,10 +8432,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `pywin32`
 
-### Upstream repo URL
-
-[https://github.com/mhammond/pywin32](https://github.com/mhammond/pywin32)
-
 ### Stub distribution name
 
 `types-pywin32`
@@ -9054,7 +8456,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `win32` only.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 34 unique allowlist entries for `pywin32` when running stubtest in CI.
 
@@ -9086,10 +8488,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `pyxdg`
-
-### Upstream repo URL
-
-[https://github.com/takluyver/pyxdg](https://github.com/takluyver/pyxdg)
 
 ### Stub distribution name
 
@@ -9148,10 +8546,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `qrbill`
 
-### Upstream repo URL
-
-[https://github.com/claudep/swiss-qr-bill](https://github.com/claudep/swiss-qr-bill)
-
 ### Stub distribution name
 
 `types-qrbill`
@@ -9208,10 +8602,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `qrcode`
-
-### Upstream repo URL
-
-[https://github.com/lincolnloop/python-qrcode](https://github.com/lincolnloop/python-qrcode)
 
 ### Stub distribution name
 
@@ -9270,10 +8660,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `ratelimit`
 
-### Upstream repo URL
-
-[https://github.com/tomasbasham/ratelimit](https://github.com/tomasbasham/ratelimit)
-
 ### Stub distribution name
 
 `types-ratelimit`
@@ -9330,10 +8716,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `regex`
-
-### Upstream repo URL
-
-[https://github.com/mrabarnett/mrab-regex](https://github.com/mrabarnett/mrab-regex)
 
 ### Stub distribution name
 
@@ -9392,10 +8774,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `reportlab`
 
-### Upstream repo URL
-
-[https://github.com/MrBitBucket/reportlab-mirror](https://github.com/MrBitBucket/reportlab-mirror)
-
 ### Stub distribution name
 
 `types-reportlab`
@@ -9452,14 +8830,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `requests`
-
-### Extra description
-
-Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.
-
-### Upstream repo URL
-
-[https://github.com/psf/requests](https://github.com/psf/requests)
 
 ### Stub distribution name
 
@@ -9518,10 +8888,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `requests-oauthlib`
 
-### Upstream repo URL
-
-[https://github.com/requests/requests-oauthlib](https://github.com/requests/requests-oauthlib)
-
 ### Stub distribution name
 
 `types-requests-oauthlib`
@@ -9578,10 +8944,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `resampy`
-
-### Upstream repo URL
-
-[https://github.com/bmcfee/resampy](https://github.com/bmcfee/resampy)
 
 ### Stub distribution name
 
@@ -9640,10 +9002,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `retry`
 
-### Upstream repo URL
-
-[https://github.com/invl/retry](https://github.com/invl/retry)
-
 ### Stub distribution name
 
 `types-retry`
@@ -9700,10 +9058,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `rfc3339-validator`
-
-### Upstream repo URL
-
-[https://github.com/naimetti/rfc3339-validator](https://github.com/naimetti/rfc3339-validator)
 
 ### Stub distribution name
 
@@ -9762,14 +9116,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `s2clientprotocol`
 
-### Extra description
-
-Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on [s2client-proto 5.0.12.91115.0](https://github.com/Blizzard/s2client-proto/tree/c04df4adbe274858a4eb8417175ee32ad02fd609).
-
-### Upstream repo URL
-
-[https://github.com/Blizzard/s2client-proto](https://github.com/Blizzard/s2client-proto)
-
 ### Stub distribution name
 
 `types-s2clientprotocol`
@@ -9826,10 +9172,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `seaborn`
-
-### Upstream repo URL
-
-[https://github.com/mwaskom/seaborn](https://github.com/mwaskom/seaborn)
 
 ### Stub distribution name
 
@@ -9888,14 +9230,6 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 
 ## Info on typeshed's stubs for `setuptools`
 
-### Extra description
-
-Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.
-
-### Upstream repo URL
-
-[https://github.com/pypa/setuptools](https://github.com/pypa/setuptools)
-
 ### Stub distribution name
 
 `types-setuptools`
@@ -9920,7 +9254,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 75 unique allowlist entries for `setuptools` when running stubtest in CI.
 
@@ -9952,10 +9286,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ---
 
 ## Info on typeshed's stubs for `shapely`
-
-### Upstream repo URL
-
-[https://github.com/shapely/shapely](https://github.com/shapely/shapely)
 
 ### Stub distribution name
 
@@ -10014,10 +9344,6 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 
 ## Info on typeshed's stubs for `simple-websocket`
 
-### Upstream repo URL
-
-[https://github.com/miguelgrinberg/simple-websocket](https://github.com/miguelgrinberg/simple-websocket)
-
 ### Stub distribution name
 
 `types-simple-websocket`
@@ -10074,10 +9400,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `simplejson`
-
-### Upstream repo URL
-
-[https://github.com/simplejson/simplejson](https://github.com/simplejson/simplejson)
 
 ### Stub distribution name
 
@@ -10136,10 +9458,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `singledispatch`
 
-### Upstream repo URL
-
-[https://github.com/jaraco/singledispatch](https://github.com/jaraco/singledispatch)
-
 ### Stub distribution name
 
 `types-singledispatch`
@@ -10197,10 +9515,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `six`
 
-### Upstream repo URL
-
-[https://github.com/benjaminp/six](https://github.com/benjaminp/six)
-
 ### Stub distribution name
 
 `types-six`
@@ -10257,10 +9571,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `slumber`
-
-### Upstream repo URL
-
-[https://github.com/samgiles/slumber](https://github.com/samgiles/slumber)
 
 ### Stub distribution name
 
@@ -10372,10 +9682,6 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ## Info on typeshed's stubs for `str2bool`
 
-### Upstream repo URL
-
-[https://github.com/symonsoft/str2bool](https://github.com/symonsoft/str2bool)
-
 ### Stub distribution name
 
 `types-str2bool`
@@ -10432,10 +9738,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `tabulate`
-
-### Upstream repo URL
-
-[https://github.com/astanin/python-tabulate](https://github.com/astanin/python-tabulate)
 
 ### Stub distribution name
 
@@ -10494,14 +9796,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `tensorflow`
 
-### Extra description
-
-Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.
-
-### Upstream repo URL
-
-[https://github.com/tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
-
 ### Stub distribution name
 
 `types-tensorflow`
@@ -10556,10 +9850,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `toml`
-
-### Upstream repo URL
-
-[https://github.com/uiri/toml](https://github.com/uiri/toml)
 
 ### Stub distribution name
 
@@ -10618,10 +9908,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `toposort`
 
-### Upstream repo URL
-
-[https://gitlab.com/ericvsmith/toposort](https://gitlab.com/ericvsmith/toposort)
-
 ### Stub distribution name
 
 `types-toposort`
@@ -10678,10 +9964,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `tqdm`
-
-### Upstream repo URL
-
-[https://github.com/tqdm/tqdm](https://github.com/tqdm/tqdm)
 
 ### Stub distribution name
 
@@ -10740,10 +10022,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `translationstring`
 
-### Upstream repo URL
-
-[https://github.com/Pylons/translationstring](https://github.com/Pylons/translationstring)
-
 ### Stub distribution name
 
 `types-translationstring`
@@ -10800,10 +10078,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `ttkthemes`
-
-### Upstream repo URL
-
-[https://github.com/TkinterEP/ttkthemes](https://github.com/TkinterEP/ttkthemes)
 
 ### Stub distribution name
 
@@ -10862,10 +10136,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `tzdata`
 
-### Upstream repo URL
-
-[https://github.com/python/tzdata](https://github.com/python/tzdata)
-
 ### Stub distribution name
 
 `types-tzdata`
@@ -10923,14 +10193,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `uWSGI`
 
-### Extra description
-
-Type hints for uWSGI's [Python API](https://uwsgi-docs.readthedocs.io/en/latest/PythonModule.html). Note that this API is available only when running Python code inside a uWSGI process and some parts of the API are only present when corresponding configuration options have been enabled.
-
-### Upstream repo URL
-
-[https://github.com/unbit/uwsgi](https://github.com/unbit/uwsgi)
-
 ### Stub distribution name
 
 `types-uWSGI`
@@ -10955,7 +10217,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `darwin` and `linux`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 8 unique allowlist entries for `uWSGI` when running stubtest in CI.
 
@@ -10987,10 +10249,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `unidiff`
-
-### Upstream repo URL
-
-[https://github.com/matiasb/python-unidiff](https://github.com/matiasb/python-unidiff)
 
 ### Stub distribution name
 
@@ -11049,10 +10307,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `untangle`
 
-### Upstream repo URL
-
-[https://github.com/stchris/untangle](https://github.com/stchris/untangle)
-
 ### Stub distribution name
 
 `types-untangle`
@@ -11109,10 +10363,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `usersettings`
-
-### Upstream repo URL
-
-[https://github.com/glvnst/usersettings](https://github.com/glvnst/usersettings)
 
 ### Stub distribution name
 
@@ -11171,10 +10421,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `vobject`
 
-### Upstream repo URL
-
-[https://github.com/py-vobject/vobject](https://github.com/py-vobject/vobject)
-
 ### Stub distribution name
 
 `types-vobject`
@@ -11232,10 +10478,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `waitress`
 
-### Upstream repo URL
-
-[https://github.com/Pylons/waitress](https://github.com/Pylons/waitress)
-
 ### Stub distribution name
 
 `types-waitress`
@@ -11260,7 +10502,7 @@ These stubs are currently uploaded to PyPI.
 
 Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-In CI, stubtest is run on `linux` and `win32`.
+In CI, stubtest is run on `linux` only.
 
 Typeshed currently has 2 unique allowlist entries for `waitress` when running stubtest in CI.
 
@@ -11292,10 +10534,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `watchpoints`
-
-### Upstream repo URL
-
-[https://github.com/gaogaotiantian/watchpoints](https://github.com/gaogaotiantian/watchpoints)
 
 ### Stub distribution name
 
@@ -11354,10 +10592,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `webencodings`
 
-### Upstream repo URL
-
-[https://github.com/gsnedders/python-webencodings](https://github.com/gsnedders/python-webencodings)
-
 ### Stub distribution name
 
 `types-webencodings`
@@ -11414,10 +10648,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `whatthepatch`
-
-### Upstream repo URL
-
-[https://github.com/cscorley/whatthepatch](https://github.com/cscorley/whatthepatch)
 
 ### Stub distribution name
 
@@ -11476,10 +10706,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `workalendar`
 
-### Upstream repo URL
-
-[https://github.com/workalendar/workalendar](https://github.com/workalendar/workalendar)
-
 ### Stub distribution name
 
 `types-workalendar`
@@ -11536,10 +10762,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ---
 
 ## Info on typeshed's stubs for `wurlitzer`
-
-### Upstream repo URL
-
-[https://github.com/minrk/wurlitzer](https://github.com/minrk/wurlitzer)
 
 ### Stub distribution name
 
@@ -11598,10 +10820,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `www-authenticate`
 
-### Upstream repo URL
-
-[https://github.com/alexdutton/www-authenticate](https://github.com/alexdutton/www-authenticate)
-
 ### Stub distribution name
 
 `types-www-authenticate`
@@ -11658,10 +10876,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `xdgenvpy`
-
-### Upstream repo URL
-
-[https://gitlab.com/deliberist-group/xdgenvpy](https://gitlab.com/deliberist-group/xdgenvpy)
 
 ### Stub distribution name
 
@@ -11720,10 +10934,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `xlrd`
 
-### Upstream repo URL
-
-[https://github.com/python-excel/xlrd](https://github.com/python-excel/xlrd)
-
 ### Stub distribution name
 
 `types-xlrd`
@@ -11780,10 +10990,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `xmldiff`
-
-### Upstream repo URL
-
-[https://github.com/Shoobx/xmldiff](https://github.com/Shoobx/xmldiff)
 
 ### Stub distribution name
 
@@ -11842,10 +11048,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `xmltodict`
 
-### Upstream repo URL
-
-[https://github.com/martinblech/xmltodict](https://github.com/martinblech/xmltodict)
-
 ### Stub distribution name
 
 `types-xmltodict`
@@ -11902,10 +11104,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `yt-dlp`
-
-### Upstream repo URL
-
-[https://github.com/yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
 ### Stub distribution name
 
@@ -11964,10 +11162,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ## Info on typeshed's stubs for `zstd`
 
-### Upstream repo URL
-
-[https://github.com/sergey-dryabzhinsky/python-zstd](https://github.com/sergey-dryabzhinsky/python-zstd)
-
 ### Stub distribution name
 
 `types-zstd`
@@ -12024,10 +11218,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 ---
 
 ## Info on typeshed's stubs for `zxcvbn`
-
-### Upstream repo URL
-
-[https://github.com/dwolfhub/zxcvbn-python](https://github.com/dwolfhub/zxcvbn-python)
 
 ### Stub distribution name
 
