@@ -868,7 +868,7 @@ The latest version of `types-Pygments` aims to provide accurate annotations for 
 
 ### Number of lines
 
-920 (excluding blank lines)
+1,011 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -893,21 +893,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Pygments`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 143
-    - Unannotated parameters: 145
-    - Explicit `Any` parameters: 5
+    - Annotated parameters: 243
+    - Unannotated parameters: 63
+    - Explicit `Any` parameters: 24
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 117
-    - Unannotated returns: 73
-    - Explicit `Any` returns: 0
+    - Annotated returns: 158
+    - Unannotated returns: 34
+    - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
 - Variables:
-    - Annotated variables: 330
-    - Explicit `Any` variables: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 151
+    - Annotated variables: 334
+    - Explicit `Any` variables: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 122
 - Class definitions:
-    - Total class definitions: 95
+    - Total class definitions: 97
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 1
 
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,902 (excluding blank lines)
+69,904 (excluding blank lines)
 
 ### Package status: *stdlib*
 
