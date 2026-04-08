@@ -226,7 +226,7 @@ def test_get_package_extra_description_with_description(
 ) -> None:
     description = "foo bar baz"
     write_metadata_text(
-        typeshed, EXAMPLE_PACKAGE_NAME, f"extra_description = {description!r}"
+        typeshed, EXAMPLE_PACKAGE_NAME, f"extra-description = {description!r}"
     )
     result = get_package_extra_description(
         EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
@@ -258,24 +258,24 @@ def test_get_stubtest_strictness_non_stdlib_no_stubtest_section(
         pytest.param("", "ERROR_ON_MISSING_STUB", id="empty_metadata"),
         pytest.param("skip = false", "ERROR_ON_MISSING_STUB", id="skip=False"),
         pytest.param(
-            "ignore_missing_stub = true",
+            "ignore-missing-stub = true",
             "MISSING_STUBS_IGNORED",
-            id="ignore_missing_stub=true",
+            id="ignore-missing-stub=true",
         ),
         pytest.param("skip = true", "SKIPPED", id="explicitly_skipped_stubtest"),
-        pytest.param("ci_platforms = []", "SKIPPED", id="implicitly_skipped_stubtest"),
+        pytest.param("ci-platforms = []", "SKIPPED", id="implicitly_skipped_stubtest"),
         pytest.param(
-            "skip = true\nignore_missing_stub = true", "SKIPPED", id="skipped_stubtest2"
+            "skip = true\nignore-missing-stub = true", "SKIPPED", id="skipped_stubtest2"
         ),
         pytest.param(
-            "skip = true\nignore_missing_stub = false",
+            "skip = true\nignore-missing-stub = false",
             "SKIPPED",
             id="skipped_stubtest3",
         ),
         pytest.param(
-            "ignore_missing_stub = false",
+            "ignore-missing-stub = false",
             "ERROR_ON_MISSING_STUB",
-            id="ignore_missing_stub=false",
+            id="ignore-missing-stub=false",
         ),
     ],
 )
@@ -313,13 +313,13 @@ def test_get_stubtest_platform_stdlib() -> None:
     [
         pytest.param("[tool.stubtest]\nskip = true", [], id="Skipped stubtest"),
         pytest.param(
-            "[tool.stubtest]\nci_platforms = ['win32', 'darwin']",
+            "[tool.stubtest]\nci-platforms = ['win32', 'darwin']",
             ["darwin", "win32"],
             id="Platforms specified",
         ),
         pytest.param("", ["linux"], id="Empty_metadata"),
         pytest.param(
-            "[tool.stubtest]\nignore_missing_stub = true",
+            "[tool.stubtest]\nignore-missing-stub = true",
             ["linux"],
             id="Platforms unspecified",
         ),
@@ -455,9 +455,9 @@ async def test_get_package_status_special_cases(
 @pytest.mark.parametrize(
     ("metadata_to_write", "expected_result_name"),
     [
-        pytest.param('obsolete_since = "3.1.0"', "OBSOLETE", id="obsolete"),
+        pytest.param('obsolete-since = "3.1.0"', "OBSOLETE", id="obsolete"),
         pytest.param(
-            "no_longer_updated = true", "NO_LONGER_UPDATED", id="no_longer_updated"
+            "no-longer-updated = true", "NO_LONGER_UPDATED", id="no-longer-updated"
         ),
     ],
 )
@@ -643,7 +643,7 @@ def test_upstream_url_stdlib() -> None:
     ("metadata_text", "expected_upstream_url"),
     [
         pytest.param(
-            'upstream_repository = "https://github.com/psf/requests"',
+            'upstream-repository = "https://github.com/psf/requests"',
             "https://github.com/psf/requests",
             id="upstream_repo_given",
         ),
@@ -678,8 +678,8 @@ def test_get_completeness_level_stdlib() -> None:
 @pytest.mark.parametrize(
     ("metadata_text", "expected_completeness_level"),
     [
-        pytest.param("partial_stub = true", "PARTIAL", id="partial"),
-        pytest.param("partial_stub = false", "COMPLETE", id="explicitly_complete"),
+        pytest.param("partial-stub = true", "PARTIAL", id="partial"),
+        pytest.param("partial-stub = false", "COMPLETE", id="explicitly_complete"),
         pytest.param("", "COMPLETE", id="implicitly_complete"),
     ],
 )
@@ -726,7 +726,7 @@ def test_get_stub_distribution_name_in_metadata(
     maybe_stringize_path: Callable[[Path], Path | str],
 ) -> None:
     write_metadata_text(
-        typeshed, EXAMPLE_PACKAGE_NAME, 'stub_distribution = "idk-something-random"'
+        typeshed, EXAMPLE_PACKAGE_NAME, 'stub-distribution = "idk-something-random"'
     )
     actual_result = get_stub_distribution_name(
         EXAMPLE_PACKAGE_NAME, typeshed_dir=maybe_stringize_path(typeshed)
