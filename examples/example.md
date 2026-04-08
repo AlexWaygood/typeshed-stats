@@ -1150,7 +1150,7 @@ The latest version of `types-aiofiles` aims to provide accurate annotations for 
 
 ### Number of lines
 
-788 (excluding blank lines)
+790 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1185,8 +1185,8 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 6
-    - Explicit `Any` variables: 0
+    - Annotated variables: 7
+    - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 16
@@ -3029,7 +3029,7 @@ The latest version of `types-docker` aims to provide accurate annotations for `d
 
 ### Number of lines
 
-2,680 (excluding blank lines)
+2,722 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3054,21 +3054,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docker`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,351
-    - Unannotated parameters: 273
-    - Explicit `Any` parameters: 39
+    - Annotated parameters: 1,387
+    - Unannotated parameters: 252
+    - Explicit `Any` parameters: 42
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 9
 - Returns:
-    - Annotated returns: 473
-    - Unannotated returns: 118
-    - Explicit `Any` returns: 36
+    - Annotated returns: 478
+    - Unannotated returns: 113
+    - Explicit `Any` returns: 39
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
 - Variables:
-    - Annotated variables: 224
+    - Annotated variables: 231
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
-    - Total class definitions: 139
+    - Total class definitions: 143
     - Class definitions with `Any`: 28
     - Class definitions marked as at least partially `Incomplete`: 1
 
@@ -5246,11 +5246,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-jwcrypto` aims to provide accurate annotations for `jwcrypto==1.5.*`.
+The latest version of `types-jwcrypto` aims to provide accurate annotations for `jwcrypto==1.5.7`.
 
 ### Number of lines
 
-472 (excluding blank lines)
+481 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5275,7 +5275,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `jwcrypto`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 151
+    - Annotated parameters: 153
     - Unannotated parameters: 31
     - Explicit `Any` parameters: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -5285,7 +5285,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 55
+    - Annotated variables: 60
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
@@ -9635,7 +9635,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,904 (excluding blank lines)
+69,933 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -9651,7 +9651,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 712 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 714 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -9660,12 +9660,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,505
+    - Annotated parameters: 30,525
     - Unannotated parameters: 592
-    - Explicit `Any` parameters: 2,031
+    - Explicit `Any` parameters: 2,035
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,860
+    - Annotated returns: 16,862
     - Unannotated returns: 227
     - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
