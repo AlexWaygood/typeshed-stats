@@ -401,7 +401,7 @@ def get_package_extra_description(
     """
     if package_name == "stdlib":
         return None
-    return _get_package_metadata(package_name, typeshed_dir).get("extra_description")
+    return _get_package_metadata(package_name, typeshed_dir).get("extra-description")
 
 
 class StubtestStrictness(_NiceReprEnum):
@@ -469,9 +469,9 @@ def get_stubtest_strictness(
     if package_name == "stdlib":
         return StubtestStrictness.ERROR_ON_MISSING_STUB
     match _get_stubtest_config(package_name, typeshed_dir):
-        case {"skip": True} | {"ci_platforms": []}:
+        case {"skip": True} | {"ci-platforms": []}:
             return StubtestStrictness.SKIPPED
-        case {"ignore_missing_stub": True}:
+        case {"ignore-missing-stub": True}:
             return StubtestStrictness.MISSING_STUBS_IGNORED
         case _:
             return StubtestStrictness.ERROR_ON_MISSING_STUB
@@ -506,7 +506,7 @@ def get_stubtest_ci_platforms(
     match _get_stubtest_config(package_name, typeshed_dir):
         case {"skip": True}:
             return []
-        case {"ci_platforms": list() as platforms}:
+        case {"ci-platforms": list() as platforms}:
             return sorted(platforms)
         case _:
             return ["linux"]
@@ -719,9 +719,9 @@ async def get_package_status(
             pass
 
     match _get_package_metadata(package_name, typeshed_dir):
-        case {"obsolete_since": _}:
+        case {"obsolete-since": _}:
             return PackageStatus.OBSOLETE
-        case {"no_longer_updated": True}:
+        case {"no-longer-updated": True}:
             return PackageStatus.NO_LONGER_UPDATED
         case _:
             pass
@@ -834,7 +834,7 @@ def get_completeness_level(
     if package_name == "stdlib":
         return CompletenessLevel.STDLIB
     match _get_package_metadata(package_name, typeshed_dir):
-        case {"partial_stub": True}:
+        case {"partial-stub": True}:
             return CompletenessLevel.PARTIAL
         case _:
             return CompletenessLevel.COMPLETE
@@ -870,7 +870,7 @@ def get_upstream_url(
     """
     if package_name == "stdlib":
         return "https://github.com/python/cpython"
-    return _get_package_metadata(package_name, typeshed_dir).get("upstream_repository")
+    return _get_package_metadata(package_name, typeshed_dir).get("upstream-repository")
 
 
 def get_stub_distribution_name(
@@ -911,7 +911,7 @@ def get_stub_distribution_name(
     if package_name == "stdlib":
         return "-"
     match _get_package_metadata(package_name, typeshed_dir):
-        case {"stub_distribution": str() as stub_distribution}:
+        case {"stub-distribution": str() as stub_distribution}:
             return stub_distribution
         case _:
             return f"types-{package_name}"
