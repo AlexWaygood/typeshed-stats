@@ -4400,7 +4400,7 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 
 ### Version
 
-The latest version of `types-gevent` aims to provide accurate annotations for `gevent==25.9.*`.
+The latest version of `types-gevent` aims to provide accurate annotations for `gevent==26.4.*`.
 
 ### Number of lines
 
@@ -4522,7 +4522,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-greenlet` aims to provide accurate annotations for `greenlet==3.3.*`.
+The latest version of `types-greenlet` aims to provide accurate annotations for `greenlet==3.4.*`.
 
 ### Number of lines
 
