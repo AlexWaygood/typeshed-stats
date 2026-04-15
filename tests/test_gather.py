@@ -19,7 +19,6 @@ from unittest import mock
 # Some tests assert behaviour that's predicated on rich not yet being imported
 import aiohttp
 import pytest
-from packaging.specifiers import SpecifierSet
 from packaging.version import Version
 from pytest_mock import MockerFixture
 from pytest_subtests import SubTests
