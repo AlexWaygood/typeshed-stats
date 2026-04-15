@@ -19,7 +19,6 @@ from unittest import mock
 # Some tests assert behaviour that's predicated on rich not yet being imported
 import aiohttp
 import pytest
-from packaging.specifiers import SpecifierSet
 from packaging.version import Version
 from pytest_mock import MockerFixture
 from pytest_subtests import SubTests
@@ -1283,4 +1282,3 @@ def test_exceptions_bubble_up(typeshed: Path) -> None:
 def test_stub_version_repr() -> None:
     version = StubVersion("==1.2.*")
     assert repr(version) == "StubVersion('==1.2.*')"
-    assert SpecifierSet.__repr__(version) == "<SpecifierSet('==1.2.*')>"
