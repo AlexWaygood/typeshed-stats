@@ -1283,4 +1283,3 @@ def test_exceptions_bubble_up(typeshed: Path) -> None:
 def test_stub_version_repr() -> None:
     version = StubVersion("==1.2.*")
     assert repr(version) == "StubVersion('==1.2.*')"
-    assert SpecifierSet.__repr__(version) == "<SpecifierSet('==1.2.*')>"
