@@ -2086,7 +2086,7 @@ The latest version of `types-channels` aims to provide accurate annotations for 
 
 ### Number of lines
 
-543 (excluding blank lines)
+545 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2127,7 +2127,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Class definitions:
     - Total class definitions: 47
     - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
+    - Class definitions marked as at least partially `Incomplete`: 2
 
 ---
 
