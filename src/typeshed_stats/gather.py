@@ -33,6 +33,7 @@ import attrs
 from packaging.specifiers import SpecifierSet
 from packaging.version import Version
 from pathspec import PathSpec
+from pathspec.patterns.gitignore.basic import GitIgnoreBasicPattern
 
 if sys.version_info < (3, 11):  # noqa: UP036
     raise ImportError("Python 3.11+ is required!")
@@ -963,7 +964,7 @@ def _is_str_list(obj: object) -> TypeGuard[list[str]]:
 
 
 class _ExcludeList(NamedTuple):
-    spec: PathSpec
+    spec: PathSpec[GitIgnoreBasicPattern]
     pathlist: list[Path]
 
 
@@ -1028,7 +1029,9 @@ class PyrightSetting(_NiceReprEnum):
     )
 
 
-def _path_or_path_ancestor_is_listed(path: Path, spec: PathSpec) -> bool:
+def _path_or_path_ancestor_is_listed(
+    path: Path, spec: PathSpec[GitIgnoreBasicPattern]
+) -> bool:
     if spec.match_file(_normalized_path(path)):
         return True
     if not path.is_dir():
