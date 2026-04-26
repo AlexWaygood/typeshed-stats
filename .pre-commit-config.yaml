@@ -1,61 +1,33 @@
 repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v6.0.0
-    hooks:
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
-      - id: check-yaml
-      - id: check-toml
-      - id: check-json
-      - id: check-merge-conflict
-      - id: check-case-conflict
-      - id: name-tests-test
-        args: [--pytest-test-first]
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.9
-    hooks:
-      - id: ruff-check
-      - id: ruff-format
-        types_or:
-          - python
-          - pyi
-          - markdown
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.2
     hooks:
       - id: codespell
+        priority: 0
         language: python # means renovate will update the `additional_dependencies` for the hook
         additional_dependencies: ["tomli"]
   - repo: https://github.com/alan-turing-institute/CleverCSV-pre-commit
     rev: v0.8.4
     hooks:
       - id: clevercsv-standardize
-  - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.48.0
-    hooks:
-      - id: markdownlint-fix
-        args: ["--ignore", "stats_website/.snippets"]
-      - id: markdownlint
-        args: ["--ignore", "stats_website/.snippets"]
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v4.0.0-alpha.8
-    hooks:
-      - id: prettier
-        exclude: "^examples/.*"
-        exclude_types: ["markdown"]
+        priority: 0
   - repo: https://github.com/abravalheri/validate-pyproject
     rev: v0.25
     hooks:
       - id: validate-pyproject
+        priority: 0
   - repo: https://github.com/woodruffw/zizmor-pre-commit
     rev: v1.23.1
     hooks:
       - id: zizmor
+        priority: 0
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.37.1
     hooks:
       - id: check-github-workflows
+        priority: 0
       - id: check-renovate
+        priority: 0
         language: python # means renovate will update the `additional_dependencies` for the hook
         additional_dependencies:
           - "json5"
@@ -64,6 +36,7 @@ repos:
     rev: v1.7.12
     hooks:
       - id: actionlint
+        priority: 0
         language: golang # means renovate will also update `additional_dependencies`
         additional_dependencies:
           # actionlint has a shellcheck integration which extracts shell scripts in `run:` steps from GitHub Actions
@@ -73,6 +46,54 @@ repos:
   - repo: meta
     hooks:
       - id: check-hooks-apply
+        priority: 0
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-yaml
+        priority: 0
+      - id: check-toml
+        priority: 0
+      - id: check-json
+        priority: 0
+      - id: check-merge-conflict
+        priority: 0
+      - id: check-case-conflict
+        priority: 0
+      - id: name-tests-test
+        args: [--pytest-test-first]
+        priority: 0
+      - id: trailing-whitespace
+        priority: 1
+      - id: end-of-file-fixer
+        priority: 2
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.48.0
+    hooks:
+      - id: markdownlint
+        priority: 0
+        args: ["--ignore", "stats_website/.snippets"]
+      - id: markdownlint-fix
+        priority: 3
+        args: ["--ignore", "stats_website/.snippets"]
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+        priority: 3
+        exclude: "^examples/.*"
+        exclude_types: ["markdown"]
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.9
+    hooks:
+      - id: ruff-check
+        priority: 3
+      - id: ruff-format
+        priority: 4
+        types_or:
+          - python
+          - pyi
+          - markdown
 
 ci:
   autofix_commit_msg: "[pre-commit.ci] auto fixes from pre-commit.com hooks"
