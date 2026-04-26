@@ -16,12 +16,10 @@ repos:
     hooks:
       - id: ruff-check
       - id: ruff-format
-  - repo: https://github.com/adamchainz/blacken-docs
-    rev: 1.20.0
-    hooks:
-      - id: blacken-docs
-        language: python # means renovate will update the `additional_dependencies` for the hook
-        additional_dependencies: [black==26.3.1]
+        types_or:
+          - python
+          - pyi
+          - markdown
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.2
     hooks:
