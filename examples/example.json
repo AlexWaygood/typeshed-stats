@@ -2595,11 +2595,11 @@
     "package_name": "greenlet",
     "stub_distribution_name": "types-greenlet",
     "upstream_url": "https://github.com/python-greenlet/greenlet",
-    "version": "==3.4.*",
+    "version": "==3.5.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 86,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
