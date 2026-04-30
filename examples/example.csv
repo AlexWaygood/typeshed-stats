@@ -128,7 +128,7 @@ punq,types-punq,https://github.com/bobthemighty/punq,==0.7.*,COMPLETE,-,82,UP_TO
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,==0.6.*,COMPLETE,-,1484,UP_TO_DATE,UPLOADED,NOT_STRICT,197,535,112,422,33,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyaudio,types-pyaudio,-,==0.2.*,COMPLETE,-,165,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,==2.0.*,COMPLETE,-,171,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,70,0,0,12,0,0,ERROR_ON_MISSING_STUB,linux,0
-pycurl,types-pycurl,https://github.com/pycurl/pycurl,==7.45.7,COMPLETE,-,731,UP_TO_DATE,UPLOADED,NOT_STRICT,17,5,28,4,0,4,0,2,683,0,0,4,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,0
+pycurl,types-pycurl,https://github.com/pycurl/pycurl,==7.45.7,COMPLETE,-,731,OUT_OF_DATE,UPLOADED,NOT_STRICT,17,5,28,4,0,4,0,2,683,0,0,4,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,0
 pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,==0.4.*,COMPLETE,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,==3.4.*,COMPLETE,-,472,UP_TO_DATE,UPLOADED,STRICT,344,0,216,0,0,0,0,2,77,1,0,77,0,0,ERROR_ON_MISSING_STUB,linux,27
 pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,==6.19.*,COMPLETE,-,771,OUT_OF_DATE,UPLOADED,STRICT,305,0,167,0,0,0,2,2,224,1,0,31,0,0,ERROR_ON_MISSING_STUB,linux,49
