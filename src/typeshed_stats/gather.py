@@ -360,7 +360,7 @@ def gather_annotation_stats_on_package(
 @lru_cache
 def _get_package_metadata(
     package_name: PackageName, typeshed_dir: Path | str
-) -> Mapping[str, Any]:
+) -> Mapping[str, object]:
     package_directory = _get_package_directory(package_name, typeshed_dir)
     with open(package_directory / "METADATA.toml", "rb") as f:
         return tomllib.load(f)
@@ -402,7 +402,11 @@ def get_package_extra_description(
     """
     if package_name == "stdlib":
         return None
-    return _get_package_metadata(package_name, typeshed_dir).get("extra-description")
+    description = _get_package_metadata(package_name, typeshed_dir).get(
+        "extra-description"
+    )
+    assert isinstance(description, (str, type(None)))
+    return description
 
 
 class StubtestStrictness(_NiceReprEnum):
@@ -422,10 +426,11 @@ class StubtestStrictness(_NiceReprEnum):
 def _get_stubtest_config(
     package_name: PackageName, typeshed_dir: Path | str
 ) -> Mapping[str, object]:
-    metadata = _get_package_metadata(package_name, typeshed_dir)
-    config: object = metadata.get("tool", {}).get("stubtest", {})
-    assert isinstance(config, dict)
-    return config
+    tool_config = _get_package_metadata(package_name, typeshed_dir).get("tool", {})
+    assert isinstance(tool_config, dict)
+    stubtest_config = tool_config.get("stubtest", {})  # ty: ignore[no-matching-overload]
+    assert isinstance(stubtest_config, dict)
+    return stubtest_config
 
 
 def get_stubtest_strictness(
@@ -871,7 +876,11 @@ def get_upstream_url(
     """
     if package_name == "stdlib":
         return "https://github.com/python/cpython"
-    return _get_package_metadata(package_name, typeshed_dir).get("upstream-repository")
+    repository = _get_package_metadata(package_name, typeshed_dir).get(
+        "upstream-repository"
+    )
+    assert isinstance(repository, (str, type(None)))
+    return repository
 
 
 def get_stub_distribution_name(
