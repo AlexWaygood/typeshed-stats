@@ -32,7 +32,7 @@ boltons,types-boltons,https://github.com/mahmoud/boltons,==25.0.*,COMPLETE,-,135
 braintree,types-braintree,https://github.com/braintree/braintree_python,==4.42.*,COMPLETE,-,3563,OUT_OF_DATE,UPLOADED,NOT_STRICT,308,314,448,118,37,14,7,2,1521,0,115,299,0,0,ERROR_ON_MISSING_STUB,linux,1
 cachetools,types-cachetools,https://github.com/tkem/cachetools,==7.0.*,COMPLETE,-,214,OUT_OF_DATE,UPLOADED,STRICT,104,0,62,0,0,0,19,3,25,6,0,16,1,0,ERROR_ON_MISSING_STUB,linux,19
 capturer,types-capturer,https://github.com/xolox/python-capturer,==3.0.*,COMPLETE,-,114,UP_TO_DATE,UPLOADED,STRICT,50,0,42,0,0,0,4,1,38,4,0,6,0,0,ERROR_ON_MISSING_STUB,linux,1
-cffi,types-cffi,https://github.com/python-cffi/cffi/,==2.0.*,COMPLETE,-,850,UP_TO_DATE,UPLOADED,NOT_STRICT,336,212,239,86,0,1,33,8,254,0,75,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
+cffi,types-cffi,https://github.com/python-cffi/cffi/,==2.0.*,COMPLETE,-,852,UP_TO_DATE,UPLOADED,NOT_STRICT,337,211,239,86,0,1,34,8,254,0,75,52,0,0,ERROR_ON_MISSING_STUB,linux;win32,4
 channels,types-channels,https://github.com/django/channels,==4.3.*,COMPLETE,-,545,UP_TO_DATE,UPLOADED,STRICT,239,0,151,0,0,0,36,13,102,4,0,47,0,2,ERROR_ON_MISSING_STUB,linux,9
 chevron,types-chevron,https://github.com/noahmorrison/chevron,==0.14.*,COMPLETE,-,38,UP_TO_DATE,UPLOADED,STRICT,29,0,9,0,0,0,2,0,3,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-default-group,types-click-default-group,https://github.com/click-contrib/click-default-group,==1.2.*,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,52,0,14,0,0,0,7,4,7,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -48,7 +48,7 @@ croniter,types-croniter,https://github.com/pallets-eco/croniter,==6.2.2,COMPLETE
 datauri,types-datauri,https://github.com/eclecticiq/python-data-uri,==1.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,0,0,0,4,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,~=1.4.0,COMPLETE,-,682,UP_TO_DATE,UPLOADED,NOT_STRICT,292,8,155,4,7,2,11,1,175,0,5,40,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,https://github.com/micheles/decorator,==5.2.*,COMPLETE,-,67,UP_TO_DATE,UPLOADED,STRICT,40,0,13,0,0,0,21,6,16,4,0,2,0,0,ERROR_ON_MISSING_STUB,linux,5
-defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,==0.7.*,COMPLETE,-,352,UP_TO_DATE,UPLOADED,NOT_STRICT,202,20,50,13,0,0,0,0,42,0,3,15,0,0,ERROR_ON_MISSING_STUB,linux,0
+defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,==0.7.*,COMPLETE,-,354,UP_TO_DATE,UPLOADED,NOT_STRICT,202,20,50,13,0,0,0,1,42,0,3,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 dirhash,types-dirhash,https://github.com/andhus/dirhash-python,==0.5.*,COMPLETE,-,88,UP_TO_DATE,UPLOADED,STRICT,39,0,13,0,0,0,0,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 django-filter,types-django-filter,https://github.com/carltongibson/django-filter/,==25.2.*,COMPLETE,-,805,UP_TO_DATE,UPLOADED,STRICT,298,0,128,0,0,0,121,44,113,25,0,73,3,0,ERROR_ON_MISSING_STUB,linux,12
 django-import-export,types-django-import-export,https://github.com/django-import-export/django-import-export,==4.4.*,COMPLETE,-,701,UP_TO_DATE,UPLOADED,STRICT,376,0,255,0,0,0,135,35,156,10,0,72,0,0,SKIPPED,None,0
@@ -146,7 +146,7 @@ python-jenkins,types-python-jenkins,https://opendev.org/jjb/python-jenkins,~=1.8
 python-jose,types-python-jose,https://github.com/mpdavis/python-jose,==3.5.*,COMPLETE,-,359,UP_TO_DATE,UPLOADED,NOT_STRICT,83,43,65,26,0,0,14,12,119,30,0,26,0,0,ERROR_ON_MISSING_STUB,linux,1
 python-nmap,types-python-nmap,https://bitbucket.org/xael/python-nmap,==0.7.*,COMPLETE,-,127,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-xlib,types-python-xlib,https://github.com/python-xlib/python-xlib,==0.33.*,COMPLETE,-,5423,UP_TO_DATE,UPLOADED,STRICT,1334,0,583,0,0,0,15,8,3519,5,0,425,0,0,ERROR_ON_MISSING_STUB,linux,11
-pytz,types-pytz,https://github.com/stub42/pytz,==2026.1.post1,COMPLETE,-,151,UP_TO_DATE,UPLOADED,STRICT,71,0,51,0,0,0,2,0,30,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux,2
+pytz,types-pytz,https://github.com/stub42/pytz,==2026.1.post1,COMPLETE,-,151,OUT_OF_DATE,UPLOADED,STRICT,71,0,51,0,0,0,2,0,30,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux,2
 pywin32,types-pywin32,https://github.com/mhammond/pywin32,==311.*,COMPLETE,-,39481,UP_TO_DATE,UPLOADED,NOT_STRICT,3984,3695,4106,1892,384,293,2,5,29498,0,2858,752,0,0,ERROR_ON_MISSING_STUB,win32,34
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,==0.28.*,COMPLETE,-,858,UP_TO_DATE,UPLOADED,STRICT,512,0,297,0,0,0,0,0,165,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,==1.2.*,COMPLETE,-,182,UP_TO_DATE,UPLOADED,STRICT,99,0,31,0,0,0,0,4,40,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -169,7 +169,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,==3.20.*,CO
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,==4.1.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,==1.17.*,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,==0.7.*,COMPLETE,-,72,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,70051,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30535,592,16878,227,11,21,2024,823,9592,309,221,3219,31,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,714
+stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,70089,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30541,592,16887,227,11,21,2024,825,9592,309,221,3220,31,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,714
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,==1.1,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.10.*,COMPLETE,-,62,UP_TO_DATE,UPLOADED,STRICT,21,0,3,0,0,0,2,0,23,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30304,OUT_OF_DATE,UPLOADED,NOT_STRICT,5391,38,2939,40,12,23,60,34,5437,5,12,927,1,0,SKIPPED,None,51

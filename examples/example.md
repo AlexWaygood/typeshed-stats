@@ -2025,7 +2025,7 @@ The latest version of `types-cffi` aims to provide accurate annotations for `cff
 
 ### Number of lines
 
-850 (excluding blank lines)
+852 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2050,9 +2050,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `cffi`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 336
-    - Unannotated parameters: 212
-    - Explicit `Any` parameters: 33
+    - Annotated parameters: 337
+    - Unannotated parameters: 211
+    - Explicit `Any` parameters: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 239
@@ -3001,7 +3001,7 @@ The latest version of `types-defusedxml` aims to provide accurate annotations fo
 
 ### Number of lines
 
-352 (excluding blank lines)
+354 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3033,7 +3033,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Returns:
     - Annotated returns: 50
     - Unannotated returns: 13
-    - Explicit `Any` returns: 0
+    - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 42
@@ -8981,9 +8981,9 @@ The latest version of `types-pytz` aims to provide accurate annotations for `pyt
 
 151 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,051 (excluding blank lines)
+70,089 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10350,21 +10350,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,535
+    - Annotated parameters: 30,541
     - Unannotated parameters: 592
     - Explicit `Any` parameters: 2,024
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,878
+    - Annotated returns: 16,887
     - Unannotated returns: 227
-    - Explicit `Any` returns: 823
+    - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
 - Variables:
     - Annotated variables: 9,592
     - Explicit `Any` variables: 309
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
-    - Total class definitions: 3,219
+    - Total class definitions: 3,220
     - Class definitions with `Any`: 31
     - Class definitions marked as at least partially `Incomplete`: 0
 
