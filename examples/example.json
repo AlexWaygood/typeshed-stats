@@ -6,7 +6,7 @@
     "version": "==1.6.11",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3615,
+    "number_of_lines": 3611,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -41,7 +41,7 @@
     "version": "~=1.3.1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 88,
+    "number_of_lines": 86,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -76,7 +76,7 @@
     "version": "==6.0.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 130,
+    "number_of_lines": 128,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -111,7 +111,7 @@
     "version": "==4.1.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 129,
+    "number_of_lines": 128,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -252,7 +252,7 @@
     "version": "~=3.10.2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 825,
+    "number_of_lines": 820,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -267,7 +267,7 @@
       "annotated_parameters": 301,
       "unannotated_parameters": 33,
       "annotated_returns": 231,
-      "unannotated_returns": 4,
+      "unannotated_returns": 3,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 17,
@@ -287,7 +287,7 @@
     "version": "==0.9.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 234,
+    "number_of_lines": 233,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -392,7 +392,7 @@
     "version": "==1.0.1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 193,
+    "number_of_lines": 192,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -428,7 +428,7 @@
     "version": "==1.7.1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 213,
+    "number_of_lines": 212,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -463,7 +463,7 @@
     "version": "==6.0.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1318,
+    "number_of_lines": 1315,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -498,7 +498,7 @@
     "version": "==2.20.*",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1011,
+    "number_of_lines": 1006,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -510,9 +510,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 243,
+      "annotated_parameters": 242,
       "unannotated_parameters": 63,
-      "annotated_returns": 158,
+      "annotated_returns": 157,
       "unannotated_returns": 34,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 5,
@@ -533,7 +533,7 @@
     "version": "==0.7.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 57,
+    "number_of_lines": 56,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -636,7 +636,7 @@
     "version": "~=3.2.1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1351,
+    "number_of_lines": 1349,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -671,7 +671,7 @@
     "version": "==1.8.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2227,
+    "number_of_lines": 2223,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -706,7 +706,7 @@
     "version": "==25.1.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 790,
+    "number_of_lines": 789,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -778,7 +778,7 @@
     "version": "==1.1.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 225,
+    "number_of_lines": 227,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -988,7 +988,7 @@
     "version": "==6.3.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 243,
+    "number_of_lines": 240,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1163,7 +1163,7 @@
     "version": "==2.0.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 852,
+    "number_of_lines": 849,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1199,7 +1199,7 @@
     "version": "==4.3.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 545,
+    "number_of_lines": 542,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1304,7 +1304,7 @@
     "version": "==0.4.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 22,
+    "number_of_lines": 21,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1409,7 +1409,7 @@
     "version": "==0.8.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 189,
+    "number_of_lines": 185,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1429,7 +1429,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 4,
-      "annotated_variables": 55,
+      "annotated_variables": 54,
       "explicit_Any_variables": 2,
       "explicit_Incomplete_variables": 1,
       "classdefs": 29,
@@ -1444,7 +1444,7 @@
     "version": "==0.4.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 201,
+    "number_of_lines": 200,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1655,7 +1655,7 @@
     "version": "~=1.4.0",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 682,
+    "number_of_lines": 681,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1690,7 +1690,7 @@
     "version": "==5.2.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 67,
+    "number_of_lines": 66,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1760,7 +1760,7 @@
     "version": "==0.5.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 88,
+    "number_of_lines": 87,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1795,7 +1795,7 @@
     "version": "==25.2.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 805,
+    "number_of_lines": 803,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1830,7 +1830,7 @@
     "version": "==4.4.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 701,
+    "number_of_lines": 699,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1863,7 +1863,7 @@
     "version": "==7.1.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2722,
+    "number_of_lines": 2716,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1898,7 +1898,7 @@
     "version": "==2.0.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 116,
+    "number_of_lines": 115,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1933,7 +1933,7 @@
     "version": "==0.22.3",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 5667,
+    "number_of_lines": 5659,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2108,7 +2108,7 @@
     "version": "==1.7.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 537,
+    "number_of_lines": 536,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2178,7 +2178,7 @@
     "version": "==7.3.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 574,
+    "number_of_lines": 572,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2248,7 +2248,7 @@
     "version": "==3.1.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 40,
+    "number_of_lines": 39,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2423,7 +2423,7 @@
     "version": "==2.8.4",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3855,
+    "number_of_lines": 3844,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2458,7 +2458,7 @@
     "version": "==16.3.*",
     "completeness_level": "COMPLETE",
     "extra_description": "Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",
-    "number_of_lines": 1588,
+    "number_of_lines": 1584,
     "package_status": "NOT_ON_PYPI",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2491,7 +2491,7 @@
     "version": "==1.1.3",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1839,
+    "number_of_lines": 1837,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2526,7 +2526,7 @@
     "version": "==26.4.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3244,
+    "number_of_lines": 3235,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2738,7 +2738,7 @@
     "version": "==1.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 165,
+    "number_of_lines": 164,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2808,7 +2808,7 @@
     "version": "==25.3.0",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3474,
+    "number_of_lines": 3468,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3054,7 +3054,7 @@
     "version": "==6.3.2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1345,
+    "number_of_lines": 1344,
     "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3089,7 +3089,7 @@
     "version": "==0.4.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 124,
+    "number_of_lines": 123,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3194,7 +3194,7 @@
     "version": "~=4.26.0",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 496,
+    "number_of_lines": 493,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3264,7 +3264,7 @@
     "version": "==0.13.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 246,
+    "number_of_lines": 243,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3299,7 +3299,7 @@
     "version": "==2.9.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2494,
+    "number_of_lines": 2493,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3439,7 +3439,7 @@
     "version": "==6.0.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 602,
+    "number_of_lines": 599,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3474,7 +3474,7 @@
     "version": "==5.2.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 368,
+    "number_of_lines": 364,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3544,7 +3544,7 @@
     "version": "==2.2.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1275,
+    "number_of_lines": 1276,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3649,7 +3649,7 @@
     "version": "==1.3.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 712,
+    "number_of_lines": 710,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3719,7 +3719,7 @@
     "version": "==3.6.1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 7618,
+    "number_of_lines": 7574,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3731,18 +3731,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 3175,
-      "unannotated_parameters": 1266,
-      "annotated_returns": 1073,
-      "unannotated_returns": 544,
+      "annotated_parameters": 3163,
+      "unannotated_parameters": 1261,
+      "annotated_returns": 1054,
+      "unannotated_returns": 542,
       "explicit_Incomplete_parameters": 213,
-      "explicit_Incomplete_returns": 264,
+      "explicit_Incomplete_returns": 261,
       "explicit_Any_parameters": 24,
       "explicit_Any_returns": 19,
       "annotated_variables": 387,
       "explicit_Any_variables": 5,
       "explicit_Incomplete_variables": 240,
-      "classdefs": 132,
+      "classdefs": 131,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 1
     }
@@ -3754,7 +3754,7 @@
     "version": "==3.3.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1913,
+    "number_of_lines": 1910,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3789,7 +3789,7 @@
     "version": "==3.6.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 87,
+    "number_of_lines": 86,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3859,7 +3859,7 @@
     "version": "==3.1.5",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 13170,
+    "number_of_lines": 13111,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3929,7 +3929,7 @@
     "version": "==4.0.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1893,
+    "number_of_lines": 1890,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4035,7 +4035,7 @@
     "version": "==4.0.1",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 1774,
+    "number_of_lines": 1773,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4105,7 +4105,7 @@
     "version": "==4.9.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 668,
+    "number_of_lines": 667,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4140,7 +4140,7 @@
     "version": "==1.3.*",
     "completeness_level": "COMPLETE",
     "extra_description": "The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",
-    "number_of_lines": 2225,
+    "number_of_lines": 2224,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4210,7 +4210,7 @@
     "version": "==0.7.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3598,
+    "number_of_lines": 3592,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4222,9 +4222,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 505,
+      "annotated_parameters": 504,
       "unannotated_parameters": 1671,
-      "annotated_returns": 675,
+      "annotated_returns": 674,
       "unannotated_returns": 868,
       "explicit_Incomplete_parameters": 2,
       "explicit_Incomplete_returns": 9,
@@ -4280,7 +4280,7 @@
     "version": "~=7.34.1",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 34.1 on [protobuf v34.1](https://github.com/protocolbuffers/protobuf/releases/tag/v34.1) (python `protobuf==7.34.1`).",
-    "number_of_lines": 6449,
+    "number_of_lines": 6445,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4315,7 +4315,7 @@
     "version": "==7.2.2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2264,
+    "number_of_lines": 2228,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4329,13 +4329,13 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 514,
+      "annotated_parameters": 490,
       "unannotated_parameters": 2,
-      "annotated_returns": 694,
+      "annotated_returns": 693,
       "unannotated_returns": 1,
       "explicit_Incomplete_parameters": 1,
       "explicit_Incomplete_returns": 3,
-      "explicit_Any_parameters": 3,
+      "explicit_Any_parameters": 2,
       "explicit_Any_returns": 1,
       "annotated_variables": 675,
       "explicit_Any_variables": 0,
@@ -4457,7 +4457,7 @@
     "version": "==0.2.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 165,
+    "number_of_lines": 164,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4493,7 +4493,7 @@
     "version": "==2.0.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 171,
+    "number_of_lines": 168,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4600,7 +4600,7 @@
     "version": "==3.4.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 472,
+    "number_of_lines": 445,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4612,13 +4612,13 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 344,
+      "annotated_parameters": 343,
       "unannotated_parameters": 0,
-      "annotated_returns": 216,
+      "annotated_returns": 215,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 0,
+      "explicit_Any_parameters": 1,
       "explicit_Any_returns": 2,
       "annotated_variables": 77,
       "explicit_Any_variables": 1,
@@ -4635,7 +4635,7 @@
     "version": "==6.20.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 772,
+    "number_of_lines": 770,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4670,7 +4670,7 @@
     "version": "==20.0.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 377,
+    "number_of_lines": 376,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4777,7 +4777,7 @@
     "version": "==1.11.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 18,
+    "number_of_lines": 17,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4956,7 +4956,7 @@
     "version": "==2.9.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 775,
+    "number_of_lines": 774,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5096,7 +5096,7 @@
     "version": "==0.7.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 127,
+    "number_of_lines": 126,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5131,7 +5131,7 @@
     "version": "==0.33.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 5423,
+    "number_of_lines": 5416,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5201,7 +5201,7 @@
     "version": "==311.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 39481,
+    "number_of_lines": 39479,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5236,7 +5236,7 @@
     "version": "==0.28.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 858,
+    "number_of_lines": 857,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5306,7 +5306,7 @@
     "version": "==8.2.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 652,
+    "number_of_lines": 647,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5341,7 +5341,7 @@
     "version": "==2.2.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 19,
+    "number_of_lines": 18,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5376,7 +5376,7 @@
     "version": "==2026.4.4",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 914,
+    "number_of_lines": 913,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5411,7 +5411,7 @@
     "version": "==4.4.10",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 8208,
+    "number_of_lines": 8206,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5446,7 +5446,7 @@
     "version": "~=2.33.0",
     "completeness_level": "COMPLETE",
     "extra_description": "Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",
-    "number_of_lines": 1046,
+    "number_of_lines": 1044,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5481,7 +5481,7 @@
     "version": "==2.0.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 272,
+    "number_of_lines": 270,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5516,7 +5516,7 @@
     "version": "==0.4.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 57,
+    "number_of_lines": 56,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5656,7 +5656,7 @@
     "version": "==0.13.2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2608,
+    "number_of_lines": 2603,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5691,7 +5691,7 @@
     "version": "==82.0.*",
     "completeness_level": "COMPLETE",
     "extra_description": "Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.\n",
-    "number_of_lines": 2941,
+    "number_of_lines": 2938,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5727,7 +5727,7 @@
     "version": "==2.1.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2862,
+    "number_of_lines": 2848,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5797,7 +5797,7 @@
     "version": "==3.20.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 292,
+    "number_of_lines": 291,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5902,7 +5902,7 @@
     "version": "==0.7.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 72,
+    "number_of_lines": 71,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5937,7 +5937,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 70102,
+    "number_of_lines": 67938,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5951,19 +5951,19 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30541,
+      "annotated_parameters": 29369,
       "unannotated_parameters": 592,
-      "annotated_returns": 16890,
+      "annotated_returns": 16609,
       "unannotated_returns": 227,
       "explicit_Incomplete_parameters": 11,
       "explicit_Incomplete_returns": 21,
-      "explicit_Any_parameters": 2024,
-      "explicit_Any_returns": 825,
-      "annotated_variables": 9592,
-      "explicit_Any_variables": 309,
+      "explicit_Any_parameters": 1943,
+      "explicit_Any_returns": 809,
+      "annotated_variables": 9460,
+      "explicit_Any_variables": 304,
       "explicit_Incomplete_variables": 221,
-      "classdefs": 3220,
-      "classdefs_with_Any": 31,
+      "classdefs": 3193,
+      "classdefs_with_Any": 30,
       "classdefs_with_Incomplete": 0
     }
   },
@@ -6044,7 +6044,7 @@
     "version": "~=2.18.0",
     "completeness_level": "PARTIAL",
     "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.",
-    "number_of_lines": 30304,
+    "number_of_lines": 30294,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -6112,7 +6112,7 @@
     "version": "==0.10.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 136,
+    "number_of_lines": 135,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -6182,7 +6182,7 @@
     "version": "==4.67.3",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1506,
+    "number_of_lines": 1504,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -6252,7 +6252,7 @@
     "version": "==3.3.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 126,
+    "number_of_lines": 125,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -6498,7 +6498,7 @@
     "version": "~=3.0.1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 639,
+    "number_of_lines": 638,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -6534,7 +6534,7 @@
     "version": "==0.2.5",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 147,
+    "number_of_lines": 145,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -6639,7 +6639,7 @@
     "version": "==17.0.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1861,
+    "number_of_lines": 1859,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -6814,7 +6814,7 @@
     "version": "==2.7.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 297,
+    "number_of_lines": 296,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -6849,7 +6849,7 @@
     "version": "~=1.0.1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 118,
+    "number_of_lines": 117,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -6884,7 +6884,7 @@
     "version": "==2026.3.17",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3585,
+    "number_of_lines": 3581,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {

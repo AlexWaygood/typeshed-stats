@@ -14,7 +14,7 @@ The latest version of `types-Authlib` aims to provide accurate annotations for `
 
 ### Number of lines
 
-3,615 (excluding blank lines)
+3,611 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -75,7 +75,7 @@ The latest version of `types-Deprecated` aims to provide accurate annotations fo
 
 ### Number of lines
 
-88 (excluding blank lines)
+86 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -136,7 +136,7 @@ The latest version of `types-Flask-Cors` aims to provide accurate annotations fo
 
 ### Number of lines
 
-130 (excluding blank lines)
+128 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -197,7 +197,7 @@ The latest version of `types-Flask-Migrate` aims to provide accurate annotations
 
 ### Number of lines
 
-129 (excluding blank lines)
+128 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -441,7 +441,7 @@ The latest version of `types-Markdown` aims to provide accurate annotations for 
 
 ### Number of lines
 
-825 (excluding blank lines)
+820 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -472,7 +472,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 231
-    - Unannotated returns: 4
+    - Unannotated returns: 3
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -502,7 +502,7 @@ The latest version of `types-PyAutoGUI` aims to provide accurate annotations for
 
 ### Number of lines
 
-234 (excluding blank lines)
+233 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -685,7 +685,7 @@ The latest version of `types-PyScreeze` aims to provide accurate annotations for
 
 ### Number of lines
 
-193 (excluding blank lines)
+192 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -746,7 +746,7 @@ The latest version of `types-PySocks` aims to provide accurate annotations for `
 
 ### Number of lines
 
-213 (excluding blank lines)
+212 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -807,7 +807,7 @@ The latest version of `types-PyYAML` aims to provide accurate annotations for `P
 
 ### Number of lines
 
-1,318 (excluding blank lines)
+1,315 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -868,7 +868,7 @@ The latest version of `types-Pygments` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,011 (excluding blank lines)
+1,006 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -893,12 +893,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Pygments`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 243
+    - Annotated parameters: 242
     - Unannotated parameters: 63
     - Explicit `Any` parameters: 24
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 158
+    - Annotated returns: 157
     - Unannotated returns: 34
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
@@ -929,7 +929,7 @@ The latest version of `types-RPi.GPIO` aims to provide accurate annotations for 
 
 ### Number of lines
 
-57 (excluding blank lines)
+56 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1110,7 +1110,7 @@ The latest version of `types-WTForms` aims to provide accurate annotations for `
 
 ### Number of lines
 
-1,351 (excluding blank lines)
+1,349 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1171,7 +1171,7 @@ The latest version of `types-WebOb` aims to provide accurate annotations for `We
 
 ### Number of lines
 
-2,227 (excluding blank lines)
+2,223 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1232,7 +1232,7 @@ The latest version of `types-aiofiles` aims to provide accurate annotations for 
 
 ### Number of lines
 
-790 (excluding blank lines)
+789 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1354,7 +1354,7 @@ The latest version of `types-assertpy` aims to provide accurate annotations for 
 
 ### Number of lines
 
-225 (excluding blank lines)
+227 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1720,7 +1720,7 @@ The latest version of `types-bleach` aims to provide accurate annotations for `b
 
 ### Number of lines
 
-243 (excluding blank lines)
+240 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2025,7 +2025,7 @@ The latest version of `types-cffi` aims to provide accurate annotations for `cff
 
 ### Number of lines
 
-852 (excluding blank lines)
+849 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2086,7 +2086,7 @@ The latest version of `types-channels` aims to provide accurate annotations for 
 
 ### Number of lines
 
-545 (excluding blank lines)
+542 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2269,7 +2269,7 @@ The latest version of `types-click-log` aims to provide accurate annotations for
 
 ### Number of lines
 
-22 (excluding blank lines)
+21 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2452,7 +2452,7 @@ The latest version of `types-click-web` aims to provide accurate annotations for
 
 ### Number of lines
 
-189 (excluding blank lines)
+185 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2487,7 +2487,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 55
+    - Annotated variables: 54
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
@@ -2513,7 +2513,7 @@ The latest version of `types-colorama` aims to provide accurate annotations for 
 
 ### Number of lines
 
-201 (excluding blank lines)
+200 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2879,7 +2879,7 @@ The latest version of `types-dateparser` aims to provide accurate annotations fo
 
 ### Number of lines
 
-682 (excluding blank lines)
+681 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2940,7 +2940,7 @@ The latest version of `types-decorator` aims to provide accurate annotations for
 
 ### Number of lines
 
-67 (excluding blank lines)
+66 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3062,7 +3062,7 @@ The latest version of `types-dirhash` aims to provide accurate annotations for `
 
 ### Number of lines
 
-88 (excluding blank lines)
+87 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3123,7 +3123,7 @@ The latest version of `types-django-filter` aims to provide accurate annotations
 
 ### Number of lines
 
-805 (excluding blank lines)
+803 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3184,7 +3184,7 @@ The latest version of `types-django-import-export` aims to provide accurate anno
 
 ### Number of lines
 
-701 (excluding blank lines)
+699 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3243,7 +3243,7 @@ The latest version of `types-docker` aims to provide accurate annotations for `d
 
 ### Number of lines
 
-2,722 (excluding blank lines)
+2,716 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3304,7 +3304,7 @@ The latest version of `types-dockerfile-parse` aims to provide accurate annotati
 
 ### Number of lines
 
-116 (excluding blank lines)
+115 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3365,7 +3365,7 @@ The latest version of `types-docutils` aims to provide accurate annotations for 
 
 ### Number of lines
 
-5,667 (excluding blank lines)
+5,659 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -3670,7 +3670,7 @@ The latest version of `types-fanstatic` aims to provide accurate annotations for
 
 ### Number of lines
 
-537 (excluding blank lines)
+536 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3792,7 +3792,7 @@ The latest version of `types-flake8` aims to provide accurate annotations for `f
 
 ### Number of lines
 
-574 (excluding blank lines)
+572 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3914,7 +3914,7 @@ The latest version of `types-flake8-builtins` aims to provide accurate annotatio
 
 ### Number of lines
 
-40 (excluding blank lines)
+39 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4219,7 +4219,7 @@ The latest version of `types-fpdf2` aims to provide accurate annotations for `fp
 
 ### Number of lines
 
-3,855 (excluding blank lines)
+3,844 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -4284,7 +4284,7 @@ The latest version of `types-gdb` aims to provide accurate annotations for `gdb=
 
 ### Number of lines
 
-1,588 (excluding blank lines)
+1,584 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -4343,7 +4343,7 @@ The latest version of `types-geopandas` aims to provide accurate annotations for
 
 ### Number of lines
 
-1,839 (excluding blank lines)
+1,837 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4404,7 +4404,7 @@ The latest version of `types-gevent` aims to provide accurate annotations for `g
 
 ### Number of lines
 
-3,244 (excluding blank lines)
+3,235 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4770,7 +4770,7 @@ The latest version of `types-grpcio-reflection` aims to provide accurate annotat
 
 ### Number of lines
 
-165 (excluding blank lines)
+164 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4892,7 +4892,7 @@ The latest version of `types-gunicorn` aims to provide accurate annotations for 
 
 ### Number of lines
 
-3,474 (excluding blank lines)
+3,468 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -5315,7 +5315,7 @@ The latest version of `types-icalendar` aims to provide accurate annotations for
 
 ### Number of lines
 
-1,345 (excluding blank lines)
+1,344 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -5376,7 +5376,7 @@ The latest version of `types-inifile` aims to provide accurate annotations for `
 
 ### Number of lines
 
-124 (excluding blank lines)
+123 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5559,7 +5559,7 @@ The latest version of `types-jsonschema` aims to provide accurate annotations fo
 
 ### Number of lines
 
-496 (excluding blank lines)
+493 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5681,7 +5681,7 @@ The latest version of `types-keyboard` aims to provide accurate annotations for 
 
 ### Number of lines
 
-246 (excluding blank lines)
+243 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5742,7 +5742,7 @@ The latest version of `types-ldap3` aims to provide accurate annotations for `ld
 
 ### Number of lines
 
-2,494 (excluding blank lines)
+2,493 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5986,7 +5986,7 @@ The latest version of `types-m3u8` aims to provide accurate annotations for `m3u
 
 ### Number of lines
 
-602 (excluding blank lines)
+599 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6047,7 +6047,7 @@ The latest version of `types-mock` aims to provide accurate annotations for `moc
 
 ### Number of lines
 
-368 (excluding blank lines)
+364 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6169,7 +6169,7 @@ The latest version of `types-mysqlclient` aims to provide accurate annotations f
 
 ### Number of lines
 
-1,275 (excluding blank lines)
+1,276 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6352,7 +6352,7 @@ The latest version of `types-netaddr` aims to provide accurate annotations for `
 
 ### Number of lines
 
-712 (excluding blank lines)
+710 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6474,7 +6474,7 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 ### Number of lines
 
-7,618 (excluding blank lines)
+7,574 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6499,21 +6499,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,175
-    - Unannotated parameters: 1,266
+    - Annotated parameters: 3,163
+    - Unannotated parameters: 1,261
     - Explicit `Any` parameters: 24
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 213
 - Returns:
-    - Annotated returns: 1,073
-    - Unannotated returns: 544
+    - Annotated returns: 1,054
+    - Unannotated returns: 542
     - Explicit `Any` returns: 19
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 264
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 261
 - Variables:
     - Annotated variables: 387
     - Explicit `Any` variables: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 240
 - Class definitions:
-    - Total class definitions: 132
+    - Total class definitions: 131
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 1
 
@@ -6535,7 +6535,7 @@ The latest version of `types-oauthlib` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,913 (excluding blank lines)
+1,910 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6596,7 +6596,7 @@ The latest version of `types-objgraph` aims to provide accurate annotations for 
 
 ### Number of lines
 
-87 (excluding blank lines)
+86 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6718,7 +6718,7 @@ The latest version of `types-openpyxl` aims to provide accurate annotations for 
 
 ### Number of lines
 
-13,170 (excluding blank lines)
+13,111 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6840,7 +6840,7 @@ The latest version of `types-paramiko` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,893 (excluding blank lines)
+1,890 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7023,7 +7023,7 @@ The latest version of `types-peewee` aims to provide accurate annotations for `p
 
 ### Number of lines
 
-1,774 (excluding blank lines)
+1,773 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7145,7 +7145,7 @@ The latest version of `types-pexpect` aims to provide accurate annotations for `
 
 ### Number of lines
 
-668 (excluding blank lines)
+667 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7210,7 +7210,7 @@ The latest version of `types-pika-ts` aims to provide accurate annotations for `
 
 ### Number of lines
 
-2,225 (excluding blank lines)
+2,224 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7332,7 +7332,7 @@ The latest version of `types-pony` aims to provide accurate annotations for `pon
 
 ### Number of lines
 
-3,598 (excluding blank lines)
+3,592 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7357,12 +7357,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pony`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 505
+    - Annotated parameters: 504
     - Unannotated parameters: 1,671
     - Explicit `Any` parameters: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 675
+    - Annotated returns: 674
     - Unannotated returns: 868
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
@@ -7458,7 +7458,7 @@ The latest version of `types-protobuf` aims to provide accurate annotations for 
 
 ### Number of lines
 
-6,449 (excluding blank lines)
+6,445 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7519,7 +7519,7 @@ The latest version of `types-psutil` aims to provide accurate annotations for `p
 
 ### Number of lines
 
-2,264 (excluding blank lines)
+2,228 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7544,12 +7544,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `psutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 514
+    - Annotated parameters: 490
     - Unannotated parameters: 2
-    - Explicit `Any` parameters: 3
+    - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 694
+    - Annotated returns: 693
     - Unannotated returns: 1
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
@@ -7759,7 +7759,7 @@ The latest version of `types-pyaudio` aims to provide accurate annotations for `
 
 ### Number of lines
 
-165 (excluding blank lines)
+164 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7820,7 +7820,7 @@ The latest version of `types-pycocotools` aims to provide accurate annotations f
 
 ### Number of lines
 
-171 (excluding blank lines)
+168 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8003,7 +8003,7 @@ The latest version of `types-pyflakes` aims to provide accurate annotations for 
 
 ### Number of lines
 
-472 (excluding blank lines)
+445 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8028,12 +8028,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `pyflakes`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 344
+    - Annotated parameters: 343
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 0
+    - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 216
+    - Annotated returns: 215
     - Unannotated returns: 0
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -8064,7 +8064,7 @@ The latest version of `types-pyinstaller` aims to provide accurate annotations f
 
 ### Number of lines
 
-772 (excluding blank lines)
+770 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8125,7 +8125,7 @@ The latest version of `types-pyjks` aims to provide accurate annotations for `py
 
 ### Number of lines
 
-377 (excluding blank lines)
+376 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8308,7 +8308,7 @@ The latest version of `types-pyperclip` aims to provide accurate annotations for
 
 ### Number of lines
 
-18 (excluding blank lines)
+17 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8613,7 +8613,7 @@ The latest version of `types-python-dateutil` aims to provide accurate annotatio
 
 ### Number of lines
 
-775 (excluding blank lines)
+774 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8857,7 +8857,7 @@ The latest version of `types-python-nmap` aims to provide accurate annotations f
 
 ### Number of lines
 
-127 (excluding blank lines)
+126 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8918,7 +8918,7 @@ The latest version of `types-python-xlib` aims to provide accurate annotations f
 
 ### Number of lines
 
-5,423 (excluding blank lines)
+5,416 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9040,7 +9040,7 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 ### Number of lines
 
-39,481 (excluding blank lines)
+39,479 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9101,7 +9101,7 @@ The latest version of `types-pyxdg` aims to provide accurate annotations for `py
 
 ### Number of lines
 
-858 (excluding blank lines)
+857 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9223,7 +9223,7 @@ The latest version of `types-qrcode` aims to provide accurate annotations for `q
 
 ### Number of lines
 
-652 (excluding blank lines)
+647 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9284,7 +9284,7 @@ The latest version of `types-ratelimit` aims to provide accurate annotations for
 
 ### Number of lines
 
-19 (excluding blank lines)
+18 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9345,7 +9345,7 @@ The latest version of `types-regex` aims to provide accurate annotations for `re
 
 ### Number of lines
 
-914 (excluding blank lines)
+913 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9406,7 +9406,7 @@ The latest version of `types-reportlab` aims to provide accurate annotations for
 
 ### Number of lines
 
-8,208 (excluding blank lines)
+8,206 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -9471,7 +9471,7 @@ The latest version of `types-requests` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,046 (excluding blank lines)
+1,044 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9532,7 +9532,7 @@ The latest version of `types-requests-oauthlib` aims to provide accurate annotat
 
 ### Number of lines
 
-272 (excluding blank lines)
+270 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9593,7 +9593,7 @@ The latest version of `types-resampy` aims to provide accurate annotations for `
 
 ### Number of lines
 
-57 (excluding blank lines)
+56 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9841,7 +9841,7 @@ The latest version of `types-seaborn` aims to provide accurate annotations for `
 
 ### Number of lines
 
-2,608 (excluding blank lines)
+2,603 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9906,7 +9906,7 @@ The latest version of `types-setuptools` aims to provide accurate annotations fo
 
 ### Number of lines
 
-2,941 (excluding blank lines)
+2,938 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9967,7 +9967,7 @@ The latest version of `types-shapely` aims to provide accurate annotations for `
 
 ### Number of lines
 
-2,862 (excluding blank lines)
+2,848 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10089,7 +10089,7 @@ The latest version of `types-simplejson` aims to provide accurate annotations fo
 
 ### Number of lines
 
-292 (excluding blank lines)
+291 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -10272,7 +10272,7 @@ The latest version of `types-slumber` aims to provide accurate annotations for `
 
 ### Number of lines
 
-72 (excluding blank lines)
+71 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,102 (excluding blank lines)
+67,938 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10350,22 +10350,22 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,541
+    - Annotated parameters: 29,369
     - Unannotated parameters: 592
-    - Explicit `Any` parameters: 2,024
+    - Explicit `Any` parameters: 1,943
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,890
+    - Annotated returns: 16,609
     - Unannotated returns: 227
-    - Explicit `Any` returns: 825
+    - Explicit `Any` returns: 809
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
 - Variables:
-    - Annotated variables: 9,592
-    - Explicit `Any` variables: 309
+    - Annotated variables: 9,460
+    - Explicit `Any` variables: 304
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
-    - Total class definitions: 3,220
-    - Class definitions with `Any`: 31
+    - Total class definitions: 3,193
+    - Class definitions with `Any`: 30
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
@@ -10512,7 +10512,7 @@ The latest version of `types-tensorflow` aims to provide accurate annotations fo
 
 ### Number of lines
 
-30,304 (excluding blank lines)
+30,294 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -10632,7 +10632,7 @@ The latest version of `types-toml` aims to provide accurate annotations for `tom
 
 ### Number of lines
 
-136 (excluding blank lines)
+135 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10754,7 +10754,7 @@ The latest version of `types-tqdm` aims to provide accurate annotations for `tqd
 
 ### Number of lines
 
-1,506 (excluding blank lines)
+1,504 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10876,7 +10876,7 @@ The latest version of `types-ttkthemes` aims to provide accurate annotations for
 
 ### Number of lines
 
-126 (excluding blank lines)
+125 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -11307,7 +11307,7 @@ The latest version of `types-waitress` aims to provide accurate annotations for 
 
 ### Number of lines
 
-639 (excluding blank lines)
+638 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -11368,7 +11368,7 @@ The latest version of `types-watchpoints` aims to provide accurate annotations f
 
 ### Number of lines
 
-147 (excluding blank lines)
+145 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -11551,7 +11551,7 @@ The latest version of `types-workalendar` aims to provide accurate annotations f
 
 ### Number of lines
 
-1,861 (excluding blank lines)
+1,859 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -11856,7 +11856,7 @@ The latest version of `types-xmldiff` aims to provide accurate annotations for `
 
 ### Number of lines
 
-297 (excluding blank lines)
+296 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -11917,7 +11917,7 @@ The latest version of `types-xmltodict` aims to provide accurate annotations for
 
 ### Number of lines
 
-118 (excluding blank lines)
+117 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -11978,7 +11978,7 @@ The latest version of `types-yt-dlp` aims to provide accurate annotations for `y
 
 ### Number of lines
 
-3,585 (excluding blank lines)
+3,581 (excluding blank lines)
 
 ### Package status: *up to date*
 
