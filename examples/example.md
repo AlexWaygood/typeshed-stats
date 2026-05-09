@@ -4892,7 +4892,7 @@ The latest version of `types-gunicorn` aims to provide accurate annotations for 
 
 ### Number of lines
 
-3,454 (excluding blank lines)
+3,453 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4927,7 +4927,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 31
 - Variables:
-    - Annotated variables: 1,517
+    - Annotated variables: 1,516
     - Explicit `Any` variables: 25
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 20
 - Class definitions:
@@ -7206,15 +7206,15 @@ The `types-pika` package contains alternate, more complete type stubs, that are 
 
 ### Version
 
-The latest version of `types-pika-ts` aims to provide accurate annotations for `pika==1.3.*`.
+The latest version of `types-pika-ts` aims to provide accurate annotations for `pika==1.4.*`.
 
 ### Number of lines
 
-2,224 (excluding blank lines)
+2,277 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7226,7 +7226,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 unique allowlist entries for `pika` when running stubtest in CI.
+Typeshed currently has 6 unique allowlist entries for `pika` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7235,21 +7235,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pika`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 632
-    - Unannotated parameters: 373
-    - Explicit `Any` parameters: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 34
+    - Annotated parameters: 685
+    - Unannotated parameters: 320
+    - Explicit `Any` parameters: 11
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 27
 - Returns:
-    - Annotated returns: 624
-    - Unannotated returns: 141
+    - Annotated returns: 645
+    - Unannotated returns: 117
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 23
 - Variables:
     - Annotated variables: 468
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 148
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 144
 - Class definitions:
-    - Total class definitions: 224
+    - Total class definitions: 225
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,480 (excluding blank lines)
+68,826 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10341,7 +10341,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,125 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,087 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10350,21 +10350,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,665
+    - Annotated parameters: 29,850
     - Unannotated parameters: 592
-    - Explicit `Any` parameters: 1,976
+    - Explicit `Any` parameters: 1,986
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,736
+    - Annotated returns: 16,779
     - Unannotated returns: 227
-    - Explicit `Any` returns: 820
+    - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
 - Variables:
-    - Annotated variables: 9,492
+    - Annotated variables: 9,502
     - Explicit `Any` variables: 306
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
-    - Total class definitions: 3,197
+    - Total class definitions: 3,200
     - Class definitions with `Any`: 31
     - Class definitions marked as at least partially `Incomplete`: 0
 
