@@ -12,7 +12,7 @@ PyMeeus,types-PyMeeus,https://github.com/architest/pymeeus,==0.5.*,COMPLETE,-,95
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,==1.1.*,COMPLETE,-,1219,UP_TO_DATE,UPLOADED,NOT_STRICT,212,24,127,31,3,2,8,14,767,10,4,28,0,0,ERROR_ON_MISSING_STUB,linux,2
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,==1.0.1,COMPLETE,-,192,UP_TO_DATE,UPLOADED,STRICT,102,0,21,0,0,0,0,0,17,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
 PySocks,types-PySocks,https://github.com/Anorov/PySocks,==1.7.1,COMPLETE,-,212,UP_TO_DATE,UPLOADED,STRICT,113,0,35,0,0,0,1,0,26,0,2,12,0,0,ERROR_ON_MISSING_STUB,linux,2
-PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,==6.0.*,COMPLETE,-,1315,UP_TO_DATE,UPLOADED,NOT_STRICT,520,278,222,172,4,0,46,12,220,160,2,91,0,0,ERROR_ON_MISSING_STUB,linux,4
+PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,==6.0.*,COMPLETE,-,1315,UP_TO_DATE,UPLOADED,NOT_STRICT,522,276,222,172,4,0,46,12,220,160,2,91,0,0,ERROR_ON_MISSING_STUB,linux,4
 Pygments,types-Pygments,https://github.com/pygments/pygments,==2.20.*,PARTIAL,-,1006,UP_TO_DATE,UPLOADED,NOT_STRICT,242,63,157,34,0,5,24,2,334,2,122,97,0,1,ERROR_ON_MISSING_STUB,linux,10
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,==0.7.*,COMPLETE,-,56,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,==2.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -111,7 +111,7 @@ objgraph,types-objgraph,https://github.com/mgedmin/objgraph,==3.6.*,COMPLETE,-,8
 olefile,types-olefile,https://github.com/decalage2/olefile,==0.47.*,COMPLETE,-,222,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,75,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,==3.1.5,COMPLETE,-,13111,UP_TO_DATE,UPLOADED,NOT_STRICT,3704,511,1312,87,12,7,13,11,4019,4,339,603,1,20,ERROR_ON_MISSING_STUB,linux,169
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,==2.4.*,COMPLETE,-,332,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,104,1,113,0,0,0,21,0,56,4,0,26,0,0,ERROR_ON_MISSING_STUB,linux,4
-paramiko,types-paramiko,https://github.com/paramiko/paramiko,==4.0.*,COMPLETE,-,1890,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,775,8,643,3,2,0,13,6,559,4,23,128,2,0,ERROR_ON_MISSING_STUB,linux;win32,4
+paramiko,types-paramiko,https://github.com/paramiko/paramiko,==4.0.*,COMPLETE,-,1890,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,775,8,643,3,2,0,13,6,559,4,23,128,2,0,ERROR_ON_MISSING_STUB,linux;win32,4
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,==0.11.*,COMPLETE,-,197,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,114,0,59,1,0,0,22,2,34,3,2,28,0,0,ERROR_ON_MISSING_STUB,linux,3
 passpy,types-passpy,https://github.com/bfrascher/passpy,==1.0.*,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
 peewee,types-peewee,https://github.com/coleifer/peewee,==4.0.5,PARTIAL,-,1801,UP_TO_DATE,UPLOADED,NOT_STRICT,237,914,582,259,0,29,2,0,410,31,282,173,0,0,ERROR_ON_MISSING_STUB,linux,21
@@ -136,7 +136,7 @@ pyjks,types-pyjks,https://github.com/kurtbrose/pyjks,==20.0.*,COMPLETE,-,376,UP_
 pyluach,types-pyluach,https://github.com/simlist/pyluach,==2.3.*,COMPLETE,-,271,UP_TO_DATE,UPLOADED,STRICT,163,0,127,0,0,0,0,0,35,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,1
 pynput,types-pynput,https://github.com/moses-palmer/pynput,~=1.8.1,COMPLETE,-,333,UP_TO_DATE,UPLOADED,STRICT,87,0,71,0,0,0,11,0,63,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,7
 pyperclip,types-pyperclip,https://github.com/asweigart/pyperclip,==1.11.*,COMPLETE,-,17,UP_TO_DATE,UPLOADED,STRICT,3,0,6,0,0,0,0,0,0,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1
-pyserial,types-pyserial,https://github.com/pyserial/pyserial,==3.5.*,COMPLETE,-,1173,UP_TO_DATE,UPLOADED,STRICT,224,0,271,0,0,0,2,4,466,7,65,68,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,46
+pyserial,types-pyserial,https://github.com/pyserial/pyserial,==3.5.*,COMPLETE,-,1170,UP_TO_DATE,UPLOADED,STRICT,224,0,271,0,0,0,2,4,466,7,65,66,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,46
 pysftp,types-pysftp,https://bitbucket.org/dundeemt/pysftp,==0.2.*,COMPLETE,-,166,UP_TO_DATE,UPLOADED,STRICT,109,0,70,0,0,0,0,0,6,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
 pytest-lazy-fixture,types-pytest-lazy-fixture,https://github.com/tvorog/pytest-lazy-fixture,==0.6.*,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,5,0,5,0,0,0,0,1,1,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,8
 python-crontab,types-python-crontab,https://gitlab.com/doctormo/python-crontab,==3.3.*,COMPLETE,-,355,UP_TO_DATE,UPLOADED,STRICT,183,0,153,0,0,0,13,0,80,0,0,19,0,0,ERROR_ON_MISSING_STUB,linux,3
@@ -152,7 +152,7 @@ pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,==0.28.*,COMPLETE,-,857,UP_
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,==1.2.*,COMPLETE,-,182,UP_TO_DATE,UPLOADED,STRICT,99,0,31,0,0,0,0,4,40,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,==8.2.*,COMPLETE,-,647,UP_TO_DATE,UPLOADED,STRICT,282,0,152,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,9
 ratelimit,types-ratelimit,https://github.com/tomasbasham/ratelimit,==2.2.*,COMPLETE,-,18,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,1,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
-regex,types-regex,https://github.com/mrabarnett/mrab-regex,==2026.4.4,COMPLETE,-,913,UP_TO_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,3,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,12
+regex,types-regex,https://github.com/mrabarnett/mrab-regex,==2026.5.9,COMPLETE,-,913,UP_TO_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,3,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,12
 reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,==4.5.0,COMPLETE,-,8214,UP_TO_DATE,UPLOADED,NOT_STRICT,1987,2491,1935,651,14,40,28,12,2777,6,1028,583,0,3,ERROR_ON_MISSING_STUB,linux,50
 requests,types-requests,https://github.com/psf/requests,~=2.33.0,COMPLETE,"Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",1044,UP_TO_DATE,UPLOADED,NOT_STRICT,382,132,136,64,0,4,8,1,126,15,20,53,0,0,ERROR_ON_MISSING_STUB,linux,4
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,==2.0.*,COMPLETE,-,270,UP_TO_DATE,UPLOADED,NOT_STRICT,68,69,45,4,2,3,2,0,25,1,7,13,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -169,7 +169,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,==3.20.*,CO
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,==4.1.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,==1.17.*,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,==0.7.*,COMPLETE,-,71,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,68826,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,29850,592,16779,227,11,21,1986,821,9502,306,221,3200,31,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1087
+stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,68998,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,29872,592,16799,227,11,21,1986,821,9540,306,221,3200,31,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1006
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,==1.1,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.10.*,COMPLETE,-,62,UP_TO_DATE,UPLOADED,STRICT,21,0,3,0,0,0,2,0,23,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30294,OUT_OF_DATE,UPLOADED,NOT_STRICT,5391,38,2939,40,12,23,60,34,5437,5,12,927,1,0,SKIPPED,None,51

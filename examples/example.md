@@ -832,8 +832,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `PyYAML`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 520
-    - Unannotated parameters: 278
+    - Annotated parameters: 522
+    - Unannotated parameters: 276
     - Explicit `Any` parameters: 46
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 4
 - Returns:
@@ -6842,9 +6842,9 @@ The latest version of `types-paramiko` aims to provide accurate annotations for 
 
 1,890 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -8369,7 +8369,7 @@ The latest version of `types-pyserial` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,173 (excluding blank lines)
+1,170 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8408,7 +8408,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` variables: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 65
 - Class definitions:
-    - Total class definitions: 68
+    - Total class definitions: 66
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9341,7 +9341,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.4.4`.
+The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.5.9`.
 
 ### Number of lines
 
@@ -10325,7 +10325,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,826 (excluding blank lines)
+68,998 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10341,7 +10341,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,087 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 1,006 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10350,17 +10350,17 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,850
+    - Annotated parameters: 29,872
     - Unannotated parameters: 592
     - Explicit `Any` parameters: 1,986
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,779
+    - Annotated returns: 16,799
     - Unannotated returns: 227
     - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
 - Variables:
-    - Annotated variables: 9,502
+    - Annotated variables: 9,540
     - Explicit `Any` variables: 306
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
