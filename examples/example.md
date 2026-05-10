@@ -8353,6 +8353,67 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `pyphen`
+
+### Upstream repo URL
+
+[https://github.com/Kozea/Pyphen](https://github.com/Kozea/Pyphen)
+
+### Stub distribution name
+
+`types-pyphen`
+
+### Version
+
+The latest version of `types-pyphen` aims to provide accurate annotations for `pyphen==0.17.2`.
+
+### Number of lines
+
+33 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `pyphen` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `pyphen`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 21
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 11
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 9
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 4
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `pyserial`
 
 ### Upstream repo URL
@@ -10325,7 +10386,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-68,998 (excluding blank lines)
+68,867 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10341,7 +10402,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 1,006 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 998 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10350,21 +10411,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 29,872
-    - Unannotated parameters: 592
-    - Explicit `Any` parameters: 1,986
+    - Annotated parameters: 29,794
+    - Unannotated parameters: 586
+    - Explicit `Any` parameters: 1,979
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 16,799
+    - Annotated returns: 16,758
     - Unannotated returns: 227
-    - Explicit `Any` returns: 821
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
+    - Explicit `Any` returns: 820
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20
 - Variables:
-    - Annotated variables: 9,540
+    - Annotated variables: 9,534
     - Explicit `Any` variables: 306
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
-    - Total class definitions: 3,200
+    - Total class definitions: 3,197
     - Class definitions with `Any`: 31
     - Class definitions marked as at least partially `Incomplete`: 0
 

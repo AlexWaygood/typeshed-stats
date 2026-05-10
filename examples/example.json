@@ -4808,6 +4808,41 @@
     }
   },
   {
+    "package_name": "pyphen",
+    "stub_distribution_name": "types-pyphen",
+    "upstream_url": "https://github.com/Kozea/Pyphen",
+    "version": "==0.17.2",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 33,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "ci_platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 21,
+      "unannotated_parameters": 0,
+      "annotated_returns": 11,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 9,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 4,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "pyserial",
     "stub_distribution_name": "types-pyserial",
     "upstream_url": "https://github.com/pyserial/pyserial",
@@ -5937,7 +5972,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 68998,
+    "number_of_lines": 68867,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5947,22 +5982,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 1006
+      "allowlist_length": 998
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 29872,
-      "unannotated_parameters": 592,
-      "annotated_returns": 16799,
+      "annotated_parameters": 29794,
+      "unannotated_parameters": 586,
+      "annotated_returns": 16758,
       "unannotated_returns": 227,
       "explicit_Incomplete_parameters": 11,
-      "explicit_Incomplete_returns": 21,
-      "explicit_Any_parameters": 1986,
-      "explicit_Any_returns": 821,
-      "annotated_variables": 9540,
+      "explicit_Incomplete_returns": 20,
+      "explicit_Any_parameters": 1979,
+      "explicit_Any_returns": 820,
+      "annotated_variables": 9534,
       "explicit_Any_variables": 306,
       "explicit_Incomplete_variables": 221,
-      "classdefs": 3200,
+      "classdefs": 3197,
       "classdefs_with_Any": 31,
       "classdefs_with_Incomplete": 0
     }
