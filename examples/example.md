@@ -6474,7 +6474,7 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 ### Number of lines
 
-7,612 (excluding blank lines)
+7,611 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6507,7 +6507,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated returns: 1,055
     - Unannotated returns: 541
     - Explicit `Any` returns: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 244
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 242
 - Variables:
     - Annotated variables: 387
     - Explicit `Any` variables: 5
@@ -9469,9 +9469,9 @@ The latest version of `types-reportlab` aims to provide accurate annotations for
 
 8,214 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -9532,11 +9532,11 @@ The latest version of `types-requests` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,044 (excluding blank lines)
+1,069 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
@@ -9557,14 +9557,14 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `requests`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 382
-    - Unannotated parameters: 132
-    - Explicit `Any` parameters: 8
+    - Annotated parameters: 393
+    - Unannotated parameters: 121
+    - Explicit `Any` parameters: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 136
-    - Unannotated returns: 64
-    - Explicit `Any` returns: 1
+    - Annotated returns: 141
+    - Unannotated returns: 59
+    - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
     - Annotated variables: 126
@@ -10386,7 +10386,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,695 (excluding blank lines)
+69,694 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10402,7 +10402,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 910 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 909 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
