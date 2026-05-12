@@ -6,7 +6,7 @@
     "version": "==1.6.11",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3611,
+    "number_of_lines": 3618,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2526,7 +2526,7 @@
     "version": "==26.4.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3235,
+    "number_of_lines": 3234,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5482,7 +5482,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": "Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.",
     "number_of_lines": 1044,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -5972,7 +5972,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 69559,
+    "number_of_lines": 69695,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -5982,22 +5982,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 948
+      "allowlist_length": 910
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30103,
+      "annotated_parameters": 30162,
       "unannotated_parameters": 586,
-      "annotated_returns": 16947,
+      "annotated_returns": 16981,
       "unannotated_returns": 227,
       "explicit_Incomplete_parameters": 11,
       "explicit_Incomplete_returns": 20,
       "explicit_Any_parameters": 1985,
-      "explicit_Any_returns": 827,
-      "annotated_variables": 9572,
+      "explicit_Any_returns": 828,
+      "annotated_variables": 9574,
       "explicit_Any_variables": 306,
       "explicit_Incomplete_variables": 221,
-      "classdefs": 3232,
+      "classdefs": 3233,
       "classdefs_with_Any": 32,
       "classdefs_with_Incomplete": 0
     }
