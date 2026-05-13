@@ -5620,7 +5620,7 @@ The latest version of `types-jwcrypto` aims to provide accurate annotations for 
 
 ### Number of lines
 
-481 (excluding blank lines)
+495 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5645,12 +5645,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `jwcrypto`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 153
-    - Unannotated parameters: 31
+    - Annotated parameters: 161
+    - Unannotated parameters: 32
     - Explicit `Any` parameters: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 133
+    - Annotated returns: 136
     - Unannotated returns: 8
     - Explicit `Any` returns: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
