@@ -14,7 +14,7 @@ The latest version of `types-Authlib` aims to provide accurate annotations for `
 
 ### Number of lines
 
-3,618 (excluding blank lines)
+3,623 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -39,12 +39,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 373
+    - Annotated parameters: 375
     - Unannotated parameters: 1,477
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 8
 - Returns:
-    - Annotated returns: 707
+    - Annotated returns: 709
     - Unannotated returns: 417
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 71
@@ -4587,7 +4587,7 @@ The latest version of `types-grpcio` aims to provide accurate annotations for `g
 
 ### Number of lines
 
-926 (excluding blank lines)
+929 (excluding blank lines)
 
 ### Package status: *up to date*
 
