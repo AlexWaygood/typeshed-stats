@@ -111,7 +111,7 @@ def test_non_str_value_for__NiceReprEnum_impossible() -> None:
     with pytest.raises(AssertionError):
 
         class Bad(typeshed_stats.gather._NiceReprEnum):
-            NOT_A_STRING = 1  # pyright: ignore[reportArgumentType]
+            NOT_A_STRING = 1  # pyright: ignore[reportArgumentType]  # ty: ignore[invalid-assignment]
 
 
 # =========================================
