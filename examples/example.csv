@@ -39,7 +39,7 @@ click-default-group,types-click-default-group,https://github.com/click-contrib/c
 click-log,types-click-log,https://github.com/click-contrib/click-log,==0.4.*,COMPLETE,-,21,UP_TO_DATE,UPLOADED,STRICT,6,0,4,0,0,0,1,0,6,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-shell,types-click-shell,https://github.com/clarkperkins/click-shell,==2.1,COMPLETE,-,71,UP_TO_DATE,UPLOADED,STRICT,40,0,23,0,0,0,4,1,4,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-spinner,types-click-spinner,https://github.com/click-contrib/click-spinner,==0.1.*,COMPLETE,-,37,UP_TO_DATE,UPLOADED,STRICT,12,0,11,0,0,0,0,0,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
-click-web,types-click-web,https://github.com/fredrik-corneliusson/click-web,==0.8.*,COMPLETE,-,185,UP_TO_DATE,UPLOADED,STRICT,68,0,60,0,0,0,0,4,54,2,1,29,0,0,ERROR_ON_MISSING_STUB,linux,0
+click-web,types-click-web,https://github.com/fredrik-corneliusson/click-web,==0.8.*,COMPLETE,-,185,UP_TO_DATE,UPLOADED,STRICT,68,0,60,0,0,0,0,4,54,4,1,29,2,0,ERROR_ON_MISSING_STUB,linux,0
 colorama,types-colorama,https://github.com/tartley/colorama,==0.4.*,COMPLETE,-,200,UP_TO_DATE,UPLOADED,STRICT,89,0,60,0,0,0,3,1,85,0,0,11,0,0,ERROR_ON_MISSING_STUB,linux;win32,44
 colorful,types-colorful,https://github.com/timofurrer/colorful,==0.5.*,COMPLETE,-,128,UP_TO_DATE,UPLOADED,NOT_STRICT,73,1,49,0,0,0,0,1,40,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
 console-menu,types-console-menu,https://github.com/aegirhall/console-menu,==0.8.*,COMPLETE,-,736,UP_TO_DATE,UPLOADED,STRICT,217,0,278,0,0,0,7,1,58,3,1,39,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -47,7 +47,7 @@ convertdate,types-convertdate,https://github.com/fitnr/convertdate,==2.4.1,COMPL
 croniter,types-croniter,https://github.com/pallets-eco/croniter,==6.2.2,COMPLETE,-,368,UP_TO_DATE,UPLOADED,STRICT,167,0,39,0,0,0,1,0,49,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
 datauri,types-datauri,https://github.com/eclecticiq/python-data-uri,==1.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,0,0,0,4,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,~=1.4.0,COMPLETE,-,681,UP_TO_DATE,UPLOADED,NOT_STRICT,292,8,155,4,7,2,11,1,175,0,5,40,0,0,ERROR_ON_MISSING_STUB,linux,6
-decorator,types-decorator,https://github.com/micheles/decorator,==5.2.*,COMPLETE,-,66,UP_TO_DATE,UPLOADED,STRICT,40,0,13,0,0,0,21,6,16,4,0,2,0,0,ERROR_ON_MISSING_STUB,linux,5
+decorator,types-decorator,https://github.com/micheles/decorator,==5.2.*,COMPLETE,-,66,OUT_OF_DATE,UPLOADED,STRICT,40,0,13,0,0,0,21,6,16,4,0,2,0,0,ERROR_ON_MISSING_STUB,linux,5
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,==0.7.*,COMPLETE,-,354,UP_TO_DATE,UPLOADED,NOT_STRICT,202,20,50,13,0,0,0,1,42,0,3,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 dirhash,types-dirhash,https://github.com/andhus/dirhash-python,==0.5.*,COMPLETE,-,87,UP_TO_DATE,UPLOADED,STRICT,39,0,13,0,0,0,0,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 django-filter,types-django-filter,https://github.com/carltongibson/django-filter/,==25.2.*,COMPLETE,-,803,UP_TO_DATE,UPLOADED,STRICT,298,0,128,0,0,0,121,44,113,25,0,73,3,0,ERROR_ON_MISSING_STUB,linux,12
