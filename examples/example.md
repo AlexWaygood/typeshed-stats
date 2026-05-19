@@ -2942,9 +2942,9 @@ The latest version of `types-decorator` aims to provide accurate annotations for
 
 66 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
@@ -10386,7 +10386,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,872 (excluding blank lines)
+69,881 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10411,12 +10411,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,180
+    - Annotated parameters: 30,189
     - Unannotated parameters: 586
-    - Explicit `Any` parameters: 1,985
+    - Explicit `Any` parameters: 1,984
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 17,017
+    - Annotated returns: 17,020
     - Unannotated returns: 227
     - Explicit `Any` returns: 828
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 20

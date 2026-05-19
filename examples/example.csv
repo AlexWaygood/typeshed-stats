@@ -47,7 +47,7 @@ convertdate,types-convertdate,https://github.com/fitnr/convertdate,==2.4.1,COMPL
 croniter,types-croniter,https://github.com/pallets-eco/croniter,==6.2.2,COMPLETE,-,368,UP_TO_DATE,UPLOADED,STRICT,167,0,39,0,0,0,1,0,49,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
 datauri,types-datauri,https://github.com/eclecticiq/python-data-uri,==1.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,0,0,0,4,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,~=1.4.0,COMPLETE,-,681,UP_TO_DATE,UPLOADED,NOT_STRICT,292,8,155,4,7,2,11,1,175,0,5,40,0,0,ERROR_ON_MISSING_STUB,linux,6
-decorator,types-decorator,https://github.com/micheles/decorator,==5.2.*,COMPLETE,-,66,OUT_OF_DATE,UPLOADED,STRICT,40,0,13,0,0,0,21,6,16,4,0,2,0,0,ERROR_ON_MISSING_STUB,linux,5
+decorator,types-decorator,https://github.com/micheles/decorator,==5.2.*,COMPLETE,-,66,OBSOLETE,UPLOADED,STRICT,40,0,13,0,0,0,21,6,16,4,0,2,0,0,ERROR_ON_MISSING_STUB,linux,5
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,==0.7.*,COMPLETE,-,354,UP_TO_DATE,UPLOADED,NOT_STRICT,202,20,50,13,0,0,0,1,42,0,3,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 dirhash,types-dirhash,https://github.com/andhus/dirhash-python,==0.5.*,COMPLETE,-,87,UP_TO_DATE,UPLOADED,STRICT,39,0,13,0,0,0,0,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 django-filter,types-django-filter,https://github.com/carltongibson/django-filter/,==25.2.*,COMPLETE,-,803,UP_TO_DATE,UPLOADED,STRICT,298,0,128,0,0,0,121,44,113,25,0,73,3,0,ERROR_ON_MISSING_STUB,linux,12
@@ -170,7 +170,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,==3.20.*,CO
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,==4.1.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,==1.17.*,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,==0.7.*,COMPLETE,-,71,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,69872,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30180,586,17017,227,11,20,1985,828,9604,306,221,3234,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,806
+stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,69881,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30189,586,17020,227,11,20,1984,828,9604,306,221,3234,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,806
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,==1.1,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.10.*,COMPLETE,-,62,UP_TO_DATE,UPLOADED,STRICT,21,0,3,0,0,0,2,0,23,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30294,OUT_OF_DATE,UPLOADED,NOT_STRICT,5391,38,2939,40,12,23,60,34,5437,5,12,927,1,0,SKIPPED,None,51
