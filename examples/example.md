@@ -4406,9 +4406,9 @@ The latest version of `types-gevent` aims to provide accurate annotations for `g
 
 3,234 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -9101,7 +9101,7 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 ### Number of lines
 
-39,479 (excluding blank lines)
+39,714 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9126,21 +9126,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,984
-    - Unannotated parameters: 3,695
+    - Annotated parameters: 4,137
+    - Unannotated parameters: 3,667
     - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 384
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 383
 - Returns:
-    - Annotated returns: 4,106
-    - Unannotated returns: 1,892
+    - Annotated returns: 4,112
+    - Unannotated returns: 1,874
     - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 293
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 289
 - Variables:
-    - Annotated variables: 29,498
+    - Annotated variables: 29,606
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,858
 - Class definitions:
-    - Total class definitions: 752
+    - Total class definitions: 774
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9463,15 +9463,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-reportlab` aims to provide accurate annotations for `reportlab==4.5.0`.
+The latest version of `types-reportlab` aims to provide accurate annotations for `reportlab==4.5.1`.
 
 ### Number of lines
 
-8,214 (excluding blank lines)
+8,225 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -9492,21 +9492,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `reportlab`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,987
+    - Annotated parameters: 1,989
     - Unannotated parameters: 2,491
-    - Explicit `Any` parameters: 28
+    - Explicit `Any` parameters: 29
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 1,935
+    - Annotated returns: 1,938
     - Unannotated returns: 651
     - Explicit `Any` returns: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 40
 - Variables:
-    - Annotated variables: 2,777
+    - Annotated variables: 2,778
     - Explicit `Any` variables: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,028
 - Class definitions:
-    - Total class definitions: 583
+    - Total class definitions: 584
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 3
 
