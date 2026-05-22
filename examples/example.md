@@ -5665,6 +5665,67 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
+## Info on typeshed's stubs for `kafka-python`
+
+### Upstream repo URL
+
+[https://github.com/dpkp/kafka-python](https://github.com/dpkp/kafka-python)
+
+### Stub distribution name
+
+`types-kafka-python`
+
+### Version
+
+The latest version of `types-kafka-python` aims to provide accurate annotations for `kafka-python==2.3.*`.
+
+### Number of lines
+
+4,739 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 18 unique allowlist entries for `kafka-python` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `kafka-python`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 154
+    - Unannotated parameters: 860
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 344
+    - Unannotated returns: 639
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
+- Variables:
+    - Annotated variables: 2,159
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 736
+- Class definitions:
+    - Total class definitions: 652
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 1
+
+---
+
 ## Info on typeshed's stubs for `keyboard`
 
 ### Upstream repo URL
@@ -10386,7 +10447,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,883 (excluding blank lines)
+69,886 (excluding blank lines)
 
 ### Package status: *stdlib*
 
