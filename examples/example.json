@@ -6007,7 +6007,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 69888,
+    "number_of_lines": 69894,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -6021,10 +6021,10 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30189,
-      "unannotated_parameters": 586,
-      "annotated_returns": 17022,
-      "unannotated_returns": 227,
+      "annotated_parameters": 30193,
+      "unannotated_parameters": 582,
+      "annotated_returns": 17024,
+      "unannotated_returns": 225,
       "explicit_Incomplete_parameters": 11,
       "explicit_Incomplete_returns": 20,
       "explicit_Any_parameters": 1984,
