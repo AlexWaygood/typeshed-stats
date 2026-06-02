@@ -8308,7 +8308,7 @@ The latest version of `types-pynput` aims to provide accurate annotations for `p
 
 ### Number of lines
 
-333 (excluding blank lines)
+365 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10089,7 +10089,7 @@ The latest version of `types-shapely` aims to provide accurate annotations for `
 
 ### Number of lines
 
-2,848 (excluding blank lines)
+3,034 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10114,8 +10114,8 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 ### Statistics on the annotations in typeshed's stubs for `shapely`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,534
-    - Unannotated parameters: 427
+    - Annotated parameters: 1,852
+    - Unannotated parameters: 109
     - Explicit `Any` parameters: 14
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
@@ -10124,11 +10124,11 @@ All files in this stubs package are excluded from the pyright check in typeshed'
     - Explicit `Any` returns: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 167
-    - Explicit `Any` variables: 0
+    - Annotated variables: 173
+    - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
-    - Total class definitions: 42
+    - Total class definitions: 45
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 

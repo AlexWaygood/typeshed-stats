@@ -135,7 +135,7 @@ pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,==3.4.*,COMPLETE,-,445
 pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,==6.20.*,COMPLETE,-,770,UP_TO_DATE,UPLOADED,STRICT,305,0,167,0,0,0,2,2,225,1,0,31,0,0,ERROR_ON_MISSING_STUB,linux,49
 pyjks,types-pyjks,https://github.com/kurtbrose/pyjks,==20.0.*,COMPLETE,-,376,UP_TO_DATE,UPLOADED,STRICT,132,0,59,0,0,0,0,0,73,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,32
 pyluach,types-pyluach,https://github.com/simlist/pyluach,==2.3.*,COMPLETE,-,271,UP_TO_DATE,UPLOADED,STRICT,163,0,127,0,0,0,0,0,35,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,1
-pynput,types-pynput,https://github.com/moses-palmer/pynput,~=1.8.1,COMPLETE,-,333,UP_TO_DATE,UPLOADED,STRICT,87,0,71,0,0,0,11,0,63,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,7
+pynput,types-pynput,https://github.com/moses-palmer/pynput,~=1.8.1,COMPLETE,-,365,UP_TO_DATE,UPLOADED,STRICT,87,0,71,0,0,0,11,0,63,1,0,24,2,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,7
 pyperclip,types-pyperclip,https://github.com/asweigart/pyperclip,==1.11.*,COMPLETE,-,17,UP_TO_DATE,UPLOADED,STRICT,3,0,6,0,0,0,0,0,0,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1
 pyphen,types-pyphen,https://github.com/Kozea/Pyphen,==0.17.2,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,21,0,11,0,0,0,0,0,9,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyserial,types-pyserial,https://github.com/pyserial/pyserial,==3.5.*,COMPLETE,-,1170,UP_TO_DATE,UPLOADED,STRICT,224,0,271,0,0,0,2,4,466,7,65,66,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,46
@@ -165,7 +165,7 @@ s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-pro
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,==0.13.2,COMPLETE,-,2602,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1455,25,358,2,18,5,156,18,288,13,14,101,1,0,ERROR_ON_MISSING_STUB,linux,4
 setuptools,types-setuptools,https://github.com/pypa/setuptools,==82.0.*,COMPLETE,"Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.
 ",2938,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,956,239,757,109,14,11,5,6,607,3,198,129,0,0,ERROR_ON_MISSING_STUB,linux;win32,75
-shapely,types-shapely,https://github.com/shapely/shapely,==2.1.*,COMPLETE,-,2848,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1534,427,741,0,0,0,14,15,167,0,1,42,0,0,ERROR_ON_MISSING_STUB,linux,3
+shapely,types-shapely,https://github.com/shapely/shapely,==2.1.*,COMPLETE,-,3034,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1852,109,741,0,0,0,14,15,173,2,1,45,0,0,ERROR_ON_MISSING_STUB,linux,3
 simple-websocket,types-simple-websocket,https://github.com/miguelgrinberg/simple-websocket,==1.1.*,COMPLETE,-,304,UP_TO_DATE,UPLOADED,NOT_STRICT,108,1,44,0,0,0,7,0,77,1,1,18,0,0,ERROR_ON_MISSING_STUB,linux,0
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,==3.20.*,COMPLETE,-,291,OUT_OF_DATE,UPLOADED,STRICT,179,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,9
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,==4.1.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
