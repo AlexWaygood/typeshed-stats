@@ -5677,11 +5677,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-kafka-python` aims to provide accurate annotations for `kafka-python==2.3.*`.
+The latest version of `types-kafka-python` aims to provide accurate annotations for `kafka-python==2.3.2`.
 
 ### Number of lines
 
-4,739 (excluding blank lines)
+4,744 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5706,21 +5706,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `kafka-python`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 154
-    - Unannotated parameters: 860
+    - Annotated parameters: 159
+    - Unannotated parameters: 856
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 344
-    - Unannotated returns: 639
+    - Annotated returns: 347
+    - Unannotated returns: 636
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
     - Annotated variables: 2,159
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 736
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 734
 - Class definitions:
-    - Total class definitions: 652
+    - Total class definitions: 653
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 1
 
@@ -9164,9 +9164,9 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 39,714 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10447,7 +10447,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,905 (excluding blank lines)
+69,918 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10472,21 +10472,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,196
+    - Annotated parameters: 30,204
     - Unannotated parameters: 582
     - Explicit `Any` parameters: 1,984
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 17,026
+    - Annotated returns: 17,029
     - Unannotated returns: 225
     - Explicit `Any` returns: 829
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
 - Variables:
-    - Annotated variables: 9,604
+    - Annotated variables: 9,605
     - Explicit `Any` variables: 306
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
-    - Total class definitions: 3,234
+    - Total class definitions: 3,235
     - Class definitions with `Any`: 32
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -12100,7 +12100,7 @@ The latest version of `types-yt-dlp` aims to provide accurate annotations for `y
 
 ### Number of lines
 
-3,581 (excluding blank lines)
+3,584 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -12135,9 +12135,9 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` returns: 131
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 577
-    - Explicit `Any` variables: 29
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 30
+    - Annotated variables: 579
+    - Explicit `Any` variables: 30
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 31
 - Class definitions:
     - Total class definitions: 191
     - Class definitions with `Any`: 1
