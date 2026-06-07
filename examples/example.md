@@ -1716,15 +1716,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-bleach` aims to provide accurate annotations for `bleach==6.3.*`.
+The latest version of `types-bleach` aims to provide accurate annotations for `bleach==6.4.*`.
 
 ### Number of lines
 
 240 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4587,7 +4587,7 @@ The latest version of `types-grpcio` aims to provide accurate annotations for `g
 
 ### Number of lines
 
-929 (excluding blank lines)
+930 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4617,7 +4617,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 208
+    - Annotated returns: 209
     - Unannotated returns: 1
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
@@ -10447,7 +10447,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,918 (excluding blank lines)
+69,917 (excluding blank lines)
 
 ### Package status: *stdlib*
 
