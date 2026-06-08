@@ -132,7 +132,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-Flask-Cors` aims to provide accurate annotations for `Flask-Cors==6.0.*`.
+The latest version of `types-Flask-Cors` aims to provide accurate annotations for `Flask-Cors~=6.0.3`.
 
 ### Number of lines
 
@@ -10447,7 +10447,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,917 (excluding blank lines)
+69,916 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10872,15 +10872,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-tqdm` aims to provide accurate annotations for `tqdm==4.67.3`.
+The latest version of `types-tqdm` aims to provide accurate annotations for `tqdm==4.68.*`.
 
 ### Number of lines
 
-1,504 (excluding blank lines)
+1,554 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -10892,7 +10892,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 unique allowlist entries for `tqdm` when running stubtest in CI.
+Typeshed currently has 3 unique allowlist entries for `tqdm` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -10901,15 +10901,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tqdm`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 877
-    - Unannotated parameters: 145
-    - Explicit `Any` parameters: 15
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 31
+    - Annotated parameters: 910
+    - Unannotated parameters: 144
+    - Explicit `Any` parameters: 21
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 30
 - Returns:
-    - Annotated returns: 179
+    - Annotated returns: 184
     - Unannotated returns: 25
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
     - Annotated variables: 133
     - Explicit `Any` variables: 0
