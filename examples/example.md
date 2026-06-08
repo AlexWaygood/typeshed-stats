@@ -132,15 +132,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-Flask-Cors` aims to provide accurate annotations for `Flask-Cors~=6.0.3`.
+The latest version of `types-Flask-Cors` aims to provide accurate annotations for `Flask-Cors==6.0.3`.
 
 ### Number of lines
 
 128 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *obsolete*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
@@ -9158,15 +9158,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-pywin32` aims to provide accurate annotations for `pywin32==311.*`.
+The latest version of `types-pywin32` aims to provide accurate annotations for `pywin32==312.*`.
 
 ### Number of lines
 
-39,714 (excluding blank lines)
+39,735 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -9187,21 +9187,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 4,137
-    - Unannotated parameters: 3,667
+    - Annotated parameters: 4,145
+    - Unannotated parameters: 3,666
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 383
 - Returns:
-    - Annotated returns: 4,112
+    - Annotated returns: 4,118
     - Unannotated returns: 1,874
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 289
 - Variables:
-    - Annotated variables: 29,606
+    - Annotated variables: 29,610
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,858
 - Class definitions:
-    - Total class definitions: 774
+    - Total class definitions: 775
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
