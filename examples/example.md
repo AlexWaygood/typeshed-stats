@@ -9654,7 +9654,7 @@ The latest version of `types-requests-oauthlib` aims to provide accurate annotat
 
 ### Number of lines
 
-270 (excluding blank lines)
+271 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10394,7 +10394,7 @@ The latest version of `types-slumber` aims to provide accurate annotations for `
 
 ### Number of lines
 
-71 (excluding blank lines)
+77 (excluding blank lines)
 
 ### Package status: *up to date*
 
