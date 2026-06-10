@@ -94,6 +94,12 @@ repos:
           - python
           - pyi
           - markdown
+  - repo: https://github.com/astral-sh/ty-pre-commit
+    rev: v0.0.47
+    hooks:
+      - id: ty
+        priority: 0
+        args: [--isolated]
 
 ci:
   autofix_commit_msg: "[pre-commit.ci] auto fixes from pre-commit.com hooks"

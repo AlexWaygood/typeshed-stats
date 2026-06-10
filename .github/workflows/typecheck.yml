@@ -50,7 +50,7 @@ jobs:
         with:
           persist-credentials: false
       - uses: astral-sh/setup-uv@v7
-      - run: uv run ty check
+      - run: uvx prek run -a ty
 
   pyright:
     name: Run pyright on the codebase
