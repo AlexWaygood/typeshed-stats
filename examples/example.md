@@ -1216,6 +1216,67 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `WebTest`
+
+### Upstream repo URL
+
+[https://github.com/Pylons/webtest](https://github.com/Pylons/webtest)
+
+### Stub distribution name
+
+`types-WebTest`
+
+### Version
+
+The latest version of `types-WebTest` aims to provide accurate annotations for `WebTest==3.0.*`.
+
+### Number of lines
+
+501 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 6 unique allowlist entries for `WebTest` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `WebTest`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 234
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 106
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 72
+    - Explicit `Any` variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 25
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `aiofiles`
 
 ### Upstream repo URL
@@ -1781,7 +1842,7 @@ The latest version of `types-boltons` aims to provide accurate annotations for `
 
 ### Number of lines
 
-1,357 (excluding blank lines)
+1,370 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1806,14 +1867,14 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `boltons`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 610
+    - Annotated parameters: 617
     - Unannotated parameters: 335
     - Explicit `Any` parameters: 60
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 8
 - Returns:
-    - Annotated returns: 478
-    - Unannotated returns: 170
-    - Explicit `Any` returns: 16
+    - Annotated returns: 487
+    - Unannotated returns: 166
+    - Explicit `Any` returns: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
     - Annotated variables: 233
@@ -10447,7 +10508,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-69,925 (excluding blank lines)
+70,066 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10463,7 +10524,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 808 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 875 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10482,7 +10543,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 829
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
 - Variables:
-    - Annotated variables: 9,609
+    - Annotated variables: 9,676
     - Explicit `Any` variables: 307
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 221
 - Class definitions:
@@ -11980,9 +12041,9 @@ The latest version of `types-xmldiff` aims to provide accurate annotations for `
 
 296 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
