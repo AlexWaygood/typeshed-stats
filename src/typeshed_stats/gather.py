@@ -90,16 +90,6 @@ class _NiceReprEnum(Enum):
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}.{self.name}"
 
-
-
-
-
-
-
-
-
-
-    
     @property
     def formatted_name(self) -> str:
         return " ".join(self.name.split("_")).lower()
