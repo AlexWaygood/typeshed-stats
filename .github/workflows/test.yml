@@ -64,10 +64,10 @@ jobs:
   prek:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: j178/prek-action@v2
-    - uses: pre-commit-ci/lite-action@v1.1.0
-      if: always()
+      - uses: actions/checkout@v3
+      - uses: j178/prek-action@v2
+      - uses: pre-commit-ci/lite-action@v1.1.0
+        if: always()
 
   create-issue-on-failure:
     name: Create an issue if daily test failed
