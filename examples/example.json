@@ -6042,7 +6042,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 70067,
+    "number_of_lines": 70069,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -6064,7 +6064,7 @@
       "explicit_Incomplete_returns": 21,
       "explicit_Any_parameters": 1984,
       "explicit_Any_returns": 829,
-      "annotated_variables": 9676,
+      "annotated_variables": 9678,
       "explicit_Any_variables": 307,
       "explicit_Incomplete_variables": 221,
       "classdefs": 3235,
