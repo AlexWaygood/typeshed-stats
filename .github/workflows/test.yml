@@ -61,6 +61,14 @@ jobs:
           uv run --group=dev coverage run -m pytest --doctest-modules
           uv run --group=dev coverage report --no-skip-covered
 
+  prek:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: j178/prek-action@v2
+    - uses: pre-commit-ci/lite-action@v1.1.0
+      if: always()
+
   create-issue-on-failure:
     name: Create an issue if daily test failed
     runs-on: ubuntu-latest
