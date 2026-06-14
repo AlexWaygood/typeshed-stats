@@ -4648,7 +4648,7 @@ The latest version of `types-grpcio` aims to provide accurate annotations for `g
 
 ### Number of lines
 
-930 (excluding blank lines)
+944 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4678,7 +4678,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 209
+    - Annotated returns: 210
     - Unannotated returns: 1
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
@@ -8188,9 +8188,9 @@ The latest version of `types-pyinstaller` aims to provide accurate annotations f
 
 770 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -8592,67 +8592,6 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 65
 - Class definitions:
     - Total class definitions: 66
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
-## Info on typeshed's stubs for `pysftp`
-
-### Upstream repo URL
-
-[https://bitbucket.org/dundeemt/pysftp](https://bitbucket.org/dundeemt/pysftp)
-
-### Stub distribution name
-
-`types-pysftp`
-
-### Version
-
-The latest version of `types-pysftp` aims to provide accurate annotations for `pysftp==0.2.*`.
-
-### Number of lines
-
-166 (excluding blank lines)
-
-### Package status: *up to date*
-
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 0 allowlist entries for `pysftp` when running stubtest in CI.
-
-### Pyright settings in CI: *strict*
-
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
-
-### Statistics on the annotations in typeshed's stubs for `pysftp`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 109
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
-- Returns:
-    - Annotated returns: 70
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 6
-    - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 6
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
