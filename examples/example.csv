@@ -47,7 +47,7 @@ console-menu,types-console-menu,https://github.com/aegirhall/console-menu,==0.8.
 convertdate,types-convertdate,https://github.com/fitnr/convertdate,==2.4.1,COMPLETE,-,560,UP_TO_DATE,UPLOADED,STRICT,488,0,267,0,0,0,0,0,135,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 croniter,types-croniter,https://github.com/pallets-eco/croniter,==6.2.2,COMPLETE,-,368,UP_TO_DATE,UPLOADED,STRICT,167,0,39,0,0,0,1,0,49,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
 datauri,types-datauri,https://github.com/eclecticiq/python-data-uri,==1.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,0,0,0,4,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,~=1.4.0,COMPLETE,-,681,UP_TO_DATE,UPLOADED,NOT_STRICT,292,8,155,4,7,2,11,1,175,0,5,40,0,0,ERROR_ON_MISSING_STUB,linux,6
+dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,~=1.4.1,COMPLETE,-,680,UP_TO_DATE,UPLOADED,NOT_STRICT,292,8,155,4,6,2,11,1,175,0,2,40,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,https://github.com/micheles/decorator,==5.2.*,COMPLETE,-,66,OBSOLETE,UPLOADED,STRICT,40,0,13,0,0,0,21,6,16,4,0,2,0,0,ERROR_ON_MISSING_STUB,linux,5
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,==0.7.*,COMPLETE,-,354,UP_TO_DATE,UPLOADED,NOT_STRICT,202,20,50,13,0,0,0,1,42,0,3,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 dirhash,types-dirhash,https://github.com/andhus/dirhash-python,==0.5.*,COMPLETE,-,87,UP_TO_DATE,UPLOADED,STRICT,39,0,13,0,0,0,0,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -113,7 +113,7 @@ objgraph,types-objgraph,https://github.com/mgedmin/objgraph,==3.6.*,COMPLETE,-,8
 olefile,types-olefile,https://github.com/decalage2/olefile,==0.47.*,COMPLETE,-,222,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,75,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,==3.1.5,COMPLETE,-,13111,UP_TO_DATE,UPLOADED,NOT_STRICT,3704,511,1312,87,12,7,13,11,4019,4,339,603,1,20,ERROR_ON_MISSING_STUB,linux,169
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,==2.4.*,COMPLETE,-,332,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,104,1,113,0,0,0,21,0,56,4,0,26,0,0,ERROR_ON_MISSING_STUB,linux,4
-paramiko,types-paramiko,https://github.com/paramiko/paramiko,==4.0.*,COMPLETE,-,1890,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,775,8,643,3,2,0,13,6,559,4,23,128,2,0,ERROR_ON_MISSING_STUB,linux;win32,4
+paramiko,types-paramiko,https://github.com/paramiko/paramiko,==5.0.*,COMPLETE,-,1747,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,678,8,596,3,2,0,13,3,497,4,23,118,2,0,ERROR_ON_MISSING_STUB,linux;win32,4
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,==0.11.*,COMPLETE,-,197,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,114,0,59,1,0,0,22,2,34,3,2,28,0,0,ERROR_ON_MISSING_STUB,linux,3
 passpy,types-passpy,https://github.com/bfrascher/passpy,==1.0.*,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
 peewee,types-peewee,https://github.com/coleifer/peewee,==4.0.5,PARTIAL,-,1801,OUT_OF_DATE,UPLOADED,NOT_STRICT,237,914,582,259,0,29,2,0,410,31,282,173,0,0,ERROR_ON_MISSING_STUB,linux,21

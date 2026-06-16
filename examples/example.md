@@ -2936,11 +2936,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser~=1.4.0`.
+The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser~=1.4.1`.
 
 ### Number of lines
 
-681 (excluding blank lines)
+680 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2968,7 +2968,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated parameters: 292
     - Unannotated parameters: 8
     - Explicit `Any` parameters: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
 - Returns:
     - Annotated returns: 155
     - Unannotated returns: 4
@@ -2977,7 +2977,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Variables:
     - Annotated variables: 175
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
     - Total class definitions: 40
     - Class definitions with `Any`: 0
@@ -6958,15 +6958,15 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Version
 
-The latest version of `types-paramiko` aims to provide accurate annotations for `paramiko==4.0.*`.
+The latest version of `types-paramiko` aims to provide accurate annotations for `paramiko==5.0.*`.
 
 ### Number of lines
 
-1,890 (excluding blank lines)
+1,747 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6987,21 +6987,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `paramiko`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 775
+    - Annotated parameters: 678
     - Unannotated parameters: 8
     - Explicit `Any` parameters: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 643
+    - Annotated returns: 596
     - Unannotated returns: 3
-    - Explicit `Any` returns: 6
+    - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 559
+    - Annotated variables: 497
     - Explicit `Any` variables: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 23
 - Class definitions:
-    - Total class definitions: 128
+    - Total class definitions: 118
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
