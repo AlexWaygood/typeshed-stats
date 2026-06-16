@@ -8182,15 +8182,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-pyinstaller` aims to provide accurate annotations for `pyinstaller==6.20.*`.
+The latest version of `types-pyinstaller` aims to provide accurate annotations for `pyinstaller==6.21.*`.
 
 ### Number of lines
 
-770 (excluding blank lines)
+793 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8202,7 +8202,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 49 unique allowlist entries for `pyinstaller` when running stubtest in CI.
+Typeshed currently has 48 unique allowlist entries for `pyinstaller` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -8211,21 +8211,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `pyinstaller`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 305
+    - Annotated parameters: 306
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 167
+    - Annotated returns: 169
     - Unannotated returns: 0
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 225
+    - Annotated variables: 241
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 31
+    - Total class definitions: 32
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
