@@ -1,4 +1,4 @@
-name: Typecheck
+name: Lint
 
 on:
   push:
@@ -42,16 +42,6 @@ jobs:
       - uses: astral-sh/setup-uv@v7
       - run: uv run --python=3.11 --group=dev mypy
 
-  ty:
-    name: Check code with ty
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          persist-credentials: false
-      - uses: astral-sh/setup-uv@v7
-      - run: uvx prek run -a ty
-
   pyright:
     name: Run pyright on the codebase
     runs-on: ubuntu-latest
@@ -69,10 +59,21 @@ jobs:
         with:
           version: PATH
 
-  create-issue-on-failure:
-    name: Create an issue if daily typecheck failed
+  prek:
     runs-on: ubuntu-latest
-    needs: [mypy, pyright, ty]
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v7
+      - run: uvx prek run -a
+      - uses: pre-commit-ci/lite-action@v1.1.0
+        if: always()
+
+  create-issue-on-failure:
+    name: Create an issue if daily lint checks failed
+    runs-on: ubuntu-latest
+    needs: [mypy, pyright, prek]
     if: >-
       ${{
         github.repository == 'AlexWaygood/typeshed-stats'
@@ -81,7 +82,7 @@ jobs:
         && (
           needs.mypy.result == 'failure'
           || needs.pyright.result == 'failure'
-          || needs.ty.result == 'failure'
+          || needs.prek.result == 'failure'
         )
       }}
     permissions:
@@ -94,6 +95,6 @@ jobs:
             await github.rest.issues.create({
               owner: "AlexWaygood",
               repo: "typeshed-stats",
-              title: `Daily typecheck failed on ${new Date().toDateString()}`,
+              title: `Daily lint checks failed on ${new Date().toDateString()}`,
               body: "Run listed here: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
             })

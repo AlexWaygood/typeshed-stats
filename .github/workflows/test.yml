@@ -61,17 +61,6 @@ jobs:
           uv run --group=dev coverage run -m pytest --doctest-modules
           uv run --group=dev coverage report --no-skip-covered
 
-  prek:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          persist-credentials: false
-      - uses: astral-sh/setup-uv@v7
-      - run: uvx prek run -a
-      - uses: pre-commit-ci/lite-action@v1.1.0
-        if: always()
-
   create-issue-on-failure:
     name: Create an issue if daily test failed
     runs-on: ubuntu-latest
