@@ -8003,7 +8003,7 @@ The latest version of `types-pycurl` aims to provide accurate annotations for `p
 
 ### Number of lines
 
-877 (excluding blank lines)
+894 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8021,22 +8021,22 @@ In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
 Typeshed currently has 0 allowlist entries for `pycurl` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
 
 ### Statistics on the annotations in typeshed's stubs for `pycurl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 81
-    - Unannotated parameters: 4
-    - Explicit `Any` parameters: 4
+    - Annotated parameters: 85
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 73
     - Unannotated returns: 0
     - Explicit `Any` returns: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 734
     - Explicit `Any` variables: 0
