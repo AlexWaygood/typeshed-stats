@@ -422,14 +422,18 @@ class StubtestStrictness(_NiceReprEnum):
     )
 
 
+def _is_dict_with_str_keys(mapping: object) -> TypeGuard[dict[str, Any]]:
+    return isinstance(mapping, dict) and all(isinstance(key, str) for key in mapping)
+
+
 @lru_cache
 def _get_stubtest_config(
     package_name: PackageName, typeshed_dir: Path | str
 ) -> Mapping[str, object]:
     tool_config = _get_package_metadata(package_name, typeshed_dir).get("tool", {})
     assert isinstance(tool_config, dict)
-    stubtest_config = tool_config.get("stubtest", {})  # ty: ignore[no-matching-overload]
-    assert isinstance(stubtest_config, dict)
+    stubtest_config = tool_config.get("stubtest", {})
+    assert _is_dict_with_str_keys(stubtest_config)
     return stubtest_config
 
 
