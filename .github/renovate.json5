@@ -19,14 +19,14 @@
     {
       groupName: "most test/lint dependencies",
       matchManagers: ["pep621", "pre-commit"],
-      matchPackageNames: ["!ty"],
+      matchPackageNames: ["!astral-sh/ty-pre-commit"],
       description: "Quarterly update of most test/lint dependencies",
       schedule: ["every 3 months on the first day of the month"],
     },
     {
       groupName: "ty",
-      matchManagers: ["pep621"],
-      matchPackageNames: ["ty"],
+      matchManagers: ["pre-commit"],
+      matchPackageNames: ["astral-sh/ty-pre-commit"],
       description: "Daily ty update",
       schedule: ["at any time"],
     },
