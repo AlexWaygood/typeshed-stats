@@ -39,7 +39,7 @@ chevron,types-chevron,https://github.com/noahmorrison/chevron,==0.14.*,COMPLETE,
 click-default-group,types-click-default-group,https://github.com/click-contrib/click-default-group,==1.2.*,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,52,0,14,0,0,0,7,4,7,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-log,types-click-log,https://github.com/click-contrib/click-log,==0.4.*,COMPLETE,-,21,UP_TO_DATE,UPLOADED,STRICT,6,0,4,0,0,0,1,0,6,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-shell,types-click-shell,https://github.com/clarkperkins/click-shell,==2.1,COMPLETE,-,71,UP_TO_DATE,UPLOADED,STRICT,40,0,23,0,0,0,4,1,4,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
-click-spinner,types-click-spinner,https://github.com/click-contrib/click-spinner,==0.1.*,COMPLETE,-,37,OUT_OF_DATE,UPLOADED,STRICT,12,0,11,0,0,0,0,0,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
+click-spinner,types-click-spinner,https://github.com/click-contrib/click-spinner,==0.1.11,COMPLETE,-,28,OBSOLETE,UPLOADED,STRICT,12,0,10,0,0,0,0,0,8,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-web,types-click-web,https://github.com/fredrik-corneliusson/click-web,==0.8.*,COMPLETE,-,185,UP_TO_DATE,UPLOADED,STRICT,68,0,60,0,0,0,0,4,54,4,1,29,2,0,ERROR_ON_MISSING_STUB,linux,0
 colorama,types-colorama,https://github.com/tartley/colorama,==0.4.*,COMPLETE,-,200,UP_TO_DATE,UPLOADED,STRICT,89,0,60,0,0,0,3,1,85,0,0,11,0,0,ERROR_ON_MISSING_STUB,linux;win32,44
 colorful,types-colorful,https://github.com/timofurrer/colorful,==0.5.*,COMPLETE,-,128,UP_TO_DATE,UPLOADED,NOT_STRICT,73,1,49,0,0,0,0,1,40,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -172,7 +172,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,==3.20.*,CO
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,==4.1.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,==1.17.*,COMPLETE,-,331,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,22
 slumber,types-slumber,https://github.com/samgiles/slumber,==0.7.*,COMPLETE,-,77,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,70087,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30215,582,17034,225,11,21,1984,831,9678,307,221,3235,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,875
+stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,70162,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30229,582,17042,225,11,21,1986,827,9736,308,233,3238,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,857
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,==1.1,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.10.*,COMPLETE,-,62,UP_TO_DATE,UPLOADED,STRICT,21,0,3,0,0,0,2,0,23,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30294,OUT_OF_DATE,UPLOADED,NOT_STRICT,5391,38,2939,40,12,23,60,34,5437,5,12,927,1,0,SKIPPED,None,51

@@ -1406,11 +1406,11 @@
     "package_name": "click-spinner",
     "stub_distribution_name": "types-click-spinner",
     "upstream_url": "https://github.com/click-contrib/click-spinner",
-    "version": "==0.1.*",
+    "version": "==0.1.11",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 37,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 28,
+    "package_status": "OBSOLETE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -1423,16 +1423,16 @@
     "annotation_stats": {
       "annotated_parameters": 12,
       "unannotated_parameters": 0,
-      "annotated_returns": 11,
+      "annotated_returns": 10,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 13,
+      "annotated_variables": 8,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 3,
+      "classdefs": 2,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -6042,7 +6042,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 70087,
+    "number_of_lines": 70162,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -6052,22 +6052,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 875
+      "allowlist_length": 857
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30215,
+      "annotated_parameters": 30229,
       "unannotated_parameters": 582,
-      "annotated_returns": 17034,
+      "annotated_returns": 17042,
       "unannotated_returns": 225,
       "explicit_Incomplete_parameters": 11,
       "explicit_Incomplete_returns": 21,
-      "explicit_Any_parameters": 1984,
-      "explicit_Any_returns": 831,
-      "annotated_variables": 9678,
-      "explicit_Any_variables": 307,
-      "explicit_Incomplete_variables": 221,
-      "classdefs": 3235,
+      "explicit_Any_parameters": 1986,
+      "explicit_Any_returns": 827,
+      "annotated_variables": 9736,
+      "explicit_Any_variables": 308,
+      "explicit_Incomplete_variables": 233,
+      "classdefs": 3238,
       "classdefs_with_Any": 32,
       "classdefs_with_Incomplete": 0
     }
