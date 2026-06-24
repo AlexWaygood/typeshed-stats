@@ -39,7 +39,7 @@ chevron,types-chevron,https://github.com/noahmorrison/chevron,==0.14.*,COMPLETE,
 click-default-group,types-click-default-group,https://github.com/click-contrib/click-default-group,==1.2.*,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,52,0,14,0,0,0,7,4,7,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-log,types-click-log,https://github.com/click-contrib/click-log,==0.4.*,COMPLETE,-,21,UP_TO_DATE,UPLOADED,STRICT,6,0,4,0,0,0,1,0,6,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-shell,types-click-shell,https://github.com/clarkperkins/click-shell,==2.1,COMPLETE,-,71,UP_TO_DATE,UPLOADED,STRICT,40,0,23,0,0,0,4,1,4,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
-click-spinner,types-click-spinner,https://github.com/click-contrib/click-spinner,==0.1.*,COMPLETE,-,37,UP_TO_DATE,UPLOADED,STRICT,12,0,11,0,0,0,0,0,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
+click-spinner,types-click-spinner,https://github.com/click-contrib/click-spinner,==0.1.*,COMPLETE,-,37,OUT_OF_DATE,UPLOADED,STRICT,12,0,11,0,0,0,0,0,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 click-web,types-click-web,https://github.com/fredrik-corneliusson/click-web,==0.8.*,COMPLETE,-,185,UP_TO_DATE,UPLOADED,STRICT,68,0,60,0,0,0,0,4,54,4,1,29,2,0,ERROR_ON_MISSING_STUB,linux,0
 colorama,types-colorama,https://github.com/tartley/colorama,==0.4.*,COMPLETE,-,200,UP_TO_DATE,UPLOADED,STRICT,89,0,60,0,0,0,3,1,85,0,0,11,0,0,ERROR_ON_MISSING_STUB,linux;win32,44
 colorful,types-colorful,https://github.com/timofurrer/colorful,==0.5.*,COMPLETE,-,128,UP_TO_DATE,UPLOADED,NOT_STRICT,73,1,49,0,0,0,0,1,40,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
