@@ -5683,9 +5683,9 @@ The latest version of `types-jwcrypto` aims to provide accurate annotations for 
 
 495 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10508,7 +10508,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,162 (excluding blank lines)
+70,176 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10540,10 +10540,10 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Returns:
     - Annotated returns: 17,042
     - Unannotated returns: 225
-    - Explicit `Any` returns: 827
+    - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
 - Variables:
-    - Annotated variables: 9,736
+    - Annotated variables: 9,738
     - Explicit `Any` variables: 308
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 233
 - Class definitions:
