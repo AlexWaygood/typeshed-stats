@@ -10543,7 +10543,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
 - Variables:
-    - Annotated variables: 9,738
+    - Annotated variables: 9,739
     - Explicit `Any` variables: 308
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 233
 - Class definitions:
