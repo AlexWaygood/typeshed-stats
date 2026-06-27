@@ -206,7 +206,7 @@ class _AnnotationStatsCollector(ast.NodeVisitor):
 
     @property
     def in_class(self) -> bool:
-        """Return `True` if we're currently visiting a class definition."""
+        """`True` if we're currently visiting a class definition."""
         return bool(self._class_nesting)
 
     def visit_ClassDef(self, node: ast.ClassDef) -> None:
@@ -516,7 +516,7 @@ def get_stubtest_ci_platforms(
     match _get_stubtest_config(package_name, typeshed_dir):
         case {"skip": True}:
             return []
-        case {"ci-platforms": list() as platforms}:
+        case {"ci-platforms": platforms} if _is_str_list(platforms):
             return sorted(platforms)
         case _:
             return ["linux"]
