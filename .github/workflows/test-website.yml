@@ -24,12 +24,12 @@ jobs:
   test-website:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: astral-sh/setup-uv@v7
+      - uses: astral-sh/setup-uv@v8.2.0
         with:
-          version: "0.11.21"
+          version: "0.11.26"
           python-version: "3.14"
       - run: uv sync --group=dev
       - run: uv pip freeze
