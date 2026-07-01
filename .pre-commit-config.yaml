@@ -7,7 +7,7 @@ repos:
         language: python # means renovate will update the `additional_dependencies` for the hook
         additional_dependencies: ["tomli"]
   - repo: https://github.com/alan-turing-institute/CleverCSV-pre-commit
-    rev: v0.8.4
+    rev: v0.8.5
     hooks:
       - id: clevercsv-standardize
         priority: 0
@@ -17,12 +17,12 @@ repos:
       - id: validate-pyproject
         priority: 0
   - repo: https://github.com/woodruffw/zizmor-pre-commit
-    rev: v1.23.1
+    rev: v1.26.1
     hooks:
       - id: zizmor
         priority: 0
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.37.1
+    rev: 0.37.4
     hooks:
       - id: check-github-workflows
         priority: 0
@@ -68,7 +68,7 @@ repos:
       - id: end-of-file-fixer
         priority: 2
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.48.0
+    rev: v0.49.0
     hooks:
       - id: markdownlint
         priority: 0
@@ -84,7 +84,7 @@ repos:
         exclude: "^examples/.*"
         exclude_types: ["markdown"]
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.9
+    rev: v0.15.20
     hooks:
       - id: ruff-check
         priority: 3
