@@ -26,16 +26,16 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           persist-credentials: true
       - name: git config
         run: |
           git config --global user.name statsabot
           git config --global user.email ''
-      - uses: astral-sh/setup-uv@v7
+      - uses: astral-sh/setup-uv@v8.2.0
         with:
-          version: "0.11.21"
+          version: "0.11.26"
           python-version: "3.14"
       - run: uv sync --group=dev
       - run: uv pip freeze
@@ -83,7 +83,7 @@ jobs:
     permissions:
       issues: write
     steps:
-      - uses: actions/github-script@v8
+      - uses: actions/github-script@v9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
