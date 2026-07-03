@@ -2820,9 +2820,9 @@ The latest version of `types-croniter` aims to provide accurate annotations for 
 
 368 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7999,15 +7999,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-pycurl` aims to provide accurate annotations for `pycurl==7.46.0`.
+The latest version of `types-pycurl` aims to provide accurate annotations for `pycurl==7.47.0`.
 
 ### Number of lines
 
-894 (excluding blank lines)
+933 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8019,7 +8019,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 0 allowlist entries for `pycurl` when running stubtest in CI.
+Typeshed currently has 1 unique allowlist entry for `pycurl` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -8028,21 +8028,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `pycurl`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 85
+    - Annotated parameters: 104
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 7
+    - Explicit `Any` parameters: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 73
+    - Annotated returns: 91
     - Unannotated returns: 0
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 734
+    - Annotated variables: 737
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 11
+    - Total class definitions: 12
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
