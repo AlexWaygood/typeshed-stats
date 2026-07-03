@@ -45,7 +45,7 @@ colorama,types-colorama,https://github.com/tartley/colorama,==0.4.*,COMPLETE,-,2
 colorful,types-colorful,https://github.com/timofurrer/colorful,==0.5.*,COMPLETE,-,128,UP_TO_DATE,UPLOADED,NOT_STRICT,73,1,49,0,0,0,0,1,40,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
 console-menu,types-console-menu,https://github.com/aegirhall/console-menu,==0.8.*,COMPLETE,-,736,UP_TO_DATE,UPLOADED,STRICT,217,0,278,0,0,0,7,1,58,3,1,39,0,0,ERROR_ON_MISSING_STUB,linux,0
 convertdate,types-convertdate,https://github.com/fitnr/convertdate,==2.4.1,COMPLETE,-,560,UP_TO_DATE,UPLOADED,STRICT,488,0,267,0,0,0,0,0,135,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-croniter,types-croniter,https://github.com/pallets-eco/croniter,==6.2.2,COMPLETE,-,368,OUT_OF_DATE,UPLOADED,STRICT,167,0,39,0,0,0,1,0,49,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
+croniter,types-croniter,https://github.com/pallets-eco/croniter,==6.2.3,COMPLETE,-,368,UP_TO_DATE,UPLOADED,STRICT,167,0,39,0,0,0,1,0,49,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
 datauri,types-datauri,https://github.com/eclecticiq/python-data-uri,==1.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,0,0,0,4,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,~=1.4.1,COMPLETE,-,680,UP_TO_DATE,UPLOADED,NOT_STRICT,292,8,155,4,6,2,11,1,175,0,2,40,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,https://github.com/micheles/decorator,==5.2.*,COMPLETE,-,66,OBSOLETE,UPLOADED,STRICT,40,0,13,0,0,0,21,6,16,4,0,2,0,0,ERROR_ON_MISSING_STUB,linux,5

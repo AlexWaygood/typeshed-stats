@@ -1616,11 +1616,11 @@
     "package_name": "croniter",
     "stub_distribution_name": "types-croniter",
     "upstream_url": "https://github.com/pallets-eco/croniter",
-    "version": "==6.2.2",
+    "version": "==6.2.3",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 368,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
