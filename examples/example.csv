@@ -165,7 +165,7 @@ s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-pro
 scp,types-scp,https://github.com/jbardin/scp.py,==0.15.*,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,38,0,15,0,0,0,0,0,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,==0.13.2,COMPLETE,-,2602,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1455,25,358,2,18,5,156,18,288,13,14,101,1,0,ERROR_ON_MISSING_STUB,linux,4
 setuptools,types-setuptools,https://github.com/pypa/setuptools,==82.0.*,COMPLETE,"Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.
-",2938,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,956,239,757,109,14,11,5,6,607,3,198,129,0,0,ERROR_ON_MISSING_STUB,linux;win32,75
+",2938,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,956,239,757,109,14,11,5,6,607,3,198,129,0,0,ERROR_ON_MISSING_STUB,linux;win32,75
 shapely,types-shapely,https://github.com/shapely/shapely,==2.1.*,COMPLETE,-,3053,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1852,109,749,0,0,0,14,15,173,2,1,45,0,0,ERROR_ON_MISSING_STUB,linux,3
 simple-websocket,types-simple-websocket,https://github.com/miguelgrinberg/simple-websocket,==1.1.*,COMPLETE,-,304,UP_TO_DATE,UPLOADED,NOT_STRICT,108,1,44,0,0,0,7,0,77,1,1,18,0,0,ERROR_ON_MISSING_STUB,linux,0
 simplejson,types-simplejson,https://github.com/simplejson/simplejson,==3.20.*,COMPLETE,-,291,OUT_OF_DATE,UPLOADED,STRICT,179,0,24,0,0,0,46,6,49,7,0,6,0,0,ERROR_ON_MISSING_STUB,linux,9
