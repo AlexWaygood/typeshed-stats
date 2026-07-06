@@ -24,10 +24,10 @@ jobs:
   test-website:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           persist-credentials: false
-      - uses: astral-sh/setup-uv@v8.2.0
+      - uses: astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39 # v8.2.0
         with:
           version: "0.11.26"
           python-version: "3.14"
@@ -36,11 +36,11 @@ jobs:
       - name: Regenerate examples and docs
         run: uv run python scripts/regenerate.py --download-typeshed
       - name: Check the generated files with prek
-        run: uvx prek run -a
+        run: uv run prek run --all-files
       - name: Build docs
         run: uv run mkdocs build --strict
       - name: Upload docs
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: doc-html
           path: site

@@ -56,7 +56,6 @@ dev = [
     "beautifulsoup4>=4,<5",
     "covdefaults==2.3.0",
     "coverage==7.15.0",
-    "Markdown>=3,<4",
     "pyright==1.1.411",
     "pytest==9.1.1",
     "pytest-antilru==2.0.1",
@@ -67,6 +66,7 @@ dev = [
     "mypy==2.1.0",
     "types-beautifulsoup4==4.12.0.20250516",
     "types-Markdown==3.10.2.20260518",
+    "prek==0.4.2",
 ]
 
 [tool.hatch.version]
