@@ -9,7 +9,14 @@ import sys
 import tomllib
 import urllib.parse
 from collections import Counter
-from collections.abc import Collection, Container, Iterable, Iterator, Mapping, Sequence
+from collections.abc import (
+    Collection,
+    Container,
+    Generator,
+    Iterable,
+    Mapping,
+    Sequence,
+)
 from contextlib import AsyncExitStack, contextmanager
 from enum import Enum
 from functools import lru_cache, partial
@@ -1456,7 +1463,7 @@ def gather_stats_on_multiple_packages(
 
 
 @contextmanager
-def tmpdir_typeshed() -> Iterator[Path]:
+def tmpdir_typeshed() -> Generator[Path]:
     """Clone typeshed into a tempdir, then yield a [`Path`][pathlib.Path] pointing to it.
 
     A context manager.
