@@ -64,7 +64,6 @@ dev = [
     "pytest-mock==3.15.1",
     "pytest-subtests==0.15.0",
     "mypy==2.1.0",
-    "types-beautifulsoup4==4.12.0.20250516",
     "types-Markdown==3.10.2.20260518",
     "prek==0.4.2",
 ]
@@ -172,7 +171,6 @@ typeCheckingMode = "strict"
 
 # Extra strict settings
 reportMissingModuleSource = "error"
-reportShadowedImports = "error"
 reportCallInDefaultInitializer = "error"
 reportUnnecessaryTypeIgnoreComment = "error"
 
