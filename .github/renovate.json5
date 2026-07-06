@@ -1,10 +1,34 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["config:recommended", "helpers:pinGitHubActionDigests"],
+  extends: [
+    "config:recommended",
+    "helpers:pinGitHubActionDigests",
+    ":configMigration",
+    "abandonments:recommended",
+    // https://docs.renovatebot.com/presets-helpers/#helperspingithubactiondigeststosemver
+    "helpers:pinGitHubActionDigestsToSemver",
+  ],
+  // apply a default blanket cooldown of 7 days to all dependencies.
+  minimumReleaseAge: "7 days",
   dependencyDashboard: true,
   separateMajorMinor: false,
   suppressNotifications: ["prEditedNotification"],
   semanticCommits: "disabled",
+  internalChecksFilter: "strict",
+
+  // Our PRs are created immediately. We do this instead of not-pending because the latter
+  // makes Renovate wait an additional 24 hours before creating the PR when there are no checks.
+  prCreation: "immediate",
+
+  // By default, Renovate will only create 2 PRs in any single hourly interval.
+  // Per the docs, 0 means "no limit": <https://docs.renovatebot.com/configuration-options/#prhourlylimit>
+  prHourlyLimit: 0,
+
+  // Similarly, by default, Renovate will not create any new PRs if it already has 10 open
+  // on any repo. Per the docs, 0 means "no limit":
+  // <https://docs.renovatebot.com/configuration-options/#prconcurrentlimit>
+  prConcurrentLimit: 0,
+
   enabledManagers: ["github-actions", "pre-commit", "pep621"],
   "pre-commit": {
     enabled: true,
@@ -32,6 +56,8 @@
     },
   ],
   vulnerabilityAlerts: {
+    enabled: true,
+    vulnerabilityFixStrategy: "lowest",
     commitMessageSuffix: "",
   },
 }
