@@ -6041,7 +6041,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 70218,
+    "number_of_lines": 70217,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -6057,7 +6057,7 @@
     "annotation_stats": {
       "annotated_parameters": 30240,
       "unannotated_parameters": 582,
-      "annotated_returns": 17049,
+      "annotated_returns": 17048,
       "unannotated_returns": 225,
       "explicit_Incomplete_parameters": 11,
       "explicit_Incomplete_returns": 21,
