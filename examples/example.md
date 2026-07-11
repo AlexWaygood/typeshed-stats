@@ -441,7 +441,7 @@ The latest version of `types-Markdown` aims to provide accurate annotations for 
 
 ### Number of lines
 
-820 (excluding blank lines)
+826 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1171,7 +1171,7 @@ The latest version of `types-WebOb` aims to provide accurate annotations for `We
 
 ### Number of lines
 
-2,223 (excluding blank lines)
+2,224 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3186,9 +3186,9 @@ The latest version of `types-django-filter` aims to provide accurate annotations
 
 803 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -3304,7 +3304,7 @@ The latest version of `types-docker` aims to provide accurate annotations for `d
 
 ### Number of lines
 
-2,707 (excluding blank lines)
+2,714 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -3609,7 +3609,7 @@ The latest version of `types-ephem` aims to provide accurate annotations for `ep
 
 ### Number of lines
 
-591 (excluding blank lines)
+592 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5193,7 +5193,7 @@ The latest version of `types-httplib2` aims to provide accurate annotations for 
 
 ### Number of lines
 
-242 (excluding blank lines)
+243 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7145,7 +7145,7 @@ The latest version of `types-peewee` aims to provide accurate annotations for `p
 
 ### Number of lines
 
-1,940 (excluding blank lines)
+1,941 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7702,7 +7702,7 @@ The latest version of `types-psycopg2` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,762 (excluding blank lines)
+1,763 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8308,7 +8308,7 @@ The latest version of `types-pyluach` aims to provide accurate annotations for `
 
 ### Number of lines
 
-271 (excluding blank lines)
+272 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8369,7 +8369,7 @@ The latest version of `types-pynput` aims to provide accurate annotations for `p
 
 ### Number of lines
 
-365 (excluding blank lines)
+366 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9528,7 +9528,7 @@ The latest version of `types-reportlab` aims to provide accurate annotations for
 
 ### Number of lines
 
-8,225 (excluding blank lines)
+8,226 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -10508,7 +10508,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,217 (excluding blank lines)
+70,228 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10695,7 +10695,7 @@ The latest version of `types-tensorflow` aims to provide accurate annotations fo
 
 ### Number of lines
 
-30,294 (excluding blank lines)
+30,295 (excluding blank lines)
 
 ### Package status: *out of date*
 
