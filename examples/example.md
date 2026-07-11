@@ -2814,15 +2814,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-croniter` aims to provide accurate annotations for `croniter==6.2.3`.
+The latest version of `types-croniter` aims to provide accurate annotations for `croniter==6.2.4`.
 
 ### Number of lines
 
 368 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4644,11 +4644,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-grpcio` aims to provide accurate annotations for `grpcio==1.*`.
+The latest version of `types-grpcio` aims to provide accurate annotations for `grpcio~=1.82.1`.
 
 ### Number of lines
 
-944 (excluding blank lines)
+989 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4678,16 +4678,16 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 210
+    - Annotated returns: 216
     - Unannotated returns: 1
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 29
+    - Annotated variables: 30
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 68
+    - Total class definitions: 69
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9463,7 +9463,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.6.28`.
+The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.7.10`.
 
 ### Number of lines
 
