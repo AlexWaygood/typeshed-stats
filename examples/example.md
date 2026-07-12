@@ -4345,7 +4345,7 @@ The latest version of `types-gdb` aims to provide accurate annotations for `gdb=
 
 ### Number of lines
 
-1,584 (excluding blank lines)
+1,587 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -4368,12 +4368,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `gdb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 515
+    - Annotated parameters: 517
     - Unannotated parameters: 15
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 421
+    - Annotated returns: 422
     - Unannotated returns: 26
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -8410,6 +8410,67 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Class definitions:
     - Total class definitions: 24
     - Class definitions with `Any`: 2
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
+## Info on typeshed's stubs for `pyogrio`
+
+### Upstream repo URL
+
+[https://github.com/geopandas/pyogrio](https://github.com/geopandas/pyogrio)
+
+### Stub distribution name
+
+`types-pyogrio`
+
+### Version
+
+The latest version of `types-pyogrio` aims to provide accurate annotations for `pyogrio==0.13.*`.
+
+### Number of lines
+
+402 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 2 unique allowlist entries for `pyogrio` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `pyogrio`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 212
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 24
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 28
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 45
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 12
+    - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
