@@ -3,7 +3,7 @@ Authlib,types-Authlib,https://github.com/authlib/authlib,==1.6.11,COMPLETE,-,362
 Deprecated,types-Deprecated,https://github.com/laurent-laporte-pro/deprecated,~=1.3.1,COMPLETE,-,88,UP_TO_DATE,UPLOADED,STRICT,44,0,15,0,0,0,3,0,16,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 Flask-Cors,types-Flask-Cors,https://github.com/corydolphin/flask-cors,==6.0.3,COMPLETE,-,129,OBSOLETE,UPLOADED,STRICT,65,0,24,0,0,0,7,2,32,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrate,==4.1.*,COMPLETE,-,128,UP_TO_DATE,UPLOADED,STRICT,86,0,23,0,0,0,0,0,7,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,1
-Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,==5.6.*,COMPLETE,-,256,UP_TO_DATE,UPLOADED,NOT_STRICT,137,37,37,15,14,1,2,0,21,2,3,11,0,0,ERROR_ON_MISSING_STUB,linux,3
+Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,==5.6.*,COMPLETE,-,256,UP_TO_DATE,UPLOADED,NOT_STRICT,141,33,37,15,14,1,2,0,21,2,3,11,0,0,ERROR_ON_MISSING_STUB,linux,3
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,==0.5.*,COMPLETE,-,314,UP_TO_DATE,UPLOADED,STRICT,107,0,152,0,0,0,0,2,46,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,1
 Jetson.GPIO,types-Jetson.GPIO,https://github.com/NVIDIA/jetson-gpio,==2.1.12,COMPLETE,-,212,UP_TO_DATE,UPLOADED,STRICT,88,0,47,0,0,0,0,2,108,1,0,11,0,0,ERROR_ON_MISSING_STUB,linux,4
 Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,~=3.10.2,COMPLETE,-,826,UP_TO_DATE,UPLOADED,NOT_STRICT,301,33,231,3,0,0,17,4,252,11,0,112,1,0,ERROR_ON_MISSING_STUB,linux,3
@@ -51,7 +51,7 @@ dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,~=1.4.1,CO
 decorator,types-decorator,https://github.com/micheles/decorator,==5.2.*,COMPLETE,-,66,OBSOLETE,UPLOADED,STRICT,40,0,13,0,0,0,21,6,16,4,0,2,0,0,ERROR_ON_MISSING_STUB,linux,5
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,==0.7.*,COMPLETE,-,354,UP_TO_DATE,UPLOADED,NOT_STRICT,202,20,50,13,0,0,0,1,42,0,3,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 dirhash,types-dirhash,https://github.com/andhus/dirhash-python,==0.5.*,COMPLETE,-,87,UP_TO_DATE,UPLOADED,STRICT,39,0,13,0,0,0,0,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
-django-filter,types-django-filter,https://github.com/carltongibson/django-filter/,==25.2.*,COMPLETE,-,803,OUT_OF_DATE,UPLOADED,STRICT,298,0,128,0,0,0,121,44,113,25,0,73,3,0,ERROR_ON_MISSING_STUB,linux,12
+django-filter,types-django-filter,https://github.com/carltongibson/django-filter/,==26.1.*,COMPLETE,-,803,UP_TO_DATE,UPLOADED,STRICT,298,0,128,0,0,0,121,44,113,25,0,73,3,0,ERROR_ON_MISSING_STUB,linux,12
 django-import-export,types-django-import-export,https://github.com/django-import-export/django-import-export,==4.4.*,COMPLETE,-,699,UP_TO_DATE,UPLOADED,STRICT,376,0,255,0,0,0,135,35,156,10,0,72,0,0,SKIPPED,None,0
 docker,types-docker,https://github.com/docker/docker-py,==7.1.*,COMPLETE,-,2714,OUT_OF_DATE,UPLOADED,NOT_STRICT,1387,252,478,113,9,12,42,39,231,2,2,143,28,1,ERROR_ON_MISSING_STUB,linux,6
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,==2.0.*,COMPLETE,-,115,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0

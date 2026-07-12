@@ -283,8 +283,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Flask-SocketIO`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 137
-    - Unannotated parameters: 37
+    - Annotated parameters: 141
+    - Unannotated parameters: 33
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
@@ -3180,15 +3180,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-django-filter` aims to provide accurate annotations for `django-filter==25.2.*`.
+The latest version of `types-django-filter` aims to provide accurate annotations for `django-filter==26.1.*`.
 
 ### Number of lines
 
 803 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
