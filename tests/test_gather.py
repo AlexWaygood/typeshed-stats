@@ -1179,12 +1179,14 @@ def test_gather_stats__on_packages_integrates_with_tmpdir_typeshed() -> None:
     assert set(package_names_in_results) == package_names
 
 
-KNOWN_FULLY_ANNOTATED_FILES_WITH_LAX_PYRIGHT_SETTINGS = frozenset({
+KNOWN_FULLY_ANNOTATED_STDLIB_FILES_WITH_LAX_PYRIGHT_SETTINGS = frozenset({
     Path("stdlib/lib2to3/fixes/fix_imports2.pyi"),
     Path("stdlib/lib2to3/fixes/__init__.pyi"),
     Path("stdlib/xml/sax/__init__.pyi"),
     Path("stdlib/operator.pyi"),
 })
+
+KNOWN_FULLY_ANNOTATED_PACKAGES_WITH_LAX_PYRIGHT_SETTINGS = frozenset({"pyogrio"})
 
 
 @pytest.mark.dependency(depends=["integration_basic"])
@@ -1229,7 +1231,10 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
                     f"{s.package_name!r} has unannotated parameters and/or returns, "
                     "but has the strictest pyright settings in CI"
                 )
-            else:
+            elif (
+                s.package_name
+                not in KNOWN_FULLY_ANNOTATED_PACKAGES_WITH_LAX_PYRIGHT_SETTINGS
+            ):
                 assert is_only_partially_annotated, (
                     "Likely bug detected: "
                     f"{s.package_name!r} is fully annotated, "
@@ -1255,7 +1260,8 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
                     "but has the strictest pyright settings in CI"
                 )
             elif (
-                f.file_path not in KNOWN_FULLY_ANNOTATED_FILES_WITH_LAX_PYRIGHT_SETTINGS
+                f.file_path
+                not in KNOWN_FULLY_ANNOTATED_STDLIB_FILES_WITH_LAX_PYRIGHT_SETTINGS
             ):
                 assert is_only_partially_annotated, (
                     "Likely bug detected: "
