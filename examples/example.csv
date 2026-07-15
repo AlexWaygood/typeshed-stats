@@ -81,7 +81,7 @@ grpcio-health-checking,types-grpcio-health-checking,https://github.com/grpc/grpc
 grpcio-reflection,types-grpcio-reflection,https://github.com/grpc/grpc,==1.*,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,34,17,18,4,7,0,0,0,55,0,1,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-status,types-grpcio-status,https://github.com/grpc/grpc,==1.*,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1,2,2,1,0,1,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 gunicorn,types-gunicorn,https://github.com/benoitc/gunicorn,==26.0.0,COMPLETE,-,3453,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,899,18,711,6,43,31,22,15,1516,25,20,301,1,0,ERROR_ON_MISSING_STUB,darwin;linux,4
-hdbcli,types-hdbcli,-,==2.25.*,COMPLETE,-,147,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,78,4,65,3,0,0,13,10,21,2,1,16,0,0,ERROR_ON_MISSING_STUB,linux,8
+hdbcli,types-hdbcli,-,==2.29.*,COMPLETE,-,190,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,113,4,91,3,0,0,15,15,21,2,1,19,0,0,ERROR_ON_MISSING_STUB,linux,17
 hnswlib,types-hnswlib,https://github.com/nmslib/hnswlib,==0.8.*,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,32,0,26,0,0,0,1,0,3,0,1,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,==1.1.*,COMPLETE,-,850,UP_TO_DATE,UPLOADED,NOT_STRICT,204,128,252,60,6,6,7,2,246,0,68,42,0,9,ERROR_ON_MISSING_STUB,linux,5
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,==0.31.2,COMPLETE,-,243,OUT_OF_DATE,UPLOADED,NOT_STRICT,39,116,54,7,1,0,0,0,94,0,34,26,0,0,ERROR_ON_MISSING_STUB,linux,1
