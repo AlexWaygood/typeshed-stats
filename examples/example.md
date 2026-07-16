@@ -8796,7 +8796,7 @@ The latest version of `types-python-dateutil` aims to provide accurate annotatio
 
 ### Number of lines
 
-774 (excluding blank lines)
+775 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10569,7 +10569,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,232 (excluding blank lines)
+70,246 (excluding blank lines)
 
 ### Package status: *stdlib*
 
