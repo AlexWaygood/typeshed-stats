@@ -5254,7 +5254,7 @@ The latest version of `types-hvac` aims to provide accurate annotations for `hva
 
 ### Number of lines
 
-1,825 (excluding blank lines)
+1,844 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5279,17 +5279,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `hvac`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 511
-    - Unannotated parameters: 1,222
+    - Annotated parameters: 513
+    - Unannotated parameters: 1,220
     - Explicit `Any` parameters: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 82
-    - Unannotated returns: 491
+    - Annotated returns: 85
+    - Unannotated returns: 488
     - Explicit `Any` returns: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 94
+    - Annotated variables: 108
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
