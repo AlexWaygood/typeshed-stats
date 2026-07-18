@@ -180,7 +180,7 @@ tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PA
 tinycss2,types-tinycss2,https://github.com/Kozea/tinycss2,==1.5.1,COMPLETE,-,235,UP_TO_DATE,UPLOADED,STRICT,136,0,52,0,0,0,0,0,107,0,0,24,0,0,ERROR_ON_MISSING_STUB,linux,0
 toml,types-toml,https://github.com/uiri/toml,==0.10.*,COMPLETE,-,135,UP_TO_DATE,UPLOADED,STRICT,71,0,41,0,0,0,21,5,14,2,0,14,2,0,ERROR_ON_MISSING_STUB,linux,4
 toposort,types-toposort,https://gitlab.com/ericvsmith/toposort,==1.10,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,1,0,1,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-tqdm,types-tqdm,https://github.com/tqdm/tqdm,==4.68.*,COMPLETE,-,1554,UP_TO_DATE,UPLOADED,NOT_STRICT,910,144,184,25,30,6,21,1,133,0,76,37,0,0,ERROR_ON_MISSING_STUB,linux,3
+tqdm,types-tqdm,https://github.com/tqdm/tqdm,==4.68.*,COMPLETE,-,1554,OUT_OF_DATE,UPLOADED,NOT_STRICT,910,144,184,25,30,6,21,1,133,0,76,37,0,0,ERROR_ON_MISSING_STUB,linux,3
 translationstring,types-translationstring,https://github.com/Pylons/translationstring,==1.4.*,COMPLETE,-,80,UP_TO_DATE,UPLOADED,STRICT,62,0,18,0,0,0,6,1,4,1,0,7,0,0,ERROR_ON_MISSING_STUB,linux,4
 ttkthemes,types-ttkthemes,https://github.com/TkinterEP/ttkthemes,==3.3.*,COMPLETE,-,125,UP_TO_DATE,UPLOADED,STRICT,79,0,23,0,0,0,3,4,5,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,2
 tzdata,types-tzdata,https://github.com/python/tzdata,==2026.*,COMPLETE,-,3,UP_TO_DATE,UPLOADED,STRICT,0,0,0,0,0,0,0,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
