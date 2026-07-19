@@ -3300,15 +3300,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-docker` aims to provide accurate annotations for `docker==7.1.*`.
+The latest version of `types-docker` aims to provide accurate annotations for `docker==7.2.*`.
 
 ### Number of lines
 
-2,714 (excluding blank lines)
+2,759 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3320,7 +3320,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 unique allowlist entries for `docker` when running stubtest in CI.
+Typeshed currently has 8 unique allowlist entries for `docker` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -3329,15 +3329,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docker`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,387
-    - Unannotated parameters: 252
+    - Annotated parameters: 1,416
+    - Unannotated parameters: 243
     - Explicit `Any` parameters: 42
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 478
-    - Unannotated returns: 113
+    - Annotated returns: 479
+    - Unannotated returns: 114
     - Explicit `Any` returns: 39
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 12
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 13
 - Variables:
     - Annotated variables: 231
     - Explicit `Any` variables: 2
@@ -5921,15 +5921,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-lunardate` aims to provide accurate annotations for `lunardate==0.2.*`.
+The latest version of `types-lunardate` aims to provide accurate annotations for `lunardate==0.3.*`.
 
 ### Number of lines
 
-34 (excluding blank lines)
+45 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5950,12 +5950,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `lunardate`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 20
+    - Annotated parameters: 24
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 17
+    - Annotated returns: 21
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -9524,15 +9524,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.7.10`.
+The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.7.19`.
 
 ### Number of lines
 
 913 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -10994,15 +10994,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-tqdm` aims to provide accurate annotations for `tqdm==4.68.*`.
+The latest version of `types-tqdm` aims to provide accurate annotations for `tqdm==4.69.*`.
 
 ### Number of lines
 
-1,554 (excluding blank lines)
+1,555 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -11023,7 +11023,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tqdm`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 910
+    - Annotated parameters: 911
     - Unannotated parameters: 144
     - Explicit `Any` parameters: 21
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 30
@@ -12285,9 +12285,9 @@ The latest version of `types-zstd` aims to provide accurate annotations for `zst
 
 37 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
