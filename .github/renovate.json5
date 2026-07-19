@@ -53,6 +53,7 @@
       matchPackageNames: ["astral-sh/ty-pre-commit"],
       description: "Daily ty update",
       schedule: ["at any time"],
+      minimumReleaseAge: null,
     },
   ],
   vulnerabilityAlerts: {
