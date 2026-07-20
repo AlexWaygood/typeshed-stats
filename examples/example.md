@@ -1899,15 +1899,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-braintree` aims to provide accurate annotations for `braintree==4.44.*`.
+The latest version of `types-braintree` aims to provide accurate annotations for `braintree==4.45.*`.
 
 ### Number of lines
 
-3,791 (excluding blank lines)
+3,794 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1933,12 +1933,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 42
 - Returns:
-    - Annotated returns: 472
-    - Unannotated returns: 106
+    - Annotated returns: 473
+    - Unannotated returns: 105
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
-    - Annotated variables: 1,611
+    - Annotated variables: 1,614
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 117
 - Class definitions:
@@ -5189,15 +5189,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-httplib2` aims to provide accurate annotations for `httplib2==0.31.2`.
+The latest version of `types-httplib2` aims to provide accurate annotations for `httplib2==0.32.0`.
 
 ### Number of lines
 
-243 (excluding blank lines)
+303 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5218,21 +5218,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `httplib2`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 39
+    - Annotated parameters: 62
     - Unannotated parameters: 116
-    - Explicit `Any` parameters: 0
+    - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 54
-    - Unannotated returns: 7
+    - Annotated returns: 68
+    - Unannotated returns: 8
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 94
+    - Annotated variables: 99
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 34
 - Class definitions:
-    - Total class definitions: 26
+    - Total class definitions: 31
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -5677,15 +5677,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-jwcrypto` aims to provide accurate annotations for `jwcrypto==1.5.7`.
+The latest version of `types-jwcrypto` aims to provide accurate annotations for `jwcrypto==1.5.8`.
 
 ### Number of lines
 
-495 (excluding blank lines)
+496 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5706,7 +5706,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `jwcrypto`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 161
+    - Annotated parameters: 162
     - Unannotated parameters: 32
     - Explicit `Any` parameters: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -7759,15 +7759,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-punq` aims to provide accurate annotations for `punq==0.7.*`.
+The latest version of `types-punq` aims to provide accurate annotations for `punq==0.8.*`.
 
 ### Number of lines
 
-82 (excluding blank lines)
+118 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7779,30 +7779,30 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 1 unique allowlist entry for `punq` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `punq` when running stubtest in CI.
 
-### Pyright settings in CI: *strict*
+### Pyright settings in CI: *not strict*
 
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
 
 ### Statistics on the annotations in typeshed's stubs for `punq`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 44
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 9
+    - Annotated parameters: 54
+    - Unannotated parameters: 6
+    - Explicit `Any` parameters: 10
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 23
+    - Annotated returns: 30
     - Unannotated returns: 0
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 13
+    - Annotated variables: 16
     - Explicit `Any` variables: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
-    - Total class definitions: 12
+    - Total class definitions: 15
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -12096,15 +12096,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-xmldiff` aims to provide accurate annotations for `xmldiff==2.7.*`.
+The latest version of `types-xmldiff` aims to provide accurate annotations for `xmldiff==3.0.*`.
 
 ### Number of lines
 
-296 (excluding blank lines)
+301 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -12135,9 +12135,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 10
 - Variables:
-    - Annotated variables: 90
+    - Annotated variables: 93
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 43
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 45
 - Class definitions:
     - Total class definitions: 24
     - Class definitions with `Any`: 0
