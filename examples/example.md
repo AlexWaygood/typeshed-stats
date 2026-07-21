@@ -10455,7 +10455,7 @@ The latest version of `types-six` aims to provide accurate annotations for `six=
 
 ### Number of lines
 
-331 (excluding blank lines)
+329 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10471,7 +10471,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 22 unique allowlist entries for `six` when running stubtest in CI.
+Typeshed currently has 21 unique allowlist entries for `six` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
