@@ -119,7 +119,7 @@ passpy,types-passpy,https://github.com/bfrascher/passpy,==1.0.*,COMPLETE,-,47,UP
 peewee,types-peewee,https://github.com/coleifer/peewee,==4.1.2,PARTIAL,-,1962,OUT_OF_DATE,UPLOADED,NOT_STRICT,431,850,662,239,0,26,59,4,442,42,275,177,0,0,ERROR_ON_MISSING_STUB,linux,29
 pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,==0.15.*,COMPLETE,-,150,UP_TO_DATE,UPLOADED,STRICT,92,0,42,0,0,0,1,0,33,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,0
 pexpect,types-pexpect,https://github.com/pexpect/pexpect,==4.9.*,COMPLETE,-,667,UP_TO_DATE,UPLOADED,NOT_STRICT,226,128,181,33,0,0,0,0,160,0,24,22,0,0,ERROR_ON_MISSING_STUB,linux,1
-pika,types-pika-ts,https://github.com/pika/pika,==1.4.*,COMPLETE,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2277,UP_TO_DATE,UPLOADED,NOT_STRICT,685,320,645,117,27,23,11,0,468,0,144,225,0,0,ERROR_ON_MISSING_STUB,linux,6
+pika,types-pika-ts,https://github.com/pika/pika,==1.4.*,COMPLETE,"The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.",2402,UP_TO_DATE,UPLOADED,NOT_STRICT,794,211,697,66,29,23,12,0,468,0,140,226,0,0,ERROR_ON_MISSING_STUB,linux,6
 polib,types-polib,https://github.com/izimobil/polib,==1.2.*,COMPLETE,-,158,UP_TO_DATE,UPLOADED,STRICT,61,0,75,0,0,0,18,0,45,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 pony,types-pony,https://github.com/ponyorm/pony,==0.7.*,COMPLETE,-,3592,UP_TO_DATE,UPLOADED,NOT_STRICT,504,1671,674,868,2,9,6,2,995,3,494,394,0,4,ERROR_ON_MISSING_STUB,linux,9
 portpicker,types-portpicker,https://github.com/google/python_portpicker,==1.6.*,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,10,0,6,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0

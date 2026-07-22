@@ -7332,7 +7332,7 @@ The latest version of `types-pika-ts` aims to provide accurate annotations for `
 
 ### Number of lines
 
-2,277 (excluding blank lines)
+2,402 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7357,21 +7357,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pika`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 685
-    - Unannotated parameters: 320
-    - Explicit `Any` parameters: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 27
+    - Annotated parameters: 794
+    - Unannotated parameters: 211
+    - Explicit `Any` parameters: 12
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 29
 - Returns:
-    - Annotated returns: 645
-    - Unannotated returns: 117
+    - Annotated returns: 697
+    - Unannotated returns: 66
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 23
 - Variables:
     - Annotated variables: 468
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 144
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 140
 - Class definitions:
-    - Total class definitions: 225
+    - Total class definitions: 226
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
