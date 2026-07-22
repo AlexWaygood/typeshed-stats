@@ -10,15 +10,15 @@
 
 ### Version
 
-The latest version of `types-Authlib` aims to provide accurate annotations for `Authlib==1.7.1`.
+The latest version of `types-Authlib` aims to provide accurate annotations for `Authlib==1.7.2`.
 
 ### Number of lines
 
-3,810 (excluding blank lines)
+3,813 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -39,12 +39,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 422
-    - Unannotated parameters: 1,509
+    - Annotated parameters: 423
+    - Unannotated parameters: 1,511
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 16
 - Returns:
-    - Annotated returns: 757
+    - Annotated returns: 760
     - Unannotated returns: 399
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 91
