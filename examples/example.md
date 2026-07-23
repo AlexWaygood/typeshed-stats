@@ -4467,9 +4467,9 @@ The latest version of `types-gevent` aims to provide accurate annotations for `g
 
 3,234 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7141,15 +7141,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-peewee` aims to provide accurate annotations for `peewee==4.1.2`.
+The latest version of `types-peewee` aims to provide accurate annotations for `peewee==4.2.6`.
 
 ### Number of lines
 
-1,962 (excluding blank lines)
+1,975 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7170,21 +7170,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 431
-    - Unannotated parameters: 850
-    - Explicit `Any` parameters: 59
+    - Annotated parameters: 435
+    - Unannotated parameters: 867
+    - Explicit `Any` parameters: 57
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 662
-    - Unannotated returns: 239
+    - Annotated returns: 679
+    - Unannotated returns: 238
     - Explicit `Any` returns: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 26
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 25
 - Variables:
-    - Annotated variables: 442
-    - Explicit `Any` variables: 42
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 275
+    - Annotated variables: 436
+    - Explicit `Any` variables: 40
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 269
 - Class definitions:
-    - Total class definitions: 177
+    - Total class definitions: 178
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -7332,7 +7332,7 @@ The latest version of `types-pika-ts` aims to provide accurate annotations for `
 
 ### Number of lines
 
-2,402 (excluding blank lines)
+2,569 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7348,7 +7348,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 unique allowlist entries for `pika` when running stubtest in CI.
+Typeshed currently has 27 unique allowlist entries for `pika` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7357,21 +7357,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pika`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 794
-    - Unannotated parameters: 211
-    - Explicit `Any` parameters: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 29
+    - Annotated parameters: 962
+    - Unannotated parameters: 64
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 25
 - Returns:
-    - Annotated returns: 697
-    - Unannotated returns: 66
+    - Annotated returns: 765
+    - Unannotated returns: 8
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 23
 - Variables:
     - Annotated variables: 468
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 140
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 93
 - Class definitions:
-    - Total class definitions: 226
+    - Total class definitions: 219
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -10569,7 +10569,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,261 (excluding blank lines)
+70,269 (excluding blank lines)
 
 ### Package status: *stdlib*
 
