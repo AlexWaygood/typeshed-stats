@@ -4461,15 +4461,15 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 
 ### Version
 
-The latest version of `types-gevent` aims to provide accurate annotations for `gevent==26.5.*`.
+The latest version of `types-gevent` aims to provide accurate annotations for `gevent==26.7.*`.
 
 ### Number of lines
 
 3,234 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7987,6 +7987,67 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `pycups`
+
+### Upstream repo URL
+
+[https://github.com/OpenPrinting/pycups](https://github.com/OpenPrinting/pycups)
+
+### Stub distribution name
+
+`types-pycups`
+
+### Version
+
+The latest version of `types-pycups` aims to provide accurate annotations for `pycups==2.0.*`.
+
+### Number of lines
+
+854 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `pycups` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `pycups`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 242
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 150
+    - Unannotated returns: 1
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 341
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 13
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `pycurl`
 
 ### Upstream repo URL
@@ -9451,6 +9512,67 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `rasterio`
+
+### Upstream repo URL
+
+[https://github.com/rasterio/rasterio](https://github.com/rasterio/rasterio)
+
+### Stub distribution name
+
+`types-rasterio`
+
+### Version
+
+The latest version of `types-rasterio` aims to provide accurate annotations for `rasterio==1.5.*`.
+
+### Number of lines
+
+1,956 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 24 unique allowlist entries for `rasterio` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `rasterio`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 953
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 99
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
+- Returns:
+    - Annotated returns: 430
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 43
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 185
+    - Explicit `Any` variables: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 127
+    - Class definitions with `Any`: 2
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `ratelimit`
 
 ### Upstream repo URL
@@ -10569,7 +10691,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,269 (excluding blank lines)
+70,272 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10599,7 +10721,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 1,986
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 17,054
+    - Annotated returns: 17,055
     - Unannotated returns: 225
     - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
@@ -10608,7 +10730,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 308
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 233
 - Class definitions:
-    - Total class definitions: 3,238
+    - Total class definitions: 3,239
     - Class definitions with `Any`: 32
     - Class definitions marked as at least partially `Incomplete`: 0
 
