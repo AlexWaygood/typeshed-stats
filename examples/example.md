@@ -14,7 +14,7 @@ The latest version of `types-Authlib` aims to provide accurate annotations for `
 
 ### Number of lines
 
-3,813 (excluding blank lines)
+3,816 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -807,7 +807,7 @@ The latest version of `types-PyYAML` aims to provide accurate annotations for `P
 
 ### Number of lines
 
-1,315 (excluding blank lines)
+1,316 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2757,7 +2757,7 @@ The latest version of `types-convertdate` aims to provide accurate annotations f
 
 ### Number of lines
 
-560 (excluding blank lines)
+561 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3304,7 +3304,7 @@ The latest version of `types-docker` aims to provide accurate annotations for `d
 
 ### Number of lines
 
-3,032 (excluding blank lines)
+3,035 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3426,7 +3426,7 @@ The latest version of `types-docutils` aims to provide accurate annotations for 
 
 ### Number of lines
 
-5,659 (excluding blank lines)
+5,663 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4280,7 +4280,7 @@ The latest version of `types-fpdf2` aims to provide accurate annotations for `fp
 
 ### Number of lines
 
-3,844 (excluding blank lines)
+3,845 (excluding blank lines)
 
 ### Package status: *obsolete*
 
@@ -4465,7 +4465,7 @@ The latest version of `types-gevent` aims to provide accurate annotations for `g
 
 ### Number of lines
 
-3,234 (excluding blank lines)
+3,235 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4650,9 +4650,9 @@ The latest version of `types-grpcio` aims to provide accurate annotations for `g
 
 989 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5498,7 +5498,7 @@ The latest version of `types-jmespath` aims to provide accurate annotations for 
 
 ### Number of lines
 
-214 (excluding blank lines)
+215 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6230,7 +6230,7 @@ The latest version of `types-mypy-extensions` aims to provide accurate annotatio
 
 ### Number of lines
 
-80 (excluding blank lines)
+79 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6840,7 +6840,7 @@ The latest version of `types-openpyxl` aims to provide accurate annotations for 
 
 ### Number of lines
 
-13,111 (excluding blank lines)
+13,113 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6962,7 +6962,7 @@ The latest version of `types-paramiko` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,747 (excluding blank lines)
+1,748 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7023,7 +7023,7 @@ The latest version of `types-parsimonious` aims to provide accurate annotations 
 
 ### Number of lines
 
-197 (excluding blank lines)
+198 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7454,7 +7454,7 @@ The latest version of `types-pony` aims to provide accurate annotations for `pon
 
 ### Number of lines
 
-3,592 (excluding blank lines)
+3,593 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7824,7 +7824,7 @@ The latest version of `types-pyasn1` aims to provide accurate annotations for `p
 
 ### Number of lines
 
-1,484 (excluding blank lines)
+1,485 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8186,7 +8186,7 @@ The latest version of `types-pyflakes` aims to provide accurate annotations for 
 
 ### Number of lines
 
-445 (excluding blank lines)
+446 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -8308,7 +8308,7 @@ The latest version of `types-pyjks` aims to provide accurate annotations for `py
 
 ### Number of lines
 
-376 (excluding blank lines)
+374 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9162,7 +9162,7 @@ The latest version of `types-python-xlib` aims to provide accurate annotations f
 
 ### Number of lines
 
-5,416 (excluding blank lines)
+5,417 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9284,7 +9284,7 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 ### Number of lines
 
-39,735 (excluding blank lines)
+39,737 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10272,7 +10272,7 @@ The latest version of `types-setuptools` aims to provide accurate annotations fo
 
 ### Number of lines
 
-2,941 (excluding blank lines)
+2,942 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10455,7 +10455,7 @@ The latest version of `types-simplejson` aims to provide accurate annotations fo
 
 ### Number of lines
 
-303 (excluding blank lines)
+304 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10577,7 +10577,7 @@ The latest version of `types-six` aims to provide accurate annotations for `six=
 
 ### Number of lines
 
-329 (excluding blank lines)
+330 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10691,7 +10691,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,272 (excluding blank lines)
+70,278 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -11120,7 +11120,7 @@ The latest version of `types-tqdm` aims to provide accurate annotations for `tqd
 
 ### Number of lines
 
-1,555 (excluding blank lines)
+1,562 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -11673,7 +11673,7 @@ The latest version of `types-waitress` aims to provide accurate annotations for 
 
 ### Number of lines
 
-638 (excluding blank lines)
+639 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -12344,7 +12344,7 @@ The latest version of `types-yt-dlp` aims to provide accurate annotations for `y
 
 ### Number of lines
 
-3,303 (excluding blank lines)
+3,304 (excluding blank lines)
 
 ### Package status: *up to date*
 
