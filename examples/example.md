@@ -3670,7 +3670,7 @@ The latest version of `types-et_xmlfile` aims to provide accurate annotations fo
 
 ### Number of lines
 
-208 (excluding blank lines)
+207 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3707,7 +3707,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Variables:
     - Annotated variables: 9
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 4
     - Class definitions with `Any`: 0
@@ -7332,7 +7332,7 @@ The latest version of `types-pika-ts` aims to provide accurate annotations for `
 
 ### Number of lines
 
-2,569 (excluding blank lines)
+2,628 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7348,28 +7348,28 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 27 unique allowlist entries for `pika` when running stubtest in CI.
+Typeshed currently has 28 unique allowlist entries for `pika` when running stubtest in CI.
 
-### Pyright settings in CI: *not strict*
+### Pyright settings in CI: *strict on some files*
 
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded from the stricter settings.
 
 ### Statistics on the annotations in typeshed's stubs for `pika`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 962
-    - Unannotated parameters: 64
-    - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 25
+    - Annotated parameters: 1,022
+    - Unannotated parameters: 4
+    - Explicit `Any` parameters: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 42
 - Returns:
-    - Annotated returns: 765
-    - Unannotated returns: 8
+    - Annotated returns: 769
+    - Unannotated returns: 4
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 23
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 22
 - Variables:
     - Annotated variables: 468
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 93
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 10
 - Class definitions:
     - Total class definitions: 219
     - Class definitions with `Any`: 0
@@ -12344,7 +12344,7 @@ The latest version of `types-yt-dlp` aims to provide accurate annotations for `y
 
 ### Number of lines
 
-3,304 (excluding blank lines)
+3,297 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -12369,7 +12369,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `yt-dlp`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,032
+    - Annotated parameters: 2,031
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 281
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
