@@ -4953,7 +4953,7 @@ The latest version of `types-gunicorn` aims to provide accurate annotations for 
 
 ### Number of lines
 
-3,453 (excluding blank lines)
+3,522 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4980,19 +4980,19 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 899
     - Unannotated parameters: 18
-    - Explicit `Any` parameters: 22
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 43
+    - Explicit `Any` parameters: 23
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 36
 - Returns:
     - Annotated returns: 711
     - Unannotated returns: 6
     - Explicit `Any` returns: 15
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 31
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 16
 - Variables:
-    - Annotated variables: 1,516
-    - Explicit `Any` variables: 25
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 20
+    - Annotated variables: 1,553
+    - Explicit `Any` variables: 26
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 28
 - Class definitions:
-    - Total class definitions: 301
+    - Total class definitions: 311
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
