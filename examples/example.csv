@@ -150,7 +150,7 @@ python-jenkins,types-python-jenkins,https://opendev.org/jjb/python-jenkins,~=1.8
 python-jose,types-python-jose,https://github.com/mpdavis/python-jose,==3.5.*,COMPLETE,-,359,UP_TO_DATE,UPLOADED,NOT_STRICT,83,43,65,26,0,0,14,12,119,30,0,26,0,0,ERROR_ON_MISSING_STUB,linux,1
 python-nmap,types-python-nmap,https://bitbucket.org/xael/python-nmap,==0.7.*,COMPLETE,-,126,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-xlib,types-python-xlib,https://github.com/python-xlib/python-xlib,==0.33.*,COMPLETE,-,5417,UP_TO_DATE,UPLOADED,STRICT,1334,0,583,0,0,0,15,8,3519,5,0,425,0,0,ERROR_ON_MISSING_STUB,linux,11
-pytz,types-pytz,https://github.com/stub42/pytz,==2026.2,COMPLETE,-,151,OUT_OF_DATE,UPLOADED,STRICT,71,0,51,0,0,0,2,0,30,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux,2
+pytz,types-pytz,https://github.com/stub42/pytz,==2026.3.post1,COMPLETE,-,151,UP_TO_DATE,UPLOADED,STRICT,71,0,51,0,0,0,2,0,30,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux,2
 pywin32,types-pywin32,https://github.com/mhammond/pywin32,==312.*,COMPLETE,-,39737,UP_TO_DATE,UPLOADED,NOT_STRICT,4145,3666,4118,1874,383,289,2,5,29610,0,2858,775,0,0,ERROR_ON_MISSING_STUB,win32,34
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,==0.28.*,COMPLETE,-,857,UP_TO_DATE,UPLOADED,STRICT,512,0,297,0,0,0,0,0,165,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,==1.2.*,COMPLETE,-,182,UP_TO_DATE,UPLOADED,STRICT,99,0,31,0,0,0,0,4,40,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -188,7 +188,7 @@ ttkthemes,types-ttkthemes,https://github.com/TkinterEP/ttkthemes,==3.3.*,COMPLET
 tzdata,types-tzdata,https://github.com/python/tzdata,==2026.*,COMPLETE,-,3,UP_TO_DATE,UPLOADED,STRICT,0,0,0,0,0,0,0,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 uWSGI,types-uWSGI,https://github.com/unbit/uwsgi,==2.0.*,COMPLETE,"Type hints for uWSGI's [Python API](https://uwsgi-docs.readthedocs.io/en/latest/PythonModule.html). Note that this API is available only when running Python code inside a uWSGI process and some parts of the API are only present when corresponding configuration options have been enabled.
 ",380,UP_TO_DATE,UPLOADED,STRICT,337,0,216,0,0,0,15,1,61,5,0,26,0,0,ERROR_ON_MISSING_STUB,darwin;linux,8
-unidiff,types-unidiff,https://github.com/matiasb/python-unidiff,==0.7.*,COMPLETE,-,144,OUT_OF_DATE,UPLOADED,STRICT,34,0,32,0,0,0,0,0,38,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,6
+unidiff,types-unidiff,https://github.com/matiasb/python-unidiff,==0.7.*,COMPLETE,-,144,OBSOLETE,UPLOADED,STRICT,34,0,32,0,0,0,0,0,38,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,6
 untangle,types-untangle,https://github.com/stchris/untangle,==1.2.*,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,19,0,21,0,0,0,1,2,5,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 usersettings,types-usersettings,https://github.com/glvnst/usersettings,==1.1.*,COMPLETE,-,12,UP_TO_DATE,UPLOADED,STRICT,7,0,6,0,0,0,1,1,3,0,0,1,1,0,ERROR_ON_MISSING_STUB,linux,3
 vobject,types-vobject,https://github.com/py-vobject/vobject,~=0.9.9,COMPLETE,-,557,UP_TO_DATE,UPLOADED,NOT_STRICT,172,122,131,50,1,4,4,4,174,0,37,51,0,0,ERROR_ON_MISSING_STUB,linux,7
