@@ -5254,7 +5254,7 @@ The latest version of `types-hvac` aims to provide accurate annotations for `hva
 
 ### Number of lines
 
-1,844 (excluding blank lines)
+1,856 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5279,13 +5279,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `hvac`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 513
-    - Unannotated parameters: 1,220
-    - Explicit `Any` parameters: 23
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
+    - Annotated parameters: 589
+    - Unannotated parameters: 1,144
+    - Explicit `Any` parameters: 25
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 85
-    - Unannotated returns: 488
+    - Annotated returns: 87
+    - Unannotated returns: 486
     - Explicit `Any` returns: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -6596,7 +6596,7 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 ### Number of lines
 
-7,611 (excluding blank lines)
+8,095 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6621,15 +6621,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,163
-    - Unannotated parameters: 1,261
+    - Annotated parameters: 3,651
+    - Unannotated parameters: 773
     - Explicit `Any` parameters: 24
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 212
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 432
 - Returns:
-    - Annotated returns: 1,055
-    - Unannotated returns: 541
+    - Annotated returns: 1,300
+    - Unannotated returns: 296
     - Explicit `Any` returns: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 242
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 467
 - Variables:
     - Annotated variables: 387
     - Explicit `Any` variables: 5
@@ -9528,7 +9528,7 @@ The latest version of `types-rasterio` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,956 (excluding blank lines)
+1,972 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9544,7 +9544,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 24 unique allowlist entries for `rasterio` when running stubtest in CI.
+Typeshed currently has 23 unique allowlist entries for `rasterio` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -9555,19 +9555,19 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 953
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 99
+    - Explicit `Any` parameters: 94
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 430
+    - Annotated returns: 431
     - Unannotated returns: 0
-    - Explicit `Any` returns: 43
+    - Explicit `Any` returns: 44
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 185
     - Explicit `Any` variables: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 127
+    - Total class definitions: 128
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9711,7 +9711,7 @@ The latest version of `types-reportlab` aims to provide accurate annotations for
 
 ### Number of lines
 
-8,226 (excluding blank lines)
+8,272 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -9736,8 +9736,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `reportlab`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,989
-    - Unannotated parameters: 2,491
+    - Annotated parameters: 1,990
+    - Unannotated parameters: 2,490
     - Explicit `Any` parameters: 29
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
@@ -9746,11 +9746,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 12
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 40
 - Variables:
-    - Annotated variables: 2,778
+    - Annotated variables: 2,823
     - Explicit `Any` variables: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,028
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,065
 - Class definitions:
-    - Total class definitions: 584
+    - Total class definitions: 585
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 3
 
@@ -11122,9 +11122,9 @@ The latest version of `types-tqdm` aims to provide accurate annotations for `tqd
 
 1,562 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
