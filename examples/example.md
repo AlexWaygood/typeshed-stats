@@ -376,15 +376,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-Jetson.GPIO` aims to provide accurate annotations for `Jetson.GPIO==2.1.12`.
+The latest version of `types-Jetson.GPIO` aims to provide accurate annotations for `Jetson.GPIO==2.1.13`.
 
 ### Number of lines
 
 212 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4644,15 +4644,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-grpcio` aims to provide accurate annotations for `grpcio~=1.82.1`.
+The latest version of `types-grpcio` aims to provide accurate annotations for `grpcio~=1.83.0`.
 
 ### Number of lines
 
-989 (excluding blank lines)
+992 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4673,12 +4673,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `grpcio`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 310
+    - Annotated parameters: 311
     - Unannotated parameters: 4
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 216
+    - Annotated returns: 217
     - Unannotated returns: 1
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
@@ -7314,10 +7314,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ## Info on typeshed's stubs for `pika`
 
-### Extra description
-
-The `types-pika` package contains alternate, more complete type stubs, that are maintained outside of typeshed.
-
 ### Upstream repo URL
 
 [https://github.com/pika/pika](https://github.com/pika/pika)
@@ -7332,7 +7328,7 @@ The latest version of `types-pika-ts` aims to provide accurate annotations for `
 
 ### Number of lines
 
-2,628 (excluding blank lines)
+2,633 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10728,7 +10724,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Variables:
     - Annotated variables: 9,739
     - Explicit `Any` variables: 308
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 233
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 232
 - Class definitions:
     - Total class definitions: 3,239
     - Class definitions with `Any`: 32
@@ -10878,7 +10874,7 @@ The latest version of `types-tensorflow` aims to provide accurate annotations fo
 
 ### Number of lines
 
-30,295 (excluding blank lines)
+30,359 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -10901,17 +10897,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tensorflow`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 5,391
+    - Annotated parameters: 5,439
     - Unannotated parameters: 38
     - Explicit `Any` parameters: 60
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 12
 - Returns:
-    - Annotated returns: 2,939
-    - Unannotated returns: 40
+    - Annotated returns: 2,948
+    - Unannotated returns: 42
     - Explicit `Any` returns: 34
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 23
 - Variables:
-    - Annotated variables: 5,437
+    - Annotated variables: 5,438
     - Explicit `Any` variables: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 12
 - Class definitions:
@@ -11116,15 +11112,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-tqdm` aims to provide accurate annotations for `tqdm==4.69.*`.
+The latest version of `types-tqdm` aims to provide accurate annotations for `tqdm==4.70.*`.
 
 ### Number of lines
 
-1,562 (excluding blank lines)
+1,618 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -11136,7 +11132,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 unique allowlist entries for `tqdm` when running stubtest in CI.
+Typeshed currently has 2 unique allowlist entries for `tqdm` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -11145,21 +11141,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tqdm`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 911
-    - Unannotated parameters: 144
-    - Explicit `Any` parameters: 21
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 30
+    - Annotated parameters: 937
+    - Unannotated parameters: 133
+    - Explicit `Any` parameters: 28
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 184
+    - Annotated returns: 172
     - Unannotated returns: 25
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
-    - Annotated variables: 133
+    - Annotated variables: 134
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 76
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 73
 - Class definitions:
-    - Total class definitions: 37
+    - Total class definitions: 39
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
