@@ -7202,15 +7202,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-peewee` aims to provide accurate annotations for `peewee==4.2.6`.
+The latest version of `types-peewee` aims to provide accurate annotations for `peewee==4.3.0`.
 
 ### Number of lines
 
-1,975 (excluding blank lines)
+1,981 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7231,17 +7231,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 435
-    - Unannotated parameters: 867
-    - Explicit `Any` parameters: 57
+    - Annotated parameters: 438
+    - Unannotated parameters: 862
+    - Explicit `Any` parameters: 56
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 679
-    - Unannotated returns: 238
+    - Annotated returns: 680
+    - Unannotated returns: 236
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 25
 - Variables:
-    - Annotated variables: 436
+    - Annotated variables: 440
     - Explicit `Any` variables: 40
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 269
 - Class definitions:
@@ -10748,7 +10748,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,278 (excluding blank lines)
+70,276 (excluding blank lines)
 
 ### Package status: *stdlib*
 
