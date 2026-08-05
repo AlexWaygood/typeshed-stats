@@ -11214,7 +11214,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Variables:
     - Annotated variables: 134
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 73
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 70
 - Class definitions:
     - Total class definitions: 39
     - Class definitions with `Any`: 0

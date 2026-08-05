@@ -6448,7 +6448,7 @@
       "explicit_Any_returns": 1,
       "annotated_variables": 134,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 73,
+      "explicit_Incomplete_variables": 70,
       "classdefs": 39,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
