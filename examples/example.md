@@ -14,7 +14,7 @@ The latest version of `types-Authlib` aims to provide accurate annotations for `
 
 ### Number of lines
 
-3,816 (excluding blank lines)
+3,825 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -39,8 +39,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 423
-    - Unannotated parameters: 1,511
+    - Annotated parameters: 427
+    - Unannotated parameters: 1,507
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 16
 - Returns:
@@ -1167,11 +1167,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-WebOb` aims to provide accurate annotations for `WebOb==1.8.*`.
+The latest version of `types-WebOb` aims to provide accurate annotations for `WebOb~=1.8.11`.
 
 ### Number of lines
 
-2,224 (excluding blank lines)
+2,225 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1196,12 +1196,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `WebOb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 799
+    - Annotated parameters: 801
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 80
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 609
+    - Annotated returns: 610
     - Unannotated returns: 0
     - Explicit `Any` returns: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -2936,15 +2936,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser~=1.4.1`.
+The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser==1.4.1`.
 
 ### Number of lines
 
 680 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10748,7 +10748,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,276 (excluding blank lines)
+70,279 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10778,7 +10778,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 1,986
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 17,055
+    - Annotated returns: 17,056
     - Unannotated returns: 225
     - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
