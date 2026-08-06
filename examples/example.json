@@ -1897,7 +1897,7 @@
     "version": "==7.2.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3035,
+    "number_of_lines": 3038,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1915,12 +1915,12 @@
       "unannotated_returns": 108,
       "explicit_Incomplete_parameters": 22,
       "explicit_Incomplete_returns": 14,
-      "explicit_Any_parameters": 49,
-      "explicit_Any_returns": 39,
-      "annotated_variables": 229,
-      "explicit_Any_variables": 2,
+      "explicit_Any_parameters": 48,
+      "explicit_Any_returns": 36,
+      "annotated_variables": 230,
+      "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 2,
-      "classdefs": 142,
+      "classdefs": 143,
       "classdefs_with_Any": 28,
       "classdefs_with_Incomplete": 1
     }

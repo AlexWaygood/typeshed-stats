@@ -3304,7 +3304,7 @@ The latest version of `types-docker` aims to provide accurate annotations for `d
 
 ### Number of lines
 
-3,035 (excluding blank lines)
+3,038 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3331,19 +3331,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 1,614
     - Unannotated parameters: 200
-    - Explicit `Any` parameters: 49
+    - Explicit `Any` parameters: 48
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 22
 - Returns:
     - Annotated returns: 484
     - Unannotated returns: 108
-    - Explicit `Any` returns: 39
+    - Explicit `Any` returns: 36
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
 - Variables:
-    - Annotated variables: 229
-    - Explicit `Any` variables: 2
+    - Annotated variables: 230
+    - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
-    - Total class definitions: 142
+    - Total class definitions: 143
     - Class definitions with `Any`: 28
     - Class definitions marked as at least partially `Incomplete`: 1
 
