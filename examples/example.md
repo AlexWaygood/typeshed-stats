@@ -3304,7 +3304,7 @@ The latest version of `types-docker` aims to provide accurate annotations for `d
 
 ### Number of lines
 
-3,038 (excluding blank lines)
+3,042 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3337,13 +3337,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated returns: 484
     - Unannotated returns: 108
     - Explicit `Any` returns: 36
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 14
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 13
 - Variables:
-    - Annotated variables: 230
+    - Annotated variables: 232
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
-    - Total class definitions: 143
+    - Total class definitions: 144
     - Class definitions with `Any`: 28
     - Class definitions marked as at least partially `Incomplete`: 1
 
@@ -7507,11 +7507,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-pony` aims to provide accurate annotations for `pony==0.7.*`.
+The latest version of `types-pony` aims to provide accurate annotations for `pony~=0.7.20`.
 
 ### Number of lines
 
-3,593 (excluding blank lines)
+3,615 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7536,21 +7536,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pony`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 504
-    - Unannotated parameters: 1,671
+    - Annotated parameters: 505
+    - Unannotated parameters: 1,689
     - Explicit `Any` parameters: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 674
-    - Unannotated returns: 868
+    - Annotated returns: 676
+    - Unannotated returns: 887
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
 - Variables:
-    - Annotated variables: 995
+    - Annotated variables: 1,000
     - Explicit `Any` variables: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 494
 - Class definitions:
-    - Total class definitions: 394
+    - Total class definitions: 397
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 4
 
