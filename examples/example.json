@@ -2592,7 +2592,7 @@
     "package_name": "gevent",
     "stub_distribution_name": "types-gevent",
     "upstream_url": "https://github.com/gevent/gevent",
-    "version": "==26.7.*",
+    "version": "==26.8.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 3235,
@@ -3114,41 +3114,6 @@
       "classdefs": 5,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
-    }
-  },
-  {
-    "package_name": "icalendar",
-    "stub_distribution_name": "types-icalendar",
-    "upstream_url": "https://github.com/collective/icalendar",
-    "version": "==6.3.2",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 1344,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "ci_platforms": [
-        "linux"
-      ],
-      "allowlist_length": 4
-    },
-    "pyright_setting": "STRICT_ON_SOME_FILES",
-    "annotation_stats": {
-      "annotated_parameters": 364,
-      "unannotated_parameters": 3,
-      "annotated_returns": 422,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 3,
-      "explicit_Incomplete_returns": 3,
-      "explicit_Any_parameters": 9,
-      "explicit_Any_returns": 6,
-      "annotated_variables": 152,
-      "explicit_Any_variables": 1,
-      "explicit_Incomplete_variables": 2,
-      "classdefs": 65,
-      "classdefs_with_Any": 1,
-      "classdefs_with_Incomplete": 2
     }
   },
   {

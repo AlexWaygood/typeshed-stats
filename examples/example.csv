@@ -73,7 +73,7 @@ fpdf2,types-fpdf2,https://github.com/py-pdf/fpdf2,==2.8.4,COMPLETE,-,3845,OBSOLE
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,==16.3.*,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1587,NOT_ON_PYPI,UPLOADED,NOT_STRICT,517,15,422,26,0,0,2,2,489,0,2,154,0,0,SKIPPED,None,52
 geojson,types-geojson,https://github.com/jazzband/geojson,==3.3.0,COMPLETE,-,141,UP_TO_DATE,UPLOADED,NOT_STRICT,40,23,40,0,3,1,8,4,4,0,0,13,1,0,ERROR_ON_MISSING_STUB,linux,2
 geopandas,types-geopandas,https://github.com/geopandas/geopandas,==1.1.4,COMPLETE,-,1842,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1022,69,424,6,42,4,31,11,33,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,16
-gevent,types-gevent,https://github.com/gevent/gevent,==26.7.*,COMPLETE,-,3235,UP_TO_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,210,1,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,98
+gevent,types-gevent,https://github.com/gevent/gevent,==26.8.*,COMPLETE,-,3235,UP_TO_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,210,1,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,98
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,==2.4.*,PARTIAL,-,1566,OUT_OF_DATE,UPLOADED,NOT_STRICT,484,370,236,203,123,0,5,0,194,0,134,143,0,0,MISSING_STUBS_IGNORED,linux,2
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,==3.5.*,COMPLETE,-,86,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
 grpcio,types-grpcio,https://github.com/grpc/grpc,~=1.83.0,PARTIAL,-,992,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,311,4,217,1,0,1,5,2,30,0,0,69,0,0,MISSING_STUBS_IGNORED,linux,3
@@ -88,7 +88,6 @@ html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,==1.1.*,COMP
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,==0.32.0,COMPLETE,-,303,UP_TO_DATE,UPLOADED,NOT_STRICT,62,116,68,8,1,0,2,0,99,0,34,31,0,0,ERROR_ON_MISSING_STUB,linux,1
 hvac,types-hvac,https://github.com/hvac/hvac,==2.4.*,COMPLETE,-,1858,UP_TO_DATE,UPLOADED,NOT_STRICT,589,1144,87,486,0,0,27,19,108,0,0,75,1,0,ERROR_ON_MISSING_STUB,linux,0
 ibm-db,types-ibm-db,https://github.com/ibmdb/python-ibmdb,==3.2.9,COMPLETE,-,355,UP_TO_DATE,UPLOADED,STRICT,175,0,74,0,0,0,0,2,204,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,0
-icalendar,types-icalendar,https://github.com/collective/icalendar,==6.3.2,COMPLETE,-,1344,OBSOLETE,UPLOADED,STRICT_ON_SOME_FILES,364,3,422,0,3,3,9,6,152,1,2,65,1,2,ERROR_ON_MISSING_STUB,linux,4
 inifile,types-inifile,https://github.com/mitsuhiko/python-inifile,==0.4.*,COMPLETE,-,123,UP_TO_DATE,UPLOADED,STRICT,60,0,59,0,0,0,0,0,1,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,20
 jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,==1.1.*,COMPLETE,-,215,UP_TO_DATE,UPLOADED,STRICT,133,0,74,0,0,0,30,23,49,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,0
 jsonnet,types-jsonnet,https://github.com/google/jsonnet,==0.22.*,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,25,0,2,0,0,0,0,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0

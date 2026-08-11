@@ -4522,7 +4522,7 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 
 ### Version
 
-The latest version of `types-gevent` aims to provide accurate annotations for `gevent==26.7.*`.
+The latest version of `types-gevent` aims to provide accurate annotations for `gevent==26.8.*`.
 
 ### Number of lines
 
@@ -5418,67 +5418,6 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Total class definitions: 5
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
-## Info on typeshed's stubs for `icalendar`
-
-### Upstream repo URL
-
-[https://github.com/collective/icalendar](https://github.com/collective/icalendar)
-
-### Stub distribution name
-
-`types-icalendar`
-
-### Version
-
-The latest version of `types-icalendar` aims to provide accurate annotations for `icalendar==6.3.2`.
-
-### Number of lines
-
-1,344 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 4 unique allowlist entries for `icalendar` when running stubtest in CI.
-
-### Pyright settings in CI: *strict on some files*
-
-Some files in this stubs package are tested with the stricter pyright settings in typeshed's CI; some are excluded from the stricter settings.
-
-### Statistics on the annotations in typeshed's stubs for `icalendar`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 364
-    - Unannotated parameters: 3
-    - Explicit `Any` parameters: 9
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
-- Returns:
-    - Annotated returns: 422
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
-- Variables:
-    - Annotated variables: 152
-    - Explicit `Any` variables: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
-- Class definitions:
-    - Total class definitions: 65
-    - Class definitions with `Any`: 1
-    - Class definitions marked as at least partially `Incomplete`: 2
 
 ---
 
