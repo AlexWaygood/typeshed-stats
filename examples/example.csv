@@ -47,13 +47,13 @@ console-menu,types-console-menu,https://github.com/aegirhall/console-menu,==0.8.
 convertdate,types-convertdate,https://github.com/fitnr/convertdate,==2.4.1,COMPLETE,-,561,UP_TO_DATE,UPLOADED,STRICT,488,0,267,0,0,0,0,0,135,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 croniter,types-croniter,https://github.com/pallets-eco/croniter,==6.2.4,COMPLETE,-,368,UP_TO_DATE,UPLOADED,STRICT,167,0,39,0,0,0,1,0,49,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
 datauri,types-datauri,https://github.com/eclecticiq/python-data-uri,==1.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,0,0,0,4,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,==1.4.1,COMPLETE,-,680,OUT_OF_DATE,UPLOADED,NOT_STRICT,292,8,155,4,6,2,11,1,175,0,2,40,0,0,ERROR_ON_MISSING_STUB,linux,6
+dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,==1.4.2,COMPLETE,-,715,UP_TO_DATE,UPLOADED,NOT_STRICT,306,8,158,4,7,2,11,1,179,0,2,41,0,0,ERROR_ON_MISSING_STUB,linux,6
 decorator,types-decorator,https://github.com/micheles/decorator,==5.2.*,COMPLETE,-,66,OBSOLETE,UPLOADED,STRICT,40,0,13,0,0,0,21,6,16,4,0,2,0,0,ERROR_ON_MISSING_STUB,linux,5
 defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,==0.7.*,COMPLETE,-,354,UP_TO_DATE,UPLOADED,NOT_STRICT,202,20,50,13,0,0,0,1,42,0,3,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 dirhash,types-dirhash,https://github.com/andhus/dirhash-python,==0.5.*,COMPLETE,-,87,UP_TO_DATE,UPLOADED,STRICT,39,0,13,0,0,0,0,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 django-filter,types-django-filter,https://github.com/carltongibson/django-filter/,==26.1.*,COMPLETE,-,805,UP_TO_DATE,UPLOADED,STRICT,298,0,128,0,0,0,121,44,113,25,0,73,3,0,ERROR_ON_MISSING_STUB,linux,12
 django-import-export,types-django-import-export,https://github.com/django-import-export/django-import-export,==4.4.*,COMPLETE,-,699,UP_TO_DATE,UPLOADED,STRICT,376,0,255,0,0,0,135,35,156,10,0,72,0,0,SKIPPED,None,0
-docker,types-docker,https://github.com/docker/docker-py,==7.2.*,COMPLETE,-,3042,UP_TO_DATE,UPLOADED,NOT_STRICT,1614,200,484,108,22,13,48,36,232,1,2,144,28,1,ERROR_ON_MISSING_STUB,linux,8
+docker,types-docker,https://github.com/docker/docker-py,==7.2.*,COMPLETE,-,3042,UP_TO_DATE,UPLOADED,NOT_STRICT,1614,200,488,104,22,13,48,36,232,1,2,144,28,1,ERROR_ON_MISSING_STUB,linux,8
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,==2.0.*,COMPLETE,-,115,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 docutils,types-docutils,https://sourceforge.net/p/docutils/code,==0.22.3,COMPLETE,-,5663,OUT_OF_DATE,UPLOADED,NOT_STRICT,2440,708,2109,323,16,7,39,219,1508,23,234,499,1,0,ERROR_ON_MISSING_STUB,linux,18
 editdistance,types-editdistance,https://github.com/roy-ht/editdistance,==0.8.*,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,10,0,4,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -93,7 +93,7 @@ jmespath,types-jmespath,https://github.com/jmespath/jmespath.py,==1.1.*,COMPLETE
 jsonnet,types-jsonnet,https://github.com/google/jsonnet,==0.22.*,COMPLETE,-,33,UP_TO_DATE,UPLOADED,STRICT,25,0,2,0,0,0,0,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 jsonschema,types-jsonschema,https://github.com/python-jsonschema/jsonschema,~=4.26.0,COMPLETE,-,493,UP_TO_DATE,UPLOADED,NOT_STRICT,173,257,175,11,9,10,13,3,58,4,14,26,1,0,ERROR_ON_MISSING_STUB,linux,29
 jwcrypto,types-jwcrypto,https://github.com/latchset/jwcrypto,==1.5.8,COMPLETE,-,496,UP_TO_DATE,UPLOADED,NOT_STRICT,162,32,136,8,0,1,6,11,60,2,3,40,1,0,ERROR_ON_MISSING_STUB,linux,4
-kafka-python,types-kafka-python,https://github.com/dpkp/kafka-python,==2.3.2,COMPLETE,-,4744,OUT_OF_DATE,UPLOADED,NOT_STRICT,159,856,347,636,0,4,0,0,2159,0,734,653,0,1,ERROR_ON_MISSING_STUB,linux,18
+kafka-python,types-kafka-python,https://github.com/dpkp/kafka-python,==3.0.9,COMPLETE,-,12044,OUT_OF_DATE,UPLOADED,NOT_STRICT,2563,1886,1933,820,6,303,0,0,3754,0,665,1044,0,1,ERROR_ON_MISSING_STUB,linux,21
 keyboard,types-keyboard,https://github.com/boppreh/keyboard,==0.13.*,COMPLETE,-,243,UP_TO_DATE,UPLOADED,STRICT,130,0,76,0,0,0,0,0,38,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,6
 ldap3,types-ldap3,https://github.com/cannatag/ldap3,==2.9.*,COMPLETE,-,2493,UP_TO_DATE,UPLOADED,NOT_STRICT,276,936,219,421,0,0,0,0,937,0,375,316,0,0,ERROR_ON_MISSING_STUB,linux,1
 lunardate,types-lunardate,https://github.com/lidaobing/python-lunardate,==0.3.*,COMPLETE,-,45,UP_TO_DATE,UPLOADED,STRICT,24,0,21,0,0,0,0,0,7,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0

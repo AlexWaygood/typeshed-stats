@@ -2936,15 +2936,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser==1.4.1`.
+The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser==1.4.2`.
 
 ### Number of lines
 
-680 (excluding blank lines)
+715 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2965,21 +2965,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `dateparser`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 292
+    - Annotated parameters: 306
     - Unannotated parameters: 8
     - Explicit `Any` parameters: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
 - Returns:
-    - Annotated returns: 155
+    - Annotated returns: 158
     - Unannotated returns: 4
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 175
+    - Annotated variables: 179
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
-    - Total class definitions: 40
+    - Total class definitions: 41
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -3334,8 +3334,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 48
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 22
 - Returns:
-    - Annotated returns: 484
-    - Unannotated returns: 108
+    - Annotated returns: 488
+    - Unannotated returns: 104
     - Explicit `Any` returns: 36
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 13
 - Variables:
@@ -5738,11 +5738,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-kafka-python` aims to provide accurate annotations for `kafka-python==2.3.2`.
+The latest version of `types-kafka-python` aims to provide accurate annotations for `kafka-python==3.0.9`.
 
 ### Number of lines
 
-4,744 (excluding blank lines)
+12,044 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -5758,7 +5758,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 18 unique allowlist entries for `kafka-python` when running stubtest in CI.
+Typeshed currently has 21 unique allowlist entries for `kafka-python` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5767,21 +5767,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `kafka-python`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 159
-    - Unannotated parameters: 856
+    - Annotated parameters: 2,563
+    - Unannotated parameters: 1,886
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
 - Returns:
-    - Annotated returns: 347
-    - Unannotated returns: 636
+    - Annotated returns: 1,933
+    - Unannotated returns: 820
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 303
 - Variables:
-    - Annotated variables: 2,159
+    - Annotated variables: 3,754
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 734
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 665
 - Class definitions:
-    - Total class definitions: 653
+    - Total class definitions: 1,044
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 1
 
