@@ -14,7 +14,7 @@ The latest version of `types-Authlib` aims to provide accurate annotations for `
 
 ### Number of lines
 
-3,825 (excluding blank lines)
+3,884 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -39,15 +39,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 427
-    - Unannotated parameters: 1,507
+    - Annotated parameters: 478
+    - Unannotated parameters: 1,463
     - Explicit `Any` parameters: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 16
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 760
-    - Unannotated returns: 399
+    - Annotated returns: 769
+    - Unannotated returns: 393
     - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 91
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 88
 - Variables:
     - Annotated variables: 683
     - Explicit `Any` variables: 0
@@ -1899,15 +1899,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-braintree` aims to provide accurate annotations for `braintree==4.45.*`.
+The latest version of `types-braintree` aims to provide accurate annotations for `braintree==4.46.*`.
 
 ### Number of lines
 
-3,794 (excluding blank lines)
+3,800 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1928,17 +1928,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `braintree`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 338
+    - Annotated parameters: 339
     - Unannotated parameters: 318
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 42
 - Returns:
-    - Annotated returns: 473
+    - Annotated returns: 474
     - Unannotated returns: 105
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
-    - Annotated variables: 1,614
+    - Annotated variables: 1,617
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 117
 - Class definitions:
@@ -5738,15 +5738,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-kafka-python` aims to provide accurate annotations for `kafka-python==3.0.9`.
+The latest version of `types-kafka-python` aims to provide accurate annotations for `kafka-python==3.0.10`.
 
 ### Number of lines
 
-12,044 (excluding blank lines)
+12,046 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5768,12 +5768,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 2,563
-    - Unannotated parameters: 1,886
+    - Unannotated parameters: 1,887
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 6
 - Returns:
     - Annotated returns: 1,933
-    - Unannotated returns: 820
+    - Unannotated returns: 821
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 303
 - Variables:
@@ -8611,9 +8611,9 @@ The latest version of `types-pyphen` aims to provide accurate annotations for `p
 
 33 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10687,7 +10687,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,313 (excluding blank lines)
+70,323 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10703,7 +10703,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 851 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 853 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10712,21 +10712,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,260
+    - Annotated parameters: 30,265
     - Unannotated parameters: 582
     - Explicit `Any` parameters: 1,987
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 17,062
+    - Annotated returns: 17,065
     - Unannotated returns: 225
     - Explicit `Any` returns: 825
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
 - Variables:
     - Annotated variables: 9,742
-    - Explicit `Any` variables: 308
+    - Explicit `Any` variables: 305
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 232
 - Class definitions:
-    - Total class definitions: 3,239
+    - Total class definitions: 3,240
     - Class definitions with `Any`: 32
     - Class definitions marked as at least partially `Incomplete`: 0
 
