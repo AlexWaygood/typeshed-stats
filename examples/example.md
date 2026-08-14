@@ -807,7 +807,7 @@ The latest version of `types-PyYAML` aims to provide accurate annotations for `P
 
 ### Number of lines
 
-1,316 (excluding blank lines)
+1,325 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -832,19 +832,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `PyYAML`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 522
-    - Unannotated parameters: 276
-    - Explicit `Any` parameters: 46
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 4
+    - Annotated parameters: 539
+    - Unannotated parameters: 232
+    - Explicit `Any` parameters: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 222
-    - Unannotated returns: 172
-    - Explicit `Any` returns: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+    - Annotated returns: 325
+    - Unannotated returns: 55
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 19
 - Variables:
     - Annotated variables: 220
-    - Explicit `Any` variables: 160
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
+    - Explicit `Any` variables: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 117
 - Class definitions:
     - Total class definitions: 91
     - Class definitions with `Any`: 0
@@ -8605,7 +8605,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-pyphen` aims to provide accurate annotations for `pyphen==0.17.2`.
+The latest version of `types-pyphen` aims to provide accurate annotations for `pyphen==0.18.0`.
 
 ### Number of lines
 
