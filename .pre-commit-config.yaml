@@ -99,7 +99,7 @@ repos:
     hooks:
       - id: ty
         priority: 0
-        args: [--isolated]
+        args: [--isolated, --fix]
 
 ci:
   autofix_commit_msg: "[pre-commit.ci] auto fixes from pre-commit.com hooks"

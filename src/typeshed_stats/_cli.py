@@ -80,7 +80,7 @@ def _write_stats(
             from rich import print as pprint
         except ImportError:
             if isinstance(formatted_stats, str):
-                pprint = print  # ty: ignore[conflicting-declarations]
+                pprint = print
             else:
                 from pprint import pprint
 
