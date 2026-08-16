@@ -5742,7 +5742,7 @@ The latest version of `types-kafka-python` aims to provide accurate annotations 
 
 ### Number of lines
 
-12,046 (excluding blank lines)
+12,065 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9280,7 +9280,7 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 ### Number of lines
 
-39,737 (excluding blank lines)
+39,779 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9305,13 +9305,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 4,145
-    - Unannotated parameters: 3,666
+    - Annotated parameters: 4,216
+    - Unannotated parameters: 3,616
     - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 383
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 381
 - Returns:
-    - Annotated returns: 4,118
-    - Unannotated returns: 1,874
+    - Annotated returns: 4,145
+    - Unannotated returns: 1,851
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 289
 - Variables:
@@ -10687,7 +10687,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,327 (excluding blank lines)
+70,326 (excluding blank lines)
 
 ### Package status: *stdlib*
 
