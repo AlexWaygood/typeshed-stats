@@ -870,9 +870,9 @@ The latest version of `types-Pygments` aims to provide accurate annotations for 
 
 1,006 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -5738,15 +5738,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-kafka-python` aims to provide accurate annotations for `kafka-python==3.0.10`.
+The latest version of `types-kafka-python` aims to provide accurate annotations for `kafka-python==3.0.11`.
 
 ### Number of lines
 
 12,065 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8123,9 +8123,9 @@ The latest version of `types-pyfarmhash` aims to provide accurate annotations fo
 
 9 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -9280,7 +9280,7 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 ### Number of lines
 
-39,779 (excluding blank lines)
+39,782 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9305,19 +9305,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 4,216
-    - Unannotated parameters: 3,616
+    - Annotated parameters: 4,242
+    - Unannotated parameters: 3,590
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 381
 - Returns:
-    - Annotated returns: 4,145
-    - Unannotated returns: 1,851
+    - Annotated returns: 4,171
+    - Unannotated returns: 1,825
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 289
 - Variables:
-    - Annotated variables: 29,610
+    - Annotated variables: 29,608
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2,858
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,767
 - Class definitions:
     - Total class definitions: 775
     - Class definitions with `Any`: 0
