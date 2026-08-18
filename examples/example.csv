@@ -13,7 +13,7 @@ PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,==1.2.*,COMPLETE,-,1272
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,==1.0.1,COMPLETE,-,192,UP_TO_DATE,UPLOADED,STRICT,102,0,21,0,0,0,0,0,17,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
 PySocks,types-PySocks,https://github.com/Anorov/PySocks,==1.7.1,COMPLETE,-,212,UP_TO_DATE,UPLOADED,STRICT,113,0,35,0,0,0,1,0,26,0,2,12,0,0,ERROR_ON_MISSING_STUB,linux,2
 PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,==6.0.*,COMPLETE,-,1325,UP_TO_DATE,UPLOADED,NOT_STRICT,539,232,325,55,17,19,3,0,220,4,117,91,0,0,ERROR_ON_MISSING_STUB,linux,4
-Pygments,types-Pygments,https://github.com/pygments/pygments,==2.20.*,PARTIAL,-,1006,OUT_OF_DATE,UPLOADED,NOT_STRICT,242,63,157,34,0,5,24,2,334,2,122,97,0,1,ERROR_ON_MISSING_STUB,linux,10
+Pygments,types-Pygments,https://github.com/pygments/pygments,==2.21.*,PARTIAL,-,1007,UP_TO_DATE,UPLOADED,NOT_STRICT,244,63,158,34,0,5,24,2,334,2,122,97,0,1,ERROR_ON_MISSING_STUB,linux,10
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,==0.7.*,COMPLETE,-,56,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,==2.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,==1.2.*,COMPLETE,-,7,UP_TO_DATE,UPLOADED,STRICT,20,0,6,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,6
@@ -81,7 +81,7 @@ grpcio-channelz,types-grpcio-channelz,https://github.com/grpc/grpc,==1.*,COMPLET
 grpcio-health-checking,types-grpcio-health-checking,https://github.com/grpc/grpc,==1.*,COMPLETE,-,89,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,15,27,16,4,2,0,0,0,16,0,6,7,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-reflection,types-grpcio-reflection,https://github.com/grpc/grpc,==1.*,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,34,17,18,4,7,0,0,0,55,0,1,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-status,types-grpcio-status,https://github.com/grpc/grpc,==1.*,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1,2,2,1,0,1,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
-gunicorn,types-gunicorn,https://github.com/benoitc/gunicorn,==26.0.0,COMPLETE,-,3522,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,899,18,711,6,36,16,23,15,1553,26,28,311,1,0,ERROR_ON_MISSING_STUB,darwin;linux,4
+gunicorn,types-gunicorn,https://github.com/benoitc/gunicorn,==26.0.0,COMPLETE,-,3522,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,899,18,711,6,36,16,23,15,1553,26,28,311,1,0,ERROR_ON_MISSING_STUB,darwin;linux,4
 hdbcli,types-hdbcli,-,==2.29.*,COMPLETE,-,190,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,113,4,91,3,0,0,15,15,21,2,1,19,0,0,ERROR_ON_MISSING_STUB,linux,17
 hnswlib,types-hnswlib,https://github.com/nmslib/hnswlib,==0.8.*,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,32,0,26,0,0,0,1,0,3,0,1,1,0,0,ERROR_ON_MISSING_STUB,darwin,1
 html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,==1.1.*,COMPLETE,-,850,UP_TO_DATE,UPLOADED,NOT_STRICT,204,128,252,60,6,6,7,2,246,0,68,42,0,9,ERROR_ON_MISSING_STUB,linux,5
@@ -132,7 +132,7 @@ pyaudio,types-pyaudio,-,==0.2.*,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT,51,0,3
 pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,==2.0.*,COMPLETE,-,168,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,70,0,0,12,0,0,ERROR_ON_MISSING_STUB,linux,0
 pycups,types-pycups,https://github.com/OpenPrinting/pycups,==2.0.*,COMPLETE,-,854,UP_TO_DATE,UPLOADED,NOT_STRICT,242,0,150,1,0,0,0,0,341,0,0,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 pycurl,types-pycurl,https://github.com/pycurl/pycurl,==7.47.0,COMPLETE,-,933,UP_TO_DATE,UPLOADED,STRICT,104,0,91,0,0,0,8,2,737,0,0,12,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1
-pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,==0.4.*,COMPLETE,-,9,OUT_OF_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
+pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,==0.5.*,COMPLETE,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,==3.4.*,COMPLETE,-,446,UP_TO_DATE,UPLOADED,STRICT,343,0,215,0,0,0,1,2,77,1,0,77,0,0,ERROR_ON_MISSING_STUB,linux,27
 pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,==6.22.*,PARTIAL,-,797,UP_TO_DATE,UPLOADED,STRICT,306,0,169,0,0,0,2,2,245,1,0,32,0,0,ERROR_ON_MISSING_STUB,linux,48
 pyjks,types-pyjks,https://github.com/kurtbrose/pyjks,==20.0.*,COMPLETE,-,374,UP_TO_DATE,UPLOADED,STRICT,132,0,59,0,0,0,0,0,73,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,32
@@ -155,7 +155,7 @@ pywin32,types-pywin32,https://github.com/mhammond/pywin32,==312.*,COMPLETE,-,397
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,==0.28.*,COMPLETE,-,857,UP_TO_DATE,UPLOADED,STRICT,512,0,297,0,0,0,0,0,165,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,==1.2.*,COMPLETE,-,182,UP_TO_DATE,UPLOADED,STRICT,99,0,31,0,0,0,0,4,40,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,==8.2.*,COMPLETE,-,647,UP_TO_DATE,UPLOADED,STRICT,282,0,152,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,9
-rasterio,types-rasterio,https://github.com/rasterio/rasterio,==1.5.0,COMPLETE,-,1972,OUT_OF_DATE,UPLOADED,STRICT,953,0,431,0,2,0,94,44,185,5,0,128,2,0,ERROR_ON_MISSING_STUB,linux,23
+rasterio,types-rasterio,https://github.com/rasterio/rasterio,==1.5.1,COMPLETE,-,1976,UP_TO_DATE,UPLOADED,STRICT,955,0,433,0,2,0,94,44,185,5,0,129,2,0,ERROR_ON_MISSING_STUB,linux,22
 ratelimit,types-ratelimit,https://github.com/tomasbasham/ratelimit,==2.2.*,COMPLETE,-,18,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,1,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,==2026.7.19,COMPLETE,-,913,UP_TO_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,3,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,12
 reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,==4.5.1,COMPLETE,-,8272,OUT_OF_DATE,UPLOADED,NOT_STRICT,1990,2490,1938,651,14,40,29,12,2823,6,1065,585,0,3,ERROR_ON_MISSING_STUB,linux,50
