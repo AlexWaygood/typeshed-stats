@@ -3334,8 +3334,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 48
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 22
 - Returns:
-    - Annotated returns: 488
-    - Unannotated returns: 104
+    - Annotated returns: 492
+    - Unannotated returns: 100
     - Explicit `Any` returns: 36
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 13
 - Variables:
