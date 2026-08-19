@@ -5010,15 +5010,15 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Version
 
-The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==26.0.0`.
+The latest version of `types-gunicorn` aims to provide accurate annotations for `gunicorn==26.1.0`.
 
 ### Number of lines
 
-3,522 (excluding blank lines)
+3,528 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5039,17 +5039,17 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `gunicorn`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 899
+    - Annotated parameters: 902
     - Unannotated parameters: 18
     - Explicit `Any` parameters: 23
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 36
 - Returns:
-    - Annotated returns: 711
+    - Annotated returns: 713
     - Unannotated returns: 6
     - Explicit `Any` returns: 15
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 16
 - Variables:
-    - Annotated variables: 1,553
+    - Annotated variables: 1,556
     - Explicit `Any` variables: 26
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 28
 - Class definitions:
