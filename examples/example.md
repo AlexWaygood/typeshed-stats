@@ -4264,67 +4264,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
-## Info on typeshed's stubs for `fpdf2`
-
-### Upstream repo URL
-
-[https://github.com/py-pdf/fpdf2](https://github.com/py-pdf/fpdf2)
-
-### Stub distribution name
-
-`types-fpdf2`
-
-### Version
-
-The latest version of `types-fpdf2` aims to provide accurate annotations for `fpdf2==2.8.4`.
-
-### Number of lines
-
-3,845 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 5 unique allowlist entries for `fpdf2` when running stubtest in CI.
-
-### Pyright settings in CI: *not strict*
-
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
-
-### Statistics on the annotations in typeshed's stubs for `fpdf2`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,271
-    - Unannotated parameters: 569
-    - Explicit `Any` parameters: 9
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 13
-- Returns:
-    - Annotated returns: 729
-    - Unannotated returns: 150
-    - Explicit `Any` returns: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 9
-- Variables:
-    - Annotated variables: 791
-    - Explicit `Any` variables: 13
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 171
-- Class definitions:
-    - Total class definitions: 236
-    - Class definitions with `Any`: 1
-    - Class definitions marked as at least partially `Incomplete`: 1
-
----
-
 ## Info on typeshed's stubs for `gdb`
 
 ### Extra description
@@ -9280,7 +9219,7 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 ### Number of lines
 
-39,782 (excluding blank lines)
+39,935 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9305,21 +9244,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 4,242
-    - Unannotated parameters: 3,590
+    - Annotated parameters: 4,319
+    - Unannotated parameters: 3,527
     - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 381
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 371
 - Returns:
-    - Annotated returns: 4,171
-    - Unannotated returns: 1,825
+    - Annotated returns: 4,194
+    - Unannotated returns: 1,806
     - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 289
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 280
 - Variables:
-    - Annotated variables: 29,608
+    - Annotated variables: 29,669
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,767
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,772
 - Class definitions:
-    - Total class definitions: 775
+    - Total class definitions: 790
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -12342,9 +12281,9 @@ The latest version of `types-yt-dlp` aims to provide accurate annotations for `y
 
 3,297 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 

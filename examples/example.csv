@@ -69,7 +69,6 @@ flake8-docstrings,types-flake8-docstrings,https://github.com/pycqa/flake8-docstr
 flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/flake8-rst-docstrings,==0.4.*,COMPLETE,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simplify,==0.30.*,COMPLETE,-,121,UP_TO_DATE,UPLOADED,STRICT,75,0,72,0,0,0,0,1,15,0,2,7,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,==1.17.*,COMPLETE,-,36,UP_TO_DATE,UPLOADED,STRICT,11,0,13,0,0,0,1,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
-fpdf2,types-fpdf2,https://github.com/py-pdf/fpdf2,==2.8.4,COMPLETE,-,3845,OBSOLETE,UPLOADED,NOT_STRICT,1271,569,729,150,13,9,9,4,791,13,171,236,1,1,ERROR_ON_MISSING_STUB,linux,5
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,==16.3.*,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1587,NOT_ON_PYPI,UPLOADED,NOT_STRICT,517,15,422,26,0,0,2,2,489,0,2,154,0,0,SKIPPED,None,52
 geojson,types-geojson,https://github.com/jazzband/geojson,==3.3.0,COMPLETE,-,141,UP_TO_DATE,UPLOADED,NOT_STRICT,40,23,40,0,3,1,8,4,4,0,0,13,1,0,ERROR_ON_MISSING_STUB,linux,2
 geopandas,types-geopandas,https://github.com/geopandas/geopandas,==1.1.4,COMPLETE,-,1842,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1022,69,424,6,42,4,31,11,33,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,16
@@ -151,7 +150,7 @@ python-jose,types-python-jose,https://github.com/mpdavis/python-jose,==3.5.*,COM
 python-nmap,types-python-nmap,https://bitbucket.org/xael/python-nmap,==0.7.*,COMPLETE,-,126,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-xlib,types-python-xlib,https://github.com/python-xlib/python-xlib,==0.33.*,COMPLETE,-,5417,UP_TO_DATE,UPLOADED,STRICT,1334,0,583,0,0,0,15,8,3519,5,0,425,0,0,ERROR_ON_MISSING_STUB,linux,11
 pytz,types-pytz,https://github.com/stub42/pytz,==2026.3.post1,COMPLETE,-,151,UP_TO_DATE,UPLOADED,STRICT,71,0,51,0,0,0,2,0,30,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux,2
-pywin32,types-pywin32,https://github.com/mhammond/pywin32,==312.*,COMPLETE,-,39782,UP_TO_DATE,UPLOADED,NOT_STRICT,4242,3590,4171,1825,381,289,2,5,29608,0,1767,775,0,0,ERROR_ON_MISSING_STUB,win32,34
+pywin32,types-pywin32,https://github.com/mhammond/pywin32,==312.*,COMPLETE,-,39935,UP_TO_DATE,UPLOADED,NOT_STRICT,4319,3527,4194,1806,371,280,2,5,29669,0,1772,790,0,0,ERROR_ON_MISSING_STUB,win32,34
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,==0.28.*,COMPLETE,-,857,UP_TO_DATE,UPLOADED,STRICT,512,0,297,0,0,0,0,0,165,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,==1.2.*,COMPLETE,-,182,UP_TO_DATE,UPLOADED,STRICT,99,0,31,0,0,0,0,4,40,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,==8.2.*,COMPLETE,-,647,UP_TO_DATE,UPLOADED,STRICT,282,0,152,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,9
@@ -203,6 +202,6 @@ xdgenvpy,types-xdgenvpy,https://gitlab.com/deliberist-group/xdgenvpy,==3.0.*,COM
 xlrd,types-xlrd,https://github.com/python-excel/xlrd,==2.0.*,COMPLETE,-,778,UP_TO_DATE,UPLOADED,STRICT,298,0,142,0,0,0,6,0,426,0,0,33,0,0,ERROR_ON_MISSING_STUB,linux,0
 xmldiff,types-xmldiff,https://github.com/Shoobx/xmldiff,==3.0.*,COMPLETE,-,301,UP_TO_DATE,UPLOADED,NOT_STRICT,36,167,51,57,0,10,6,0,93,0,45,24,0,0,ERROR_ON_MISSING_STUB,linux,0
 xmltodict,types-xmltodict,https://github.com/martinblech/xmltodict,~=1.0.1,COMPLETE,-,117,UP_TO_DATE,UPLOADED,STRICT,76,0,10,0,0,0,5,1,19,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-yt-dlp,types-yt-dlp,https://github.com/yt-dlp/yt-dlp,==2026.7.4,COMPLETE,-,3297,UP_TO_DATE,UPLOADED,STRICT,2031,0,922,0,0,0,281,130,576,30,31,190,1,0,ERROR_ON_MISSING_STUB,linux,20
+yt-dlp,types-yt-dlp,https://github.com/yt-dlp/yt-dlp,==2026.7.4,COMPLETE,-,3297,OUT_OF_DATE,UPLOADED,STRICT,2031,0,922,0,0,0,281,130,576,30,31,190,1,0,ERROR_ON_MISSING_STUB,linux,20
 zstd,types-zstd,https://github.com/sergey-dryabzhinsky/python-zstd,~=1.5.7.3,COMPLETE,-,37,OUT_OF_DATE,UPLOADED,STRICT,6,0,23,0,0,0,0,0,0,0,0,1,0,0,SKIPPED,None,0
 zxcvbn,types-zxcvbn,https://github.com/dwolfhub/zxcvbn-python,==4.5.*,COMPLETE,-,173,UP_TO_DATE,UPLOADED,STRICT,64,0,39,0,0,0,0,0,76,1,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
