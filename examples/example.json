@@ -187,6 +187,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "ci_platforms": [
+        "darwin",
         "linux"
       ],
       "allowlist_length": 1
@@ -1092,7 +1093,7 @@
     "version": "==4.46.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3800,
+    "number_of_lines": 3804,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1104,10 +1105,10 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 339,
-      "unannotated_parameters": 318,
-      "annotated_returns": 474,
-      "unannotated_returns": 105,
+      "annotated_parameters": 341,
+      "unannotated_parameters": 317,
+      "annotated_returns": 476,
+      "unannotated_returns": 104,
       "explicit_Incomplete_parameters": 42,
       "explicit_Incomplete_returns": 6,
       "explicit_Any_parameters": 7,
@@ -1194,11 +1195,11 @@
     "package_name": "cffi",
     "stub_distribution_name": "types-cffi",
     "upstream_url": "https://github.com/python-cffi/cffi/",
-    "version": "==2.0.*",
+    "version": "==2.1.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 849,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 851,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -1218,7 +1219,7 @@
       "explicit_Incomplete_returns": 1,
       "explicit_Any_parameters": 34,
       "explicit_Any_returns": 8,
-      "annotated_variables": 254,
+      "annotated_variables": 255,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 75,
       "classdefs": 52,
@@ -1911,8 +1912,8 @@
     "annotation_stats": {
       "annotated_parameters": 1614,
       "unannotated_parameters": 200,
-      "annotated_returns": 492,
-      "unannotated_returns": 100,
+      "annotated_returns": 493,
+      "unannotated_returns": 99,
       "explicit_Incomplete_parameters": 22,
       "explicit_Incomplete_returns": 13,
       "explicit_Any_parameters": 48,
@@ -1964,33 +1965,33 @@
     "package_name": "docutils",
     "stub_distribution_name": "types-docutils",
     "upstream_url": "https://sourceforge.net/p/docutils/code",
-    "version": "==0.22.3",
+    "version": "==0.23",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 5663,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 5686,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 18
+      "allowlist_length": 19
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2440,
-      "unannotated_parameters": 708,
-      "annotated_returns": 2109,
+      "annotated_parameters": 2452,
+      "unannotated_parameters": 702,
+      "annotated_returns": 2112,
       "unannotated_returns": 323,
-      "explicit_Incomplete_parameters": 16,
+      "explicit_Incomplete_parameters": 20,
       "explicit_Incomplete_returns": 7,
       "explicit_Any_parameters": 39,
       "explicit_Any_returns": 219,
-      "annotated_variables": 1508,
+      "annotated_variables": 1513,
       "explicit_Any_variables": 23,
-      "explicit_Incomplete_variables": 234,
-      "classdefs": 499,
+      "explicit_Incomplete_variables": 233,
+      "classdefs": 500,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
@@ -2919,7 +2920,7 @@
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "ci_platforms": [
-        "darwin"
+        "linux"
       ],
       "allowlist_length": 1
     },
@@ -3012,6 +3013,41 @@
     }
   },
   {
+    "package_name": "httpretty",
+    "stub_distribution_name": "types-httpretty",
+    "upstream_url": "https://github.com/gabrielfalcao/HTTPretty",
+    "version": "==1.1.4",
+    "completeness_level": "PARTIAL",
+    "extra_description": null,
+    "number_of_lines": 251,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "MISSING_STUBS_IGNORED",
+      "ci_platforms": [
+        "linux"
+      ],
+      "allowlist_length": 0
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 94,
+      "unannotated_parameters": 0,
+      "annotated_returns": 52,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 1,
+      "explicit_Any_returns": 1,
+      "annotated_variables": 59,
+      "explicit_Any_variables": 1,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 13,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
     "package_name": "hvac",
     "stub_distribution_name": "types-hvac",
     "upstream_url": "https://github.com/hvac/hvac",
@@ -3050,11 +3086,11 @@
     "package_name": "ibm-db",
     "stub_distribution_name": "types-ibm-db",
     "upstream_url": "https://github.com/ibmdb/python-ibmdb",
-    "version": "==3.2.9",
+    "version": "==3.3.0",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 355,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 367,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3065,18 +3101,18 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 175,
+      "annotated_parameters": 187,
       "unannotated_parameters": 0,
-      "annotated_returns": 74,
+      "annotated_returns": 81,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 2,
-      "annotated_variables": 204,
+      "annotated_variables": 207,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 5,
+      "classdefs": 6,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -3333,7 +3369,7 @@
     "version": "==2.9.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2493,
+    "number_of_lines": 2516,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3345,17 +3381,17 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 276,
-      "unannotated_parameters": 936,
-      "annotated_returns": 219,
-      "unannotated_returns": 421,
+      "annotated_parameters": 283,
+      "unannotated_parameters": 929,
+      "annotated_returns": 221,
+      "unannotated_returns": 419,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
       "annotated_variables": 937,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 375,
+      "explicit_Incomplete_variables": 372,
       "classdefs": 316,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
@@ -3400,11 +3436,11 @@
     "package_name": "lupa",
     "stub_distribution_name": "types-lupa",
     "upstream_url": "https://github.com/scoder/lupa",
-    "version": "==2.6.*",
+    "version": "==2.8.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 522,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 608,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3415,18 +3451,18 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 170,
+      "annotated_parameters": 200,
       "unannotated_parameters": 0,
-      "annotated_returns": 138,
+      "annotated_returns": 162,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 30,
+      "explicit_Any_parameters": 35,
       "explicit_Any_returns": 0,
-      "annotated_variables": 61,
-      "explicit_Any_variables": 12,
+      "annotated_variables": 71,
+      "explicit_Any_variables": 14,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 46,
+      "classdefs": 53,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -3893,7 +3929,7 @@
     "version": "==3.1.5",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 13113,
+    "number_of_lines": 13115,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4311,11 +4347,11 @@
     "package_name": "protobuf",
     "stub_distribution_name": "types-protobuf",
     "upstream_url": "https://github.com/protocolbuffers/protobuf",
-    "version": "~=7.34.1",
+    "version": "~=7.35.1",
     "completeness_level": "PARTIAL",
-    "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 34.1 on [protobuf v34.1](https://github.com/protocolbuffers/protobuf/releases/tag/v34.1) (python `protobuf==7.34.1`).",
-    "number_of_lines": 6445,
-    "package_status": "OUT_OF_DATE",
+    "extra_description": "Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 35.1 on [protobuf v35.1](https://github.com/protocolbuffers/protobuf/releases/tag/v35.1) (python `protobuf==7.35.1`).",
+    "number_of_lines": 6435,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "MISSING_STUBS_IGNORED",
@@ -4326,7 +4362,7 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 1170,
+      "annotated_parameters": 1177,
       "unannotated_parameters": 177,
       "annotated_returns": 857,
       "unannotated_returns": 10,
@@ -4334,7 +4370,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 46,
       "explicit_Any_returns": 19,
-      "annotated_variables": 1118,
+      "annotated_variables": 1128,
       "explicit_Any_variables": 8,
       "explicit_Incomplete_variables": 0,
       "classdefs": 233,
@@ -4349,7 +4385,7 @@
     "version": "==7.2.2",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 2228,
+    "number_of_lines": 2352,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4701,10 +4737,10 @@
     "package_name": "pyinstaller",
     "stub_distribution_name": "types-pyinstaller",
     "upstream_url": "https://github.com/pyinstaller/pyinstaller",
-    "version": "==6.22.*",
+    "version": "~=6.22.1",
     "completeness_level": "PARTIAL",
     "extra_description": null,
-    "number_of_lines": 797,
+    "number_of_lines": 798,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -4724,7 +4760,7 @@
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 2,
-      "annotated_variables": 245,
+      "annotated_variables": 246,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 0,
       "classdefs": 32,
@@ -5317,18 +5353,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 4319,
-      "unannotated_parameters": 3527,
-      "annotated_returns": 4194,
-      "unannotated_returns": 1806,
-      "explicit_Incomplete_parameters": 371,
-      "explicit_Incomplete_returns": 280,
+      "annotated_parameters": 4331,
+      "unannotated_parameters": 3517,
+      "annotated_returns": 4211,
+      "unannotated_returns": 1799,
+      "explicit_Incomplete_parameters": 372,
+      "explicit_Incomplete_returns": 277,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 5,
-      "annotated_variables": 29669,
+      "annotated_variables": 29638,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 1772,
-      "classdefs": 790,
+      "classdefs": 791,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -6111,7 +6147,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 70326,
+    "number_of_lines": 70328,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -6127,13 +6163,13 @@
     "annotation_stats": {
       "annotated_parameters": 30267,
       "unannotated_parameters": 582,
-      "annotated_returns": 17066,
+      "annotated_returns": 17067,
       "unannotated_returns": 225,
       "explicit_Incomplete_parameters": 11,
       "explicit_Incomplete_returns": 21,
       "explicit_Any_parameters": 1987,
       "explicit_Any_returns": 825,
-      "annotated_variables": 9742,
+      "annotated_variables": 9743,
       "explicit_Any_variables": 305,
       "explicit_Incomplete_variables": 232,
       "classdefs": 3240,
@@ -6275,6 +6311,41 @@
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
       "classdefs": 24,
+      "classdefs_with_Any": 0,
+      "classdefs_with_Incomplete": 0
+    }
+  },
+  {
+    "package_name": "titlecase",
+    "stub_distribution_name": "types-titlecase",
+    "upstream_url": "https://github.com/ppannuto/python-titlecase",
+    "version": "==2.4.*",
+    "completeness_level": "COMPLETE",
+    "extra_description": null,
+    "number_of_lines": 38,
+    "package_status": "UP_TO_DATE",
+    "upload_status": "UPLOADED",
+    "stubtest_settings": {
+      "strictness": "ERROR_ON_MISSING_STUB",
+      "ci_platforms": [
+        "linux"
+      ],
+      "allowlist_length": 1
+    },
+    "pyright_setting": "STRICT",
+    "annotation_stats": {
+      "annotated_parameters": 8,
+      "unannotated_parameters": 0,
+      "annotated_returns": 6,
+      "unannotated_returns": 0,
+      "explicit_Incomplete_parameters": 0,
+      "explicit_Incomplete_returns": 0,
+      "explicit_Any_parameters": 0,
+      "explicit_Any_returns": 0,
+      "annotated_variables": 16,
+      "explicit_Any_variables": 0,
+      "explicit_Incomplete_variables": 0,
+      "classdefs": 4,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -6739,34 +6810,34 @@
   {
     "package_name": "webencodings",
     "stub_distribution_name": "types-webencodings",
-    "upstream_url": "https://github.com/gsnedders/python-webencodings",
-    "version": "==0.5.*",
+    "upstream_url": "https://github.com/CourtBouillon/webencodings",
+    "version": "==0.6.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 48,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 64,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 1
+      "allowlist_length": 0
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 32,
+      "annotated_parameters": 30,
       "unannotated_parameters": 0,
-      "annotated_returns": 16,
+      "annotated_returns": 14,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
       "explicit_Any_parameters": 0,
       "explicit_Any_returns": 0,
-      "annotated_variables": 12,
+      "annotated_variables": 26,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 8,
+      "classdefs": 14,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -7055,11 +7126,11 @@
     "package_name": "yt-dlp",
     "stub_distribution_name": "types-yt-dlp",
     "upstream_url": "https://github.com/yt-dlp/yt-dlp",
-    "version": "==2026.7.4",
+    "version": "==2026.8.19",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3297,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 3308,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -7070,9 +7141,9 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 2031,
+      "annotated_parameters": 2033,
       "unannotated_parameters": 0,
-      "annotated_returns": 922,
+      "annotated_returns": 923,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
