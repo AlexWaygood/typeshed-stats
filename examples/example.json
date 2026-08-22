@@ -6147,7 +6147,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 70346,
+    "number_of_lines": 70348,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -6157,7 +6157,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 847
+      "allowlist_length": 842
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {

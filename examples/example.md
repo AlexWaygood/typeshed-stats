@@ -10687,7 +10687,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,346 (excluding blank lines)
+70,348 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10703,7 +10703,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 847 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 842 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
