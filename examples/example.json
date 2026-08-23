@@ -6147,7 +6147,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 70348,
+    "number_of_lines": 70383,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -6157,22 +6157,22 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 842
+      "allowlist_length": 832
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30275,
+      "annotated_parameters": 30288,
       "unannotated_parameters": 582,
-      "annotated_returns": 17070,
+      "annotated_returns": 17080,
       "unannotated_returns": 225,
       "explicit_Incomplete_parameters": 11,
       "explicit_Incomplete_returns": 21,
-      "explicit_Any_parameters": 1989,
+      "explicit_Any_parameters": 1990,
       "explicit_Any_returns": 825,
       "annotated_variables": 9743,
       "explicit_Any_variables": 305,
       "explicit_Incomplete_variables": 232,
-      "classdefs": 3240,
+      "classdefs": 3241,
       "classdefs_with_Any": 32,
       "classdefs_with_Incomplete": 0
     }
