@@ -101,7 +101,7 @@ _LoggingLevels: TypeAlias = Literal[
 
 def _get_help_formatter() -> type[argparse.HelpFormatter]:
     try:
-        import rich  # noqa: F401  # pyright: ignore[reportUnusedImport]
+        import rich  # ruff: ignore[unused-import]  # pyright: ignore[reportUnusedImport]
         from rich_argparse import RichHelpFormatter as HelpFormatter
     except ImportError:
         from argparse import HelpFormatter  # type: ignore[assignment]

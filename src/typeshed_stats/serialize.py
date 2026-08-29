@@ -43,7 +43,7 @@ _CATTRS_CONVERTER.register_unstructure_hook(StubVersion, str)
 _CATTRS_CONVERTER.register_structure_hook(_NiceReprEnum, lambda d, t: t[d])
 _CATTRS_CONVERTER.register_structure_hook(
     Path,
-    lambda d, t: Path(d),  # noqa: ARG005
+    lambda d, t: Path(d),  # ruff: ignore[unused-lambda-argument]
 )  # pragma: no branch
 _CATTRS_CONVERTER.register_structure_hook(StubVersion, StubVersion)
 

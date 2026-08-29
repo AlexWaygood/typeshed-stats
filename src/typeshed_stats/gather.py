@@ -42,7 +42,7 @@ from packaging.version import Version
 from pathspec import PathSpec
 from pathspec.patterns.gitignore.basic import GitIgnoreBasicPattern
 
-if sys.version_info < (3, 11):  # noqa: UP036
+if sys.version_info < (3, 11):  # ruff: ignore[outdated-version-block]
     raise ImportError("Python 3.11+ is required!")
 
 __all__ = [

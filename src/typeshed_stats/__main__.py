@@ -2,7 +2,7 @@
 
 import sys
 
-if sys.version_info < (3, 11):  # noqa: UP036
+if sys.version_info < (3, 11):  # ruff: ignore[outdated-version-block]
     raise ImportError("Python 3.11+ is required!")
 
 __all__: list[str] = []
