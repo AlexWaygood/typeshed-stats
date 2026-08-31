@@ -30,7 +30,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 46 unique allowlist entries for `Authlib` when running stubtest in CI.
+Typeshed currently has 45 unique allowlist entries for `Authlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5677,15 +5677,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-jwcrypto` aims to provide accurate annotations for `jwcrypto==1.5.8`.
+The latest version of `types-jwcrypto` aims to provide accurate annotations for `jwcrypto==1.5.9`.
 
 ### Number of lines
 
-496 (excluding blank lines)
+519 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5697,7 +5697,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `jwcrypto` when running stubtest in CI.
+Typeshed currently has 5 unique allowlist entries for `jwcrypto` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -5707,20 +5707,20 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 162
-    - Unannotated parameters: 32
+    - Unannotated parameters: 34
     - Explicit `Any` parameters: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 136
-    - Unannotated returns: 8
+    - Annotated returns: 133
+    - Unannotated returns: 14
     - Explicit `Any` returns: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 60
+    - Annotated variables: 66
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
-    - Total class definitions: 40
+    - Total class definitions: 42
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -8788,15 +8788,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-python-crontab` aims to provide accurate annotations for `python-crontab==3.3.*`.
+The latest version of `types-python-crontab` aims to provide accurate annotations for `python-crontab==3.4.*`.
 
 ### Number of lines
 
-355 (excluding blank lines)
+358 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -8817,17 +8817,17 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `python-crontab`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 183
+    - Annotated parameters: 192
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 13
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 153
+    - Annotated returns: 155
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 80
+    - Annotated variables: 81
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -9642,15 +9642,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.7.19`.
+The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.8.31`.
 
 ### Number of lines
 
 913 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -10687,7 +10687,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,400 (excluding blank lines)
+70,408 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10703,7 +10703,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 831 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 829 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10712,12 +10712,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,300
+    - Annotated parameters: 30,302
     - Unannotated parameters: 582
     - Explicit `Any` parameters: 1,991
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 17,086
+    - Annotated returns: 17,087
     - Unannotated returns: 225
     - Explicit `Any` returns: 824
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
