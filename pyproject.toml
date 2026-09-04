@@ -50,7 +50,7 @@ dev = [
     "MarkDown==3.10.2",
     "mkdocs==1.6.1",
     "mkdocs-macros-plugin==1.5.0",
-    "mkdocs-material==9.7.6",
+    "mkdocs-material==9.7.7",
     "mkdocstrings==1.0.4",
     "mkdocstrings-python==2.0.5",
     "beautifulsoup4>=4,<5",
