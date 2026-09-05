@@ -7147,9 +7147,9 @@ The latest version of `types-peewee` aims to provide accurate annotations for `p
 
 1,989 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10687,7 +10687,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,419 (excluding blank lines)
+70,424 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10712,12 +10712,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,309
+    - Annotated parameters: 30,313
     - Unannotated parameters: 582
-    - Explicit `Any` parameters: 1,988
+    - Explicit `Any` parameters: 1,989
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 17,092
+    - Annotated returns: 17,094
     - Unannotated returns: 225
     - Explicit `Any` returns: 824
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
