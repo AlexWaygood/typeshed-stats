@@ -10,15 +10,15 @@
 
 ### Version
 
-The latest version of `types-Authlib` aims to provide accurate annotations for `Authlib==1.7.2`.
+The latest version of `types-Authlib` aims to provide accurate annotations for `Authlib==1.8.0`.
 
 ### Number of lines
 
-3,884 (excluding blank lines)
+3,880 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -30,7 +30,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 45 unique allowlist entries for `Authlib` when running stubtest in CI.
+Typeshed currently has 44 unique allowlist entries for `Authlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -39,19 +39,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 478
-    - Unannotated parameters: 1,463
+    - Annotated parameters: 479
+    - Unannotated parameters: 1,467
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 769
-    - Unannotated returns: 393
+    - Annotated returns: 770
+    - Unannotated returns: 392
     - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 88
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 87
 - Variables:
-    - Annotated variables: 683
+    - Annotated variables: 685
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 265
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 266
 - Class definitions:
     - Total class definitions: 286
     - Class definitions with `Any`: 1
@@ -2936,15 +2936,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser==1.4.2`.
+The latest version of `types-dateparser` aims to provide accurate annotations for `dateparser==1.4.3`.
 
 ### Number of lines
 
-715 (excluding blank lines)
+729 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -2965,7 +2965,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `dateparser`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 306
+    - Annotated parameters: 310
     - Unannotated parameters: 8
     - Explicit `Any` parameters: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 7
@@ -2975,7 +2975,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 179
+    - Annotated variables: 178
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
@@ -7576,7 +7576,7 @@ The latest version of `types-protobuf` aims to provide accurate annotations for 
 
 ### Number of lines
 
-6,435 (excluding blank lines)
+6,526 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -7601,17 +7601,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `protobuf`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,177
+    - Annotated parameters: 1,255
     - Unannotated parameters: 177
     - Explicit `Any` parameters: 46
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 857
+    - Annotated returns: 870
     - Unannotated returns: 10
     - Explicit `Any` returns: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 1,128
+    - Annotated variables: 1,115
     - Explicit `Any` variables: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -7674,7 +7674,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Variables:
     - Annotated variables: 675
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 89
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 54
 - Class definitions:
     - Total class definitions: 100
     - Class definitions with `Any`: 3
@@ -9833,7 +9833,7 @@ The latest version of `types-requests-oauthlib` aims to provide accurate annotat
 
 ### Number of lines
 
-271 (excluding blank lines)
+274 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9858,9 +9858,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `requests-oauthlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 68
-    - Unannotated parameters: 69
-    - Explicit `Any` parameters: 2
+    - Annotated parameters: 70
+    - Unannotated parameters: 70
+    - Explicit `Any` parameters: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
     - Annotated returns: 45
@@ -10687,7 +10687,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,646 (excluding blank lines)
+70,673 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10703,7 +10703,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 830 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 831 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10712,14 +10712,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,469
+    - Annotated parameters: 30,482
     - Unannotated parameters: 582
-    - Explicit `Any` parameters: 1,989
+    - Explicit `Any` parameters: 1,991
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 17,106
+    - Annotated returns: 17,109
     - Unannotated returns: 225
-    - Explicit `Any` returns: 824
+    - Explicit `Any` returns: 826
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
 - Variables:
     - Annotated variables: 9,741
