@@ -807,7 +807,7 @@ The latest version of `types-PyYAML` aims to provide accurate annotations for `P
 
 ### Number of lines
 
-1,325 (excluding blank lines)
+1,339 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -832,8 +832,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `PyYAML`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 539
-    - Unannotated parameters: 232
+    - Annotated parameters: 568
+    - Unannotated parameters: 203
     - Explicit `Any` parameters: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
@@ -842,9 +842,9 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 19
 - Variables:
-    - Annotated variables: 220
+    - Annotated variables: 206
     - Explicit `Any` variables: 4
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 117
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 88
 - Class definitions:
     - Total class definitions: 91
     - Class definitions with `Any`: 0
@@ -3184,7 +3184,7 @@ The latest version of `types-django-filter` aims to provide accurate annotations
 
 ### Number of lines
 
-805 (excluding blank lines)
+806 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3211,7 +3211,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 298
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 121
+    - Explicit `Any` parameters: 120
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 128
@@ -7637,7 +7637,7 @@ The latest version of `types-psutil` aims to provide accurate annotations for `p
 
 ### Number of lines
 
-2,352 (excluding blank lines)
+2,357 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7662,15 +7662,15 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `psutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 490
+    - Annotated parameters: 492
     - Unannotated parameters: 2
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 693
+    - Annotated returns: 695
     - Unannotated returns: 1
     - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
     - Annotated variables: 675
     - Explicit `Any` variables: 0
@@ -9524,7 +9524,7 @@ The latest version of `types-rasterio` aims to provide accurate annotations for 
 
 ### Number of lines
 
-1,976 (excluding blank lines)
+2,004 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9549,12 +9549,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `rasterio`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 955
+    - Annotated parameters: 973
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 94
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 433
+    - Annotated returns: 434
     - Unannotated returns: 0
     - Explicit `Any` returns: 44
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -9802,14 +9802,14 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 141
-    - Unannotated returns: 59
-    - Explicit `Any` returns: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
+    - Annotated returns: 142
+    - Unannotated returns: 58
+    - Explicit `Any` returns: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
     - Annotated variables: 126
-    - Explicit `Any` variables: 15
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 20
+    - Explicit `Any` variables: 14
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 15
 - Class definitions:
     - Total class definitions: 53
     - Class definitions with `Any`: 0
@@ -10687,7 +10687,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,424 (excluding blank lines)
+70,646 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10712,12 +10712,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,313
+    - Annotated parameters: 30,469
     - Unannotated parameters: 582
     - Explicit `Any` parameters: 1,989
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 11
 - Returns:
-    - Annotated returns: 17,094
+    - Annotated returns: 17,106
     - Unannotated returns: 225
     - Explicit `Any` returns: 824
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 21
@@ -11177,7 +11177,7 @@ The latest version of `types-tqdm` aims to provide accurate annotations for `tqd
 
 ### Number of lines
 
-1,618 (excluding blank lines)
+1,622 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -11202,7 +11202,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `tqdm`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 937
+    - Annotated parameters: 938
     - Unannotated parameters: 133
     - Explicit `Any` parameters: 28
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
