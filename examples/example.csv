@@ -116,7 +116,7 @@ opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,
 paramiko,types-paramiko,https://github.com/paramiko/paramiko,==5.0.*,COMPLETE,-,1748,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,678,8,596,3,2,0,13,3,497,4,23,118,2,0,ERROR_ON_MISSING_STUB,linux;win32,4
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,==0.11.*,COMPLETE,-,198,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,114,0,59,1,0,0,22,2,34,3,2,28,0,0,ERROR_ON_MISSING_STUB,linux,3
 passpy,types-passpy,https://github.com/bfrascher/passpy,==1.0.*,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
-peewee,types-peewee,https://github.com/coleifer/peewee,==4.4.0,PARTIAL,-,1989,OUT_OF_DATE,UPLOADED,NOT_STRICT,441,863,683,237,0,25,56,4,442,40,269,179,0,0,ERROR_ON_MISSING_STUB,linux,29
+peewee,types-peewee,https://github.com/coleifer/peewee,==4.5.0,PARTIAL,-,2024,UP_TO_DATE,UPLOADED,NOT_STRICT,443,867,684,239,0,25,56,4,463,40,274,180,0,0,ERROR_ON_MISSING_STUB,linux,29
 pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,==0.15.*,COMPLETE,-,150,UP_TO_DATE,UPLOADED,STRICT,92,0,42,0,0,0,1,0,33,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,0
 pexpect,types-pexpect,https://github.com/pexpect/pexpect,==4.9.*,COMPLETE,-,667,UP_TO_DATE,UPLOADED,NOT_STRICT,226,128,181,33,0,0,0,0,160,0,24,22,0,0,ERROR_ON_MISSING_STUB,linux,1
 pika,types-pika-ts,https://github.com/pika/pika,==1.4.*,COMPLETE,-,2633,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1022,4,769,4,42,22,3,0,468,0,10,219,0,0,ERROR_ON_MISSING_STUB,linux,28
@@ -155,7 +155,7 @@ pywin32,types-pywin32,https://github.com/mhammond/pywin32,==312.*,COMPLETE,-,399
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,==0.28.*,COMPLETE,-,857,UP_TO_DATE,UPLOADED,STRICT,512,0,297,0,0,0,0,0,165,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,==1.2.*,COMPLETE,-,182,UP_TO_DATE,UPLOADED,STRICT,99,0,31,0,0,0,0,4,40,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,==8.2.*,COMPLETE,-,647,UP_TO_DATE,UPLOADED,STRICT,282,0,152,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,9
-rasterio,types-rasterio,https://github.com/rasterio/rasterio,==1.5.1,COMPLETE,-,2004,UP_TO_DATE,UPLOADED,STRICT,973,0,434,0,2,0,94,44,185,5,0,129,2,0,ERROR_ON_MISSING_STUB,linux,22
+rasterio,types-rasterio,https://github.com/rasterio/rasterio,==1.5.1,COMPLETE,-,2009,UP_TO_DATE,UPLOADED,STRICT,973,0,435,0,2,0,94,44,185,5,0,130,2,0,ERROR_ON_MISSING_STUB,linux,22
 ratelimit,types-ratelimit,https://github.com/tomasbasham/ratelimit,==2.2.*,COMPLETE,-,18,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,1,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,==2026.9.3,COMPLETE,-,913,UP_TO_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,3,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,12
 reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,==4.5.1,COMPLETE,-,8272,OUT_OF_DATE,UPLOADED,NOT_STRICT,1990,2490,1938,651,14,40,29,12,2823,6,1065,585,0,3,ERROR_ON_MISSING_STUB,linux,50

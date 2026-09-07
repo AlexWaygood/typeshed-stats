@@ -7141,15 +7141,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-peewee` aims to provide accurate annotations for `peewee==4.4.0`.
+The latest version of `types-peewee` aims to provide accurate annotations for `peewee==4.5.0`.
 
 ### Number of lines
 
-1,989 (excluding blank lines)
+2,024 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7170,21 +7170,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 441
-    - Unannotated parameters: 863
+    - Annotated parameters: 443
+    - Unannotated parameters: 867
     - Explicit `Any` parameters: 56
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 683
-    - Unannotated returns: 237
+    - Annotated returns: 684
+    - Unannotated returns: 239
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 25
 - Variables:
-    - Annotated variables: 442
+    - Annotated variables: 463
     - Explicit `Any` variables: 40
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 269
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 274
 - Class definitions:
-    - Total class definitions: 179
+    - Total class definitions: 180
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9524,7 +9524,7 @@ The latest version of `types-rasterio` aims to provide accurate annotations for 
 
 ### Number of lines
 
-2,004 (excluding blank lines)
+2,009 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9554,7 +9554,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` parameters: 94
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 434
+    - Annotated returns: 435
     - Unannotated returns: 0
     - Explicit `Any` returns: 44
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -9563,7 +9563,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` variables: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 129
+    - Total class definitions: 130
     - Class definitions with `Any`: 2
     - Class definitions marked as at least partially `Incomplete`: 0
 
