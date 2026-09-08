@@ -4465,7 +4465,7 @@ The latest version of `types-google-cloud-ndb` aims to provide accurate annotati
 
 ### Number of lines
 
-1,566 (excluding blank lines)
+1,553 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4490,10 +4490,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `google-cloud-ndb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 484
-    - Unannotated parameters: 370
+    - Annotated parameters: 361
+    - Unannotated parameters: 493
     - Explicit `Any` parameters: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 123
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
     - Annotated returns: 236
     - Unannotated returns: 203
@@ -7700,9 +7700,9 @@ The latest version of `types-punq` aims to provide accurate annotations for `pun
 
 118 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 

@@ -72,7 +72,7 @@ gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,==
 geojson,types-geojson,https://github.com/jazzband/geojson,==3.3.0,COMPLETE,-,141,UP_TO_DATE,UPLOADED,NOT_STRICT,40,23,40,0,3,1,8,4,4,0,0,13,1,0,ERROR_ON_MISSING_STUB,linux,2
 geopandas,types-geopandas,https://github.com/geopandas/geopandas,==1.1.4,COMPLETE,-,1842,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1022,69,424,6,42,4,31,11,33,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,16
 gevent,types-gevent,https://github.com/gevent/gevent,==26.8.*,COMPLETE,-,3235,UP_TO_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,210,1,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,98
-google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,==2.4.*,PARTIAL,-,1566,OUT_OF_DATE,UPLOADED,NOT_STRICT,484,370,236,203,123,0,5,0,194,0,134,143,0,0,MISSING_STUBS_IGNORED,linux,2
+google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,==2.4.*,PARTIAL,-,1553,OUT_OF_DATE,UPLOADED,NOT_STRICT,361,493,236,203,0,0,5,0,194,0,134,143,0,0,MISSING_STUBS_IGNORED,linux,2
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,==3.5.*,COMPLETE,-,86,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
 grpcio,types-grpcio,https://github.com/grpc/grpc,~=1.83.0,PARTIAL,-,992,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,311,4,217,1,0,1,5,2,30,0,0,69,0,0,MISSING_STUBS_IGNORED,linux,3
 grpcio-channelz,types-grpcio-channelz,https://github.com/grpc/grpc,==1.*,COMPLETE,-,724,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,156,94,55,15,54,0,0,0,324,0,21,44,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -125,7 +125,7 @@ portpicker,types-portpicker,https://github.com/google/python_portpicker,==1.6.*,
 protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,~=7.35.1,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 35.1 on [protobuf v35.1](https://github.com/protocolbuffers/protobuf/releases/tag/v35.1) (python `protobuf==7.35.1`).,6526,OUT_OF_DATE,UPLOADED,NOT_STRICT,1255,177,870,10,0,0,46,19,1115,8,0,233,0,0,MISSING_STUBS_IGNORED,linux,10
 psutil,types-psutil,https://github.com/giampaolo/psutil,==7.2.2,COMPLETE,-,2357,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,492,2,695,1,1,2,2,1,675,0,54,100,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,15
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,==2.9.12,COMPLETE,-,1763,UP_TO_DATE,UPLOADED,NOT_STRICT,313,174,317,72,1,6,14,21,521,60,3,332,2,0,ERROR_ON_MISSING_STUB,linux,2
-punq,types-punq,https://github.com/bobthemighty/punq,==0.8.*,COMPLETE,-,118,UP_TO_DATE,UPLOADED,NOT_STRICT,54,6,30,0,0,1,10,1,16,4,1,15,0,0,ERROR_ON_MISSING_STUB,linux,2
+punq,types-punq,https://github.com/bobthemighty/punq,==0.8.*,COMPLETE,-,118,OUT_OF_DATE,UPLOADED,NOT_STRICT,54,6,30,0,0,1,10,1,16,4,1,15,0,0,ERROR_ON_MISSING_STUB,linux,2
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,==0.6.*,COMPLETE,-,1485,UP_TO_DATE,UPLOADED,NOT_STRICT,197,535,112,422,33,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyaudio,types-pyaudio,-,==0.2.*,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,==2.0.*,COMPLETE,-,168,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,70,0,0,12,0,0,ERROR_ON_MISSING_STUB,linux,0
