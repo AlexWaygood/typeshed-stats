@@ -1,5 +1,5 @@
 package_name,stub_distribution_name,upstream_url,version,completeness_level,extra_description,number_of_lines,package_status,upload_status,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables,classdefs,classdefs_with_Any,classdefs_with_Incomplete,stubtest_strictness,stubtest_ci_platforms,stubtest_allowlist_length
-Authlib,types-Authlib,https://github.com/authlib/authlib,==1.8.0,COMPLETE,-,3880,UP_TO_DATE,UPLOADED,NOT_STRICT,479,1467,770,392,17,87,5,5,685,0,266,286,1,4,ERROR_ON_MISSING_STUB,linux,44
+Authlib,types-Authlib,https://github.com/authlib/authlib,==1.8.0,COMPLETE,-,3893,UP_TO_DATE,UPLOADED,NOT_STRICT,498,1448,784,378,17,89,5,5,685,0,259,286,1,4,ERROR_ON_MISSING_STUB,linux,41
 Deprecated,types-Deprecated,https://github.com/laurent-laporte-pro/deprecated,~=1.3.1,COMPLETE,-,88,UP_TO_DATE,UPLOADED,STRICT,44,0,15,0,0,0,3,0,16,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 Flask-Cors,types-Flask-Cors,https://github.com/corydolphin/flask-cors,==6.0.3,COMPLETE,-,129,OBSOLETE,UPLOADED,STRICT,65,0,24,0,0,0,7,2,32,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrate,==4.1.*,COMPLETE,-,128,UP_TO_DATE,UPLOADED,STRICT,86,0,23,0,0,0,0,0,7,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -115,7 +115,7 @@ opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,
 paramiko,types-paramiko,https://github.com/paramiko/paramiko,==5.0.*,COMPLETE,-,1748,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,678,8,596,3,2,0,13,3,497,4,23,118,2,0,ERROR_ON_MISSING_STUB,linux;win32,4
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,==0.11.*,COMPLETE,-,198,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,114,0,59,1,0,0,22,2,34,3,2,28,0,0,ERROR_ON_MISSING_STUB,linux,3
 passpy,types-passpy,https://github.com/bfrascher/passpy,==1.0.*,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
-peewee,types-peewee,https://github.com/coleifer/peewee,==4.5.0,PARTIAL,-,2024,OUT_OF_DATE,UPLOADED,NOT_STRICT,443,867,684,239,0,25,56,4,463,40,274,180,0,0,ERROR_ON_MISSING_STUB,linux,29
+peewee,types-peewee,https://github.com/coleifer/peewee,==4.5.1,PARTIAL,-,2024,UP_TO_DATE,UPLOADED,NOT_STRICT,443,867,684,239,0,25,56,4,463,40,274,180,0,0,ERROR_ON_MISSING_STUB,linux,29
 pep8-naming,types-pep8-naming,https://github.com/PyCQA/pep8-naming,==0.15.*,COMPLETE,-,150,UP_TO_DATE,UPLOADED,STRICT,92,0,42,0,0,0,1,0,33,0,0,10,0,0,ERROR_ON_MISSING_STUB,linux,0
 pexpect,types-pexpect,https://github.com/pexpect/pexpect,==4.9.*,COMPLETE,-,667,UP_TO_DATE,UPLOADED,NOT_STRICT,226,128,181,33,0,0,0,0,160,0,24,22,0,0,ERROR_ON_MISSING_STUB,linux,1
 pika,types-pika-ts,https://github.com/pika/pika,==1.4.*,COMPLETE,-,2633,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1022,4,769,4,42,22,3,0,468,0,10,219,0,0,ERROR_ON_MISSING_STUB,linux,28
@@ -125,7 +125,7 @@ portpicker,types-portpicker,https://github.com/google/python_portpicker,==1.6.*,
 protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,~=7.35.1,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 35.1 on [protobuf v35.1](https://github.com/protocolbuffers/protobuf/releases/tag/v35.1) (python `protobuf==7.35.1`).,6526,OUT_OF_DATE,UPLOADED,NOT_STRICT,1255,177,870,10,0,0,46,19,1115,8,0,233,0,0,MISSING_STUBS_IGNORED,linux,10
 psutil,types-psutil,https://github.com/giampaolo/psutil,==7.2.2,COMPLETE,-,2357,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,492,2,695,1,1,2,2,1,675,0,54,100,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,15
 psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,==2.9.12,COMPLETE,-,1763,UP_TO_DATE,UPLOADED,NOT_STRICT,313,174,317,72,1,6,14,21,521,60,3,332,2,0,ERROR_ON_MISSING_STUB,linux,2
-punq,types-punq,https://github.com/bobthemighty/punq,==0.8.*,COMPLETE,-,118,OUT_OF_DATE,UPLOADED,NOT_STRICT,54,6,30,0,0,1,10,1,16,4,1,15,0,0,ERROR_ON_MISSING_STUB,linux,2
+punq,types-punq,https://github.com/bobthemighty/punq,==0.8.*,COMPLETE,-,118,OBSOLETE,UPLOADED,NOT_STRICT,54,6,30,0,0,1,10,1,16,4,1,15,0,0,ERROR_ON_MISSING_STUB,linux,2
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,==0.6.*,COMPLETE,-,1485,UP_TO_DATE,UPLOADED,NOT_STRICT,197,535,112,422,33,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyaudio,types-pyaudio,-,==0.2.*,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,==2.0.*,COMPLETE,-,168,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,70,0,0,12,0,0,ERROR_ON_MISSING_STUB,linux,0

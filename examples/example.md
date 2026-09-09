@@ -14,7 +14,7 @@ The latest version of `types-Authlib` aims to provide accurate annotations for `
 
 ### Number of lines
 
-3,880 (excluding blank lines)
+3,893 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -30,7 +30,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 44 unique allowlist entries for `Authlib` when running stubtest in CI.
+Typeshed currently has 41 unique allowlist entries for `Authlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -39,19 +39,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 479
-    - Unannotated parameters: 1,467
+    - Annotated parameters: 498
+    - Unannotated parameters: 1,448
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 770
-    - Unannotated returns: 392
+    - Annotated returns: 784
+    - Unannotated returns: 378
     - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 87
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 89
 - Variables:
     - Annotated variables: 685
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 266
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 259
 - Class definitions:
     - Total class definitions: 286
     - Class definitions with `Any`: 1
@@ -7080,15 +7080,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-peewee` aims to provide accurate annotations for `peewee==4.5.0`.
+The latest version of `types-peewee` aims to provide accurate annotations for `peewee==4.5.1`.
 
 ### Number of lines
 
 2,024 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7700,9 +7700,9 @@ The latest version of `types-punq` aims to provide accurate annotations for `pun
 
 118 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
