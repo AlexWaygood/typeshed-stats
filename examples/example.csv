@@ -43,7 +43,7 @@ click-web,types-click-web,https://github.com/fredrik-corneliusson/click-web,==0.
 colorama,types-colorama,https://github.com/tartley/colorama,==0.4.*,COMPLETE,-,200,UP_TO_DATE,UPLOADED,STRICT,89,0,60,0,0,0,3,1,85,0,0,11,0,0,ERROR_ON_MISSING_STUB,linux;win32,44
 colorful,types-colorful,https://github.com/timofurrer/colorful,==0.5.*,COMPLETE,-,128,UP_TO_DATE,UPLOADED,NOT_STRICT,73,1,49,0,0,0,0,1,40,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
 console-menu,types-console-menu,https://github.com/aegirhall/console-menu,==0.8.*,COMPLETE,-,736,UP_TO_DATE,UPLOADED,STRICT,217,0,278,0,0,0,7,1,58,3,1,39,0,0,ERROR_ON_MISSING_STUB,linux,0
-convertdate,types-convertdate,https://github.com/fitnr/convertdate,==2.4.1,COMPLETE,-,561,OUT_OF_DATE,UPLOADED,STRICT,488,0,267,0,0,0,0,0,135,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
+convertdate,types-convertdate,https://github.com/fitnr/convertdate,==2.5.1,COMPLETE,-,561,UP_TO_DATE,UPLOADED,STRICT,488,0,267,0,0,0,0,0,135,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 croniter,types-croniter,https://github.com/pallets-eco/croniter,==6.2.4,COMPLETE,-,368,UP_TO_DATE,UPLOADED,STRICT,167,0,39,0,0,0,1,0,49,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
 datauri,types-datauri,https://github.com/eclecticiq/python-data-uri,==1.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,0,0,0,4,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 dateparser,types-dateparser,https://github.com/scrapinghub/dateparser,==1.4.3,COMPLETE,-,729,UP_TO_DATE,UPLOADED,NOT_STRICT,310,8,158,4,7,2,11,1,178,0,2,41,0,0,ERROR_ON_MISSING_STUB,linux,6
@@ -74,7 +74,7 @@ geopandas,types-geopandas,https://github.com/geopandas/geopandas,==1.1.4,COMPLET
 gevent,types-gevent,https://github.com/gevent/gevent,==26.8.*,COMPLETE,-,3235,UP_TO_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,210,1,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,98
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,==2.4.*,PARTIAL,-,1553,OUT_OF_DATE,UPLOADED,NOT_STRICT,361,493,236,203,0,0,5,0,194,0,134,143,0,0,MISSING_STUBS_IGNORED,linux,2
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,==3.5.*,COMPLETE,-,86,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
-grpcio,types-grpcio,https://github.com/grpc/grpc,~=1.83.0,PARTIAL,-,992,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,311,4,217,1,0,1,5,2,30,0,0,69,0,0,MISSING_STUBS_IGNORED,linux,3
+grpcio,types-grpcio,https://github.com/grpc/grpc,~=1.83.0,PARTIAL,-,992,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,311,4,217,1,0,1,5,2,30,0,0,69,0,0,MISSING_STUBS_IGNORED,linux,3
 grpcio-channelz,types-grpcio-channelz,https://github.com/grpc/grpc,==1.*,COMPLETE,-,724,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,156,94,55,15,54,0,0,0,324,0,21,44,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-health-checking,types-grpcio-health-checking,https://github.com/grpc/grpc,==1.*,COMPLETE,-,89,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,15,27,16,4,2,0,0,0,16,0,6,7,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-reflection,types-grpcio-reflection,https://github.com/grpc/grpc,==1.*,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,34,17,18,4,7,0,0,0,55,0,1,15,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -101,7 +101,7 @@ lzstring,types-lzstring,https://github.com/gkovacs/lz-string-python,==1.0.*,COMP
 m3u8,types-m3u8,https://github.com/globocom/m3u8,==6.0.*,COMPLETE,-,599,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,200,12,99,0,9,0,4,1,214,0,12,42,0,0,ERROR_ON_MISSING_STUB,linux,3
 mock,types-mock,https://github.com/testing-cabal/mock,==5.2.*,COMPLETE,-,364,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,196,20,90,0,25,0,86,15,58,33,0,24,3,0,ERROR_ON_MISSING_STUB,linux,2
 mypy-extensions,types-mypy-extensions,https://github.com/python/mypy_extensions,==1.1.*,COMPLETE,-,79,UP_TO_DATE,UPLOADED,STRICT,31,0,28,0,0,0,3,7,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,6
-mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,==2.2.*,COMPLETE,-,1276,UP_TO_DATE,UPLOADED,NOT_STRICT,32,67,40,76,0,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,0
+mysqlclient,types-mysqlclient,https://github.com/PyMySQL/mysqlclient,==2.2.*,COMPLETE,-,1276,OUT_OF_DATE,UPLOADED,NOT_STRICT,32,67,40,76,0,0,0,0,971,0,28,35,0,1,ERROR_ON_MISSING_STUB,linux,0
 nanoid,types-nanoid,https://github.com/puyuan/py-nanoid,==2.0.0,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 nanoleafapi,types-nanoleafapi,https://github.com/MylesMor/nanoleafapi,==2.1.*,COMPLETE,-,91,UP_TO_DATE,UPLOADED,STRICT,33,0,49,0,2,3,1,0,16,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 netaddr,types-netaddr,https://github.com/netaddr/netaddr,==1.3.*,COMPLETE,-,710,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,291,1,308,0,0,0,3,1,101,2,0,43,0,0,ERROR_ON_MISSING_STUB,linux,2
