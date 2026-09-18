@@ -59,7 +59,7 @@ editdistance,types-editdistance,https://github.com/roy-ht/editdistance,==0.8.*,C
 entrypoints,types-entrypoints,https://github.com/takluyver/entrypoints,==0.4.*,COMPLETE,-,41,UP_TO_DATE,UPLOADED,STRICT,23,0,12,0,0,0,0,1,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 ephem,types-ephem,https://github.com/brandon-rhodes/pyephem,==4.2.*,COMPLETE,-,592,UP_TO_DATE,UPLOADED,STRICT,182,0,187,0,0,0,0,0,150,0,0,55,0,0,ERROR_ON_MISSING_STUB,linux,6
 et_xmlfile,types-et_xmlfile,https://foss.heptapod.net/openpyxl/et_xmlfile,==2.0.*,COMPLETE,-,207,UP_TO_DATE,UPLOADED,STRICT,133,0,21,0,0,0,12,3,9,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
-fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,==1.7.*,COMPLETE,-,536,UP_TO_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,30
+fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,==1.7.*,COMPLETE,-,536,OUT_OF_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,30
 first,types-first,https://github.com/hynek/first,==2.0.*,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,11,0,5,0,0,0,3,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8,types-flake8,https://github.com/pycqa/flake8,==7.3.*,COMPLETE,-,572,UP_TO_DATE,UPLOADED,STRICT,223,0,165,0,0,0,35,8,185,1,90,39,0,0,ERROR_ON_MISSING_STUB,linux,1
 flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,==26.9.9,COMPLETE,-,259,UP_TO_DATE,UPLOADED,STRICT,152,0,136,0,0,0,1,3,60,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,37
