@@ -6537,9 +6537,9 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 8,142 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,694 (excluding blank lines)
+70,692 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10661,7 +10661,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 818
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
-    - Annotated variables: 9,740
+    - Annotated variables: 9,738
     - Explicit `Any` variables: 303
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
