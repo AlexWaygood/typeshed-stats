@@ -52,7 +52,7 @@ defusedxml,types-defusedxml,https://github.com/tiran/defusedxml,==0.7.*,COMPLETE
 dirhash,types-dirhash,https://github.com/andhus/dirhash-python,==0.5.*,COMPLETE,-,87,UP_TO_DATE,UPLOADED,STRICT,39,0,13,0,0,0,0,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 django-filter,types-django-filter,https://github.com/carltongibson/django-filter/,==26.1.*,COMPLETE,-,806,UP_TO_DATE,UPLOADED,STRICT,298,0,128,0,0,0,120,44,113,25,0,73,3,0,ERROR_ON_MISSING_STUB,linux,12
 django-import-export,types-django-import-export,https://github.com/django-import-export/django-import-export,==4.4.*,COMPLETE,-,699,UP_TO_DATE,UPLOADED,STRICT,376,0,255,0,0,0,135,35,156,10,0,72,0,0,SKIPPED,None,0
-docker,types-docker,https://github.com/docker/docker-py,==7.2.*,COMPLETE,-,3042,UP_TO_DATE,UPLOADED,NOT_STRICT,1614,200,493,99,22,13,48,36,232,1,2,144,28,1,ERROR_ON_MISSING_STUB,linux,8
+docker,types-docker,https://github.com/docker/docker-py,==7.2.*,COMPLETE,-,3042,UP_TO_DATE,UPLOADED,NOT_STRICT,1614,200,493,99,22,13,48,36,232,1,2,144,28,1,ERROR_ON_MISSING_STUB,linux;win32,8
 dockerfile-parse,types-dockerfile-parse,https://github.com/containerbuildsystem/dockerfile-parse,==2.0.*,COMPLETE,-,115,UP_TO_DATE,UPLOADED,STRICT,46,0,24,0,0,0,0,0,39,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 docutils,types-docutils,https://sourceforge.net/p/docutils/code,==0.23,COMPLETE,-,5689,UP_TO_DATE,UPLOADED,NOT_STRICT,2460,694,2116,319,20,7,39,219,1511,23,223,500,1,0,ERROR_ON_MISSING_STUB,linux,19
 editdistance,types-editdistance,https://github.com/roy-ht/editdistance,==0.8.*,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,10,0,4,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -71,7 +71,7 @@ flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/fl
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,==16.3.*,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1587,NOT_ON_PYPI,UPLOADED,NOT_STRICT,517,15,422,26,0,0,2,2,489,0,2,154,0,0,SKIPPED,None,52
 geojson,types-geojson,https://github.com/jazzband/geojson,==3.3.0,COMPLETE,-,141,UP_TO_DATE,UPLOADED,NOT_STRICT,40,23,40,0,3,1,8,4,4,0,0,13,1,0,ERROR_ON_MISSING_STUB,linux,2
 geopandas,types-geopandas,https://github.com/geopandas/geopandas,==1.1.4,COMPLETE,-,1842,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1022,69,424,6,42,4,31,11,33,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,16
-gevent,types-gevent,https://github.com/gevent/gevent,==26.8.*,COMPLETE,-,3235,OUT_OF_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,210,1,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,98
+gevent,types-gevent,https://github.com/gevent/gevent,==26.9.*,COMPLETE,-,3235,UP_TO_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,210,1,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,98
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,==2.4.*,PARTIAL,-,1553,OUT_OF_DATE,UPLOADED,NOT_STRICT,361,493,236,203,0,0,5,0,194,0,134,143,0,0,MISSING_STUBS_IGNORED,linux,2
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,==3.5.*,COMPLETE,-,86,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
 grpcio,types-grpcio,https://github.com/grpc/grpc,~=1.83.0,PARTIAL,-,992,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,311,4,217,1,0,1,5,2,30,0,0,69,0,0,MISSING_STUBS_IGNORED,linux,3
@@ -80,7 +80,7 @@ grpcio-health-checking,types-grpcio-health-checking,https://github.com/grpc/grpc
 grpcio-reflection,types-grpcio-reflection,https://github.com/grpc/grpc,==1.*,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,34,17,18,4,7,0,0,0,55,0,1,15,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-status,types-grpcio-status,https://github.com/grpc/grpc,==1.*,COMPLETE,-,10,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,1,2,2,1,0,1,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 gunicorn,types-gunicorn,https://github.com/benoitc/gunicorn,==26.2.0,COMPLETE,-,3620,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,946,18,736,6,41,17,23,15,1575,26,28,316,1,0,ERROR_ON_MISSING_STUB,darwin;linux,7
-hdbcli,types-hdbcli,-,==2.29.*,COMPLETE,-,190,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,113,4,91,3,0,0,15,15,21,2,1,19,0,0,ERROR_ON_MISSING_STUB,linux,17
+hdbcli,types-hdbcli,-,==2.30.*,COMPLETE,-,190,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,113,4,91,3,0,0,15,15,21,2,1,19,0,0,ERROR_ON_MISSING_STUB,linux,17
 hnswlib,types-hnswlib,https://github.com/nmslib/hnswlib,==0.8.*,COMPLETE,-,60,UP_TO_DATE,UPLOADED,STRICT,32,0,26,0,0,0,1,0,3,0,1,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 html5lib,types-html5lib,https://github.com/html5lib/html5lib-python,==1.1.*,COMPLETE,-,850,UP_TO_DATE,UPLOADED,NOT_STRICT,204,128,252,60,6,6,7,2,246,0,68,42,0,9,ERROR_ON_MISSING_STUB,linux,5
 httplib2,types-httplib2,https://github.com/httplib2/httplib2,==0.32.0,COMPLETE,-,303,UP_TO_DATE,UPLOADED,NOT_STRICT,62,116,68,8,1,0,2,0,99,0,34,31,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -130,7 +130,7 @@ pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,==0.6.*,COMPLETE,-,1485,UP_
 pyaudio,types-pyaudio,-,==0.2.*,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
 pycocotools,types-pycocotools,https://github.com/ppwwyyxx/cocoapi,==2.0.*,COMPLETE,-,168,UP_TO_DATE,UPLOADED,STRICT,51,0,35,0,0,0,0,1,70,0,0,12,0,0,ERROR_ON_MISSING_STUB,linux,0
 pycups,types-pycups,https://github.com/OpenPrinting/pycups,==2.0.*,COMPLETE,-,854,UP_TO_DATE,UPLOADED,NOT_STRICT,242,0,150,1,0,0,0,0,341,0,0,13,0,0,ERROR_ON_MISSING_STUB,linux,0
-pycurl,types-pycurl,https://github.com/pycurl/pycurl,==7.47.0,COMPLETE,-,933,OUT_OF_DATE,UPLOADED,STRICT,104,0,91,0,0,0,8,2,737,0,0,12,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1
+pycurl,types-pycurl,https://github.com/pycurl/pycurl,==7.48.0,COMPLETE,-,1051,UP_TO_DATE,UPLOADED,STRICT,123,0,129,0,0,0,8,2,782,0,0,13,0,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,1
 pyfarmhash,types-pyfarmhash,https://github.com/veelion/python-farmhash,==0.5.*,COMPLETE,-,9,UP_TO_DATE,UPLOADED,STRICT,13,0,9,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyflakes,types-pyflakes,https://github.com/PyCQA/pyflakes,==3.4.*,COMPLETE,-,446,UP_TO_DATE,UPLOADED,STRICT,343,0,215,0,0,0,1,2,77,1,0,77,0,0,ERROR_ON_MISSING_STUB,linux,27
 pyinstaller,types-pyinstaller,https://github.com/pyinstaller/pyinstaller,~=6.22.1,PARTIAL,-,798,UP_TO_DATE,UPLOADED,STRICT,306,0,169,0,0,0,2,2,246,1,0,32,0,0,ERROR_ON_MISSING_STUB,linux,48
@@ -174,7 +174,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,==4.1.*,COM
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,==4.1.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,==1.17.*,COMPLETE,-,330,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,21
 slumber,types-slumber,https://github.com/samgiles/slumber,==0.7.*,COMPLETE,-,77,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,70692,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30460,606,17106,230,23,24,1955,818,9738,303,234,3245,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,828
+stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,70700,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30462,606,17108,230,23,24,1955,818,9738,303,234,3246,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,831
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,==1.1,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.10.*,COMPLETE,-,62,UP_TO_DATE,UPLOADED,STRICT,21,0,3,0,0,0,2,0,23,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30359,OUT_OF_DATE,UPLOADED,NOT_STRICT,5439,38,2948,42,12,23,60,34,5438,5,12,927,1,0,SKIPPED,None,51
