@@ -319,7 +319,7 @@ The latest version of `types-JACK-Client` aims to provide accurate annotations f
 
 ### Number of lines
 
-314 (excluding blank lines)
+321 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -349,16 +349,16 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 152
+    - Annotated returns: 155
     - Unannotated returns: 0
-    - Explicit `Any` returns: 2
+    - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 46
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 15
+    - Total class definitions: 16
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -624,7 +624,7 @@ The latest version of `types-PyMySQL` aims to provide accurate annotations for `
 
 ### Number of lines
 
-1,272 (excluding blank lines)
+1,276 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -640,7 +640,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 2 unique allowlist entries for `PyMySQL` when running stubtest in CI.
+Typeshed currently has 4 unique allowlist entries for `PyMySQL` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -649,21 +649,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `PyMySQL`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 255
-    - Unannotated parameters: 24
-    - Explicit `Any` parameters: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 3
+    - Annotated parameters: 256
+    - Unannotated parameters: 22
+    - Explicit `Any` parameters: 9
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
     - Annotated returns: 130
-    - Unannotated returns: 31
+    - Unannotated returns: 29
     - Explicit `Any` returns: 14
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 768
-    - Explicit `Any` variables: 10
+    - Annotated variables: 766
+    - Explicit `Any` variables: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 4
 - Class definitions:
-    - Total class definitions: 28
+    - Total class definitions: 27
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -3365,7 +3365,7 @@ The latest version of `types-docutils` aims to provide accurate annotations for 
 
 ### Number of lines
 
-5,689 (excluding blank lines)
+5,690 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -3390,10 +3390,10 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `docutils`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 2,460
-    - Unannotated parameters: 694
+    - Annotated parameters: 2,466
+    - Unannotated parameters: 688
     - Explicit `Any` parameters: 39
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 20
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 22
 - Returns:
     - Annotated returns: 2,116
     - Unannotated returns: 319
@@ -3788,7 +3788,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-flake8` aims to provide accurate annotations for `flake8==7.3.*`.
+The latest version of `types-flake8` aims to provide accurate annotations for `flake8==7.4.*`.
 
 ### Number of lines
 
@@ -6226,15 +6226,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-mysqlclient` aims to provide accurate annotations for `mysqlclient==2.2.*`.
+The latest version of `types-mysqlclient` aims to provide accurate annotations for `mysqlclient==2.3.*`.
 
 ### Number of lines
 
-1,276 (excluding blank lines)
+1,285 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6246,7 +6246,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 0 allowlist entries for `mysqlclient` when running stubtest in CI.
+Typeshed currently has 11 unique allowlist entries for `mysqlclient` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6255,19 +6255,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `mysqlclient`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 32
+    - Annotated parameters: 34
     - Unannotated parameters: 67
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 40
-    - Unannotated returns: 76
+    - Annotated returns: 44
+    - Unannotated returns: 72
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 971
+    - Annotated variables: 976
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 28
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 27
 - Class definitions:
     - Total class definitions: 35
     - Class definitions with `Any`: 0
@@ -8123,9 +8123,9 @@ The latest version of `types-pyflakes` aims to provide accurate annotations for 
 
 446 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
