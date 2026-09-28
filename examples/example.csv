@@ -70,7 +70,7 @@ flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simp
 flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,==1.17.*,COMPLETE,-,36,UP_TO_DATE,UPLOADED,STRICT,11,0,13,0,0,0,1,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,==16.3.*,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1587,NOT_ON_PYPI,UPLOADED,NOT_STRICT,517,15,422,26,0,0,2,2,489,0,2,154,0,0,SKIPPED,None,52
 geojson,types-geojson,https://github.com/jazzband/geojson,==3.3.0,COMPLETE,-,141,UP_TO_DATE,UPLOADED,NOT_STRICT,40,23,40,0,3,1,8,4,4,0,0,13,1,0,ERROR_ON_MISSING_STUB,linux,2
-geopandas,types-geopandas,https://github.com/geopandas/geopandas,==1.1.4,COMPLETE,-,1842,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1022,69,424,6,42,4,31,11,33,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,16
+geopandas,types-geopandas,https://github.com/geopandas/geopandas,==1.1.4,COMPLETE,-,1842,OUT_OF_DATE,UPLOADED,ENTIRELY_EXCLUDED,1022,69,424,6,42,4,31,11,33,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,16
 gevent,types-gevent,https://github.com/gevent/gevent,==26.9.*,COMPLETE,-,3235,UP_TO_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,210,1,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,98
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,==2.4.*,PARTIAL,-,1553,OUT_OF_DATE,UPLOADED,NOT_STRICT,361,493,236,203,0,0,5,0,194,0,134,143,0,0,MISSING_STUBS_IGNORED,linux,2
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,==3.5.*,COMPLETE,-,86,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
@@ -107,7 +107,7 @@ nanoleafapi,types-nanoleafapi,https://github.com/MylesMor/nanoleafapi,==2.1.*,CO
 netaddr,types-netaddr,https://github.com/netaddr/netaddr,==1.3.*,COMPLETE,-,710,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,291,1,308,0,0,0,3,1,101,2,0,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 netifaces,types-netifaces,https://github.com/al45tair/netifaces,==0.11.*,COMPLETE,-,69,UP_TO_DATE,UPLOADED,STRICT,1,0,3,0,0,0,0,0,65,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,33
 networkx,types-networkx,https://github.com/networkx/networkx,==3.6.1,COMPLETE,-,8142,OUT_OF_DATE,UPLOADED,NOT_STRICT,3651,773,1300,296,432,467,27,10,387,5,240,131,0,1,ERROR_ON_MISSING_STUB,linux,23
-oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,==3.3.*,COMPLETE,-,1910,UP_TO_DATE,UPLOADED,NOT_STRICT,751,221,314,62,27,11,0,0,372,1,69,118,0,2,ERROR_ON_MISSING_STUB,linux,0
+oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,==3.3.*,COMPLETE,-,1910,OUT_OF_DATE,UPLOADED,NOT_STRICT,751,221,314,62,27,11,0,0,372,1,69,118,0,2,ERROR_ON_MISSING_STUB,linux,0
 objgraph,types-objgraph,https://github.com/mgedmin/objgraph,==3.6.*,COMPLETE,-,86,UP_TO_DATE,UPLOADED,STRICT,71,0,17,0,0,0,0,0,6,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 olefile,types-olefile,https://github.com/decalage2/olefile,==0.47.*,COMPLETE,-,222,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,75,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,==3.1.5,COMPLETE,-,13115,UP_TO_DATE,UPLOADED,NOT_STRICT,3704,511,1312,87,12,7,13,11,4019,4,339,603,1,20,ERROR_ON_MISSING_STUB,linux,169
@@ -174,7 +174,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,==4.1.*,COM
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,==4.1.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,==1.17.*,COMPLETE,-,330,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,21
 slumber,types-slumber,https://github.com/samgiles/slumber,==0.7.*,COMPLETE,-,77,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,70702,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30462,606,17108,230,23,24,1955,818,9739,303,234,3246,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,832
+stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,70706,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30462,606,17108,230,23,24,1955,818,9739,303,234,3246,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,832
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,==1.1,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.10.*,COMPLETE,-,62,UP_TO_DATE,UPLOADED,STRICT,21,0,3,0,0,0,2,0,23,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30359,OUT_OF_DATE,UPLOADED,NOT_STRICT,5439,38,2948,42,12,23,60,34,5438,5,12,927,1,0,SKIPPED,None,51
