@@ -77,9 +77,9 @@ The latest version of `types-Deprecated` aims to provide accurate annotations fo
 
 88 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
@@ -1838,15 +1838,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-braintree` aims to provide accurate annotations for `braintree==4.46.*`.
+The latest version of `types-braintree` aims to provide accurate annotations for `braintree==4.47.*`.
 
 ### Number of lines
 
-3,804 (excluding blank lines)
+3,809 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1877,11 +1877,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
-    - Annotated variables: 1,617
+    - Annotated variables: 1,621
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 117
 - Class definitions:
-    - Total class definitions: 321
+    - Total class definitions: 322
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -4583,15 +4583,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-grpcio` aims to provide accurate annotations for `grpcio~=1.83.0`.
+The latest version of `types-grpcio` aims to provide accurate annotations for `grpcio~=1.84.0`.
 
 ### Number of lines
 
-992 (excluding blank lines)
+993 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4612,7 +4612,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `grpcio`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 311
+    - Annotated parameters: 312
     - Unannotated parameters: 4
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
@@ -5616,15 +5616,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-jwcrypto` aims to provide accurate annotations for `jwcrypto==1.6.0`.
+The latest version of `types-jwcrypto` aims to provide accurate annotations for `jwcrypto==1.6.1`.
 
 ### Number of lines
 
-519 (excluding blank lines)
+520 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -5655,7 +5655,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
 - Variables:
-    - Annotated variables: 66
+    - Annotated variables: 67
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
@@ -7086,9 +7086,9 @@ The latest version of `types-peewee` aims to provide accurate annotations for `p
 
 2,024 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -9219,7 +9219,7 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 ### Number of lines
 
-39,935 (excluding blank lines)
+39,942 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9244,12 +9244,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 4,331
+    - Annotated parameters: 4,338
     - Unannotated parameters: 3,517
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 372
 - Returns:
-    - Annotated returns: 4,211
+    - Annotated returns: 4,213
     - Unannotated returns: 1,799
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 277
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,700 (excluding blank lines)
+70,702 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10642,7 +10642,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 831 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 832 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10661,7 +10661,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 818
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
-    - Annotated variables: 9,738
+    - Annotated variables: 9,739
     - Explicit `Any` variables: 303
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
@@ -11482,15 +11482,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-untangle` aims to provide accurate annotations for `untangle==1.2.*`.
+The latest version of `types-untangle` aims to provide accurate annotations for `untangle==1.3.*`.
 
 ### Number of lines
 
-33 (excluding blank lines)
+35 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
