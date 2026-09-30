@@ -62,7 +62,7 @@ et_xmlfile,types-et_xmlfile,https://foss.heptapod.net/openpyxl/et_xmlfile,==2.0.
 fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,==1.7.*,COMPLETE,-,536,OUT_OF_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,30
 first,types-first,https://github.com/hynek/first,==2.0.*,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,11,0,5,0,0,0,3,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8,types-flake8,https://github.com/pycqa/flake8,==7.4.*,COMPLETE,-,572,UP_TO_DATE,UPLOADED,STRICT,223,0,165,0,0,0,35,8,185,1,90,39,0,0,ERROR_ON_MISSING_STUB,linux,1
-flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,==26.9.9,COMPLETE,-,259,UP_TO_DATE,UPLOADED,STRICT,152,0,136,0,0,0,1,3,60,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,37
+flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,==26.9.9,COMPLETE,-,259,OUT_OF_DATE,UPLOADED,STRICT,152,0,136,0,0,0,1,3,60,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,37
 flake8-builtins,types-flake8-builtins,https://github.com/gforcada/flake8-builtins,==3.1.*,COMPLETE,-,39,UP_TO_DATE,UPLOADED,STRICT,17,0,15,0,0,0,0,0,13,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-docstrings,types-flake8-docstrings,https://github.com/pycqa/flake8-docstrings,==1.7.*,COMPLETE,-,21,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,7,1,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/flake8-rst-docstrings,==0.4.*,COMPLETE,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -154,7 +154,7 @@ pywin32,types-pywin32,https://github.com/mhammond/pywin32,==312.*,COMPLETE,-,399
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,==0.28.*,COMPLETE,-,857,UP_TO_DATE,UPLOADED,STRICT,512,0,297,0,0,0,0,0,165,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,==1.2.*,COMPLETE,-,182,UP_TO_DATE,UPLOADED,STRICT,99,0,31,0,0,0,0,4,40,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,==8.2.*,COMPLETE,-,647,UP_TO_DATE,UPLOADED,STRICT,282,0,152,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,9
-rasterio,types-rasterio,https://github.com/rasterio/rasterio,==1.5.1,COMPLETE,-,2009,UP_TO_DATE,UPLOADED,STRICT,973,0,435,0,2,0,94,44,185,5,0,130,2,0,ERROR_ON_MISSING_STUB,linux,22
+rasterio,types-rasterio,https://github.com/rasterio/rasterio,==1.5.1,COMPLETE,-,2009,OUT_OF_DATE,UPLOADED,STRICT,973,0,435,0,2,0,94,44,185,5,0,130,2,0,ERROR_ON_MISSING_STUB,linux,22
 ratelimit,types-ratelimit,https://github.com/tomasbasham/ratelimit,==2.2.*,COMPLETE,-,18,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,1,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,==2026.9.10,COMPLETE,-,913,OUT_OF_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,3,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,12
 reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,==5.0.0,COMPLETE,-,8271,OUT_OF_DATE,UPLOADED,NOT_STRICT,1990,2490,1938,651,14,40,29,12,2822,6,1065,585,0,3,ERROR_ON_MISSING_STUB,linux,50
