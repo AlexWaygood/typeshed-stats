@@ -3119,15 +3119,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-django-filter` aims to provide accurate annotations for `django-filter==26.1.*`.
+The latest version of `types-django-filter` aims to provide accurate annotations for `django-filter==26.2.*`.
 
 ### Number of lines
 
 806 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -9459,15 +9459,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-rasterio` aims to provide accurate annotations for `rasterio==1.5.1`.
+The latest version of `types-rasterio` aims to provide accurate annotations for `rasterio==1.5.2`.
 
 ### Number of lines
 
 2,009 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -9581,15 +9581,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.9.10`.
+The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.9.29`.
 
 ### Number of lines
 
 913 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,706 (excluding blank lines)
+70,709 (excluding blank lines)
 
 ### Package status: *stdlib*
 
