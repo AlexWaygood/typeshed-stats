@@ -9097,7 +9097,7 @@ The latest version of `types-python-xlib` aims to provide accurate annotations f
 
 ### Number of lines
 
-5,417 (excluding blank lines)
+5,423 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9154,15 +9154,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-pytz` aims to provide accurate annotations for `pytz==2026.4`.
+The latest version of `types-pytz` aims to provide accurate annotations for `pytz==2026.5`.
 
 ### Number of lines
 
 151 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -9646,7 +9646,7 @@ The latest version of `types-reportlab` aims to provide accurate annotations for
 
 ### Number of lines
 
-8,271 (excluding blank lines)
+8,272 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -10386,15 +10386,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-simplejson` aims to provide accurate annotations for `simplejson==4.1.*`.
+The latest version of `types-simplejson` aims to provide accurate annotations for `simplejson==4.2.*`.
 
 ### Number of lines
 
 304 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,709 (excluding blank lines)
+70,763 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10642,7 +10642,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 832 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 837 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10651,21 +10651,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,462
+    - Annotated parameters: 30,470
     - Unannotated parameters: 606
     - Explicit `Any` parameters: 1,955
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,108
+    - Annotated returns: 17,113
     - Unannotated returns: 230
     - Explicit `Any` returns: 818
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
-    - Annotated variables: 9,739
+    - Annotated variables: 9,761
     - Explicit `Any` variables: 303
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
-    - Total class definitions: 3,246
+    - Total class definitions: 3,249
     - Class definitions with `Any`: 32
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -11913,7 +11913,7 @@ The latest version of `types-workalendar` aims to provide accurate annotations f
 
 ### Number of lines
 
-1,859 (excluding blank lines)
+1,860 (excluding blank lines)
 
 ### Package status: *up to date*
 
