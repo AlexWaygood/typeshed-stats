@@ -6,7 +6,7 @@ Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrat
 Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,==5.6.*,COMPLETE,-,256,UP_TO_DATE,UPLOADED,NOT_STRICT,141,33,37,15,14,1,2,0,21,2,3,11,0,0,ERROR_ON_MISSING_STUB,linux,3
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,==0.5.*,COMPLETE,-,321,UP_TO_DATE,UPLOADED,STRICT,107,0,155,0,0,0,0,3,46,0,0,16,0,0,ERROR_ON_MISSING_STUB,darwin;linux,1
 Jetson.GPIO,types-Jetson.GPIO,https://github.com/NVIDIA/jetson-gpio,==2.1.13,COMPLETE,-,212,UP_TO_DATE,UPLOADED,STRICT,88,0,47,0,0,0,0,2,108,1,0,11,0,0,ERROR_ON_MISSING_STUB,linux,4
-Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,~=3.10.2,COMPLETE,-,826,OUT_OF_DATE,UPLOADED,NOT_STRICT,301,33,231,3,0,0,17,4,252,11,0,112,1,0,ERROR_ON_MISSING_STUB,linux,3
+Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,~=3.10.2,COMPLETE,-,827,OUT_OF_DATE,UPLOADED,NOT_STRICT,301,33,231,3,0,0,17,4,252,11,0,112,1,0,ERROR_ON_MISSING_STUB,linux,3
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,==0.9.*,COMPLETE,-,233,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMeeus,types-PyMeeus,https://github.com/architest/pymeeus,==0.5.*,COMPLETE,-,954,UP_TO_DATE,UPLOADED,STRICT,706,0,374,0,0,0,0,0,59,0,0,18,0,0,ERROR_ON_MISSING_STUB,linux,0
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,==1.2.*,COMPLETE,-,1276,UP_TO_DATE,UPLOADED,NOT_STRICT,256,22,130,29,2,2,9,14,766,9,4,27,0,0,ERROR_ON_MISSING_STUB,linux,4
@@ -66,7 +66,7 @@ flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,==26
 flake8-builtins,types-flake8-builtins,https://github.com/gforcada/flake8-builtins,==3.1.*,COMPLETE,-,39,UP_TO_DATE,UPLOADED,STRICT,17,0,15,0,0,0,0,0,13,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-docstrings,types-flake8-docstrings,https://github.com/pycqa/flake8-docstrings,==1.7.*,COMPLETE,-,21,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,7,1,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-rst-docstrings,types-flake8-rst-docstrings,https://github.com/peterjc/flake8-rst-docstrings,==0.4.*,COMPLETE,-,31,UP_TO_DATE,UPLOADED,STRICT,10,0,5,0,0,0,1,0,12,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
-flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simplify,==0.30.*,COMPLETE,-,121,UP_TO_DATE,UPLOADED,STRICT,75,0,72,0,0,0,0,1,15,0,2,7,0,0,ERROR_ON_MISSING_STUB,linux,0
+flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simplify,==0.30.*,COMPLETE,-,121,OUT_OF_DATE,UPLOADED,STRICT,75,0,72,0,0,0,0,1,15,0,2,7,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-typing-imports,types-flake8-typing-imports,https://github.com/asottile/flake8-typing-imports,==1.17.*,COMPLETE,-,36,UP_TO_DATE,UPLOADED,STRICT,11,0,13,0,0,0,1,1,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,==16.3.*,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1587,NOT_ON_PYPI,UPLOADED,NOT_STRICT,517,15,422,26,0,0,2,2,489,0,2,154,0,0,SKIPPED,None,52
 geojson,types-geojson,https://github.com/jazzband/geojson,==3.3.0,COMPLETE,-,141,UP_TO_DATE,UPLOADED,NOT_STRICT,40,23,40,0,3,1,8,4,4,0,0,13,1,0,ERROR_ON_MISSING_STUB,linux,2
