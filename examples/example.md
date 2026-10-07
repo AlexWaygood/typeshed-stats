@@ -4892,7 +4892,7 @@ The latest version of `types-gunicorn` aims to provide accurate annotations for 
 
 ### Number of lines
 
-3,620 (excluding blank lines)
+3,622 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7267,7 +7267,7 @@ The latest version of `types-pika-ts` aims to provide accurate annotations for `
 
 ### Number of lines
 
-2,633 (excluding blank lines)
+2,627 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10270,9 +10270,9 @@ The latest version of `types-shapely` aims to provide accurate annotations for `
 
 3,053 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,763 (excluding blank lines)
+70,764 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -12340,7 +12340,7 @@ The latest version of `types-yt-dlp` aims to provide accurate annotations for `y
 
 ### Number of lines
 
-3,308 (excluding blank lines)
+3,304 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -12370,7 +12370,7 @@ All files in this stubs package are tested with the stricter pyright settings in
     - Explicit `Any` parameters: 281
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 923
+    - Annotated returns: 924
     - Unannotated returns: 0
     - Explicit `Any` returns: 130
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
