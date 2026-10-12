@@ -51,8 +51,11 @@ dev = [
     "mkdocs==1.6.1",
     "mkdocs-macros-plugin==1.5.0",
     "mkdocs-material==9.7.7",
-    "mkdocstrings==1.0.6",
+    "mkdocstrings==1.0.7",
     "mkdocstrings-python==2.0.9",
+    # Provides the pymdownx.snippets and pymdownx.details extensions listed in
+    # mkdocs.yml's markdown_extensions.
+    "pymdown-extensions==12.2",
     "beautifulsoup4>=4,<5",
     "covdefaults==2.3.0",
     "coverage==7.16.1",
