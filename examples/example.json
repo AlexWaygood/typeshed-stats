@@ -7,7 +7,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 3963,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -6113,7 +6113,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 70873,
+    "number_of_lines": 70875,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -6133,7 +6133,7 @@
       "unannotated_returns": 230,
       "explicit_Incomplete_parameters": 23,
       "explicit_Incomplete_returns": 24,
-      "explicit_Any_parameters": 1955,
+      "explicit_Any_parameters": 1957,
       "explicit_Any_returns": 821,
       "annotated_variables": 9761,
       "explicit_Any_variables": 303,
