@@ -6535,7 +6535,7 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 ### Number of lines
 
-8,142 (excluding blank lines)
+8,144 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6592,15 +6592,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-oauthlib` aims to provide accurate annotations for `oauthlib==3.3.*`.
+The latest version of `types-oauthlib` aims to provide accurate annotations for `oauthlib==4.0.*`.
 
 ### Number of lines
 
-1,910 (excluding blank lines)
+1,904 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6624,14 +6624,14 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated parameters: 751
     - Unannotated parameters: 221
     - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 27
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 25
 - Returns:
-    - Annotated returns: 314
-    - Unannotated returns: 62
+    - Annotated returns: 318
+    - Unannotated returns: 61
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 11
 - Variables:
-    - Annotated variables: 372
+    - Annotated variables: 371
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 69
 - Class definitions:
@@ -6653,15 +6653,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-objgraph` aims to provide accurate annotations for `objgraph==3.6.*`.
+The latest version of `types-objgraph` aims to provide accurate annotations for `objgraph==3.7.*`.
 
 ### Number of lines
 
 86 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,875 (excluding blank lines)
+70,874 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10656,12 +10656,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 1,957
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,149
+    - Annotated returns: 17,148
     - Unannotated returns: 230
     - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
-    - Annotated variables: 9,761
+    - Annotated variables: 9,762
     - Explicit `Any` variables: 303
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
