@@ -112,7 +112,7 @@ objgraph,types-objgraph,https://github.com/mgedmin/objgraph,==3.7.*,COMPLETE,-,8
 olefile,types-olefile,https://github.com/decalage2/olefile,==0.47.*,COMPLETE,-,222,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,75,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,==3.1.5,COMPLETE,-,13115,UP_TO_DATE,UPLOADED,NOT_STRICT,3704,511,1312,87,12,7,13,11,4019,4,339,603,1,20,ERROR_ON_MISSING_STUB,linux,169
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,==2.4.*,COMPLETE,-,332,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,104,1,113,0,0,0,21,0,56,4,0,26,0,0,ERROR_ON_MISSING_STUB,linux,4
-paramiko,types-paramiko,https://github.com/paramiko/paramiko,==5.0.*,COMPLETE,-,1748,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,678,8,596,3,2,0,13,3,497,4,23,118,2,0,ERROR_ON_MISSING_STUB,linux;win32,4
+paramiko,types-paramiko,https://github.com/paramiko/paramiko,==5.0.*,COMPLETE,-,1748,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,678,8,596,3,2,0,13,3,497,4,23,118,2,0,ERROR_ON_MISSING_STUB,linux;win32,4
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,==0.11.*,COMPLETE,-,198,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,114,0,59,1,0,0,22,2,34,3,2,28,0,0,ERROR_ON_MISSING_STUB,linux,3
 passpy,types-passpy,https://github.com/bfrascher/passpy,==1.0.*,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
 peewee,types-peewee,https://github.com/coleifer/peewee,==4.5.1,PARTIAL,-,2024,OUT_OF_DATE,UPLOADED,NOT_STRICT,443,867,684,239,0,25,56,4,463,40,274,180,0,0,ERROR_ON_MISSING_STUB,linux,29
