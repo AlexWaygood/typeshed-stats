@@ -1844,9 +1844,9 @@ The latest version of `types-braintree` aims to provide accurate annotations for
 
 3,809 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,874 (excluding blank lines)
+70,875 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10651,17 +10651,17 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,518
+    - Annotated parameters: 30,522
     - Unannotated parameters: 606
     - Explicit `Any` parameters: 1,957
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,148
+    - Annotated returns: 17,141
     - Unannotated returns: 230
     - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
-    - Annotated variables: 9,762
+    - Annotated variables: 9,769
     - Explicit `Any` variables: 303
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
