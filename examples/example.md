@@ -4465,7 +4465,7 @@ The latest version of `types-google-cloud-ndb` aims to provide accurate annotati
 
 ### Number of lines
 
-1,553 (excluding blank lines)
+1,559 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -4490,12 +4490,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `google-cloud-ndb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 361
+    - Annotated parameters: 370
     - Unannotated parameters: 493
     - Explicit `Any` parameters: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 236
+    - Annotated returns: 241
     - Unannotated returns: 203
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -4709,7 +4709,7 @@ The latest version of `types-grpcio-health-checking` aims to provide accurate an
 
 ### Number of lines
 
-89 (excluding blank lines)
+110 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4734,21 +4734,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `grpcio-health-checking`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 15
-    - Unannotated parameters: 27
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
+    - Annotated parameters: 28
+    - Unannotated parameters: 20
+    - Explicit `Any` parameters: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 16
-    - Unannotated returns: 4
-    - Explicit `Any` returns: 0
+    - Annotated returns: 23
+    - Unannotated returns: 2
+    - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
     - Annotated variables: 16
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 6
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 7
+    - Total class definitions: 8
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -5010,7 +5010,7 @@ The latest version of `types-hnswlib` aims to provide accurate annotations for `
 
 ### Number of lines
 
-60 (excluding blank lines)
+62 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5035,12 +5035,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `hnswlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 32
+    - Annotated parameters: 34
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 26
+    - Annotated returns: 27
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -7877,7 +7877,7 @@ The latest version of `types-pycocotools` aims to provide accurate annotations f
 
 ### Number of lines
 
-168 (excluding blank lines)
+171 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7902,12 +7902,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `pycocotools`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 51
+    - Annotated parameters: 52
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 0
+    - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 35
+    - Annotated returns: 36
     - Unannotated returns: 0
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,884 (excluding blank lines)
+70,896 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10651,21 +10651,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,526
+    - Annotated parameters: 30,534
     - Unannotated parameters: 606
-    - Explicit `Any` parameters: 1,957
+    - Explicit `Any` parameters: 1,959
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,143
+    - Annotated returns: 17,147
     - Unannotated returns: 230
     - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
-    - Annotated variables: 9,769
+    - Annotated variables: 9,772
     - Explicit `Any` variables: 303
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
-    - Total class definitions: 3,250
+    - Total class definitions: 3,251
     - Class definitions with `Any`: 32
     - Class definitions marked as at least partially `Incomplete`: 0
 
