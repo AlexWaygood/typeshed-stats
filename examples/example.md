@@ -4587,7 +4587,7 @@ The latest version of `types-grpcio` aims to provide accurate annotations for `g
 
 ### Number of lines
 
-993 (excluding blank lines)
+1,005 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4612,12 +4612,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `grpcio`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 312
+    - Annotated parameters: 316
     - Unannotated parameters: 4
-    - Explicit `Any` parameters: 5
+    - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 217
+    - Annotated returns: 222
     - Unannotated returns: 1
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 1
@@ -10209,9 +10209,9 @@ The latest version of `types-setuptools` aims to provide accurate annotations fo
 
 2,968 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,875 (excluding blank lines)
+70,884 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10651,12 +10651,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,522
+    - Annotated parameters: 30,526
     - Unannotated parameters: 606
     - Explicit `Any` parameters: 1,957
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,141
+    - Annotated returns: 17,143
     - Unannotated returns: 230
     - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
