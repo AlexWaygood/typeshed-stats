@@ -1813,11 +1813,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Returns:
     - Annotated returns: 491
     - Unannotated returns: 165
-    - Explicit `Any` returns: 17
+    - Explicit `Any` returns: 20
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
     - Annotated variables: 232
-    - Explicit `Any` variables: 6
+    - Explicit `Any` variables: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 68
 - Class definitions:
     - Total class definitions: 83
@@ -6563,12 +6563,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated parameters: 3,651
     - Unannotated parameters: 773
     - Explicit `Any` parameters: 27
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 432
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 431
 - Returns:
     - Annotated returns: 1,300
     - Unannotated returns: 296
     - Explicit `Any` returns: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 467
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 466
 - Variables:
     - Annotated variables: 387
     - Explicit `Any` variables: 5
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,896 (excluding blank lines)
+70,899 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10653,12 +10653,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
     - Annotated parameters: 30,534
     - Unannotated parameters: 606
-    - Explicit `Any` parameters: 1,959
+    - Explicit `Any` parameters: 1,957
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
     - Annotated returns: 17,147
     - Unannotated returns: 230
-    - Explicit `Any` returns: 821
+    - Explicit `Any` returns: 820
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
     - Annotated variables: 9,772
