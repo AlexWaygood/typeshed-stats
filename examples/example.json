@@ -5063,7 +5063,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 775,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -6113,7 +6113,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 70896,
+    "number_of_lines": 70909,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
@@ -6127,9 +6127,9 @@
     },
     "pyright_setting": "STRICT_ON_SOME_FILES",
     "annotation_stats": {
-      "annotated_parameters": 30534,
+      "annotated_parameters": 30537,
       "unannotated_parameters": 606,
-      "annotated_returns": 17147,
+      "annotated_returns": 17151,
       "unannotated_returns": 230,
       "explicit_Incomplete_parameters": 23,
       "explicit_Incomplete_returns": 24,
@@ -7096,7 +7096,7 @@
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 3304,
-    "package_status": "UP_TO_DATE",
+    "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",

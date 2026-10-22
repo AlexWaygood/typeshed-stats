@@ -8794,9 +8794,9 @@ The latest version of `types-python-dateutil` aims to provide accurate annotatio
 
 775 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,896 (excluding blank lines)
+70,909 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10651,12 +10651,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,534
+    - Annotated parameters: 30,537
     - Unannotated parameters: 606
     - Explicit `Any` parameters: 1,959
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,147
+    - Annotated returns: 17,151
     - Unannotated returns: 230
     - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
@@ -12342,9 +12342,9 @@ The latest version of `types-yt-dlp` aims to provide accurate annotations for `y
 
 3,304 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
