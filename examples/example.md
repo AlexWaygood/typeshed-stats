@@ -1112,9 +1112,9 @@ The latest version of `types-WTForms` aims to provide accurate annotations for `
 
 1,349 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6535,7 +6535,7 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 ### Number of lines
 
-8,144 (excluding blank lines)
+8,139 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6568,7 +6568,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated returns: 1,300
     - Unannotated returns: 296
     - Explicit `Any` returns: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 466
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 459
 - Variables:
     - Annotated variables: 387
     - Explicit `Any` variables: 5
@@ -9219,7 +9219,7 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 ### Number of lines
 
-39,942 (excluding blank lines)
+39,941 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9256,7 +9256,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 - Variables:
     - Annotated variables: 29,638
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,772
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 957
 - Class definitions:
     - Total class definitions: 791
     - Class definitions with `Any`: 0

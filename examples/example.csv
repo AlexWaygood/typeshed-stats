@@ -17,7 +17,7 @@ Pygments,types-Pygments,https://github.com/pygments/pygments,==2.21.*,PARTIAL,-,
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,==0.7.*,COMPLETE,-,56,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,==2.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,==1.2.*,COMPLETE,-,7,UP_TO_DATE,UPLOADED,STRICT,20,0,6,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,6
-WTForms,types-WTForms,https://github.com/pallets-eco/wtforms,~=3.2.1,COMPLETE,-,1349,UP_TO_DATE,UPLOADED,STRICT,531,0,185,0,0,0,71,14,141,29,0,100,0,0,ERROR_ON_MISSING_STUB,linux,4
+WTForms,types-WTForms,https://github.com/pallets-eco/wtforms,~=3.2.1,COMPLETE,-,1349,OUT_OF_DATE,UPLOADED,STRICT,531,0,185,0,0,0,71,14,141,29,0,100,0,0,ERROR_ON_MISSING_STUB,linux,4
 WebOb,types-WebOb,https://github.com/Pylons/webob,~=1.8.11,COMPLETE,-,2225,UP_TO_DATE,UPLOADED,STRICT,801,0,610,0,0,0,80,13,250,15,0,137,1,0,ERROR_ON_MISSING_STUB,linux,98
 WebTest,types-WebTest,https://github.com/Pylons/webtest,==3.0.*,COMPLETE,-,501,UP_TO_DATE,UPLOADED,STRICT,234,0,106,0,0,0,9,1,72,1,0,25,0,0,ERROR_ON_MISSING_STUB,linux,6
 aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,==25.1.*,COMPLETE,-,789,UP_TO_DATE,UPLOADED,STRICT,432,0,151,0,1,2,0,1,7,1,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,86
@@ -106,7 +106,7 @@ nanoid,types-nanoid,https://github.com/puyuan/py-nanoid,==2.0.0,COMPLETE,-,16,UP
 nanoleafapi,types-nanoleafapi,https://github.com/MylesMor/nanoleafapi,==2.1.*,COMPLETE,-,91,UP_TO_DATE,UPLOADED,STRICT,33,0,49,0,2,3,1,0,16,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 netaddr,types-netaddr,https://github.com/netaddr/netaddr,==1.3.*,COMPLETE,-,710,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,291,1,308,0,0,0,3,1,101,2,0,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 netifaces,types-netifaces,https://github.com/al45tair/netifaces,==0.11.*,COMPLETE,-,69,UP_TO_DATE,UPLOADED,STRICT,1,0,3,0,0,0,0,0,65,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,33
-networkx,types-networkx,https://github.com/networkx/networkx,==3.6.1,COMPLETE,-,8144,OUT_OF_DATE,UPLOADED,NOT_STRICT,3651,773,1300,296,431,466,27,10,387,5,240,131,0,1,ERROR_ON_MISSING_STUB,linux,23
+networkx,types-networkx,https://github.com/networkx/networkx,==3.6.1,COMPLETE,-,8139,OUT_OF_DATE,UPLOADED,NOT_STRICT,3651,773,1300,296,431,459,27,10,387,5,240,131,0,1,ERROR_ON_MISSING_STUB,linux,23
 oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,==4.0.*,COMPLETE,-,1904,UP_TO_DATE,UPLOADED,NOT_STRICT,751,221,318,61,25,11,0,0,371,1,69,118,0,2,ERROR_ON_MISSING_STUB,linux,0
 objgraph,types-objgraph,https://github.com/mgedmin/objgraph,==3.7.*,COMPLETE,-,86,UP_TO_DATE,UPLOADED,STRICT,71,0,17,0,0,0,0,0,6,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 olefile,types-olefile,https://github.com/decalage2/olefile,==0.47.*,COMPLETE,-,222,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,75,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -150,7 +150,7 @@ python-jose,types-python-jose,https://github.com/mpdavis/python-jose,==3.5.*,COM
 python-nmap,types-python-nmap,https://bitbucket.org/xael/python-nmap,==0.7.*,COMPLETE,-,126,UP_TO_DATE,UPLOADED,STRICT,44,0,44,0,0,0,0,0,31,0,0,14,1,0,ERROR_ON_MISSING_STUB,linux,1
 python-xlib,types-python-xlib,https://github.com/python-xlib/python-xlib,==0.33.*,COMPLETE,-,5423,UP_TO_DATE,UPLOADED,STRICT,1334,0,583,0,0,0,15,8,3519,5,0,425,0,0,ERROR_ON_MISSING_STUB,linux,11
 pytz,types-pytz,https://github.com/stub42/pytz,==2026.5,COMPLETE,-,151,UP_TO_DATE,UPLOADED,STRICT,71,0,51,0,0,0,2,0,30,0,0,16,0,0,ERROR_ON_MISSING_STUB,linux,2
-pywin32,types-pywin32,https://github.com/mhammond/pywin32,==312.*,COMPLETE,-,39942,UP_TO_DATE,UPLOADED,NOT_STRICT,4338,3517,4213,1799,372,277,2,5,29638,0,1772,791,0,0,ERROR_ON_MISSING_STUB,win32,34
+pywin32,types-pywin32,https://github.com/mhammond/pywin32,==312.*,COMPLETE,-,39941,UP_TO_DATE,UPLOADED,NOT_STRICT,4338,3517,4213,1799,372,277,2,5,29638,0,957,791,0,0,ERROR_ON_MISSING_STUB,win32,34
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,==0.28.*,COMPLETE,-,857,UP_TO_DATE,UPLOADED,STRICT,512,0,297,0,0,0,0,0,165,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,==1.2.*,COMPLETE,-,182,UP_TO_DATE,UPLOADED,STRICT,99,0,31,0,0,0,0,4,40,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,==8.2.*,COMPLETE,-,647,UP_TO_DATE,UPLOADED,STRICT,282,0,152,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,9
