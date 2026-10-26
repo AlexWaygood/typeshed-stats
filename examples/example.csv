@@ -74,7 +74,7 @@ geopandas,types-geopandas,https://github.com/geopandas/geopandas,==1.1.4,COMPLET
 gevent,types-gevent,https://github.com/gevent/gevent,==26.9.*,COMPLETE,-,3235,UP_TO_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,210,1,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,98
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,==2.4.*,PARTIAL,-,1559,OUT_OF_DATE,UPLOADED,NOT_STRICT,370,493,241,203,0,0,5,0,194,0,134,143,0,0,MISSING_STUBS_IGNORED,linux,2
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,==3.5.*,COMPLETE,-,86,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
-grpcio,types-grpcio,https://github.com/grpc/grpc,~=1.84.0,PARTIAL,-,1005,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,316,4,222,1,0,1,7,2,30,0,0,69,0,0,MISSING_STUBS_IGNORED,linux,3
+grpcio,types-grpcio,https://github.com/grpc/grpc,~=1.84.0,PARTIAL,-,1005,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,316,4,222,1,0,1,7,2,30,0,0,69,0,0,MISSING_STUBS_IGNORED,linux,3
 grpcio-channelz,types-grpcio-channelz,https://github.com/grpc/grpc,==1.*,COMPLETE,-,724,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,156,94,55,15,54,0,0,0,324,0,21,44,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-health-checking,types-grpcio-health-checking,https://github.com/grpc/grpc,==1.*,COMPLETE,-,110,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,28,20,23,2,1,0,2,2,16,0,0,8,0,0,ERROR_ON_MISSING_STUB,linux,0
 grpcio-reflection,types-grpcio-reflection,https://github.com/grpc/grpc,==1.*,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,34,17,18,4,7,0,0,0,55,0,1,15,0,0,ERROR_ON_MISSING_STUB,linux,0
