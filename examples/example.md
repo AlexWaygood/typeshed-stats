@@ -4339,15 +4339,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-geopandas` aims to provide accurate annotations for `geopandas==1.1.4`.
+The latest version of `types-geopandas` aims to provide accurate annotations for `geopandas==1.2.0`.
 
 ### Number of lines
 
-1,842 (excluding blank lines)
+1,882 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -4368,17 +4368,17 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 ### Statistics on the annotations in typeshed's stubs for `geopandas`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,022
+    - Annotated parameters: 1,052
     - Unannotated parameters: 69
     - Explicit `Any` parameters: 31
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 42
 - Returns:
-    - Annotated returns: 424
+    - Annotated returns: 428
     - Unannotated returns: 6
     - Explicit `Any` returns: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
-    - Annotated variables: 33
+    - Annotated variables: 32
     - Explicit `Any` variables: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
@@ -4705,11 +4705,11 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Version
 
-The latest version of `types-grpcio-health-checking` aims to provide accurate annotations for `grpcio-health-checking==1.*`.
+The latest version of `types-grpcio-health-checking` aims to provide accurate annotations for `grpcio-health-checking==1.85.*`.
 
 ### Number of lines
 
-110 (excluding blank lines)
+147 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4725,7 +4725,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 0 allowlist entries for `grpcio-health-checking` when running stubtest in CI.
+Typeshed currently has 1 unique allowlist entry for `grpcio-health-checking` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -4734,21 +4734,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `grpcio-health-checking`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 28
-    - Unannotated parameters: 20
-    - Explicit `Any` parameters: 2
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
+    - Annotated parameters: 33
+    - Unannotated parameters: 30
+    - Explicit `Any` parameters: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 23
-    - Unannotated returns: 2
-    - Explicit `Any` returns: 2
+    - Annotated returns: 27
+    - Unannotated returns: 3
+    - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 16
+    - Annotated variables: 25
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 8
+    - Total class definitions: 11
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -5134,9 +5134,9 @@ The latest version of `types-httplib2` aims to provide accurate annotations for 
 
 303 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6535,7 +6535,7 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 ### Number of lines
 
-8,139 (excluding blank lines)
+8,160 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6560,15 +6560,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,651
-    - Unannotated parameters: 773
+    - Annotated parameters: 3,671
+    - Unannotated parameters: 775
     - Explicit `Any` parameters: 27
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 431
 - Returns:
-    - Annotated returns: 1,300
-    - Unannotated returns: 296
+    - Annotated returns: 1,305
+    - Unannotated returns: 294
     - Explicit `Any` returns: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 459
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 447
 - Variables:
     - Annotated variables: 387
     - Explicit `Any` variables: 5
@@ -7080,15 +7080,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-peewee` aims to provide accurate annotations for `peewee==4.5.1`.
+The latest version of `types-peewee` aims to provide accurate annotations for `peewee==4.5.3`.
 
 ### Number of lines
 
-2,024 (excluding blank lines)
+2,026 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -7100,7 +7100,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 29 unique allowlist entries for `peewee` when running stubtest in CI.
+Typeshed currently has 30 unique allowlist entries for `peewee` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -7109,17 +7109,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 443
+    - Annotated parameters: 444
     - Unannotated parameters: 867
     - Explicit `Any` parameters: 56
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 684
+    - Annotated returns: 685
     - Unannotated returns: 239
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 25
 - Variables:
-    - Annotated variables: 463
+    - Annotated variables: 464
     - Explicit `Any` variables: 40
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 274
 - Class definitions:
@@ -9463,7 +9463,7 @@ The latest version of `types-rasterio` aims to provide accurate annotations for 
 
 ### Number of lines
 
-2,013 (excluding blank lines)
+2,015 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-71,293 (excluding blank lines)
+71,294 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10651,12 +10651,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,567
+    - Annotated parameters: 30,568
     - Unannotated parameters: 606
     - Explicit `Any` parameters: 1,959
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,167
+    - Annotated returns: 17,168
     - Unannotated returns: 230
     - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
