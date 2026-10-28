@@ -437,15 +437,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-Markdown` aims to provide accurate annotations for `Markdown~=3.10.2`.
+The latest version of `types-Markdown` aims to provide accurate annotations for `Markdown~=3.11.2`.
 
 ### Number of lines
 
-827 (excluding blank lines)
+862 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -457,7 +457,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 unique allowlist entries for `Markdown` when running stubtest in CI.
+Typeshed currently has 6 unique allowlist entries for `Markdown` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -466,21 +466,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Markdown`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 301
-    - Unannotated parameters: 33
-    - Explicit `Any` parameters: 17
+    - Annotated parameters: 325
+    - Unannotated parameters: 31
+    - Explicit `Any` parameters: 18
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 231
+    - Annotated returns: 248
     - Unannotated returns: 3
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 252
+    - Annotated variables: 257
     - Explicit `Any` variables: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 112
+    - Total class definitions: 111
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -3794,9 +3794,9 @@ The latest version of `types-flake8` aims to provide accurate annotations for `f
 
 572 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-71,294 (excluding blank lines)
+71,298 (excluding blank lines)
 
 ### Package status: *stdlib*
 

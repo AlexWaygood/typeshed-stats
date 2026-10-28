@@ -6,7 +6,7 @@ Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrat
 Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,==5.6.*,COMPLETE,-,256,OUT_OF_DATE,UPLOADED,NOT_STRICT,141,33,37,15,14,1,2,0,21,2,3,11,0,0,ERROR_ON_MISSING_STUB,linux,3
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,==0.5.*,COMPLETE,-,321,UP_TO_DATE,UPLOADED,STRICT,107,0,155,0,0,0,0,3,46,0,0,16,0,0,ERROR_ON_MISSING_STUB,darwin;linux,1
 Jetson.GPIO,types-Jetson.GPIO,https://github.com/NVIDIA/jetson-gpio,==2.1.13,COMPLETE,-,212,UP_TO_DATE,UPLOADED,STRICT,88,0,47,0,0,0,0,2,108,1,0,11,0,0,ERROR_ON_MISSING_STUB,linux,4
-Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,~=3.10.2,COMPLETE,-,827,OUT_OF_DATE,UPLOADED,NOT_STRICT,301,33,231,3,0,0,17,4,252,11,0,112,1,0,ERROR_ON_MISSING_STUB,linux,3
+Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,~=3.11.2,COMPLETE,-,862,UP_TO_DATE,UPLOADED,NOT_STRICT,325,31,248,3,0,0,18,4,257,11,0,111,1,0,ERROR_ON_MISSING_STUB,linux,6
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,==0.9.*,COMPLETE,-,233,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMeeus,types-PyMeeus,https://github.com/architest/pymeeus,==0.5.*,COMPLETE,-,954,UP_TO_DATE,UPLOADED,STRICT,706,0,374,0,0,0,0,0,59,0,0,18,0,0,ERROR_ON_MISSING_STUB,linux,0
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,==1.2.*,COMPLETE,-,1276,UP_TO_DATE,UPLOADED,NOT_STRICT,256,22,130,29,2,2,9,14,766,9,4,27,0,0,ERROR_ON_MISSING_STUB,linux,4
@@ -61,7 +61,7 @@ ephem,types-ephem,https://github.com/brandon-rhodes/pyephem,==4.2.*,COMPLETE,-,5
 et_xmlfile,types-et_xmlfile,https://foss.heptapod.net/openpyxl/et_xmlfile,==2.0.*,COMPLETE,-,207,UP_TO_DATE,UPLOADED,STRICT,133,0,21,0,0,0,12,3,9,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 fanstatic,types-fanstatic,https://github.com/zopefoundation/fanstatic,==1.7.*,COMPLETE,-,536,OUT_OF_DATE,UPLOADED,STRICT,167,0,134,0,0,0,8,4,128,0,0,50,0,0,ERROR_ON_MISSING_STUB,linux,30
 first,types-first,https://github.com/hynek/first,==2.0.*,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,11,0,5,0,0,0,3,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
-flake8,types-flake8,https://github.com/pycqa/flake8,==7.4.*,COMPLETE,-,572,UP_TO_DATE,UPLOADED,STRICT,223,0,165,0,0,0,35,8,185,1,90,39,0,0,ERROR_ON_MISSING_STUB,linux,1
+flake8,types-flake8,https://github.com/pycqa/flake8,==7.4.*,COMPLETE,-,572,OUT_OF_DATE,UPLOADED,STRICT,223,0,165,0,0,0,35,8,185,1,90,39,0,0,ERROR_ON_MISSING_STUB,linux,1
 flake8-bugbear,types-flake8-bugbear,https://github.com/PyCQA/flake8-bugbear,==26.9.9,COMPLETE,-,259,OUT_OF_DATE,UPLOADED,STRICT,152,0,136,0,0,0,1,3,60,0,0,17,0,0,ERROR_ON_MISSING_STUB,linux,37
 flake8-builtins,types-flake8-builtins,https://github.com/gforcada/flake8-builtins,==3.1.*,COMPLETE,-,39,UP_TO_DATE,UPLOADED,STRICT,17,0,15,0,0,0,0,0,13,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 flake8-docstrings,types-flake8-docstrings,https://github.com/pycqa/flake8-docstrings,==1.7.*,COMPLETE,-,21,UP_TO_DATE,UPLOADED,STRICT,5,0,4,0,0,0,0,0,7,1,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -174,7 +174,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,==4.2.*,COM
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,==4.1.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,==1.17.*,COMPLETE,-,330,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,21
 slumber,types-slumber,https://github.com/samgiles/slumber,==0.7.*,COMPLETE,-,77,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,71294,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30568,606,17168,230,23,24,1959,821,10043,303,234,3274,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,844
+stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,71298,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30568,606,17168,230,23,24,1959,821,10043,303,234,3274,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,844
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,==1.1,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.10.*,COMPLETE,-,62,UP_TO_DATE,UPLOADED,STRICT,21,0,3,0,0,0,2,0,23,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30359,OUT_OF_DATE,UPLOADED,NOT_STRICT,5439,38,2948,42,12,23,60,34,5438,5,12,927,1,0,SKIPPED,None,51
