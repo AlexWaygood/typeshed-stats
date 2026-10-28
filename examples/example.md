@@ -9463,7 +9463,7 @@ The latest version of `types-rasterio` aims to provide accurate annotations for 
 
 ### Number of lines
 
-2,009 (excluding blank lines)
+2,013 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -10626,7 +10626,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-70,909 (excluding blank lines)
+71,293 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10642,7 +10642,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 841 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 844 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10651,21 +10651,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,537
+    - Annotated parameters: 30,567
     - Unannotated parameters: 606
     - Explicit `Any` parameters: 1,959
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,151
+    - Annotated returns: 17,167
     - Unannotated returns: 230
     - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
-    - Annotated variables: 9,772
+    - Annotated variables: 10,043
     - Explicit `Any` variables: 303
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
-    - Total class definitions: 3,251
+    - Total class definitions: 3,274
     - Class definitions with `Any`: 32
     - Class definitions marked as at least partially `Incomplete`: 0
 

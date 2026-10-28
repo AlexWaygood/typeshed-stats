@@ -154,7 +154,7 @@ pywin32,types-pywin32,https://github.com/mhammond/pywin32,==312.*,COMPLETE,-,399
 pyxdg,types-pyxdg,https://github.com/takluyver/pyxdg,==0.28.*,COMPLETE,-,857,UP_TO_DATE,UPLOADED,STRICT,512,0,297,0,0,0,0,0,165,0,0,31,0,0,ERROR_ON_MISSING_STUB,linux,2
 qrbill,types-qrbill,https://github.com/claudep/swiss-qr-bill,==1.2.*,COMPLETE,-,182,UP_TO_DATE,UPLOADED,STRICT,99,0,31,0,0,0,0,4,40,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
 qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,==8.2.*,COMPLETE,-,647,UP_TO_DATE,UPLOADED,STRICT,282,0,152,0,0,0,21,8,151,0,0,42,0,0,ERROR_ON_MISSING_STUB,linux,9
-rasterio,types-rasterio,https://github.com/rasterio/rasterio,==1.5.2,COMPLETE,-,2009,UP_TO_DATE,UPLOADED,STRICT,973,0,435,0,2,0,94,44,185,5,0,130,2,0,ERROR_ON_MISSING_STUB,linux,22
+rasterio,types-rasterio,https://github.com/rasterio/rasterio,==1.5.2,COMPLETE,-,2013,UP_TO_DATE,UPLOADED,STRICT,973,0,435,0,2,0,94,44,185,5,0,130,2,0,ERROR_ON_MISSING_STUB,linux,22
 ratelimit,types-ratelimit,https://github.com/tomasbasham/ratelimit,==2.2.*,COMPLETE,-,18,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,1,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,==2026.9.29,COMPLETE,-,913,UP_TO_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,16,3,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,12
 reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,==5.0.0,COMPLETE,-,8272,OUT_OF_DATE,UPLOADED,NOT_STRICT,1990,2490,1938,651,14,40,29,12,2822,6,1065,585,0,3,ERROR_ON_MISSING_STUB,linux,50
@@ -174,7 +174,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,==4.2.*,COM
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,==4.1.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,==1.17.*,COMPLETE,-,330,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,21
 slumber,types-slumber,https://github.com/samgiles/slumber,==0.7.*,COMPLETE,-,77,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,70909,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30537,606,17151,230,23,24,1959,821,9772,303,234,3251,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,841
+stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,71293,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30567,606,17167,230,23,24,1959,821,10043,303,234,3274,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,844
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,==1.1,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.10.*,COMPLETE,-,62,UP_TO_DATE,UPLOADED,STRICT,21,0,3,0,0,0,2,0,23,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30359,OUT_OF_DATE,UPLOADED,NOT_STRICT,5439,38,2948,42,12,23,60,34,5438,5,12,927,1,0,SKIPPED,None,51
