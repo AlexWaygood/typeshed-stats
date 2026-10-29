@@ -7670,11 +7670,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated returns: 317
     - Unannotated returns: 72
     - Explicit `Any` returns: 21
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
 - Variables:
     - Annotated variables: 521
     - Explicit `Any` variables: 60
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
     - Total class definitions: 334
     - Class definitions with `Any`: 2

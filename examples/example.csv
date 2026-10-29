@@ -124,7 +124,7 @@ pony,types-pony,https://github.com/ponyorm/pony,~=0.7.20,COMPLETE,-,3615,UP_TO_D
 portpicker,types-portpicker,https://github.com/google/python_portpicker,==1.6.*,COMPLETE,-,16,UP_TO_DATE,UPLOADED,STRICT,10,0,6,0,0,0,0,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,0
 protobuf,types-protobuf,https://github.com/protocolbuffers/protobuf,~=7.35.1,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 35.1 on [protobuf v35.1](https://github.com/protocolbuffers/protobuf/releases/tag/v35.1) (python `protobuf==7.35.1`).,6526,OUT_OF_DATE,UPLOADED,NOT_STRICT,1255,177,870,10,0,0,46,19,1115,8,0,233,0,0,MISSING_STUBS_IGNORED,linux,10
 psutil,types-psutil,https://github.com/giampaolo/psutil,==7.2.2,COMPLETE,-,2357,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,492,2,695,1,1,2,2,1,675,0,54,100,3,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,15
-psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,==2.9.13,COMPLETE,-,1765,UP_TO_DATE,UPLOADED,NOT_STRICT,313,174,317,72,0,5,14,21,521,60,3,334,2,0,ERROR_ON_MISSING_STUB,linux,2
+psycopg2,types-psycopg2,https://github.com/psycopg/psycopg2,==2.9.13,COMPLETE,-,1765,UP_TO_DATE,UPLOADED,NOT_STRICT,313,174,317,72,0,4,14,21,521,60,2,334,2,0,ERROR_ON_MISSING_STUB,linux,2
 punq,types-punq,https://github.com/bobthemighty/punq,==0.8.*,COMPLETE,-,118,OBSOLETE,UPLOADED,NOT_STRICT,54,6,30,0,0,1,10,1,16,4,1,15,0,0,ERROR_ON_MISSING_STUB,linux,2
 pyasn1,types-pyasn1,https://github.com/pyasn1/pyasn1,==0.6.*,COMPLETE,-,1485,UP_TO_DATE,UPLOADED,NOT_STRICT,197,535,112,422,33,9,0,0,248,0,1,178,0,0,ERROR_ON_MISSING_STUB,linux,0
 pyaudio,types-pyaudio,-,==0.2.*,COMPLETE,-,164,UP_TO_DATE,UPLOADED,STRICT,51,0,37,0,0,0,0,0,72,0,0,3,0,0,ERROR_ON_MISSING_STUB,darwin;linux,0
