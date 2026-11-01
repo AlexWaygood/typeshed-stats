@@ -1417,9 +1417,9 @@ The latest version of `types-assertpy` aims to provide accurate annotations for 
 
 227 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -3855,9 +3855,9 @@ The latest version of `types-flake8-builtins` aims to provide accurate annotatio
 
 39 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10565,7 +10565,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-71,301 (excluding blank lines)
+71,313 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10590,7 +10590,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,569
+    - Annotated parameters: 30,581
     - Unannotated parameters: 606
     - Explicit `Any` parameters: 1,959
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
