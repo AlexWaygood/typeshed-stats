@@ -1887,67 +1887,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ---
 
-## Info on typeshed's stubs for `cachetools`
-
-### Upstream repo URL
-
-[https://github.com/tkem/cachetools](https://github.com/tkem/cachetools)
-
-### Stub distribution name
-
-`types-cachetools`
-
-### Version
-
-The latest version of `types-cachetools` aims to provide accurate annotations for `cachetools==7.0.*`.
-
-### Number of lines
-
-214 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 19 unique allowlist entries for `cachetools` when running stubtest in CI.
-
-### Pyright settings in CI: *strict*
-
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
-
-### Statistics on the annotations in typeshed's stubs for `cachetools`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 104
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 19
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
-- Returns:
-    - Annotated returns: 62
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 25
-    - Explicit `Any` variables: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 16
-    - Class definitions with `Any`: 1
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
 ## Info on typeshed's stubs for `capturer`
 
 ### Upstream repo URL
@@ -9097,7 +9036,7 @@ The latest version of `types-python-xlib` aims to provide accurate annotations f
 
 ### Number of lines
 
-5,423 (excluding blank lines)
+5,429 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9113,7 +9052,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 11 unique allowlist entries for `python-xlib` when running stubtest in CI.
+Typeshed currently has 10 unique allowlist entries for `python-xlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -9122,21 +9061,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `python-xlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,334
+    - Annotated parameters: 1,336
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 15
+    - Explicit `Any` parameters: 16
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 583
+    - Annotated returns: 584
     - Unannotated returns: 0
-    - Explicit `Any` returns: 8
+    - Explicit `Any` returns: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 3,519
-    - Explicit `Any` variables: 5
+    - Annotated variables: 3,521
+    - Explicit `Any` variables: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 425
+    - Total class definitions: 426
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
