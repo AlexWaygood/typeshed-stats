@@ -14,7 +14,7 @@ The latest version of `types-Authlib` aims to provide accurate annotations for `
 
 ### Number of lines
 
-3,970 (excluding blank lines)
+3,994 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -30,7 +30,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 41 unique allowlist entries for `Authlib` when running stubtest in CI.
+Typeshed currently has 38 unique allowlist entries for `Authlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -39,19 +39,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 550
-    - Unannotated parameters: 1,420
+    - Annotated parameters: 570
+    - Unannotated parameters: 1,404
     - Explicit `Any` parameters: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 790
-    - Unannotated returns: 372
+    - Annotated returns: 803
+    - Unannotated returns: 364
     - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 89
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 91
 - Variables:
     - Annotated variables: 697
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 258
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 254
 - Class definitions:
     - Total class definitions: 286
     - Class definitions with `Any`: 1
@@ -254,15 +254,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-Flask-SocketIO` aims to provide accurate annotations for `Flask-SocketIO==5.6.*`.
+The latest version of `types-Flask-SocketIO` aims to provide accurate annotations for `Flask-SocketIO==5.7.*`.
 
 ### Number of lines
 
 256 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1106,15 +1106,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-WTForms` aims to provide accurate annotations for `WTForms~=3.2.1`.
+The latest version of `types-WTForms` aims to provide accurate annotations for `WTForms==3.3.*`.
 
 ### Number of lines
 
-1,349 (excluding blank lines)
+1,686 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1126,7 +1126,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 4 unique allowlist entries for `WTForms` when running stubtest in CI.
+Typeshed currently has 6 unique allowlist entries for `WTForms` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1135,21 +1135,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `WTForms`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 531
+    - Annotated parameters: 691
     - Unannotated parameters: 0
-    - Explicit `Any` parameters: 71
+    - Explicit `Any` parameters: 93
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 185
+    - Annotated returns: 213
     - Unannotated returns: 0
-    - Explicit `Any` returns: 14
+    - Explicit `Any` returns: 17
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 141
-    - Explicit `Any` variables: 29
+    - Annotated variables: 167
+    - Explicit `Any` variables: 35
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 100
+    - Total class definitions: 109
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -3788,15 +3788,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-flake8-bugbear` aims to provide accurate annotations for `flake8-bugbear==26.9.9`.
+The latest version of `types-flake8-bugbear` aims to provide accurate annotations for `flake8-bugbear==26.10.27`.
 
 ### Number of lines
 
-259 (excluding blank lines)
+280 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -3817,21 +3817,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `flake8-bugbear`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 152
+    - Annotated parameters: 160
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 136
+    - Annotated returns: 143
     - Unannotated returns: 0
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 60
+    - Annotated variables: 67
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 17
+    - Total class definitions: 18
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -3849,15 +3849,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-flake8-builtins` aims to provide accurate annotations for `flake8-builtins==3.1.*`.
+The latest version of `types-flake8-builtins` aims to provide accurate annotations for `flake8-builtins==3.2.*`.
 
 ### Number of lines
 
 39 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -10565,7 +10565,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-71,345 (excluding blank lines)
+71,346 (excluding blank lines)
 
 ### Package status: *stdlib*
 
