@@ -14,7 +14,7 @@ The latest version of `types-Authlib` aims to provide accurate annotations for `
 
 ### Number of lines
 
-3,963 (excluding blank lines)
+3,970 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -39,19 +39,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 537
-    - Unannotated parameters: 1,433
-    - Explicit `Any` parameters: 5
+    - Annotated parameters: 550
+    - Unannotated parameters: 1,420
+    - Explicit `Any` parameters: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 789
-    - Unannotated returns: 373
+    - Annotated returns: 790
+    - Unannotated returns: 372
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 89
 - Variables:
-    - Annotated variables: 685
+    - Annotated variables: 697
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 259
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 258
 - Class definitions:
     - Total class definitions: 286
     - Class definitions with `Any`: 1
@@ -1417,9 +1417,9 @@ The latest version of `types-assertpy` aims to provide accurate annotations for 
 
 227 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
@@ -5193,7 +5193,7 @@ The latest version of `types-hvac` aims to provide accurate annotations for `hva
 
 ### Number of lines
 
-1,858 (excluding blank lines)
+1,874 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -5218,13 +5218,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `hvac`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 589
-    - Unannotated parameters: 1,144
+    - Annotated parameters: 609
+    - Unannotated parameters: 1,125
     - Explicit `Any` parameters: 27
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 87
-    - Unannotated returns: 486
+    - Annotated returns: 94
+    - Unannotated returns: 480
     - Explicit `Any` returns: 19
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
@@ -6531,15 +6531,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-oauthlib` aims to provide accurate annotations for `oauthlib==4.0.*`.
+The latest version of `types-oauthlib` aims to provide accurate annotations for `oauthlib==4.0.0`.
 
 ### Number of lines
 
 1,904 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10565,7 +10565,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-71,313 (excluding blank lines)
+71,345 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10581,7 +10581,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 844 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 845 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10595,12 +10595,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 1,959
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,169
+    - Annotated returns: 17,175
     - Unannotated returns: 230
     - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
-    - Annotated variables: 10,043
+    - Annotated variables: 10,049
     - Explicit `Any` variables: 303
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
