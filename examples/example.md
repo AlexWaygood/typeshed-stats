@@ -1594,15 +1594,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-aws-xray-sdk` aims to provide accurate annotations for `aws-xray-sdk==2.15.*`.
+The latest version of `types-aws-xray-sdk` aims to provide accurate annotations for `aws-xray-sdk==2.16.*`.
 
 ### Number of lines
 
-976 (excluding blank lines)
+979 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -1623,17 +1623,17 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `aws-xray-sdk`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 258
+    - Annotated parameters: 259
     - Unannotated parameters: 169
     - Explicit `Any` parameters: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 15
 - Returns:
-    - Annotated returns: 295
+    - Annotated returns: 296
     - Unannotated returns: 36
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 8
 - Variables:
-    - Annotated variables: 191
+    - Annotated variables: 192
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 8
 - Class definitions:
@@ -6104,11 +6104,11 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Version
 
-The latest version of `types-mypy-extensions` aims to provide accurate annotations for `mypy-extensions==1.1.*`.
+The latest version of `types-mypy-extensions` aims to provide accurate annotations for `mypy-extensions==1.2.*`.
 
 ### Number of lines
 
-79 (excluding blank lines)
+83 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6124,7 +6124,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 6 unique allowlist entries for `mypy-extensions` when running stubtest in CI.
+Typeshed currently has 10 unique allowlist entries for `mypy-extensions` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -9158,7 +9158,7 @@ The latest version of `types-pywin32` aims to provide accurate annotations for `
 
 ### Number of lines
 
-39,952 (excluding blank lines)
+39,954 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9183,21 +9183,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `pywin32`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 4,344
-    - Unannotated parameters: 3,512
+    - Annotated parameters: 4,372
+    - Unannotated parameters: 3,485
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 340
 - Returns:
-    - Annotated returns: 4,214
-    - Unannotated returns: 1,798
+    - Annotated returns: 4,219
+    - Unannotated returns: 1,796
     - Explicit `Any` returns: 5
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 253
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 244
 - Variables:
     - Annotated variables: 29,638
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 388
 - Class definitions:
-    - Total class definitions: 790
+    - Total class definitions: 789
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -10565,7 +10565,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-71,346 (excluding blank lines)
+71,347 (excluding blank lines)
 
 ### Package status: *stdlib*
 

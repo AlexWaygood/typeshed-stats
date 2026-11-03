@@ -915,11 +915,11 @@
     "package_name": "aws-xray-sdk",
     "stub_distribution_name": "types-aws-xray-sdk",
     "upstream_url": "https://github.com/aws/aws-xray-sdk-python",
-    "version": "==2.15.*",
+    "version": "==2.16.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 976,
-    "package_status": "OUT_OF_DATE",
+    "number_of_lines": 979,
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -930,15 +930,15 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 258,
+      "annotated_parameters": 259,
       "unannotated_parameters": 169,
-      "annotated_returns": 295,
+      "annotated_returns": 296,
       "unannotated_returns": 36,
       "explicit_Incomplete_parameters": 15,
       "explicit_Incomplete_returns": 8,
       "explicit_Any_parameters": 9,
       "explicit_Any_returns": 5,
-      "annotated_variables": 191,
+      "annotated_variables": 192,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 8,
       "classdefs": 69,
@@ -3507,10 +3507,10 @@
     "package_name": "mypy-extensions",
     "stub_distribution_name": "types-mypy-extensions",
     "upstream_url": "https://github.com/python/mypy_extensions",
-    "version": "==1.1.*",
+    "version": "==1.2.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 79,
+    "number_of_lines": 83,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3518,7 +3518,7 @@
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 6
+      "allowlist_length": 10
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
@@ -5272,7 +5272,7 @@
     "version": "==312.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 39952,
+    "number_of_lines": 39954,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -5284,18 +5284,18 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 4344,
-      "unannotated_parameters": 3512,
-      "annotated_returns": 4214,
-      "unannotated_returns": 1798,
+      "annotated_parameters": 4372,
+      "unannotated_parameters": 3485,
+      "annotated_returns": 4219,
+      "unannotated_returns": 1796,
       "explicit_Incomplete_parameters": 340,
-      "explicit_Incomplete_returns": 253,
+      "explicit_Incomplete_returns": 244,
       "explicit_Any_parameters": 2,
       "explicit_Any_returns": 5,
       "annotated_variables": 29638,
       "explicit_Any_variables": 0,
       "explicit_Incomplete_variables": 388,
-      "classdefs": 790,
+      "classdefs": 789,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0
     }
@@ -6078,7 +6078,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 71346,
+    "number_of_lines": 71347,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {
