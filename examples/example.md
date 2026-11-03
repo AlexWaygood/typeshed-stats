@@ -807,7 +807,7 @@ The latest version of `types-PyYAML` aims to provide accurate annotations for `P
 
 ### Number of lines
 
-1,339 (excluding blank lines)
+1,343 (excluding blank lines)
 
 ### Package status: *up to date*
 

@@ -12,7 +12,7 @@ PyMeeus,types-PyMeeus,https://github.com/architest/pymeeus,==0.5.*,COMPLETE,-,95
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,==1.2.*,COMPLETE,-,1276,UP_TO_DATE,UPLOADED,NOT_STRICT,256,22,130,29,2,2,9,14,766,9,4,27,0,0,ERROR_ON_MISSING_STUB,linux,4
 PyScreeze,types-PyScreeze,https://github.com/asweigart/pyscreeze,==1.0.1,COMPLETE,-,192,UP_TO_DATE,UPLOADED,STRICT,102,0,21,0,0,0,0,0,17,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux;win32,2
 PySocks,types-PySocks,https://github.com/Anorov/PySocks,==1.7.1,COMPLETE,-,212,UP_TO_DATE,UPLOADED,STRICT,113,0,35,0,0,0,1,0,26,0,2,12,0,0,ERROR_ON_MISSING_STUB,linux,2
-PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,==6.0.*,COMPLETE,-,1339,UP_TO_DATE,UPLOADED,NOT_STRICT,568,203,325,55,17,19,3,0,206,0,88,91,0,0,ERROR_ON_MISSING_STUB,linux,4
+PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,==6.0.*,COMPLETE,-,1343,UP_TO_DATE,UPLOADED,NOT_STRICT,568,203,325,55,17,19,3,0,206,0,88,91,0,0,ERROR_ON_MISSING_STUB,linux,4
 Pygments,types-Pygments,https://github.com/pygments/pygments,==2.21.*,PARTIAL,-,1007,UP_TO_DATE,UPLOADED,NOT_STRICT,244,63,158,34,0,5,24,2,334,2,122,97,0,1,ERROR_ON_MISSING_STUB,linux,10
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,==0.7.*,COMPLETE,-,56,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,==2.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,1

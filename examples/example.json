@@ -463,7 +463,7 @@
     "version": "==6.0.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 1339,
+    "number_of_lines": 1343,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
