@@ -17,7 +17,7 @@ Pygments,types-Pygments,https://github.com/pygments/pygments,==2.21.*,PARTIAL,-,
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,==0.7.*,COMPLETE,-,56,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
 Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,==2.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,==1.2.*,COMPLETE,-,7,UP_TO_DATE,UPLOADED,STRICT,20,0,6,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,6
-WTForms,types-WTForms,https://github.com/pallets-eco/wtforms,==3.3.*,COMPLETE,-,1686,UP_TO_DATE,UPLOADED,STRICT,691,0,213,0,0,0,93,17,167,35,0,109,0,0,ERROR_ON_MISSING_STUB,linux,6
+WTForms,types-WTForms,https://github.com/pallets-eco/wtforms,==3.3.*,COMPLETE,-,1695,UP_TO_DATE,UPLOADED,STRICT,692,0,215,0,0,0,94,17,167,35,0,110,0,0,ERROR_ON_MISSING_STUB,linux,6
 WebOb,types-WebOb,https://github.com/Pylons/webob,~=1.8.11,COMPLETE,-,2225,UP_TO_DATE,UPLOADED,STRICT,801,0,610,0,0,0,80,13,250,15,0,137,1,0,ERROR_ON_MISSING_STUB,linux,98
 WebTest,types-WebTest,https://github.com/Pylons/webtest,==3.0.*,COMPLETE,-,501,UP_TO_DATE,UPLOADED,STRICT,234,0,106,0,0,0,9,1,72,1,0,25,0,0,ERROR_ON_MISSING_STUB,linux,6
 aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,==25.1.*,COMPLETE,-,789,UP_TO_DATE,UPLOADED,STRICT,432,0,151,0,1,2,0,1,7,1,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,86
@@ -165,15 +165,15 @@ rfc3339-validator,types-rfc3339-validator,https://github.com/naimetti/rfc3339-va
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,==5.*,COMPLETE,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on [s2client-proto 5.0.12.91115.0](https://github.com/Blizzard/s2client-proto/tree/c04df4adbe274858a4eb8417175ee32ad02fd609).,6947,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
 scp,types-scp,https://github.com/jbardin/scp.py,==0.16.*,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,38,0,15,0,0,0,0,0,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 seaborn,types-seaborn,https://github.com/mwaskom/seaborn,==0.13.2,COMPLETE,-,2602,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1455,25,358,2,18,5,156,18,288,13,14,101,1,0,ERROR_ON_MISSING_STUB,linux,4
-setuptools,types-setuptools,https://github.com/pypa/setuptools,==84.0.*,COMPLETE,"Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.
-",2968,OUT_OF_DATE,UPLOADED,STRICT_ON_SOME_FILES,932,244,774,99,14,11,5,6,621,3,169,130,0,0,ERROR_ON_MISSING_STUB,linux;win32,70
+setuptools,types-setuptools,https://github.com/pypa/setuptools,==84.2.*,COMPLETE,"Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.
+",2973,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,934,244,777,98,14,11,5,6,621,3,169,131,0,0,ERROR_ON_MISSING_STUB,linux;win32,70
 shapely,types-shapely,https://github.com/shapely/shapely,==2.1.*,COMPLETE,-,3057,OUT_OF_DATE,UPLOADED,ENTIRELY_EXCLUDED,1852,109,749,0,0,0,14,5,173,2,1,45,0,0,ERROR_ON_MISSING_STUB,linux,3
 simple-websocket,types-simple-websocket,https://github.com/miguelgrinberg/simple-websocket,==1.1.*,COMPLETE,-,304,UP_TO_DATE,UPLOADED,NOT_STRICT,108,1,44,0,0,0,7,0,77,1,1,18,0,0,ERROR_ON_MISSING_STUB,linux,0
-simplejson,types-simplejson,https://github.com/simplejson/simplejson,==4.2.*,COMPLETE,-,303,UP_TO_DATE,UPLOADED,STRICT,182,0,24,0,0,0,50,7,53,8,3,6,0,0,ERROR_ON_MISSING_STUB,linux,11
+simplejson,types-simplejson,https://github.com/simplejson/simplejson,==4.2.*,COMPLETE,-,305,UP_TO_DATE,UPLOADED,STRICT,182,0,24,0,0,0,50,7,53,11,0,6,0,0,ERROR_ON_MISSING_STUB,linux,11
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,==4.1.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,==1.17.*,COMPLETE,-,330,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,21
 slumber,types-slumber,https://github.com/samgiles/slumber,==0.7.*,COMPLETE,-,77,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,71347,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30581,606,17175,230,23,24,1959,821,10049,303,234,3274,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,845
+stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,71497,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30657,606,17199,230,23,24,1964,821,10049,303,234,3274,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,845
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,==1.1,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.10.*,COMPLETE,-,62,UP_TO_DATE,UPLOADED,STRICT,21,0,3,0,0,0,2,0,23,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30359,OUT_OF_DATE,UPLOADED,NOT_STRICT,5439,38,2948,42,12,23,60,34,5438,5,12,927,1,0,SKIPPED,None,51
