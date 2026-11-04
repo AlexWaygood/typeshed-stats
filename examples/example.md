@@ -1521,67 +1521,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
-## Info on typeshed's stubs for `auth0-python`
-
-### Upstream repo URL
-
-[https://github.com/auth0/auth0-python](https://github.com/auth0/auth0-python)
-
-### Stub distribution name
-
-`types-auth0-python`
-
-### Version
-
-The latest version of `types-auth0-python` aims to provide accurate annotations for `auth0-python==4.10.*`.
-
-### Number of lines
-
-1,683 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 2 unique allowlist entries for `auth0-python` when running stubtest in CI.
-
-### Pyright settings in CI: *not strict*
-
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
-
-### Statistics on the annotations in typeshed's stubs for `auth0-python`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,143
-    - Unannotated parameters: 14
-    - Explicit `Any` parameters: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 146
-- Returns:
-    - Annotated returns: 376
-    - Unannotated returns: 119
-    - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 301
-- Variables:
-    - Annotated variables: 187
-    - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 92
-- Class definitions:
-    - Total class definitions: 63
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
 ## Info on typeshed's stubs for `aws-xray-sdk`
 
 ### Upstream repo URL
@@ -2820,9 +2759,9 @@ The latest version of `types-dateparser` aims to provide accurate annotations fo
 
 729 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -9581,15 +9520,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-reportlab` aims to provide accurate annotations for `reportlab==5.0.0`.
+The latest version of `types-reportlab` aims to provide accurate annotations for `reportlab==5.1.0`.
 
 ### Number of lines
 
-8,272 (excluding blank lines)
+8,324 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -9601,7 +9540,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 50 unique allowlist entries for `reportlab` when running stubtest in CI.
+Typeshed currently has 49 unique allowlist entries for `reportlab` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -9610,22 +9549,22 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `reportlab`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,990
-    - Unannotated parameters: 2,490
-    - Explicit `Any` parameters: 29
+    - Annotated parameters: 2,014
+    - Unannotated parameters: 2,495
+    - Explicit `Any` parameters: 30
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 1,938
-    - Unannotated returns: 651
-    - Explicit `Any` returns: 12
+    - Annotated returns: 1,951
+    - Unannotated returns: 653
+    - Explicit `Any` returns: 16
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 40
 - Variables:
-    - Annotated variables: 2,822
-    - Explicit `Any` variables: 6
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,065
+    - Annotated variables: 2,831
+    - Explicit `Any` variables: 7
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1,064
 - Class definitions:
-    - Total class definitions: 585
-    - Class definitions with `Any`: 0
+    - Total class definitions: 590
+    - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 3
 
 ---
