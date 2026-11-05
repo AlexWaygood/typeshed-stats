@@ -6,7 +6,7 @@
     "version": "==1.8.0",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3994,
+    "number_of_lines": 4002,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -14,21 +14,21 @@
       "ci_platforms": [
         "linux"
       ],
-      "allowlist_length": 38
+      "allowlist_length": 37
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 570,
-      "unannotated_parameters": 1404,
-      "annotated_returns": 803,
-      "unannotated_returns": 364,
+      "annotated_parameters": 589,
+      "unannotated_parameters": 1392,
+      "annotated_returns": 807,
+      "unannotated_returns": 362,
       "explicit_Incomplete_parameters": 17,
       "explicit_Incomplete_returns": 91,
       "explicit_Any_parameters": 6,
-      "explicit_Any_returns": 5,
+      "explicit_Any_returns": 7,
       "annotated_variables": 697,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 254,
+      "explicit_Incomplete_variables": 253,
       "classdefs": 286,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 4
@@ -6337,15 +6337,15 @@
     "annotation_stats": {
       "annotated_parameters": 938,
       "unannotated_parameters": 133,
-      "annotated_returns": 172,
-      "unannotated_returns": 25,
+      "annotated_returns": 173,
+      "unannotated_returns": 24,
       "explicit_Incomplete_parameters": 14,
       "explicit_Incomplete_returns": 6,
       "explicit_Any_parameters": 28,
       "explicit_Any_returns": 1,
       "annotated_variables": 134,
       "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 70,
+      "explicit_Incomplete_variables": 45,
       "classdefs": 39,
       "classdefs_with_Any": 0,
       "classdefs_with_Incomplete": 0

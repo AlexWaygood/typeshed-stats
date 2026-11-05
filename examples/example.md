@@ -14,7 +14,7 @@ The latest version of `types-Authlib` aims to provide accurate annotations for `
 
 ### Number of lines
 
-3,994 (excluding blank lines)
+4,002 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -30,7 +30,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 38 unique allowlist entries for `Authlib` when running stubtest in CI.
+Typeshed currently has 37 unique allowlist entries for `Authlib` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -39,19 +39,19 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Authlib`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 570
-    - Unannotated parameters: 1,404
+    - Annotated parameters: 589
+    - Unannotated parameters: 1,392
     - Explicit `Any` parameters: 6
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 803
-    - Unannotated returns: 364
-    - Explicit `Any` returns: 5
+    - Annotated returns: 807
+    - Unannotated returns: 362
+    - Explicit `Any` returns: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 91
 - Variables:
     - Annotated variables: 697
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 254
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 253
 - Class definitions:
     - Total class definitions: 286
     - Class definitions with `Any`: 1
@@ -11024,14 +11024,14 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 28
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 14
 - Returns:
-    - Annotated returns: 172
-    - Unannotated returns: 25
+    - Annotated returns: 173
+    - Unannotated returns: 24
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
     - Annotated variables: 134
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 70
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 45
 - Class definitions:
     - Total class definitions: 39
     - Class definitions with `Any`: 0

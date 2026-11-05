@@ -1,5 +1,5 @@
 package_name,stub_distribution_name,upstream_url,version,completeness_level,extra_description,number_of_lines,package_status,upload_status,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables,classdefs,classdefs_with_Any,classdefs_with_Incomplete,stubtest_strictness,stubtest_ci_platforms,stubtest_allowlist_length
-Authlib,types-Authlib,https://github.com/authlib/authlib,==1.8.0,COMPLETE,-,3994,OUT_OF_DATE,UPLOADED,NOT_STRICT,570,1404,803,364,17,91,6,5,697,0,254,286,1,4,ERROR_ON_MISSING_STUB,linux,38
+Authlib,types-Authlib,https://github.com/authlib/authlib,==1.8.0,COMPLETE,-,4002,OUT_OF_DATE,UPLOADED,NOT_STRICT,589,1392,807,362,17,91,6,7,697,0,253,286,1,4,ERROR_ON_MISSING_STUB,linux,37
 Deprecated,types-Deprecated,https://github.com/laurent-laporte-pro/deprecated,~=1.3.1,COMPLETE,-,88,OBSOLETE,UPLOADED,STRICT,44,0,15,0,0,0,3,0,16,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 Flask-Cors,types-Flask-Cors,https://github.com/corydolphin/flask-cors,==6.0.3,COMPLETE,-,129,OBSOLETE,UPLOADED,STRICT,65,0,24,0,0,0,7,2,32,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrate,==4.1.*,COMPLETE,-,128,UP_TO_DATE,UPLOADED,STRICT,86,0,23,0,0,0,0,0,7,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -180,7 +180,7 @@ tinycss2,types-tinycss2,https://github.com/Kozea/tinycss2,==1.5.1,COMPLETE,-,235
 titlecase,types-titlecase,https://github.com/ppannuto/python-titlecase,==2.4.*,COMPLETE,-,38,UP_TO_DATE,UPLOADED,STRICT,8,0,6,0,0,0,0,0,16,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,1
 toml,types-toml,https://github.com/uiri/toml,==0.10.*,COMPLETE,-,135,UP_TO_DATE,UPLOADED,STRICT,71,0,41,0,0,0,21,5,14,2,0,14,2,0,ERROR_ON_MISSING_STUB,linux,4
 toposort,types-toposort,https://gitlab.com/ericvsmith/toposort,==1.10,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,1,0,1,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
-tqdm,types-tqdm,https://github.com/tqdm/tqdm,==4.70.*,COMPLETE,-,1622,UP_TO_DATE,UPLOADED,NOT_STRICT,938,133,172,25,14,6,28,1,134,0,70,39,0,0,ERROR_ON_MISSING_STUB,linux,2
+tqdm,types-tqdm,https://github.com/tqdm/tqdm,==4.70.*,COMPLETE,-,1622,UP_TO_DATE,UPLOADED,NOT_STRICT,938,133,173,24,14,6,28,1,134,0,45,39,0,0,ERROR_ON_MISSING_STUB,linux,2
 translationstring,types-translationstring,https://github.com/Pylons/translationstring,==1.4.*,COMPLETE,-,80,UP_TO_DATE,UPLOADED,STRICT,62,0,18,0,0,0,6,1,4,1,0,7,0,0,ERROR_ON_MISSING_STUB,linux,4
 ttkthemes,types-ttkthemes,https://github.com/TkinterEP/ttkthemes,==3.3.*,COMPLETE,-,125,UP_TO_DATE,UPLOADED,STRICT,79,0,23,0,0,0,3,4,5,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,2
 tzdata,types-tzdata,https://github.com/python/tzdata,==2026.*,COMPLETE,-,3,UP_TO_DATE,UPLOADED,STRICT,0,0,0,0,0,0,0,0,2,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
