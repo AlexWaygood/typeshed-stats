@@ -20,7 +20,7 @@ TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,==1.2.*,COMPLETE,-,
 WTForms,types-WTForms,https://github.com/pallets-eco/wtforms,==3.3.*,COMPLETE,-,1695,UP_TO_DATE,UPLOADED,STRICT,692,0,215,0,0,0,94,17,167,35,0,110,0,0,ERROR_ON_MISSING_STUB,linux,6
 WebOb,types-WebOb,https://github.com/Pylons/webob,~=1.8.11,COMPLETE,-,2225,UP_TO_DATE,UPLOADED,STRICT,801,0,610,0,0,0,80,13,250,15,0,137,1,0,ERROR_ON_MISSING_STUB,linux,98
 WebTest,types-WebTest,https://github.com/Pylons/webtest,==3.0.*,COMPLETE,-,501,UP_TO_DATE,UPLOADED,STRICT,234,0,106,0,0,0,9,1,72,1,0,25,0,0,ERROR_ON_MISSING_STUB,linux,6
-aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,==25.1.*,COMPLETE,-,789,UP_TO_DATE,UPLOADED,STRICT,432,0,151,0,1,2,0,1,7,1,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,86
+aiofiles,types-aiofiles,https://github.com/Tinche/aiofiles,==25.1.*,COMPLETE,-,789,UP_TO_DATE,UPLOADED,STRICT,432,0,151,0,1,0,0,1,7,1,0,16,0,0,ERROR_ON_MISSING_STUB,linux;win32,86
 antlr4-python3-runtime,types-antlr4-python3-runtime,https://github.com/antlr/antlr4,==4.13.*,COMPLETE,-,1968,UP_TO_DATE,UPLOADED,NOT_STRICT,782,217,355,338,14,1,1,2,424,0,219,142,0,0,ERROR_ON_MISSING_STUB,linux;win32,0
 assertpy,types-assertpy,https://github.com/assertpy/assertpy,==1.1.*,COMPLETE,-,227,OBSOLETE,UPLOADED,STRICT,88,0,89,0,0,0,10,0,21,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,6
 atheris,types-atheris,https://github.com/google/atheris,==3.1.*,PARTIAL,-,91,UP_TO_DATE,UPLOADED,STRICT,57,0,43,0,0,0,2,0,10,0,0,9,0,0,MISSING_STUBS_IGNORED,linux,0
@@ -105,7 +105,7 @@ nanoleafapi,types-nanoleafapi,https://github.com/MylesMor/nanoleafapi,==2.1.*,CO
 netaddr,types-netaddr,https://github.com/netaddr/netaddr,==1.3.*,COMPLETE,-,710,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,291,1,308,0,0,0,3,1,101,2,0,43,0,0,ERROR_ON_MISSING_STUB,linux,2
 netifaces,types-netifaces,https://github.com/al45tair/netifaces,==0.11.*,COMPLETE,-,69,UP_TO_DATE,UPLOADED,STRICT,1,0,3,0,0,0,0,0,65,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,33
 networkx,types-networkx,https://github.com/networkx/networkx,==3.6.1,COMPLETE,-,8160,OUT_OF_DATE,UPLOADED,NOT_STRICT,3671,775,1305,294,431,417,27,10,387,5,240,131,0,1,ERROR_ON_MISSING_STUB,linux,23
-oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,==4.0.0,COMPLETE,-,1904,OUT_OF_DATE,UPLOADED,NOT_STRICT,751,221,318,61,25,11,0,0,371,1,69,118,0,2,ERROR_ON_MISSING_STUB,linux,0
+oauthlib,types-oauthlib,https://github.com/oauthlib/oauthlib,==4.0.0,COMPLETE,-,1905,OUT_OF_DATE,UPLOADED,NOT_STRICT,751,221,318,61,25,11,0,0,372,1,69,118,0,2,ERROR_ON_MISSING_STUB,linux,0
 objgraph,types-objgraph,https://github.com/mgedmin/objgraph,==3.7.*,COMPLETE,-,86,UP_TO_DATE,UPLOADED,STRICT,71,0,17,0,0,0,0,0,6,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 olefile,types-olefile,https://github.com/decalage2/olefile,==0.47.*,COMPLETE,-,222,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,75,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,==3.1.5,COMPLETE,-,13115,UP_TO_DATE,UPLOADED,NOT_STRICT,3704,511,1312,87,12,7,13,11,4019,4,339,603,1,20,ERROR_ON_MISSING_STUB,linux,169
