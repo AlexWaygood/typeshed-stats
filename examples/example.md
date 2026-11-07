@@ -437,11 +437,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-Markdown` aims to provide accurate annotations for `Markdown~=3.11.2`.
+The latest version of `types-Markdown` aims to provide accurate annotations for `Markdown~=3.11.3`.
 
 ### Number of lines
 
-862 (excluding blank lines)
+868 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -466,12 +466,12 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `Markdown`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 325
+    - Annotated parameters: 332
     - Unannotated parameters: 31
     - Explicit `Any` parameters: 18
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 248
+    - Annotated returns: 251
     - Unannotated returns: 3
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -480,7 +480,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` variables: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 111
+    - Total class definitions: 112
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -4020,67 +4020,6 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
-## Info on typeshed's stubs for `flake8-typing-imports`
-
-### Upstream repo URL
-
-[https://github.com/asottile/flake8-typing-imports](https://github.com/asottile/flake8-typing-imports)
-
-### Stub distribution name
-
-`types-flake8-typing-imports`
-
-### Version
-
-The latest version of `types-flake8-typing-imports` aims to provide accurate annotations for `flake8-typing-imports==1.17.*`.
-
-### Number of lines
-
-36 (excluding blank lines)
-
-### Package status: *out of date*
-
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 0 allowlist entries for `flake8-typing-imports` when running stubtest in CI.
-
-### Pyright settings in CI: *strict*
-
-All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
-
-### Statistics on the annotations in typeshed's stubs for `flake8-typing-imports`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 11
-    - Unannotated parameters: 0
-    - Explicit `Any` parameters: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
-- Returns:
-    - Annotated returns: 13
-    - Unannotated returns: 0
-    - Explicit `Any` returns: 1
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
-- Variables:
-    - Annotated variables: 12
-    - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
-- Class definitions:
-    - Total class definitions: 3
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
-
----
-
 ## Info on typeshed's stubs for `gdb`
 
 ### Extra description
@@ -5555,15 +5494,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-kafka-python` aims to provide accurate annotations for `kafka-python==3.0.12`.
+The latest version of `types-kafka-python` aims to provide accurate annotations for `kafka-python==3.0.13`.
 
 ### Number of lines
 
 12,067 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -6413,7 +6352,7 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 ### Number of lines
 
-8,160 (excluding blank lines)
+8,157 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6446,7 +6385,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated returns: 1,305
     - Unannotated returns: 294
     - Explicit `Any` returns: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 417
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 407
 - Variables:
     - Annotated variables: 387
     - Explicit `Any` variables: 5
@@ -9459,15 +9398,15 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.9.29`.
+The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.11.7`.
 
 ### Number of lines
 
 914 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 

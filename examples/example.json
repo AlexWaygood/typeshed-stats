@@ -249,10 +249,10 @@
     "package_name": "Markdown",
     "stub_distribution_name": "types-Markdown",
     "upstream_url": "https://github.com/Python-Markdown/markdown",
-    "version": "~=3.11.2",
+    "version": "~=3.11.3",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 862,
+    "number_of_lines": 868,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -264,9 +264,9 @@
     },
     "pyright_setting": "NOT_STRICT",
     "annotation_stats": {
-      "annotated_parameters": 325,
+      "annotated_parameters": 332,
       "unannotated_parameters": 31,
-      "annotated_returns": 248,
+      "annotated_returns": 251,
       "unannotated_returns": 3,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
@@ -275,7 +275,7 @@
       "annotated_variables": 257,
       "explicit_Any_variables": 11,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 111,
+      "classdefs": 112,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
@@ -2313,41 +2313,6 @@
     }
   },
   {
-    "package_name": "flake8-typing-imports",
-    "stub_distribution_name": "types-flake8-typing-imports",
-    "upstream_url": "https://github.com/asottile/flake8-typing-imports",
-    "version": "==1.17.*",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 36,
-    "package_status": "OUT_OF_DATE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "ci_platforms": [
-        "linux"
-      ],
-      "allowlist_length": 0
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 11,
-      "unannotated_parameters": 0,
-      "annotated_returns": 13,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 1,
-      "explicit_Any_returns": 1,
-      "annotated_variables": 12,
-      "explicit_Any_variables": 0,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 3,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "gdb",
     "stub_distribution_name": "types-gdb",
     "upstream_url": "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree",
@@ -3192,11 +3157,11 @@
     "package_name": "kafka-python",
     "stub_distribution_name": "types-kafka-python",
     "upstream_url": "https://github.com/dpkp/kafka-python",
-    "version": "==3.0.12",
+    "version": "==3.0.13",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 12067,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
@@ -3685,7 +3650,7 @@
     "version": "==3.6.1",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 8160,
+    "number_of_lines": 8157,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -3702,7 +3667,7 @@
       "annotated_returns": 1305,
       "unannotated_returns": 294,
       "explicit_Incomplete_parameters": 431,
-      "explicit_Incomplete_returns": 417,
+      "explicit_Incomplete_returns": 407,
       "explicit_Any_parameters": 27,
       "explicit_Any_returns": 10,
       "annotated_variables": 387,
@@ -5444,11 +5409,11 @@
     "package_name": "regex",
     "stub_distribution_name": "types-regex",
     "upstream_url": "https://github.com/mrabarnett/mrab-regex",
-    "version": "==2026.9.29",
+    "version": "==2026.11.7",
     "completeness_level": "COMPLETE",
     "extra_description": null,
     "number_of_lines": 914,
-    "package_status": "OUT_OF_DATE",
+    "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
       "strictness": "ERROR_ON_MISSING_STUB",
