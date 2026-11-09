@@ -2637,9 +2637,9 @@ The latest version of `types-croniter` aims to provide accurate annotations for 
 
 368 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -3733,9 +3733,9 @@ The latest version of `types-flake8-bugbear` aims to provide accurate annotation
 
 280 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10475,7 +10475,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
 - Returns:
     - Annotated returns: 17,203
     - Unannotated returns: 230
-    - Explicit `Any` returns: 825
+    - Explicit `Any` returns: 824
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
     - Annotated variables: 10,045
