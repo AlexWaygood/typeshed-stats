@@ -832,13 +832,13 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `PyYAML`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 568
-    - Unannotated parameters: 203
+    - Annotated parameters: 572
+    - Unannotated parameters: 199
     - Explicit `Any` parameters: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 17
 - Returns:
-    - Annotated returns: 325
-    - Unannotated returns: 55
+    - Annotated returns: 329
+    - Unannotated returns: 51
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 19
 - Variables:
@@ -1598,7 +1598,7 @@ The latest version of `types-behave` aims to provide accurate annotations for `b
 
 ### Number of lines
 
-72 (excluding blank lines)
+141 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1623,21 +1623,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `behave`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30
-    - Unannotated parameters: 7
+    - Annotated parameters: 74
+    - Unannotated parameters: 10
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 2
 - Returns:
-    - Annotated returns: 19
+    - Annotated returns: 53
     - Unannotated returns: 3
     - Explicit `Any` returns: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 4
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 6
 - Variables:
-    - Annotated variables: 12
+    - Annotated variables: 22
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 5
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 4
 - Class definitions:
-    - Total class definitions: 1
+    - Total class definitions: 4
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -4711,9 +4711,9 @@ The latest version of `types-gunicorn` aims to provide accurate annotations for 
 
 3,622 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -7393,7 +7393,7 @@ The latest version of `types-psutil` aims to provide accurate annotations for `p
 
 ### Number of lines
 
-2,357 (excluding blank lines)
+2,360 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -7418,12 +7418,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for `psutil`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 492
+    - Annotated parameters: 493
     - Unannotated parameters: 2
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 1
 - Returns:
-    - Annotated returns: 695
+    - Annotated returns: 696
     - Unannotated returns: 1
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
