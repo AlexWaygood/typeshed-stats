@@ -620,11 +620,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-PyMySQL` aims to provide accurate annotations for `PyMySQL==1.2.*`.
+The latest version of `types-PyMySQL` aims to provide accurate annotations for `PyMySQL~=1.2.4`.
 
 ### Number of lines
 
-1,276 (excluding blank lines)
+1,277 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -659,7 +659,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 14
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
 - Variables:
-    - Annotated variables: 766
+    - Annotated variables: 767
     - Explicit `Any` variables: 9
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 4
 - Class definitions:
@@ -10203,15 +10203,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 
 ### Version
 
-The latest version of `types-simplejson` aims to provide accurate annotations for `simplejson==4.2.*`.
+The latest version of `types-simplejson` aims to provide accurate annotations for `simplejson==4.3.*`.
 
 ### Number of lines
 
 305 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
