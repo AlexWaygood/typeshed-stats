@@ -15,7 +15,7 @@ PySocks,types-PySocks,https://github.com/Anorov/PySocks,==1.7.1,COMPLETE,-,212,U
 PyYAML,types-PyYAML,https://github.com/yaml/pyyaml,==6.0.*,COMPLETE,-,1343,UP_TO_DATE,UPLOADED,NOT_STRICT,572,199,329,51,17,19,3,0,206,0,88,91,0,0,ERROR_ON_MISSING_STUB,linux,4
 Pygments,types-Pygments,https://github.com/pygments/pygments,==2.21.*,PARTIAL,-,1007,UP_TO_DATE,UPLOADED,NOT_STRICT,244,63,158,34,0,5,24,2,334,2,122,97,0,1,ERROR_ON_MISSING_STUB,linux,10
 RPi.GPIO,types-RPi.GPIO,https://sourceforge.net/p/raspberry-gpio-python/code/,==0.7.*,COMPLETE,-,56,UP_TO_DATE,UPLOADED,STRICT,28,0,18,0,0,0,0,0,26,0,0,2,0,0,SKIPPED,None,0
-Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,==2.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,1
+Send2Trash,types-Send2Trash,https://github.com/arsenetar/send2trash,==2.1.*,COMPLETE,-,15,OUT_OF_DATE,UPLOADED,STRICT,4,0,4,0,0,0,3,0,0,0,0,1,0,0,ERROR_ON_MISSING_STUB,linux,1
 TgCrypto,types-TgCrypto,https://github.com/pyrogram/tgcrypto,==1.2.*,COMPLETE,-,7,UP_TO_DATE,UPLOADED,STRICT,20,0,6,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,6
 WTForms,types-WTForms,https://github.com/pallets-eco/wtforms,==3.3.*,COMPLETE,-,1695,UP_TO_DATE,UPLOADED,STRICT,692,0,215,0,0,0,94,17,167,35,0,110,0,0,ERROR_ON_MISSING_STUB,linux,6
 WebOb,types-WebOb,https://github.com/Pylons/webob,~=1.8.11,COMPLETE,-,2225,UP_TO_DATE,UPLOADED,STRICT,801,0,610,0,0,0,80,13,250,15,0,137,1,0,ERROR_ON_MISSING_STUB,linux,98
