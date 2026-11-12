@@ -162,7 +162,7 @@ retry,types-retry,https://github.com/invl/retry,==0.9.*,COMPLETE,-,29,UP_TO_DATE
 rfc3339-validator,types-rfc3339-validator,https://github.com/naimetti/rfc3339-validator,==0.1.*,COMPLETE,-,8,UP_TO_DATE,UPLOADED,STRICT,1,0,1,0,0,0,0,0,5,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 s2clientprotocol,types-s2clientprotocol,https://github.com/Blizzard/s2client-proto,==5.*,COMPLETE,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on [s2client-proto 5.0.12.91115.0](https://github.com/Blizzard/s2client-proto/tree/c04df4adbe274858a4eb8417175ee32ad02fd609).,6947,UP_TO_DATE,UPLOADED,STRICT,856,0,676,0,0,0,0,0,1864,0,0,239,0,0,ERROR_ON_MISSING_STUB,linux,1
 scp,types-scp,https://github.com/jbardin/scp.py,==0.16.*,COMPLETE,-,74,UP_TO_DATE,UPLOADED,STRICT,38,0,15,0,0,0,0,0,12,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
-seaborn,types-seaborn,https://github.com/mwaskom/seaborn,==0.13.2,COMPLETE,-,2602,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1455,25,358,2,18,5,156,18,288,13,14,101,1,0,ERROR_ON_MISSING_STUB,linux,4
+seaborn,types-seaborn,https://github.com/mwaskom/seaborn,==0.13.2,COMPLETE,-,2603,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1455,25,358,2,18,5,156,18,288,13,14,101,1,0,ERROR_ON_MISSING_STUB,linux,4
 setuptools,types-setuptools,https://github.com/pypa/setuptools,==84.2.*,COMPLETE,"Given that `pkg_resources` is typed since `setuptools >= 71.1`, it is no longer included with `types-setuptools`.
 ",2973,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,934,244,777,98,14,11,5,6,621,3,169,131,0,0,ERROR_ON_MISSING_STUB,linux;win32,70
 shapely,types-shapely,https://github.com/shapely/shapely,==2.1.*,COMPLETE,-,3057,OUT_OF_DATE,UPLOADED,ENTIRELY_EXCLUDED,1852,109,749,0,0,0,14,5,173,2,1,45,0,0,ERROR_ON_MISSING_STUB,linux,3
@@ -171,7 +171,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,==4.3.*,COM
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,==4.1.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,==1.17.*,COMPLETE,-,330,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,21
 slumber,types-slumber,https://github.com/samgiles/slumber,==0.7.*,COMPLETE,-,77,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,71501,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30660,606,17203,230,23,24,1966,824,10045,299,234,3274,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,847
+stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,71502,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30661,606,17204,230,23,24,1966,824,10045,299,234,3274,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,847
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,==1.1,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.10.*,COMPLETE,-,62,UP_TO_DATE,UPLOADED,STRICT,21,0,3,0,0,0,2,0,23,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30359,OUT_OF_DATE,UPLOADED,NOT_STRICT,5439,38,2948,42,12,23,60,34,5438,5,12,927,1,0,SKIPPED,None,51
