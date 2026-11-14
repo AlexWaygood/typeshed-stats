@@ -5970,6 +5970,67 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ---
 
+## Info on typeshed's stubs for `msal`
+
+### Upstream repo URL
+
+[https://github.com/AzureAD/microsoft-authentication-library-for-python](https://github.com/AzureAD/microsoft-authentication-library-for-python)
+
+### Stub distribution name
+
+`types-msal`
+
+### Version
+
+The latest version of `types-msal` aims to provide accurate annotations for `msal==1.39.*`.
+
+### Number of lines
+
+729 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 2 unique allowlist entries for `msal` when running stubtest in CI.
+
+### Pyright settings in CI: *not strict*
+
+This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
+
+### Statistics on the annotations in typeshed's stubs for `msal`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 309
+    - Unannotated parameters: 124
+    - Explicit `Any` parameters: 54
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 4
+- Returns:
+    - Annotated returns: 134
+    - Unannotated returns: 10
+    - Explicit `Any` returns: 39
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 7
+- Variables:
+    - Annotated variables: 135
+    - Explicit `Any` variables: 6
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 4
+- Class definitions:
+    - Total class definitions: 50
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 1
+
+---
+
 ## Info on typeshed's stubs for `mypy-extensions`
 
 ### Upstream repo URL
@@ -7145,7 +7206,7 @@ The latest version of `types-polib` aims to provide accurate annotations for `po
 
 ### Number of lines
 
-158 (excluding blank lines)
+159 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9650,7 +9711,7 @@ The latest version of `types-resampy` aims to provide accurate annotations for `
 
 ### Number of lines
 
-56 (excluding blank lines)
+85 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -9675,12 +9736,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `resampy`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 27
+    - Annotated parameters: 45
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 6
+    - Annotated returns: 8
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -10443,7 +10504,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-71,504 (excluding blank lines)
+71,571 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10468,12 +10529,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,663
+    - Annotated parameters: 30,678
     - Unannotated parameters: 606
-    - Explicit `Any` parameters: 1,966
+    - Explicit `Any` parameters: 1,972
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,206
+    - Annotated returns: 17,221
     - Unannotated returns: 230
     - Explicit `Any` returns: 824
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
@@ -10482,7 +10543,7 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` variables: 299
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
-    - Total class definitions: 3,274
+    - Total class definitions: 3,277
     - Class definitions with `Any`: 32
     - Class definitions marked as at least partially `Incomplete`: 0
 
