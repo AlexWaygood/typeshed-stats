@@ -8715,6 +8715,67 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ---
 
+## Info on typeshed's stubs for `python-gnupg`
+
+### Upstream repo URL
+
+[https://github.com/vsajip/python-gnupg](https://github.com/vsajip/python-gnupg)
+
+### Stub distribution name
+
+`types-python-gnupg`
+
+### Version
+
+The latest version of `types-python-gnupg` aims to provide accurate annotations for `python-gnupg~=0.5.7`.
+
+### Number of lines
+
+393 (excluding blank lines)
+
+### Package status: *up to date*
+
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+
+### Upload status: *uploaded*
+
+These stubs are currently uploaded to PyPI.
+
+### Stubtest settings in CI: *error on missing stub*
+
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
+
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 0 allowlist entries for `python-gnupg` when running stubtest in CI.
+
+### Pyright settings in CI: *strict*
+
+All files in this stubs package are tested with the stricter pyright settings in typeshed's CI.
+
+### Statistics on the annotations in typeshed's stubs for `python-gnupg`
+
+- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
+    - Annotated parameters: 196
+    - Unannotated parameters: 0
+    - Explicit `Any` parameters: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
+- Returns:
+    - Annotated returns: 82
+    - Unannotated returns: 0
+    - Explicit `Any` returns: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
+- Variables:
+    - Annotated variables: 114
+    - Explicit `Any` variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+- Class definitions:
+    - Total class definitions: 17
+    - Class definitions with `Any`: 0
+    - Class definitions marked as at least partially `Incomplete`: 0
+
+---
+
 ## Info on typeshed's stubs for `python-http-client`
 
 ### Upstream repo URL
@@ -9566,71 +9627,6 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Total class definitions: 590
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 3
-
----
-
-## Info on typeshed's stubs for `requests`
-
-### Extra description
-
-Note: `types-requests` has required `urllib3>=2` since v2.31.0.7. If you need to install `types-requests` into an environment that must also have `urllib3<2` installed into it, you will have to use `types-requests<2.31.0.7`.
-
-### Upstream repo URL
-
-[https://github.com/psf/requests](https://github.com/psf/requests)
-
-### Stub distribution name
-
-`types-requests`
-
-### Version
-
-The latest version of `types-requests` aims to provide accurate annotations for `requests~=2.33.0`.
-
-### Number of lines
-
-1,069 (excluding blank lines)
-
-### Package status: *obsolete*
-
-The runtime package has added inline type hints; these typeshed stubs are now obsolete.
-
-### Upload status: *uploaded*
-
-These stubs are currently uploaded to PyPI.
-
-### Stubtest settings in CI: *error on missing stub*
-
-Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
-
-In CI, stubtest is run on `linux` only.
-
-Typeshed currently has 4 unique allowlist entries for `requests` when running stubtest in CI.
-
-### Pyright settings in CI: *not strict*
-
-This package is tested with pyright in typeshed's CI, but all files in this stubs package are excluded from the stricter pyright settings.
-
-### Statistics on the annotations in typeshed's stubs for `requests`
-
-- Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 393
-    - Unannotated parameters: 121
-    - Explicit `Any` parameters: 11
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
-- Returns:
-    - Annotated returns: 142
-    - Unannotated returns: 58
-    - Explicit `Any` returns: 3
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
-- Variables:
-    - Annotated variables: 126
-    - Explicit `Any` variables: 12
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 15
-- Class definitions:
-    - Total class definitions: 53
-    - Class definitions with `Any`: 0
-    - Class definitions marked as at least partially `Incomplete`: 0
 
 ---
 
@@ -10504,7 +10500,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-71,571 (excluding blank lines)
+71,755 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10520,7 +10516,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 847 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 846 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10529,21 +10525,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,678
-    - Unannotated parameters: 606
-    - Explicit `Any` parameters: 1,972
+    - Annotated parameters: 30,827
+    - Unannotated parameters: 560
+    - Explicit `Any` parameters: 1,969
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,221
-    - Unannotated returns: 230
-    - Explicit `Any` returns: 824
+    - Annotated returns: 17,311
+    - Unannotated returns: 207
+    - Explicit `Any` returns: 821
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
     - Annotated variables: 10,045
     - Explicit `Any` variables: 299
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
-    - Total class definitions: 3,277
+    - Total class definitions: 3,307
     - Class definitions with `Any`: 32
     - Class definitions marked as at least partially `Incomplete`: 0
 
