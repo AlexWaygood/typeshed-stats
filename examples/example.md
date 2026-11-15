@@ -624,7 +624,7 @@ The latest version of `types-PyMySQL` aims to provide accurate annotations for `
 
 ### Number of lines
 
-1,277 (excluding blank lines)
+1,279 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -657,11 +657,11 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated returns: 130
     - Unannotated returns: 29
     - Explicit `Any` returns: 14
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 2
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 767
-    - Explicit `Any` variables: 9
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 4
+    - Annotated variables: 766
+    - Explicit `Any` variables: 10
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
     - Total class definitions: 27
     - Class definitions with `Any`: 0
@@ -4040,7 +4040,7 @@ The latest version of `types-gdb` aims to provide accurate annotations for `gdb=
 
 ### Number of lines
 
-1,587 (excluding blank lines)
+1,619 (excluding blank lines)
 
 ### Package status: *not on pypi*
 
@@ -4050,11 +4050,13 @@ The runtime package that these stubs are for doesn't exist on PyPI, so whether o
 
 These stubs are currently uploaded to PyPI.
 
-### Stubtest settings in CI: *skipped*
+### Stubtest settings in CI: *error on missing stub*
 
-Stubtest is skipped in typeshed's CI for this package.
+Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
-Typeshed currently has 52 unique allowlist entries for `gdb` when running stubtest in CI.
+In CI, stubtest is run on `linux` only.
+
+Typeshed currently has 68 unique allowlist entries for `gdb` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -4063,21 +4065,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `gdb`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 517
-    - Unannotated parameters: 15
-    - Explicit `Any` parameters: 2
+    - Annotated parameters: 543
+    - Unannotated parameters: 17
+    - Explicit `Any` parameters: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 422
+    - Annotated returns: 446
     - Unannotated returns: 26
     - Explicit `Any` returns: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 489
+    - Annotated variables: 493
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 2
 - Class definitions:
-    - Total class definitions: 154
+    - Total class definitions: 157
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -9526,9 +9528,9 @@ The latest version of `types-regex` aims to provide accurate annotations for `re
 
 914 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -10500,7 +10502,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-71,755 (excluding blank lines)
+71,767 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10525,14 +10527,14 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,827
+    - Annotated parameters: 30,833
     - Unannotated parameters: 560
-    - Explicit `Any` parameters: 1,969
+    - Explicit `Any` parameters: 1,968
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,311
+    - Annotated returns: 17,313
     - Unannotated returns: 207
-    - Explicit `Any` returns: 821
+    - Explicit `Any` returns: 822
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
     - Annotated variables: 10,045
