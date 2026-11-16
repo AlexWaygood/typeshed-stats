@@ -1179,6 +1179,17 @@ def test_gather_stats__on_packages_integrates_with_tmpdir_typeshed() -> None:
     assert set(package_names_in_results) == package_names
 
 
+KNOWN_FULLY_ANNOTATED_STDLIB_PATHS_WITH_LAX_PYRIGHT_SETTINGS = frozenset({
+    Path("stdlib/lib2to3/fixes/fix_imports2.pyi"),
+    Path("stdlib/lib2to3/fixes/__init__.pyi"),
+    Path("stdlib/xml/sax/__init__.pyi"),
+    Path("stdlib/operator.pyi"),
+    Path("stdlib/email"),
+})
+
+KNOWN_FULLY_ANNOTATED_PACKAGES_WITH_LAX_PYRIGHT_SETTINGS = frozenset({"pyogrio"})
+
+
 @pytest.mark.dependency(depends=["integration_basic"])
 def test_basic_sanity_checks(subtests: SubTests) -> None:
     with tmpdir_typeshed() as typeshed:
@@ -1208,41 +1219,56 @@ def test_basic_sanity_checks(subtests: SubTests) -> None:
     no_upstream_urls_msg = "Likely bug detected: no packages list an upstream URL?!"
     assert at_least_one_upstream_url, no_upstream_urls_msg
 
-    assert any(s.pyright_setting is PyrightSetting.STRICT for s in stats_on_packages)
-    assert any(
-        f.pyright_setting is PyrightSetting.STRICT for f in stats_on_stdlib_files
-    )
-
     for s in stats_on_packages:
         with subtests.test(package_name=s.package_name):
+            annot_stats = s.annotation_stats
+            is_only_partially_annotated = bool(
+                annot_stats.unannotated_parameters or annot_stats.unannotated_returns
+            )
+            is_fully_annotated = not is_only_partially_annotated
             if s.pyright_setting is PyrightSetting.STRICT:
-                annot_stats = s.annotation_stats
-                is_fully_annotated = not (
-                    annot_stats.unannotated_parameters
-                    or annot_stats.unannotated_returns
-                )
                 assert is_fully_annotated, (
                     "Likely bug detected: "
                     f"{s.package_name!r} has unannotated parameters and/or returns, "
                     "but has the strictest pyright settings in CI"
+                )
+            elif (
+                s.package_name
+                not in KNOWN_FULLY_ANNOTATED_PACKAGES_WITH_LAX_PYRIGHT_SETTINGS
+            ):
+                assert is_only_partially_annotated, (
+                    "Likely bug detected: "
+                    f"{s.package_name!r} is fully annotated, "
+                    "but does not have the strictest pyright settings in CI"
                 )
             upstream_url = s.upstream_url
             assert isinstance(upstream_url, str | types.NoneType)
             if upstream_url is not None:
                 assert upstream_url.startswith("https://")
     for f in stats_on_stdlib_files:
-        if f.pyright_setting is not PyrightSetting.STRICT:
+        if Path("stdlib/distutils/command") in f.file_path.parents:
             continue
         with subtests.test(path=f.file_path):
             annot_stats = f.annotation_stats
-            is_fully_annotated = not (
+            is_only_partially_annotated = bool(
                 annot_stats.unannotated_parameters or annot_stats.unannotated_returns
             )
-            assert is_fully_annotated, (
-                "Likely bug detected: "
-                f"{f.file_path!r} has unannotated parameters and/or returns, "
-                "but has the strictest pyright settings in CI"
-            )
+            is_fully_annotated = not is_only_partially_annotated
+            if f.pyright_setting is PyrightSetting.STRICT:
+                assert is_fully_annotated, (
+                    "Likely bug detected: "
+                    f"{f.file_path!r} has unannotated parameters and/or returns, "
+                    "but has the strictest pyright settings in CI"
+                )
+            elif not any(
+                f.file_path.is_relative_to(path)
+                for path in KNOWN_FULLY_ANNOTATED_STDLIB_PATHS_WITH_LAX_PYRIGHT_SETTINGS
+            ):
+                assert is_only_partially_annotated, (
+                    "Likely bug detected: "
+                    f"{f.file_path!r} is fully annotated, "
+                    "but does not have the strictest pyright settings in CI"
+                )
 
 
 def test_exceptions_bubble_up(typeshed: Path) -> None:
