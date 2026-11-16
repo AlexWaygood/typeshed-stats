@@ -563,12 +563,12 @@ def get_stubtest_allowlist_length(
         ...     num_stdlib_allows = get_stubtest_allowlist_length(
         ...         "stdlib", typeshed_dir=typeshed
         ...     )
-        ...     num_requests_allows = get_stubtest_allowlist_length(
-        ...         "requests", typeshed_dir=typeshed
+        ...     num_markdown_allows = get_stubtest_allowlist_length(
+        ...         "Markdown", typeshed_dir=typeshed
         ...     )
         >>> type(num_stdlib_allows)
         <class 'int'>
-        >>> num_stdlib_allows > 0 and num_requests_allows > 0
+        >>> num_stdlib_allows > 0 and num_markdown_allows > 0
         True
     """
     if package_name == "stdlib":
@@ -775,7 +775,7 @@ def get_upload_status(
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_upload_status
         >>> with tmpdir_typeshed() as typeshed:
         ...     stdlib_setting = get_upload_status("stdlib", typeshed_dir=typeshed)
-        ...     requests_setting = get_upload_status("requests", typeshed_dir=typeshed)
+        ...     markdown_setting = get_upload_status("Markdown", typeshed_dir=typeshed)
         >>> stdlib_setting
         UploadStatus.NOT_CURRENTLY_UPLOADED
         >>> help(_)
@@ -784,7 +784,7 @@ def get_upload_status(
         UploadStatus.NOT_CURRENTLY_UPLOADED
             These stubs are not currently uploaded to PyPI.
         <BLANKLINE>
-        >>> requests_setting
+        >>> markdown_setting
         UploadStatus.UPLOADED
     """
     if package_name == "stdlib":
@@ -834,10 +834,10 @@ def get_completeness_level(
         ...     stdlib_completeness = get_completeness_level(
         ...         "stdlib", typeshed_dir=typeshed
         ...     )
-        ...     requests_completeness = get_completeness_level(
-        ...         "requests", typeshed_dir=typeshed
+        ...     markdown_completeness = get_completeness_level(
+        ...         "Markdown", typeshed_dir=typeshed
         ...     )
-        >>> requests_completeness
+        >>> markdown_completeness
         CompletenessLevel.COMPLETE
         >>> help(_)
         Help on CompletenessLevel in module typeshed_stats.gather:
@@ -876,12 +876,12 @@ def get_upstream_url(
         >>> from typeshed_stats.gather import tmpdir_typeshed, get_upstream_url
         >>> with tmpdir_typeshed() as typeshed:
         ...     stdlib_url = get_upstream_url("stdlib", typeshed_dir=typeshed)
-        ...     requests_url = get_upstream_url("requests", typeshed_dir=typeshed)
+        ...     markdown_url = get_upstream_url("Markdown", typeshed_dir=typeshed)
         ...     hdbcli_url = get_upstream_url("hdbcli", typeshed_dir=typeshed)
         >>> stdlib_url
         'https://github.com/python/cpython'
-        >>> requests_url
-        'https://github.com/psf/requests'
+        >>> markdown_url
+        'https://github.com/Python-Markdown/markdown'
         >>> hdbcli_url is None
         True
     """
@@ -918,14 +918,14 @@ def get_stub_distribution_name(
         ...     get_stub_distribution_name,
         ... )
         >>> with tmpdir_typeshed() as typeshed:
-        ...     requests_stub_dist_name = get_stub_distribution_name(
-        ...         "requests", typeshed_dir=typeshed
+        ...     markdown_stub_dist_name = get_stub_distribution_name(
+        ...         "Markdown", typeshed_dir=typeshed
         ...     )
         ...     pika_stub_dist_name = get_stub_distribution_name(
         ...         "pika", typeshed_dir=typeshed
         ...     )
-        >>> requests_stub_dist_name
-        'types-requests'
+        >>> markdown_stub_dist_name
+        'types-Markdown'
         >>> pika_stub_dist_name
         'types-pika-ts'
     """
@@ -1161,12 +1161,9 @@ def get_version(package_name: PackageName, *, typeshed_dir: Path | str) -> StubV
         The versions of the runtime package these stubs are for.
 
     Examples:
-        >>> from typeshed_stats.gather import tmpdir_typeshed, get_upstream_url
+        >>> from typeshed_stats.gather import tmpdir_typeshed, get_version
         >>> with tmpdir_typeshed() as typeshed:
-        ...     requests_version = get_version("requests", typeshed_dir=typeshed)
         ...     colorama_version = get_version("colorama", typeshed_dir=typeshed)
-        >>> requests_version
-        StubVersion('~=2.33.0')
         >>> colorama_version
         StubVersion('==0.4.*')
     """
@@ -1365,8 +1362,8 @@ def gather_stats_on_file(
         ...     )
         ...     # Absolute paths are also fine
         ...     stubs_dir = typeshed / "stubs"
-        ...     requests_api_info = gather_stats_on_file(
-        ...         stubs_dir / "requests/requests/api.pyi", typeshed_dir=typeshed
+        ...     markdown_core_info = gather_stats_on_file(
+        ...         stubs_dir / "Markdown/markdown/core.pyi", typeshed_dir=typeshed
         ...     )
         ...     # Gather per-file stats on a directory
         ...     markdown_per_file_stats = [
@@ -1379,10 +1376,10 @@ def gather_stats_on_file(
         'stdlib'
         >>> functools_info.file_path.as_posix()
         'stdlib/functools.pyi'
-        >>> requests_api_info.parent_package
-        'requests'
-        >>> requests_api_info.file_path.as_posix()
-        'stubs/requests/requests/api.pyi'
+        >>> markdown_core_info.parent_package
+        'Markdown'
+        >>> markdown_core_info.file_path.as_posix()
+        'stubs/Markdown/markdown/core.pyi'
     """
     typeshed_dir = _normalize_typeshed_dir(typeshed_dir)
     file_path = _normalize_file_path(file_path, typeshed_dir)
