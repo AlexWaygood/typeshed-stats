@@ -254,3 +254,4 @@ def stats_to_markdown(stats: Sequence[PackageInfo]) -> str:
         'that stubs are consistent with the runtime package"'
     )
     return re.sub(r"\n{3,}", "\n\n", all_packages).strip() + "\n"
+
