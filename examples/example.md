@@ -6415,7 +6415,7 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 ### Number of lines
 
-8,154 (excluding blank lines)
+8,150 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6448,7 +6448,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated returns: 1,306
     - Unannotated returns: 293
     - Explicit `Any` returns: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 403
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 396
 - Variables:
     - Annotated variables: 387
     - Explicit `Any` variables: 5
@@ -10140,15 +10140,15 @@ Some files in this stubs package are tested with the stricter pyright settings i
 
 ### Version
 
-The latest version of `types-shapely` aims to provide accurate annotations for `shapely==2.1.*`.
+The latest version of `types-shapely` aims to provide accurate annotations for `shapely==2.2.*`.
 
 ### Number of lines
 
-3,057 (excluding blank lines)
+3,145 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *up to date*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
 
 ### Upload status: *uploaded*
 
@@ -10160,7 +10160,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 3 unique allowlist entries for `shapely` when running stubtest in CI.
+Typeshed currently has 4 unique allowlist entries for `shapely` when running stubtest in CI.
 
 ### Pyright settings in CI: *entirely excluded*
 
@@ -10169,21 +10169,21 @@ All files in this stubs package are excluded from the pyright check in typeshed'
 ### Statistics on the annotations in typeshed's stubs for `shapely`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 1,852
-    - Unannotated parameters: 109
+    - Annotated parameters: 1,907
+    - Unannotated parameters: 112
     - Explicit `Any` parameters: 14
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 749
+    - Annotated returns: 765
     - Unannotated returns: 0
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 173
+    - Annotated variables: 175
     - Explicit `Any` variables: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 1
 - Class definitions:
-    - Total class definitions: 45
+    - Total class definitions: 46
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -10502,7 +10502,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-71,771 (excluding blank lines)
+71,817 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10518,7 +10518,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 846 unique allowlist entries for the stdlib when running stubtest in CI.
+Typeshed currently has 847 unique allowlist entries for the stdlib when running stubtest in CI.
 
 ### Pyright settings in CI: *strict on some files*
 
@@ -10527,21 +10527,21 @@ Some files in this stubs package are tested with the stricter pyright settings i
 ### Statistics on the annotations in typeshed's stubs for the stdlib
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 30,833
+    - Annotated parameters: 30,851
     - Unannotated parameters: 560
-    - Explicit `Any` parameters: 1,968
+    - Explicit `Any` parameters: 1,972
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,313
+    - Annotated returns: 17,326
     - Unannotated returns: 207
-    - Explicit `Any` returns: 822
+    - Explicit `Any` returns: 826
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
     - Annotated variables: 10,045
     - Explicit `Any` variables: 299
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
-    - Total class definitions: 3,307
+    - Total class definitions: 3,311
     - Class definitions with `Any`: 32
     - Class definitions marked as at least partially `Incomplete`: 0
 
