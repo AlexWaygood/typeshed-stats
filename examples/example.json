@@ -1614,41 +1614,6 @@
     }
   },
   {
-    "package_name": "decorator",
-    "stub_distribution_name": "types-decorator",
-    "upstream_url": "https://github.com/micheles/decorator",
-    "version": "==5.2.*",
-    "completeness_level": "COMPLETE",
-    "extra_description": null,
-    "number_of_lines": 66,
-    "package_status": "OBSOLETE",
-    "upload_status": "UPLOADED",
-    "stubtest_settings": {
-      "strictness": "ERROR_ON_MISSING_STUB",
-      "ci_platforms": [
-        "linux"
-      ],
-      "allowlist_length": 5
-    },
-    "pyright_setting": "STRICT",
-    "annotation_stats": {
-      "annotated_parameters": 40,
-      "unannotated_parameters": 0,
-      "annotated_returns": 13,
-      "unannotated_returns": 0,
-      "explicit_Incomplete_parameters": 0,
-      "explicit_Incomplete_returns": 0,
-      "explicit_Any_parameters": 21,
-      "explicit_Any_returns": 6,
-      "annotated_variables": 16,
-      "explicit_Any_variables": 4,
-      "explicit_Incomplete_variables": 0,
-      "classdefs": 2,
-      "classdefs_with_Any": 0,
-      "classdefs_with_Incomplete": 0
-    }
-  },
-  {
     "package_name": "defusedxml",
     "stub_distribution_name": "types-defusedxml",
     "upstream_url": "https://github.com/tiran/defusedxml",
