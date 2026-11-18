@@ -6354,7 +6354,7 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 ### Number of lines
 
-8,150 (excluding blank lines)
+8,168 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6379,15 +6379,15 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `networkx`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 3,671
-    - Unannotated parameters: 775
-    - Explicit `Any` parameters: 27
-    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 431
+    - Annotated parameters: 3,684
+    - Unannotated parameters: 762
+    - Explicit `Any` parameters: 34
+    - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 432
 - Returns:
-    - Annotated returns: 1,306
+    - Annotated returns: 1,308
     - Unannotated returns: 293
     - Explicit `Any` returns: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 396
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 395
 - Variables:
     - Annotated variables: 387
     - Explicit `Any` variables: 5
@@ -7088,9 +7088,9 @@ The latest version of `types-pika-ts` aims to provide accurate annotations for `
 
 2,627 (excluding blank lines)
 
-### Package status: *out of date*
+### Package status: *obsolete*
 
-These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
+The runtime package has added inline type hints; these typeshed stubs are now obsolete.
 
 ### Upload status: *uploaded*
 
@@ -10441,7 +10441,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-71,817 (excluding blank lines)
+71,839 (excluding blank lines)
 
 ### Package status: *stdlib*
 
@@ -10471,12 +10471,12 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` parameters: 1,972
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 23
 - Returns:
-    - Annotated returns: 17,326
+    - Annotated returns: 17,334
     - Unannotated returns: 207
     - Explicit `Any` returns: 826
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 24
 - Variables:
-    - Annotated variables: 10,045
+    - Annotated variables: 10,037
     - Explicit `Any` variables: 299
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 234
 - Class definitions:
