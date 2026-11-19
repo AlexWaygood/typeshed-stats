@@ -1476,7 +1476,7 @@ The latest version of `types-atheris` aims to provide accurate annotations for `
 
 ### Number of lines
 
-91 (excluding blank lines)
+130 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -1492,7 +1492,7 @@ The `--ignore-missing-stub` stubtest setting is used in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 0 allowlist entries for `atheris` when running stubtest in CI.
+Typeshed currently has 1 unique allowlist entry for `atheris` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
@@ -1501,21 +1501,21 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `atheris`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 57
+    - Annotated parameters: 80
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 2
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 43
+    - Annotated returns: 66
     - Unannotated returns: 0
     - Explicit `Any` returns: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 10
+    - Annotated variables: 11
     - Explicit `Any` variables: 0
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 9
+    - Total class definitions: 10
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -6928,18 +6928,18 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 444
-    - Unannotated parameters: 867
-    - Explicit `Any` parameters: 56
+    - Annotated parameters: 442
+    - Unannotated parameters: 901
+    - Explicit `Any` parameters: 54
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 685
+    - Annotated returns: 717
     - Unannotated returns: 239
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 25
 - Variables:
-    - Annotated variables: 464
-    - Explicit `Any` variables: 40
+    - Annotated variables: 432
+    - Explicit `Any` variables: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 274
 - Class definitions:
     - Total class definitions: 180
