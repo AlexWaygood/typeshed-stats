@@ -6,7 +6,7 @@
     "version": "==1.9.6",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 4080,
+    "number_of_lines": 4081,
     "package_status": "OUT_OF_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -26,7 +26,7 @@
       "explicit_Incomplete_returns": 88,
       "explicit_Any_parameters": 9,
       "explicit_Any_returns": 7,
-      "annotated_variables": 710,
+      "annotated_variables": 711,
       "explicit_Any_variables": 1,
       "explicit_Incomplete_variables": 248,
       "classdefs": 289,
@@ -1445,7 +1445,7 @@
     "version": "==0.8.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 737,
+    "number_of_lines": 747,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -1457,9 +1457,9 @@
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {
-      "annotated_parameters": 217,
+      "annotated_parameters": 222,
       "unannotated_parameters": 0,
-      "annotated_returns": 278,
+      "annotated_returns": 279,
       "unannotated_returns": 0,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
@@ -6010,7 +6010,7 @@
     "version": "==0.0.0",
     "completeness_level": "STDLIB",
     "extra_description": null,
-    "number_of_lines": 71900,
+    "number_of_lines": 71906,
     "package_status": "STDLIB",
     "upload_status": "NOT_CURRENTLY_UPLOADED",
     "stubtest_settings": {

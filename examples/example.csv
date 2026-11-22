@@ -1,5 +1,5 @@
 package_name,stub_distribution_name,upstream_url,version,completeness_level,extra_description,number_of_lines,package_status,upload_status,pyright_setting,annotated_parameters,unannotated_parameters,annotated_returns,unannotated_returns,explicit_Incomplete_parameters,explicit_Incomplete_returns,explicit_Any_parameters,explicit_Any_returns,annotated_variables,explicit_Any_variables,explicit_Incomplete_variables,classdefs,classdefs_with_Any,classdefs_with_Incomplete,stubtest_strictness,stubtest_ci_platforms,stubtest_allowlist_length
-Authlib,types-Authlib,https://github.com/authlib/authlib,==1.9.6,COMPLETE,-,4080,OUT_OF_DATE,UPLOADED,NOT_STRICT,611,1394,821,359,17,88,9,7,710,1,248,289,1,4,ERROR_ON_MISSING_STUB,linux,37
+Authlib,types-Authlib,https://github.com/authlib/authlib,==1.9.6,COMPLETE,-,4081,OUT_OF_DATE,UPLOADED,NOT_STRICT,611,1394,821,359,17,88,9,7,711,1,248,289,1,4,ERROR_ON_MISSING_STUB,linux,37
 Deprecated,types-Deprecated,https://github.com/laurent-laporte-pro/deprecated,~=1.3.1,COMPLETE,-,88,OBSOLETE,UPLOADED,STRICT,44,0,15,0,0,0,3,0,16,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,0
 Flask-Cors,types-Flask-Cors,https://github.com/corydolphin/flask-cors,==6.0.3,COMPLETE,-,129,OBSOLETE,UPLOADED,STRICT,65,0,24,0,0,0,7,2,32,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrate,==4.1.*,COMPLETE,-,128,UP_TO_DATE,UPLOADED,STRICT,86,0,23,0,0,0,0,0,7,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,1
@@ -40,7 +40,7 @@ click-spinner,types-click-spinner,https://github.com/click-contrib/click-spinner
 click-web,types-click-web,https://github.com/fredrik-corneliusson/click-web,==0.8.*,COMPLETE,-,185,UP_TO_DATE,UPLOADED,STRICT,68,0,60,0,0,0,0,4,54,4,1,29,2,0,ERROR_ON_MISSING_STUB,linux,0
 colorama,types-colorama,https://github.com/tartley/colorama,==0.4.*,COMPLETE,-,200,UP_TO_DATE,UPLOADED,STRICT,89,0,60,0,0,0,3,1,85,0,0,11,0,0,ERROR_ON_MISSING_STUB,linux;win32,44
 colorful,types-colorful,https://github.com/timofurrer/colorful,==0.5.*,COMPLETE,-,129,UP_TO_DATE,UPLOADED,NOT_STRICT,73,1,49,0,0,0,0,1,40,0,0,6,0,0,ERROR_ON_MISSING_STUB,linux,0
-console-menu,types-console-menu,https://github.com/aegirhall/console-menu,==0.8.*,COMPLETE,-,737,UP_TO_DATE,UPLOADED,STRICT,217,0,278,0,0,0,7,1,58,3,1,39,0,0,ERROR_ON_MISSING_STUB,linux,0
+console-menu,types-console-menu,https://github.com/aegirhall/console-menu,==0.8.*,COMPLETE,-,747,UP_TO_DATE,UPLOADED,STRICT,222,0,279,0,0,0,7,1,58,3,1,39,0,0,ERROR_ON_MISSING_STUB,linux,0
 convertdate,types-convertdate,https://github.com/fitnr/convertdate,==2.5.1,COMPLETE,-,577,UP_TO_DATE,UPLOADED,STRICT,488,0,267,0,0,0,0,0,135,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 croniter,types-croniter,https://github.com/pallets-eco/croniter,==6.2.4,COMPLETE,-,368,OUT_OF_DATE,UPLOADED,STRICT,167,0,39,0,0,0,1,0,49,0,0,9,0,0,ERROR_ON_MISSING_STUB,linux,1
 datauri,types-datauri,https://github.com/eclecticiq/python-data-uri,==1.1.*,COMPLETE,-,15,UP_TO_DATE,UPLOADED,STRICT,6,0,5,0,0,0,0,0,4,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
@@ -171,7 +171,7 @@ simplejson,types-simplejson,https://github.com/simplejson/simplejson,==4.3.*,COM
 singledispatch,types-singledispatch,https://github.com/jaraco/singledispatch,==4.1.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,16,0,12,0,0,0,7,0,3,1,0,2,0,0,ERROR_ON_MISSING_STUB,linux,0
 six,types-six,https://github.com/benjaminp/six,==1.17.*,COMPLETE,-,330,UP_TO_DATE,UPLOADED,STRICT,69,0,38,0,0,0,8,6,13,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,21
 slumber,types-slumber,https://github.com/samgiles/slumber,==0.7.*,COMPLETE,-,77,UP_TO_DATE,UPLOADED,STRICT,42,0,24,0,0,0,4,5,9,0,0,15,0,0,ERROR_ON_MISSING_STUB,linux,0
-stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,71900,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30851,560,17334,207,23,24,1972,826,10037,299,234,3311,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,847
+stdlib,-,https://github.com/python/cpython,==0.0.0,STDLIB,-,71906,STDLIB,NOT_CURRENTLY_UPLOADED,STRICT_ON_SOME_FILES,30851,560,17334,207,23,24,1972,826,10037,299,234,3311,32,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,847
 str2bool,types-str2bool,https://github.com/symonsoft/str2bool,==1.1,COMPLETE,-,6,UP_TO_DATE,UPLOADED,STRICT,5,0,3,0,0,0,0,0,0,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,0
 tabulate,types-tabulate,https://github.com/astanin/python-tabulate,==0.10.*,COMPLETE,-,62,UP_TO_DATE,UPLOADED,STRICT,21,0,3,0,0,0,2,0,23,0,0,4,0,0,ERROR_ON_MISSING_STUB,linux,0
 tensorflow,types-tensorflow,https://github.com/tensorflow/tensorflow,~=2.18.0,PARTIAL,Partially generated using [mypy-protobuf==3.6.0](https://github.com/nipunn1313/mypy-protobuf/tree/v3.6.0) and libprotoc 27.2 on `tensorflow==2.18.0`.,30386,OUT_OF_DATE,UPLOADED,NOT_STRICT,5439,38,2948,42,12,23,60,34,5438,5,12,927,1,0,SKIPPED,None,51

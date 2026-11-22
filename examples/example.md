@@ -14,7 +14,7 @@ The latest version of `types-Authlib` aims to provide accurate annotations for `
 
 ### Number of lines
 
-4,080 (excluding blank lines)
+4,081 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -49,7 +49,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` returns: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 88
 - Variables:
-    - Annotated variables: 710
+    - Annotated variables: 711
     - Explicit `Any` variables: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 248
 - Class definitions:
@@ -2513,7 +2513,7 @@ The latest version of `types-console-menu` aims to provide accurate annotations 
 
 ### Number of lines
 
-737 (excluding blank lines)
+747 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -2538,12 +2538,12 @@ All files in this stubs package are tested with the stricter pyright settings in
 ### Statistics on the annotations in typeshed's stubs for `console-menu`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 217
+    - Annotated parameters: 222
     - Unannotated parameters: 0
     - Explicit `Any` parameters: 7
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 278
+    - Annotated returns: 279
     - Unannotated returns: 0
     - Explicit `Any` returns: 1
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -10441,7 +10441,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Number of lines
 
-71,900 (excluding blank lines)
+71,906 (excluding blank lines)
 
 ### Package status: *stdlib*
 
