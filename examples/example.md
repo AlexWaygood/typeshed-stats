@@ -5380,9 +5380,9 @@ The latest version of `types-jwcrypto` aims to provide accurate annotations for 
 
 520 (excluding blank lines)
 
-### Package status: *up to date*
+### Package status: *out of date*
 
-These stubs should be fairly up to date. In typeshed's CI, [stubtest][] tests these stubs against the latest version of the runtime package that's available.
+These stubs may be out of date. In typeshed's CI, [stubtest][] tests these stubs against an older version of the runtime package than the latest that's available.
 
 ### Upload status: *uploaded*
 
@@ -6903,7 +6903,7 @@ The latest version of `types-peewee` aims to provide accurate annotations for `p
 
 ### Number of lines
 
-2,026 (excluding blank lines)
+2,070 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -6919,7 +6919,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `linux` only.
 
-Typeshed currently has 30 unique allowlist entries for `peewee` when running stubtest in CI.
+Typeshed currently has 31 unique allowlist entries for `peewee` when running stubtest in CI.
 
 ### Pyright settings in CI: *not strict*
 
@@ -6928,21 +6928,21 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
 ### Statistics on the annotations in typeshed's stubs for `peewee`
 
 - Parameters (excluding `self`, `cls`, `metacls` and `mcls`):
-    - Annotated parameters: 442
+    - Annotated parameters: 461
     - Unannotated parameters: 901
-    - Explicit `Any` parameters: 54
+    - Explicit `Any` parameters: 61
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 717
+    - Annotated returns: 731
     - Unannotated returns: 239
-    - Explicit `Any` returns: 4
+    - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 25
 - Variables:
-    - Annotated variables: 432
+    - Annotated variables: 434
     - Explicit `Any` variables: 8
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 274
 - Class definitions:
-    - Total class definitions: 180
+    - Total class definitions: 183
     - Class definitions with `Any`: 0
     - Class definitions marked as at least partially `Incomplete`: 0
 
