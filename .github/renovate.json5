@@ -10,7 +10,9 @@
   ],
   // apply a default blanket cooldown of 7 days to all dependencies.
   minimumReleaseAge: "7 days",
-  dependencyDashboard: true,
+  dependencyDashboard: {
+    enabled: true,
+  },
   separateMajorMinor: false,
   suppressNotifications: ["prEditedNotification"],
   semanticCommits: "disabled",
