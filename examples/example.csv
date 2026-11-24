@@ -109,7 +109,7 @@ objgraph,types-objgraph,https://github.com/mgedmin/objgraph,==3.7.*,COMPLETE,-,8
 olefile,types-olefile,https://github.com/decalage2/olefile,==0.47.*,COMPLETE,-,222,UP_TO_DATE,UPLOADED,STRICT,103,0,66,0,0,0,0,0,75,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,1
 openpyxl,types-openpyxl,https://foss.heptapod.net/openpyxl/openpyxl,==3.1.5,COMPLETE,-,13132,UP_TO_DATE,UPLOADED,NOT_STRICT,3704,511,1312,87,12,7,13,11,4019,4,339,603,1,20,ERROR_ON_MISSING_STUB,linux,169
 opentracing,types-opentracing,https://github.com/opentracing/opentracing-python,==2.4.*,COMPLETE,-,336,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,104,1,113,0,0,0,21,0,56,4,0,26,0,0,ERROR_ON_MISSING_STUB,linux,4
-paramiko,types-paramiko,https://github.com/paramiko/paramiko,==5.1.*,COMPLETE,-,1772,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,681,8,600,3,2,0,13,3,504,4,23,119,2,0,ERROR_ON_MISSING_STUB,linux;win32,4
+paramiko,types-paramiko,https://github.com/paramiko/paramiko,==5.1.*,COMPLETE,-,1776,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,681,8,600,3,2,0,13,3,504,4,23,119,2,0,ERROR_ON_MISSING_STUB,linux;win32,4
 parsimonious,types-parsimonious,https://github.com/erikrose/parsimonious,==0.11.*,COMPLETE,-,199,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,114,0,59,1,0,0,22,2,34,3,2,28,0,0,ERROR_ON_MISSING_STUB,linux,3
 passpy,types-passpy,https://github.com/bfrascher/passpy,==1.0.*,COMPLETE,-,47,UP_TO_DATE,UPLOADED,STRICT,43,0,20,0,0,0,0,0,1,0,0,3,0,0,ERROR_ON_MISSING_STUB,linux,3
 peewee,types-peewee,https://github.com/coleifer/peewee,==4.5.3,PARTIAL,-,2070,UP_TO_DATE,UPLOADED,NOT_STRICT,461,901,731,239,0,25,61,5,434,8,274,183,0,0,ERROR_ON_MISSING_STUB,linux,31
@@ -155,7 +155,7 @@ qrcode,types-qrcode,https://github.com/lincolnloop/python-qrcode,==8.2.*,COMPLET
 rasterio,types-rasterio,https://github.com/rasterio/rasterio,==1.5.2,COMPLETE,-,2037,UP_TO_DATE,UPLOADED,STRICT,973,0,435,0,2,0,94,44,185,5,0,130,2,0,ERROR_ON_MISSING_STUB,linux,22
 ratelimit,types-ratelimit,https://github.com/tomasbasham/ratelimit,==2.2.*,COMPLETE,-,20,UP_TO_DATE,UPLOADED,STRICT,8,0,4,0,0,0,0,0,1,0,0,2,0,0,ERROR_ON_MISSING_STUB,linux,1
 regex,types-regex,https://github.com/mrabarnett/mrab-regex,==2026.11.19,COMPLETE,-,914,OUT_OF_DATE,UPLOADED,STRICT,433,0,114,0,0,0,25,5,3,0,0,7,0,0,ERROR_ON_MISSING_STUB,linux,12
-reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,==5.1.0,COMPLETE,-,8396,UP_TO_DATE,UPLOADED,NOT_STRICT,2014,2495,1951,653,14,40,30,16,2831,7,1064,590,1,3,ERROR_ON_MISSING_STUB,linux,49
+reportlab,types-reportlab,https://github.com/MrBitBucket/reportlab-mirror,==5.1.0,COMPLETE,-,8396,OUT_OF_DATE,UPLOADED,NOT_STRICT,2014,2495,1951,653,14,40,30,16,2831,7,1064,590,1,3,ERROR_ON_MISSING_STUB,linux,49
 requests-oauthlib,types-requests-oauthlib,https://github.com/requests/requests-oauthlib,==2.0.*,COMPLETE,-,274,UP_TO_DATE,UPLOADED,NOT_STRICT,70,70,45,4,2,3,3,0,25,1,7,13,0,0,ERROR_ON_MISSING_STUB,linux,0
 resampy,types-resampy,https://github.com/bmcfee/resampy,==0.4.*,COMPLETE,-,87,UP_TO_DATE,UPLOADED,STRICT,45,0,8,0,0,0,0,0,4,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,1
 retry,types-retry,https://github.com/invl/retry,==0.9.*,COMPLETE,-,29,UP_TO_DATE,UPLOADED,STRICT,17,0,2,0,0,0,2,0,1,0,0,0,0,0,ERROR_ON_MISSING_STUB,linux,3
