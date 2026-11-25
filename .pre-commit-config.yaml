@@ -95,7 +95,7 @@ repos:
           - pyi
           - markdown
   - repo: https://github.com/astral-sh/ty-pre-commit
-    rev: 96cf601960471a908938372419287b8f5d3df15b # frozen: v0.0.109
+    rev: 85bff61a55f10dcc0a58fff7f9ee5bf83d1dc419 # frozen: v0.0.110
     hooks:
       - id: ty
         priority: 0
