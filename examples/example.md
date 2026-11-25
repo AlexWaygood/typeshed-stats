@@ -4467,7 +4467,7 @@ The latest version of `types-grpcio-health-checking` aims to provide accurate an
 
 ### Number of lines
 
-147 (excluding blank lines)
+151 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4502,9 +4502,9 @@ Some files in this stubs package are tested with the stricter pyright settings i
     - Explicit `Any` returns: 3
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
 - Variables:
-    - Annotated variables: 25
+    - Annotated variables: 28
     - Explicit `Any` variables: 0
-    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
+    - Explicitly `Incomplete` (or partially `Incomplete`) variables: 3
 - Class definitions:
     - Total class definitions: 11
     - Class definitions with `Any`: 0
@@ -6354,7 +6354,7 @@ The latest version of `types-networkx` aims to provide accurate annotations for 
 
 ### Number of lines
 
-8,201 (excluding blank lines)
+8,200 (excluding blank lines)
 
 ### Package status: *out of date*
 
@@ -6387,7 +6387,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Annotated returns: 1,308
     - Unannotated returns: 293
     - Explicit `Any` returns: 10
-    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 395
+    - Explicitly `Incomplete` (or partially `Incomplete`) returns: 394
 - Variables:
     - Annotated variables: 387
     - Explicit `Any` variables: 5
@@ -6933,8 +6933,8 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 61
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 731
-    - Unannotated returns: 239
+    - Annotated returns: 732
+    - Unannotated returns: 238
     - Explicit `Any` returns: 5
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 25
 - Variables:
@@ -9461,7 +9461,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.11.19`.
+The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.11.23`.
 
 ### Number of lines
 
