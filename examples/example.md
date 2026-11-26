@@ -9461,7 +9461,7 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.11.23`.
+The latest version of `types-regex` aims to provide accurate annotations for `regex==2026.11.24`.
 
 ### Number of lines
 
