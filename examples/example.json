@@ -249,10 +249,10 @@
     "package_name": "Markdown",
     "stub_distribution_name": "types-Markdown",
     "upstream_url": "https://github.com/Python-Markdown/markdown",
-    "version": "~=3.11.3",
+    "version": "~=3.11.4",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 870,
+    "number_of_lines": 872,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -266,7 +266,7 @@
     "annotation_stats": {
       "annotated_parameters": 332,
       "unannotated_parameters": 31,
-      "annotated_returns": 251,
+      "annotated_returns": 252,
       "unannotated_returns": 3,
       "explicit_Incomplete_parameters": 0,
       "explicit_Incomplete_returns": 0,
@@ -275,7 +275,7 @@
       "annotated_variables": 257,
       "explicit_Any_variables": 11,
       "explicit_Incomplete_variables": 0,
-      "classdefs": 112,
+      "classdefs": 113,
       "classdefs_with_Any": 1,
       "classdefs_with_Incomplete": 0
     }
@@ -2389,7 +2389,7 @@
     "version": "==26.9.*",
     "completeness_level": "COMPLETE",
     "extra_description": null,
-    "number_of_lines": 3251,
+    "number_of_lines": 3268,
     "package_status": "UP_TO_DATE",
     "upload_status": "UPLOADED",
     "stubtest_settings": {
@@ -2399,7 +2399,7 @@
         "linux",
         "win32"
       ],
-      "allowlist_length": 98
+      "allowlist_length": 97
     },
     "pyright_setting": "STRICT",
     "annotation_stats": {

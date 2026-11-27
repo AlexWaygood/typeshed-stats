@@ -6,7 +6,7 @@ Flask-Migrate,types-Flask-Migrate,https://github.com/miguelgrinberg/Flask-Migrat
 Flask-SocketIO,types-Flask-SocketIO,https://github.com/miguelgrinberg/flask-socketio,==5.7.*,COMPLETE,-,256,UP_TO_DATE,UPLOADED,NOT_STRICT,141,33,37,15,14,1,2,0,21,2,3,11,0,0,ERROR_ON_MISSING_STUB,linux,3
 JACK-Client,types-JACK-Client,https://github.com/spatialaudio/jackclient-python,==0.5.*,COMPLETE,-,321,UP_TO_DATE,UPLOADED,STRICT,107,0,155,0,0,0,0,3,46,0,0,16,0,0,ERROR_ON_MISSING_STUB,darwin;linux,1
 Jetson.GPIO,types-Jetson.GPIO,https://github.com/NVIDIA/jetson-gpio,==2.1.13,COMPLETE,-,216,UP_TO_DATE,UPLOADED,STRICT,88,0,47,0,0,0,0,2,108,1,0,11,0,0,ERROR_ON_MISSING_STUB,linux,4
-Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,~=3.11.3,COMPLETE,-,870,UP_TO_DATE,UPLOADED,NOT_STRICT,332,31,251,3,0,0,18,4,257,11,0,112,1,0,ERROR_ON_MISSING_STUB,linux,6
+Markdown,types-Markdown,https://github.com/Python-Markdown/markdown,~=3.11.4,COMPLETE,-,872,UP_TO_DATE,UPLOADED,NOT_STRICT,332,31,252,3,0,0,18,4,257,11,0,113,1,0,ERROR_ON_MISSING_STUB,linux,6
 PyAutoGUI,types-PyAutoGUI,https://github.com/asweigart/pyautogui,==0.9.*,COMPLETE,-,233,UP_TO_DATE,UPLOADED,STRICT,145,0,38,0,0,0,0,0,22,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,1
 PyMeeus,types-PyMeeus,https://github.com/architest/pymeeus,==0.5.*,COMPLETE,-,1000,UP_TO_DATE,UPLOADED,STRICT,706,0,374,0,0,0,0,0,59,0,0,18,0,0,ERROR_ON_MISSING_STUB,linux,0
 PyMySQL,types-PyMySQL,https://github.com/PyMySQL/PyMySQL,~=1.2.4,COMPLETE,-,1280,UP_TO_DATE,UPLOADED,NOT_STRICT,256,22,130,29,2,0,9,14,766,10,0,27,0,0,ERROR_ON_MISSING_STUB,linux,4
@@ -67,7 +67,7 @@ flake8-simplify,types-flake8-simplify,https://github.com/MartinThoma/flake8-simp
 gdb,types-gdb,https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=tree,==16.3.*,COMPLETE,"Type hints for GDB's [Python API](https://sourceware.org/gdb/onlinedocs/gdb/Python-API.html). Note that this API is available only when running Python scripts under GDB: it is not possible to install the `gdb` package separately, for instance using `pip`.",1619,NOT_ON_PYPI,UPLOADED,NOT_STRICT,543,17,446,26,0,0,4,2,493,0,2,157,0,0,ERROR_ON_MISSING_STUB,linux,68
 geojson,types-geojson,https://github.com/jazzband/geojson,==3.3.0,COMPLETE,-,142,UP_TO_DATE,UPLOADED,NOT_STRICT,40,23,40,0,3,1,8,4,4,0,0,13,1,0,ERROR_ON_MISSING_STUB,linux,2
 geopandas,types-geopandas,https://github.com/geopandas/geopandas,==1.2.0,COMPLETE,-,1894,UP_TO_DATE,UPLOADED,ENTIRELY_EXCLUDED,1052,69,428,6,42,4,31,11,32,6,0,23,0,0,ERROR_ON_MISSING_STUB,linux,16
-gevent,types-gevent,https://github.com/gevent/gevent,==26.9.*,COMPLETE,-,3251,UP_TO_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,210,1,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,98
+gevent,types-gevent,https://github.com/gevent/gevent,==26.9.*,COMPLETE,-,3268,UP_TO_DATE,UPLOADED,STRICT,1367,0,842,0,0,0,68,20,371,26,0,210,1,0,ERROR_ON_MISSING_STUB,darwin;linux;win32,97
 google-cloud-ndb,types-google-cloud-ndb,https://github.com/googleapis/python-ndb,==2.4.*,PARTIAL,-,1567,OUT_OF_DATE,UPLOADED,NOT_STRICT,370,493,241,203,0,0,5,0,194,0,134,143,0,0,MISSING_STUBS_IGNORED,linux,2
 greenlet,types-greenlet,https://github.com/python-greenlet/greenlet,==3.5.*,COMPLETE,-,86,UP_TO_DATE,UPLOADED,STRICT,21,0,25,0,0,0,4,4,12,0,0,5,0,0,ERROR_ON_MISSING_STUB,linux,2
 grpcio,types-grpcio,https://github.com/grpc/grpc,~=1.85.0,PARTIAL,-,1006,UP_TO_DATE,UPLOADED,STRICT_ON_SOME_FILES,316,4,222,1,0,1,7,2,30,0,0,69,0,0,MISSING_STUBS_IGNORED,linux,3

@@ -437,11 +437,11 @@ All files in this stubs package are tested with the stricter pyright settings in
 
 ### Version
 
-The latest version of `types-Markdown` aims to provide accurate annotations for `Markdown~=3.11.3`.
+The latest version of `types-Markdown` aims to provide accurate annotations for `Markdown~=3.11.4`.
 
 ### Number of lines
 
-870 (excluding blank lines)
+872 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -471,7 +471,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` parameters: 18
     - Explicitly `Incomplete` (or partially `Incomplete`) parameters: 0
 - Returns:
-    - Annotated returns: 251
+    - Annotated returns: 252
     - Unannotated returns: 3
     - Explicit `Any` returns: 4
     - Explicitly `Incomplete` (or partially `Incomplete`) returns: 0
@@ -480,7 +480,7 @@ This package is tested with pyright in typeshed's CI, but all files in this stub
     - Explicit `Any` variables: 11
     - Explicitly `Incomplete` (or partially `Incomplete`) variables: 0
 - Class definitions:
-    - Total class definitions: 112
+    - Total class definitions: 113
     - Class definitions with `Any`: 1
     - Class definitions marked as at least partially `Incomplete`: 0
 
@@ -4162,7 +4162,7 @@ The latest version of `types-gevent` aims to provide accurate annotations for `g
 
 ### Number of lines
 
-3,251 (excluding blank lines)
+3,268 (excluding blank lines)
 
 ### Package status: *up to date*
 
@@ -4178,7 +4178,7 @@ Objects missing from the stub cause stubtest to emit an error in typeshed's CI.
 
 In CI, stubtest is run on `darwin`, `linux` and `win32`.
 
-Typeshed currently has 98 unique allowlist entries for `gevent` when running stubtest in CI.
+Typeshed currently has 97 unique allowlist entries for `gevent` when running stubtest in CI.
 
 ### Pyright settings in CI: *strict*
 
